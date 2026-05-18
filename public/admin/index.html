@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyAbroad Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    :root { --sidebar-w: 240px; }
+    body { background: #f0f2f5; }
+    #sidebar {
+      position: fixed; top: 0; left: 0; height: 100vh;
+      width: var(--sidebar-w); background: #1e2a3a;
+      overflow-y: auto; z-index: 100;
+    }
+    #sidebar .brand {
+      padding: 18px 16px; color: #fff; font-weight: 700;
+      font-size: 1rem; border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .nav-link {
+      color: rgba(255,255,255,.65); padding: 9px 14px;
+      display: flex; align-items: center; gap: 9px;
+      border-radius: 6px; margin: 2px 8px; font-size: .875rem; transition: all .15s;
+    }
+    .nav-link:hover, .nav-link.active { background: rgba(255,255,255,.12); color: #fff; }
+    #main { margin-left: var(--sidebar-w); padding: 24px; min-height: 100vh; }
+    .section { display: none; }
+    .section.active { display: block; }
+    .stat-card { background: #fff; border-radius: 12px; padding: 20px 24px; box-shadow: 0 1px 4px rgba(0,0,0,.07); }
+    .stat-icon { width: 46px; height: 46px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+    .table-card { background: #fff; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.07); overflow: hidden; }
+    .card-hdr { padding: 14px 18px; border-bottom: 1px solid #e9ecef; }
+    .table thead th { font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; color: #6c757d; background: #f8f9fa; }
+    .bs-active { background: #d1fae5 !important; color: #065f46 !important; }
+    .bs-inactive { background: #fee2e2 !important; color: #991b1b !important; }
+    .bs-pending { background: #fef3c7 !important; color: #92400e !important; }
+    .act-btn { padding: 3px 7px; font-size: .78rem; }
+    #toast-box { position: fixed; bottom: 20px; right: 20px; z-index: 9999; min-width: 240px; }
+    .media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+    .media-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+    .media-card .thumb { width: 100%; height: 140px; object-fit: cover; }
+    .media-card .info { padding: 10px; font-size: .83rem; }
+    .media-placeholder { width: 100%; height: 140px; display: flex; align-items: center; justify-content: center; }
+    .orbit-lbl { font-size: .83rem; font-weight: 500; }
+  </style>
+</head>
+<body>
+
+<nav id="sidebar">
+  <div class="brand"><i class="bi bi-globe2 me-2"></i>StudyAbroad Admin</div>
+  <div class="mt-2">
+    <a href="#" class="nav-link active" data-sec="dashboard"><i class="bi bi-speedometer2"></i>Dashboard</a>
+    <a href="#" class="nav-link" data-sec="entities"><i class="bi bi-building"></i>Entities</a>
+    <a href="#" class="nav-link" data-sec="locations"><i class="bi bi-geo-alt"></i>Locations</a>
+    <a href="#" class="nav-link" data-sec="programs"><i class="bi bi-mortarboard"></i>Programs</a>
+    <a href="#" class="nav-link" data-sec="media"><i class="bi bi-images"></i>Media</a>
+    <a href="#" class="nav-link" data-sec="orbit"><i class="bi bi-camera-video"></i>Orbit Configs</a>
+  </div>
+</nav>
+
+<div id="main">
+
+  <!-- DASHBOARD -->
+  <div id="sec-dashboard" class="section active">
+    <h4 class="fw-bold mb-4">Dashboard</h4>
+    <div class="row g-3 mb-4">
+      <div class="col-6 col-xl-3">
+        <div class="stat-card d-flex align-items-center gap-3">
+          <div class="stat-icon bg-primary bg-opacity-10 text-primary"><i class="bi bi-building"></i></div>
+          <div><div class="text-muted small">Entities</div><div class="fs-3 fw-bold" id="st-entities">—</div></div>
+        </div>
+      </div>
+      <div class="col-6 col-xl-3">
+        <div class="stat-card d-flex align-items-center gap-3">
+          <div class="stat-icon bg-success bg-opacity-10 text-success"><i class="bi bi-geo-alt"></i></div>
+          <div><div class="text-muted small">Locations</div><div class="fs-3 fw-bold" id="st-locations">—</div></div>
+        </div>
+      </div>
+      <div class="col-6 col-xl-3">
+        <div class="stat-card d-flex align-items-center gap-3">
+          <div class="stat-icon bg-warning bg-opacity-10 text-warning"><i class="bi bi-mortarboard"></i></div>
+          <div><div class="text-muted small">Programs</div><div class="fs-3 fw-bold" id="st-programs">—</div></div>
+        </div>
+      </div>
+      <div class="col-6 col-xl-3">
+        <div class="stat-card d-flex align-items-center gap-3">
+          <div class="stat-icon bg-info bg-opacity-10 text-info"><i class="bi bi-images"></i></div>
+          <div><div class="text-muted small">Media</div><div class="fs-3 fw-bold" id="st-media">—</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="table-card">
+      <div class="card-hdr d-flex justify-content-between align-items-center">
+        <span class="fw-semibold">Recent Entities</span>
+        <a href="#" class="btn btn-sm btn-outline-primary" data-sec="entities">View All</a>
+      </div>
+      <table class="table mb-0">
+        <thead><tr><th>Name</th><th>Type</th><th>Status</th><th>Created</th></tr></thead>
+        <tbody id="dash-recent"><tr><td colspan="4" class="text-center text-muted py-3">Loading…</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ENTITIES -->
+  <div id="sec-entities" class="section">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h4 class="fw-bold mb-0">Entities</h4>
+      <button class="btn btn-primary btn-sm" onclick="openEntityModal()"><i class="bi bi-plus-lg me-1"></i>Add Entity</button>
+    </div>
+    <div class="table-card">
+      <div class="card-hdr">
+        <input type="text" class="form-control form-control-sm" style="max-width:260px" id="ent-search" placeholder="Search by name or type…" oninput="renderEntities()">
+      </div>
+      <div class="table-responsive">
+        <table class="table mb-0 align-middle">
+          <thead><tr><th>Name</th><th>Type</th><th>Website</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody id="ent-tbody"><tr><td colspan="5" class="text-center text-muted py-3">Loading…</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOCATIONS -->
+  <div id="sec-locations" class="section">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h4 class="fw-bold mb-0">Locations</h4>
+      <button class="btn btn-primary btn-sm" onclick="openLocationModal()"><i class="bi bi-plus-lg me-1"></i>Add Location</button>
+    </div>
+    <div class="table-card">
+      <div class="card-hdr">
+        <select class="form-select form-select-sm" style="max-width:260px" id="loc-filter-ent" onchange="loadLocations()">
+          <option value="">All Entities</option>
+        </select>
+      </div>
+      <div class="table-responsive">
+        <table class="table mb-0 align-middle">
+          <thead><tr><th>Entity</th><th>Campus</th><th>City</th><th>Country</th><th>Continent</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody id="loc-tbody"><tr><td colspan="7" class="text-center text-muted py-3">Loading…</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROGRAMS -->
+  <div id="sec-programs" class="section">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h4 class="fw-bold mb-0">Programs</h4>
+      <button class="btn btn-primary btn-sm" onclick="openProgramModal()"><i class="bi bi-plus-lg me-1"></i>Add Program</button>
+    </div>
+    <div class="table-card">
+      <div class="card-hdr d-flex gap-2 flex-wrap">
+        <select class="form-select form-select-sm" style="max-width:220px" id="prog-filter-ent" onchange="onProgEntChange()">
+          <option value="">All Entities</option>
+        </select>
+        <select class="form-select form-select-sm" style="max-width:220px" id="prog-filter-loc" onchange="loadPrograms()">
+          <option value="">All Locations</option>
+        </select>
+      </div>
+      <div class="table-responsive">
+        <table class="table mb-0 align-middle">
+          <thead><tr><th>Entity</th><th>Location</th><th>Program</th><th>Type</th><th>Language</th><th>Duration</th><th>Fee</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody id="prog-tbody"><tr><td colspan="9" class="text-center text-muted py-3">Loading…</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEDIA -->
+  <div id="sec-media" class="section">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h4 class="fw-bold mb-0">Media</h4>
+      <button class="btn btn-primary btn-sm" onclick="openMediaModal()"><i class="bi bi-plus-lg me-1"></i>Add Media</button>
+    </div>
+    <div class="d-flex gap-2 mb-3">
+      <select class="form-select form-select-sm" style="max-width:220px" id="med-filter-ent" onchange="onMedEntChange()">
+        <option value="">Select Entity</option>
+      </select>
+      <select class="form-select form-select-sm" style="max-width:220px" id="med-filter-loc" onchange="loadMedia()">
+        <option value="">Select Location</option>
+      </select>
+    </div>
+    <div id="med-grid" class="media-grid"></div>
+    <div id="med-empty" class="text-center text-muted py-5">Select an entity and location to view media.</div>
+  </div>
+
+  <!-- ORBIT -->
+  <div id="sec-orbit" class="section">
+    <h4 class="fw-bold mb-4">Orbit Camera Configs</h4>
+    <div class="row g-2 mb-4">
+      <div class="col-md-4">
+        <select class="form-select" id="orb-filter-ent" onchange="onOrbEntChange()">
+          <option value="">Select Entity</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <select class="form-select" id="orb-filter-loc" onchange="loadOrbit()">
+          <option value="">Select Location</option>
+        </select>
+      </div>
+    </div>
+    <div id="orb-form" style="display:none">
+      <div class="table-card p-4">
+        <h6 class="fw-semibold mb-3">Camera Settings</h6>
+        <div class="row g-3">
+          <div class="col-6 col-md-3"><label class="orbit-lbl">Center Lat</label><input type="number" step="any" class="form-control form-control-sm" id="orb-clat"></div>
+          <div class="col-6 col-md-3"><label class="orbit-lbl">Center Lng</label><input type="number" step="any" class="form-control form-control-sm" id="orb-clng"></div>
+          <div class="col-6 col-md-3"><label class="orbit-lbl">Altitude (m)</label><input type="number" class="form-control form-control-sm" id="orb-alt" value="400"></div>
+          <div class="col-6 col-md-3"><label class="orbit-lbl">Pitch (°)</label><input type="number" step="0.01" class="form-control form-control-sm" id="orb-pitch" value="-22"></div>
+          <div class="col-6 col-md-3"><label class="orbit-lbl">Initial Heading</label><input type="number" step="0.01" class="form-control form-control-sm" id="orb-head" value="0"></div>
+          <div class="col-6 col-md-3"><label class="orbit-lbl">Range (m)</label><input type="number" class="form-control form-control-sm" id="orb-range" value="400"></div>
+          <div class="col-6 col-md-3">
+            <label class="orbit-lbl">Rotation Type</label>
+            <select class="form-select form-select-sm" id="orb-rtype"><option>360</option><option>180</option></select>
+          </div>
+          <div class="col-6 col-md-3"><label class="orbit-lbl">Rotation Speed</label><input type="number" step="0.01" class="form-control form-control-sm" id="orb-rspeed" value="0.12"></div>
+          <div class="col-6 col-md-3"><label class="orbit-lbl">Scan Target Lat</label><input type="number" step="any" class="form-control form-control-sm" id="orb-slat"></div>
+          <div class="col-6 col-md-3"><label class="orbit-lbl">Scan Target Lng</label><input type="number" step="any" class="form-control form-control-sm" id="orb-slng"></div>
+          <div class="col-6 col-md-3"><label class="orbit-lbl">V Offset</label><input type="number" step="0.01" class="form-control form-control-sm" id="orb-voff" value="0"></div>
+          <div class="col-6 col-md-3"><label class="orbit-lbl">H Offset</label><input type="number" step="0.01" class="form-control form-control-sm" id="orb-hoff" value="0"></div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="orb-sfx">
+              <label class="form-check-label small" for="orb-sfx">Scan Effect Enabled</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary btn-sm" onclick="saveOrbit()"><i class="bi bi-save me-1"></i>Save Configuration</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="orb-empty" class="text-center text-muted py-5">Select an entity and location to configure orbit camera.</div>
+  </div>
+
+</div>
+
+<!-- TOAST -->
+<div id="toast-box"></div>
+
+<!-- ENTITY MODAL -->
+<div class="modal fade" id="entModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title" id="entModalTitle">Add Entity</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <input type="hidden" id="ent-id">
+        <div class="row g-3">
+          <div class="col-md-8"><label class="form-label">Name *</label><input type="text" class="form-control" id="ent-name"></div>
+          <div class="col-md-4">
+            <label class="form-label">Type *</label>
+            <select class="form-select" id="ent-type">
+              <option value="university">University</option>
+              <option value="language_school">Language School</option>
+              <option value="foundation_provider">Foundation Provider</option>
+              <option value="summer_camp_provider">Summer Camp Provider</option>
+              <option value="certificate_provider">Certificate Provider</option>
+              <option value="diploma_provider">Diploma Provider</option>
+              <option value="high_school">High School</option>
+            </select>
+          </div>
+          <div class="col-md-6"><label class="form-label">Website URL</label><input type="url" class="form-control" id="ent-website"></div>
+          <div class="col-md-6"><label class="form-label">Logo URL</label><input type="url" class="form-control" id="ent-logo"></div>
+          <div class="col-md-4">
+            <label class="form-label">Status</label>
+            <select class="form-select" id="ent-status">
+              <option value="pending">Pending</option>
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </div>
+          <div class="col-12"><label class="form-label">Description (EN)</label><textarea class="form-control" id="ent-desc" rows="3"></textarea></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary" onclick="saveEntity()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LOCATION MODAL -->
+<div class="modal fade" id="locModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title" id="locModalTitle">Add Location</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <input type="hidden" id="loc-id">
+        <div class="row g-3">
+          <div class="col-md-6"><label class="form-label">Entity *</label><select class="form-select" id="loc-ent-id"></select></div>
+          <div class="col-md-6"><label class="form-label">Campus Name</label><input type="text" class="form-control" id="loc-campus"></div>
+          <div class="col-md-4"><label class="form-label">City *</label><input type="text" class="form-control" id="loc-city"></div>
+          <div class="col-md-4"><label class="form-label">Country *</label><input type="text" class="form-control" id="loc-country"></div>
+          <div class="col-md-4">
+            <label class="form-label">Continent *</label>
+            <select class="form-select" id="loc-continent">
+              <option>Europe</option><option>Asia</option><option>North America</option>
+              <option>South America</option><option>Africa</option><option>Oceania</option><option>Middle East</option>
+            </select>
+          </div>
+          <div class="col-12"><label class="form-label">Address</label><input type="text" class="form-control" id="loc-address"></div>
+          <div class="col-md-3"><label class="form-label">Latitude</label><input type="number" step="any" class="form-control" id="loc-lat"></div>
+          <div class="col-md-3"><label class="form-label">Longitude</label><input type="number" step="any" class="form-control" id="loc-lng"></div>
+          <div class="col-md-3"><label class="form-label">Airport Name</label><input type="text" class="form-control" id="loc-apt-name"></div>
+          <div class="col-md-3"><label class="form-label">Airport Code</label><input type="text" class="form-control" id="loc-apt-code" maxlength="3" placeholder="IST"></div>
+          <div class="col-md-4"><label class="form-label">Flight from IST (min)</label><input type="number" class="form-control" id="loc-flight"></div>
+          <div class="col-md-4">
+            <label class="form-label">Status</label>
+            <select class="form-select" id="loc-status"><option value="active">Active</option><option value="inactive">Inactive</option></select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary" onclick="saveLocation()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROGRAM MODAL -->
+<div class="modal fade" id="progModal" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title" id="progModalTitle">Add Program</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <input type="hidden" id="prog-id">
+        <div class="row g-3">
+          <div class="col-md-6"><label class="form-label">Entity *</label><select class="form-select" id="prog-ent-id" onchange="loadProgModalLocs()"></select></div>
+          <div class="col-md-6"><label class="form-label">Location *</label><select class="form-select" id="prog-loc-id"></select></div>
+          <div class="col-md-8"><label class="form-label">Program Name *</label><input type="text" class="form-control" id="prog-name"></div>
+          <div class="col-md-4"><label class="form-label">Program Type *</label><select class="form-select" id="prog-type-id"></select></div>
+          <div class="col-md-3"><label class="form-label">Language</label><input type="text" class="form-control" id="prog-lang" value="English"></div>
+          <div class="col-md-3"><label class="form-label">Duration</label><input type="text" class="form-control" id="prog-dur" placeholder="e.g. 4 years"></div>
+          <div class="col-md-3"><label class="form-label">Tuition Fee</label><input type="number" step="0.01" class="form-control" id="prog-fee"></div>
+          <div class="col-md-3">
+            <label class="form-label">Currency</label>
+            <select class="form-select" id="prog-cur"><option>EUR</option><option>USD</option><option>GBP</option><option>CAD</option><option>AUD</option></select>
+          </div>
+          <div class="col-md-4"><label class="form-label">Intake Months</label><input type="text" class="form-control" id="prog-intake" placeholder="September,January"></div>
+          <div class="col-md-4">
+            <label class="form-label">English Req</label>
+            <select class="form-select" id="prog-eng-type"><option>None</option><option>IELTS</option><option>TOEFL</option><option>Duolingo</option><option>PTE</option><option>Cambridge</option></select>
+          </div>
+          <div class="col-md-4"><label class="form-label">Score</label><input type="text" class="form-control" id="prog-eng-score"></div>
+          <div class="col-md-4"><label class="form-label">GPA Requirement</label><input type="text" class="form-control" id="prog-gpa"></div>
+          <div class="col-md-4">
+            <label class="form-label">Status</label>
+            <select class="form-select" id="prog-status"><option value="active">Active</option><option value="inactive">Inactive</option></select>
+          </div>
+          <div class="col-md-4 d-flex align-items-end pb-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="prog-scholar">
+              <label class="form-check-label" for="prog-scholar">Scholarship Available</label>
+            </div>
+          </div>
+          <div class="col-12"><label class="form-label">Description (EN)</label><textarea class="form-control" id="prog-desc" rows="3"></textarea></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary" onclick="saveProgram()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MEDIA MODAL -->
+<div class="modal fade" id="medModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title" id="medModalTitle">Add Media</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <input type="hidden" id="med-id">
+        <div class="row g-3">
+          <div class="col-12"><label class="form-label">Entity *</label><select class="form-select" id="med-ent-id" onchange="loadMedModalLocs()"></select></div>
+          <div class="col-12"><label class="form-label">Location *</label><select class="form-select" id="med-loc-id"></select></div>
+          <div class="col-md-6">
+            <label class="form-label">Type *</label>
+            <select class="form-select" id="med-type"><option value="photo">Photo</option><option value="video">Video</option><option value="virtual_tour">Virtual Tour</option></select>
+          </div>
+          <div class="col-md-6"><label class="form-label">Sort Order</label><input type="number" class="form-control" id="med-sort" value="0"></div>
+          <div class="col-12"><label class="form-label">URL *</label><input type="url" class="form-control" id="med-url"></div>
+          <div class="col-12"><label class="form-label">Caption</label><input type="text" class="form-control" id="med-caption"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary" onclick="saveMedia()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DELETE MODAL -->
+<div class="modal fade" id="delModal" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Confirm Delete</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-muted">This action cannot be undone.</div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-danger btn-sm" id="del-ok">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// ── NAV ──────────────────────────────────────────────────────
+document.querySelectorAll('[data-sec]').forEach(el => {
+  el.addEventListener('click', e => { e.preventDefault(); showSec(el.dataset.sec); });
+});
+function showSec(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('[data-sec]').forEach(l => l.classList.remove('active'));
+  document.getElementById('sec-' + name).classList.add('active');
+  document.querySelectorAll(`[data-sec="${name}"]`).forEach(l => l.classList.add('active'));
+  ({ dashboard: initDash, entities: initEntities, locations: initLocations,
+     programs: initPrograms, media: initMedia, orbit: initOrbit })[name]?.();
+}
+
+// ── TOAST ─────────────────────────────────────────────────────
+function toast(msg, type = 'success') {
+  const d = document.createElement('div');
+  d.className = `alert alert-${type} py-2 px-3 shadow mb-2`;
+  d.textContent = msg;
+  document.getElementById('toast-box').prepend(d);
+  setTimeout(() => d.remove(), 3500);
+}
+
+// ── API ───────────────────────────────────────────────────────
+async function api(method, url, data) {
+  const r = await fetch(url, {
+    method,
+    headers: { 'Content-Type': 'application/json' },
+    body: data ? JSON.stringify(data) : undefined
+  });
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error || 'Request failed');
+  return j;
+}
+
+// ── SHARED DATA ───────────────────────────────────────────────
+let allEntities = [];
+let progTypes = [];
+
+async function loadAllEntities() {
+  allEntities = await api('GET', '/api/entities');
+}
+async function loadProgTypes() {
+  progTypes = await api('GET', '/api/programs/types');
+}
+
+function fillEntSel(id, withAll = false) {
+  const s = document.getElementById(id);
+  s.innerHTML = withAll ? '<option value="">All Entities</option>' : '<option value="">Select Entity</option>';
+  allEntities.forEach(e => {
+    const o = new Option(e.name, e.id);
+    s.add(o);
+  });
+}
+
+async function fillLocSel(entId, selId, withAll = false) {
+  const s = document.getElementById(selId);
+  s.innerHTML = withAll ? '<option value="">All Locations</option>' : '<option value="">Select Location</option>';
+  if (!entId) return [];
+  const locs = await api('GET', `/api/locations?entity_id=${entId}`);
+  locs.forEach(l => s.add(new Option(l.campus_name ? `${l.campus_name} (${l.city})` : l.city, l.id)));
+  return locs;
+}
+
+function statusBadge(s) {
+  const cls = { active: 'bs-active', inactive: 'bs-inactive', pending: 'bs-pending' }[s] || 'bg-secondary text-white';
+  return `<span class="badge ${cls}">${s}</span>`;
+}
+
+// ── DASHBOARD ─────────────────────────────────────────────────
+async function initDash() {
+  try {
+    const d = await api('GET', '/api/dashboard/stats');
+    document.getElementById('st-entities').textContent = d.entities;
+    document.getElementById('st-locations').textContent = d.locations;
+    document.getElementById('st-programs').textContent = d.programs;
+    document.getElementById('st-media').textContent = d.media;
+    const tb = document.getElementById('dash-recent');
+    tb.innerHTML = d.recent.length
+      ? d.recent.map(e => `<tr><td>${e.name}</td><td><span class="badge bg-secondary">${e.type.replace(/_/g,' ')}</span></td><td>${statusBadge(e.status)}</td><td>${new Date(e.created_at).toLocaleDateString()}</td></tr>`).join('')
+      : '<tr><td colspan="4" class="text-center text-muted py-3">No entities yet</td></tr>';
+  } catch (e) { toast(e.message, 'danger'); }
+}
+
+// ── ENTITIES ──────────────────────────────────────────────────
+let entData = [];
+async function initEntities() {
+  await loadAllEntities();
+  entData = allEntities;
+  renderEntities();
+}
+function renderEntities() {
+  const q = document.getElementById('ent-search').value.toLowerCase();
+  const list = entData.filter(e => e.name.toLowerCase().includes(q) || e.type.includes(q));
+  const tb = document.getElementById('ent-tbody');
+  tb.innerHTML = list.length ? list.map(e => `<tr>
+    <td>${e.logo_url ? `<img src="${e.logo_url}" height="22" class="me-2 rounded" onerror="this.remove()">` : ''}${e.name}</td>
+    <td><span class="badge bg-secondary">${e.type.replace(/_/g,' ')}</span></td>
+    <td>${e.website_url ? `<a href="${e.website_url}" target="_blank" class="small text-truncate d-inline-block" style="max-width:160px">${e.website_url}</a>` : '—'}</td>
+    <td>${statusBadge(e.status)}</td>
+    <td>
+      <button class="btn btn-outline-primary act-btn me-1" onclick="editEntity(${e.id})"><i class="bi bi-pencil"></i></button>
+      <button class="btn btn-outline-danger act-btn" onclick="confirmDel('entity',${e.id})"><i class="bi bi-trash"></i></button>
+    </td></tr>`).join('')
+    : '<tr><td colspan="5" class="text-center text-muted py-3">No entities found</td></tr>';
+}
+function openEntityModal(e = null) {
+  document.getElementById('ent-id').value = e?.id ?? '';
+  document.getElementById('entModalTitle').textContent = e ? 'Edit Entity' : 'Add Entity';
+  document.getElementById('ent-name').value = e?.name ?? '';
+  document.getElementById('ent-type').value = e?.type ?? 'university';
+  document.getElementById('ent-website').value = e?.website_url ?? '';
+  document.getElementById('ent-logo').value = e?.logo_url ?? '';
+  document.getElementById('ent-status').value = e?.status ?? 'pending';
+  document.getElementById('ent-desc').value = e?.description_en ?? '';
+  new bootstrap.Modal('#entModal').show();
+}
+async function editEntity(id) {
+  try { openEntityModal(await api('GET', `/api/entities/${id}`)); }
+  catch (e) { toast(e.message, 'danger'); }
+}
+async function saveEntity() {
+  const id = document.getElementById('ent-id').value;
+  const d = {
+    name: document.getElementById('ent-name').value.trim(),
+    type: document.getElementById('ent-type').value,
+    website_url: document.getElementById('ent-website').value.trim(),
+    logo_url: document.getElementById('ent-logo').value.trim(),
+    status: document.getElementById('ent-status').value,
+    description_en: document.getElementById('ent-desc').value.trim()
+  };
+  if (!d.name) { toast('Name is required', 'danger'); return; }
+  try {
+    await api(id ? 'PUT' : 'POST', id ? `/api/entities/${id}` : '/api/entities', d);
+    toast(id ? 'Entity updated' : 'Entity created');
+    bootstrap.Modal.getInstance('#entModal').hide();
+    initEntities();
+  } catch (e) { toast(e.message, 'danger'); }
+}
+
+// ── LOCATIONS ─────────────────────────────────────────────────
+async function initLocations() {
+  await loadAllEntities();
+  fillEntSel('loc-filter-ent', true);
+  loadLocations();
+}
+async function loadLocations() {
+  const eid = document.getElementById('loc-filter-ent').value;
+  try {
+    const rows = await api('GET', '/api/locations' + (eid ? `?entity_id=${eid}` : ''));
+    document.getElementById('loc-tbody').innerHTML = rows.length ? rows.map(l => `<tr>
+      <td>${l.entity_name}</td><td>${l.campus_name || '—'}</td><td>${l.city}</td>
+      <td>${l.country}</td><td>${l.continent}</td><td>${statusBadge(l.status)}</td>
+      <td>
+        <button class="btn btn-outline-primary act-btn me-1" onclick="editLocation(${l.id})"><i class="bi bi-pencil"></i></button>
+        <button class="btn btn-outline-danger act-btn" onclick="confirmDel('location',${l.id})"><i class="bi bi-trash"></i></button>
+      </td></tr>`).join('')
+      : '<tr><td colspan="7" class="text-center text-muted py-3">No locations found</td></tr>';
+  } catch (e) { toast(e.message, 'danger'); }
+}
+async function openLocationModal(l = null) {
+  fillEntSel('loc-ent-id');
+  document.getElementById('loc-id').value = l?.id ?? '';
+  document.getElementById('locModalTitle').textContent = l ? 'Edit Location' : 'Add Location';
+  const flds = ['campus','city','country','address','lat','lng','apt-name','apt-code','flight'];
+  flds.forEach(f => document.getElementById('loc-' + f).value = '');
+  if (l) {
+    document.getElementById('loc-ent-id').value = l.entity_id;
+    document.getElementById('loc-campus').value = l.campus_name ?? '';
+    document.getElementById('loc-city').value = l.city;
+    document.getElementById('loc-country').value = l.country;
+    document.getElementById('loc-continent').value = l.continent;
+    document.getElementById('loc-address').value = l.address ?? '';
+    document.getElementById('loc-lat').value = l.latitude ?? '';
+    document.getElementById('loc-lng').value = l.longitude ?? '';
+    document.getElementById('loc-apt-name').value = l.closest_airport_name ?? '';
+    document.getElementById('loc-apt-code').value = l.closest_airport_code ?? '';
+    document.getElementById('loc-flight').value = l.flight_duration_from_ist_min ?? '';
+    document.getElementById('loc-status').value = l.status;
+  } else {
+    document.getElementById('loc-status').value = 'active';
+  }
+  new bootstrap.Modal('#locModal').show();
+}
+async function editLocation(id) {
+  try { openLocationModal(await api('GET', `/api/locations/${id}`)); }
+  catch (e) { toast(e.message, 'danger'); }
+}
+async function saveLocation() {
+  const id = document.getElementById('loc-id').value;
+  const d = {
+    entity_id: document.getElementById('loc-ent-id').value,
+    campus_name: document.getElementById('loc-campus').value.trim(),
+    city: document.getElementById('loc-city').value.trim(),
+    country: document.getElementById('loc-country').value.trim(),
+    continent: document.getElementById('loc-continent').value,
+    address: document.getElementById('loc-address').value.trim(),
+    latitude: document.getElementById('loc-lat').value || null,
+    longitude: document.getElementById('loc-lng').value || null,
+    closest_airport_name: document.getElementById('loc-apt-name').value.trim(),
+    closest_airport_code: document.getElementById('loc-apt-code').value.trim().toUpperCase(),
+    flight_duration_from_ist_min: document.getElementById('loc-flight').value || null,
+    status: document.getElementById('loc-status').value
+  };
+  if (!d.entity_id || !d.city || !d.country) { toast('Entity, city and country are required', 'danger'); return; }
+  try {
+    await api(id ? 'PUT' : 'POST', id ? `/api/locations/${id}` : '/api/locations', d);
+    toast(id ? 'Location updated' : 'Location created');
+    bootstrap.Modal.getInstance('#locModal').hide();
+    loadLocations();
+  } catch (e) { toast(e.message, 'danger'); }
+}
+
+// ── PROGRAMS ──────────────────────────────────────────────────
+async function initPrograms() {
+  await Promise.all([loadAllEntities(), loadProgTypes()]);
+  fillEntSel('prog-filter-ent', true);
+  loadPrograms();
+}
+async function onProgEntChange() {
+  await fillLocSel(document.getElementById('prog-filter-ent').value, 'prog-filter-loc', true);
+  loadPrograms();
+}
+async function loadPrograms() {
+  const eid = document.getElementById('prog-filter-ent').value;
+  const lid = document.getElementById('prog-filter-loc').value;
+  const p = new URLSearchParams();
+  if (eid) p.set('entity_id', eid);
+  if (lid) p.set('location_id', lid);
+  try {
+    const rows = await api('GET', '/api/programs?' + p);
+    document.getElementById('prog-tbody').innerHTML = rows.length ? rows.map(r => `<tr>
+      <td>${r.entity_name}</td><td>${r.city}, ${r.country}</td><td>${r.name}</td>
+      <td><small>${r.program_type_name}</small></td><td>${r.language_of_instruction}</td>
+      <td>${r.duration || '—'}</td>
+      <td>${r.tuition_fee ? r.tuition_fee + ' ' + r.tuition_currency : '—'}</td>
+      <td>${statusBadge(r.status)}</td>
+      <td>
+        <button class="btn btn-outline-primary act-btn me-1" onclick="editProgram(${r.id})"><i class="bi bi-pencil"></i></button>
+        <button class="btn btn-outline-danger act-btn" onclick="confirmDel('program',${r.id})"><i class="bi bi-trash"></i></button>
+      </td></tr>`).join('')
+      : '<tr><td colspan="9" class="text-center text-muted py-3">No programs found</td></tr>';
+  } catch (e) { toast(e.message, 'danger'); }
+}
+async function loadProgModalLocs() {
+  await fillLocSel(document.getElementById('prog-ent-id').value, 'prog-loc-id');
+}
+async function openProgramModal(p = null) {
+  await Promise.all([loadAllEntities(), loadProgTypes()]);
+  fillEntSel('prog-ent-id');
+  const ts = document.getElementById('prog-type-id');
+  ts.innerHTML = '';
+  progTypes.forEach(t => ts.add(new Option(t.name, t.id)));
+  document.getElementById('prog-id').value = p?.id ?? '';
+  document.getElementById('progModalTitle').textContent = p ? 'Edit Program' : 'Add Program';
+  if (p) {
+    const loc = await api('GET', `/api/locations/${p.entity_location_id}`);
+    document.getElementById('prog-ent-id').value = loc.entity_id;
+    await loadProgModalLocs();
+    document.getElementById('prog-loc-id').value = p.entity_location_id;
+    document.getElementById('prog-name').value = p.name;
+    document.getElementById('prog-type-id').value = p.program_type_id;
+    document.getElementById('prog-lang').value = p.language_of_instruction ?? 'English';
+    document.getElementById('prog-dur').value = p.duration ?? '';
+    document.getElementById('prog-fee').value = p.tuition_fee ?? '';
+    document.getElementById('prog-cur').value = p.tuition_currency ?? 'EUR';
+    document.getElementById('prog-intake').value = p.intake_months ?? '';
+    document.getElementById('prog-eng-type').value = p.english_req_type ?? 'None';
+    document.getElementById('prog-eng-score').value = p.english_req_score ?? '';
+    document.getElementById('prog-gpa').value = p.gpa_requirement ?? '';
+    document.getElementById('prog-scholar').checked = !!p.scholarship_available;
+    document.getElementById('prog-status').value = p.status;
+    document.getElementById('prog-desc').value = p.description_en ?? '';
+  } else {
+    ['prog-name','prog-dur','prog-fee','prog-intake','prog-eng-score','prog-gpa','prog-desc'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('prog-lang').value = 'English';
+    document.getElementById('prog-scholar').checked = false;
+    document.getElementById('prog-status').value = 'active';
+  }
+  new bootstrap.Modal('#progModal').show();
+}
+async function editProgram(id) {
+  try { openProgramModal(await api('GET', `/api/programs/${id}`)); }
+  catch (e) { toast(e.message, 'danger'); }
+}
+async function saveProgram() {
+  const id = document.getElementById('prog-id').value;
+  const d = {
+    entity_location_id: document.getElementById('prog-loc-id').value,
+    program_type_id: document.getElementById('prog-type-id').value,
+    name: document.getElementById('prog-name').value.trim(),
+    language_of_instruction: document.getElementById('prog-lang').value,
+    duration: document.getElementById('prog-dur').value.trim(),
+    tuition_fee: document.getElementById('prog-fee').value || null,
+    tuition_currency: document.getElementById('prog-cur').value,
+    intake_months: document.getElementById('prog-intake').value.trim(),
+    english_req_type: document.getElementById('prog-eng-type').value,
+    english_req_score: document.getElementById('prog-eng-score').value.trim(),
+    gpa_requirement: document.getElementById('prog-gpa').value.trim(),
+    scholarship_available: document.getElementById('prog-scholar').checked,
+    description_en: document.getElementById('prog-desc').value.trim(),
+    status: document.getElementById('prog-status').value
+  };
+  if (!d.entity_location_id || !d.name) { toast('Location and program name are required', 'danger'); return; }
+  try {
+    await api(id ? 'PUT' : 'POST', id ? `/api/programs/${id}` : '/api/programs', d);
+    toast(id ? 'Program updated' : 'Program created');
+    bootstrap.Modal.getInstance('#progModal').hide();
+    loadPrograms();
+  } catch (e) { toast(e.message, 'danger'); }
+}
+
+// ── MEDIA ─────────────────────────────────────────────────────
+async function initMedia() {
+  await loadAllEntities();
+  fillEntSel('med-filter-ent');
+  fillEntSel('med-ent-id');
+  document.getElementById('med-grid').innerHTML = '';
+  document.getElementById('med-empty').style.display = 'block';
+}
+async function onMedEntChange() {
+  await fillLocSel(document.getElementById('med-filter-ent').value, 'med-filter-loc');
+  document.getElementById('med-grid').innerHTML = '';
+  document.getElementById('med-empty').style.display = 'block';
+}
+async function loadMedia() {
+  const lid = document.getElementById('med-filter-loc').value;
+  const grid = document.getElementById('med-grid');
+  if (!lid) { grid.innerHTML = ''; document.getElementById('med-empty').style.display = 'block'; return; }
+  document.getElementById('med-empty').style.display = 'none';
+  try {
+    const items = await api('GET', `/api/media?location_id=${lid}`);
+    grid.innerHTML = items.length ? items.map(m => `
+      <div class="media-card">
+        ${m.type === 'photo'
+          ? `<img class="thumb" src="${m.url}" alt="${m.caption||''}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22140%22><rect fill=%22%23dee2e6%22 width=%22200%22 height=%22140%22/><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236c757d%22>No Image</text></svg>'">`
+          : `<div class="media-placeholder bg-secondary bg-opacity-10"><i class="bi bi-${m.type==='video'?'play-circle':'camera-video'} fs-1 text-secondary"></i></div>`}
+        <div class="info">
+          <div class="text-truncate fw-medium">${m.caption || '(no caption)'}</div>
+          <div class="d-flex justify-content-between align-items-center mt-1">
+            <span class="badge bg-secondary">${m.type}</span>
+            <div>
+              <button class="btn btn-outline-primary act-btn me-1" onclick="editMedia(${m.id})"><i class="bi bi-pencil"></i></button>
+              <button class="btn btn-outline-danger act-btn" onclick="confirmDel('media',${m.id})"><i class="bi bi-trash"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>`).join('')
+      : '<div class="col-12 text-center text-muted py-4">No media for this location.</div>';
+  } catch (e) { toast(e.message, 'danger'); }
+}
+async function loadMedModalLocs() {
+  await fillLocSel(document.getElementById('med-ent-id').value, 'med-loc-id');
+}
+async function openMediaModal(item = null) {
+  await loadAllEntities();
+  fillEntSel('med-ent-id');
+  document.getElementById('med-id').value = item?.id ?? '';
+  document.getElementById('medModalTitle').textContent = item ? 'Edit Media' : 'Add Media';
+  if (item) {
+    const loc = await api('GET', `/api/locations/${item.entity_location_id}`);
+    document.getElementById('med-ent-id').value = loc.entity_id;
+    await loadMedModalLocs();
+    document.getElementById('med-loc-id').value = item.entity_location_id;
+    document.getElementById('med-type').value = item.type;
+    document.getElementById('med-url').value = item.url;
+    document.getElementById('med-caption').value = item.caption ?? '';
+    document.getElementById('med-sort').value = item.sort_order ?? 0;
+  } else {
+    document.getElementById('med-ent-id').value = document.getElementById('med-filter-ent').value;
+    await loadMedModalLocs();
+    document.getElementById('med-loc-id').value = document.getElementById('med-filter-loc').value;
+    document.getElementById('med-url').value = '';
+    document.getElementById('med-caption').value = '';
+    document.getElementById('med-sort').value = 0;
+  }
+  new bootstrap.Modal('#medModal').show();
+}
+async function editMedia(id) {
+  try { openMediaModal(await api('GET', `/api/media/${id}`)); }
+  catch (e) { toast(e.message, 'danger'); }
+}
+async function saveMedia() {
+  const id = document.getElementById('med-id').value;
+  const d = {
+    entity_location_id: document.getElementById('med-loc-id').value,
+    type: document.getElementById('med-type').value,
+    url: document.getElementById('med-url').value.trim(),
+    caption: document.getElementById('med-caption').value.trim(),
+    sort_order: parseInt(document.getElementById('med-sort').value) || 0
+  };
+  if (!d.entity_location_id || !d.url) { toast('Location and URL are required', 'danger'); return; }
+  try {
+    await api(id ? 'PUT' : 'POST', id ? `/api/media/${id}` : '/api/media', d);
+    toast(id ? 'Media updated' : 'Media added');
+    bootstrap.Modal.getInstance('#medModal').hide();
+    loadMedia();
+  } catch (e) { toast(e.message, 'danger'); }
+}
+
+// ── ORBIT ─────────────────────────────────────────────────────
+async function initOrbit() {
+  await loadAllEntities();
+  fillEntSel('orb-filter-ent');
+  document.getElementById('orb-form').style.display = 'none';
+  document.getElementById('orb-empty').style.display = 'block';
+}
+async function onOrbEntChange() {
+  await fillLocSel(document.getElementById('orb-filter-ent').value, 'orb-filter-loc');
+  document.getElementById('orb-form').style.display = 'none';
+  document.getElementById('orb-empty').style.display = 'block';
+}
+async function loadOrbit() {
+  const lid = document.getElementById('orb-filter-loc').value;
+  if (!lid) { document.getElementById('orb-form').style.display = 'none'; document.getElementById('orb-empty').style.display = 'block'; return; }
+  document.getElementById('orb-empty').style.display = 'none';
+  document.getElementById('orb-form').style.display = 'block';
+  try {
+    const c = await api('GET', `/api/orbit/location/${lid}`);
+    document.getElementById('orb-clat').value = c?.orbit_center_lat ?? '';
+    document.getElementById('orb-clng').value = c?.orbit_center_lng ?? '';
+    document.getElementById('orb-alt').value = c?.orbit_altitude ?? 400;
+    document.getElementById('orb-pitch').value = c?.orbit_pitch ?? -22;
+    document.getElementById('orb-head').value = c?.orbit_initial_heading ?? 0;
+    document.getElementById('orb-range').value = c?.orbit_range ?? 400;
+    document.getElementById('orb-rtype').value = c?.orbit_rotation_type ?? '360';
+    document.getElementById('orb-rspeed').value = c?.orbit_rotation_speed ?? 0.12;
+    document.getElementById('orb-slat').value = c?.scan_target_lat ?? '';
+    document.getElementById('orb-slng').value = c?.scan_target_lng ?? '';
+    document.getElementById('orb-voff').value = c?.camera_v_offset ?? 0;
+    document.getElementById('orb-hoff').value = c?.camera_h_offset ?? 0;
+    document.getElementById('orb-sfx').checked = !!c?.scan_effect_enabled;
+  } catch (e) { toast(e.message, 'danger'); }
+}
+async function saveOrbit() {
+  const lid = document.getElementById('orb-filter-loc').value;
+  const d = {
+    orbit_center_lat: document.getElementById('orb-clat').value || null,
+    orbit_center_lng: document.getElementById('orb-clng').value || null,
+    orbit_altitude: +document.getElementById('orb-alt').value || 400,
+    orbit_pitch: +document.getElementById('orb-pitch').value || -22,
+    orbit_initial_heading: +document.getElementById('orb-head').value || 0,
+    orbit_range: +document.getElementById('orb-range').value || 400,
+    orbit_rotation_type: document.getElementById('orb-rtype').value,
+    orbit_rotation_speed: +document.getElementById('orb-rspeed').value || 0.12,
+    scan_target_lat: document.getElementById('orb-slat').value || null,
+    scan_target_lng: document.getElementById('orb-slng').value || null,
+    camera_v_offset: +document.getElementById('orb-voff').value || 0,
+    camera_h_offset: +document.getElementById('orb-hoff').value || 0,
+    scan_effect_enabled: document.getElementById('orb-sfx').checked
+  };
+  try {
+    await api('POST', `/api/orbit/location/${lid}`, d);
+    toast('Orbit config saved');
+  } catch (e) { toast(e.message, 'danger'); }
+}
+
+// ── DELETE ────────────────────────────────────────────────────
+function confirmDel(type, id) {
+  document.getElementById('del-ok').onclick = () => doDelete(type, id);
+  new bootstrap.Modal('#delModal').show();
+}
+async function doDelete(type, id) {
+  const urls = { entity: `/api/entities/${id}`, location: `/api/locations/${id}`, program: `/api/programs/${id}`, media: `/api/media/${id}` };
+  const reloads = { entity: initEntities, location: loadLocations, program: loadPrograms, media: loadMedia };
+  try {
+    await api('DELETE', urls[type]);
+    toast(type.charAt(0).toUpperCase() + type.slice(1) + ' deleted');
+    bootstrap.Modal.getInstance('#delModal').hide();
+    reloads[type]();
+  } catch (e) { toast(e.message, 'danger'); }
+}
+
+// ── BOOT ──────────────────────────────────────────────────────
+initDash();
+</script>
+</html>
