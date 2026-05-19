@@ -81,9 +81,17 @@ router.post('/full', async (req, res) => {
     }
 
     const [entRes] = await conn.query(
-      'INSERT INTO entities (name, type, website_url, logo_url, description_en, status) VALUES (?, ?, ?, ?, ?, ?)',
+      `INSERT INTO entities (name, type, website_url, logo_url, description_en,
+        qs_rank, qs_rank_year, the_rank, the_rank_year,
+        leiden_rank, leiden_rank_year, shanghai_rank, shanghai_rank_year, status)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [entity.name, entity.type, entity.website_url || null, entity.logo_url || null,
-       entity.description_en || null, entity.status || 'pending']
+       entity.description_en || null,
+       entity.qs_rank || null, entity.qs_rank_year || null,
+       entity.the_rank || null, entity.the_rank_year || null,
+       entity.leiden_rank || null, entity.leiden_rank_year || null,
+       entity.shanghai_rank || null, entity.shanghai_rank_year || null,
+       entity.status || 'pending']
     );
     const entityId = entRes.insertId;
 
@@ -158,9 +166,17 @@ router.put('/full/:id', async (req, res) => {
     const entityId = req.params.id;
 
     await conn.query(
-      'UPDATE entities SET name=?, type=?, website_url=?, logo_url=?, description_en=?, status=? WHERE id=?',
+      `UPDATE entities SET name=?, type=?, website_url=?, logo_url=?, description_en=?,
+        qs_rank=?, qs_rank_year=?, the_rank=?, the_rank_year=?,
+        leiden_rank=?, leiden_rank_year=?, shanghai_rank=?, shanghai_rank_year=?, status=?
+       WHERE id=?`,
       [entity.name, entity.type, entity.website_url || null, entity.logo_url || null,
-       entity.description_en || null, entity.status, entityId]
+       entity.description_en || null,
+       entity.qs_rank || null, entity.qs_rank_year || null,
+       entity.the_rank || null, entity.the_rank_year || null,
+       entity.leiden_rank || null, entity.leiden_rank_year || null,
+       entity.shanghai_rank || null, entity.shanghai_rank_year || null,
+       entity.status, entityId]
     );
 
     const [existingLocs] = await conn.query('SELECT id FROM entity_locations WHERE entity_id = ? LIMIT 1', [entityId]);

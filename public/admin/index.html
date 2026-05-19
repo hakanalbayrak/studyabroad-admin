@@ -249,6 +249,54 @@
           </div>
         </div>
 
+        <!-- Section 2b: Rankings -->
+        <div class="form-section">
+          <div class="section-label d-flex align-items-center">
+            <span><i class="bi bi-trophy"></i>Rankings</span>
+            <span class="ms-1 text-muted fw-normal" style="font-size:.75rem;text-transform:none;letter-spacing:0">— world rank + year for each index</span>
+            <button type="button" class="btn btn-outline-secondary btn-sm ms-auto" onclick="lookupRankings()" id="rankBtn">
+              <i class="bi bi-stars me-1"></i>Auto-lookup
+            </button>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">QS Rank</label>
+              <input type="number" class="form-control" id="fQsRank" placeholder="e.g. 84">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">QS Year</label>
+              <input type="number" class="form-control" id="fQsYear" placeholder="2025" min="2000" max="2100">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">THE Rank</label>
+              <input type="number" class="form-control" id="fTheRank" placeholder="e.g. 120">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">THE Year</label>
+              <input type="number" class="form-control" id="fTheYear" placeholder="2025" min="2000" max="2100">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">Leiden Rank</label>
+              <input type="number" class="form-control" id="fLeidenRank" placeholder="e.g. 55">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">Leiden Year</label>
+              <input type="number" class="form-control" id="fLeidenYear" placeholder="2024" min="2000" max="2100">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">Shanghai Rank</label>
+              <input type="number" class="form-control" id="fShanghaiRank" placeholder="e.g. 201">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">Shanghai Year</label>
+              <input type="number" class="form-control" id="fShanghaiYear" placeholder="2024" min="2000" max="2100">
+            </div>
+            <div class="col-12">
+              <div id="rankingResult" class="small text-muted"></div>
+            </div>
+          </div>
+        </div>
+
         <!-- Section 3: Programs -->
         <div class="form-section">
           <div class="d-flex align-items-center justify-content-between mb-3">
@@ -708,7 +756,7 @@ function previewOrbit() {
 }
 
 function resetForm() {
-  const ids = ['fName','fType','fWebsite','fLogo','fDesc','fCity','fCountry','fCampus','fAddress','fLat','fLng','fAirportName','fAirportCode','fFlightMin','fOrbitLat','fOrbitLng','fScanLat','fScanLng'];
+  const ids = ['fName','fType','fWebsite','fLogo','fDesc','fCity','fCountry','fCampus','fAddress','fLat','fLng','fAirportName','fAirportCode','fFlightMin','fOrbitLat','fOrbitLng','fScanLat','fScanLng','fQsRank','fQsYear','fTheRank','fTheYear','fLeidenRank','fLeidenYear','fShanghaiRank','fShanghaiYear'];
   ids.forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
   document.getElementById('fStatus').value = 'pending';
   document.getElementById('fContinent').value = '';
@@ -729,7 +777,13 @@ function fillForm(d) {
   const { entity: e, location: l, orbit: o, programs: ps } = d;
   const set = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.value = v; };
   const chk = (id, v) => { const el = document.getElementById(id); if (el) el.checked = !!v; };
-  if (e) { set('fName', e.name); set('fType', e.type); set('fWebsite', e.website_url||''); set('fLogo', e.logo_url||''); set('fDesc', e.description_en||''); set('fStatus', e.status); }
+  if (e) {
+    set('fName', e.name); set('fType', e.type); set('fWebsite', e.website_url||''); set('fLogo', e.logo_url||''); set('fDesc', e.description_en||''); set('fStatus', e.status);
+    set('fQsRank', e.qs_rank||''); set('fQsYear', e.qs_rank_year||'');
+    set('fTheRank', e.the_rank||''); set('fTheYear', e.the_rank_year||'');
+    set('fLeidenRank', e.leiden_rank||''); set('fLeidenYear', e.leiden_rank_year||'');
+    set('fShanghaiRank', e.shanghai_rank||''); set('fShanghaiYear', e.shanghai_rank_year||'');
+  }
   if (l) { set('fCity', l.city); set('fCountry', l.country); set('fContinent', l.continent); set('fCampus', l.campus_name||''); set('fAddress', l.address||''); set('fLat', l.latitude||''); set('fLng', l.longitude||''); set('fAirportName', l.closest_airport_name||''); set('fAirportCode', l.closest_airport_code||''); set('fFlightMin', l.flight_duration_from_ist_min||''); set('fLocStatus', l.status); }
   if (o) { set('fOrbitLat', o.orbit_center_lat??''); set('fOrbitLng', o.orbit_center_lng??''); set('fOrbitAlt', o.orbit_altitude??400); set('fOrbitPitch', o.orbit_pitch??-45); set('fOrbitHeading', o.orbit_initial_heading??0); set('fOrbitRange', o.orbit_range??400); set('fOrbitRotType', o.orbit_rotation_type||'360'); set('fOrbitSpeed', o.orbit_rotation_speed??0.12); chk('fOrbitScanEnable', o.scan_effect_enabled); set('fScanLat', o.scan_target_lat??''); set('fScanLng', o.scan_target_lng??''); set('fCamV', o.camera_v_offset??0); set('fCamH', o.camera_h_offset??0); }
   formPrograms = (ps || []).map(p => ({ ...p })); renderPrograms();
@@ -774,6 +828,89 @@ function convertCoords() {
   document.getElementById('fDMS').value = '';
   syncOrbitCenter();
   toast(`Coordinates set: ${lat.toFixed(5)}, ${lng.toFixed(5)}`, 'success');
+}
+
+async function lookupRankings() {
+  const name = document.getElementById('fName').value.trim();
+  if (!name) { toast('Enter the institution name first.', 'error'); return; }
+  const btn = document.getElementById('rankBtn');
+  const info = document.getElementById('rankingResult');
+  btn.disabled = true; btn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Looking up...';
+  info.innerHTML = '';
+  const found = [], notFound = [];
+  const yr = new Date().getFullYear();
+
+  // ── Wikidata: QS + THE + Shanghai ────────────────────────────────────────
+  try {
+    const sparql = `
+      SELECT DISTINCT ?item ?itemLabel ?qs ?the ?arwu WHERE {
+        ?item wdt:P31/wdt:P279* wd:Q3918 .
+        ?item rdfs:label ?lbl FILTER(LANG(?lbl)="en" && CONTAINS(LCASE(?lbl),LCASE("${name.replace(/"/g,'')}")))
+        OPTIONAL { ?item wdt:P5584 ?qs }
+        OPTIONAL { ?item wdt:P5586 ?the }
+        OPTIONAL { ?item wdt:P5242 ?arwu }
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+      } LIMIT 3`;
+    const wdRes = await (await fetch(
+      'https://query.wikidata.org/sparql?query=' + encodeURIComponent(sparql),
+      { headers: { Accept: 'application/sparql-results+json' } }
+    )).json();
+    const row = wdRes.results?.bindings?.[0];
+    if (row) {
+      // Wikidata stores profile IDs, not rank numbers directly — open lookup pages
+      const qsId = row.qs?.value;
+      const theId = row.the?.value;
+      const arwuId = row.arwu?.value;
+      const links = [];
+      if (qsId) links.push(`<a href="https://www.topuniversities.com/university-rankings?search=${encodeURIComponent(name)}" target="_blank" class="me-3"><i class="bi bi-box-arrow-up-right me-1"></i>QS Profile</a>`);
+      if (theId) links.push(`<a href="https://www.timeshighereducation.com/world-university-rankings/latest/world-ranking#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/stats/search_term/${encodeURIComponent(name)}" target="_blank" class="me-3"><i class="bi bi-box-arrow-up-right me-1"></i>THE Profile</a>`);
+      if (arwuId) links.push(`<a href="https://www.shanghairanking.com/institution/${encodeURIComponent(arwuId)}" target="_blank"><i class="bi bi-box-arrow-up-right me-1"></i>Shanghai Profile</a>`);
+      if (links.length) found.push('Wikidata found this university — use links to check current ranks: ' + links.join(''));
+      else notFound.push('Wikidata: found entry but no ranking IDs');
+    } else { notFound.push('Wikidata: no match for this name'); }
+  } catch(e) { notFound.push('Wikidata: ' + e.message); }
+
+  // ── Leiden open data (server-side lookup) ─────────────────────────────────
+  try {
+    const lRes = await api('GET', '/api/lookup/leiden?name=' + encodeURIComponent(name));
+    const lData = await lRes.json();
+    if (lData.length) {
+      const r = lData[0];
+      const rank = r.P_top10 || r.rank || r.Rank || r.RANK || r['University rank'] || '';
+      const year = r.year || r.Year || r.YEAR || '2024';
+      if (rank) {
+        document.getElementById('fLeidenRank').value = parseInt(rank) || rank;
+        document.getElementById('fLeidenYear').value = year;
+        found.push(`Leiden: rank <strong>${rank}</strong> (${year}) — "${r.University || r.university || r.name || lData[0][Object.keys(lData[0])[0]]}"`);
+      } else { notFound.push('Leiden: found entry but rank field unclear — check CSV format'); }
+    } else { notFound.push('Leiden: no match'); }
+  } catch(e) { notFound.push('Leiden: ' + e.message); }
+
+  // ── Shanghai ARWU via Opendatasoft (historical 2005–2018) ─────────────────
+  try {
+    const arRes = await (await fetch(
+      `https://public.opendatasoft.com/api/records/1.0/search/?dataset=shanghai-world-university-ranking&q=${encodeURIComponent(name)}&rows=3`
+    )).json();
+    const rec = arRes.records?.[0]?.fields;
+    if (rec) {
+      const rank = rec.world_rank || rec.rank;
+      const year = rec.year || '2018';
+      if (rank) {
+        document.getElementById('fShanghaiRank').value = parseInt(rank) || rank;
+        document.getElementById('fShanghaiYear').value = year;
+        found.push(`Shanghai ARWU: rank <strong>${rank}</strong> (${year} — historical data)`);
+      }
+    } else { notFound.push('Shanghai ARWU: no match in historical data (2005–2018)'); }
+  } catch(e) { notFound.push('Shanghai ARWU: ' + e.message); }
+
+  const lines = [];
+  if (found.length) lines.push('<span class="text-success"><i class="bi bi-check-circle me-1"></i>' + found.join('</span><br><span class="text-success"><i class="bi bi-check-circle me-1"></i>') + '</span>');
+  if (notFound.length) lines.push('<span class="text-muted">' + notFound.join(' · ') + '</span>');
+  if (found.length + notFound.length === 0) lines.push('<span class="text-muted">No ranking data found.</span>');
+  lines.push('<span class="text-muted fst-italic">QS and THE rank numbers must be entered manually from their websites.</span>');
+  info.innerHTML = lines.join('<br>');
+
+  btn.disabled = false; btn.innerHTML = '<i class="bi bi-stars me-1"></i>Auto-lookup';
 }
 
 function openOrbitPreview(name, lat, lng) {
@@ -1012,7 +1149,11 @@ async function saveEntity() {
   }
 
   const payload = {
-    entity: { name: v('fName'), type: v('fType'), website_url: v('fWebsite')||null, logo_url: v('fLogo')||null, description_en: v('fDesc')||null, status: v('fStatus') },
+    entity: { name: v('fName'), type: v('fType'), website_url: v('fWebsite')||null, logo_url: v('fLogo')||null, description_en: v('fDesc')||null, status: v('fStatus'),
+      qs_rank: ni('fQsRank'), qs_rank_year: ni('fQsYear'),
+      the_rank: ni('fTheRank'), the_rank_year: ni('fTheYear'),
+      leiden_rank: ni('fLeidenRank'), leiden_rank_year: ni('fLeidenYear'),
+      shanghai_rank: ni('fShanghaiRank'), shanghai_rank_year: ni('fShanghaiYear') },
     location: { city: v('fCity'), country: v('fCountry'), continent: v('fContinent'), campus_name: v('fCampus')||null, address: v('fAddress')||null, latitude: n('fLat'), longitude: n('fLng'), closest_airport_name: v('fAirportName')||null, closest_airport_code: document.getElementById('fAirportCode')?.value?.trim()?.toUpperCase()||null, flight_duration_from_ist_min: ni('fFlightMin'), status: v('fLocStatus') },
     orbit: { orbit_center_lat: n('fOrbitLat'), orbit_center_lng: n('fOrbitLng'), orbit_altitude: n('fOrbitAlt')??400, orbit_pitch: n('fOrbitPitch')??-45, orbit_initial_heading: n('fOrbitHeading')??0, orbit_range: n('fOrbitRange')??400, orbit_rotation_type: v('fOrbitRotType'), orbit_rotation_speed: n('fOrbitSpeed')??0.12, scan_target_lat: n('fScanLat'), scan_target_lng: n('fScanLng'), scan_effect_enabled: c('fOrbitScanEnable'), camera_v_offset: n('fCamV')??0, camera_h_offset: n('fCamH')??0 },
     programs: formPrograms.map(p => ({ ...p, program_type_id: parseInt(p.program_type_id), tuition_fee: p.tuition_fee ? parseFloat(p.tuition_fee) : null, scholarship_available: !!p.scholarship_available }))

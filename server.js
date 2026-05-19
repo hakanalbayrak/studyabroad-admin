@@ -56,6 +56,44 @@ app.get('/api/db-check', async (req, res) => {
   }
 });
 
+// Leiden open ranking lookup (server-side — avoids CORS on their CSV)
+let leidenCache = null;
+let leidenCacheTime = 0;
+app.get('/api/lookup/leiden', auth, async (req, res) => {
+  const name = (req.query.name || '').trim().toLowerCase();
+  if (!name) return res.status(400).json({ error: 'name required' });
+  try {
+    // Cache the CSV for 24h to avoid hammering their server
+    if (!leidenCache || Date.now() - leidenCacheTime > 86400000) {
+      const https = require('https');
+      const csvUrl = 'https://open.leidenranking.com/api/v1/universities.csv';
+      const raw = await new Promise((resolve, reject) => {
+        https.get(csvUrl, r => {
+          let d = '';
+          r.on('data', c => d += c);
+          r.on('end', () => resolve(d));
+        }).on('error', reject);
+      });
+      // Parse CSV: first row is headers
+      const lines = raw.trim().split('\n');
+      const headers = lines[0].split(',').map(h => h.replace(/"/g, '').trim());
+      leidenCache = lines.slice(1).map(line => {
+        const vals = line.match(/(".*?"|[^,]+|(?<=,)(?=,)|^(?=,)|(?<=,)$)/g) || [];
+        const obj = {};
+        headers.forEach((h, i) => { obj[h] = (vals[i] || '').replace(/"/g, '').trim(); });
+        return obj;
+      });
+      leidenCacheTime = Date.now();
+    }
+    const matches = leidenCache.filter(r =>
+      (r.University || r.university || r.name || '').toLowerCase().includes(name)
+    ).slice(0, 5);
+    res.json(matches);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 // Protected API routes
 app.use('/api/entities', auth, require('./routes/entities'));
 app.use('/api/locations', auth, require('./routes/locations'));
