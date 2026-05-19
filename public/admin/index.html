@@ -621,8 +621,12 @@ function syncOrbitCenter() {
   const lng = document.getElementById('fLng').value;
   const oLat = document.getElementById('fOrbitLat');
   const oLng = document.getElementById('fOrbitLng');
+  const sLat = document.getElementById('fScanLat');
+  const sLng = document.getElementById('fScanLng');
   if (!oLat.value && lat) oLat.value = lat;
   if (!oLng.value && lng) oLng.value = lng;
+  if (!sLat.value && lat) sLat.value = lat;
+  if (!sLng.value && lng) sLng.value = lng;
 }
 
 function addProgram() {
