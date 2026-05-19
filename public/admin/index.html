@@ -231,7 +231,11 @@
               <input type="url" class="form-control" id="fLogo" placeholder="https://...logo.png">
             </div>
             <div class="col-md-8">
-              <label class="form-label fw-semibold small">Description</label>
+              <label class="form-label fw-semibold small">Description
+                <button type="button" class="btn btn-link btn-sm p-0 ms-2 text-primary" style="font-size:.75rem;vertical-align:baseline" onclick="fetchWikiDescription()">
+                  <i class="bi bi-wikipedia me-1"></i>Fetch from Wikipedia
+                </button>
+              </label>
               <textarea class="form-control" id="fDesc" rows="2" placeholder="Short description in English..."></textarea>
             </div>
             <div class="col-md-4">
@@ -245,7 +249,19 @@
           </div>
         </div>
 
-        <!-- Section 2: Location -->
+        <!-- Section 3: Programs -->
+        <div class="form-section">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="section-label mb-0"><i class="bi bi-mortarboard"></i>Programs</div>
+            <button type="button" class="btn btn-outline-primary btn-sm" onclick="addProgram()">
+              <i class="bi bi-plus-lg me-1"></i>Add Program
+            </button>
+          </div>
+          <p class="text-muted small mb-2" id="noProgMsg">No programs yet — click "Add Program" to add one.</p>
+          <div id="programsList"></div>
+        </div>
+
+        <!-- Section 4: Location -->
         <div class="form-section">
           <div class="section-label"><i class="bi bi-geo-alt"></i>Location</div>
           <div class="row g-3">
@@ -295,15 +311,20 @@
               <label class="form-label fw-semibold small">Longitude</label>
               <input type="number" class="form-control" id="fLng" step="0.0000001" placeholder="10.0153" oninput="syncOrbitCenter()">
             </div>
+            <div class="col-md-6 d-flex align-items-end">
+              <button type="button" class="btn btn-outline-secondary btn-sm w-100" onclick="findAirport()" id="airportBtn">
+                <i class="bi bi-airplane me-1"></i>Find Nearest Airport &amp; Flight Time from Istanbul
+              </button>
+            </div>
             <div class="col-md-4">
               <label class="form-label fw-semibold small">Closest Airport</label>
               <input type="text" class="form-control" id="fAirportName" placeholder="e.g. Hamburg Airport">
             </div>
-            <div class="col-md-1" style="min-width:90px">
+            <div class="col-md-2" style="min-width:90px">
               <label class="form-label fw-semibold small">IATA</label>
               <input type="text" class="form-control text-uppercase" id="fAirportCode" maxlength="3" placeholder="HAM">
             </div>
-            <div class="col-md-2" style="min-width:170px">
+            <div class="col-md-3" style="min-width:170px">
               <label class="form-label fw-semibold small">Flight from Istanbul <span class="field-hint">(min)</span></label>
               <input type="number" class="form-control" id="fFlightMin" placeholder="180">
             </div>
@@ -317,7 +338,7 @@
           </div>
         </div>
 
-        <!-- Section 3: Orbit Camera -->
+        <!-- Section 5: Orbit Camera -->
         <div class="form-section">
           <div class="section-label d-flex align-items-center">
             <span><i class="bi bi-camera-video"></i>Orbit Camera Config</span>
@@ -386,18 +407,6 @@
               <input type="number" class="form-control" id="fCamH" value="0" step="0.01">
             </div>
           </div>
-        </div>
-
-        <!-- Section 4: Programs -->
-        <div class="form-section">
-          <div class="d-flex align-items-center justify-content-between mb-3">
-            <div class="section-label mb-0"><i class="bi bi-mortarboard"></i>Programs</div>
-            <button type="button" class="btn btn-outline-primary btn-sm" onclick="addProgram()">
-              <i class="bi bi-plus-lg me-1"></i>Add Program
-            </button>
-          </div>
-          <p class="text-muted small mb-2" id="noProgMsg">No programs yet — click "Add Program" to add one.</p>
-          <div id="programsList"></div>
         </div>
 
         <div class="d-flex gap-2 pb-5">
@@ -626,6 +635,7 @@ async function loadEntities() {
         <td class="text-center"><span class="badge bg-primary bg-opacity-15 text-primary">${e.programs_count}</span></td>
         <td><span class="badge badge-${e.status}">${cap(e.status)}</span></td>
         <td class="text-end pe-3">
+          ${e.latitude && e.longitude ? `<button class="btn btn-outline-primary btn-sm table-actions me-1" title="Preview Orbit" onclick="openOrbitPreview('${esc(e.name).replace(/'/g,"\\'")}',${e.latitude},${e.longitude})"><i class="bi bi-globe2"></i></button>` : ''}
           <button class="btn btn-outline-secondary btn-sm table-actions me-1" onclick="openEntityForm(${e.id})">
             <i class="bi bi-pencil"></i>
           </button>
@@ -764,6 +774,77 @@ function convertCoords() {
   document.getElementById('fDMS').value = '';
   syncOrbitCenter();
   toast(`Coordinates set: ${lat.toFixed(5)}, ${lng.toFixed(5)}`, 'success');
+}
+
+function openOrbitPreview(name, lat, lng) {
+  const p = new URLSearchParams({ name, lat, lng, alt: '400', pitch: '-45', heading: '0', range: '400', speed: '0.12', rot: '360' });
+  window.open('/orbit/?' + p.toString(), '_blank');
+}
+
+function haversineKm(lat1, lon1, lat2, lon2) {
+  const R = 6371, d2r = Math.PI / 180;
+  const dLat = (lat2 - lat1) * d2r, dLon = (lon2 - lon1) * d2r;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*d2r)*Math.cos(lat2*d2r)*Math.sin(dLon/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+async function findAirport() {
+  const lat = parseFloat(document.getElementById('fLat').value);
+  const lng = parseFloat(document.getElementById('fLng').value);
+  if (!isFinite(lat) || !isFinite(lng)) {
+    toast('Set the coordinates first, then find the nearest airport.', 'error'); return;
+  }
+  const btn = document.getElementById('airportBtn');
+  btn.disabled = true; btn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Searching...';
+  try {
+    const query = `[out:json][timeout:20];node["aeroway"="aerodrome"]["iata"](around:600000,${lat},${lng});out body;`;
+    const resp = await fetch('https://overpass-api.de/api/interpreter', {
+      method: 'POST', body: 'data=' + encodeURIComponent(query)
+    });
+    const data = await resp.json();
+    if (!data.elements?.length) { toast('No airports found within 600 km.', 'warn'); return; }
+    const nearest = data.elements.reduce((best, n) => {
+      const d = haversineKm(lat, lng, n.lat, n.lon);
+      return d < best.d ? { d, n } : best;
+    }, { d: Infinity, n: null }).n;
+    if (!nearest) return;
+    const iata = nearest.tags.iata || '';
+    const name = nearest.tags.name || nearest.tags['name:en'] || '';
+    const distKm = haversineKm(lat, lng, nearest.lat, nearest.lon);
+    // Istanbul Airport IST: 41.2753, 28.7519
+    const istDist = haversineKm(41.2753, 28.7519, nearest.lat, nearest.lon);
+    const flightMin = Math.round(istDist / 850 * 60 + 50);
+    document.getElementById('fAirportName').value = name;
+    document.getElementById('fAirportCode').value = iata;
+    document.getElementById('fFlightMin').value = flightMin;
+    toast(`Found: ${name} (${iata}) — ${Math.round(distKm)} km away. Flight from Istanbul ≈ ${flightMin} min.`, 'success');
+  } catch(e) {
+    toast('Airport lookup failed: ' + e.message, 'error');
+  } finally {
+    btn.disabled = false; btn.innerHTML = '<i class="bi bi-airplane me-1"></i>Find Nearest Airport &amp; Flight Time from Istanbul';
+  }
+}
+
+async function fetchWikiDescription() {
+  const name = document.getElementById('fName').value.trim();
+  if (!name) { toast('Enter the institution name first.', 'error'); return; }
+  try {
+    const search = await (await fetch(
+      `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(name)}&format=json&origin=*&srlimit=1`
+    )).json();
+    const title = search.query?.search?.[0]?.title;
+    if (!title) { toast('No Wikipedia article found for this name.', 'warn'); return; }
+    const summary = await (await fetch(
+      `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`
+    )).json();
+    const extract = summary.extract;
+    if (!extract) { toast('Wikipedia article found but has no description.', 'warn'); return; }
+    const short = extract.split('. ').slice(0, 3).join('. ') + '.';
+    document.getElementById('fDesc').value = short;
+    toast(`Description fetched from Wikipedia: "${title}"`, 'success');
+  } catch(e) {
+    toast('Wikipedia fetch failed: ' + e.message, 'error');
+  }
 }
 
 function addProgram() {

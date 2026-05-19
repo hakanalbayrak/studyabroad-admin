@@ -7,6 +7,7 @@ router.get('/', async (req, res) => {
     const [rows] = await db.query(`
       SELECT e.*,
         el.city, el.country, el.id as location_id,
+        el.latitude, el.longitude,
         COALESCE((
           SELECT COUNT(*) FROM programs p
           WHERE p.entity_location_id IN (SELECT id FROM entity_locations WHERE entity_id = e.id)
