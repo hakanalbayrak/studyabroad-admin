@@ -35,13 +35,22 @@ app.get('/api/health', (req, res) => {
 
 // Database connection test (public) — open in a browser to diagnose DB problems
 app.get('/api/db-check', async (req, res) => {
+  const mode = process.env.DB_SOCKET ? 'socket' : 'tcp';
+  const config = {
+    mode,
+    socket: process.env.DB_SOCKET || null,
+    host: process.env.DB_SOCKET ? null : (process.env.DB_HOST || 'localhost'),
+    dbUser: process.env.DB_USER || null,
+    dbName: process.env.DB_NAME || null
+  };
   try {
     await db.query('SELECT 1');
-    res.json({ database: 'connected', message: 'Database connection works.' });
+    res.json({ database: 'connected', message: 'Database connection works.', config });
   } catch (e) {
     res.status(500).json({
       database: 'failed',
       error: e.message,
+      config,
       hint: 'Check that DB_USER, DB_PASSWORD and DB_NAME match the cPanel MySQL settings.'
     });
   }
