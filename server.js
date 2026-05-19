@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const { login, logout, auth } = require('./middleware/auth');
+const db = require('./db');
 
 const app = express();
 app.use(cors());
@@ -30,6 +31,20 @@ app.post('/api/admin/logout', auth, (req, res) => {
 // Health check (public)
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
+// Database connection test (public) — open in a browser to diagnose DB problems
+app.get('/api/db-check', async (req, res) => {
+  try {
+    await db.query('SELECT 1');
+    res.json({ database: 'connected', message: 'Database connection works.' });
+  } catch (e) {
+    res.status(500).json({
+      database: 'failed',
+      error: e.message,
+      hint: 'Check that DB_USER, DB_PASSWORD and DB_NAME match the cPanel MySQL settings.'
+    });
+  }
 });
 
 // Protected API routes
