@@ -73,7 +73,12 @@
         <p class="text-muted small mt-1">Admin access only</p>
       </div>
       <div id="loginError" class="alert alert-danger d-none small py-2"></div>
-      <input type="password" class="form-control mb-3" id="loginPassword" placeholder="Password" autofocus>
+      <div class="input-group mb-3">
+        <input type="password" class="form-control" id="loginPassword" placeholder="Password" autofocus>
+        <button class="btn btn-outline-secondary" type="button" id="togglePw" tabindex="-1" title="Show / hide password">
+          <i class="bi bi-eye"></i>
+        </button>
+      </div>
       <button class="btn btn-primary w-100 fw-semibold" id="loginBtn">Sign In</button>
     </div>
   </div>
@@ -406,12 +411,19 @@ function toast(msg, type) {
     </div>`
   );
   const el = document.getElementById(id);
-  new bootstrap.Toast(el, { delay: 3500 }).show();
+  new bootstrap.Toast(el, { delay: type === 'error' ? 10000 : 3500 }).show();
   el.addEventListener('hidden.bs.toast', () => el.remove());
 }
 
 document.getElementById('loginPassword').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
 document.getElementById('loginBtn').addEventListener('click', doLogin);
+document.getElementById('togglePw').addEventListener('click', () => {
+  const inp = document.getElementById('loginPassword');
+  const icon = document.querySelector('#togglePw i');
+  if (inp.type === 'password') { inp.type = 'text'; icon.className = 'bi bi-eye-slash'; }
+  else { inp.type = 'password'; icon.className = 'bi bi-eye'; }
+  inp.focus();
+});
 
 async function doLogin() {
   const pw = document.getElementById('loginPassword').value;
