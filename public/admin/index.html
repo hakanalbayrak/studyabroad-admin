@@ -39,6 +39,10 @@
     .req { color: #ef4444; }
     .field-hint { font-size: 0.75rem; color: #9ca3af; font-weight: 400; }
     #entityFormView { max-width: 960px; }
+    .place-result { padding:10px 12px; border:1px solid #e2e8f0; border-radius:8px; margin-bottom:6px; cursor:pointer; transition:all .12s; }
+    .place-result:hover { background:#f0f4ff; border-color:#6366f1; }
+    .place-result-name { font-weight:600; font-size:.88rem; color:#1e293b; }
+    .place-result-addr { font-size:.76rem; color:#6b7280; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   </style>
 </head>
 <body>
@@ -182,6 +186,19 @@
             <i class="bi bi-arrow-left me-1"></i>Back
           </button>
           <h4 class="fw-bold mb-0" id="entityFormTitle">Add New Entity</h4>
+        </div>
+
+        <!-- Institution Search -->
+        <div class="form-section mb-3">
+          <div class="section-label"><i class="bi bi-search"></i>Find Institution <span class="ms-1 text-muted fw-normal" style="font-size:.75rem;text-transform:none;letter-spacing:0">— search to auto-fill name, address &amp; coordinates</span></div>
+          <div class="input-group">
+            <input type="text" class="form-control" id="searchQ" placeholder="e.g. University of Hamburg, MIT, Kadir Has University..."
+              onkeydown="if(event.key==='Enter'){doPlaceSearch();event.preventDefault()}">
+            <button class="btn btn-outline-primary" onclick="doPlaceSearch()" id="searchBtn">
+              <i class="bi bi-search me-1"></i>Search
+            </button>
+          </div>
+          <div id="searchResults" class="mt-2"></div>
         </div>
 
         <!-- Section 1: Entity Information -->
@@ -424,6 +441,93 @@ document.getElementById('togglePw').addEventListener('change', function () {
   document.getElementById('loginPassword').type = this.checked ? 'text' : 'password';
 });
 
+// ── Institution search (Nominatim / OpenStreetMap) ───────────────────────────
+const COUNTRY_CONTINENT = {
+  DE:'Europe',FR:'Europe',GB:'Europe',IT:'Europe',ES:'Europe',NL:'Europe',BE:'Europe',
+  CH:'Europe',AT:'Europe',SE:'Europe',NO:'Europe',DK:'Europe',FI:'Europe',PL:'Europe',
+  CZ:'Europe',HU:'Europe',RO:'Europe',PT:'Europe',GR:'Europe',IE:'Europe',SK:'Europe',
+  HR:'Europe',BG:'Europe',SI:'Europe',RS:'Europe',BA:'Europe',ME:'Europe',MK:'Europe',
+  AL:'Europe',LT:'Europe',LV:'Europe',EE:'Europe',LU:'Europe',MT:'Europe',CY:'Europe',
+  IS:'Europe',UA:'Europe',BY:'Europe',MD:'Europe',GE:'Europe',AM:'Europe',AZ:'Europe',
+  TR:'Middle East',SA:'Middle East',AE:'Middle East',IL:'Middle East',JO:'Middle East',
+  LB:'Middle East',IQ:'Middle East',IR:'Middle East',KW:'Middle East',QA:'Middle East',
+  BH:'Middle East',OM:'Middle East',YE:'Middle East',SY:'Middle East',PS:'Middle East',
+  CN:'Asia',JP:'Asia',KR:'Asia',IN:'Asia',SG:'Asia',TH:'Asia',MY:'Asia',VN:'Asia',
+  ID:'Asia',PH:'Asia',TW:'Asia',HK:'Asia',BD:'Asia',LK:'Asia',NP:'Asia',PK:'Asia',
+  KZ:'Asia',UZ:'Asia',MN:'Asia',LA:'Asia',KH:'Asia',MM:'Asia',BN:'Asia',
+  US:'North America',CA:'North America',MX:'North America',CU:'North America',
+  JM:'North America',HT:'North America',DO:'North America',TT:'North America',
+  GT:'North America',BZ:'North America',HN:'North America',SV:'North America',
+  NI:'North America',CR:'North America',PA:'North America',
+  BR:'South America',AR:'South America',CL:'South America',CO:'South America',
+  PE:'South America',VE:'South America',EC:'South America',BO:'South America',
+  PY:'South America',UY:'South America',
+  ZA:'Africa',NG:'Africa',EG:'Africa',KE:'Africa',GH:'Africa',TZ:'Africa',
+  ET:'Africa',UG:'Africa',MA:'Africa',TN:'Africa',DZ:'Africa',SN:'Africa',
+  CM:'Africa',ZM:'Africa',ZW:'Africa',MZ:'Africa',
+  AU:'Oceania',NZ:'Oceania',FJ:'Oceania'
+};
+
+let _placeResults = [];
+
+async function doPlaceSearch() {
+  const q = document.getElementById('searchQ').value.trim();
+  if (!q) return;
+  const btn = document.getElementById('searchBtn');
+  const box = document.getElementById('searchResults');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Searching...';
+  box.innerHTML = '';
+  try {
+    const url = 'https://nominatim.openstreetmap.org/search?format=json&limit=6&addressdetails=1&accept-language=en&q=' + encodeURIComponent(q);
+    const data = await (await fetch(url)).json();
+    _placeResults = data;
+    if (!data.length) {
+      box.innerHTML = '<div class="text-muted small p-2">No results found. Try a more specific name or add the city.</div>';
+      return;
+    }
+    box.innerHTML = data.map((r, i) => {
+      const a = r.address;
+      const name = a.amenity || a.university || a.college || a.school || r.display_name.split(',')[0];
+      return `<div class="place-result" onclick="applyPlace(${i})">
+        <div class="place-result-name">${name}</div>
+        <div class="place-result-addr">${r.display_name}</div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    box.innerHTML = `<div class="text-danger small p-2">Search error: ${e.message}</div>`;
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="bi bi-search me-1"></i>Search';
+  }
+}
+
+function applyPlace(idx) {
+  const r = _placeResults[idx];
+  if (!r) return;
+  const a = r.address;
+  const name = a.amenity || a.university || a.college || a.school || r.display_name.split(',')[0];
+  const city = a.city || a.town || a.village || a.municipality || a.county || '';
+  const country = a.country || '';
+  const continent = COUNTRY_CONTINENT[(a.country_code || '').toUpperCase()] || '';
+  const addrParts = [a.road, city, a.postcode, country].filter(Boolean);
+
+  const s = (id, v) => { const el = document.getElementById(id); if (el && v) el.value = v; };
+  s('fName', name);
+  s('fCity', city);
+  s('fCountry', country);
+  s('fAddress', addrParts.join(', '));
+  s('fLat', parseFloat(r.lat).toFixed(7));
+  s('fLng', parseFloat(r.lon).toFixed(7));
+  if (continent) s('fContinent', continent);
+  syncOrbitCenter();
+
+  document.getElementById('searchResults').innerHTML =
+    '<div class="text-success small p-2"><i class="bi bi-check-circle me-1"></i>Details filled — review and adjust below if needed.</div>';
+  toast('Location filled from search — review the details.', 'success');
+}
+// ─────────────────────────────────────────────────────────────────────────────
+
 async function doLogin() {
   const pw = document.getElementById('loginPassword').value;
   if (!pw) return;
@@ -570,7 +674,7 @@ function previewOrbit() {
   const g = id => document.getElementById(id)?.value?.trim() || '';
   const lat = g('fOrbitLat') || g('fLat');
   const lng = g('fOrbitLng') || g('fLng');
-  if (!lat || !lng) { toast('Set the location latitude and longitude first.', 'error'); return; }
+  if (!lat || !lng) { toast('No coordinates yet — use the institution search at the top to auto-fill, or enter Latitude/Longitude in the Location section.', 'error'); return; }
   const p = new URLSearchParams({
     name: g('fName') || 'Entity',
     lat, lng,
