@@ -293,9 +293,12 @@
 
         <!-- Section 3: Orbit Camera -->
         <div class="form-section">
-          <div class="section-label">
-            <i class="bi bi-camera-video"></i>Orbit Camera Config
+          <div class="section-label d-flex align-items-center">
+            <span><i class="bi bi-camera-video"></i>Orbit Camera Config</span>
             <span class="ms-1 text-muted fw-normal" style="font-size:.75rem;text-transform:none;letter-spacing:0">— defaults pre-filled, adjust per campus</span>
+            <button type="button" class="btn btn-outline-primary btn-sm ms-auto" onclick="previewOrbit()">
+              <i class="bi bi-play-circle me-1"></i>Preview Orbit
+            </button>
           </div>
           <div class="row g-3">
             <div class="col-md-6">
@@ -565,6 +568,24 @@ async function openEntityForm(entityId) {
 function closeEntityForm() {
   document.getElementById('entityFormView').classList.add('d-none');
   document.getElementById('entityListView').classList.remove('d-none');
+}
+
+function previewOrbit() {
+  const g = id => document.getElementById(id)?.value?.trim() || '';
+  const lat = g('fOrbitLat') || g('fLat');
+  const lng = g('fOrbitLng') || g('fLng');
+  if (!lat || !lng) { toast('Set the location latitude and longitude first.', 'error'); return; }
+  const p = new URLSearchParams({
+    name: g('fName') || 'Entity',
+    lat, lng,
+    alt: g('fOrbitAlt') || '400',
+    pitch: g('fOrbitPitch') || '-45',
+    heading: g('fOrbitHeading') || '0',
+    range: g('fOrbitRange') || '400',
+    speed: g('fOrbitSpeed') || '0.12',
+    rot: document.getElementById('fOrbitRotType')?.value || '360'
+  });
+  window.open('/orbit/?' + p.toString(), '_blank');
 }
 
 function resetForm() {

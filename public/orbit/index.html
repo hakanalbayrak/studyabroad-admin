@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orbit Preview</title>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.124/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.124/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <style>
+    html, body, #cesiumContainer { width:100%; height:100%; margin:0; padding:0; overflow:hidden; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background:#0b1020; }
+    .panel {
+      position:absolute; top:16px; left:16px; z-index:10;
+      background:rgba(11,16,32,.85); color:#e6e9f0; border:1px solid rgba(255,255,255,.12);
+      border-radius:12px; padding:14px 16px; min-width:240px; backdrop-filter:blur(6px);
+    }
+    .panel h1 { font-size:1rem; margin:0 0 8px; }
+    .panel .row { display:flex; justify-content:space-between; font-size:.8rem; padding:2px 0; color:#aab2c5; }
+    .panel .row b { color:#e6e9f0; font-weight:600; }
+    .btns { margin-top:10px; display:flex; gap:8px; }
+    .btns button {
+      flex:1; cursor:pointer; border:none; border-radius:8px; padding:7px 10px;
+      font-size:.8rem; font-weight:600; background:#3b82f6; color:#fff;
+    }
+    .btns button.alt { background:rgba(255,255,255,.12); color:#e6e9f0; }
+    #msg {
+      position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:20;
+      background:rgba(11,16,32,.95); color:#e6e9f0; border:1px solid rgba(255,255,255,.15);
+      border-radius:12px; padding:20px 24px; max-width:420px; font-size:.9rem; display:none;
+    }
+    #msg b { color:#f87171; }
+    .cesium-viewer-bottom, .cesium-viewer-animationContainer, .cesium-viewer-timelineContainer { display:none !important; }
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <div class="panel">
+    <h1 id="title">Orbit Preview</h1>
+    <div class="row"><span>Latitude</span><b id="iLat">—</b></div>
+    <div class="row"><span>Longitude</span><b id="iLng">—</b></div>
+    <div class="row"><span>Pitch</span><b id="iPitch">—</b></div>
+    <div class="row"><span>Range</span><b id="iRange">—</b></div>
+    <div class="row"><span>Altitude</span><b id="iAlt">—</b></div>
+    <div class="row"><span>Rotation speed</span><b id="iSpeed">—</b></div>
+    <div class="btns">
+      <button id="toggleBtn">Pause</button>
+      <button class="alt" onclick="window.close()">Close</button>
+    </div>
+  </div>
+  <div id="msg"></div>
+  <script>
+    const GOOGLE_MAPS_KEY = 'AIzaSyCDvg77OufOzvBqRqYMThhN0dZC2heEpSQ';
+    const q = new URLSearchParams(location.search);
+    const num = (k, d) => { const v = parseFloat(q.get(k)); return Number.isFinite(v) ? v : d; };
+
+    const cfg = {
+      name: q.get('name') || 'Entity',
+      lat: num('lat', NaN),
+      lng: num('lng', NaN),
+      alt: num('alt', 400),
+      pitch: num('pitch', -45),
+      heading: num('heading', 0),
+      range: num('range', 400),
+      speed: num('speed', 0.12),
+      rot: q.get('rot') || '360'
+    };
+
+    function showMsg(html) {
+      const m = document.getElementById('msg');
+      m.innerHTML = html;
+      m.style.display = 'block';
+    }
+
+    document.getElementById('title').textContent = cfg.name;
+    document.getElementById('iLat').textContent = isFinite(cfg.lat) ? cfg.lat.toFixed(5) : '—';
+    document.getElementById('iLng').textContent = isFinite(cfg.lng) ? cfg.lng.toFixed(5) : '—';
+    document.getElementById('iPitch').textContent = cfg.pitch + '°';
+    document.getElementById('iRange').textContent = cfg.range + ' m';
+    document.getElementById('iAlt').textContent = cfg.alt + ' m';
+    document.getElementById('iSpeed').textContent = cfg.speed + '°/frame';
+
+    if (!isFinite(cfg.lat) || !isFinite(cfg.lng)) {
+      showMsg('<b>No coordinates</b><br>This entity has no latitude/longitude set. Add them in the Location section of the admin panel, then preview again.');
+      throw new Error('no coords');
+    }
+
+    (async function init() {
+      let viewer;
+      try {
+        viewer = new Cesium.Viewer('cesiumContainer', {
+          globe: false,
+          baseLayerPicker: false, geocoder: false, homeButton: false,
+          sceneModePicker: false, navigationHelpButton: false, animation: false,
+          timeline: false, fullscreenButton: false, infoBox: false,
+          selectionIndicator: false, creditContainer: document.createElement('div')
+        });
+        viewer.scene.skyAtmosphere.show = true;
+      } catch (e) {
+        showMsg('<b>Viewer failed to load</b><br>' + e.message);
+        return;
+      }
+
+      try {
+        const tileset = await Cesium.createGooglePhotorealistic3DTileset({ key: GOOGLE_MAPS_KEY });
+        viewer.scene.primitives.add(tileset);
+      } catch (e) {
+        showMsg('<b>3D tiles failed to load</b><br>' + (e && e.message ? e.message : e) +
+          '<br><br>Check that the Map Tiles API is enabled for the Google Maps key and that this domain is allowed in the key restrictions.');
+        return;
+      }
+
+      const target = Cesium.Cartesian3.fromDegrees(cfg.lng, cfg.lat, 0);
+      let heading = Cesium.Math.toRadians(cfg.heading);
+      const pitch = Cesium.Math.toRadians(cfg.pitch);
+      const range = Math.max(cfg.range, 1);
+      let running = true;
+
+      viewer.scene.preRender.addEventListener(function () {
+        if (running) heading += Cesium.Math.toRadians(cfg.speed);
+        viewer.camera.lookAt(target, new Cesium.HeadingPitchRange(heading, pitch, range));
+      });
+
+      const btn = document.getElementById('toggleBtn');
+      btn.onclick = function () {
+        running = !running;
+        btn.textContent = running ? 'Pause' : 'Resume';
+      };
+    })();
+  </script>
+</body>
+</html>
