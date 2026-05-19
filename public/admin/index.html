@@ -278,6 +278,15 @@
               <label class="form-label fw-semibold small">Address</label>
               <input type="text" class="form-control" id="fAddress" placeholder="Full street address...">
             </div>
+            <div class="col-12">
+              <label class="form-label fw-semibold small">Paste coordinates from Google Maps <span class="field-hint">(DMS or decimal — e.g. 51°33'46.6"N 5°02'33.7"E)</span></label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="fDMS" placeholder='51°33\'46.6"N 5°02\'33.7"E  or  51.5629, 5.0427'>
+                <button class="btn btn-outline-secondary" type="button" onclick="convertCoords()">
+                  <i class="bi bi-pin-map me-1"></i>Set
+                </button>
+              </div>
+            </div>
             <div class="col-md-3">
               <label class="form-label fw-semibold small">Latitude</label>
               <input type="number" class="form-control" id="fLat" step="0.0000001" placeholder="53.5753" oninput="syncOrbitCenter()">
@@ -727,6 +736,34 @@ function syncOrbitCenter() {
   if (!oLng.value && lng) oLng.value = lng;
   if (!sLat.value && lat) sLat.value = lat;
   if (!sLng.value && lng) sLng.value = lng;
+}
+
+function convertCoords() {
+  const raw = document.getElementById('fDMS').value.trim();
+  if (!raw) return;
+  let lat, lng;
+
+  // Try DMS: 51°33'46.6"N 5°02'33.7"E  (any spacing/punctuation variants)
+  const dms = raw.match(/(\d+)[°\s]+(\d+)['\s]+([\d.]+)["″\s]*([NS])[\s,;]*(\d+)[°\s]+(\d+)['\s]+([\d.]+)["″\s]*([EW])/i);
+  if (dms) {
+    const [,d1,m1,s1,ns,d2,m2,s2,ew] = dms;
+    lat = (+d1 + +m1/60 + +s1/3600) * (/S/i.test(ns) ? -1 : 1);
+    lng = (+d2 + +m2/60 + +s2/3600) * (/W/i.test(ew) ? -1 : 1);
+  } else {
+    // Try decimal: "51.5629, 5.0427" or "51.5629 5.0427"
+    const dec = raw.match(/(-?[\d.]+)[\s,;]+(-?[\d.]+)/);
+    if (dec) { lat = +dec[1]; lng = +dec[2]; }
+  }
+
+  if (!isFinite(lat) || !isFinite(lng)) {
+    toast('Could not read those coordinates — try copying the full line from Google Maps.', 'error');
+    return;
+  }
+  document.getElementById('fLat').value = lat.toFixed(7);
+  document.getElementById('fLng').value = lng.toFixed(7);
+  document.getElementById('fDMS').value = '';
+  syncOrbitCenter();
+  toast(`Coordinates set: ${lat.toFixed(5)}, ${lng.toFixed(5)}`, 'success');
 }
 
 function addProgram() {
