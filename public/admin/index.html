@@ -1,1210 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Study Abroad Admin</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-<style>
-  body { background:#f0f2f5; font-family:'Segoe UI',sans-serif; }
-  /* ── Sidebar ── */
-  #sidebar {
-    width:240px; min-height:100vh; background:#1a2332; position:fixed;
-    top:0; left:0; z-index:100; display:flex; flex-direction:column;
-    transition: transform .3s;
-  }
-  #sidebar .brand {
-    padding:24px 20px 16px; border-bottom:1px solid rgba(255,255,255,.1);
-  }
-  #sidebar .brand h5 { color:#fff; margin:0; font-weight:700; font-size:15px; }
-  #sidebar .brand small { color:#94a3b8; font-size:12px; }
-  #sidebar nav a {
-    display:flex; align-items:center; gap:12px; padding:12px 20px;
-    color:#94a3b8; text-decoration:none; font-size:14px; transition:all .2s;
-    border-left:3px solid transparent;
-  }
-  #sidebar nav a:hover { color:#fff; background:rgba(255,255,255,.05); }
-  #sidebar nav a.active { color:#fff; background:rgba(59,130,246,.15); border-left-color:#3b82f6; }
-  #sidebar nav a i { font-size:18px; width:20px; text-align:center; }
-  #sidebar .sidebar-footer {
-    margin-top:auto; padding:16px 20px; border-top:1px solid rgba(255,255,255,.1);
-  }
-  /* ── Main ── */
-  #main { margin-left:240px; min-height:100vh; }
-  #topbar {
-    background:#fff; padding:16px 28px; display:flex; align-items:center;
-    justify-content:space-between; border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:50;
-  }
-  #topbar h4 { margin:0; font-size:18px; font-weight:600; color:#1e293b; }
-  .content-area { padding:28px; }
-  /* ── Stat Cards ── */
-  .stat-card { background:#fff; border-radius:12px; padding:24px; border:1px solid #e5e7eb; }
-  .stat-card .icon { width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:22px; }
-  .stat-card h3 { font-size:32px; font-weight:700; margin:12px 0 4px; color:#1e293b; }
-  .stat-card p { color:#64748b; margin:0; font-size:14px; }
-  /* ── Tables ── */
-  .table-card { background:#fff; border-radius:12px; border:1px solid #e5e7eb; overflow:hidden; }
-  .table-card .table-header { padding:20px 24px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #e5e7eb; }
-  .table-card .table-header h5 { margin:0; font-weight:600; color:#1e293b; }
-  .table { margin:0; }
-  .table thead th { background:#f8fafc; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.5px; color:#64748b; border-bottom:1px solid #e5e7eb; padding:12px 16px; }
-  .table td { padding:14px 16px; vertical-align:middle; font-size:14px; color:#374151; border-bottom:1px solid #f3f4f6; }
-  .table tbody tr:hover { background:#f9fafb; }
-  /* ── Badges ── */
-  .badge-active { background:#dcfce7; color:#16a34a; }
-  .badge-inactive { background:#fee2e2; color:#dc2626; }
-  .badge-pending { background:#fef9c3; color:#ca8a04; }
-  /* ── Login ── */
-  #loginPage { min-height:100vh; background:linear-gradient(135deg,#1a2332 0%,#2d3f55 100%); display:flex; align-items:center; justify-content:center; }
-  .login-card { background:#fff; border-radius:16px; padding:48px 40px; width:100%; max-width:400px; box-shadow:0 20px 60px rgba(0,0,0,.3); }
-  .login-card .logo { width:60px; height:60px; background:#3b82f6; border-radius:14px; display:flex; align-items:center; justify-content:center; margin:0 auto 24px; font-size:28px; color:#fff; }
-  /* ── Section hiding ── */
-  .section { display:none; }
-  .section.active { display:block; }
-  /* ── Responsive ── */
-  @media(max-width:768px) {
-    #sidebar { transform:translateX(-100%); }
-    #sidebar.open { transform:translateX(0); }
-    #main { margin-left:0; }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Abroad Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root { --sidebar-w: 240px; }
+    body { background: #f0f2f5; font-size: 0.92rem; }
+    #loginScreen { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #1e293b; }
+    #adminApp { display: none; }
+    #sidebar {
+      position: fixed; top: 0; left: 0; height: 100vh; width: var(--sidebar-w);
+      background: #1e293b; color: #fff; display: flex; flex-direction: column; z-index: 100;
+    }
+    #sidebar .brand { padding: 18px 20px; font-size: 0.95rem; font-weight: 700; border-bottom: 1px solid #334155; color: #e2e8f0; }
+    #sidebar .nav-link { color: #94a3b8; padding: 10px 20px; display: flex; align-items: center; gap: 10px; text-decoration: none; transition: all .15s; }
+    #sidebar .nav-link:hover, #sidebar .nav-link.active { color: #fff; background: #334155; }
+    #sidebar .nav-link i { width: 18px; text-align: center; }
+    #mainContent { margin-left: var(--sidebar-w); padding: 28px; min-height: 100vh; }
+    .section-content { display: none; }
+    .section-content.visible { display: block; }
+    .stat-card { border: none; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .form-section { background: #fff; border-radius: 12px; padding: 22px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.07); }
+    .section-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #6366f1; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .program-card { border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; margin-bottom: 12px; background: #fff; }
+    .prog-header { background: #f8fafc; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none; border-bottom: 1px solid #e2e8f0; }
+    .prog-header:hover { background: #f1f5f9; }
+    .prog-body { padding: 16px; }
+    .toast-container { position: fixed; top: 16px; right: 16px; z-index: 9999; min-width: 280px; }
+    .badge-active { background: #10b981; }
+    .badge-inactive { background: #6b7280; }
+    .badge-pending { background: #f59e0b; }
+    .table-actions button { padding: 3px 8px; }
+    .entity-logo { width: 32px; height: 32px; object-fit: contain; border-radius: 4px; border: 1px solid #e2e8f0; }
+    .form-label { margin-bottom: 4px; color: #374151; }
+    .req { color: #ef4444; }
+    .field-hint { font-size: 0.75rem; color: #9ca3af; font-weight: 400; }
+    #entityFormView { max-width: 960px; }
+  </style>
 </head>
 <body>
 
-<!-- ═══ LOGIN PAGE ═══ -->
-<div id="loginPage">
-  <div class="login-card">
-    <div class="logo"><i class="bi bi-globe2"></i></div>
-    <h4 class="text-center fw-700 mb-1" style="font-weight:700">Study Abroad</h4>
-    <p class="text-center text-muted mb-4" style="font-size:14px">Admin Panel</p>
-    <div id="loginError" class="alert alert-danger d-none" role="alert"></div>
-    <div class="mb-3">
-      <label class="form-label fw-semibold">Admin Password</label>
-      <div class="input-group">
-        <input type="password" id="loginPassword" class="form-control form-control-lg" placeholder="Enter password" onkeydown="if(event.key==='Enter')doLogin()">
-        <button class="btn btn-outline-secondary" type="button" onclick="togglePwd('loginPassword',this)"><i class="bi bi-eye"></i></button>
+<!-- Toast container -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- Delete confirm modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content border-0 shadow">
+      <div class="modal-body text-center pt-4 pb-2">
+        <i class="bi bi-exclamation-triangle-fill text-danger" style="font-size:2.5rem"></i>
+        <p class="mt-3 mb-1 fw-semibold" id="confirmMsg">Delete this item?</p>
+        <p class="text-muted" style="font-size:.82rem">This cannot be undone.</p>
+      </div>
+      <div class="modal-footer border-0 justify-content-center pb-4 gap-2">
+        <button class="btn btn-secondary btn-sm px-4" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-danger btn-sm px-4" id="confirmBtn">Delete</button>
       </div>
     </div>
-    <button class="btn btn-primary btn-lg w-100 mt-2" onclick="doLogin()" id="loginBtn">
-      <span id="loginBtnText">Login</span>
-      <span id="loginSpinner" class="spinner-border spinner-border-sm d-none ms-2"></span>
-    </button>
   </div>
 </div>
 
-<!-- ═══ MAIN APP ═══ -->
-<div id="appPage" style="display:none">
-
-  <!-- Sidebar -->
-  <div id="sidebar">
-    <div class="brand">
-      <h5><i class="bi bi-globe2 me-2"></i>Study Abroad</h5>
-      <small>Admin Panel</small>
-    </div>
-    <nav class="mt-2">
-      <a href="#" onclick="navigate('dashboard')" id="nav-dashboard" class="active">
-        <i class="bi bi-grid-1x2-fill"></i> Dashboard
-      </a>
-      <a href="#" onclick="navigate('entities')" id="nav-entities">
-        <i class="bi bi-building"></i> Entities
-      </a>
-      <a href="#" onclick="navigate('locations')" id="nav-locations">
-        <i class="bi bi-geo-alt-fill"></i> Locations
-      </a>
-      <a href="#" onclick="navigate('programs')" id="nav-programs">
-        <i class="bi bi-mortarboard-fill"></i> Programs
-      </a>
-      <a href="#" onclick="navigate('orbit')" id="nav-orbit">
-        <i class="bi bi-camera-video-fill"></i> Orbit Configs
-      </a>
-    </nav>
-    <div class="sidebar-footer">
-      <button class="btn btn-sm btn-outline-secondary w-100 text-white border-secondary" onclick="doLogout()">
-        <i class="bi bi-box-arrow-right me-2"></i>Logout
-      </button>
+<!-- LOGIN -->
+<div id="loginScreen">
+  <div class="card shadow" style="width:360px;border:none;border-radius:16px">
+    <div class="card-body p-5">
+      <div class="text-center mb-4">
+        <i class="bi bi-globe-americas text-primary" style="font-size:2.5rem"></i>
+        <h5 class="fw-bold mt-2 mb-0">Study Abroad Admin</h5>
+        <p class="text-muted small mt-1">Admin access only</p>
+      </div>
+      <div id="loginError" class="alert alert-danger d-none small py-2"></div>
+      <input type="password" class="form-control mb-3" id="loginPassword" placeholder="Password" autofocus>
+      <button class="btn btn-primary w-100 fw-semibold" id="loginBtn">Sign In</button>
     </div>
   </div>
+</div>
 
-  <!-- Main Content -->
-  <div id="main">
-    <div id="topbar">
-      <h4 id="pageTitle">Dashboard</h4>
-      <div class="d-flex align-items-center gap-3">
-        <span class="badge bg-primary" id="userBadge">Admin</span>
+<!-- ADMIN APP -->
+<div id="adminApp">
+  <nav id="sidebar">
+    <div class="brand"><i class="bi bi-globe-americas me-2"></i>Study Abroad</div>
+    <div class="flex-grow-1 mt-2">
+      <a href="#" class="nav-link" data-sec="dashboard" onclick="showSection('dashboard');return false;">
+        <i class="bi bi-speedometer2"></i>Dashboard
+      </a>
+      <a href="#" class="nav-link" data-sec="entities" onclick="showSection('entities');return false;">
+        <i class="bi bi-building"></i>Entities
+      </a>
+    </div>
+    <div class="p-3 border-top border-secondary">
+      <button class="btn btn-outline-light btn-sm w-100 opacity-75" onclick="doLogout()">
+        <i class="bi bi-box-arrow-left me-1"></i>Logout
+      </button>
+    </div>
+  </nav>
+
+  <div id="mainContent">
+
+    <!-- DASHBOARD -->
+    <div id="dashboardSection" class="section-content">
+      <h4 class="fw-bold mb-4">Dashboard</h4>
+      <div class="row g-3">
+        <div class="col-6 col-lg-3">
+          <div class="stat-card card p-3">
+            <div class="d-flex align-items-center gap-3">
+              <div class="rounded-3 bg-primary bg-opacity-10 p-2"><i class="bi bi-building text-primary fs-4"></i></div>
+              <div><div class="text-muted small">Entities</div><div class="fw-bold fs-4" id="statEntities">—</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card card p-3">
+            <div class="d-flex align-items-center gap-3">
+              <div class="rounded-3 bg-success bg-opacity-10 p-2"><i class="bi bi-geo-alt text-success fs-4"></i></div>
+              <div><div class="text-muted small">Locations</div><div class="fw-bold fs-4" id="statLocations">—</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card card p-3">
+            <div class="d-flex align-items-center gap-3">
+              <div class="rounded-3 bg-warning bg-opacity-10 p-2"><i class="bi bi-mortarboard text-warning fs-4"></i></div>
+              <div><div class="text-muted small">Programs</div><div class="fw-bold fs-4" id="statPrograms">—</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card card p-3">
+            <div class="d-flex align-items-center gap-3">
+              <div class="rounded-3 bg-info bg-opacity-10 p-2"><i class="bi bi-camera-video text-info fs-4"></i></div>
+              <div><div class="text-muted small">Orbit Configs</div><div class="fw-bold fs-4" id="statOrbits">—</div></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="content-area">
+    <!-- ENTITIES -->
+    <div id="entitiesSection" class="section-content">
 
-      <!-- Toast -->
-      <div style="position:fixed;top:80px;right:24px;z-index:9999;min-width:300px" id="toastArea"></div>
-
-      <!-- ── DASHBOARD ── -->
-      <div id="sec-dashboard" class="section active">
-        <div class="row g-3 mb-4">
-          <div class="col-6 col-lg-3">
-            <div class="stat-card">
-              <div class="icon" style="background:#dbeafe"><i class="bi bi-building text-primary"></i></div>
-              <h3 id="statEntities">–</h3>
-              <p>Entities</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="stat-card">
-              <div class="icon" style="background:#dcfce7"><i class="bi bi-geo-alt-fill text-success"></i></div>
-              <h3 id="statLocations">–</h3>
-              <p>Locations</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="stat-card">
-              <div class="icon" style="background:#fef3c7"><i class="bi bi-mortarboard-fill" style="color:#d97706"></i></div>
-              <h3 id="statPrograms">–</h3>
-              <p>Programs</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="stat-card">
-              <div class="icon" style="background:#fce7f3"><i class="bi bi-camera-video-fill" style="color:#db2777"></i></div>
-              <h3 id="statOrbits">–</h3>
-              <p>Orbit Configs</p>
-            </div>
-          </div>
+      <!-- List -->
+      <div id="entityListView">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h4 class="fw-bold mb-0">Entities</h4>
+          <button class="btn btn-primary btn-sm" onclick="openEntityForm(null)">
+            <i class="bi bi-plus-lg me-1"></i>Add New Entity
+          </button>
         </div>
-        <div id="dashboardDbError" class="alert alert-warning d-none">
-          <i class="bi bi-exclamation-triangle me-2"></i>
-          <strong>Database not connected.</strong> Stats will appear once the database is configured.
+        <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
+          <table class="table table-hover mb-0 align-middle">
+            <thead style="background:#1e293b;color:#e2e8f0">
+              <tr>
+                <th class="ps-3" style="width:42px">#</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Location</th>
+                <th class="text-center" style="width:100px">Programs</th>
+                <th style="width:100px">Status</th>
+                <th class="text-end pe-3" style="width:100px">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="entitiesTableBody">
+              <tr><td colspan="7" class="text-center text-muted py-5">Loading...</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
-      <!-- ── ENTITIES ── -->
-      <div id="sec-entities" class="section">
-        <div class="table-card">
-          <div class="table-header">
-            <h5><i class="bi bi-building me-2"></i>Entities</h5>
-            <button class="btn btn-primary btn-sm" onclick="openEntityModal()">
-              <i class="bi bi-plus-lg me-1"></i>Add Entity
-            </button>
-          </div>
-          <div class="p-3 border-bottom">
-            <input type="text" class="form-control form-control-sm" style="max-width:300px" placeholder="Search entities…" oninput="filterEntities(this.value)">
-          </div>
-          <div class="table-responsive">
-            <table class="table table-hover" id="entitiesTable">
-              <thead><tr>
-                <th>Name</th><th>Type</th><th>Status</th><th>Website</th><th style="width:110px">Actions</th>
-              </tr></thead>
-              <tbody id="entitiesBody"><tr><td colspan="5" class="text-center py-4 text-muted">Loading…</td></tr></tbody>
-            </table>
+      <!-- Form -->
+      <div id="entityFormView" class="d-none">
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <button class="btn btn-outline-secondary btn-sm" onclick="closeEntityForm()">
+            <i class="bi bi-arrow-left me-1"></i>Back
+          </button>
+          <h4 class="fw-bold mb-0" id="entityFormTitle">Add New Entity</h4>
+        </div>
+
+        <!-- Section 1: Entity Information -->
+        <div class="form-section">
+          <div class="section-label"><i class="bi bi-building"></i>Entity Information</div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Name <span class="req">*</span></label>
+              <input type="text" class="form-control" id="fName" placeholder="e.g. Constructor University">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Type <span class="req">*</span></label>
+              <select class="form-select" id="fType">
+                <option value="">Select type...</option>
+                <option value="university">University</option>
+                <option value="language_school">Language School</option>
+                <option value="foundation_provider">Foundation Provider</option>
+                <option value="summer_camp_provider">Summer Camp Provider</option>
+                <option value="certificate_provider">Certificate Provider</option>
+                <option value="diploma_provider">Diploma Provider</option>
+                <option value="high_school">High School</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Website URL</label>
+              <input type="url" class="form-control" id="fWebsite" placeholder="https://...">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Logo URL</label>
+              <input type="url" class="form-control" id="fLogo" placeholder="https://...logo.png">
+            </div>
+            <div class="col-md-8">
+              <label class="form-label fw-semibold small">Description</label>
+              <textarea class="form-control" id="fDesc" rows="2" placeholder="Short description in English..."></textarea>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label fw-semibold small">Status</label>
+              <select class="form-select" id="fStatus">
+                <option value="pending">Pending</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+              </select>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- ── LOCATIONS ── -->
-      <div id="sec-locations" class="section">
-        <div class="table-card">
-          <div class="table-header">
-            <h5><i class="bi bi-geo-alt-fill me-2"></i>Locations</h5>
-            <button class="btn btn-primary btn-sm" onclick="openLocationModal()">
-              <i class="bi bi-plus-lg me-1"></i>Add Location
-            </button>
-          </div>
-          <div class="p-3 border-bottom">
-            <input type="text" class="form-control form-control-sm" style="max-width:300px" placeholder="Search locations…" oninput="filterLocations(this.value)">
-          </div>
-          <div class="table-responsive">
-            <table class="table table-hover" id="locationsTable">
-              <thead><tr>
-                <th>Entity</th><th>Campus</th><th>City</th><th>Country</th><th>Continent</th><th>Status</th><th style="width:110px">Actions</th>
-              </tr></thead>
-              <tbody id="locationsBody"><tr><td colspan="7" class="text-center py-4 text-muted">Loading…</td></tr></tbody>
-            </table>
+        <!-- Section 2: Location -->
+        <div class="form-section">
+          <div class="section-label"><i class="bi bi-geo-alt"></i>Location</div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">City <span class="req">*</span></label>
+              <input type="text" class="form-control" id="fCity" placeholder="e.g. Berlin">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Country <span class="req">*</span></label>
+              <input type="text" class="form-control" id="fCountry" placeholder="e.g. Germany">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Continent <span class="req">*</span></label>
+              <select class="form-select" id="fContinent">
+                <option value="">Select continent...</option>
+                <option>Europe</option>
+                <option>Asia</option>
+                <option>North America</option>
+                <option>South America</option>
+                <option>Africa</option>
+                <option>Oceania</option>
+                <option>Middle East</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Campus Name <span class="field-hint">(optional)</span></label>
+              <input type="text" class="form-control" id="fCampus" placeholder="e.g. Main Campus">
+            </div>
+            <div class="col-12">
+              <label class="form-label fw-semibold small">Address</label>
+              <input type="text" class="form-control" id="fAddress" placeholder="Full street address...">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label fw-semibold small">Latitude</label>
+              <input type="number" class="form-control" id="fLat" step="0.0000001" placeholder="53.5753" oninput="syncOrbitCenter()">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label fw-semibold small">Longitude</label>
+              <input type="number" class="form-control" id="fLng" step="0.0000001" placeholder="10.0153" oninput="syncOrbitCenter()">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label fw-semibold small">Closest Airport</label>
+              <input type="text" class="form-control" id="fAirportName" placeholder="e.g. Hamburg Airport">
+            </div>
+            <div class="col-md-1" style="min-width:90px">
+              <label class="form-label fw-semibold small">IATA</label>
+              <input type="text" class="form-control text-uppercase" id="fAirportCode" maxlength="3" placeholder="HAM">
+            </div>
+            <div class="col-md-2" style="min-width:170px">
+              <label class="form-label fw-semibold small">Flight from Istanbul <span class="field-hint">(min)</span></label>
+              <input type="number" class="form-control" id="fFlightMin" placeholder="180">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label fw-semibold small">Location Status</label>
+              <select class="form-select" id="fLocStatus">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+              </select>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- ── PROGRAMS ── -->
-      <div id="sec-programs" class="section">
-        <div class="table-card">
-          <div class="table-header">
-            <h5><i class="bi bi-mortarboard-fill me-2"></i>Programs</h5>
-            <button class="btn btn-primary btn-sm" onclick="openProgramModal()">
+        <!-- Section 3: Orbit Camera -->
+        <div class="form-section">
+          <div class="section-label">
+            <i class="bi bi-camera-video"></i>Orbit Camera Config
+            <span class="ms-1 text-muted fw-normal" style="font-size:.75rem;text-transform:none;letter-spacing:0">— defaults pre-filled, adjust per campus</span>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Orbit Center Latitude <span class="field-hint">(auto-filled from location)</span></label>
+              <input type="number" class="form-control" id="fOrbitLat" step="0.0000001" placeholder="auto from location">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Orbit Center Longitude <span class="field-hint">(auto-filled from location)</span></label>
+              <input type="number" class="form-control" id="fOrbitLng" step="0.0000001" placeholder="auto from location">
+            </div>
+            <div class="col-6 col-md-3">
+              <label class="form-label fw-semibold small">Altitude (m)</label>
+              <input type="number" class="form-control" id="fOrbitAlt" value="400">
+            </div>
+            <div class="col-6 col-md-3">
+              <label class="form-label fw-semibold small">Pitch ° <span class="field-hint">-45 = 45° down</span></label>
+              <input type="number" class="form-control" id="fOrbitPitch" value="-45" step="0.01">
+            </div>
+            <div class="col-6 col-md-3">
+              <label class="form-label fw-semibold small">Initial Heading °</label>
+              <input type="number" class="form-control" id="fOrbitHeading" value="0" step="0.01">
+            </div>
+            <div class="col-6 col-md-3">
+              <label class="form-label fw-semibold small">Range (m)</label>
+              <input type="number" class="form-control" id="fOrbitRange" value="400">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label fw-semibold small">Rotation Type</label>
+              <select class="form-select" id="fOrbitRotType">
+                <option value="360">360° full circle</option>
+                <option value="180">180° half circle</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label fw-semibold small">Rotation Speed</label>
+              <input type="number" class="form-control" id="fOrbitSpeed" value="0.12" step="0.01">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label fw-semibold small d-block">Scan Effect</label>
+              <div class="form-check form-switch mt-2">
+                <input class="form-check-input" type="checkbox" role="switch" id="fOrbitScanEnable">
+                <label class="form-check-label small" for="fOrbitScanEnable">Enable scan effect</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Scan Target Latitude <span class="field-hint">(building to highlight)</span></label>
+              <input type="number" class="form-control" id="fScanLat" step="0.0000001">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold small">Scan Target Longitude</label>
+              <input type="number" class="form-control" id="fScanLng" step="0.0000001">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label fw-semibold small">Camera V Offset</label>
+              <input type="number" class="form-control" id="fCamV" value="0" step="0.01">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label fw-semibold small">Camera H Offset</label>
+              <input type="number" class="form-control" id="fCamH" value="0" step="0.01">
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4: Programs -->
+        <div class="form-section">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="section-label mb-0"><i class="bi bi-mortarboard"></i>Programs</div>
+            <button type="button" class="btn btn-outline-primary btn-sm" onclick="addProgram()">
               <i class="bi bi-plus-lg me-1"></i>Add Program
             </button>
           </div>
-          <div class="p-3 border-bottom">
-            <input type="text" class="form-control form-control-sm" style="max-width:300px" placeholder="Search programs…" oninput="filterPrograms(this.value)">
-          </div>
-          <div class="table-responsive">
-            <table class="table table-hover">
-              <thead><tr>
-                <th>Program Name</th><th>Type</th><th>Entity</th><th>Location</th><th>Fee</th><th>Status</th><th style="width:110px">Actions</th>
-              </tr></thead>
-              <tbody id="programsBody"><tr><td colspan="7" class="text-center py-4 text-muted">Loading…</td></tr></tbody>
-            </table>
-          </div>
+          <p class="text-muted small mb-2" id="noProgMsg">No programs yet — click "Add Program" to add one.</p>
+          <div id="programsList"></div>
+        </div>
+
+        <div class="d-flex gap-2 pb-5">
+          <button class="btn btn-primary px-4 fw-semibold" id="saveBtn" onclick="saveEntity()">
+            <i class="bi bi-check-lg me-1"></i>Save Entity
+          </button>
+          <button class="btn btn-outline-secondary" onclick="closeEntityForm()">Cancel</button>
         </div>
       </div>
 
-      <!-- ── ORBIT CONFIGS ── -->
-      <div id="sec-orbit" class="section">
-        <div class="table-card">
-          <div class="table-header">
-            <h5><i class="bi bi-camera-video-fill me-2"></i>Orbit Configs (3D Camera)</h5>
-            <button class="btn btn-primary btn-sm" onclick="openOrbitModal()">
-              <i class="bi bi-plus-lg me-1"></i>Add Config
-            </button>
-          </div>
-          <div class="table-responsive">
-            <table class="table table-hover">
-              <thead><tr>
-                <th>Entity</th><th>Location</th><th>Altitude</th><th>Range</th><th>Rotation</th><th>Speed</th><th style="width:110px">Actions</th>
-              </tr></thead>
-              <tbody id="orbitBody"><tr><td colspan="7" class="text-center py-4 text-muted">Loading…</td></tr></tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /content-area -->
-  </div><!-- /main -->
-</div><!-- /appPage -->
-
-
-<!-- ═══ ENTITY MODAL ═══ -->
-<div class="modal fade" id="entityModal" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header border-0 pb-0">
-        <h5 class="modal-title fw-bold" id="entityModalTitle">Add Entity</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <input type="hidden" id="entityId">
-        <div class="row g-3">
-          <div class="col-md-8">
-            <label class="form-label fw-semibold">Name <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="entityName" placeholder="e.g. University of Manchester">
-          </div>
-          <div class="col-md-4">
-            <label class="form-label fw-semibold">Status</label>
-            <select class="form-select" id="entityStatus">
-              <option value="pending">Pending</option>
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
-            </select>
-          </div>
-          <div class="col-12">
-            <label class="form-label fw-semibold">Type <span class="text-danger">*</span></label>
-            <select class="form-select" id="entityType">
-              <option value="">Select type…</option>
-              <option value="university">University</option>
-              <option value="language_school">Language School</option>
-              <option value="foundation_provider">Foundation Provider</option>
-              <option value="summer_camp_provider">Summer Camp Provider</option>
-              <option value="certificate_provider">Certificate Provider</option>
-              <option value="diploma_provider">Diploma Provider</option>
-              <option value="high_school">High School</option>
-            </select>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label fw-semibold">Website URL</label>
-            <input type="url" class="form-control" id="entityWebsite" placeholder="https://…">
-          </div>
-          <div class="col-md-6">
-            <label class="form-label fw-semibold">Logo URL</label>
-            <input type="url" class="form-control" id="entityLogo" placeholder="https://…">
-          </div>
-          <div class="col-12">
-            <label class="form-label fw-semibold">Description</label>
-            <textarea class="form-control" id="entityDesc" rows="3" placeholder="Brief description…"></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer border-0 pt-0">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" onclick="saveEntity()">
-          <span id="entitySaveText">Save Entity</span>
-          <span id="entitySaveSpinner" class="spinner-border spinner-border-sm d-none ms-1"></span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══ LOCATION MODAL ═══ -->
-<div class="modal fade" id="locationModal" tabindex="-1">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header border-0 pb-0">
-        <h5 class="modal-title fw-bold" id="locationModalTitle">Add Location</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <input type="hidden" id="locationId">
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label class="form-label fw-semibold">Entity <span class="text-danger">*</span></label>
-            <select class="form-select" id="locationEntityId"></select>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label fw-semibold">Campus Name</label>
-            <input type="text" class="form-control" id="locationCampus" placeholder="Main Campus, City Campus…">
-          </div>
-          <div class="col-md-4">
-            <label class="form-label fw-semibold">City <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="locationCity">
-          </div>
-          <div class="col-md-4">
-            <label class="form-label fw-semibold">Country <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="locationCountry">
-          </div>
-          <div class="col-md-4">
-            <label class="form-label fw-semibold">Continent <span class="text-danger">*</span></label>
-            <select class="form-select" id="locationContinent">
-              <option value="">Select…</option>
-              <option>Europe</option><option>Asia</option><option>North America</option>
-              <option>South America</option><option>Africa</option><option>Oceania</option><option>Middle East</option>
-            </select>
-          </div>
-          <div class="col-12">
-            <label class="form-label fw-semibold">Address</label>
-            <input type="text" class="form-control" id="locationAddress">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Latitude</label>
-            <input type="number" step="any" class="form-control" id="locationLat" placeholder="51.5074">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Longitude</label>
-            <input type="number" step="any" class="form-control" id="locationLng" placeholder="-0.1278">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Nearest Airport</label>
-            <input type="text" class="form-control" id="locationAirportName" placeholder="Heathrow Airport">
-          </div>
-          <div class="col-md-1">
-            <label class="form-label fw-semibold">Code</label>
-            <input type="text" class="form-control" id="locationAirportCode" maxlength="3" placeholder="LHR">
-          </div>
-          <div class="col-md-2">
-            <label class="form-label fw-semibold">Flight from IST (min)</label>
-            <input type="number" class="form-control" id="locationFlightMin" placeholder="225">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Status</label>
-            <select class="form-select" id="locationStatus">
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer border-0 pt-0">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" onclick="saveLocation()">
-          <span id="locationSaveText">Save Location</span>
-          <span id="locationSaveSpinner" class="spinner-border spinner-border-sm d-none ms-1"></span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══ PROGRAM MODAL ═══ -->
-<div class="modal fade" id="programModal" tabindex="-1">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header border-0 pb-0">
-        <h5 class="modal-title fw-bold" id="programModalTitle">Add Program</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <input type="hidden" id="programId">
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label class="form-label fw-semibold">Location <span class="text-danger">*</span></label>
-            <select class="form-select" id="programLocationId"></select>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label fw-semibold">Program Type <span class="text-danger">*</span></label>
-            <select class="form-select" id="programTypeId"></select>
-          </div>
-          <div class="col-md-8">
-            <label class="form-label fw-semibold">Program Name <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="programName" placeholder="e.g. BSc Computer Science">
-          </div>
-          <div class="col-md-4">
-            <label class="form-label fw-semibold">Language of Instruction</label>
-            <input type="text" class="form-control" id="programLang" value="English">
-          </div>
-          <div class="col-md-4">
-            <label class="form-label fw-semibold">Duration</label>
-            <input type="text" class="form-control" id="programDuration" placeholder="3 years, 2 semesters…">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Tuition Fee</label>
-            <input type="number" step="0.01" class="form-control" id="programFee" placeholder="15000">
-          </div>
-          <div class="col-md-2">
-            <label class="form-label fw-semibold">Currency</label>
-            <input type="text" class="form-control" id="programCurrency" value="EUR" maxlength="3">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Intake Months</label>
-            <input type="text" class="form-control" id="programIntake" placeholder="September,January">
-          </div>
-          <div class="col-md-4">
-            <label class="form-label fw-semibold">English Test</label>
-            <select class="form-select" id="programEngType">
-              <option value="None">None</option>
-              <option value="IELTS">IELTS</option>
-              <option value="TOEFL">TOEFL</option>
-              <option value="Duolingo">Duolingo</option>
-              <option value="PTE">PTE</option>
-              <option value="Cambridge">Cambridge</option>
-            </select>
-          </div>
-          <div class="col-md-4">
-            <label class="form-label fw-semibold">Required Score</label>
-            <input type="text" class="form-control" id="programEngScore" placeholder="6.5, 90, 110…">
-          </div>
-          <div class="col-md-4">
-            <label class="form-label fw-semibold">GPA Requirement</label>
-            <input type="text" class="form-control" id="programGpa" placeholder="2.5/4.0">
-          </div>
-          <div class="col-md-4">
-            <label class="form-label fw-semibold">Status</label>
-            <select class="form-select" id="programStatus">
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
-            </select>
-          </div>
-          <div class="col-md-4 d-flex align-items-end">
-            <div class="form-check mb-2">
-              <input class="form-check-input" type="checkbox" id="programScholarship">
-              <label class="form-check-label fw-semibold" for="programScholarship">Scholarship Available</label>
-            </div>
-          </div>
-          <div class="col-12">
-            <label class="form-label fw-semibold">Description</label>
-            <textarea class="form-control" id="programDesc" rows="2"></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer border-0 pt-0">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" onclick="saveProgram()">
-          <span id="programSaveText">Save Program</span>
-          <span id="programSaveSpinner" class="spinner-border spinner-border-sm d-none ms-1"></span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══ ORBIT MODAL ═══ -->
-<div class="modal fade" id="orbitModal" tabindex="-1">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header border-0 pb-0">
-        <h5 class="modal-title fw-bold" id="orbitModalTitle">Add Orbit Config</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <input type="hidden" id="orbitId">
-        <div class="row g-3">
-          <div class="col-12">
-            <label class="form-label fw-semibold">Location <span class="text-danger">*</span></label>
-            <select class="form-select" id="orbitLocationId"></select>
-          </div>
-          <div class="col-12"><hr class="my-1"><p class="fw-semibold mb-0" style="font-size:13px;color:#64748b;text-transform:uppercase;letter-spacing:.5px">Camera Center</p></div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Center Latitude</label>
-            <input type="number" step="any" class="form-control" id="orbitCenterLat">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Center Longitude</label>
-            <input type="number" step="any" class="form-control" id="orbitCenterLng">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Altitude (m)</label>
-            <input type="number" class="form-control" id="orbitAltitude" value="400">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Pitch (°)</label>
-            <input type="number" step="any" class="form-control" id="orbitPitch" value="-22">
-          </div>
-          <div class="col-12"><hr class="my-1"><p class="fw-semibold mb-0" style="font-size:13px;color:#64748b;text-transform:uppercase;letter-spacing:.5px">Orbit Settings</p></div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Initial Heading (°)</label>
-            <input type="number" step="any" class="form-control" id="orbitHeading" value="0">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Range (m)</label>
-            <input type="number" class="form-control" id="orbitRange" value="400">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Rotation Type</label>
-            <select class="form-select" id="orbitRotType">
-              <option value="360">360°</option>
-              <option value="180">180°</option>
-            </select>
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Speed</label>
-            <input type="number" step="0.01" class="form-control" id="orbitSpeed" value="0.12">
-          </div>
-          <div class="col-12"><hr class="my-1"><p class="fw-semibold mb-0" style="font-size:13px;color:#64748b;text-transform:uppercase;letter-spacing:.5px">Scan Target (optional)</p></div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Target Latitude</label>
-            <input type="number" step="any" class="form-control" id="orbitScanLat">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">Target Longitude</label>
-            <input type="number" step="any" class="form-control" id="orbitScanLng">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">V Offset</label>
-            <input type="number" step="any" class="form-control" id="orbitVOffset" value="0">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label fw-semibold">H Offset</label>
-            <input type="number" step="any" class="form-control" id="orbitHOffset" value="0">
-          </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="orbitScanEffect">
-              <label class="form-check-label fw-semibold" for="orbitScanEffect">Enable Scan Effect</label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer border-0 pt-0">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" onclick="saveOrbit()">
-          <span id="orbitSaveText">Save Config</span>
-          <span id="orbitSaveSpinner" class="spinner-border spinner-border-sm d-none ms-1"></span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══ DELETE CONFIRM MODAL ═══ -->
-<div class="modal fade" id="deleteModal" tabindex="-1">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-body text-center py-4">
-        <div style="font-size:48px">🗑️</div>
-        <h5 class="mt-2 mb-1">Delete?</h5>
-        <p class="text-muted mb-3" id="deleteModalMsg">This cannot be undone.</p>
-        <button class="btn btn-danger me-2" id="deleteConfirmBtn">Delete</button>
-        <button class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-      </div>
-    </div>
-  </div>
-</div>
-
+    </div><!-- /entitiesSection -->
+  </div><!-- /mainContent -->
+</div><!-- /adminApp -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-// ═══════════════════════════════════════════════
-// STATE & CONFIG
-// ═══════════════════════════════════════════════
-const API = '';
 let token = localStorage.getItem('sa_token');
-let allEntities = [], allLocations = [], allPrograms = [], allOrbits = [], programTypes = [];
-let filteredEntities = [], filteredLocations = [], filteredPrograms = [];
+let editingId = null;
+let formPrograms = [];
+let programTypes = [];
+const confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'));
 
-// ═══════════════════════════════════════════════
-// INIT
-// ═══════════════════════════════════════════════
-window.addEventListener('DOMContentLoaded', () => {
-  if (token) showApp();
-  else showLogin();
-});
-
-function showLogin() {
-  document.getElementById('loginPage').style.display = 'flex';
-  document.getElementById('appPage').style.display = 'none';
+async function api(method, url, body) {
+  const opts = { method, headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` } };
+  if (body !== undefined) opts.body = JSON.stringify(body);
+  const res = await fetch(url, opts);
+  if (res.status === 401) { doLogout(); throw new Error('Session expired'); }
+  return res;
 }
 
-function showApp() {
-  document.getElementById('loginPage').style.display = 'none';
-  document.getElementById('appPage').style.display = 'flex';
-  navigate('dashboard');
+function toast(msg, type) {
+  const id = 't' + Date.now();
+  const color = type === 'error' ? 'danger' : type === 'warn' ? 'warning' : 'success';
+  document.getElementById('toastContainer').insertAdjacentHTML('beforeend',
+    `<div id="${id}" class="toast align-items-center text-bg-${color} border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body small">${esc(msg)}</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>`
+  );
+  const el = document.getElementById(id);
+  new bootstrap.Toast(el, { delay: 3500 }).show();
+  el.addEventListener('hidden.bs.toast', () => el.remove());
 }
 
-// ═══════════════════════════════════════════════
-// AUTH
-// ═══════════════════════════════════════════════
+document.getElementById('loginPassword').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+document.getElementById('loginBtn').addEventListener('click', doLogin);
+
 async function doLogin() {
-  const pwd = document.getElementById('loginPassword').value;
-  if (!pwd) return;
-  setLoading('loginBtn', 'loginBtnText', 'loginSpinner', true);
+  const pw = document.getElementById('loginPassword').value;
+  if (!pw) return;
+  const btn = document.getElementById('loginBtn');
+  btn.disabled = true; btn.textContent = '...';
   document.getElementById('loginError').classList.add('d-none');
   try {
     const res = await fetch('/api/admin/login', {
-      method: 'POST', headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ password: pwd })
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: pw })
     });
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || 'Login failed');
-    token = data.token;
+    const d = await res.json();
+    if (!res.ok) throw new Error(d.error || 'Login failed');
+    token = d.token;
     localStorage.setItem('sa_token', token);
-    showApp();
+    initApp();
   } catch (e) {
-    const el = document.getElementById('loginError');
-    el.textContent = e.message;
-    el.classList.remove('d-none');
-  }
-  setLoading('loginBtn', 'loginBtnText', 'loginSpinner', false);
+    const err = document.getElementById('loginError');
+    err.textContent = e.message; err.classList.remove('d-none');
+  } finally { btn.disabled = false; btn.textContent = 'Sign In'; }
 }
 
 async function doLogout() {
-  try { await apiFetch('POST', '/api/admin/logout'); } catch(e){}
-  token = null;
-  localStorage.removeItem('sa_token');
-  showLogin();
+  try { await api('POST', '/api/admin/logout'); } catch {}
+  token = null; localStorage.removeItem('sa_token');
+  document.getElementById('adminApp').style.display = 'none';
+  document.getElementById('loginScreen').style.display = 'flex';
+  document.getElementById('loginPassword').value = '';
 }
 
-// ═══════════════════════════════════════════════
-// NAVIGATION
-// ═══════════════════════════════════════════════
-function navigate(section) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('#sidebar nav a').forEach(a => a.classList.remove('active'));
-  document.getElementById('sec-' + section).classList.add('active');
-  document.getElementById('nav-' + section).classList.add('active');
-  const titles = { dashboard:'Dashboard', entities:'Entities', locations:'Locations', programs:'Programs', orbit:'Orbit Configs' };
-  document.getElementById('pageTitle').textContent = titles[section] || section;
-  if (section === 'dashboard') loadDashboard();
-  if (section === 'entities')  loadEntities();
-  if (section === 'locations') loadLocations();
-  if (section === 'programs')  loadPrograms();
-  if (section === 'orbit')     loadOrbits();
-  return false;
-}
+if (token) { initApp(); }
+else { document.getElementById('loginScreen').style.display = 'flex'; }
 
-// ═══════════════════════════════════════════════
-// API HELPER
-// ═══════════════════════════════════════════════
-async function apiFetch(method, url, body) {
-  const opts = {
-    method,
-    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + token }
-  };
-  if (body) opts.body = JSON.stringify(body);
-  const res = await fetch(url, opts);
-  if (res.status === 401) { doLogout(); throw new Error('Session expired'); }
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error || 'Request failed');
-  return data;
-}
-
-// ═══════════════════════════════════════════════
-// TOAST
-// ═══════════════════════════════════════════════
-function toast(msg, type='success') {
-  const area = document.getElementById('toastArea');
-  const id = 'toast_' + Date.now();
-  const color = type === 'success' ? '#16a34a' : '#dc2626';
-  const icon  = type === 'success' ? 'bi-check-circle-fill' : 'bi-x-circle-fill';
-  area.insertAdjacentHTML('beforeend', `
-    <div id="${id}" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:14px 18px;
-      margin-bottom:10px;display:flex;align-items:center;gap:10px;box-shadow:0 4px 12px rgba(0,0,0,.1);
-      animation:fadeIn .3s ease">
-      <i class="bi ${icon}" style="color:${color};font-size:18px"></i>
-      <span style="font-size:14px;color:#374151">${msg}</span>
-    </div>
-  `);
-  setTimeout(() => { const el = document.getElementById(id); if(el) el.remove(); }, 3500);
-}
-
-// ═══════════════════════════════════════════════
-// HELPERS
-// ═══════════════════════════════════════════════
-function setLoading(btnId, textId, spinnerId, loading) {
-  document.getElementById(btnId).disabled = loading;
-  document.getElementById(textId).textContent = loading ? 'Saving…' : (btnId === 'loginBtn' ? 'Login' : 'Save');
-  document.getElementById(spinnerId).classList.toggle('d-none', !loading);
-}
-
-function togglePwd(inputId, btn) {
-  const input = document.getElementById(inputId);
-  if (input.type === 'password') { input.type = 'text'; btn.innerHTML = '<i class="bi bi-eye-slash"></i>'; }
-  else { input.type = 'password'; btn.innerHTML = '<i class="bi bi-eye"></i>'; }
-}
-
-function statusBadge(s) {
-  const map = { active:'badge-active', inactive:'badge-inactive', pending:'badge-pending' };
-  return `<span class="badge ${map[s]||'bg-secondary'}">${s||'–'}</span>`;
-}
-
-function confirmDelete(msg, fn) {
-  document.getElementById('deleteModalMsg').textContent = msg;
-  const modal = new bootstrap.Modal(document.getElementById('deleteModal'));
-  document.getElementById('deleteConfirmBtn').onclick = () => { modal.hide(); fn(); };
-  modal.show();
-}
-
-// ═══════════════════════════════════════════════
-// DASHBOARD
-// ═══════════════════════════════════════════════
-async function loadDashboard() {
+async function initApp() {
+  document.getElementById('loginScreen').style.display = 'none';
+  document.getElementById('adminApp').style.display = 'block';
   try {
-    const stats = await apiFetch('GET', '/api/entities/stats');
-    document.getElementById('statEntities').textContent = stats.entities;
-    document.getElementById('statLocations').textContent = stats.locations;
-    document.getElementById('statPrograms').textContent = stats.programs;
-    document.getElementById('statOrbits').textContent = stats.orbits;
-    document.getElementById('dashboardDbError').classList.add('d-none');
-  } catch(e) {
-    document.getElementById('dashboardDbError').classList.remove('d-none');
-  }
+    const res = await api('GET', '/api/program-types');
+    if (res.ok) programTypes = await res.json();
+  } catch {}
+  showSection('dashboard');
 }
 
-// ═══════════════════════════════════════════════
-// ENTITIES
-// ═══════════════════════════════════════════════
+function showSection(name) {
+  document.querySelectorAll('.section-content').forEach(el => el.classList.remove('visible'));
+  document.querySelectorAll('#sidebar .nav-link').forEach(el => el.classList.remove('active'));
+  const sec = document.getElementById(name + 'Section');
+  if (sec) sec.classList.add('visible');
+  const nav = document.querySelector(`#sidebar .nav-link[data-sec="${name}"]`);
+  if (nav) nav.classList.add('active');
+  if (name === 'dashboard') loadStats();
+  if (name === 'entities') { closeEntityForm(); loadEntities(); }
+}
+
+async function loadStats() {
+  try {
+    const res = await api('GET', '/api/entities/stats');
+    const d = await res.json();
+    document.getElementById('statEntities').textContent = d.entities;
+    document.getElementById('statLocations').textContent = d.locations;
+    document.getElementById('statPrograms').textContent = d.programs;
+    document.getElementById('statOrbits').textContent = d.orbits;
+  } catch {}
+}
+
 async function loadEntities() {
-  document.getElementById('entitiesBody').innerHTML = '<tr><td colspan="5" class="text-center py-4 text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</td></tr>';
+  const tbody = document.getElementById('entitiesTableBody');
+  tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted py-5">
+    <span class="spinner-border spinner-border-sm me-2"></span>Loading...</td></tr>`;
   try {
-    allEntities = await apiFetch('GET', '/api/entities');
-    filteredEntities = [...allEntities];
-    renderEntities();
-  } catch(e) {
-    document.getElementById('entitiesBody').innerHTML = `<tr><td colspan="5" class="text-center py-4 text-danger">${e.message}</td></tr>`;
+    const res = await api('GET', '/api/entities');
+    const list = await res.json();
+    if (!list.length) {
+      tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted py-5">
+        No entities yet. <a href="#" onclick="openEntityForm(null);return false;">Add the first one</a></td></tr>`;
+      return;
+    }
+    tbody.innerHTML = list.map((e, i) => `
+      <tr>
+        <td class="ps-3 text-muted small">${i + 1}</td>
+        <td>
+          ${e.logo_url ? `<img src="${esc(e.logo_url)}" class="entity-logo me-2" onerror="this.style.display='none'">` : ''}
+          <strong>${esc(e.name)}</strong>
+        </td>
+        <td><span class="badge bg-light text-dark border small">${typeLabel(e.type)}</span></td>
+        <td class="text-muted small">${e.city ? `${esc(e.city)}, ${esc(e.country)}` : '—'}</td>
+        <td class="text-center"><span class="badge bg-primary bg-opacity-15 text-primary">${e.programs_count}</span></td>
+        <td><span class="badge badge-${e.status}">${cap(e.status)}</span></td>
+        <td class="text-end pe-3">
+          <button class="btn btn-outline-secondary btn-sm table-actions me-1" onclick="openEntityForm(${e.id})">
+            <i class="bi bi-pencil"></i>
+          </button>
+          <button class="btn btn-outline-danger btn-sm table-actions" onclick="confirmDel(${e.id},'${esc(e.name).replace(/'/g,"\\'")}')">
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>`).join('');
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="7" class="text-center text-danger py-4">${esc(e.message)}</td></tr>`;
   }
 }
 
-function renderEntities() {
-  const tbody = document.getElementById('entitiesBody');
-  if (!filteredEntities.length) { tbody.innerHTML = '<tr><td colspan="5" class="text-center py-4 text-muted">No entities found.</td></tr>'; return; }
-  tbody.innerHTML = filteredEntities.map(e => `
-    <tr>
-      <td><strong>${e.name}</strong></td>
-      <td><span class="badge bg-light text-dark">${e.type?.replace(/_/g,' ')}</span></td>
-      <td>${statusBadge(e.status)}</td>
-      <td>${e.website_url ? `<a href="${e.website_url}" target="_blank" class="text-primary" style="font-size:13px">${e.website_url.replace(/https?:\/\//,'').substring(0,30)}…</a>` : '<span class="text-muted">–</span>'}</td>
-      <td>
-        <button class="btn btn-sm btn-light me-1" onclick="openEntityModal(${e.id})" title="Edit"><i class="bi bi-pencil"></i></button>
-        <button class="btn btn-sm btn-light text-danger" onclick="deleteEntity(${e.id},'${e.name.replace(/'/g,"\\'")}')"><i class="bi bi-trash"></i></button>
-      </td>
-    </tr>`).join('');
+function typeLabel(t) {
+  const m = { university:'University', language_school:'Language School', foundation_provider:'Foundation Provider',
+    summer_camp_provider:'Summer Camp', certificate_provider:'Certificate', diploma_provider:'Diploma Provider', high_school:'High School' };
+  return m[t] || t;
 }
 
-function filterEntities(q) {
-  q = q.toLowerCase();
-  filteredEntities = allEntities.filter(e => e.name.toLowerCase().includes(q) || (e.type||'').includes(q));
-  renderEntities();
-}
-
-async function openEntityModal(id) {
-  const modal = new bootstrap.Modal(document.getElementById('entityModal'));
-  document.getElementById('entityId').value = '';
-  document.getElementById('entityName').value = '';
-  document.getElementById('entityType').value = '';
-  document.getElementById('entityWebsite').value = '';
-  document.getElementById('entityLogo').value = '';
-  document.getElementById('entityDesc').value = '';
-  document.getElementById('entityStatus').value = 'pending';
-  document.getElementById('entityModalTitle').textContent = id ? 'Edit Entity' : 'Add Entity';
-  document.getElementById('entitySaveText').textContent = id ? 'Update Entity' : 'Save Entity';
-  if (id) {
+function confirmDel(id, name) {
+  document.getElementById('confirmMsg').textContent = `Delete "${name}"?`;
+  document.getElementById('confirmBtn').onclick = async () => {
     try {
-      const e = await apiFetch('GET', '/api/entities/' + id);
-      document.getElementById('entityId').value = e.id;
-      document.getElementById('entityName').value = e.name || '';
-      document.getElementById('entityType').value = e.type || '';
-      document.getElementById('entityWebsite').value = e.website_url || '';
-      document.getElementById('entityLogo').value = e.logo_url || '';
-      document.getElementById('entityDesc').value = e.description_en || '';
-      document.getElementById('entityStatus').value = e.status || 'pending';
-    } catch(e) { toast('Failed to load entity', 'error'); return; }
-  }
-  modal.show();
-}
-
-async function saveEntity() {
-  const id = document.getElementById('entityId').value;
-  const body = {
-    name: document.getElementById('entityName').value.trim(),
-    type: document.getElementById('entityType').value,
-    website_url: document.getElementById('entityWebsite').value.trim(),
-    logo_url: document.getElementById('entityLogo').value.trim(),
-    description_en: document.getElementById('entityDesc').value.trim(),
-    status: document.getElementById('entityStatus').value
+      const res = await api('DELETE', `/api/entities/${id}`);
+      if (!res.ok) throw new Error((await res.json()).error);
+      confirmModal.hide(); toast('Entity deleted.');
+      loadEntities(); loadStats();
+    } catch (e) { toast(e.message, 'error'); }
   };
-  if (!body.name || !body.type) { toast('Name and type are required', 'error'); return; }
-  setLoading('entityModal', 'entitySaveText', 'entitySaveSpinner', true);
-  try {
-    if (id) await apiFetch('PUT', '/api/entities/' + id, body);
-    else await apiFetch('POST', '/api/entities', body);
-    bootstrap.Modal.getInstance(document.getElementById('entityModal')).hide();
-    toast(id ? 'Entity updated' : 'Entity created');
-    loadEntities();
-  } catch(e) { toast(e.message, 'error'); }
-  document.getElementById('entityModal').disabled = false;
-  document.getElementById('entitySaveText').textContent = id ? 'Update Entity' : 'Save Entity';
-  document.getElementById('entitySaveSpinner').classList.add('d-none');
+  confirmModal.show();
 }
 
-async function deleteEntity(id, name) {
-  confirmDelete(`Delete "${name}"? All its locations and programs will also be deleted.`, async () => {
-    try { await apiFetch('DELETE', '/api/entities/' + id); toast('Entity deleted'); loadEntities(); }
-    catch(e) { toast(e.message, 'error'); }
-  });
-}
-
-// ═══════════════════════════════════════════════
-// LOCATIONS
-// ═══════════════════════════════════════════════
-async function loadLocations() {
-  document.getElementById('locationsBody').innerHTML = '<tr><td colspan="7" class="text-center py-4 text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</td></tr>';
-  try {
-    allLocations = await apiFetch('GET', '/api/locations');
-    filteredLocations = [...allLocations];
-    renderLocations();
-  } catch(e) {
-    document.getElementById('locationsBody').innerHTML = `<tr><td colspan="7" class="text-center py-4 text-danger">${e.message}</td></tr>`;
-  }
-}
-
-function renderLocations() {
-  const tbody = document.getElementById('locationsBody');
-  if (!filteredLocations.length) { tbody.innerHTML = '<tr><td colspan="7" class="text-center py-4 text-muted">No locations found.</td></tr>'; return; }
-  tbody.innerHTML = filteredLocations.map(l => `
-    <tr>
-      <td><strong>${l.entity_name}</strong></td>
-      <td>${l.campus_name || '<span class="text-muted">–</span>'}</td>
-      <td>${l.city}</td>
-      <td>${l.country}</td>
-      <td><span class="badge bg-light text-dark">${l.continent}</span></td>
-      <td>${statusBadge(l.status)}</td>
-      <td>
-        <button class="btn btn-sm btn-light me-1" onclick="openLocationModal(${l.id})"><i class="bi bi-pencil"></i></button>
-        <button class="btn btn-sm btn-light text-danger" onclick="deleteLocation(${l.id},'${l.city}')"><i class="bi bi-trash"></i></button>
-      </td>
-    </tr>`).join('');
-}
-
-function filterLocations(q) {
-  q = q.toLowerCase();
-  filteredLocations = allLocations.filter(l =>
-    (l.entity_name||'').toLowerCase().includes(q) || l.city.toLowerCase().includes(q) || l.country.toLowerCase().includes(q)
-  );
-  renderLocations();
-}
-
-async function openLocationModal(id) {
-  if (!allEntities.length) { try { allEntities = await apiFetch('GET', '/api/entities'); } catch(e){} }
-  const entitySel = document.getElementById('locationEntityId');
-  entitySel.innerHTML = '<option value="">Select entity…</option>' + allEntities.map(e => `<option value="${e.id}">${e.name}</option>`).join('');
-
-  const modal = new bootstrap.Modal(document.getElementById('locationModal'));
-  document.getElementById('locationId').value = '';
-  ['locationCampus','locationCity','locationCountry','locationAddress','locationLat','locationLng',
-   'locationAirportName','locationAirportCode','locationFlightMin'].forEach(f => document.getElementById(f).value = '');
-  document.getElementById('locationContinent').value = '';
-  document.getElementById('locationStatus').value = 'active';
-  document.getElementById('locationModalTitle').textContent = id ? 'Edit Location' : 'Add Location';
-  document.getElementById('locationSaveText').textContent = id ? 'Update Location' : 'Save Location';
-
-  if (id) {
+async function openEntityForm(entityId) {
+  editingId = entityId; formPrograms = [];
+  document.getElementById('entityFormTitle').textContent = entityId ? 'Edit Entity' : 'Add New Entity';
+  resetForm();
+  if (entityId) {
     try {
-      const l = await apiFetch('GET', '/api/locations/' + id);
-      document.getElementById('locationId').value = l.id;
-      document.getElementById('locationEntityId').value = l.entity_id;
-      document.getElementById('locationCampus').value = l.campus_name || '';
-      document.getElementById('locationCity').value = l.city;
-      document.getElementById('locationCountry').value = l.country;
-      document.getElementById('locationContinent').value = l.continent;
-      document.getElementById('locationAddress').value = l.address || '';
-      document.getElementById('locationLat').value = l.latitude || '';
-      document.getElementById('locationLng').value = l.longitude || '';
-      document.getElementById('locationAirportName').value = l.closest_airport_name || '';
-      document.getElementById('locationAirportCode').value = l.closest_airport_code || '';
-      document.getElementById('locationFlightMin').value = l.flight_duration_from_ist_min || '';
-      document.getElementById('locationStatus').value = l.status;
-    } catch(e) { toast('Failed to load location', 'error'); return; }
+      const res = await api('GET', `/api/entities/full/${entityId}`);
+      if (!res.ok) throw new Error((await res.json()).error);
+      fillForm(await res.json());
+    } catch (e) { toast('Failed to load: ' + e.message, 'error'); return; }
   }
-  modal.show();
+  document.getElementById('entityListView').classList.add('d-none');
+  document.getElementById('entityFormView').classList.remove('d-none');
+  window.scrollTo(0, 0);
 }
 
-async function saveLocation() {
-  const id = document.getElementById('locationId').value;
-  const body = {
-    entity_id: document.getElementById('locationEntityId').value,
-    campus_name: document.getElementById('locationCampus').value.trim(),
-    city: document.getElementById('locationCity').value.trim(),
-    country: document.getElementById('locationCountry').value.trim(),
-    continent: document.getElementById('locationContinent').value,
-    address: document.getElementById('locationAddress').value.trim(),
-    latitude: document.getElementById('locationLat').value || null,
-    longitude: document.getElementById('locationLng').value || null,
-    closest_airport_name: document.getElementById('locationAirportName').value.trim(),
-    closest_airport_code: document.getElementById('locationAirportCode').value.trim().toUpperCase(),
-    flight_duration_from_ist_min: document.getElementById('locationFlightMin').value || null,
-    status: document.getElementById('locationStatus').value
-  };
-  if (!body.entity_id || !body.city || !body.country || !body.continent) { toast('Entity, city, country and continent are required', 'error'); return; }
-  document.getElementById('locationSaveSpinner').classList.remove('d-none');
-  try {
-    if (id) await apiFetch('PUT', '/api/locations/' + id, body);
-    else await apiFetch('POST', '/api/locations', body);
-    bootstrap.Modal.getInstance(document.getElementById('locationModal')).hide();
-    toast(id ? 'Location updated' : 'Location created');
-    loadLocations();
-  } catch(e) { toast(e.message, 'error'); }
-  document.getElementById('locationSaveSpinner').classList.add('d-none');
+function closeEntityForm() {
+  document.getElementById('entityFormView').classList.add('d-none');
+  document.getElementById('entityListView').classList.remove('d-none');
 }
 
-async function deleteLocation(id, city) {
-  confirmDelete(`Delete location in "${city}"?`, async () => {
-    try { await apiFetch('DELETE', '/api/locations/' + id); toast('Location deleted'); loadLocations(); }
-    catch(e) { toast(e.message, 'error'); }
-  });
+function resetForm() {
+  const ids = ['fName','fType','fWebsite','fLogo','fDesc','fCity','fCountry','fCampus','fAddress','fLat','fLng','fAirportName','fAirportCode','fFlightMin','fOrbitLat','fOrbitLng','fScanLat','fScanLng'];
+  ids.forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  document.getElementById('fStatus').value = 'pending';
+  document.getElementById('fContinent').value = '';
+  document.getElementById('fLocStatus').value = 'active';
+  document.getElementById('fOrbitAlt').value = 400;
+  document.getElementById('fOrbitPitch').value = -45;
+  document.getElementById('fOrbitHeading').value = 0;
+  document.getElementById('fOrbitRange').value = 400;
+  document.getElementById('fOrbitRotType').value = '360';
+  document.getElementById('fOrbitSpeed').value = 0.12;
+  document.getElementById('fOrbitScanEnable').checked = false;
+  document.getElementById('fCamV').value = 0;
+  document.getElementById('fCamH').value = 0;
+  formPrograms = []; renderPrograms();
 }
 
-// ═══════════════════════════════════════════════
-// PROGRAMS
-// ═══════════════════════════════════════════════
-async function loadPrograms() {
-  document.getElementById('programsBody').innerHTML = '<tr><td colspan="7" class="text-center py-4 text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</td></tr>';
-  try {
-    allPrograms = await apiFetch('GET', '/api/programs');
-    filteredPrograms = [...allPrograms];
-    renderPrograms();
-  } catch(e) {
-    document.getElementById('programsBody').innerHTML = `<tr><td colspan="7" class="text-center py-4 text-danger">${e.message}</td></tr>`;
+function fillForm(d) {
+  const { entity: e, location: l, orbit: o, programs: ps } = d;
+  const set = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.value = v; };
+  const chk = (id, v) => { const el = document.getElementById(id); if (el) el.checked = !!v; };
+  if (e) { set('fName', e.name); set('fType', e.type); set('fWebsite', e.website_url||''); set('fLogo', e.logo_url||''); set('fDesc', e.description_en||''); set('fStatus', e.status); }
+  if (l) { set('fCity', l.city); set('fCountry', l.country); set('fContinent', l.continent); set('fCampus', l.campus_name||''); set('fAddress', l.address||''); set('fLat', l.latitude||''); set('fLng', l.longitude||''); set('fAirportName', l.closest_airport_name||''); set('fAirportCode', l.closest_airport_code||''); set('fFlightMin', l.flight_duration_from_ist_min||''); set('fLocStatus', l.status); }
+  if (o) { set('fOrbitLat', o.orbit_center_lat??''); set('fOrbitLng', o.orbit_center_lng??''); set('fOrbitAlt', o.orbit_altitude??400); set('fOrbitPitch', o.orbit_pitch??-45); set('fOrbitHeading', o.orbit_initial_heading??0); set('fOrbitRange', o.orbit_range??400); set('fOrbitRotType', o.orbit_rotation_type||'360'); set('fOrbitSpeed', o.orbit_rotation_speed??0.12); chk('fOrbitScanEnable', o.scan_effect_enabled); set('fScanLat', o.scan_target_lat??''); set('fScanLng', o.scan_target_lng??''); set('fCamV', o.camera_v_offset??0); set('fCamH', o.camera_h_offset??0); }
+  formPrograms = (ps || []).map(p => ({ ...p })); renderPrograms();
+}
+
+function syncOrbitCenter() {
+  const lat = document.getElementById('fLat').value;
+  const lng = document.getElementById('fLng').value;
+  const oLat = document.getElementById('fOrbitLat');
+  const oLng = document.getElementById('fOrbitLng');
+  if (!oLat.value && lat) oLat.value = lat;
+  if (!oLng.value && lng) oLng.value = lng;
+}
+
+function addProgram() {
+  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', scholarship_available:false, description_en:'', status:'active' });
+  renderPrograms();
+  setTimeout(() => {
+    const cards = document.querySelectorAll('.program-card');
+    if (cards.length) { cards[cards.length-1].scrollIntoView({ behavior:'smooth', block:'nearest' }); openProg(formPrograms.length-1, true); }
+  }, 60);
+}
+
+function removeProgram(i) { formPrograms.splice(i, 1); renderPrograms(); }
+
+function openProg(i, force) {
+  const body = document.getElementById(`pb_${i}`);
+  const chev = document.getElementById(`pc_${i}`);
+  if (!body) return;
+  const hidden = body.classList.contains('d-none');
+  if (force || hidden) {
+    body.classList.remove('d-none');
+    if (chev) { chev.classList.remove('bi-chevron-down'); chev.classList.add('bi-chevron-up'); }
+  } else {
+    body.classList.add('d-none');
+    if (chev) { chev.classList.remove('bi-chevron-up'); chev.classList.add('bi-chevron-down'); }
+  }
+}
+
+function updProg(i, field, val) {
+  formPrograms[i][field] = val;
+  if (field === 'name' || field === 'program_type_id') {
+    const hdr = document.querySelector(`#progCard_${i} .prog-title`);
+    if (hdr) {
+      const p = formPrograms[i];
+      const tname = p.program_type_id ? (programTypes.find(t => t.id == p.program_type_id)?.name || '') : '';
+      hdr.textContent = (p.name || `Program ${i+1}`) + (tname ? ` — ${tname}` : '');
+    }
   }
 }
 
 function renderPrograms() {
-  const tbody = document.getElementById('programsBody');
-  if (!filteredPrograms.length) { tbody.innerHTML = '<tr><td colspan="7" class="text-center py-4 text-muted">No programs found.</td></tr>'; return; }
-  tbody.innerHTML = filteredPrograms.map(p => `
-    <tr>
-      <td><strong>${p.name}</strong>${p.scholarship_available ? ' <i class="bi bi-award-fill text-warning" title="Scholarship available"></i>' : ''}</td>
-      <td><span class="badge bg-light text-dark" style="font-size:11px">${p.program_type_name}</span></td>
-      <td>${p.entity_name}</td>
-      <td>${p.city}, ${p.country}</td>
-      <td>${p.tuition_fee ? p.tuition_fee.toLocaleString() + ' ' + p.tuition_currency : '<span class="text-muted">–</span>'}</td>
-      <td>${statusBadge(p.status)}</td>
-      <td>
-        <button class="btn btn-sm btn-light me-1" onclick="openProgramModal(${p.id})"><i class="bi bi-pencil"></i></button>
-        <button class="btn btn-sm btn-light text-danger" onclick="deleteProgram(${p.id},'${p.name.replace(/'/g,"\\'")}')"><i class="bi bi-trash"></i></button>
-      </td>
-    </tr>`).join('');
-}
+  const list = document.getElementById('programsList');
+  document.getElementById('noProgMsg').style.display = formPrograms.length ? 'none' : '';
+  const typeOpts = programTypes.map(pt => `<option value="${pt.id}">${esc(pt.name)}</option>`).join('');
+  const currencies = ['EUR','USD','GBP','CAD','AUD','TRY','AED','CHF'];
+  const engTypes = ['None','IELTS','TOEFL','Duolingo','PTE','Cambridge'];
 
-function filterPrograms(q) {
-  q = q.toLowerCase();
-  filteredPrograms = allPrograms.filter(p =>
-    p.name.toLowerCase().includes(q) || (p.entity_name||'').toLowerCase().includes(q) || (p.city||'').toLowerCase().includes(q)
-  );
-  renderPrograms();
-}
+  list.innerHTML = formPrograms.map((p, i) => {
+    const tname = p.program_type_id ? (programTypes.find(t => t.id == p.program_type_id)?.name || '') : '';
+    return `<div class="program-card" id="progCard_${i}">
+      <div class="prog-header" onclick="openProg(${i})">
+        <span class="fw-semibold small">
+          <i class="bi bi-mortarboard text-primary me-2"></i>
+          <span class="prog-title">${esc(p.name || `Program ${i+1}`)}${tname ? ` — ${esc(tname)}` : ''}</span>
+        </span>
+        <div class="d-flex align-items-center gap-2">
+          <i class="bi bi-chevron-down text-muted small" id="pc_${i}"></i>
+          <button type="button" class="btn btn-outline-danger btn-sm py-0 px-2 lh-1"
+            onclick="event.stopPropagation();removeProgram(${i})">
+            <i class="bi bi-x" style="font-size:.9rem"></i></button>
+        </div>
+      </div>
+      <div class="prog-body d-none" id="pb_${i}">
+        <div class="row g-2">
+          <div class="col-md-5">
+            <label class="form-label small fw-semibold">Program Type <span class="req">*</span></label>
+            <select class="form-select form-select-sm" id="pt_${i}" onchange="updProg(${i},'program_type_id',this.value)">
+              <option value="">Select type...</option>${typeOpts}
+            </select>
+          </div>
+          <div class="col-md-7">
+            <label class="form-label small fw-semibold">Program Name <span class="req">*</span></label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.name||'')}"
+              oninput="updProg(${i},'name',this.value)" placeholder="e.g. BSc Computer Science">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">Language</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.language_of_instruction||'English')}"
+              oninput="updProg(${i},'language_of_instruction',this.value)">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">Duration</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.duration||'')}"
+              oninput="updProg(${i},'duration',this.value)" placeholder="4 years">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">Tuition Fee</label>
+            <input type="number" class="form-control form-control-sm" value="${p.tuition_fee||''}"
+              oninput="updProg(${i},'tuition_fee',this.value)" placeholder="9000">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">Currency</label>
+            <select class="form-select form-select-sm" onchange="updProg(${i},'tuition_currency',this.value)">
+              ${currencies.map(c=>`<option ${(p.tuition_currency||'EUR')===c?'selected':''}>${c}</option>`).join('')}
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Intake Months</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.intake_months||'')}"
+              oninput="updProg(${i},'intake_months',this.value)" placeholder="September, January">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">English Req.</label>
+            <select class="form-select form-select-sm" onchange="updProg(${i},'english_req_type',this.value)">
+              ${engTypes.map(e=>`<option ${(p.english_req_type||'None')===e?'selected':''}>${e}</option>`).join('')}
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">Min Score</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.english_req_score||'')}"
+              oninput="updProg(${i},'english_req_score',this.value)" placeholder="e.g. 6.5">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">GPA Requirement</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.gpa_requirement||'')}"
+              oninput="updProg(${i},'gpa_requirement',this.value)" placeholder="e.g. 2.5 / 4.0">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Status</label>
+            <select class="form-select form-select-sm" onchange="updProg(${i},'status',this.value)">
+              <option ${(p.status||'active')==='active'?'selected':''} value="active">Active</option>
+              <option ${p.status==='inactive'?'selected':''} value="inactive">Inactive</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold d-block">Scholarship</label>
+            <div class="form-check form-switch mt-1">
+              <input class="form-check-input" type="checkbox" role="switch" id="psc_${i}"
+                ${p.scholarship_available?'checked':''} onchange="updProg(${i},'scholarship_available',this.checked)">
+              <label class="form-check-label small" for="psc_${i}">Available</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <label class="form-label small fw-semibold">Notes</label>
+            <textarea class="form-control form-control-sm" rows="2"
+              oninput="updProg(${i},'description_en',this.value)"
+              placeholder="Additional notes...">${esc(p.description_en||'')}</textarea>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
 
-async function openProgramModal(id) {
-  if (!allLocations.length) { try { allLocations = await apiFetch('GET', '/api/locations'); } catch(e){} }
-  if (!programTypes.length) { try { programTypes = await apiFetch('GET', '/api/program-types'); } catch(e){} }
-
-  const locSel = document.getElementById('programLocationId');
-  locSel.innerHTML = '<option value="">Select location…</option>' + allLocations.map(l => `<option value="${l.id}">${l.entity_name} – ${l.city}, ${l.country}</option>`).join('');
-  const typeSel = document.getElementById('programTypeId');
-  typeSel.innerHTML = '<option value="">Select type…</option>' + programTypes.map(t => `<option value="${t.id}">${t.name}</option>`).join('');
-
-  const modal = new bootstrap.Modal(document.getElementById('programModal'));
-  document.getElementById('programId').value = '';
-  document.getElementById('programName').value = '';
-  document.getElementById('programLang').value = 'English';
-  document.getElementById('programDuration').value = '';
-  document.getElementById('programFee').value = '';
-  document.getElementById('programCurrency').value = 'EUR';
-  document.getElementById('programIntake').value = '';
-  document.getElementById('programEngType').value = 'None';
-  document.getElementById('programEngScore').value = '';
-  document.getElementById('programGpa').value = '';
-  document.getElementById('programStatus').value = 'active';
-  document.getElementById('programScholarship').checked = false;
-  document.getElementById('programDesc').value = '';
-  document.getElementById('programModalTitle').textContent = id ? 'Edit Program' : 'Add Program';
-  document.getElementById('programSaveText').textContent = id ? 'Update Program' : 'Save Program';
-
-  if (id) {
-    try {
-      const p = await apiFetch('GET', '/api/programs/' + id);
-      document.getElementById('programId').value = p.id;
-      document.getElementById('programLocationId').value = p.entity_location_id;
-      document.getElementById('programTypeId').value = p.program_type_id;
-      document.getElementById('programName').value = p.name || '';
-      document.getElementById('programLang').value = p.language_of_instruction || 'English';
-      document.getElementById('programDuration').value = p.duration || '';
-      document.getElementById('programFee').value = p.tuition_fee || '';
-      document.getElementById('programCurrency').value = p.tuition_currency || 'EUR';
-      document.getElementById('programIntake').value = p.intake_months || '';
-      document.getElementById('programEngType').value = p.english_req_type || 'None';
-      document.getElementById('programEngScore').value = p.english_req_score || '';
-      document.getElementById('programGpa').value = p.gpa_requirement || '';
-      document.getElementById('programStatus').value = p.status;
-      document.getElementById('programScholarship').checked = !!p.scholarship_available;
-      document.getElementById('programDesc').value = p.description_en || '';
-    } catch(e) { toast('Failed to load program', 'error'); return; }
-  }
-  modal.show();
-}
-
-async function saveProgram() {
-  const id = document.getElementById('programId').value;
-  const body = {
-    entity_location_id: document.getElementById('programLocationId').value,
-    program_type_id: document.getElementById('programTypeId').value,
-    name: document.getElementById('programName').value.trim(),
-    language_of_instruction: document.getElementById('programLang').value.trim(),
-    duration: document.getElementById('programDuration').value.trim(),
-    tuition_fee: document.getElementById('programFee').value || null,
-    tuition_currency: document.getElementById('programCurrency').value.trim() || 'EUR',
-    intake_months: document.getElementById('programIntake').value.trim(),
-    english_req_type: document.getElementById('programEngType').value,
-    english_req_score: document.getElementById('programEngScore').value.trim(),
-    gpa_requirement: document.getElementById('programGpa').value.trim(),
-    scholarship_available: document.getElementById('programScholarship').checked,
-    description_en: document.getElementById('programDesc').value.trim(),
-    status: document.getElementById('programStatus').value
-  };
-  if (!body.entity_location_id || !body.program_type_id || !body.name) { toast('Location, type and name are required', 'error'); return; }
-  document.getElementById('programSaveSpinner').classList.remove('d-none');
-  try {
-    if (id) await apiFetch('PUT', '/api/programs/' + id, body);
-    else await apiFetch('POST', '/api/programs', body);
-    bootstrap.Modal.getInstance(document.getElementById('programModal')).hide();
-    toast(id ? 'Program updated' : 'Program created');
-    loadPrograms();
-  } catch(e) { toast(e.message, 'error'); }
-  document.getElementById('programSaveSpinner').classList.add('d-none');
-}
-
-async function deleteProgram(id, name) {
-  confirmDelete(`Delete program "${name}"?`, async () => {
-    try { await apiFetch('DELETE', '/api/programs/' + id); toast('Program deleted'); loadPrograms(); }
-    catch(e) { toast(e.message, 'error'); }
+  formPrograms.forEach((p, i) => {
+    const el = document.getElementById(`pt_${i}`);
+    if (el && p.program_type_id) el.value = p.program_type_id;
   });
 }
 
-// ═══════════════════════════════════════════════
-// ORBIT CONFIGS
-// ═══════════════════════════════════════════════
-async function loadOrbits() {
-  document.getElementById('orbitBody').innerHTML = '<tr><td colspan="7" class="text-center py-4 text-muted"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</td></tr>';
-  try {
-    allOrbits = await apiFetch('GET', '/api/orbit');
-    renderOrbits();
-  } catch(e) {
-    document.getElementById('orbitBody').innerHTML = `<tr><td colspan="7" class="text-center py-4 text-danger">${e.message}</td></tr>`;
+async function saveEntity() {
+  const v = id => document.getElementById(id)?.value?.trim();
+  const c = id => !!document.getElementById(id)?.checked;
+  const n = id => { const x = parseFloat(document.getElementById(id)?.value); return isNaN(x) ? null : x; };
+  const ni = id => { const x = parseInt(document.getElementById(id)?.value); return isNaN(x) ? null : x; };
+
+  if (!v('fName')) { toast('Entity name is required.', 'error'); document.getElementById('fName').focus(); return; }
+  if (!v('fType')) { toast('Entity type is required.', 'error'); document.getElementById('fType').focus(); return; }
+  if (!v('fCity')) { toast('City is required.', 'error'); document.getElementById('fCity').focus(); return; }
+  if (!v('fCountry')) { toast('Country is required.', 'error'); document.getElementById('fCountry').focus(); return; }
+  if (!v('fContinent')) { toast('Continent is required.', 'error'); document.getElementById('fContinent').focus(); return; }
+
+  for (let i = 0; i < formPrograms.length; i++) {
+    const p = formPrograms[i];
+    if (!p.program_type_id) { toast(`Program ${i+1}: type is required.`, 'error'); openProg(i, true); return; }
+    if (!p.name) { toast(`Program ${i+1}: name is required.`, 'error'); openProg(i, true); return; }
   }
-}
 
-function renderOrbits() {
-  const tbody = document.getElementById('orbitBody');
-  if (!allOrbits.length) { tbody.innerHTML = '<tr><td colspan="7" class="text-center py-4 text-muted">No orbit configs found.</td></tr>'; return; }
-  tbody.innerHTML = allOrbits.map(o => `
-    <tr>
-      <td><strong>${o.entity_name}</strong></td>
-      <td>${o.campus_name || ''} ${o.city}, ${o.country}</td>
-      <td>${o.orbit_altitude}m</td>
-      <td>${o.orbit_range}m</td>
-      <td>${o.orbit_rotation_type}</td>
-      <td>${o.orbit_rotation_speed}</td>
-      <td>
-        <button class="btn btn-sm btn-light me-1" onclick="openOrbitModal(${o.id})"><i class="bi bi-pencil"></i></button>
-        <button class="btn btn-sm btn-light text-danger" onclick="deleteOrbit(${o.id})"><i class="bi bi-trash"></i></button>
-      </td>
-    </tr>`).join('');
-}
-
-async function openOrbitModal(id) {
-  if (!allLocations.length) { try { allLocations = await apiFetch('GET', '/api/locations'); } catch(e){} }
-  const locSel = document.getElementById('orbitLocationId');
-  locSel.innerHTML = '<option value="">Select location…</option>' + allLocations.map(l => `<option value="${l.id}">${l.entity_name} – ${l.city}, ${l.country}</option>`).join('');
-
-  const modal = new bootstrap.Modal(document.getElementById('orbitModal'));
-  document.getElementById('orbitId').value = '';
-  ['orbitCenterLat','orbitCenterLng','orbitScanLat','orbitScanLng'].forEach(f => document.getElementById(f).value = '');
-  document.getElementById('orbitAltitude').value = 400;
-  document.getElementById('orbitPitch').value = -22;
-  document.getElementById('orbitHeading').value = 0;
-  document.getElementById('orbitRange').value = 400;
-  document.getElementById('orbitRotType').value = '360';
-  document.getElementById('orbitSpeed').value = 0.12;
-  document.getElementById('orbitVOffset').value = 0;
-  document.getElementById('orbitHOffset').value = 0;
-  document.getElementById('orbitScanEffect').checked = false;
-  document.getElementById('orbitModalTitle').textContent = id ? 'Edit Orbit Config' : 'Add Orbit Config';
-  document.getElementById('orbitSaveText').textContent = id ? 'Update Config' : 'Save Config';
-
-  if (id) {
-    try {
-      const o = await apiFetch('GET', '/api/orbit/' + id);
-      document.getElementById('orbitId').value = o.id;
-      document.getElementById('orbitLocationId').value = o.entity_location_id;
-      document.getElementById('orbitCenterLat').value = o.orbit_center_lat || '';
-      document.getElementById('orbitCenterLng').value = o.orbit_center_lng || '';
-      document.getElementById('orbitAltitude').value = o.orbit_altitude || 400;
-      document.getElementById('orbitPitch').value = o.orbit_pitch || -22;
-      document.getElementById('orbitHeading').value = o.orbit_initial_heading || 0;
-      document.getElementById('orbitRange').value = o.orbit_range || 400;
-      document.getElementById('orbitRotType').value = o.orbit_rotation_type || '360';
-      document.getElementById('orbitSpeed').value = o.orbit_rotation_speed || 0.12;
-      document.getElementById('orbitScanLat').value = o.scan_target_lat || '';
-      document.getElementById('orbitScanLng').value = o.scan_target_lng || '';
-      document.getElementById('orbitScanEffect').checked = !!o.scan_effect_enabled;
-      document.getElementById('orbitVOffset').value = o.camera_v_offset || 0;
-      document.getElementById('orbitHOffset').value = o.camera_h_offset || 0;
-    } catch(e) { toast('Failed to load config', 'error'); return; }
-  }
-  modal.show();
-}
-
-async function saveOrbit() {
-  const id = document.getElementById('orbitId').value;
-  const body = {
-    entity_location_id: document.getElementById('orbitLocationId').value,
-    orbit_center_lat: document.getElementById('orbitCenterLat').value || null,
-    orbit_center_lng: document.getElementById('orbitCenterLng').value || null,
-    orbit_altitude: document.getElementById('orbitAltitude').value || 400,
-    orbit_pitch: document.getElementById('orbitPitch').value || -22,
-    orbit_initial_heading: document.getElementById('orbitHeading').value || 0,
-    orbit_range: document.getElementById('orbitRange').value || 400,
-    orbit_rotation_type: document.getElementById('orbitRotType').value,
-    orbit_rotation_speed: document.getElementById('orbitSpeed').value || 0.12,
-    scan_target_lat: document.getElementById('orbitScanLat').value || null,
-    scan_target_lng: document.getElementById('orbitScanLng').value || null,
-    scan_effect_enabled: document.getElementById('orbitScanEffect').checked,
-    camera_v_offset: document.getElementById('orbitVOffset').value || 0,
-    camera_h_offset: document.getElementById('orbitHOffset').value || 0
+  const payload = {
+    entity: { name: v('fName'), type: v('fType'), website_url: v('fWebsite')||null, logo_url: v('fLogo')||null, description_en: v('fDesc')||null, status: v('fStatus') },
+    location: { city: v('fCity'), country: v('fCountry'), continent: v('fContinent'), campus_name: v('fCampus')||null, address: v('fAddress')||null, latitude: n('fLat'), longitude: n('fLng'), closest_airport_name: v('fAirportName')||null, closest_airport_code: document.getElementById('fAirportCode')?.value?.trim()?.toUpperCase()||null, flight_duration_from_ist_min: ni('fFlightMin'), status: v('fLocStatus') },
+    orbit: { orbit_center_lat: n('fOrbitLat'), orbit_center_lng: n('fOrbitLng'), orbit_altitude: n('fOrbitAlt')??400, orbit_pitch: n('fOrbitPitch')??-45, orbit_initial_heading: n('fOrbitHeading')??0, orbit_range: n('fOrbitRange')??400, orbit_rotation_type: v('fOrbitRotType'), orbit_rotation_speed: n('fOrbitSpeed')??0.12, scan_target_lat: n('fScanLat'), scan_target_lng: n('fScanLng'), scan_effect_enabled: c('fOrbitScanEnable'), camera_v_offset: n('fCamV')??0, camera_h_offset: n('fCamH')??0 },
+    programs: formPrograms.map(p => ({ ...p, program_type_id: parseInt(p.program_type_id), tuition_fee: p.tuition_fee ? parseFloat(p.tuition_fee) : null, scholarship_available: !!p.scholarship_available }))
   };
-  if (!body.entity_location_id) { toast('Please select a location', 'error'); return; }
-  document.getElementById('orbitSaveSpinner').classList.remove('d-none');
+
+  const btn = document.getElementById('saveBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Saving...';
+
   try {
-    if (id) await apiFetch('PUT', '/api/orbit/' + id, body);
-    else await apiFetch('POST', '/api/orbit', body);
-    bootstrap.Modal.getInstance(document.getElementById('orbitModal')).hide();
-    toast(id ? 'Config updated' : 'Config created');
-    loadOrbits();
-  } catch(e) { toast(e.message, 'error'); }
-  document.getElementById('orbitSaveSpinner').classList.add('d-none');
+    const res = editingId
+      ? await api('PUT', `/api/entities/full/${editingId}`, payload)
+      : await api('POST', '/api/entities/full', payload);
+    if (!res.ok) throw new Error((await res.json()).error || 'Save failed');
+    toast(editingId ? 'Entity updated.' : 'Entity created.');
+    closeEntityForm(); loadEntities(); loadStats();
+  } catch (e) {
+    toast(e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="bi bi-check-lg me-1"></i>Save Entity';
+  }
 }
 
-async function deleteOrbit(id) {
-  confirmDelete('Delete this orbit config?', async () => {
-    try { await apiFetch('DELETE', '/api/orbit/' + id); toast('Config deleted'); loadOrbits(); }
-    catch(e) { toast(e.message, 'error'); }
-  });
-}
+function esc(s) { return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
 </script>
 </body>
 </html>
