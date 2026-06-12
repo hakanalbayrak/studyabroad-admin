@@ -529,6 +529,48 @@
           </div>
         </div>
       </div>
+
+      <!-- Import Universities -->
+      <div class="card shadow-sm border-0 rounded-3 mb-4">
+        <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
+          <h6 class="fw-bold mb-0"><i class="bi bi-cloud-upload text-success me-2"></i>Import Universities</h6>
+          <p class="text-muted small mb-0 mt-1">Paste a list of university names (one per line) to bulk-create entities. Already existing names are skipped automatically.</p>
+        </div>
+        <div class="card-body px-4 pb-4">
+          <div class="row g-3 mb-3">
+            <div class="col-md-8">
+              <label class="form-label small fw-semibold">University names <span class="text-muted fw-normal">(one per line)</span></label>
+              <textarea class="form-control font-monospace" id="importNames" rows="10"
+                placeholder="University of Oxford&#10;Stanford University&#10;Tilburg University&#10;..."></textarea>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label small fw-semibold">Entity Type</label>
+              <select class="form-select form-select-sm mb-3" id="importType">
+                <option value="university" selected>University</option>
+                <option value="college">College</option>
+                <option value="institution">Institution</option>
+              </select>
+              <label class="form-label small fw-semibold">Status</label>
+              <select class="form-select form-select-sm mb-3" id="importStatus">
+                <option value="pending" selected>Pending</option>
+                <option value="active">Active</option>
+              </select>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="importFetchRankings" checked>
+                <label class="form-check-label small" for="importFetchRankings">
+                  Auto-fetch rankings after import
+                </label>
+              </div>
+              <button class="btn btn-success w-100" id="importBtn" onclick="importUniversities()">
+                <i class="bi bi-cloud-upload me-1"></i>Import
+              </button>
+            </div>
+          </div>
+          <div id="importResult" class="d-none">
+            <div class="alert mb-0" id="importResultAlert"></div>
+          </div>
+        </div>
+      </div>
     </div><!-- /toolsSection -->
 
   </div><!-- /mainContent -->
@@ -1289,6 +1331,47 @@ function renderBulkResults(job) {
       <td class="pe-3"><span class="badge ${r._ok ? 'bg-success' : 'bg-danger'}">${r._ok ? 'Updated' : 'Error'}</span></td>
     </tr>`).join('');
   document.getElementById('bulkResults').classList.remove('d-none');
+}
+
+async function importUniversities() {
+  const raw = document.getElementById('importNames').value;
+  const names = raw.split('\n').map(s => s.trim()).filter(s => s.length > 0);
+  if (!names.length) { toast('Paste at least one university name.', 'warn'); return; }
+
+  const type = document.getElementById('importType').value;
+  const status = document.getElementById('importStatus').value;
+  const fetchRankings = document.getElementById('importFetchRankings').checked;
+
+  const btn = document.getElementById('importBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Importing…';
+
+  try {
+    const res = await api('POST', '/api/bulk/import', { names, type, status });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Import failed');
+
+    const alertEl = document.getElementById('importResultAlert');
+    alertEl.className = 'alert alert-success mb-0';
+    alertEl.innerHTML = `<i class="bi bi-check-circle me-1"></i>
+      <strong>${data.created}</strong> created &nbsp;·&nbsp;
+      <strong>${data.skipped}</strong> already existed &nbsp;·&nbsp;
+      <strong>${data.errors}</strong> errors`;
+    document.getElementById('importResult').classList.remove('d-none');
+    document.getElementById('importNames').value = '';
+    toast(`Import done: ${data.created} new universities added.`, 'success');
+    loadStats();
+
+    if (fetchRankings && data.created > 0) {
+      toast('Starting bulk rankings fetch for new entities…', 'success');
+      setTimeout(() => startBulkRankings('missing'), 1000);
+    }
+  } catch(e) {
+    toast('Import failed: ' + e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="bi bi-cloud-upload me-1"></i>Import';
+  }
 }
 
 function exportBulkCSV() {

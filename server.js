@@ -247,6 +247,30 @@ app.delete('/api/bulk/rankings/:jobId', auth, (req, res) => {
   res.json({ success: true });
 });
 
+// ── Bulk entity import ────────────────────────────────────────────────────────
+app.post('/api/bulk/import', auth, async (req, res) => {
+  const { names, type = 'university', status = 'pending' } = req.body;
+  if (!Array.isArray(names) || !names.length) return res.status(400).json({ error: 'names array required' });
+
+  let created = 0, skipped = 0, errors = 0;
+  for (const rawName of names) {
+    const name = String(rawName).trim();
+    if (!name) continue;
+    try {
+      const [existing] = await db.query('SELECT id FROM entities WHERE name = ?', [name]);
+      if (existing.length) { skipped++; continue; }
+      await db.query(
+        'INSERT INTO entities (name, type, status) VALUES (?, ?, ?)',
+        [name, type, status]
+      );
+      created++;
+    } catch (e) {
+      errors++;
+    }
+  }
+  res.json({ created, skipped, errors });
+});
+
 // Protected API routes
 app.use('/api/entities', auth, require('./routes/entities'));
 app.use('/api/locations', auth, require('./routes/locations'));
