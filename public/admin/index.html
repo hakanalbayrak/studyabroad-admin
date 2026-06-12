@@ -99,6 +99,9 @@
       <a href="#" class="nav-link" data-sec="entities" onclick="showSection('entities');return false;">
         <i class="bi bi-building"></i>Entities
       </a>
+      <a href="#" class="nav-link" data-sec="tools" onclick="showSection('tools');return false;">
+        <i class="bi bi-tools"></i>Tools
+      </a>
     </div>
     <div class="p-3 border-top border-secondary">
       <button class="btn btn-outline-light btn-sm w-100 opacity-75" onclick="doLogout()">
@@ -466,6 +469,68 @@
       </div>
 
     </div><!-- /entitiesSection -->
+
+    <!-- TOOLS -->
+    <div id="toolsSection" class="section-content">
+      <h4 class="fw-bold mb-4">Tools</h4>
+
+      <!-- Bulk Rankings -->
+      <div class="card shadow-sm border-0 rounded-3 mb-4">
+        <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
+          <h6 class="fw-bold mb-0"><i class="bi bi-bar-chart-fill text-primary me-2"></i>Bulk Rankings Fetcher</h6>
+          <p class="text-muted small mb-0 mt-1">Automatically fetch QS, THE, Shanghai &amp; Leiden rankings for entities via Wikipedia + Gemini. Rate-limited to avoid blocks (≈1.5 s / entity).</p>
+        </div>
+        <div class="card-body px-4 pb-4">
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <button class="btn btn-outline-secondary btn-sm" id="bulkMissingBtn" onclick="startBulkRankings('missing')">
+              <i class="bi bi-database-fill-up me-1"></i>Fetch missing rankings only
+            </button>
+            <button class="btn btn-outline-primary btn-sm" id="bulkAllBtn" onclick="startBulkRankings('all')">
+              <i class="bi bi-arrow-repeat me-1"></i>Re-fetch all entities
+            </button>
+            <button class="btn btn-danger btn-sm d-none" id="bulkStopBtn" onclick="stopBulkJob()">
+              <i class="bi bi-stop-fill me-1"></i>Stop
+            </button>
+          </div>
+
+          <div id="bulkProgress" class="d-none mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="small text-muted" id="bulkProgressText">Starting…</span>
+              <span class="small fw-semibold" id="bulkProgressPct">0%</span>
+            </div>
+            <div class="progress" style="height:8px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" id="bulkProgressBar" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div id="bulkResults" class="d-none">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-semibold small" id="bulkSummary"></span>
+              <button class="btn btn-outline-secondary btn-sm" onclick="exportBulkCSV()">
+                <i class="bi bi-download me-1"></i>Export CSV
+              </button>
+            </div>
+            <div class="table-responsive rounded-2 border" style="max-height:420px;overflow-y:auto">
+              <table class="table table-sm table-hover mb-0">
+                <thead class="sticky-top" style="background:#f8fafc">
+                  <tr>
+                    <th class="ps-3">Entity</th>
+                    <th class="text-center">QS</th>
+                    <th class="text-center">THE</th>
+                    <th class="text-center">Shanghai</th>
+                    <th class="text-center">Leiden</th>
+                    <th>Sources</th>
+                    <th class="pe-3">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="bulkResultsBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /toolsSection -->
+
   </div><!-- /mainContent -->
 </div><!-- /adminApp -->
 
@@ -1140,6 +1205,106 @@ async function saveEntity() {
 
 function esc(s) { return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
+
+// ── Bulk Rankings ─────────────────────────────────────────────────────────────
+let bulkJobId = null;
+let bulkPollTimer = null;
+let bulkResultsData = [];
+
+async function startBulkRankings(mode) {
+  document.getElementById('bulkMissingBtn').disabled = true;
+  document.getElementById('bulkAllBtn').disabled = true;
+  document.getElementById('bulkStopBtn').classList.remove('d-none');
+  document.getElementById('bulkProgress').classList.remove('d-none');
+  document.getElementById('bulkResults').classList.add('d-none');
+  setProgress(0, 0, 'Starting…');
+  bulkResultsData = [];
+
+  try {
+    const res = await api('POST', '/api/bulk/rankings', { mode });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Failed to start');
+    if (!data.jobId) { toast(data.message || 'No entities to process.', 'warn'); resetBulkUI(); return; }
+    bulkJobId = data.jobId;
+    toast(`Bulk job started — ${data.total} entities queued.`, 'success');
+    bulkPollTimer = setInterval(pollBulkJob, 2500);
+  } catch(e) {
+    toast('Could not start bulk job: ' + e.message, 'error');
+    resetBulkUI();
+  }
+}
+
+async function pollBulkJob() {
+  if (!bulkJobId) return;
+  try {
+    const res = await api('GET', '/api/bulk/rankings/' + bulkJobId);
+    const job = await res.json();
+    const pct = job.total ? Math.round(job.processed / job.total * 100) : 0;
+    setProgress(pct, job.total, `Processing ${job.processed} of ${job.total}…`);
+    if (job.status === 'done' || job.status === 'stopped' || job.status === 'error') {
+      clearInterval(bulkPollTimer); bulkPollTimer = null;
+      bulkResultsData = job.results || [];
+      renderBulkResults(job);
+      resetBulkUI();
+      const msg = job.status === 'stopped' ? 'Job stopped.' : `Done — ${job.results.length} updated, ${job.errors.length} errors.`;
+      toast(msg, job.errors.length ? 'warn' : 'success');
+    }
+  } catch(e) { /* ignore poll errors */ }
+}
+
+async function stopBulkJob() {
+  if (!bulkJobId) return;
+  try { await api('DELETE', '/api/bulk/rankings/' + bulkJobId); } catch {}
+  clearInterval(bulkPollTimer); bulkPollTimer = null;
+  resetBulkUI();
+  toast('Stop requested.', 'warn');
+}
+
+function setProgress(pct, total, text) {
+  document.getElementById('bulkProgressBar').style.width = pct + '%';
+  document.getElementById('bulkProgressPct').textContent = pct + '%';
+  document.getElementById('bulkProgressText').textContent = text;
+}
+
+function resetBulkUI() {
+  document.getElementById('bulkMissingBtn').disabled = false;
+  document.getElementById('bulkAllBtn').disabled = false;
+  document.getElementById('bulkStopBtn').classList.add('d-none');
+}
+
+function renderBulkResults(job) {
+  const allRows = (job.results || []).map(r => ({ ...r, _ok: true }))
+    .concat((job.errors || []).map(r => ({ ...r, _ok: false })));
+  const found = (job.results || []).filter(r => r.qs_rank || r.the_rank || r.shanghai_rank || r.leiden_rank).length;
+  document.getElementById('bulkSummary').textContent =
+    `${job.results.length} updated · ${found} with ranking data · ${job.errors.length} errors`;
+  document.getElementById('bulkResultsBody').innerHTML = allRows.map(r => `
+    <tr class="${r._ok ? '' : 'table-danger'}">
+      <td class="ps-3 small">${esc(r.name)}</td>
+      <td class="text-center">${r.qs_rank ? `<span class="badge bg-primary">#${r.qs_rank}</span>` : '<span class="text-muted small">—</span>'}</td>
+      <td class="text-center">${r.the_rank ? `<span class="badge bg-success">#${r.the_rank}</span>` : '<span class="text-muted small">—</span>'}</td>
+      <td class="text-center">${r.shanghai_rank ? `<span class="badge bg-warning text-dark">#${r.shanghai_rank}</span>` : '<span class="text-muted small">—</span>'}</td>
+      <td class="text-center">${r.leiden_rank ? `<span class="badge bg-info text-dark">#${r.leiden_rank}</span>` : '<span class="text-muted small">—</span>'}</td>
+      <td class="small text-muted">${esc((r.sources||[]).join(', ')||'—')}</td>
+      <td class="pe-3"><span class="badge ${r._ok ? 'bg-success' : 'bg-danger'}">${r._ok ? 'Updated' : 'Error'}</span></td>
+    </tr>`).join('');
+  document.getElementById('bulkResults').classList.remove('d-none');
+}
+
+function exportBulkCSV() {
+  if (!bulkResultsData.length) { toast('No results to export.', 'warn'); return; }
+  const hdr = ['Name','QS Rank','QS Year','THE Rank','THE Year','Shanghai Rank','Shanghai Year','Leiden Rank','Leiden Year','Sources'];
+  const rows = bulkResultsData.map(r => [
+    r.name, r.qs_rank||'', r.qs_year||'', r.the_rank||'', r.the_year||'',
+    r.shanghai_rank||'', r.shanghai_year||'', r.leiden_rank||'', r.leiden_year||'',
+    (r.sources||[]).join('; ')
+  ]);
+  const csv = [hdr, ...rows].map(row => row.map(c => `"${String(c).replace(/"/g,'""')}"`).join(',')).join('\n');
+  const a = document.createElement('a');
+  a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+  a.download = `rankings_${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+}
 </script>
 </body>
 </html>

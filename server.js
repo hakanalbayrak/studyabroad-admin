@@ -60,6 +60,7 @@ app.get('/api/db-check', async (req, res) => {
 // Primary source: Wikipedia's standardized university rankings infobox
 // (QS_W, THE_W, ARWU_W params). Fallback: plain Gemini for missing fields.
 const https = require('https');
+const crypto = require('crypto');
 
 function httpsGetJson(url) {
   return new Promise((resolve, reject) => {
@@ -81,59 +82,57 @@ function parseRank(raw) {
   return m ? parseInt(m[1]) : null;
 }
 
-app.get('/api/lookup/rankings', auth, async (req, res) => {
-  const name = (req.query.name || '').trim();
-  if (!name) return res.status(400).json({ error: 'name required' });
+async function lookupRankingsForName(name) {
   const out = {
     qs_rank: null, qs_year: null, the_rank: null, the_year: null,
     shanghai_rank: null, shanghai_year: null, leiden_rank: null, leiden_year: null,
     sources: []
   };
-  try {
-    // 1+2. Wikipedia rankings infobox — primary source. A failure here
-    // (e.g. rate limit) should degrade to the Gemini fallback, not error out.
-    try {
-      const search = await httpsGetJson(
-        'https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srlimit=1&srsearch=' +
-        encodeURIComponent(name)
-      );
-      const title = search.query?.search?.[0]?.title;
-      if (title) {
-        const page = await httpsGetJson(
-          'https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=' +
-          encodeURIComponent(title)
-        );
-        const wikitext = page.parse?.wikitext?.['*'] || '';
-        const grab = p => {
-          const m = wikitext.match(new RegExp(p + '\\s*=\\s*([^|\\n<]+)'));
-          return m ? m[1].trim() : null;
-        };
-        out.qs_rank = parseRank(grab('QS_W'));
-        out.qs_year = parseRank(grab('QS_W_year'));
-        out.the_rank = parseRank(grab('THE_W'));
-        out.the_year = parseRank(grab('THE_W_year'));
-        out.shanghai_rank = parseRank(grab('ARWU_W'));
-        out.shanghai_year = parseRank(grab('ARWU_W_year'));
-        if (out.qs_rank || out.the_rank || out.shanghai_rank) {
-          out.sources.push('https://en.wikipedia.org/wiki/' + encodeURIComponent(title.replace(/ /g, '_')));
-        }
-      }
-    } catch (wikiErr) {
-      out.sources.push('wikipedia-unavailable: ' + wikiErr.message.slice(0, 60));
-    }
 
-    // 3. Gemini fallback for anything still missing (plain generation, free tier)
-    const key = process.env.GEMINI_KEY;
-    const missing = ['qs', 'the', 'shanghai', 'leiden'].filter(k => !out[k + '_rank']);
-    if (key && key !== 'your_gemini_key_here' && missing.length) {
-      const prompt = `What are the most recent world university rankings for "${name}"?
+  // 1. Wikipedia rankings infobox — primary source.
+  try {
+    const search = await httpsGetJson(
+      'https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srlimit=1&srsearch=' +
+      encodeURIComponent(name)
+    );
+    const title = search.query?.search?.[0]?.title;
+    if (title) {
+      const page = await httpsGetJson(
+        'https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=' +
+        encodeURIComponent(title)
+      );
+      const wikitext = page.parse?.wikitext?.['*'] || '';
+      const grab = p => {
+        const m = wikitext.match(new RegExp(p + '\\s*=\\s*([^|\\n<]+)'));
+        return m ? m[1].trim() : null;
+      };
+      out.qs_rank = parseRank(grab('QS_W'));
+      out.qs_year = parseRank(grab('QS_W_year'));
+      out.the_rank = parseRank(grab('THE_W'));
+      out.the_year = parseRank(grab('THE_W_year'));
+      out.shanghai_rank = parseRank(grab('ARWU_W'));
+      out.shanghai_year = parseRank(grab('ARWU_W_year'));
+      if (out.qs_rank || out.the_rank || out.shanghai_rank) {
+        out.sources.push('wikipedia');
+      }
+    }
+  } catch (wikiErr) {
+    out.sources.push('wikipedia-unavailable: ' + wikiErr.message.slice(0, 60));
+  }
+
+  // 2. Gemini fallback for anything still missing (plain generation, free tier)
+  const key = process.env.GEMINI_KEY;
+  const missing = ['qs', 'the', 'shanghai', 'leiden'].filter(k => !out[k + '_rank']);
+  if (key && key !== 'your_gemini_key_here' && missing.length) {
+    const prompt = `What are the most recent world university rankings for "${name}"?
 Only answer for these systems: ${missing.join(', ')} (qs = QS World University Rankings, the = Times Higher Education, shanghai = ARWU/Shanghai Ranking, leiden = CWTS Leiden Ranking).
 Return ONLY a JSON object like {"qs_rank":55,"qs_year":2025,...} using keys <system>_rank and <system>_year.
 Use null when you are not confident. For ranges like 201-300 use the lower bound.`;
-      const body = JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { temperature: 0 }
-      });
+    const body = JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: { temperature: 0 }
+    });
+    try {
       const gem = await new Promise((resolve, reject) => {
         const rq = https.request({
           hostname: 'generativelanguage.googleapis.com',
@@ -153,26 +152,99 @@ Use null when you are not confident. For ranges like 201-300 use the lower bound
         const text = JSON.parse(gem.body).candidates?.[0]?.content?.parts?.[0]?.text || '';
         const jm = text.match(/\{[\s\S]*\}/);
         if (jm) {
-          try {
-            const g = JSON.parse(jm[0]);
-            let usedGemini = false;
-            for (const k of missing) {
-              if (g[k + '_rank']) {
-                out[k + '_rank'] = parseRank(g[k + '_rank']);
-                out[k + '_year'] = parseRank(g[k + '_year']);
-                usedGemini = true;
-              }
+          const g = JSON.parse(jm[0]);
+          let usedGemini = false;
+          for (const k of missing) {
+            if (g[k + '_rank']) {
+              out[k + '_rank'] = parseRank(g[k + '_rank']);
+              out[k + '_year'] = parseRank(g[k + '_year']);
+              usedGemini = true;
             }
-            if (usedGemini) out.sources.push('gemini-model-knowledge (verify before publishing)');
-          } catch {}
+          }
+          if (usedGemini) out.sources.push('gemini');
         }
       }
-    }
+    } catch {}
+  }
 
-    res.json(out);
+  return out;
+}
+
+app.get('/api/lookup/rankings', auth, async (req, res) => {
+  const name = (req.query.name || '').trim();
+  if (!name) return res.status(400).json({ error: 'name required' });
+  try {
+    res.json(await lookupRankingsForName(name));
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
+});
+
+// ── Bulk rankings job system ─────────────────────────────────────────────────
+const bulkJobs = {};
+
+async function processBulkRankings(jobId, entities) {
+  const job = bulkJobs[jobId];
+  job.total = entities.length;
+  const delay = ms => new Promise(r => setTimeout(r, ms));
+
+  for (const { id, name } of entities) {
+    if (job.stopRequested) { job.status = 'stopped'; return; }
+    try {
+      const r = await lookupRankingsForName(name);
+      await db.query(
+        `UPDATE entities SET
+          qs_rank=?, qs_rank_year=?, the_rank=?, the_rank_year=?,
+          leiden_rank=?, leiden_rank_year=?, shanghai_rank=?, shanghai_rank_year=?
+         WHERE id=?`,
+        [r.qs_rank, r.qs_year, r.the_rank, r.the_year,
+         r.leiden_rank, r.leiden_year, r.shanghai_rank, r.shanghai_year, id]
+      );
+      job.results.push({ id, name, ...r });
+    } catch (e) {
+      job.errors.push({ id, name, error: e.message });
+    }
+    job.processed++;
+    if (job.processed < job.total && !job.stopRequested) await delay(1500);
+  }
+  job.status = 'done';
+}
+
+app.post('/api/bulk/rankings', auth, async (req, res) => {
+  const { mode } = req.body;
+  try {
+    let entities;
+    if (mode === 'missing') {
+      const [rows] = await db.query(
+        `SELECT id, name FROM entities WHERE qs_rank IS NULL AND the_rank IS NULL AND shanghai_rank IS NULL ORDER BY name`
+      );
+      entities = rows;
+    } else {
+      const [rows] = await db.query(`SELECT id, name FROM entities ORDER BY name`);
+      entities = rows;
+    }
+    if (!entities.length) return res.json({ jobId: null, total: 0, message: 'No entities to process' });
+
+    const jobId = crypto.randomBytes(8).toString('hex');
+    bulkJobs[jobId] = { status: 'running', processed: 0, total: entities.length, results: [], errors: [], stopRequested: false };
+    processBulkRankings(jobId, entities);
+    res.json({ jobId, total: entities.length });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.get('/api/bulk/rankings/:jobId', auth, (req, res) => {
+  const job = bulkJobs[req.params.jobId];
+  if (!job) return res.status(404).json({ error: 'Job not found' });
+  res.json(job);
+});
+
+app.delete('/api/bulk/rankings/:jobId', auth, (req, res) => {
+  const job = bulkJobs[req.params.jobId];
+  if (!job) return res.status(404).json({ error: 'Job not found' });
+  job.stopRequested = true;
+  res.json({ success: true });
 });
 
 // Protected API routes
