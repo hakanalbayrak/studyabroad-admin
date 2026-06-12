@@ -56,69 +56,120 @@ app.get('/api/db-check', async (req, res) => {
   }
 });
 
-// Rankings lookup via Gemini + Google Search Grounding
+// ── Rankings lookup ──────────────────────────────────────────────────────────
+// Primary source: Wikipedia's standardized university rankings infobox
+// (QS_W, THE_W, ARWU_W params). Fallback: plain Gemini for missing fields.
+const https = require('https');
+
+function httpsGetJson(url) {
+  return new Promise((resolve, reject) => {
+    https.get(url, { headers: { 'User-Agent': 'StudyAbroadAdmin/1.0 (study abroad admin panel; contact via site)' } }, r => {
+      let d = '';
+      r.on('data', c => d += c);
+      r.on('end', () => {
+        try { resolve(JSON.parse(d)); }
+        catch (e) { reject(new Error('Non-JSON response from ' + new URL(url).hostname + ' (possibly rate-limited, try again in a minute): ' + d.slice(0, 80))); }
+      });
+    }).on('error', reject);
+  });
+}
+
+// Parses infobox values like "55", "=58" (tied) or "101-150" / "551–600" (range → lower bound)
+function parseRank(raw) {
+  if (!raw) return null;
+  const m = String(raw).match(/(\d+)/);
+  return m ? parseInt(m[1]) : null;
+}
+
 app.get('/api/lookup/rankings', auth, async (req, res) => {
   const name = (req.query.name || '').trim();
   if (!name) return res.status(400).json({ error: 'name required' });
-  const key = process.env.GEMINI_KEY;
-  if (!key || key === 'your_gemini_key_here') {
-    return res.status(503).json({ error: 'GEMINI_KEY not configured in environment variables.' });
-  }
+  const out = {
+    qs_rank: null, qs_year: null, the_rank: null, the_year: null,
+    shanghai_rank: null, shanghai_year: null, leiden_rank: null, leiden_year: null,
+    sources: []
+  };
   try {
-    const https = require('https');
-    const prompt = `You are a university data assistant. Find the most recent world university rankings for "${name}".
-Search for each of these ranking systems and return the rank number and year.
-Return ONLY a valid JSON object, no markdown, no explanation:
-{
-  "qs_rank": <integer or null>,
-  "qs_year": <4-digit year or null>,
-  "the_rank": <integer or null>,
-  "the_year": <4-digit year or null>,
-  "shanghai_rank": <integer or null>,
-  "shanghai_year": <4-digit year or null>,
-  "leiden_rank": <integer or null>,
-  "leiden_year": <4-digit year or null>,
-  "sources": ["<url1>", "<url2>"]
-}
-For ranges like "201-300" use the lower bound (201). If a university is unranked or not found return null.`;
-
-    const body = JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      tools: [{ google_search: {} }],
-      generationConfig: { temperature: 0, responseMimeType: 'text/plain' }
-    });
-
-    const geminiRes = await new Promise((resolve, reject) => {
-      const req2 = https.request({
-        hostname: 'generativelanguage.googleapis.com',
-        path: '/v1beta/models/gemini-2.0-flash:generateContent',
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-goog-api-key': key
+    // 1+2. Wikipedia rankings infobox — primary source. A failure here
+    // (e.g. rate limit) should degrade to the Gemini fallback, not error out.
+    try {
+      const search = await httpsGetJson(
+        'https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srlimit=1&srsearch=' +
+        encodeURIComponent(name)
+      );
+      const title = search.query?.search?.[0]?.title;
+      if (title) {
+        const page = await httpsGetJson(
+          'https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=' +
+          encodeURIComponent(title)
+        );
+        const wikitext = page.parse?.wikitext?.['*'] || '';
+        const grab = p => {
+          const m = wikitext.match(new RegExp(p + '\\s*=\\s*([^|\\n<]+)'));
+          return m ? m[1].trim() : null;
+        };
+        out.qs_rank = parseRank(grab('QS_W'));
+        out.qs_year = parseRank(grab('QS_W_year'));
+        out.the_rank = parseRank(grab('THE_W'));
+        out.the_year = parseRank(grab('THE_W_year'));
+        out.shanghai_rank = parseRank(grab('ARWU_W'));
+        out.shanghai_year = parseRank(grab('ARWU_W_year'));
+        if (out.qs_rank || out.the_rank || out.shanghai_rank) {
+          out.sources.push('https://en.wikipedia.org/wiki/' + encodeURIComponent(title.replace(/ /g, '_')));
         }
-      }, r => {
-        let d = '';
-        r.on('data', c => d += c);
-        r.on('end', () => resolve({ status: r.statusCode, body: d }));
-      });
-      req2.on('error', reject);
-      req2.write(body);
-      req2.end();
-    });
-
-    if (geminiRes.status !== 200) {
-      const err = JSON.parse(geminiRes.body);
-      return res.status(502).json({ error: err.error?.message || 'Gemini API error', status: geminiRes.status });
+      }
+    } catch (wikiErr) {
+      out.sources.push('wikipedia-unavailable: ' + wikiErr.message.slice(0, 60));
     }
 
-    const parsed = JSON.parse(geminiRes.body);
-    const text = parsed.candidates?.[0]?.content?.parts?.[0]?.text || '';
-    // Extract JSON from response (strip any markdown fences if present)
-    const jsonMatch = text.match(/\{[\s\S]*\}/);
-    if (!jsonMatch) return res.status(502).json({ error: 'Gemini returned unexpected format', raw: text });
-    const rankings = JSON.parse(jsonMatch[0]);
-    res.json(rankings);
+    // 3. Gemini fallback for anything still missing (plain generation, free tier)
+    const key = process.env.GEMINI_KEY;
+    const missing = ['qs', 'the', 'shanghai', 'leiden'].filter(k => !out[k + '_rank']);
+    if (key && key !== 'your_gemini_key_here' && missing.length) {
+      const prompt = `What are the most recent world university rankings for "${name}"?
+Only answer for these systems: ${missing.join(', ')} (qs = QS World University Rankings, the = Times Higher Education, shanghai = ARWU/Shanghai Ranking, leiden = CWTS Leiden Ranking).
+Return ONLY a JSON object like {"qs_rank":55,"qs_year":2025,...} using keys <system>_rank and <system>_year.
+Use null when you are not confident. For ranges like 201-300 use the lower bound.`;
+      const body = JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { temperature: 0 }
+      });
+      const gem = await new Promise((resolve, reject) => {
+        const rq = https.request({
+          hostname: 'generativelanguage.googleapis.com',
+          path: '/v1beta/models/gemini-flash-latest:generateContent',
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key }
+        }, r => {
+          let d = '';
+          r.on('data', c => d += c);
+          r.on('end', () => resolve({ status: r.statusCode, body: d }));
+        });
+        rq.on('error', reject);
+        rq.write(body);
+        rq.end();
+      });
+      if (gem.status === 200) {
+        const text = JSON.parse(gem.body).candidates?.[0]?.content?.parts?.[0]?.text || '';
+        const jm = text.match(/\{[\s\S]*\}/);
+        if (jm) {
+          try {
+            const g = JSON.parse(jm[0]);
+            let usedGemini = false;
+            for (const k of missing) {
+              if (g[k + '_rank']) {
+                out[k + '_rank'] = parseRank(g[k + '_rank']);
+                out[k + '_year'] = parseRank(g[k + '_year']);
+                usedGemini = true;
+              }
+            }
+            if (usedGemini) out.sources.push('gemini-model-knowledge (verify before publishing)');
+          } catch {}
+        }
+      }
+    }
+
+    res.json(out);
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
