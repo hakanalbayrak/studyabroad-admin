@@ -835,82 +835,42 @@ async function lookupRankings() {
   if (!name) { toast('Enter the institution name first.', 'error'); return; }
   const btn = document.getElementById('rankBtn');
   const info = document.getElementById('rankingResult');
-  btn.disabled = true; btn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Looking up...';
-  info.innerHTML = '';
-  const found = [], notFound = [];
-  const yr = new Date().getFullYear();
-
-  // ── Wikidata: QS + THE + Shanghai ────────────────────────────────────────
+  btn.disabled = true;
+  btn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Searching via Google...';
+  info.innerHTML = '<span class="text-muted small">Asking Gemini to search Google for current rankings — this takes a few seconds...</span>';
   try {
-    const sparql = `
-      SELECT DISTINCT ?item ?itemLabel ?qs ?the ?arwu WHERE {
-        ?item wdt:P31/wdt:P279* wd:Q3918 .
-        ?item rdfs:label ?lbl FILTER(LANG(?lbl)="en" && CONTAINS(LCASE(?lbl),LCASE("${name.replace(/"/g,'')}")))
-        OPTIONAL { ?item wdt:P5584 ?qs }
-        OPTIONAL { ?item wdt:P5586 ?the }
-        OPTIONAL { ?item wdt:P5242 ?arwu }
-        SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
-      } LIMIT 3`;
-    const wdRes = await (await fetch(
-      'https://query.wikidata.org/sparql?query=' + encodeURIComponent(sparql),
-      { headers: { Accept: 'application/sparql-results+json' } }
-    )).json();
-    const row = wdRes.results?.bindings?.[0];
-    if (row) {
-      // Wikidata stores profile IDs, not rank numbers directly — open lookup pages
-      const qsId = row.qs?.value;
-      const theId = row.the?.value;
-      const arwuId = row.arwu?.value;
-      const links = [];
-      if (qsId) links.push(`<a href="https://www.topuniversities.com/university-rankings?search=${encodeURIComponent(name)}" target="_blank" class="me-3"><i class="bi bi-box-arrow-up-right me-1"></i>QS Profile</a>`);
-      if (theId) links.push(`<a href="https://www.timeshighereducation.com/world-university-rankings/latest/world-ranking#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/stats/search_term/${encodeURIComponent(name)}" target="_blank" class="me-3"><i class="bi bi-box-arrow-up-right me-1"></i>THE Profile</a>`);
-      if (arwuId) links.push(`<a href="https://www.shanghairanking.com/institution/${encodeURIComponent(arwuId)}" target="_blank"><i class="bi bi-box-arrow-up-right me-1"></i>Shanghai Profile</a>`);
-      if (links.length) found.push('Wikidata found this university — use links to check current ranks: ' + links.join(''));
-      else notFound.push('Wikidata: found entry but no ranking IDs');
-    } else { notFound.push('Wikidata: no match for this name'); }
-  } catch(e) { notFound.push('Wikidata: ' + e.message); }
-
-  // ── Leiden open data (server-side lookup) ─────────────────────────────────
-  try {
-    const lRes = await api('GET', '/api/lookup/leiden?name=' + encodeURIComponent(name));
-    const lData = await lRes.json();
-    if (lData.length) {
-      const r = lData[0];
-      const rank = r.P_top10 || r.rank || r.Rank || r.RANK || r['University rank'] || '';
-      const year = r.year || r.Year || r.YEAR || '2024';
-      if (rank) {
-        document.getElementById('fLeidenRank').value = parseInt(rank) || rank;
-        document.getElementById('fLeidenYear').value = year;
-        found.push(`Leiden: rank <strong>${rank}</strong> (${year}) — "${r.University || r.university || r.name || lData[0][Object.keys(lData[0])[0]]}"`);
-      } else { notFound.push('Leiden: found entry but rank field unclear — check CSV format'); }
-    } else { notFound.push('Leiden: no match'); }
-  } catch(e) { notFound.push('Leiden: ' + e.message); }
-
-  // ── Shanghai ARWU via Opendatasoft (historical 2005–2018) ─────────────────
-  try {
-    const arRes = await (await fetch(
-      `https://public.opendatasoft.com/api/records/1.0/search/?dataset=shanghai-world-university-ranking&q=${encodeURIComponent(name)}&rows=3`
-    )).json();
-    const rec = arRes.records?.[0]?.fields;
-    if (rec) {
-      const rank = rec.world_rank || rec.rank;
-      const year = rec.year || '2018';
-      if (rank) {
-        document.getElementById('fShanghaiRank').value = parseInt(rank) || rank;
-        document.getElementById('fShanghaiYear').value = year;
-        found.push(`Shanghai ARWU: rank <strong>${rank}</strong> (${year} — historical data)`);
-      }
-    } else { notFound.push('Shanghai ARWU: no match in historical data (2005–2018)'); }
-  } catch(e) { notFound.push('Shanghai ARWU: ' + e.message); }
-
-  const lines = [];
-  if (found.length) lines.push('<span class="text-success"><i class="bi bi-check-circle me-1"></i>' + found.join('</span><br><span class="text-success"><i class="bi bi-check-circle me-1"></i>') + '</span>');
-  if (notFound.length) lines.push('<span class="text-muted">' + notFound.join(' · ') + '</span>');
-  if (found.length + notFound.length === 0) lines.push('<span class="text-muted">No ranking data found.</span>');
-  lines.push('<span class="text-muted fst-italic">QS and THE rank numbers must be entered manually from their websites.</span>');
-  info.innerHTML = lines.join('<br>');
-
-  btn.disabled = false; btn.innerHTML = '<i class="bi bi-stars me-1"></i>Auto-lookup';
+    const res = await api('GET', '/api/lookup/rankings?name=' + encodeURIComponent(name));
+    const d = await res.json();
+    if (!res.ok) {
+      info.innerHTML = `<span class="text-danger"><i class="bi bi-exclamation-circle me-1"></i>${esc(d.error)}</span>`;
+      return;
+    }
+    const s = (id, val) => { if (val) document.getElementById(id).value = val; };
+    s('fQsRank', d.qs_rank); s('fQsYear', d.qs_year);
+    s('fTheRank', d.the_rank); s('fTheYear', d.the_year);
+    s('fShanghaiRank', d.shanghai_rank); s('fShanghaiYear', d.shanghai_year);
+    s('fLeidenRank', d.leiden_rank); s('fLeidenYear', d.leiden_year);
+    const rows = [
+      ['QS', d.qs_rank, d.qs_year],
+      ['THE', d.the_rank, d.the_year],
+      ['Shanghai', d.shanghai_rank, d.shanghai_year],
+      ['Leiden', d.leiden_rank, d.leiden_year]
+    ];
+    const filled = rows.filter(r => r[1]);
+    const missing = rows.filter(r => !r[1]).map(r => r[0]);
+    let html = '';
+    if (filled.length) html += '<span class="text-success"><i class="bi bi-check-circle me-1"></i>' +
+      filled.map(r => `<strong>${r[0]}</strong>: #${r[1]} (${r[2]})`).join(' &nbsp;·&nbsp; ') + '</span>';
+    if (missing.length) html += `<br><span class="text-muted small">Not found: ${missing.join(', ')} — enter manually</span>`;
+    if (d.sources?.length) html += `<br><span class="text-muted small">Sources: ` +
+      d.sources.map(u => `<a href="${esc(u)}" target="_blank" class="text-muted">${esc(u.replace(/https?:\/\/(www\.)?/,'').split('/')[0])}</a>`).join(', ') + '</span>';
+    info.innerHTML = html || '<span class="text-muted">No ranking data found — enter manually.</span>';
+    if (filled.length) toast(`Found ${filled.length} ranking(s) for ${name}`, 'success');
+  } catch(e) {
+    info.innerHTML = `<span class="text-danger">${esc(e.message)}</span>`;
+  } finally {
+    btn.disabled = false; btn.innerHTML = '<i class="bi bi-stars me-1"></i>Auto-lookup';
+  }
 }
 
 function openOrbitPreview(name, lat, lng) {
