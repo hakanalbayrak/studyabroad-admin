@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Abroad — Explore Universities in 3D</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root { --accent: #6366f1; }
+    body { background: #0b1120; color: #e2e8f0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; min-height: 100vh; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #0b1120 0%, #1e1b4b 50%, #0b1120 100%); padding: 64px 0 40px; text-align: center; }
+    .hero h1 { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; background: linear-gradient(90deg, #818cf8, #c084fc, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px; }
+    .hero p { color: #94a3b8; font-size: 1.05rem; max-width: 520px; margin: 0 auto 32px; }
+
+    /* Search & filter bar */
+    #filterBar { background: rgba(255,255,255,.04); border-bottom: 1px solid rgba(255,255,255,.08); padding: 16px 0; position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+    #filterBar input, #filterBar select { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); color: #e2e8f0; border-radius: 8px; }
+    #filterBar input::placeholder { color: #64748b; }
+    #filterBar input:focus, #filterBar select:focus { background: rgba(255,255,255,.1); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.25); color: #e2e8f0; outline: none; }
+    #filterBar select option { background: #1e293b; color: #e2e8f0; }
+
+    /* Cards */
+    #grid { padding: 32px 0 64px; }
+    .uni-card {
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+      border-radius: 16px; overflow: hidden; transition: all .2s; cursor: pointer;
+      display: flex; flex-direction: column;
+    }
+    .uni-card:hover { background: rgba(99,102,241,.1); border-color: rgba(99,102,241,.4); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,.4); }
+    .card-top { padding: 20px 20px 14px; flex: 1; }
+    .card-name { font-size: .95rem; font-weight: 700; color: #f1f5f9; margin-bottom: 4px; line-height: 1.35; }
+    .card-location { font-size: .78rem; color: #64748b; margin-bottom: 10px; }
+    .card-ranks { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+    .rank-badge { font-size: .7rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+    .rank-qs { background: rgba(99,102,241,.25); color: #a5b4fc; }
+    .rank-the { background: rgba(16,185,129,.2); color: #6ee7b7; }
+    .rank-sh { background: rgba(245,158,11,.2); color: #fcd34d; }
+    .card-desc { font-size: .78rem; color: #94a3b8; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .card-footer-strip { background: rgba(99,102,241,.15); padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .card-footer-strip .orbit-label { font-size: .75rem; font-weight: 600; color: #818cf8; }
+    .card-footer-strip .no-orbit { font-size: .72rem; color: #475569; }
+    .orbit-icon { font-size: 1rem; color: #818cf8; }
+    .no-orbit-icon { font-size: 1rem; color: #334155; }
+
+    /* Empty / loading */
+    #emptyMsg { text-align: center; color: #475569; padding: 80px 0; }
+    #loadingMsg { text-align: center; color: #64748b; padding: 80px 0; }
+    .spinner-ring { width: 40px; height: 40px; border: 3px solid rgba(99,102,241,.2); border-top-color: #6366f1; border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 16px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Stats bar */
+    #statsBar { background: rgba(255,255,255,.03); border-top: 1px solid rgba(255,255,255,.06); padding: 10px 0; }
+    #statsBar .stat { font-size: .78rem; color: #64748b; }
+    #statsBar .stat b { color: #94a3b8; }
+
+    /* Count */
+    #resultCount { font-size: .82rem; color: #64748b; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="container">
+    <div class="mb-3"><i class="bi bi-globe-americas" style="font-size:2.5rem;color:#818cf8"></i></div>
+    <h1>Explore Universities in 3D</h1>
+    <p>Browse our partner universities worldwide and fly around their campus in an immersive 3D orbit view.</p>
+  </div>
+</div>
+
+<div id="filterBar">
+  <div class="container">
+    <div class="row g-2 align-items-center">
+      <div class="col-12 col-md-5">
+        <input type="text" class="form-control form-control-sm" id="searchInput" placeholder="Search universities…" oninput="applyFilters()">
+      </div>
+      <div class="col-6 col-md-3">
+        <select class="form-select form-select-sm" id="countryFilter" onchange="applyFilters()">
+          <option value="">All Countries</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-2">
+        <select class="form-select form-select-sm" id="orbitFilter" onchange="applyFilters()">
+          <option value="">All</option>
+          <option value="orbit">3D Orbit available</option>
+          <option value="no-orbit">No orbit yet</option>
+        </select>
+      </div>
+      <div class="col-12 col-md-2 text-md-end">
+        <span class="small" style="color:#64748b" id="resultCount"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="statsBar">
+  <div class="container d-flex gap-4">
+    <span class="stat"><b id="stTotal">—</b> universities</span>
+    <span class="stat"><b id="stOrbit">—</b> with 3D orbit</span>
+    <span class="stat"><b id="stCountries">—</b> countries</span>
+  </div>
+</div>
+
+<div id="grid">
+  <div class="container">
+    <div id="loadingMsg"><div class="spinner-ring"></div>Loading universities…</div>
+    <div id="emptyMsg" class="d-none"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i>No universities match your search.</div>
+    <div class="row g-3" id="cardsContainer"></div>
+  </div>
+</div>
+
+<script>
+let allUniversities = [];
+let filteredUniversities = [];
+
+async function loadUniversities() {
+  try {
+    const res = await fetch('/api/public/universities');
+    allUniversities = await res.json();
+    buildCountryFilter();
+    applyFilters();
+    updateStats();
+    document.getElementById('loadingMsg').style.display = 'none';
+  } catch(e) {
+    document.getElementById('loadingMsg').innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#f87171"></i>Could not load universities.';
+  }
+}
+
+function buildCountryFilter() {
+  const countries = [...new Set(allUniversities.map(u => u.country).filter(Boolean))].sort();
+  const sel = document.getElementById('countryFilter');
+  countries.forEach(c => {
+    const o = document.createElement('option');
+    o.value = c; o.textContent = c;
+    sel.appendChild(o);
+  });
+}
+
+function hasOrbit(u) {
+  return !!(u.latitude && u.longitude);
+}
+
+function applyFilters() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  const country = document.getElementById('countryFilter').value;
+  const orbitF = document.getElementById('orbitFilter').value;
+
+  filteredUniversities = allUniversities.filter(u => {
+    if (q && !u.name.toLowerCase().includes(q) && !(u.city || '').toLowerCase().includes(q) && !(u.country || '').toLowerCase().includes(q)) return false;
+    if (country && u.country !== country) return false;
+    if (orbitF === 'orbit' && !hasOrbit(u)) return false;
+    if (orbitF === 'no-orbit' && hasOrbit(u)) return false;
+    return true;
+  });
+
+  document.getElementById('resultCount').textContent = filteredUniversities.length + ' result' + (filteredUniversities.length !== 1 ? 's' : '');
+  renderCards();
+}
+
+function updateStats() {
+  document.getElementById('stTotal').textContent = allUniversities.length;
+  document.getElementById('stOrbit').textContent = allUniversities.filter(hasOrbit).length;
+  const countries = new Set(allUniversities.map(u => u.country).filter(Boolean));
+  document.getElementById('stCountries').textContent = countries.size;
+}
+
+function renderCards() {
+  const container = document.getElementById('cardsContainer');
+  const empty = document.getElementById('emptyMsg');
+
+  if (!filteredUniversities.length) {
+    container.innerHTML = '';
+    empty.classList.remove('d-none');
+    return;
+  }
+  empty.classList.add('d-none');
+
+  container.innerHTML = filteredUniversities.map(u => {
+    const orbit = hasOrbit(u);
+    const ranks = [];
+    if (u.qs_rank) ranks.push(`<span class="rank-badge rank-qs">QS #${u.qs_rank}</span>`);
+    if (u.the_rank) ranks.push(`<span class="rank-badge rank-the">THE #${u.the_rank}</span>`);
+    if (u.shanghai_rank) ranks.push(`<span class="rank-badge rank-sh">SH #${u.shanghai_rank}</span>`);
+
+    return `<div class="col-12 col-sm-6 col-lg-4">
+      <div class="uni-card h-100" onclick="openUniversity(${u.id})">
+        <div class="card-top">
+          <div class="card-name">${esc(u.name)}</div>
+          <div class="card-location"><i class="bi bi-geo-alt-fill me-1" style="color:#475569"></i>${[u.city, u.country].filter(Boolean).join(', ')}</div>
+          ${ranks.length ? `<div class="card-ranks">${ranks.join('')}</div>` : ''}
+          ${u.description_en ? `<div class="card-desc">${esc(u.description_en)}</div>` : ''}
+        </div>
+        <div class="card-footer-strip">
+          ${orbit
+            ? `<span class="orbit-label"><i class="bi bi-camera-video-fill me-1"></i>3D Campus Orbit</span><i class="bi bi-arrow-right-circle-fill orbit-icon"></i>`
+            : `<span class="no-orbit">No orbit view yet</span><i class="bi bi-circle no-orbit-icon"></i>`
+          }
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openUniversity(id) {
+  const u = allUniversities.find(x => x.id === id);
+  if (!u) return;
+  if (!hasOrbit(u)) {
+    alert(`${u.name}\n\nNo 3D orbit view available yet — coordinates haven't been set for this campus.`);
+    return;
+  }
+  const lat  = u.orbit_center_lat  ?? u.latitude;
+  const lng  = u.orbit_center_lng  ?? u.longitude;
+  const alt  = u.orbit_altitude    ?? 400;
+  const pitch= u.orbit_pitch       ?? -45;
+  const head = u.orbit_initial_heading ?? 0;
+  const range= u.orbit_range       ?? 400;
+  const speed= u.orbit_rotation_speed ?? 0.12;
+  const rot  = u.orbit_rotation_type  ?? '360';
+  const params = new URLSearchParams({ name: u.name, lat, lng, alt, pitch, heading: head, range, speed, rot });
+  if (u.scan_target_lat && u.scan_target_lng) {
+    params.set('scanLat', u.scan_target_lat);
+    params.set('scanLng', u.scan_target_lng);
+    params.set('scan', u.scan_effect_enabled ? '1' : '0');
+  }
+  window.open('/orbit?' + params.toString(), '_blank');
+}
+
+function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+loadUniversities();
+</script>
+</body>
+</html>

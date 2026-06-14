@@ -271,6 +271,30 @@ app.post('/api/bulk/import', auth, async (req, res) => {
   res.json({ created, skipped, errors });
 });
 
+// Public universities list (no auth — for the public orbit picker page)
+app.get('/api/public/universities', async (req, res) => {
+  try {
+    const [rows] = await db.query(`
+      SELECT e.id, e.name, e.type, e.description_en,
+        e.qs_rank, e.the_rank, e.shanghai_rank,
+        el.city, el.country, el.continent,
+        el.latitude, el.longitude,
+        oc.orbit_center_lat, oc.orbit_center_lng, oc.orbit_altitude,
+        oc.orbit_pitch, oc.orbit_initial_heading, oc.orbit_range,
+        oc.orbit_rotation_speed, oc.orbit_rotation_type,
+        oc.scan_target_lat, oc.scan_target_lng, oc.scan_effect_enabled
+      FROM entities e
+      LEFT JOIN entity_locations el ON el.id = (
+        SELECT MIN(id) FROM entity_locations WHERE entity_id = e.id
+      )
+      LEFT JOIN orbit_configs oc ON oc.entity_location_id = el.id
+      WHERE e.status = 'active'
+      ORDER BY e.name
+    `);
+    res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 // Protected API routes
 app.use('/api/entities', auth, require('./routes/entities'));
 app.use('/api/locations', auth, require('./routes/locations'));
