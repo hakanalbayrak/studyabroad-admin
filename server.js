@@ -326,7 +326,7 @@ app.delete('/api/bulk/geo-lookup/:jobId', auth, (req, res) => {
 
 // ── Bulk entity import ────────────────────────────────────────────────────────
 app.post('/api/bulk/import', auth, async (req, res) => {
-  const { names, type = 'university', status = 'pending' } = req.body;
+  const { names, type = 'university', status = 'active' } = req.body;
   if (!Array.isArray(names) || !names.length) return res.status(400).json({ error: 'names array required' });
 
   let created = 0, skipped = 0, errors = 0;
@@ -365,7 +365,7 @@ app.get('/api/public/universities', async (req, res) => {
         SELECT MIN(id) FROM entity_locations WHERE entity_id = e.id
       )
       LEFT JOIN orbit_configs oc ON oc.entity_location_id = el.id
-      WHERE e.status = 'active'
+      WHERE e.status != 'inactive'
       ORDER BY e.name
     `);
     res.json(rows);

@@ -170,7 +170,7 @@ router.post('/', upload.single('file'), async (req, res) => {
       if (!entityId) {
         const [r] = await db.query(
           'INSERT INTO entities (name, type, status) VALUES (?, ?, ?)',
-          [uniName, 'university', 'pending']
+          [uniName, 'university', 'active']
         );
         entityId = r.insertId;
         entityCache[uniName] = entityId;
