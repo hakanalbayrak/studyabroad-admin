@@ -530,6 +530,44 @@
         </div>
       </div>
 
+      <!-- Bulk Geo-lookup -->
+      <div class="card shadow-sm border-0 rounded-3 mb-4">
+        <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
+          <h6 class="fw-bold mb-0"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Bulk Coordinate Lookup</h6>
+          <p class="text-muted small mb-0 mt-1">Auto-fetch latitude &amp; longitude for all entities that have no coordinates yet, using OpenStreetMap. Also creates a default orbit config for each. Rate-limited to 1 request/sec.</p>
+        </div>
+        <div class="card-body px-4 pb-4">
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <button class="btn btn-danger btn-sm" id="geoStartBtn" onclick="startBulkGeo()">
+              <i class="bi bi-geo-alt me-1"></i>Lookup coordinates for all missing
+            </button>
+            <button class="btn btn-outline-danger btn-sm d-none" id="geoStopBtn" onclick="stopBulkGeo()">
+              <i class="bi bi-stop-fill me-1"></i>Stop
+            </button>
+          </div>
+          <div id="geoProgress" class="d-none mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="small text-muted" id="geoProgressText">Starting…</span>
+              <span class="small fw-semibold" id="geoProgressPct">0%</span>
+            </div>
+            <div class="progress" style="height:8px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" id="geoProgressBar" style="width:0%"></div>
+            </div>
+          </div>
+          <div id="geoResults" class="d-none">
+            <span class="fw-semibold small" id="geoSummary"></span>
+            <div class="table-responsive rounded-2 border mt-2" style="max-height:300px;overflow-y:auto">
+              <table class="table table-sm table-hover mb-0">
+                <thead class="sticky-top" style="background:#f8fafc">
+                  <tr><th class="ps-3">University</th><th>Lat</th><th>Lng</th><th class="pe-3">Status</th></tr>
+                </thead>
+                <tbody id="geoResultsBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- CSV Full Import -->
       <div class="card shadow-sm border-0 rounded-3 mb-4">
         <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
@@ -1364,6 +1402,83 @@ function renderBulkResults(job) {
       <td class="pe-3"><span class="badge ${r._ok ? 'bg-success' : 'bg-danger'}">${r._ok ? 'Updated' : 'Error'}</span></td>
     </tr>`).join('');
   document.getElementById('bulkResults').classList.remove('d-none');
+}
+
+// ── Bulk Geo-lookup ───────────────────────────────────────────────────────────
+let geoJobId = null;
+let geoPollTimer = null;
+
+async function startBulkGeo() {
+  document.getElementById('geoStartBtn').disabled = true;
+  document.getElementById('geoStopBtn').classList.remove('d-none');
+  document.getElementById('geoProgress').classList.remove('d-none');
+  document.getElementById('geoResults').classList.add('d-none');
+  setGeoProgress(0, 0, 'Starting…');
+  try {
+    const res = await api('POST', '/api/bulk/geo-lookup', {});
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Failed to start');
+    if (!data.jobId) { toast(data.message || 'All entities already have coordinates.', 'success'); resetGeoUI(); return; }
+    geoJobId = data.jobId;
+    toast(`Geo-lookup started — ${data.total} entities queued (≈${Math.ceil(data.total/60)} min).`, 'success');
+    geoPollTimer = setInterval(pollGeoJob, 2500);
+  } catch(e) {
+    toast('Could not start geo-lookup: ' + e.message, 'error');
+    resetGeoUI();
+  }
+}
+
+async function pollGeoJob() {
+  if (!geoJobId) return;
+  try {
+    const res = await api('GET', '/api/bulk/geo-lookup/' + geoJobId);
+    const job = await res.json();
+    const pct = job.total ? Math.round(job.processed / job.total * 100) : 0;
+    setGeoProgress(pct, job.total, `Processing ${job.processed} of ${job.total}…`);
+    if (job.status === 'done' || job.status === 'stopped' || job.status === 'error') {
+      clearInterval(geoPollTimer); geoPollTimer = null;
+      renderGeoResults(job);
+      resetGeoUI();
+      toast(`Geo-lookup done — ${job.results.length} found, ${job.notFound.length} not found, ${job.errors.length} errors.`, job.notFound.length ? 'warn' : 'success');
+    }
+  } catch(e) {}
+}
+
+async function stopBulkGeo() {
+  if (!geoJobId) return;
+  try { await api('DELETE', '/api/bulk/geo-lookup/' + geoJobId); } catch {}
+  clearInterval(geoPollTimer); geoPollTimer = null;
+  resetGeoUI();
+  toast('Geo-lookup stopped.', 'warn');
+}
+
+function setGeoProgress(pct, total, text) {
+  document.getElementById('geoProgressBar').style.width = pct + '%';
+  document.getElementById('geoProgressPct').textContent = pct + '%';
+  document.getElementById('geoProgressText').textContent = text;
+}
+
+function resetGeoUI() {
+  document.getElementById('geoStartBtn').disabled = false;
+  document.getElementById('geoStopBtn').classList.add('d-none');
+}
+
+function renderGeoResults(job) {
+  document.getElementById('geoSummary').textContent =
+    `${job.results.length} found · ${job.notFound.length} not found · ${job.errors.length} errors`;
+  const rows = [
+    ...job.results.map(r => ({ ...r, _s: 'ok' })),
+    ...job.notFound.map(r => ({ ...r, _s: 'notfound' })),
+    ...job.errors.map(r => ({ ...r, _s: 'error' }))
+  ];
+  document.getElementById('geoResultsBody').innerHTML = rows.map(r => `
+    <tr class="${r._s === 'ok' ? '' : r._s === 'notfound' ? 'table-warning' : 'table-danger'}">
+      <td class="ps-3 small">${esc(r.entity_name)}</td>
+      <td class="small">${r.lat ? r.lat.toFixed(5) : '—'}</td>
+      <td class="small">${r.lng ? r.lng.toFixed(5) : '—'}</td>
+      <td class="pe-3"><span class="badge ${r._s === 'ok' ? 'bg-success' : r._s === 'notfound' ? 'bg-warning text-dark' : 'bg-danger'}">${r._s === 'ok' ? 'Found' : r._s === 'notfound' ? 'Not found' : 'Error'}</span></td>
+    </tr>`).join('');
+  document.getElementById('geoResults').classList.remove('d-none');
 }
 
 async function runCsvImport() {

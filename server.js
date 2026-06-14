@@ -247,6 +247,96 @@ app.delete('/api/bulk/rankings/:jobId', auth, (req, res) => {
   res.json({ success: true });
 });
 
+// ── Bulk geo-lookup (Nominatim) ───────────────────────────────────────────────
+const geoJobs = {};
+
+async function nominatimSearch(query) {
+  const url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + encodeURIComponent(query);
+  return new Promise((resolve, reject) => {
+    https.get(url, { headers: { 'User-Agent': 'StudyAbroadAdmin/1.0 (study abroad platform; contact via site)' } }, r => {
+      let d = '';
+      r.on('data', c => d += c);
+      r.on('end', () => {
+        try { resolve(JSON.parse(d)); }
+        catch (e) { reject(new Error('Nominatim parse error')); }
+      });
+    }).on('error', reject);
+  });
+}
+
+async function processBulkGeo(jobId, locations) {
+  const job = geoJobs[jobId];
+  job.total = locations.length;
+  const delay = ms => new Promise(r => setTimeout(r, ms));
+
+  for (const loc of locations) {
+    if (job.stopRequested) { job.status = 'stopped'; return; }
+    try {
+      const query = `${loc.entity_name} ${loc.country || ''}`.trim();
+      const results = await nominatimSearch(query);
+      if (results && results[0]) {
+        const lat = parseFloat(results[0].lat);
+        const lng = parseFloat(results[0].lon);
+        await db.query(
+          'UPDATE entity_locations SET latitude=?, longitude=? WHERE id=?',
+          [lat, lng, loc.location_id]
+        );
+        // Create default orbit config if none exists
+        const [existing] = await db.query('SELECT id FROM orbit_configs WHERE entity_location_id=?', [loc.location_id]);
+        if (!existing.length) {
+          await db.query(
+            `INSERT INTO orbit_configs (entity_location_id, orbit_center_lat, orbit_center_lng,
+             orbit_altitude, orbit_pitch, orbit_initial_heading, orbit_range,
+             orbit_rotation_type, orbit_rotation_speed, scan_effect_enabled)
+             VALUES (?, ?, ?, 400, -45, 0, 400, '360', 0.12, 0)`,
+            [loc.location_id, lat, lng]
+          );
+        }
+        job.results.push({ entity_name: loc.entity_name, lat, lng, display_name: results[0].display_name });
+      } else {
+        job.notFound.push({ entity_name: loc.entity_name });
+      }
+    } catch (e) {
+      job.errors.push({ entity_name: loc.entity_name, error: e.message });
+    }
+    job.processed++;
+    if (job.processed < job.total && !job.stopRequested) await delay(1100);
+  }
+  job.status = 'done';
+}
+
+app.post('/api/bulk/geo-lookup', auth, async (req, res) => {
+  try {
+    const [rows] = await db.query(`
+      SELECT el.id as location_id, e.name as entity_name, el.country
+      FROM entity_locations el
+      JOIN entities e ON e.id = el.entity_id
+      WHERE el.latitude IS NULL OR el.longitude IS NULL
+      ORDER BY e.name
+    `);
+    if (!rows.length) return res.json({ jobId: null, total: 0, message: 'All entities already have coordinates' });
+    const jobId = crypto.randomBytes(8).toString('hex');
+    geoJobs[jobId] = { status: 'running', processed: 0, total: rows.length, results: [], notFound: [], errors: [], stopRequested: false };
+    processBulkGeo(jobId, rows);
+    res.json({ jobId, total: rows.length });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.get('/api/bulk/geo-lookup/:jobId', auth, (req, res) => {
+  const job = geoJobs[req.params.jobId];
+  if (!job) return res.status(404).json({ error: 'Job not found' });
+  res.json(job);
+});
+
+app.delete('/api/bulk/geo-lookup/:jobId', auth, (req, res) => {
+  const job = geoJobs[req.params.jobId];
+  if (!job) return res.status(404).json({ error: 'Job not found' });
+  job.stopRequested = true;
+  res.json({ success: true });
+});
+
 // ── Bulk entity import ────────────────────────────────────────────────────────
 app.post('/api/bulk/import', auth, async (req, res) => {
   const { names, type = 'university', status = 'pending' } = req.body;
