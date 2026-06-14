@@ -538,10 +538,13 @@
         </div>
         <div class="card-body px-4 pb-4">
           <div class="d-flex gap-2 flex-wrap mb-3">
-            <button class="btn btn-danger btn-sm" id="geoStartBtn" onclick="startBulkGeo()">
-              <i class="bi bi-geo-alt me-1"></i>Lookup coordinates for all missing
+            <button class="btn btn-danger btn-sm" id="geoStartBtn" onclick="startBulkGeo('missing')">
+              <i class="bi bi-geo-alt me-1"></i>Lookup missing coordinates
             </button>
-            <button class="btn btn-outline-danger btn-sm d-none" id="geoStopBtn" onclick="stopBulkGeo()">
+            <button class="btn btn-outline-danger btn-sm" id="geoAllBtn" onclick="startBulkGeo('all')">
+              <i class="bi bi-arrow-repeat me-1"></i>Re-fetch all (fix wrong cities)
+            </button>
+            <button class="btn btn-outline-secondary btn-sm d-none" id="geoStopBtn" onclick="stopBulkGeo()">
               <i class="bi bi-stop-fill me-1"></i>Stop
             </button>
           </div>
@@ -559,7 +562,7 @@
             <div class="table-responsive rounded-2 border mt-2" style="max-height:300px;overflow-y:auto">
               <table class="table table-sm table-hover mb-0">
                 <thead class="sticky-top" style="background:#f8fafc">
-                  <tr><th class="ps-3">University</th><th>Lat</th><th>Lng</th><th>Source</th><th class="pe-3">Status</th></tr>
+                  <tr><th class="ps-3">University</th><th>Resolved City</th><th>Lat</th><th>Lng</th><th>Source</th><th class="pe-3">Status</th></tr>
                 </thead>
                 <tbody id="geoResultsBody"></tbody>
               </table>
@@ -1408,19 +1411,20 @@ function renderBulkResults(job) {
 let geoJobId = null;
 let geoPollTimer = null;
 
-async function startBulkGeo() {
+async function startBulkGeo(mode) {
   document.getElementById('geoStartBtn').disabled = true;
+  document.getElementById('geoAllBtn').disabled = true;
   document.getElementById('geoStopBtn').classList.remove('d-none');
   document.getElementById('geoProgress').classList.remove('d-none');
   document.getElementById('geoResults').classList.add('d-none');
   setGeoProgress(0, 0, 'Starting…');
   try {
-    const res = await api('POST', '/api/bulk/geo-lookup', {});
+    const res = await api('POST', '/api/bulk/geo-lookup', { mode });
     const data = await res.json();
     if (!res.ok) throw new Error(data.error || 'Failed to start');
     if (!data.jobId) { toast(data.message || 'All entities already have coordinates.', 'success'); resetGeoUI(); return; }
     geoJobId = data.jobId;
-    toast(`Geo-lookup started — ${data.total} entities queued (≈${Math.ceil(data.total/60)} min).`, 'success');
+    toast(`Geo-lookup started — ${data.total} entities queued (≈${Math.ceil(data.total * 0.4 / 60)} min).`, 'success');
     geoPollTimer = setInterval(pollGeoJob, 2500);
   } catch(e) {
     toast('Could not start geo-lookup: ' + e.message, 'error');
@@ -1460,6 +1464,7 @@ function setGeoProgress(pct, total, text) {
 
 function resetGeoUI() {
   document.getElementById('geoStartBtn').disabled = false;
+  document.getElementById('geoAllBtn').disabled = false;
   document.getElementById('geoStopBtn').classList.add('d-none');
 }
 
@@ -1474,6 +1479,7 @@ function renderGeoResults(job) {
   document.getElementById('geoResultsBody').innerHTML = rows.map(r => `
     <tr class="${r._s === 'ok' ? '' : r._s === 'notfound' ? 'table-warning' : 'table-danger'}">
       <td class="ps-3 small">${esc(r.entity_name)}</td>
+      <td class="small text-muted">${esc(r.city || '—')}</td>
       <td class="small">${r.lat ? r.lat.toFixed(5) : '—'}</td>
       <td class="small">${r.lng ? r.lng.toFixed(5) : '—'}</td>
       <td class="small">${r.source ? `<span class="badge ${r.source === 'google' ? 'bg-primary' : 'bg-secondary'}">${r.source === 'google' ? 'Google' : 'OSM'}</span>` : '—'}</td>

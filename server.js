@@ -261,11 +261,12 @@ async function processBulkGeo(jobId, locations) {
     try {
       const r = await resolveCoordinates({ name: loc.entity_name, city: loc.city, country: loc.country });
       if (r) {
-        await db.query(
-          'UPDATE entity_locations SET latitude=?, longitude=? WHERE id=?',
-          [r.lat, r.lng, loc.location_id]
-        );
-        // Create default orbit config if none exists
+        const updates = ['latitude=?', 'longitude=?'];
+        const vals = [r.lat, r.lng];
+        if (r.city) { updates.push('city=?'); vals.push(r.city); }
+        vals.push(loc.location_id);
+        await db.query(`UPDATE entity_locations SET ${updates.join(', ')} WHERE id=?`, vals);
+
         const [existing] = await db.query('SELECT id FROM orbit_configs WHERE entity_location_id=?', [loc.location_id]);
         if (!existing.length) {
           await db.query(
@@ -275,8 +276,13 @@ async function processBulkGeo(jobId, locations) {
              VALUES (?, ?, ?, 400, -45, 0, 400, '360', 0.12, 0)`,
             [loc.location_id, r.lat, r.lng]
           );
+        } else {
+          await db.query(
+            'UPDATE orbit_configs SET orbit_center_lat=?, orbit_center_lng=? WHERE entity_location_id=? AND orbit_center_lat IS NULL',
+            [r.lat, r.lng, loc.location_id]
+          );
         }
-        job.results.push({ entity_name: loc.entity_name, lat: r.lat, lng: r.lng, display_name: r.display, source: r.source });
+        job.results.push({ entity_name: loc.entity_name, lat: r.lat, lng: r.lng, city: r.city || loc.city, display_name: r.display, source: r.source });
       } else {
         job.notFound.push({ entity_name: loc.entity_name });
       }
@@ -290,12 +296,14 @@ async function processBulkGeo(jobId, locations) {
 }
 
 app.post('/api/bulk/geo-lookup', auth, async (req, res) => {
+  const { mode } = req.body; // 'missing' (default) or 'all'
   try {
+    const whereClause = mode === 'all' ? '1=1' : '(el.latitude IS NULL OR el.longitude IS NULL)';
     const [rows] = await db.query(`
       SELECT el.id as location_id, e.name as entity_name, el.city, el.country
       FROM entity_locations el
       JOIN entities e ON e.id = el.entity_id
-      WHERE el.latitude IS NULL OR el.longitude IS NULL
+      WHERE ${whereClause}
       ORDER BY e.name
     `);
     if (!rows.length) return res.json({ jobId: null, total: 0, message: 'All entities already have coordinates' });

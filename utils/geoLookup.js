@@ -1,11 +1,13 @@
 const https = require('https');
 const db = require('../db');
 
-// ── Low-level HTTP helpers ────────────────────────────────────────────────────
+// ── HTTP helpers ──────────────────────────────────────────────────────────────
 
 function httpsGetJson(url, headers = {}) {
   return new Promise((resolve, reject) => {
-    https.get(url, { headers: { 'User-Agent': 'StudyAbroadAdmin/1.0 (study abroad platform; contact via site)', ...headers } }, r => {
+    https.get(url, {
+      headers: { 'User-Agent': 'StudyAbroadAdmin/1.0 (study abroad platform; contact via site)', ...headers }
+    }, r => {
       let d = '';
       r.on('data', c => d += c);
       r.on('end', () => {
@@ -19,8 +21,10 @@ function httpsGetJson(url, headers = {}) {
 function httpsPostJson(hostname, path, headers, bodyObj) {
   const body = JSON.stringify(bodyObj);
   return new Promise((resolve, reject) => {
-    const rq = https.request({ hostname, path, method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body), ...headers } }, r => {
+    const rq = https.request({
+      hostname, path, method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body), ...headers }
+    }, r => {
       let d = '';
       r.on('data', c => d += c);
       r.on('end', () => {
@@ -35,16 +39,24 @@ function httpsPostJson(hostname, path, headers, bodyObj) {
 }
 
 // ── Query cleaning ────────────────────────────────────────────────────────────
-// University names in the import data carry noise that breaks geocoders:
-//   "Istinye University - Istanbul"  → "Istinye University"
-//   "Bangor University (EB UK)"      → "Bangor University"
-//   "Toulouse Business School (TBS) - Toulouse and Paris" → "Toulouse Business School"
+// Only strips parenthetical agency codes like "(EB UK)", "(TBS)", "(ECFY)".
+// Does NOT strip " - City" suffixes so "SRH University - Heidelberg" keeps
+// its campus city.
 function cleanName(name) {
   return String(name || '')
-    .replace(/\([^)]*\)/g, ' ')      // drop parenthetical codes
-    .replace(/\s-\s.*$/, ' ')        // drop everything after " - "
+    .replace(/\([^)]*\)/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+// ── City extraction from Google Places addressComponents ──────────────────────
+function extractCity(addressComponents) {
+  if (!Array.isArray(addressComponents)) return null;
+  const pick = types => {
+    const c = addressComponents.find(a => a.types && types.some(t => a.types.includes(t)));
+    return c ? c.longText : null;
+  };
+  return pick(['locality']) || pick(['postal_town']) || pick(['administrative_area_level_2']) || pick(['administrative_area_level_1']) || null;
 }
 
 // ── Google Places Text Search (Places API New) ────────────────────────────────
@@ -54,7 +66,10 @@ async function googleTextSearch(query) {
   const { status, body } = await httpsPostJson(
     'places.googleapis.com',
     '/v1/places:searchText',
-    { 'X-Goog-Api-Key': key, 'X-Goog-FieldMask': 'places.location,places.displayName,places.formattedAddress' },
+    {
+      'X-Goog-Api-Key': key,
+      'X-Goog-FieldMask': 'places.location,places.displayName,places.formattedAddress,places.addressComponents'
+    },
     { textQuery: query }
   );
   if (status !== 200) return null;
@@ -63,6 +78,7 @@ async function googleTextSearch(query) {
   return {
     lat: p.location.latitude,
     lng: p.location.longitude,
+    city: extractCity(p.addressComponents),
     display: (p.displayName && p.displayName.text) || p.formattedAddress || query,
     source: 'google'
   };
@@ -77,24 +93,36 @@ async function nominatimSearch(query) {
 async function nominatimResolve(query) {
   const results = await nominatimSearch(query);
   if (results && results[0]) {
-    return { lat: parseFloat(results[0].lat), lng: parseFloat(results[0].lon), display: results[0].display_name, source: 'osm' };
+    return {
+      lat: parseFloat(results[0].lat),
+      lng: parseFloat(results[0].lon),
+      city: null,
+      display: results[0].display_name,
+      source: 'osm'
+    };
   }
   return null;
 }
 
-// ── Resolver: tries the most specific query first, degrades gracefully ─────────
-// 1. Google: "<clean name>, <country>"           (exact campus)
-// 2. Google: "<clean name>, <city>, <country>"   (disambiguate multi-campus)
-// 3. Google: "<city>, <country>"                 (city center)
-// 4. Nominatim: "<clean name> <country>"         (free safety net)
-// 5. Nominatim: "<city> <country>"               (last resort)
+// ── Main resolver ─────────────────────────────────────────────────────────────
+// Priority order:
+// 1. Google: original full name + country   (keeps "SRH University - Heidelberg")
+// 2. Google: cleaned name + country         (drops agency codes like "(EB UK)")
+// 3. Google: cleaned name + city + country  (disambiguate when city is known)
+// 4. Google: city + country                 (city-centre fallback)
+// 5. OSM:    original name + country
+// 6. OSM:    city + country
 async function resolveCoordinates({ name, city, country }) {
   const clean = cleanName(name);
   const attempts = [];
-  if (clean && country) attempts.push(() => googleTextSearch(`${clean}, ${country}`));
-  if (clean && city && country) attempts.push(() => googleTextSearch(`${clean}, ${city}, ${country}`));
+
+  if (name && country) attempts.push(() => googleTextSearch(`${name}, ${country}`));
+  if (clean !== name && clean && country) attempts.push(() => googleTextSearch(`${clean}, ${country}`));
+  if (clean && city && country && !name.toLowerCase().includes(city.toLowerCase())) {
+    attempts.push(() => googleTextSearch(`${clean}, ${city}, ${country}`));
+  }
   if (city && country) attempts.push(() => googleTextSearch(`${city}, ${country}`));
-  if (clean && country) attempts.push(() => nominatimResolve(`${clean} ${country}`));
+  if (name && country) attempts.push(() => nominatimResolve(`${name} ${country}`));
   if (city && country) attempts.push(() => nominatimResolve(`${city} ${country}`));
 
   for (const attempt of attempts) {
@@ -106,14 +134,20 @@ async function resolveCoordinates({ name, city, country }) {
   return null;
 }
 
-// ── Background helper for entity create/update ─────────────────────────────────
+// ── Background helper called after entity create/update ───────────────────────
 async function autoGeoLookup(locationId, entityName, country, city) {
   try {
     const r = await resolveCoordinates({ name: entityName, city, country });
     if (!r) return;
+
+    const updates = ['latitude=?', 'longitude=?'];
+    const vals = [r.lat, r.lng];
+    if (r.city) { updates.push('city=?'); vals.push(r.city); }
+    vals.push(locationId);
+
     await db.query(
-      'UPDATE entity_locations SET latitude=?, longitude=? WHERE id=? AND (latitude IS NULL OR longitude IS NULL)',
-      [r.lat, r.lng, locationId]
+      `UPDATE entity_locations SET ${updates.join(', ')} WHERE id=? AND (latitude IS NULL OR longitude IS NULL)`,
+      vals
     );
     await db.query(
       `UPDATE orbit_configs SET orbit_center_lat=?, orbit_center_lng=?,
