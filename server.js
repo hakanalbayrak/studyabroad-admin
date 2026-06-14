@@ -277,6 +277,7 @@ app.use('/api/locations', auth, require('./routes/locations'));
 app.use('/api/programs', auth, require('./routes/programs'));
 app.use('/api/orbit', auth, require('./routes/orbit'));
 app.use('/api/program-types', auth, require('./routes/programTypes'));
+app.use('/api/bulk/csv-import', auth, require('./routes/csvImport'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

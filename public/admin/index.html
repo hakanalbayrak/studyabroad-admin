@@ -530,7 +530,40 @@
         </div>
       </div>
 
-      <!-- Import Universities -->
+      <!-- CSV Full Import -->
+      <div class="card shadow-sm border-0 rounded-3 mb-4">
+        <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
+          <h6 class="fw-bold mb-0"><i class="bi bi-filetype-csv text-warning me-2"></i>CSV Full Import — Universities + Programs</h6>
+          <p class="text-muted small mb-0 mt-1">Upload the exported CSV to bulk-import all universities, locations and programs at once. Existing universities are skipped (no duplicates). Needs the city column fix first (run in phpMyAdmin if not done).</p>
+        </div>
+        <div class="card-body px-4 pb-4">
+          <div class="alert alert-info py-2 small mb-3">
+            <i class="bi bi-info-circle me-1"></i>
+            <strong>Before first use:</strong> run this in phpMyAdmin →
+            <code>ALTER TABLE entity_locations MODIFY city VARCHAR(100) NULL;</code>
+          </div>
+          <div class="d-flex align-items-end gap-3 flex-wrap">
+            <div>
+              <label class="form-label small fw-semibold">Select CSV file</label>
+              <input type="file" class="form-control form-control-sm" id="csvFile" accept=".csv">
+            </div>
+            <button class="btn btn-warning btn-sm" id="csvImportBtn" onclick="runCsvImport()">
+              <i class="bi bi-rocket-takeoff me-1"></i>Import All
+            </button>
+          </div>
+          <div id="csvImportProgress" class="d-none mt-3">
+            <div class="progress mb-2" style="height:8px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:100%"></div>
+            </div>
+            <span class="small text-muted">Uploading and processing — this may take 30–60 seconds for large files…</span>
+          </div>
+          <div id="csvImportResult" class="d-none mt-3">
+            <div class="alert mb-0" id="csvImportResultAlert"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Import Universities (name list) -->
       <div class="card shadow-sm border-0 rounded-3 mb-4">
         <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
           <h6 class="fw-bold mb-0"><i class="bi bi-cloud-upload text-success me-2"></i>Import Universities</h6>
@@ -1331,6 +1364,53 @@ function renderBulkResults(job) {
       <td class="pe-3"><span class="badge ${r._ok ? 'bg-success' : 'bg-danger'}">${r._ok ? 'Updated' : 'Error'}</span></td>
     </tr>`).join('');
   document.getElementById('bulkResults').classList.remove('d-none');
+}
+
+async function runCsvImport() {
+  const fileInput = document.getElementById('csvFile');
+  if (!fileInput.files[0]) { toast('Select a CSV file first.', 'warn'); return; }
+
+  const btn = document.getElementById('csvImportBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Importing…';
+  document.getElementById('csvImportProgress').classList.remove('d-none');
+  document.getElementById('csvImportResult').classList.add('d-none');
+
+  try {
+    const formData = new FormData();
+    formData.append('file', fileInput.files[0]);
+
+    const res = await fetch('/api/bulk/csv-import', {
+      method: 'POST',
+      headers: { 'Authorization': 'Bearer ' + token },
+      body: formData
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Import failed');
+
+    const alertEl = document.getElementById('csvImportResultAlert');
+    alertEl.className = 'alert alert-success mb-0';
+    alertEl.innerHTML = `<i class="bi bi-check-circle me-1"></i>
+      <strong>${data.programsCreated.toLocaleString()}</strong> programs imported &nbsp;·&nbsp;
+      <strong>${data.entitiesCreated}</strong> universities created &nbsp;·&nbsp;
+      <strong>${data.locationsCreated}</strong> locations created &nbsp;·&nbsp;
+      <strong>${data.errors}</strong> errors
+      <br><small class="text-muted">Total rows processed: ${data.total.toLocaleString()}</small>`;
+    document.getElementById('csvImportResult').classList.remove('d-none');
+    fileInput.value = '';
+    toast(`Import complete — ${data.programsCreated.toLocaleString()} programs added!`, 'success');
+    loadStats();
+  } catch(e) {
+    const alertEl = document.getElementById('csvImportResultAlert');
+    alertEl.className = 'alert alert-danger mb-0';
+    alertEl.innerHTML = `<i class="bi bi-exclamation-circle me-1"></i>${esc(e.message)}`;
+    document.getElementById('csvImportResult').classList.remove('d-none');
+    toast('Import failed: ' + e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="bi bi-rocket-takeoff me-1"></i>Import All';
+    document.getElementById('csvImportProgress').classList.add('d-none');
+  }
 }
 
 async function importUniversities() {
