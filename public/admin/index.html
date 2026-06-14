@@ -534,7 +534,7 @@
       <div class="card shadow-sm border-0 rounded-3 mb-4">
         <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
           <h6 class="fw-bold mb-0"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Bulk Coordinate Lookup</h6>
-          <p class="text-muted small mb-0 mt-1">Auto-fetch latitude &amp; longitude for all entities that have no coordinates yet, using OpenStreetMap. Also creates a default orbit config for each. Rate-limited to 1 request/sec.</p>
+          <p class="text-muted small mb-0 mt-1">Auto-fetch latitude &amp; longitude for all entities that have no coordinates yet. Uses Google Places (most accurate) with cleaned queries, falling back to OpenStreetMap, then city center — so nothing is left blank. Also creates a default orbit config for each.</p>
         </div>
         <div class="card-body px-4 pb-4">
           <div class="d-flex gap-2 flex-wrap mb-3">
@@ -559,7 +559,7 @@
             <div class="table-responsive rounded-2 border mt-2" style="max-height:300px;overflow-y:auto">
               <table class="table table-sm table-hover mb-0">
                 <thead class="sticky-top" style="background:#f8fafc">
-                  <tr><th class="ps-3">University</th><th>Lat</th><th>Lng</th><th class="pe-3">Status</th></tr>
+                  <tr><th class="ps-3">University</th><th>Lat</th><th>Lng</th><th>Source</th><th class="pe-3">Status</th></tr>
                 </thead>
                 <tbody id="geoResultsBody"></tbody>
               </table>
@@ -1476,6 +1476,7 @@ function renderGeoResults(job) {
       <td class="ps-3 small">${esc(r.entity_name)}</td>
       <td class="small">${r.lat ? r.lat.toFixed(5) : '—'}</td>
       <td class="small">${r.lng ? r.lng.toFixed(5) : '—'}</td>
+      <td class="small">${r.source ? `<span class="badge ${r.source === 'google' ? 'bg-primary' : 'bg-secondary'}">${r.source === 'google' ? 'Google' : 'OSM'}</span>` : '—'}</td>
       <td class="pe-3"><span class="badge ${r._s === 'ok' ? 'bg-success' : r._s === 'notfound' ? 'bg-warning text-dark' : 'bg-danger'}">${r._s === 'ok' ? 'Found' : r._s === 'notfound' ? 'Not found' : 'Error'}</span></td>
     </tr>`).join('');
   document.getElementById('geoResults').classList.remove('d-none');

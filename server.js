@@ -247,8 +247,8 @@ app.delete('/api/bulk/rankings/:jobId', auth, (req, res) => {
   res.json({ success: true });
 });
 
-// ── Bulk geo-lookup (Nominatim) ───────────────────────────────────────────────
-const { nominatimSearch } = require('./utils/geoLookup');
+// ── Bulk geo-lookup (Google Places → Nominatim fallback) ──────────────────────
+const { resolveCoordinates } = require('./utils/geoLookup');
 const geoJobs = {};
 
 async function processBulkGeo(jobId, locations) {
@@ -259,14 +259,11 @@ async function processBulkGeo(jobId, locations) {
   for (const loc of locations) {
     if (job.stopRequested) { job.status = 'stopped'; return; }
     try {
-      const query = `${loc.entity_name} ${loc.country || ''}`.trim();
-      const results = await nominatimSearch(query);
-      if (results && results[0]) {
-        const lat = parseFloat(results[0].lat);
-        const lng = parseFloat(results[0].lon);
+      const r = await resolveCoordinates({ name: loc.entity_name, city: loc.city, country: loc.country });
+      if (r) {
         await db.query(
           'UPDATE entity_locations SET latitude=?, longitude=? WHERE id=?',
-          [lat, lng, loc.location_id]
+          [r.lat, r.lng, loc.location_id]
         );
         // Create default orbit config if none exists
         const [existing] = await db.query('SELECT id FROM orbit_configs WHERE entity_location_id=?', [loc.location_id]);
@@ -276,10 +273,10 @@ async function processBulkGeo(jobId, locations) {
              orbit_altitude, orbit_pitch, orbit_initial_heading, orbit_range,
              orbit_rotation_type, orbit_rotation_speed, scan_effect_enabled)
              VALUES (?, ?, ?, 400, -45, 0, 400, '360', 0.12, 0)`,
-            [loc.location_id, lat, lng]
+            [loc.location_id, r.lat, r.lng]
           );
         }
-        job.results.push({ entity_name: loc.entity_name, lat, lng, display_name: results[0].display_name });
+        job.results.push({ entity_name: loc.entity_name, lat: r.lat, lng: r.lng, display_name: r.display, source: r.source });
       } else {
         job.notFound.push({ entity_name: loc.entity_name });
       }
@@ -287,7 +284,7 @@ async function processBulkGeo(jobId, locations) {
       job.errors.push({ entity_name: loc.entity_name, error: e.message });
     }
     job.processed++;
-    if (job.processed < job.total && !job.stopRequested) await delay(1100);
+    if (job.processed < job.total && !job.stopRequested) await delay(400);
   }
   job.status = 'done';
 }
@@ -295,7 +292,7 @@ async function processBulkGeo(jobId, locations) {
 app.post('/api/bulk/geo-lookup', auth, async (req, res) => {
   try {
     const [rows] = await db.query(`
-      SELECT el.id as location_id, e.name as entity_name, el.country
+      SELECT el.id as location_id, e.name as entity_name, el.city, el.country
       FROM entity_locations el
       JOIN entities e ON e.id = el.entity_id
       WHERE el.latitude IS NULL OR el.longitude IS NULL

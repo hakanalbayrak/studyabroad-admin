@@ -141,7 +141,7 @@ router.post('/full', async (req, res) => {
 
     // Auto-fill coordinates in the background if none were provided
     if (!location.latitude && !location.longitude) {
-      autoGeoLookup(locationId, entity.name, location.country);
+      autoGeoLookup(locationId, entity.name, location.country, location.city);
     }
   } catch (e) {
     await conn.rollback();
@@ -259,7 +259,7 @@ router.put('/full/:id', async (req, res) => {
 
     // Auto-fill coordinates in the background if none were provided
     if (!location.latitude && !location.longitude) {
-      autoGeoLookup(locationId, entity.name, location.country);
+      autoGeoLookup(locationId, entity.name, location.country, location.city);
     }
   } catch (e) {
     await conn.rollback();
