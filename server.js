@@ -248,21 +248,8 @@ app.delete('/api/bulk/rankings/:jobId', auth, (req, res) => {
 });
 
 // ── Bulk geo-lookup (Nominatim) ───────────────────────────────────────────────
+const { nominatimSearch } = require('./utils/geoLookup');
 const geoJobs = {};
-
-async function nominatimSearch(query) {
-  const url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + encodeURIComponent(query);
-  return new Promise((resolve, reject) => {
-    https.get(url, { headers: { 'User-Agent': 'StudyAbroadAdmin/1.0 (study abroad platform; contact via site)' } }, r => {
-      let d = '';
-      r.on('data', c => d += c);
-      r.on('end', () => {
-        try { resolve(JSON.parse(d)); }
-        catch (e) { reject(new Error('Nominatim parse error')); }
-      });
-    }).on('error', reject);
-  });
-}
 
 async function processBulkGeo(jobId, locations) {
   const job = geoJobs[jobId];

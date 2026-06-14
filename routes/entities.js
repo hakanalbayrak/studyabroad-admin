@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const db = require('../db');
+const { autoGeoLookup } = require('../utils/geoLookup');
 
 // Entity list with location preview and program count
 router.get('/', async (req, res) => {
@@ -137,6 +138,11 @@ router.post('/full', async (req, res) => {
 
     await conn.commit();
     res.status(201).json({ id: entityId });
+
+    // Auto-fill coordinates in the background if none were provided
+    if (!location.latitude && !location.longitude) {
+      autoGeoLookup(locationId, entity.name, location.country);
+    }
   } catch (e) {
     await conn.rollback();
     res.status(500).json({ error: e.message });
@@ -250,6 +256,11 @@ router.put('/full/:id', async (req, res) => {
 
     await conn.commit();
     res.json({ success: true });
+
+    // Auto-fill coordinates in the background if none were provided
+    if (!location.latitude && !location.longitude) {
+      autoGeoLookup(locationId, entity.name, location.country);
+    }
   } catch (e) {
     await conn.rollback();
     res.status(500).json({ error: e.message });
