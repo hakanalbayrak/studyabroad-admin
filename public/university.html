@@ -335,8 +335,8 @@ function openLeadModal(programId) {
   const p = university.programs.find(x => x.id === programId);
   if (!p) return;
   leadCtx = { programId, programName: p.name, universityId: university.id, universityName: university.name, country: university.country };
-  document.getElementById('leadProgName').textContent = programName;
-  document.getElementById('leadUniName').textContent = university.name;
+  document.getElementById('leadProgName').textContent = leadCtx.programName;
+  document.getElementById('leadUniName').textContent = leadCtx.universityName;
   document.getElementById('leadName').value = '';
   document.getElementById('leadEmail').value = '';
   document.getElementById('leadPhone').value = '';
