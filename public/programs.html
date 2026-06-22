@@ -79,7 +79,58 @@
   </div>
 </nav>
 
-<div id="filterBar">
+<!-- Eligibility banner -->
+<div style="background:linear-gradient(90deg,rgba(99,102,241,.08),rgba(139,92,246,.06));border-bottom:1px solid rgba(99,102,241,.15);padding:9px 0">
+  <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+    <span style="font-size:.82rem;color:#818cf8;font-weight:600"><i class="bi bi-magic me-1"></i>Not sure which programs suit you?</span>
+    <button onclick="toggleEligPanel()" id="eligToggleBtn" style="background:rgba(99,102,241,.2);border:1px solid rgba(99,102,241,.4);color:#a5b4fc;border-radius:8px;padding:5px 14px;font-size:.78rem;font-weight:600;cursor:pointer">
+      <i class="bi bi-sliders me-1"></i>Check my eligibility
+    </button>
+  </div>
+</div>
+
+<!-- Eligibility panel (collapsed by default) -->
+<div id="eligPanel" style="display:none;background:linear-gradient(135deg,rgba(15,23,42,.98),rgba(30,27,75,.95));border-bottom:1px solid rgba(99,102,241,.25);padding:20px 0">
+  <div class="container">
+    <div class="row g-3 align-items-end">
+      <div class="col-12 col-sm-6 col-md-3">
+        <label style="font-size:.72rem;color:#64748b;display:block;margin-bottom:4px"><i class="bi bi-bar-chart-fill me-1"></i>Your GPA / Academic Grade</label>
+        <div class="input-group input-group-sm">
+          <input type="number" id="eligGpa" class="form-control elig-input" placeholder="e.g. 75" min="0" max="100" step="1">
+          <span class="input-group-text" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);color:#64748b;font-size:.8rem">%</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3 col-md-2">
+        <label style="font-size:.72rem;color:#64748b;display:block;margin-bottom:4px"><i class="bi bi-translate me-1"></i>English Test</label>
+        <select id="eligEngType" class="form-select form-select-sm elig-input" onchange="onEligEngTypeChange()">
+          <option value="">Select…</option>
+          <option value="None">No test</option>
+          <option value="IELTS">IELTS</option>
+          <option value="TOEFL">TOEFL</option>
+          <option value="Duolingo">Duolingo</option>
+          <option value="PTE">PTE</option>
+          <option value="Cambridge">Cambridge</option>
+        </select>
+      </div>
+      <div class="col-6 col-sm-3 col-md-2" id="eligScoreWrap" style="display:none">
+        <label style="font-size:.72rem;color:#64748b;display:block;margin-bottom:4px">Your Score</label>
+        <input type="number" id="eligEngScore" class="form-control form-control-sm elig-input" placeholder="e.g. 6.5" step="0.5" min="0">
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <label style="font-size:.72rem;color:#64748b;display:block;margin-bottom:4px"><i class="bi bi-currency-dollar me-1"></i>Max Tuition Budget ($/year)</label>
+        <div class="input-group input-group-sm">
+          <span class="input-group-text" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);color:#64748b;font-size:.8rem">$</span>
+          <input type="number" id="eligFee" class="form-control elig-input" placeholder="e.g. 15000" min="0" step="1000">
+        </div>
+      </div>
+      <div class="col-12 col-md-2 d-flex gap-2">
+        <button onclick="applyEligibility()" class="btn-match flex-grow-1"><i class="bi bi-magic me-1"></i>Match</button>
+        <button onclick="clearEligibility()" class="btn-reset-elig">Reset</button>
+      </div>
+    </div>
+    <div id="eligResult" style="display:none;margin-top:14px;padding:10px 14px;border-radius:10px;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);font-size:.82rem;color:#94a3b8"></div>
+  </div>
+</div>
   <div class="container">
     <div class="row g-2 align-items-center">
       <div class="col-12 col-md-4">
@@ -159,6 +210,8 @@
 let allPrograms = [];
 let filteredPrograms = [];
 let debounceTimer = null;
+let eligActive = false;
+let eligCriteria = {};
 
 async function init() {
   try {
@@ -205,6 +258,7 @@ function applyFilters() {
     if (scholar === '1' && !p.scholarship_available) return false;
     if (eng && p.english_req_type !== eng) return false;
     if (maxFee !== null && p.tuition_fee !== null && p.tuition_fee > maxFee) return false;
+    if (!meetsEligibility(p)) return false;
     return true;
   });
 
@@ -288,6 +342,99 @@ function renderCards() {
 }
 
 function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// ── Eligibility checker ───────────────────────────────────────────────────────
+function toggleEligPanel() {
+  const panel = document.getElementById('eligPanel');
+  const btn = document.getElementById('eligToggleBtn');
+  const opening = panel.style.display === 'none';
+  panel.style.display = opening ? 'block' : 'none';
+  btn.innerHTML = opening
+    ? '<i class="bi bi-x-lg me-1"></i>Close'
+    : '<i class="bi bi-sliders me-1"></i>Check my eligibility';
+}
+
+function onEligEngTypeChange() {
+  const type = document.getElementById('eligEngType').value;
+  document.getElementById('eligScoreWrap').style.display = (type && type !== 'None') ? 'block' : 'none';
+}
+
+function meetsEligibility(p) {
+  if (!eligActive) return true;
+  const { gpa, engType, engScore, maxFee } = eligCriteria;
+
+  if (gpa !== null) {
+    if (p.gpa_requirement) {
+      const req = parseFloat(p.gpa_requirement);
+      if (!isNaN(req) && gpa < req) return false;
+    }
+  }
+
+  if (engType) {
+    const progEng = p.english_req_type || 'None';
+    if (engType === 'None') {
+      if (progEng !== 'None') return false;
+    } else {
+      if (progEng !== 'None') {
+        if (progEng !== engType) return false;
+        if (engScore !== null && p.english_req_score !== null) {
+          if (parseFloat(p.english_req_score) > engScore) return false;
+        }
+      }
+    }
+  }
+
+  if (maxFee !== null && p.tuition_fee !== null && p.tuition_fee > maxFee) return false;
+
+  return true;
+}
+
+function applyEligibility() {
+  const gpa = parseFloat(document.getElementById('eligGpa').value);
+  const engType = document.getElementById('eligEngType').value || null;
+  const engScore = parseFloat(document.getElementById('eligEngScore').value);
+  const maxFee = parseFloat(document.getElementById('eligFee').value);
+
+  eligCriteria = {
+    gpa: isNaN(gpa) ? null : gpa,
+    engType,
+    engScore: isNaN(engScore) ? null : engScore,
+    maxFee: isNaN(maxFee) ? null : maxFee
+  };
+  eligActive = !!(eligCriteria.gpa !== null || eligCriteria.engType || eligCriteria.maxFee !== null);
+
+  if (eligCriteria.maxFee !== null) document.getElementById('maxFeeInput').value = eligCriteria.maxFee;
+  if (eligCriteria.engType && eligCriteria.engType !== 'None') document.getElementById('engFilter').value = eligCriteria.engType;
+
+  applyFilters();
+
+  const el = document.getElementById('eligResult');
+  el.style.display = 'block';
+  const n = filteredPrograms.length;
+  const criteria = [];
+  if (eligCriteria.gpa !== null) criteria.push(`GPA ${eligCriteria.gpa}%`);
+  if (eligCriteria.engType === 'None') criteria.push('no English test');
+  else if (eligCriteria.engType) criteria.push(`${eligCriteria.engType}${eligCriteria.engScore !== null ? ' ' + eligCriteria.engScore : ''}`);
+  if (eligCriteria.maxFee !== null) criteria.push(`budget $${eligCriteria.maxFee.toLocaleString()}`);
+  el.innerHTML = `<i class="bi bi-check-circle-fill me-1" style="color:#6ee7b7"></i>
+    <b style="color:#f1f5f9">${n} program${n !== 1 ? 's' : ''}</b> match your profile
+    ${criteria.length ? `<span style="color:#64748b"> · ${criteria.join(', ')}</span>` : ''}.
+    <button onclick="clearEligibility()" style="background:none;border:none;color:#818cf8;font-size:.78rem;cursor:pointer;margin-left:8px;text-decoration:underline">Clear</button>`;
+}
+
+function clearEligibility() {
+  document.getElementById('eligGpa').value = '';
+  document.getElementById('eligEngType').value = '';
+  document.getElementById('eligEngScore').value = '';
+  document.getElementById('eligFee').value = '';
+  document.getElementById('eligScoreWrap').style.display = 'none';
+  document.getElementById('eligResult').style.display = 'none';
+  document.getElementById('maxFeeInput').value = '';
+  document.getElementById('engFilter').value = '';
+  eligActive = false;
+  eligCriteria = {};
+  applyFilters();
+}
 
 // ── Lead modal ────────────────────────────────────────────────────────────────
 let leadCtx = {};
