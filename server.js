@@ -15,6 +15,11 @@ app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/admin/index.html'));
 });
 
+// Serve university detail page at /university?id=...
+app.get('/university', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/university.html'));
+});
+
 // Auth endpoints
 app.post('/api/admin/login', (req, res) => {
   const { password } = req.body;
@@ -374,6 +379,89 @@ app.get('/api/public/universities', async (req, res) => {
       ORDER BY e.name
     `);
     res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Public university detail with all programs
+app.get('/api/public/universities/:id', async (req, res) => {
+  try {
+    const [[entity]] = await db.query(`
+      SELECT e.id, e.name, e.type, e.website_url, e.logo_url, e.description_en,
+        e.qs_rank, e.qs_rank_year, e.the_rank, e.the_rank_year,
+        e.shanghai_rank, e.shanghai_rank_year, e.leiden_rank, e.leiden_rank_year,
+        el.id as location_id, el.city, el.country, el.continent,
+        el.latitude, el.longitude,
+        el.closest_airport_name, el.closest_airport_code, el.flight_duration_from_ist_min,
+        oc.orbit_center_lat, oc.orbit_center_lng, oc.orbit_altitude,
+        oc.orbit_pitch, oc.orbit_initial_heading, oc.orbit_range,
+        oc.orbit_rotation_speed, oc.orbit_rotation_type,
+        oc.scan_target_lat, oc.scan_target_lng, oc.scan_effect_enabled
+      FROM entities e
+      LEFT JOIN entity_locations el ON el.id = (SELECT MIN(id) FROM entity_locations WHERE entity_id = e.id)
+      LEFT JOIN orbit_configs oc ON oc.entity_location_id = el.id
+      WHERE e.id = ? AND e.status != 'inactive'
+    `, [req.params.id]);
+    if (!entity) return res.status(404).json({ error: 'Not found' });
+
+    const [programs] = await db.query(`
+      SELECT p.id, p.name, p.language_of_instruction, p.duration,
+        p.tuition_fee, p.tuition_currency, p.intake_months,
+        p.english_req_type, p.english_req_score, p.gpa_requirement,
+        p.scholarship_available, p.description_en,
+        pt.name as type_name
+      FROM programs p
+      JOIN program_types pt ON pt.id = p.program_type_id
+      JOIN entity_locations el ON el.id = p.entity_location_id
+      WHERE el.entity_id = ? AND p.status = 'active'
+      ORDER BY pt.name, p.name
+    `, [req.params.id]);
+
+    res.json({ ...entity, programs });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Public programs search (filterable)
+app.get('/api/public/programs', async (req, res) => {
+  try {
+    const { q, country, type, domain, max_fee, currency, lang } = req.query;
+    let where = ['p.status = "active"', 'e.status != "inactive"'];
+    const vals = [];
+    if (q) { where.push('(p.name LIKE ? OR e.name LIKE ?)'); vals.push(`%${q}%`, `%${q}%`); }
+    if (country) { where.push('el.country = ?'); vals.push(country); }
+    if (type) { where.push('pt.name = ?'); vals.push(type); }
+    if (domain) { where.push('p.description_en LIKE ?'); vals.push(`%${domain}%`); }
+    if (max_fee) { where.push('(p.tuition_fee IS NULL OR p.tuition_fee <= ?)'); vals.push(parseFloat(max_fee)); }
+    if (lang) { where.push('p.language_of_instruction LIKE ?'); vals.push(`%${lang}%`); }
+
+    const [rows] = await db.query(`
+      SELECT p.id, p.name, p.language_of_instruction, p.duration,
+        p.tuition_fee, p.tuition_currency, p.intake_months,
+        p.english_req_type, p.english_req_score, p.gpa_requirement,
+        p.scholarship_available, p.description_en,
+        pt.name as type_name,
+        e.id as university_id, e.name as university_name,
+        e.qs_rank, e.the_rank,
+        el.city, el.country
+      FROM programs p
+      JOIN program_types pt ON pt.id = p.program_type_id
+      JOIN entity_locations el ON el.id = p.entity_location_id
+      JOIN entities e ON e.id = el.entity_id
+      WHERE ${where.join(' AND ')}
+      ORDER BY e.name, p.name
+      LIMIT 500
+    `, vals);
+    res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Public filter options (distinct values for dropdowns)
+app.get('/api/public/filter-options', async (req, res) => {
+  try {
+    const [[countries], [types]] = await Promise.all([
+      db.query(`SELECT DISTINCT el.country FROM entity_locations el JOIN entities e ON e.id=el.entity_id WHERE e.status != 'inactive' AND el.country IS NOT NULL ORDER BY el.country`),
+      db.query(`SELECT DISTINCT pt.name FROM program_types pt JOIN programs p ON p.program_type_id=pt.id WHERE p.status='active' ORDER BY pt.name`)
+    ]);
+    res.json({ countries: countries.map(r => r.country), types: types.map(r => r.name) });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 

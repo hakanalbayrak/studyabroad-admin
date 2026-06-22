@@ -185,7 +185,7 @@ function renderCards() {
     if (u.shanghai_rank) ranks.push(`<span class="rank-badge rank-sh">SH #${u.shanghai_rank}</span>`);
 
     return `<div class="col-12 col-sm-6 col-lg-4">
-      <div class="uni-card h-100" onclick="openUniversity(${u.id})">
+      <div class="uni-card h-100" onclick="goToDetail(${u.id})">
         <div class="card-top">
           <div class="card-name">${esc(u.name)}</div>
           <div class="card-location"><i class="bi bi-geo-alt-fill me-1" style="color:#475569"></i>${[u.city, u.country].filter(Boolean).join(', ')}</div>
@@ -193,9 +193,10 @@ function renderCards() {
           ${u.description_en ? `<div class="card-desc">${esc(u.description_en)}</div>` : ''}
         </div>
         <div class="card-footer-strip">
+          <span class="orbit-label" style="color:#94a3b8"><i class="bi bi-mortarboard-fill me-1"></i>View Programs</span>
           ${orbit
-            ? `<span class="orbit-label"><i class="bi bi-camera-video-fill me-1"></i>3D Campus Orbit</span><i class="bi bi-arrow-right-circle-fill orbit-icon"></i>`
-            : `<span class="no-orbit">No orbit view yet</span><i class="bi bi-circle no-orbit-icon"></i>`
+            ? `<button class="btn btn-sm px-2 py-0" style="background:rgba(99,102,241,.2);border:1px solid rgba(99,102,241,.4);color:#818cf8;font-size:.72rem;border-radius:6px" onclick="event.stopPropagation();openOrbit(${u.id})"><i class="bi bi-camera-video-fill me-1"></i>3D Orbit</button>`
+            : `<span class="no-orbit">No orbit yet</span>`
           }
         </div>
       </div>
@@ -203,13 +204,13 @@ function renderCards() {
   }).join('');
 }
 
-function openUniversity(id) {
+function goToDetail(id) {
+  window.location.href = '/university?id=' + id;
+}
+
+function openOrbit(id) {
   const u = allUniversities.find(x => x.id === id);
   if (!u) return;
-  if (!hasOrbit(u)) {
-    alert(`${u.name}\n\nNo 3D orbit view available yet — coordinates haven't been set for this campus.`);
-    return;
-  }
   const lat  = u.orbit_center_lat  ?? u.latitude;
   const lng  = u.orbit_center_lng  ?? u.longitude;
   const alt  = u.orbit_altitude    ?? 400;

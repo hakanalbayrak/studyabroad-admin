@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University — Study Abroad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root { --accent: #6366f1; }
+    body { background: #0b1120; color: #e2e8f0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; min-height: 100vh; }
+
+    /* Nav */
+    .topnav { background: rgba(11,17,32,.9); border-bottom: 1px solid rgba(255,255,255,.07); backdrop-filter: blur(8px); position: sticky; top:0; z-index:50; padding: 12px 0; }
+    .topnav a { color: #94a3b8; text-decoration:none; font-size:.85rem; }
+    .topnav a:hover { color:#e2e8f0; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #0f172a 100%); padding: 48px 0 36px; border-bottom: 1px solid rgba(255,255,255,.07); }
+    .uni-name { font-size: clamp(1.5rem, 3vw, 2.4rem); font-weight: 800; color: #f1f5f9; margin-bottom: 6px; }
+    .uni-loc { color: #64748b; font-size: .95rem; margin-bottom: 16px; }
+    .rank-pill { display:inline-flex; align-items:center; gap:5px; font-size:.78rem; font-weight:700; padding:4px 12px; border-radius:20px; margin-right:6px; margin-bottom:6px; }
+    .rqs  { background:rgba(99,102,241,.2);  color:#a5b4fc; }
+    .rthe { background:rgba(16,185,129,.18); color:#6ee7b7; }
+    .rsh  { background:rgba(245,158,11,.18); color:#fcd34d; }
+    .rlei { background:rgba(56,189,248,.18); color:#7dd3fc; }
+    .orbit-btn { background: linear-gradient(135deg,#6366f1,#8b5cf6); border:none; color:#fff; font-weight:700; font-size:.9rem; padding:10px 22px; border-radius:10px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:opacity .15s; }
+    .orbit-btn:hover { opacity:.88; }
+    .orbit-btn.disabled { background:#334155; color:#64748b; cursor:default; }
+    .desc { color:#94a3b8; font-size:.9rem; line-height:1.65; max-width:680px; margin-top:14px; }
+
+    /* Info chips */
+    .info-chip { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:8px; padding:8px 14px; font-size:.8rem; color:#94a3b8; display:inline-flex; align-items:center; gap:6px; margin-right:8px; margin-top:8px; }
+    .info-chip b { color:#cbd5e1; }
+
+    /* Programs section */
+    #programsSection { padding: 36px 0 64px; }
+    .section-head { font-size:1.15rem; font-weight:700; color:#f1f5f9; margin-bottom:20px; }
+
+    /* Filter bar */
+    .filter-bar { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:16px 20px; margin-bottom:24px; }
+    .filter-bar input, .filter-bar select { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.1); color:#e2e8f0; border-radius:8px; font-size:.85rem; }
+    .filter-bar input::placeholder { color:#475569; }
+    .filter-bar input:focus, .filter-bar select:focus { background:rgba(255,255,255,.1); border-color:var(--accent); box-shadow:0 0 0 3px rgba(99,102,241,.2); color:#e2e8f0; outline:none; }
+    .filter-bar select option { background:#1e293b; }
+    #resultCount { font-size:.8rem; color:#475569; }
+
+    /* Program cards */
+    .prog-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07); border-radius:12px; padding:18px 20px; margin-bottom:10px; transition:border-color .15s; }
+    .prog-card:hover { border-color:rgba(99,102,241,.35); }
+    .prog-name { font-weight:700; color:#f1f5f9; font-size:.95rem; margin-bottom:4px; }
+    .prog-type { font-size:.72rem; font-weight:700; padding:2px 9px; border-radius:20px; background:rgba(99,102,241,.2); color:#a5b4fc; margin-bottom:10px; display:inline-block; }
+    .prog-meta { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:10px; }
+    .meta-item { font-size:.78rem; color:#94a3b8; display:flex; align-items:center; gap:4px; }
+    .meta-item i { color:#475569; }
+    .meta-item .val { color:#cbd5e1; font-weight:600; }
+    .prog-req { font-size:.76rem; color:#64748b; background:rgba(255,255,255,.03); border-radius:6px; padding:8px 12px; border-left:2px solid rgba(99,102,241,.3); }
+    .prog-req b { color:#94a3b8; }
+    .badge-scholarship { background:rgba(16,185,129,.2); color:#6ee7b7; font-size:.68rem; font-weight:700; padding:2px 8px; border-radius:20px; }
+    .no-results { text-align:center; color:#475569; padding:60px 0; }
+
+    /* Type tabs */
+    .type-tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
+    .type-tab { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.09); color:#94a3b8; border-radius:8px; padding:5px 14px; font-size:.8rem; font-weight:600; cursor:pointer; transition:all .12s; }
+    .type-tab:hover { background:rgba(255,255,255,.09); color:#e2e8f0; }
+    .type-tab.active { background:rgba(99,102,241,.25); border-color:rgba(99,102,241,.5); color:#a5b4fc; }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="container d-flex align-items-center gap-3">
+    <a href="/"><i class="bi bi-arrow-left me-1"></i>All Universities</a>
+    <span style="color:#334155">/</span>
+    <span style="color:#64748b;font-size:.85rem" id="navName">…</span>
+  </div>
+</nav>
+
+<div class="hero" id="hero">
+  <div class="container">
+    <div id="heroSkeleton" style="color:#475569">Loading…</div>
+    <div id="heroContent" class="d-none">
+      <div class="d-flex align-items-start justify-content-between flex-wrap gap-3">
+        <div class="flex-grow-1">
+          <div class="uni-name" id="uName"></div>
+          <div class="uni-loc"><i class="bi bi-geo-alt-fill me-1"></i><span id="uLoc"></span></div>
+          <div id="uRanks"></div>
+          <div id="uInfo"></div>
+          <div class="desc d-none" id="uDesc"></div>
+        </div>
+        <div class="text-end" style="min-width:160px">
+          <button class="orbit-btn disabled" id="orbitBtn" onclick="openOrbit()">
+            <i class="bi bi-camera-video-fill"></i>3D Campus View
+          </button>
+          <div id="orbitNote" class="mt-2" style="font-size:.72rem;color:#475569"></div>
+          <a id="websiteLink" href="#" target="_blank" class="d-none mt-2 d-inline-flex align-items-center gap-1" style="font-size:.78rem;color:#64748b;text-decoration:none">
+            <i class="bi bi-box-arrow-up-right"></i>Official website
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="programsSection">
+  <div class="container">
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <div class="row g-2 align-items-end">
+        <div class="col-12 col-md-4">
+          <input type="text" class="form-control form-control-sm" id="progSearch" placeholder="Search programs…" oninput="applyFilters()">
+        </div>
+        <div class="col-6 col-md-2">
+          <select class="form-select form-select-sm" id="langFilter" onchange="applyFilters()">
+            <option value="">Any language</option>
+            <option>English</option>
+            <option>Turkish</option>
+            <option>German</option>
+            <option>French</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-2">
+          <select class="form-select form-select-sm" id="engFilter" onchange="applyFilters()">
+            <option value="">Any English req.</option>
+            <option>None</option>
+            <option>IELTS</option>
+            <option>TOEFL</option>
+            <option>Duolingo</option>
+            <option>PTE</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-2">
+          <input type="number" class="form-control form-control-sm" id="maxFee" placeholder="Max fee (USD)" oninput="applyFilters()">
+        </div>
+        <div class="col-6 col-md-2 text-end">
+          <span id="resultCount" class="small"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Type tabs -->
+    <div class="type-tabs" id="typeTabs"></div>
+
+    <!-- Program list -->
+    <div id="progList"></div>
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const uniId = params.get('id');
+let university = null;
+let allPrograms = [];
+let activeType = '';
+
+if (!uniId) { location.href = '/'; }
+
+async function load() {
+  try {
+    const res = await fetch(`/api/public/universities/${uniId}`);
+    if (!res.ok) { location.href = '/'; return; }
+    university = await res.json();
+    allPrograms = university.programs || [];
+    renderHero();
+    renderTypeTabs();
+    applyFilters();
+    document.getElementById('heroSkeleton').style.display = 'none';
+    document.getElementById('heroContent').classList.remove('d-none');
+    document.title = university.name + ' — Study Abroad';
+    document.getElementById('navName').textContent = university.name;
+  } catch(e) {
+    document.getElementById('heroSkeleton').textContent = 'Failed to load university.';
+  }
+}
+
+function renderHero() {
+  const u = university;
+  document.getElementById('uName').textContent = u.name;
+  document.getElementById('uLoc').textContent = [u.city, u.country].filter(Boolean).join(', ');
+
+  // Rankings
+  const ranks = [];
+  if (u.qs_rank)       ranks.push(`<span class="rank-pill rqs"><i class="bi bi-trophy-fill"></i>QS #${u.qs_rank}${u.qs_rank_year ? ' <small>('+u.qs_rank_year+')</small>' : ''}</span>`);
+  if (u.the_rank)      ranks.push(`<span class="rank-pill rthe"><i class="bi bi-trophy-fill"></i>THE #${u.the_rank}${u.the_rank_year ? ' <small>('+u.the_rank_year+')</small>' : ''}</span>`);
+  if (u.shanghai_rank) ranks.push(`<span class="rank-pill rsh"><i class="bi bi-trophy-fill"></i>Shanghai #${u.shanghai_rank}${u.shanghai_rank_year ? ' <small>('+u.shanghai_rank_year+')</small>' : ''}</span>`);
+  if (u.leiden_rank)   ranks.push(`<span class="rank-pill rlei"><i class="bi bi-trophy-fill"></i>Leiden #${u.leiden_rank}${u.leiden_rank_year ? ' <small>('+u.leiden_rank_year+')</small>' : ''}</span>`);
+  document.getElementById('uRanks').innerHTML = ranks.join('');
+
+  // Info chips
+  const chips = [];
+  if (u.continent)  chips.push(`<span class="info-chip"><i class="bi bi-globe2"></i><b>${esc(u.continent)}</b></span>`);
+  if (u.closest_airport_code) chips.push(`<span class="info-chip"><i class="bi bi-airplane"></i>Nearest airport: <b>${esc(u.closest_airport_code)}</b></span>`);
+  if (u.flight_duration_from_ist_min) chips.push(`<span class="info-chip"><i class="bi bi-clock"></i>From Istanbul: <b>~${Math.round(u.flight_duration_from_ist_min/60*10)/10} hrs</b></span>`);
+  chips.push(`<span class="info-chip"><i class="bi bi-mortarboard"></i><b>${allPrograms.length}</b> programs</span>`);
+  document.getElementById('uInfo').innerHTML = chips.join('');
+
+  // Description
+  if (u.description_en) {
+    const d = document.getElementById('uDesc');
+    d.textContent = u.description_en;
+    d.classList.remove('d-none');
+  }
+
+  // Orbit button
+  const hasOrbit = u.latitude && u.longitude;
+  const btn = document.getElementById('orbitBtn');
+  if (hasOrbit) {
+    btn.classList.remove('disabled');
+    document.getElementById('orbitNote').textContent = '';
+  } else {
+    document.getElementById('orbitNote').textContent = 'No 3D view yet';
+  }
+
+  // Website
+  if (u.website_url) {
+    const a = document.getElementById('websiteLink');
+    a.href = u.website_url;
+    a.classList.remove('d-none');
+  }
+}
+
+function renderTypeTabs() {
+  const types = [...new Set(allPrograms.map(p => p.type_name).filter(Boolean))].sort();
+  const tabs = document.getElementById('typeTabs');
+  tabs.innerHTML = `<span class="type-tab active" onclick="setType('')">All (${allPrograms.length})</span>` +
+    types.map(t => {
+      const count = allPrograms.filter(p => p.type_name === t).length;
+      return `<span class="type-tab" onclick="setType('${esc(t)}')">${esc(t)} <span style="opacity:.6">(${count})</span></span>`;
+    }).join('');
+}
+
+function setType(t) {
+  activeType = t;
+  document.querySelectorAll('.type-tab').forEach(el => {
+    el.classList.toggle('active', el.textContent.trim().startsWith(t || 'All'));
+  });
+  applyFilters();
+}
+
+function applyFilters() {
+  const q = document.getElementById('progSearch').value.toLowerCase();
+  const lang = document.getElementById('langFilter').value;
+  const eng = document.getElementById('engFilter').value;
+  const maxFee = parseFloat(document.getElementById('maxFee').value) || null;
+
+  const filtered = allPrograms.filter(p => {
+    if (activeType && p.type_name !== activeType) return false;
+    if (q && !p.name.toLowerCase().includes(q) && !(p.description_en||'').toLowerCase().includes(q)) return false;
+    if (lang && !(p.language_of_instruction||'').toLowerCase().includes(lang.toLowerCase())) return false;
+    if (eng && (p.english_req_type || 'None') !== eng) return false;
+    if (maxFee && p.tuition_fee && p.tuition_fee > maxFee) return false;
+    return true;
+  });
+
+  document.getElementById('resultCount').textContent = filtered.length + ' result' + (filtered.length !== 1 ? 's' : '');
+  renderPrograms(filtered);
+}
+
+function renderPrograms(progs) {
+  const list = document.getElementById('progList');
+  if (!progs.length) {
+    list.innerHTML = `<div class="no-results"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:10px"></i>No programs match your filters.</div>`;
+    return;
+  }
+  list.innerHTML = progs.map(p => {
+    const fee = p.tuition_fee ? `${Number(p.tuition_fee).toLocaleString()} ${p.tuition_currency || 'USD'}` : 'Contact for fee';
+    const eng = p.english_req_type && p.english_req_type !== 'None'
+      ? `${p.english_req_type}${p.english_req_score ? ' ' + p.english_req_score : ''}`
+      : 'No English test required';
+    const domain = p.description_en && p.description_en.startsWith('Domain: ')
+      ? p.description_en.split(' | ')[0].replace('Domain: ', '') : '';
+    const notes = p.description_en && p.description_en.includes(' | ')
+      ? p.description_en.split(' | ').slice(1).join(' | ') : (p.description_en && !p.description_en.startsWith('Domain: ') ? p.description_en : '');
+    return `<div class="prog-card">
+      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+        <div class="flex-grow-1">
+          <div class="prog-name">${esc(p.name)}</div>
+          <span class="prog-type">${esc(p.type_name)}</span>
+          ${p.scholarship_available ? ' <span class="badge-scholarship"><i class="bi bi-star-fill me-1"></i>Scholarship available</span>' : ''}
+          ${domain ? `<div style="font-size:.75rem;color:#64748b;margin-bottom:8px">${esc(domain)}</div>` : ''}
+          <div class="prog-meta">
+            <span class="meta-item"><i class="bi bi-currency-dollar"></i><span class="val">${esc(fee)}</span></span>
+            ${p.duration ? `<span class="meta-item"><i class="bi bi-calendar3"></i><span class="val">${esc(p.duration)}</span></span>` : ''}
+            ${p.intake_months ? `<span class="meta-item"><i class="bi bi-calendar-check"></i>Intake: <span class="val">${esc(p.intake_months)}</span></span>` : ''}
+            <span class="meta-item"><i class="bi bi-translate"></i><span class="val">${esc(p.language_of_instruction||'English')}</span></span>
+          </div>
+          <div class="prog-req">
+            <b>Requirements:</b>&nbsp;
+            ${p.gpa_requirement ? `GPA ${esc(p.gpa_requirement)} &nbsp;·&nbsp; ` : ''}
+            ${esc(eng)}
+            ${notes ? `&nbsp;·&nbsp; ${esc(notes)}` : ''}
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openOrbit() {
+  const u = university;
+  if (!u.latitude && !u.longitude) return;
+  const lat   = u.orbit_center_lat  ?? u.latitude;
+  const lng   = u.orbit_center_lng  ?? u.longitude;
+  const alt   = u.orbit_altitude    ?? 400;
+  const pitch = u.orbit_pitch       ?? -45;
+  const head  = u.orbit_initial_heading ?? 0;
+  const range = u.orbit_range       ?? 400;
+  const speed = u.orbit_rotation_speed ?? 0.12;
+  const rot   = u.orbit_rotation_type  ?? '360';
+  const p = new URLSearchParams({ name: u.name, lat, lng, alt, pitch, heading: head, range, speed, rot });
+  if (u.scan_target_lat && u.scan_target_lng) {
+    p.set('scanLat', u.scan_target_lat);
+    p.set('scanLng', u.scan_target_lng);
+    p.set('scan', u.scan_effect_enabled ? '1' : '0');
+  }
+  window.open('/orbit?' + p.toString(), '_blank');
+}
+
+function esc(s) { return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+load();
+</script>
+</body>
+</html>
