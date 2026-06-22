@@ -274,7 +274,7 @@ function renderCards() {
         </div>
         <div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,.06)">
           <button class="btn btn-sm w-100" style="background:rgba(99,102,241,.18);border:1px solid rgba(99,102,241,.35);color:#a5b4fc;font-size:.78rem;font-weight:600;border-radius:8px"
-            onclick="event.stopPropagation();openLeadModal(${p.university_id},${JSON.stringify(esc(p.university_name))},${p.id},${JSON.stringify(esc(p.name))},${JSON.stringify(esc(p.country || ''))})">
+            onclick="event.stopPropagation();openLeadModal(${p.id})">
             <i class="bi bi-envelope-fill me-1"></i>Request Info
           </button>
         </div>
@@ -292,8 +292,10 @@ function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt
 // ── Lead modal ────────────────────────────────────────────────────────────────
 let leadCtx = {};
 
-function openLeadModal(universityId, universityName, programId, programName, country) {
-  leadCtx = { universityId, universityName, programId, programName, country };
+function openLeadModal(programId) {
+  const p = allPrograms.find(x => x.id === programId);
+  if (!p) return;
+  leadCtx = { programId, programName: p.name, universityId: p.university_id, universityName: p.university_name, country: p.country };
   document.getElementById('leadProgName').textContent = programName;
   document.getElementById('leadUniName').textContent = universityName;
   document.getElementById('leadName').value = '';
