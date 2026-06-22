@@ -9,78 +9,177 @@
   <style>
     html, body, #cesiumContainer { width:100%; height:100%; margin:0; padding:0; overflow:hidden; }
     body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background:#0b1020; }
-    .panel {
+
+    /* Back button */
+    #backBtn {
+      position:absolute; top:16px; right:16px; z-index:20;
+      background:rgba(11,16,32,.85); color:#94a3b8; border:1px solid rgba(255,255,255,.15);
+      border-radius:10px; padding:8px 14px; font-size:.82rem; font-weight:600;
+      cursor:pointer; backdrop-filter:blur(6px); display:flex; align-items:center; gap:6px;
+      text-decoration:none; transition:all .15s;
+    }
+    #backBtn:hover { background:rgba(99,102,241,.25); border-color:rgba(99,102,241,.5); color:#a5b4fc; }
+
+    /* Info panel */
+    #panel {
       position:absolute; top:16px; left:16px; z-index:10;
-      background:rgba(11,16,32,.85); color:#e6e9f0; border:1px solid rgba(255,255,255,.12);
-      border-radius:12px; padding:14px 16px; min-width:240px; backdrop-filter:blur(6px);
+      background:rgba(11,16,32,.88); color:#e6e9f0; border:1px solid rgba(255,255,255,.12);
+      border-radius:12px; min-width:220px; max-width:280px; backdrop-filter:blur(6px);
+      overflow:hidden;
     }
-    .panel h1 { font-size:1rem; margin:0 0 8px; }
-    .panel .row { display:flex; justify-content:space-between; font-size:.8rem; padding:2px 0; color:#aab2c5; }
-    .panel .row b { color:#e6e9f0; font-weight:600; }
-    .btns { margin-top:10px; display:flex; gap:8px; }
-    .btns button {
+    #panelHeader {
+      padding:12px 14px 10px; display:flex; align-items:center; justify-content:space-between;
+      cursor:pointer; user-select:none;
+    }
+    #panelHeader:hover { background:rgba(255,255,255,.04); }
+    #panelTitle { font-size:.95rem; font-weight:700; color:#f1f5f9; margin:0; flex:1; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    #panelToggle { font-size:.7rem; color:#475569; flex-shrink:0; margin-left:8px; transition:transform .2s; }
+    #panelBody { padding:0 14px 12px; }
+    .info-row { display:flex; justify-content:space-between; font-size:.78rem; padding:2px 0; color:#94a3b8; }
+    .info-row b { color:#cbd5e1; font-weight:600; }
+
+    /* Buttons */
+    .btn-row { display:flex; gap:8px; margin-top:10px; }
+    .btn-primary-orbit {
       flex:1; cursor:pointer; border:none; border-radius:8px; padding:7px 10px;
-      font-size:.8rem; font-weight:600; background:#3b82f6; color:#fff;
+      font-size:.8rem; font-weight:600; background:#6366f1; color:#fff; transition:opacity .15s;
     }
-    .btns button.alt { background:rgba(255,255,255,.12); color:#e6e9f0; }
+    .btn-primary-orbit:hover { opacity:.85; }
+    .btn-alt {
+      flex:1; cursor:pointer; border:1px solid rgba(255,255,255,.15); border-radius:8px;
+      padding:7px 10px; font-size:.8rem; font-weight:600;
+      background:rgba(255,255,255,.08); color:#e6e9f0; transition:all .15s;
+    }
+    .btn-alt:hover { background:rgba(255,255,255,.14); }
+
+    /* Uni link */
+    #uniLink {
+      display:block; font-size:.75rem; color:#818cf8; text-decoration:none;
+      padding:6px 14px 10px; border-top:1px solid rgba(255,255,255,.07); margin-top:4px;
+    }
+    #uniLink:hover { color:#a5b4fc; background:rgba(99,102,241,.08); }
+
+    /* Error overlay */
     #msg {
       position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:20;
       background:rgba(11,16,32,.95); color:#e6e9f0; border:1px solid rgba(255,255,255,.15);
       border-radius:12px; padding:20px 24px; max-width:420px; font-size:.9rem; display:none;
     }
     #msg b { color:#f87171; }
+
+    /* Mobile: panel starts collapsed, back btn smaller */
+    @media (max-width: 480px) {
+      #panel { min-width:180px; max-width:220px; }
+      #backBtn { padding:6px 10px; font-size:.76rem; top:12px; right:12px; }
+      #panel { top:12px; left:12px; }
+    }
+
     .cesium-viewer-bottom, .cesium-viewer-animationContainer, .cesium-viewer-timelineContainer { display:none !important; }
   </style>
 </head>
 <body>
   <div id="cesiumContainer"></div>
-  <div class="panel">
-    <h1 id="title">Orbit Preview</h1>
-    <div class="row"><span>Latitude</span><b id="iLat">—</b></div>
-    <div class="row"><span>Longitude</span><b id="iLng">—</b></div>
-    <div class="row"><span>Pitch</span><b id="iPitch">—</b></div>
-    <div class="row"><span>Range</span><b id="iRange">—</b></div>
-    <div class="row"><span>Altitude</span><b id="iAlt">—</b></div>
-    <div class="row"><span>Rotation speed</span><b id="iSpeed">—</b></div>
-    <div class="btns">
-      <button id="toggleBtn">Pause</button>
-      <button class="alt" onclick="window.close()">Close</button>
+
+  <!-- Back button (top right) -->
+  <a id="backBtn" href="/">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    <span id="backBtnLabel">Back</span>
+  </a>
+
+  <!-- Info panel (top left) -->
+  <div id="panel">
+    <div id="panelHeader" onclick="togglePanel()">
+      <div id="panelTitle">Orbit Preview</div>
+      <span id="panelToggle">▲</span>
     </div>
+    <div id="panelBody">
+      <div class="info-row"><span>Latitude</span><b id="iLat">—</b></div>
+      <div class="info-row"><span>Longitude</span><b id="iLng">—</b></div>
+      <div class="info-row"><span>Altitude</span><b id="iAlt">—</b></div>
+      <div class="info-row"><span>Range</span><b id="iRange">—</b></div>
+      <div class="info-row"><span>Pitch</span><b id="iPitch">—</b></div>
+      <div class="info-row"><span>Speed</span><b id="iSpeed">—</b></div>
+      <div class="btn-row">
+        <button id="toggleBtn" class="btn-primary-orbit">Pause</button>
+        <button id="closeBtn" class="btn-alt">Close</button>
+      </div>
+    </div>
+    <a id="uniLink" style="display:none" href="#">
+      ← View university details
+    </a>
   </div>
+
   <div id="msg"></div>
+
   <script>
     const GOOGLE_MAPS_KEY = 'AIzaSyCDvg77OufOzvBqRqYMThhN0dZC2heEpSQ';
     const q = new URLSearchParams(location.search);
     const num = (k, d) => { const v = parseFloat(q.get(k)); return Number.isFinite(v) ? v : d; };
 
     const cfg = {
-      name: q.get('name') || 'Entity',
-      lat: num('lat', NaN),
-      lng: num('lng', NaN),
-      alt: num('alt', 400),
-      pitch: num('pitch', -45),
+      name:    q.get('name') || 'Orbit Preview',
+      uniId:   q.get('uniId') || null,
+      lat:     num('lat', NaN),
+      lng:     num('lng', NaN),
+      alt:     num('alt', 400),
+      pitch:   num('pitch', -45),
       heading: num('heading', 0),
-      range: num('range', 400),
-      speed: num('speed', 0.12),
-      rot: q.get('rot') || '360'
+      range:   num('range', 400),
+      speed:   num('speed', 0.12),
+      rot:     q.get('rot') || '360'
     };
+
+    // Panel toggle
+    let panelOpen = window.innerWidth > 480;
+    function togglePanel() {
+      panelOpen = !panelOpen;
+      document.getElementById('panelBody').style.display = panelOpen ? 'block' : 'none';
+      document.getElementById('uniLink').style.display = (panelOpen && cfg.uniId) ? 'block' : 'none';
+      document.getElementById('panelToggle').style.transform = panelOpen ? '' : 'rotate(180deg)';
+    }
+    if (!panelOpen) {
+      document.getElementById('panelBody').style.display = 'none';
+      document.getElementById('panelToggle').style.transform = 'rotate(180deg)';
+    }
+
+    // Back / Close buttons
+    const backBtn = document.getElementById('backBtn');
+    if (cfg.uniId) {
+      backBtn.href = '/university?id=' + cfg.uniId;
+      backBtn.querySelector('#backBtnLabel').textContent = 'University';
+      const uniLink = document.getElementById('uniLink');
+      uniLink.href = '/university?id=' + cfg.uniId;
+      if (panelOpen) uniLink.style.display = 'block';
+    } else {
+      backBtn.href = '/';
+      backBtn.querySelector('#backBtnLabel').textContent = 'Universities';
+    }
+
+    document.getElementById('closeBtn').onclick = function () {
+      if (window.opener && !window.opener.closed) { window.close(); }
+      else if (history.length > 1) { history.back(); }
+      else { location.href = cfg.uniId ? '/university?id=' + cfg.uniId : '/'; }
+    };
+
+    // Fill info
+    document.getElementById('panelTitle').textContent = cfg.name;
+    document.getElementById('iLat').textContent   = isFinite(cfg.lat)  ? cfg.lat.toFixed(5)  : '—';
+    document.getElementById('iLng').textContent   = isFinite(cfg.lng)  ? cfg.lng.toFixed(5)  : '—';
+    document.getElementById('iAlt').textContent   = cfg.alt + ' m';
+    document.getElementById('iRange').textContent = cfg.range + ' m';
+    document.getElementById('iPitch').textContent = cfg.pitch + '°';
+    document.getElementById('iSpeed').textContent = cfg.speed + '°/f';
 
     function showMsg(html) {
       const m = document.getElementById('msg');
-      m.innerHTML = html;
+      m.innerHTML = html + (cfg.uniId
+        ? `<br><br><a href="/university?id=${cfg.uniId}" style="color:#818cf8">← Back to university</a>`
+        : `<br><br><a href="/" style="color:#818cf8">← Back to universities</a>`);
       m.style.display = 'block';
     }
 
-    document.getElementById('title').textContent = cfg.name;
-    document.getElementById('iLat').textContent = isFinite(cfg.lat) ? cfg.lat.toFixed(5) : '—';
-    document.getElementById('iLng').textContent = isFinite(cfg.lng) ? cfg.lng.toFixed(5) : '—';
-    document.getElementById('iPitch').textContent = cfg.pitch + '°';
-    document.getElementById('iRange').textContent = cfg.range + ' m';
-    document.getElementById('iAlt').textContent = cfg.alt + ' m';
-    document.getElementById('iSpeed').textContent = cfg.speed + '°/frame';
-
     if (!isFinite(cfg.lat) || !isFinite(cfg.lng)) {
-      showMsg('<b>No coordinates</b><br>This entity has no latitude/longitude set. Add them in the Location section of the admin panel, then preview again.');
+      showMsg('<b>No coordinates</b><br>This campus has no latitude/longitude set. Add them in the admin panel, then preview again.');
       throw new Error('no coords');
     }
 
@@ -109,7 +208,12 @@
         return;
       }
 
-      const target = Cesium.Cartesian3.fromDegrees(cfg.lng, cfg.lat, 0);
+      const scanLat = num('scanLat', NaN);
+      const scanLng = num('scanLng', NaN);
+      const scanEnabled = q.get('scan') === '1' && isFinite(scanLat) && isFinite(scanLng);
+      const orbitTarget = Cesium.Cartesian3.fromDegrees(cfg.lng, cfg.lat, 0);
+      const scanTarget  = scanEnabled ? Cesium.Cartesian3.fromDegrees(scanLng, scanLat, 0) : orbitTarget;
+
       let heading = Cesium.Math.toRadians(cfg.heading);
       const pitch = Cesium.Math.toRadians(cfg.pitch);
       const range = Math.max(cfg.range, 1);
@@ -117,7 +221,8 @@
 
       viewer.scene.preRender.addEventListener(function () {
         if (running) heading += Cesium.Math.toRadians(cfg.speed);
-        viewer.camera.lookAt(target, new Cesium.HeadingPitchRange(heading, pitch, range));
+        viewer.camera.lookAt(scanEnabled ? scanTarget : orbitTarget,
+          new Cesium.HeadingPitchRange(heading, pitch, range));
       });
 
       const btn = document.getElementById('toggleBtn');

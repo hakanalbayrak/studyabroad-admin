@@ -222,7 +222,7 @@ function openOrbit(id) {
   const range= u.orbit_range       ?? 400;
   const speed= u.orbit_rotation_speed ?? 0.12;
   const rot  = u.orbit_rotation_type  ?? '360';
-  const params = new URLSearchParams({ name: u.name, lat, lng, alt, pitch, heading: head, range, speed, rot });
+  const params = new URLSearchParams({ name: u.name, uniId: u.id, lat, lng, alt, pitch, heading: head, range, speed, rot });
   if (u.scan_target_lat && u.scan_target_lng) {
     params.set('scanLat', u.scan_target_lat);
     params.set('scanLng', u.scan_target_lng);
