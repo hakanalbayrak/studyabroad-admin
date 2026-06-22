@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Abroad — Find Programs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root { --accent: #6366f1; }
+    body { background: #0b1120; color: #e2e8f0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; min-height: 100vh; }
+
+    /* Nav */
+    .top-nav { background: rgba(11,17,32,.95); border-bottom: 1px solid rgba(255,255,255,.08); padding: 12px 0; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); }
+    .top-nav a { color: #94a3b8; text-decoration: none; font-size: .85rem; }
+    .top-nav a:hover { color: #e2e8f0; }
+    .top-nav .page-title { color: #f1f5f9; font-weight: 700; font-size: 1rem; }
+
+    /* Eligibility panel */
+    #eligPanel { background: linear-gradient(135deg, rgba(99,102,241,.12) 0%, rgba(192,132,252,.08) 100%); border: 1px solid rgba(99,102,241,.25); border-radius: 16px; padding: 20px 24px; margin-bottom: 24px; }
+    #eligPanel h6 { color: #818cf8; font-size: .8rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 14px; }
+    .elig-input { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); color: #e2e8f0; border-radius: 8px; font-size: .82rem; padding: 6px 10px; }
+    .elig-input:focus { background: rgba(255,255,255,.1); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.2); color: #e2e8f0; outline: none; }
+    .elig-input::placeholder { color: #475569; }
+    .elig-input option { background: #1e293b; }
+    .btn-match { background: linear-gradient(135deg, #6366f1, #8b5cf6); border: none; color: #fff; border-radius: 8px; font-size: .82rem; font-weight: 600; padding: 7px 18px; cursor: pointer; }
+    .btn-match:hover { opacity: .9; }
+    .btn-reset-elig { background: transparent; border: 1px solid rgba(255,255,255,.15); color: #64748b; border-radius: 8px; font-size: .8rem; padding: 6px 14px; cursor: pointer; }
+    .btn-reset-elig:hover { border-color: rgba(255,255,255,.3); color: #94a3b8; }
+
+    /* Filter bar */
+    #filterBar { background: rgba(255,255,255,.03); border-bottom: 1px solid rgba(255,255,255,.07); padding: 14px 0; position: sticky; top: 53px; z-index: 50; backdrop-filter: blur(8px); }
+    #filterBar input, #filterBar select { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); color: #e2e8f0; border-radius: 8px; font-size: .82rem; }
+    #filterBar input::placeholder { color: #64748b; }
+    #filterBar input:focus, #filterBar select:focus { background: rgba(255,255,255,.1); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.2); color: #e2e8f0; outline: none; }
+    #filterBar select option { background: #1e293b; }
+
+    /* Stats */
+    #statsBar { background: rgba(255,255,255,.02); border-bottom: 1px solid rgba(255,255,255,.06); padding: 8px 0; font-size: .78rem; color: #475569; }
+    #statsBar b { color: #64748b; }
+
+    /* Cards */
+    #grid { padding: 24px 0 64px; }
+    .prog-card {
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+      border-radius: 14px; padding: 16px 18px; transition: all .18s; cursor: pointer;
+    }
+    .prog-card:hover { background: rgba(99,102,241,.09); border-color: rgba(99,102,241,.35); transform: translateY(-1px); box-shadow: 0 6px 24px rgba(0,0,0,.35); }
+    .prog-name { font-size: .9rem; font-weight: 700; color: #f1f5f9; margin-bottom: 4px; line-height: 1.35; }
+    .prog-uni { font-size: .78rem; color: #818cf8; margin-bottom: 8px; }
+    .prog-uni i { margin-right: 3px; }
+    .prog-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+    .meta-chip { font-size: .7rem; padding: 2px 8px; border-radius: 20px; font-weight: 600; }
+    .chip-type { background: rgba(99,102,241,.2); color: #a5b4fc; }
+    .chip-lang { background: rgba(6,182,212,.15); color: #67e8f9; }
+    .chip-scholar { background: rgba(16,185,129,.2); color: #6ee7b7; }
+    .prog-details { display: flex; flex-wrap: wrap; gap: 12px; font-size: .75rem; color: #64748b; margin-top: 6px; }
+    .prog-details span { display: flex; align-items: center; gap: 3px; }
+    .prog-fee { color: #fcd34d; font-weight: 700; font-size: .82rem; }
+    .prog-location { font-size: .73rem; color: #475569; margin-top: 5px; }
+
+    /* Empty / loading */
+    #emptyMsg { text-align: center; color: #475569; padding: 80px 0; }
+    #loadingMsg { text-align: center; color: #64748b; padding: 80px 0; }
+    .spinner-ring { width: 36px; height: 36px; border: 3px solid rgba(99,102,241,.2); border-top-color: #6366f1; border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 14px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Count */
+    #resultCount { font-size: .8rem; color: #475569; }
+  </style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="container d-flex align-items-center gap-3">
+    <a href="/"><i class="bi bi-arrow-left me-1"></i>Universities</a>
+    <span style="color:#334155">|</span>
+    <span class="page-title"><i class="bi bi-search me-1" style="color:#818cf8"></i>Find Programs</span>
+  </div>
+</nav>
+
+<div id="filterBar">
+  <div class="container">
+    <div class="row g-2 align-items-center">
+      <div class="col-12 col-md-4">
+        <input type="text" class="form-control form-control-sm" id="searchInput" placeholder="Search programs or universities…" oninput="debounceApply()">
+      </div>
+      <div class="col-6 col-md-2">
+        <select class="form-select form-select-sm" id="countryFilter" onchange="applyFilters()">
+          <option value="">All Countries</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-2">
+        <select class="form-select form-select-sm" id="typeFilter" onchange="applyFilters()">
+          <option value="">All Types</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-2">
+        <select class="form-select form-select-sm" id="langFilter" onchange="applyFilters()">
+          <option value="">Any Language</option>
+          <option value="English">English</option>
+          <option value="Turkish">Turkish</option>
+          <option value="English/Turkish">English/Turkish</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-2 d-flex gap-2 align-items-center">
+        <select class="form-select form-select-sm" id="scholarFilter" onchange="applyFilters()">
+          <option value="">All</option>
+          <option value="1">Scholarship available</option>
+        </select>
+      </div>
+    </div>
+    <div class="row g-2 align-items-center mt-1">
+      <div class="col-12 col-md-3">
+        <select class="form-select form-select-sm" id="engFilter" onchange="applyFilters()">
+          <option value="">Any English req</option>
+          <option value="None">No English req</option>
+          <option value="IELTS">IELTS</option>
+          <option value="TOEFL">TOEFL</option>
+          <option value="Duolingo">Duolingo</option>
+          <option value="PTE">PTE</option>
+          <option value="Cambridge">Cambridge</option>
+        </select>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="input-group input-group-sm">
+          <span class="input-group-text" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);color:#64748b;font-size:.75rem">Max fee $</span>
+          <input type="number" class="form-control" id="maxFeeInput" placeholder="e.g. 15000" min="0" step="1000" oninput="debounceApply()">
+        </div>
+      </div>
+      <div class="col-12 col-md-6 text-md-end">
+        <span id="resultCount"></span>
+        <button class="btn btn-sm ms-3" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#94a3b8;font-size:.75rem;border-radius:8px" onclick="clearFilters()">
+          <i class="bi bi-x-lg me-1"></i>Clear filters
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="statsBar">
+  <div class="container d-flex gap-4 flex-wrap">
+    <span><b id="stTotal">—</b> programs total</span>
+    <span><b id="stUnis">—</b> universities</span>
+    <span><b id="stScholar">—</b> with scholarships</span>
+    <span><b id="stCountries">—</b> countries</span>
+  </div>
+</div>
+
+<div id="grid">
+  <div class="container">
+    <div id="loadingMsg"><div class="spinner-ring"></div>Loading programs…</div>
+    <div id="emptyMsg" class="d-none"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i>No programs match your filters.</div>
+    <div class="row g-3" id="cardsContainer"></div>
+  </div>
+</div>
+
+<script>
+let allPrograms = [];
+let filteredPrograms = [];
+let debounceTimer = null;
+
+async function init() {
+  try {
+    const [programs, options] = await Promise.all([
+      fetch('/api/public/programs?').then(r => r.json()),
+      fetch('/api/public/filter-options').then(r => r.json())
+    ]);
+    allPrograms = programs;
+    buildDropdowns(options);
+    applyFilters();
+    updateStats();
+    document.getElementById('loadingMsg').style.display = 'none';
+  } catch (e) {
+    document.getElementById('loadingMsg').innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#f87171"></i>Could not load programs.';
+  }
+}
+
+function buildDropdowns({ countries, types }) {
+  const cSel = document.getElementById('countryFilter');
+  countries.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; cSel.appendChild(o); });
+  const tSel = document.getElementById('typeFilter');
+  types.forEach(t => { const o = document.createElement('option'); o.value = t; o.textContent = t; tSel.appendChild(o); });
+}
+
+function debounceApply() {
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(applyFilters, 250);
+}
+
+function applyFilters() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  const country = document.getElementById('countryFilter').value;
+  const type = document.getElementById('typeFilter').value;
+  const lang = document.getElementById('langFilter').value;
+  const scholar = document.getElementById('scholarFilter').value;
+  const eng = document.getElementById('engFilter').value;
+  const maxFee = parseFloat(document.getElementById('maxFeeInput').value) || null;
+
+  filteredPrograms = allPrograms.filter(p => {
+    if (q && !p.name.toLowerCase().includes(q) && !p.university_name.toLowerCase().includes(q)) return false;
+    if (country && p.country !== country) return false;
+    if (type && p.type_name !== type) return false;
+    if (lang && !(p.language_of_instruction || '').toLowerCase().includes(lang.toLowerCase())) return false;
+    if (scholar === '1' && !p.scholarship_available) return false;
+    if (eng && p.english_req_type !== eng) return false;
+    if (maxFee !== null && p.tuition_fee !== null && p.tuition_fee > maxFee) return false;
+    return true;
+  });
+
+  const count = filteredPrograms.length;
+  document.getElementById('resultCount').textContent = count + ' result' + (count !== 1 ? 's' : '');
+  renderCards();
+}
+
+function clearFilters() {
+  document.getElementById('searchInput').value = '';
+  document.getElementById('countryFilter').value = '';
+  document.getElementById('typeFilter').value = '';
+  document.getElementById('langFilter').value = '';
+  document.getElementById('scholarFilter').value = '';
+  document.getElementById('engFilter').value = '';
+  document.getElementById('maxFeeInput').value = '';
+  applyFilters();
+}
+
+function updateStats() {
+  document.getElementById('stTotal').textContent = allPrograms.length.toLocaleString();
+  const unis = new Set(allPrograms.map(p => p.university_id));
+  document.getElementById('stUnis').textContent = unis.size;
+  document.getElementById('stScholar').textContent = allPrograms.filter(p => p.scholarship_available).length.toLocaleString();
+  const countries = new Set(allPrograms.map(p => p.country).filter(Boolean));
+  document.getElementById('stCountries').textContent = countries.size;
+}
+
+function renderCards() {
+  const container = document.getElementById('cardsContainer');
+  const empty = document.getElementById('emptyMsg');
+
+  if (!filteredPrograms.length) {
+    container.innerHTML = '';
+    empty.classList.remove('d-none');
+    return;
+  }
+  empty.classList.add('d-none');
+
+  const shown = filteredPrograms.slice(0, 300);
+  container.innerHTML = shown.map(p => {
+    const fee = p.tuition_fee
+      ? `<span class="prog-fee">$${Number(p.tuition_fee).toLocaleString()}</span>`
+      : '<span style="color:#475569;font-size:.75rem">Fee on request</span>';
+    const engReq = p.english_req_type && p.english_req_type !== 'None'
+      ? `<span><i class="bi bi-translate"></i>${p.english_req_type}${p.english_req_score ? ' ' + p.english_req_score : ''}</span>`
+      : '';
+    const gpa = p.gpa_requirement ? `<span><i class="bi bi-bar-chart-fill"></i>GPA ${p.gpa_requirement}</span>` : '';
+    const duration = p.duration ? `<span><i class="bi bi-calendar3"></i>${p.duration}</span>` : '';
+    const intake = p.intake_months ? `<span><i class="bi bi-calendar-event"></i>${p.intake_months}</span>` : '';
+
+    return `<div class="col-12 col-md-6 col-xl-4">
+      <div class="prog-card h-100" onclick="window.location.href='/university?id=${p.university_id}'">
+        <div class="prog-name">${esc(p.name)}</div>
+        <div class="prog-uni"><i class="bi bi-building"></i>${esc(p.university_name)}</div>
+        <div class="prog-meta">
+          <span class="meta-chip chip-type">${esc(p.type_name)}</span>
+          ${p.language_of_instruction ? `<span class="meta-chip chip-lang"><i class="bi bi-translate me-1"></i>${esc(p.language_of_instruction)}</span>` : ''}
+          ${p.scholarship_available ? `<span class="meta-chip chip-scholar"><i class="bi bi-award-fill me-1"></i>Scholarship</span>` : ''}
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          ${fee}
+          <span class="prog-location"><i class="bi bi-geo-alt-fill me-1" style="color:#475569"></i>${[p.city, p.country].filter(Boolean).join(', ')}</span>
+        </div>
+        ${(duration || intake || engReq || gpa) ? `<div class="prog-details">${[duration, intake, engReq, gpa].filter(Boolean).join('')}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  if (filteredPrograms.length > 300) {
+    container.innerHTML += `<div class="col-12 text-center" style="color:#475569;font-size:.8rem;padding:16px 0">Showing first 300 of ${filteredPrograms.length.toLocaleString()} — refine filters to narrow results.</div>`;
+  }
+}
+
+function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+init();
+</script>
+</body>
+</html>

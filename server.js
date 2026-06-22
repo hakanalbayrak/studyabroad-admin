@@ -20,6 +20,11 @@ app.get('/university', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/university.html'));
 });
 
+// Serve program search page at /programs
+app.get('/programs', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/programs.html'));
+});
+
 // Auth endpoints
 app.post('/api/admin/login', (req, res) => {
   const { password } = req.body;
@@ -423,7 +428,7 @@ app.get('/api/public/universities/:id', async (req, res) => {
 // Public programs search (filterable)
 app.get('/api/public/programs', async (req, res) => {
   try {
-    const { q, country, type, domain, max_fee, currency, lang } = req.query;
+    const { q, country, type, domain, max_fee, lang, eng_type, scholarship } = req.query;
     let where = ['p.status = "active"', 'e.status != "inactive"'];
     const vals = [];
     if (q) { where.push('(p.name LIKE ? OR e.name LIKE ?)'); vals.push(`%${q}%`, `%${q}%`); }
@@ -432,6 +437,8 @@ app.get('/api/public/programs', async (req, res) => {
     if (domain) { where.push('p.description_en LIKE ?'); vals.push(`%${domain}%`); }
     if (max_fee) { where.push('(p.tuition_fee IS NULL OR p.tuition_fee <= ?)'); vals.push(parseFloat(max_fee)); }
     if (lang) { where.push('p.language_of_instruction LIKE ?'); vals.push(`%${lang}%`); }
+    if (eng_type) { where.push('p.english_req_type = ?'); vals.push(eng_type); }
+    if (scholarship === '1') { where.push('p.scholarship_available = 1'); }
 
     const [rows] = await db.query(`
       SELECT p.id, p.name, p.language_of_instruction, p.duration,
