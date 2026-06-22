@@ -164,6 +164,10 @@ router.post('/', upload.single('file'), async (req, res) => {
       const credLevel = (row['Credential Level'] || '').trim();
       const courseName= (row['Course Name'] || '').trim();
       if (!uniName || !courseName || !credLevel) continue;
+      if (country === 'Turkey') continue;
+      const lang = inferLanguage(courseName);
+      if (lang === 'Turkish' || lang === 'English/Turkish') continue;
+      if (/work.{0,6}study|work and study/i.test(courseName)) continue;
 
       // 1. Entity
       let entityId = entityCache[uniName];

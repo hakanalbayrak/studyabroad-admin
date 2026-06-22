@@ -150,8 +150,6 @@
         <select class="form-select form-select-sm" id="langFilter" onchange="applyFilters()">
           <option value="">Any Language</option>
           <option value="English">English</option>
-          <option value="Turkish">Turkish</option>
-          <option value="English/Turkish">English/Turkish</option>
         </select>
       </div>
       <div class="col-6 col-md-2 d-flex gap-2 align-items-center">
@@ -256,8 +254,8 @@ function applyFilters() {
     if (type && p.type_name !== type) return false;
     if (lang && !(p.language_of_instruction || '').toLowerCase().includes(lang.toLowerCase())) return false;
     if (scholar === '1' && !p.scholarship_available) return false;
-    if (eng && p.english_req_type !== eng) return false;
-    if (maxFee !== null && p.tuition_fee !== null && p.tuition_fee > maxFee) return false;
+    if (!eligActive && eng && p.english_req_type !== eng) return false;
+    if (!eligActive && maxFee !== null && p.tuition_fee !== null && p.tuition_fee > maxFee) return false;
     if (!meetsEligibility(p)) return false;
     return true;
   });
@@ -402,9 +400,6 @@ function applyEligibility() {
     maxFee: isNaN(maxFee) ? null : maxFee
   };
   eligActive = !!(eligCriteria.gpa !== null || eligCriteria.engType || eligCriteria.maxFee !== null);
-
-  if (eligCriteria.maxFee !== null) document.getElementById('maxFeeInput').value = eligCriteria.maxFee;
-  if (eligCriteria.engType && eligCriteria.engType !== 'None') document.getElementById('engFilter').value = eligCriteria.engType;
 
   applyFilters();
 
