@@ -472,6 +472,66 @@ app.get('/api/public/filter-options', async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+// Submit a lead (public — no auth)
+app.post('/api/public/leads', async (req, res) => {
+  try {
+    const { student_name, email, phone, message, program_id, program_name, university_id, university_name, country } = req.body;
+    if (!student_name || !email) return res.status(400).json({ error: 'Name and email are required.' });
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return res.status(400).json({ error: 'Invalid email address.' });
+    const [r] = await db.query(
+      `INSERT INTO leads (student_name, email, phone, message, program_id, program_name, university_id, university_name, country)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      [student_name.trim(), email.trim(), phone || null, message || null,
+       program_id || null, program_name || null, university_id || null, university_name || null, country || null]
+    );
+    res.json({ id: r.insertId });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Admin: list leads
+app.get('/api/admin/leads', auth, async (req, res) => {
+  try {
+    const { status, q } = req.query;
+    let where = [];
+    const vals = [];
+    if (status) { where.push('status = ?'); vals.push(status); }
+    if (q) { where.push('(student_name LIKE ? OR email LIKE ? OR university_name LIKE ? OR program_name LIKE ?)'); vals.push(`%${q}%`,`%${q}%`,`%${q}%`,`%${q}%`); }
+    const [rows] = await db.query(
+      `SELECT * FROM leads ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY created_at DESC LIMIT 500`,
+      vals
+    );
+    res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Admin: update lead status / notes
+app.patch('/api/admin/leads/:id', auth, async (req, res) => {
+  try {
+    const { status, notes } = req.body;
+    const sets = [], vals = [];
+    if (status) { sets.push('status=?'); vals.push(status); }
+    if (notes !== undefined) { sets.push('notes=?'); vals.push(notes); }
+    if (!sets.length) return res.status(400).json({ error: 'Nothing to update.' });
+    vals.push(req.params.id);
+    await db.query(`UPDATE leads SET ${sets.join(', ')} WHERE id=?`, vals);
+    res.json({ ok: true });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Admin: lead stats count
+app.get('/api/admin/leads/stats', auth, async (req, res) => {
+  try {
+    const [[counts]] = await db.query(
+      `SELECT COUNT(*) as total,
+        SUM(status='new') as new_count,
+        SUM(status='contacted') as contacted,
+        SUM(status='converted') as converted
+       FROM leads`
+    );
+    res.json(counts);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 // Protected API routes
 app.use('/api/entities', auth, require('./routes/entities'));
 app.use('/api/locations', auth, require('./routes/locations'));

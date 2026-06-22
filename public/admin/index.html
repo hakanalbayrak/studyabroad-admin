@@ -102,6 +102,9 @@
       <a href="#" class="nav-link" data-sec="tools" onclick="showSection('tools');return false;">
         <i class="bi bi-tools"></i>Tools
       </a>
+      <a href="#" class="nav-link" data-sec="leads" onclick="showSection('leads');return false;">
+        <i class="bi bi-envelope-fill"></i>Leads <span id="newLeadsBadge" class="badge bg-danger ms-auto d-none" style="font-size:.65rem"></span>
+      </a>
     </div>
     <div class="p-3 border-top border-secondary">
       <button class="btn btn-outline-light btn-sm w-100 opacity-75" onclick="doLogout()">
@@ -647,6 +650,36 @@
       </div>
     </div><!-- /toolsSection -->
 
+    <!-- ── Leads ─────────────────────────────────────────────────────────── -->
+    <div id="leadsSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <h4 class="fw-bold mb-0"><i class="bi bi-envelope-fill me-2 text-primary"></i>Student Leads</h4>
+        <div class="d-flex gap-2 flex-wrap">
+          <input type="text" class="form-control form-control-sm" id="leadSearch" placeholder="Search name / email / program…" style="width:220px" oninput="filterLeads()">
+          <select class="form-select form-select-sm" id="leadStatusFilter" style="width:140px" onchange="filterLeads()">
+            <option value="">All statuses</option>
+            <option value="new">New</option>
+            <option value="contacted">Contacted</option>
+            <option value="converted">Converted</option>
+            <option value="closed">Closed</option>
+          </select>
+          <button class="btn btn-outline-secondary btn-sm" onclick="loadLeads()"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+      </div>
+
+      <!-- Stats row -->
+      <div class="row g-3 mb-4" id="leadsStats">
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)"><div class="fw-bold fs-4" id="ls_total">—</div><div class="small text-muted">Total</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2)"><div class="fw-bold fs-4 text-danger" id="ls_new">—</div><div class="small text-muted">New</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.2)"><div class="fw-bold fs-4" style="color:#fbbf24" id="ls_contacted">—</div><div class="small text-muted">Contacted</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2)"><div class="fw-bold fs-4 text-success" id="ls_converted">—</div><div class="small text-muted">Converted</div></div></div>
+      </div>
+
+      <div id="leadsTableWrap">
+        <div class="text-center text-muted py-5">Loading leads…</div>
+      </div>
+    </div><!-- /leadsSection -->
+
   </div><!-- /mainContent -->
 </div><!-- /adminApp -->
 
@@ -827,6 +860,7 @@ function showSection(name) {
   if (nav) nav.classList.add('active');
   if (name === 'dashboard') loadStats();
   if (name === 'entities') { closeEntityForm(); loadEntities(); }
+  if (name === 'leads') loadLeads();
 }
 
 async function loadStats() {
@@ -1590,6 +1624,104 @@ function exportBulkCSV() {
   a.download = `rankings_${new Date().toISOString().slice(0,10)}.csv`;
   a.click();
 }
+
+// ── Leads ─────────────────────────────────────────────────────────────────────
+let allLeads = [];
+
+async function loadLeads() {
+  try {
+    const r = await api('GET', '/api/admin/leads');
+    allLeads = r.ok ? await r.json() : [];
+    const sr = await api('GET', '/api/admin/leads/stats');
+    if (sr.ok) {
+      const s = await sr.json();
+      document.getElementById('ls_total').textContent = s.total || 0;
+      document.getElementById('ls_new').textContent = s.new_count || 0;
+      document.getElementById('ls_contacted').textContent = s.contacted || 0;
+      document.getElementById('ls_converted').textContent = s.converted || 0;
+      const badge = document.getElementById('newLeadsBadge');
+      if (s.new_count > 0) { badge.textContent = s.new_count; badge.classList.remove('d-none'); }
+      else badge.classList.add('d-none');
+    }
+    filterLeads();
+  } catch (e) {
+    document.getElementById('leadsTableWrap').innerHTML = '<div class="text-danger small p-3">Failed to load leads.</div>';
+  }
+}
+
+function filterLeads() {
+  const q = (document.getElementById('leadSearch').value || '').toLowerCase();
+  const st = document.getElementById('leadStatusFilter').value;
+  const filtered = allLeads.filter(l => {
+    if (st && l.status !== st) return false;
+    if (q && !['student_name','email','program_name','university_name'].some(k => (l[k]||'').toLowerCase().includes(q))) return false;
+    return true;
+  });
+  renderLeadsTable(filtered);
+}
+
+const STATUS_COLORS = { new: 'danger', contacted: 'warning', converted: 'success', closed: 'secondary' };
+
+function renderLeadsTable(leads) {
+  const wrap = document.getElementById('leadsTableWrap');
+  if (!leads.length) { wrap.innerHTML = '<div class="text-muted small text-center py-5">No leads found.</div>'; return; }
+  wrap.innerHTML = `<div class="table-responsive">
+    <table class="table table-hover table-sm align-middle mb-0" style="font-size:.83rem">
+      <thead class="table-dark">
+        <tr>
+          <th>Date</th><th>Name</th><th>Email</th><th>Phone</th>
+          <th>Program</th><th>University</th><th>Country</th>
+          <th>Status</th><th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${leads.map(l => `<tr>
+          <td style="white-space:nowrap;color:#6c757d">${new Date(l.created_at).toLocaleDateString()}</td>
+          <td class="fw-semibold">${esc2(l.student_name)}</td>
+          <td><a href="mailto:${esc2(l.email)}" style="color:#818cf8">${esc2(l.email)}</a></td>
+          <td>${esc2(l.phone||'—')}</td>
+          <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(l.program_name||'')}">${esc2(l.program_name||'—')}</td>
+          <td style="max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc2(l.university_name||'—')}</td>
+          <td>${esc2(l.country||'—')}</td>
+          <td>
+            <select class="form-select form-select-sm py-0" style="font-size:.75rem;width:110px" onchange="updateLeadStatus(${l.id},this.value)">
+              ${['new','contacted','converted','closed'].map(s => `<option value="${s}"${l.status===s?' selected':''}>${s}</option>`).join('')}
+            </select>
+          </td>
+          <td>
+            <input type="text" value="${esc2(l.notes||'')}" placeholder="Add note…" class="form-control form-control-sm" style="min-width:120px;font-size:.75rem"
+              onblur="updateLeadNotes(${l.id},this.value)">
+          </td>
+        </tr>`).join('')}
+      </tbody>
+    </table>
+  </div>
+  <div class="text-muted small mt-2 text-end">${leads.length} lead${leads.length!==1?'s':''}</div>`;
+}
+
+async function updateLeadStatus(id, status) {
+  await api('PATCH', `/api/admin/leads/${id}`, { status });
+  const lead = allLeads.find(l => l.id === id);
+  if (lead) lead.status = status;
+  const sr = await api('GET', '/api/admin/leads/stats');
+  if (sr.ok) {
+    const s = await sr.json();
+    document.getElementById('ls_new').textContent = s.new_count || 0;
+    document.getElementById('ls_contacted').textContent = s.contacted || 0;
+    document.getElementById('ls_converted').textContent = s.converted || 0;
+    const badge = document.getElementById('newLeadsBadge');
+    if (s.new_count > 0) { badge.textContent = s.new_count; badge.classList.remove('d-none'); }
+    else badge.classList.add('d-none');
+  }
+}
+
+async function updateLeadNotes(id, notes) {
+  await api('PATCH', `/api/admin/leads/${id}`, { notes });
+  const lead = allLeads.find(l => l.id === id);
+  if (lead) lead.notes = notes;
+}
+
+function esc2(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 </script>
 </body>
 </html>
