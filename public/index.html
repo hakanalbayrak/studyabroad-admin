@@ -128,12 +128,6 @@
     <div id="featuredSection" class="d-none">
       <div class="sec-label"><i class="bi bi-star-fill" style="color:#fbbf24"></i>Featured Universities <span></span></div>
       <div class="row g-3" id="featuredGrid"></div>
-      <div style="margin-top:28px">
-        <div class="sec-label"><i class="bi bi-globe2"></i>All Universities <span></span></div>
-        <div id="resultInfo"></div>
-        <div class="row g-3" id="allGrid"></div>
-        <div id="paginationWrap"></div>
-      </div>
     </div>
 
     <!-- Search results (shown when searching) -->
@@ -197,24 +191,7 @@ function showFeatured() {
   const featured = allUniversities.filter(u => u.featured);
   document.getElementById('featuredGrid').innerHTML = featured.length
     ? featured.map(u => cardHtml(u, true)).join('')
-    : '<div class="col-12"><p class="text-muted small">No featured universities yet — mark some as Featured in the admin panel.</p></div>';
-
-  // All universities paginated
-  filteredUniversities = allUniversities;
-  renderAllGrid();
-}
-
-function renderAllGrid() {
-  const perPage = 25;
-  const total = filteredUniversities.length;
-  document.getElementById('resultInfo').textContent = total + ' universit' + (total !== 1 ? 'ies' : 'y');
-  const page = allUniversities; // show all in the "all" section without pagination for featured view
-  document.getElementById('allGrid').innerHTML = filteredUniversities.slice(0, 50).map(u => cardHtml(u, false)).join('');
-  if (total > 50) {
-    document.getElementById('paginationWrap').innerHTML = `<span style="color:#475569;font-size:.8rem">Showing 50 of ${total} — use search to find specific universities.</span>`;
-  } else {
-    document.getElementById('paginationWrap').innerHTML = '';
-  }
+    : '<div class="col-12"><p class="text-muted small" style="color:#475569">No featured universities yet — mark some as Featured in the admin panel.</p></div>';
 }
 
 function onSearch() {

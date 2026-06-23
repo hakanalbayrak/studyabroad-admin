@@ -159,11 +159,14 @@
 
       <!-- List -->
       <div id="entityListView">
-        <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
           <h4 class="fw-bold mb-0">Entities</h4>
-          <button class="btn btn-primary btn-sm" onclick="openEntityForm(null)">
-            <i class="bi bi-plus-lg me-1"></i>Add New Entity
-          </button>
+          <div class="d-flex gap-2 align-items-center flex-wrap">
+            <input type="text" class="form-control form-control-sm" id="entitySearch" placeholder="Search name, city, country…" style="width:220px" oninput="filterEntities()">
+            <button class="btn btn-primary btn-sm" onclick="openEntityForm(null)">
+              <i class="bi bi-plus-lg me-1"></i>Add New Entity
+            </button>
+          </div>
         </div>
         <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
           <table class="table table-hover mb-0 align-middle">
@@ -192,6 +195,9 @@
             <i class="bi bi-arrow-left me-1"></i>Back
           </button>
           <h4 class="fw-bold mb-0" id="entityFormTitle">Add New Entity</h4>
+          <button class="btn btn-primary btn-sm ms-auto px-3 fw-semibold" id="saveBtnTop" onclick="saveEntity()">
+            <i class="bi bi-check-lg me-1"></i>Save Entity
+          </button>
         </div>
 
         <!-- Institution Search -->
@@ -692,13 +698,26 @@
   </div><!-- /mainContent -->
 </div><!-- /adminApp -->
 
+<!-- Go to top button -->
+<button id="goTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+  title="Back to top"
+  style="position:fixed;bottom:28px;right:28px;z-index:999;width:42px;height:42px;border-radius:50%;background:#6366f1;border:none;color:#fff;display:none;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);cursor:pointer;font-size:1.1rem;transition:opacity .2s">
+  <i class="bi bi-chevron-up"></i>
+</button>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 let token = localStorage.getItem('sa_token');
 let editingId = null;
 let formPrograms = [];
 let programTypes = [];
+let allEntitiesList = [];
 const confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'));
+
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('goTopBtn');
+  btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+});
 
 async function api(method, url, body) {
   const opts = { method, headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` } };
@@ -889,36 +908,54 @@ async function loadEntities() {
     <span class="spinner-border spinner-border-sm me-2"></span>Loading...</td></tr>`;
   try {
     const res = await api('GET', '/api/entities');
-    const list = await res.json();
-    if (!list.length) {
-      tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted py-5">
-        No entities yet. <a href="#" onclick="openEntityForm(null);return false;">Add the first one</a></td></tr>`;
-      return;
-    }
-    tbody.innerHTML = list.map((e, i) => `
-      <tr>
-        <td class="ps-3 text-muted small">${i + 1}</td>
-        <td>
-          ${e.logo_url ? `<img src="${esc(e.logo_url)}" class="entity-logo me-2" onerror="this.style.display='none'">` : ''}
-          <strong>${esc(e.name)}</strong>
-        </td>
-        <td><span class="badge bg-light text-dark border small">${typeLabel(e.type)}</span></td>
-        <td class="text-muted small">${e.city ? `${esc(e.city)}, ${esc(e.country)}` : '—'}</td>
-        <td class="text-center"><span class="badge bg-primary bg-opacity-15 text-primary">${e.programs_count}</span></td>
-        <td><span class="badge badge-${e.status}">${cap(e.status)}</span></td>
-        <td class="text-end pe-3">
-          ${e.latitude && e.longitude ? `<button class="btn btn-outline-primary btn-sm table-actions me-1" title="Preview Orbit" onclick="openOrbitPreview('${esc(e.name).replace(/'/g,"\\'")}',${e.latitude},${e.longitude})"><i class="bi bi-globe2"></i></button>` : ''}
-          <button class="btn btn-outline-secondary btn-sm table-actions me-1" onclick="openEntityForm(${e.id})">
-            <i class="bi bi-pencil"></i>
-          </button>
-          <button class="btn btn-outline-danger btn-sm table-actions" onclick="confirmDel(${e.id},'${esc(e.name).replace(/'/g,"\\'")}')">
-            <i class="bi bi-trash"></i>
-          </button>
-        </td>
-      </tr>`).join('');
+    allEntitiesList = await res.json();
+    filterEntities();
   } catch (e) {
     tbody.innerHTML = `<tr><td colspan="7" class="text-center text-danger py-4">${esc(e.message)}</td></tr>`;
   }
+}
+
+function filterEntities() {
+  const q = (document.getElementById('entitySearch')?.value || '').toLowerCase();
+  const filtered = q
+    ? allEntitiesList.filter(e =>
+        e.name.toLowerCase().includes(q) ||
+        (e.city||'').toLowerCase().includes(q) ||
+        (e.country||'').toLowerCase().includes(q) ||
+        (e.type||'').toLowerCase().includes(q)
+      )
+    : allEntitiesList;
+  renderEntitiesTable(filtered);
+}
+
+function renderEntitiesTable(list) {
+  const tbody = document.getElementById('entitiesTableBody');
+  if (!list.length) {
+    tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted py-5">
+      ${allEntitiesList.length ? 'No matches found.' : 'No entities yet. <a href="#" onclick="openEntityForm(null);return false;">Add the first one</a>'}</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = list.map((e, i) => `
+    <tr>
+      <td class="ps-3 text-muted small">${i + 1}</td>
+      <td>
+        ${e.logo_url ? `<img src="${esc(e.logo_url)}" class="entity-logo me-2" onerror="this.style.display='none'">` : ''}
+        <strong>${esc(e.name)}</strong>
+      </td>
+      <td><span class="badge bg-light text-dark border small">${typeLabel(e.type)}</span></td>
+      <td class="text-muted small">${e.city ? `${esc(e.city)}, ${esc(e.country)}` : '—'}</td>
+      <td class="text-center"><span class="badge bg-primary bg-opacity-15 text-primary">${e.programs_count}</span></td>
+      <td><span class="badge badge-${e.status}">${cap(e.status)}</span></td>
+      <td class="text-end pe-3">
+        ${e.latitude && e.longitude ? `<button class="btn btn-outline-primary btn-sm table-actions me-1" title="Preview Orbit" onclick="openOrbitPreview('${esc(e.name).replace(/'/g,"\\'")}',${e.latitude},${e.longitude})"><i class="bi bi-globe2"></i></button>` : ''}
+        <button class="btn btn-outline-secondary btn-sm table-actions me-1" onclick="openEntityForm(${e.id})">
+          <i class="bi bi-pencil"></i>
+        </button>
+        <button class="btn btn-outline-danger btn-sm table-actions" onclick="confirmDel(${e.id},'${esc(e.name).replace(/'/g,"\\'")}')">
+          <i class="bi bi-trash"></i>
+        </button>
+      </td>
+    </tr>`).join('');
 }
 
 function typeLabel(t) {
@@ -1344,9 +1381,8 @@ async function saveEntity() {
     programs: formPrograms.map(p => ({ ...p, program_type_id: parseInt(p.program_type_id), tuition_fee: p.tuition_fee ? parseFloat(p.tuition_fee) : null, scholarship_available: !!p.scholarship_available }))
   };
 
-  const btn = document.getElementById('saveBtn');
-  btn.disabled = true;
-  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Saving...';
+  const saveBtns = [document.getElementById('saveBtn'), document.getElementById('saveBtnTop')];
+  saveBtns.forEach(b => { if (b) { b.disabled = true; b.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Saving...'; } });
 
   try {
     const res = editingId
@@ -1358,8 +1394,7 @@ async function saveEntity() {
   } catch (e) {
     toast(e.message, 'error');
   } finally {
-    btn.disabled = false;
-    btn.innerHTML = '<i class="bi bi-check-lg me-1"></i>Save Entity';
+    saveBtns.forEach(b => { if (b) { b.disabled = false; b.innerHTML = '<i class="bi bi-check-lg me-1"></i>Save Entity'; } });
   }
 }
 
