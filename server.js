@@ -259,6 +259,7 @@ app.delete('/api/bulk/rankings/:jobId', auth, (req, res) => {
 
 // ── Bulk geo-lookup (Google Places → Nominatim fallback) ──────────────────────
 const { resolveCoordinates } = require('./utils/geoLookup');
+const { sendLeadNotification } = require('./utils/mailer');
 const geoJobs = {};
 
 async function processBulkGeo(jobId, locations) {
@@ -485,6 +486,7 @@ app.post('/api/public/leads', async (req, res) => {
        program_id || null, program_name || null, university_id || null, university_name || null, country || null]
     );
     res.json({ id: r.insertId });
+    sendLeadNotification({ student_name: student_name.trim(), email: email.trim(), phone, message, program_name, university_name, country });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
@@ -529,6 +531,19 @@ app.get('/api/admin/leads/stats', auth, async (req, res) => {
        FROM leads`
     );
     res.json(counts);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Admin: export leads as CSV
+app.get('/api/admin/leads/export', auth, async (req, res) => {
+  try {
+    const [rows] = await db.query(`SELECT * FROM leads ORDER BY created_at DESC`);
+    const cols = ['id','created_at','student_name','email','phone','program_name','university_name','country','status','message','notes'];
+    const escape = v => v == null ? '' : `"${String(v).replace(/"/g,'""')}"`;
+    const csv = [cols.join(','), ...rows.map(r => cols.map(c => escape(r[c])).join(','))].join('\r\n');
+    res.setHeader('Content-Type', 'text/csv');
+    res.setHeader('Content-Disposition', `attachment; filename="leads_${new Date().toISOString().slice(0,10)}.csv"`);
+    res.send(csv);
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
