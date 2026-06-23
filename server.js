@@ -368,7 +368,7 @@ app.post('/api/bulk/import', auth, async (req, res) => {
 app.get('/api/public/universities', async (req, res) => {
   try {
     const [rows] = await db.query(`
-      SELECT e.id, e.name, e.type, e.description_en,
+      SELECT e.id, e.name, e.type, e.description_en, e.featured,
         e.qs_rank, e.the_rank, e.shanghai_rank,
         el.city, el.country, el.continent,
         el.latitude, el.longitude,
@@ -382,7 +382,7 @@ app.get('/api/public/universities', async (req, res) => {
       )
       LEFT JOIN orbit_configs oc ON oc.entity_location_id = el.id
       WHERE e.status != 'inactive'
-      ORDER BY e.name
+      ORDER BY e.featured DESC, e.name
     `);
     res.json(rows);
   } catch (e) { res.status(500).json({ error: e.message }); }

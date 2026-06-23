@@ -252,6 +252,14 @@
                 <option value="inactive">Inactive</option>
               </select>
             </div>
+            <div class="col-md-4 d-flex align-items-end pb-1">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="fFeatured">
+                <label class="form-check-label fw-semibold small" for="fFeatured">
+                  Featured on homepage <span class="text-muted fw-normal">(shows in spotlight)</span>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -975,6 +983,7 @@ function resetForm() {
   const ids = ['fName','fType','fWebsite','fLogo','fDesc','fCity','fCountry','fCampus','fAddress','fLat','fLng','fAirportName','fAirportCode','fFlightMin','fOrbitLat','fOrbitLng','fScanLat','fScanLng','fQsRank','fQsYear','fTheRank','fTheYear','fLeidenRank','fLeidenYear','fShanghaiRank','fShanghaiYear'];
   ids.forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
   document.getElementById('fStatus').value = 'pending';
+  document.getElementById('fFeatured').checked = false;
   document.getElementById('fContinent').value = '';
   document.getElementById('fLocStatus').value = 'active';
   document.getElementById('fOrbitAlt').value = 400;
@@ -994,7 +1003,7 @@ function fillForm(d) {
   const set = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.value = v; };
   const chk = (id, v) => { const el = document.getElementById(id); if (el) el.checked = !!v; };
   if (e) {
-    set('fName', e.name); set('fType', e.type); set('fWebsite', e.website_url||''); set('fLogo', e.logo_url||''); set('fDesc', e.description_en||''); set('fStatus', e.status);
+    set('fName', e.name); set('fType', e.type); set('fWebsite', e.website_url||''); set('fLogo', e.logo_url||''); set('fDesc', e.description_en||''); set('fStatus', e.status); chk('fFeatured', e.featured);
     set('fQsRank', e.qs_rank||''); set('fQsYear', e.qs_rank_year||'');
     set('fTheRank', e.the_rank||''); set('fTheYear', e.the_rank_year||'');
     set('fLeidenRank', e.leiden_rank||''); set('fLeidenYear', e.leiden_rank_year||'');
@@ -1325,7 +1334,7 @@ async function saveEntity() {
   }
 
   const payload = {
-    entity: { name: v('fName'), type: v('fType'), website_url: v('fWebsite')||null, logo_url: v('fLogo')||null, description_en: v('fDesc')||null, status: v('fStatus'),
+    entity: { name: v('fName'), type: v('fType'), website_url: v('fWebsite')||null, logo_url: v('fLogo')||null, description_en: v('fDesc')||null, status: v('fStatus'), featured: document.getElementById('fFeatured').checked,
       qs_rank: ni('fQsRank'), qs_rank_year: ni('fQsYear'),
       the_rank: ni('fTheRank'), the_rank_year: ni('fTheYear'),
       leiden_rank: ni('fLeidenRank'), leiden_rank_year: ni('fLeidenYear'),
