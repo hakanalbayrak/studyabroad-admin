@@ -369,7 +369,7 @@ app.get('/api/public/universities', async (req, res) => {
   try {
     const [rows] = await db.query(`
       SELECT e.id, e.name, e.type, e.description_en, e.featured,
-        e.qs_rank, e.the_rank, e.shanghai_rank,
+        e.qs_rank, e.the_rank, e.shanghai_rank, e.leiden_rank,
         el.city, el.country, el.continent,
         el.latitude, el.longitude,
         oc.orbit_center_lat, oc.orbit_center_lng, oc.orbit_altitude,

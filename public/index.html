@@ -77,6 +77,21 @@
     @keyframes spin { to { transform: rotate(360deg); } }
 
     #resultInfo { font-size: .8rem; color: #64748b; margin-bottom: 16px; }
+
+    /* Compare */
+    .cmp-btn { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); color: #64748b; font-size: .7rem; font-weight: 600; border-radius: 6px; padding: 3px 10px; cursor: pointer; transition: all .15s; white-space: nowrap; }
+    .cmp-btn:hover { background: rgba(99,102,241,.2); border-color: rgba(99,102,241,.4); color: #818cf8; }
+    .cmp-btn.selected { background: rgba(99,102,241,.25); border-color: #6366f1; color: #a5b4fc; }
+    #compareTray { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1040; background: #1e293b; border-top: 1px solid rgba(99,102,241,.4); padding: 12px 20px; display: none; align-items: center; gap: 10px; flex-wrap: wrap; box-shadow: 0 -4px 20px rgba(0,0,0,.5); }
+    .cmp-chip { background: rgba(99,102,241,.15); border: 1px solid rgba(99,102,241,.3); color: #a5b4fc; border-radius: 20px; padding: 3px 8px 3px 12px; font-size: .78rem; display: inline-flex; align-items: center; gap: 5px; }
+    .cmp-chip button { background: none; border: none; color: #818cf8; padding: 0; line-height: 1; cursor: pointer; font-size: .9rem; }
+    #compareModal .modal-content { background: #0f172a; border: 1px solid rgba(255,255,255,.1); color: #e2e8f0; }
+    .cmp-table { width: 100%; border-collapse: collapse; }
+    .cmp-table th, .cmp-table td { padding: 11px 14px; }
+    .cmp-table thead tr { border-bottom: 2px solid rgba(99,102,241,.3); }
+    .cmp-table tbody tr { border-bottom: 1px solid rgba(255,255,255,.05); }
+    .cmp-table tbody tr:nth-child(even) { background: rgba(255,255,255,.02); }
+    .cmp-row-label { font-size: .73rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #475569; }
   </style>
 </head>
 <body>
@@ -150,11 +165,37 @@
   </div>
 </div>
 
+<!-- Compare tray -->
+<div id="compareTray">
+  <span style="font-size:.8rem;color:#94a3b8;font-weight:600;white-space:nowrap">
+    <i class="bi bi-bar-chart-fill me-1" style="color:#818cf8"></i>Compare <span id="cmpCount">0</span>/3
+  </span>
+  <div id="cmpItems" class="d-flex gap-2 flex-wrap" style="flex:1"></div>
+  <button onclick="showComparison()" id="cmpNowBtn" class="btn btn-primary btn-sm px-4" style="white-space:nowrap">Compare Now</button>
+  <button onclick="clearCompare()" class="btn btn-outline-secondary btn-sm" style="white-space:nowrap">Clear</button>
+</div>
+
+<!-- Compare modal -->
+<div class="modal fade" id="compareModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content" style="background:#0f172a;border:1px solid rgba(255,255,255,.1);color:#e2e8f0">
+      <div class="modal-header" style="border-color:rgba(255,255,255,.08)">
+        <h5 class="modal-title"><i class="bi bi-bar-chart-fill me-2" style="color:#818cf8"></i>University Comparison</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-0" id="compareModalBody" style="overflow-x:auto"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 let allUniversities = [];
 let filteredUniversities = [];
 let currentPage = 1;
 let isSearching = false;
+let compareSet = new Set();
+let compareModal;
 
 async function load() {
   try {
@@ -273,11 +314,12 @@ function pageRange(cur, total) {
 
 function cardHtml(u, isFeatured) {
   const orbit = hasOrbit(u);
+  const sel = compareSet.has(u.id);
   const ranks = [];
   if (u.qs_rank) ranks.push(`<span class="rank-badge rank-qs">QS #${u.qs_rank}</span>`);
   if (u.the_rank) ranks.push(`<span class="rank-badge rank-the">THE #${u.the_rank}</span>`);
   if (u.shanghai_rank) ranks.push(`<span class="rank-badge rank-sh">SH #${u.shanghai_rank}</span>`);
-  return `<div class="${isFeatured ? 'col-12 col-sm-6 col-lg-4' : 'col-12 col-sm-6 col-lg-4'}">
+  return `<div class="col-12 col-sm-6 col-lg-4">
     <div class="uni-card" onclick="goToDetail(${u.id})">
       <div class="card-top">
         <div class="d-flex align-items-start justify-content-between gap-1 mb-1">
@@ -289,7 +331,11 @@ function cardHtml(u, isFeatured) {
         ${u.description_en ? `<div class="card-desc">${esc(u.description_en)}</div>` : ''}
       </div>
       <div class="card-footer-strip">
-        <span class="view-label"><i class="bi bi-mortarboard-fill me-1" style="color:#818cf8"></i>View Programs</span>
+        <button class="cmp-btn${sel ? ' selected' : ''}" data-id="${u.id}"
+          onclick="event.stopPropagation();toggleCompare(${u.id})"
+          title="${sel ? 'Remove from comparison' : 'Add to comparison'}">
+          <i class="bi bi-${sel ? 'check2' : 'plus-lg'} me-1"></i>${sel ? 'Added' : 'Compare'}
+        </button>
         ${orbit ? `<button class="orbit-btn-sm" onclick="event.stopPropagation();openOrbit(${u.id})"><i class="bi bi-camera-video-fill me-1"></i>3D Orbit</button>` : '<span style="font-size:.7rem;color:#334155">No orbit yet</span>'}
       </div>
     </div>
@@ -319,6 +365,96 @@ function openOrbit(id) {
 }
 
 function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// ── University Comparison ─────────────────────────────────────────────────────
+function toggleCompare(id) {
+  if (compareSet.has(id)) {
+    compareSet.delete(id);
+  } else {
+    if (compareSet.size >= 3) {
+      const btn = document.querySelector(`.cmp-btn[data-id="${id}"]`);
+      if (btn) { btn.textContent = 'Max 3!'; setTimeout(() => { btn.innerHTML = '<i class="bi bi-plus-lg me-1"></i>Compare'; }, 1200); }
+      return;
+    }
+    compareSet.add(id);
+  }
+  document.querySelectorAll(`.cmp-btn[data-id="${id}"]`).forEach(btn => {
+    const s = compareSet.has(id);
+    btn.classList.toggle('selected', s);
+    btn.innerHTML = `<i class="bi bi-${s ? 'check2' : 'plus-lg'} me-1"></i>${s ? 'Added' : 'Compare'}`;
+  });
+  updateCompareTray();
+}
+
+function updateCompareTray() {
+  const tray = document.getElementById('compareTray');
+  if (compareSet.size === 0) { tray.style.display = 'none'; return; }
+  tray.style.display = 'flex';
+  document.getElementById('cmpCount').textContent = compareSet.size;
+  document.getElementById('cmpNowBtn').disabled = compareSet.size < 2;
+  const unis = [...compareSet].map(id => allUniversities.find(u => u.id === id)).filter(Boolean);
+  document.getElementById('cmpItems').innerHTML = unis.map(u =>
+    `<span class="cmp-chip">
+      ${esc(u.name.length > 28 ? u.name.slice(0,28) + '…' : u.name)}
+      <button onclick="toggleCompare(${u.id})" title="Remove"><i class="bi bi-x"></i></button>
+    </span>`
+  ).join('');
+}
+
+function clearCompare() {
+  compareSet.clear();
+  document.querySelectorAll('.cmp-btn.selected').forEach(btn => {
+    btn.classList.remove('selected');
+    btn.innerHTML = '<i class="bi bi-plus-lg me-1"></i>Compare';
+  });
+  updateCompareTray();
+}
+
+function showComparison() {
+  if (compareSet.size < 2) return;
+  const unis = [...compareSet].map(id => allUniversities.find(u => u.id === id)).filter(Boolean);
+
+  const rows = [
+    ['Country',       u => esc(u.country || '—')],
+    ['City',          u => esc(u.city || '—')],
+    ['Continent',     u => esc(u.continent || '—')],
+    ['QS Rank',       u => u.qs_rank       ? `<span style="background:rgba(99,102,241,.2);color:#a5b4fc;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.qs_rank}</span>`       : '<span style="color:#334155">—</span>'],
+    ['THE Rank',      u => u.the_rank      ? `<span style="background:rgba(16,185,129,.2);color:#6ee7b7;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.the_rank}</span>`      : '<span style="color:#334155">—</span>'],
+    ['Shanghai Rank', u => u.shanghai_rank ? `<span style="background:rgba(245,158,11,.2);color:#fcd34d;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.shanghai_rank}</span>` : '<span style="color:#334155">—</span>'],
+    ['Leiden Rank',   u => u.leiden_rank   ? `<span style="background:rgba(139,92,246,.2);color:#c4b5fd;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.leiden_rank}</span>`   : '<span style="color:#334155">—</span>'],
+    ['3D Orbit',      u => (u.latitude && u.longitude) ? '<span style="color:#10b981"><i class="bi bi-check-circle-fill me-1"></i>Available</span>' : '<span style="color:#475569">—</span>'],
+    ['Featured',      u => u.featured ? '<span style="color:#fbbf24"><i class="bi bi-star-fill me-1"></i>Yes</span>' : '<span style="color:#475569">No</span>'],
+  ];
+
+  const colPct = Math.floor(80 / unis.length);
+  let html = `<table class="cmp-table">
+    <thead>
+      <tr>
+        <th style="width:18%;color:#475569;font-size:.75rem"></th>
+        ${unis.map(u => `
+          <th style="width:${colPct}%">
+            <div style="font-size:.93rem;font-weight:700;color:#f1f5f9;margin-bottom:4px">${esc(u.name)}</div>
+            <div style="font-size:.74rem;color:#64748b;margin-bottom:8px">${esc([u.city, u.country].filter(Boolean).join(', '))}</div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap">
+              <a href="/university?id=${u.id}" style="font-size:.71rem;color:#818cf8;text-decoration:none;background:rgba(99,102,241,.15);border:1px solid rgba(99,102,241,.3);border-radius:6px;padding:2px 9px"><i class="bi bi-arrow-right-circle me-1"></i>View</a>
+              ${(u.latitude && u.longitude) ? `<button onclick="openOrbit(${u.id})" style="font-size:.71rem;color:#818cf8;background:rgba(99,102,241,.15);border:1px solid rgba(99,102,241,.3);border-radius:6px;padding:2px 9px;cursor:pointer"><i class="bi bi-camera-video-fill me-1"></i>3D</button>` : ''}
+            </div>
+          </th>`).join('')}
+      </tr>
+    </thead>
+    <tbody>
+      ${rows.map((row, i) => `
+        <tr>
+          <td class="cmp-row-label">${row[0]}</td>
+          ${unis.map(u => `<td style="font-size:.87rem">${row[1](u)}</td>`).join('')}
+        </tr>`).join('')}
+    </tbody>
+  </table>`;
+
+  document.getElementById('compareModalBody').innerHTML = html;
+  if (!compareModal) compareModal = new bootstrap.Modal(document.getElementById('compareModal'));
+  compareModal.show();
+}
 
 load();
 </script>
