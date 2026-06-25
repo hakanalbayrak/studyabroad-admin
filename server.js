@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const { login, logout, auth } = require('./middleware/auth');
+const { auth, requireRole, signToken } = require('./middleware/auth');
 const db = require('./db');
 
 const app = express();
@@ -25,18 +25,53 @@ app.get('/programs', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/programs.html'));
 });
 
-// Auth endpoints
-app.post('/api/admin/login', (req, res) => {
-  const { password } = req.body;
-  const token = login(password);
-  if (!token) return res.status(401).json({ error: 'Invalid password' });
-  res.json({ token });
+// Public portal pages
+app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'public/login.html')));
+app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'public/register.html')));
+app.get('/portal', (req, res) => res.sendFile(path.join(__dirname, 'public/portal/index.html')));
+app.get('/affiliate', (req, res) => res.sendFile(path.join(__dirname, 'public/affiliate/index.html')));
+
+// Seed first admin from env vars if no admin users exist
+const bcrypt = require('bcryptjs');
+async function seedAdmin() {
+  if (!process.env.ADMIN_EMAIL || !process.env.ADMIN_PASSWORD) return;
+  try {
+    const [[count]] = await db.query("SELECT COUNT(*) as n FROM users WHERE role='admin'");
+    if (count.n > 0) return;
+    const hash = await bcrypt.hash(process.env.ADMIN_PASSWORD, 12);
+    await db.query(
+      'INSERT INTO users (email, password_hash, name, role, status) VALUES (?,?,?,?,?)',
+      [process.env.ADMIN_EMAIL.toLowerCase(), hash, 'Admin', 'admin', 'active']
+    );
+    console.log('[auth] First admin user created:', process.env.ADMIN_EMAIL);
+  } catch (e) { console.error('[auth] Seed admin failed:', e.message); }
+}
+seedAdmin();
+
+// Auth routes
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/admin/users', require('./routes/users'));
+app.use('/api/affiliate', require('./routes/affiliate'));
+app.use('/api/user', require('./routes/userPortal'));
+
+// Legacy admin login — maps to new JWT system for backward compatibility
+app.post('/api/admin/login', async (req, res) => {
+  const { email, password } = req.body;
+  if (!email || !password) return res.status(400).json({ error: 'Email and password required' });
+  try {
+    const [[user]] = await db.query(
+      "SELECT id, email, name, role, password_hash, status FROM users WHERE email=? AND role='admin' LIMIT 1",
+      [email.toLowerCase().trim()]
+    );
+    if (!user) return res.status(401).json({ error: 'Invalid credentials' });
+    if (user.status !== 'active') return res.status(403).json({ error: 'Account inactive' });
+    const ok = await bcrypt.compare(password, user.password_hash);
+    if (!ok) return res.status(401).json({ error: 'Invalid credentials' });
+    res.json({ token: signToken(user) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
-app.post('/api/admin/logout', auth, (req, res) => {
-  logout(req.token);
-  res.json({ success: true });
-});
+app.post('/api/admin/logout', (req, res) => res.json({ success: true }));
 
 // Health check (public)
 app.get('/api/health', (req, res) => {
@@ -180,7 +215,7 @@ Use null when you are not confident. For ranges like 201-300 use the lower bound
   return out;
 }
 
-app.get('/api/lookup/rankings', auth, async (req, res) => {
+app.get('/api/lookup/rankings', requireRole('admin'), async (req, res) => {
   const name = (req.query.name || '').trim();
   if (!name) return res.status(400).json({ error: 'name required' });
   try {
@@ -220,7 +255,7 @@ async function processBulkRankings(jobId, entities) {
   job.status = 'done';
 }
 
-app.post('/api/bulk/rankings', auth, async (req, res) => {
+app.post('/api/bulk/rankings', requireRole('admin'), async (req, res) => {
   const { mode } = req.body;
   try {
     let entities;
@@ -244,13 +279,13 @@ app.post('/api/bulk/rankings', auth, async (req, res) => {
   }
 });
 
-app.get('/api/bulk/rankings/:jobId', auth, (req, res) => {
+app.get('/api/bulk/rankings/:jobId', requireRole('admin'), (req, res) => {
   const job = bulkJobs[req.params.jobId];
   if (!job) return res.status(404).json({ error: 'Job not found' });
   res.json(job);
 });
 
-app.delete('/api/bulk/rankings/:jobId', auth, (req, res) => {
+app.delete('/api/bulk/rankings/:jobId', requireRole('admin'), (req, res) => {
   const job = bulkJobs[req.params.jobId];
   if (!job) return res.status(404).json({ error: 'Job not found' });
   job.stopRequested = true;
@@ -306,7 +341,7 @@ async function processBulkGeo(jobId, locations) {
   job.status = 'done';
 }
 
-app.post('/api/bulk/geo-lookup', auth, async (req, res) => {
+app.post('/api/bulk/geo-lookup', requireRole('admin'), async (req, res) => {
   const { mode } = req.body; // 'missing' (default) or 'all'
   try {
     const whereClause = mode === 'all' ? '1=1' : '(el.latitude IS NULL OR el.longitude IS NULL)';
@@ -327,13 +362,13 @@ app.post('/api/bulk/geo-lookup', auth, async (req, res) => {
   }
 });
 
-app.get('/api/bulk/geo-lookup/:jobId', auth, (req, res) => {
+app.get('/api/bulk/geo-lookup/:jobId', requireRole('admin'), (req, res) => {
   const job = geoJobs[req.params.jobId];
   if (!job) return res.status(404).json({ error: 'Job not found' });
   res.json(job);
 });
 
-app.delete('/api/bulk/geo-lookup/:jobId', auth, (req, res) => {
+app.delete('/api/bulk/geo-lookup/:jobId', requireRole('admin'), (req, res) => {
   const job = geoJobs[req.params.jobId];
   if (!job) return res.status(404).json({ error: 'Job not found' });
   job.stopRequested = true;
@@ -341,7 +376,7 @@ app.delete('/api/bulk/geo-lookup/:jobId', auth, (req, res) => {
 });
 
 // ── Bulk entity import ────────────────────────────────────────────────────────
-app.post('/api/bulk/import', auth, async (req, res) => {
+app.post('/api/bulk/import', requireRole('admin'), async (req, res) => {
   const { names, type = 'university', status = 'active' } = req.body;
   if (!Array.isArray(names) || !names.length) return res.status(400).json({ error: 'names array required' });
 
@@ -491,7 +526,7 @@ app.post('/api/public/leads', async (req, res) => {
 });
 
 // Admin: list leads
-app.get('/api/admin/leads', auth, async (req, res) => {
+app.get('/api/admin/leads', requireRole('admin'), async (req, res) => {
   try {
     const { status, q } = req.query;
     let where = [];
@@ -507,7 +542,7 @@ app.get('/api/admin/leads', auth, async (req, res) => {
 });
 
 // Admin: update lead status / notes
-app.patch('/api/admin/leads/:id', auth, async (req, res) => {
+app.patch('/api/admin/leads/:id', requireRole('admin'), async (req, res) => {
   try {
     const { status, notes } = req.body;
     const sets = [], vals = [];
@@ -521,7 +556,7 @@ app.patch('/api/admin/leads/:id', auth, async (req, res) => {
 });
 
 // Admin: lead stats count
-app.get('/api/admin/leads/stats', auth, async (req, res) => {
+app.get('/api/admin/leads/stats', requireRole('admin'), async (req, res) => {
   try {
     const [[counts]] = await db.query(
       `SELECT COUNT(*) as total,
@@ -535,7 +570,7 @@ app.get('/api/admin/leads/stats', auth, async (req, res) => {
 });
 
 // Admin: export leads as CSV
-app.get('/api/admin/leads/export', auth, async (req, res) => {
+app.get('/api/admin/leads/export', requireRole('admin'), async (req, res) => {
   try {
     const [rows] = await db.query(`SELECT * FROM leads ORDER BY created_at DESC`);
     const cols = ['id','created_at','student_name','email','phone','program_name','university_name','country','status','message','notes'];
@@ -548,12 +583,12 @@ app.get('/api/admin/leads/export', auth, async (req, res) => {
 });
 
 // Protected API routes
-app.use('/api/entities', auth, require('./routes/entities'));
-app.use('/api/locations', auth, require('./routes/locations'));
-app.use('/api/programs', auth, require('./routes/programs'));
-app.use('/api/orbit', auth, require('./routes/orbit'));
-app.use('/api/program-types', auth, require('./routes/programTypes'));
-app.use('/api/bulk/csv-import', auth, require('./routes/csvImport'));
+app.use('/api/entities', requireRole('admin'), require('./routes/entities'));
+app.use('/api/locations', requireRole('admin'), require('./routes/locations'));
+app.use('/api/programs', requireRole('admin'), require('./routes/programs'));
+app.use('/api/orbit', requireRole('admin'), require('./routes/orbit'));
+app.use('/api/program-types', requireRole('admin'), require('./routes/programTypes'));
+app.use('/api/bulk/csv-import', requireRole('admin'), require('./routes/csvImport'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

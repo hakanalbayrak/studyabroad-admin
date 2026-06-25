@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portal — Study Abroad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body { background: #0b1120; color: #e2e8f0; min-height: 100vh; font-family: system-ui, sans-serif; }
+    .topbar { background: #1e293b; border-bottom: 1px solid rgba(255,255,255,.08); padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .uni-card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 14px; padding: 18px; transition: all .18s; }
+    .uni-card:hover { background: rgba(99,102,241,.09); border-color: rgba(99,102,241,.4); }
+    .nav-tabs .nav-link { color: #94a3b8; border: none; border-bottom: 2px solid transparent; }
+    .nav-tabs .nav-link.active { color: #818cf8; border-bottom-color: #6366f1; background: transparent; }
+    .nav-tabs { border-bottom: 1px solid rgba(255,255,255,.08); }
+    .badge-new { background: rgba(239,68,68,.2); color: #f87171; }
+    .badge-contacted { background: rgba(234,179,8,.2); color: #fbbf24; }
+    .badge-converted { background: rgba(16,185,129,.2); color: #34d399; }
+    .badge-closed { background: rgba(107,114,128,.2); color: #9ca3af; }
+    table { color: #e2e8f0; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="d-flex align-items-center gap-3">
+      <a href="/" style="color:#818cf8;text-decoration:none"><i class="bi bi-globe-americas me-1"></i>Study Abroad</a>
+      <span style="color:#334155">|</span>
+      <span style="color:#94a3b8;font-size:.88rem">My Portal</span>
+    </div>
+    <div class="d-flex align-items-center gap-3">
+      <span id="userName" class="small text-muted"></span>
+      <a href="/" class="btn btn-outline-secondary btn-sm">Browse Universities</a>
+      <button class="btn btn-outline-danger btn-sm" onclick="logout()"><i class="bi bi-box-arrow-right me-1"></i>Sign Out</button>
+    </div>
+  </div>
+
+  <div class="container py-4" style="max-width:900px">
+    <h4 class="fw-bold mb-4">Welcome back, <span id="greetName" style="color:#818cf8"></span></h4>
+
+    <ul class="nav nav-tabs mb-4">
+      <li class="nav-item"><a class="nav-link active" href="#" onclick="showTab('saved');return false;"><i class="bi bi-bookmark-heart me-1"></i>Saved Universities</a></li>
+      <li class="nav-item"><a class="nav-link" href="#" onclick="showTab('leads');return false;"><i class="bi bi-envelope me-1"></i>My Inquiries</a></li>
+    </ul>
+
+    <!-- Saved Universities -->
+    <div id="tabSaved">
+      <div id="savedList"><div class="text-muted text-center py-5">Loading…</div></div>
+    </div>
+
+    <!-- My Inquiries -->
+    <div id="tabLeads" class="d-none">
+      <div id="leadsList"><div class="text-muted text-center py-5">Loading…</div></div>
+    </div>
+  </div>
+
+  <script>
+    const token = localStorage.getItem('sa_token');
+    const role = localStorage.getItem('sa_role');
+    const name = localStorage.getItem('sa_name') || '';
+
+    if (!token) { location.href = '/login?next=/portal'; }
+
+    document.getElementById('userName').textContent = name;
+    document.getElementById('greetName').textContent = name.split(' ')[0] || name;
+
+    // Capture referral code from URL
+    const ref = new URLSearchParams(location.search).get('ref');
+    if (ref) localStorage.setItem('sa_referral', ref);
+
+    async function api(method, url, body) {
+      const opts = { method, headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + token } };
+      if (body) opts.body = JSON.stringify(body);
+      const res = await fetch(url, opts);
+      if (res.status === 401) { logout(); return null; }
+      return res;
+    }
+
+    function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+    function logout() {
+      localStorage.removeItem('sa_token');
+      localStorage.removeItem('sa_role');
+      localStorage.removeItem('sa_name');
+      location.href = '/login';
+    }
+
+    let activeTab = 'saved';
+    function showTab(t) {
+      activeTab = t;
+      document.getElementById('tabSaved').classList.toggle('d-none', t !== 'saved');
+      document.getElementById('tabLeads').classList.toggle('d-none', t !== 'leads');
+      document.querySelectorAll('.nav-link').forEach((el, i) => {
+        el.classList.toggle('active', (i === 0 && t === 'saved') || (i === 1 && t === 'leads'));
+      });
+      if (t === 'saved') loadSaved();
+      if (t === 'leads') loadLeads();
+    }
+
+    async function loadSaved() {
+      const el = document.getElementById('savedList');
+      const res = await api('GET', '/api/user/saved');
+      if (!res) return;
+      const list = await res.json();
+      if (!list.length) {
+        el.innerHTML = '<div class="text-center py-5"><i class="bi bi-bookmark text-muted" style="font-size:2.5rem;display:block;margin-bottom:12px"></i><p class="text-muted">No saved universities yet.<br><a href="/">Browse universities</a> and save them to track here.</p></div>';
+        return;
+      }
+      el.innerHTML = '<div class="row g-3">' + list.map(u => `
+        <div class="col-12 col-md-6">
+          <div class="uni-card">
+            <div class="fw-semibold mb-1">${esc(u.name)}</div>
+            <div class="small text-muted mb-2"><i class="bi bi-geo-alt-fill me-1"></i>${esc([u.city,u.country].filter(Boolean).join(', '))}</div>
+            ${[u.qs_rank && `<span class="badge" style="background:rgba(99,102,241,.2);color:#a5b4fc">QS #${u.qs_rank}</span>`, u.the_rank && `<span class="badge ms-1" style="background:rgba(16,185,129,.2);color:#6ee7b7">THE #${u.the_rank}</span>`].filter(Boolean).join('')}
+            <div class="mt-3 d-flex gap-2">
+              <a href="/university?id=${u.id}" class="btn btn-outline-primary btn-sm">View Details</a>
+              <button onclick="unsave(${u.id}, this)" class="btn btn-outline-danger btn-sm"><i class="bi bi-bookmark-x me-1"></i>Remove</button>
+            </div>
+          </div>
+        </div>`).join('') + '</div>';
+    }
+
+    async function unsave(id, btn) {
+      btn.disabled = true;
+      const res = await api('POST', '/api/user/saved', { entity_id: id });
+      if (res) loadSaved();
+    }
+
+    async function loadLeads() {
+      const el = document.getElementById('leadsList');
+      const res = await api('GET', '/api/user/leads');
+      if (!res) return;
+      const list = await res.json();
+      if (!list.length) {
+        el.innerHTML = '<div class="text-center text-muted py-5">No inquiries submitted yet.</div>';
+        return;
+      }
+      const colors = { new:'new', contacted:'contacted', converted:'converted', closed:'closed' };
+      el.innerHTML = `<div class="table-responsive"><table class="table table-hover" style="color:#e2e8f0">
+        <thead style="color:#64748b;font-size:.8rem"><tr><th>Date</th><th>Program</th><th>University</th><th>Status</th></tr></thead>
+        <tbody>${list.map(l => `<tr>
+          <td class="text-muted small">${new Date(l.created_at).toLocaleDateString()}</td>
+          <td>${esc(l.program_name||'—')}</td>
+          <td>${esc(l.university_name||'—')}</td>
+          <td><span class="badge badge-${colors[l.status]||'secondary'}">${l.status}</span></td>
+        </tr>`).join('')}</tbody>
+      </table></div>`;
+    }
+
+    loadSaved();
+  </script>
+</body>
+</html>

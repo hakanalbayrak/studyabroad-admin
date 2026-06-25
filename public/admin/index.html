@@ -77,8 +77,10 @@
         <p class="text-muted small mt-1">Admin access only</p>
       </div>
       <div id="loginError" class="alert alert-danger d-none small py-2"></div>
+      <input type="email" class="form-control form-control-lg mb-2" id="loginEmail"
+             placeholder="Email address" autocomplete="email">
       <input type="password" class="form-control form-control-lg mb-2" id="loginPassword"
-             placeholder="Enter password" autocomplete="current-password">
+             placeholder="Password" autocomplete="current-password">
       <div class="form-check mb-3 ms-1">
         <input class="form-check-input" type="checkbox" id="togglePw">
         <label class="form-check-label text-muted small" for="togglePw">Show password</label>
@@ -104,6 +106,9 @@
       </a>
       <a href="#" class="nav-link" data-sec="leads" onclick="showSection('leads');return false;">
         <i class="bi bi-envelope-fill"></i>Leads <span id="newLeadsBadge" class="badge bg-danger ms-auto d-none" style="font-size:.65rem"></span>
+      </a>
+      <a href="#" class="nav-link" data-sec="users" onclick="showSection('users');return false;">
+        <i class="bi bi-people-fill"></i>Users
       </a>
     </div>
     <div class="p-3 border-top border-secondary">
@@ -695,8 +700,84 @@
       </div>
     </div><!-- /leadsSection -->
 
+    <!-- USERS -->
+    <div id="usersSection" class="section-content">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="fw-bold mb-0"><i class="bi bi-people-fill me-2 text-primary"></i>Users</h4>
+        <button class="btn btn-primary btn-sm" onclick="openUserModal(null)">
+          <i class="bi bi-person-plus me-1"></i>Add User
+        </button>
+      </div>
+      <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
+        <table class="table table-hover mb-0 align-middle">
+          <thead style="background:#1e293b;color:#e2e8f0">
+            <tr>
+              <th class="ps-3">Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Affiliate Code</th>
+              <th>Created</th>
+              <th class="text-end pe-3">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody">
+            <tr><td colspan="7" class="text-center text-muted py-5">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- /usersSection -->
+
   </div><!-- /mainContent -->
 </div><!-- /adminApp -->
+
+<!-- User modal -->
+<div class="modal fade" id="userModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="userModalTitle">Add User</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Name</label>
+          <input type="text" class="form-control" id="uName" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+        </div>
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Email</label>
+          <input type="email" class="form-control" id="uEmail" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+        </div>
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Password <span id="uPwHint" class="text-muted fw-normal">(leave blank to keep existing)</span></label>
+          <input type="password" class="form-control" id="uPassword" placeholder="••••••••" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Role</label>
+            <select class="form-select" id="uRole" style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="enduser">End User</option>
+              <option value="affiliate">Affiliate</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Status</label>
+            <select class="form-select" id="uStatus" style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="active">Active</option>
+              <option value="pending">Pending</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary" id="uSaveBtn" onclick="saveUser()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Go to top button -->
 <button id="goTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})"
@@ -744,6 +825,7 @@ function toast(msg, type) {
 }
 
 document.getElementById('loginPassword').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+document.getElementById('loginEmail').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
 document.getElementById('loginBtn').addEventListener('click', doLogin);
 document.getElementById('togglePw').addEventListener('change', function () {
   document.getElementById('loginPassword').type = this.checked ? 'text' : 'password';
@@ -837,18 +919,20 @@ function applyPlace(idx) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 async function doLogin() {
+  const email = document.getElementById('loginEmail').value.trim();
   const pw = document.getElementById('loginPassword').value;
-  if (!pw) return;
+  if (!email || !pw) return;
   const btn = document.getElementById('loginBtn');
   btn.disabled = true; btn.textContent = '...';
   document.getElementById('loginError').classList.add('d-none');
   try {
-    const res = await fetch('/api/admin/login', {
+    const res = await fetch('/api/auth/login', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ password: pw })
+      body: JSON.stringify({ email, password: pw })
     });
     const d = await res.json();
     if (!res.ok) throw new Error(d.error || 'Login failed');
+    if (d.role !== 'admin') throw new Error('Admin access only');
     token = d.token;
     localStorage.setItem('sa_token', token);
     initApp();
@@ -889,6 +973,7 @@ function showSection(name) {
   if (name === 'dashboard') loadStats();
   if (name === 'entities') { closeEntityForm(); loadEntities(); }
   if (name === 'leads') loadLeads();
+  if (name === 'users') loadUsers();
 }
 
 async function loadStats() {
@@ -1767,6 +1852,87 @@ async function updateLeadNotes(id, notes) {
 }
 
 function esc2(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// ── Users ─────────────────────────────────────────────────────────────────────
+let editingUserId = null;
+let userModal;
+
+async function loadUsers() {
+  const tbody = document.getElementById('usersTableBody');
+  tbody.innerHTML = '<tr><td colspan="7" class="text-center text-muted py-5"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</td></tr>';
+  try {
+    const res = await api('GET', '/api/admin/users');
+    const list = await res.json();
+    if (!list.length) { tbody.innerHTML = '<tr><td colspan="7" class="text-center text-muted py-5">No users yet.</td></tr>'; return; }
+    const roleColors = { admin: 'primary', affiliate: 'success', enduser: 'secondary' };
+    tbody.innerHTML = list.map(u => `
+      <tr>
+        <td class="ps-3 fw-semibold">${esc(u.name)}</td>
+        <td class="text-muted small">${esc(u.email)}</td>
+        <td><span class="badge bg-${roleColors[u.role] || 'secondary'}">${u.role}</span></td>
+        <td><span class="badge badge-${u.status}">${cap(u.status)}</span></td>
+        <td class="small text-muted font-monospace">${u.affiliate_code || '—'}</td>
+        <td class="small text-muted">${new Date(u.created_at).toLocaleDateString()}</td>
+        <td class="text-end pe-3">
+          <button class="btn btn-outline-secondary btn-sm me-1" onclick="openUserModal(${u.id}, '${esc(u.name).replace(/'/g,"\\'")}', '${esc(u.email)}', '${u.role}', '${u.status}')"><i class="bi bi-pencil"></i></button>
+          <button class="btn btn-outline-danger btn-sm" onclick="deleteUser(${u.id}, '${esc(u.name).replace(/'/g,"\\'")}')"><i class="bi bi-trash"></i></button>
+        </td>
+      </tr>`).join('');
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="7" class="text-center text-danger py-4">${esc(e.message)}</td></tr>`;
+  }
+}
+
+function openUserModal(id, name = '', email = '', role = 'enduser', status = 'active') {
+  editingUserId = id;
+  document.getElementById('userModalTitle').textContent = id ? 'Edit User' : 'Add User';
+  document.getElementById('uName').value = name;
+  document.getElementById('uEmail').value = email;
+  document.getElementById('uEmail').disabled = !!id;
+  document.getElementById('uRole').value = role;
+  document.getElementById('uStatus').value = status;
+  document.getElementById('uPassword').value = '';
+  document.getElementById('uPwHint').style.display = id ? '' : 'none';
+  if (!userModal) userModal = new bootstrap.Modal(document.getElementById('userModal'));
+  userModal.show();
+}
+
+async function saveUser() {
+  const name = document.getElementById('uName').value.trim();
+  const email = document.getElementById('uEmail').value.trim();
+  const password = document.getElementById('uPassword').value;
+  const role = document.getElementById('uRole').value;
+  const status = document.getElementById('uStatus').value;
+
+  const btn = document.getElementById('uSaveBtn');
+  btn.disabled = true; btn.textContent = 'Saving…';
+  try {
+    const body = { name, role, status };
+    if (!editingUserId) { body.email = email; body.password = password; }
+    else if (password) body.password = password;
+
+    const res = editingUserId
+      ? await api('PUT', '/api/admin/users/' + editingUserId, body)
+      : await api('POST', '/api/admin/users', body);
+    if (!res.ok) throw new Error((await res.json()).error || 'Save failed');
+    userModal.hide();
+    toast(editingUserId ? 'User updated.' : 'User created.');
+    loadUsers();
+  } catch (e) { toast(e.message, 'error'); }
+  finally { btn.disabled = false; btn.textContent = 'Save'; }
+}
+
+async function deleteUser(id, name) {
+  document.getElementById('confirmMsg').textContent = `Delete user "${name}"?`;
+  document.getElementById('confirmBtn').onclick = async () => {
+    try {
+      await api('DELETE', '/api/admin/users/' + id);
+      confirmModal.hide(); toast('User deleted.');
+      loadUsers();
+    } catch (e) { toast(e.message, 'error'); }
+  };
+  confirmModal.show();
+}
 </script>
 </body>
 </html>

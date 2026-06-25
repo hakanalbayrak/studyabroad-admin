@@ -457,6 +457,10 @@ function showComparison() {
 }
 
 load();
+
+// Capture referral code from URL
+const ref = new URLSearchParams(location.search).get('ref');
+if (ref) localStorage.setItem('sa_referral', ref);
 </script>
 </body>
 </html>
