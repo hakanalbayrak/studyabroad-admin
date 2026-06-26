@@ -806,6 +806,76 @@
   </div>
 </div>
 
+<!-- Detailed requirements (eligibility) editor modal -->
+<div class="modal fade" id="reqModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title"><i class="bi bi-gear me-2 text-info"></i>Detailed Requirements</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted small">These structured requirements drive the public eligibility matcher. Leave a section empty to skip it.</p>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Minimum education level</label>
+            <select class="form-select" id="reqLevel" onchange="reqChanged()"
+              style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="none">None / not required</option>
+              <option value="highschool">High school</option>
+              <option value="bachelor">Bachelor</option>
+              <option value="master">Master</option>
+              <option value="phd">PhD</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">Minimum GPA</label>
+            <input type="number" step="0.01" class="form-control" id="reqGpaMin" oninput="reqChanged()"
+              placeholder="e.g. 3.0" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">GPA scale</label>
+            <select class="form-select" id="reqGpaScale" onchange="reqChanged()"
+              style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="4.0">4.0</option>
+              <option value="4.3">4.3</option>
+              <option value="5.0">5.0</option>
+              <option value="10.0">10.0</option>
+              <option value="20">20</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+        </div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h6 class="fw-semibold mb-0">Qualifications <span class="text-muted small fw-normal">(accepted if ANY one matches)</span></h6>
+          <button type="button" class="btn btn-outline-light btn-sm" onclick="reqAddQual()"><i class="bi bi-plus"></i> Add</button>
+        </div>
+        <div id="reqQuals"></div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h6 class="fw-semibold mb-0">English tests <span class="text-muted small fw-normal">(accepted if ANY one matches)</span></h6>
+          <button type="button" class="btn btn-outline-light btn-sm" onclick="reqAddEng()"><i class="bi bi-plus"></i> Add</button>
+        </div>
+        <div id="reqEng"></div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h6 class="fw-semibold mb-0">Standardized tests <span class="text-muted small fw-normal">(accepted if ANY one matches)</span></h6>
+          <button type="button" class="btn btn-outline-light btn-sm" onclick="reqAddStd()"><i class="bi bi-plus"></i> Add</button>
+        </div>
+        <div id="reqStd"></div>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-primary" data-bs-dismiss="modal"><i class="bi bi-check-lg me-1"></i>Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Go to top button -->
 <button id="goTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})"
   title="Back to top"
@@ -1319,7 +1389,7 @@ async function fetchWikiDescription() {
 }
 
 function addProgram() {
-  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', scholarship_available:false, description_en:'', status:'active' });
+  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', scholarship_available:false, description_en:'', status:'active', requirements_json:null });
   renderPrograms();
   setTimeout(() => {
     const cards = document.querySelectorAll('.program-card');
@@ -1453,6 +1523,14 @@ function renderPrograms() {
               oninput="updProg(${i},'description_en',this.value)"
               placeholder="Additional notes...">${esc(p.description_en||'')}</textarea>
           </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-outline-info btn-sm" onclick="openReqEditor(${i})">
+              <i class="bi bi-gear me-1"></i>Detailed Requirements (eligibility)
+            </button>
+            <div class="form-text text-muted small mt-1">
+              The detailed editor powers the eligibility matcher on the public site. The simple English / GPA fields above still feed legacy columns and list filters.
+            </div>
+          </div>
         </div>
       </div>
     </div>`;
@@ -1462,6 +1540,125 @@ function renderPrograms() {
     const el = document.getElementById(`pt_${i}`);
     if (el && p.program_type_id) el.value = p.program_type_id;
   });
+}
+
+// ── Detailed requirements (eligibility) editor ─────────────────────────────────
+let reqEditingIdx = -1;
+const REQ_QUAL_TYPES = ['IB','A-Level','AP','National Diploma','Foundation','Other'];
+const REQ_ENG_TESTS  = ['IELTS','TOEFL','Duolingo','PTE','Cambridge'];
+const REQ_STD_TESTS  = ['GRE','GMAT','SAT'];
+// Working draft of the lists while the modal is open
+let reqDraft = { quals: [], eng: [], std: [] };
+
+function reqParse(raw) {
+  if (!raw) return null;
+  if (typeof raw === 'object') return raw;
+  try { return JSON.parse(raw); } catch (e) { return null; }
+}
+
+function openReqEditor(i) {
+  reqEditingIdx = i;
+  const reqs = reqParse(formPrograms[i].requirements_json) || {};
+  document.getElementById('reqLevel').value = reqs.education_level || 'none';
+  document.getElementById('reqGpaMin').value = (reqs.gpa && reqs.gpa.min != null) ? reqs.gpa.min : '';
+  document.getElementById('reqGpaScale').value = (reqs.gpa && reqs.gpa.scale) ? String(reqs.gpa.scale) : '4.0';
+  reqDraft = {
+    quals: Array.isArray(reqs.qualifications) ? reqs.qualifications.map(q => ({ type: q.type || 'IB', min: q.min != null ? String(q.min) : '' })) : [],
+    eng:   Array.isArray(reqs.english) ? reqs.english.map(e => ({ test: e.test || 'IELTS', min: e.min != null ? String(e.min) : '' })) : [],
+    std:   Array.isArray(reqs.standardized) ? reqs.standardized.map(s => ({ test: s.test || 'GRE', min: s.min != null ? String(s.min) : '' })) : []
+  };
+  reqRenderLists();
+  const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('reqModal'));
+  modal.show();
+}
+
+function reqSelect(options, current) {
+  return options.map(o => `<option ${String(current) === o ? 'selected' : ''} value="${esc(o)}">${esc(o)}</option>`).join('');
+}
+
+function reqRenderLists() {
+  const selStyle = 'background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0';
+  const inStyle  = 'background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0';
+
+  document.getElementById('reqQuals').innerHTML = reqDraft.quals.map((q, k) => `
+    <div class="row g-2 mb-2 align-items-center">
+      <div class="col-5">
+        <select class="form-select form-select-sm" style="${selStyle}" onchange="reqUpd('quals',${k},'type',this.value)">
+          ${reqSelect(REQ_QUAL_TYPES, q.type)}
+        </select>
+      </div>
+      <div class="col-6">
+        <input type="text" class="form-control form-control-sm" style="${inStyle}" value="${esc(q.min||'')}"
+          oninput="reqUpd('quals',${k},'min',this.value)" placeholder='min, e.g. "32" or "BBB" (blank = no minimum)'>
+      </div>
+      <div class="col-1 text-end">
+        <button type="button" class="btn btn-outline-danger btn-sm py-0 px-2" onclick="reqDel('quals',${k})"><i class="bi bi-x"></i></button>
+      </div>
+    </div>`).join('') || '<div class="text-muted small mb-2">No qualifications added.</div>';
+
+  document.getElementById('reqEng').innerHTML = reqDraft.eng.map((e, k) => `
+    <div class="row g-2 mb-2 align-items-center">
+      <div class="col-5">
+        <select class="form-select form-select-sm" style="${selStyle}" onchange="reqUpd('eng',${k},'test',this.value)">
+          ${reqSelect(REQ_ENG_TESTS, e.test)}
+        </select>
+      </div>
+      <div class="col-6">
+        <input type="number" step="0.1" class="form-control form-control-sm" style="${inStyle}" value="${esc(e.min||'')}"
+          oninput="reqUpd('eng',${k},'min',this.value)" placeholder="min score, e.g. 6.5">
+      </div>
+      <div class="col-1 text-end">
+        <button type="button" class="btn btn-outline-danger btn-sm py-0 px-2" onclick="reqDel('eng',${k})"><i class="bi bi-x"></i></button>
+      </div>
+    </div>`).join('') || '<div class="text-muted small mb-2">No English tests added.</div>';
+
+  document.getElementById('reqStd').innerHTML = reqDraft.std.map((s, k) => `
+    <div class="row g-2 mb-2 align-items-center">
+      <div class="col-5">
+        <select class="form-select form-select-sm" style="${selStyle}" onchange="reqUpd('std',${k},'test',this.value)">
+          ${reqSelect(REQ_STD_TESTS, s.test)}
+        </select>
+      </div>
+      <div class="col-6">
+        <input type="number" step="1" class="form-control form-control-sm" style="${inStyle}" value="${esc(s.min||'')}"
+          oninput="reqUpd('std',${k},'min',this.value)" placeholder="min score, e.g. 310">
+      </div>
+      <div class="col-1 text-end">
+        <button type="button" class="btn btn-outline-danger btn-sm py-0 px-2" onclick="reqDel('std',${k})"><i class="bi bi-x"></i></button>
+      </div>
+    </div>`).join('') || '<div class="text-muted small mb-2">No standardized tests added.</div>';
+}
+
+function reqAddQual() { reqDraft.quals.push({ type: 'IB', min: '' }); reqRenderLists(); reqChanged(); }
+function reqAddEng()  { reqDraft.eng.push({ test: 'IELTS', min: '' }); reqRenderLists(); reqChanged(); }
+function reqAddStd()  { reqDraft.std.push({ test: 'GRE', min: '' }); reqRenderLists(); reqChanged(); }
+function reqDel(list, k) { reqDraft[list].splice(k, 1); reqRenderLists(); reqChanged(); }
+function reqUpd(list, k, field, val) { if (reqDraft[list][k]) { reqDraft[list][k][field] = val; reqChanged(); } }
+
+// Assemble and write back to formPrograms[reqEditingIdx].requirements_json (omit empty sections)
+function reqChanged() {
+  if (reqEditingIdx < 0 || !formPrograms[reqEditingIdx]) return;
+  const out = {};
+  const level = document.getElementById('reqLevel').value;
+  if (level && level !== 'none') out.education_level = level;
+
+  const gpaMin = document.getElementById('reqGpaMin').value.trim();
+  if (gpaMin !== '') out.gpa = { min: parseFloat(gpaMin), scale: document.getElementById('reqGpaScale').value };
+
+  const quals = reqDraft.quals.filter(q => q.type).map(q => {
+    const o = { type: q.type };
+    if (q.min != null && String(q.min).trim() !== '') o.min = String(q.min).trim();
+    return o;
+  });
+  if (quals.length) out.qualifications = quals;
+
+  const eng = reqDraft.eng.filter(e => e.test && String(e.min).trim() !== '').map(e => ({ test: e.test, min: parseFloat(e.min) }));
+  if (eng.length) out.english = eng;
+
+  const std = reqDraft.std.filter(s => s.test && String(s.min).trim() !== '').map(s => ({ test: s.test, min: parseFloat(s.min) }));
+  if (std.length) out.standardized = std;
+
+  formPrograms[reqEditingIdx].requirements_json = Object.keys(out).length ? out : null;
 }
 
 async function saveEntity() {
