@@ -67,6 +67,63 @@ async function sendLeadNotification(lead) {
   }
 }
 
+// Reply to a student lead from the admin panel. Returns true if sent.
+async function sendLeadReply(toEmail, studentName, body) {
+  const t = getTransport();
+  if (!t) return false;
+
+  const subject = 'Re: Your study abroad inquiry';
+  const safeBody = esc(body).replace(/\n/g, '<br>');
+  const text = `Hi ${studentName || ''},\n\n${body}\n\n— Study Abroad Team`;
+  const html = `
+    <div style="font-family:system-ui,sans-serif;max-width:520px;color:#1e293b">
+      <div style="background:#6366f1;color:#fff;padding:16px 20px;border-radius:10px 10px 0 0">
+        <strong>Study Abroad</strong>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-top:none;padding:20px;border-radius:0 0 10px 10px;font-size:.92rem;line-height:1.55">
+        <p>Hi ${esc(studentName || 'there')},</p>
+        <p>${safeBody}</p>
+        <p style="color:#64748b;margin-top:20px">— Study Abroad Team</p>
+      </div>
+    </div>`;
+
+  try {
+    await t.sendMail({ from: `"Study Abroad" <${process.env.SMTP_USER}>`, to: toEmail, subject, text, html });
+    return true;
+  } catch (e) {
+    console.error('[mailer] Failed to send lead reply:', e.message);
+    return false;
+  }
+}
+
+// Send a passwordless sign-in code. Returns true if sent.
+async function sendOtpCode(email, code) {
+  const t = getTransport();
+  if (!t) return false;
+
+  const subject = `Your sign-in code: ${code}`;
+  const text = `Your Study Abroad sign-in code is: ${code}\n\nIt expires in 10 minutes. If you didn't request this, ignore this email.`;
+  const html = `
+    <div style="font-family:system-ui,sans-serif;max-width:480px;color:#1e293b">
+      <div style="background:#6366f1;color:#fff;padding:16px 20px;border-radius:10px 10px 0 0">
+        <strong>Study Abroad — Sign In</strong>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-top:none;padding:24px 20px;border-radius:0 0 10px 10px;text-align:center">
+        <p style="color:#64748b;margin:0 0 12px">Your sign-in code is</p>
+        <div style="font-size:2rem;font-weight:700;letter-spacing:8px;color:#1e293b">${esc(code)}</div>
+        <p style="color:#94a3b8;font-size:.82rem;margin-top:16px">Expires in 10 minutes. If you didn't request this, ignore this email.</p>
+      </div>
+    </div>`;
+
+  try {
+    await t.sendMail({ from: `"Study Abroad" <${process.env.SMTP_USER}>`, to: email, subject, text, html });
+    return true;
+  } catch (e) {
+    console.error('[mailer] Failed to send OTP code:', e.message);
+    return false;
+  }
+}
+
 function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-module.exports = { sendLeadNotification };
+module.exports = { sendLeadNotification, sendLeadReply, sendOtpCode };

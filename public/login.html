@@ -14,7 +14,8 @@
     .form-control::placeholder { color: #475569; }
     .btn-primary { background: #6366f1; border-color: #6366f1; }
     .btn-primary:hover { background: #4f46e5; border-color: #4f46e5; }
-    a { color: #818cf8; }
+    a { color: #818cf8; cursor: pointer; }
+    .code-input { letter-spacing: 8px; text-align: center; font-size: 1.4rem; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -22,56 +23,126 @@
     <div class="text-center mb-4">
       <i class="bi bi-globe-americas" style="font-size:2.4rem;color:#818cf8"></i>
       <h5 class="fw-bold mt-2 mb-0 text-white">Study Abroad</h5>
-      <p class="text-muted small mt-1">Sign in to your account</p>
+      <p class="text-muted small mt-1" id="subtitle">Sign in with your email</p>
     </div>
     <div id="errBox" class="alert alert-danger d-none small py-2 mb-3"></div>
-    <div class="mb-3">
-      <label class="form-label small fw-semibold text-muted">Email</label>
-      <input type="email" id="email" class="form-control" placeholder="you@example.com" autocomplete="email">
+    <div id="okBox" class="alert alert-success d-none small py-2 mb-3"></div>
+
+    <!-- Step 1: email (OTP request) -->
+    <div id="emailStep">
+      <div class="mb-3">
+        <label class="form-label small fw-semibold text-muted">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="you@example.com" autocomplete="email">
+      </div>
+      <button id="otpBtn" class="btn btn-primary w-100 fw-semibold" onclick="requestCode()"><i class="bi bi-envelope me-1"></i>Email me a sign-in code</button>
     </div>
-    <div class="mb-4">
-      <label class="form-label small fw-semibold text-muted">Password</label>
-      <input type="password" id="password" class="form-control" placeholder="••••••••" autocomplete="current-password">
+
+    <!-- Step 2: code entry -->
+    <div id="codeStep" class="d-none">
+      <p class="small text-muted mb-2">Enter the 6-digit code we sent to <strong id="codeEmailLabel"></strong>.</p>
+      <input type="text" inputmode="numeric" maxlength="6" id="code" class="form-control code-input mb-3" placeholder="••••••">
+      <button id="verifyBtn" class="btn btn-primary w-100 fw-semibold" onclick="verifyCode()">Verify & Sign In</button>
+      <div class="text-center small mt-3">
+        <a onclick="resendCode()">Resend code</a> · <a onclick="backToEmail()">Use a different email</a>
+      </div>
     </div>
-    <button id="loginBtn" class="btn btn-primary w-100 fw-semibold" onclick="doLogin()">Sign In</button>
+
+    <!-- Staff password login -->
+    <div id="pwStep" class="d-none">
+      <div class="mb-3">
+        <label class="form-label small fw-semibold text-muted">Email</label>
+        <input type="email" id="pwEmail" class="form-control" placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="mb-4">
+        <label class="form-label small fw-semibold text-muted">Password</label>
+        <input type="password" id="pwPassword" class="form-control" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <button id="pwBtn" class="btn btn-primary w-100 fw-semibold" onclick="passwordLogin()">Sign In</button>
+    </div>
+
     <hr style="border-color:rgba(255,255,255,.08);margin:20px 0">
     <div class="text-center small text-muted">
-      New student? <a href="/register">Create an account</a>
+      <a id="staffToggle" onclick="showPassword()">Staff sign-in (password)</a>
+      <span id="backToOtpWrap" class="d-none"><a onclick="showOtp()">← Sign in with email code</a></span>
     </div>
     <div class="text-center small mt-2">
       <a href="/" style="color:#475569">← Back to home</a>
     </div>
   </div>
   <script>
-    document.getElementById('password').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+    const nextParam = new URLSearchParams(location.search).get('next');
+    function $(id){ return document.getElementById(id); }
+    function showErr(m){ $('okBox').classList.add('d-none'); const e=$('errBox'); e.textContent=m; e.classList.remove('d-none'); }
+    function showOk(m){ $('errBox').classList.add('d-none'); const e=$('okBox'); e.textContent=m; e.classList.remove('d-none'); }
+    function clearMsg(){ $('errBox').classList.add('d-none'); $('okBox').classList.add('d-none'); }
 
-    async function doLogin() {
-      const email = document.getElementById('email').value.trim();
-      const password = document.getElementById('password').value;
-      const err = document.getElementById('errBox');
-      const btn = document.getElementById('loginBtn');
-      err.classList.add('d-none');
-      if (!email || !password) { err.textContent = 'Enter email and password.'; err.classList.remove('d-none'); return; }
-      btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Signing in…';
+    function finishLogin(d){
+      localStorage.setItem('sa_token', d.token);
+      localStorage.setItem('sa_role', d.role);
+      localStorage.setItem('sa_name', d.name);
+      if (d.role === 'admin') location.href = '/admin';
+      else if (d.role === 'affiliate') location.href = '/affiliate';
+      else location.href = nextParam || '/portal';
+    }
+
+    // ── OTP flow ──
+    let otpEmail = '';
+    async function requestCode(){
+      const email = $('email').value.trim();
+      clearMsg();
+      if (!email) { showErr('Enter your email.'); return; }
+      const btn = $('otpBtn'); btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sending…';
       try {
-        const res = await fetch('/api/auth/login', {
-          method: 'POST', headers: {'Content-Type':'application/json'},
-          body: JSON.stringify({ email, password })
-        });
+        const res = await fetch('/api/auth/otp/request', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email }) });
+        const d = await res.json();
+        if (!res.ok) throw new Error(d.error || 'Could not send code');
+        otpEmail = email;
+        $('codeEmailLabel').textContent = email;
+        $('emailStep').classList.add('d-none');
+        $('codeStep').classList.remove('d-none');
+        $('subtitle').textContent = 'Check your email';
+        showOk('Code sent! It expires in 10 minutes.');
+        $('code').focus();
+      } catch(e){ showErr(e.message); }
+      finally { btn.disabled = false; btn.innerHTML = '<i class="bi bi-envelope me-1"></i>Email me a sign-in code'; }
+    }
+    function resendCode(){ $('email').value = otpEmail; backToEmail(); requestCode(); }
+    function backToEmail(){ $('codeStep').classList.add('d-none'); $('emailStep').classList.remove('d-none'); $('subtitle').textContent='Sign in with your email'; clearMsg(); }
+    async function verifyCode(){
+      const code = $('code').value.trim();
+      clearMsg();
+      if (!/^\d{6}$/.test(code)) { showErr('Enter the 6-digit code.'); return; }
+      const btn = $('verifyBtn'); btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Verifying…';
+      try {
+        const res = await fetch('/api/auth/otp/verify', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email: otpEmail, code }) });
+        const d = await res.json();
+        if (!res.ok) throw new Error(d.error || 'Invalid code');
+        finishLogin(d);
+      } catch(e){ showErr(e.message); btn.disabled=false; btn.innerHTML='Verify & Sign In'; }
+    }
+
+    // ── Password flow (staff) ──
+    async function passwordLogin(){
+      const email = $('pwEmail').value.trim();
+      const password = $('pwPassword').value;
+      clearMsg();
+      if (!email || !password) { showErr('Enter email and password.'); return; }
+      const btn = $('pwBtn'); btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Signing in…';
+      try {
+        const res = await fetch('/api/auth/login', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email, password }) });
         const d = await res.json();
         if (!res.ok) throw new Error(d.error || 'Login failed');
-        localStorage.setItem('sa_token', d.token);
-        localStorage.setItem('sa_role', d.role);
-        localStorage.setItem('sa_name', d.name);
-        const next = new URLSearchParams(location.search).get('next');
-        if (d.role === 'admin') location.href = '/admin';
-        else if (d.role === 'affiliate') location.href = '/affiliate';
-        else location.href = next || '/portal';
-      } catch (e) {
-        err.textContent = e.message; err.classList.remove('d-none');
-        btn.disabled = false; btn.innerHTML = 'Sign In';
-      }
+        finishLogin(d);
+      } catch(e){ showErr(e.message); btn.disabled=false; btn.innerHTML='Sign In'; }
     }
+
+    // ── View toggles ──
+    function showPassword(){ $('emailStep').classList.add('d-none'); $('codeStep').classList.add('d-none'); $('pwStep').classList.remove('d-none'); $('staffToggle').classList.add('d-none'); $('backToOtpWrap').classList.remove('d-none'); $('subtitle').textContent='Staff sign-in'; clearMsg(); }
+    function showOtp(){ $('pwStep').classList.add('d-none'); $('emailStep').classList.remove('d-none'); $('staffToggle').classList.remove('d-none'); $('backToOtpWrap').classList.add('d-none'); $('subtitle').textContent='Sign in with your email'; clearMsg(); }
+
+    $('email').addEventListener('keydown', e => { if (e.key==='Enter') requestCode(); });
+    $('code').addEventListener('keydown', e => { if (e.key==='Enter') verifyCode(); });
+    $('pwPassword').addEventListener('keydown', e => { if (e.key==='Enter') passwordLogin(); });
   </script>
 </body>
 </html>

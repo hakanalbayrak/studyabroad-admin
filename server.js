@@ -294,7 +294,7 @@ app.delete('/api/bulk/rankings/:jobId', requireRole('admin'), (req, res) => {
 
 // ── Bulk geo-lookup (Google Places → Nominatim fallback) ──────────────────────
 const { resolveCoordinates } = require('./utils/geoLookup');
-const { sendLeadNotification } = require('./utils/mailer');
+const { sendLeadNotification, sendLeadReply } = require('./utils/mailer');
 const geoJobs = {};
 
 async function processBulkGeo(jobId, locations) {
@@ -551,6 +551,36 @@ app.patch('/api/admin/leads/:id', requireRole('admin'), async (req, res) => {
     if (!sets.length) return res.status(400).json({ error: 'Nothing to update.' });
     vals.push(req.params.id);
     await db.query(`UPDATE leads SET ${sets.join(', ')} WHERE id=?`, vals);
+    res.json({ ok: true });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Admin: list replies for a lead
+app.get('/api/admin/leads/:id/replies', requireRole('admin'), async (req, res) => {
+  try {
+    const [rows] = await db.query(
+      'SELECT id, body, sent_by, created_at FROM lead_replies WHERE lead_id = ? ORDER BY created_at ASC',
+      [req.params.id]
+    );
+    res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Admin: reply to a lead (emails the student + saves to history)
+app.post('/api/admin/leads/:id/reply', requireRole('admin'), async (req, res) => {
+  try {
+    const body = (req.body.body || '').trim();
+    if (!body) return res.status(400).json({ error: 'Reply message is required.' });
+    const [[lead]] = await db.query('SELECT id, student_name, email, status FROM leads WHERE id = ?', [req.params.id]);
+    if (!lead) return res.status(404).json({ error: 'Lead not found.' });
+
+    const sent = await sendLeadReply(lead.email, lead.student_name, body);
+    if (!sent) return res.status(500).json({ error: 'Email could not be sent. Check SMTP settings.' });
+
+    await db.query('INSERT INTO lead_replies (lead_id, body, sent_by) VALUES (?, ?, ?)',
+      [lead.id, body, req.user.email || 'admin']);
+    // Move a brand-new lead to "contacted" once we've replied
+    if (lead.status === 'new') await db.query("UPDATE leads SET status = 'contacted' WHERE id = ?", [lead.id]);
     res.json({ ok: true });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });

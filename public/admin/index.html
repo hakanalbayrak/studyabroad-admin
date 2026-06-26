@@ -779,6 +779,33 @@
   </div>
 </div>
 
+<!-- Lead detail + reply modal -->
+<div class="modal fade" id="leadModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title"><i class="bi bi-person-lines-fill me-2 text-primary"></i>Lead Details</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="leadDetailBody"></div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <h6 class="fw-semibold mb-2"><i class="bi bi-chat-left-text me-1"></i>Conversation</h6>
+        <div id="leadReplies" class="mb-3"><div class="text-muted small">Loading…</div></div>
+
+        <label class="form-label small fw-semibold">Reply to student</label>
+        <textarea id="replyBody" rows="4" class="form-control" placeholder="Type your reply… it will be emailed to the student."
+          style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0"></textarea>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary" id="sendReplyBtn" onclick="sendReply()"><i class="bi bi-send me-1"></i>Send Reply</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Go to top button -->
 <button id="goTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})"
   title="Back to top"
@@ -1801,13 +1828,13 @@ function renderLeadsTable(leads) {
         <tr>
           <th>Date</th><th>Name</th><th>Email</th><th>Phone</th>
           <th>Program</th><th>University</th><th>Country</th>
-          <th>Status</th><th>Notes</th>
+          <th>Status</th><th>Notes</th><th></th>
         </tr>
       </thead>
       <tbody>
         ${leads.map(l => `<tr>
           <td style="white-space:nowrap;color:#6c757d">${new Date(l.created_at).toLocaleDateString()}</td>
-          <td class="fw-semibold">${esc2(l.student_name)}</td>
+          <td class="fw-semibold">${esc2(l.student_name)}${l.message?' <i class="bi bi-chat-left-text-fill text-primary" style="font-size:.7rem" title="Has message"></i>':''}</td>
           <td><a href="mailto:${esc2(l.email)}" style="color:#818cf8">${esc2(l.email)}</a></td>
           <td>${esc2(l.phone||'—')}</td>
           <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(l.program_name||'')}">${esc2(l.program_name||'—')}</td>
@@ -1822,6 +1849,7 @@ function renderLeadsTable(leads) {
             <input type="text" value="${esc2(l.notes||'')}" placeholder="Add note…" class="form-control form-control-sm" style="min-width:120px;font-size:.75rem"
               onblur="updateLeadNotes(${l.id},this.value)">
           </td>
+          <td><button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem;white-space:nowrap" onclick="openLeadDetail(${l.id})"><i class="bi bi-eye me-1"></i>View</button></td>
         </tr>`).join('')}
       </tbody>
     </table>
@@ -1849,6 +1877,62 @@ async function updateLeadNotes(id, notes) {
   await api('PATCH', `/api/admin/leads/${id}`, { notes });
   const lead = allLeads.find(l => l.id === id);
   if (lead) lead.notes = notes;
+}
+
+let leadModal, currentLeadId = null;
+async function openLeadDetail(id) {
+  currentLeadId = id;
+  const l = allLeads.find(x => x.id === id);
+  if (!l) return;
+  leadModal = leadModal || new bootstrap.Modal(document.getElementById('leadModal'));
+  const row = (label, val) => `<tr><td style="padding:4px 0;color:#94a3b8;width:120px">${label}</td><td style="padding:4px 0">${esc2(val||'—')}</td></tr>`;
+  document.getElementById('leadDetailBody').innerHTML = `
+    <table style="width:100%;font-size:.86rem">
+      ${row('Name', l.student_name)}
+      ${row('Email', l.email)}
+      ${row('Phone', l.phone)}
+      ${row('Program', l.program_name)}
+      ${row('University', l.university_name)}
+      ${row('Country', l.country)}
+      ${row('Received', new Date(l.created_at).toLocaleString())}
+    </table>
+    ${l.message ? `<div class="mt-3 p-3 rounded" style="background:rgba(255,255,255,.05)"><div class="small text-muted mb-1">Student's message</div>${esc2(l.message).replace(/\n/g,'<br>')}</div>` : '<div class="mt-3 text-muted small fst-italic">No message was included.</div>'}`;
+  document.getElementById('replyBody').value = '';
+  document.getElementById('leadReplies').innerHTML = '<div class="text-muted small">Loading…</div>';
+  leadModal.show();
+  loadReplies(id);
+}
+
+async function loadReplies(id) {
+  const wrap = document.getElementById('leadReplies');
+  try {
+    const r = await api('GET', `/api/admin/leads/${id}/replies`);
+    const replies = r.ok ? await r.json() : [];
+    if (!replies.length) { wrap.innerHTML = '<div class="text-muted small fst-italic">No replies yet.</div>'; return; }
+    wrap.innerHTML = replies.map(rp => `
+      <div class="p-2 px-3 mb-2 rounded" style="background:rgba(99,102,241,.1);border-left:3px solid #6366f1">
+        <div class="small">${esc2(rp.body).replace(/\n/g,'<br>')}</div>
+        <div class="text-muted" style="font-size:.72rem;margin-top:4px">${esc2(rp.sent_by||'admin')} · ${new Date(rp.created_at).toLocaleString()}</div>
+      </div>`).join('');
+  } catch { wrap.innerHTML = '<div class="text-danger small">Failed to load replies.</div>'; }
+}
+
+async function sendReply() {
+  const body = document.getElementById('replyBody').value.trim();
+  if (!body) { toast('Write a reply first.', 'warn'); return; }
+  const btn = document.getElementById('sendReplyBtn');
+  btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Sending…';
+  try {
+    const r = await api('POST', `/api/admin/leads/${currentLeadId}/reply`, { body });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Failed to send');
+    toast('Reply sent.', 'success');
+    document.getElementById('replyBody').value = '';
+    loadReplies(currentLeadId);
+    const lead = allLeads.find(l => l.id === currentLeadId);
+    if (lead && lead.status === 'new') { lead.status = 'contacted'; filterLeads(); }
+  } catch (e) { toast(e.message, 'error'); }
+  finally { btn.disabled = false; btn.innerHTML = '<i class="bi bi-send me-1"></i>Send Reply'; }
 }
 
 function esc2(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
