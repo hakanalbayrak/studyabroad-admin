@@ -51,6 +51,16 @@ and configure things:
    (only when dependencies changed)
 4. cPanel → Node.js Apps → **Restart**
 
+## Known issue — OTP/transactional email inbox placement (parked, low priority)
+- OTP and lead emails **send fine and are Accepted** by recipient servers
+  (verified via cPanel → Track Delivery). DNS already has SPF + DKIM (set by
+  host cenuta/dnsowner.com — not Namecheap).
+- New-domain reputation means Microsoft (live/outlook) and Gmail may route them
+  to Junk for now. Warms up over time.
+- **Proper fix when needed:** route transactional mail through Brevo/Sendinblue
+  SMTP (an account already appears in the mail logs) — just swap the
+  `SMTP_HOST`/`SMTP_USER`/`SMTP_PASS` env vars, no code change.
+
 ## Email deliverability (manual SPF/DKIM — no cPanel tool)
 - **SPF** (TXT on `@`): `v=spf1 +mx +a +ip4:213.238.183.62 ~all`
 - **DKIM**: cPanel auto-generates a key when a domain is added; the TXT lives at
