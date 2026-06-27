@@ -5,96 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Study Abroad — Find Programs</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/site.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-    :root { --accent: #6366f1; }
-    body { background: #0b1120; color: #e2e8f0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; min-height: 100vh; }
-
-    /* Nav */
-    .top-nav { background: rgba(11,17,32,.95); border-bottom: 1px solid rgba(255,255,255,.08); padding: 12px 0; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); }
-    .top-nav a { color: #94a3b8; text-decoration: none; font-size: .85rem; }
-    .top-nav a:hover { color: #e2e8f0; }
-    .top-nav .page-title { color: #f1f5f9; font-weight: 700; font-size: 1rem; }
-
     /* Eligibility panel */
-    #eligPanel { background: linear-gradient(135deg, rgba(99,102,241,.12) 0%, rgba(192,132,252,.08) 100%); border: 1px solid rgba(99,102,241,.25); border-radius: 16px; padding: 20px 24px; margin-bottom: 24px; }
-    #eligPanel h6 { color: #818cf8; font-size: .8rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 14px; }
-    .elig-input { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); color: #e2e8f0; border-radius: 8px; font-size: .82rem; padding: 6px 10px; }
-    .elig-input:focus { background: rgba(255,255,255,.1); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.2); color: #e2e8f0; outline: none; }
-    .elig-input::placeholder { color: #475569; }
-    .elig-input option { background: #1e293b; }
-    .btn-match { background: linear-gradient(135deg, #6366f1, #8b5cf6); border: none; color: #fff; border-radius: 8px; font-size: .82rem; font-weight: 600; padding: 7px 18px; cursor: pointer; }
+    #eligPanel { background: var(--grad-soft); border: 1px solid rgba(99,102,241,.25); border-radius: 16px; padding: 20px 24px; margin-bottom: 24px; }
+    #eligPanel h6 { color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 14px; }
+    .elig-input { background: var(--surface); border: 1px solid var(--line); color: var(--text); border-radius: 8px; font-size: .82rem; padding: 6px 10px; }
+    .elig-input:focus { background: var(--surface); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.2); color: var(--text); outline: none; }
+    .elig-input::placeholder { color: var(--muted); }
+    .elig-input option { background: #fff; }
+    .btn-match { background: var(--grad); border: none; color: #fff; border-radius: 8px; font-size: .82rem; font-weight: 600; padding: 7px 18px; cursor: pointer; }
     .btn-match:hover { opacity: .9; }
-    .btn-reset-elig { background: transparent; border: 1px solid rgba(255,255,255,.15); color: #64748b; border-radius: 8px; font-size: .8rem; padding: 6px 14px; cursor: pointer; }
-    .btn-reset-elig:hover { border-color: rgba(255,255,255,.3); color: #94a3b8; }
+    .btn-reset-elig { background: var(--surface); border: 1px solid var(--line); color: var(--muted); border-radius: 8px; font-size: .8rem; padding: 6px 14px; cursor: pointer; }
+    .btn-reset-elig:hover { border-color: var(--accent); color: var(--accent); }
 
     /* Filter bar */
-    #filterBar { background: rgba(255,255,255,.03); border-bottom: 1px solid rgba(255,255,255,.07); padding: 14px 0; position: sticky; top: 53px; z-index: 50; backdrop-filter: blur(8px); }
-    #filterBar input, #filterBar select { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); color: #e2e8f0; border-radius: 8px; font-size: .82rem; }
-    #filterBar input::placeholder { color: #64748b; }
-    #filterBar input:focus, #filterBar select:focus { background: rgba(255,255,255,.1); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.2); color: #e2e8f0; outline: none; }
-    #filterBar select option { background: #1e293b; }
+    #filterBar { background: var(--surface); border-bottom: 1px solid var(--line); padding: 14px 0; position: sticky; top: 53px; z-index: 50; backdrop-filter: blur(8px); }
+    #filterBar input, #filterBar select { background: var(--surface); border: 1px solid var(--line); color: var(--text); border-radius: 8px; font-size: .82rem; }
+    #filterBar input::placeholder { color: var(--muted); }
+    #filterBar input:focus, #filterBar select:focus { background: var(--surface); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.2); color: var(--text); outline: none; }
+    #filterBar select option { background: #fff; }
 
     /* Stats */
-    #statsBar { background: rgba(255,255,255,.02); border-bottom: 1px solid rgba(255,255,255,.06); padding: 8px 0; font-size: .78rem; color: #475569; }
-    #statsBar b { color: #64748b; }
+    #statsBar { background: var(--surface-2); border-bottom: 1px solid var(--line); padding: 8px 0; font-size: .78rem; color: var(--muted); }
+    #statsBar b { color: var(--text); }
 
     /* Cards */
     #grid { padding: 24px 0 64px; }
     .prog-card {
-      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
-      border-radius: 14px; padding: 16px 18px; transition: all .18s; cursor: pointer;
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 14px; padding: 16px 18px; transition: all .18s; cursor: pointer; box-shadow: var(--shadow);
     }
-    .prog-card:hover { background: rgba(99,102,241,.09); border-color: rgba(99,102,241,.35); transform: translateY(-1px); box-shadow: 0 6px 24px rgba(0,0,0,.35); }
-    .prog-name { font-size: .9rem; font-weight: 700; color: #f1f5f9; margin-bottom: 4px; line-height: 1.35; }
-    .prog-uni { font-size: .78rem; color: #818cf8; margin-bottom: 8px; }
+    .prog-card:hover { border-color: rgba(99,102,241,.35); transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+    .prog-name { font-size: .9rem; font-weight: 700; color: var(--text); margin-bottom: 4px; line-height: 1.35; }
+    .prog-uni { font-size: .78rem; color: var(--accent); margin-bottom: 8px; }
     .prog-uni i { margin-right: 3px; }
     .prog-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
     .meta-chip { font-size: .7rem; padding: 2px 8px; border-radius: 20px; font-weight: 600; }
-    .chip-type { background: rgba(99,102,241,.2); color: #a5b4fc; }
-    .chip-lang { background: rgba(6,182,212,.15); color: #67e8f9; }
-    .chip-scholar { background: rgba(16,185,129,.2); color: #6ee7b7; }
-    .prog-details { display: flex; flex-wrap: wrap; gap: 12px; font-size: .75rem; color: #64748b; margin-top: 6px; }
+    .chip-type { background: rgba(99,102,241,.12); color: #4f46e5; }
+    .chip-lang { background: rgba(6,182,212,.12); color: #0891b2; }
+    .chip-scholar { background: rgba(16,185,129,.14); color: #059669; }
+    .prog-details { display: flex; flex-wrap: wrap; gap: 12px; font-size: .75rem; color: var(--muted); margin-top: 6px; }
     .prog-details span { display: flex; align-items: center; gap: 3px; }
-    .prog-fee { color: #fcd34d; font-weight: 700; font-size: .82rem; }
-    .prog-location { font-size: .73rem; color: #475569; margin-top: 5px; }
+    .prog-fee { color: #b45309; font-weight: 700; font-size: .82rem; }
+    .prog-location { font-size: .73rem; color: var(--muted); margin-top: 5px; }
 
     /* Empty / loading */
-    #emptyMsg { text-align: center; color: #475569; padding: 80px 0; }
-    #loadingMsg { text-align: center; color: #64748b; padding: 80px 0; }
+    #emptyMsg { text-align: center; color: var(--muted); padding: 80px 0; }
+    #loadingMsg { text-align: center; color: var(--muted); padding: 80px 0; }
     .spinner-ring { width: 36px; height: 36px; border: 3px solid rgba(99,102,241,.2); border-top-color: #6366f1; border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 14px; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
     /* Count */
-    #resultCount { font-size: .8rem; color: #475569; }
+    #resultCount { font-size: .8rem; color: var(--muted); }
   </style>
 </head>
-<body>
-
-<nav class="top-nav">
-  <div class="container d-flex align-items-center gap-3">
-    <a href="/"><i class="bi bi-arrow-left me-1"></i>Universities</a>
-    <span style="color:#334155">|</span>
-    <span class="page-title"><i class="bi bi-search me-1" style="color:#818cf8"></i>Find Programs</span>
-  </div>
-</nav>
+<body class="pe-theme">
 
 <!-- Eligibility banner -->
-<div style="background:linear-gradient(90deg,rgba(99,102,241,.08),rgba(139,92,246,.06));border-bottom:1px solid rgba(99,102,241,.15);padding:9px 0">
+<div style="background:var(--grad-soft);border-bottom:1px solid rgba(99,102,241,.15);padding:9px 0">
   <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
-    <span style="font-size:.82rem;color:#818cf8;font-weight:600"><i class="bi bi-magic me-1"></i>Not sure which programs suit you?</span>
-    <button onclick="toggleEligPanel()" id="eligToggleBtn" style="background:rgba(99,102,241,.2);border:1px solid rgba(99,102,241,.4);color:#a5b4fc;border-radius:8px;padding:5px 14px;font-size:.78rem;font-weight:600;cursor:pointer">
+    <span style="font-size:.82rem;color:var(--accent);font-weight:600"><i class="bi bi-magic me-1"></i>Not sure which programs suit you?</span>
+    <button onclick="toggleEligPanel()" id="eligToggleBtn" style="background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.4);color:var(--accent);border-radius:8px;padding:5px 14px;font-size:.78rem;font-weight:600;cursor:pointer">
       <i class="bi bi-sliders me-1"></i>Check my eligibility
     </button>
   </div>
 </div>
 
 <!-- Eligibility panel (collapsed by default) -->
-<div id="eligPanel" style="display:none;background:linear-gradient(135deg,rgba(15,23,42,.98),rgba(30,27,75,.95));border-bottom:1px solid rgba(99,102,241,.25);padding:20px 0">
+<div id="eligPanel" style="display:none;background:var(--surface-2);border-bottom:1px solid rgba(99,102,241,.25);padding:20px 0">
   <div class="container">
     <div class="row g-3 align-items-end">
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:#64748b;display:block;margin-bottom:4px"><i class="bi bi-mortarboard-fill me-1"></i>Highest education completed</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-mortarboard-fill me-1"></i>Highest education completed</label>
         <select id="eligLevel" class="form-select form-select-sm elig-input">
           <option value="none">None / not specified</option>
           <option value="highschool">High school</option>
@@ -104,7 +88,7 @@
         </select>
       </div>
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:#64748b;display:block;margin-bottom:4px"><i class="bi bi-patch-check-fill me-1"></i>Qualification</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-patch-check-fill me-1"></i>Qualification</label>
         <div class="input-group input-group-sm">
           <select id="eligQualType" class="form-select form-select-sm elig-input">
             <option value="">—</option>
@@ -119,7 +103,7 @@
         </div>
       </div>
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:#64748b;display:block;margin-bottom:4px"><i class="bi bi-bar-chart-fill me-1"></i>Your GPA</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-bar-chart-fill me-1"></i>Your GPA</label>
         <div class="input-group input-group-sm">
           <input type="number" id="eligGpa" class="form-control elig-input" placeholder="e.g. 3.2" min="0" step="0.01">
           <select id="eligGpaScale" class="form-select elig-input" style="max-width:80px">
@@ -133,7 +117,7 @@
         </div>
       </div>
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:#64748b;display:block;margin-bottom:4px"><i class="bi bi-translate me-1"></i>English test</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-translate me-1"></i>English test</label>
         <div class="input-group input-group-sm">
           <select id="eligEngType" class="form-select form-select-sm elig-input">
             <option value="">—</option>
@@ -147,7 +131,7 @@
         </div>
       </div>
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:#64748b;display:block;margin-bottom:4px"><i class="bi bi-clipboard-data-fill me-1"></i>Standardized test (optional)</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-clipboard-data-fill me-1"></i>Standardized test (optional)</label>
         <div class="input-group input-group-sm">
           <select id="eligStdType" class="form-select form-select-sm elig-input">
             <option value="">—</option>
@@ -159,14 +143,14 @@
         </div>
       </div>
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:#64748b;display:block;margin-bottom:4px"><i class="bi bi-currency-dollar me-1"></i>Max tuition budget ($/year)</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-currency-dollar me-1"></i>Max tuition budget ($/year)</label>
         <div class="input-group input-group-sm">
-          <span class="input-group-text" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);color:#64748b;font-size:.8rem">$</span>
+          <span class="input-group-text" style="background:var(--surface-2);border-color:var(--line);color:var(--muted);font-size:.8rem">$</span>
           <input type="number" id="eligFee" class="form-control elig-input" placeholder="e.g. 15000" min="0" step="1000">
         </div>
       </div>
       <div class="col-12 col-md-4 d-flex align-items-center gap-3">
-        <label class="d-flex align-items-center gap-2" style="font-size:.78rem;color:#cbd5e1;cursor:pointer;margin:0">
+        <label class="d-flex align-items-center gap-2" style="font-size:.78rem;color:var(--text);cursor:pointer;margin:0">
           <input type="checkbox" id="eligOnlyEligible" checked style="accent-color:#6366f1;width:16px;height:16px">
           Show only eligible programs
         </label>
@@ -176,7 +160,7 @@
         <button onclick="clearEligibility()" class="btn-reset-elig">Reset</button>
       </div>
     </div>
-    <div id="eligResult" style="display:none;margin-top:14px;padding:10px 14px;border-radius:10px;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);font-size:.82rem;color:#94a3b8"></div>
+    <div id="eligResult" style="display:none;margin-top:14px;padding:10px 14px;border-radius:10px;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);font-size:.82rem;color:var(--muted)"></div>
   </div>
 </div>
   <div class="container">
@@ -221,19 +205,19 @@
       </div>
       <div class="col-12 col-md-3">
         <div class="input-group input-group-sm">
-          <span class="input-group-text" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);color:#64748b;font-size:.75rem">Max fee $</span>
+          <span class="input-group-text" style="background:var(--surface-2);border-color:var(--line);color:var(--muted);font-size:.75rem">Max fee $</span>
           <input type="number" class="form-control" id="maxFeeInput" placeholder="e.g. 15000" min="0" step="1000" oninput="debounceApply()">
         </div>
       </div>
       <div class="col-12 col-md-6 text-md-end d-flex align-items-center justify-content-md-end gap-2 flex-wrap">
         <span id="resultCount"></span>
-        <select class="form-select form-select-sm" id="perPageSelect" style="width:auto;background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);color:#94a3b8;font-size:.75rem" onchange="changePerPage()">
+        <select class="form-select form-select-sm" id="perPageSelect" style="width:auto;background:var(--surface);border-color:var(--line);color:var(--muted);font-size:.75rem" onchange="changePerPage()">
           <option value="12">12 / page</option>
           <option value="24" selected>24 / page</option>
           <option value="48">48 / page</option>
           <option value="96">96 / page</option>
         </select>
-        <button class="btn btn-sm" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#94a3b8;font-size:.75rem;border-radius:8px" onclick="clearFilters()">
+        <button class="btn btn-sm" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.75rem;border-radius:8px" onclick="clearFilters()">
           <i class="bi bi-x-lg me-1"></i>Clear filters
         </button>
       </div>
@@ -281,7 +265,7 @@ async function init() {
     updateStats();
     document.getElementById('loadingMsg').style.display = 'none';
   } catch (e) {
-    document.getElementById('loadingMsg').innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#f87171"></i>Could not load programs.';
+    document.getElementById('loadingMsg').innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>Could not load programs.';
   }
 }
 
@@ -376,7 +360,7 @@ function renderCards() {
   container.innerHTML = shown.map(p => {
     const fee = p.tuition_fee
       ? `<span class="prog-fee">$${Number(p.tuition_fee).toLocaleString()}</span>`
-      : '<span style="color:#475569;font-size:.75rem">Fee on request</span>';
+      : '<span style="color:var(--muted);font-size:.75rem">Fee on request</span>';
     const engReq = p.english_req_type && p.english_req_type !== 'None'
       ? `<span><i class="bi bi-translate"></i>${p.english_req_type}${p.english_req_score ? ' ' + p.english_req_score : ''}</span>`
       : '';
@@ -390,12 +374,12 @@ function renderCards() {
       const m = eligMatch(p);
       if (m) {
         if (m.eligible) {
-          eligBlock = `<div style="margin-top:10px"><span style="display:inline-block;background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.4);color:#6ee7b7;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px"><i class="bi bi-check-circle-fill me-1"></i>Eligible</span></div>`;
+          eligBlock = `<div style="margin-top:10px"><span style="display:inline-block;background:rgba(16,185,129,.14);border:1px solid rgba(16,185,129,.4);color:#059669;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px"><i class="bi bi-check-circle-fill me-1"></i>Eligible</span></div>`;
         } else {
           const fails = m.results.filter(r => !r.pass)
-            .map(r => `<span style="display:inline-block;background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.35);color:#fca5a5;font-size:.68rem;padding:2px 8px;border-radius:999px;margin:2px 3px 0 0">${esc(r.label + (r.detail ? ': ' + r.detail : ''))}</span>`)
+            .map(r => `<span style="display:inline-block;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.35);color:#dc2626;font-size:.68rem;padding:2px 8px;border-radius:999px;margin:2px 3px 0 0">${esc(r.label + (r.detail ? ': ' + r.detail : ''))}</span>`)
             .join('');
-          eligBlock = `<div style="margin-top:10px"><span style="display:inline-block;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.4);color:#fcd34d;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px"><i class="bi bi-exclamation-circle-fill me-1"></i>Partial</span><div style="margin-top:6px">${fails}</div></div>`;
+          eligBlock = `<div style="margin-top:10px"><span style="display:inline-block;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.4);color:#b45309;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px"><i class="bi bi-exclamation-circle-fill me-1"></i>Partial</span><div style="margin-top:6px">${fails}</div></div>`;
         }
       }
     }
@@ -412,13 +396,13 @@ function renderCards() {
           </div>
           <div class="d-flex align-items-center justify-content-between">
             ${fee}
-            <span class="prog-location"><i class="bi bi-geo-alt-fill me-1" style="color:#475569"></i>${[p.city, p.country].filter(Boolean).join(', ')}</span>
+            <span class="prog-location"><i class="bi bi-geo-alt-fill me-1" style="color:var(--muted)"></i>${[p.city, p.country].filter(Boolean).join(', ')}</span>
           </div>
           ${(duration || intake || engReq || gpa) ? `<div class="prog-details">${[duration, intake, engReq, gpa].filter(Boolean).join('')}</div>` : ''}
           ${eligBlock}
         </div>
-        <div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,.06)">
-          <button class="btn btn-sm w-100" style="background:rgba(99,102,241,.18);border:1px solid rgba(99,102,241,.35);color:#a5b4fc;font-size:.78rem;font-weight:600;border-radius:8px"
+        <div style="margin-top:12px;padding-top:10px;border-top:1px solid var(--line)">
+          <button class="btn btn-sm w-100" style="background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.35);color:var(--accent);font-size:.78rem;font-weight:600;border-radius:8px"
             onclick="event.stopPropagation();openLeadModal(${p.id})">
             <i class="bi bi-envelope-fill me-1"></i>Request Info
           </button>
@@ -436,10 +420,10 @@ function renderPagination(totalPages) {
 
   const btn = (label, page, opts = {}) => {
     const { disabled = false, active = false } = opts;
-    const base = 'border:1px solid rgba(255,255,255,.12);font-size:.8rem;border-radius:8px;min-width:38px;padding:6px 10px;';
+    const base = 'border:1px solid var(--line);font-size:.8rem;border-radius:8px;min-width:38px;padding:6px 10px;';
     const style = active
       ? base + 'background:#6366f1;color:#fff;border-color:#6366f1;font-weight:600'
-      : base + `background:rgba(255,255,255,.05);color:${disabled ? '#475569' : '#cbd5e1'};` + (disabled ? 'cursor:not-allowed' : 'cursor:pointer');
+      : base + `background:var(--surface);color:${disabled ? 'var(--muted)' : 'var(--text)'};` + (disabled ? 'cursor:not-allowed' : 'cursor:pointer');
     return `<button class="btn btn-sm" style="${style}" ${disabled ? 'disabled' : `onclick="goToPage(${page})"`}>${label}</button>`;
   };
 
@@ -453,10 +437,10 @@ function renderPagination(totalPages) {
 
   let html = btn('<i class="bi bi-chevron-left"></i>', currentPage - 1, { disabled: currentPage === 1 });
   html += pages.map(p => p === '…'
-    ? `<span style="color:#475569;padding:0 4px">…</span>`
+    ? `<span style="color:var(--muted);padding:0 4px">…</span>`
     : btn(p, p, { active: p === currentPage })).join('');
   html += btn('<i class="bi bi-chevron-right"></i>', currentPage + 1, { disabled: currentPage === totalPages });
-  html += `<span style="color:#475569;font-size:.78rem;margin-left:8px">Page ${currentPage} of ${totalPages}</span>`;
+  html += `<span style="color:var(--muted);font-size:.78rem;margin-left:8px">Page ${currentPage} of ${totalPages}</span>`;
   nav.innerHTML = html;
 }
 
@@ -561,7 +545,7 @@ function applyEligibility() {
   const el = document.getElementById('eligResult');
   el.style.display = 'block';
   if (!eligActive) {
-    el.innerHTML = '<i class="bi bi-info-circle me-1" style="color:#94a3b8"></i>Enter your profile above, then press Match.';
+    el.innerHTML = '<i class="bi bi-info-circle me-1" style="color:var(--muted)"></i>Enter your profile above, then press Match.';
     return;
   }
   // Count truly-eligible programs across the whole catalogue (not just current page),
@@ -579,10 +563,10 @@ function applyEligibility() {
   if (engType) criteria.push(esc(engType) + (engScoreRaw ? ' ' + esc(engScoreRaw) : ''));
   if (stdType) criteria.push(esc(stdType) + (stdScoreRaw ? ' ' + esc(stdScoreRaw) : ''));
   if (eligCriteria.maxFee !== null) criteria.push('budget $' + eligCriteria.maxFee.toLocaleString());
-  el.innerHTML = `<i class="bi bi-check-circle-fill me-1" style="color:#6ee7b7"></i>
-    <b style="color:#f1f5f9">${eligibleCount} program${eligibleCount !== 1 ? 's' : ''}</b> match your profile
-    ${criteria.length ? `<span style="color:#64748b"> · ${criteria.join(', ')}</span>` : ''}.
-    <button onclick="clearEligibility()" style="background:none;border:none;color:#818cf8;font-size:.78rem;cursor:pointer;margin-left:8px;text-decoration:underline">Clear</button>`;
+  el.innerHTML = `<i class="bi bi-check-circle-fill me-1" style="color:#059669"></i>
+    <b style="color:var(--text)">${eligibleCount} program${eligibleCount !== 1 ? 's' : ''}</b> match your profile
+    ${criteria.length ? `<span style="color:var(--muted)"> · ${criteria.join(', ')}</span>` : ''}.
+    <button onclick="clearEligibility()" style="background:none;border:none;color:var(--accent);font-size:.78rem;cursor:pointer;margin-left:8px;text-decoration:underline">Clear</button>`;
 }
 
 function clearEligibility() {
@@ -668,45 +652,46 @@ init();
 </script>
 
 <!-- Lead Modal -->
-<div id="leadModal" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.7);align-items:center;justify-content:center;padding:16px" onclick="if(event.target===this)closeLeadModal()">
-  <div style="background:#1e293b;border:1px solid rgba(255,255,255,.12);border-radius:16px;width:100%;max-width:480px;padding:28px 28px 24px">
+<div id="leadModal" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(30,41,59,.45);align-items:center;justify-content:center;padding:16px" onclick="if(event.target===this)closeLeadModal()">
+  <div style="background:var(--surface);border:1px solid var(--line);border-radius:16px;width:100%;max-width:480px;padding:28px 28px 24px;box-shadow:var(--shadow-lg)">
     <div class="d-flex justify-content-between align-items-start mb-3">
       <div>
-        <div style="font-size:.7rem;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Request Information</div>
-        <div id="leadProgName" style="font-size:1rem;font-weight:700;color:#f1f5f9;line-height:1.3"></div>
-        <div id="leadUniName" style="font-size:.82rem;color:#818cf8;margin-top:2px"></div>
+        <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Request Information</div>
+        <div id="leadProgName" style="font-size:1rem;font-weight:700;color:var(--text);line-height:1.3"></div>
+        <div id="leadUniName" style="font-size:.82rem;color:var(--accent);margin-top:2px"></div>
       </div>
-      <button onclick="closeLeadModal()" style="background:none;border:none;color:#475569;font-size:1.2rem;cursor:pointer;padding:0 0 0 12px">&times;</button>
+      <button onclick="closeLeadModal()" style="background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;padding:0 0 0 12px">&times;</button>
     </div>
 
     <div id="leadFormBody">
       <div class="mb-3">
-        <input id="leadName" type="text" placeholder="Your full name *" style="width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#e2e8f0;border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='rgba(255,255,255,.12)'">
+        <input id="leadName" type="text" placeholder="Your full name *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
       </div>
       <div class="mb-3">
-        <input id="leadEmail" type="email" placeholder="Email address *" style="width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#e2e8f0;border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='rgba(255,255,255,.12)'">
+        <input id="leadEmail" type="email" placeholder="Email address *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
       </div>
       <div class="mb-3">
-        <input id="leadPhone" type="tel" placeholder="Phone / WhatsApp (optional)" style="width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#e2e8f0;border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='rgba(255,255,255,.12)'">
+        <input id="leadPhone" type="tel" placeholder="Phone / WhatsApp (optional)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
       </div>
       <div class="mb-3">
-        <textarea id="leadMsg" rows="3" placeholder="Any questions or comments (optional)" style="width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#e2e8f0;border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none;resize:vertical" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='rgba(255,255,255,.12)'"></textarea>
+        <textarea id="leadMsg" rows="3" placeholder="Any questions or comments (optional)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none;resize:vertical" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'"></textarea>
       </div>
-      <div id="leadError" style="color:#f87171;font-size:.8rem;margin-bottom:8px"></div>
+      <div id="leadError" style="color:#dc2626;font-size:.8rem;margin-bottom:8px"></div>
       <div class="d-flex gap-2">
-        <button id="leadSubmitBtn" onclick="submitLead()" style="flex:1;background:linear-gradient(135deg,#6366f1,#8b5cf6);border:none;color:#fff;font-weight:700;font-size:.9rem;padding:10px;border-radius:8px;cursor:pointer">Send Request</button>
-        <button onclick="closeLeadModal()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#94a3b8;font-size:.88rem;padding:10px 16px;border-radius:8px;cursor:pointer">Cancel</button>
+        <button id="leadSubmitBtn" onclick="submitLead()" style="flex:1;background:var(--grad);border:none;color:#fff;font-weight:700;font-size:.9rem;padding:10px;border-radius:8px;cursor:pointer">Send Request</button>
+        <button onclick="closeLeadModal()" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.88rem;padding:10px 16px;border-radius:8px;cursor:pointer">Cancel</button>
       </div>
     </div>
 
     <div id="leadSuccess" class="d-none text-center" style="padding:16px 0">
       <div style="font-size:2.5rem;margin-bottom:12px">✅</div>
-      <div style="font-size:1.05rem;font-weight:700;color:#f1f5f9;margin-bottom:6px">Request sent!</div>
-      <div style="font-size:.85rem;color:#94a3b8;margin-bottom:20px">We'll be in touch soon.</div>
-      <button onclick="closeLeadModal()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#94a3b8;font-size:.88rem;padding:8px 20px;border-radius:8px;cursor:pointer">Close</button>
+      <div style="font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:6px">Request sent!</div>
+      <div style="font-size:.85rem;color:var(--muted);margin-bottom:20px">We'll be in touch soon.</div>
+      <button onclick="closeLeadModal()" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.88rem;padding:8px 20px;border-radius:8px;cursor:pointer">Close</button>
     </div>
   </div>
 </div>
 
+<script src="/js/chrome.js"></script>
 </body>
 </html>
