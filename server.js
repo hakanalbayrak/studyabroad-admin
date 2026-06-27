@@ -691,5 +691,10 @@ app.get('/api/auto/remind', async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+// 404 handler — must be last
+app.use((req, res) => {
+  res.status(404).sendFile(path.join(__dirname, 'public/404.html'));
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
