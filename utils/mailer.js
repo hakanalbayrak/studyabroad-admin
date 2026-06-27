@@ -278,10 +278,93 @@ async function sendStatusUpdate(app, newStatus) {
   }
 }
 
+const CEFR_LABELS = {
+  A1: 'Başlangıç (A1)',
+  A2: 'Temel (A2)',
+  B1: 'Orta-Alt (B1)',
+  B2: 'Orta-Üst (B2)',
+  C1: 'İleri (C1)',
+  C2: 'Üst (C2)',
+};
+
+const CEFR_ADVICE = {
+  A1: 'Temel İngilizce kursu ile başlamanızı öneririz.',
+  A2: 'Temel seviyedesiniz. Düzenli pratikle hızla ilerliyebilirsiniz.',
+  B1: 'Orta seviyedesiniz. IELTS / TOEFL hazırlığı için ideal başlangıç noktasındasınız.',
+  B2: 'İyi bir seviyedesiniz! Birçok üniversite programı için yeterlisiniz. IELTS 6.0–6.5 hedefiniz olabilir.',
+  C1: 'Çok iyi! İleri düzey programlar ve IELTS 7.0+ hedefleri için hazırsınız.',
+  C2: 'Mükemmel! Neredeyse anadil seviyesindesiniz.',
+};
+
+// Email test result + IELTS/TOEFL affiliate upsell to taker. Returns true if sent.
+async function sendEnglishTestResult(email, level, score) {
+  const t = getTransport();
+  if (!t) return false;
+  const label = CEFR_LABELS[level] || level;
+  const advice = CEFR_ADVICE[level] || '';
+  const html = `
+    <div style="font-family:system-ui,sans-serif;max-width:540px;color:#1e293b">
+      <div style="background:linear-gradient(135deg,#6366f1,#8b5cf6,#06b6d4);color:#fff;padding:20px;border-radius:12px 12px 0 0">
+        <div style="font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;opacity:.9">PANELEDU — İngilizce Seviye Testi</div>
+        <div style="font-size:1.5rem;font-weight:800;margin-top:6px">${esc(label)}</div>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-top:none;padding:22px;border-radius:0 0 12px 12px;line-height:1.6">
+        <p>Tebrikler! 20 soruluk testten <strong>${score}</strong> doğru yanıt ile <strong>${esc(label)}</strong> seviyesindesiniz.</p>
+        <p>${esc(advice)}</p>
+
+        <hr style="border:none;border-top:1px solid #e2e8f0;margin:18px 0">
+        <p style="font-weight:700;margin-bottom:10px">Seviyenizi geliştirin 📈</p>
+        <table style="width:100%;border-collapse:collapse;font-size:.9rem">
+          <tr>
+            <td style="padding:8px 12px;background:#f8fafc;border-radius:8px;margin-bottom:6px">
+              <strong>IELTS Hazırlık</strong><br>
+              <span style="color:#64748b;font-size:.85rem">Resmi sınav için en kapsamlı kurs</span><br>
+              <a href="https://www.britishcouncil.org.tr/sinav/ielts" style="color:#6366f1;font-size:.85rem">→ British Council IELTS</a>
+            </td>
+          </tr>
+          <tr><td style="height:6px"></td></tr>
+          <tr>
+            <td style="padding:8px 12px;background:#f8fafc;border-radius:8px">
+              <strong>TOEFL Hazırlık</strong><br>
+              <span style="color:#64748b;font-size:.85rem">ABD üniversiteleri için standart sınav</span><br>
+              <a href="https://www.ets.org/toefl" style="color:#6366f1;font-size:.85rem">→ ETS TOEFL</a>
+            </td>
+          </tr>
+          <tr><td style="height:6px"></td></tr>
+          <tr>
+            <td style="padding:8px 12px;background:#f8fafc;border-radius:8px">
+              <strong>Duolingo English Test</strong><br>
+              <span style="color:#64748b;font-size:.85rem">Online, hızlı ve 500+ üniversite kabul ediyor</span><br>
+              <a href="https://englishtest.duolingo.com" style="color:#6366f1;font-size:.85rem">→ Duolingo English Test</a>
+            </td>
+          </tr>
+        </table>
+
+        <hr style="border:none;border-top:1px solid #e2e8f0;margin:18px 0">
+        <p style="font-size:.9rem">Yurt dışı eğitim başvurusuna hazır mısınız? <a href="${process.env.APP_URL || 'https://paneledu.com'}/match" style="color:#6366f1;font-weight:700">Okul bul →</a></p>
+        <p style="color:#94a3b8;font-size:.8rem">— PANELEDU Ekibi</p>
+      </div>
+    </div>`;
+  try {
+    await t.sendMail({
+      from: `"PANELEDU" <${process.env.SMTP_USER}>`,
+      to: email,
+      subject: `İngilizce seviyeniz: ${label} — PANELEDU`,
+      text: `Tebrikler! 20 sorudan ${score} doğru ile ${label} seviyesindesiniz.\n\n${advice}\n\nYurt dışı okul bulmak için: ${process.env.APP_URL || 'https://paneledu.com'}/match\n\n— PANELEDU Ekibi`,
+      html
+    });
+    return true;
+  } catch (e) {
+    console.error('[mailer] english test result failed:', e.message);
+    return false;
+  }
+}
+
 function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 module.exports = {
   sendLeadNotification, sendLeadReply, sendOtpCode,
   sendApplicationNotice, sendPreAcceptance,
   sendApplicationReminder, sendStatusUpdate,
+  sendEnglishTestResult,
 };

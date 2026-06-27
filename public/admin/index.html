@@ -113,6 +113,9 @@
       <a href="#" class="nav-link" data-sec="users" onclick="showSection('users');return false;">
         <i class="bi bi-people-fill"></i>Users
       </a>
+      <a href="#" class="nav-link" data-sec="engtest" onclick="showSection('engtest');return false;">
+        <i class="bi bi-journal-check"></i>Eng. Test
+      </a>
     </div>
     <div class="p-3 border-top border-secondary">
       <button class="btn btn-outline-light btn-sm w-100 opacity-75" onclick="doLogout()">
@@ -764,6 +767,23 @@
       </div>
     </div><!-- /applicationsSection -->
 
+    <!-- ── English Test Results ──────────────────────────────────────── -->
+    <div id="engtestSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <h4 class="fw-bold mb-0"><i class="bi bi-journal-check me-2 text-primary"></i>English Test Results</h4>
+        <div class="d-flex gap-2">
+          <input type="text" class="form-control form-control-sm" id="etSearch" placeholder="Search email…" style="width:220px" oninput="filterEngTest()">
+          <select class="form-select form-select-sm" id="etLevelFilter" style="width:130px" onchange="filterEngTest()">
+            <option value="">All levels</option>
+            <option>A1</option><option>A2</option><option>B1</option>
+            <option>B2</option><option>C1</option><option>C2</option>
+          </select>
+          <button class="btn btn-outline-secondary btn-sm" onclick="loadEngTest()"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+      </div>
+      <div id="etTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
+    </div><!-- /engtestSection -->
+
   </div><!-- /mainContent -->
 </div><!-- /adminApp -->
 
@@ -1175,6 +1195,7 @@ function showSection(name) {
   if (name === 'leads') loadLeads();
   if (name === 'users') loadUsers();
   if (name === 'applications') loadApplications();
+  if (name === 'engtest') loadEngTest();
 }
 
 async function loadStats() {
@@ -2601,6 +2622,49 @@ async function bulkRemind() {
     if (!r.ok) throw new Error(d.error || 'Failed');
     toast(`Bulk reminder: ${d.sent} email(s) sent.`);
   } catch (e) { toast(e.message, 'error'); }
+}
+
+// ── English Test ─────────────────────────────────────────────────────────────
+let allEngTest = [];
+
+async function loadEngTest() {
+  document.getElementById('etTableWrap').innerHTML = '<div class="text-center text-muted py-5">Loading…</div>';
+  try {
+    const r = await api('GET', '/api/admin/english-test');
+    allEngTest = await r.json();
+    filterEngTest();
+  } catch (e) {
+    document.getElementById('etTableWrap').innerHTML = `<div class="text-danger small">${esc2(e.message)}</div>`;
+  }
+}
+
+function filterEngTest() {
+  const q = (document.getElementById('etSearch')?.value || '').toLowerCase();
+  const lv = document.getElementById('etLevelFilter')?.value || '';
+  const rows = allEngTest.filter(r =>
+    (!q || r.email.toLowerCase().includes(q)) &&
+    (!lv || r.level === lv)
+  );
+  const LEVEL_COLOR = { A1:'#94a3b8', A2:'#64748b', B1:'#3b82f6', B2:'#8b5cf6', C1:'#10b981', C2:'#f59e0b' };
+  const wrap = document.getElementById('etTableWrap');
+  if (!rows.length) {
+    wrap.innerHTML = '<div class="text-center text-muted py-5">No results yet.</div>';
+    return;
+  }
+  wrap.innerHTML = `<div class="table-responsive"><table class="table table-hover align-middle" style="font-size:.87rem">
+    <thead><tr style="color:#94a3b8;font-size:.78rem;text-transform:uppercase">
+      <th>Email</th><th>Level</th><th>Score</th><th>Date</th>
+    </tr></thead>
+    <tbody>
+      ${rows.map(r => `<tr>
+        <td>${esc2(r.email)}</td>
+        <td><span class="badge" style="background:${LEVEL_COLOR[r.level]||'#64748b'};font-size:.8rem">${esc2(r.level)}</span></td>
+        <td>${r.score}/20</td>
+        <td style="color:#64748b">${r.created_at ? new Date(r.created_at).toLocaleDateString() : ''}</td>
+      </tr>`).join('')}
+    </tbody>
+  </table></div>
+  <div class="text-muted small mt-1">${rows.length} result(s)</div>`;
 }
 </script>
 </body>

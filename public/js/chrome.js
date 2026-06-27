@@ -6,7 +6,8 @@
   var NAV = [
     { href: '/',         label: 'Ana Sayfa' },
     { href: '/match',    label: 'Okul Bul' },
-    { href: '/programs', label: 'Programlar' }
+    { href: '/programs', label: 'Programlar' },
+    { href: '/test',     label: 'İngilizce Testi' }
   ];
 
   function navHtml() {
@@ -37,6 +38,7 @@
             '<span class="h">Keşfet</span>' +
             '<a href="/match">Okul Bul</a>' +
             '<a href="/programs">Programlar</a>' +
+            '<a href="/test">İngilizce Testi</a>' +
             '<a href="/">Üniversiteler</a>' +
           '</div>' +
           '<div class="pe-footer-col">' +

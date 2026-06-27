@@ -37,6 +37,10 @@ app.get('/acceptance', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/acceptance.html'));
 });
 
+app.get('/test', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/test.html'));
+});
+
 // Public portal pages
 app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'public/login.html')));
 app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'public/register.html')));
@@ -68,6 +72,33 @@ app.use('/api/user', require('./routes/userPortal'));
 const applications = require('./routes/applications');
 app.use('/api/public/applications', applications.publicRouter);
 app.use('/api/admin/applications', requireRole('admin'), applications.adminRouter);
+
+// English level test
+app.post('/api/public/english-test', async (req, res) => {
+  try {
+    const { email, level, score, answers } = req.body || {};
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return res.status(400).json({ error: 'Valid email required.' });
+    }
+    if (!level || !score && score !== 0) return res.status(400).json({ error: 'Missing result data.' });
+    await db.query(
+      'INSERT INTO english_test_results (email, level, score, answers) VALUES (?, ?, ?, ?)',
+      [email.toLowerCase().trim(), level, parseInt(score) || 0, JSON.stringify(answers || [])]
+    );
+    res.json({ ok: true });
+    const { sendEnglishTestResult } = require('./utils/mailer');
+    sendEnglishTestResult(email, level, score).catch(() => {});
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+app.get('/api/admin/english-test', requireRole('admin'), async (req, res) => {
+  try {
+    const [rows] = await db.query(
+      'SELECT id, email, level, score, created_at FROM english_test_results ORDER BY created_at DESC LIMIT 500'
+    );
+    res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
 
 // Legacy admin login — maps to new JWT system for backward compatibility
 app.post('/api/admin/login', async (req, res) => {
