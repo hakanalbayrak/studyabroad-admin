@@ -126,6 +126,9 @@
     </div>
 
     <div class="search-filters">
+      <select id="continentFilter" onchange="onSearch()">
+        <option value="">Tüm Kıtalar</option>
+      </select>
       <select id="countryFilter" onchange="onSearch()">
         <option value="">Tüm Ülkeler</option>
       </select>
@@ -257,6 +260,7 @@ let compareModal;
 async function load() {
   try {
     allUniversities = await fetch('/api/public/universities').then(r => r.json());
+    buildContinentFilter();
     buildCountryFilter();
     document.getElementById('loadingSpinner').style.display = 'none';
     updateStats();
@@ -275,10 +279,33 @@ function updateStats() {
   document.getElementById('statsRow').style.display = 'flex';
 }
 
+const CONTINENT_TR = {
+  'Europe':          'Avrupa',
+  'North America':   'Kuzey Amerika',
+  'South America':   'Güney Amerika',
+  'Australia':       'Avustralya',
+  'Oceania':         'Avustralya / Okyanusya',
+  'Asia':            'Asya',
+  'Africa':          'Afrika',
+  'UK':              'Birleşik Krallık',
+  'Middle East':     'Orta Doğu',
+};
+
 function buildCountryFilter() {
   const countries = [...new Set(allUniversities.map(u => u.country).filter(Boolean))].sort();
   const sel = document.getElementById('countryFilter');
   countries.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
+}
+
+function buildContinentFilter() {
+  const continents = [...new Set(allUniversities.map(u => u.continent).filter(Boolean))].sort();
+  const sel = document.getElementById('continentFilter');
+  continents.forEach(c => {
+    const o = document.createElement('option');
+    o.value = c;
+    o.textContent = CONTINENT_TR[c] || c;
+    sel.appendChild(o);
+  });
 }
 
 function hasOrbit(u) { return !!(u.latitude && u.longitude); }
@@ -295,19 +322,26 @@ function showFeatured() {
 
 function onSearch() {
   const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  const continent = document.getElementById('continentFilter').value;
   const country = document.getElementById('countryFilter').value;
   const orbitF = document.getElementById('orbitFilter').value;
-  if (!q && !country && !orbitF) { showFeatured(); return; }
+  if (!q && !continent && !country && !orbitF) { showFeatured(); return; }
   isSearching = true;
   document.getElementById('featuredSection').classList.add('d-none');
   document.getElementById('searchSection').classList.remove('d-none');
   filteredUniversities = allUniversities.filter(u => {
     if (q && !u.name.toLowerCase().includes(q) && !(u.city||'').toLowerCase().includes(q) && !(u.country||'').toLowerCase().includes(q)) return false;
+    if (continent && u.continent !== continent) return false;
     if (country && u.country !== country) return false;
     if (orbitF === 'orbit' && !hasOrbit(u)) return false;
     if (orbitF === 'no-orbit' && hasOrbit(u)) return false;
     return true;
   });
+  // When continent changes, reset country to avoid impossible combos
+  if (continent) {
+    const sel = document.getElementById('countryFilter');
+    if (sel.value && !filteredUniversities.find(u => u.country === sel.value)) sel.value = '';
+  }
   currentPage = 1;
   renderSearchResults();
 }
