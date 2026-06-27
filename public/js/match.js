@@ -158,7 +158,7 @@
         };
       }
       var u = byUni[id];
-      u.programs.push({ id: p.id, name: p.name, type_name: p.type_name, field: programField(p), fee: r.fee, ease: r.ease, currency: p.tuition_currency });
+      u.programs.push({ id: p.id, name: p.name, type_name: p.type_name, field: programField(p), fee: r.fee, ease: r.ease, currency: p.tuition_currency, duration: p.duration || null });
       var ff = programField(p); if (ff) u.fields[ff] = true;
       if (r.ease > u.ease) u.ease = r.ease; // school score = best matching program
     });
@@ -167,6 +167,13 @@
       var u = byUni[k];
       u.fieldList = Object.keys(u.fields);
       u.programs.sort(function (a, b) { return b.ease - a.ease; });
+      // Average annual tuition (EUR) across matching programs with a known fee.
+      var fees = u.programs.map(function (p) { return p.fee; }).filter(function (f) { return f != null; });
+      u.avgFee = fees.length ? Math.round(fees.reduce(function (s, f) { return s + f; }, 0) / fees.length) : null;
+      // A representative study length (most common non-empty duration).
+      var durs = {};
+      u.programs.forEach(function (p) { if (p.duration) durs[p.duration] = (durs[p.duration] || 0) + 1; });
+      u.duration = Object.keys(durs).sort(function (a, b) { return durs[b] - durs[a]; })[0] || null;
       return u;
     });
     // Primary: easiest acceptance first. Tiebreak: better-ranked school first.

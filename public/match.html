@@ -37,8 +37,16 @@
     .btn-go { width:100%; background:linear-gradient(135deg,#6366f1,#8b5cf6); border:none; color:#fff; border-radius:14px; font-size:1rem; font-weight:700; padding:15px; box-shadow:0 6px 22px rgba(99,102,241,.4); }
     .btn-go:disabled { opacity:.5; box-shadow:none; }
     /* Results */
-    .school-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:16px 18px; margin-bottom:14px; }
-    .school-name { font-size:1rem; font-weight:700; color:#f1f5f9; }
+    .school-grid { display:grid; grid-template-columns:1fr; gap:14px; }
+    @media (min-width:640px){ .school-grid { grid-template-columns:1fr 1fr; } }
+    .school-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; }
+    .school-name { font-size:1rem; font-weight:700; color:#f1f5f9; text-decoration:none; }
+    a.school-name:hover { color:#a5b4fc; text-decoration:underline; }
+    .fact-row { display:flex; flex-wrap:wrap; gap:14px; margin-top:12px; }
+    .fact { display:flex; flex-direction:column; }
+    .fact-label { font-size:.66rem; color:#64748b; text-transform:uppercase; letter-spacing:.04em; }
+    .fact-val { font-size:.9rem; font-weight:700; color:#e2e8f0; }
+    .fact-val.cost { color:#fcd34d; }
     .school-loc { font-size:.8rem; color:#94a3b8; margin-top:2px; }
     .badge-soft { font-size:.7rem; padding:3px 9px; border-radius:20px; font-weight:600; display:inline-block; }
     .acc-high { background:rgba(16,185,129,.2); color:#6ee7b7; }
@@ -223,22 +231,30 @@
       wrap.innerHTML = '<div class="empty"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i>Seçimlerine uygun okul bulunamadı.<br>Bütçeni veya bölgeyi genişletmeyi dene.</div>';
       return;
     }
-    wrap.innerHTML = schools.map(function (s) {
+    var costText = function (s) { return s.avgFee != null ? '€' + s.avgFee.toLocaleString('tr-TR') + '/yıl' : 'Talep üzerine'; };
+    wrap.innerHTML = '<div class="school-grid">' + schools.map(function (s) {
       var rank = parseInt(s.qs_rank) || null;
       var rankBadge = rank ? '<span class="badge-soft rank-badge">QS #' + rank + '</span>' : '';
+      var uniUrl = '/university?id=' + s.university_id;
       var depts = s.programs.map(function (p) {
-        return '<div class="dept-row"><span>' + esc(p.name) + ' <span style="color:#475569">· ' + esc(p.type_name||'') + '</span></span><span class="dept-fee">' + feeText(p) + '</span></div>';
+        var meta = [p.type_name, p.duration].filter(Boolean).map(esc).join(' · ');
+        return '<div class="dept-row"><span>' + esc(p.name) + (meta ? ' <span style="color:#475569">· ' + meta + '</span>' : '') + '</span><span class="dept-fee">' + feeText(p) + '</span></div>';
       }).join('');
       return '<div class="school-card">' +
-        '<div class="d-flex justify-content-between align-items-start gap-2">' +
-          '<div><div class="school-name">' + esc(s.university_name) + '</div>' +
-          '<div class="school-loc"><i class="bi bi-geo-alt-fill me-1" style="color:#475569"></i>' + esc([s.city, s.country].filter(Boolean).join(', ')) + '</div></div>' +
+        '<div style="flex:1">' +
+          '<a class="school-name" href="' + uniUrl + '">' + esc(s.university_name) + '</a>' +
+          '<div class="school-loc"><i class="bi bi-geo-alt-fill me-1" style="color:#475569"></i>' + esc([s.city, s.country].filter(Boolean).join(', ')) + '</div>' +
+          '<div class="d-flex gap-2 flex-wrap mt-2">' + accLabel(s.ease) + rankBadge + '</div>' +
+          '<div class="fact-row">' +
+            '<div class="fact"><span class="fact-label">Ort. yıllık ücret</span><span class="fact-val cost">' + costText(s) + '</span></div>' +
+            '<div class="fact"><span class="fact-label">Süre</span><span class="fact-val">' + esc(s.duration || '—') + '</span></div>' +
+            '<div class="fact"><span class="fact-label">Uygun bölüm</span><span class="fact-val">' + s.programs.length + '</span></div>' +
+          '</div>' +
+          '<details class="depts"><summary><span class="chev">▸</span> Bölümleri gör</summary>' + depts + '</details>' +
         '</div>' +
-        '<div class="d-flex gap-2 flex-wrap mt-2">' + accLabel(s.ease) + rankBadge + '</div>' +
-        '<details class="depts"><summary><span class="chev">▸</span> ' + s.programs.length + ' uygun bölüm</summary>' + depts + '</details>' +
-        '<button class="btn-detail" onclick="location.href=\'/university?id=' + s.university_id + '\'">Detayları gör <i class="bi bi-arrow-right ms-1"></i></button>' +
+        '<button class="btn-detail" onclick="location.href=\'' + uniUrl + '\'">Okulu incele (3D) <i class="bi bi-arrow-right ms-1"></i></button>' +
       '</div>';
-    }).join('');
+    }).join('') + '</div>';
   }
 
   function backToWizard() {
