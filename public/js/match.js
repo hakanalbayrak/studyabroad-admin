@@ -36,6 +36,15 @@
     return classifyField(p && p.name);
   }
 
+  // ── Degree level (bachelor / master / phd) ─────────────────────────────────
+  function degreeLevel(typeName) {
+    var t = String(typeName || '').toLowerCase();
+    if (/(phd|ph\.d|doctor)/.test(t)) return 'phd';
+    if (/(master|msc|m\.sc|m\.a|\bma\b|mba|postgrad|yüksek lisans|yuksek lisans)/.test(t)) return 'master';
+    if (/(bachelor|bsc|b\.sc|b\.a|\bba\b|undergrad|licen|lisans)/.test(t)) return 'bachelor';
+    return 'other';
+  }
+
   // ── Country → region ───────────────────────────────────────────────────────
   var REGION = {
     'Europe': ['germany','france','netherlands','spain','italy','belgium','austria','switzerland','sweden','denmark','finland','norway','ireland','poland','portugal','czech republic','czechia','hungary','greece','romania','bulgaria','croatia','slovakia','slovenia','estonia','latvia','lithuania','luxembourg','malta','cyprus','iceland'],
@@ -108,6 +117,10 @@
   // ── Score a single program against the student profile ─────────────────────
   // Returns { pass, ease, fee } — ease higher = easier to get in + better fit.
   function scoreProgram(student, p) {
+    // Hard filter: degree level (bachelor vs master)
+    if (student.degreeTarget) {
+      if (degreeLevel(p.type_name) !== student.degreeTarget) return { pass: false };
+    }
     // Hard filter: field
     if (student.fields && student.fields.length) {
       var f = programField(p);
@@ -189,6 +202,7 @@
     FIELD_LIST: FIELD_LIST,
     REGION_LIST: REGION_LIST,
     classifyField: classifyField,
+    degreeLevel: degreeLevel,
     programField: programField,
     regionOf: regionOf,
     programEnglishBand: programEnglishBand,

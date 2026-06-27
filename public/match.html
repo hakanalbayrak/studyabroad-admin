@@ -83,13 +83,22 @@
   <div class="step">
     <div class="step-label">1. Eğitim durumun</div>
     <div class="chips" data-group="edu" data-multi="0">
-      <button class="chip" data-val="highschool"><i class="bi bi-mortarboard"></i>Lise mezunu</button>
-      <button class="chip" data-val="12"><i class="bi bi-book"></i>12. sınıf</button>
+      <button class="chip" data-val="highschool"><i class="bi bi-mortarboard"></i>Lise / 12. sınıf</button>
+      <button class="chip" data-val="bachelor"><i class="bi bi-award"></i>Lisans mezunu</button>
     </div>
   </div>
 
   <div class="step">
-    <div class="step-label">2. İlgilendiğin alanlar</div>
+    <div class="step-label">2. Hangi dereceyi okumak istiyorsun?</div>
+    <div class="step-hint">Eğitim durumuna göre öneriyoruz — istersen değiştir (ör. ikinci lisans)</div>
+    <div class="chips" data-group="degree" data-multi="0">
+      <button class="chip" data-val="bachelor"><i class="bi bi-1-circle"></i>Lisans<span class="sub">Bachelor</span></button>
+      <button class="chip" data-val="master"><i class="bi bi-2-circle"></i>Yüksek Lisans<span class="sub">Master</span></button>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-label">3. İlgilendiğin alanlar</div>
     <div class="step-hint">Birden fazla seçebilirsin</div>
     <div class="chips cols3" data-group="fields" data-multi="1">
       <button class="chip" data-val="Business & Economics"><i class="bi bi-briefcase"></i>İşletme &amp; Ekonomi</button>
@@ -101,7 +110,7 @@
   </div>
 
   <div class="step">
-    <div class="step-label">3. İngilizce seviyen</div>
+    <div class="step-label">4. İngilizce seviyen</div>
     <div class="chips cols3" data-group="english" data-multi="0">
       <button class="chip" data-val="A1-A2"><i class="bi bi-1-circle"></i>A1–A2<span class="sub">Başlangıç</span></button>
       <button class="chip" data-val="B1-B2"><i class="bi bi-2-circle"></i>B1–B2<span class="sub">Orta</span></button>
@@ -110,7 +119,7 @@
   </div>
 
   <div class="step">
-    <div class="step-label">4. Yıllık eğitim bütçen</div>
+    <div class="step-label">5. Yıllık eğitim bütçen</div>
     <div class="chips" data-group="budget" data-multi="0">
       <button class="chip" data-val="0-5k"><i class="bi bi-cash-coin"></i>€0 – 5.000</button>
       <button class="chip" data-val="5-10k"><i class="bi bi-cash-coin"></i>€5.000 – 10.000</button>
@@ -120,7 +129,7 @@
   </div>
 
   <div class="step">
-    <div class="step-label">5. Hangi bölge?</div>
+    <div class="step-label">6. Hangi bölge?</div>
     <div class="chips" data-group="region" data-multi="0">
       <button class="chip" data-val="Europe"><i class="bi bi-globe-europe-africa"></i>Avrupa</button>
       <button class="chip" data-val="USA/Canada"><i class="bi bi-globe-americas"></i>Amerika / Kanada</button>
@@ -130,7 +139,7 @@
   </div>
 
   <div class="step">
-    <div class="step-label">6. AP / IB diploman var mı?</div>
+    <div class="step-label">7. AP / IB diploman var mı?</div>
     <div class="step-hint">Zorunlu değil — yoksa "Yok" seç</div>
     <div class="chips" data-group="apib" data-multi="0">
       <button class="chip" data-val="yes"><i class="bi bi-patch-check"></i>Var</button>
@@ -158,7 +167,18 @@
 <script src="/js/eligibility.js"></script>
 <script src="/js/match.js"></script>
 <script>
-  var sel = { edu:null, fields:[], english:null, budget:null, region:null, apib:null };
+  var sel = { edu:null, degree:null, fields:[], english:null, budget:null, region:null, apib:null };
+  var degreeTouched = false;
+
+  // Programmatically select a single-choice chip in a group
+  function pickChip(group, val) {
+    var grp = document.querySelector('.chips[data-group="' + group + '"]');
+    if (!grp) return;
+    grp.querySelectorAll('.chip').forEach(function (b) {
+      b.classList.toggle('on', b.getAttribute('data-val') === val);
+    });
+    sel[group] = val;
+  }
 
   // Chip selection (single / multi)
   document.querySelectorAll('.chips').forEach(function (grp) {
@@ -177,6 +197,11 @@
           btn.classList.add('on');
           sel[group] = val;
         }
+        // Education status auto-suggests the degree to study (overridable)
+        if (group === 'edu' && !degreeTouched) {
+          pickChip('degree', val === 'bachelor' ? 'master' : 'bachelor');
+        }
+        if (group === 'degree') degreeTouched = true;
       });
     });
   });
@@ -194,6 +219,7 @@
       }
       var student = {
         educationStatus: sel.edu || 'highschool',
+        degreeTarget: sel.degree || (sel.edu === 'bachelor' ? 'master' : 'bachelor'),
         fields: sel.fields,
         englishLevel: sel.english || 'C1-C2',
         budget: sel.budget || '15k+',
