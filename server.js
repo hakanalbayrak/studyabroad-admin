@@ -29,6 +29,10 @@ app.get('/match', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/match.html'));
 });
 
+app.get('/apply', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/apply.html'));
+});
+
 // Public portal pages
 app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'public/login.html')));
 app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'public/register.html')));
@@ -57,6 +61,9 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/admin/users', require('./routes/users'));
 app.use('/api/affiliate', require('./routes/affiliate'));
 app.use('/api/user', require('./routes/userPortal'));
+const applications = require('./routes/applications');
+app.use('/api/public/applications', applications.publicRouter);
+app.use('/api/admin/applications', requireRole('admin'), applications.adminRouter);
 
 // Legacy admin login — maps to new JWT system for backward compatibility
 app.post('/api/admin/login', async (req, res) => {

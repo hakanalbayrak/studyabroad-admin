@@ -124,6 +124,45 @@ async function sendOtpCode(email, code) {
   }
 }
 
+// Application received: confirm to applicant + notify admin. Fire-and-forget.
+async function sendApplicationNotice(app) {
+  const t = getTransport();
+  if (!t) return;
+  const name = [app.first_name, app.last_name].filter(Boolean).join(' ') || 'there';
+  const uni = app.university_name || 'your selected university';
+
+  // Applicant confirmation
+  if (app.email) {
+    const html = `
+      <div style="font-family:system-ui,sans-serif;max-width:520px;color:#1e293b">
+        <div style="background:#6366f1;color:#fff;padding:16px 20px;border-radius:10px 10px 0 0"><strong>Application received</strong></div>
+        <div style="border:1px solid #e2e8f0;border-top:none;padding:20px;border-radius:0 0 10px 10px;line-height:1.55">
+          <p>Hi ${esc(name)},</p>
+          <p>We've received your application for <strong>${esc(uni)}</strong>${app.program_name ? ' — ' + esc(app.program_name) : ''}.</p>
+          <p>Our team will review it and get back to you shortly with the next steps.</p>
+          <p style="color:#64748b;margin-top:18px">— Study Abroad Team</p>
+        </div>
+      </div>`;
+    try {
+      await t.sendMail({ from: `"Study Abroad" <${process.env.SMTP_USER}>`, to: app.email,
+        subject: `Application received — ${uni}`,
+        text: `Hi ${name},\n\nWe've received your application for ${uni}${app.program_name ? ' — ' + app.program_name : ''}. Our team will review it and contact you soon.\n\n— Study Abroad Team`,
+        html });
+    } catch (e) { console.error('[mailer] applicant confirmation failed:', e.message); }
+  }
+
+  // Admin notification
+  const to = process.env.NOTIFY_EMAIL || process.env.SMTP_USER;
+  if (to) {
+    try {
+      await t.sendMail({ from: `"Study Abroad" <${process.env.SMTP_USER}>`, to,
+        subject: `New application: ${name} — ${uni}`,
+        text: `New application #${app.id || ''}\n\nApplicant: ${name}\nEmail: ${app.email}\nPhone: ${app.phone || '—'}\nUniversity: ${uni}\nProgram: ${app.program_name || '—'}\nIntake: ${app.desired_intake || '—'}\n\nView in admin: ${process.env.APP_URL || ''}/admin`,
+      });
+    } catch (e) { console.error('[mailer] admin application notice failed:', e.message); }
+  }
+}
+
 function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-module.exports = { sendLeadNotification, sendLeadReply, sendOtpCode };
+module.exports = { sendLeadNotification, sendLeadReply, sendOtpCode, sendApplicationNotice };
