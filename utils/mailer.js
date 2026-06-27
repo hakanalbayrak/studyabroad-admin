@@ -163,6 +163,38 @@ async function sendApplicationNotice(app) {
   }
 }
 
+// Pre-acceptance / conditional acceptance notice to the applicant. Fire-and-forget.
+async function sendPreAcceptance(app, ref, url, conditional) {
+  const t = getTransport();
+  if (!t || !app.email) return;
+  const name = [app.first_name, app.last_name].filter(Boolean).join(' ') || 'there';
+  const uni = app.university_name || 'your selected university';
+  const heading = conditional ? 'Conditional Acceptance' : 'Pre-Acceptance';
+  const html = `
+    <div style="font-family:system-ui,sans-serif;max-width:540px;color:#1e293b">
+      <div style="background:linear-gradient(135deg,#6366f1,#8b5cf6,#06b6d4);color:#fff;padding:20px;border-radius:12px 12px 0 0">
+        <div style="font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;opacity:.9">PANELEDU</div>
+        <strong style="font-size:1.25rem">${esc(heading)} 🎉</strong>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-top:none;padding:22px;border-radius:0 0 12px 12px;line-height:1.6">
+        <p>Dear ${esc(name)},</p>
+        <p>Congratulations! You have received a <strong>${esc(heading.toLowerCase())}</strong> for
+           <strong>${esc(uni)}</strong>${app.program_name ? ' — ' + esc(app.program_name) : ''}.</p>
+        ${app.preaccept_conditions ? `<p style="background:#f1f5f9;border-radius:8px;padding:12px"><strong>Conditions:</strong><br>${esc(app.preaccept_conditions)}</p>` : ''}
+        <p>Reference: <strong>${esc(ref)}</strong></p>
+        ${url ? `<p style="margin-top:18px"><a href="${url}" style="background:#6366f1;color:#fff;padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:700">View your acceptance letter</a></p>` : ''}
+        <p style="color:#64748b;margin-top:18px">This is a PANELEDU preliminary assessment, not a final admission decision by the university. Our team will guide you through the remaining steps.</p>
+        <p style="color:#64748b">— PANELEDU Team</p>
+      </div>
+    </div>`;
+  try {
+    await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to: app.email,
+      subject: `${heading} — ${uni} (${ref})`,
+      text: `Dear ${name},\n\nCongratulations! You have received a ${heading.toLowerCase()} for ${uni}${app.program_name ? ' — ' + app.program_name : ''}.\n${app.preaccept_conditions ? '\nConditions: ' + app.preaccept_conditions + '\n' : ''}\nReference: ${ref}\n${url ? '\nView your acceptance letter: ' + url + '\n' : ''}\nThis is a PANELEDU preliminary assessment, not a final university admission decision.\n\n— PANELEDU Team`,
+      html });
+  } catch (e) { console.error('[mailer] pre-acceptance failed:', e.message); }
+}
+
 function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-module.exports = { sendLeadNotification, sendLeadReply, sendOtpCode, sendApplicationNotice };
+module.exports = { sendLeadNotification, sendLeadReply, sendOtpCode, sendApplicationNotice, sendPreAcceptance };

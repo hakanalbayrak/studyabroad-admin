@@ -875,6 +875,18 @@
               style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0"></textarea>
           </div>
         </div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div>
+          <label class="form-label small fw-semibold"><i class="bi bi-patch-check-fill me-1 text-success"></i>Pre-acceptance (emails the student a PANELEDU letter)</label>
+          <textarea id="appPreConditions" rows="2" class="form-control mb-2" placeholder="Conditions (optional) — e.g. submit IELTS 6.0 by 1 Aug 2026"
+            style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0"></textarea>
+          <div id="appPreInfo" class="small text-muted mb-2"></div>
+          <div class="d-flex gap-2 flex-wrap">
+            <button class="btn btn-success btn-sm" onclick="issuePreAccept(false)"><i class="bi bi-patch-check me-1"></i>Issue pre-acceptance</button>
+            <button class="btn btn-warning btn-sm" onclick="issuePreAccept(true)"><i class="bi bi-hourglass-split me-1"></i>Issue conditional</button>
+          </div>
+        </div>
       </div>
       <div class="modal-footer border-0">
         <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -2473,6 +2485,28 @@ function renderApplicationDetail(a) {
   // Status + notes
   document.getElementById('appStatusSelect').value = a.status || 'submitted';
   document.getElementById('appNotes').value = a.notes || '';
+
+  // Pre-acceptance
+  document.getElementById('appPreConditions').value = a.preaccept_conditions || '';
+  const preInfo = document.getElementById('appPreInfo');
+  preInfo.innerHTML = a.preaccept_issued_at
+    ? `<i class="bi bi-check-circle-fill text-success me-1"></i>Issued <b>${esc2(a.preaccept_ref || '')}</b> on ${new Date(a.preaccept_issued_at).toLocaleDateString()} · <a href="/acceptance?ref=${encodeURIComponent(a.preaccept_ref||'')}" target="_blank" style="color:#818cf8">view letter</a>`
+    : 'Not issued yet.';
+}
+
+async function issuePreAccept(conditional) {
+  const conditions = document.getElementById('appPreConditions').value.trim();
+  if (!confirm(conditional ? 'Issue a CONDITIONAL acceptance and email the student?' : 'Issue a pre-acceptance and email the student?')) return;
+  try {
+    const r = await api('POST', `/api/admin/applications/${currentAppId}/preaccept`, { conditional, conditions });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Failed');
+    toast('Pre-acceptance issued: ' + d.ref);
+    const app = allApplications.find(a => a.id === currentAppId);
+    if (app) app.status = conditional ? 'conditional' : 'pre_accepted';
+    openApplication(currentAppId); // refresh modal
+    loadApplications();
+  } catch (e) { toast(e.message, 'error'); }
 }
 
 async function downloadAppDoc(appId, docId, name) {

@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const db = require('../db');
-const { sendApplicationNotice } = require('../utils/mailer');
+const { sendApplicationNotice, sendPreAcceptance } = require('../utils/mailer');
 
 const UPLOAD_DIR = path.join(__dirname, '..', 'uploads', 'applications');
 fs.mkdirSync(UPLOAD_DIR, { recursive: true });
@@ -85,8 +85,44 @@ publicRouter.post('/:id/documents', upload.single('file'), async (req, res) => {
   }
 });
 
+// Public: fetch a pre-acceptance certificate by reference (for /acceptance page)
+publicRouter.get('/acceptance/:ref', async (req, res) => {
+  try {
+    const [[a]] = await db.query(
+      `SELECT preaccept_ref, first_name, last_name, university_name, program_name,
+              country, preaccept_conditions, preaccept_issued_at, status, desired_intake
+       FROM applications WHERE preaccept_ref = ? LIMIT 1`,
+      [req.params.ref]
+    );
+    if (!a || !a.preaccept_issued_at) return res.status(404).json({ error: 'Belge bulunamadı.' });
+    res.json(a);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 // ── ADMIN router (mounted behind requireRole('admin')) ───────────────────────
 const adminRouter = express.Router();
+
+// Issue a pre-acceptance (or conditional acceptance) for an application
+adminRouter.post('/:id/preaccept', async (req, res) => {
+  try {
+    const conditional = !!req.body.conditional;
+    const conditions = (req.body.conditions || '').trim() || null;
+    const [[app]] = await db.query('SELECT * FROM applications WHERE id = ?', [req.params.id]);
+    if (!app) return res.status(404).json({ error: 'Not found' });
+
+    const ref = app.preaccept_ref ||
+      ('PANELEDU-' + new Date().getFullYear() + '-' + String(app.id).padStart(5, '0'));
+    const status = conditional ? 'conditional' : 'pre_accepted';
+    await db.query(
+      `UPDATE applications SET preaccept_ref = ?, preaccept_conditions = ?,
+        preaccept_issued_at = NOW(), status = ? WHERE id = ?`,
+      [ref, conditions, status, app.id]
+    );
+    res.json({ ok: true, ref });
+    const url = (process.env.APP_URL || '') + '/acceptance?ref=' + encodeURIComponent(ref);
+    sendPreAcceptance({ ...app, preaccept_conditions: conditions }, ref, url, conditional);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
 
 adminRouter.get('/', async (req, res) => {
   try {
