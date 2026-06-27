@@ -636,9 +636,9 @@ app.use('/api/orbit', requireRole('admin'), require('./routes/orbit'));
 app.use('/api/program-types', requireRole('admin'), require('./routes/programTypes'));
 app.use('/api/bulk/csv-import', requireRole('admin'), require('./routes/csvImport'));
 
-// Cron-friendly reminder endpoint — call from cPanel cron with CRON_SECRET
-// e.g. curl "https://paneledu.com/api/cron/reminders?secret=YOUR_CRON_SECRET"
-app.get('/api/cron/reminders', async (req, res) => {
+// Scheduled reminder endpoint — call from cPanel cron with CRON_SECRET
+// e.g. curl -H "Authorization: Bearer SECRET" "https://paneledu.com/api/auto/remind"
+app.get('/api/auto/remind', async (req, res) => {
   const authHeader = req.headers.authorization || '';
   const provided = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : req.query.k;
   if (!process.env.CRON_SECRET || provided !== process.env.CRON_SECRET) {
