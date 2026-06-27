@@ -9,11 +9,11 @@
 
   // ── Field / discipline classification ──────────────────────────────────────
   var FIELD_KEYWORDS = {
-    'Business & Economics': ['business','management','economics','econom','finance','accounting','marketing','mba','commerce','entrepreneur','administration','trade','banking','logistics','supply chain','tourism','hospitality'],
-    'Engineering': ['engineering','mechanical','civil','electrical','electronic','mechatronic','aerospace','aeronautic','industrial','chemical eng','automotive','materials','manufacturing','energy'],
-    'Medicine & Health': ['medicine','medical','nursing','dentistry','dental','pharmac','health','physiotherap','biomedical','veterinary','nutrition','midwifery','public health','therapy','clinical'],
-    'AI & Technology': ['computer','software','data science','data analyt','artificial intelligence',' ai ','information technology','informatics','computing','programming','robotic','cyber','machine learning','game develop','web develop','network'],
-    'Social Sciences': ['history','sociolog','psycholog','political','philosoph','law','legal','international relations','communication','anthropolog','social','journalism','media','linguistic','education','geography','archaeolog']
+    'Business & Economics': ['business','manage','economic','econom','finance','financ','accounting','account','marketing','market','mba','commerce','entrepreneur','administration','trade','banking','bank','logistics','supply chain','tourism','hospitality','real estate','human resource','advertis','retail','insurance','actuari'],
+    'Engineering': ['engineer','mechanical','civil','electrical','electronic','mechatronic','aerospace','aeronautic','industrial','chemical','automotive','materials','manufacturing','energy','architect','construction','petroleum','mining','aviation','telecommunication'],
+    'Medicine & Health': ['medicine','medical','nursing','nurse','dentistry','dental','pharmac','health','physiotherap','biomedical','veterinary','nutrition','dietet','midwifery','public health','therapy','therap','clinical','psychiatry','optometry','radiolog','anatomy','sport science','kinesiolog'],
+    'AI & Technology': ['computer','comput','software','data','artificial intelligence',' ai ','ai ',' ai','information technology','information system','informat','computing','programming','robotic','cyber','machine learning','game','web develop','network','digital','blockchain','cloud'],
+    'Social Sciences': ['history','sociolog','psycholog','political','philosoph','law','legal','international relations','communication','anthropolog','social','journalism','media','linguistic','language','literature','education','teaching','geography','archaeolog','criminolog','public policy','theolog','translation','culture','cultural']
   };
   var FIELD_LIST = Object.keys(FIELD_KEYWORDS);
 

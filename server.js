@@ -496,7 +496,7 @@ app.get('/api/public/programs', async (req, res) => {
       JOIN entities e ON e.id = el.entity_id
       WHERE ${where.join(' AND ')}
       ORDER BY e.name, p.name
-      LIMIT 500
+      LIMIT ${Math.min(Math.max(parseInt(req.query.limit) || 500, 1), 10000)}
     `, vals);
     res.json(rows);
   } catch (e) { res.status(500).json({ error: e.message }); }
