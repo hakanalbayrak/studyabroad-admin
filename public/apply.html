@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Başvuru Yap — PANELEDU</title>
-  <meta name="description" content="Yurt dışı üniversite başvurunu tamamla. Profil bazlı eşleştirme ve online başvuru.">
+  <meta name="description" content="Yurt dışı üniversite başvurunu tamamla. Belgelerini yükle, ön kabul al.">
   <meta property="og:title" content="Başvuru Yap — PANELEDU">
   <meta property="og:url" content="https://paneledu.com/apply">
   <link rel="canonical" href="https://paneledu.com/apply">
@@ -12,26 +12,44 @@
   <link href="/css/site.css" rel="stylesheet">
   <style>
     * { -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
-    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
-
     .apply-wrap { max-width: 680px; margin: 0 auto; padding: 24px 16px 120px; }
 
-    /* Header */
-    .apply-head { margin-bottom: 24px; }
-    .apply-head h1 { font-size: 1.4rem; font-weight: 900; color: var(--text); margin: 0 0 4px; }
-    .apply-head p { font-size: .86rem; color: var(--muted); margin: 0; }
+    /* Page header */
+    .page-hdr { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+    .page-hdr a { color: var(--muted); text-decoration: none; font-size: 1.1rem; }
+    .page-hdr h1 { font-size: 1.25rem; font-weight: 900; color: var(--text); margin: 0; }
 
-    /* Progress bar */
-    .prog-bar { display: flex; gap: 4px; margin-bottom: 6px; }
-    .prog-bar .seg { flex: 1; height: 4px; border-radius: 4px; background: var(--line); transition: background .2s; }
-    .prog-bar .seg.on { background: var(--accent); }
-    .prog-label { font-size: .73rem; color: var(--muted); margin-bottom: 22px; }
+    /* University banner */
+    .uni-banner { background: rgba(99,102,241,.07); border: 1.5px solid rgba(99,102,241,.25); border-radius: 16px; padding: 16px 18px; margin-bottom: 22px; }
+    .uni-banner .u-name { font-size: 1rem; font-weight: 800; color: var(--text); margin-bottom: 3px; }
+    .uni-banner .u-loc  { font-size: .78rem; color: var(--muted); }
+    .uni-banner .u-prog { margin-top: 10px; display: flex; align-items: center; gap: 8px; }
+    .prog-chip { display: inline-flex; align-items: center; gap: 6px; background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.3); border-radius: 8px; padding: 5px 11px; font-size: .8rem; font-weight: 700; color: var(--accent); }
 
-    /* Step heading */
-    .step-h { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
-    .step-sub { font-size: .82rem; color: var(--muted); margin-bottom: 20px; line-height: 1.5; }
+    /* Form labels & inputs */
+    .lbl { font-size: .8rem; font-weight: 700; color: var(--text); margin-bottom: 6px; display: block; }
+    .lbl .opt { font-weight: 500; color: var(--muted); }
+    .fld {
+      width: 100%; background: var(--surface); border: 1.5px solid var(--line);
+      border-radius: 12px; padding: 13px 14px; color: var(--text); font-size: .92rem; margin-bottom: 16px;
+      appearance: none; -webkit-appearance: none;
+    }
+    .fld:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.14); }
+    select.fld {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3E%3Cpath fill='%236b7280' d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
+    }
+    select.fld option { background: #fff; color: #111; }
+    .fld::placeholder { color: var(--muted); }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+    @media (max-width: 520px) { .grid2 { grid-template-columns: 1fr; } }
 
-    /* Chip grid (continent / GPA / level etc.) */
+    /* Divider with label */
+    .sec-div { display: flex; align-items: center; gap: 10px; margin: 8px 0 20px; }
+    .sec-div span { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); white-space: nowrap; }
+    .sec-div::before, .sec-div::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+
+    /* Chip grid */
     .chip-grid { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
     .chip {
       padding: 9px 16px; border-radius: 30px; font-size: .85rem; font-weight: 600;
@@ -40,305 +58,238 @@
     }
     .chip:hover { border-color: var(--accent); color: var(--accent); }
     .chip.sel { border-color: var(--accent); background: rgba(99,102,241,.12); color: var(--accent); }
-    .chip.sel-card { border-color: var(--accent); background: rgba(99,102,241,.06); color: var(--text); }
 
-    /* Card chips (education status) */
-    .card-chips { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
-    .card-chip {
-      padding: 16px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--surface);
-      cursor: pointer; transition: all .15s; text-align: center;
-    }
+    /* Card chips for education status */
+    .card-chips { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+    .card-chip { padding: 14px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--surface); cursor: pointer; transition: all .15s; text-align: center; }
     .card-chip:hover { border-color: var(--accent); }
     .card-chip.sel { border-color: var(--accent); background: rgba(99,102,241,.08); }
-    .card-chip .cc-icon { font-size: 1.5rem; color: var(--muted); margin-bottom: 6px; }
+    .card-chip .cc-icon { font-size: 1.4rem; color: var(--muted); margin-bottom: 5px; }
     .card-chip.sel .cc-icon { color: var(--accent); }
-    .card-chip .cc-lbl { font-size: .88rem; font-weight: 700; color: var(--text); }
-    .card-chip .cc-sub { font-size: .74rem; color: var(--muted); margin-top: 2px; }
+    .card-chip .cc-lbl { font-size: .86rem; font-weight: 700; color: var(--text); }
+    .card-chip .cc-sub { font-size: .73rem; color: var(--muted); margin-top: 2px; }
 
-    /* Dropdown / input */
-    .lbl { font-size: .8rem; font-weight: 600; color: var(--text); margin-bottom: 6px; display: block; }
-    .fld {
-      width: 100%; background: var(--surface); border: 1.5px solid var(--line);
-      border-radius: 12px; padding: 13px 14px; color: var(--text); font-size: .92rem; margin-bottom: 16px;
-      appearance: none; -webkit-appearance: none;
+    /* Error */
+    .err-msg { color: #dc2626; font-size: .78rem; margin: -10px 0 12px; display: none; }
+
+    /* Submit button */
+    .btn-submit {
+      width: 100%; background: var(--grad); border: none; color: #fff; border-radius: 14px;
+      font-size: 1rem; font-weight: 700; padding: 16px; box-shadow: 0 6px 22px rgba(99,102,241,.35);
+      cursor: pointer; margin-top: 8px; transition: opacity .15s, transform .12s;
     }
-    .fld:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.15); }
-    select.fld { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3E%3Cpath fill='%236b7280' d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
-    select.fld option { background: #fff; color: #111; }
+    .btn-submit:hover { opacity: .92; transform: translateY(-1px); }
+    .btn-submit:disabled { opacity: .45; box-shadow: none; cursor: default; transform: none; }
 
-    /* Yes/No row */
-    .yn-row { display: flex; gap: 10px; margin-bottom: 16px; }
-    .yn-btn {
-      flex: 1; padding: 11px; border-radius: 12px; border: 1.5px solid var(--line);
-      background: var(--surface); color: var(--muted); font-weight: 700; font-size: .88rem;
-      cursor: pointer; text-align: center; transition: all .15s;
-    }
-    .yn-btn.sel { border-color: var(--accent); background: rgba(99,102,241,.1); color: var(--accent); }
+    /* Progress bar */
+    .prog-bar { display: flex; gap: 4px; margin-bottom: 6px; }
+    .prog-bar .seg { flex: 1; height: 4px; border-radius: 4px; background: var(--line); transition: background .2s; }
+    .prog-bar .seg.on { background: var(--accent); }
+    .prog-label { font-size: .73rem; color: var(--muted); margin-bottom: 22px; }
+    .step-h { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+    .step-sub { font-size: .82rem; color: var(--muted); margin-bottom: 20px; }
 
-    /* Test score sub-options */
-    .sub-section { background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 16px; }
-    .sub-section .lbl { margin-bottom: 8px; }
-
-    /* AP/IB subject tags */
-    .tag-input-wrap { border: 1.5px solid var(--line); border-radius: 12px; padding: 10px 12px; background: var(--surface); margin-bottom: 16px; min-height: 52px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
-    .tag-input-wrap:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.15); }
-    .subject-tag { background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.3); color: var(--accent); border-radius: 20px; padding: 3px 10px 3px 10px; font-size: .78rem; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; }
-    .subject-tag button { background: none; border: none; color: var(--accent); cursor: pointer; padding: 0; font-size: .85rem; line-height: 1; }
-    .tag-input-wrap input { border: none; outline: none; background: transparent; font-size: .86rem; color: var(--text); flex: 1; min-width: 120px; }
-    .tag-suggestions { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow-lg); padding: 6px 0; margin-top: 4px; display: none; position: relative; z-index: 10; max-height: 200px; overflow-y: auto; }
-    .tag-suggestions.open { display: block; }
-    .sug-item { padding: 8px 14px; font-size: .84rem; cursor: pointer; color: var(--text); }
-    .sug-item:hover { background: var(--surface-2); color: var(--accent); }
-
-    /* Summary card */
-    .sum-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
-    .sum-card h6 { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--accent); font-weight: 700; margin-bottom: 10px; }
-    .sum-row { display: flex; justify-content: space-between; gap: 12px; font-size: .84rem; padding: 5px 0; border-top: 1px solid var(--line); }
-    .sum-row:first-of-type { border-top: none; }
-    .sum-row .k { color: var(--muted); flex-shrink: 0; }
-    .sum-row .v { color: var(--text); font-weight: 600; text-align: right; }
-
-    /* Sticky footer nav */
+    /* Sticky nav (funnel only) */
     .cta-bar { position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg,var(--bg) 70%,transparent); padding: 14px 16px calc(14px + env(safe-area-inset-bottom)); z-index: 90; }
     .cta-inner { max-width: 680px; margin: 0 auto; display: flex; gap: 10px; }
     .btn-back { background: var(--surface); border: 1.5px solid var(--line); color: var(--muted); border-radius: 14px; font-size: .95rem; font-weight: 600; padding: 14px 20px; cursor: pointer; }
     .btn-next { flex: 1; background: var(--grad); border: none; color: #fff; border-radius: 14px; font-size: 1rem; font-weight: 700; padding: 14px; box-shadow: 0 6px 22px rgba(99,102,241,.35); cursor: pointer; }
     .btn-next:disabled { opacity: .45; box-shadow: none; cursor: default; }
 
-    /* Loading spinner */
+    /* Spinner */
     .spinner-ring { width: 34px; height: 34px; border: 3px solid rgba(99,102,241,.2); border-top-color: #6366f1; border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 14px; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
     /* Success */
-    .success-wrap { text-align: center; padding: 56px 16px; }
+    .success-wrap { text-align: center; padding: 60px 16px; }
     .success-wrap .ic { width: 80px; height: 80px; border-radius: 50%; background: rgba(16,185,129,.12); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
     .success-wrap .ic i { font-size: 2.4rem; color: #059669; }
+    .success-btns { margin-top: 32px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-home { background: var(--grad); border: none; color: #fff; font-weight: 700; border-radius: 14px; padding: 13px 24px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: .95rem; }
+    .btn-ghost-sm { background: var(--surface); border: 1.5px solid var(--line); color: var(--muted); font-weight: 600; border-radius: 14px; padding: 12px 22px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: .9rem; }
 
-    .err-msg { color: #dc2626; font-size: .78rem; margin: -10px 0 12px; display: none; }
+    /* Funnel year/no row */
+    .yn-row { display: flex; gap: 10px; margin-bottom: 16px; }
+    .yn-btn { flex: 1; padding: 11px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); font-weight: 700; font-size: .88rem; cursor: pointer; text-align: center; transition: all .15s; }
+    .yn-btn.sel { border-color: var(--accent); background: rgba(99,102,241,.1); color: var(--accent); }
+    .sub-section { background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 16px; }
+    .tag-input-wrap { border: 1.5px solid var(--line); border-radius: 12px; padding: 10px 12px; background: var(--surface); margin-bottom: 16px; min-height: 52px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+    .tag-input-wrap:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.15); }
+    .subject-tag { background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.3); color: var(--accent); border-radius: 20px; padding: 3px 10px; font-size: .78rem; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; }
+    .subject-tag button { background: none; border: none; color: var(--accent); cursor: pointer; padding: 0; font-size: .85rem; line-height: 1; }
+    .tag-input-wrap input { border: none; outline: none; background: transparent; font-size: .86rem; color: var(--text); flex: 1; min-width: 120px; }
+    .tag-suggestions { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow-lg); padding: 6px 0; margin-top: 4px; display: none; position: relative; z-index: 10; max-height: 200px; overflow-y: auto; }
+    .tag-suggestions.open { display: block; }
+    .sug-item { padding: 8px 14px; font-size: .84rem; cursor: pointer; color: var(--text); }
+    .sug-item:hover { background: var(--surface-2); color: var(--accent); }
+    .sum-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+    .sum-card h6 { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--accent); font-weight: 700; margin-bottom: 10px; }
+    .sum-row { display: flex; justify-content: space-between; gap: 12px; font-size: .84rem; padding: 5px 0; border-top: 1px solid var(--line); }
+    .sum-row:first-of-type { border-top: none; }
+    .sum-row .k { color: var(--muted); flex-shrink: 0; }
+    .sum-row .v { color: var(--text); font-weight: 600; text-align: right; }
   </style>
 </head>
 <body class="pe-theme">
-
 <div class="apply-wrap" id="appWrap">
-  <div class="apply-head">
+  <div class="page-hdr">
+    <a href="/" id="backLink"><i class="bi bi-arrow-left"></i></a>
     <h1><i class="bi bi-send-check-fill me-2" style="color:var(--accent)"></i>Başvuru Yap</h1>
-    <p>Hedef üniversiteni seç, profilini oluştur, başvurunu gönder.</p>
   </div>
 
-  <div class="prog-bar" id="progBar"></div>
-  <div class="prog-label" id="progLabel"></div>
+  <!-- ═══════════════════════════════════════════════════════════════
+       SHORTCUT MODE (pre-selected uni/program) — shown when ?uni= set
+       ══════════════════════════════════════════════════════════════ -->
+  <div id="shortcutMode" style="display:none">
 
-  <!-- STEP 1: Continent -->
-  <div class="wiz-step" data-step="1">
-    <div class="step-h">Hangi kıtada okumak istiyorsun?</div>
-    <div class="step-sub">Birini seç — ülke ve okul listesi buna göre filtrelenecek.</div>
-    <div class="chip-grid" id="continentChips"></div>
-  </div>
+    <!-- University + program banner -->
+    <div id="scBanner" class="uni-banner"></div>
 
-  <!-- STEP 2: Country -->
-  <div class="wiz-step" data-step="2" style="display:none">
-    <div class="step-h">Hangi ülke?</div>
-    <div class="step-sub" id="countryStepSub">Seçtiğin kıtadaki ülkeler listeleniyor.</div>
-    <label class="lbl">Ülke seç</label>
-    <select class="fld" id="countrySelect" onchange="onCountryChange()">
-      <option value="">Ülke seçin…</option>
-    </select>
-  </div>
-
-  <!-- STEP 3: School -->
-  <div class="wiz-step" data-step="3" style="display:none">
-    <div class="step-h">Hangi üniversite?</div>
-    <div class="step-sub" id="schoolStepSub">Ülkedeki üniversiteler listeleniyor.</div>
-    <label class="lbl">Üniversite seç</label>
-    <select class="fld" id="schoolSelect" onchange="onSchoolChange()">
-      <option value="">Üniversite seçin…</option>
-    </select>
-  </div>
-
-  <!-- STEP 4: Program -->
-  <div class="wiz-step" data-step="4" style="display:none">
-    <div class="step-h">Hangi program?</div>
-    <div class="step-sub">Başvurmak istediğin programı ve başlangıç dönemini seç.</div>
-    <label class="lbl">Program</label>
-    <select class="fld" id="programSelect" onchange="onProgramChange()">
-      <option value="">Program seçin…</option>
-    </select>
-    <div id="programLoading" style="display:none;font-size:.82rem;color:var(--muted);margin:-8px 0 16px">
-      <span class="spinner-border spinner-border-sm me-2"></span>Programlar yükleniyor…
+    <!-- Program selector (only when ?program not set) -->
+    <div id="scProgramWrap" style="display:none">
+      <label class="lbl">Program</label>
+      <select class="fld" id="scProgramSelect" onchange="onScProgramChange()">
+        <option value="">Program seçin…</option>
+      </select>
     </div>
-    <label class="lbl">Intake (başlangıç dönemi)</label>
-    <select class="fld" id="intakeSelect">
-      <option value="">Seçin veya yazın…</option>
-    </select>
-  </div>
 
-  <!-- STEP 5: Education status -->
-  <div class="wiz-step" data-step="5" style="display:none">
-    <div class="step-h">Eğitim durumun nedir?</div>
-    <div class="step-sub">Bu bilgi sana uygun programları ve gereksinimleri belirlememize yardımcı olur.</div>
+    <!-- Intake -->
+    <label class="lbl">Intake <span class="opt">(isteğe bağlı)</span></label>
+    <select class="fld" id="scIntake">
+      <option value="">Seçin…</option>
+    </select>
+
+    <!-- Contact info -->
+    <div class="sec-div"><span>İletişim Bilgileri</span></div>
+    <div class="grid2">
+      <div>
+        <label class="lbl">Ad <span class="opt">(isteğe bağlı)</span></label>
+        <input type="text" class="fld" id="scFirstName" placeholder="Adın">
+      </div>
+      <div>
+        <label class="lbl">Soyad <span class="opt">(isteğe bağlı)</span></label>
+        <input type="text" class="fld" id="scLastName" placeholder="Soyadın">
+      </div>
+    </div>
+    <label class="lbl">E-posta <span style="color:#ef4444">*</span></label>
+    <input type="email" class="fld" id="scEmail" placeholder="ornek@eposta.com">
+    <div class="err-msg" id="scEmailErr">Geçerli bir e-posta adresi gir.</div>
+    <label class="lbl">Telefon <span class="opt">(isteğe bağlı)</span></label>
+    <input type="tel" class="fld" id="scPhone" placeholder="+90 …">
+
+    <!-- Optional academic profile -->
+    <div class="sec-div"><span>Öğrenci Profili (isteğe bağlı)</span></div>
+
+    <label class="lbl">Eğitim durumu</label>
     <div class="card-chips">
-      <div class="card-chip" data-val="highschool" onclick="pickCard('eduStatus', this)">
+      <div class="card-chip" data-val="highschool" onclick="scPickCard('eduStatus', this)">
         <div class="cc-icon"><i class="bi bi-mortarboard"></i></div>
         <div class="cc-lbl">Lise Öğrencisi</div>
         <div class="cc-sub">Henüz mezun olmadım</div>
       </div>
-      <div class="card-chip" data-val="graduated" onclick="pickCard('eduStatus', this)">
+      <div class="card-chip" data-val="graduated" onclick="scPickCard('eduStatus', this)">
         <div class="cc-icon"><i class="bi bi-award"></i></div>
         <div class="cc-lbl">Mezun</div>
         <div class="cc-sub">Lise / üniversite mezunu</div>
       </div>
     </div>
-  </div>
 
-  <!-- STEP 6: GPA -->
-  <div class="wiz-step" data-step="6" style="display:none">
-    <div class="step-h">Not ortalamanız (GPA)?</div>
-    <div class="step-sub">Lise not ortalanı 100 üzerinden seç.</div>
+    <label class="lbl">İngilizce seviyesi</label>
     <div class="chip-grid">
-      <div class="chip" data-field="gpa" data-val="96-100" onclick="pickChip('gpa', this)">96–100</div>
-      <div class="chip" data-field="gpa" data-val="81-95"  onclick="pickChip('gpa', this)">81–95</div>
-      <div class="chip" data-field="gpa" data-val="70-80"  onclick="pickChip('gpa', this)">70–80</div>
-      <div class="chip" data-field="gpa" data-val="60-69"  onclick="pickChip('gpa', this)">60–69</div>
+      <div class="chip" data-field="engLevel" data-val="Beginner"     onclick="scPickChip('engLevel', this)">Başlangıç <span style="opacity:.6;font-weight:400">(A1-A2)</span></div>
+      <div class="chip" data-field="engLevel" data-val="Intermediate" onclick="scPickChip('engLevel', this)">Orta <span style="opacity:.6;font-weight:400">(B1-B2)</span></div>
+      <div class="chip" data-field="engLevel" data-val="Advanced"     onclick="scPickChip('engLevel', this)">İleri <span style="opacity:.6;font-weight:400">(C1-C2)</span></div>
+    </div>
+
+    <button class="btn-submit" id="scSubmitBtn" onclick="scSubmit()">
+      <i class="bi bi-send-fill me-2"></i>Başvuruyu Gönder
+    </button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FUNNEL MODE (cold start — no ?uni=)
+       ══════════════════════════════════════════════════════════════ -->
+  <div id="funnelMode" style="display:none">
+    <div class="prog-bar" id="progBar"></div>
+    <div class="prog-label" id="progLabel"></div>
+
+    <!-- Step 1: Continent -->
+    <div class="wiz-step" data-step="1">
+      <div class="step-h">Hangi kıtada okumak istiyorsun?</div>
+      <div class="step-sub">Birini seç — ülke ve okul listesi buna göre filtrelenecek.</div>
+      <div class="chip-grid" id="continentChips"></div>
+    </div>
+
+    <!-- Step 2: Country -->
+    <div class="wiz-step" data-step="2" style="display:none">
+      <div class="step-h">Hangi ülke?</div>
+      <div class="step-sub" id="countryStepSub">Seçtiğin kıtadaki ülkeler listeleniyor.</div>
+      <label class="lbl">Ülke seç</label>
+      <select class="fld" id="countrySelect" onchange="onCountryChange()"><option value="">Ülke seçin…</option></select>
+    </div>
+
+    <!-- Step 3: School -->
+    <div class="wiz-step" data-step="3" style="display:none">
+      <div class="step-h">Hangi üniversite?</div>
+      <div class="step-sub" id="schoolStepSub">Ülkedeki üniversiteler listeleniyor.</div>
+      <label class="lbl">Üniversite seç</label>
+      <select class="fld" id="schoolSelect" onchange="onSchoolChange()"><option value="">Üniversite seçin…</option></select>
+    </div>
+
+    <!-- Step 4: Program & intake -->
+    <div class="wiz-step" data-step="4" style="display:none">
+      <div class="step-h">Hangi program?</div>
+      <div class="step-sub">Başvurmak istediğin programı ve başlangıç dönemini seç.</div>
+      <label class="lbl">Program</label>
+      <select class="fld" id="programSelect" onchange="onProgramChange()"><option value="">Program seçin…</option></select>
+      <div id="programLoading" style="display:none;font-size:.82rem;color:var(--muted);margin:-8px 0 16px">Programlar yükleniyor…</div>
+      <label class="lbl">Intake</label>
+      <select class="fld" id="intakeSelect"><option value="">Seçin…</option></select>
+    </div>
+
+    <!-- Step 5: Contact + profile -->
+    <div class="wiz-step" data-step="5" style="display:none">
+      <div class="step-h">Bilgilerini gir</div>
+      <div class="step-sub">Sadece e-posta yeterli. Diğer alanlar isteğe bağlı.</div>
+      <div class="grid2">
+        <div><label class="lbl">Ad <span class="opt">(isteğe bağlı)</span></label><input type="text" class="fld" id="f_first_name" placeholder="Adın"></div>
+        <div><label class="lbl">Soyad <span class="opt">(isteğe bağlı)</span></label><input type="text" class="fld" id="f_last_name" placeholder="Soyadın"></div>
+      </div>
+      <label class="lbl">E-posta <span style="color:#ef4444">*</span></label>
+      <input type="email" class="fld" id="f_email" placeholder="ornek@eposta.com">
+      <div class="err-msg" id="err_email">Geçerli bir e-posta adresi gir.</div>
+      <label class="lbl">Telefon <span class="opt">(isteğe bağlı)</span></label>
+      <input type="tel" class="fld" id="f_phone" placeholder="+90 …">
+
+      <div class="sec-div"><span>Öğrenci Profili (isteğe bağlı)</span></div>
+
+      <label class="lbl">Eğitim durumu</label>
+      <div class="card-chips">
+        <div class="card-chip" data-val="highschool" onclick="pickCard('eduStatus', this)">
+          <div class="cc-icon"><i class="bi bi-mortarboard"></i></div>
+          <div class="cc-lbl">Lise Öğrencisi</div>
+          <div class="cc-sub">Henüz mezun olmadım</div>
+        </div>
+        <div class="card-chip" data-val="graduated" onclick="pickCard('eduStatus', this)">
+          <div class="cc-icon"><i class="bi bi-award"></i></div>
+          <div class="cc-lbl">Mezun</div>
+          <div class="cc-sub">Lise / üniversite mezunu</div>
+        </div>
+      </div>
+
+      <label class="lbl">İngilizce seviyesi</label>
+      <div class="chip-grid">
+        <div class="chip" data-field="fEngLevel" data-val="Beginner"     onclick="pickChip('fEngLevel', this)">Başlangıç <span style="opacity:.6;font-weight:400">(A1-A2)</span></div>
+        <div class="chip" data-field="fEngLevel" data-val="Intermediate" onclick="pickChip('fEngLevel', this)">Orta <span style="opacity:.6;font-weight:400">(B1-B2)</span></div>
+        <div class="chip" data-field="fEngLevel" data-val="Advanced"     onclick="pickChip('fEngLevel', this)">İleri <span style="opacity:.6;font-weight:400">(C1-C2)</span></div>
+      </div>
     </div>
   </div>
 
-  <!-- STEP 7: English level -->
-  <div class="wiz-step" data-step="7" style="display:none">
-    <div class="step-h">İngilizce seviyeniz?</div>
-    <div class="step-sub">Kendinizi en iyi tanımlayan seviyeyi seç.</div>
-    <div class="chip-grid">
-      <div class="chip" data-field="engLevel" data-val="Beginner"     onclick="pickChip('engLevel', this)">Başlangıç <span style="opacity:.6;font-weight:400">(A1-A2)</span></div>
-      <div class="chip" data-field="engLevel" data-val="Intermediate" onclick="pickChip('engLevel', this)">Orta <span style="opacity:.6;font-weight:400">(B1-B2)</span></div>
-      <div class="chip" data-field="engLevel" data-val="Advanced"     onclick="pickChip('engLevel', this)">İleri <span style="opacity:.6;font-weight:400">(C1-C2)</span></div>
-    </div>
-
-    <!-- English test -->
-    <div class="step-h" style="font-size:.92rem;margin-top:8px">İngilizce sınav sonucun var mı?</div>
-    <div class="yn-row">
-      <div class="yn-btn" data-val="yes" onclick="pickYN('engTest', this)">Evet</div>
-      <div class="yn-btn" data-val="no"  onclick="pickYN('engTest', this)">Hayır / Planlamıyorum</div>
-    </div>
-
-    <div id="engTestDetails" style="display:none">
-      <label class="lbl">Sınav türü</label>
-      <div class="chip-grid">
-        <div class="chip" data-field="engTestType" data-val="IELTS"   onclick="pickChip('engTestType', this);showTestScore()">IELTS</div>
-        <div class="chip" data-field="engTestType" data-val="TOEFL"   onclick="pickChip('engTestType', this);showTestScore()">TOEFL</div>
-        <div class="chip" data-field="engTestType" data-val="Duolingo" onclick="pickChip('engTestType', this);showTestScore()">Duolingo</div>
-        <div class="chip" data-field="engTestType" data-val="Pearson" onclick="pickChip('engTestType', this);showTestScore()">Pearson (PTE)</div>
-      </div>
-      <div id="testScoreWrap" style="display:none">
-        <label class="lbl" id="testScoreLbl">Puan aralığı</label>
-        <div class="chip-grid" id="testScoreChips"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- STEP 8: Extra tests (SAT / GRE / GMAT) -->
-  <div class="wiz-step" data-step="8" style="display:none">
-    <div class="step-h">Standart sınav sonucun var mı?</div>
-    <div class="step-sub">SAT, GRE veya GMAT sonucun varsa paylaş — yoksa geçebilirsin.</div>
-
-    <div class="lbl" style="margin-bottom:10px">SAT</div>
-    <div class="yn-row">
-      <div class="yn-btn" data-val="yes" onclick="pickYN('satHas', this);toggleStdTest('sat')">Var</div>
-      <div class="yn-btn" data-val="no"  onclick="pickYN('satHas', this);toggleStdTest('sat')">Yok</div>
-    </div>
-    <div id="satScoreWrap" style="display:none">
-      <div class="chip-grid">
-        <div class="chip" data-field="satScore" data-val="900-1000" onclick="pickChip('satScore',this)">900–1000</div>
-        <div class="chip" data-field="satScore" data-val="1000-1100" onclick="pickChip('satScore',this)">1000–1100</div>
-        <div class="chip" data-field="satScore" data-val="1100-1200" onclick="pickChip('satScore',this)">1100–1200</div>
-        <div class="chip" data-field="satScore" data-val="1200-1300" onclick="pickChip('satScore',this)">1200–1300</div>
-        <div class="chip" data-field="satScore" data-val="1300-1400" onclick="pickChip('satScore',this)">1300–1400</div>
-        <div class="chip" data-field="satScore" data-val="1400+" onclick="pickChip('satScore',this)">1400+</div>
-      </div>
-    </div>
-
-    <div class="lbl" style="margin-bottom:10px;margin-top:4px">GRE</div>
-    <div class="yn-row">
-      <div class="yn-btn" data-val="yes" onclick="pickYN('greHas', this);toggleStdTest('gre')">Var</div>
-      <div class="yn-btn" data-val="no"  onclick="pickYN('greHas', this);toggleStdTest('gre')">Yok</div>
-    </div>
-    <div id="greScoreWrap" style="display:none">
-      <div class="chip-grid">
-        <div class="chip" data-field="greScore" data-val="290-300" onclick="pickChip('greScore',this)">290–300</div>
-        <div class="chip" data-field="greScore" data-val="300-310" onclick="pickChip('greScore',this)">300–310</div>
-        <div class="chip" data-field="greScore" data-val="310-320" onclick="pickChip('greScore',this)">310–320</div>
-        <div class="chip" data-field="greScore" data-val="320-330" onclick="pickChip('greScore',this)">320–330</div>
-        <div class="chip" data-field="greScore" data-val="330+" onclick="pickChip('greScore',this)">330+</div>
-      </div>
-    </div>
-
-    <div class="lbl" style="margin-bottom:10px;margin-top:4px">GMAT</div>
-    <div class="yn-row">
-      <div class="yn-btn" data-val="yes" onclick="pickYN('gmatHas', this);toggleStdTest('gmat')">Var</div>
-      <div class="yn-btn" data-val="no"  onclick="pickYN('gmatHas', this);toggleStdTest('gmat')">Yok</div>
-    </div>
-    <div id="gmatScoreWrap" style="display:none">
-      <div class="chip-grid">
-        <div class="chip" data-field="gmatScore" data-val="500-549" onclick="pickChip('gmatScore',this)">500–549</div>
-        <div class="chip" data-field="gmatScore" data-val="550-599" onclick="pickChip('gmatScore',this)">550–599</div>
-        <div class="chip" data-field="gmatScore" data-val="600-649" onclick="pickChip('gmatScore',this)">600–649</div>
-        <div class="chip" data-field="gmatScore" data-val="650-699" onclick="pickChip('gmatScore',this)">650–699</div>
-        <div class="chip" data-field="gmatScore" data-val="700+" onclick="pickChip('gmatScore',this)">700+</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- STEP 9: Curriculum (AP / IB) -->
-  <div class="wiz-step" data-step="9" style="display:none">
-    <div class="step-h">Müfredat bilgin</div>
-    <div class="step-sub">AP veya IB derslerini tamamladıysan belirt — yoksa geçebilirsin.</div>
-
-    <div class="lbl" style="margin-bottom:10px">AP (Advanced Placement) ders aldın mı?</div>
-    <div class="yn-row">
-      <div class="yn-btn" data-val="yes" onclick="pickYN('apHas', this);toggleSection('apSection')">Evet</div>
-      <div class="yn-btn" data-val="no"  onclick="pickYN('apHas', this);toggleSection('apSection')">Hayır</div>
-    </div>
-    <div id="apSection" style="display:none">
-      <label class="lbl">Aldığın AP dersleri <span style="color:var(--muted);font-weight:400">(yaz + Enter)</span></label>
-      <div class="tag-input-wrap" id="apTagWrap">
-        <input type="text" id="apInput" placeholder="Örn. Calculus BC…" autocomplete="off"
-          oninput="showSuggestions('ap')" onkeydown="tagKeydown(event,'ap')">
-      </div>
-      <div class="tag-suggestions" id="apSuggestions"></div>
-    </div>
-
-    <div class="lbl" style="margin-bottom:10px;margin-top:12px">IB (International Baccalaureate) ders aldın mı?</div>
-    <div class="yn-row">
-      <div class="yn-btn" data-val="yes" onclick="pickYN('ibHas', this);toggleSection('ibSection')">Evet</div>
-      <div class="yn-btn" data-val="no"  onclick="pickYN('ibHas', this);toggleSection('ibSection')">Hayır</div>
-    </div>
-    <div id="ibSection" style="display:none">
-      <label class="lbl">IB — Higher Level (HL) dersler</label>
-      <div class="tag-input-wrap" id="ibHlTagWrap">
-        <input type="text" id="ibHlInput" placeholder="Örn. Mathematics HL…" autocomplete="off"
-          oninput="showSuggestions('ibHl')" onkeydown="tagKeydown(event,'ibHl')">
-      </div>
-      <div class="tag-suggestions" id="ibHlSuggestions"></div>
-      <label class="lbl" style="margin-top:10px">IB — Standard Level (SL) dersler</label>
-      <div class="tag-input-wrap" id="ibSlTagWrap">
-        <input type="text" id="ibSlInput" placeholder="Örn. Physics SL…" autocomplete="off"
-          oninput="showSuggestions('ibSl')" onkeydown="tagKeydown(event,'ibSl')">
-      </div>
-      <div class="tag-suggestions" id="ibSlSuggestions"></div>
-    </div>
-  </div>
-
-  <!-- STEP 10: Email & Submit -->
-  <div class="wiz-step" data-step="10" style="display:none">
-    <div class="step-h">Son adım: iletişim bilgin</div>
-    <div class="step-sub">Başvurunu e-posta adresine göndereceğiz ve ekibimiz seninle iletişime geçecek.</div>
-
-    <!-- Summary -->
-    <div id="summaryBlock"></div>
-
-    <label class="lbl">E-posta adresi <span style="color:#ef4444">*</span></label>
-    <input type="email" class="fld" id="emailInput" placeholder="ornek@eposta.com">
-    <div class="err-msg" id="emailErr">Geçerli bir e-posta adresi gir.</div>
-
-    <p style="font-size:.76rem;color:var(--muted);margin-bottom:0">Gönder'e basarak bilgilerimin değerlendirilmek üzere işlenmesini kabul ediyorum.</p>
+  <!-- Loading -->
+  <div id="loadingState" style="display:none;text-align:center;padding:60px 0">
+    <div class="spinner-ring"></div>
+    <p style="color:var(--muted);font-size:.9rem">Yükleniyor…</p>
   </div>
 
   <!-- Submitting -->
@@ -353,22 +304,18 @@
       <div class="ic"><i class="bi bi-check-lg"></i></div>
       <h4 style="font-weight:900;color:var(--text)">Başvurun Alındı!</h4>
       <p style="color:var(--muted);font-size:.9rem;max-width:440px;margin:10px auto 0;line-height:1.6">
-        Teşekkürler! Başvurunu aldık. Ekibimiz profilini inceleyip en kısa sürede e-posta ile seninle iletişime geçecek.
+        Teşekkürler! Ekibimiz başvurunu inceleyip en kısa sürede e-posta veya telefon ile seninle iletişime geçecek.
       </p>
-      <div style="margin-top:32px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-        <a href="/" class="btn-next" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;max-width:240px">
-          <i class="bi bi-house-fill"></i>Ana Sayfaya Dön
-        </a>
-        <a href="/match" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;padding:14px 22px;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;color:var(--muted);font-weight:700;font-size:.92rem">
-          <i class="bi bi-magic"></i>Profil Sihirbazı
-        </a>
+      <div class="success-btns">
+        <a href="/" class="btn-home"><i class="bi bi-house-fill"></i>Ana Sayfa</a>
+        <a href="/match" class="btn-ghost-sm"><i class="bi bi-magic"></i>Profil Sihirbazı</a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Sticky nav -->
-<div class="cta-bar" id="ctaBar">
+<!-- Funnel sticky nav -->
+<div class="cta-bar" id="ctaBar" style="display:none">
   <div class="cta-inner">
     <button class="btn-back" id="backBtn" onclick="prevStep()" style="display:none"><i class="bi bi-arrow-left"></i></button>
     <button class="btn-next" id="nextBtn" onclick="nextStep()">Devam <i class="bi bi-arrow-right ms-1"></i></button>
@@ -376,8 +323,150 @@
 </div>
 
 <script>
-// ── Constants ──────────────────────────────────────────────────────────────
-const TOTAL_STEPS = 10;
+function esc(s) { return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+const params = new URLSearchParams(location.search);
+const URL_UNI     = params.get('uni');
+const URL_PROGRAM = params.get('program');
+
+// ═══════════════════════════════════════════════════════════════════════════
+// SHORTCUT MODE — arrived with ?uni= set
+// ═══════════════════════════════════════════════════════════════════════════
+const scSel = { eduStatus: null, engLevel: null };
+let scUniData  = null;
+let scProgData = null;
+let scPrograms = [];
+
+function scPickCard(field, el) {
+  el.closest('.card-chips').querySelectorAll('.card-chip').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  scSel[field] = el.dataset.val;
+}
+function scPickChip(field, el) {
+  document.querySelectorAll(`[data-field="${field}"]`).forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  scSel[field] = el.dataset.val;
+}
+
+function onScProgramChange() {
+  const id = document.getElementById('scProgramSelect').value;
+  scProgData = scPrograms.find(p => String(p.id) === String(id)) || null;
+  updateScIntakes();
+  updateScBanner();
+}
+
+function updateScIntakes() {
+  const is = document.getElementById('scIntake');
+  const months = scProgData ? (scProgData.intake_months || '').split(',').map(s => s.trim()).filter(Boolean) : [];
+  is.innerHTML = '<option value="">Seçin…</option>' + months.map(m => `<option value="${esc(m)}">${esc(m)}</option>`).join('');
+}
+
+function updateScBanner() {
+  if (!scUniData) return;
+  const u = scUniData;
+  const loc = [u.city, u.country].filter(Boolean).join(', ');
+  const prog = scProgData;
+  document.getElementById('scBanner').innerHTML =
+    `<div class="u-name">${esc(u.name)}</div>` +
+    (loc ? `<div class="u-loc"><i class="bi bi-geo-alt-fill me-1"></i>${esc(loc)}</div>` : '') +
+    (prog ? `<div class="u-prog"><span class="prog-chip"><i class="bi bi-mortarboard-fill me-1"></i>${esc(prog.name)}${prog.type_name ? ' · ' + esc(prog.type_name) : ''}${prog.duration ? ' · ' + esc(prog.duration) : ''}</span></div>` : '');
+}
+
+async function initShortcut() {
+  document.getElementById('loadingState').style.display = 'block';
+  try {
+    const r = await fetch('/api/public/universities/' + encodeURIComponent(URL_UNI));
+    if (!r.ok) throw new Error();
+    scUniData = await r.json();
+    scPrograms = scUniData.programs || [];
+
+    if (URL_PROGRAM) {
+      scProgData = scPrograms.find(p => String(p.id) === String(URL_PROGRAM)) || null;
+    }
+
+    // Populate program selector if no specific program
+    if (!URL_PROGRAM && scPrograms.length) {
+      const sel = document.getElementById('scProgramSelect');
+      sel.innerHTML = '<option value="">Program seçin…</option>' +
+        scPrograms.map(p => `<option value="${p.id}">${esc(p.name)}${p.type_name ? ' ('+esc(p.type_name)+')' : ''}${p.duration ? ' · '+esc(p.duration) : ''}</option>`).join('');
+      document.getElementById('scProgramWrap').style.display = 'block';
+    }
+
+    updateScBanner();
+    updateScIntakes();
+
+    // Set back link to orbit if possible
+    const backLink = document.getElementById('backLink');
+    if (scUniData.latitude && scUniData.longitude) {
+      const op = new URLSearchParams({ name: scUniData.name, uniId: scUniData.id, lat: scUniData.orbit_center_lat||scUniData.latitude, lng: scUniData.orbit_center_lng||scUniData.longitude });
+      backLink.href = '/orbit?' + op.toString();
+    } else {
+      backLink.href = '/';
+    }
+  } catch(_) {
+    document.getElementById('scBanner').innerHTML = '<div class="u-name" style="color:var(--muted)">Üniversite yüklenemedi</div>';
+  }
+  document.getElementById('loadingState').style.display = 'none';
+  document.getElementById('shortcutMode').style.display = 'block';
+}
+
+async function scSubmit() {
+  const email = (document.getElementById('scEmail').value || '').trim();
+  const errEl = document.getElementById('scEmailErr');
+  errEl.style.display = 'none';
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { errEl.style.display = 'block'; return; }
+
+  const intake = document.getElementById('scIntake').value;
+  const prog = scProgData || (URL_PROGRAM ? scPrograms.find(p => String(p.id) === URL_PROGRAM) : null);
+  const progId = document.getElementById('scProgramSelect') ? (document.getElementById('scProgramSelect').value || (prog && prog.id) || URL_PROGRAM) : (prog && prog.id) || URL_PROGRAM;
+
+  const noteParts = [];
+  if (scSel.eduStatus) noteParts.push('Eğitim: ' + (scSel.eduStatus === 'highschool' ? 'Lise öğrencisi' : 'Mezun'));
+  if (scSel.engLevel) noteParts.push('İngilizce: ' + scSel.engLevel);
+
+  const body = {
+    email,
+    first_name:      (document.getElementById('scFirstName').value || '').trim(),
+    last_name:       (document.getElementById('scLastName').value  || '').trim(),
+    phone:           (document.getElementById('scPhone').value     || '').trim(),
+    university_id:   scUniData ? scUniData.id : null,
+    university_name: scUniData ? scUniData.name : '',
+    country:         scUniData ? scUniData.country : '',
+    program_id:      progId || null,
+    program_name:    prog ? prog.name : '',
+    desired_intake:  intake || '',
+    notes:           noteParts.join(' | ')
+  };
+
+  document.getElementById('shortcutMode').style.display = 'none';
+  document.getElementById('submitState').style.display = 'block';
+  window.scrollTo({ top: 0 });
+
+  try {
+    const r = await fetch('/api/public/applications', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)
+    });
+    const res = await r.json();
+    if (!r.ok) throw new Error(res.error || 'Hata oluştu.');
+    document.getElementById('submitState').style.display = 'none';
+    document.getElementById('successState').style.display = 'block';
+  } catch(e) {
+    document.getElementById('submitState').style.display = 'none';
+    document.getElementById('shortcutMode').style.display = 'block';
+    alert(e.message || 'Bir hata oluştu, lütfen tekrar dene.');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// FUNNEL MODE — cold start (no ?uni=)
+// ═══════════════════════════════════════════════════════════════════════════
+const TOTAL_STEPS = 5;
+let curStep = 1;
+let allUnis = [];
+let programs = [];
+const fSel = { continent: null, country: null, schoolId: null, schoolName: null,
+               programId: null, programName: null, eduStatus: null, fEngLevel: null };
+
 const CONTINENTS = [
   { val: 'Europe',        label: 'Avrupa 🇪🇺' },
   { val: 'North America', label: 'Kuzey Amerika 🌎' },
@@ -386,397 +475,159 @@ const CONTINENTS = [
   { val: 'UK',            label: 'Birleşik Krallık 🇬🇧' },
 ];
 
-const IELTS_SCORES  = ['4.5','5.0','5.5','6.0','6.5','7.0','7.5','8.0','8.5+'];
-const TOEFL_SCORES  = ['60-69','70-79','80-89','90-99','100-109','110+'];
-const DUOLINGO_SCORES = ['85-94','95-104','105-114','115-124','125+'];
-const PEARSON_SCORES  = ['42-49','50-57','58-64','65-72','73+'];
+async function initFunnel() {
+  document.getElementById('funnelMode').style.display = 'block';
+  document.getElementById('ctaBar').style.display = 'block';
 
-const AP_SUBJECTS = ['Biology','Calculus AB','Calculus BC','Chemistry','Computer Science A','Computer Science Principles',
-  'Economics (Macro)','Economics (Micro)','English Language','English Literature','Environmental Science',
-  'European History','French Language','German Language','Government & Politics (US)','Government & Politics (Comparative)',
-  'Human Geography','Music Theory','Physics 1','Physics 2','Physics C: Mechanics','Physics C: E&M',
-  'Psychology','Research','Seminar','Spanish Language','Spanish Literature','Statistics','US History','World History'];
-
-const IB_SUBJECTS = ['Biology HL','Biology SL','Business Management HL','Business Management SL','Chemistry HL','Chemistry SL',
-  'Computer Science HL','Computer Science SL','Design Technology HL','Design Technology SL',
-  'Economics HL','Economics SL','English A HL','English A SL','English B HL','English B SL',
-  'Environmental Systems SL','Film HL','Film SL','Geography HL','Geography SL',
-  'Global Politics HL','Global Politics SL','History HL','History SL',
-  'Information Technology in a Global Society SL','Language & Literature HL','Language & Literature SL',
-  'Mathematics: Analysis HL','Mathematics: Analysis SL','Mathematics: Applications HL','Mathematics: Applications SL',
-  'Music HL','Music SL','Philosophy HL','Philosophy SL','Physics HL','Physics SL',
-  'Psychology HL','Psychology SL','Social & Cultural Anthropology HL','Social & Cultural Anthropology SL',
-  'Spanish B HL','Spanish B SL','Sports Exercise Health SL','Theatre HL','Theatre SL',
-  'Turkish A HL','Turkish A SL','Visual Arts HL','Visual Arts SL'];
-
-// ── State ──────────────────────────────────────────────────────────────────
-let curStep = 1;
-let allUnis = [];
-const sel = {
-  continent: null, country: null, schoolId: null, schoolName: null,
-  programId: null, programName: null, intake: null,
-  eduStatus: null, gpa: null, engLevel: null,
-  engTest: null, engTestType: null, engTestScore: null,
-  satHas: null, satScore: null, greHas: null, greScore: null, gmatHas: null, gmatScore: null,
-  apHas: null, ibHas: null
-};
-const tags = { ap: [], ibHl: [], ibSl: [] };
-let programs = [];
-
-// ── Init ───────────────────────────────────────────────────────────────────
-(async function init() {
   // Build continent chips
-  const cc = document.getElementById('continentChips');
-  cc.innerHTML = CONTINENTS.map(c =>
+  document.getElementById('continentChips').innerHTML = CONTINENTS.map(c =>
     `<div class="chip" data-field="continent" data-val="${c.val}" onclick="pickContinent(this)">${c.label}</div>`
   ).join('');
 
-  // Load universities (for country/school dropdowns)
+  // Load universities list
   try {
     const r = await fetch('/api/public/universities?limit=2000');
-    allUnis = (await r.json()).data || [];
+    allUnis = ((await r.json()).data || []);
   } catch(_) {}
 
   renderProgress();
   showStep(1);
-})();
+}
 
-// ── Continent pick ─────────────────────────────────────────────────────────
 function pickContinent(el) {
   document.querySelectorAll('[data-field="continent"]').forEach(c => c.classList.remove('sel'));
   el.classList.add('sel');
-  sel.continent = el.dataset.val;
-  sel.country = null; sel.schoolId = null; sel.programId = null;
+  fSel.continent = el.dataset.val;
+  fSel.country = null; fSel.schoolId = null; fSel.programId = null;
   buildCountryDropdown();
 }
-
 function buildCountryDropdown() {
-  const unis = sel.continent ? allUnis.filter(u => u.continent === sel.continent) : allUnis;
+  const unis = fSel.continent ? allUnis.filter(u => u.continent === fSel.continent) : allUnis;
   const countries = [...new Set(unis.map(u => u.country).filter(Boolean))].sort();
-  const sel2 = document.getElementById('countrySelect');
-  sel2.innerHTML = '<option value="">Ülke seçin…</option>' + countries.map(c =>
-    `<option value="${esc(c)}">${esc(c)}</option>`
-  ).join('');
-  document.getElementById('countryStepSub').textContent =
-    (sel.continent ? sel.continent + ' kıtasındaki' : '') + ' ülkeler listeleniyor.';
+  document.getElementById('countrySelect').innerHTML =
+    '<option value="">Ülke seçin…</option>' + countries.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('');
+  document.getElementById('countryStepSub').textContent = (fSel.continent || '') + ' kıtasındaki ülkeler listeleniyor.';
 }
-
 function onCountryChange() {
-  sel.country = document.getElementById('countrySelect').value || null;
-  sel.schoolId = null; sel.programId = null;
+  fSel.country = document.getElementById('countrySelect').value || null;
+  fSel.schoolId = null; fSel.programId = null;
   buildSchoolDropdown();
 }
-
 function buildSchoolDropdown() {
-  const unis = allUnis.filter(u => !sel.country || u.country === sel.country);
-  const ss = document.getElementById('schoolSelect');
-  ss.innerHTML = '<option value="">Üniversite seçin…</option>' + unis.map(u =>
-    `<option value="${u.id}">${esc(u.name)}</option>`
-  ).join('');
-  document.getElementById('schoolStepSub').textContent =
-    (sel.country ? sel.country + ' ülkesindeki' : '') + ' üniversiteler listeleniyor.';
+  const unis = allUnis.filter(u => !fSel.country || u.country === fSel.country);
+  document.getElementById('schoolSelect').innerHTML =
+    '<option value="">Üniversite seçin…</option>' + unis.map(u => `<option value="${u.id}">${esc(u.name)}</option>`).join('');
+  document.getElementById('schoolStepSub').textContent = (fSel.country || '') + ' üniversiteleri listeleniyor.';
 }
-
 async function onSchoolChange() {
   const id = document.getElementById('schoolSelect').value;
-  sel.schoolId = id ? parseInt(id) : null;
-  sel.schoolName = null; sel.programId = null;
-  if (sel.schoolId) {
-    const u = allUnis.find(x => x.id === sel.schoolId);
-    sel.schoolName = u ? u.name : '';
-  }
+  fSel.schoolId = id ? parseInt(id) : null;
+  const u = allUnis.find(x => x.id == id);
+  fSel.schoolName = u ? u.name : '';
+  fSel.programId = null; fSel.programName = null;
   await loadPrograms();
 }
-
 async function loadPrograms() {
   programs = [];
   const ps = document.getElementById('programSelect');
   ps.innerHTML = '<option value="">Program yükleniyor…</option>';
-  if (!sel.schoolId) { ps.innerHTML = '<option value="">Önce üniversite seçin</option>'; return; }
+  if (!fSel.schoolId) { ps.innerHTML = '<option value="">Önce üniversite seçin</option>'; return; }
   document.getElementById('programLoading').style.display = 'block';
   try {
-    const r = await fetch('/api/public/programs?entity_id=' + sel.schoolId + '&limit=500');
-    const data = await r.json();
-    programs = data.data || [];
+    const r = await fetch('/api/public/programs?entity_id=' + fSel.schoolId + '&limit=500');
+    programs = ((await r.json()).data || []);
   } catch(_) {}
   document.getElementById('programLoading').style.display = 'none';
   ps.innerHTML = '<option value="">Program seçin…</option>' + programs.map(p =>
     `<option value="${p.id}">${esc(p.name)}${p.type_name ? ' (' + esc(p.type_name) + ')' : ''}${p.duration ? ' · ' + esc(p.duration) : ''}</option>`
   ).join('');
 }
-
 function onProgramChange() {
   const id = document.getElementById('programSelect').value;
-  sel.programId = id ? parseInt(id) : null;
+  fSel.programId = id ? parseInt(id) : null;
   const p = programs.find(x => x.id == id);
-  sel.programName = p ? p.name : null;
-  // Populate intakes
+  fSel.programName = p ? p.name : null;
   const intakes = p ? (p.intake_months || '').split(',').map(s => s.trim()).filter(Boolean) : [];
-  const is = document.getElementById('intakeSelect');
-  is.innerHTML = '<option value="">Seçin…</option>' + intakes.map(m =>
-    `<option value="${esc(m)}">${esc(m)}</option>`
-  ).join('');
-  if (!intakes.length) is.innerHTML += '<option value="other">Diğer / Bilmiyorum</option>';
+  document.getElementById('intakeSelect').innerHTML =
+    '<option value="">Seçin…</option>' + intakes.map(m => `<option value="${esc(m)}">${esc(m)}</option>`).join('');
 }
 
-// ── Generic pickers ────────────────────────────────────────────────────────
 function pickChip(field, el) {
   document.querySelectorAll(`[data-field="${field}"]`).forEach(c => c.classList.remove('sel'));
   el.classList.add('sel');
-  sel[field] = el.dataset.val;
+  fSel[field] = el.dataset.val;
 }
-
 function pickCard(field, el) {
   el.closest('.card-chips').querySelectorAll('.card-chip').forEach(c => c.classList.remove('sel'));
   el.classList.add('sel');
-  sel[field] = el.dataset.val;
+  fSel[field] = el.dataset.val;
 }
 
-function pickYN(field, el) {
-  el.parentElement.querySelectorAll('.yn-btn').forEach(b => b.classList.remove('sel'));
-  el.classList.add('sel');
-  sel[field] = el.dataset.val;
-  if (field === 'engTest') {
-    document.getElementById('engTestDetails').style.display = sel.engTest === 'yes' ? 'block' : 'none';
-  }
-}
-
-function toggleStdTest(test) {
-  const v = sel[test + 'Has'];
-  document.getElementById(test + 'ScoreWrap').style.display = (v === 'yes') ? 'block' : 'none';
-}
-
-function toggleSection(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const field = id.replace('Section', 'Has');
-  el.style.display = (sel[field] === 'yes') ? 'block' : 'none';
-}
-
-// ── English test ───────────────────────────────────────────────────────────
-function showTestScore() {
-  const testType = sel.engTestType;
-  if (!testType) return;
-  const scores = { IELTS: IELTS_SCORES, TOEFL: TOEFL_SCORES, Duolingo: DUOLINGO_SCORES, Pearson: PEARSON_SCORES };
-  const arr = scores[testType] || [];
-  document.getElementById('testScoreLbl').textContent = testType + ' — Puan aralığı';
-  document.getElementById('testScoreChips').innerHTML = arr.map(v =>
-    `<div class="chip" data-field="engTestScore" data-val="${v}" onclick="pickChip('engTestScore',this)">${v}</div>`
-  ).join('');
-  sel.engTestScore = null;
-  document.getElementById('testScoreWrap').style.display = 'block';
-}
-
-document.addEventListener('change', function(e) {
-  if (e.target.id === 'engTestHasYes') { /* handled inline */ }
-});
-
-// ── Tag (AP/IB subject) input ──────────────────────────────────────────────
-function showSuggestions(type) {
-  const inpId = type === 'ap' ? 'apInput' : (type === 'ibHl' ? 'ibHlInput' : 'ibSlInput');
-  const sugId = type === 'ap' ? 'apSuggestions' : (type === 'ibHl' ? 'ibHlSuggestions' : 'ibSlSuggestions');
-  const pool  = type === 'ap' ? AP_SUBJECTS : IB_SUBJECTS;
-  const inp   = document.getElementById(inpId);
-  const sug   = document.getElementById(sugId);
-  const q     = inp.value.toLowerCase().trim();
-  if (!q) { sug.classList.remove('open'); return; }
-  const matches = pool.filter(s => s.toLowerCase().includes(q) && !tags[type].includes(s)).slice(0, 8);
-  sug.innerHTML = matches.map(s => `<div class="sug-item" onclick="addTag('${type}','${s.replace(/'/g,"\\'")}')">${esc(s)}</div>`).join('');
-  sug.classList.toggle('open', matches.length > 0);
-}
-
-function addTag(type, val) {
-  if (tags[type].includes(val)) return;
-  tags[type].push(val);
-  renderTags(type);
-  const inpId = type === 'ap' ? 'apInput' : (type === 'ibHl' ? 'ibHlInput' : 'ibSlInput');
-  const sugId = type === 'ap' ? 'apSuggestions' : (type === 'ibHl' ? 'ibHlSuggestions' : 'ibSlSuggestions');
-  document.getElementById(inpId).value = '';
-  document.getElementById(sugId).classList.remove('open');
-}
-
-function removeTag(type, val) {
-  tags[type] = tags[type].filter(t => t !== val);
-  renderTags(type);
-}
-
-function renderTags(type) {
-  const wrapId = type === 'ap' ? 'apTagWrap' : (type === 'ibHl' ? 'ibHlTagWrap' : 'ibSlTagWrap');
-  const inpId  = type === 'ap' ? 'apInput'   : (type === 'ibHl' ? 'ibHlInput'   : 'ibSlInput');
-  const wrap = document.getElementById(wrapId);
-  const inp  = document.getElementById(inpId);
-  // Remove existing tag spans
-  wrap.querySelectorAll('.subject-tag').forEach(t => t.remove());
-  // Add before input
-  tags[type].forEach(v => {
-    const span = document.createElement('span');
-    span.className = 'subject-tag';
-    span.innerHTML = esc(v) + `<button onclick="removeTag('${type}','${v.replace(/'/g,"\\'")}')" type="button"><i class="bi bi-x"></i></button>`;
-    wrap.insertBefore(span, inp);
-  });
-}
-
-function tagKeydown(e, type) {
-  const inpId = type === 'ap' ? 'apInput' : (type === 'ibHl' ? 'ibHlInput' : 'ibSlInput');
-  const sugId = type === 'ap' ? 'apSuggestions' : (type === 'ibHl' ? 'ibHlSuggestions' : 'ibSlSuggestions');
-  if (e.key === 'Enter' || e.key === ',') {
-    e.preventDefault();
-    const val = document.getElementById(inpId).value.trim();
-    if (val) { addTag(type, val); }
-  } else if (e.key === 'Escape') {
-    document.getElementById(sugId).classList.remove('open');
-  }
-}
-
-// Close suggestions on outside click
-document.addEventListener('click', function(e) {
-  if (!e.target.closest('.tag-input-wrap') && !e.target.closest('.tag-suggestions')) {
-    document.querySelectorAll('.tag-suggestions').forEach(s => s.classList.remove('open'));
-  }
-});
-
-// ── Wizard navigation ──────────────────────────────────────────────────────
 function renderProgress() {
   const segs = Array.from({length: TOTAL_STEPS}, (_, i) =>
-    `<div class="seg${i < curStep ? ' on' : ''}"></div>`
-  ).join('');
+    `<div class="seg${i < curStep ? ' on' : ''}"></div>`).join('');
   document.getElementById('progBar').innerHTML = segs;
-  const labels = ['Kıta','Ülke','Okul','Program','Eğitim Durumu','GPA','İngilizce','Sınavlar','Müfredat','Başvuru'];
+  const labels = ['Kıta','Ülke','Okul','Program','İletişim & Profil'];
   document.getElementById('progLabel').textContent = 'Adım ' + curStep + ' / ' + TOTAL_STEPS + ' — ' + labels[curStep-1];
 }
-
 function showStep(n) {
   curStep = n;
   document.querySelectorAll('.wiz-step').forEach(el =>
-    el.style.display = (parseInt(el.dataset.step) === n) ? 'block' : 'none'
-  );
+    el.style.display = parseInt(el.dataset.step) === n ? 'block' : 'none');
   document.getElementById('backBtn').style.display = n > 1 ? 'block' : 'none';
   const nb = document.getElementById('nextBtn');
-  nb.innerHTML = n === TOTAL_STEPS
-    ? '<i class="bi bi-send me-1"></i>Başvuruyu Gönder'
-    : 'Devam <i class="bi bi-arrow-right ms-1"></i>';
-  if (n === TOTAL_STEPS) renderSummary();
+  nb.innerHTML = n === TOTAL_STEPS ? '<i class="bi bi-send me-1"></i>Başvuruyu Gönder' : 'Devam <i class="bi bi-arrow-right ms-1"></i>';
   renderProgress();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
 function validateStep(n) {
-  if (n === 1 && !sel.continent) { alert('Lütfen bir kıta seç.'); return false; }
+  if (n === 1 && !fSel.continent) { alert('Lütfen bir kıta seç.'); return false; }
   if (n === 2 && !document.getElementById('countrySelect').value) { alert('Lütfen bir ülke seç.'); return false; }
   if (n === 3 && !document.getElementById('schoolSelect').value) { alert('Lütfen bir üniversite seç.'); return false; }
-  if (n === 5 && !sel.eduStatus) { alert('Lütfen eğitim durumunu seç.'); return false; }
-  if (n === 6 && !sel.gpa) { alert('Lütfen GPA aralığını seç.'); return false; }
-  if (n === 7 && !sel.engLevel) { alert('Lütfen İngilizce seviyeni seç.'); return false; }
   return true;
 }
-
 function nextStep() {
   if (!validateStep(curStep)) return;
-  if (curStep === TOTAL_STEPS) { submitApplication(); return; }
-  // Sync state from dropdowns at transition
-  if (curStep === 2) { sel.country = document.getElementById('countrySelect').value || null; buildSchoolDropdown(); }
-  if (curStep === 4) { sel.intake = document.getElementById('intakeSelect').value || null; }
-  if (curStep === 7) {
-    const yn = document.querySelector('.yn-btn[data-val].sel[id]');
-    // sync engTest from YN buttons
-    const yns = document.querySelectorAll('#step7 .yn-btn');
-  }
+  if (curStep === TOTAL_STEPS) { funnelSubmit(); return; }
+  if (curStep === 2) { fSel.country = document.getElementById('countrySelect').value || null; buildSchoolDropdown(); }
+  if (curStep === 4) { fSel.intake = document.getElementById('intakeSelect').value || null; }
   showStep(curStep + 1);
 }
 function prevStep() { if (curStep > 1) showStep(curStep - 1); }
 
-// ── Summary ────────────────────────────────────────────────────────────────
-function renderSummary() {
-  function row(k, v) { if (!v) return ''; return `<div class="sum-row"><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></div>`; }
-
-  let engText = sel.engLevel || '';
-  if (sel.engTest === 'yes' && sel.engTestType) {
-    engText += ' · ' + sel.engTestType;
-    if (sel.engTestScore) engText += ' ' + sel.engTestScore;
-  } else if (sel.engTest === 'no') {
-    engText += ' · Sınav yok';
-  }
-
-  const tests = [];
-  if (sel.satHas === 'yes') tests.push('SAT' + (sel.satScore ? ' ' + sel.satScore : ''));
-  if (sel.greHas === 'yes') tests.push('GRE' + (sel.greScore ? ' ' + sel.greScore : ''));
-  if (sel.gmatHas === 'yes') tests.push('GMAT' + (sel.gmatScore ? ' ' + sel.gmatScore : ''));
-
-  const curric = [];
-  if (sel.apHas === 'yes' && tags.ap.length) curric.push('AP: ' + tags.ap.join(', '));
-  if (sel.ibHas === 'yes') {
-    if (tags.ibHl.length) curric.push('IB HL: ' + tags.ibHl.join(', '));
-    if (tags.ibSl.length) curric.push('IB SL: ' + tags.ibSl.join(', '));
-  }
-
-  const intake = document.getElementById('intakeSelect').value;
-
-  document.getElementById('summaryBlock').innerHTML =
-    `<div class="sum-card"><h6>Hedef Program</h6>
-      ${row('Kıta', sel.continent)}
-      ${row('Ülke', sel.country)}
-      ${row('Üniversite', sel.schoolName)}
-      ${row('Program', sel.programName)}
-      ${row('Intake', intake)}
-    </div>
-    <div class="sum-card"><h6>Akademik Profil</h6>
-      ${row('Eğitim Durumu', sel.eduStatus === 'highschool' ? 'Lise Öğrencisi' : sel.eduStatus === 'graduated' ? 'Mezun' : '')}
-      ${row('GPA', sel.gpa)}
-      ${row('İngilizce', engText)}
-      ${tests.length ? row('Standart Sınavlar', tests.join(' · ')) : ''}
-      ${curric.length ? row('Müfredat', curric.join(' | ')) : ''}
-    </div>`;
-}
-
-// ── Submit ─────────────────────────────────────────────────────────────────
-async function submitApplication() {
-  const email = document.getElementById('emailInput').value.trim();
-  const errEl = document.getElementById('emailErr');
+async function funnelSubmit() {
+  const email = (document.getElementById('f_email').value || '').trim();
+  const errEl = document.getElementById('err_email');
   errEl.style.display = 'none';
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    errEl.style.display = 'block';
-    return;
-  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { errEl.style.display = 'block'; return; }
 
-  const intake = document.getElementById('intakeSelect').value;
-
-  const profileParts = [
-    'Eğitim: ' + (sel.eduStatus === 'highschool' ? 'Lise öğrencisi' : 'Mezun'),
-    'GPA: ' + (sel.gpa || '-'),
-    'İngilizce: ' + (sel.engLevel || '-'),
-  ];
-  if (sel.engTest === 'yes' && sel.engTestType) profileParts.push(sel.engTestType + (sel.engTestScore ? ' ' + sel.engTestScore : ''));
-  if (sel.satHas === 'yes') profileParts.push('SAT' + (sel.satScore ? ' ' + sel.satScore : ''));
-  if (sel.greHas === 'yes') profileParts.push('GRE' + (sel.greScore ? ' ' + sel.greScore : ''));
-  if (sel.gmatHas === 'yes') profileParts.push('GMAT' + (sel.gmatScore ? ' ' + sel.gmatScore : ''));
-  if (sel.apHas === 'yes' && tags.ap.length) profileParts.push('AP: ' + tags.ap.join(', '));
-  if (sel.ibHas === 'yes' && tags.ibHl.length) profileParts.push('IB HL: ' + tags.ibHl.join(', '));
-  if (sel.ibHas === 'yes' && tags.ibSl.length) profileParts.push('IB SL: ' + tags.ibSl.join(', '));
+  const notes = [
+    fSel.eduStatus ? ('Eğitim: ' + (fSel.eduStatus === 'highschool' ? 'Lise öğrencisi' : 'Mezun')) : '',
+    fSel.fEngLevel ? ('İngilizce: ' + fSel.fEngLevel) : ''
+  ].filter(Boolean).join(' | ');
 
   const body = {
     email,
-    university_id: sel.schoolId,
-    university_name: sel.schoolName || '',
-    program_id: sel.programId,
-    program_name: sel.programName || '',
-    country: sel.country || '',
-    desired_intake: intake || '',
-    english_test_type: sel.engTestType || (sel.engTest === 'no' ? 'None' : ''),
-    english_test_score: sel.engTestScore || '',
-    graduation_gpa: sel.gpa || '',
-    notes: profileParts.join(' | ')
+    first_name:      (document.getElementById('f_first_name').value || '').trim(),
+    last_name:       (document.getElementById('f_last_name').value  || '').trim(),
+    phone:           (document.getElementById('f_phone').value      || '').trim(),
+    university_id:   fSel.schoolId,
+    university_name: fSel.schoolName || '',
+    country:         fSel.country || '',
+    program_id:      fSel.programId,
+    program_name:    fSel.programName || '',
+    desired_intake:  (document.getElementById('intakeSelect').value || ''),
+    notes
   };
 
-  document.querySelectorAll('.wiz-step').forEach(el => el.style.display = 'none');
+  document.getElementById('funnelMode').style.display = 'none';
   document.getElementById('ctaBar').style.display = 'none';
   document.getElementById('submitState').style.display = 'block';
   window.scrollTo({ top: 0 });
 
   try {
     const r = await fetch('/api/public/applications', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body)
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)
     });
     const res = await r.json();
     if (!r.ok) throw new Error(res.error || 'Hata oluştu.');
@@ -784,20 +635,20 @@ async function submitApplication() {
     document.getElementById('successState').style.display = 'block';
   } catch(e) {
     document.getElementById('submitState').style.display = 'none';
+    document.getElementById('funnelMode').style.display = 'block';
     document.getElementById('ctaBar').style.display = 'block';
     showStep(TOTAL_STEPS);
     alert(e.message || 'Bir hata oluştu, lütfen tekrar dene.');
   }
 }
 
-function esc(s) { return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-
-// ── Sync engTest YN on step 7 ──────────────────────────────────────────────
-function pickYNEngTest(el) {
-  el.parentElement.querySelectorAll('.yn-btn').forEach(b => b.classList.remove('sel'));
-  el.classList.add('sel');
-  sel.engTest = el.dataset.val;
-  document.getElementById('engTestDetails').style.display = sel.engTest === 'yes' ? 'block' : 'none';
+// ═══════════════════════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════════════════════
+if (URL_UNI) {
+  initShortcut();
+} else {
+  initFunnel();
 }
 </script>
 <script src="/js/chrome.js"></script>
