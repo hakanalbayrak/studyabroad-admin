@@ -166,8 +166,9 @@
 
     // Back button + apply target
     const backBtn = document.getElementById('backBtn');
+    const backUrl = q.get('back') || (cfg.uniId ? '/university?id=' + cfg.uniId : '/');
+    backBtn.href = backUrl;
     if (cfg.uniId) {
-      backBtn.href = '/university?id=' + cfg.uniId;
       document.getElementById('applyBtn').href = '/apply?uni=' + cfg.uniId;
     }
 
@@ -244,77 +245,81 @@
       hdr.classList.toggle('open');
     }
 
-    async function loadUni() {
-      if (!cfg.uniId) return;
-      try {
-        const r = await fetch('/api/public/universities/' + cfg.uniId);
-        if (!r.ok) return;
-        const u = await r.json();
-        document.title = u.name + ' — 3D Kampüs';
-
-        // Header
-        document.getElementById('uName').textContent = u.name;
-        document.getElementById('uLoc').innerHTML = '<i class="bi bi-geo-alt-fill"></i> ' + esc([u.city, u.country].filter(Boolean).join(', '));
-        const ranks = [];
-        if (u.qs_rank) ranks.push('QS #' + u.qs_rank);
-        if (u.the_rank) ranks.push('THE #' + u.the_rank);
-        if (u.shanghai_rank) ranks.push('ARWU #' + u.shanghai_rank);
-        document.getElementById('uRanks').innerHTML = ranks.map(x => '<span class="rank-chip">' + esc(x) + '</span>').join('');
-        document.getElementById('uHeader').style.display = 'block';
-
-        const progs = u.programs || [];
-
-        // Facts
-        const fees = progs.map(feeEur).filter(v => v != null);
-        let feeText = 'Talep üzerine';
-        if (fees.length) {
-          const lo = Math.min.apply(null, fees), hi = Math.max.apply(null, fees);
-          feeText = lo === hi ? '€' + lo.toLocaleString('tr-TR') : '€' + lo.toLocaleString('tr-TR') + ' – €' + hi.toLocaleString('tr-TR');
-        }
-        document.getElementById('fFee').textContent = feeText;
-
-        const langs = [...new Set(progs.map(p => (p.language_of_instruction || '').trim()).filter(Boolean))];
-        document.getElementById('fLang').textContent = langs.length ? langs.slice(0, 3).join(', ') : 'English';
-
-        const intakes = [...new Set(progs.flatMap(p => (p.intake_months || '').split(',').map(s => s.trim()).filter(Boolean)))];
-        document.getElementById('fIntake').textContent = intakes.length ? intakes.join(', ') : '—';
-
-        // Programs panel — grouped by Bachelor / Master / Other
-        document.getElementById('deptCount').textContent = progs.length;
-        if (!progs.length) {
-          document.getElementById('deptList').innerHTML = '<div style="color:#64748b;font-size:.8rem;padding:8px 0">Program bilgisi yok.</div>';
-        } else {
-          const bach = progs.filter(p => /bachelor|lisans|undergrad|bsc|ba\b|beng/i.test(p.type_name || ''));
-          const mast = progs.filter(p => /master|yüksek|msc|ma\b|mba|meng/i.test(p.type_name || ''));
-          const other = progs.filter(p => !bach.includes(p) && !mast.includes(p));
-          document.getElementById('deptList').innerHTML =
-            buildProgGroup('Lisans (Bachelor)', bach, cfg.uniId) +
-            buildProgGroup('Yüksek Lisans (Master)', mast, cfg.uniId) +
-            buildProgGroup('Diğer', other, cfg.uniId);
-          // Auto-open first non-empty group
-          const firstGrp = document.querySelector('.prog-group-body');
-          if (firstGrp) firstGrp.classList.add('open');
-        }
-
-        document.getElementById('dock').style.display = 'flex';
-      } catch (e) { /* keep 3D view even if info fails */ }
-    }
-    loadUni();
-
     function showMsg(html) {
       const m = document.getElementById('msg');
-      m.innerHTML = html + (cfg.uniId
-        ? `<br><br><a href="/university?id=${cfg.uniId}" style="color:#818cf8">← Üniversiteye dön</a>`
-        : `<br><br><a href="/" style="color:#818cf8">← Okullara dön</a>`);
+      m.innerHTML = html + '<br><br><a href="' + backUrl + '" style="color:#818cf8">← Geri dön</a>';
       m.style.display = 'block';
     }
 
-    if (!isFinite(cfg.lat) || !isFinite(cfg.lng)) {
-      showMsg('<b>Koordinat yok</b><br>Bu kampüsün konumu tanımlı değil. Admin panelinden ekleyip tekrar deneyin.');
-      throw new Error('no coords');
+    function populateUniPanel(u) {
+      document.title = u.name + ' — 3D Kampüs';
+      document.getElementById('uName').textContent = u.name;
+      document.getElementById('uLoc').innerHTML = '<i class="bi bi-geo-alt-fill"></i> ' + esc([u.city, u.country].filter(Boolean).join(', '));
+      const ranks = [];
+      if (u.qs_rank) ranks.push('QS #' + u.qs_rank);
+      if (u.the_rank) ranks.push('THE #' + u.the_rank);
+      if (u.shanghai_rank) ranks.push('ARWU #' + u.shanghai_rank);
+      document.getElementById('uRanks').innerHTML = ranks.map(x => '<span class="rank-chip">' + esc(x) + '</span>').join('');
+      document.getElementById('uHeader').style.display = 'block';
+
+      const progs = u.programs || [];
+      const fees = progs.map(feeEur).filter(v => v != null);
+      let feeText = 'Talep üzerine';
+      if (fees.length) {
+        const lo = Math.min.apply(null, fees), hi = Math.max.apply(null, fees);
+        feeText = lo === hi ? '€' + lo.toLocaleString('tr-TR') : '€' + lo.toLocaleString('tr-TR') + ' – €' + hi.toLocaleString('tr-TR');
+      }
+      document.getElementById('fFee').textContent = feeText;
+
+      const langs = [...new Set(progs.map(p => (p.language_of_instruction || '').trim()).filter(Boolean))];
+      document.getElementById('fLang').textContent = langs.length ? langs.slice(0, 3).join(', ') : 'English';
+
+      const intakes = [...new Set(progs.flatMap(p => (p.intake_months || '').split(',').map(s => s.trim()).filter(Boolean)))];
+      document.getElementById('fIntake').textContent = intakes.length ? intakes.join(', ') : '—';
+
+      document.getElementById('deptCount').textContent = progs.length;
+      if (!progs.length) {
+        document.getElementById('deptList').innerHTML = '<div style="color:#64748b;font-size:.8rem;padding:8px 0">Program bilgisi yok.</div>';
+      } else {
+        const bach = progs.filter(p => /bachelor|lisans|undergrad|bsc|ba\b|beng/i.test(p.type_name || ''));
+        const mast = progs.filter(p => /master|yüksek|msc|ma\b|mba|meng/i.test(p.type_name || ''));
+        const other = progs.filter(p => !bach.includes(p) && !mast.includes(p));
+        document.getElementById('deptList').innerHTML =
+          buildProgGroup('Lisans (Bachelor)', bach, cfg.uniId) +
+          buildProgGroup('Yüksek Lisans (Master)', mast, cfg.uniId) +
+          buildProgGroup('Diğer', other, cfg.uniId);
+        const firstGrp = document.querySelector('.prog-group-body');
+        if (firstGrp) firstGrp.classList.add('open');
+      }
+      document.getElementById('dock').style.display = 'flex';
     }
 
-    (async function init() {
+    // Single async main: fetch uni data first (to get coords if missing), then init Cesium
+    (async function main() {
+      // Phase 1: if uniId provided, fetch university to get coords + populate UI
+      if (cfg.uniId) {
+        try {
+          const r = await fetch('/api/public/universities/' + cfg.uniId);
+          if (r.ok) {
+            const u = await r.json();
+            // Fill missing coords from university record
+            if (!isFinite(cfg.lat)) cfg.lat = parseFloat(u.orbit_center_lat || u.latitude || NaN);
+            if (!isFinite(cfg.lng)) cfg.lng = parseFloat(u.orbit_center_lng || u.longitude || NaN);
+            if (cfg.range === 400 && u.orbit_range)   cfg.range = parseFloat(u.orbit_range);
+            if (cfg.pitch === -45 && u.orbit_pitch)   cfg.pitch = parseFloat(u.orbit_pitch);
+            if (cfg.speed === 0.12 && u.orbit_rotation_speed) cfg.speed = parseFloat(u.orbit_rotation_speed);
+            populateUniPanel(u);
+          }
+        } catch(e) { /* silently continue — 3D still works if info fails */ }
+      }
+
+      // Phase 2: coord check (now after possible fallback from university data)
+      if (!isFinite(cfg.lat) || !isFinite(cfg.lng)) {
+        showMsg('<b>Koordinat yok</b><br>Bu kampüsün konumu tanımlı değil. Admin panelinden ekleyip tekrar deneyin.');
+        return;
+      }
+
+      // Phase 3: init Cesium viewer
       let viewer;
       try {
         viewer = new Cesium.Viewer('cesiumContainer', {
@@ -345,8 +350,8 @@
       const scanTarget  = scanEnabled ? Cesium.Cartesian3.fromDegrees(scanLng, scanLat, 0) : orbitTarget;
 
       let heading = Cesium.Math.toRadians(cfg.heading);
-      const pitch = Cesium.Math.toRadians(cfg.pitch);
-      const range = Math.max(cfg.range, 1);
+      const pitch  = Cesium.Math.toRadians(cfg.pitch);
+      const range  = Math.max(cfg.range, 1);
       let running = true;
 
       viewer.scene.preRender.addEventListener(function () {
