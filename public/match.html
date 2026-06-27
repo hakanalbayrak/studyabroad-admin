@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Sana Uygun Okulları Bul — Study Abroad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root { --accent:#6366f1; }
+    * { -webkit-tap-highlight-color: transparent; }
+    body { background:#0b1120; color:#e2e8f0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; min-height:100vh; }
+    .top-nav { background:rgba(11,17,32,.95); border-bottom:1px solid rgba(255,255,255,.08); padding:12px 0; position:sticky; top:0; z-index:100; backdrop-filter:blur(8px); }
+    .top-nav a { color:#94a3b8; text-decoration:none; font-size:.85rem; }
+    .wrap { max-width:680px; margin:0 auto; padding:18px 16px 90px; }
+    .step { margin-bottom:26px; }
+    .step-label { font-size:.95rem; font-weight:700; color:#f1f5f9; margin-bottom:4px; }
+    .step-hint { font-size:.78rem; color:#64748b; margin-bottom:12px; }
+    /* Chip grid — big tap targets, mobile-first */
+    .chips { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .chips.one { grid-template-columns:1fr; }
+    @media (min-width:520px){ .chips.cols3 { grid-template-columns:1fr 1fr 1fr; } }
+    .chip {
+      display:flex; align-items:center; gap:10px; width:100%;
+      background:rgba(255,255,255,.04); border:1.5px solid rgba(255,255,255,.1);
+      border-radius:14px; padding:15px 16px; color:#cbd5e1; font-size:.9rem; font-weight:600;
+      cursor:pointer; transition:all .15s; text-align:left; min-height:54px; line-height:1.25;
+    }
+    .chip:active { transform:scale(.97); }
+    .chip.on { background:rgba(99,102,241,.18); border-color:#6366f1; color:#fff; box-shadow:0 0 0 3px rgba(99,102,241,.15); }
+    .chip i { font-size:1.15rem; opacity:.85; flex-shrink:0; }
+    .chip .sub { display:block; font-size:.72rem; font-weight:500; color:#64748b; margin-top:1px; }
+    .chip.on .sub { color:#a5b4fc; }
+    /* Sticky CTA */
+    .cta-bar { position:fixed; bottom:0; left:0; right:0; background:linear-gradient(0deg,#0b1120 70%,rgba(11,17,32,0)); padding:14px 16px calc(14px + env(safe-area-inset-bottom)); z-index:90; }
+    .cta-bar .inner { max-width:680px; margin:0 auto; }
+    .btn-go { width:100%; background:linear-gradient(135deg,#6366f1,#8b5cf6); border:none; color:#fff; border-radius:14px; font-size:1rem; font-weight:700; padding:15px; box-shadow:0 6px 22px rgba(99,102,241,.4); }
+    .btn-go:disabled { opacity:.5; box-shadow:none; }
+    /* Results */
+    .school-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:16px 18px; margin-bottom:14px; }
+    .school-name { font-size:1rem; font-weight:700; color:#f1f5f9; }
+    .school-loc { font-size:.8rem; color:#94a3b8; margin-top:2px; }
+    .badge-soft { font-size:.7rem; padding:3px 9px; border-radius:20px; font-weight:600; display:inline-block; }
+    .acc-high { background:rgba(16,185,129,.2); color:#6ee7b7; }
+    .acc-mid  { background:rgba(59,130,246,.2); color:#93c5fd; }
+    .acc-low  { background:rgba(234,179,8,.2); color:#fcd34d; }
+    .rank-badge { background:rgba(99,102,241,.18); color:#a5b4fc; }
+    details.depts { margin-top:12px; }
+    details.depts summary { cursor:pointer; font-size:.82rem; color:#818cf8; font-weight:600; list-style:none; padding:8px 0; }
+    details.depts summary::-webkit-details-marker { display:none; }
+    details.depts summary .chev { transition:transform .2s; display:inline-block; }
+    details.depts[open] summary .chev { transform:rotate(90deg); }
+    .dept-row { display:flex; justify-content:space-between; gap:10px; font-size:.82rem; padding:7px 0; border-top:1px solid rgba(255,255,255,.06); }
+    .dept-fee { color:#fcd34d; font-weight:600; white-space:nowrap; }
+    .btn-detail { width:100%; margin-top:12px; background:rgba(99,102,241,.15); border:1px solid rgba(99,102,241,.35); color:#a5b4fc; border-radius:10px; font-size:.85rem; font-weight:600; padding:9px; }
+    .empty { text-align:center; color:#64748b; padding:60px 16px; }
+    .spinner-ring { width:34px; height:34px; border:3px solid rgba(99,102,241,.2); border-top-color:#6366f1; border-radius:50%; animation:spin .8s linear infinite; margin:0 auto 14px; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    .result-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; flex-wrap:wrap; gap:8px; }
+    .btn-edit { background:transparent; border:1px solid rgba(255,255,255,.15); color:#94a3b8; border-radius:9px; font-size:.8rem; padding:7px 14px; }
+  </style>
+</head>
+<body>
+<nav class="top-nav">
+  <div class="wrap" style="padding-top:0;padding-bottom:0">
+    <a href="/"><i class="bi bi-arrow-left me-1"></i>Ana sayfa</a>
+  </div>
+</nav>
+
+<!-- ── Wizard ──────────────────────────────────────────────────────────── -->
+<div class="wrap" id="wizard">
+  <h4 class="fw-bold mb-1" style="color:#f1f5f9"><i class="bi bi-magic me-2" style="color:#818cf8"></i>Sana uygun okulları bulalım</h4>
+  <p style="font-size:.85rem;color:#64748b;margin-bottom:24px">Birkaç soruyu yanıtla — sana en uygun, kabul şansı yüksek okulları sıralayalım. Kayıt veya e-posta gerekmez.</p>
+
+  <div class="step">
+    <div class="step-label">1. Eğitim durumun</div>
+    <div class="chips" data-group="edu" data-multi="0">
+      <button class="chip" data-val="highschool"><i class="bi bi-mortarboard"></i>Lise mezunu</button>
+      <button class="chip" data-val="12"><i class="bi bi-book"></i>12. sınıf</button>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-label">2. İlgilendiğin alanlar</div>
+    <div class="step-hint">Birden fazla seçebilirsin</div>
+    <div class="chips cols3" data-group="fields" data-multi="1">
+      <button class="chip" data-val="Business & Economics"><i class="bi bi-briefcase"></i>İşletme &amp; Ekonomi</button>
+      <button class="chip" data-val="Engineering"><i class="bi bi-gear-wide-connected"></i>Mühendislik</button>
+      <button class="chip" data-val="Medicine & Health"><i class="bi bi-heart-pulse"></i>Tıp &amp; Sağlık</button>
+      <button class="chip" data-val="AI & Technology"><i class="bi bi-cpu"></i>Yapay Zeka &amp; Teknoloji</button>
+      <button class="chip" data-val="Social Sciences"><i class="bi bi-people"></i>Sosyal Bilimler</button>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-label">3. İngilizce seviyen</div>
+    <div class="chips cols3" data-group="english" data-multi="0">
+      <button class="chip" data-val="A1-A2"><i class="bi bi-1-circle"></i>A1–A2<span class="sub">Başlangıç</span></button>
+      <button class="chip" data-val="B1-B2"><i class="bi bi-2-circle"></i>B1–B2<span class="sub">Orta</span></button>
+      <button class="chip" data-val="C1-C2"><i class="bi bi-3-circle"></i>C1–C2<span class="sub">İleri</span></button>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-label">4. Yıllık eğitim bütçen</div>
+    <div class="chips" data-group="budget" data-multi="0">
+      <button class="chip" data-val="0-5k"><i class="bi bi-cash-coin"></i>€0 – 5.000</button>
+      <button class="chip" data-val="5-10k"><i class="bi bi-cash-coin"></i>€5.000 – 10.000</button>
+      <button class="chip" data-val="10-15k"><i class="bi bi-cash-coin"></i>€10.000 – 15.000</button>
+      <button class="chip" data-val="15k+"><i class="bi bi-cash-stack"></i>€15.000+</button>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-label">5. Hangi bölge?</div>
+    <div class="chips" data-group="region" data-multi="0">
+      <button class="chip" data-val="Europe"><i class="bi bi-globe-europe-africa"></i>Avrupa</button>
+      <button class="chip" data-val="USA/Canada"><i class="bi bi-globe-americas"></i>Amerika / Kanada</button>
+      <button class="chip" data-val="UK"><i class="bi bi-globe"></i>İngiltere</button>
+      <button class="chip" data-val="Australia"><i class="bi bi-globe-asia-australia"></i>Avustralya</button>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-label">6. AP / IB diploman var mı?</div>
+    <div class="step-hint">Zorunlu değil — yoksa "Yok" seç</div>
+    <div class="chips" data-group="apib" data-multi="0">
+      <button class="chip" data-val="yes"><i class="bi bi-patch-check"></i>Var</button>
+      <button class="chip" data-val="no"><i class="bi bi-dash-circle"></i>Yok</button>
+    </div>
+  </div>
+</div>
+
+<div class="cta-bar" id="ctaBar">
+  <div class="inner">
+    <button class="btn-go" id="goBtn" onclick="runSearch()">Bana uygun okulları göster</button>
+  </div>
+</div>
+
+<!-- ── Results ─────────────────────────────────────────────────────────── -->
+<div class="wrap" id="results" style="display:none">
+  <div class="result-head">
+    <h5 class="fw-bold mb-0" style="color:#f1f5f9"><span id="resCount"></span> okul bulundu</h5>
+    <button class="btn-edit" onclick="backToWizard()"><i class="bi bi-sliders me-1"></i>Tercihleri düzenle</button>
+  </div>
+  <p style="font-size:.78rem;color:#64748b;margin-bottom:16px">Kabul şansın en yüksek okullardan başlanarak sıralandı.</p>
+  <div id="schoolList"></div>
+</div>
+
+<script src="/js/eligibility.js"></script>
+<script src="/js/match.js"></script>
+<script>
+  var sel = { edu:null, fields:[], english:null, budget:null, region:null, apib:null };
+
+  // Chip selection (single / multi)
+  document.querySelectorAll('.chips').forEach(function (grp) {
+    var group = grp.getAttribute('data-group');
+    var multi = grp.getAttribute('data-multi') === '1';
+    grp.querySelectorAll('.chip').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var val = btn.getAttribute('data-val');
+        if (multi) {
+          btn.classList.toggle('on');
+          var arr = sel[group];
+          var idx = arr.indexOf(val);
+          if (idx > -1) arr.splice(idx, 1); else arr.push(val);
+        } else {
+          grp.querySelectorAll('.chip').forEach(function (b) { b.classList.remove('on'); });
+          btn.classList.add('on');
+          sel[group] = val;
+        }
+      });
+    });
+  });
+
+  function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var allPrograms = null;
+  async function runSearch() {
+    var btn = document.getElementById('goBtn');
+    btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Aranıyor…';
+    try {
+      if (!allPrograms) {
+        var r = await fetch('/api/public/programs?');
+        allPrograms = await r.json();
+      }
+      var student = {
+        educationStatus: sel.edu || 'highschool',
+        fields: sel.fields,
+        englishLevel: sel.english || 'C1-C2',
+        budget: sel.budget || '15k+',
+        region: sel.region || null,
+        apib: sel.apib === 'yes'
+      };
+      var schools = Match.rankSchools(student, allPrograms);
+      renderSchools(schools);
+      document.getElementById('wizard').style.display = 'none';
+      document.getElementById('ctaBar').style.display = 'none';
+      document.getElementById('results').style.display = 'block';
+      window.scrollTo({ top: 0 });
+    } catch (e) {
+      alert('Bir hata oluştu, lütfen tekrar dene.');
+    } finally {
+      btn.disabled = false; btn.textContent = 'Bana uygun okulları göster';
+    }
+  }
+
+  function accLabel(ease) {
+    if (ease >= 75) return '<span class="badge-soft acc-high"><i class="bi bi-check-circle-fill me-1"></i>Yüksek kabul şansı</span>';
+    if (ease >= 55) return '<span class="badge-soft acc-mid"><i class="bi bi-check-circle me-1"></i>İyi kabul şansı</span>';
+    return '<span class="badge-soft acc-low"><i class="bi bi-info-circle me-1"></i>Orta kabul şansı</span>';
+  }
+
+  function feeText(p) {
+    if (p.fee == null) return 'Talep üzerine';
+    return '€' + Math.round(p.fee).toLocaleString('tr-TR') + '/yıl';
+  }
+
+  function renderSchools(schools) {
+    document.getElementById('resCount').textContent = schools.length;
+    var wrap = document.getElementById('schoolList');
+    if (!schools.length) {
+      wrap.innerHTML = '<div class="empty"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i>Seçimlerine uygun okul bulunamadı.<br>Bütçeni veya bölgeyi genişletmeyi dene.</div>';
+      return;
+    }
+    wrap.innerHTML = schools.map(function (s) {
+      var rank = parseInt(s.qs_rank) || null;
+      var rankBadge = rank ? '<span class="badge-soft rank-badge">QS #' + rank + '</span>' : '';
+      var depts = s.programs.map(function (p) {
+        return '<div class="dept-row"><span>' + esc(p.name) + ' <span style="color:#475569">· ' + esc(p.type_name||'') + '</span></span><span class="dept-fee">' + feeText(p) + '</span></div>';
+      }).join('');
+      return '<div class="school-card">' +
+        '<div class="d-flex justify-content-between align-items-start gap-2">' +
+          '<div><div class="school-name">' + esc(s.university_name) + '</div>' +
+          '<div class="school-loc"><i class="bi bi-geo-alt-fill me-1" style="color:#475569"></i>' + esc([s.city, s.country].filter(Boolean).join(', ')) + '</div></div>' +
+        '</div>' +
+        '<div class="d-flex gap-2 flex-wrap mt-2">' + accLabel(s.ease) + rankBadge + '</div>' +
+        '<details class="depts"><summary><span class="chev">▸</span> ' + s.programs.length + ' uygun bölüm</summary>' + depts + '</details>' +
+        '<button class="btn-detail" onclick="location.href=\'/university?id=' + s.university_id + '\'">Detayları gör <i class="bi bi-arrow-right ms-1"></i></button>' +
+      '</div>';
+    }).join('');
+  }
+
+  function backToWizard() {
+    document.getElementById('results').style.display = 'none';
+    document.getElementById('wizard').style.display = 'block';
+    document.getElementById('ctaBar').style.display = 'block';
+    window.scrollTo({ top: 0 });
+  }
+</script>
+</body>
+</html>

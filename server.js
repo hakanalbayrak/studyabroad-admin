@@ -25,6 +25,10 @@ app.get('/programs', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/programs.html'));
 });
 
+app.get('/match', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/match.html'));
+});
+
 // Public portal pages
 app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'public/login.html')));
 app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'public/register.html')));
@@ -480,7 +484,7 @@ app.get('/api/public/programs', async (req, res) => {
       SELECT p.id, p.name, p.language_of_instruction, p.duration,
         p.tuition_fee, p.tuition_currency, p.intake_months,
         p.english_req_type, p.english_req_score, p.gpa_requirement,
-        p.requirements_json,
+        p.requirements_json, p.field,
         p.scholarship_available, p.description_en,
         pt.name as type_name,
         e.id as university_id, e.name as university_name,

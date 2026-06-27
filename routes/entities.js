@@ -126,13 +126,14 @@ router.post('/full', async (req, res) => {
       await conn.query(
         `INSERT INTO programs (entity_location_id, program_type_id, name, language_of_instruction,
          duration, tuition_fee, tuition_currency, intake_months, english_req_type, english_req_score,
-         gpa_requirement, requirements_json, scholarship_available, description_en, status)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+         gpa_requirement, requirements_json, field, scholarship_available, description_en, status)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         [locationId, p.program_type_id, p.name, p.language_of_instruction || 'English',
          p.duration || null, p.tuition_fee || null, p.tuition_currency || 'EUR',
          p.intake_months || null, p.english_req_type || 'None', p.english_req_score || null,
          p.gpa_requirement || null,
          p.requirements_json ? (typeof p.requirements_json === 'string' ? p.requirements_json : JSON.stringify(p.requirements_json)) : null,
+         p.field || null,
          p.scholarship_available ? 1 : 0,
          p.description_en || null, p.status || 'active']
       );
@@ -246,13 +247,14 @@ router.put('/full/:id', async (req, res) => {
       await conn.query(
         `INSERT INTO programs (entity_location_id, program_type_id, name, language_of_instruction,
          duration, tuition_fee, tuition_currency, intake_months, english_req_type, english_req_score,
-         gpa_requirement, requirements_json, scholarship_available, description_en, status)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+         gpa_requirement, requirements_json, field, scholarship_available, description_en, status)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         [locationId, p.program_type_id, p.name, p.language_of_instruction || 'English',
          p.duration || null, p.tuition_fee || null, p.tuition_currency || 'EUR',
          p.intake_months || null, p.english_req_type || 'None', p.english_req_score || null,
          p.gpa_requirement || null,
          p.requirements_json ? (typeof p.requirements_json === 'string' ? p.requirements_json : JSON.stringify(p.requirements_json)) : null,
+         p.field || null,
          p.scholarship_available ? 1 : 0,
          p.description_en || null, p.status || 'active']
       );

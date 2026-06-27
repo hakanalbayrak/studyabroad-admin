@@ -1389,7 +1389,7 @@ async function fetchWikiDescription() {
 }
 
 function addProgram() {
-  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', scholarship_available:false, description_en:'', status:'active', requirements_json:null });
+  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', field:'', scholarship_available:false, description_en:'', status:'active', requirements_json:null });
   renderPrograms();
   setTimeout(() => {
     const cards = document.querySelectorAll('.program-card');
@@ -1501,6 +1501,12 @@ function renderPrograms() {
             <label class="form-label small fw-semibold">GPA Requirement</label>
             <input type="text" class="form-control form-control-sm" value="${esc(p.gpa_requirement||'')}"
               oninput="updProg(${i},'gpa_requirement',this.value)" placeholder="e.g. 2.5 / 4.0">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Field / Discipline</label>
+            <select class="form-select form-select-sm" onchange="updProg(${i},'field',this.value)">
+              ${['','Business & Economics','Engineering','Medicine & Health','AI & Technology','Social Sciences','Other'].map(f=>`<option value="${esc(f)}" ${(p.field||'')===f?'selected':''}>${f||'— auto (by name) —'}</option>`).join('')}
+            </select>
           </div>
           <div class="col-md-4">
             <label class="form-label small fw-semibold">Status</label>
