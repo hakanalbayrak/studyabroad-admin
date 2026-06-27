@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const db = require('../db');
-const { sendApplicationNotice, sendPreAcceptance } = require('../utils/mailer');
+const { sendApplicationNotice, sendPreAcceptance, sendApplicationReminder, sendStatusUpdate } = require('../utils/mailer');
 
 const UPLOAD_DIR = path.join(__dirname, '..', 'uploads', 'applications');
 fs.mkdirSync(UPLOAD_DIR, { recursive: true });
@@ -158,7 +158,7 @@ adminRouter.get('/:id', async (req, res) => {
     if (!app) return res.status(404).json({ error: 'Not found' });
     delete app.upload_token; // don't expose the upload secret
     const [docs] = await db.query(
-      'SELECT id, doc_type, original_name, mime, size_bytes, uploaded_at FROM application_documents WHERE application_id = ? ORDER BY uploaded_at',
+      'SELECT id, doc_type, original_name, mime, size_bytes, uploaded_at, review_status FROM application_documents WHERE application_id = ? ORDER BY uploaded_at',
       [req.params.id]
     );
     res.json({ ...app, documents: docs });
@@ -187,6 +187,47 @@ adminRouter.patch('/:id', async (req, res) => {
     vals.push(req.params.id);
     await db.query(`UPDATE applications SET ${sets.join(', ')} WHERE id = ?`, vals);
     res.json({ ok: true });
+    if (req.body.notifyApplicant && req.body.status) {
+      const [[app]] = await db.query('SELECT * FROM applications WHERE id = ?', [req.params.id]);
+      if (app) sendStatusUpdate(app, req.body.status);
+    }
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Send a reminder email to one applicant
+adminRouter.post('/:id/remind', async (req, res) => {
+  try {
+    const [[app]] = await db.query('SELECT * FROM applications WHERE id = ?', [req.params.id]);
+    if (!app) return res.status(404).json({ error: 'Not found' });
+    const sent = await sendApplicationReminder(app, (req.body.message || '').trim());
+    res.json({ ok: sent });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Update document review status
+adminRouter.patch('/:id/documents/:docId', async (req, res) => {
+  try {
+    const review_status = (req.body.review_status || 'pending').slice(0, 20);
+    await db.query(
+      'UPDATE application_documents SET review_status = ? WHERE id = ? AND application_id = ?',
+      [review_status, req.params.docId, req.params.id]
+    );
+    res.json({ ok: true });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Bulk reminder — submitted / reviewing apps
+adminRouter.post('/bulk-remind', async (req, res) => {
+  try {
+    const [apps] = await db.query(
+      `SELECT * FROM applications WHERE status IN ('submitted','reviewing') AND email IS NOT NULL ORDER BY created_at DESC LIMIT 200`
+    );
+    let sent = 0;
+    for (const app of apps) {
+      const ok = await sendApplicationReminder(app, '').catch(() => false);
+      if (ok) sent++;
+    }
+    res.json({ ok: true, sent });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 

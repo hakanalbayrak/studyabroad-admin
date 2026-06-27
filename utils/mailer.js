@@ -195,6 +195,93 @@ async function sendPreAcceptance(app, ref, url, conditional) {
   } catch (e) { console.error('[mailer] pre-acceptance failed:', e.message); }
 }
 
+// Reminder email to an applicant (admin-triggered or cron). Returns true if sent.
+async function sendApplicationReminder(app, customMessage) {
+  const t = getTransport();
+  if (!t || !app.email) return false;
+  const name = [app.first_name, app.last_name].filter(Boolean).join(' ') || 'Öğrenci';
+  const uni = app.university_name || 'seçilen üniversite';
+  const msg = (customMessage || '').trim() ||
+    'Başvurunuz inceleme sürecinde bulunmaktadır. Ekibimiz sizinle en kısa sürede iletişime geçecektir. Eksik belge ya da bilgi varsa lütfen bu e-postaya yanıt verin.';
+  const html = `
+    <div style="font-family:system-ui,sans-serif;max-width:520px;color:#1e293b">
+      <div style="background:linear-gradient(135deg,#6366f1,#8b5cf6,#06b6d4);color:#fff;padding:16px 20px;border-radius:10px 10px 0 0">
+        <strong>PANELEDU — Başvuru Hatırlatması</strong>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-top:none;padding:20px;border-radius:0 0 10px 10px;line-height:1.6">
+        <p>Sayın ${esc(name)},</p>
+        <p>${esc(msg).replace(/\n/g,'<br>')}</p>
+        <table style="width:100%;font-size:.9rem;margin:14px 0;border-collapse:collapse">
+          <tr><td style="padding:4px 0;color:#64748b;width:130px">Üniversite</td><td style="padding:4px 0"><strong>${esc(uni)}</strong></td></tr>
+          ${app.program_name ? `<tr><td style="padding:4px 0;color:#64748b">Program</td><td style="padding:4px 0"><strong>${esc(app.program_name)}</strong></td></tr>` : ''}
+          ${app.desired_intake ? `<tr><td style="padding:4px 0;color:#64748b">Hedef dönem</td><td style="padding:4px 0">${esc(app.desired_intake)}</td></tr>` : ''}
+        </table>
+        <p style="color:#64748b;font-size:.88rem">Sorularınız için bu e-postaya yanıt verebilirsiniz.</p>
+        <p style="color:#64748b;font-size:.88rem">— PANELEDU Ekibi</p>
+      </div>
+    </div>`;
+  try {
+    await t.sendMail({
+      from: `"PANELEDU" <${process.env.SMTP_USER}>`,
+      to: app.email,
+      subject: `Başvuru hatırlatması — ${uni}`,
+      text: `Sayın ${name},\n\n${msg}\n\nÜniversite: ${uni}${app.program_name ? '\nProgram: ' + app.program_name : ''}${app.desired_intake ? '\nHedef dönem: ' + app.desired_intake : ''}\n\n— PANELEDU Ekibi`,
+      html
+    });
+    return true;
+  } catch (e) {
+    console.error('[mailer] reminder failed:', e.message);
+    return false;
+  }
+}
+
+const STATUS_LABELS_TR = {
+  reviewing:    'inceleme aşamasına alındı',
+  pre_accepted: 'ön kabul aldı',
+  conditional:  'şartlı kabul aldı',
+  rejected:     'reddedildi',
+  completed:    'tamamlandı',
+};
+
+// Status change notification to applicant. Returns true if sent.
+async function sendStatusUpdate(app, newStatus) {
+  const t = getTransport();
+  if (!t || !app.email) return false;
+  const label = STATUS_LABELS_TR[newStatus];
+  if (!label) return false;
+  const name = [app.first_name, app.last_name].filter(Boolean).join(' ') || 'Öğrenci';
+  const uni = app.university_name || 'seçilen üniversite';
+  const html = `
+    <div style="font-family:system-ui,sans-serif;max-width:520px;color:#1e293b">
+      <div style="background:linear-gradient(135deg,#6366f1,#8b5cf6,#06b6d4);color:#fff;padding:16px 20px;border-radius:10px 10px 0 0">
+        <strong>PANELEDU — Başvuru Güncellemesi</strong>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-top:none;padding:20px;border-radius:0 0 10px 10px;line-height:1.6">
+        <p>Sayın ${esc(name)},</p>
+        <p><strong>${esc(uni)}</strong> için yaptığınız başvuru <strong>${label}</strong>.</p>
+        <p style="color:#64748b;font-size:.88rem">Sorularınız için bu e-postaya yanıt verebilirsiniz.</p>
+        <p style="color:#64748b;font-size:.88rem">— PANELEDU Ekibi</p>
+      </div>
+    </div>`;
+  try {
+    await t.sendMail({
+      from: `"PANELEDU" <${process.env.SMTP_USER}>`,
+      to: app.email,
+      subject: `Başvuru güncellemesi — ${uni}`,
+      text: `Sayın ${name},\n\n${uni} için yaptığınız başvuru ${label}.\n\n— PANELEDU Ekibi`,
+      html
+    });
+    return true;
+  } catch (e) {
+    console.error('[mailer] status update failed:', e.message);
+    return false;
+  }
+}
+
 function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-module.exports = { sendLeadNotification, sendLeadReply, sendOtpCode, sendApplicationNotice, sendPreAcceptance };
+module.exports = {
+  sendLeadNotification, sendLeadReply, sendOtpCode,
+  sendApplicationNotice, sendPreAcceptance,
+  sendApplicationReminder, sendStatusUpdate,
+};

@@ -309,7 +309,7 @@ app.delete('/api/bulk/rankings/:jobId', requireRole('admin'), (req, res) => {
 
 // ── Bulk geo-lookup (Google Places → Nominatim fallback) ──────────────────────
 const { resolveCoordinates } = require('./utils/geoLookup');
-const { sendLeadNotification, sendLeadReply } = require('./utils/mailer');
+const { sendLeadNotification, sendLeadReply, sendApplicationReminder } = require('./utils/mailer');
 const geoJobs = {};
 
 async function processBulkGeo(jobId, locations) {
@@ -635,6 +635,28 @@ app.use('/api/programs', requireRole('admin'), require('./routes/programs'));
 app.use('/api/orbit', requireRole('admin'), require('./routes/orbit'));
 app.use('/api/program-types', requireRole('admin'), require('./routes/programTypes'));
 app.use('/api/bulk/csv-import', requireRole('admin'), require('./routes/csvImport'));
+
+// Cron-friendly reminder endpoint — call from cPanel cron with CRON_SECRET
+// e.g. curl "https://paneledu.com/api/cron/reminders?secret=YOUR_CRON_SECRET"
+app.get('/api/cron/reminders', async (req, res) => {
+  if (!process.env.CRON_SECRET || req.query.secret !== process.env.CRON_SECRET) {
+    return res.status(403).json({ error: 'Forbidden' });
+  }
+  try {
+    const [apps] = await db.query(
+      `SELECT * FROM applications WHERE status IN ('submitted','reviewing')
+       AND email IS NOT NULL
+       AND created_at < DATE_SUB(NOW(), INTERVAL 3 DAY)
+       ORDER BY created_at ASC LIMIT 50`
+    );
+    let sent = 0;
+    for (const app of apps) {
+      const ok = await sendApplicationReminder(app, '').catch(() => false);
+      if (ok) sent++;
+    }
+    res.json({ ok: true, sent, total: apps.length });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

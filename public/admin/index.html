@@ -746,6 +746,7 @@
             <option value="rejected">Rejected</option>
             <option value="completed">Completed</option>
           </select>
+          <button class="btn btn-outline-warning btn-sm" onclick="bulkRemind()" title="Send reminder to all submitted/reviewing applicants"><i class="bi bi-bell me-1"></i>Bulk Remind</button>
           <button class="btn btn-outline-secondary btn-sm" onclick="loadApplications()"><i class="bi bi-arrow-clockwise"></i></button>
         </div>
       </div>
@@ -857,6 +858,14 @@
         <div id="appDocs" class="mb-3"><div class="text-muted small">Loading…</div></div>
 
         <hr style="border-color:rgba(255,255,255,.1)">
+        <div>
+          <label class="form-label small fw-semibold"><i class="bi bi-bell me-1 text-warning"></i>Send reminder to applicant</label>
+          <textarea id="appReminderMsg" rows="2" class="form-control mb-2" placeholder="Custom message (Turkish) — leave blank for default reminder text"
+            style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0;font-size:.85rem"></textarea>
+          <button class="btn btn-outline-warning btn-sm" onclick="sendReminder()"><i class="bi bi-bell me-1"></i>Send Reminder Email</button>
+        </div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
         <div class="row g-3">
           <div class="col-md-5">
             <label class="form-label small fw-semibold">Status</label>
@@ -871,8 +880,12 @@
           </div>
           <div class="col-md-7">
             <label class="form-label small fw-semibold">Internal notes</label>
-            <textarea id="appNotes" rows="3" class="form-control" placeholder="Admin notes…"
+            <textarea id="appNotes" rows="2" class="form-control" placeholder="Admin notes…"
               style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0"></textarea>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="appNotifyCheck">
+              <label class="form-check-label small text-muted" for="appNotifyCheck">Email applicant about this status change</label>
+            </div>
           </div>
         </div>
 
@@ -2468,16 +2481,29 @@ function renderApplicationDetail(a) {
   if (!docs.length) {
     dWrap.innerHTML = '<div class="text-muted small fst-italic">No documents uploaded.</div>';
   } else {
+    const DOC_STATUS = {
+      pending:        { label: 'Pending',   cls: 'bg-secondary' },
+      ok:             { label: 'OK',        cls: 'bg-success' },
+      needs_resubmit: { label: 'Resubmit',  cls: 'bg-danger' },
+    };
     dWrap.innerHTML = docs.map(d => {
       const sizeKb = d.size_bytes ? Math.max(1, Math.round(d.size_bytes / 1024)) + ' KB' : '';
+      const rs = d.review_status || 'pending';
+      const { label, cls } = DOC_STATUS[rs] || DOC_STATUS.pending;
+      const nextStatus = { pending: 'ok', ok: 'needs_resubmit', needs_resubmit: 'pending' }[rs] || 'ok';
+      const nextIcon  = { pending: 'bi-check-circle', ok: 'bi-exclamation-circle', needs_resubmit: 'bi-arrow-counterclockwise' }[rs];
       return `<div class="d-flex align-items-center justify-content-between gap-2 p-2 mb-2 rounded" style="background:rgba(255,255,255,.05)">
-        <div style="min-width:0">
-          <div class="fw-semibold small">${esc2(d.doc_type || 'document')}</div>
-          <div class="text-muted" style="font-size:.74rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc2(d.original_name||'')} ${sizeKb ? '· ' + sizeKb : ''}</div>
+        <div style="min-width:0;flex:1">
+          <div class="d-flex align-items-center gap-2">
+            <span class="fw-semibold small">${esc2(d.doc_type || 'document')}</span>
+            <span class="badge ${cls}" style="font-size:.65rem">${label}</span>
+          </div>
+          <div class="text-muted" style="font-size:.74rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc2(d.original_name||'')}${sizeKb ? ' · ' + sizeKb : ''}</div>
         </div>
-        <button class="btn btn-outline-light btn-sm flex-shrink-0" onclick="downloadAppDoc(${a.id},${d.id},'${esc2(d.original_name||'document').replace(/'/g,"\\'")}')">
-          <i class="bi bi-download me-1"></i>Download
-        </button>
+        <div class="d-flex gap-1 flex-shrink-0">
+          <button class="btn btn-outline-secondary btn-sm py-0 px-2" title="Cycle status" onclick="cycleDocStatus(${a.id},${d.id},'${rs}')"><i class="bi ${nextIcon}"></i></button>
+          <button class="btn btn-outline-light btn-sm py-0 px-2" onclick="downloadAppDoc(${a.id},${d.id},'${esc2(d.original_name||'document').replace(/'/g,"\\'")}')"><i class="bi bi-download"></i></button>
+        </div>
       </div>`;
     }).join('');
   }
@@ -2530,18 +2556,51 @@ async function downloadAppDoc(appId, docId, name) {
 async function saveApplication() {
   const status = document.getElementById('appStatusSelect').value;
   const notes = document.getElementById('appNotes').value;
+  const notifyApplicant = document.getElementById('appNotifyCheck').checked;
   const btn = document.getElementById('appSaveBtn');
   btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Saving…';
   try {
-    const r = await api('PATCH', `/api/admin/applications/${currentAppId}`, { status, notes });
+    const r = await api('PATCH', `/api/admin/applications/${currentAppId}`, { status, notes, notifyApplicant });
     if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || 'Save failed');
     const app = allApplications.find(a => a.id === currentAppId);
     if (app) { app.status = status; app.notes = notes; }
-    toast('Application saved.');
+    toast('Application saved.' + (notifyApplicant ? ' Student notified.' : ''));
     appModal.hide();
     loadApplications();
   } catch (e) { toast(e.message, 'error'); }
   finally { btn.disabled = false; btn.innerHTML = '<i class="bi bi-check-lg me-1"></i>Save'; }
+}
+
+async function sendReminder() {
+  const message = document.getElementById('appReminderMsg').value.trim();
+  if (!confirm('Send reminder email to this applicant?')) return;
+  try {
+    const r = await api('POST', `/api/admin/applications/${currentAppId}/remind`, { message });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Failed');
+    toast(d.ok ? 'Reminder sent.' : 'Could not send (SMTP not configured?)');
+    document.getElementById('appReminderMsg').value = '';
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function cycleDocStatus(appId, docId, currentStatus) {
+  const next = { pending: 'ok', ok: 'needs_resubmit', needs_resubmit: 'pending' };
+  const review_status = next[currentStatus] || 'ok';
+  try {
+    const r = await api('PATCH', `/api/admin/applications/${appId}/documents/${docId}`, { review_status });
+    if (!r.ok) throw new Error('Failed to update');
+    openApplication(appId);
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function bulkRemind() {
+  if (!confirm('Send a reminder email to ALL submitted / reviewing applicants?\n\nThis sends the default reminder message to each of them.')) return;
+  try {
+    const r = await api('POST', '/api/admin/applications/bulk-remind', {});
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Failed');
+    toast(`Bulk reminder: ${d.sent} email(s) sent.`);
+  } catch (e) { toast(e.message, 'error'); }
 }
 </script>
 </body>
