@@ -55,6 +55,73 @@ its findings for admin review with a source link to verify accuracy.
      headless browser; some sites have anti-bot measures; data needs yearly
      refresh. Respect each source's Terms of Service.
 
+## Big vision — full applicant funnel (paneledu.com) — planned 2026-06-27
+
+A multi-epic plan to turn the site into an end-to-end study-abroad application
+platform. Mobile-first is a HARD requirement across every epic (most users are
+on phones — zero layout shift, fully responsive). No email is collected during
+browsing; email is only captured at "Apply" or to view a test result.
+
+### Epic 1 — Simplified eligibility funnel (entry point)
+Redesign `/programs` eligibility into a short, tap-friendly wizard:
+- Education status: high-school graduate / 12th grade
+- Fields of interest (multi-select, 4–5 broad areas): Business & Economics,
+  Engineering, Medicine & Health, AI & Technology, Social Sciences (history,
+  sociology, psychology…)
+- English level: A1–A2 (Beginner) / B1–B2 (Intermediate) / C1–C2 (Advanced)
+- Annual budget: €0–5k / €5–10k / €10–15k / €15k+
+- Region: Europe / USA-Canada / Australia / UK
+- AP / IB diploma: yes / no (optional, never mandatory)
+- Output: ranked school list by **easiest acceptance + budget fit** (heuristic
+  using ranking band, requirement gap vs profile, and budget).
+- **Data prerequisite:** programs/entities need a **discipline/field tag** and a
+  **country→region** mapping (neither exists yet).
+
+### Epic 2 — Results list + richer 3D detail page
+- Ranked results show location, fees, details, available departments.
+- Click a school → expandable dropdown of departments.
+- "View details" → the Orbit 3D page, redesigned as a larger window with corner
+  info panels: departments, annual fee, language requirement, intake dates.
+
+### Epic 3 — Application flow ("Apply now")
+- Triggered by "Apply" → only now collect email + full applicant profile:
+  name, surname, DOB, passport no., passport issue/expiry dates, place of birth,
+  passport "issued by", nationality, country of residence, address, phone, email,
+  high school, graduation GPA, field, English test score (or "will take on date"),
+  desired intake.
+- Document upload step (mandatory vs optional): passport, HS diploma, HS
+  transcript, English score (if any), YKS result, ÖSYM placement.
+- New tables: `applications`, `application_documents`.
+
+### Epic 4 — Pre-acceptance ("ön kabul") engine
+- System issues a **PANELEDU-branded** preliminary/conditional acceptance (NOT
+  school logos): "Conditional acceptance — complete English by <date> / pay
+  application fee to proceed." Speeds the funnel and creates momentum.
+
+### Epic 5 — Admin: application & document management + reminders
+- Admin receives applications, manages student docs & info, tracks status.
+- Systematic **reminder emails** (deadlines, missing docs, next steps).
+
+### Epic 6 — English level test (lead magnet)
+- 20-question CEFR test (≈3 per level A1–C2). Email-gated result delivery.
+- Result emailed, then upsell via affiliate links (IELTS course, etc.).
+
+### Epic 7 — Affiliate marketing infrastructure
+- Affiliate links/banners/buttons for IELTS, TOEFL, Duolingo, Pearson/PTE, AP,
+  and language schools. Commission tracking. Placed on site + in emails.
+- Needs: affiliate accounts/links from each provider (user to supply).
+
+### Epic 8 — AI data agent (see "AI Data Agent" above)
+- Prioritize a **partner school list** (user to supply) over raw QS top.
+- Agent loads ranking + program data into admin via the review queue; fills the
+  large gaps where ranking/requirement data is currently missing.
+
+### Cross-cutting requirements
+- **Mobile-first** everywhere (highest priority).
+- **Payments** for application fees / pre-acceptance — provider TBD
+  (iyzico/PayTR for TR; Paddle/Lemon Squeezy for global USD; Stripe only via a
+  foreign entity). See payments discussion.
+
 ### WordPress integration
 - WP on root domain for content/blog/marketing; Node app stays on subdomain.
 
