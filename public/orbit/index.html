@@ -1,112 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Orbit Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>3D Kampüs Görünümü</title>
   <script src="https://cesium.com/downloads/cesiumjs/releases/1.124/Build/Cesium/Cesium.js"></script>
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.124/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     html, body, #cesiumContainer { width:100%; height:100%; margin:0; padding:0; overflow:hidden; }
-    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background:#0b1020; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background:#0b1020; color:#e6e9f0; }
+    * { -webkit-tap-highlight-color: transparent; }
 
-    /* Back button */
-    #backBtn {
-      position:absolute; top:16px; right:16px; z-index:20;
-      background:rgba(11,16,32,.85); color:#94a3b8; border:1px solid rgba(255,255,255,.15);
-      border-radius:10px; padding:8px 14px; font-size:.82rem; font-weight:600;
-      cursor:pointer; backdrop-filter:blur(6px); display:flex; align-items:center; gap:6px;
-      text-decoration:none; transition:all .15s;
+    /* Top-right controls */
+    #topControls { position:absolute; top:14px; right:14px; z-index:30; display:flex; gap:8px; }
+    .ctrl {
+      background:rgba(11,16,32,.85); color:#cbd5e1; border:1px solid rgba(255,255,255,.15);
+      border-radius:10px; padding:8px 13px; font-size:.8rem; font-weight:600; cursor:pointer;
+      backdrop-filter:blur(6px); display:flex; align-items:center; gap:6px; text-decoration:none; transition:all .15s;
     }
-    #backBtn:hover { background:rgba(99,102,241,.25); border-color:rgba(99,102,241,.5); color:#a5b4fc; }
+    .ctrl:hover { background:rgba(99,102,241,.25); border-color:rgba(99,102,241,.5); color:#a5b4fc; }
 
-    /* Info panel */
-    #panel {
-      position:absolute; top:16px; left:16px; z-index:10;
-      background:rgba(11,16,32,.88); color:#e6e9f0; border:1px solid rgba(255,255,255,.12);
-      border-radius:12px; min-width:220px; max-width:280px; backdrop-filter:blur(6px);
-      overflow:hidden;
+    /* Top-left university header */
+    #uHeader {
+      position:absolute; top:14px; left:14px; z-index:20; max-width:min(70vw,360px);
+      background:rgba(11,16,32,.85); border:1px solid rgba(255,255,255,.12); border-radius:14px;
+      padding:13px 16px; backdrop-filter:blur(6px);
     }
-    #panelHeader {
-      padding:12px 14px 10px; display:flex; align-items:center; justify-content:space-between;
-      cursor:pointer; user-select:none;
-    }
-    #panelHeader:hover { background:rgba(255,255,255,.04); }
-    #panelTitle { font-size:.95rem; font-weight:700; color:#f1f5f9; margin:0; flex:1; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-    #panelToggle { font-size:.7rem; color:#475569; flex-shrink:0; margin-left:8px; transition:transform .2s; }
-    #panelBody { padding:0 14px 12px; }
-    .info-row { display:flex; justify-content:space-between; font-size:.78rem; padding:2px 0; color:#94a3b8; }
-    .info-row b { color:#cbd5e1; font-weight:600; }
+    #uName { font-size:1.05rem; font-weight:800; color:#f8fafc; line-height:1.25; }
+    #uLoc { font-size:.8rem; color:#94a3b8; margin-top:3px; }
+    #uRanks { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+    .rank-chip { font-size:.68rem; font-weight:700; padding:3px 8px; border-radius:20px; background:rgba(99,102,241,.2); color:#a5b4fc; }
 
-    /* Buttons */
-    .btn-row { display:flex; gap:8px; margin-top:10px; }
-    .btn-primary-orbit {
-      flex:1; cursor:pointer; border:none; border-radius:8px; padding:7px 10px;
-      font-size:.8rem; font-weight:600; background:#6366f1; color:#fff; transition:opacity .15s;
+    /* Bottom dock with corner cards */
+    #dockToggle {
+      position:absolute; left:50%; transform:translateX(-50%); bottom:calc(14px + env(safe-area-inset-bottom));
+      z-index:31; display:none;
     }
-    .btn-primary-orbit:hover { opacity:.85; }
-    .btn-alt {
-      flex:1; cursor:pointer; border:1px solid rgba(255,255,255,.15); border-radius:8px;
-      padding:7px 10px; font-size:.8rem; font-weight:600;
-      background:rgba(255,255,255,.08); color:#e6e9f0; transition:all .15s;
+    #dock {
+      position:absolute; left:14px; right:14px; bottom:calc(14px + env(safe-area-inset-bottom));
+      z-index:20; display:flex; align-items:flex-end; justify-content:space-between; gap:14px; pointer-events:none;
     }
-    .btn-alt:hover { background:rgba(255,255,255,.14); }
-
-    /* Uni link */
-    #uniLink {
-      display:block; font-size:.75rem; color:#818cf8; text-decoration:none;
-      padding:6px 14px 10px; border-top:1px solid rgba(255,255,255,.07); margin-top:4px;
+    .dock-card {
+      background:rgba(11,16,32,.88); border:1px solid rgba(255,255,255,.12); border-radius:14px;
+      padding:14px 16px; backdrop-filter:blur(7px); pointer-events:auto;
     }
-    #uniLink:hover { color:#a5b4fc; background:rgba(99,102,241,.08); }
+    #factsCard { width:300px; flex-shrink:0; }
+    #deptCard { width:340px; flex-shrink:0; }
+    .dock-title { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:#818cf8; margin-bottom:10px; }
+    .fact { display:flex; justify-content:space-between; gap:10px; font-size:.84rem; padding:5px 0; color:#94a3b8; border-bottom:1px solid rgba(255,255,255,.06); }
+    .fact:last-of-type { border-bottom:none; }
+    .fact b { color:#f1f5f9; font-weight:700; text-align:right; }
+    .fact b.cost { color:#fcd34d; }
+    .apply-btn {
+      display:block; text-align:center; margin-top:12px; background:linear-gradient(135deg,#6366f1,#8b5cf6);
+      color:#fff; font-weight:700; font-size:.85rem; padding:10px; border-radius:10px; text-decoration:none;
+    }
+    .apply-btn:hover { opacity:.9; }
+    .dept-scroll { max-height:210px; overflow-y:auto; margin:-2px -4px 0; padding:0 4px; }
+    .dept-scroll::-webkit-scrollbar { width:5px; }
+    .dept-scroll::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
+    .dept-item { padding:7px 0; border-bottom:1px solid rgba(255,255,255,.06); }
+    .dept-item:last-child { border-bottom:none; }
+    .dept-name { font-size:.82rem; color:#e6e9f0; font-weight:600; line-height:1.3; }
+    .dept-meta { font-size:.72rem; color:#64748b; margin-top:2px; display:flex; gap:8px; flex-wrap:wrap; }
+    .dept-meta .fee { color:#fcd34d; font-weight:600; }
 
     /* Error overlay */
-    #msg {
-      position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:20;
-      background:rgba(11,16,32,.95); color:#e6e9f0; border:1px solid rgba(255,255,255,.15);
-      border-radius:12px; padding:20px 24px; max-width:420px; font-size:.9rem; display:none;
-    }
+    #msg { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:40;
+      background:rgba(11,16,32,.95); border:1px solid rgba(255,255,255,.15); border-radius:12px;
+      padding:20px 24px; max-width:420px; font-size:.9rem; display:none; }
     #msg b { color:#f87171; }
 
-    /* Mobile: panel starts collapsed, back btn smaller */
-    @media (max-width: 480px) {
-      #panel { min-width:180px; max-width:220px; }
-      #backBtn { padding:6px 10px; font-size:.76rem; top:12px; right:12px; }
-      #panel { top:12px; left:12px; }
+    /* Mobile: stack the dock into a collapsible bottom sheet */
+    @media (max-width: 760px) {
+      #uHeader { max-width:calc(100vw - 130px); padding:10px 13px; }
+      #uName { font-size:.92rem; }
+      #dock { flex-direction:column; align-items:stretch; gap:10px; max-height:50vh; overflow-y:auto; }
+      #factsCard, #deptCard { width:100%; }
+      .dept-scroll { max-height:30vh; }
+      #dock.hidden { display:none; }
+      #dockToggle { display:flex; }
     }
-
     .cesium-viewer-bottom, .cesium-viewer-animationContainer, .cesium-viewer-timelineContainer { display:none !important; }
   </style>
 </head>
 <body>
   <div id="cesiumContainer"></div>
 
-  <!-- Back button (top right) -->
-  <a id="backBtn" href="/">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-    <span id="backBtnLabel">Back</span>
-  </a>
+  <!-- Top-right controls -->
+  <div id="topControls">
+    <button id="toggleBtn" class="ctrl">⏸ Durdur</button>
+    <a id="backBtn" class="ctrl" href="/">← Geri</a>
+  </div>
 
-  <!-- Info panel (top left) -->
-  <div id="panel">
-    <div id="panelHeader" onclick="togglePanel()">
-      <div id="panelTitle">Orbit Preview</div>
-      <span id="panelToggle">▲</span>
+  <!-- Top-left university header -->
+  <div id="uHeader" style="display:none">
+    <div id="uName">—</div>
+    <div id="uLoc"></div>
+    <div id="uRanks"></div>
+  </div>
+
+  <!-- Mobile dock toggle -->
+  <button id="dockToggle" class="ctrl" onclick="toggleDock()">▾ Bilgileri gizle</button>
+
+  <!-- Bottom dock (corner cards) -->
+  <div id="dock" style="display:none">
+    <div class="dock-card" id="factsCard">
+      <div class="dock-title">Önemli Bilgiler</div>
+      <div class="fact"><span>Yıllık ücret</span><b class="cost" id="fFee">—</b></div>
+      <div class="fact"><span>Eğitim dili</span><b id="fLang">—</b></div>
+      <div class="fact"><span>Başlangıç (intake)</span><b id="fIntake">—</b></div>
+      <a id="applyBtn" class="apply-btn" href="#"><i class="bi bi-send-fill me-1"></i>Başvur / Bilgi Al</a>
     </div>
-    <div id="panelBody">
-      <div class="info-row"><span>Latitude</span><b id="iLat">—</b></div>
-      <div class="info-row"><span>Longitude</span><b id="iLng">—</b></div>
-      <div class="info-row"><span>Altitude</span><b id="iAlt">—</b></div>
-      <div class="info-row"><span>Range</span><b id="iRange">—</b></div>
-      <div class="info-row"><span>Pitch</span><b id="iPitch">—</b></div>
-      <div class="info-row"><span>Speed</span><b id="iSpeed">—</b></div>
-      <div class="btn-row">
-        <button id="toggleBtn" class="btn-primary-orbit">Pause</button>
-        <button id="closeBtn" class="btn-alt">Close</button>
-      </div>
+    <div class="dock-card" id="deptCard">
+      <div class="dock-title">Bölümler (<span id="deptCount">0</span>)</div>
+      <div id="deptList" class="dept-scroll"></div>
     </div>
-    <a id="uniLink" style="display:none" href="#">
-      ← View university details
-    </a>
   </div>
 
   <div id="msg"></div>
@@ -117,7 +127,7 @@
     const num = (k, d) => { const v = parseFloat(q.get(k)); return Number.isFinite(v) ? v : d; };
 
     const cfg = {
-      name:    q.get('name') || 'Orbit Preview',
+      name:    q.get('name') || '3D Kampüs',
       uniId:   q.get('uniId') || null,
       lat:     num('lat', NaN),
       lng:     num('lng', NaN),
@@ -129,57 +139,88 @@
       rot:     q.get('rot') || '360'
     };
 
-    // Panel toggle
-    let panelOpen = window.innerWidth > 480;
-    function togglePanel() {
-      panelOpen = !panelOpen;
-      document.getElementById('panelBody').style.display = panelOpen ? 'block' : 'none';
-      document.getElementById('uniLink').style.display = (panelOpen && cfg.uniId) ? 'block' : 'none';
-      document.getElementById('panelToggle').style.transform = panelOpen ? '' : 'rotate(180deg)';
-    }
-    if (!panelOpen) {
-      document.getElementById('panelBody').style.display = 'none';
-      document.getElementById('panelToggle').style.transform = 'rotate(180deg)';
-    }
+    function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-    // Back / Close buttons
+    // Back button + apply target
     const backBtn = document.getElementById('backBtn');
     if (cfg.uniId) {
       backBtn.href = '/university?id=' + cfg.uniId;
-      backBtn.querySelector('#backBtnLabel').textContent = 'University';
-      const uniLink = document.getElementById('uniLink');
-      uniLink.href = '/university?id=' + cfg.uniId;
-      if (panelOpen) uniLink.style.display = 'block';
-    } else {
-      backBtn.href = '/';
-      backBtn.querySelector('#backBtnLabel').textContent = 'Universities';
+      document.getElementById('applyBtn').href = '/university?id=' + cfg.uniId;
     }
 
-    document.getElementById('closeBtn').onclick = function () {
-      if (window.opener && !window.opener.closed) { window.close(); }
-      else if (history.length > 1) { history.back(); }
-      else { location.href = cfg.uniId ? '/university?id=' + cfg.uniId : '/'; }
-    };
+    // Mobile dock toggle
+    let dockShown = true;
+    function toggleDock() {
+      dockShown = !dockShown;
+      document.getElementById('dock').classList.toggle('hidden', !dockShown);
+      document.getElementById('dockToggle').innerHTML = dockShown ? '▾ Bilgileri gizle' : '▴ Bilgileri göster';
+    }
 
-    // Fill info
-    document.getElementById('panelTitle').textContent = cfg.name;
-    document.getElementById('iLat').textContent   = isFinite(cfg.lat)  ? cfg.lat.toFixed(5)  : '—';
-    document.getElementById('iLng').textContent   = isFinite(cfg.lng)  ? cfg.lng.toFixed(5)  : '—';
-    document.getElementById('iAlt').textContent   = cfg.alt + ' m';
-    document.getElementById('iRange').textContent = cfg.range + ' m';
-    document.getElementById('iPitch').textContent = cfg.pitch + '°';
-    document.getElementById('iSpeed').textContent = cfg.speed + '°/f';
+    // ── Load student-facing university info into the corner panels ──
+    const FX = { EUR:1, USD:0.92, GBP:1.17, AUD:0.61, CAD:0.68 };
+    function feeEur(p){ if(p.tuition_fee==null||p.tuition_fee==='')return null; const f=parseFloat(p.tuition_fee); if(isNaN(f))return null; return Math.round(f*(FX[(p.tuition_currency||'EUR').toUpperCase()]||1)); }
+
+    async function loadUni() {
+      if (!cfg.uniId) return;
+      try {
+        const r = await fetch('/api/public/universities/' + cfg.uniId);
+        if (!r.ok) return;
+        const u = await r.json();
+        document.title = u.name + ' — 3D Kampüs';
+
+        // Header
+        document.getElementById('uName').textContent = u.name;
+        document.getElementById('uLoc').innerHTML = '<i class="bi bi-geo-alt-fill"></i> ' + esc([u.city, u.country].filter(Boolean).join(', '));
+        const ranks = [];
+        if (u.qs_rank) ranks.push('QS #' + u.qs_rank);
+        if (u.the_rank) ranks.push('THE #' + u.the_rank);
+        if (u.shanghai_rank) ranks.push('ARWU #' + u.shanghai_rank);
+        document.getElementById('uRanks').innerHTML = ranks.map(x => '<span class="rank-chip">' + esc(x) + '</span>').join('');
+        document.getElementById('uHeader').style.display = 'block';
+
+        const progs = u.programs || [];
+        // Facts: fee range, languages, intakes
+        const fees = progs.map(feeEur).filter(v => v != null);
+        let feeText = 'Talep üzerine';
+        if (fees.length) {
+          const lo = Math.min.apply(null, fees), hi = Math.max.apply(null, fees);
+          feeText = lo === hi ? '€' + lo.toLocaleString('tr-TR') : '€' + lo.toLocaleString('tr-TR') + ' – €' + hi.toLocaleString('tr-TR');
+        }
+        document.getElementById('fFee').textContent = feeText;
+
+        const langs = [...new Set(progs.map(p => (p.language_of_instruction || '').trim()).filter(Boolean))];
+        document.getElementById('fLang').textContent = langs.length ? langs.slice(0, 3).join(', ') : 'English';
+
+        const intakes = [...new Set(progs.flatMap(p => (p.intake_months || '').split(',').map(s => s.trim()).filter(Boolean)))];
+        document.getElementById('fIntake').textContent = intakes.length ? intakes.join(', ') : '—';
+
+        // Departments
+        document.getElementById('deptCount').textContent = progs.length;
+        document.getElementById('deptList').innerHTML = progs.length
+          ? progs.map(p => {
+              const fe = feeEur(p);
+              const meta = [p.type_name, p.duration, fe != null ? '€' + fe.toLocaleString('tr-TR') + '/yıl' : null]
+                .filter(Boolean);
+              const metaHtml = meta.map((m, i) => i === 2 ? '<span class="fee">' + esc(m) + '</span>' : '<span>' + esc(m) + '</span>').join('');
+              return '<div class="dept-item"><div class="dept-name">' + esc(p.name) + '</div><div class="dept-meta">' + metaHtml + '</div></div>';
+            }).join('')
+          : '<div style="color:#64748b;font-size:.8rem;padding:8px 0">Bölüm bilgisi yok.</div>';
+
+        document.getElementById('dock').style.display = 'flex';
+      } catch (e) { /* keep 3D view even if info fails */ }
+    }
+    loadUni();
 
     function showMsg(html) {
       const m = document.getElementById('msg');
       m.innerHTML = html + (cfg.uniId
-        ? `<br><br><a href="/university?id=${cfg.uniId}" style="color:#818cf8">← Back to university</a>`
-        : `<br><br><a href="/" style="color:#818cf8">← Back to universities</a>`);
+        ? `<br><br><a href="/university?id=${cfg.uniId}" style="color:#818cf8">← Üniversiteye dön</a>`
+        : `<br><br><a href="/" style="color:#818cf8">← Okullara dön</a>`);
       m.style.display = 'block';
     }
 
     if (!isFinite(cfg.lat) || !isFinite(cfg.lng)) {
-      showMsg('<b>No coordinates</b><br>This campus has no latitude/longitude set. Add them in the admin panel, then preview again.');
+      showMsg('<b>Koordinat yok</b><br>Bu kampüsün konumu tanımlı değil. Admin panelinden ekleyip tekrar deneyin.');
       throw new Error('no coords');
     }
 
@@ -195,7 +236,7 @@
         });
         viewer.scene.skyAtmosphere.show = true;
       } catch (e) {
-        showMsg('<b>Viewer failed to load</b><br>' + e.message);
+        showMsg('<b>Görüntüleyici yüklenemedi</b><br>' + e.message);
         return;
       }
 
@@ -203,8 +244,7 @@
         const tileset = await Cesium.createGooglePhotorealistic3DTileset({ key: GOOGLE_MAPS_KEY });
         viewer.scene.primitives.add(tileset);
       } catch (e) {
-        showMsg('<b>3D tiles failed to load</b><br>' + (e && e.message ? e.message : e) +
-          '<br><br>Check that the Map Tiles API is enabled for the Google Maps key and that this domain is allowed in the key restrictions.');
+        showMsg('<b>3D harita yüklenemedi</b><br>' + (e && e.message ? e.message : e));
         return;
       }
 
@@ -228,7 +268,7 @@
       const btn = document.getElementById('toggleBtn');
       btn.onclick = function () {
         running = !running;
-        btn.textContent = running ? 'Pause' : 'Resume';
+        btn.textContent = running ? '⏸ Durdur' : '▶ Döndür';
       };
     })();
   </script>
