@@ -46,9 +46,6 @@ publicRouter.post('/', async (req, res) => {
     if (!b.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(b.email)) {
       return res.status(400).json({ error: 'A valid email is required.' });
     }
-    if (!b.first_name && !b.last_name) {
-      return res.status(400).json({ error: 'Name is required.' });
-    }
     const token = crypto.randomBytes(24).toString('hex');
     const vals = APPLICANT_COLS.map(c => d(b[c]));
     const [r] = await db.query(

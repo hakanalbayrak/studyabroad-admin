@@ -57,14 +57,37 @@
       color:#fff; font-weight:700; font-size:.85rem; padding:10px; border-radius:10px; text-decoration:none;
     }
     .apply-btn:hover { opacity:.9; }
-    .dept-scroll { max-height:210px; overflow-y:auto; margin:-2px -4px 0; padding:0 4px; }
+    .dept-scroll { max-height:260px; overflow-y:auto; margin:-2px -4px 0; padding:0 4px; }
     .dept-scroll::-webkit-scrollbar { width:5px; }
     .dept-scroll::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
-    .dept-item { padding:7px 0; border-bottom:1px solid rgba(255,255,255,.06); }
-    .dept-item:last-child { border-bottom:none; }
-    .dept-name { font-size:.82rem; color:#e6e9f0; font-weight:600; line-height:1.3; }
-    .dept-meta { font-size:.72rem; color:#64748b; margin-top:2px; display:flex; gap:8px; flex-wrap:wrap; }
-    .dept-meta .fee { color:#fcd34d; font-weight:600; }
+    /* Program group accordion */
+    .prog-group { margin-bottom:6px; }
+    .prog-group-hdr {
+      display:flex; align-items:center; justify-content:space-between; gap:8px;
+      padding:7px 0; cursor:pointer; border-bottom:1px solid rgba(255,255,255,.08);
+      font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:.06em; color:#818cf8;
+      user-select:none;
+    }
+    .prog-group-hdr .cnt { background:rgba(99,102,241,.2); border-radius:20px; padding:1px 7px; font-size:.65rem; color:#a5b4fc; }
+    .prog-group-body { display:none; }
+    .prog-group-body.open { display:block; }
+    .prog-item { border-bottom:1px solid rgba(255,255,255,.05); }
+    .prog-item:last-child { border-bottom:none; }
+    .prog-hdr {
+      display:flex; align-items:center; gap:6px; padding:8px 0 6px; cursor:pointer;
+    }
+    .prog-arrow { font-size:.65rem; color:#64748b; flex-shrink:0; transition:transform .15s; }
+    .prog-hdr.open .prog-arrow { transform:rotate(90deg); }
+    .prog-title { font-size:.82rem; color:#e6e9f0; font-weight:600; line-height:1.25; flex:1; }
+    .prog-subtitle { font-size:.7rem; color:#64748b; display:flex; gap:6px; flex-wrap:wrap; margin-top:1px; }
+    .prog-subtitle .fee { color:#fcd34d; font-weight:600; }
+    .prog-detail { padding:6px 0 10px 14px; display:none; }
+    .prog-detail.open { display:block; }
+    .req-row { display:flex; gap:6px; align-items:flex-start; font-size:.73rem; padding:3px 0; color:#94a3b8; }
+    .req-row i { color:#818cf8; font-size:.8rem; flex-shrink:0; margin-top:1px; }
+    .req-row b { color:#e2e8f0; font-weight:600; }
+    .prog-apply { display:inline-block; margin-top:8px; background:linear-gradient(135deg,#6366f1,#8b5cf6); color:#fff; font-weight:700; font-size:.75rem; padding:6px 14px; border-radius:8px; text-decoration:none; border:none; cursor:pointer; }
+    .prog-apply:hover { opacity:.88; }
 
     /* Error overlay */
     #msg { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:40;
@@ -114,7 +137,7 @@
       <a id="applyBtn" class="apply-btn" href="#"><i class="bi bi-send-fill me-1"></i>Başvur / Bilgi Al</a>
     </div>
     <div class="dock-card" id="deptCard">
-      <div class="dock-title">Bölümler (<span id="deptCount">0</span>)</div>
+      <div class="dock-title">Programlar (<span id="deptCount">0</span>)</div>
       <div id="deptList" class="dept-scroll"></div>
     </div>
   </div>
@@ -160,6 +183,67 @@
     const FX = { EUR:1, USD:0.92, GBP:1.17, AUD:0.61, CAD:0.68 };
     function feeEur(p){ if(p.tuition_fee==null||p.tuition_fee==='')return null; const f=parseFloat(p.tuition_fee); if(isNaN(f))return null; return Math.round(f*(FX[(p.tuition_currency||'EUR').toUpperCase()]||1)); }
 
+    function buildProgDetail(p, uniId) {
+      const rows = [];
+      if (p.gpa_requirement) rows.push('<div class="req-row"><i class="bi bi-bar-chart-fill"></i><span>GPA: <b>' + esc(p.gpa_requirement) + '</b></span></div>');
+      if (p.english_req_type && p.english_req_type !== 'None') {
+        const score = p.english_req_score ? ' <b>' + esc(p.english_req_score) + '</b>' : '';
+        rows.push('<div class="req-row"><i class="bi bi-translate"></i><span>' + esc(p.english_req_type) + score + '</span></div>');
+      }
+      // Parse requirements_json for extra tests
+      try {
+        const reqs = typeof p.requirements_json === 'string' ? JSON.parse(p.requirements_json) : (p.requirements_json || {});
+        if (reqs.sat)   rows.push('<div class="req-row"><i class="bi bi-pencil-square"></i><span>SAT: <b>' + esc(reqs.sat) + '</b></span></div>');
+        if (reqs.gmat)  rows.push('<div class="req-row"><i class="bi bi-pencil-square"></i><span>GMAT: <b>' + esc(reqs.gmat) + '</b></span></div>');
+        if (reqs.gre)   rows.push('<div class="req-row"><i class="bi bi-pencil-square"></i><span>GRE: <b>' + esc(reqs.gre) + '</b></span></div>');
+        if (reqs.ap)    rows.push('<div class="req-row"><i class="bi bi-journal-check"></i><span>AP: <b>' + esc(reqs.ap) + '</b></span></div>');
+        if (reqs.ib)    rows.push('<div class="req-row"><i class="bi bi-journal-check"></i><span>IB: <b>' + esc(reqs.ib) + '</b></span></div>');
+        if (reqs.alevel) rows.push('<div class="req-row"><i class="bi bi-journal-check"></i><span>A-Level: <b>' + esc(reqs.alevel) + '</b></span></div>');
+        if (reqs.deadline) rows.push('<div class="req-row"><i class="bi bi-calendar-event"></i><span>Başvuru: <b>' + esc(reqs.deadline) + '</b></span></div>');
+      } catch(_) {}
+      const intakes = (p.intake_months || '').split(',').map(s => s.trim()).filter(Boolean);
+      if (intakes.length) rows.push('<div class="req-row"><i class="bi bi-calendar3"></i><span>Intake: <b>' + esc(intakes.join(', ')) + '</b></span></div>');
+      const applyUrl = '/apply?uni=' + (uniId || '') + '&program=' + p.id;
+      return rows.join('') + '<a class="prog-apply" href="' + applyUrl + '"><i class="bi bi-send-fill me-1"></i>Başvur</a>';
+    }
+
+    function buildProgGroup(label, progs, uniId) {
+      if (!progs.length) return '';
+      const items = progs.map((p, i) => {
+        const fe = feeEur(p);
+        const subtitle = [p.duration, fe != null ? '<span class="fee">€' + fe.toLocaleString('tr-TR') + '/yıl</span>' : null]
+          .filter(Boolean).join(' · ');
+        const uid = 'pg_' + label.replace(/\s/g,'') + '_' + i;
+        return '<div class="prog-item">' +
+          '<div class="prog-hdr" onclick="toggleProg(\'' + uid + '\', this)">' +
+            '<span class="prog-arrow bi bi-chevron-right"></span>' +
+            '<div><div class="prog-title">' + esc(p.name) + '</div>' +
+            '<div class="prog-subtitle">' + subtitle + '</div></div>' +
+          '</div>' +
+          '<div class="prog-detail" id="' + uid + '">' + buildProgDetail(p, uniId) + '</div>' +
+        '</div>';
+      }).join('');
+      const gid = 'grp_' + label.replace(/\s/g,'');
+      return '<div class="prog-group">' +
+        '<div class="prog-group-hdr" onclick="toggleGroup(\'' + gid + '\', this)">' +
+          label + '<span class="cnt">' + progs.length + '</span>' +
+        '</div>' +
+        '<div class="prog-group-body" id="' + gid + '">' + items + '</div>' +
+      '</div>';
+    }
+
+    function toggleGroup(id, hdr) {
+      const body = document.getElementById(id);
+      if (!body) return;
+      body.classList.toggle('open');
+    }
+    function toggleProg(id, hdr) {
+      const detail = document.getElementById(id);
+      if (!detail) return;
+      detail.classList.toggle('open');
+      hdr.classList.toggle('open');
+    }
+
     async function loadUni() {
       if (!cfg.uniId) return;
       try {
@@ -179,7 +263,8 @@
         document.getElementById('uHeader').style.display = 'block';
 
         const progs = u.programs || [];
-        // Facts: fee range, languages, intakes
+
+        // Facts
         const fees = progs.map(feeEur).filter(v => v != null);
         let feeText = 'Talep üzerine';
         if (fees.length) {
@@ -194,17 +279,22 @@
         const intakes = [...new Set(progs.flatMap(p => (p.intake_months || '').split(',').map(s => s.trim()).filter(Boolean)))];
         document.getElementById('fIntake').textContent = intakes.length ? intakes.join(', ') : '—';
 
-        // Departments
+        // Programs panel — grouped by Bachelor / Master / Other
         document.getElementById('deptCount').textContent = progs.length;
-        document.getElementById('deptList').innerHTML = progs.length
-          ? progs.map(p => {
-              const fe = feeEur(p);
-              const meta = [p.type_name, p.duration, fe != null ? '€' + fe.toLocaleString('tr-TR') + '/yıl' : null]
-                .filter(Boolean);
-              const metaHtml = meta.map((m, i) => i === 2 ? '<span class="fee">' + esc(m) + '</span>' : '<span>' + esc(m) + '</span>').join('');
-              return '<div class="dept-item"><div class="dept-name">' + esc(p.name) + '</div><div class="dept-meta">' + metaHtml + '</div></div>';
-            }).join('')
-          : '<div style="color:#64748b;font-size:.8rem;padding:8px 0">Bölüm bilgisi yok.</div>';
+        if (!progs.length) {
+          document.getElementById('deptList').innerHTML = '<div style="color:#64748b;font-size:.8rem;padding:8px 0">Program bilgisi yok.</div>';
+        } else {
+          const bach = progs.filter(p => /bachelor|lisans|undergrad|bsc|ba\b|beng/i.test(p.type_name || ''));
+          const mast = progs.filter(p => /master|yüksek|msc|ma\b|mba|meng/i.test(p.type_name || ''));
+          const other = progs.filter(p => !bach.includes(p) && !mast.includes(p));
+          document.getElementById('deptList').innerHTML =
+            buildProgGroup('Lisans (Bachelor)', bach, cfg.uniId) +
+            buildProgGroup('Yüksek Lisans (Master)', mast, cfg.uniId) +
+            buildProgGroup('Diğer', other, cfg.uniId);
+          // Auto-open first non-empty group
+          const firstGrp = document.querySelector('.prog-group-body');
+          if (firstGrp) firstGrp.classList.add('open');
+        }
 
         document.getElementById('dock').style.display = 'flex';
       } catch (e) { /* keep 3D view even if info fails */ }

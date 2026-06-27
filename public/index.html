@@ -420,7 +420,23 @@ function cardHtml(u) {
   </div>`;
 }
 
-function goToDetail(id) { window.location.href = '/university?id=' + id; }
+function goToDetail(id) {
+  const u = allUniversities.find(x => x.id === id);
+  if (u && (u.latitude || u.orbit_center_lat)) {
+    const lat = u.orbit_center_lat ?? u.latitude, lng = u.orbit_center_lng ?? u.longitude;
+    const params = new URLSearchParams({ name: u.name, uniId: u.id, lat, lng,
+      alt: u.orbit_altitude ?? 400, pitch: u.orbit_pitch ?? -45,
+      heading: u.orbit_initial_heading ?? 0, range: u.orbit_range ?? 400,
+      speed: u.orbit_rotation_speed ?? 0.12, rot: u.orbit_rotation_type ?? '360' });
+    if (u.scan_target_lat && u.scan_target_lng) {
+      params.set('scanLat', u.scan_target_lat); params.set('scanLng', u.scan_target_lng);
+      params.set('scan', u.scan_effect_enabled ? '1' : '0');
+    }
+    window.location.href = '/orbit?' + params.toString();
+  } else {
+    window.location.href = '/university?id=' + id;
+  }
+}
 
 function openOrbit(id) {
   const u = allUniversities.find(x => x.id === id);

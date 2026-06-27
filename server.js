@@ -510,9 +510,10 @@ app.get('/api/public/universities/:id', async (req, res) => {
 // Public programs search (filterable)
 app.get('/api/public/programs', async (req, res) => {
   try {
-    const { q, country, type, domain, max_fee, lang, eng_type, scholarship } = req.query;
+    const { q, country, type, domain, max_fee, lang, eng_type, scholarship, entity_id } = req.query;
     let where = ['p.status = "active"', 'e.status != "inactive"'];
     const vals = [];
+    if (entity_id) { where.push('e.id = ?'); vals.push(parseInt(entity_id)); }
     if (q) { where.push('(p.name LIKE ? OR e.name LIKE ?)'); vals.push(`%${q}%`, `%${q}%`); }
     if (country) { where.push('el.country = ?'); vals.push(country); }
     if (type) { where.push('pt.name = ?'); vals.push(type); }
