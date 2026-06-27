@@ -107,6 +107,9 @@
       <a href="#" class="nav-link" data-sec="leads" onclick="showSection('leads');return false;">
         <i class="bi bi-envelope-fill"></i>Leads <span id="newLeadsBadge" class="badge bg-danger ms-auto d-none" style="font-size:.65rem"></span>
       </a>
+      <a href="#" class="nav-link" data-sec="applications" onclick="showSection('applications');return false;">
+        <i class="bi bi-file-earmark-person-fill"></i>Applications
+      </a>
       <a href="#" class="nav-link" data-sec="users" onclick="showSection('users');return false;">
         <i class="bi bi-people-fill"></i>Users
       </a>
@@ -728,6 +731,38 @@
       </div>
     </div><!-- /usersSection -->
 
+    <!-- ── Applications ──────────────────────────────────────────────────── -->
+    <div id="applicationsSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <h4 class="fw-bold mb-0"><i class="bi bi-file-earmark-person-fill me-2 text-primary"></i>Applications</h4>
+        <div class="d-flex gap-2 flex-wrap">
+          <input type="text" class="form-control form-control-sm" id="appSearch" placeholder="Search name / email / university / program…" style="width:240px" oninput="filterApplications()">
+          <select class="form-select form-select-sm" id="appStatusFilter" style="width:150px" onchange="filterApplications()">
+            <option value="">All statuses</option>
+            <option value="submitted">Submitted</option>
+            <option value="reviewing">Reviewing</option>
+            <option value="pre_accepted">Pre-accepted</option>
+            <option value="conditional">Conditional</option>
+            <option value="rejected">Rejected</option>
+            <option value="completed">Completed</option>
+          </select>
+          <button class="btn btn-outline-secondary btn-sm" onclick="loadApplications()"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+      </div>
+
+      <!-- Stats row -->
+      <div class="row g-3 mb-4">
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(255,255,255,.04);border:1px solid rgba(0,0,0,.06)"><div class="fw-bold fs-4" id="as_total">—</div><div class="small text-muted">Total</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.2)"><div class="fw-bold fs-4 text-primary" id="as_submitted">—</div><div class="small text-muted">Submitted</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.2)"><div class="fw-bold fs-4" style="color:#d97706" id="as_reviewing">—</div><div class="small text-muted">Reviewing</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2)"><div class="fw-bold fs-4 text-success" id="as_accepted">—</div><div class="small text-muted">Accepted</div></div></div>
+      </div>
+
+      <div id="appsTableWrap">
+        <div class="text-center text-muted py-5">Loading applications…</div>
+      </div>
+    </div><!-- /applicationsSection -->
+
   </div><!-- /mainContent -->
 </div><!-- /adminApp -->
 
@@ -801,6 +836,49 @@
       <div class="modal-footer border-0">
         <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button class="btn btn-primary" id="sendReplyBtn" onclick="sendReply()"><i class="bi bi-send me-1"></i>Send Reply</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Application detail modal -->
+<div class="modal fade" id="appModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title"><i class="bi bi-file-earmark-person-fill me-2 text-primary"></i>Application Details</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="appDetailBody"><div class="text-muted small">Loading…</div></div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <h6 class="fw-semibold mb-2"><i class="bi bi-paperclip me-1"></i>Documents</h6>
+        <div id="appDocs" class="mb-3"><div class="text-muted small">Loading…</div></div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div class="row g-3">
+          <div class="col-md-5">
+            <label class="form-label small fw-semibold">Status</label>
+            <select class="form-select" id="appStatusSelect" style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="submitted">Submitted</option>
+              <option value="reviewing">Reviewing</option>
+              <option value="pre_accepted">Pre-accepted</option>
+              <option value="conditional">Conditional</option>
+              <option value="rejected">Rejected</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+          <div class="col-md-7">
+            <label class="form-label small fw-semibold">Internal notes</label>
+            <textarea id="appNotes" rows="3" class="form-control" placeholder="Admin notes…"
+              style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary" id="appSaveBtn" onclick="saveApplication()"><i class="bi bi-check-lg me-1"></i>Save</button>
       </div>
     </div>
   </div>
@@ -1071,6 +1149,7 @@ function showSection(name) {
   if (name === 'entities') { closeEntityForm(); loadEntities(); }
   if (name === 'leads') loadLeads();
   if (name === 'users') loadUsers();
+  if (name === 'applications') loadApplications();
 }
 
 async function loadStats() {
@@ -2219,6 +2298,216 @@ async function deleteUser(id, name) {
     } catch (e) { toast(e.message, 'error'); }
   };
   confirmModal.show();
+}
+
+// ── Applications ───────────────────────────────────────────────────────────────
+let allApplications = [];
+let appModal = null;
+let currentAppId = null;
+
+const APP_STATUSES = ['submitted','reviewing','pre_accepted','conditional','rejected','completed'];
+const APP_STATUS_LABEL = { submitted:'Submitted', reviewing:'Reviewing', pre_accepted:'Pre-accepted', conditional:'Conditional', rejected:'Rejected', completed:'Completed' };
+
+async function loadApplications() {
+  try {
+    const r = await api('GET', '/api/admin/applications');
+    allApplications = r.ok ? await r.json() : [];
+    const sr = await api('GET', '/api/admin/applications/stats');
+    if (sr.ok) {
+      const s = await sr.json();
+      document.getElementById('as_total').textContent = s.total || 0;
+      document.getElementById('as_submitted').textContent = s.submitted || 0;
+      document.getElementById('as_reviewing').textContent = s.reviewing || 0;
+      document.getElementById('as_accepted').textContent = s.accepted || 0;
+    }
+    filterApplications();
+  } catch (e) {
+    document.getElementById('appsTableWrap').innerHTML = '<div class="text-danger small p-3">Failed to load applications.</div>';
+  }
+}
+
+function filterApplications() {
+  const q = (document.getElementById('appSearch').value || '').toLowerCase();
+  const st = document.getElementById('appStatusFilter').value;
+  const filtered = allApplications.filter(a => {
+    if (st && a.status !== st) return false;
+    if (q) {
+      const name = [a.first_name, a.last_name].filter(Boolean).join(' ');
+      const hay = [name, a.email, a.university_name, a.program_name].map(v => (v || '').toLowerCase());
+      if (!hay.some(v => v.includes(q))) return false;
+    }
+    return true;
+  });
+  renderApplicationsTable(filtered);
+}
+
+function renderApplicationsTable(apps) {
+  const wrap = document.getElementById('appsTableWrap');
+  if (!apps.length) { wrap.innerHTML = '<div class="text-muted small text-center py-5">No applications found.</div>'; return; }
+  wrap.innerHTML = `<div class="table-responsive">
+    <table class="table table-hover table-sm align-middle mb-0" style="font-size:.83rem">
+      <thead class="table-dark">
+        <tr>
+          <th>Date</th><th>Name</th><th>Email</th><th>University</th>
+          <th>Program</th><th>Intake</th><th>Status</th><th class="text-center">Docs</th><th></th>
+        </tr>
+      </thead>
+      <tbody>
+        ${apps.map(a => {
+          const name = [a.first_name, a.last_name].filter(Boolean).join(' ') || '—';
+          return `<tr>
+          <td style="white-space:nowrap;color:#6c757d">${a.created_at ? new Date(a.created_at).toLocaleDateString() : '—'}</td>
+          <td class="fw-semibold">${esc2(name)}</td>
+          <td><a href="mailto:${esc2(a.email)}" style="color:#818cf8">${esc2(a.email)}</a></td>
+          <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(a.university_name||'')}">${esc2(a.university_name||'—')}</td>
+          <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(a.program_name||'')}">${esc2(a.program_name||'—')}</td>
+          <td>${esc2(a.desired_intake||'—')}</td>
+          <td>
+            <select class="form-select form-select-sm py-0" style="font-size:.75rem;width:130px" onchange="updateAppStatus(${a.id},this.value)">
+              ${APP_STATUSES.map(s => `<option value="${s}"${a.status===s?' selected':''}>${APP_STATUS_LABEL[s]}</option>`).join('')}
+            </select>
+          </td>
+          <td class="text-center">${a.doc_count > 0 ? `<span class="badge bg-secondary">${a.doc_count}</span>` : '<span class="text-muted">0</span>'}</td>
+          <td><button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem;white-space:nowrap" onclick="openApplication(${a.id})"><i class="bi bi-eye me-1"></i>View</button></td>
+        </tr>`;}).join('')}
+      </tbody>
+    </table>
+  </div>
+  <div class="text-muted small mt-2 text-end">${apps.length} application${apps.length!==1?'s':''}</div>`;
+}
+
+async function updateAppStatus(id, status) {
+  try {
+    const r = await api('PATCH', `/api/admin/applications/${id}`, { status });
+    if (!r.ok) throw new Error('Update failed');
+    const app = allApplications.find(a => a.id === id);
+    if (app) app.status = status;
+    const sr = await api('GET', '/api/admin/applications/stats');
+    if (sr.ok) {
+      const s = await sr.json();
+      document.getElementById('as_total').textContent = s.total || 0;
+      document.getElementById('as_submitted').textContent = s.submitted || 0;
+      document.getElementById('as_reviewing').textContent = s.reviewing || 0;
+      document.getElementById('as_accepted').textContent = s.accepted || 0;
+    }
+    toast('Status updated.');
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function openApplication(id) {
+  currentAppId = id;
+  appModal = appModal || new bootstrap.Modal(document.getElementById('appModal'));
+  document.getElementById('appDetailBody').innerHTML = '<div class="text-muted small">Loading…</div>';
+  document.getElementById('appDocs').innerHTML = '<div class="text-muted small">Loading…</div>';
+  appModal.show();
+  try {
+    const r = await api('GET', `/api/admin/applications/${id}`);
+    if (!r.ok) throw new Error('Failed to load application');
+    const a = await r.json();
+    renderApplicationDetail(a);
+  } catch (e) {
+    document.getElementById('appDetailBody').innerHTML = `<div class="text-danger small">${esc2(e.message)}</div>`;
+  }
+}
+
+function renderApplicationDetail(a) {
+  const row = (label, val) => `<tr><td style="padding:4px 0;color:#94a3b8;width:150px">${label}</td><td style="padding:4px 0">${esc2(val||'—')}</td></tr>`;
+  const fmtDate = d => d ? new Date(d).toLocaleDateString() : '';
+  const grp = (title, rows) => `<h6 class="fw-semibold mt-3 mb-1" style="color:#a5b4fc"><i class="bi bi-dot"></i>${title}</h6><table style="width:100%;font-size:.86rem">${rows}</table>`;
+  const name = [a.first_name, a.last_name].filter(Boolean).join(' ');
+
+  document.getElementById('appDetailBody').innerHTML =
+    grp('Identity',
+      row('Name', name) +
+      row('Email', a.email) +
+      row('Phone', a.phone) +
+      row('Date of birth', fmtDate(a.date_of_birth)) +
+      row('Place of birth', a.place_of_birth) +
+      row('Nationality', a.nationality) +
+      row('Residence country', a.residence_country) +
+      row('Address', a.address)
+    ) +
+    grp('Passport',
+      row('Passport no', a.passport_no) +
+      row('Issued by', a.passport_issued_by) +
+      row('Issue date', fmtDate(a.passport_issue_date)) +
+      row('Expiry date', fmtDate(a.passport_expiry_date))
+    ) +
+    grp('Education',
+      row('High school', a.high_school) +
+      row('GPA', a.graduation_gpa) +
+      row('Field of interest', a.field_of_interest) +
+      row('English test', a.english_test_type) +
+      row('English score', a.english_test_score) +
+      row('Planned test date', fmtDate(a.english_test_planned_date))
+    ) +
+    grp('Application',
+      row('University', a.university_name) +
+      row('Program', a.program_name) +
+      row('Country', a.country) +
+      row('Desired intake', a.desired_intake) +
+      row('Status', APP_STATUS_LABEL[a.status] || a.status) +
+      row('Submitted', a.created_at ? new Date(a.created_at).toLocaleString() : '')
+    );
+
+  // Documents
+  const docs = a.documents || [];
+  const dWrap = document.getElementById('appDocs');
+  if (!docs.length) {
+    dWrap.innerHTML = '<div class="text-muted small fst-italic">No documents uploaded.</div>';
+  } else {
+    dWrap.innerHTML = docs.map(d => {
+      const sizeKb = d.size_bytes ? Math.max(1, Math.round(d.size_bytes / 1024)) + ' KB' : '';
+      return `<div class="d-flex align-items-center justify-content-between gap-2 p-2 mb-2 rounded" style="background:rgba(255,255,255,.05)">
+        <div style="min-width:0">
+          <div class="fw-semibold small">${esc2(d.doc_type || 'document')}</div>
+          <div class="text-muted" style="font-size:.74rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc2(d.original_name||'')} ${sizeKb ? '· ' + sizeKb : ''}</div>
+        </div>
+        <button class="btn btn-outline-light btn-sm flex-shrink-0" onclick="downloadAppDoc(${a.id},${d.id},'${esc2(d.original_name||'document').replace(/'/g,"\\'")}')">
+          <i class="bi bi-download me-1"></i>Download
+        </button>
+      </div>`;
+    }).join('');
+  }
+
+  // Status + notes
+  document.getElementById('appStatusSelect').value = a.status || 'submitted';
+  document.getElementById('appNotes').value = a.notes || '';
+}
+
+async function downloadAppDoc(appId, docId, name) {
+  try {
+    const res = await fetch(`/api/admin/applications/${appId}/documents/${docId}/download`, {
+      headers: { 'Authorization': `Bearer ${token}` }
+    });
+    if (!res.ok) throw new Error('Download failed');
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = name || 'document';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function saveApplication() {
+  const status = document.getElementById('appStatusSelect').value;
+  const notes = document.getElementById('appNotes').value;
+  const btn = document.getElementById('appSaveBtn');
+  btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Saving…';
+  try {
+    const r = await api('PATCH', `/api/admin/applications/${currentAppId}`, { status, notes });
+    if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || 'Save failed');
+    const app = allApplications.find(a => a.id === currentAppId);
+    if (app) { app.status = status; app.notes = notes; }
+    toast('Application saved.');
+    appModal.hide();
+    loadApplications();
+  } catch (e) { toast(e.message, 'error'); }
+  finally { btn.disabled = false; btn.innerHTML = '<i class="bi bi-check-lg me-1"></i>Save'; }
 }
 </script>
 </body>

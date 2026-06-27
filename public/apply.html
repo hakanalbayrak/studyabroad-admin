@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Başvuru — Study Abroad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root { --accent:#6366f1; }
+    * { -webkit-tap-highlight-color: transparent; }
+    body { background:#0b1120; color:#e2e8f0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; min-height:100vh; }
+    .top-nav { background:rgba(11,17,32,.95); border-bottom:1px solid rgba(255,255,255,.08); padding:12px 0; position:sticky; top:0; z-index:100; backdrop-filter:blur(8px); }
+    .top-nav a { color:#94a3b8; text-decoration:none; font-size:.85rem; }
+    .wrap { max-width:680px; margin:0 auto; padding:18px 16px 110px; }
+    /* Progress */
+    .progress-steps { display:flex; gap:6px; margin-bottom:8px; }
+    .progress-steps .seg { flex:1; height:5px; border-radius:6px; background:rgba(255,255,255,.1); transition:background .2s; }
+    .progress-steps .seg.done { background:#6366f1; }
+    .step-counter { font-size:.74rem; color:#64748b; margin-bottom:18px; }
+    .step-title { font-size:1.1rem; font-weight:700; color:#f1f5f9; margin-bottom:4px; }
+    .step-sub { font-size:.82rem; color:#64748b; margin-bottom:18px; }
+    /* Form controls (dark) */
+    .lbl { font-size:.8rem; font-weight:600; color:#cbd5e1; margin-bottom:5px; display:block; }
+    .lbl .req { color:#f87171; }
+    .lbl .opt { color:#475569; font-weight:500; }
+    .fld {
+      width:100%; background:rgba(255,255,255,.04); border:1.5px solid rgba(255,255,255,.1);
+      border-radius:12px; padding:13px 14px; color:#e2e8f0; font-size:.92rem; margin-bottom:14px;
+    }
+    .fld:focus { outline:none; border-color:#6366f1; box-shadow:0 0 0 3px rgba(99,102,241,.15); background:rgba(255,255,255,.06); }
+    select.fld option { background:#0b1120; color:#e2e8f0; }
+    .fld::placeholder { color:#475569; }
+    input[type=date].fld { color-scheme:dark; }
+    .grid2 { display:grid; grid-template-columns:1fr; gap:0 12px; }
+    @media (min-width:520px){ .grid2 { grid-template-columns:1fr 1fr; } }
+    .uni-banner { background:rgba(99,102,241,.12); border:1px solid rgba(99,102,241,.3); border-radius:14px; padding:14px 16px; margin-bottom:18px; }
+    .uni-banner .nm { font-size:1rem; font-weight:700; color:#f1f5f9; }
+    .uni-banner .lc { font-size:.78rem; color:#94a3b8; margin-top:2px; }
+    /* Document toggle + rows */
+    .toggle-row { display:flex; align-items:center; justify-content:space-between; gap:12px; background:rgba(255,255,255,.04); border:1.5px solid rgba(255,255,255,.1); border-radius:14px; padding:14px 16px; margin-bottom:18px; }
+    .toggle-row .t { font-size:.9rem; font-weight:600; color:#e2e8f0; }
+    .toggle-row .s { font-size:.74rem; color:#64748b; margin-top:2px; }
+    .switch { position:relative; width:48px; height:28px; flex-shrink:0; }
+    .switch input { opacity:0; width:0; height:0; }
+    .slider { position:absolute; inset:0; background:rgba(255,255,255,.15); border-radius:20px; transition:.2s; cursor:pointer; }
+    .slider::before { content:""; position:absolute; height:22px; width:22px; left:3px; top:3px; background:#fff; border-radius:50%; transition:.2s; }
+    .switch input:checked + .slider { background:#6366f1; }
+    .switch input:checked + .slider::before { transform:translateX(20px); }
+    .doc-row { background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:12px 14px; margin-bottom:10px; }
+    .doc-row .dh { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px; }
+    .doc-row .dt { font-size:.86rem; font-weight:600; color:#e2e8f0; }
+    .tag-req { font-size:.66rem; padding:2px 8px; border-radius:20px; background:rgba(248,113,113,.18); color:#fca5a5; font-weight:600; }
+    .tag-opt { font-size:.66rem; padding:2px 8px; border-radius:20px; background:rgba(255,255,255,.08); color:#94a3b8; font-weight:600; }
+    input[type=file].fileinp { width:100%; font-size:.82rem; color:#cbd5e1; margin-bottom:0; }
+    input[type=file].fileinp::file-selector-button { background:rgba(99,102,241,.18); color:#a5b4fc; border:none; border-radius:8px; padding:7px 12px; margin-right:10px; font-size:.8rem; font-weight:600; cursor:pointer; }
+    /* Summary */
+    .sum-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:16px; margin-bottom:14px; }
+    .sum-card h6 { font-size:.74rem; text-transform:uppercase; letter-spacing:.05em; color:#818cf8; font-weight:700; margin-bottom:10px; }
+    .sum-row { display:flex; justify-content:space-between; gap:12px; font-size:.84rem; padding:5px 0; border-top:1px solid rgba(255,255,255,.05); }
+    .sum-row:first-of-type { border-top:none; }
+    .sum-row .k { color:#94a3b8; }
+    .sum-row .v { color:#e2e8f0; font-weight:600; text-align:right; }
+    /* Upload status */
+    .up-row { display:flex; align-items:center; gap:10px; font-size:.82rem; padding:7px 0; border-top:1px solid rgba(255,255,255,.06); }
+    .up-row:first-child { border-top:none; }
+    .up-row .nm { flex:1; color:#cbd5e1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .up-ok { color:#6ee7b7; } .up-err { color:#fca5a5; } .up-wait { color:#94a3b8; }
+    /* Sticky nav bar */
+    .cta-bar { position:fixed; bottom:0; left:0; right:0; background:linear-gradient(0deg,#0b1120 72%,rgba(11,17,32,0)); padding:14px 16px calc(14px + env(safe-area-inset-bottom)); z-index:90; }
+    .cta-bar .inner { max-width:680px; margin:0 auto; display:flex; gap:10px; }
+    .btn-back { background:transparent; border:1.5px solid rgba(255,255,255,.15); color:#94a3b8; border-radius:14px; font-size:.95rem; font-weight:600; padding:14px 20px; }
+    .btn-next { flex:1; background:linear-gradient(135deg,#6366f1,#8b5cf6); border:none; color:#fff; border-radius:14px; font-size:1rem; font-weight:700; padding:14px; box-shadow:0 6px 22px rgba(99,102,241,.4); }
+    .btn-next:disabled { opacity:.5; box-shadow:none; }
+    .err-msg { color:#fca5a5; font-size:.8rem; margin:-6px 0 12px; display:none; }
+    /* Success */
+    .success-wrap { text-align:center; padding:48px 16px; }
+    .success-wrap .ic { width:78px; height:78px; border-radius:50%; background:rgba(16,185,129,.18); display:flex; align-items:center; justify-content:center; margin:0 auto 18px; }
+    .success-wrap .ic i { font-size:2.4rem; color:#6ee7b7; }
+    .next-list { text-align:left; max-width:420px; margin:24px auto 0; }
+    .next-list .ni { display:flex; gap:12px; padding:10px 0; border-top:1px solid rgba(255,255,255,.06); font-size:.86rem; color:#cbd5e1; }
+    .next-list .ni:first-child { border-top:none; }
+    .next-list .ni i { color:#818cf8; font-size:1.1rem; flex-shrink:0; }
+    .spinner-ring { width:34px; height:34px; border:3px solid rgba(99,102,241,.2); border-top-color:#6366f1; border-radius:50%; animation:spin .8s linear infinite; margin:0 auto 14px; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+  </style>
+</head>
+<body>
+<nav class="top-nav">
+  <div class="wrap" style="padding-top:0;padding-bottom:0">
+    <a href="/"><i class="bi bi-arrow-left me-1"></i>Ana sayfa</a>
+  </div>
+</nav>
+
+<div class="wrap" id="app">
+  <h4 class="fw-bold mb-1" style="color:#f1f5f9"><i class="bi bi-send-check me-2" style="color:#818cf8"></i>Başvurunu oluştur</h4>
+  <p style="font-size:.84rem;color:#64748b;margin-bottom:18px">Birkaç adımda başvurunu tamamla. Ekibimiz inceleyip ön kabul için seninle iletişime geçecek.</p>
+
+  <!-- Progress -->
+  <div class="progress-steps" id="progressBar"></div>
+  <div class="step-counter" id="stepCounter"></div>
+
+  <!-- STEP 1 — Program -->
+  <div class="wiz-step" data-step="1">
+    <div class="step-title">Program seçimi</div>
+    <div class="step-sub">Başvurmak istediğin okul ve programı seç.</div>
+    <div id="uniBanner"></div>
+
+    <div id="freeUniWrap" style="display:none">
+      <label class="lbl">Üniversite adı</label>
+      <input type="text" class="fld" id="f_university_name" placeholder="Örn. University of Hamburg">
+    </div>
+
+    <div id="progSelectWrap" style="display:none">
+      <label class="lbl">Program</label>
+      <select class="fld" id="f_program_select"></select>
+    </div>
+    <div id="freeProgWrap" style="display:none">
+      <label class="lbl">Program adı</label>
+      <input type="text" class="fld" id="f_program_name" placeholder="Örn. Computer Science BSc">
+    </div>
+
+    <label class="lbl">Başlamak istediğin dönem</label>
+    <input type="text" class="fld" id="f_desired_intake" list="intakeOptions" placeholder="Örn. Eylül 2026 / Fall 2026">
+    <datalist id="intakeOptions"></datalist>
+  </div>
+
+  <!-- STEP 2 — Personal & passport -->
+  <div class="wiz-step" data-step="2" style="display:none">
+    <div class="step-title">Kişisel &amp; pasaport bilgileri</div>
+    <div class="step-sub">Resmi belgelerinle birebir aynı olacak şekilde gir.</div>
+    <div class="grid2">
+      <div><label class="lbl">Ad <span class="req">*</span></label><input type="text" class="fld" id="f_first_name"></div>
+      <div><label class="lbl">Soyad</label><input type="text" class="fld" id="f_last_name"></div>
+    </div>
+    <label class="lbl">E-posta <span class="req">*</span></label>
+    <input type="email" class="fld" id="f_email" placeholder="ornek@eposta.com">
+    <div class="err-msg" id="err_email">Geçerli bir e-posta gir.</div>
+    <div class="grid2">
+      <div><label class="lbl">Telefon</label><input type="tel" class="fld" id="f_phone" placeholder="+90 ..."></div>
+      <div><label class="lbl">Doğum tarihi</label><input type="date" class="fld" id="f_date_of_birth"></div>
+    </div>
+    <div class="grid2">
+      <div><label class="lbl">Doğum yeri</label><input type="text" class="fld" id="f_place_of_birth"></div>
+      <div><label class="lbl">Uyruk</label><input type="text" class="fld" id="f_nationality" placeholder="Örn. Türkiye"></div>
+    </div>
+    <label class="lbl">İkamet ülkesi</label>
+    <input type="text" class="fld" id="f_residence_country" placeholder="Örn. Türkiye">
+    <label class="lbl">Adres</label>
+    <input type="text" class="fld" id="f_address" placeholder="Açık adres">
+    <hr style="border-color:rgba(255,255,255,.08);margin:6px 0 16px">
+    <div class="grid2">
+      <div><label class="lbl">Pasaport no</label><input type="text" class="fld" id="f_passport_no"></div>
+      <div><label class="lbl">Pasaportu veren makam</label><input type="text" class="fld" id="f_passport_issued_by"></div>
+    </div>
+    <div class="grid2">
+      <div><label class="lbl">Pasaport veriliş tarihi</label><input type="date" class="fld" id="f_passport_issue_date"></div>
+      <div><label class="lbl">Pasaport bitiş tarihi</label><input type="date" class="fld" id="f_passport_expiry_date"></div>
+    </div>
+  </div>
+
+  <!-- STEP 3 — Education -->
+  <div class="wiz-step" data-step="3" style="display:none">
+    <div class="step-title">Eğitim</div>
+    <div class="step-sub">Akademik geçmişin ve İngilizce durumun.</div>
+    <div class="grid2">
+      <div><label class="lbl">Lise</label><input type="text" class="fld" id="f_high_school" placeholder="Lise adı"></div>
+      <div><label class="lbl">Mezuniyet not ort. (GPA)</label><input type="text" class="fld" id="f_graduation_gpa" placeholder="Örn. 3.4 / 85"></div>
+    </div>
+    <label class="lbl">İlgilendiğin alan</label>
+    <select class="fld" id="f_field_of_interest">
+      <option value="">Seç...</option>
+      <option value="Business &amp; Economics">İşletme &amp; Ekonomi</option>
+      <option value="Engineering">Mühendislik</option>
+      <option value="Medicine &amp; Health">Tıp &amp; Sağlık</option>
+      <option value="AI &amp; Technology">Yapay Zeka &amp; Teknoloji</option>
+      <option value="Social Sciences">Sosyal Bilimler</option>
+    </select>
+
+    <label class="lbl">İngilizce sınav durumu</label>
+    <select class="fld" id="f_english_test_type" onchange="onEnglishTypeChange()">
+      <option value="None">Sınavım yok</option>
+      <option value="IELTS">IELTS</option>
+      <option value="TOEFL">TOEFL</option>
+      <option value="Duolingo">Duolingo</option>
+      <option value="PTE">PTE</option>
+      <option value="Cambridge">Cambridge</option>
+      <option value="__planned">İngilizce sınavına gireceğim</option>
+    </select>
+
+    <div id="engScoreWrap" style="display:none">
+      <label class="lbl">Sınav puanı</label>
+      <input type="text" class="fld" id="f_english_test_score" placeholder="Örn. 6.5 / 90">
+    </div>
+    <div id="engPlannedWrap" style="display:none">
+      <label class="lbl">Planlanan sınav tarihi</label>
+      <input type="date" class="fld" id="f_english_test_planned_date">
+    </div>
+  </div>
+
+  <!-- STEP 4 — Documents -->
+  <div class="wiz-step" data-step="4" style="display:none">
+    <div class="step-title">Belgeler</div>
+    <div class="step-sub">Belgeleri şimdi yükleyebilir veya başvurudan sonra ekleyebilirsin.</div>
+    <div class="toggle-row">
+      <div>
+        <div class="t">Belgelerimi şimdi yüklemek istiyorum</div>
+        <div class="s">Kapalıysa başvurun yine alınır, belgeleri sonra ekleyebilirsin.</div>
+      </div>
+      <label class="switch"><input type="checkbox" id="docToggle" onchange="onDocToggle()"><span class="slider"></span></label>
+    </div>
+
+    <div id="docFields" style="display:none">
+      <p style="font-size:.76rem;color:#64748b;margin-bottom:10px">İzin verilen biçimler: PDF, JPG, PNG, WebP — her dosya en fazla 10MB.</p>
+      <div id="docRows"></div>
+    </div>
+  </div>
+
+  <!-- STEP 5 — Summary -->
+  <div class="wiz-step" data-step="5" style="display:none">
+    <div class="step-title">Özet &amp; Gönder</div>
+    <div class="step-sub">Bilgilerini kontrol et, ardından gönder.</div>
+    <div id="summary"></div>
+    <p style="font-size:.76rem;color:#64748b">Gönder'e basarak bilgilerinin başvuru değerlendirmesi için işlenmesini kabul edersin.</p>
+  </div>
+
+  <!-- SUBMITTING -->
+  <div id="submitState" style="display:none">
+    <div class="spinner-ring"></div>
+    <p style="text-align:center;color:#94a3b8;font-size:.9rem" id="submitMsg">Başvurun gönderiliyor…</p>
+    <div id="uploadProgress" style="max-width:480px;margin:18px auto 0"></div>
+  </div>
+
+  <!-- SUCCESS -->
+  <div id="successState" style="display:none">
+    <div class="success-wrap">
+      <div class="ic"><i class="bi bi-check-lg"></i></div>
+      <h4 class="fw-bold" style="color:#f1f5f9">Başvurun alındı</h4>
+      <p style="color:#94a3b8;font-size:.9rem;max-width:440px;margin:8px auto 0">Teşekkürler! Başvurunu aldık. Ekibimiz inceleyip ön kabul için en kısa sürede seninle iletişime geçecek.</p>
+      <div class="next-list">
+        <div class="ni"><i class="bi bi-search"></i><div><strong>İnceleme</strong> — Ekibimiz başvurunu ve belgelerini değerlendirir.</div></div>
+        <div class="ni"><i class="bi bi-telephone"></i><div><strong>İletişim</strong> — Ön kabul ve sonraki adımlar için e-posta/telefon ile ulaşırız.</div></div>
+        <div class="ni"><i class="bi bi-file-earmark-arrow-up"></i><div><strong>Eksik belgeler</strong> — Gerekirse kalan belgeleri daha sonra paylaşırsın.</div></div>
+      </div>
+      <div id="uploadSummary" style="max-width:480px;margin:22px auto 0"></div>
+      <a href="/" class="btn-next d-inline-block mt-4" style="text-decoration:none;max-width:280px">Ana sayfaya dön</a>
+    </div>
+  </div>
+</div>
+
+<!-- Sticky nav -->
+<div class="cta-bar" id="ctaBar">
+  <div class="inner">
+    <button class="btn-back" id="backBtn" onclick="prevStep()" style="display:none"><i class="bi bi-arrow-left"></i></button>
+    <button class="btn-next" id="nextBtn" onclick="nextStep()">Devam <i class="bi bi-arrow-right ms-1"></i></button>
+  </div>
+</div>
+
+<script>
+  // ── small escaping helper for interpolated text ─────────────────────────
+  function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+  var TOTAL_STEPS = 5;
+  var curStep = 1;
+  var uniData = null;        // loaded university (if ?uni=)
+  var uniId = null, progPreselect = null;
+
+  // Document definitions
+  var DOC_DEFS = [
+    { type:'passport',      label:'Pasaport',                    req:true },
+    { type:'diploma',       label:'Lise diploması',              req:true },
+    { type:'transcript',    label:'Lise transkripti',            req:true },
+    { type:'english_score', label:'İngilizce sınav sonucu',      req:false },
+    { type:'yks',           label:'YKS sonucu',                  req:false },
+    { type:'osym',          label:'ÖSYM yerleştirme sonucu',     req:false }
+  ];
+
+  // ── Init ────────────────────────────────────────────────────────────────
+  (function init(){
+    var params = new URLSearchParams(location.search);
+    uniId = params.get('uni');
+    progPreselect = params.get('program');
+    renderDocRows();
+    if (uniId) {
+      loadUniversity(uniId);
+    } else {
+      document.getElementById('freeUniWrap').style.display = 'block';
+      document.getElementById('freeProgWrap').style.display = 'block';
+    }
+    renderProgress();
+  })();
+
+  async function loadUniversity(id){
+    try {
+      var r = await fetch('/api/public/universities/' + encodeURIComponent(id));
+      if (!r.ok) throw new Error('not found');
+      uniData = await r.json();
+      var loc = [uniData.city, uniData.country].filter(Boolean).map(esc).join(', ');
+      document.getElementById('uniBanner').innerHTML =
+        '<div class="uni-banner"><div class="nm">' + esc(uniData.name) + '</div>' +
+        (loc ? '<div class="lc"><i class="bi bi-geo-alt-fill me-1"></i>' + loc + '</div>' : '') + '</div>';
+      // Program select
+      var sel = document.getElementById('f_program_select');
+      var progs = uniData.programs || [];
+      if (progs.length) {
+        document.getElementById('progSelectWrap').style.display = 'block';
+        sel.innerHTML = '<option value="">Program seç...</option>' + progs.map(function(p){
+          var meta = [p.type_name, p.duration].filter(Boolean).map(esc).join(' · ');
+          return '<option value="' + p.id + '">' + esc(p.name) + (meta ? ' (' + meta + ')' : '') + '</option>';
+        }).join('');
+        sel.onchange = function(){ updateIntakeOptions(); };
+        if (progPreselect) { sel.value = progPreselect; }
+        updateIntakeOptions();
+      } else {
+        document.getElementById('freeProgWrap').style.display = 'block';
+      }
+    } catch (e) {
+      // fall back to free text
+      document.getElementById('uniBanner').innerHTML =
+        '<div class="uni-banner"><div class="nm">Üniversite bulunamadı</div><div class="lc">Lütfen bilgileri elle gir.</div></div>';
+      document.getElementById('freeUniWrap').style.display = 'block';
+      document.getElementById('freeProgWrap').style.display = 'block';
+    }
+  }
+
+  function selectedProgram(){
+    if (!uniData || !uniData.programs) return null;
+    var id = document.getElementById('f_program_select').value;
+    if (!id) return null;
+    return uniData.programs.find(function(p){ return String(p.id) === String(id); }) || null;
+  }
+
+  function updateIntakeOptions(){
+    var dl = document.getElementById('intakeOptions');
+    var p = selectedProgram();
+    var months = (p && p.intake_months) ? String(p.intake_months).split(',').map(function(s){ return s.trim(); }).filter(Boolean) : [];
+    dl.innerHTML = months.map(function(m){ return '<option value="' + esc(m) + '"></option>'; }).join('');
+  }
+
+  // ── English test type reveal ─────────────────────────────────────────────
+  function onEnglishTypeChange(){
+    var v = document.getElementById('f_english_test_type').value;
+    document.getElementById('engScoreWrap').style.display   = (v !== 'None' && v !== '__planned') ? 'block' : 'none';
+    document.getElementById('engPlannedWrap').style.display = (v === '__planned') ? 'block' : 'none';
+  }
+
+  // ── Document rows ─────────────────────────────────────────────────────────
+  function renderDocRows(){
+    document.getElementById('docRows').innerHTML = DOC_DEFS.map(function(d){
+      return '<div class="doc-row">' +
+        '<div class="dh"><span class="dt">' + esc(d.label) + '</span>' +
+        (d.req ? '<span class="tag-req">ZORUNLU</span>' : '<span class="tag-opt">opsiyonel</span>') + '</div>' +
+        '<input type="file" class="fileinp" data-doc="' + d.type + '" accept=".pdf,.jpg,.jpeg,.png,.webp">' +
+      '</div>';
+    }).join('');
+  }
+
+  function onDocToggle(){
+    document.getElementById('docFields').style.display = document.getElementById('docToggle').checked ? 'block' : 'none';
+  }
+
+  function chosenFiles(){
+    var out = [];
+    document.querySelectorAll('#docRows input[type=file]').forEach(function(inp){
+      if (inp.files && inp.files[0]) out.push({ type: inp.getAttribute('data-doc'), file: inp.files[0] });
+    });
+    return out;
+  }
+
+  // ── Wizard navigation ─────────────────────────────────────────────────────
+  function renderProgress(){
+    var segs = '';
+    for (var i = 1; i <= TOTAL_STEPS; i++) segs += '<div class="seg' + (i <= curStep ? ' done' : '') + '"></div>';
+    document.getElementById('progressBar').innerHTML = segs;
+    var labels = ['Program','Kişisel & pasaport','Eğitim','Belgeler','Özet & Gönder'];
+    document.getElementById('stepCounter').textContent = 'Adım ' + curStep + ' / ' + TOTAL_STEPS + ' — ' + labels[curStep-1];
+  }
+
+  function showStep(n){
+    curStep = n;
+    document.querySelectorAll('.wiz-step').forEach(function(el){
+      el.style.display = (parseInt(el.getAttribute('data-step')) === n) ? 'block' : 'none';
+    });
+    document.getElementById('backBtn').style.display = n > 1 ? 'block' : 'none';
+    var nextBtn = document.getElementById('nextBtn');
+    nextBtn.innerHTML = (n === TOTAL_STEPS) ? '<i class="bi bi-send me-1"></i>Gönder' : 'Devam <i class="bi bi-arrow-right ms-1"></i>';
+    if (n === TOTAL_STEPS) renderSummary();
+    renderProgress();
+    window.scrollTo({ top: 0 });
+  }
+
+  function validEmail(e){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+
+  function validateStep(n){
+    if (n === 2){
+      var name = (document.getElementById('f_first_name').value || '').trim() ||
+                 (document.getElementById('f_last_name').value || '').trim();
+      var email = (document.getElementById('f_email').value || '').trim();
+      var errEl = document.getElementById('err_email');
+      errEl.style.display = 'none';
+      if (!name){ alert('Lütfen en az ad veya soyad gir.'); return false; }
+      if (!validEmail(email)){ errEl.style.display = 'block'; return false; }
+    }
+    return true;
+  }
+
+  function nextStep(){
+    if (!validateStep(curStep)) return;
+    if (curStep === TOTAL_STEPS){ submitApplication(); return; }
+    showStep(curStep + 1);
+  }
+  function prevStep(){ if (curStep > 1) showStep(curStep - 1); }
+
+  // ── Collect fields ─────────────────────────────────────────────────────────
+  function val(id){ var el = document.getElementById(id); return el ? (el.value || '').trim() : ''; }
+
+  function collect(){
+    var data = {};
+    // university / program
+    if (uniId && uniData) {
+      data.university_id = uniData.id;
+      data.university_name = uniData.name;
+      data.country = uniData.country || '';
+      var p = selectedProgram();
+      if (p) { data.program_id = p.id; data.program_name = p.name; }
+      else if (document.getElementById('freeProgWrap').style.display !== 'none') { data.program_name = val('f_program_name'); }
+    } else {
+      data.university_name = val('f_university_name');
+      data.program_name = val('f_program_name');
+    }
+    data.desired_intake = val('f_desired_intake');
+    // personal
+    ['first_name','last_name','email','phone','date_of_birth','place_of_birth','nationality',
+     'residence_country','address','passport_no','passport_issue_date','passport_expiry_date',
+     'passport_issued_by','high_school','graduation_gpa','field_of_interest'].forEach(function(k){
+      data[k] = val('f_' + k);
+    });
+    // english
+    var engType = document.getElementById('f_english_test_type').value;
+    if (engType === '__planned') {
+      data.english_test_type = '';
+      data.english_test_score = '';
+      data.english_test_planned_date = val('f_english_test_planned_date');
+    } else if (engType === 'None') {
+      data.english_test_type = 'None';
+      data.english_test_score = '';
+    } else {
+      data.english_test_type = engType;
+      data.english_test_score = val('f_english_test_score');
+    }
+    return data;
+  }
+
+  // ── Summary ─────────────────────────────────────────────────────────────────
+  function renderSummary(){
+    var d = collect();
+    var fieldLabels = { 'Business & Economics':'İşletme & Ekonomi', 'Engineering':'Mühendislik',
+      'Medicine & Health':'Tıp & Sağlık', 'AI & Technology':'Yapay Zeka & Teknoloji', 'Social Sciences':'Sosyal Bilimler' };
+    function row(k, v){ if (!v) return ''; return '<div class="sum-row"><span class="k">' + esc(k) + '</span><span class="v">' + esc(v) + '</span></div>'; }
+    var engType = document.getElementById('f_english_test_type').value;
+    var engText = '';
+    if (engType === '__planned') engText = 'Sınava girecek' + (d.english_test_planned_date ? ' (' + d.english_test_planned_date + ')' : '');
+    else if (engType === 'None') engText = 'Yok';
+    else engText = engType + (d.english_test_score ? ' · ' + d.english_test_score : '');
+
+    var docs = chosenFiles();
+    var docText = document.getElementById('docToggle').checked
+      ? (docs.length ? docs.length + ' belge seçildi' : 'Belge seçilmedi (sonra yüklenebilir)')
+      : 'Sonra yüklenecek';
+
+    document.getElementById('summary').innerHTML =
+      '<div class="sum-card"><h6>Program</h6>' +
+        row('Üniversite', d.university_name) +
+        row('Program', d.program_name) +
+        row('Dönem', d.desired_intake) +
+      '</div>' +
+      '<div class="sum-card"><h6>Kişisel</h6>' +
+        row('Ad Soyad', [d.first_name, d.last_name].filter(Boolean).join(' ')) +
+        row('E-posta', d.email) +
+        row('Telefon', d.phone) +
+        row('Doğum tarihi', d.date_of_birth) +
+        row('Uyruk', d.nationality) +
+        row('Pasaport no', d.passport_no) +
+      '</div>' +
+      '<div class="sum-card"><h6>Eğitim</h6>' +
+        row('Lise', d.high_school) +
+        row('GPA', d.graduation_gpa) +
+        row('Alan', fieldLabels[d.field_of_interest] || d.field_of_interest) +
+        row('İngilizce', engText) +
+      '</div>' +
+      '<div class="sum-card"><h6>Belgeler</h6>' +
+        '<div class="sum-row"><span class="k">Durum</span><span class="v">' + esc(docText) + '</span></div>' +
+      '</div>';
+  }
+
+  // ── Submit ───────────────────────────────────────────────────────────────────
+  async function submitApplication(){
+    var data = collect();
+    if (!validEmail(data.email)){ alert('Geçerli bir e-posta gerekli.'); showStep(2); return; }
+    if (!data.first_name && !data.last_name){ alert('En az ad veya soyad gerekli.'); showStep(2); return; }
+
+    document.getElementById('app').querySelectorAll('.wiz-step').forEach(function(el){ el.style.display='none'; });
+    document.getElementById('submitState').style.display = 'block';
+    document.getElementById('ctaBar').style.display = 'none';
+    window.scrollTo({ top: 0 });
+
+    var files = document.getElementById('docToggle').checked ? chosenFiles() : [];
+
+    try {
+      var r = await fetch('/api/public/applications', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      var res = await r.json();
+      if (!r.ok) throw new Error(res.error || 'Başvuru gönderilemedi.');
+
+      var appId = res.id, token = res.upload_token;
+
+      var uploadResults = [];
+      if (files.length && appId && token){
+        document.getElementById('submitMsg').textContent = 'Belgeler yükleniyor…';
+        var progWrap = document.getElementById('uploadProgress');
+        progWrap.innerHTML = files.map(function(f, i){
+          return '<div class="up-row" id="up_' + i + '"><span class="nm">' + esc(f.file.name) + '</span><span class="up-wait" id="ups_' + i + '"><span class="spinner-border spinner-border-sm"></span></span></div>';
+        }).join('');
+        for (var i = 0; i < files.length; i++){
+          var statusEl = document.getElementById('ups_' + i);
+          try {
+            var fd = new FormData();
+            fd.append('file', files[i].file);
+            fd.append('doc_type', files[i].type);
+            fd.append('token', token);
+            var ur = await fetch('/api/public/applications/' + appId + '/documents', { method: 'POST', body: fd });
+            if (!ur.ok){ var ue = await ur.json().catch(function(){ return {}; }); throw new Error(ue.error || 'Yüklenemedi'); }
+            statusEl.className = 'up-ok'; statusEl.innerHTML = '<i class="bi bi-check-circle-fill"></i>';
+            uploadResults.push({ name: files[i].file.name, ok: true });
+          } catch (e){
+            statusEl.className = 'up-err'; statusEl.innerHTML = '<i class="bi bi-exclamation-circle-fill" title="' + esc(e.message) + '"></i> Hata';
+            uploadResults.push({ name: files[i].file.name, ok: false, err: e.message });
+          }
+        }
+      }
+
+      // Success screen
+      document.getElementById('submitState').style.display = 'none';
+      var failed = uploadResults.filter(function(u){ return !u.ok; });
+      if (uploadResults.length){
+        var summ = '<div class="sum-card" style="text-align:left"><h6>Belge yüklemeleri</h6>' +
+          uploadResults.map(function(u){
+            return '<div class="up-row"><span class="nm">' + esc(u.name) + '</span>' +
+              (u.ok ? '<span class="up-ok"><i class="bi bi-check-circle-fill"></i> Yüklendi</span>'
+                    : '<span class="up-err"><i class="bi bi-exclamation-circle-fill"></i> Başarısız</span>') + '</div>';
+          }).join('') +
+          (failed.length ? '<p style="font-size:.78rem;color:#fca5a5;margin:10px 0 0">Bazı belgeler yüklenemedi — daha sonra ekibimizle paylaşabilirsin.</p>' : '') +
+          '</div>';
+        document.getElementById('uploadSummary').innerHTML = summ;
+      }
+      document.getElementById('successState').style.display = 'block';
+      window.scrollTo({ top: 0 });
+    } catch (e){
+      document.getElementById('submitState').style.display = 'none';
+      document.getElementById('ctaBar').style.display = 'block';
+      showStep(5);
+      alert(e.message || 'Bir hata oluştu, lütfen tekrar dene.');
+    }
+  }
+</script>
+</body>
+</html>
