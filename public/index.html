@@ -85,6 +85,15 @@
     .hero.orbit-dark .wizard-cta-title { color: #fff; }
     .hero.orbit-dark .wizard-cta-sub { color: rgba(255,255,255,.7); }
 
+    /* Mobile hero adjustments */
+    @media (max-width: 600px) {
+      .hero { padding: 40px 0 28px; }
+      .wizard-cta { flex-direction: column; align-items: flex-start; gap: 12px; padding: 16px; }
+      .wizard-cta-btn { width: 100%; justify-content: center; }
+      .search-bar input { font-size: .88rem; padding: 13px 14px; }
+      .search-bar button { padding: 0 18px; font-size: .85rem; }
+    }
+
     /* How it works */
     .how-section { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 56px 0; margin: 48px 0 0; }
     .how-step { text-align: center; padding: 16px; }

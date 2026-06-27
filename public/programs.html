@@ -63,6 +63,16 @@
 
     /* Count */
     #resultCount { font-size: .8rem; color: var(--muted); }
+
+    /* Mobile filter toggle */
+    .mob-filter-btn { display:none; align-items:center; gap:5px; background:var(--surface); border:1px solid var(--line); color:var(--muted); border-radius:8px; padding:5px 13px; font-size:.82rem; cursor:pointer; white-space:nowrap; transition:all .15s; flex-shrink:0; }
+    @media (max-width: 767.98px) {
+      .mob-filter-btn { display:inline-flex; }
+      .mob-filter-col, .mob-filter-row { display:none !important; }
+      #filterPanel.mob-open .mob-filter-col { display:block !important; }
+      #filterPanel.mob-open .mob-filter-row { display:flex !important; flex-wrap:wrap; gap:8px; margin-top:6px; }
+      .mob-filter-btn.active { border-color:var(--accent); color:var(--accent); background:rgba(99,102,241,.08); }
+    }
   </style>
 </head>
 <body class="pe-theme">
@@ -70,9 +80,9 @@
 <!-- Eligibility banner -->
 <div style="background:var(--grad-soft);border-bottom:1px solid rgba(99,102,241,.15);padding:9px 0">
   <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
-    <span style="font-size:.82rem;color:var(--accent);font-weight:600"><i class="bi bi-magic me-1"></i>Not sure which programs suit you?</span>
+    <span style="font-size:.82rem;color:var(--accent);font-weight:600"><i class="bi bi-magic me-1"></i>Hangi programlar sana uygun?</span>
     <button onclick="toggleEligPanel()" id="eligToggleBtn" style="background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.4);color:var(--accent);border-radius:8px;padding:5px 14px;font-size:.78rem;font-weight:600;cursor:pointer">
-      <i class="bi bi-sliders me-1"></i>Check my eligibility
+      <i class="bi bi-sliders me-1"></i>Uygunluğumu Kontrol Et
     </button>
   </div>
 </div>
@@ -167,39 +177,44 @@
     <div id="eligResult" style="display:none;margin-top:14px;padding:10px 14px;border-radius:10px;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);font-size:.82rem;color:var(--muted)"></div>
   </div>
 </div>
-  <div class="container">
-    <div class="row g-2 align-items-center">
-      <div class="col-12 col-md-4">
-        <input type="text" class="form-control form-control-sm" id="searchInput" placeholder="Search programs or universities…" oninput="debounceApply()">
-      </div>
-      <div class="col-6 col-md-2">
+  <div class="container" id="filterPanel">
+    <!-- Search row: always visible, inline flex so it works without Bootstrap grid -->
+    <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px">
+      <input type="text" class="form-control form-control-sm" id="searchInput" placeholder="Program veya üniversite ara…" oninput="debounceApply()" style="flex:1;min-width:0">
+      <!-- Mobile-only filter toggle -->
+      <button class="mob-filter-btn" id="mobFilterBtn" onclick="toggleMobFilters()">
+        <i class="bi bi-sliders2 me-1"></i>Filtrele
+      </button>
+    </div>
+    <div class="row g-2 align-items-center mob-filter-row" style="margin-top:0">
+      <div class="col-6 col-md-2 mob-filter-col">
         <select class="form-select form-select-sm" id="countryFilter" onchange="applyFilters()">
-          <option value="">All Countries</option>
+          <option value="">Tüm Ülkeler</option>
         </select>
       </div>
-      <div class="col-6 col-md-2">
+      <div class="col-6 col-md-2 mob-filter-col">
         <select class="form-select form-select-sm" id="typeFilter" onchange="applyFilters()">
-          <option value="">All Types</option>
+          <option value="">Tüm Türler</option>
         </select>
       </div>
-      <div class="col-6 col-md-2">
+      <div class="col-6 col-md-2 mob-filter-col">
         <select class="form-select form-select-sm" id="langFilter" onchange="applyFilters()">
-          <option value="">Any Language</option>
-          <option value="English">English</option>
+          <option value="">Herhangi Dil</option>
+          <option value="English">İngilizce</option>
         </select>
       </div>
-      <div class="col-6 col-md-2 d-flex gap-2 align-items-center">
+      <div class="col-6 col-md-2 d-flex gap-2 align-items-center mob-filter-col">
         <select class="form-select form-select-sm" id="scholarFilter" onchange="applyFilters()">
-          <option value="">All</option>
-          <option value="1">Scholarship available</option>
+          <option value="">Tümü</option>
+          <option value="1">Burs mevcut</option>
         </select>
       </div>
     </div>
-    <div class="row g-2 align-items-center mt-1">
+    <div class="row g-2 align-items-center mt-1 mob-filter-row">
       <div class="col-12 col-md-3">
         <select class="form-select form-select-sm" id="engFilter" onchange="applyFilters()">
-          <option value="">Any English req</option>
-          <option value="None">No English req</option>
+          <option value="">Herhangi İngilizce şartı</option>
+          <option value="None">İngilizce şartı yok</option>
           <option value="IELTS">IELTS</option>
           <option value="TOEFL">TOEFL</option>
           <option value="Duolingo">Duolingo</option>
@@ -209,20 +224,20 @@
       </div>
       <div class="col-12 col-md-3">
         <div class="input-group input-group-sm">
-          <span class="input-group-text" style="background:var(--surface-2);border-color:var(--line);color:var(--muted);font-size:.75rem">Max fee $</span>
-          <input type="number" class="form-control" id="maxFeeInput" placeholder="e.g. 15000" min="0" step="1000" oninput="debounceApply()">
+          <span class="input-group-text" style="background:var(--surface-2);border-color:var(--line);color:var(--muted);font-size:.75rem">Maks ücret $</span>
+          <input type="number" class="form-control" id="maxFeeInput" placeholder="örn. 15000" min="0" step="1000" oninput="debounceApply()">
         </div>
       </div>
       <div class="col-12 col-md-6 text-md-end d-flex align-items-center justify-content-md-end gap-2 flex-wrap">
         <span id="resultCount"></span>
         <select class="form-select form-select-sm" id="perPageSelect" style="width:auto;background:var(--surface);border-color:var(--line);color:var(--muted);font-size:.75rem" onchange="changePerPage()">
-          <option value="12">12 / page</option>
-          <option value="24" selected>24 / page</option>
-          <option value="48">48 / page</option>
-          <option value="96">96 / page</option>
+          <option value="12">12 / sayfa</option>
+          <option value="24" selected>24 / sayfa</option>
+          <option value="48">48 / sayfa</option>
+          <option value="96">96 / sayfa</option>
         </select>
         <button class="btn btn-sm" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.75rem;border-radius:8px" onclick="clearFilters()">
-          <i class="bi bi-x-lg me-1"></i>Clear filters
+          <i class="bi bi-x-lg me-1"></i>Filtreleri temizle
         </button>
       </div>
     </div>
@@ -231,17 +246,17 @@
 
 <div id="statsBar">
   <div class="container d-flex gap-4 flex-wrap">
-    <span><b id="stTotal">—</b> programs total</span>
-    <span><b id="stUnis">—</b> universities</span>
-    <span><b id="stScholar">—</b> with scholarships</span>
-    <span><b id="stCountries">—</b> countries</span>
+    <span><b id="stTotal">—</b> program</span>
+    <span><b id="stUnis">—</b> üniversite</span>
+    <span><b id="stScholar">—</b> burslı</span>
+    <span><b id="stCountries">—</b> ülke</span>
   </div>
 </div>
 
 <div id="grid">
   <div class="container">
-    <div id="loadingMsg"><div class="spinner-ring"></div>Loading programs…</div>
-    <div id="emptyMsg" class="d-none"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i>No programs match your filters.</div>
+    <div id="loadingMsg"><div class="spinner-ring"></div>Yükleniyor…</div>
+    <div id="emptyMsg" class="d-none"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i>Filtrelere uyan program bulunamadı.</div>
     <div class="row g-3" id="cardsContainer"></div>
     <nav id="pagination" class="d-flex justify-content-center align-items-center gap-2 flex-wrap" style="margin-top:24px"></nav>
   </div>
@@ -249,6 +264,16 @@
 
 <script src="/js/eligibility.js"></script>
 <script>
+function toggleMobFilters() {
+  var panel = document.getElementById('filterPanel');
+  var btn = document.getElementById('mobFilterBtn');
+  var open = panel.classList.toggle('mob-open');
+  btn.classList.toggle('active', open);
+  btn.innerHTML = open
+    ? '<i class="bi bi-x-lg me-1"></i>Kapat'
+    : '<i class="bi bi-sliders2 me-1"></i>Filtrele';
+}
+
 let allPrograms = [];
 let filteredPrograms = [];
 let currentPage = 1;
@@ -269,7 +294,7 @@ async function init() {
     updateStats();
     document.getElementById('loadingMsg').style.display = 'none';
   } catch (e) {
-    document.getElementById('loadingMsg').innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>Could not load programs.';
+    document.getElementById('loadingMsg').innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>Programlar yüklenemedi.';
   }
 }
 

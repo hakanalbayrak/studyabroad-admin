@@ -105,6 +105,8 @@
     .prog-label { font-size: .73rem; color: var(--muted); margin-bottom: 22px; }
     .step-h { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
     .step-sub { font-size: .82rem; color: var(--muted); margin-bottom: 20px; }
+    /* Funnel fills the viewport so footer doesn't float into view */
+    #funnelMode { min-height: calc(100svh - 140px); }
 
     /* Funnel sticky nav */
     .cta-bar { position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg,var(--bg) 70%,transparent); padding: 14px 16px calc(14px + env(safe-area-inset-bottom)); z-index: 90; }
