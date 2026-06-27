@@ -51,7 +51,7 @@
     .search-bar button { background: var(--accent); border: none; color: #fff; padding: 0 26px; font-weight: 700; font-size: .92rem; cursor: pointer; transition: opacity .15s; letter-spacing: .01em; }
     .search-bar button:hover { opacity: .88; }
     .search-filters { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
-    .search-filters select { background: var(--surface); border: 1.5px solid var(--line); color: var(--text); border-radius: 10px; padding: 8px 14px; font-size: .84rem; cursor: pointer; }
+    .search-filters select { background: var(--surface); border: 1.5px solid var(--line); color: var(--text); border-radius: 10px; padding: 8px 14px; font-size: .84rem; cursor: pointer; min-width: 110px; }
     .search-filters select:focus { outline: none; border-color: var(--accent); }
     .search-filters select option { background: #fff; }
     .btn-action { background: rgba(99,102,241,.1); border: 1.5px solid rgba(99,102,241,.28); color: var(--accent); border-radius: 10px; padding: 8px 16px; font-size: .84rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all .15s; }
@@ -66,6 +66,24 @@
     /* Section label */
     .sec-label { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
     .sec-label span { flex: 1; height: 1px; background: var(--line); }
+
+    /* Profile wizard hero CTA */
+    .wizard-cta {
+      background: linear-gradient(135deg, rgba(99,102,241,.12), rgba(139,92,246,.1), rgba(6,182,212,.08));
+      border: 1.5px solid rgba(99,102,241,.35); border-radius: 20px;
+      padding: 20px 22px; margin: 0 auto 22px; max-width: 680px;
+      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+      box-shadow: 0 8px 32px rgba(99,102,241,.18);
+    }
+    .wizard-cta-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--grad); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: #fff; flex-shrink: 0; }
+    .wizard-cta-text { flex: 1; text-align: left; }
+    .wizard-cta-title { font-size: 1.02rem; font-weight: 800; color: var(--text); margin-bottom: 3px; }
+    .wizard-cta-sub { font-size: .82rem; color: var(--muted); line-height: 1.45; }
+    .wizard-cta-btn { background: var(--grad); border: none; color: #fff; font-weight: 700; font-size: .92rem; border-radius: 12px; padding: 11px 22px; cursor: pointer; text-decoration: none; white-space: nowrap; box-shadow: 0 4px 14px rgba(99,102,241,.38); transition: transform .12s, box-shadow .12s; display: inline-flex; align-items: center; gap: 7px; }
+    .wizard-cta-btn:hover { color: #fff; transform: translateY(-1px); box-shadow: 0 7px 20px rgba(99,102,241,.45); }
+    .hero.orbit-dark .wizard-cta { background: rgba(99,102,241,.22); border-color: rgba(99,102,241,.5); }
+    .hero.orbit-dark .wizard-cta-title { color: #fff; }
+    .hero.orbit-dark .wizard-cta-sub { color: rgba(255,255,255,.7); }
 
     /* How it works */
     .how-section { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 56px 0; margin: 48px 0 0; }
@@ -145,29 +163,33 @@
       </span>
     </div>
     <h1 class="pe-grad-text">Hayalindeki Üniversiteyi<br>Yurt Dışında Bul</h1>
-    <p>Profil sihirbazımızla sana en uygun okulları sırala. 3D kampüs turuna çık, karşılaştır ve online başvur.</p>
+    <p>Yurt dışında okumak istiyorsun ama nereden başlayacağını bilmiyor musun? Biz yardımcı olalım.</p>
 
-    <div class="search-wrap">
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Üniversite ara…" autocomplete="off" oninput="onSearch()">
-        <button onclick="onSearch()"><i class="bi bi-search me-1"></i>Ara</button>
+    <!-- Profil Sihirbazı — featured CTA -->
+    <div class="wizard-cta">
+      <div class="wizard-cta-icon"><i class="bi bi-magic"></i></div>
+      <div class="wizard-cta-text">
+        <div class="wizard-cta-title">Programlara Uygunluğunu Öğren</div>
+        <div class="wizard-cta-sub">GPA'nı, İngilizce seviyeni ve hedef bölgeni gir — sana en uygun üniversite programlarını sıralayalım.</div>
       </div>
+      <a href="/match" class="wizard-cta-btn"><i class="bi bi-magic"></i>Profil Sihirbazı</a>
     </div>
 
-    <div class="search-filters">
+    <div class="search-filters" style="margin-bottom:10px">
       <select id="continentFilter" onchange="onSearch()">
-        <option value="">Tüm Kıtalar</option>
+        <option value="">Bölge</option>
       </select>
       <select id="countryFilter" onchange="onSearch()">
-        <option value="">Tüm Ülkeler</option>
+        <option value="">Ülke</option>
       </select>
-      <select id="orbitFilter" onchange="onSearch()">
-        <option value="">Tümü</option>
-        <option value="orbit">3D Orbit var</option>
-        <option value="no-orbit">3D Orbit yok</option>
-      </select>
-      <a href="/programs" class="btn-action"><i class="bi bi-mortarboard-fill"></i>Programlar</a>
-      <a href="/match" class="btn-action" style="background:var(--grad);color:#fff;border-color:transparent"><i class="bi bi-magic"></i>Profil Sihirbazı</a>
+      <a href="/programs" class="btn-action"><i class="bi bi-mortarboard-fill"></i>Programları Keşfet</a>
+    </div>
+
+    <div class="search-wrap" style="margin-bottom:22px">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Okumak istediğin bölümü veya üniversite adını yaz…" autocomplete="off" oninput="onSearch()">
+        <button onclick="onSearch()"><i class="bi bi-search me-1"></i>Ara</button>
+      </div>
     </div>
 
     <!-- Stats (filled by JS after load) -->
@@ -335,6 +357,9 @@ function buildContinentFilter() {
     o.textContent = CONTINENT_TR[c] || c;
     sel.appendChild(o);
   });
+  // Also fix country filter default text
+  const cf = document.getElementById('countryFilter');
+  if (cf && cf.options[0]) cf.options[0].textContent = 'Ülke';
 }
 
 function hasOrbit(u) { return !!(u.latitude && u.longitude); }
@@ -353,17 +378,14 @@ function onSearch() {
   const q = document.getElementById('searchInput').value.toLowerCase().trim();
   const continent = document.getElementById('continentFilter').value;
   const country = document.getElementById('countryFilter').value;
-  const orbitF = document.getElementById('orbitFilter').value;
-  if (!q && !continent && !country && !orbitF) { showFeatured(); return; }
+  if (!q && !continent && !country) { showFeatured(); return; }
   isSearching = true;
   document.getElementById('featuredSection').classList.add('d-none');
   document.getElementById('searchSection').classList.remove('d-none');
   filteredUniversities = allUniversities.filter(u => {
-    if (q && !u.name.toLowerCase().includes(q) && !(u.city||'').toLowerCase().includes(q) && !(u.country||'').toLowerCase().includes(q)) return false;
+    if (q && !u.name.toLowerCase().includes(q) && !(u.city||'').toLowerCase().includes(q) && !(u.country||'').toLowerCase().includes(q) && !(u.description_en||'').toLowerCase().includes(q)) return false;
     if (continent && u.continent !== continent) return false;
     if (country && u.country !== country) return false;
-    if (orbitF === 'orbit' && !hasOrbit(u)) return false;
-    if (orbitF === 'no-orbit' && hasOrbit(u)) return false;
     return true;
   });
   // When continent changes, reset country to avoid impossible combos
