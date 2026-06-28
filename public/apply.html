@@ -160,14 +160,23 @@
     <!-- Contact -->
     <div class="sec-div"><span data-i18n="apply.contact">İletişim Bilgileri</span></div>
     <div class="grid2">
-      <div><label class="lbl"><span data-i18n="apply.firstname">Ad</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label><input type="text" class="fld" id="scFirstName" placeholder="Adın" data-i18n-ph="apply.fn.ph"></div>
-      <div><label class="lbl"><span data-i18n="apply.lastname">Soyad</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label><input type="text" class="fld" id="scLastName" placeholder="Soyadın" data-i18n-ph="apply.ln.ph"></div>
+      <div>
+        <label class="lbl"><span data-i18n="apply.firstname">Ad</span> <span class="req">*</span></label>
+        <input type="text" class="fld" id="scFirstName" placeholder="Adın" data-i18n-ph="apply.fn.ph">
+        <div class="err-msg" id="scFirstNameErr" data-i18n="apply.err.fn">Lütfen adını gir.</div>
+      </div>
+      <div>
+        <label class="lbl"><span data-i18n="apply.lastname">Soyad</span> <span class="req">*</span></label>
+        <input type="text" class="fld" id="scLastName" placeholder="Soyadın" data-i18n-ph="apply.ln.ph">
+        <div class="err-msg" id="scLastNameErr" data-i18n="apply.err.ln">Lütfen soyadını gir.</div>
+      </div>
     </div>
     <label class="lbl"><span data-i18n="apply.email.lbl">E-posta</span> <span class="req">*</span></label>
     <input type="email" class="fld" id="scEmail" placeholder="ornek@eposta.com" data-i18n-ph="apply.email.ph">
     <div class="err-msg" id="scEmailErr" data-i18n="apply.email.err">Geçerli bir e-posta adresi gir.</div>
-    <label class="lbl"><span data-i18n="apply.phone.lbl">Telefon</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label>
+    <label class="lbl"><span data-i18n="apply.phone.lbl">Telefon</span> <span class="req">*</span></label>
     <input type="tel" class="fld" id="scPhone" placeholder="+90 …" data-i18n-ph="apply.phone.ph">
+    <div class="err-msg" id="scPhoneErr" data-i18n="apply.err.phone">Lütfen telefon numaranı gir.</div>
 
     <!-- Academic profile — all optional -->
     <div class="sec-div"><span data-i18n="apply.academic">Akademik Profil — tümü isteğe bağlı</span></div>
@@ -345,16 +354,25 @@
     </div>
     <div class="wiz-step" data-step="5" style="display:none">
       <div class="step-h" data-i18n="apply.step5.h">İletişim &amp; Profil</div>
-      <div class="step-sub" data-i18n="apply.step5.s">Sadece e-posta yeterli. Diğer alanlar isteğe bağlı.</div>
+      <div class="step-sub" data-i18n="apply.step5.s">Ad, soyad, e-posta ve telefon zorunludur.</div>
       <div class="grid2">
-        <div><label class="lbl"><span data-i18n="apply.firstname">Ad</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label><input type="text" class="fld" id="f_first_name" placeholder="Adın" data-i18n-ph="apply.fn.ph"></div>
-        <div><label class="lbl"><span data-i18n="apply.lastname">Soyad</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label><input type="text" class="fld" id="f_last_name" placeholder="Soyadın" data-i18n-ph="apply.ln.ph"></div>
+        <div>
+          <label class="lbl"><span data-i18n="apply.firstname">Ad</span> <span class="req">*</span></label>
+          <input type="text" class="fld" id="f_first_name" placeholder="Adın" data-i18n-ph="apply.fn.ph">
+          <div class="err-msg" id="f_fn_err" data-i18n="apply.err.fn">Lütfen adını gir.</div>
+        </div>
+        <div>
+          <label class="lbl"><span data-i18n="apply.lastname">Soyad</span> <span class="req">*</span></label>
+          <input type="text" class="fld" id="f_last_name" placeholder="Soyadın" data-i18n-ph="apply.ln.ph">
+          <div class="err-msg" id="f_ln_err" data-i18n="apply.err.ln">Lütfen soyadını gir.</div>
+        </div>
       </div>
       <label class="lbl"><span data-i18n="apply.email.lbl">E-posta</span> <span class="req">*</span></label>
       <input type="email" class="fld" id="f_email" placeholder="ornek@eposta.com" data-i18n-ph="apply.email.ph">
       <div class="err-msg" id="err_email" data-i18n="apply.email.err">Geçerli bir e-posta adresi gir.</div>
-      <label class="lbl"><span data-i18n="apply.phone.lbl">Telefon</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label>
+      <label class="lbl"><span data-i18n="apply.phone.lbl">Telefon</span> <span class="req">*</span></label>
       <input type="tel" class="fld" id="f_phone" placeholder="+90 …" data-i18n-ph="apply.phone.ph">
+      <div class="err-msg" id="f_phone_err" data-i18n="apply.err.phone">Lütfen telefon numaranı gir.</div>
       <div class="sec-div"><span data-i18n="apply.profile">Öğrenci Profili (isteğe bağlı)</span></div>
       <label class="lbl" data-i18n="apply.edu.lbl">Eğitim durumu</label>
       <div class="card-chips">
@@ -646,10 +664,22 @@ async function initShortcut() {
 }
 
 async function scSubmit() {
-  const email = (document.getElementById('scEmail').value || '').trim();
-  const errEl = document.getElementById('scEmailErr');
-  errEl.style.display = 'none';
-  if (!validEmail(email)) { errEl.style.display = 'block'; document.getElementById('scEmail').focus(); return; }
+  const firstName = (document.getElementById('scFirstName').value || '').trim();
+  const lastName  = (document.getElementById('scLastName').value  || '').trim();
+  const email     = (document.getElementById('scEmail').value     || '').trim();
+  const phone     = (document.getElementById('scPhone').value     || '').trim();
+
+  document.getElementById('scFirstNameErr').style.display = 'none';
+  document.getElementById('scLastNameErr').style.display  = 'none';
+  document.getElementById('scEmailErr').style.display     = 'none';
+  document.getElementById('scPhoneErr').style.display     = 'none';
+
+  let firstErr = null;
+  if (!firstName)        { document.getElementById('scFirstNameErr').style.display = 'block'; firstErr = firstErr || 'scFirstName'; }
+  if (!lastName)         { document.getElementById('scLastNameErr').style.display  = 'block'; firstErr = firstErr || 'scLastName'; }
+  if (!validEmail(email)){ document.getElementById('scEmailErr').style.display     = 'block'; firstErr = firstErr || 'scEmail'; }
+  if (!phone)            { document.getElementById('scPhoneErr').style.display     = 'block'; firstErr = firstErr || 'scPhone'; }
+  if (firstErr) { document.getElementById(firstErr).focus(); return; }
 
   const intake = document.getElementById('scIntake').value;
   const progSel = document.getElementById('scProgramSelect');
@@ -671,9 +701,9 @@ async function scSubmit() {
 
   const body = {
     email,
-    first_name:      (document.getElementById('scFirstName').value || '').trim(),
-    last_name:       (document.getElementById('scLastName').value  || '').trim(),
-    phone:           (document.getElementById('scPhone').value     || '').trim(),
+    first_name:      firstName,
+    last_name:       lastName,
+    phone:           phone,
     university_id:   scUniData ? scUniData.id : null,
     university_name: scUniData ? scUniData.name : '',
     country:         scUniData ? (scUniData.country || '') : '',
@@ -803,18 +833,31 @@ function nextStep() { if (!validateStep(curStep)) return; if (curStep === TOTAL_
 function prevStep() { if (curStep > 1) showStep(curStep - 1); }
 
 async function funnelSubmit() {
-  const email = (document.getElementById('f_email').value || '').trim();
-  const errEl = document.getElementById('err_email');
-  errEl.style.display = 'none';
-  if (!validEmail(email)) { errEl.style.display = 'block'; return; }
+  const firstName = (document.getElementById('f_first_name').value || '').trim();
+  const lastName  = (document.getElementById('f_last_name').value  || '').trim();
+  const email     = (document.getElementById('f_email').value      || '').trim();
+  const phone     = (document.getElementById('f_phone').value      || '').trim();
+
+  document.getElementById('f_fn_err').style.display    = 'none';
+  document.getElementById('f_ln_err').style.display    = 'none';
+  document.getElementById('err_email').style.display   = 'none';
+  document.getElementById('f_phone_err').style.display = 'none';
+
+  let firstErr = null;
+  if (!firstName)        { document.getElementById('f_fn_err').style.display    = 'block'; firstErr = firstErr || 'f_first_name'; }
+  if (!lastName)         { document.getElementById('f_ln_err').style.display    = 'block'; firstErr = firstErr || 'f_last_name'; }
+  if (!validEmail(email)){ document.getElementById('err_email').style.display   = 'block'; firstErr = firstErr || 'f_email'; }
+  if (!phone)            { document.getElementById('f_phone_err').style.display = 'block'; firstErr = firstErr || 'f_phone'; }
+  if (firstErr) { document.getElementById(firstErr).focus(); return; }
+
   const notes = [
     fSel.eduStatus ? ('Eğitim: ' + (fSel.eduStatus === 'highschool' ? 'Lise öğrencisi' : 'Mezun')) : '',
     fSel.fEngLevel ? ('İngilizce: ' + fSel.fEngLevel) : ''
   ].filter(Boolean).join(' | ');
   const body = {
-    email, first_name: (document.getElementById('f_first_name').value||'').trim(),
-    last_name: (document.getElementById('f_last_name').value||'').trim(),
-    phone: (document.getElementById('f_phone').value||'').trim(),
+    email, first_name: firstName,
+    last_name: lastName,
+    phone: phone,
     university_id: fSel.schoolId, university_name: fSel.schoolName||'',
     country: fSel.country||'', program_id: fSel.programId, program_name: fSel.programName||'',
     desired_intake: document.getElementById('intakeSelect').value||'', notes
