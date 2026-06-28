@@ -153,7 +153,8 @@
 
     <!-- Intake — nearest auto-selected -->
     <label class="lbl">Intake <span class="opt">(isteğe bağlı)</span></label>
-    <select class="fld" id="scIntake"></select>
+    <div class="chip-grid" id="scIntakeChips" style="margin-bottom:18px"></div>
+    <input type="hidden" id="scIntake">
 
     <!-- Contact -->
     <div class="sec-div"><span>İletişim Bilgileri</span></div>
@@ -551,7 +552,8 @@ function buildIntakeOptions(monthsStr, nearestVal) {
   const months = (monthsStr || '').split(',').map(s => s.trim()).filter(Boolean);
   const now = new Date();
   const curY = now.getFullYear(), curM = now.getMonth();
-  const el = document.getElementById('scIntake');
+  const container = document.getElementById('scIntakeChips');
+  const hidden = document.getElementById('scIntake');
 
   // Build labelled options for this year + next year
   const options = [];
@@ -560,7 +562,7 @@ function buildIntakeOptions(monthsStr, nearestVal) {
     if (idx === -1) { options.push({ val: m, label: m }); continue; }
     for (const yo of [0, 1]) {
       const diff = yo * 12 + (idx - curM);
-      if (diff >= -1) { // allow 1 month in past
+      if (diff >= -1) {
         const label = MONTH_NAMES[idx] + ' ' + (curY + yo);
         if (!options.find(o => o.val === label)) options.push({ val: label, label });
       }
@@ -571,9 +573,16 @@ function buildIntakeOptions(monthsStr, nearestVal) {
     return parse(a.val) - parse(b.val);
   });
 
-  el.innerHTML = '<option value="">Seçin…</option>' +
-    options.map(o => `<option value="${esc(o.val)}"${o.val === nearestVal ? ' selected' : ''}>${esc(o.label)}</option>`).join('');
-  if (!el.value && nearestVal) el.value = nearestVal;
+  container.innerHTML = options.map(o =>
+    `<div class="chip${o.val === nearestVal ? ' sel' : ''}" onclick="selectIntake(this,'${esc(o.val)}')">${esc(o.label)}</div>`
+  ).join('');
+  hidden.value = nearestVal || '';
+}
+
+function selectIntake(el, val) {
+  document.querySelectorAll('#scIntakeChips .chip').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  document.getElementById('scIntake').value = val;
 }
 
 function updateScBanner() {
