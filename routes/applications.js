@@ -213,6 +213,26 @@ adminRouter.patch('/:id/documents/:docId', async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+// Cross-application document list (for admin document review queue)
+adminRouter.get('/documents', async (req, res) => {
+  try {
+    const status = req.query.status || '';
+    const where = status ? 'AND d.review_status = ?' : '';
+    const params = status ? [status] : [];
+    const [rows] = await db.query(
+      `SELECT d.id, d.application_id, d.doc_type, d.original_name, d.mime,
+              d.size_bytes, d.uploaded_at, d.review_status,
+              a.first_name, a.last_name, a.email, a.university_name, a.program_name, a.status AS app_status
+       FROM application_documents d
+       JOIN applications a ON a.id = d.application_id
+       WHERE 1=1 ${where}
+       ORDER BY d.uploaded_at DESC LIMIT 500`,
+      params
+    );
+    res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 // Bulk reminder — submitted / reviewing apps
 adminRouter.post('/bulk-remind', async (req, res) => {
   try {

@@ -81,6 +81,7 @@ app.use('/api/user', require('./routes/userPortal'));
 const applications = require('./routes/applications');
 app.use('/api/public/applications', applications.publicRouter);
 app.use('/api/admin/applications', requireRole('admin'), applications.adminRouter);
+app.use('/api/admin/tiers', requireRole('admin'), require('./routes/subscriptions'));
 
 // English level test
 app.post('/api/public/english-test', async (req, res) => {

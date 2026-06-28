@@ -116,6 +116,12 @@
       <a href="#" class="nav-link" data-sec="engtest" onclick="showSection('engtest');return false;">
         <i class="bi bi-journal-check"></i>Eng. Test
       </a>
+      <a href="#" class="nav-link" data-sec="docs" onclick="showSection('docs');return false;">
+        <i class="bi bi-file-earmark-check-fill"></i>Doc Review
+      </a>
+      <a href="#" class="nav-link" data-sec="tiers" onclick="showSection('tiers');return false;">
+        <i class="bi bi-layers-fill"></i>Sub. Tiers
+      </a>
     </div>
     <div class="p-3 border-top border-secondary">
       <button class="btn btn-outline-light btn-sm w-100 opacity-75" onclick="doLogout()">
@@ -722,13 +728,14 @@
               <th>Email</th>
               <th>Role</th>
               <th>Status</th>
+              <th>Tier</th>
               <th>Affiliate Code</th>
               <th>Created</th>
               <th class="text-end pe-3">Actions</th>
             </tr>
           </thead>
           <tbody id="usersTableBody">
-            <tr><td colspan="7" class="text-center text-muted py-5">Loading…</td></tr>
+            <tr><td colspan="8" class="text-center text-muted py-5">Loading…</td></tr>
           </tbody>
         </table>
       </div>
@@ -784,6 +791,32 @@
       <div id="etTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
     </div><!-- /engtestSection -->
 
+    <!-- ── Document Review Queue ───────────────────────────────────────────── -->
+    <div id="docsSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <h4 class="fw-bold mb-0"><i class="bi bi-file-earmark-check-fill me-2 text-primary"></i>Document Review</h4>
+        <div class="d-flex gap-2">
+          <select class="form-select form-select-sm" id="docStatusFilter" style="width:180px" onchange="loadDocs()">
+            <option value="">All statuses</option>
+            <option value="pending">Pending</option>
+            <option value="ok">Approved</option>
+            <option value="needs_resubmit">Needs Resubmit</option>
+          </select>
+          <button class="btn btn-outline-secondary btn-sm" onclick="loadDocs()"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+      </div>
+      <div id="docsTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
+    </div><!-- /docsSection -->
+
+    <!-- ── Subscription Tiers ──────────────────────────────────────────────── -->
+    <div id="tiersSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <h4 class="fw-bold mb-0"><i class="bi bi-layers-fill me-2 text-primary"></i>Subscription Tiers</h4>
+        <button class="btn btn-primary btn-sm" onclick="openTierModal(null)"><i class="bi bi-plus-lg me-1"></i>Add Tier</button>
+      </div>
+      <div id="tiersTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
+    </div><!-- /tiersSection -->
+
   </div><!-- /mainContent -->
 </div><!-- /adminApp -->
 
@@ -826,10 +859,63 @@
             </select>
           </div>
         </div>
+        <div class="mt-3">
+          <label class="form-label small fw-semibold">Subscription Tier</label>
+          <select class="form-select" id="uTierId" style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+            <option value="">— unassigned —</option>
+          </select>
+        </div>
       </div>
       <div class="modal-footer border-0">
         <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
         <button class="btn btn-primary" id="uSaveBtn" onclick="saveUser()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tier modal -->
+<div class="modal fade" id="tierModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="tierModalTitle">Add Tier</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3 mb-3">
+          <div class="col-md-8">
+            <label class="form-label small fw-semibold">Tier Name <span class="req">*</span></label>
+            <input type="text" class="form-control" id="tmName" placeholder="e.g. Pro" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Level</label>
+            <input type="number" class="form-control" id="tmLevel" min="1" value="1" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+          </div>
+        </div>
+        <div class="row g-3 mb-3">
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Price / month</label>
+            <input type="number" class="form-control" id="tmPrice" min="0" step="0.01" value="0" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Currency</label>
+            <select class="form-select" id="tmCurrency" style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="TRY">TRY</option>
+              <option value="GBP">GBP</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Description</label>
+          <textarea class="form-control" id="tmDesc" rows="3" placeholder="What does this tier include?" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary" onclick="saveTier()">Save</button>
       </div>
     </div>
   </div>
@@ -1196,6 +1282,8 @@ function showSection(name) {
   if (name === 'users') loadUsers();
   if (name === 'applications') loadApplications();
   if (name === 'engtest') loadEngTest();
+  if (name === 'docs') loadDocs();
+  if (name === 'tiers') loadTiers();
 }
 
 async function loadStats() {
@@ -2283,10 +2371,11 @@ async function loadUsers() {
         <td class="text-muted small">${esc(u.email)}</td>
         <td><span class="badge bg-${roleColors[u.role] || 'secondary'}">${u.role}</span></td>
         <td><span class="badge badge-${u.status}">${cap(u.status)}</span></td>
+        <td class="small text-muted">${u.tier_name ? `<span class="badge bg-info bg-opacity-75">${esc(u.tier_name)}</span>` : '<span class="text-muted">—</span>'}</td>
         <td class="small text-muted font-monospace">${u.affiliate_code || '—'}</td>
         <td class="small text-muted">${new Date(u.created_at).toLocaleDateString()}</td>
         <td class="text-end pe-3">
-          <button class="btn btn-outline-secondary btn-sm me-1" onclick="openUserModal(${u.id}, '${esc(u.name).replace(/'/g,"\\'")}', '${esc(u.email)}', '${u.role}', '${u.status}')"><i class="bi bi-pencil"></i></button>
+          <button class="btn btn-outline-secondary btn-sm me-1" onclick="openUserModal(${u.id}, '${esc(u.name).replace(/'/g,"\\'")}', '${esc(u.email)}', '${u.role}', '${u.status}', ${u.subscription_tier_id||'null'})"><i class="bi bi-pencil"></i></button>
           <button class="btn btn-outline-danger btn-sm" onclick="deleteUser(${u.id}, '${esc(u.name).replace(/'/g,"\\'")}')"><i class="bi bi-trash"></i></button>
         </td>
       </tr>`).join('');
@@ -2295,7 +2384,7 @@ async function loadUsers() {
   }
 }
 
-function openUserModal(id, name = '', email = '', role = 'enduser', status = 'active') {
+function openUserModal(id, name = '', email = '', role = 'enduser', status = 'active', tierId = null) {
   editingUserId = id;
   document.getElementById('userModalTitle').textContent = id ? 'Edit User' : 'Add User';
   document.getElementById('uName').value = name;
@@ -2305,6 +2394,11 @@ function openUserModal(id, name = '', email = '', role = 'enduser', status = 'ac
   document.getElementById('uStatus').value = status;
   document.getElementById('uPassword').value = '';
   document.getElementById('uPwHint').style.display = id ? '' : 'none';
+  // Populate tier selector — load fresh from API if empty
+  const sel = document.getElementById('uTierId');
+  if (allTiers.length) populateTierSelects();
+  else api('GET', '/api/admin/tiers').then(r => r.json()).then(t => { allTiers = t; populateTierSelects(); }).catch(() => {});
+  sel.value = tierId || '';
   if (!userModal) userModal = new bootstrap.Modal(document.getElementById('userModal'));
   userModal.show();
 }
@@ -2319,7 +2413,8 @@ async function saveUser() {
   const btn = document.getElementById('uSaveBtn');
   btn.disabled = true; btn.textContent = 'Saving…';
   try {
-    const body = { name, role, status };
+    const tierId = document.getElementById('uTierId').value;
+    const body = { name, role, status, subscription_tier_id: tierId ? parseInt(tierId) : null };
     if (!editingUserId) { body.email = email; body.password = password; }
     else if (password) body.password = password;
 
@@ -2622,6 +2717,219 @@ async function bulkRemind() {
     if (!r.ok) throw new Error(d.error || 'Failed');
     toast(`Bulk reminder: ${d.sent} email(s) sent.`);
   } catch (e) { toast(e.message, 'error'); }
+}
+
+// ── Document Review Queue ────────────────────────────────────────────────────
+let allDocs = [];
+
+async function loadDocs() {
+  document.getElementById('docsTableWrap').innerHTML = '<div class="text-center text-muted py-5"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</div>';
+  try {
+    const status = document.getElementById('docStatusFilter')?.value || '';
+    const qs = status ? '?status=' + encodeURIComponent(status) : '';
+    const r = await api('GET', '/api/admin/applications/documents' + qs);
+    allDocs = await r.json();
+    renderDocsTable(allDocs);
+  } catch (e) {
+    document.getElementById('docsTableWrap').innerHTML = `<div class="text-danger small p-3">${esc2(e.message)}</div>`;
+  }
+}
+
+const DOC_STATUS_INFO = {
+  pending: { color: '#f59e0b', label: 'Pending' },
+  ok: { color: '#10b981', label: 'Approved' },
+  needs_resubmit: { color: '#ef4444', label: 'Needs Resubmit' }
+};
+
+const APP_STATUS_COLOR = {
+  submitted: '#3b82f6', reviewing: '#d97706', pre_accepted: '#10b981',
+  conditional: '#f59e0b', rejected: '#ef4444', completed: '#6b7280'
+};
+
+function renderDocsTable(docs) {
+  const wrap = document.getElementById('docsTableWrap');
+  if (!docs.length) {
+    wrap.innerHTML = '<div class="text-muted small text-center py-5">No documents found.</div>';
+    return;
+  }
+  const fmtSize = b => {
+    if (!b) return '—';
+    if (b > 1048576) return (b / 1048576).toFixed(1) + ' MB';
+    if (b > 1024) return Math.round(b / 1024) + ' KB';
+    return b + ' B';
+  };
+  wrap.innerHTML = `<div class="table-responsive">
+    <table class="table table-hover table-sm align-middle mb-0" style="font-size:.83rem">
+      <thead class="table-dark">
+        <tr>
+          <th>Date</th><th>Applicant</th><th>University</th><th>Doc Type</th>
+          <th>File</th><th>Size</th><th>App Status</th><th>Review</th><th class="text-end pe-2">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${docs.map(d => {
+          const info = DOC_STATUS_INFO[d.review_status] || { color: '#94a3b8', label: d.review_status };
+          const appColor = APP_STATUS_COLOR[d.app_status] || '#64748b';
+          const appLabel = APP_STATUS_LABEL[d.app_status] || d.app_status || '—';
+          const name = [d.first_name, d.last_name].filter(Boolean).join(' ') || '—';
+          return `<tr>
+            <td style="white-space:nowrap;color:#6c757d">${d.uploaded_at ? new Date(d.uploaded_at).toLocaleDateString() : '—'}</td>
+            <td class="fw-semibold">${esc2(name)}</td>
+            <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(d.university_name||'')}">${esc2(d.university_name||'—')}</td>
+            <td>${esc2(d.doc_type||'—')}</td>
+            <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(d.original_name||'')}">${esc2(d.original_name||'—')}</td>
+            <td style="white-space:nowrap">${fmtSize(d.size_bytes)}</td>
+            <td><span class="badge" style="background:${appColor}">${esc2(appLabel)}</span></td>
+            <td>
+              <button class="btn btn-sm py-0 px-2 fw-semibold" style="font-size:.72rem;background:${info.color};color:#fff;border:none;white-space:nowrap"
+                onclick="cycleDocStatusGlobal(${d.application_id},${d.id},'${d.review_status}')">
+                ${info.label}
+              </button>
+            </td>
+            <td class="text-end pe-2">
+              <a href="/api/admin/applications/${d.application_id}/documents/${d.id}/download"
+                class="btn btn-outline-secondary btn-sm py-0 me-1" title="Download"><i class="bi bi-download"></i></a>
+              <button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem"
+                onclick="openApplication(${d.application_id})" title="View application"><i class="bi bi-eye"></i></button>
+            </td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+    </table>
+  </div>
+  <div class="text-muted small mt-2 text-end">${docs.length} document${docs.length !== 1 ? 's' : ''}</div>`;
+}
+
+async function cycleDocStatusGlobal(appId, docId, currentStatus) {
+  const next = { pending: 'ok', ok: 'needs_resubmit', needs_resubmit: 'pending' };
+  const review_status = next[currentStatus] || 'ok';
+  try {
+    const r = await api('PATCH', `/api/admin/applications/${appId}/documents/${docId}`, { review_status });
+    if (!r.ok) throw new Error('Update failed');
+    const doc = allDocs.find(d => d.id === docId);
+    if (doc) doc.review_status = review_status;
+    renderDocsTable(allDocs);
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+// ── Subscription Tiers ────────────────────────────────────────────────────────
+let allTiers = [];
+let tierModal = null;
+let editingTierId = null;
+
+async function loadTiers() {
+  document.getElementById('tiersTableWrap').innerHTML = '<div class="text-center text-muted py-5"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</div>';
+  try {
+    const r = await api('GET', '/api/admin/tiers');
+    allTiers = await r.json();
+    renderTiersTable();
+    populateTierSelects();
+  } catch (e) {
+    document.getElementById('tiersTableWrap').innerHTML = `<div class="text-danger small p-3">${esc2(e.message)}</div>`;
+  }
+}
+
+function populateTierSelects() {
+  const sel = document.getElementById('uTierId');
+  if (!sel) return;
+  const cur = sel.value;
+  sel.innerHTML = '<option value="">— unassigned —</option>' + allTiers.map(t => `<option value="${t.id}">${esc2(t.name)}</option>`).join('');
+  if (cur) sel.value = cur;
+}
+
+function renderTiersTable() {
+  const wrap = document.getElementById('tiersTableWrap');
+  if (!allTiers.length) {
+    wrap.innerHTML = '<div class="text-muted text-center py-5">No tiers yet. Add one to get started.</div>';
+    return;
+  }
+  wrap.innerHTML = `<div class="card shadow-sm border-0 rounded-3 overflow-hidden">
+    <table class="table table-hover mb-0 align-middle">
+      <thead style="background:#1e293b;color:#e2e8f0">
+        <tr>
+          <th class="ps-3" style="width:50px">#</th>
+          <th>Name</th>
+          <th style="width:80px">Level</th>
+          <th style="width:140px">Price / month</th>
+          <th>Description</th>
+          <th class="text-end pe-3" style="width:110px">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${allTiers.map(t => `<tr>
+          <td class="ps-3 text-muted">${t.id}</td>
+          <td class="fw-semibold">${esc2(t.name)}</td>
+          <td><span class="badge bg-secondary">${t.level}</span></td>
+          <td>${parseFloat(t.price_monthly) > 0 ? esc2(t.price_currency) + ' ' + parseFloat(t.price_monthly).toFixed(2) : '<span class="text-muted">Free</span>'}</td>
+          <td class="text-muted" style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc2(t.description || '')}</td>
+          <td class="text-end pe-3">
+            <button class="btn btn-outline-primary btn-sm py-0 me-1" onclick="openTierModal(${t.id})"><i class="bi bi-pencil"></i></button>
+            <button class="btn btn-outline-danger btn-sm py-0" onclick="deleteTier(${t.id})"><i class="bi bi-trash"></i></button>
+          </td>
+        </tr>`).join('')}
+      </tbody>
+    </table>
+  </div>
+  <div class="text-muted small mt-2">${allTiers.length} tier${allTiers.length !== 1 ? 's' : ''}</div>`;
+}
+
+function openTierModal(id) {
+  editingTierId = id;
+  if (!tierModal) tierModal = new bootstrap.Modal(document.getElementById('tierModal'));
+  if (id) {
+    const t = allTiers.find(x => x.id === id);
+    if (!t) return;
+    document.getElementById('tmName').value = t.name || '';
+    document.getElementById('tmLevel').value = t.level || 1;
+    document.getElementById('tmPrice').value = t.price_monthly || 0;
+    document.getElementById('tmCurrency').value = t.price_currency || 'USD';
+    document.getElementById('tmDesc').value = t.description || '';
+    document.getElementById('tierModalTitle').textContent = 'Edit Tier';
+  } else {
+    document.getElementById('tmName').value = '';
+    document.getElementById('tmLevel').value = allTiers.length + 1;
+    document.getElementById('tmPrice').value = 0;
+    document.getElementById('tmCurrency').value = 'USD';
+    document.getElementById('tmDesc').value = '';
+    document.getElementById('tierModalTitle').textContent = 'Add Tier';
+  }
+  tierModal.show();
+}
+
+async function saveTier() {
+  const body = {
+    name: document.getElementById('tmName').value.trim(),
+    level: parseInt(document.getElementById('tmLevel').value) || 1,
+    price_monthly: parseFloat(document.getElementById('tmPrice').value) || 0,
+    price_currency: document.getElementById('tmCurrency').value || 'USD',
+    description: document.getElementById('tmDesc').value.trim()
+  };
+  if (!body.name) { toast('Tier name is required.', 'error'); return; }
+  try {
+    const r = editingTierId
+      ? await api('PATCH', '/api/admin/tiers/' + editingTierId, body)
+      : await api('POST', '/api/admin/tiers', body);
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Save failed');
+    toast(editingTierId ? 'Tier updated.' : 'Tier created.');
+    tierModal.hide();
+    loadTiers();
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function deleteTier(id) {
+  const t = allTiers.find(x => x.id === id);
+  document.getElementById('confirmMsg').textContent = `Delete tier "${t ? t.name : id}"?`;
+  document.getElementById('confirmBtn').onclick = async () => {
+    try {
+      const r = await api('DELETE', '/api/admin/tiers/' + id);
+      if (!r.ok) throw new Error((await r.json()).error || 'Failed');
+      confirmModal.hide();
+      toast('Tier deleted.');
+      loadTiers();
+    } catch (e) { toast(e.message, 'error'); }
+  };
+  confirmModal.show();
 }
 
 // ── English Test ─────────────────────────────────────────────────────────────

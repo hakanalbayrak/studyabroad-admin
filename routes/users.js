@@ -9,7 +9,7 @@ const adminOnly = requireRole('admin');
 router.get('/', adminOnly, async (req, res) => {
   try {
     const [rows] = await db.query(
-      'SELECT id, email, name, role, status, affiliate_code, created_at FROM users ORDER BY role, name'
+      'SELECT u.id, u.email, u.name, u.role, u.status, u.affiliate_code, u.subscription_tier_id, u.created_at, st.name AS tier_name FROM users u LEFT JOIN subscription_tiers st ON st.id = u.subscription_tier_id ORDER BY u.role, u.name'
     );
     res.json(rows);
   } catch (e) { res.status(500).json({ error: e.message }); }
@@ -22,9 +22,10 @@ router.post('/', adminOnly, async (req, res) => {
   try {
     const hash = await bcrypt.hash(password, 12);
     const affiliate_code = role === 'affiliate' ? crypto.randomBytes(4).toString('hex').toUpperCase() : null;
+    const tier_id = req.body.subscription_tier_id ? parseInt(req.body.subscription_tier_id) : null;
     const [result] = await db.query(
-      'INSERT INTO users (email, password_hash, name, role, status, affiliate_code) VALUES (?, ?, ?, ?, ?, ?)',
-      [email.toLowerCase().trim(), hash, name.trim(), role, status, affiliate_code]
+      'INSERT INTO users (email, password_hash, name, role, status, affiliate_code, subscription_tier_id) VALUES (?, ?, ?, ?, ?, ?, ?)',
+      [email.toLowerCase().trim(), hash, name.trim(), role, status, affiliate_code, tier_id]
     );
     res.status(201).json({ id: result.insertId, email, name, role, status, affiliate_code });
   } catch (e) {
@@ -35,15 +36,28 @@ router.post('/', adminOnly, async (req, res) => {
 
 router.put('/:id', adminOnly, async (req, res) => {
   const { name, role, status, password } = req.body;
+  const tier_id = req.body.subscription_tier_id !== undefined
+    ? (req.body.subscription_tier_id ? parseInt(req.body.subscription_tier_id) : null)
+    : undefined;
   try {
     if (password) {
       if (password.length < 8) return res.status(400).json({ error: 'Password must be at least 8 characters' });
       const hash = await bcrypt.hash(password, 12);
-      await db.query('UPDATE users SET name=?, role=?, status=?, password_hash=? WHERE id=?',
-        [name, role, status, hash, req.params.id]);
+      if (tier_id !== undefined) {
+        await db.query('UPDATE users SET name=?, role=?, status=?, password_hash=?, subscription_tier_id=? WHERE id=?',
+          [name, role, status, hash, tier_id, req.params.id]);
+      } else {
+        await db.query('UPDATE users SET name=?, role=?, status=?, password_hash=? WHERE id=?',
+          [name, role, status, hash, req.params.id]);
+      }
     } else {
-      await db.query('UPDATE users SET name=?, role=?, status=? WHERE id=?',
-        [name, role, status, req.params.id]);
+      if (tier_id !== undefined) {
+        await db.query('UPDATE users SET name=?, role=?, status=?, subscription_tier_id=? WHERE id=?',
+          [name, role, status, tier_id, req.params.id]);
+      } else {
+        await db.query('UPDATE users SET name=?, role=?, status=? WHERE id=?',
+          [name, role, status, req.params.id]);
+      }
     }
     if (role === 'affiliate') {
       const [[u]] = await db.query('SELECT affiliate_code FROM users WHERE id=?', [req.params.id]);
