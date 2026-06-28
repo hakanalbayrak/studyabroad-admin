@@ -23,7 +23,7 @@ async function sendLeadNotification(lead) {
   const subject = `New inquiry: ${lead.program_name || 'General'} — ${lead.university_name || ''}`.trim();
 
   const text = [
-    `New student inquiry received on Study Abroad platform`,
+    `New student inquiry received on PANELEDU`,
     ``,
     `Student:   ${lead.student_name}`,
     `Email:     ${lead.email}`,
@@ -61,7 +61,7 @@ async function sendLeadNotification(lead) {
     </div>`;
 
   try {
-    await t.sendMail({ from: `"Study Abroad" <${process.env.SMTP_USER}>`, to, subject, text, html });
+    await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to, subject, text, html });
   } catch (e) {
     console.error('[mailer] Failed to send lead notification:', e.message);
   }
@@ -72,23 +72,23 @@ async function sendLeadReply(toEmail, studentName, body) {
   const t = getTransport();
   if (!t) return false;
 
-  const subject = 'Re: Your study abroad inquiry';
+  const subject = 'Re: Your PANELEDU inquiry';
   const safeBody = esc(body).replace(/\n/g, '<br>');
-  const text = `Hi ${studentName || ''},\n\n${body}\n\n— Study Abroad Team`;
+  const text = `Hi ${studentName || ''},\n\n${body}\n\n— PANELEDU Team`;
   const html = `
     <div style="font-family:system-ui,sans-serif;max-width:520px;color:#1e293b">
       <div style="background:#6366f1;color:#fff;padding:16px 20px;border-radius:10px 10px 0 0">
-        <strong>Study Abroad</strong>
+        <strong>PANELEDU</strong>
       </div>
       <div style="border:1px solid #e2e8f0;border-top:none;padding:20px;border-radius:0 0 10px 10px;font-size:.92rem;line-height:1.55">
         <p>Hi ${esc(studentName || 'there')},</p>
         <p>${safeBody}</p>
-        <p style="color:#64748b;margin-top:20px">— Study Abroad Team</p>
+        <p style="color:#64748b;margin-top:20px">— PANELEDU Team</p>
       </div>
     </div>`;
 
   try {
-    await t.sendMail({ from: `"Study Abroad" <${process.env.SMTP_USER}>`, to: toEmail, subject, text, html });
+    await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to: toEmail, subject, text, html });
     return true;
   } catch (e) {
     console.error('[mailer] Failed to send lead reply:', e.message);
@@ -102,11 +102,11 @@ async function sendOtpCode(email, code) {
   if (!t) return false;
 
   const subject = `Your sign-in code: ${code}`;
-  const text = `Your Study Abroad sign-in code is: ${code}\n\nIt expires in 10 minutes. If you didn't request this, ignore this email.`;
+  const text = `Your PANELEDU sign-in code is: ${code}\n\nIt expires in 10 minutes. If you didn't request this, ignore this email.`;
   const html = `
     <div style="font-family:system-ui,sans-serif;max-width:480px;color:#1e293b">
       <div style="background:#6366f1;color:#fff;padding:16px 20px;border-radius:10px 10px 0 0">
-        <strong>Study Abroad — Sign In</strong>
+        <strong>PANELEDU — Giriş</strong>
       </div>
       <div style="border:1px solid #e2e8f0;border-top:none;padding:24px 20px;border-radius:0 0 10px 10px;text-align:center">
         <p style="color:#64748b;margin:0 0 12px">Your sign-in code is</p>
@@ -116,7 +116,7 @@ async function sendOtpCode(email, code) {
     </div>`;
 
   try {
-    await t.sendMail({ from: `"Study Abroad" <${process.env.SMTP_USER}>`, to: email, subject, text, html });
+    await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to: email, subject, text, html });
     return true;
   } catch (e) {
     console.error('[mailer] Failed to send OTP code:', e.message);
@@ -140,13 +140,13 @@ async function sendApplicationNotice(app) {
           <p>Hi ${esc(name)},</p>
           <p>We've received your application for <strong>${esc(uni)}</strong>${app.program_name ? ' — ' + esc(app.program_name) : ''}.</p>
           <p>Our team will review it and get back to you shortly with the next steps.</p>
-          <p style="color:#64748b;margin-top:18px">— Study Abroad Team</p>
+          <p style="color:#64748b;margin-top:18px">— PANELEDU Team</p>
         </div>
       </div>`;
     try {
-      await t.sendMail({ from: `"Study Abroad" <${process.env.SMTP_USER}>`, to: app.email,
+      await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to: app.email,
         subject: `Application received — ${uni}`,
-        text: `Hi ${name},\n\nWe've received your application for ${uni}${app.program_name ? ' — ' + app.program_name : ''}. Our team will review it and contact you soon.\n\n— Study Abroad Team`,
+        text: `Hi ${name},\n\nWe've received your application for ${uni}${app.program_name ? ' — ' + app.program_name : ''}. Our team will review it and contact you soon.\n\n— PANELEDU Team`,
         html });
     } catch (e) { console.error('[mailer] applicant confirmation failed:', e.message); }
   }
@@ -155,7 +155,7 @@ async function sendApplicationNotice(app) {
   const to = process.env.NOTIFY_EMAIL || process.env.SMTP_USER;
   if (to) {
     try {
-      await t.sendMail({ from: `"Study Abroad" <${process.env.SMTP_USER}>`, to,
+      await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to,
         subject: `New application: ${name} — ${uni}`,
         text: `New application #${app.id || ''}\n\nApplicant: ${name}\nEmail: ${app.email}\nPhone: ${app.phone || '—'}\nUniversity: ${uni}\nProgram: ${app.program_name || '—'}\nIntake: ${app.desired_intake || '—'}\n\nView in admin: ${process.env.APP_URL || ''}/admin`,
       });
