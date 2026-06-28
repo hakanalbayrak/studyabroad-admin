@@ -130,42 +130,95 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="/js/chrome.js"></script>
   <script>
-  const QUESTIONS = [
-    // A1 — very basic
-    { level:'A1', q:'What is the correct form? "She ___ a student."', choices:['am','is','are','be'], answer:1 },
-    { level:'A1', q:'Choose the correct word: "I have ___ apple."', choices:['a','an','the','—'], answer:1 },
-    { level:'A1', q:'"___ your name?" — "My name is Sara."', choices:['What is','Who are','How is','Where is'], answer:0 },
-    { level:'A1', q:'Which sentence is correct?', choices:['He go to school.','He goes to school.','He going to school.','He gone to school.'], answer:1 },
+  // ── Question bank: 12 per CEFR level — each test randomly picks 4 from each ──
+  const QUESTION_BANK = {
+    A1: [
+      { q:'What is the correct form? "She ___ a student."', choices:['am','is','are','be'], answer:1 },
+      { q:'"I have ___ apple."', choices:['a','an','the','—'], answer:1 },
+      { q:'"___ your name?" — "My name is Sara."', choices:['What is','Who are','How is','Where is'], answer:0 },
+      { q:'Which sentence is correct?', choices:['He go to school.','He goes to school.','He going to school.','He gone to school.'], answer:1 },
+      { q:'"My sister ___ in Paris." (simple present)', choices:['live','lives','is live','to live'], answer:1 },
+      { q:'"There ___ two books on the table."', choices:['is','are','be','have'], answer:1 },
+      { q:'"How ___ you?" — "I\'m fine, thank you."', choices:['do','does','is','are'], answer:3 },
+      { q:'"___ you like coffee?" — "Yes, I do."', choices:['Are','Do','Did','Does'], answer:1 },
+      { q:'"Where ___ you from?" — "I\'m from Turkey."', choices:['is','am','are','do'], answer:2 },
+      { q:'"We ___ at school yesterday."', choices:['are','is','were','was'], answer:2 },
+      { q:'"She can ___ English very well."', choices:['speaks','speaking','to speak','speak'], answer:3 },
+      { q:'"He ___ a doctor. He works at a hospital."', choices:['is','are','be','am'], answer:0 },
+    ],
+    A2: [
+      { q:'"I ___ TV when she called." (past continuous)', choices:['watch','watched','was watching','have watched'], answer:2 },
+      { q:'Choose the correct preposition: "She is good ___ math."', choices:['in','at','on','for'], answer:1 },
+      { q:'"Have you ever ___ to Paris?"', choices:['go','went','been','gone'], answer:2 },
+      { q:'Which is a question tag? "She doesn\'t like coffee, ___?"', choices:['does she','doesn\'t she','is she','isn\'t she'], answer:0 },
+      { q:'"He ___ in London for three years." (present perfect)', choices:['lives','lived','has lived','is living'], answer:2 },
+      { q:'"I ___ him since last Monday."', choices:['didn\'t see','haven\'t seen','don\'t see','wasn\'t seeing'], answer:1 },
+      { q:'"She was ___ tired that she fell asleep immediately."', choices:['very','so','too','such'], answer:1 },
+      { q:'"They ___ the match when it started raining."', choices:['played','have played','were playing','had played'], answer:2 },
+      { q:'"She arrived ___ time for the meeting."', choices:['in','at','on','by'], answer:2 },
+      { q:'"He is ___ than his brother." (comparative)', choices:['more tall','taller','tallest','most tall'], answer:1 },
+      { q:'"She told me that she ___ the letter." (reported speech)', choices:['sends','sent','had sent','has sent'], answer:2 },
+      { q:'"She ___ a new job last month." (simple past)', choices:['gets','gotten','got','has got'], answer:2 },
+    ],
+    B1: [
+      { q:'"If I ___ rich, I would travel the world." (2nd conditional)', choices:['am','was','were','would be'], answer:2 },
+      { q:'"The book ___ I bought is great." (relative clause)', choices:['who','whom','which','whose'], answer:2 },
+      { q:'"She suggested ___ to the cinema." (gerund/infinitive)', choices:['to go','going','go','went'], answer:1 },
+      { q:'Which sentence uses the passive voice correctly?', choices:['The cake was ate by Tom.','The cake ate by Tom.','The cake was eaten by Tom.','The cake is eat by Tom.'], answer:2 },
+      { q:'"I regret ___ him the truth."', choices:['to not tell','not telling','not to tell','to tell not'], answer:1 },
+      { q:'"She\'s been living here ___ five years."', choices:['since','during','for','from'], answer:2 },
+      { q:'"You\'d better ___ to the doctor."', choices:['going','to go','go','gone'], answer:2 },
+      { q:'"He asked me where ___ from." (reported speech)', choices:['I am','am I','I was','was I'], answer:2 },
+      { q:'"By the time he arrived, we ___ already left."', choices:['have','had','has','were'], answer:1 },
+      { q:'"I\'d rather you ___ here tonight."', choices:['stay','stayed','to stay','staying'], answer:1 },
+      { q:'"He managed ___ the exam."', choices:['pass','passing','to pass','to passing'], answer:2 },
+      { q:'"She\'s used to ___ up early every morning."', choices:['get','got','getting','to get'], answer:2 },
+    ],
+    B2: [
+      { q:'"By the time she arrived, we ___ dinner." (past perfect)', choices:['finished','have finished','had finished','were finishing'], answer:2 },
+      { q:'"The politician\'s speech was ___ — it convinced everyone."', choices:['persuasive','persuaded','persuasion','persuading'], answer:0 },
+      { q:'"I wish I ___ more time to study yesterday."', choices:['have had','had','had had','would have'], answer:2 },
+      { q:'"Despite ___ hard, he failed the exam."', choices:['studied','to study','studying','study'], answer:2 },
+      { q:'"She ___ work nights, but now she works days."', choices:['is used to','used to','has used to','was used to'], answer:1 },
+      { q:'"Not only ___ late, but he also forgot his keys."', choices:['he was','was he','he is','is he'], answer:1 },
+      { q:'"It is high time you ___ your responsibilities seriously."', choices:['take','took','taking','will take'], answer:1 },
+      { q:'"She denied ___ the money."', choices:['steal','to steal','to have stolen','having stolen'], answer:3 },
+      { q:'"He was on the verge of ___ up when he got the good news."', choices:['give','to give','giving','given'], answer:2 },
+      { q:'"The results will be announced ___ the end of the month."', choices:['until','by','at','till'], answer:1 },
+      { q:'"They suggested that he ___ more carefully." (subjunctive)', choices:['drives','drove','drive','will drive'], answer:2 },
+      { q:'"The new bridge, ___ was built last year, has won an award."', choices:['that','which','who','what'], answer:1 },
+    ],
+    C1: [
+      { q:'"No sooner ___ arrived than it started raining." (inversion)', choices:['he had','had he','he has','has he'], answer:1 },
+      { q:'"The new law will ___ significant changes to the tax system."', choices:['bring about','bring up','bring off','bring out'], answer:0 },
+      { q:'"___ it not been for your help, we would have failed." (formal inversion)', choices:['Has','Were','Had','Should'], answer:2 },
+      { q:'Which sentence is grammatically correct?', choices:['She is used to work late.','She used to working late.','She is used to working late.','She use to work late.'], answer:2 },
+      { q:'"Should you ___ any difficulties, do not hesitate to contact us."', choices:['found','encounter','encounters','encountering'], answer:1 },
+      { q:'"Scarcely ___ arrived when she heard the news." (inversion)', choices:['had she','she had','has she','she has'], answer:0 },
+      { q:'"He is the last person ___ do such a thing."', choices:['who would','to','that could','which would'], answer:1 },
+      { q:'"The more she practiced, ___ she became."', choices:['better','the better','more better','most better'], answer:1 },
+      { q:'"___ he been more careful, the accident would not have happened."', choices:['If','Were','Had','Should'], answer:2 },
+      { q:'"It goes without ___ that honesty is the best policy."', choices:['saying','to say','said','say'], answer:0 },
+      { q:'"The committee reached a ___ decision after hours of debate."', choices:['unanimous','united','single','common'], answer:0 },
+      { q:'"She would sooner ___ than compromise her values."', choices:['resign','to resign','resigning','resigned'], answer:0 },
+    ],
+  };
 
-    // A2 — elementary
-    { level:'A2', q:'"I ___ TV when she called." (past continuous)', choices:['watch','watched','was watching','have watched'], answer:2 },
-    { level:'A2', q:'Choose the correct preposition: "She is good ___ math."', choices:['in','at','on','for'], answer:1 },
-    { level:'A2', q:'"Have you ever ___ to Paris?"', choices:['go','went','been','gone'], answer:2 },
-    { level:'A2', q:'Which is a question tag? "She doesn\'t like coffee, ___?"', choices:['does she','doesn\'t she','is she','isn\'t she'], answer:0 },
+  function buildTest() {
+    const LEVELS = ['A1','A2','B1','B2','C1'];
+    const test = [];
+    for (const lvl of LEVELS) {
+      const pool = [...QUESTION_BANK[lvl]];
+      for (let i = pool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [pool[i], pool[j]] = [pool[j], pool[i]];
+      }
+      pool.slice(0, 4).forEach(q => test.push({ ...q, level: lvl }));
+    }
+    return test;
+  }
 
-    // B1 — intermediate
-    { level:'B1', q:'"If I ___ rich, I would travel the world." (2nd conditional)', choices:['am','was','were','would be'], answer:2 },
-    { level:'B1', q:'Choose the correct relative pronoun: "The book ___ I bought is great."', choices:['who','whom','which','whose'], answer:2 },
-    { level:'B1', q:'"She suggested ___ to the cinema." (gerund/infinitive)', choices:['to go','going','go','went'], answer:1 },
-    { level:'B1', q:'Which sentence uses the passive voice correctly?', choices:['The cake was ate by Tom.','The cake ate by Tom.','The cake was eaten by Tom.','The cake is eat by Tom.'], answer:2 },
-
-    // B2 — upper-intermediate
-    { level:'B2', q:'"By the time she arrived, we ___ dinner." (past perfect)', choices:['finished','have finished','had finished','were finishing'], answer:2 },
-    { level:'B2', q:'Choose the best word: "The politician\'s speech was ___ — it convinced everyone."', choices:['persuasive','persuaded','persuasion','persuading'], answer:0 },
-    { level:'B2', q:'"I wish I ___ more time to study yesterday."', choices:['have had','had','had had','would have'], answer:2 },
-    { level:'B2', q:'Which best completes: "Despite ___ hard, he failed the exam."', choices:['studied','to study','studying','study'], answer:2 },
-
-    // C1 — advanced
-    { level:'C1', q:'"No sooner ___ arrived than it started raining." (inversion)', choices:['he had','had he','he has','has he'], answer:1 },
-    { level:'C1', q:'Choose the correct word: "The new law will ___ significant changes to the tax system."', choices:['bring about','bring up','bring off','bring out'], answer:0 },
-    { level:'C1', q:'"___ it not been for your help, we would have failed." (formal inversion)', choices:['Has','Were','Had','Should'], answer:2 },
-    { level:'C1', q:'Which sentence is grammatically correct?', choices:[
-      'She is used to work late.',
-      'She used to working late.',
-      'She is used to working late.',
-      'She use to work late.'
-    ], answer:2 },
-  ];
+  let QUESTIONS = [];
 
   const CEFR_INFO = {
     A1: { label:'A1 — Başlangıç', desc:'Temel gündelik ifadeleri anlayabilirsiniz. Düzenli pratikle hızla ilerliyebilirsiniz.' },
@@ -177,10 +230,14 @@
   };
 
   let current = 0;
-  let selected = new Array(QUESTIONS.length).fill(-1);
+  let selected = [];
   let answered = false;
 
   function startTest() {
+    QUESTIONS = buildTest();
+    selected = new Array(QUESTIONS.length).fill(-1);
+    current = 0;
+    answered = false;
     document.getElementById('introScreen').style.display = 'none';
     document.getElementById('testScreen').style.display = 'block';
     renderQuestion();
