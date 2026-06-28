@@ -465,6 +465,11 @@
     /* Update language toggle button */
     var btn = document.getElementById('peLangBtn');
     if (btn) btn.textContent = lang === 'tr' ? 'EN' : 'TR';
+
+    /* Show/hide full language content blocks (used on legal pages) */
+    document.querySelectorAll('.lang-block').forEach(function (el) {
+      el.style.display = (el.getAttribute('data-lang') === lang) ? '' : 'none';
+    });
   }
 
   /* Toggle language on button click */
