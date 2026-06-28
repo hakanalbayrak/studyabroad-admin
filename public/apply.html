@@ -10,6 +10,7 @@
   <link rel="canonical" href="https://paneledu.com/apply">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="/css/site.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
   <style>
     * { -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
     .apply-wrap { max-width: 680px; margin: 0 auto; padding: 24px 16px 120px; }
@@ -133,7 +134,7 @@
 
   <div class="page-hdr">
     <a href="/" id="backLink" title="Geri"><i class="bi bi-arrow-left"></i></a>
-    <h1><i class="bi bi-send-check-fill" style="color:var(--accent)"></i> Başvuru Yap</h1>
+    <h1><i class="bi bi-send-check-fill" style="color:var(--accent)"></i> <span data-i18n="apply.title">Başvuru Yap</span></h1>
   </div>
 
   <!-- ══════════════════════════════════════════════════════════════
@@ -145,49 +146,49 @@
 
     <!-- Program selector (only when ?program not in URL) -->
     <div id="scProgramWrap" style="display:none">
-      <label class="lbl">Program</label>
+      <label class="lbl" data-i18n="apply.prog.lbl">Program</label>
       <select class="fld" id="scProgramSelect" onchange="onScProgramChange()">
-        <option value="">Program seçin…</option>
+        <option value="" data-i18n="apply.prog.sel">Program seçin…</option>
       </select>
     </div>
 
     <!-- Intake — nearest auto-selected -->
-    <label class="lbl">Intake <span class="opt">(isteğe bağlı)</span></label>
+    <label class="lbl"><span data-i18n="apply.intake.lbl">Intake</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label>
     <div class="chip-grid" id="scIntakeChips" style="margin-bottom:18px"></div>
     <input type="hidden" id="scIntake">
 
     <!-- Contact -->
-    <div class="sec-div"><span>İletişim Bilgileri</span></div>
+    <div class="sec-div"><span data-i18n="apply.contact">İletişim Bilgileri</span></div>
     <div class="grid2">
-      <div><label class="lbl">Ad <span class="opt">(isteğe bağlı)</span></label><input type="text" class="fld" id="scFirstName" placeholder="Adın"></div>
-      <div><label class="lbl">Soyad <span class="opt">(isteğe bağlı)</span></label><input type="text" class="fld" id="scLastName" placeholder="Soyadın"></div>
+      <div><label class="lbl"><span data-i18n="apply.firstname">Ad</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label><input type="text" class="fld" id="scFirstName" placeholder="Adın" data-i18n-ph="apply.fn.ph"></div>
+      <div><label class="lbl"><span data-i18n="apply.lastname">Soyad</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label><input type="text" class="fld" id="scLastName" placeholder="Soyadın" data-i18n-ph="apply.ln.ph"></div>
     </div>
-    <label class="lbl">E-posta <span class="req">*</span></label>
-    <input type="email" class="fld" id="scEmail" placeholder="ornek@eposta.com">
-    <div class="err-msg" id="scEmailErr">Geçerli bir e-posta adresi gir.</div>
-    <label class="lbl">Telefon <span class="opt">(isteğe bağlı)</span></label>
-    <input type="tel" class="fld" id="scPhone" placeholder="+90 …">
+    <label class="lbl"><span data-i18n="apply.email.lbl">E-posta</span> <span class="req">*</span></label>
+    <input type="email" class="fld" id="scEmail" placeholder="ornek@eposta.com" data-i18n-ph="apply.email.ph">
+    <div class="err-msg" id="scEmailErr" data-i18n="apply.email.err">Geçerli bir e-posta adresi gir.</div>
+    <label class="lbl"><span data-i18n="apply.phone.lbl">Telefon</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label>
+    <input type="tel" class="fld" id="scPhone" placeholder="+90 …" data-i18n-ph="apply.phone.ph">
 
     <!-- Academic profile — all optional -->
-    <div class="sec-div"><span>Akademik Profil — tümü isteğe bağlı</span></div>
+    <div class="sec-div"><span data-i18n="apply.academic">Akademik Profil — tümü isteğe bağlı</span></div>
 
     <!-- Education status -->
-    <label class="lbl">Eğitim durumu</label>
+    <label class="lbl" data-i18n="apply.edu.lbl">Eğitim durumu</label>
     <div class="card-chips">
       <div class="card-chip" data-val="highschool" onclick="scCard('eduStatus',this)">
         <div class="cc-icon"><i class="bi bi-mortarboard"></i></div>
-        <div class="cc-lbl">Lise Öğrencisi</div>
-        <div class="cc-sub">Henüz mezun olmadım</div>
+        <div class="cc-lbl" data-i18n="apply.hs.lbl">Lise Öğrencisi</div>
+        <div class="cc-sub" data-i18n="apply.hs.sub">Henüz mezun olmadım</div>
       </div>
       <div class="card-chip" data-val="graduated" onclick="scCard('eduStatus',this)">
         <div class="cc-icon"><i class="bi bi-award"></i></div>
-        <div class="cc-lbl">Mezun</div>
-        <div class="cc-sub">Lise / üniversite mezunu</div>
+        <div class="cc-lbl" data-i18n="apply.grad.lbl">Mezun</div>
+        <div class="cc-sub" data-i18n="apply.grad.sub">Lise / üniversite mezunu</div>
       </div>
     </div>
 
     <!-- GPA -->
-    <label class="lbl">GPA (100 üzerinden)</label>
+    <label class="lbl" data-i18n="apply.gpa.lbl">GPA (100 üzerinden)</label>
     <div class="chip-grid">
       <div class="chip" data-f="gpa" data-v="96-100" onclick="scChip('gpa',this)">96–100</div>
       <div class="chip" data-f="gpa" data-v="81-95"  onclick="scChip('gpa',this)">81–95</div>
@@ -196,22 +197,22 @@
     </div>
 
     <!-- English level -->
-    <label class="lbl">İngilizce seviyesi</label>
+    <label class="lbl" data-i18n="apply.eng.lbl">İngilizce seviyesi</label>
     <div class="chip-grid">
-      <div class="chip" data-f="engLevel" data-v="Beginner"     onclick="scChip('engLevel',this)">Başlangıç <span style="opacity:.6;font-weight:400">(A1-A2)</span></div>
-      <div class="chip" data-f="engLevel" data-v="Intermediate" onclick="scChip('engLevel',this)">Orta <span style="opacity:.6;font-weight:400">(B1-B2)</span></div>
-      <div class="chip" data-f="engLevel" data-v="Advanced"     onclick="scChip('engLevel',this)">İleri <span style="opacity:.6;font-weight:400">(C1-C2)</span></div>
+      <div class="chip" data-f="engLevel" data-v="Beginner"     onclick="scChip('engLevel',this)"><span data-i18n="apply.begin">Başlangıç</span> <span style="opacity:.6;font-weight:400">(A1-A2)</span></div>
+      <div class="chip" data-f="engLevel" data-v="Intermediate" onclick="scChip('engLevel',this)"><span data-i18n="apply.inter">Orta</span> <span style="opacity:.6;font-weight:400">(B1-B2)</span></div>
+      <div class="chip" data-f="engLevel" data-v="Advanced"     onclick="scChip('engLevel',this)"><span data-i18n="apply.adv">İleri</span> <span style="opacity:.6;font-weight:400">(C1-C2)</span></div>
     </div>
 
     <!-- English test -->
-    <label class="lbl">İngilizce sınav sonucu var mı?</label>
+    <label class="lbl" data-i18n="apply.eng.q">İngilizce sınav sonucu var mı?</label>
     <div class="yn-row">
-      <div class="yn-btn" data-v="yes" onclick="scYN('engTest',this);scToggle('engTestBox')">Var</div>
-      <div class="yn-btn" data-v="no"  onclick="scYN('engTest',this);scHide('engTestBox')">Yok / Planlamıyorum</div>
+      <div class="yn-btn" data-v="yes" onclick="scYN('engTest',this);scToggle('engTestBox')" data-i18n="apply.yn.yes">Var</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('engTest',this);scHide('engTestBox')" data-i18n="apply.yn.no.plan">Yok / Planlamıyorum</div>
     </div>
     <div id="engTestBox" style="display:none">
       <div class="sub-box">
-        <label class="lbl">Sınav türü</label>
+        <label class="lbl" data-i18n="apply.test.type">Sınav türü</label>
         <div class="chip-grid">
           <div class="chip" data-f="engTestType" data-v="IELTS"   onclick="scChip('engTestType',this);buildEngScoreChips()">IELTS</div>
           <div class="chip" data-f="engTestType" data-v="TOEFL"   onclick="scChip('engTestType',this);buildEngScoreChips()">TOEFL</div>
@@ -219,7 +220,7 @@
           <div class="chip" data-f="engTestType" data-v="Pearson"  onclick="scChip('engTestType',this);buildEngScoreChips()">Pearson (PTE)</div>
         </div>
         <div id="engScoreBox" style="display:none">
-          <label class="lbl" id="engScoreLbl">Puan aralığı</label>
+          <label class="lbl" id="engScoreLbl" data-i18n="apply.score.rng">Puan aralığı</label>
           <div class="chip-grid" id="engScoreChips"></div>
         </div>
       </div>
@@ -228,11 +229,11 @@
     <!-- SAT -->
     <label class="lbl">SAT</label>
     <div class="yn-row">
-      <div class="yn-btn" data-v="yes" onclick="scYN('satHas',this);scToggle('satBox')">Var</div>
-      <div class="yn-btn" data-v="no"  onclick="scYN('satHas',this);scHide('satBox')">Yok</div>
+      <div class="yn-btn" data-v="yes" onclick="scYN('satHas',this);scToggle('satBox')" data-i18n="apply.yn.yes">Var</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('satHas',this);scHide('satBox')" data-i18n="apply.yn.no">Yok</div>
     </div>
     <div id="satBox" style="display:none" class="sub-box">
-      <label class="lbl">Puan aralığı</label>
+      <label class="lbl" data-i18n="apply.score.rng">Puan aralığı</label>
       <div class="chip-grid">
         <div class="chip" data-f="satScore" data-v="900-1000"  onclick="scChip('satScore',this)">900–1000</div>
         <div class="chip" data-f="satScore" data-v="1000-1100" onclick="scChip('satScore',this)">1000–1100</div>
@@ -246,11 +247,11 @@
     <!-- GRE -->
     <label class="lbl">GRE</label>
     <div class="yn-row">
-      <div class="yn-btn" data-v="yes" onclick="scYN('greHas',this);scToggle('greBox')">Var</div>
-      <div class="yn-btn" data-v="no"  onclick="scYN('greHas',this);scHide('greBox')">Yok</div>
+      <div class="yn-btn" data-v="yes" onclick="scYN('greHas',this);scToggle('greBox')" data-i18n="apply.yn.yes">Var</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('greHas',this);scHide('greBox')" data-i18n="apply.yn.no">Yok</div>
     </div>
     <div id="greBox" style="display:none" class="sub-box">
-      <label class="lbl">Puan aralığı</label>
+      <label class="lbl" data-i18n="apply.score.rng">Puan aralığı</label>
       <div class="chip-grid">
         <div class="chip" data-f="greScore" data-v="290-300" onclick="scChip('greScore',this)">290–300</div>
         <div class="chip" data-f="greScore" data-v="300-310" onclick="scChip('greScore',this)">300–310</div>
@@ -263,11 +264,11 @@
     <!-- GMAT -->
     <label class="lbl">GMAT</label>
     <div class="yn-row">
-      <div class="yn-btn" data-v="yes" onclick="scYN('gmatHas',this);scToggle('gmatBox')">Var</div>
-      <div class="yn-btn" data-v="no"  onclick="scYN('gmatHas',this);scHide('gmatBox')">Yok</div>
+      <div class="yn-btn" data-v="yes" onclick="scYN('gmatHas',this);scToggle('gmatBox')" data-i18n="apply.yn.yes">Var</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('gmatHas',this);scHide('gmatBox')" data-i18n="apply.yn.no">Yok</div>
     </div>
     <div id="gmatBox" style="display:none" class="sub-box">
-      <label class="lbl">Puan aralığı</label>
+      <label class="lbl" data-i18n="apply.score.rng">Puan aralığı</label>
       <div class="chip-grid">
         <div class="chip" data-f="gmatScore" data-v="500-549" onclick="scChip('gmatScore',this)">500–549</div>
         <div class="chip" data-f="gmatScore" data-v="550-599" onclick="scChip('gmatScore',this)">550–599</div>
@@ -278,34 +279,34 @@
     </div>
 
     <!-- AP -->
-    <label class="lbl">AP (Advanced Placement) dersleri</label>
+    <label class="lbl" data-i18n="apply.ap.lbl">AP (Advanced Placement) dersleri</label>
     <div class="yn-row">
-      <div class="yn-btn" data-v="yes" onclick="scYN('apHas',this);scToggle('apBox')">Aldım</div>
-      <div class="yn-btn" data-v="no"  onclick="scYN('apHas',this);scHide('apBox')">Almadım</div>
+      <div class="yn-btn" data-v="yes" onclick="scYN('apHas',this);scToggle('apBox')" data-i18n="apply.took">Aldım</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('apHas',this);scHide('apBox')" data-i18n="apply.not.took">Almadım</div>
     </div>
     <div id="apBox" style="display:none" class="sub-box">
-      <label class="lbl">AP dersleri <span class="opt">(yaz + Enter)</span></label>
-      <div class="tag-wrap" id="apTagWrap"><input type="text" id="apInput" placeholder="Örn. Calculus BC…" autocomplete="off" oninput="showSug('ap')" onkeydown="tagKey(event,'ap')"></div>
+      <label class="lbl"><span data-i18n="apply.ap.tags">AP dersleri</span> <span class="opt">(<span data-i18n="apply.ap.hint">yaz + Enter</span>)</span></label>
+      <div class="tag-wrap" id="apTagWrap"><input type="text" id="apInput" placeholder="Örn. Calculus BC…" data-i18n-ph="apply.ap.ph" autocomplete="off" oninput="showSug('ap')" onkeydown="tagKey(event,'ap')"></div>
       <div class="tag-sug" id="apSug"></div>
     </div>
 
     <!-- IB -->
-    <label class="lbl">IB (International Baccalaureate) dersleri</label>
+    <label class="lbl" data-i18n="apply.ib.lbl">IB (International Baccalaureate) dersleri</label>
     <div class="yn-row">
-      <div class="yn-btn" data-v="yes" onclick="scYN('ibHas',this);scToggle('ibBox')">Aldım</div>
-      <div class="yn-btn" data-v="no"  onclick="scYN('ibHas',this);scHide('ibBox')">Almadım</div>
+      <div class="yn-btn" data-v="yes" onclick="scYN('ibHas',this);scToggle('ibBox')" data-i18n="apply.took">Aldım</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('ibHas',this);scHide('ibBox')" data-i18n="apply.not.took">Almadım</div>
     </div>
     <div id="ibBox" style="display:none" class="sub-box">
       <label class="lbl">Higher Level (HL)</label>
-      <div class="tag-wrap" id="ibHlTagWrap"><input type="text" id="ibHlInput" placeholder="Örn. Mathematics HL…" autocomplete="off" oninput="showSug('ibHl')" onkeydown="tagKey(event,'ibHl')"></div>
+      <div class="tag-wrap" id="ibHlTagWrap"><input type="text" id="ibHlInput" placeholder="Örn. Mathematics HL…" data-i18n-ph="apply.ib.hl.ph" autocomplete="off" oninput="showSug('ibHl')" onkeydown="tagKey(event,'ibHl')"></div>
       <div class="tag-sug" id="ibHlSug"></div>
       <label class="lbl" style="margin-top:10px">Standard Level (SL)</label>
-      <div class="tag-wrap" id="ibSlTagWrap"><input type="text" id="ibSlInput" placeholder="Örn. Physics SL…" autocomplete="off" oninput="showSug('ibSl')" onkeydown="tagKey(event,'ibSl')"></div>
+      <div class="tag-wrap" id="ibSlTagWrap"><input type="text" id="ibSlInput" placeholder="Örn. Physics SL…" data-i18n-ph="apply.ib.sl.ph" autocomplete="off" oninput="showSug('ibSl')" onkeydown="tagKey(event,'ibSl')"></div>
       <div class="tag-sug" id="ibSlSug"></div>
     </div>
 
     <button class="btn-submit" id="scSubmitBtn" onclick="scSubmit()">
-      <i class="bi bi-send-fill"></i> Başvuruyu Gönder
+      <i class="bi bi-send-fill"></i> <span data-i18n="apply.submit">Başvuruyu Gönder</span>
     </button>
   </div><!-- /shortcutMode -->
 
@@ -317,62 +318,62 @@
     <div class="prog-label" id="progLabel"></div>
 
     <div class="wiz-step" data-step="1">
-      <div class="step-h">Hangi kıtada okumak istiyorsun?</div>
-      <div class="step-sub">Birini seç — ülke ve okul listesi buna göre filtrelenecek.</div>
+      <div class="step-h" data-i18n="apply.step1.h">Hangi kıtada okumak istiyorsun?</div>
+      <div class="step-sub" data-i18n="apply.step1.s">Birini seç — ülke ve okul listesi buna göre filtrelenecek.</div>
       <div class="chip-grid" id="continentChips"></div>
     </div>
     <div class="wiz-step" data-step="2" style="display:none">
-      <div class="step-h">Hangi ülke?</div>
+      <div class="step-h" data-i18n="apply.step2.h">Hangi ülke?</div>
       <div class="step-sub" id="countryStepSub">Seçtiğin kıtadaki ülkeler listeleniyor.</div>
       <label class="lbl">Ülke seç</label>
-      <select class="fld" id="countrySelect" onchange="onCountryChange()"><option value="">Ülke seçin…</option></select>
+      <select class="fld" id="countrySelect" onchange="onCountryChange()"><option value="" data-i18n="apply.ctry.sel">Ülke seçin…</option></select>
     </div>
     <div class="wiz-step" data-step="3" style="display:none">
-      <div class="step-h">Hangi üniversite?</div>
+      <div class="step-h" data-i18n="apply.step3.h">Hangi üniversite?</div>
       <div class="step-sub" id="schoolStepSub">Ülkedeki üniversiteler listeleniyor.</div>
       <label class="lbl">Üniversite seç</label>
-      <select class="fld" id="schoolSelect" onchange="onSchoolChange()"><option value="">Üniversite seçin…</option></select>
+      <select class="fld" id="schoolSelect" onchange="onSchoolChange()"><option value="" data-i18n="apply.sch.sel">Üniversite seçin…</option></select>
     </div>
     <div class="wiz-step" data-step="4" style="display:none">
-      <div class="step-h">Hangi program?</div>
-      <div class="step-sub">Başvurmak istediğin programı ve başlangıç dönemini seç.</div>
-      <label class="lbl">Program</label>
-      <select class="fld" id="programSelect" onchange="onProgramChange()"><option value="">Program seçin…</option></select>
-      <div id="programLoading" style="display:none;font-size:.82rem;color:var(--muted);margin:-8px 0 16px">Programlar yükleniyor…</div>
-      <label class="lbl">Intake</label>
-      <select class="fld" id="intakeSelect"><option value="">Seçin…</option></select>
+      <div class="step-h" data-i18n="apply.step4.h">Hangi program?</div>
+      <div class="step-sub" data-i18n="apply.step4.s">Başvurmak istediğin programı ve başlangıç dönemini seç.</div>
+      <label class="lbl" data-i18n="apply.prog.lbl">Program</label>
+      <select class="fld" id="programSelect" onchange="onProgramChange()"><option value="" data-i18n="apply.prog.sel">Program seçin…</option></select>
+      <div id="programLoading" style="display:none;font-size:.82rem;color:var(--muted);margin:-8px 0 16px" data-i18n="apply.prog.load">Programlar yükleniyor…</div>
+      <label class="lbl" data-i18n="apply.intake.lbl">Intake</label>
+      <select class="fld" id="intakeSelect"><option value="" data-i18n="apply.intake.sel">Seçin…</option></select>
     </div>
     <div class="wiz-step" data-step="5" style="display:none">
-      <div class="step-h">İletişim &amp; Profil</div>
-      <div class="step-sub">Sadece e-posta yeterli. Diğer alanlar isteğe bağlı.</div>
+      <div class="step-h" data-i18n="apply.step5.h">İletişim &amp; Profil</div>
+      <div class="step-sub" data-i18n="apply.step5.s">Sadece e-posta yeterli. Diğer alanlar isteğe bağlı.</div>
       <div class="grid2">
-        <div><label class="lbl">Ad <span class="opt">(isteğe bağlı)</span></label><input type="text" class="fld" id="f_first_name" placeholder="Adın"></div>
-        <div><label class="lbl">Soyad <span class="opt">(isteğe bağlı)</span></label><input type="text" class="fld" id="f_last_name" placeholder="Soyadın"></div>
+        <div><label class="lbl"><span data-i18n="apply.firstname">Ad</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label><input type="text" class="fld" id="f_first_name" placeholder="Adın" data-i18n-ph="apply.fn.ph"></div>
+        <div><label class="lbl"><span data-i18n="apply.lastname">Soyad</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label><input type="text" class="fld" id="f_last_name" placeholder="Soyadın" data-i18n-ph="apply.ln.ph"></div>
       </div>
-      <label class="lbl">E-posta <span class="req">*</span></label>
-      <input type="email" class="fld" id="f_email" placeholder="ornek@eposta.com">
-      <div class="err-msg" id="err_email">Geçerli bir e-posta adresi gir.</div>
-      <label class="lbl">Telefon <span class="opt">(isteğe bağlı)</span></label>
-      <input type="tel" class="fld" id="f_phone" placeholder="+90 …">
-      <div class="sec-div"><span>Öğrenci Profili (isteğe bağlı)</span></div>
-      <label class="lbl">Eğitim durumu</label>
+      <label class="lbl"><span data-i18n="apply.email.lbl">E-posta</span> <span class="req">*</span></label>
+      <input type="email" class="fld" id="f_email" placeholder="ornek@eposta.com" data-i18n-ph="apply.email.ph">
+      <div class="err-msg" id="err_email" data-i18n="apply.email.err">Geçerli bir e-posta adresi gir.</div>
+      <label class="lbl"><span data-i18n="apply.phone.lbl">Telefon</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label>
+      <input type="tel" class="fld" id="f_phone" placeholder="+90 …" data-i18n-ph="apply.phone.ph">
+      <div class="sec-div"><span data-i18n="apply.profile">Öğrenci Profili (isteğe bağlı)</span></div>
+      <label class="lbl" data-i18n="apply.edu.lbl">Eğitim durumu</label>
       <div class="card-chips">
         <div class="card-chip" data-val="highschool" onclick="fCard('eduStatus',this)">
           <div class="cc-icon"><i class="bi bi-mortarboard"></i></div>
-          <div class="cc-lbl">Lise Öğrencisi</div>
-          <div class="cc-sub">Henüz mezun olmadım</div>
+          <div class="cc-lbl" data-i18n="apply.hs.lbl">Lise Öğrencisi</div>
+          <div class="cc-sub" data-i18n="apply.hs.sub">Henüz mezun olmadım</div>
         </div>
         <div class="card-chip" data-val="graduated" onclick="fCard('eduStatus',this)">
           <div class="cc-icon"><i class="bi bi-award"></i></div>
-          <div class="cc-lbl">Mezun</div>
-          <div class="cc-sub">Lise / üniversite mezunu</div>
+          <div class="cc-lbl" data-i18n="apply.grad.lbl">Mezun</div>
+          <div class="cc-sub" data-i18n="apply.grad.sub">Lise / üniversite mezunu</div>
         </div>
       </div>
-      <label class="lbl">İngilizce seviyesi</label>
+      <label class="lbl" data-i18n="apply.eng.lbl">İngilizce seviyesi</label>
       <div class="chip-grid">
-        <div class="chip" data-f="fEngLevel" data-v="Beginner"     onclick="fChip('fEngLevel',this)">Başlangıç <span style="opacity:.6;font-weight:400">(A1-A2)</span></div>
-        <div class="chip" data-f="fEngLevel" data-v="Intermediate" onclick="fChip('fEngLevel',this)">Orta <span style="opacity:.6;font-weight:400">(B1-B2)</span></div>
-        <div class="chip" data-f="fEngLevel" data-v="Advanced"     onclick="fChip('fEngLevel',this)">İleri <span style="opacity:.6;font-weight:400">(C1-C2)</span></div>
+        <div class="chip" data-f="fEngLevel" data-v="Beginner"     onclick="fChip('fEngLevel',this)"><span data-i18n="apply.begin">Başlangıç</span> <span style="opacity:.6;font-weight:400">(A1-A2)</span></div>
+        <div class="chip" data-f="fEngLevel" data-v="Intermediate" onclick="fChip('fEngLevel',this)"><span data-i18n="apply.inter">Orta</span> <span style="opacity:.6;font-weight:400">(B1-B2)</span></div>
+        <div class="chip" data-f="fEngLevel" data-v="Advanced"     onclick="fChip('fEngLevel',this)"><span data-i18n="apply.adv">İleri</span> <span style="opacity:.6;font-weight:400">(C1-C2)</span></div>
       </div>
     </div>
   </div>
@@ -380,24 +381,24 @@
   <!-- Loading -->
   <div id="loadingState" style="display:none;text-align:center;padding:60px 0">
     <div class="spinner-ring"></div>
-    <p style="color:var(--muted);font-size:.9rem">Yükleniyor…</p>
+    <p style="color:var(--muted);font-size:.9rem" data-i18n="apply.loading">Yükleniyor…</p>
   </div>
   <!-- Submitting -->
   <div id="submitState" style="display:none;text-align:center;padding:60px 0">
     <div class="spinner-ring"></div>
-    <p style="color:var(--muted);font-size:.9rem">Başvurun gönderiliyor…</p>
+    <p style="color:var(--muted);font-size:.9rem" data-i18n="apply.submitting">Başvurun gönderiliyor…</p>
   </div>
   <!-- Success -->
   <div id="successState" style="display:none">
     <div class="success-wrap">
       <div class="ic"><i class="bi bi-check-lg"></i></div>
-      <h4 style="font-weight:900;color:var(--text)">Başvurun Alındı!</h4>
-      <p style="color:var(--muted);font-size:.9rem;max-width:440px;margin:10px auto 0;line-height:1.6">
+      <h4 style="font-weight:900;color:var(--text)" data-i18n="apply.ok.h">Başvurun Alındı!</h4>
+      <p style="color:var(--muted);font-size:.9rem;max-width:440px;margin:10px auto 0;line-height:1.6" data-i18n="apply.ok.p">
         Teşekkürler! Ekibimiz başvurunu inceleyip en kısa sürede e-posta veya telefon ile seninle iletişime geçecek.
       </p>
       <div class="success-btns">
-        <a href="/" class="btn-home"><i class="bi bi-house-fill"></i> Ana Sayfa</a>
-        <a href="/match" class="btn-ghost-sm"><i class="bi bi-magic"></i> Profil Sihirbazı</a>
+        <a href="/" class="btn-home"><i class="bi bi-house-fill"></i> <span data-i18n="apply.home">Ana Sayfa</span></a>
+        <a href="/match" class="btn-ghost-sm"><i class="bi bi-magic"></i> <span data-i18n="apply.wizard">Profil Sihirbazı</span></a>
       </div>
     </div>
   </div>
@@ -543,7 +544,7 @@ function buildEngScoreChips() {
   scSel.engTestScore = null;
   const chips = ENG_SCORES[type].map(v =>
     `<div class="chip" data-f="engTestScore" data-v="${v}" onclick="scChip('engTestScore',this)">${v}</div>`).join('');
-  document.getElementById('engScoreLbl').textContent = type + ' — Puan aralığı';
+  document.getElementById('engScoreLbl').textContent = type + ' — ' + (window.t ? window.t('apply.score.rng') : 'Puan aralığı');
   document.getElementById('engScoreChips').innerHTML = chips;
   document.getElementById('engScoreBox').style.display = 'block';
 }
@@ -618,7 +619,7 @@ async function initShortcut() {
     }
     if (!URL_PROG && scPrograms.length) {
       const sel = document.getElementById('scProgramSelect');
-      sel.innerHTML = '<option value="">Program seçin…</option>' +
+      sel.innerHTML = '<option value="">' + (window.t ? window.t('apply.prog.sel') : 'Program seçin…') + '</option>' +
         scPrograms.map(p => `<option value="${p.id}">${esc(p.name)}${p.type_name?' ('+esc(p.type_name)+')':''}${p.duration?' · '+esc(p.duration):''}</option>`).join('');
       document.getElementById('scProgramWrap').style.display = 'block';
     }
@@ -638,7 +639,7 @@ async function initShortcut() {
       bl.href = '/orbit?' + op.toString();
     } else { bl.href = '/'; }
   } catch(_) {
-    document.getElementById('scBanner').innerHTML = '<div class="u-name" style="color:var(--muted)">Üniversite yüklenemedi</div>';
+    document.getElementById('scBanner').innerHTML = '<div class="u-name" style="color:var(--muted)">' + (window.t ? window.t('apply.uni.err') : 'Üniversite yüklenemedi') + '</div>';
   }
   document.getElementById('loadingState').style.display = 'none';
   document.getElementById('shortcutMode').style.display = 'block';
@@ -700,7 +701,7 @@ async function scSubmit() {
   } catch(e) {
     document.getElementById('submitState').style.display = 'none';
     document.getElementById('shortcutMode').style.display = 'block';
-    alert(e.message || 'Bir hata oluştu, lütfen tekrar dene.');
+    alert(e.message || (window.t ? window.t('apply.err.gen') : 'Bir hata oluştu, lütfen tekrar dene.'));
   }
 }
 
@@ -736,13 +737,15 @@ function pickContinent(el) {
   fSel.continent = el.dataset.v;
   const unis = allUnis.filter(u => u.continent === fSel.continent);
   const countries = [...new Set(unis.map(u => u.country).filter(Boolean))].sort();
-  document.getElementById('countrySelect').innerHTML = '<option value="">Ülke seçin…</option>' + countries.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('');
+  const ctrySel = window.t ? window.t('apply.ctry.sel') : 'Ülke seçin…';
+  document.getElementById('countrySelect').innerHTML = '<option value="">' + ctrySel + '</option>' + countries.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('');
   document.getElementById('countryStepSub').textContent = fSel.continent + ' kıtasındaki ülkeler listeleniyor.';
 }
 function onCountryChange() {
   fSel.country = document.getElementById('countrySelect').value || null;
   const unis = allUnis.filter(u => !fSel.country || u.country === fSel.country);
-  document.getElementById('schoolSelect').innerHTML = '<option value="">Üniversite seçin…</option>' + unis.map(u => `<option value="${u.id}">${esc(u.name)}</option>`).join('');
+  const schSel = window.t ? window.t('apply.sch.sel') : 'Üniversite seçin…';
+  document.getElementById('schoolSelect').innerHTML = '<option value="">' + schSel + '</option>' + unis.map(u => `<option value="${u.id}">${esc(u.name)}</option>`).join('');
   document.getElementById('schoolStepSub').textContent = (fSel.country || '') + ' üniversiteleri listeleniyor.';
 }
 async function onSchoolChange() {
@@ -751,11 +754,12 @@ async function onSchoolChange() {
   fSel.schoolName = (allUnis.find(u => u.id == id) || {}).name || '';
   fPrograms = [];
   const ps = document.getElementById('programSelect');
-  ps.innerHTML = '<option value="">Yükleniyor…</option>';
+  ps.innerHTML = '<option value="">' + (window.t ? window.t('apply.loading') : 'Yükleniyor…') + '</option>';
   document.getElementById('programLoading').style.display = 'block';
   try { fPrograms = ((await (await fetch('/api/public/programs?entity_id=' + fSel.schoolId + '&limit=500')).json()).data || []); } catch(_) {}
   document.getElementById('programLoading').style.display = 'none';
-  ps.innerHTML = '<option value="">Program seçin…</option>' + fPrograms.map(p =>
+  const progSel = window.t ? window.t('apply.prog.sel') : 'Program seçin…';
+  ps.innerHTML = '<option value="">' + progSel + '</option>' + fPrograms.map(p =>
     `<option value="${p.id}">${esc(p.name)}${p.type_name?' ('+esc(p.type_name)+')':''}${p.duration?' · '+esc(p.duration):''}</option>`).join('');
 }
 function onProgramChange() {
@@ -774,21 +778,25 @@ function fCard(field, el) { el.closest('.card-chips').querySelectorAll('.card-ch
 
 function renderProgress() {
   document.getElementById('progBar').innerHTML = Array.from({length:TOTAL_STEPS}, (_,i) => `<div class="seg${i<curStep?' on':''}"></div>`).join('');
-  const labels = ['Kıta','Ülke','Okul','Program','İletişim & Profil'];
-  document.getElementById('progLabel').textContent = 'Adım ' + curStep + ' / ' + TOTAL_STEPS + ' — ' + labels[curStep-1];
+  const stepsStr = window.t ? window.t('apply.steps') : 'Kıta,Ülke,Okul,Program,İletişim & Profil';
+  const labels = stepsStr.split(',');
+  const stepOf = window.t ? window.t('apply.step.of') : 'Adım';
+  document.getElementById('progLabel').textContent = stepOf + ' ' + curStep + ' / ' + TOTAL_STEPS + ' — ' + labels[curStep-1];
 }
 function showStep(n) {
   curStep = n;
   document.querySelectorAll('.wiz-step').forEach(el => el.style.display = parseInt(el.dataset.step) === n ? 'block' : 'none');
   document.getElementById('backBtn').style.display = n > 1 ? 'block' : 'none';
-  document.getElementById('nextBtn').innerHTML = n === TOTAL_STEPS ? '<i class="bi bi-send" style="margin-right:6px"></i>Başvuruyu Gönder' : 'Devam <i class="bi bi-arrow-right" style="margin-left:6px"></i>';
+  const submitLbl = window.t ? window.t('apply.submit') : 'Başvuruyu Gönder';
+  const contLbl = window.t ? window.t('apply.continue') : 'Devam';
+  document.getElementById('nextBtn').innerHTML = n === TOTAL_STEPS ? '<i class="bi bi-send" style="margin-right:6px"></i>' + submitLbl : contLbl + ' <i class="bi bi-arrow-right" style="margin-left:6px"></i>';
   renderProgress();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function validateStep(n) {
-  if (n === 1 && !fSel.continent) { alert('Lütfen bir kıta seç.'); return false; }
-  if (n === 2 && !document.getElementById('countrySelect').value) { alert('Lütfen bir ülke seç.'); return false; }
-  if (n === 3 && !document.getElementById('schoolSelect').value) { alert('Lütfen bir üniversite seç.'); return false; }
+  if (n === 1 && !fSel.continent) { alert(window.t ? window.t('apply.err.cont') : 'Lütfen bir kıta seç.'); return false; }
+  if (n === 2 && !document.getElementById('countrySelect').value) { alert(window.t ? window.t('apply.err.ctry') : 'Lütfen bir ülke seç.'); return false; }
+  if (n === 3 && !document.getElementById('schoolSelect').value) { alert(window.t ? window.t('apply.err.sch') : 'Lütfen bir üniversite seç.'); return false; }
   return true;
 }
 function nextStep() { if (!validateStep(curStep)) return; if (curStep === TOTAL_STEPS) { funnelSubmit(); return; } showStep(curStep + 1); }
@@ -827,7 +835,7 @@ async function funnelSubmit() {
     document.getElementById('funnelMode').style.display = 'block';
     document.getElementById('ctaBar').style.display = 'block';
     showStep(TOTAL_STEPS);
-    alert(e.message || 'Bir hata oluştu, lütfen tekrar dene.');
+    alert(e.message || (window.t ? window.t('apply.err.gen') : 'Bir hata oluştu, lütfen tekrar dene.'));
   }
 }
 

@@ -6,6 +6,7 @@
   <title>Sayfa Bulunamadı — PANELEDU</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="/css/site.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
   <style>
     .wrap { min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; }
     .box { max-width: 440px; }
@@ -19,12 +20,12 @@
   <div class="wrap">
     <div class="box">
       <div class="code pe-grad-text">404</div>
-      <h1>Sayfa Bulunamadı</h1>
-      <p>Aradığınız sayfa taşınmış, silinmiş ya da hiç var olmamış olabilir.</p>
+      <h1 data-i18n="err404.h">Sayfa Bulunamadı</h1>
+      <p data-i18n="err404.p">Aradığınız sayfa taşınmış, silinmiş ya da hiç var olmamış olabilir.</p>
       <div class="links">
-        <a href="/" class="btn-grad"><i class="bi bi-house-fill"></i>Ana Sayfa</a>
-        <a href="/match" class="btn-ghost"><i class="bi bi-magic"></i>Okul Bul</a>
-        <a href="/test" class="btn-ghost"><i class="bi bi-journal-check"></i>İngilizce Testi</a>
+        <a href="/" class="btn-grad"><i class="bi bi-house-fill"></i><span data-i18n="err404.home">Ana Sayfa</span></a>
+        <a href="/match" class="btn-ghost"><i class="bi bi-magic"></i><span data-i18n="err404.match">Okul Bul</span></a>
+        <a href="/test" class="btn-ghost"><i class="bi bi-journal-check"></i><span data-i18n="err404.test">İngilizce Testi</span></a>
       </div>
     </div>
   </div>

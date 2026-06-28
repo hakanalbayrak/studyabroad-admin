@@ -44,4 +44,33 @@ router.get('/leads', userAuth, async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+router.get('/applications', userAuth, async (req, res) => {
+  try {
+    const [rows] = await db.query(
+      `SELECT id, university_name, program_name, country, status,
+              desired_intake, preaccept_ref, preaccept_issued_at,
+              (SELECT COUNT(*) FROM application_documents WHERE application_id = a.id) AS doc_count,
+              created_at
+       FROM applications a WHERE email = ? ORDER BY created_at DESC`,
+      [req.user.email]);
+    res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+router.get('/profile', userAuth, async (req, res) => {
+  try {
+    const [[u]] = await db.query('SELECT id, email, name, role FROM users WHERE id = ?', [req.user.id]);
+    res.json(u || {});
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+router.patch('/profile', userAuth, async (req, res) => {
+  const name = (req.body.name || '').trim();
+  if (!name) return res.status(400).json({ error: 'Name is required.' });
+  try {
+    await db.query('UPDATE users SET name = ? WHERE id = ?', [name, req.user.id]);
+    res.json({ ok: true });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 module.exports = router;
