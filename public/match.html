@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/site.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
   <style>
     * { -webkit-tap-highlight-color: transparent; }
     .wrap { max-width:680px; margin:0 auto; padding:18px 16px 90px; }
@@ -73,29 +74,29 @@
 
 <!-- ── Wizard ──────────────────────────────────────────────────────────── -->
 <div class="wrap" id="wizard">
-  <h4 class="fw-bold mb-1" style="color:var(--text)"><i class="bi bi-magic me-2" style="color:var(--accent)"></i>Sana uygun okulları bulalım</h4>
-  <p style="font-size:.85rem;color:var(--muted);margin-bottom:24px">Birkaç soruyu yanıtla — sana en uygun, kabul şansı yüksek okulları sıralayalım. Kayıt veya e-posta gerekmez.</p>
+  <h4 class="fw-bold mb-1" style="color:var(--text)"><i class="bi bi-magic me-2" style="color:var(--accent)"></i><span data-i18n="m.title">Sana uygun okulları bulalım</span></h4>
+  <p style="font-size:.85rem;color:var(--muted);margin-bottom:24px" data-i18n="m.sub">Birkaç soruyu yanıtla — sana en uygun, kabul şansı yüksek okulları sıralayalım. Kayıt veya e-posta gerekmez.</p>
 
   <div class="step">
-    <div class="step-label">1. Eğitim durumun</div>
+    <div class="step-label" data-i18n="m.s1">1. Eğitim durumun</div>
     <div class="chips" data-group="edu" data-multi="0">
-      <button class="chip" data-val="highschool"><i class="bi bi-mortarboard"></i>Lise / 12. sınıf</button>
-      <button class="chip" data-val="bachelor"><i class="bi bi-award"></i>Lisans mezunu</button>
+      <button class="chip" data-val="highschool"><i class="bi bi-mortarboard"></i><span data-i18n="m.s1.high">Lise / 12. sınıf</span></button>
+      <button class="chip" data-val="bachelor"><i class="bi bi-award"></i><span data-i18n="m.s1.bach">Lisans mezunu</span></button>
     </div>
   </div>
 
   <div class="step">
-    <div class="step-label">2. Hangi dereceyi okumak istiyorsun?</div>
-    <div class="step-hint">Eğitim durumuna göre öneriyoruz — istersen değiştir (ör. ikinci lisans)</div>
+    <div class="step-label" data-i18n="m.s2">2. Hangi dereceyi okumak istiyorsun?</div>
+    <div class="step-hint" data-i18n="m.s2.hint">Eğitim durumuna göre öneriyoruz — istersen değiştir (ör. ikinci lisans)</div>
     <div class="chips" data-group="degree" data-multi="0">
-      <button class="chip" data-val="bachelor"><i class="bi bi-1-circle"></i>Lisans<span class="sub">Bachelor</span></button>
-      <button class="chip" data-val="master"><i class="bi bi-2-circle"></i>Yüksek Lisans<span class="sub">Master</span></button>
+      <button class="chip" data-val="bachelor"><i class="bi bi-1-circle"></i><span data-i18n="m.s2.bach">Lisans</span><span class="sub">Bachelor</span></button>
+      <button class="chip" data-val="master"><i class="bi bi-2-circle"></i><span data-i18n="m.s2.master">Yüksek Lisans</span><span class="sub">Master</span></button>
     </div>
   </div>
 
   <div class="step">
-    <div class="step-label">3. İlgilendiğin alanlar</div>
-    <div class="step-hint">Birden fazla seçebilirsin</div>
+    <div class="step-label" data-i18n="m.s3">3. İlgilendiğin alanlar</div>
+    <div class="step-hint" data-i18n="m.s3.hint">Birden fazla seçebilirsin</div>
     <div class="chips cols3" data-group="fields" data-multi="1">
       <button class="chip" data-val="Business & Economics"><i class="bi bi-briefcase"></i>İşletme &amp; Ekonomi</button>
       <button class="chip" data-val="Engineering"><i class="bi bi-gear-wide-connected"></i>Mühendislik</button>
@@ -106,7 +107,7 @@
   </div>
 
   <div class="step">
-    <div class="step-label">4. İngilizce seviyen</div>
+    <div class="step-label" data-i18n="m.s4">4. İngilizce seviyen</div>
     <div class="chips cols3" data-group="english" data-multi="0">
       <button class="chip" data-val="A1-A2"><i class="bi bi-1-circle"></i>A1–A2<span class="sub">Başlangıç</span></button>
       <button class="chip" data-val="B1-B2"><i class="bi bi-2-circle"></i>B1–B2<span class="sub">Orta</span></button>
@@ -115,7 +116,7 @@
   </div>
 
   <div class="step">
-    <div class="step-label">5. Yıllık eğitim bütçen</div>
+    <div class="step-label" data-i18n="m.s5">5. Yıllık eğitim bütçen</div>
     <div class="chips" data-group="budget" data-multi="0">
       <button class="chip" data-val="0-5k"><i class="bi bi-cash-coin"></i>€0 – 5.000</button>
       <button class="chip" data-val="5-10k"><i class="bi bi-cash-coin"></i>€5.000 – 10.000</button>
@@ -125,7 +126,7 @@
   </div>
 
   <div class="step">
-    <div class="step-label">6. Hangi bölge?</div>
+    <div class="step-label" data-i18n="m.s6">6. Hangi bölge?</div>
     <div class="chips" data-group="region" data-multi="0">
       <button class="chip" data-val="Europe"><i class="bi bi-globe-europe-africa"></i>Avrupa</button>
       <button class="chip" data-val="USA/Canada"><i class="bi bi-globe-americas"></i>Amerika / Kanada</button>
@@ -135,28 +136,28 @@
   </div>
 
   <div class="step">
-    <div class="step-label">7. AP / IB diploman var mı?</div>
-    <div class="step-hint">Zorunlu değil — yoksa "Yok" seç</div>
+    <div class="step-label" data-i18n="m.s7">7. AP / IB diploman var mı?</div>
+    <div class="step-hint" data-i18n="m.s7.hint">Zorunlu değil — yoksa "Yok" seç</div>
     <div class="chips" data-group="apib" data-multi="0">
-      <button class="chip" data-val="yes"><i class="bi bi-patch-check"></i>Var</button>
-      <button class="chip" data-val="no"><i class="bi bi-dash-circle"></i>Yok</button>
+      <button class="chip" data-val="yes"><i class="bi bi-patch-check"></i><span data-i18n="m.s7.yes">Var</span></button>
+      <button class="chip" data-val="no"><i class="bi bi-dash-circle"></i><span data-i18n="m.s7.no">Yok</span></button>
     </div>
   </div>
 </div>
 
 <div class="cta-bar" id="ctaBar">
   <div class="inner">
-    <button class="btn-go" id="goBtn" onclick="runSearch()">Bana uygun okulları göster</button>
+    <button class="btn-go" id="goBtn" onclick="runSearch()" data-i18n="m.btn">Bana uygun okulları göster</button>
   </div>
 </div>
 
 <!-- ── Results ─────────────────────────────────────────────────────────── -->
 <div class="wrap" id="results" style="display:none">
   <div class="result-head">
-    <h5 class="fw-bold mb-0" style="color:var(--text)"><span id="resCount"></span> okul bulundu</h5>
-    <button class="btn-edit" onclick="backToWizard()"><i class="bi bi-sliders me-1"></i>Tercihleri düzenle</button>
+    <h5 class="fw-bold mb-0" style="color:var(--text)"><span id="resCount"></span> <span data-i18n="m.found">okul bulundu</span></h5>
+    <button class="btn-edit" onclick="backToWizard()"><i class="bi bi-sliders me-1"></i><span data-i18n="m.edit">Tercihleri düzenle</span></button>
   </div>
-  <p style="font-size:.78rem;color:var(--muted);margin-bottom:16px">Kabul şansın en yüksek okullardan başlanarak sıralandı.</p>
+  <p style="font-size:.78rem;color:var(--muted);margin-bottom:16px" data-i18n="m.sorted">Kabul şansın en yüksek okullardan başlanarak sıralandı.</p>
   <div id="schoolList"></div>
 </div>
 
@@ -207,7 +208,7 @@
   var allPrograms = null;
   async function runSearch() {
     var btn = document.getElementById('goBtn');
-    btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Aranıyor…';
+    btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>' + (window.t ? window.t('m.searching') : 'Aranıyor…');
     try {
       if (!allPrograms) {
         var r = await fetch('/api/public/programs?limit=10000');
@@ -229,31 +230,33 @@
       document.getElementById('results').style.display = 'block';
       window.scrollTo({ top: 0 });
     } catch (e) {
-      alert('Bir hata oluştu, lütfen tekrar dene.');
+      alert(window.t ? window.t('m.error') : 'Bir hata oluştu, lütfen tekrar dene.');
     } finally {
-      btn.disabled = false; btn.textContent = 'Bana uygun okulları göster';
+      btn.disabled = false; btn.textContent = window.t ? window.t('m.btn') : 'Bana uygun okulları göster';
     }
   }
 
   function accLabel(ease) {
-    if (ease >= 75) return '<span class="badge-soft acc-high"><i class="bi bi-check-circle-fill me-1"></i>Yüksek kabul şansı</span>';
-    if (ease >= 55) return '<span class="badge-soft acc-mid"><i class="bi bi-check-circle me-1"></i>İyi kabul şansı</span>';
-    return '<span class="badge-soft acc-low"><i class="bi bi-info-circle me-1"></i>Orta kabul şansı</span>';
+    var _t = k => window.t ? window.t(k) : k;
+    if (ease >= 75) return '<span class="badge-soft acc-high"><i class="bi bi-check-circle-fill me-1"></i>' + _t('m.highchance') + '</span>';
+    if (ease >= 55) return '<span class="badge-soft acc-mid"><i class="bi bi-check-circle me-1"></i>' + _t('m.goodchance') + '</span>';
+    return '<span class="badge-soft acc-low"><i class="bi bi-info-circle me-1"></i>' + _t('m.medchance') + '</span>';
   }
 
   function feeText(p) {
-    if (p.fee == null) return 'Talep üzerine';
-    return '€' + Math.round(p.fee).toLocaleString('tr-TR') + '/yıl';
+    if (p.fee == null) return window.t ? window.t('m.onreq') : 'Talep üzerine';
+    return '€' + Math.round(p.fee).toLocaleString('tr-TR') + (window.t ? window.t('p.per.yr') : '/yıl');
   }
 
   function renderSchools(schools) {
     document.getElementById('resCount').textContent = schools.length;
     var wrap = document.getElementById('schoolList');
     if (!schools.length) {
-      wrap.innerHTML = '<div class="empty"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i>Seçimlerine uygun okul bulunamadı.<br>Bütçeni veya bölgeyi genişletmeyi dene.</div>';
+      var noResMsg = (window.t ? window.t('m.no.res') : 'Seçimlerine uygun okul bulunamadı.\nBütçeni veya bölgeyi genişletmeyi dene.').replace('\n', '<br>');
+      wrap.innerHTML = '<div class="empty"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i>' + noResMsg + '</div>';
       return;
     }
-    var costText = function (s) { return s.avgFee != null ? '€' + s.avgFee.toLocaleString('tr-TR') + '/yıl' : 'Talep üzerine'; };
+    var costText = function (s) { return s.avgFee != null ? '€' + s.avgFee.toLocaleString('tr-TR') + (window.t ? window.t('p.per.yr') : '/yıl') : (window.t ? window.t('m.onreq') : 'Talep üzerine'); };
     wrap.innerHTML = '<div class="school-grid">' + schools.map(function (s) {
       var rank = parseInt(s.qs_rank) || null;
       var rankBadge = rank ? '<span class="badge-soft rank-badge">QS #' + rank + '</span>' : '';
@@ -268,13 +271,13 @@
           '<div class="school-loc"><i class="bi bi-geo-alt-fill me-1" style="color:var(--muted)"></i>' + esc([s.city, s.country].filter(Boolean).join(', ')) + '</div>' +
           '<div class="d-flex gap-2 flex-wrap mt-2">' + accLabel(s.ease) + rankBadge + '</div>' +
           '<div class="fact-row">' +
-            '<div class="fact"><span class="fact-label">Ort. yıllık ücret</span><span class="fact-val cost">' + costText(s) + '</span></div>' +
-            '<div class="fact"><span class="fact-label">Süre</span><span class="fact-val">' + esc(s.duration || '—') + '</span></div>' +
-            '<div class="fact"><span class="fact-label">Uygun bölüm</span><span class="fact-val">' + s.programs.length + '</span></div>' +
+            '<div class="fact"><span class="fact-label">' + (window.t ? window.t('m.fee') : 'Ort. yıllık ücret') + '</span><span class="fact-val cost">' + costText(s) + '</span></div>' +
+            '<div class="fact"><span class="fact-label">' + (window.t ? window.t('m.duration') : 'Süre') + '</span><span class="fact-val">' + esc(s.duration || '—') + '</span></div>' +
+            '<div class="fact"><span class="fact-label">' + (window.t ? window.t('m.depts') : 'Uygun bölüm') + '</span><span class="fact-val">' + s.programs.length + '</span></div>' +
           '</div>' +
-          '<details class="depts"><summary><span class="chev">▸</span> Bölümleri gör</summary>' + depts + '</details>' +
+          '<details class="depts"><summary><span class="chev">▸</span> ' + (window.t ? window.t('m.viewdepts') : 'Bölümleri gör') + '</summary>' + depts + '</details>' +
         '</div>' +
-        '<button class="btn-detail" onclick="location.href=\'' + uniUrl + '\'">Okulu incele (3D) <i class="bi bi-arrow-right ms-1"></i></button>' +
+        '<button class="btn-detail" onclick="location.href=\'' + uniUrl + '\'">' + (window.t ? window.t('m.explore') : 'Okulu incele (3D)') + ' <i class="bi bi-arrow-right ms-1"></i></button>' +
       '</div>';
     }).join('') + '</div>';
   }

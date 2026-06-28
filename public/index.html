@@ -13,6 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/site.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
   <style>
     /* Hero */
     .hero { background: var(--grad-soft); padding: 72px 0 56px; text-align: center; position: relative; overflow: hidden; transition: background .6s; }
@@ -174,39 +175,39 @@
   <div class="container">
     <div class="mb-3">
       <span id="heroBadge" style="display:inline-flex;align-items:center;gap:6px;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.25);border-radius:99px;padding:5px 14px;font-size:.8rem;font-weight:700;color:var(--accent);transition:all .6s">
-        <i class="bi bi-globe-americas"></i>Türkiye'nin Yurt Dışı Eğitim Platformu
+        <i class="bi bi-globe-americas"></i><span data-i18n="h.badge">Türkiye'nin Yurt Dışı Eğitim Platformu</span>
       </span>
     </div>
-    <h1 class="pe-grad-text">Hayalindeki Üniversiteyi<br>Yurt Dışında Bul</h1>
-    <p>Yurt dışında okumak istiyorsun ama nereden başlayacağını bilmiyor musun? Biz yardımcı olalım.</p>
+    <h1 class="pe-grad-text" data-i18n-html="h.title">Hayalindeki Üniversiteyi<br>Yurt Dışında Bul</h1>
+    <p data-i18n="h.sub">Yurt dışında okumak istiyorsun ama nereden başlayacağını bilmiyor musun? Biz yardımcı olalım.</p>
 
     <!-- Profil Sihirbazı — featured CTA -->
     <div class="wizard-cta">
       <div class="wizard-cta-icon"><i class="bi bi-magic"></i></div>
       <div class="wizard-cta-text">
-        <div class="wizard-cta-title">Programlara Uygunluğunu Öğren</div>
-        <div class="wizard-cta-sub">GPA'nı, İngilizce seviyeni ve hedef bölgeni gir — sana en uygun üniversite programlarını sıralayalım.</div>
+        <div class="wizard-cta-title" data-i18n="h.wiz.title">Programlara Uygunluğunu Öğren</div>
+        <div class="wizard-cta-sub" data-i18n="h.wiz.sub">GPA'nı, İngilizce seviyeni ve hedef bölgeni gir — sana en uygun üniversite programlarını sıralayalım.</div>
       </div>
-      <a href="/match" class="wizard-cta-btn"><i class="bi bi-magic"></i>Profil Sihirbazı</a>
+      <a href="/match" class="wizard-cta-btn"><i class="bi bi-magic"></i><span data-i18n="h.wiz.btn">Profil Sihirbazı</span></a>
     </div>
 
     <!-- Mobile-only two-button row -->
     <div class="hero-mobile-ctas">
-      <a href="/match" class="hero-cta-m primary"><i class="bi bi-magic"></i>Profil Sihirbazı</a>
-      <a href="/programs" class="hero-cta-m secondary"><i class="bi bi-mortarboard-fill"></i>Programları Keşfet</a>
+      <a href="/match" class="hero-cta-m primary"><i class="bi bi-magic"></i><span data-i18n="h.m.primary">Profil Sihirbazı</span></a>
+      <a href="/programs" class="hero-cta-m secondary"><i class="bi bi-mortarboard-fill"></i><span data-i18n="h.m.secondary">Programları Keşfet</span></a>
     </div>
 
     <div class="search-wrap" style="margin-bottom:22px">
       <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Okumak istediğin bölümü veya üniversite adını yaz…" autocomplete="off" oninput="onSearch()">
-        <button onclick="onSearch()"><i class="bi bi-search me-1"></i>Ara</button>
+        <input type="text" id="searchInput" data-i18n-ph="h.search.ph" placeholder="Okumak istediğin bölümü veya üniversite adını yaz…" autocomplete="off" oninput="onSearch()">
+        <button onclick="onSearch()"><i class="bi bi-search me-1"></i><span data-i18n="h.search.btn">Ara</span></button>
       </div>
     </div>
 
     <!-- Stats (filled by JS after load) -->
     <div class="stats-row" id="statsRow" style="display:none">
-      <div class="stat-item"><div class="stat-num pe-grad-text" id="st-uni">—</div><div class="stat-lbl">Üniversite</div></div>
-      <div class="stat-item"><div class="stat-num pe-grad-text" id="st-country">—</div><div class="stat-lbl">Ülke</div></div>
+      <div class="stat-item"><div class="stat-num pe-grad-text" id="st-uni">—</div><div class="stat-lbl" data-i18n="h.stat.uni">Üniversite</div></div>
+      <div class="stat-item"><div class="stat-num pe-grad-text" id="st-country">—</div><div class="stat-lbl" data-i18n="h.stat.cnt">Ülke</div></div>
     </div>
   </div>
 </div>
@@ -215,32 +216,32 @@
 <div class="how-section">
   <div class="container">
     <div class="text-center mb-4">
-      <div class="sec-label" style="justify-content:center"><span style="max-width:80px"></span>Nasıl Çalışır? <span style="max-width:80px"></span></div>
-      <h2 style="font-size:1.6rem;font-weight:900;color:var(--text);margin:0">Yurt Dışı Eğitime 3 Adımda Başla</h2>
+      <div class="sec-label" style="justify-content:center"><span style="max-width:80px"></span><span data-i18n="h.how.label">Nasıl Çalışır?</span><span style="max-width:80px"></span></div>
+      <h2 style="font-size:1.6rem;font-weight:900;color:var(--text);margin:0" data-i18n="h.how.title">Yurt Dışı Eğitime 3 Adımda Başla</h2>
     </div>
     <div class="row g-4 align-items-start justify-content-center">
       <div class="col-12 col-md-3 how-step">
         <div class="how-icon"><i class="bi bi-person-check-fill" style="color:var(--accent)"></i></div>
-        <div class="how-num">Adım 1</div>
-        <div class="how-title">Profilini Oluştur</div>
-        <div class="how-desc">Eğitim seviyeni, ilgi alanlarını, bütçeni ve hedef bölgeni belirle. Profil sihirbazımız sana özel okul listesi oluşturur.</div>
-        <div class="mt-3"><a href="/match" class="btn-action" style="font-size:.8rem;padding:6px 14px"><i class="bi bi-magic"></i>Sihirbazı Başlat</a></div>
+        <div class="how-num" data-i18n="h.s1.num">Adım 1</div>
+        <div class="how-title" data-i18n="h.s1.title">Profilini Oluştur</div>
+        <div class="how-desc" data-i18n="h.s1.desc">Eğitim seviyeni, ilgi alanlarını, bütçeni ve hedef bölgeni belirle. Profil sihirbazımız sana özel okul listesi oluşturur.</div>
+        <div class="mt-3"><a href="/match" class="btn-action" style="font-size:.8rem;padding:6px 14px"><i class="bi bi-magic"></i><span data-i18n="h.s1.btn">Sihirbazı Başlat</span></a></div>
       </div>
       <div class="col-auto d-none d-md-flex how-arrow"><i class="bi bi-chevron-right"></i></div>
       <div class="col-12 col-md-3 how-step">
         <div class="how-icon"><i class="bi bi-camera-video-fill" style="color:var(--accent-2)"></i></div>
-        <div class="how-num">Adım 2</div>
-        <div class="how-title">Keşfet &amp; Karşılaştır</div>
-        <div class="how-desc">3D kampüs turu yap, QS / THE / Shanghai sıralamalarını karşılaştır, program gereksinimlerini gör.</div>
-        <div class="mt-3"><a href="/programs" class="btn-action" style="font-size:.8rem;padding:6px 14px"><i class="bi bi-mortarboard-fill"></i>Programlara Bak</a></div>
+        <div class="how-num" data-i18n="h.s2.num">Adım 2</div>
+        <div class="how-title" data-i18n="h.s2.title">Keşfet &amp; Karşılaştır</div>
+        <div class="how-desc" data-i18n="h.s2.desc">3D kampüs turu yap, QS / THE / Shanghai sıralamalarını karşılaştır, program gereksinimlerini gör.</div>
+        <div class="mt-3"><a href="/programs" class="btn-action" style="font-size:.8rem;padding:6px 14px"><i class="bi bi-mortarboard-fill"></i><span data-i18n="h.s2.btn">Programlara Bak</span></a></div>
       </div>
       <div class="col-auto d-none d-md-flex how-arrow"><i class="bi bi-chevron-right"></i></div>
       <div class="col-12 col-md-3 how-step">
         <div class="how-icon"><i class="bi bi-file-earmark-check-fill" style="color:var(--accent-3)"></i></div>
-        <div class="how-num">Adım 3</div>
-        <div class="how-title">Başvur</div>
-        <div class="how-desc">Belgelerini yükle, online başvurunu tamamla. Ön kabul alarak sürecini hızlandır.</div>
-        <div class="mt-3"><a href="/apply" class="btn-action" style="font-size:.8rem;padding:6px 14px"><i class="bi bi-send-fill"></i>Başvuru Yap</a></div>
+        <div class="how-num" data-i18n="h.s3.num">Adım 3</div>
+        <div class="how-title" data-i18n="h.s3.title">Başvur</div>
+        <div class="how-desc" data-i18n="h.s3.desc">Belgelerini yükle, online başvurunu tamamla. Ön kabul alarak sürecini hızlandır.</div>
+        <div class="mt-3"><a href="/apply" class="btn-action" style="font-size:.8rem;padding:6px 14px"><i class="bi bi-send-fill"></i><span data-i18n="h.s3.btn">Başvuru Yap</span></a></div>
       </div>
     </div>
   </div>
@@ -249,27 +250,27 @@
 <!-- Content -->
 <div style="padding: 48px 0 80px">
   <div class="container">
-    <div id="loadingSpinner"><div class="spinner-ring"></div>Yükleniyor…</div>
+    <div id="loadingSpinner"><div class="spinner-ring"></div><span data-i18n="h.loading">Yükleniyor…</span></div>
 
     <!-- Featured (when no search) -->
     <div id="featuredSection" class="d-none">
-      <div class="sec-label"><i class="bi bi-star-fill" style="color:#f59e0b"></i>Öne Çıkan Üniversiteler <span></span></div>
+      <div class="sec-label"><i class="bi bi-star-fill" style="color:#f59e0b"></i><span data-i18n="h.featured">Öne Çıkan Üniversiteler</span><span></span></div>
       <div class="row g-3" id="featuredGrid"></div>
 
       <!-- English test CTA -->
       <div class="test-cta">
         <div>
-          <h3><i class="bi bi-journal-check me-2"></i>İngilizce Seviyeni Öğren</h3>
-          <p>20 soruluk CEFR testini ücretsiz yap. Sonuçlarını e-postayla al, hangi programlara uygun olduğunu gör.</p>
+          <h3><i class="bi bi-journal-check me-2"></i><span data-i18n="h.test.title">İngilizce Seviyeni Öğren</span></h3>
+          <p data-i18n="h.test.desc">20 soruluk CEFR testini ücretsiz yap. Sonuçlarını e-postayla al, hangi programlara uygun olduğunu gör.</p>
         </div>
-        <a href="/test" class="btn-white flex-shrink-0"><i class="bi bi-play-fill"></i>Testi Başlat</a>
+        <a href="/test" class="btn-white flex-shrink-0"><i class="bi bi-play-fill"></i><span data-i18n="h.test.btn">Testi Başlat</span></a>
       </div>
     </div>
 
     <!-- Search results -->
     <div id="searchSection" class="d-none">
       <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
-        <div class="sec-label mb-0"><i class="bi bi-search"></i>Arama Sonuçları <span style="min-width:40px"></span></div>
+        <div class="sec-label mb-0"><i class="bi bi-search"></i><span data-i18n="h.results">Arama Sonuçları</span><span style="min-width:40px"></span></div>
         <div class="d-flex align-items-center gap-2">
           <span style="font-size:.78rem;color:var(--muted)" id="searchResultInfo"></span>
           <select id="perPageSel" onchange="goPage(1)">
@@ -279,7 +280,7 @@
           </select>
         </div>
       </div>
-      <div id="emptyMsg" class="d-none"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i>Aramanızla eşleşen üniversite bulunamadı.</div>
+      <div id="emptyMsg" class="d-none"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i><span data-i18n="h.empty">Aramanızla eşleşen üniversite bulunamadı.</span></div>
       <div class="row g-3" id="searchGrid"></div>
       <div id="searchPagination"></div>
     </div>
@@ -289,11 +290,11 @@
 <!-- Compare tray -->
 <div id="compareTray">
   <span style="font-size:.8rem;color:var(--text);font-weight:600;white-space:nowrap">
-    <i class="bi bi-bar-chart-fill me-1" style="color:var(--accent)"></i>Karşılaştır <span id="cmpCount">0</span>/3
+    <i class="bi bi-bar-chart-fill me-1" style="color:var(--accent)"></i><span data-i18n="h.compare">Karşılaştır</span> <span id="cmpCount">0</span>/3
   </span>
   <div id="cmpItems" class="d-flex gap-2 flex-wrap" style="flex:1"></div>
-  <button onclick="showComparison()" id="cmpNowBtn" class="btn btn-primary btn-sm px-4" style="white-space:nowrap">Karşılaştır</button>
-  <button onclick="clearCompare()" class="btn btn-outline-secondary btn-sm" style="white-space:nowrap">Temizle</button>
+  <button onclick="showComparison()" id="cmpNowBtn" class="btn btn-primary btn-sm px-4" style="white-space:nowrap" data-i18n="h.compare">Karşılaştır</button>
+  <button onclick="clearCompare()" class="btn btn-outline-secondary btn-sm" style="white-space:nowrap" data-i18n="h.clear">Temizle</button>
 </div>
 
 <!-- Compare modal -->
@@ -301,7 +302,7 @@
   <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content" style="background:var(--surface);border:1px solid var(--line);color:var(--text)">
       <div class="modal-header" style="border-color:var(--line)">
-        <h5 class="modal-title"><i class="bi bi-bar-chart-fill me-2" style="color:var(--accent)"></i>Üniversite Karşılaştırması</h5>
+        <h5 class="modal-title"><i class="bi bi-bar-chart-fill me-2" style="color:var(--accent)"></i><span data-i18n="h.cmp.title">Üniversite Karşılaştırması</span></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body p-0" id="compareModalBody" style="overflow-x:auto"></div>
@@ -325,7 +326,7 @@ async function load() {
     updateStats();
     showFeatured();
   } catch (e) {
-    document.getElementById('loadingSpinner').innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>Üniversiteler yüklenemedi.';
+    document.getElementById('loadingSpinner').innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>' + (window.t ? window.t('h.err.load') : 'Üniversiteler yüklenemedi.');
   }
 }
 
@@ -374,7 +375,7 @@ function renderSearchResults() {
   const slice = filteredUniversities.slice(start, start + perPage);
   document.getElementById('emptyMsg').classList.toggle('d-none', total > 0);
   document.getElementById('searchGrid').innerHTML = slice.map(u => cardHtml(u)).join('');
-  document.getElementById('searchResultInfo').textContent = total + ' sonuç';
+  document.getElementById('searchResultInfo').textContent = total + ' ' + (window.t ? window.t('h.result.lbl') : 'sonuç');
   renderPagination(totalPages, perPage, total, start);
 }
 
@@ -388,13 +389,15 @@ function renderPagination(totalPages, perPage, total, start) {
   const wrap = document.getElementById('searchPagination');
   if (totalPages <= 1) { wrap.innerHTML = ''; return; }
   const showing = Math.min(start + perPage, total);
+  const prevLbl = window.t ? window.t('h.prev') : '‹ Önceki';
+  const nextLbl = window.t ? window.t('h.next') : 'Sonraki ›';
   let html = `<div id="paginationWrap">
-    <button class="pg-btn" onclick="goPage(${currentPage-1})" ${currentPage===1?'disabled':''}>‹ Önceki</button>`;
+    <button class="pg-btn" onclick="goPage(${currentPage-1})" ${currentPage===1?'disabled':''}>${prevLbl}</button>`;
   pageRange(currentPage, totalPages).forEach(p => {
     if (p === '...') html += `<span class="pg-btn" style="cursor:default">…</span>`;
     else html += `<button class="pg-btn ${p===currentPage?'active':''}" onclick="goPage(${p})">${p}</button>`;
   });
-  html += `<button class="pg-btn" onclick="goPage(${currentPage+1})" ${currentPage===totalPages?'disabled':''}>Sonraki ›</button>`;
+  html += `<button class="pg-btn" onclick="goPage(${currentPage+1})" ${currentPage===totalPages?'disabled':''}>${nextLbl}</button>`;
   html += `<span style="font-size:.75rem;color:var(--muted);margin-left:4px">${start+1}–${showing} / ${total}</span></div>`;
   wrap.innerHTML = html;
 }
@@ -422,15 +425,15 @@ function cardHtml(u) {
       <div class="card-top">
         <div class="d-flex align-items-start justify-content-between gap-1 mb-1">
           <div class="card-name">${esc(u.name)}</div>
-          ${u.featured ? '<span class="featured-star flex-shrink-0">★ Öne Çıkan</span>' : ''}
+          ${u.featured ? `<span class="featured-star flex-shrink-0">${window.t ? window.t('h.feat.star') : '★ Öne Çıkan'}</span>` : ''}
         </div>
         <div class="card-location"><i class="bi bi-geo-alt-fill me-1"></i>${[u.city, u.country].filter(Boolean).join(', ')}</div>
         ${ranks.length ? `<div class="card-ranks">${ranks.join('')}</div>` : ''}
         ${u.description_en ? `<div class="card-desc">${esc(u.description_en)}</div>` : ''}
       </div>
       <div class="card-footer-strip">
-        <button class="cmp-btn${sel ? ' selected' : ''}" data-id="${u.id}" onclick="event.stopPropagation();toggleCompare(${u.id})" title="${sel ? 'Karşılaştırmadan çıkar' : 'Karşılaştır'}">
-          <i class="bi bi-${sel ? 'check2' : 'plus-lg'} me-1"></i>${sel ? 'Eklendi' : 'Karşılaştır'}
+        <button class="cmp-btn${sel ? ' selected' : ''}" data-id="${u.id}" onclick="event.stopPropagation();toggleCompare(${u.id})" title="${sel ? (window.t ? window.t('h.remove') : 'Karşılaştırmadan çıkar') : (window.t ? window.t('h.compare') : 'Karşılaştır')}">
+          <i class="bi bi-${sel ? 'check2' : 'plus-lg'} me-1"></i>${sel ? (window.t ? window.t('h.added') : 'Eklendi') : (window.t ? window.t('h.compare') : 'Karşılaştır')}
         </button>
         ${orbit ? `<span style="font-size:.71rem;color:var(--accent);font-weight:600"><i class="bi bi-camera-video-fill me-1"></i>3D Orbit</span>` : ''}
       </div>
@@ -465,7 +468,7 @@ function toggleCompare(id) {
   else {
     if (compareSet.size >= 3) {
       const btn = document.querySelector(`.cmp-btn[data-id="${id}"]`);
-      if (btn) { btn.textContent = 'Maks 3!'; setTimeout(() => { btn.innerHTML = '<i class="bi bi-plus-lg me-1"></i>Karşılaştır'; }, 1200); }
+      if (btn) { btn.textContent = window.t ? window.t('h.max3') : 'Maks 3!'; setTimeout(() => { btn.innerHTML = `<i class="bi bi-plus-lg me-1"></i>${window.t ? window.t('h.compare') : 'Karşılaştır'}`; }, 1200); }
       return;
     }
     compareSet.add(id);
@@ -473,7 +476,7 @@ function toggleCompare(id) {
   document.querySelectorAll(`.cmp-btn[data-id="${id}"]`).forEach(btn => {
     const s = compareSet.has(id);
     btn.classList.toggle('selected', s);
-    btn.innerHTML = `<i class="bi bi-${s ? 'check2' : 'plus-lg'} me-1"></i>${s ? 'Eklendi' : 'Karşılaştır'}`;
+    btn.innerHTML = `<i class="bi bi-${s ? 'check2' : 'plus-lg'} me-1"></i>${s ? (window.t ? window.t('h.added') : 'Eklendi') : (window.t ? window.t('h.compare') : 'Karşılaştır')}`;
   });
   updateCompareTray();
 }
@@ -494,7 +497,7 @@ function clearCompare() {
   compareSet.clear();
   document.querySelectorAll('.cmp-btn.selected').forEach(btn => {
     btn.classList.remove('selected');
-    btn.innerHTML = '<i class="bi bi-plus-lg me-1"></i>Karşılaştır';
+    btn.innerHTML = `<i class="bi bi-plus-lg me-1"></i>${window.t ? window.t('h.compare') : 'Karşılaştır'}`;
   });
   updateCompareTray();
 }
@@ -502,15 +505,16 @@ function clearCompare() {
 function showComparison() {
   if (compareSet.size < 2) return;
   const unis = [...compareSet].map(id => allUniversities.find(u => u.id === id)).filter(Boolean);
+  const _t = key => window.t ? window.t(key) : key;
   const rows = [
-    ['Ülke',            u => esc(u.country || '—')],
-    ['Şehir',           u => esc(u.city || '—')],
-    ['Kıta',            u => esc(u.continent || '—')],
-    ['QS Sıra',         u => u.qs_rank       ? `<span style="background:rgba(99,102,241,.14);color:#4f46e5;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.qs_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
-    ['THE Sıra',        u => u.the_rank      ? `<span style="background:rgba(16,185,129,.14);color:#059669;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.the_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
-    ['Shanghai Sıra',   u => u.shanghai_rank ? `<span style="background:rgba(245,158,11,.16);color:#b45309;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.shanghai_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
-    ['Leiden Sıra',     u => u.leiden_rank   ? `<span style="background:rgba(139,92,246,.14);color:#7c3aed;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.leiden_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
-    ['3D Orbit',        u => (u.latitude && u.longitude) ? '<span style="color:#059669"><i class="bi bi-check-circle-fill me-1"></i>Mevcut</span>' : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.country'), u => esc(u.country || '—')],
+    [_t('h.cmp.city'),    u => esc(u.city || '—')],
+    [_t('h.cmp.cont'),    u => esc(u.continent || '—')],
+    [_t('h.cmp.qs'),      u => u.qs_rank       ? `<span style="background:rgba(99,102,241,.14);color:#4f46e5;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.qs_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.the'),     u => u.the_rank      ? `<span style="background:rgba(16,185,129,.14);color:#059669;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.the_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.sh'),      u => u.shanghai_rank ? `<span style="background:rgba(245,158,11,.16);color:#b45309;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.shanghai_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.leiden'),  u => u.leiden_rank   ? `<span style="background:rgba(139,92,246,.14);color:#7c3aed;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.leiden_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.orbit'),   u => (u.latitude && u.longitude) ? `<span style="color:#059669"><i class="bi bi-check-circle-fill me-1"></i>${_t('h.cmp.avail')}</span>` : '<span style="color:var(--muted)">—</span>'],
   ];
   const colPct = Math.floor(80 / unis.length);
   let html = `<table class="cmp-table"><thead><tr>
@@ -519,7 +523,7 @@ function showComparison() {
       <div style="font-size:.93rem;font-weight:700;color:var(--text);margin-bottom:4px">${esc(u.name)}</div>
       <div style="font-size:.74rem;color:var(--muted);margin-bottom:8px">${esc([u.city, u.country].filter(Boolean).join(', '))}</div>
       <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <a href="/university?id=${u.id}" style="font-size:.71rem;color:var(--accent);text-decoration:none;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.3);border-radius:6px;padding:2px 9px"><i class="bi bi-arrow-right-circle me-1"></i>Detay</a>
+        <a href="/university?id=${u.id}" style="font-size:.71rem;color:var(--accent);text-decoration:none;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.3);border-radius:6px;padding:2px 9px"><i class="bi bi-arrow-right-circle me-1"></i>${_t('h.cmp.detail')}</a>
         ${(u.latitude && u.longitude) ? `<button onclick="openOrbit(${u.id})" style="font-size:.71rem;color:var(--accent);background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.3);border-radius:6px;padding:2px 9px;cursor:pointer"><i class="bi bi-camera-video-fill me-1"></i>3D</button>` : ''}
       </div>
     </th>`).join('')}

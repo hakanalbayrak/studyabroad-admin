@@ -454,6 +454,20 @@ app.post('/api/bulk/import', requireRole('admin'), async (req, res) => {
   res.json({ created, skipped, errors });
 });
 
+// Language detection by visitor IP
+app.get('/api/public/lang', (req, res) => {
+  try {
+    const geoip = require('geoip-lite');
+    const rawIp = (req.headers['x-forwarded-for'] || '').split(',')[0].trim() || req.ip || '';
+    const ip = rawIp.replace(/^::ffff:/, '');
+    const geo = geoip.lookup(ip);
+    const lang = (geo && geo.country === 'TR') ? 'tr' : 'en';
+    res.json({ lang, country: geo ? geo.country : null });
+  } catch (e) {
+    res.json({ lang: 'tr', country: null });
+  }
+});
+
 // Public universities list (no auth — for the public orbit picker page)
 app.get('/api/public/universities', async (req, res) => {
   try {

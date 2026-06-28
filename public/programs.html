@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/site.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
   <style>
     /* ── Hero ─────────────────────────────────────────────────── */
     .pg-hero { background: var(--grad-soft); border-bottom: 1px solid rgba(99,102,241,.15); padding: 36px 0 28px; }
@@ -117,9 +118,9 @@
 <!-- ── Eligibility banner ──────────────────────────────────────────── -->
 <div style="background:var(--grad-soft);border-bottom:1px solid rgba(99,102,241,.15);padding:9px 0">
   <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
-    <span style="font-size:.82rem;color:var(--accent);font-weight:600"><i class="bi bi-magic me-1"></i>Hangi programlar sana uygun?</span>
+    <span style="font-size:.82rem;color:var(--accent);font-weight:600"><i class="bi bi-magic me-1"></i><span data-i18n="p.elig.banner">Hangi programlar sana uygun?</span></span>
     <button onclick="toggleEligPanel()" id="eligToggleBtn" style="background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.4);color:var(--accent);border-radius:8px;padding:5px 14px;font-size:.78rem;font-weight:600;cursor:pointer">
-      <i class="bi bi-sliders me-1"></i>Uygunluğumu Kontrol Et
+      <i class="bi bi-sliders me-1"></i><span data-i18n="p.elig.check">Uygunluğumu Kontrol Et</span>
     </button>
   </div>
 </div>
@@ -218,18 +219,18 @@
 <!-- ── Hero ────────────────────────────────────────────────────────── -->
 <div class="pg-hero">
   <div class="container">
-    <h1><i class="bi bi-globe2 me-2" style="color:var(--accent)"></i>Programları Keşfet</h1>
-    <p>Dünyada 300+ üniversitedeki lisans ve lisansüstü programları filtrele, karşılaştır, başvur.</p>
+    <h1><i class="bi bi-globe2 me-2" style="color:var(--accent)"></i><span data-i18n="p.title">Programları Keşfet</span></h1>
+    <p data-i18n="p.hero.sub">Dünyada 300+ üniversitedeki lisans ve lisansüstü programları filtrele, karşılaştır, başvur.</p>
     <div class="search-wrap" id="searchWrap">
-      <input type="text" id="searchInput" placeholder="Program adı veya üniversite ara…" oninput="onSearchInput()" autocomplete="off">
+      <input type="text" id="searchInput" data-i18n-ph="p.search.ph" placeholder="Program adı veya üniversite ara…" oninput="onSearchInput()" autocomplete="off">
       <i class="bi bi-search s-icon"></i>
       <i class="bi bi-x-lg s-clear" onclick="clearSearch()"></i>
     </div>
     <div class="stats-strip">
-      <div class="stat-item"><span class="val" id="stTotal">—</span><span class="lbl">program</span></div>
-      <div class="stat-item"><span class="val" id="stUnis">—</span><span class="lbl">üniversite</span></div>
-      <div class="stat-item"><span class="val" id="stScholar">—</span><span class="lbl">burslı</span></div>
-      <div class="stat-item"><span class="val" id="stCountries">—</span><span class="lbl">ülke</span></div>
+      <div class="stat-item"><span class="val" id="stTotal">—</span><span class="lbl" data-i18n="p.stat.prog">program</span></div>
+      <div class="stat-item"><span class="val" id="stUnis">—</span><span class="lbl" data-i18n="p.stat.uni">üniversite</span></div>
+      <div class="stat-item"><span class="val" id="stScholar">—</span><span class="lbl" data-i18n="p.stat.schol">burslı</span></div>
+      <div class="stat-item"><span class="val" id="stCountries">—</span><span class="lbl" data-i18n="p.stat.cnt">ülke</span></div>
     </div>
   </div>
 </div>
@@ -238,30 +239,30 @@
 <div id="filterSection">
   <div class="container">
     <div class="filter-header" style="margin-bottom:14px">
-      <div style="font-size:.78rem;color:var(--muted)"><i class="bi bi-funnel-fill me-1"></i>Filtreler</div>
+      <div style="font-size:.78rem;color:var(--muted)"><i class="bi bi-funnel-fill me-1"></i><span data-i18n="p.filters">Filtreler</span></div>
       <button class="mob-toggle-btn" id="mobToggleBtn" onclick="toggleFilterBody()">
-        <i class="bi bi-sliders2 me-1"></i>Filtrele
+        <i class="bi bi-sliders2 me-1"></i><span data-i18n="p.filter.btn">Filtrele</span>
       </button>
     </div>
 
     <div id="filterBody">
       <!-- Derece (program type) -->
       <div class="filter-group">
-        <span class="filter-group-label"><i class="bi bi-mortarboard-fill me-1"></i>Derece</span>
+        <span class="filter-group-label"><i class="bi bi-mortarboard-fill me-1"></i><span data-i18n="p.degree.lbl">Derece</span></span>
         <div class="chip-row" id="typeChips"></div>
       </div>
 
       <!-- Ülke (country) -->
       <div class="filter-group">
-        <span class="filter-group-label"><i class="bi bi-geo-alt-fill me-1"></i>Ülke</span>
+        <span class="filter-group-label"><i class="bi bi-geo-alt-fill me-1"></i><span data-i18n="p.country.lbl">Ülke</span></span>
         <div class="chip-row scroll" id="countryChips"></div>
       </div>
 
       <!-- Bütçe (budget) -->
       <div class="filter-group">
-        <span class="filter-group-label"><i class="bi bi-currency-dollar me-1"></i>Yıllık Ücret</span>
+        <span class="filter-group-label"><i class="bi bi-currency-dollar me-1"></i><span data-i18n="p.fee.lbl">Yıllık Ücret</span></span>
         <div class="chip-row" id="budgetChips">
-          <div class="fchip" data-budget="free" onclick="toggleBudget(this)">Ücretsiz</div>
+          <div class="fchip" data-budget="free" onclick="toggleBudget(this)" data-i18n="p.free">Ücretsiz</div>
           <div class="fchip" data-budget="lt5" onclick="toggleBudget(this)">&lt;$5k</div>
           <div class="fchip" data-budget="5-10" onclick="toggleBudget(this)">$5k–10k</div>
           <div class="fchip" data-budget="10-15" onclick="toggleBudget(this)">$10k–15k</div>
@@ -272,15 +273,15 @@
       <!-- Burs toggle + İngilizce -->
       <div class="filter-group" style="display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;margin-bottom:4px">
         <div>
-          <span class="filter-group-label"><i class="bi bi-award-fill me-1"></i>Burs</span>
+          <span class="filter-group-label"><i class="bi bi-award-fill me-1"></i><span data-i18n="p.schol.lbl">Yalnızca Burslu</span></span>
           <div class="chip-row">
-            <div class="fchip" id="scholarChip" onclick="toggleScholarship(this)"><i class="bi bi-award-fill me-1"></i>Burslu Programlar</div>
+            <div class="fchip" id="scholarChip" onclick="toggleScholarship(this)"><i class="bi bi-award-fill me-1"></i><span data-i18n="p.schol.chip">Burslu Programlar</span></div>
           </div>
         </div>
         <div>
-          <span class="filter-group-label"><i class="bi bi-translate me-1"></i>İngilizce Şartı</span>
+          <span class="filter-group-label"><i class="bi bi-translate me-1"></i><span data-i18n="p.eng.lbl">İngilizce Şartı</span></span>
           <div class="chip-row" id="engChips">
-            <div class="fchip" data-eng="None" onclick="toggleEng(this)">Şart Yok</div>
+            <div class="fchip" data-eng="None" onclick="toggleEng(this)" data-i18n="p.eng.none">Şart Yok</div>
             <div class="fchip" data-eng="IELTS" onclick="toggleEng(this)">IELTS</div>
             <div class="fchip" data-eng="TOEFL" onclick="toggleEng(this)">TOEFL</div>
             <div class="fchip" data-eng="Duolingo" onclick="toggleEng(this)">Duolingo</div>
@@ -301,13 +302,13 @@
   <div class="container d-flex align-items-center justify-content-between gap-2 flex-wrap">
     <span id="resultCount"></span>
     <div class="d-flex align-items-center gap-2">
-      <label style="font-size:.75rem;color:var(--muted);white-space:nowrap">Sırala:</label>
+      <label style="font-size:.75rem;color:var(--muted);white-space:nowrap"><span data-i18n="p.sort.lbl">Sırala</span>:</label>
       <select id="sortSelect" onchange="onSortChange()">
-        <option value="default">Varsayılan</option>
-        <option value="name">A → Z</option>
-        <option value="fee-asc">Ücret (artan)</option>
-        <option value="fee-desc">Ücret (azalan)</option>
-        <option value="qs">QS Sıralaması</option>
+        <option value="default" data-i18n="p.sort.def">Varsayılan</option>
+        <option value="name" data-i18n="p.sort.az">A → Z</option>
+        <option value="fee-asc" data-i18n="p.sort.fasc2">Ücret (artan)</option>
+        <option value="fee-desc" data-i18n="p.sort.fdesc2">Ücret (azalan)</option>
+        <option value="qs" data-i18n="p.sort.qs2">QS Sıralaması</option>
       </select>
     </div>
   </div>
@@ -316,12 +317,12 @@
 <!-- ── Cards grid ──────────────────────────────────────────────────── -->
 <div id="grid">
   <div class="container">
-    <div id="loadingMsg"><div class="spinner-ring"></div>Yükleniyor…</div>
+    <div id="loadingMsg"><div class="spinner-ring"></div><span data-i18n="p.loading">Yükleniyor…</span></div>
     <div id="emptyMsg" class="d-none">
       <i class="bi bi-search" style="font-size:2.5rem;display:block;margin-bottom:14px;color:var(--muted)"></i>
-      <div style="font-size:1rem;font-weight:600;color:var(--text);margin-bottom:6px">Sonuç bulunamadı</div>
-      <div style="font-size:.85rem;color:var(--muted);margin-bottom:18px">Filtreleri değiştirmeyi deneyin.</div>
-      <button onclick="clearAllFilters()" style="background:var(--grad);border:none;color:#fff;border-radius:8px;padding:8px 20px;font-size:.85rem;font-weight:600;cursor:pointer">Filtreleri Temizle</button>
+      <div style="font-size:1rem;font-weight:600;color:var(--text);margin-bottom:6px" data-i18n="p.no.res">Sonuç bulunamadı</div>
+      <div style="font-size:.85rem;color:var(--muted);margin-bottom:18px" data-i18n="p.no.res.sub">Filtreleri değiştirmeyi deneyin.</div>
+      <button onclick="clearAllFilters()" style="background:var(--grad);border:none;color:#fff;border-radius:8px;padding:8px 20px;font-size:.85rem;font-weight:600;cursor:pointer" data-i18n="p.clear">Filtreleri Temizle</button>
     </div>
     <div class="row g-3" id="cardsContainer"></div>
     <nav id="pagination" class="d-flex justify-content-center align-items-center gap-2 flex-wrap" style="margin-top:28px"></nav>
@@ -373,7 +374,7 @@ async function init() {
     document.getElementById('loadingMsg').style.display = 'none';
   } catch (e) {
     document.getElementById('loadingMsg').innerHTML =
-      '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>Programlar yüklenemedi.';
+      '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>' + (window.t ? window.t('p.err.load') : 'Programlar yüklenemedi.');
   }
 }
 
@@ -495,8 +496,9 @@ function filterProgram(p) {
 function applyFilters() {
   filteredPrograms = allPrograms.filter(filterProgram);
   const c = filteredPrograms.length;
+  const foundLbl = window.t ? window.t('p.found') : 'program bulundu';
   document.getElementById('resultCount').innerHTML =
-    `<b>${c.toLocaleString('tr')}</b> program bulundu`;
+    `<b>${c.toLocaleString()}</b> ${foundLbl}`;
   currentPage = 1;
   renderPills();
   renderCards();
@@ -509,13 +511,15 @@ function renderPills() {
   state.types.forEach(t => pills.push({ label: t, type: 'type', val: t }));
   state.countries.forEach(c => pills.push({ label: c, type: 'country', val: c }));
   if (state.budget) pills.push({ label: state.budget.label, type: 'budget', val: '' });
-  if (state.scholarship) pills.push({ label: 'Burslu', type: 'scholarship', val: '' });
-  state.engTypes.forEach(e => pills.push({ label: e === 'None' ? 'Şart Yok' : e, type: 'eng', val: e }));
+  if (state.scholarship) pills.push({ label: window.t ? window.t('p.pills.schol') : 'Burslu', type: 'scholarship', val: '' });
+  const engNoneLbl = window.t ? window.t('p.eng.none') : 'Şart Yok';
+  state.engTypes.forEach(e => pills.push({ label: e === 'None' ? engNoneLbl : e, type: 'eng', val: e }));
 
   if (!pills.length) { row.innerHTML = ''; return; }
+  const clearAllLbl = window.t ? window.t('p.pills.clear') : 'Tümünü Temizle';
   row.innerHTML = pills.map(p =>
     `<span class="pill">${esc(p.label)}<span class="pill-x" onclick="removePillFilter('${p.type}','${esc(p.val)}')">×</span></span>`
-  ).join('') + `<button class="btn-clear-all" onclick="clearAllFilters()">Tümünü Temizle</button>`;
+  ).join('') + `<button class="btn-clear-all" onclick="clearAllFilters()">${clearAllLbl}</button>`;
 }
 
 function removePillFilter(type, val) {
@@ -561,9 +565,11 @@ function toggleFilterBody() {
   const btn = document.getElementById('mobToggleBtn');
   const open = body.classList.toggle('open');
   btn.classList.toggle('active', open);
+  const closeLbl = window.t ? window.t('p.filter.close') : 'Kapat';
+  const filterLbl = window.t ? window.t('p.filter.btn') : 'Filtrele';
   btn.innerHTML = open
-    ? '<i class="bi bi-x-lg me-1"></i>Kapat'
-    : '<i class="bi bi-sliders2 me-1"></i>Filtrele';
+    ? `<i class="bi bi-x-lg me-1"></i>${closeLbl}`
+    : `<i class="bi bi-sliders2 me-1"></i>${filterLbl}`;
 }
 
 // ── Card rendering ─────────────────────────────────────────────────────
@@ -586,9 +592,10 @@ function renderCards() {
   const shown = sorted.slice(start, start + perPage);
 
   container.innerHTML = shown.map(p => {
+    const feeReqLbl = window.t ? window.t('p.fee.req') : 'Talep üzerine';
     const fee = p.tuition_fee
       ? `<span class="prog-fee">$${Number(p.tuition_fee).toLocaleString()}</span>`
-      : '<span style="color:var(--muted);font-size:.75rem">Talep üzerine</span>';
+      : `<span style="color:var(--muted);font-size:.75rem">${feeReqLbl}</span>`;
     const engReq = p.english_req_type && p.english_req_type !== 'None'
       ? `<span><i class="bi bi-translate"></i>${p.english_req_type}${p.english_req_score ? ' ' + p.english_req_score : ''}</span>` : '';
     const gpa = p.gpa_requirement ? `<span><i class="bi bi-bar-chart-fill"></i>GPA ${p.gpa_requirement}</span>` : '';
@@ -619,7 +626,7 @@ function renderCards() {
           <div class="prog-meta">
             <span class="meta-chip chip-type">${esc(p.type_name)}</span>
             ${p.language_of_instruction ? `<span class="meta-chip chip-lang"><i class="bi bi-translate me-1"></i>${esc(p.language_of_instruction)}</span>` : ''}
-            ${p.scholarship_available ? `<span class="meta-chip chip-scholar"><i class="bi bi-award-fill me-1"></i>Burs</span>` : ''}
+            ${p.scholarship_available ? `<span class="meta-chip chip-scholar"><i class="bi bi-award-fill me-1"></i>${window.t ? window.t('p.schol.avail') : 'Burs'}</span>` : ''}
           </div>
           <div class="d-flex align-items-center justify-content-between flex-wrap gap-1">
             ${fee}
@@ -631,7 +638,7 @@ function renderCards() {
         <div style="margin-top:12px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:8px">
           <a class="btn btn-sm" style="flex:1;background:var(--grad);color:#fff;font-size:.78rem;font-weight:700;border-radius:8px;text-align:center;padding:6px 10px;text-decoration:none"
             href="/apply?uni=${p.university_id}&program=${p.id}" onclick="event.stopPropagation()">
-            <i class="bi bi-send-fill me-1"></i>Başvur
+            <i class="bi bi-send-fill me-1"></i>${window.t ? window.t('p.apply') : 'Başvur'}
           </a>
           <button class="btn btn-sm" style="background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.25);color:var(--accent);font-size:.78rem;font-weight:600;border-radius:8px;padding:6px 10px"
             onclick="event.stopPropagation();openLeadModal(${p.id})">
@@ -689,9 +696,11 @@ function toggleEligPanel() {
   const btn = document.getElementById('eligToggleBtn');
   const opening = panel.style.display === 'none';
   panel.style.display = opening ? 'block' : 'none';
+  const eligCloseLbl = window.t ? window.t('p.elig.close') : 'Kapat';
+  const eligCheckLbl = window.t ? window.t('p.elig.check') : 'Uygunluğumu Kontrol Et';
   btn.innerHTML = opening
-    ? '<i class="bi bi-x-lg me-1"></i>Kapat'
-    : '<i class="bi bi-sliders me-1"></i>Uygunluğumu Kontrol Et';
+    ? `<i class="bi bi-x-lg me-1"></i>${eligCloseLbl}`
+    : `<i class="bi bi-sliders me-1"></i>${eligCheckLbl}`;
 }
 
 function eligMatch(p) {
@@ -765,7 +774,7 @@ function applyEligibility() {
   const el = document.getElementById('eligResult');
   el.style.display = 'block';
   if (!eligActive) {
-    el.innerHTML = '<i class="bi bi-info-circle me-1" style="color:var(--muted)"></i>Profilini gir, Match\'e bas.';
+    el.innerHTML = '<i class="bi bi-info-circle me-1" style="color:var(--muted)"></i>' + (window.t ? window.t('p.elig.hint') : 'Profilini gir, Match\'e bas.');
     return;
   }
   let eligibleCount = 0;
@@ -825,8 +834,8 @@ async function submitLead() {
   const email = document.getElementById('leadEmail').value.trim();
   const phone = document.getElementById('leadPhone').value.trim();
   const message = document.getElementById('leadMsg').value.trim();
-  if (!name || !email) { errEl.textContent = 'Ad ve e-posta zorunludur.'; return; }
-  btn.disabled = true; btn.textContent = 'Gönderiliyor…';
+  if (!name || !email) { errEl.textContent = window.t ? window.t('p.lead.req') : 'Ad ve e-posta zorunludur.'; return; }
+  btn.disabled = true; btn.textContent = window.t ? window.t('p.lead.sending') : 'Gönderiliyor…';
   try {
     const r = await fetch('/api/public/leads', {
       method: 'POST',
@@ -839,13 +848,13 @@ async function submitLead() {
       })
     });
     const d = await r.json();
-    if (!r.ok) { errEl.textContent = d.error || 'Bir hata oluştu.'; return; }
+    if (!r.ok) { errEl.textContent = d.error || (window.t ? window.t('p.lead.err') : 'Bir hata oluştu.'); return; }
     document.getElementById('leadFormBody').classList.add('d-none');
     document.getElementById('leadSuccess').classList.remove('d-none');
   } catch (e) {
-    errEl.textContent = 'Ağ hatası — lütfen tekrar deneyin.';
+    errEl.textContent = window.t ? window.t('p.lead.net.err') : 'Ağ hatası — lütfen tekrar deneyin.';
   } finally {
-    btn.disabled = false; btn.textContent = 'Gönder';
+    btn.disabled = false; btn.textContent = window.t ? window.t('p.lead.send') : 'Gönder';
   }
 }
 
@@ -859,7 +868,7 @@ init();
   <div style="background:var(--surface);border:1px solid var(--line);border-radius:16px;width:100%;max-width:480px;padding:28px 28px 24px;box-shadow:var(--shadow-lg)">
     <div class="d-flex justify-content-between align-items-start mb-3">
       <div>
-        <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Bilgi Talebi</div>
+        <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px" data-i18n="p.lead.title">Bilgi Talebi</div>
         <div id="leadProgName" style="font-size:1rem;font-weight:700;color:var(--text);line-height:1.3"></div>
         <div id="leadUniName" style="font-size:.82rem;color:var(--accent);margin-top:2px"></div>
       </div>
@@ -867,28 +876,28 @@ init();
     </div>
     <div id="leadFormBody">
       <div class="mb-3">
-        <input id="leadName" type="text" placeholder="Adınız Soyadınız *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
+        <input id="leadName" type="text" data-i18n-ph="p.lead.name.ph" placeholder="Adınız Soyadınız *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
       </div>
       <div class="mb-3">
-        <input id="leadEmail" type="email" placeholder="E-posta adresiniz *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
+        <input id="leadEmail" type="email" data-i18n-ph="p.lead.email.ph" placeholder="E-posta adresiniz *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
       </div>
       <div class="mb-3">
-        <input id="leadPhone" type="tel" placeholder="Telefon / WhatsApp (opsiyonel)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
+        <input id="leadPhone" type="tel" data-i18n-ph="p.lead.phone.ph" placeholder="Telefon / WhatsApp (opsiyonel)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
       </div>
       <div class="mb-3">
-        <textarea id="leadMsg" rows="3" placeholder="Soru veya yorumlarınız (opsiyonel)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none;resize:vertical" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'"></textarea>
+        <textarea id="leadMsg" rows="3" data-i18n-ph="p.lead.msg.ph" placeholder="Soru veya yorumlarınız (opsiyonel)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none;resize:vertical" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'"></textarea>
       </div>
       <div id="leadError" style="color:#dc2626;font-size:.8rem;margin-bottom:8px"></div>
       <div class="d-flex gap-2">
-        <button id="leadSubmitBtn" onclick="submitLead()" style="flex:1;background:var(--grad);border:none;color:#fff;font-weight:700;font-size:.9rem;padding:10px;border-radius:8px;cursor:pointer">Gönder</button>
-        <button onclick="closeLeadModal()" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.88rem;padding:10px 16px;border-radius:8px;cursor:pointer">İptal</button>
+        <button id="leadSubmitBtn" onclick="submitLead()" style="flex:1;background:var(--grad);border:none;color:#fff;font-weight:700;font-size:.9rem;padding:10px;border-radius:8px;cursor:pointer" data-i18n="p.lead.send">Gönder</button>
+        <button onclick="closeLeadModal()" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.88rem;padding:10px 16px;border-radius:8px;cursor:pointer" data-i18n="p.lead.cancel">İptal</button>
       </div>
     </div>
     <div id="leadSuccess" class="d-none text-center" style="padding:16px 0">
       <div style="font-size:2.5rem;margin-bottom:12px">✅</div>
-      <div style="font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:6px">Talebiniz alındı!</div>
-      <div style="font-size:.85rem;color:var(--muted);margin-bottom:20px">En kısa sürede sizinle iletişime geçeceğiz.</div>
-      <button onclick="closeLeadModal()" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.88rem;padding:8px 20px;border-radius:8px;cursor:pointer">Kapat</button>
+      <div style="font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:6px" data-i18n="p.lead.ok">Talebiniz alındı!</div>
+      <div style="font-size:.85rem;color:var(--muted);margin-bottom:20px" data-i18n="p.lead.ok.sub">En kısa sürede sizinle iletişime geçeceğiz.</div>
+      <button onclick="closeLeadModal()" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.88rem;padding:8px 20px;border-radius:8px;cursor:pointer" data-i18n="p.lead.close">Kapat</button>
     </div>
   </div>
 </div>

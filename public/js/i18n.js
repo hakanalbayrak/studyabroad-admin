@@ -1,0 +1,503 @@
+/* public/js/i18n.js — PANELEDU client-side localization
+   Include in <head> before chrome.js on every public page.
+   Elements: data-i18n="key" (text), data-i18n-html="key" (innerHTML),
+             data-i18n-ph="key" (placeholder).
+   JS usage: window.t('key') — falls back to TR if key missing in lang. */
+(function () {
+  'use strict';
+
+  /* ── Translation dictionary ───────────────────────────────────────────────── */
+  var T = {
+    tr: {
+      /* ── Navigation ── */
+      'nav.home':     'Ana Sayfa',
+      'nav.match':    'Okul Bul',
+      'nav.programs': 'Programlar',
+      'nav.test':     'İngilizce Testi',
+      'nav.login':    'Giriş',
+      /* ── Footer ── */
+      'f.tagline':  'Yurt dışında eğitim için sana en uygun üniversite ve programları bul, karşılaştır, 3D kampüs turu yap ve başvur.',
+      'f.explore':  'Keşfet',
+      'f.match':    'Okul Bul',
+      'f.programs': 'Programlar',
+      'f.test':     'İngilizce Testi',
+      'f.unis':     'Üniversiteler',
+      'f.account':  'Hesap',
+      'f.login':    'Giriş Yap',
+      'f.register': 'Kayıt Ol',
+      'f.portal':   'Öğrenci Paneli',
+      'f.company':  'Şirket',
+      'f.about':    'Hakkımızda',
+      'f.contact':  'İletişim',
+      'f.privacy':  'Gizlilik Politikası',
+      'f.terms':    'Kullanım Koşulları',
+      'f.rights':   'Tüm hakları saklıdır.',
+      /* ── Homepage ── */
+      'h.badge':       'Türkiye\'nin Yurt Dışı Eğitim Platformu',
+      'h.title':       'Hayalindeki Üniversiteyi<br>Yurt Dışında Bul',
+      'h.sub':         'Yurt dışında okumak istiyorsun ama nereden başlayacağını bilmiyor musun? Biz yardımcı olalım.',
+      'h.wiz.title':   'Programlara Uygunluğunu Öğren',
+      'h.wiz.sub':     'GPA\'nı, İngilizce seviyeni ve hedef bölgeni gir — sana en uygun üniversite programlarını sıralayalım.',
+      'h.wiz.btn':     'Profil Sihirbazı',
+      'h.m.primary':   'Profil Sihirbazı',
+      'h.m.secondary': 'Programları Keşfet',
+      'h.search.ph':   'Okumak istediğin bölümü veya üniversite adını yaz…',
+      'h.search.btn':  'Ara',
+      'h.stat.uni':    'Üniversite',
+      'h.stat.cnt':    'Ülke',
+      'h.how.label':   'Nasıl Çalışır?',
+      'h.how.title':   'Yurt Dışı Eğitime 3 Adımda Başla',
+      'h.s1.num':      'Adım 1',
+      'h.s1.title':    'Profilini Oluştur',
+      'h.s1.desc':     'Eğitim seviyeni, ilgi alanlarını, bütçeni ve hedef bölgeni belirle. Profil sihirbazımız sana özel okul listesi oluşturur.',
+      'h.s1.btn':      'Sihirbazı Başlat',
+      'h.s2.num':      'Adım 2',
+      'h.s2.title':    'Keşfet & Karşılaştır',
+      'h.s2.desc':     '3D kampüs turu yap, QS / THE / Shanghai sıralamalarını karşılaştır, program gereksinimlerini gör.',
+      'h.s2.btn':      'Programlara Bak',
+      'h.s3.num':      'Adım 3',
+      'h.s3.title':    'Başvur',
+      'h.s3.desc':     'Belgelerini yükle, online başvurunu tamamla. Ön kabul alarak sürecini hızlandır.',
+      'h.s3.btn':      'Başvuru Yap',
+      'h.test.title':  'İngilizce Seviyeni Öğren',
+      'h.test.desc':   '20 soruluk CEFR testini ücretsiz yap. Sonuçlarını e-postayla al, hangi programlara uygun olduğunu gör.',
+      'h.test.btn':    'Testi Başlat',
+      'h.featured':    'Öne Çıkan Üniversiteler',
+      'h.results':     'Arama Sonuçları',
+      'h.loading':     'Yükleniyor…',
+      'h.err.load':    'Üniversiteler yüklenemedi.',
+      'h.empty':       'Aramanızla eşleşen üniversite bulunamadı.',
+      'h.result.lbl':  'sonuç',
+      'h.per.page':    '/ sayfa',
+      'h.prev':        '‹ Önceki',
+      'h.next':        'Sonraki ›',
+      'h.feat.star':   '★ Öne Çıkan',
+      'h.compare':     'Karşılaştır',
+      'h.added':       'Eklendi',
+      'h.max3':        'Maks 3!',
+      'h.remove':      'Çıkar',
+      'h.clear':       'Temizle',
+      'h.cmp.title':   'Üniversite Karşılaştırması',
+      'h.cmp.detail':  'Detay',
+      'h.cmp.country': 'Ülke',
+      'h.cmp.city':    'Şehir',
+      'h.cmp.cont':    'Kıta',
+      'h.cmp.qs':      'QS Sıra',
+      'h.cmp.the':     'THE Sıra',
+      'h.cmp.sh':      'Shanghai Sıra',
+      'h.cmp.leiden':  'Leiden Sıra',
+      'h.cmp.orbit':   '3D Orbit',
+      'h.cmp.avail':   'Mevcut',
+      /* ── Programs ── */
+      'p.title':       'Programları Keşfet',
+      'p.hero.sub':    'Dünyada 300+ üniversitedeki lisans ve lisansüstü programları filtrele, karşılaştır, başvur.',
+      'p.search.ph':   'Program adı veya üniversite ara…',
+      'p.filter.btn':  'Filtrele',
+      'p.filter.close':'Kapat',
+      'p.filters':     'Filtreler',
+      'p.degree.lbl':  'Derece',
+      'p.country.lbl': 'Ülke',
+      'p.budget.lbl':  'Bütçe',
+      'p.fee.lbl':     'Yıllık Ücret',
+      'p.schol.lbl':   'Yalnızca Burslu',
+      'p.schol.chip':  'Burslu Programlar',
+      'p.schol.avail': 'Burs',
+      'p.eng.lbl':     'İngilizce Şartı',
+      'p.eng.none':    'Şart Yok',
+      'p.all':         'Tümü',
+      'p.free':        'Ücretsiz',
+      'p.stat.prog':   'program',
+      'p.stat.uni':    'üniversite',
+      'p.stat.schol':  'burslı',
+      'p.stat.cnt':    'ülke',
+      'p.sort.lbl':    'Sırala',
+      'p.sort.def':    'Varsayılan',
+      'p.sort.az':     'A → Z',
+      'p.sort.name':   'Ada Göre',
+      'p.sort.fasc':   'Ücret ↑',
+      'p.sort.fdesc':  'Ücret ↓',
+      'p.sort.fasc2':  'Ücret (artan)',
+      'p.sort.fdesc2': 'Ücret (azalan)',
+      'p.sort.qs':     'QS Sırası',
+      'p.sort.qs2':    'QS Sıralaması',
+      'p.loading':     'Programlar yükleniyor…',
+      'p.err.load':    'Programlar yüklenemedi.',
+      'p.no.res':      'Seçimlerinize uygun program bulunamadı.',
+      'p.no.res.sub':  'Filtreleri değiştirmeyi deneyin.',
+      'p.found':       'program bulundu',
+      'p.clear':       'Filtreleri Temizle',
+      'p.pills.clear': 'Tümünü Temizle',
+      'p.pills.schol': 'Burslu',
+      'p.apply':       'Başvur',
+      'p.fee.free':    'Ücretsiz',
+      'p.fee.req':     'Talep Üzerine',
+      'p.per.yr':      '/yıl',
+      'p.elig.banner': 'Hangi programlar sana uygun?',
+      'p.elig.check':  'Uygunluğumu Kontrol Et',
+      'p.elig.close':  'Kapat',
+      'p.elig.hint':   'Profilini gir, Match\'e bas.',
+      'p.lead.title':  'Bilgi Talebi',
+      'p.lead.name.ph':'Adınız Soyadınız *',
+      'p.lead.email.ph':'E-posta adresiniz *',
+      'p.lead.phone.ph':'Telefon / WhatsApp (opsiyonel)',
+      'p.lead.msg.ph': 'Soru veya yorumlarınız (opsiyonel)',
+      'p.lead.send':   'Gönder',
+      'p.lead.cancel': 'İptal',
+      'p.lead.sending':'Gönderiliyor…',
+      'p.lead.req':    'Ad ve e-posta zorunludur.',
+      'p.lead.err':    'Bir hata oluştu.',
+      'p.lead.net.err':'Ağ hatası — lütfen tekrar deneyin.',
+      'p.lead.ok':     'Talebiniz alındı!',
+      'p.lead.ok.sub': 'En kısa sürede sizinle iletişime geçeceğiz.',
+      'p.lead.close':  'Kapat',
+      /* ── English Test ── */
+      't.title':      'İngilizce Seviye Testi',
+      't.intro':      '20 soruluk bu test yaklaşık 5 dakika sürer ve CEFR seviyenizi belirler. Sonuçlar e-posta ile gönderilir.',
+      't.start':      'Teste Başla',
+      't.back':       'Geri',
+      't.next':       'İleri',
+      't.finish':     'Bitir',
+      't.done':       'Test tamamlandı!',
+      't.email.lbl':  'Seviyenizi görmek için e-posta adresinizi girin. Sonuçlarınız hemen gönderilir.',
+      't.email.ph':   'ornek@email.com',
+      't.send':       'Sonucu Gönder',
+      't.sending':    'Gönderiliyor…',
+      't.email.err':  'Geçerli bir e-posta adresi girin.',
+      't.improve':    'Seviyenizi geliştirin',
+      't.find':       'Yurt dışı eğitim programı bulmak ister misiniz?',
+      't.find.btn':   'Okul Bul',
+      't.q.of':       'Soru',
+      't.ielts':      'IELTS Hazırlık',
+      't.ielts.d':    'Resmi IELTS sınavı için British Council kaynakları',
+      't.toefl':      'TOEFL iBT',
+      't.toefl.d':    'ABD ve Kanada üniversiteleri için standart sınav',
+      't.det':        'Duolingo English Test',
+      't.det.d':      'Online, 48 saatte sonuç — 500+ üniversite kabul ediyor',
+      /* ── School Match ── */
+      'm.title':     'Sana uygun okulları bulalım',
+      'm.sub':       'Birkaç soruyu yanıtla — sana en uygun, kabul şansı yüksek okulları sıralayalım. Kayıt veya e-posta gerekmez.',
+      'm.s1':        '1. Eğitim durumun',
+      'm.s1.high':   'Lise / 12. sınıf',
+      'm.s1.bach':   'Lisans mezunu',
+      'm.s1.master': 'Yüksek lisans mezunu',
+      'm.s2':        '2. Hangi dereceyi okumak istiyorsun?',
+      'm.s2.hint':   'Eğitim durumuna göre öneriyoruz — istersen değiştir',
+      'm.s2.bach':   'Lisans',
+      'm.s2.master': 'Yüksek Lisans',
+      'm.s3':        '3. İlgilendiğin alanlar',
+      'm.s3.hint':   'Birden fazla seçebilirsin',
+      'm.s4':        '4. İngilizce seviyen',
+      'm.s5':        '5. Yıllık eğitim bütçen',
+      'm.s6':        '6. Hangi bölge?',
+      'm.s7':        '7. AP / IB diploman var mı?',
+      'm.s7.hint':   'Zorunlu değil — yoksa "Yok" seç',
+      'm.s7.yes':    'Var',
+      'm.s7.no':     'Yok',
+      'm.btn':       'Bana uygun okulları göster',
+      'm.searching': 'Aranıyor…',
+      'm.error':     'Bir hata oluştu, lütfen tekrar dene.',
+      'm.found':     'okul bulundu',
+      'm.edit':      'Tercihleri düzenle',
+      'm.sorted':    'Kabul şansın en yüksek okullardan başlanarak sıralandı.',
+      'm.no.res':    'Seçimlerine uygun okul bulunamadı.\nBütçeni veya bölgeyi genişletmeyi dene.',
+      'm.fee':       'Ort. yıllık ücret',
+      'm.duration':  'Süre',
+      'm.depts':     'Uygun bölüm',
+      'm.viewdepts': 'Bölümleri gör',
+      'm.explore':   'Okulu incele (3D)',
+      'm.onreq':     'Talep üzerine',
+      'm.highchance':'Yüksek kabul şansı',
+      'm.goodchance':'İyi kabul şansı',
+      'm.medchance': 'Orta kabul şansı',
+      /* ── About ── */
+      'a.badge':    'Biz Kimiz',
+      'a.title':    'Yurt Dışı Eğitimde<br>Dijital Rehberiniz',
+      'a.sub':      'PANELEDU, öğrencilerin doğru üniversiteyi bulmasını kolaylaştırmak için tasarlanmış bir eğitim teknolojisi platformudur.',
+      'a.mission':  'Misyonumuz',
+      'a.values':   'Değerlerimiz',
+      'a.services': 'Hizmetlerimiz',
+      'a.contact':  'İletişim',
+    },
+
+    en: {
+      /* ── Navigation ── */
+      'nav.home':     'Home',
+      'nav.match':    'Find School',
+      'nav.programs': 'Programs',
+      'nav.test':     'English Test',
+      'nav.login':    'Login',
+      /* ── Footer ── */
+      'f.tagline':  'Find, compare, take 3D campus tours, and apply to the best universities abroad for your goals.',
+      'f.explore':  'Explore',
+      'f.match':    'Find School',
+      'f.programs': 'Programs',
+      'f.test':     'English Test',
+      'f.unis':     'Universities',
+      'f.account':  'Account',
+      'f.login':    'Sign In',
+      'f.register': 'Register',
+      'f.portal':   'Student Portal',
+      'f.company':  'Company',
+      'f.about':    'About Us',
+      'f.contact':  'Contact',
+      'f.privacy':  'Privacy Policy',
+      'f.terms':    'Terms of Service',
+      'f.rights':   'All rights reserved.',
+      /* ── Homepage ── */
+      'h.badge':       'Turkey\'s Study Abroad Platform',
+      'h.title':       'Find Your Dream University<br>Abroad',
+      'h.sub':         'Want to study abroad but not sure where to start? We\'ll help you find the right fit.',
+      'h.wiz.title':   'Check Your Programme Eligibility',
+      'h.wiz.sub':     'Enter your GPA, English level and target region — we\'ll rank the best-fit university programmes for you.',
+      'h.wiz.btn':     'Profile Wizard',
+      'h.m.primary':   'Profile Wizard',
+      'h.m.secondary': 'Explore Programmes',
+      'h.search.ph':   'Type a subject or university name…',
+      'h.search.btn':  'Search',
+      'h.stat.uni':    'Universities',
+      'h.stat.cnt':    'Countries',
+      'h.how.label':   'How It Works',
+      'h.how.title':   'Study Abroad in 3 Steps',
+      'h.s1.num':      'Step 1',
+      'h.s1.title':    'Build Your Profile',
+      'h.s1.desc':     'Set your education level, interests, budget and target region. Our wizard builds a personalised school list for you.',
+      'h.s1.btn':      'Start Wizard',
+      'h.s2.num':      'Step 2',
+      'h.s2.title':    'Explore & Compare',
+      'h.s2.desc':     'Take 3D campus tours, compare QS / THE / Shanghai rankings, and review programme requirements.',
+      'h.s2.btn':      'Browse Programmes',
+      'h.s3.num':      'Step 3',
+      'h.s3.title':    'Apply',
+      'h.s3.desc':     'Upload your documents and complete your online application. Get a pre-acceptance to fast-track your journey.',
+      'h.s3.btn':      'Apply Now',
+      'h.test.title':  'Discover Your English Level',
+      'h.test.desc':   'Take the free 20-question CEFR test. Get results by email and see which programmes you qualify for.',
+      'h.test.btn':    'Start Test',
+      'h.featured':    'Featured Universities',
+      'h.results':     'Search Results',
+      'h.loading':     'Loading…',
+      'h.err.load':    'Could not load universities.',
+      'h.empty':       'No universities match your search.',
+      'h.result.lbl':  'results',
+      'h.per.page':    '/ page',
+      'h.prev':        '‹ Prev',
+      'h.next':        'Next ›',
+      'h.feat.star':   '★ Featured',
+      'h.compare':     'Compare',
+      'h.added':       'Added',
+      'h.max3':        'Max 3!',
+      'h.remove':      'Remove',
+      'h.clear':       'Clear',
+      'h.cmp.title':   'University Comparison',
+      'h.cmp.detail':  'Detail',
+      'h.cmp.country': 'Country',
+      'h.cmp.city':    'City',
+      'h.cmp.cont':    'Continent',
+      'h.cmp.qs':      'QS Rank',
+      'h.cmp.the':     'THE Rank',
+      'h.cmp.sh':      'Shanghai Rank',
+      'h.cmp.leiden':  'Leiden Rank',
+      'h.cmp.orbit':   '3D Orbit',
+      'h.cmp.avail':   'Available',
+      /* ── Programs ── */
+      'p.title':       'Explore Programmes',
+      'p.hero.sub':    'Filter, compare and apply to undergraduate and postgraduate programmes at 300+ universities worldwide.',
+      'p.search.ph':   'Search programme or university…',
+      'p.filter.btn':  'Filter',
+      'p.filter.close':'Close',
+      'p.filters':     'Filters',
+      'p.degree.lbl':  'Degree',
+      'p.country.lbl': 'Country',
+      'p.budget.lbl':  'Budget',
+      'p.fee.lbl':     'Annual Fee',
+      'p.schol.lbl':   'Scholarships Only',
+      'p.schol.chip':  'Scholarship Programmes',
+      'p.schol.avail': 'Scholarship',
+      'p.eng.lbl':     'English Requirement',
+      'p.eng.none':    'No Requirement',
+      'p.all':         'All',
+      'p.free':        'Free',
+      'p.stat.prog':   'programmes',
+      'p.stat.uni':    'universities',
+      'p.stat.schol':  'with scholarship',
+      'p.stat.cnt':    'countries',
+      'p.sort.lbl':    'Sort',
+      'p.sort.def':    'Default',
+      'p.sort.az':     'A → Z',
+      'p.sort.name':   'By Name',
+      'p.sort.fasc':   'Fee ↑',
+      'p.sort.fdesc':  'Fee ↓',
+      'p.sort.fasc2':  'Fee (ascending)',
+      'p.sort.fdesc2': 'Fee (descending)',
+      'p.sort.qs':     'QS Rank',
+      'p.sort.qs2':    'QS Ranking',
+      'p.loading':     'Loading programmes…',
+      'p.err.load':    'Could not load programmes.',
+      'p.no.res':      'No programmes match your filters.',
+      'p.no.res.sub':  'Try adjusting your filters.',
+      'p.found':       'programmes found',
+      'p.clear':       'Clear Filters',
+      'p.pills.clear': 'Clear All',
+      'p.pills.schol': 'Scholarship',
+      'p.apply':       'Apply',
+      'p.fee.free':    'Free',
+      'p.fee.req':     'On Request',
+      'p.per.yr':      '/yr',
+      'p.elig.banner': 'Which programmes suit you?',
+      'p.elig.check':  'Check My Eligibility',
+      'p.elig.close':  'Close',
+      'p.elig.hint':   'Enter your profile and click Match.',
+      'p.lead.title':  'Information Request',
+      'p.lead.name.ph':'Your Full Name *',
+      'p.lead.email.ph':'Your Email Address *',
+      'p.lead.phone.ph':'Phone / WhatsApp (optional)',
+      'p.lead.msg.ph': 'Your questions or comments (optional)',
+      'p.lead.send':   'Send',
+      'p.lead.cancel': 'Cancel',
+      'p.lead.sending':'Sending…',
+      'p.lead.req':    'Name and email are required.',
+      'p.lead.err':    'An error occurred.',
+      'p.lead.net.err':'Network error — please try again.',
+      'p.lead.ok':     'Request received!',
+      'p.lead.ok.sub': 'We\'ll get back to you as soon as possible.',
+      'p.lead.close':  'Close',
+      /* ── English Test ── */
+      't.title':      'English Level Test',
+      't.intro':      'This 20-question test takes about 5 minutes and determines your CEFR level. Results are sent by email.',
+      't.start':      'Start Test',
+      't.back':       'Back',
+      't.next':       'Next',
+      't.finish':     'Finish',
+      't.done':       'Test complete!',
+      't.email.lbl':  'Enter your email to see your level. Results are sent instantly.',
+      't.email.ph':   'example@email.com',
+      't.send':       'Send Result',
+      't.sending':    'Sending…',
+      't.email.err':  'Please enter a valid email address.',
+      't.improve':    'Improve your level',
+      't.find':       'Want to find a study abroad programme?',
+      't.find.btn':   'Find Schools',
+      't.q.of':       'Question',
+      't.ielts':      'IELTS Preparation',
+      't.ielts.d':    'British Council resources for the official IELTS exam',
+      't.toefl':      'TOEFL iBT',
+      't.toefl.d':    'Standard exam for US and Canadian universities',
+      't.det':        'Duolingo English Test',
+      't.det.d':      'Online, results in 48 hours — 500+ universities accepted',
+      /* ── School Match ── */
+      'm.title':     'Let\'s find the right schools for you',
+      'm.sub':       'Answer a few questions — we\'ll rank the best-fit schools with the highest acceptance chance. No sign-up or email required.',
+      'm.s1':        '1. Your education status',
+      'm.s1.high':   'High school / Year 12',
+      'm.s1.bach':   'Bachelor\'s graduate',
+      'm.s1.master': 'Master\'s graduate',
+      'm.s2':        '2. What degree do you want to study?',
+      'm.s2.hint':   'We recommend based on your status — change if needed',
+      'm.s2.bach':   'Bachelor\'s',
+      'm.s2.master': 'Master\'s',
+      'm.s3':        '3. Fields of interest',
+      'm.s3.hint':   'You can select more than one',
+      'm.s4':        '4. Your English level',
+      'm.s5':        '5. Annual education budget',
+      'm.s6':        '6. Which region?',
+      'm.s7':        '7. Do you have an AP / IB diploma?',
+      'm.s7.hint':   'Not required — select "No" if you don\'t',
+      'm.s7.yes':    'Yes',
+      'm.s7.no':     'No',
+      'm.btn':       'Show my matching schools',
+      'm.searching': 'Searching…',
+      'm.error':     'An error occurred, please try again.',
+      'm.found':     'schools found',
+      'm.edit':      'Edit preferences',
+      'm.sorted':    'Sorted from schools with the highest acceptance chance.',
+      'm.no.res':    'No schools match your criteria.\nTry expanding your budget or region.',
+      'm.fee':       'Avg. annual fee',
+      'm.duration':  'Duration',
+      'm.depts':     'Matching departments',
+      'm.viewdepts': 'View departments',
+      'm.explore':   'Explore campus (3D)',
+      'm.onreq':     'On request',
+      'm.highchance':'High acceptance chance',
+      'm.goodchance':'Good acceptance chance',
+      'm.medchance': 'Medium acceptance chance',
+      /* ── About ── */
+      'a.badge':    'Who We Are',
+      'a.title':    'Your Digital Guide to<br>Studying Abroad',
+      'a.sub':      'PANELEDU is an education technology platform designed to help students find the right university abroad.',
+      'a.mission':  'Our Mission',
+      'a.values':   'Our Values',
+      'a.services': 'Our Services',
+      'a.contact':  'Contact',
+    }
+  };
+
+  /* ── Core helpers ──────────────────────────────────────────────────────────── */
+  function getLang() {
+    return localStorage.getItem('paneleduLang') || 'tr';
+  }
+
+  function t(key) {
+    var lang = getLang();
+    var d = T[lang];
+    if (d && d[key] !== undefined) return d[key];
+    var fb = T.tr;
+    return (fb && fb[key] !== undefined) ? fb[key] : key;
+  }
+
+  function applyAll() {
+    var lang = getLang();
+    var d = T[lang] || T.tr;
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n');
+      if (d[k] !== undefined) el.textContent = d[k];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n-html');
+      if (d[k] !== undefined) el.innerHTML = d[k];
+    });
+    document.querySelectorAll('[data-i18n-ph]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n-ph');
+      if (d[k] !== undefined) el.placeholder = d[k];
+    });
+
+    /* Update language toggle button */
+    var btn = document.getElementById('peLangBtn');
+    if (btn) btn.textContent = lang === 'tr' ? 'EN' : 'TR';
+  }
+
+  /* Toggle language on button click */
+  window.panelangToggle = function () {
+    var next = getLang() === 'tr' ? 'en' : 'tr';
+    localStorage.setItem('paneleduLang', next);
+    location.reload();
+  };
+
+  /* Public API */
+  window.t = t;
+  window.i18n = { t: t, getLang: getLang, apply: applyAll };
+
+  /* ── Initialise ──────────────────────────────────────────────────────────── */
+  function init() {
+    if (localStorage.getItem('paneleduLang')) {
+      /* Language already chosen — apply immediately */
+      applyAll();
+    } else {
+      /* First visit — detect by IP, cache result */
+      fetch('/api/public/lang')
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          localStorage.setItem('paneleduLang', d.lang || 'tr');
+          applyAll();
+        })
+        .catch(function () { applyAll(); });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();

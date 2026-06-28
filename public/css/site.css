@@ -65,6 +65,14 @@ body.pe-theme {
 .pe-nav-links .btn-grad { padding: 8px 18px; }
 .pe-nav-links .btn-grad:hover { color: #fff !important; background: var(--grad); }
 .pe-nav-toggle { display: none; background: none; border: none; font-size: 1.5rem; color: var(--text); cursor: pointer; margin-left: auto; }
+/* Language toggle button */
+.pe-lang-btn {
+  background: var(--surface-2); border: 1.5px solid var(--line); color: var(--muted);
+  border-radius: 8px; padding: 5px 11px; font-size: .78rem; font-weight: 700;
+  cursor: pointer; letter-spacing: .04em; transition: all .12s; flex-shrink: 0;
+}
+.pe-lang-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(79,70,229,.07); }
+
 @media (max-width: 760px) {
   .pe-nav-toggle { display: block; }
   .pe-nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch;
@@ -72,6 +80,7 @@ body.pe-theme {
   .pe-nav-links.open { display: flex; }
   .pe-nav-links a { padding: 12px; }
   .pe-nav-links .btn-grad { justify-content: center; margin-top: 6px; }
+  .pe-lang-btn { align-self: flex-start; margin-top: 4px; }
 }
 
 /* ── Footer (injected by chrome.js) ───────────────────────────────────────── */
