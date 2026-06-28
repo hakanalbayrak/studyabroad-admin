@@ -51,6 +51,11 @@ app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'public/reg
 app.get('/portal', (req, res) => res.sendFile(path.join(__dirname, 'public/portal/index.html')));
 app.get('/affiliate', (req, res) => res.sendFile(path.join(__dirname, 'public/affiliate/index.html')));
 
+// Legal / company pages
+app.get('/about', (req, res) => res.sendFile(path.join(__dirname, 'public/about.html')));
+app.get('/privacy', (req, res) => res.sendFile(path.join(__dirname, 'public/privacy.html')));
+app.get('/terms', (req, res) => res.sendFile(path.join(__dirname, 'public/terms.html')));
+
 // Seed first admin from env vars if no admin users exist
 const bcrypt = require('bcryptjs');
 async function seedAdmin() {

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakkımızda & İletişim — PANELEDU</title>
+  <meta name="description" content="PANELEDU, Türkiye'den yurt dışında eğitim almak isteyen öğrencilere üniversite bulma, program karşılaştırma ve başvuru süreçlerinde rehberlik eden dijital bir platformdur.">
+  <link rel="canonical" href="https://paneledu.com/about">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="/css/site.css" rel="stylesheet">
+  <style>
+    .about-hero { background: var(--grad-soft); border-bottom: 1px solid rgba(99,102,241,.15); padding: 60px 0 48px; }
+    .about-hero h1 { font-size: clamp(1.7rem,4vw,2.6rem); font-weight: 900; color: var(--text); margin-bottom: 12px; }
+    .about-hero p { color: var(--muted); font-size: 1.05rem; max-width: 560px; line-height: 1.65; }
+    .section { padding: 56px 0; }
+    .section + .section { border-top: 1px solid var(--line); }
+    .sec-title { font-size: 1.3rem; font-weight: 800; color: var(--text); margin-bottom: 6px; }
+    .sec-sub { font-size: .9rem; color: var(--muted); margin-bottom: 28px; line-height: 1.55; }
+    .value-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; box-shadow: var(--shadow); }
+    .value-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--grad-soft); border: 1px solid rgba(99,102,241,.2); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 14px; }
+    .value-title { font-size: .95rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .value-desc { font-size: .84rem; color: var(--muted); line-height: 1.55; }
+    .stat-box { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px 20px; text-align: center; box-shadow: var(--shadow); }
+    .stat-box .num { font-size: 2rem; font-weight: 900; line-height: 1; margin-bottom: 4px; }
+    .stat-box .lbl { font-size: .8rem; color: var(--muted); font-weight: 600; }
+    .contact-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px; box-shadow: var(--shadow); }
+    .contact-field { width: 100%; background: var(--surface); border: 1.5px solid var(--line); border-radius: 10px; padding: 11px 14px; font-size: .92rem; color: var(--text); outline: none; transition: border-color .15s; }
+    .contact-field:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(79,70,229,.14); }
+    .contact-field::placeholder { color: var(--muted); }
+    .info-row { display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    .info-row:last-child { border-bottom: none; }
+    .info-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(79,70,229,.1); display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; font-size: 1rem; }
+    .info-label { font-size: .72rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
+    .info-val { font-size: .9rem; color: var(--text); font-weight: 500; }
+    #contactSuccess { display: none; text-align: center; padding: 20px 0; }
+  </style>
+</head>
+<body class="pe-theme">
+
+<!-- Hero -->
+<div class="about-hero">
+  <div class="container">
+    <div class="mb-3">
+      <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(79,70,229,.1);border:1px solid rgba(79,70,229,.25);border-radius:99px;padding:5px 14px;font-size:.8rem;font-weight:700;color:var(--accent)">
+        <i class="bi bi-globe-americas"></i>Türkiye'nin Yurt Dışı Eğitim Platformu
+      </span>
+    </div>
+    <h1>Hakkımızda</h1>
+    <p>PANELEDU, Türkiye'deki öğrencilerin dünyanın dört bir yanındaki üniversiteleri keşfetmesini, programları karşılaştırmasını ve kolayca başvurmasını sağlayan bir eğitim teknolojisi platformudur.</p>
+  </div>
+</div>
+
+<!-- Mission -->
+<div class="section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-12 col-lg-6">
+        <div class="sec-title">Misyonumuz</div>
+        <p style="color:var(--muted);line-height:1.7;font-size:.95rem">
+          Yurt dışında eğitim almak isteyen her Türk öğrencinin, maddi veya bilgi engeline takılmadan hayalindeki üniversiteye ulaşabilmesini istiyoruz.
+        </p>
+        <p style="color:var(--muted);line-height:1.7;font-size:.95rem">
+          300'den fazla üniversiteyi tek platformda bir araya getirerek; program arama, uygunluk kontrolü, 3D kampüs turu ve online başvuru süreçlerini uçtan uca sunuyoruz.
+        </p>
+        <p style="color:var(--muted);line-height:1.7;font-size:.95rem">
+          Öğrenciler için ücretsiz olan platformumuz; şeffaf bilgi, bağımsız tavsiye ve kişiselleştirilmiş okul eşleştirmesi üzerine kurulmuştur.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="stat-box">
+              <div class="num pe-grad-text">300+</div>
+              <div class="lbl">Üniversite</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-box">
+              <div class="num pe-grad-text">18+</div>
+              <div class="lbl">Ülke</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-box">
+              <div class="num pe-grad-text">1000+</div>
+              <div class="lbl">Program</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-box">
+              <div class="num pe-grad-text">%100</div>
+              <div class="lbl">Ücretsiz</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Values -->
+<div class="section" style="background:var(--surface-2)">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="sec-title">Neden PANELEDU?</div>
+      <div class="sec-sub">Öğrenciyi merkeze alan yaklaşımımızı şekillendiren ilkeler.</div>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="value-card h-100">
+          <div class="value-icon"><i class="bi bi-shield-check" style="color:var(--accent)"></i></div>
+          <div class="value-title">Bağımsız & Tarafsız</div>
+          <div class="value-desc">Hiçbir üniversiteye sponsorlu sıralama vermiyoruz. Tüm öneriler GPA, dil skoru ve bütçe gibi objektif kriterlere dayanır.</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="value-card h-100">
+          <div class="value-icon"><i class="bi bi-eye" style="color:#9333ea"></i></div>
+          <div class="value-title">Şeffaf Bilgi</div>
+          <div class="value-desc">Ücretler, giriş şartları ve burs olanakları dahil her bilgi kamuya açık, güncel ve doğrulanmıştır.</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="value-card h-100">
+          <div class="value-icon"><i class="bi bi-person-heart" style="color:#0ea5e9"></i></div>
+          <div class="value-title">Öğrenci Önce</div>
+          <div class="value-desc">Platform öğrenciler için ücretsizdir. Üniversitelerden aldığımız referans ücretleri, platformu geliştirmek için kullanılır.</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="value-card h-100">
+          <div class="value-icon"><i class="bi bi-lock" style="color:#059669"></i></div>
+          <div class="value-title">Veri Güvenliği</div>
+          <div class="value-desc">Kişisel verilerinizi üçüncü kişilere satmıyoruz. KVKK ve GDPR ilkelerine tam uyum sağlıyoruz.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- What we offer -->
+<div class="section">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-12 col-lg-5">
+        <div class="sec-title">Ne Sunuyoruz?</div>
+        <div class="sec-sub">Yurt dışı eğitim yolculuğunuzun her adımında yanınızdayız.</div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:9px;background:rgba(79,70,229,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-search" style="color:var(--accent)"></i></div>
+            <div><div style="font-weight:700;font-size:.9rem;color:var(--text)">Akıllı Program Arama</div><div style="font-size:.83rem;color:var(--muted);margin-top:2px">Derece, ülke, bütçe ve burs filtresiyle binlerce program arasından anlık arama.</div></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:9px;background:rgba(147,51,234,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-magic" style="color:#9333ea"></i></div>
+            <div><div style="font-weight:700;font-size:.9rem;color:var(--text)">Profil Sihirbazı</div><div style="font-size:.83rem;color:var(--muted);margin-top:2px">GPA'nızı, İngilizce skorunuzu ve bütçenizi girin; size en uygun programları sıralayalım.</div></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:9px;background:rgba(14,165,233,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-camera-video-fill" style="color:#0ea5e9"></i></div>
+            <div><div style="font-weight:700;font-size:.9rem;color:var(--text)">3D Kampüs Turu</div><div style="font-size:.83rem;color:var(--muted);margin-top:2px">Google Photorealistic 3D teknolojisiyle kampüsleri sanal olarak gezin.</div></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:9px;background:rgba(5,150,105,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-send-fill" style="color:#059669"></i></div>
+            <div><div style="font-weight:700;font-size:.9rem;color:var(--text)">Online Başvuru</div><div style="font-size:.83rem;color:var(--muted);margin-top:2px">Doğrudan platform üzerinden başvurun. Sürecinizi öğrenci panelinizden takip edin.</div></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:9px;background:rgba(245,158,11,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-journal-check" style="color:#b45309"></i></div>
+            <div><div style="font-weight:700;font-size:.9rem;color:var(--text)">Ücretsiz İngilizce Testi</div><div style="font-size:.83rem;color:var(--muted);margin-top:2px">CEFR tabanlı 20 soruluk seviye testi ile hangi programlara uygun olduğunuzu öğrenin.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-7">
+        <!-- Affiliate disclosure (important for partner approvals) -->
+        <div style="background:rgba(79,70,229,.05);border:1.5px solid rgba(79,70,229,.2);border-radius:16px;padding:24px">
+          <div style="font-size:.75rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px"><i class="bi bi-info-circle-fill me-1"></i>Ortaklık Açıklaması</div>
+          <p style="font-size:.88rem;color:var(--muted);line-height:1.65;margin:0">
+            PANELEDU, bazı test ve eğitim kuruluşlarıyla ortak program anlaşmaları kapsamında referans bağlantıları kullanabilir. Bu bağlantılar aracılığıyla gerçekleşen işlemler için küçük bir komisyon alabiliriz. Bu durum, sizi herhangi bir ek ücrete tabi tutmaz ve önerilerimizin bağımsızlığını etkilemez. Ortaklık ilişkimiz bulunan platformlar her zaman açıkça belirtilir.
+          </p>
+        </div>
+        <div style="margin-top:16px;background:var(--surface-2);border:1px solid var(--line);border-radius:16px;padding:24px">
+          <div style="font-weight:700;font-size:.95rem;color:var(--text);margin-bottom:8px"><i class="bi bi-building me-2" style="color:var(--accent)"></i>Şirket Bilgileri</div>
+          <div class="info-row">
+            <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div><div class="info-label">Adres</div><div class="info-val">Türkiye</div></div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div><div class="info-label">E-posta</div><div class="info-val"><a href="mailto:info@paneledu.com" style="color:var(--accent);text-decoration:none">info@paneledu.com</a></div></div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><i class="bi bi-globe2"></i></div>
+            <div><div class="info-label">Web</div><div class="info-val"><a href="https://paneledu.com" style="color:var(--accent);text-decoration:none">paneledu.com</a></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="section" style="background:var(--surface-2)">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="text-center mb-4">
+          <div class="sec-title">Bize Ulaşın</div>
+          <div class="sec-sub">Sorularınız, ortaklık teklifleriniz veya geri bildirimleriniz için formu doldurun — 1 iş günü içinde yanıt veririz.</div>
+        </div>
+        <div class="contact-card">
+          <div id="contactForm">
+            <div class="row g-3">
+              <div class="col-12 col-sm-6">
+                <label style="font-size:.78rem;font-weight:600;color:var(--muted);display:block;margin-bottom:5px">Adınız Soyadınız *</label>
+                <input id="cName" type="text" class="contact-field" placeholder="Örn. Ayşe Kaya">
+              </div>
+              <div class="col-12 col-sm-6">
+                <label style="font-size:.78rem;font-weight:600;color:var(--muted);display:block;margin-bottom:5px">E-posta *</label>
+                <input id="cEmail" type="email" class="contact-field" placeholder="ornek@email.com">
+              </div>
+              <div class="col-12">
+                <label style="font-size:.78rem;font-weight:600;color:var(--muted);display:block;margin-bottom:5px">Konu</label>
+                <select id="cSubject" class="contact-field" style="cursor:pointer">
+                  <option value="">Seçiniz</option>
+                  <option>Genel soru</option>
+                  <option>Ortaklık / İş birliği</option>
+                  <option>Üniversite / Program ekletme</option>
+                  <option>Teknik destek</option>
+                  <option>Basın / Medya</option>
+                  <option>Diğer</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label style="font-size:.78rem;font-weight:600;color:var(--muted);display:block;margin-bottom:5px">Mesajınız *</label>
+                <textarea id="cMsg" class="contact-field" rows="5" placeholder="Mesajınızı buraya yazın…" style="resize:vertical"></textarea>
+              </div>
+              <div id="cError" style="display:none;color:#dc2626;font-size:.83rem;padding:0 4px"></div>
+              <div class="col-12">
+                <button onclick="submitContact()" id="cBtn" class="btn-grad w-100" style="justify-content:center">
+                  <i class="bi bi-send-fill me-1"></i>Gönder
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="contactSuccess">
+            <div style="font-size:2.5rem;margin-bottom:12px">✅</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:6px">Mesajınız alındı!</div>
+            <div style="font-size:.88rem;color:var(--muted)">En kısa sürede size geri döneceğiz.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+async function submitContact() {
+  const name = document.getElementById('cName').value.trim();
+  const email = document.getElementById('cEmail').value.trim();
+  const subject = document.getElementById('cSubject').value;
+  const msg = document.getElementById('cMsg').value.trim();
+  const err = document.getElementById('cError');
+  err.style.display = 'none';
+  if (!name || !email || !msg) { err.textContent = 'Ad, e-posta ve mesaj alanları zorunludur.'; err.style.display = 'block'; return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { err.textContent = 'Geçerli bir e-posta adresi girin.'; err.style.display = 'block'; return; }
+  const btn = document.getElementById('cBtn');
+  btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Gönderiliyor…';
+  try {
+    await fetch('/api/public/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ student_name: name, email, message: `[${subject || 'İletişim'}] ${msg}` })
+    });
+  } catch (_) {}
+  document.getElementById('contactForm').style.display = 'none';
+  document.getElementById('contactSuccess').style.display = 'block';
+}
+</script>
+<script src="/js/chrome.js"></script>
+</body>
+</html>

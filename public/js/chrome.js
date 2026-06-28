@@ -47,8 +47,15 @@
             '<a href="/register">Kayıt Ol</a>' +
             '<a href="/portal">Öğrenci Paneli</a>' +
           '</div>' +
+          '<div class="pe-footer-col">' +
+            '<span class="h">Şirket</span>' +
+            '<a href="/about">Hakkımızda</a>' +
+            '<a href="/about#contact">İletişim</a>' +
+            '<a href="/privacy">Gizlilik Politikası</a>' +
+            '<a href="/terms">Kullanım Koşulları</a>' +
+          '</div>' +
         '</div>' +
-        '<div class="pe-footer-bottom">© ' + year + ' PANELEDU · Tüm hakları saklıdır.</div>' +
+        '<div class="pe-footer-bottom">© ' + year + ' PANELEDU · Tüm hakları saklıdır. · <a href="/privacy" style="color:inherit;opacity:.7">Gizlilik</a> · <a href="/terms" style="color:inherit;opacity:.7">Koşullar</a></div>' +
       '</footer>';
   }
 
