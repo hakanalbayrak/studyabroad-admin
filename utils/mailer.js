@@ -15,6 +15,12 @@ function getTransport() {
   return transport;
 }
 
+// Sender address — use MAIL_FROM if set (required for services like Resend where
+// SMTP_USER is a generic token, not an email address).
+function fromAddr() {
+  return `"PANELEDU" <${process.env.MAIL_FROM || process.env.SMTP_USER}>`;
+}
+
 async function sendLeadNotification(lead) {
   const t = getTransport();
   if (!t) return; // SMTP not configured — skip silently
@@ -61,7 +67,7 @@ async function sendLeadNotification(lead) {
     </div>`;
 
   try {
-    await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to, subject, text, html });
+    await t.sendMail({ from: fromAddr(), to, subject, text, html });
   } catch (e) {
     console.error('[mailer] Failed to send lead notification:', e.message);
   }
@@ -88,7 +94,7 @@ async function sendLeadReply(toEmail, studentName, body) {
     </div>`;
 
   try {
-    await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to: toEmail, subject, text, html });
+    await t.sendMail({ from: fromAddr(), to: toEmail, subject, text, html });
     return true;
   } catch (e) {
     console.error('[mailer] Failed to send lead reply:', e.message);
@@ -116,7 +122,7 @@ async function sendOtpCode(email, code) {
     </div>`;
 
   try {
-    await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to: email, subject, text, html });
+    await t.sendMail({ from: fromAddr(), to: email, subject, text, html });
     return true;
   } catch (e) {
     console.error('[mailer] Failed to send OTP code:', e.message);
@@ -144,7 +150,7 @@ async function sendApplicationNotice(app) {
         </div>
       </div>`;
     try {
-      await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to: app.email,
+      await t.sendMail({ from: fromAddr(), to: app.email,
         subject: `Application received — ${uni}`,
         text: `Hi ${name},\n\nWe've received your application for ${uni}${app.program_name ? ' — ' + app.program_name : ''}. Our team will review it and contact you soon.\n\n— PANELEDU Team`,
         html });
@@ -155,7 +161,7 @@ async function sendApplicationNotice(app) {
   const to = process.env.NOTIFY_EMAIL || process.env.SMTP_USER;
   if (to) {
     try {
-      await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to,
+      await t.sendMail({ from: fromAddr(), to,
         subject: `New application: ${name} — ${uni}`,
         text: `New application #${app.id || ''}\n\nApplicant: ${name}\nEmail: ${app.email}\nPhone: ${app.phone || '—'}\nUniversity: ${uni}\nProgram: ${app.program_name || '—'}\nIntake: ${app.desired_intake || '—'}\n\nView in admin: ${process.env.APP_URL || ''}/admin`,
       });
@@ -188,7 +194,7 @@ async function sendPreAcceptance(app, ref, url, conditional) {
       </div>
     </div>`;
   try {
-    await t.sendMail({ from: `"PANELEDU" <${process.env.SMTP_USER}>`, to: app.email,
+    await t.sendMail({ from: fromAddr(), to: app.email,
       subject: `${heading} — ${uni} (${ref})`,
       text: `Dear ${name},\n\nCongratulations! You have received a ${heading.toLowerCase()} for ${uni}${app.program_name ? ' — ' + app.program_name : ''}.\n${app.preaccept_conditions ? '\nConditions: ' + app.preaccept_conditions + '\n' : ''}\nReference: ${ref}\n${url ? '\nView your acceptance letter: ' + url + '\n' : ''}\nThis is a PANELEDU preliminary assessment, not a final university admission decision.\n\n— PANELEDU Team`,
       html });
@@ -222,7 +228,7 @@ async function sendApplicationReminder(app, customMessage) {
     </div>`;
   try {
     await t.sendMail({
-      from: `"PANELEDU" <${process.env.SMTP_USER}>`,
+      from: fromAddr(),
       to: app.email,
       subject: `Başvuru hatırlatması — ${uni}`,
       text: `Sayın ${name},\n\n${msg}\n\nÜniversite: ${uni}${app.program_name ? '\nProgram: ' + app.program_name : ''}${app.desired_intake ? '\nHedef dönem: ' + app.desired_intake : ''}\n\n— PANELEDU Ekibi`,
@@ -265,7 +271,7 @@ async function sendStatusUpdate(app, newStatus) {
     </div>`;
   try {
     await t.sendMail({
-      from: `"PANELEDU" <${process.env.SMTP_USER}>`,
+      from: fromAddr(),
       to: app.email,
       subject: `Başvuru güncellemesi — ${uni}`,
       text: `Sayın ${name},\n\n${uni} için yaptığınız başvuru ${label}.\n\n— PANELEDU Ekibi`,
@@ -347,7 +353,7 @@ async function sendEnglishTestResult(email, level, score) {
     </div>`;
   try {
     await t.sendMail({
-      from: `"PANELEDU" <${process.env.SMTP_USER}>`,
+      from: fromAddr(),
       to: email,
       subject: `İngilizce seviyeniz: ${label} — PANELEDU`,
       text: `Tebrikler! 20 sorudan ${score} doğru ile ${label} seviyesindesiniz.\n\n${advice}\n\nYurt dışı okul bulmak için: ${process.env.APP_URL || 'https://paneledu.com'}/match\n\n— PANELEDU Ekibi`,
