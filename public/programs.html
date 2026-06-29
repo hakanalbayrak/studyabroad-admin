@@ -324,6 +324,12 @@
       <div style="font-size:.85rem;color:var(--muted);margin-bottom:18px" data-i18n="p.no.res.sub">Filtreleri değiştirmeyi deneyin.</div>
       <button onclick="clearAllFilters()" style="background:var(--grad);border:none;color:#fff;border-radius:8px;padding:8px 20px;font-size:.85rem;font-weight:600;cursor:pointer" data-i18n="p.clear">Filtreleri Temizle</button>
     </div>
+    <div id="noFilterMsg" class="d-none" style="text-align:center;padding:64px 0 80px">
+      <i class="bi bi-compass" style="font-size:3rem;display:block;margin-bottom:16px;color:var(--accent);opacity:.6"></i>
+      <div style="font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:10px">Programları keşfetmeye başlayın</div>
+      <div style="font-size:.88rem;color:var(--muted);max-width:420px;margin:0 auto 24px;line-height:1.6">Program adı veya üniversite arayın, ya da yukarıdaki filtrelerden derece türü, ülke veya bütçe seçin.</div>
+      <div id="quickTypeChips" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center"></div>
+    </div>
     <div class="row g-3" id="cardsContainer"></div>
     <nav id="pagination" class="d-flex justify-content-center align-items-center gap-2 flex-wrap" style="margin-top:28px"></nav>
   </div>
@@ -369,9 +375,16 @@ async function init() {
     ]);
     allPrograms = programs;
     buildFilterChips(options);
+    document.getElementById('loadingMsg').style.display = 'none';
     applyFilters();
     updateStats();
-    document.getElementById('loadingMsg').style.display = 'none';
+    // Quick-start chips inside the no-filter prompt
+    const qtc = document.getElementById('quickTypeChips');
+    if (qtc && options.types) {
+      qtc.innerHTML = options.types.slice(0, 6).map(t =>
+        `<div class="fchip" onclick="toggleType('${esc(t)}')">${esc(t)}</div>`
+      ).join('');
+    }
   } catch (e) {
     document.getElementById('loadingMsg').innerHTML =
       '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>' + (window.t ? window.t('p.err.load') : 'Programlar yüklenemedi.');
@@ -493,14 +506,29 @@ function filterProgram(p) {
   return true;
 }
 
+function hasActiveFilter() {
+  return state.q.length > 0 || state.types.size > 0 || state.countries.size > 0 ||
+    state.budget !== null || state.scholarship || state.engTypes.size > 0 || eligActive;
+}
+
 function applyFilters() {
+  renderPills();
+  if (!hasActiveFilter()) {
+    filteredPrograms = [];
+    currentPage = 1;
+    document.getElementById('resultCount').innerHTML = '';
+    document.getElementById('cardsContainer').innerHTML = '';
+    document.getElementById('pagination').innerHTML = '';
+    document.getElementById('emptyMsg').classList.add('d-none');
+    document.getElementById('noFilterMsg').classList.remove('d-none');
+    return;
+  }
+  document.getElementById('noFilterMsg').classList.add('d-none');
   filteredPrograms = allPrograms.filter(filterProgram);
   const c = filteredPrograms.length;
   const foundLbl = window.t ? window.t('p.found') : 'program bulundu';
-  document.getElementById('resultCount').innerHTML =
-    `<b>${c.toLocaleString()}</b> ${foundLbl}`;
+  document.getElementById('resultCount').innerHTML = `<b>${c.toLocaleString()}</b> ${foundLbl}`;
   currentPage = 1;
-  renderPills();
   renderCards();
 }
 
