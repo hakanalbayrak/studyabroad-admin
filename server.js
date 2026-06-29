@@ -572,11 +572,12 @@ app.get('/api/public/programs', async (req, res) => {
 // Public filter options (distinct values for dropdowns)
 app.get('/api/public/filter-options', async (req, res) => {
   try {
-    const [[countries], [types]] = await Promise.all([
+    const [[countries], [types], [fields]] = await Promise.all([
       db.query(`SELECT DISTINCT el.country FROM entity_locations el JOIN entities e ON e.id=el.entity_id WHERE e.status != 'inactive' AND el.country IS NOT NULL ORDER BY el.country`),
-      db.query(`SELECT DISTINCT pt.name FROM program_types pt JOIN programs p ON p.program_type_id=pt.id WHERE p.status='active' ORDER BY pt.name`)
+      db.query(`SELECT DISTINCT pt.name FROM program_types pt JOIN programs p ON p.program_type_id=pt.id WHERE p.status='active' ORDER BY pt.name`),
+      db.query(`SELECT DISTINCT p.field FROM programs p WHERE p.status='active' AND p.field IS NOT NULL AND p.field != '' ORDER BY p.field`)
     ]);
-    res.json({ countries: countries.map(r => r.country), types: types.map(r => r.name) });
+    res.json({ countries: countries.map(r => r.country), types: types.map(r => r.name), fields: fields.map(r => r.field) });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 

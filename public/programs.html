@@ -252,6 +252,12 @@
         <div class="chip-row" id="typeChips"></div>
       </div>
 
+      <!-- Alan / Fakülte (field) -->
+      <div class="filter-group" id="fieldGroup" style="display:none">
+        <span class="filter-group-label"><i class="bi bi-grid-fill me-1"></i><span>Alan / Fakülte</span></span>
+        <div class="chip-row scroll" id="fieldChips"></div>
+      </div>
+
       <!-- Ülke (country) -->
       <div class="filter-group">
         <span class="filter-group-label"><i class="bi bi-geo-alt-fill me-1"></i><span data-i18n="p.country.lbl">Ülke</span></span>
@@ -341,6 +347,7 @@
 const state = {
   q: '',
   types: new Set(),
+  fields: new Set(),
   countries: new Set(),
   budget: null,    // { key, label, min, max }
   scholarship: false,
@@ -373,7 +380,7 @@ async function init() {
       fetch('/api/public/programs?limit=10000').then(r => r.json()),
       fetch('/api/public/filter-options').then(r => r.json())
     ]);
-    allPrograms = programs;
+    allPrograms = programs.map(p => ({ ...p, type_name: normalizeType(p.type_name) }));
     buildFilterChips(options);
     document.getElementById('loadingMsg').style.display = 'none';
     applyFilters();
@@ -391,12 +398,36 @@ async function init() {
   }
 }
 
-function buildFilterChips({ countries, types }) {
-  // Type chips
+function normalizeType(t) {
+  if (!t) return t;
+  const l = t.toLowerCase().trim();
+  if (l.startsWith('bachelor')) return "Bachelor's";
+  if (l.startsWith('master')) return "Master's";
+  if (l === 'mba') return 'MBA';
+  if (l.startsWith('phd') || l === 'doctorate' || l.startsWith('doctor')) return 'PhD';
+  if (l.startsWith('associate')) return 'Associate';
+  if (l.startsWith('foundation')) return 'Foundation';
+  if (l.startsWith('diploma') || l.startsWith('certificate')) return 'Diploma / Certificate';
+  return t.trim();
+}
+
+function buildFilterChips({ countries, types, fields }) {
+  // Type chips — normalize and deduplicate
+  const normTypes = [...new Set((types || []).map(normalizeType))].sort();
   const typeRow = document.getElementById('typeChips');
-  typeRow.innerHTML = types.map(t =>
+  typeRow.innerHTML = normTypes.map(t =>
     `<div class="fchip" data-type="${esc(t)}" onclick="toggleType('${esc(t)}')">${esc(t)}</div>`
   ).join('');
+
+  // Field chips
+  const fieldRow = document.getElementById('fieldChips');
+  const fieldGroup = document.getElementById('fieldGroup');
+  if (fields && fields.length) {
+    fieldRow.innerHTML = fields.map(f =>
+      `<div class="fchip" data-field="${esc(f)}" onclick="toggleField('${esc(f)}')">${esc(f)}</div>`
+    ).join('');
+    fieldGroup.style.display = '';
+  }
 
   // Country chips (scrollable row)
   const ctryRow = document.getElementById('countryChips');
@@ -410,6 +441,14 @@ function toggleType(t) {
   if (state.types.has(t)) state.types.delete(t); else state.types.add(t);
   document.querySelectorAll('#typeChips .fchip').forEach(el => {
     el.classList.toggle('sel', state.types.has(el.dataset.type));
+  });
+  applyFilters();
+}
+
+function toggleField(f) {
+  if (state.fields.has(f)) state.fields.delete(f); else state.fields.add(f);
+  document.querySelectorAll('#fieldChips .fchip').forEach(el => {
+    el.classList.toggle('sel', state.fields.has(el.dataset.field));
   });
   applyFilters();
 }
@@ -485,6 +524,7 @@ function sortPrograms(arr) {
 function filterProgram(p) {
   if (state.q && !p.name.toLowerCase().includes(state.q) && !p.university_name.toLowerCase().includes(state.q)) return false;
   if (state.types.size && !state.types.has(p.type_name)) return false;
+  if (state.fields.size && !state.fields.has(p.field)) return false;
   if (state.countries.size && !state.countries.has(p.country)) return false;
   if (state.scholarship && !p.scholarship_available) return false;
   if (state.engTypes.size) {
@@ -507,8 +547,9 @@ function filterProgram(p) {
 }
 
 function hasActiveFilter() {
-  return state.q.length > 0 || state.types.size > 0 || state.countries.size > 0 ||
-    state.budget !== null || state.scholarship || state.engTypes.size > 0 || eligActive;
+  return state.q.length > 0 || state.types.size > 0 || state.fields.size > 0 ||
+    state.countries.size > 0 || state.budget !== null || state.scholarship ||
+    state.engTypes.size > 0 || eligActive;
 }
 
 function applyFilters() {
@@ -537,6 +578,7 @@ function renderPills() {
   const row = document.getElementById('pillsRow');
   const pills = [];
   state.types.forEach(t => pills.push({ label: t, type: 'type', val: t }));
+  state.fields.forEach(f => pills.push({ label: f, type: 'field', val: f }));
   state.countries.forEach(c => pills.push({ label: c, type: 'country', val: c }));
   if (state.budget) pills.push({ label: state.budget.label, type: 'budget', val: '' });
   if (state.scholarship) pills.push({ label: window.t ? window.t('p.pills.schol') : 'Burslu', type: 'scholarship', val: '' });
@@ -554,6 +596,9 @@ function removePillFilter(type, val) {
   if (type === 'type') {
     state.types.delete(val);
     document.querySelectorAll('#typeChips .fchip').forEach(el => { if (el.dataset.type === val) el.classList.remove('sel'); });
+  } else if (type === 'field') {
+    state.fields.delete(val);
+    document.querySelectorAll('#fieldChips .fchip').forEach(el => { if (el.dataset.field === val) el.classList.remove('sel'); });
   } else if (type === 'country') {
     state.countries.delete(val);
     document.querySelectorAll('#countryChips .fchip').forEach(el => { if (el.dataset.country === val) el.classList.remove('sel'); });
@@ -571,11 +616,11 @@ function removePillFilter(type, val) {
 }
 
 function clearAllFilters() {
-  state.q = ''; state.types.clear(); state.countries.clear();
+  state.q = ''; state.types.clear(); state.fields.clear(); state.countries.clear();
   state.budget = null; state.scholarship = false; state.engTypes.clear();
   document.getElementById('searchInput').value = '';
   document.getElementById('searchWrap').classList.remove('has-query');
-  document.querySelectorAll('.fchip.sel, .fchip.sel-green').forEach(el => el.classList.remove('sel','sel-green'));
+  document.querySelectorAll('.fchip.sel, .fchip.sel-green').forEach(el => el.classList.remove('sel', 'sel-green'));
   applyFilters();
 }
 
