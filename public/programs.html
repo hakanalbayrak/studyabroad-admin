@@ -364,7 +364,7 @@ let eligOnlyEligible = true;
 async function init() {
   try {
     const [programs, options] = await Promise.all([
-      fetch('/api/public/programs').then(r => r.json()),
+      fetch('/api/public/programs?limit=10000').then(r => r.json()),
       fetch('/api/public/filter-options').then(r => r.json())
     ]);
     allPrograms = programs;
