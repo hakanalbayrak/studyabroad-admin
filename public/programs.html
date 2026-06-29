@@ -252,9 +252,15 @@
         <div class="chip-row" id="typeChips"></div>
       </div>
 
-      <!-- Alan / Fakülte (field) -->
+      <!-- Kategori (program category) -->
+      <div class="filter-group" id="categoryGroup" style="display:none">
+        <span class="filter-group-label"><i class="bi bi-grid-fill me-1"></i><span>Kategori</span></span>
+        <div class="chip-row" id="categoryChips"></div>
+      </div>
+
+      <!-- Alan / Fakülte (field — only shown when data exists) -->
       <div class="filter-group" id="fieldGroup" style="display:none">
-        <span class="filter-group-label"><i class="bi bi-grid-fill me-1"></i><span>Alan / Fakülte</span></span>
+        <span class="filter-group-label"><i class="bi bi-journal-bookmark-fill me-1"></i><span>Alan / Fakülte</span></span>
         <div class="chip-row scroll" id="fieldChips"></div>
       </div>
 
@@ -344,9 +350,17 @@
 <script src="/js/eligibility.js"></script>
 <script>
 // ── State ─────────────────────────────────────────────────────────────
+const CATEGORY_LABELS = {
+  undergraduate: 'Lisans (Undergraduate)',
+  postgraduate: 'Lisansüstü (Postgraduate)',
+  preparation: 'Hazırlık / Pathway',
+  other: 'Diğer'
+};
+
 const state = {
   q: '',
   types: new Set(),
+  categories: new Set(),
   fields: new Set(),
   countries: new Set(),
   budget: null,    // { key, label, min, max }
@@ -411,7 +425,7 @@ function normalizeType(t) {
   return t.trim();
 }
 
-function buildFilterChips({ countries, types, fields }) {
+function buildFilterChips({ countries, types, fields, categories }) {
   // Type chips — normalize and deduplicate
   const normTypes = [...new Set((types || []).map(normalizeType))].sort();
   const typeRow = document.getElementById('typeChips');
@@ -419,7 +433,17 @@ function buildFilterChips({ countries, types, fields }) {
     `<div class="fchip" data-type="${esc(t)}" onclick="toggleType('${esc(t)}')">${esc(t)}</div>`
   ).join('');
 
-  // Field chips
+  // Category chips (undergraduate / postgraduate / etc.)
+  const catRow = document.getElementById('categoryChips');
+  const catGroup = document.getElementById('categoryGroup');
+  if (categories && categories.length) {
+    catRow.innerHTML = categories.map(c =>
+      `<div class="fchip" data-cat="${esc(c)}" onclick="toggleCategory('${esc(c)}')">${esc(CATEGORY_LABELS[c] || c)}</div>`
+    ).join('');
+    catGroup.style.display = '';
+  }
+
+  // Field chips (only shown when data exists)
   const fieldRow = document.getElementById('fieldChips');
   const fieldGroup = document.getElementById('fieldGroup');
   if (fields && fields.length) {
@@ -441,6 +465,14 @@ function toggleType(t) {
   if (state.types.has(t)) state.types.delete(t); else state.types.add(t);
   document.querySelectorAll('#typeChips .fchip').forEach(el => {
     el.classList.toggle('sel', state.types.has(el.dataset.type));
+  });
+  applyFilters();
+}
+
+function toggleCategory(c) {
+  if (state.categories.has(c)) state.categories.delete(c); else state.categories.add(c);
+  document.querySelectorAll('#categoryChips .fchip').forEach(el => {
+    el.classList.toggle('sel', state.categories.has(el.dataset.cat));
   });
   applyFilters();
 }
@@ -524,6 +556,7 @@ function sortPrograms(arr) {
 function filterProgram(p) {
   if (state.q && !p.name.toLowerCase().includes(state.q) && !p.university_name.toLowerCase().includes(state.q)) return false;
   if (state.types.size && !state.types.has(p.type_name)) return false;
+  if (state.categories.size && !state.categories.has(p.type_category)) return false;
   if (state.fields.size && !state.fields.has(p.field)) return false;
   if (state.countries.size && !state.countries.has(p.country)) return false;
   if (state.scholarship && !p.scholarship_available) return false;
@@ -547,9 +580,9 @@ function filterProgram(p) {
 }
 
 function hasActiveFilter() {
-  return state.q.length > 0 || state.types.size > 0 || state.fields.size > 0 ||
-    state.countries.size > 0 || state.budget !== null || state.scholarship ||
-    state.engTypes.size > 0 || eligActive;
+  return state.q.length > 0 || state.types.size > 0 || state.categories.size > 0 ||
+    state.fields.size > 0 || state.countries.size > 0 || state.budget !== null ||
+    state.scholarship || state.engTypes.size > 0 || eligActive;
 }
 
 function applyFilters() {
@@ -578,6 +611,7 @@ function renderPills() {
   const row = document.getElementById('pillsRow');
   const pills = [];
   state.types.forEach(t => pills.push({ label: t, type: 'type', val: t }));
+  state.categories.forEach(c => pills.push({ label: CATEGORY_LABELS[c] || c, type: 'category', val: c }));
   state.fields.forEach(f => pills.push({ label: f, type: 'field', val: f }));
   state.countries.forEach(c => pills.push({ label: c, type: 'country', val: c }));
   if (state.budget) pills.push({ label: state.budget.label, type: 'budget', val: '' });
@@ -596,6 +630,9 @@ function removePillFilter(type, val) {
   if (type === 'type') {
     state.types.delete(val);
     document.querySelectorAll('#typeChips .fchip').forEach(el => { if (el.dataset.type === val) el.classList.remove('sel'); });
+  } else if (type === 'category') {
+    state.categories.delete(val);
+    document.querySelectorAll('#categoryChips .fchip').forEach(el => { if (el.dataset.cat === val) el.classList.remove('sel'); });
   } else if (type === 'field') {
     state.fields.delete(val);
     document.querySelectorAll('#fieldChips .fchip').forEach(el => { if (el.dataset.field === val) el.classList.remove('sel'); });
@@ -616,7 +653,7 @@ function removePillFilter(type, val) {
 }
 
 function clearAllFilters() {
-  state.q = ''; state.types.clear(); state.fields.clear(); state.countries.clear();
+  state.q = ''; state.types.clear(); state.categories.clear(); state.fields.clear(); state.countries.clear();
   state.budget = null; state.scholarship = false; state.engTypes.clear();
   document.getElementById('searchInput').value = '';
   document.getElementById('searchWrap').classList.remove('has-query');
