@@ -44,6 +44,25 @@ router.post('/register', async (req, res) => {
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Request a one-time code by email
+// TEMP DEBUG — remove after fixing email
+router.get('/test-mail', async (req, res) => {
+  const nodemailer = require('nodemailer');
+  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, MAIL_FROM } = process.env;
+  const config = { SMTP_HOST, SMTP_PORT, SMTP_USER, MAIL_FROM, SMTP_PASS: SMTP_PASS ? '***set***' : 'NOT SET' };
+  if (!SMTP_HOST || !SMTP_USER) return res.json({ error: 'SMTP not configured', config });
+  const t = nodemailer.createTransport({
+    host: SMTP_HOST, port: parseInt(SMTP_PORT) || 587, secure: parseInt(SMTP_PORT) === 465,
+    auth: { user: SMTP_USER, pass: SMTP_PASS || '' }
+  });
+  try {
+    await t.sendMail({ from: MAIL_FROM || SMTP_USER, to: SMTP_USER === 'resend' ? (MAIL_FROM || 'test@example.com') : SMTP_USER,
+      subject: 'PANELEDU test', text: 'Test OK' });
+    res.json({ ok: true, config });
+  } catch (e) {
+    res.json({ error: e.message, config });
+  }
+});
+
 router.post('/otp/request', async (req, res) => {
   const email = (req.body.email || '').toLowerCase().trim();
   if (!EMAIL_RE.test(email)) return res.status(400).json({ error: 'Please enter a valid email address.' });
