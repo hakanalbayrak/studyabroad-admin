@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const db = require('../db');
 const { sendApplicationNotice, sendPreAcceptance, sendApplicationReminder, sendStatusUpdate } = require('../utils/mailer');
+const { generatePreAcceptancePdf } = require('../utils/pdfgen');
 
 const UPLOAD_DIR = path.join(__dirname, '..', 'uploads', 'applications');
 fs.mkdirSync(UPLOAD_DIR, { recursive: true });
@@ -172,6 +173,37 @@ adminRouter.get('/:id/documents/:docId/download', async (req, res) => {
     const filePath = path.join(UPLOAD_DIR, doc.stored_name);
     if (!fs.existsSync(filePath)) return res.status(404).json({ error: 'File missing' });
     res.download(filePath, doc.original_name || doc.stored_name);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Download pre-acceptance letter as PDF (admin)
+adminRouter.get('/:id/preaccept-pdf', async (req, res) => {
+  try {
+    const [[app]] = await db.query('SELECT * FROM applications WHERE id = ?', [req.params.id]);
+    if (!app) return res.status(404).json({ error: 'Not found' });
+    if (!app.preaccept_ref) return res.status(400).json({ error: 'No pre-acceptance issued yet' });
+    const conditional = app.status === 'conditional';
+    const pdf = await generatePreAcceptancePdf(app, app.preaccept_ref, conditional);
+    const filename = `preaccept-${app.preaccept_ref}.pdf`;
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+    res.send(pdf);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Download pre-acceptance letter as PDF (applicant via portal — needs upload_token)
+publicRouter.get('/:id/preaccept-pdf', async (req, res) => {
+  try {
+    const token = req.query.token;
+    const [[app]] = await db.query('SELECT * FROM applications WHERE id = ?', [req.params.id]);
+    if (!app || !token || token !== app.upload_token) return res.status(403).json({ error: 'Not authorized' });
+    if (!app.preaccept_ref) return res.status(400).json({ error: 'No pre-acceptance issued yet' });
+    const conditional = app.status === 'conditional';
+    const pdf = await generatePreAcceptancePdf(app, app.preaccept_ref, conditional);
+    const filename = `preaccept-${app.preaccept_ref}.pdf`;
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+    res.send(pdf);
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 

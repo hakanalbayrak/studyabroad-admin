@@ -1004,6 +1004,7 @@
           <div class="d-flex gap-2 flex-wrap">
             <button class="btn btn-success btn-sm" onclick="issuePreAccept(false)"><i class="bi bi-patch-check me-1"></i>Issue pre-acceptance</button>
             <button class="btn btn-warning btn-sm" onclick="issuePreAccept(true)"><i class="bi bi-hourglass-split me-1"></i>Issue conditional</button>
+            <button class="btn btn-sm" id="downloadPdfBtn" style="display:none;background:#6366f1;color:#fff;border:none" onclick="downloadPreAcceptPdf()"><i class="bi bi-file-earmark-pdf me-1"></i>Download PDF</button>
           </div>
         </div>
       </div>
@@ -2634,6 +2635,11 @@ function renderApplicationDetail(a) {
   preInfo.innerHTML = a.preaccept_issued_at
     ? `<i class="bi bi-check-circle-fill text-success me-1"></i>Issued <b>${esc2(a.preaccept_ref || '')}</b> on ${new Date(a.preaccept_issued_at).toLocaleDateString()} · <a href="/acceptance?ref=${encodeURIComponent(a.preaccept_ref||'')}" target="_blank" style="color:#818cf8">view letter</a>`
     : 'Not issued yet.';
+  document.getElementById('downloadPdfBtn').style.display = a.preaccept_ref ? '' : 'none';
+}
+
+function downloadPreAcceptPdf() {
+  window.open(`/api/admin/applications/${currentAppId}/preaccept-pdf`, '_blank');
 }
 
 async function issuePreAccept(conditional) {
