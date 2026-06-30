@@ -718,6 +718,25 @@ app.get('/api/auto/remind', async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+// ── Auto-deploy webhook ───────────────────────────────────────────────────────
+// GitHub sends a POST here on every push. Pulls latest code and restarts.
+app.post('/api/deploy', (req, res) => {
+  const secret = process.env.DEPLOY_SECRET;
+  if (!secret || req.query.secret !== secret) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+  res.json({ ok: true, message: 'Deploy started' });
+  setTimeout(() => {
+    require('child_process').exec(
+      `cd "${__dirname}" && git pull 2>&1 && npm install --production 2>&1`,
+      (err, out) => {
+        console.log('[deploy]', out || err?.message);
+        process.exit(0); // Passenger auto-restarts the app
+      }
+    );
+  }, 300);
+});
+
 // 404 handler — must be last
 app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, 'public/404.html'));
