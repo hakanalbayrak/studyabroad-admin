@@ -204,11 +204,6 @@
       </div>
     </div>
 
-    <!-- Stats (filled by JS after load) -->
-    <div class="stats-row" id="statsRow" style="display:none">
-      <div class="stat-item"><div class="stat-num pe-grad-text" id="st-uni">—</div><div class="stat-lbl" data-i18n="h.stat.uni">Üniversite</div></div>
-      <div class="stat-item"><div class="stat-num pe-grad-text" id="st-country">—</div><div class="stat-lbl" data-i18n="h.stat.cnt">Ülke</div></div>
-    </div>
   </div>
 </div>
 
@@ -332,9 +327,6 @@ async function load() {
 
 function updateStats() {
   const countries = new Set(allUniversities.map(u => u.country).filter(Boolean));
-  document.getElementById('st-uni').textContent = allUniversities.length + '+';
-  document.getElementById('st-country').textContent = countries.size + '+';
-  document.getElementById('statsRow').style.display = 'flex';
 }
 
 
