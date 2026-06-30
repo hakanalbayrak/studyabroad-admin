@@ -59,7 +59,7 @@ body.pe-theme {
 .pe-nav-inner { max-width: 1160px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; gap: 18px; }
 .pe-brand { font-weight: 800; font-size: 1.18rem; text-decoration: none; display: flex; align-items: center; gap: 8px; }
 .pe-brand .dot { width: 22px; height: 22px; border-radius: 7px; background: var(--grad); display: inline-block; }
-.pe-nav-links { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+.pe-nav-links { display: flex; align-items: center; gap: 10px; margin-left: auto; }
 .pe-nav-links a { color: var(--muted); text-decoration: none; font-size: .9rem; font-weight: 600; padding: 8px 12px; border-radius: 9px; transition: all .12s; }
 .pe-nav-links a:not(.btn-grad):hover { color: var(--accent); background: var(--surface-2); }
 .pe-nav-links .btn-grad { padding: 8px 18px; }
@@ -70,6 +70,7 @@ body.pe-theme {
   background: var(--surface-2); border: 1.5px solid var(--line); color: var(--muted);
   border-radius: 8px; padding: 5px 11px; font-size: .78rem; font-weight: 700;
   cursor: pointer; letter-spacing: .04em; transition: all .12s; flex-shrink: 0;
+  margin-left: 4px;
 }
 .pe-lang-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(79,70,229,.07); }
 
