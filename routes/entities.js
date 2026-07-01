@@ -9,14 +9,17 @@ router.get('/', async (req, res) => {
       SELECT e.*,
         el.city, el.country, el.id as location_id,
         el.latitude, el.longitude,
-        COALESCE((
-          SELECT COUNT(*) FROM programs p
-          WHERE p.entity_location_id IN (SELECT id FROM entity_locations WHERE entity_id = e.id)
-        ), 0) as programs_count
+        COALESCE(pc.cnt, 0) as programs_count
       FROM entities e
       LEFT JOIN entity_locations el ON el.id = (
         SELECT MIN(id) FROM entity_locations WHERE entity_id = e.id
       )
+      LEFT JOIN (
+        SELECT el2.entity_id, COUNT(p.id) as cnt
+        FROM programs p
+        JOIN entity_locations el2 ON el2.id = p.entity_location_id
+        GROUP BY el2.entity_id
+      ) pc ON pc.entity_id = e.id
       ORDER BY e.name
     `);
     res.json(rows);
