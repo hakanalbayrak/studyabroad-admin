@@ -336,27 +336,30 @@
       <div class="chip-grid" id="continentChips"></div>
     </div>
     <div class="wiz-step" data-step="2" style="display:none">
-      <div class="step-h" data-i18n="apply.step2.h">Hangi ülke?</div>
+      <div class="step-h">Hangi ülke?</div>
       <div class="step-sub" id="countryStepSub">Seçtiğin kıtadaki ülkeler listeleniyor.</div>
-      <label class="lbl">Ülke seç</label>
-      <select class="fld" id="countrySelect" onchange="onCountryChange()"><option value="" data-i18n="apply.ctry.sel">Ülke seçin…</option></select>
+      <div class="chip-grid" id="countryChips"></div>
     </div>
     <div class="wiz-step" data-step="3" style="display:none">
-      <div class="step-h" data-i18n="apply.step3.h">Hangi üniversite?</div>
-      <div class="step-sub" id="schoolStepSub">Ülkedeki üniversiteler listeleniyor.</div>
-      <label class="lbl">Üniversite seç</label>
-      <select class="fld" id="schoolSelect" onchange="onSchoolChange()"><option value="" data-i18n="apply.sch.sel">Üniversite seçin…</option></select>
+      <div class="step-h">Hangi program türü?</div>
+      <div class="step-sub" id="typeStepSub">Okumak istediğin program türünü seç.</div>
+      <div class="chip-grid" id="typeChips"></div>
     </div>
     <div class="wiz-step" data-step="4" style="display:none">
-      <div class="step-h" data-i18n="apply.step4.h">Hangi program?</div>
-      <div class="step-sub" data-i18n="apply.step4.s">Başvurmak istediğin programı ve başlangıç dönemini seç.</div>
-      <label class="lbl" data-i18n="apply.prog.lbl">Program</label>
-      <select class="fld" id="programSelect" onchange="onProgramChange()"><option value="" data-i18n="apply.prog.sel">Program seçin…</option></select>
-      <div id="programLoading" style="display:none;font-size:.82rem;color:var(--muted);margin:-8px 0 16px" data-i18n="apply.prog.load">Programlar yükleniyor…</div>
-      <label class="lbl" data-i18n="apply.intake.lbl">Intake</label>
-      <select class="fld" id="intakeSelect"><option value="" data-i18n="apply.intake.sel">Seçin…</option></select>
+      <div class="step-h">Hangi üniversite?</div>
+      <div class="step-sub" id="schoolStepSub">Seçtiğin kriterlere uyan üniversiteler listeleniyor.</div>
+      <label class="lbl">Üniversite seç</label>
+      <select class="fld" id="schoolSelect" onchange="onSchoolChange()"><option value="">Üniversite seçin…</option></select>
     </div>
     <div class="wiz-step" data-step="5" style="display:none">
+      <div class="step-h">Hangi program?</div>
+      <div class="step-sub">Başvurmak istediğin programı ve başlangıç dönemini seç.</div>
+      <label class="lbl">Program</label>
+      <select class="fld" id="programSelect" onchange="onProgramChange()"><option value="">Program seçin…</option></select>
+      <label class="lbl" style="margin-top:4px">Intake</label>
+      <select class="fld" id="intakeSelect"><option value="">Seçin…</option></select>
+    </div>
+    <div class="wiz-step" data-step="6" style="display:none">
       <div class="step-h" data-i18n="apply.step5.h">İletişim &amp; Profil</div>
       <div class="step-sub" data-i18n="apply.step5.s">Ad, soyad, e-posta ve telefon zorunludur.</div>
       <div class="grid2">
@@ -742,10 +745,10 @@ async function scSubmit() {
 // ══════════════════════════════════════════════════════════════════════════
 // FUNNEL MODE (cold start)
 // ══════════════════════════════════════════════════════════════════════════
-const TOTAL_STEPS = 5;
+const TOTAL_STEPS = 6;
 let curStep = 1;
-let allUnis = [], fPrograms = [];
-const fSel = { continent:null, country:null, schoolId:null, schoolName:null,
+let allUnis = [], allCountryProgs = [], fPrograms = [];
+const fSel = { continent:null, country:null, progType:null, schoolId:null, schoolName:null,
                programId:null, programName:null, eduStatus:null, fEngLevel:null };
 const CONTINENTS = [
   {val:'Europe',        label:'Avrupa 🇪🇺'},
@@ -754,6 +757,7 @@ const CONTINENTS = [
   {val:'Asia',          label:'Asya 🌏'},
   {val:'UK',            label:'Birleşik Krallık 🇬🇧'},
 ];
+const STEP_LABELS = ['Kıta','Ülke','Program Türü','Okul','Program','İletişim & Profil'];
 
 async function initFunnel() {
   document.getElementById('funnelMode').style.display = 'block';
@@ -772,33 +776,68 @@ function pickContinent(el) {
   document.querySelectorAll('[data-f="continent"]').forEach(c => c.classList.remove('sel'));
   el.classList.add('sel');
   fSel.continent = el.dataset.v;
-  const unis = allUnis.filter(u => u.continent === fSel.continent);
+  fSel.country = null; fSel.progType = null; fSel.schoolId = null;
+  const unis = allUnis.filter(u =>
+    fSel.continent === 'UK'
+      ? (u.continent === 'UK' || u.country === 'United Kingdom' || u.country === 'UK')
+      : u.continent === fSel.continent
+  );
   const countries = [...new Set(unis.map(u => u.country).filter(Boolean))].sort();
-  const ctrySel = window.t ? window.t('apply.ctry.sel') : 'Ülke seçin…';
-  document.getElementById('countrySelect').innerHTML = '<option value="">' + ctrySel + '</option>' + countries.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('');
+  document.getElementById('countryChips').innerHTML = countries.length
+    ? countries.map(c => `<div class="chip" data-f="country" data-v="${esc(c)}" onclick="pickCountry(this)">${esc(c)}</div>`).join('')
+    : '<p style="color:var(--muted);font-size:.85rem">Bu kıtada kayıtlı üniversite bulunamadı.</p>';
   document.getElementById('countryStepSub').textContent = fSel.continent + ' kıtasındaki ülkeler listeleniyor.';
 }
-function onCountryChange() {
-  fSel.country = document.getElementById('countrySelect').value || null;
-  const unis = allUnis.filter(u => !fSel.country || u.country === fSel.country);
-  const schSel = window.t ? window.t('apply.sch.sel') : 'Üniversite seçin…';
-  document.getElementById('schoolSelect').innerHTML = '<option value="">' + schSel + '</option>' + unis.map(u => `<option value="${u.id}">${esc(u.name)}</option>`).join('');
-  document.getElementById('schoolStepSub').textContent = (fSel.country || '') + ' üniversiteleri listeleniyor.';
+
+async function pickCountry(el) {
+  document.querySelectorAll('[data-f="country"]').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  fSel.country = el.dataset.v;
+  fSel.progType = null; fSel.schoolId = null;
+  document.getElementById('typeChips').innerHTML = '<span style="color:var(--muted);font-size:.84rem">Yükleniyor…</span>';
+  document.getElementById('typeStepSub').textContent = fSel.country + ' için program türleri yükleniyor.';
+  allCountryProgs = [];
+  try {
+    const r = await (await fetch('/api/public/programs?country=' + encodeURIComponent(fSel.country) + '&limit=2000')).json();
+    allCountryProgs = Array.isArray(r) ? r : (r.data || []);
+  } catch(_) {}
+  const types = [...new Set(allCountryProgs.map(p => p.type_name).filter(Boolean))].sort();
+  document.getElementById('typeChips').innerHTML =
+    types.map(t => `<div class="chip" data-f="progType" data-v="${esc(t)}" onclick="pickType(this)">${esc(t)}</div>`).join('') +
+    `<div class="chip" data-f="progType" data-v="" onclick="pickType(this)" style="opacity:.7">Farketmez</div>`;
+  document.getElementById('typeStepSub').textContent = fSel.country + ' için program türünü seç.';
 }
-async function onSchoolChange() {
+
+function pickType(el) {
+  document.querySelectorAll('[data-f="progType"]').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  fSel.progType = el.dataset.v || null;
+  const filtered = fSel.progType
+    ? allCountryProgs.filter(p => p.type_name === fSel.progType)
+    : allCountryProgs;
+  const schoolMap = new Map();
+  filtered.forEach(p => { if (p.university_id && !schoolMap.has(p.university_id)) schoolMap.set(p.university_id, p.university_name); });
+  const sorted = [...schoolMap.entries()].sort((a, b) => a[1].localeCompare(b[1]));
+  document.getElementById('schoolSelect').innerHTML =
+    '<option value="">Üniversite seçin…</option>' +
+    sorted.map(([id, name]) => `<option value="${id}">${esc(name)}</option>`).join('');
+  document.getElementById('schoolStepSub').textContent =
+    (fSel.progType || 'Tüm') + ' programları olan ' + fSel.country + ' üniversiteleri.';
+}
+
+function onSchoolChange() {
   const id = document.getElementById('schoolSelect').value;
   fSel.schoolId = id ? parseInt(id) : null;
-  fSel.schoolName = (allUnis.find(u => u.id == id) || {}).name || '';
-  fPrograms = [];
-  const ps = document.getElementById('programSelect');
-  ps.innerHTML = '<option value="">' + (window.t ? window.t('apply.loading') : 'Yükleniyor…') + '</option>';
-  document.getElementById('programLoading').style.display = 'block';
-  try { fPrograms = ((await (await fetch('/api/public/programs?entity_id=' + fSel.schoolId + '&limit=500')).json()).data || []); } catch(_) {}
-  document.getElementById('programLoading').style.display = 'none';
-  const progSel = window.t ? window.t('apply.prog.sel') : 'Program seçin…';
-  ps.innerHTML = '<option value="">' + progSel + '</option>' + fPrograms.map(p =>
-    `<option value="${p.id}">${esc(p.name)}${p.type_name?' ('+esc(p.type_name)+')':''}${p.duration?' · '+esc(p.duration):''}</option>`).join('');
+  fSel.schoolName = id ? ((allUnis.find(u => u.id == id) || {}).name || (allCountryProgs.find(p => p.university_id == id) || {}).university_name || '') : '';
+  fPrograms = allCountryProgs.filter(p =>
+    p.university_id == id && (!fSel.progType || p.type_name === fSel.progType)
+  );
+  const progSel = 'Program seçin…';
+  document.getElementById('programSelect').innerHTML = '<option value="">' + progSel + '</option>' +
+    fPrograms.map(p => `<option value="${p.id}">${esc(p.name)}${p.type_name?' ('+esc(p.type_name)+')':''}${p.duration?' · '+esc(p.duration):''}</option>`).join('');
+  document.getElementById('intakeSelect').innerHTML = '<option value="">Seçin…</option>';
 }
+
 function onProgramChange() {
   const id = document.getElementById('programSelect').value;
   fSel.programId = id ? parseInt(id) : null;
@@ -815,25 +854,22 @@ function fCard(field, el) { el.closest('.card-chips').querySelectorAll('.card-ch
 
 function renderProgress() {
   document.getElementById('progBar').innerHTML = Array.from({length:TOTAL_STEPS}, (_,i) => `<div class="seg${i<curStep?' on':''}"></div>`).join('');
-  const stepsStr = window.t ? window.t('apply.steps') : 'Kıta,Ülke,Okul,Program,İletişim & Profil';
-  const labels = stepsStr.split(',');
-  const stepOf = window.t ? window.t('apply.step.of') : 'Adım';
-  document.getElementById('progLabel').textContent = stepOf + ' ' + curStep + ' / ' + TOTAL_STEPS + ' — ' + labels[curStep-1];
+  document.getElementById('progLabel').textContent = 'Adım ' + curStep + ' / ' + TOTAL_STEPS + ' — ' + (STEP_LABELS[curStep-1] || '');
 }
 function showStep(n) {
   curStep = n;
   document.querySelectorAll('.wiz-step').forEach(el => el.style.display = parseInt(el.dataset.step) === n ? 'block' : 'none');
   document.getElementById('backBtn').style.display = n > 1 ? 'block' : 'none';
-  const submitLbl = window.t ? window.t('apply.submit') : 'Başvuruyu Gönder';
-  const contLbl = window.t ? window.t('apply.continue') : 'Devam';
-  document.getElementById('nextBtn').innerHTML = n === TOTAL_STEPS ? '<i class="bi bi-send" style="margin-right:6px"></i>' + submitLbl : contLbl + ' <i class="bi bi-arrow-right" style="margin-left:6px"></i>';
+  document.getElementById('nextBtn').innerHTML = n === TOTAL_STEPS
+    ? '<i class="bi bi-send" style="margin-right:6px"></i>Başvuruyu Gönder'
+    : 'Devam <i class="bi bi-arrow-right" style="margin-left:6px"></i>';
   renderProgress();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function validateStep(n) {
-  if (n === 1 && !fSel.continent) { alert(window.t ? window.t('apply.err.cont') : 'Lütfen bir kıta seç.'); return false; }
-  if (n === 2 && !document.getElementById('countrySelect').value) { alert(window.t ? window.t('apply.err.ctry') : 'Lütfen bir ülke seç.'); return false; }
-  if (n === 3 && !document.getElementById('schoolSelect').value) { alert(window.t ? window.t('apply.err.sch') : 'Lütfen bir üniversite seç.'); return false; }
+  if (n === 1 && !fSel.continent) { alert('Lütfen bir kıta seç.'); return false; }
+  if (n === 2 && !fSel.country) { alert('Lütfen bir ülke seç.'); return false; }
+  if (n === 4 && !document.getElementById('schoolSelect').value) { alert('Lütfen bir üniversite seç.'); return false; }
   return true;
 }
 function nextStep() { if (!validateStep(curStep)) return; if (curStep === TOTAL_STEPS) { funnelSubmit(); return; } showStep(curStep + 1); }
