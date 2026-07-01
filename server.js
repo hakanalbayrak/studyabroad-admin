@@ -380,7 +380,7 @@ async function processBulkGeo(jobId, locations) {
           );
         } else {
           await db.query(
-            'UPDATE orbit_configs SET orbit_center_lat=?, orbit_center_lng=? WHERE entity_location_id=? AND orbit_center_lat IS NULL',
+            'UPDATE orbit_configs SET orbit_center_lat=?, orbit_center_lng=? WHERE entity_location_id=? AND orbit_center_lat IS NULL AND coord_locked=0',
             [r.lat, r.lng, loc.location_id]
           );
         }

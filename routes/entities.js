@@ -9,11 +9,13 @@ router.get('/', async (req, res) => {
       SELECT e.*,
         el.city, el.country, el.id as location_id,
         el.latitude, el.longitude,
-        COALESCE(pc.cnt, 0) as programs_count
+        COALESCE(pc.cnt, 0) as programs_count,
+        oc.id as orbit_config_id, oc.coord_locked
       FROM entities e
       LEFT JOIN entity_locations el ON el.id = (
         SELECT MIN(id) FROM entity_locations WHERE entity_id = e.id
       )
+      LEFT JOIN orbit_configs oc ON oc.entity_location_id = el.id
       LEFT JOIN (
         SELECT el2.entity_id, COUNT(p.id) as cnt
         FROM programs p

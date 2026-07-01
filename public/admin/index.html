@@ -1345,7 +1345,7 @@ function renderEntitiesTable(list) {
       <td class="text-center"><span class="badge bg-primary bg-opacity-15 text-primary">${e.programs_count}</span></td>
       <td><span class="badge badge-${e.status}">${cap(e.status)}</span></td>
       <td class="text-end pe-3">
-        ${e.latitude && e.longitude ? `<button class="btn btn-outline-primary btn-sm table-actions me-1" title="Preview Orbit" onclick="openOrbitPreview('${esc(e.name).replace(/'/g,"\\'")}',${e.latitude},${e.longitude})"><i class="bi bi-globe2"></i></button>` : ''}
+        ${e.latitude && e.longitude ? `<button class="btn ${e.coord_locked ? 'btn-warning' : 'btn-outline-primary'} btn-sm table-actions me-1" title="${e.coord_locked ? 'Orbit Önizleme (Koordinatlar Kilitli)' : 'Orbit Önizleme'}" onclick="openOrbitPreview('${esc(e.name).replace(/'/g,"\\'")}',${e.latitude},${e.longitude},${e.id},${e.orbit_config_id||'null'})"><i class="bi bi-globe2"></i>${e.coord_locked ? '<i class=\'bi bi-lock-fill ms-1\' style=\'font-size:.65rem;vertical-align:middle\'></i>' : ''}</button>` : ''}
         <button class="btn btn-outline-secondary btn-sm table-actions me-1" onclick="openEntityForm(${e.id})">
           <i class="bi bi-pencil"></i>
         </button>
@@ -1533,8 +1533,13 @@ async function lookupRankings() {
   }
 }
 
-function openOrbitPreview(name, lat, lng) {
-  const p = new URLSearchParams({ name, lat, lng, alt: '400', pitch: '-45', heading: '0', range: '400', speed: '0.12', rot: '360' });
+function openOrbitPreview(name, lat, lng, uniId, orbitId) {
+  const p = new URLSearchParams({
+    name, lat, lng,
+    uniId: uniId || '',
+    adminMode: '1',
+    orbitId: orbitId || ''
+  });
   window.open('/orbit/?' + p.toString(), '_blank');
 }
 

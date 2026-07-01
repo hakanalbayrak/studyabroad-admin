@@ -118,6 +118,31 @@
       #dockToggle { display:flex; }
     }
     .cesium-viewer-bottom, .cesium-viewer-animationContainer, .cesium-viewer-timelineContainer { display:none !important; }
+
+    /* Admin orbit editor panel */
+    #adminPanel {
+      position:absolute; top:65px; right:14px; z-index:35;
+      background:rgba(11,16,32,.93); border:1.5px solid rgba(99,102,241,.45);
+      border-radius:14px; padding:14px 16px; backdrop-filter:blur(8px);
+      width:260px; box-sizing:border-box; display:none;
+    }
+    #adminPanel.visible { display:block; }
+    .ap-title { font-size:.7rem; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:#818cf8; margin-bottom:12px; display:flex; align-items:center; gap:6px; }
+    .ap-row { display:flex; align-items:center; gap:6px; margin-bottom:7px; }
+    .ap-label { font-size:.7rem; color:#94a3b8; width:90px; flex-shrink:0; }
+    .ap-btn { background:rgba(99,102,241,.2); border:1px solid rgba(99,102,241,.35); color:#a5b4fc; border-radius:6px; width:24px; height:24px; font-size:.9rem; cursor:pointer; display:flex; align-items:center; justify-content:center; padding:0; line-height:1; }
+    .ap-btn:hover { background:rgba(99,102,241,.4); }
+    .ap-val { font-size:.76rem; color:#f1f5f9; font-weight:700; flex:1; text-align:center; min-width:60px; font-variant-numeric:tabular-nums; }
+    .ap-divider { border:none; border-top:1px solid rgba(255,255,255,.07); margin:10px 0 8px; }
+    .ap-actions { display:flex; gap:7px; }
+    .ap-save { flex:1; background:linear-gradient(135deg,#6366f1,#8b5cf6); color:#fff; font-weight:700; font-size:.75rem; padding:7px; border:none; border-radius:8px; cursor:pointer; }
+    .ap-save:hover { opacity:.88; }
+    .ap-lock-btn { background:rgba(251,191,36,.15); border:1px solid rgba(251,191,36,.4); color:#fbbf24; font-weight:700; font-size:.75rem; padding:7px 10px; border-radius:8px; cursor:pointer; white-space:nowrap; }
+    .ap-lock-btn:hover { background:rgba(251,191,36,.3); }
+    .ap-lock-btn.locked { background:rgba(248,113,113,.15); border-color:rgba(248,113,113,.4); color:#f87171; }
+    .ap-lock-btn.locked:hover { background:rgba(248,113,113,.3); }
+    .ap-status { font-size:.68rem; color:#64748b; text-align:center; min-height:14px; margin-top:7px; }
+    @media (max-width:760px) { #adminPanel.visible { display:none; } }
   </style>
 </head>
 <body>
@@ -156,22 +181,66 @@
 
   <div id="msg"></div>
 
+  <!-- Admin orbit editor (visible only in adminMode on desktop) -->
+  <div id="adminPanel">
+    <div class="ap-title"><i class="bi bi-sliders"></i> Orbit Düzenleyici</div>
+    <div class="ap-row">
+      <span class="ap-label">Enlem (lat)</span>
+      <button class="ap-btn" onclick="apAdj('lat',-0.001)">−</button>
+      <span class="ap-val" id="apLat">—</span>
+      <button class="ap-btn" onclick="apAdj('lat',0.001)">+</button>
+    </div>
+    <div class="ap-row">
+      <span class="ap-label">Boylam (lng)</span>
+      <button class="ap-btn" onclick="apAdj('lng',-0.001)">−</button>
+      <span class="ap-val" id="apLng">—</span>
+      <button class="ap-btn" onclick="apAdj('lng',0.001)">+</button>
+    </div>
+    <div class="ap-row">
+      <span class="ap-label">Açı (pitch°)</span>
+      <button class="ap-btn" onclick="apAdj('pitch',-1)">−</button>
+      <span class="ap-val" id="apPitch">—</span>
+      <button class="ap-btn" onclick="apAdj('pitch',1)">+</button>
+    </div>
+    <div class="ap-row">
+      <span class="ap-label">Menzil (m)</span>
+      <button class="ap-btn" onclick="apAdj('range',-10)">−</button>
+      <span class="ap-val" id="apRange">—</span>
+      <button class="ap-btn" onclick="apAdj('range',10)">+</button>
+    </div>
+    <div class="ap-row">
+      <span class="ap-label">Hız</span>
+      <button class="ap-btn" onclick="apAdj('speed',-0.01)">−</button>
+      <span class="ap-val" id="apSpeed">—</span>
+      <button class="ap-btn" onclick="apAdj('speed',0.01)">+</button>
+    </div>
+    <hr class="ap-divider">
+    <div class="ap-actions">
+      <button class="ap-save" onclick="apSave()"><i class="bi bi-floppy-fill me-1"></i>Kaydet</button>
+      <button class="ap-lock-btn" id="apLockBtn" onclick="apToggleLock()"><i class="bi bi-unlock-fill me-1"></i>Kilitle</button>
+    </div>
+    <div class="ap-status" id="apStatus"></div>
+  </div>
+
   <script>
     const GOOGLE_MAPS_KEY = 'AIzaSyCDvg77OufOzvBqRqYMThhN0dZC2heEpSQ';
     const q = new URLSearchParams(location.search);
     const num = (k, d) => { const v = parseFloat(q.get(k)); return Number.isFinite(v) ? v : d; };
 
     const cfg = {
-      name:    q.get('name') || '3D Kampüs',
-      uniId:   q.get('uniId') || null,
-      lat:     num('lat', NaN),
-      lng:     num('lng', NaN),
-      alt:     num('alt', 400),
-      pitch:   num('pitch', -45),
-      heading: num('heading', 0),
-      range:   num('range', 400),
-      speed:   num('speed', 0.12),
-      rot:     q.get('rot') || '360'
+      name:       q.get('name') || '3D Kampüs',
+      uniId:      q.get('uniId') || null,
+      lat:        num('lat', NaN),
+      lng:        num('lng', NaN),
+      alt:        num('alt', 400),
+      pitch:      num('pitch', -45),
+      heading:    num('heading', 0),
+      range:      num('range', 400),
+      speed:      num('speed', 0.12),
+      rot:        q.get('rot') || '360',
+      adminMode:  q.get('adminMode') === '1',
+      orbitId:    q.get('orbitId') || null,
+      adminToken: localStorage.getItem('sa_token') || null
     };
 
     function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
@@ -308,6 +377,104 @@
       document.getElementById('dock').style.display = 'flex';
     }
 
+    // ── Mutable camera state (updated by admin panel after Cesium init) ────────
+    let _orbitTarget = null, _currentPitch = 0, _currentRange = 400;
+
+    function refreshOrbitCamera() {
+      if (_orbitTarget === null) return; // Cesium not yet initialized
+      _orbitTarget = Cesium.Cartesian3.fromDegrees(cfg.lng, cfg.lat, 0);
+      _currentPitch = Cesium.Math.toRadians(cfg.pitch);
+      _currentRange = Math.max(cfg.range, 1);
+    }
+
+    // ── Admin orbit editor ──────────────────────────────────────────────────
+    let _orbitConfig = null;
+    let apLocked = false;
+
+    function apInit(coordLocked) {
+      apLocked = !!coordLocked;
+      document.getElementById('adminPanel').classList.add('visible');
+      apRender();
+    }
+
+    function apRender() {
+      const latEl = document.getElementById('apLat');
+      if (!latEl) return;
+      latEl.textContent = isFinite(cfg.lat) ? cfg.lat.toFixed(5) : '—';
+      document.getElementById('apLng').textContent   = isFinite(cfg.lng) ? cfg.lng.toFixed(5) : '—';
+      document.getElementById('apPitch').textContent = cfg.pitch + '°';
+      document.getElementById('apRange').textContent = cfg.range + ' m';
+      document.getElementById('apSpeed').textContent = cfg.speed.toFixed(2);
+      const lb = document.getElementById('apLockBtn');
+      if (apLocked) {
+        lb.className = 'ap-lock-btn locked';
+        lb.innerHTML = '<i class="bi bi-lock-fill me-1"></i>Kilitli';
+      } else {
+        lb.className = 'ap-lock-btn';
+        lb.innerHTML = '<i class="bi bi-unlock-fill me-1"></i>Kilitle';
+      }
+    }
+
+    function apAdj(key, delta) {
+      cfg[key] = parseFloat((cfg[key] + delta).toFixed(6));
+      refreshOrbitCamera();
+      apRender();
+    }
+
+    async function apSave() {
+      if (!cfg.orbitId) { apSetStatus('❌ Orbit ID yok'); return; }
+      apSetStatus('Kaydediliyor…');
+      try {
+        const base = _orbitConfig || {};
+        const payload = {
+          orbit_center_lat: cfg.lat,
+          orbit_center_lng: cfg.lng,
+          orbit_pitch: cfg.pitch,
+          orbit_range: cfg.range,
+          orbit_rotation_speed: cfg.speed,
+          orbit_altitude: base.orbit_altitude ?? 400,
+          orbit_initial_heading: base.orbit_initial_heading ?? 0,
+          orbit_rotation_type: base.orbit_rotation_type || '360',
+          scan_target_lat: base.scan_target_lat ?? null,
+          scan_target_lng: base.scan_target_lng ?? null,
+          scan_effect_enabled: base.scan_effect_enabled || 0,
+          camera_v_offset: base.camera_v_offset ?? 0,
+          camera_h_offset: base.camera_h_offset ?? 0
+        };
+        const r = await fetch('/api/orbit/' + cfg.orbitId, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + cfg.adminToken },
+          body: JSON.stringify(payload)
+        });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error || 'Hata');
+        if (_orbitConfig) Object.assign(_orbitConfig, payload);
+        apSetStatus('✅ Kaydedildi');
+      } catch(e) { apSetStatus('❌ ' + e.message); }
+    }
+
+    async function apToggleLock() {
+      if (!cfg.orbitId) { apSetStatus('❌ Orbit ID yok'); return; }
+      apSetStatus('…');
+      try {
+        const r = await fetch('/api/orbit/' + cfg.orbitId + '/lock', {
+          method: 'POST',
+          headers: { 'Authorization': 'Bearer ' + cfg.adminToken }
+        });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error || 'Hata');
+        apLocked = d.coord_locked === 1;
+        if (_orbitConfig) _orbitConfig.coord_locked = apLocked ? 1 : 0;
+        apRender();
+        apSetStatus(apLocked ? '🔒 Koordinatlar kilitlendi' : '🔓 Kilit açıldı');
+      } catch(e) { apSetStatus('❌ ' + e.message); }
+    }
+
+    function apSetStatus(msg) {
+      const s = document.getElementById('apStatus');
+      if (s) { s.textContent = msg; setTimeout(() => { if (s) s.textContent = ''; }, 3000); }
+    }
+
     // Single async main: fetch uni data first (to get coords if missing), then init Cesium
     (async function main() {
       // Phase 1: if uniId provided, fetch university to get coords + populate UI
@@ -325,6 +492,24 @@
             populateUniPanel(u);
           }
         } catch(e) { /* silently continue — 3D still works if info fails */ }
+      }
+
+      // Phase 1b: admin mode — fetch full orbit config to get coord_locked + accurate values
+      if (cfg.adminMode && cfg.orbitId && cfg.adminToken) {
+        try {
+          const r = await fetch('/api/orbit/' + cfg.orbitId, {
+            headers: { 'Authorization': 'Bearer ' + cfg.adminToken }
+          });
+          if (r.ok) {
+            _orbitConfig = await r.json();
+            if (isFinite(_orbitConfig.orbit_center_lat)) cfg.lat = _orbitConfig.orbit_center_lat;
+            if (isFinite(_orbitConfig.orbit_center_lng)) cfg.lng = _orbitConfig.orbit_center_lng;
+            if (_orbitConfig.orbit_pitch != null) cfg.pitch = _orbitConfig.orbit_pitch;
+            if (_orbitConfig.orbit_range != null) cfg.range = _orbitConfig.orbit_range;
+            if (_orbitConfig.orbit_rotation_speed != null) cfg.speed = _orbitConfig.orbit_rotation_speed;
+          }
+        } catch(e) {}
+        apInit(_orbitConfig ? _orbitConfig.coord_locked : false);
       }
 
       // Phase 2: coord check (now after possible fallback from university data)
@@ -360,18 +545,20 @@
       const scanLat = num('scanLat', NaN);
       const scanLng = num('scanLng', NaN);
       const scanEnabled = q.get('scan') === '1' && isFinite(scanLat) && isFinite(scanLng);
-      const orbitTarget = Cesium.Cartesian3.fromDegrees(cfg.lng, cfg.lat, 0);
-      const scanTarget  = scanEnabled ? Cesium.Cartesian3.fromDegrees(scanLng, scanLat, 0) : orbitTarget;
+      const scanTarget = scanEnabled ? Cesium.Cartesian3.fromDegrees(scanLng, scanLat, 0) : null;
+
+      // Initialize mutable camera state (can be updated by admin panel)
+      _orbitTarget  = Cesium.Cartesian3.fromDegrees(cfg.lng, cfg.lat, 0);
+      _currentPitch = Cesium.Math.toRadians(cfg.pitch);
+      _currentRange = Math.max(cfg.range, 1);
 
       let heading = Cesium.Math.toRadians(cfg.heading);
-      const pitch  = Cesium.Math.toRadians(cfg.pitch);
-      const range  = Math.max(cfg.range, 1);
       let running = true;
 
       viewer.scene.preRender.addEventListener(function () {
         if (running) heading += Cesium.Math.toRadians(cfg.speed);
-        viewer.camera.lookAt(scanEnabled ? scanTarget : orbitTarget,
-          new Cesium.HeadingPitchRange(heading, pitch, range));
+        viewer.camera.lookAt(scanEnabled ? scanTarget : _orbitTarget,
+          new Cesium.HeadingPitchRange(heading, _currentPitch, _currentRange));
       });
 
       const btn = document.getElementById('toggleBtn');
