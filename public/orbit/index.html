@@ -16,18 +16,19 @@
     #topControls { position:absolute; top:14px; right:14px; z-index:30; display:flex; gap:8px; }
     .ctrl {
       background:rgba(11,16,32,.85); color:#cbd5e1; border:1px solid rgba(255,255,255,.15);
-      border-radius:10px; padding:8px 13px; font-size:.8rem; font-weight:600; cursor:pointer;
-      backdrop-filter:blur(6px); display:flex; align-items:center; gap:6px; text-decoration:none; transition:all .15s;
+      border-radius:10px; padding:8px 14px; font-size:.8rem; font-weight:600; cursor:pointer;
+      backdrop-filter:blur(6px); display:flex; align-items:center; gap:6px; text-decoration:none; transition:all .15s; white-space:nowrap;
     }
     .ctrl:hover { background:rgba(99,102,241,.25); border-color:rgba(99,102,241,.5); color:#a5b4fc; }
 
     /* Top-left university header */
     #uHeader {
-      position:absolute; top:14px; left:14px; z-index:20; max-width:min(70vw,360px);
+      position:absolute; top:14px; left:14px; z-index:20;
+      max-width:calc(100vw - 180px);
       background:rgba(11,16,32,.85); border:1px solid rgba(255,255,255,.12); border-radius:14px;
-      padding:13px 16px; backdrop-filter:blur(6px);
+      padding:13px 16px; backdrop-filter:blur(6px); box-sizing:border-box;
     }
-    #uName { font-size:1.05rem; font-weight:800; color:#f8fafc; line-height:1.25; }
+    #uName { font-size:1.05rem; font-weight:800; color:#f8fafc; line-height:1.3; word-break:break-word; }
     #uLoc { font-size:.8rem; color:#94a3b8; margin-top:3px; }
     #uRanks { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
     .rank-chip { font-size:.68rem; font-weight:700; padding:3px 8px; border-radius:20px; background:rgba(99,102,241,.2); color:#a5b4fc; }
@@ -40,23 +41,27 @@
     #dock {
       position:absolute; left:14px; right:14px; bottom:calc(14px + env(safe-area-inset-bottom));
       z-index:20; display:flex; align-items:flex-end; justify-content:space-between; gap:14px; pointer-events:none;
+      box-sizing:border-box;
     }
     .dock-card {
       background:rgba(11,16,32,.88); border:1px solid rgba(255,255,255,.12); border-radius:14px;
-      padding:14px 16px; backdrop-filter:blur(7px); pointer-events:auto;
+      padding:14px 16px; backdrop-filter:blur(7px); pointer-events:auto; box-sizing:border-box; min-width:0;
     }
     #factsCard { width:300px; flex-shrink:0; }
     #deptCard { width:340px; flex-shrink:0; }
     .dock-title { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:#818cf8; margin-bottom:10px; }
-    .fact { display:flex; justify-content:space-between; gap:10px; font-size:.84rem; padding:5px 0; color:#94a3b8; border-bottom:1px solid rgba(255,255,255,.06); }
+    .fact { display:flex; justify-content:space-between; align-items:baseline; gap:10px; font-size:.84rem; padding:5px 0; color:#94a3b8; border-bottom:1px solid rgba(255,255,255,.06); }
     .fact:last-of-type { border-bottom:none; }
-    .fact b { color:#f1f5f9; font-weight:700; text-align:right; }
+    .fact span { flex-shrink:0; }
+    .fact b { color:#f1f5f9; font-weight:700; text-align:right; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:55%; }
     .fact b.cost { color:#fcd34d; }
     .apply-btn {
-      display:block; text-align:center; margin-top:12px; background:linear-gradient(135deg,#6366f1,#8b5cf6);
-      color:#fff; font-weight:700; font-size:.85rem; padding:10px; border-radius:10px; text-decoration:none;
+      display:flex; align-items:center; justify-content:center; gap:7px;
+      margin-top:12px; background:linear-gradient(135deg,#6366f1,#8b5cf6);
+      color:#fff; font-weight:700; font-size:.85rem; padding:11px 12px; border-radius:10px;
+      text-decoration:none; box-sizing:border-box; width:100%;
     }
-    .apply-btn:hover { opacity:.9; }
+    .apply-btn:hover { opacity:.9; color:#fff; }
     .dept-scroll { max-height:260px; overflow-y:auto; margin:-2px -4px 0; padding:0 4px; }
     .dept-scroll::-webkit-scrollbar { width:5px; }
     .dept-scroll::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
@@ -97,11 +102,18 @@
 
     /* Mobile: stack the dock into a collapsible bottom sheet */
     @media (max-width: 760px) {
-      #uHeader { max-width:calc(100vw - 130px); padding:10px 13px; }
-      #uName { font-size:.92rem; }
-      #dock { flex-direction:column; align-items:stretch; gap:10px; max-height:50vh; overflow-y:auto; }
+      #uHeader { max-width:calc(100vw - 170px); padding:10px 13px; }
+      #uName { font-size:.88rem; }
+      #topControls { gap:6px; }
+      .ctrl { padding:7px 10px; font-size:.75rem; }
+      #dock {
+        flex-direction:column; align-items:stretch; gap:8px;
+        max-height:52vh; overflow-y:auto; overflow-x:hidden;
+        left:10px; right:10px;
+      }
       #factsCard, #deptCard { width:100%; }
-      .dept-scroll { max-height:30vh; }
+      .fact b { max-width:58%; }
+      .dept-scroll { max-height:28vh; }
       #dock.hidden { display:none; }
       #dockToggle { display:flex; }
     }
@@ -113,8 +125,8 @@
 
   <!-- Top-right controls -->
   <div id="topControls">
-    <button id="toggleBtn" class="ctrl">⏸ Durdur</button>
-    <a id="backBtn" class="ctrl" href="/">← Geri</a>
+    <button id="toggleBtn" class="ctrl"><i class="bi bi-pause-fill"></i> Durdur</button>
+    <a id="backBtn" class="ctrl" href="/"><i class="bi bi-arrow-left"></i> Geri</a>
   </div>
 
   <!-- Top-left university header -->
@@ -125,7 +137,7 @@
   </div>
 
   <!-- Mobile dock toggle -->
-  <button id="dockToggle" class="ctrl" onclick="toggleDock()">▾ Bilgileri gizle</button>
+  <button id="dockToggle" class="ctrl" onclick="toggleDock()"><i class="bi bi-chevron-down"></i> Bilgileri gizle</button>
 
   <!-- Bottom dock (corner cards) -->
   <div id="dock" style="display:none">
@@ -134,7 +146,7 @@
       <div class="fact"><span>Yıllık ücret</span><b class="cost" id="fFee">—</b></div>
       <div class="fact"><span>Eğitim dili</span><b id="fLang">—</b></div>
       <div class="fact"><span>Başlangıç (intake)</span><b id="fIntake">—</b></div>
-      <a id="applyBtn" class="apply-btn" href="#"><i class="bi bi-send-fill me-1"></i>Başvur / Bilgi Al</a>
+      <a id="applyBtn" class="apply-btn" href="#"><i class="bi bi-send-fill"></i> Başvur / Bilgi Al</a>
     </div>
     <div class="dock-card" id="deptCard">
       <div class="dock-title">Programlar (<span id="deptCount">0</span>)</div>
@@ -177,7 +189,9 @@
     function toggleDock() {
       dockShown = !dockShown;
       document.getElementById('dock').classList.toggle('hidden', !dockShown);
-      document.getElementById('dockToggle').innerHTML = dockShown ? '▾ Bilgileri gizle' : '▴ Bilgileri göster';
+      document.getElementById('dockToggle').innerHTML = dockShown
+        ? '<i class="bi bi-chevron-down"></i> Bilgileri gizle'
+        : '<i class="bi bi-chevron-up"></i> Bilgileri göster';
     }
 
     // ── Load student-facing university info into the corner panels ──
@@ -363,7 +377,9 @@
       const btn = document.getElementById('toggleBtn');
       btn.onclick = function () {
         running = !running;
-        btn.textContent = running ? '⏸ Durdur' : '▶ Döndür';
+        btn.innerHTML = running
+          ? '<i class="bi bi-pause-fill"></i> Durdur'
+          : '<i class="bi bi-play-fill"></i> Döndür';
       };
     })();
   </script>
