@@ -25,6 +25,11 @@ app.get('/programs', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/programs.html'));
 });
 
+// Proposal basket page (admin/advisor — auth enforced client-side + PDF endpoint)
+app.get('/proposal', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/proposal.html'));
+});
+
 app.get('/match', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/match.html'));
 });
@@ -685,6 +690,9 @@ app.get('/api/admin/leads/export', requireRole('admin'), async (req, res) => {
     res.send(csv);
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
+
+// Proposal PDF export (admin + advisor)
+app.use('/api/proposals', requireRole('admin', 'advisor'), require('./routes/proposals'));
 
 // Protected API routes
 app.use('/api/entities', requireRole('admin'), require('./routes/entities'));

@@ -100,6 +100,12 @@
     .btn-match { background: var(--grad); border: none; color: #fff; border-radius: 8px; font-size: .82rem; font-weight: 600; padding: 7px 18px; cursor: pointer; }
     .btn-reset-elig { background: var(--surface); border: 1px solid var(--line); color: var(--muted); border-radius: 8px; font-size: .8rem; padding: 6px 14px; cursor: pointer; }
 
+    /* ── Proposal badge ─────────────────────────────────────── */
+    #proposalBadge { position: fixed; bottom: 24px; right: 24px; z-index: 500; display: none; }
+    #proposalBadge a { display: flex; align-items: center; gap: 8px; background: #6366f1; color: #fff; font-size: .83rem; font-weight: 700; padding: 10px 18px; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 20px rgba(99,102,241,.45); transition: opacity .15s; }
+    #proposalBadge a:hover { opacity: .9; }
+    @media (max-width: 767.98px) { #proposalBadge { bottom: 16px; right: 16px; } }
+
     /* ── Responsive ──────────────────────────────────────────── */
     @media (max-width: 767.98px) {
       .pg-hero { padding: 24px 0 20px; }
@@ -386,6 +392,17 @@ let eligActive = false;
 let eligCriteria = {};
 let eligStudent = null;
 let eligOnlyEligible = true;
+
+// Proposal basket: only shown to admin/advisor users
+const canPropose = (() => {
+  try {
+    const t = localStorage.getItem('sa_token');
+    if (!t) return false;
+    const p = JSON.parse(atob(t.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')));
+    if (p.exp && p.exp < Date.now() / 1000) return false;
+    return p.role === 'admin' || p.role === 'advisor';
+  } catch { return false; }
+})();
 
 // ── Init ──────────────────────────────────────────────────────────────
 async function init() {
@@ -750,6 +767,10 @@ function renderCards() {
             href="/apply?uni=${p.university_id}&program=${p.id}" onclick="event.stopPropagation()">
             <i class="bi bi-send-fill me-1"></i>${window.t ? window.t('p.apply') : 'Başvur'}
           </a>
+          ${canPropose ? `<button class="btn btn-sm" style="background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.35);color:#059669;font-size:.78rem;font-weight:600;border-radius:8px;padding:6px 10px" title="Teklif'e Ekle"
+            onclick="event.stopPropagation();addToProposal(${p.id})">
+            <i class="bi bi-file-earmark-plus-fill"></i>
+          </button>` : ''}
           <button class="btn btn-sm" style="background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.25);color:var(--accent);font-size:.78rem;font-weight:600;border-radius:8px;padding:6px 10px"
             onclick="event.stopPropagation();openLeadModal(${p.id})">
             <i class="bi bi-envelope-fill"></i>
@@ -970,6 +991,53 @@ async function submitLead() {
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLeadModal(); });
 
+// ── Proposal basket ──────────────────────────────────────────────────────
+function addToProposal(programId) {
+  const p = allPrograms.find(x => x.id === programId);
+  if (!p) return;
+  const basket = JSON.parse(localStorage.getItem('pe_proposal') || '[]');
+  if (basket.some(item => item.id === p.id)) {
+    showProposalToast('Bu program zaten teklif sepetinde.');
+    return;
+  }
+  basket.push({
+    id: p.id, name: p.name, university_name: p.university_name,
+    type_name: p.type_name, tuition_fee: p.tuition_fee, tuition_currency: p.tuition_currency,
+    duration: p.duration, english_req_type: p.english_req_type, english_req_score: p.english_req_score,
+    gpa_requirement: p.gpa_requirement, intake_months: p.intake_months,
+    language_of_instruction: p.language_of_instruction,
+    city: p.city, country: p.country, scholarship_available: p.scholarship_available
+  });
+  localStorage.setItem('pe_proposal', JSON.stringify(basket));
+  updateProposalBadge();
+  showProposalToast('Teklif sepetine eklendi ✓');
+}
+
+function updateProposalBadge() {
+  const badge = document.getElementById('proposalBadge');
+  const count = document.getElementById('proposalCount');
+  if (!badge || !canPropose) return;
+  const basket = JSON.parse(localStorage.getItem('pe_proposal') || '[]');
+  badge.style.display = basket.length ? 'block' : 'none';
+  if (count) count.textContent = basket.length;
+}
+
+function showProposalToast(msg) {
+  let toast = document.getElementById('proposalToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'proposalToast';
+    toast.style.cssText = 'position:fixed;bottom:80px;right:24px;z-index:600;background:#1f2937;color:#fff;font-size:.8rem;font-weight:500;padding:9px 16px;border-radius:8px;transition:opacity .3s;opacity:0;pointer-events:none;box-shadow:0 4px 12px rgba(0,0,0,.25)';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = msg;
+  toast.style.opacity = '1';
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => { toast.style.opacity = '0'; }, 2200);
+}
+
+if (canPropose) document.addEventListener('DOMContentLoaded', updateProposalBadge);
+
 init();
 </script>
 
@@ -1010,6 +1078,11 @@ init();
       <button onclick="closeLeadModal()" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.88rem;padding:8px 20px;border-radius:8px;cursor:pointer" data-i18n="p.lead.close">Kapat</button>
     </div>
   </div>
+</div>
+
+<!-- ── Proposal floating badge (admin/advisor only) ──────────────── -->
+<div id="proposalBadge">
+  <a href="/proposal"><i class="bi bi-file-earmark-text-fill"></i> Teklif Sepeti (<span id="proposalCount">0</span>)</a>
 </div>
 
 <script src="/js/chrome.js"></script>
