@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Rehberler — PANELEDU</title>
+  <meta name="description" content="Yurt dışında eğitim rehberleri, ülke karşılaştırmaları, burs ipuçları ve danışmanlık içerikleri.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="/css/site.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <style>
+    .blog-hero {
+      background: var(--grad-soft);
+      border-bottom: 1px solid rgba(99,102,241,.15);
+      padding: 52px 0 40px;
+      text-align: center;
+    }
+    .blog-hero h1 { font-size: 2rem; font-weight: 800; color: var(--text); margin: 0 0 10px; }
+    .blog-hero p { font-size: .95rem; color: var(--muted); max-width: 520px; margin: 0 auto; }
+
+    .post-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+      padding: 40px 0 64px;
+    }
+    .post-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: border-color .15s, box-shadow .15s, transform .15s;
+      box-shadow: var(--shadow);
+    }
+    .post-card:hover { border-color: rgba(99,102,241,.35); box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+    .post-thumb {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      background: var(--grad-soft);
+      border-bottom: 1px solid var(--line);
+    }
+    .post-body { padding: 20px 22px 24px; flex: 1; display: flex; flex-direction: column; }
+    .post-cat { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: 8px; }
+    .post-title { font-size: 1.05rem; font-weight: 800; color: var(--text); line-height: 1.4; margin-bottom: 10px; text-wrap: balance; }
+    .post-excerpt { font-size: .83rem; color: var(--muted); line-height: 1.6; flex: 1; margin-bottom: 16px; }
+    .post-meta { display: flex; align-items: center; gap: 12px; font-size: .75rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; margin-top: auto; }
+    .post-meta i { font-size: .9rem; }
+    .tag { display: inline-block; background: rgba(99,102,241,.1); color: var(--accent); font-size: .68rem; font-weight: 600; padding: 3px 9px; border-radius: 999px; }
+
+    .coming-card {
+      background: var(--surface-2);
+      border: 1.5px dashed var(--line);
+      border-radius: 16px;
+      padding: 32px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      min-height: 280px;
+    }
+    .coming-card .icon { font-size: 2.2rem; color: var(--muted); opacity: .5; }
+    .coming-card p { font-size: .82rem; color: var(--muted); margin: 0; }
+    .coming-card span { font-size: .78rem; font-weight: 700; color: var(--muted); opacity: .6; text-transform: uppercase; letter-spacing: .06em; }
+  </style>
+</head>
+<body class="pe-theme">
+
+<div class="blog-hero">
+  <div class="container">
+    <div class="post-cat" style="justify-content:center;display:flex;margin-bottom:14px">
+      <span class="tag"><i class="bi bi-journals me-1"></i>Tüm Yazılar</span>
+    </div>
+    <h1>Blog & Rehberler</h1>
+    <p>Yurt dışında eğitim kararınızı kolaylaştıracak karşılaştırmalar, rehberler ve içgörüler.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="post-grid">
+
+    <!-- Featured post: country comparison -->
+    <a class="post-card" href="/blog/ulke-karsilastirmasi" style="grid-column: 1 / -1; flex-direction: row; min-height: 200px;">
+      <div class="post-thumb" style="width:260px;flex-shrink:0;height:auto;font-size:2.8rem;border-bottom:none;border-right:1px solid var(--line)">🌍</div>
+      <div class="post-body">
+        <div class="post-cat">Ülke Rehberi · Öne Çıkan</div>
+        <div class="post-title" style="font-size:1.22rem">İngiltere, Avustralya, İrlanda, Hollanda ve Almanya: Kapsamlı Eğitim & Yerleşim Karşılaştırması</div>
+        <div class="post-excerpt">Eğitim ücretleri, yaşam maliyetleri, mezuniyet sonrası çalışma hakları ve oturma izni süreçleri — beş ülkenin tüm avantajları ve dezavantajları tek sayfada.</div>
+        <div class="post-meta">
+          <span><i class="bi bi-calendar3"></i> Temmuz 2025</span>
+          <span><i class="bi bi-clock"></i> 8 dk okuma</span>
+          <span class="tag">🇬🇧 UK</span>
+          <span class="tag">🇦🇺 AUS</span>
+          <span class="tag">🇮🇪 IRL</span>
+          <span class="tag">🇳🇱 NL</span>
+          <span class="tag">🇩🇪 DE</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Coming soon placeholders -->
+    <div class="coming-card">
+      <div class="icon"><i class="bi bi-mortarboard"></i></div>
+      <span>Çok Yakında</span>
+      <p>Burslu Okuma Rehberi: Başvurabileceğiniz En İyi 15 Burs Programı</p>
+    </div>
+
+    <div class="coming-card">
+      <div class="icon"><i class="bi bi-translate"></i></div>
+      <span>Çok Yakında</span>
+      <p>IELTS mi TOEFL mu? Hangi Sınava Girmelisiniz?</p>
+    </div>
+
+    <div class="coming-card">
+      <div class="icon"><i class="bi bi-building"></i></div>
+      <span>Çok Yakında</span>
+      <p>Almanya'da Ücretsiz Eğitim: Adım Adım Başvuru Süreci</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="/js/chrome.js"></script>
+</body>
+</html>

@@ -7,7 +7,8 @@
     { href: '/',         key: 'nav.home',     label: 'Ana Sayfa' },
     { href: '/match',    key: 'nav.match',    label: 'Okul Bul' },
     { href: '/programs', key: 'nav.programs', label: 'Programlar' },
-    { href: '/test',     key: 'nav.test',     label: 'İngilizce Testi' }
+    { href: '/test',     key: 'nav.test',     label: 'İngilizce Testi' },
+    { href: '/blog',     key: 'nav.blog',     label: 'Blog' }
   ];
 
   function currentLang() {

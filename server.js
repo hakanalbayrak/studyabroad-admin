@@ -30,6 +30,16 @@ app.get('/proposal', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/proposal.html'));
 });
 
+// Blog
+app.get('/blog', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/blog/index.html'));
+});
+app.get('/blog/:slug', (req, res) => {
+  res.sendFile(path.join(__dirname, `public/blog/${req.params.slug}.html`), err => {
+    if (err) res.status(404).sendFile(path.join(__dirname, 'public/404.html'));
+  });
+});
+
 app.get('/match', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/match.html'));
 });
