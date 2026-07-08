@@ -70,6 +70,21 @@
     .coming-card .icon { font-size: 2.2rem; color: var(--muted); opacity: .5; }
     .coming-card p { font-size: .82rem; color: var(--muted); margin: 0; }
     .coming-card span { font-size: .78rem; font-weight: 700; color: var(--muted); opacity: .6; text-transform: uppercase; letter-spacing: .06em; }
+
+    /* Featured card: side-by-side on desktop, stacked on mobile */
+    .post-card-featured { grid-column: 1 / -1; flex-direction: row; min-height: 200px; }
+    .post-card-featured .post-thumb-side {
+      width: 260px; flex-shrink: 0; height: auto; font-size: 2.8rem;
+      border-bottom: none; border-right: 1px solid var(--line);
+      display: flex; align-items: center; justify-content: center;
+      background: var(--grad-soft);
+    }
+    @media (max-width: 640px) {
+      .post-card-featured { flex-direction: column; }
+      .post-card-featured .post-thumb-side {
+        width: 100%; height: 130px; border-right: none; border-bottom: 1px solid var(--line);
+      }
+    }
   </style>
 </head>
 <body class="pe-theme">
@@ -88,17 +103,16 @@
   <div class="post-grid">
 
     <!-- Featured post: country comparison -->
-    <a class="post-card" href="/blog/ulke-karsilastirmasi" style="grid-column: 1 / -1; flex-direction: row; min-height: 200px;">
-      <div class="post-thumb" style="width:260px;flex-shrink:0;height:auto;font-size:2.8rem;border-bottom:none;border-right:1px solid var(--line)">🌍</div>
+    <a class="post-card post-card-featured" href="/blog/ulke-karsilastirmasi">
+      <div class="post-thumb-side">🌍</div>
       <div class="post-body">
         <div class="post-cat">Ülke Rehberi · Öne Çıkan</div>
-        <div class="post-title" style="font-size:1.22rem">İngiltere, Avustralya, İrlanda, Hollanda ve Almanya: Kapsamlı Eğitim & Yerleşim Karşılaştırması</div>
-        <div class="post-excerpt">Eğitim ücretleri, yaşam maliyetleri, mezuniyet sonrası çalışma hakları ve oturma izni süreçleri — beş ülkenin tüm avantajları ve dezavantajları tek sayfada.</div>
+        <div class="post-title" style="font-size:1.22rem">İngiltere, İrlanda, Hollanda ve Almanya: Kapsamlı Eğitim & Yerleşim Karşılaştırması</div>
+        <div class="post-excerpt">Eğitim ücretleri, yaşam maliyetleri, mezuniyet sonrası çalışma hakları ve oturma izni süreçleri — dört ülkenin tüm avantajları ve dezavantajları tek sayfada.</div>
         <div class="post-meta">
           <span><i class="bi bi-calendar3"></i> Temmuz 2025</span>
-          <span><i class="bi bi-clock"></i> 8 dk okuma</span>
+          <span><i class="bi bi-clock"></i> 7 dk okuma</span>
           <span class="tag">🇬🇧 UK</span>
-          <span class="tag">🇦🇺 AUS</span>
           <span class="tag">🇮🇪 IRL</span>
           <span class="tag">🇳🇱 NL</span>
           <span class="tag">🇩🇪 DE</span>
@@ -108,15 +122,15 @@
 
     <!-- Coming soon placeholders -->
     <div class="coming-card">
-      <div class="icon"><i class="bi bi-mortarboard"></i></div>
+      <div class="icon"><i class="bi bi-translate"></i></div>
       <span>Çok Yakında</span>
-      <p>Burslu Okuma Rehberi: Başvurabileceğiniz En İyi 15 Burs Programı</p>
+      <p>IELTS mi, TOEFL mu, Duolingo mu? Hangi İngilizce Sınavını Seçmelisiniz?</p>
     </div>
 
     <div class="coming-card">
-      <div class="icon"><i class="bi bi-translate"></i></div>
+      <div class="icon"><i class="bi bi-mortarboard"></i></div>
       <span>Çok Yakında</span>
-      <p>IELTS mi TOEFL mu? Hangi Sınava Girmelisiniz?</p>
+      <p>Burslu Okuma Rehberi: Başvurabileceğiniz En İyi 15 Burs Programı</p>
     </div>
 
     <div class="coming-card">
