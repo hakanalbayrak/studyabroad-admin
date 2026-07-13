@@ -1610,7 +1610,7 @@ async function fetchWikiDescription() {
 }
 
 function addProgram() {
-  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', field:'', scholarship_available:false, description_en:'', status:'active', requirements_json:null });
+  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', field:'', scholarship_available:false, description_en:'', status:'active', requirements_json:null, placement_year:false, internship_available:false, international_eligible:true, internship_paid:'', employer_partnerships:'', live_industry_projects:false, professional_accreditation:'', graduate_outcome_source:'', graduate_outcome_date:'', scholarship_amount:'', scholarship_conditions:'', application_deadline:'', deposit_deadline:'', scholarship_deadline:'' });
   renderPrograms();
   setTimeout(() => {
     const cards = document.querySelectorAll('.program-card');
@@ -1750,6 +1750,102 @@ function renderPrograms() {
               oninput="updProg(${i},'description_en',this.value)"
               placeholder="Additional notes...">${esc(p.description_en||'')}</textarea>
           </div>
+
+          <!-- ── Placement & Internship ────────────────────────────── -->
+          <div class="col-12 mt-1"><hr class="my-1"><span class="text-muted small fw-semibold text-uppercase" style="letter-spacing:.05em;font-size:.68rem">Placement & Internship</span></div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold d-block">Placement Year</label>
+            <div class="form-check form-switch mt-1">
+              <input class="form-check-input" type="checkbox" role="switch" id="ppy_${i}"
+                ${p.placement_year?'checked':''} onchange="updProg(${i},'placement_year',this.checked)">
+              <label class="form-check-label small" for="ppy_${i}">Available</label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold d-block">Internship</label>
+            <div class="form-check form-switch mt-1">
+              <input class="form-check-input" type="checkbox" role="switch" id="pia_${i}"
+                ${p.internship_available?'checked':''} onchange="updProg(${i},'internship_available',this.checked)">
+              <label class="form-check-label small" for="pia_${i}">Available</label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">Paid / Unpaid</label>
+            <select class="form-select form-select-sm" onchange="updProg(${i},'internship_paid',this.value)">
+              ${['','paid','unpaid','both'].map(v=>`<option value="${v}" ${(p.internship_paid||'')===v?'selected':''}>${v||'— N/A —'}</option>`).join('')}
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold d-block">Intl. Students Eligible</label>
+            <div class="form-check form-switch mt-1">
+              <input class="form-check-input" type="checkbox" role="switch" id="pie_${i}"
+                ${p.international_eligible!==false?'checked':''} onchange="updProg(${i},'international_eligible',this.checked)">
+              <label class="form-check-label small" for="pie_${i}">Yes</label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold d-block">Live Industry Projects</label>
+            <div class="form-check form-switch mt-1">
+              <input class="form-check-input" type="checkbox" role="switch" id="plp_${i}"
+                ${p.live_industry_projects?'checked':''} onchange="updProg(${i},'live_industry_projects',this.checked)">
+              <label class="form-check-label small" for="plp_${i}">Yes</label>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <label class="form-label small fw-semibold">Employer Partnerships</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.employer_partnerships||'')}"
+              oninput="updProg(${i},'employer_partnerships',this.value)" placeholder="e.g. Deloitte, PwC, NHS">
+          </div>
+
+          <!-- ── Accreditation & Outcomes ──────────────────────────── -->
+          <div class="col-12 mt-1"><hr class="my-1"><span class="text-muted small fw-semibold text-uppercase" style="letter-spacing:.05em;font-size:.68rem">Accreditation & Graduate Outcomes</span></div>
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Professional Accreditation</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.professional_accreditation||'')}"
+              oninput="updProg(${i},'professional_accreditation',this.value)" placeholder="e.g. AACSB, EQUIS, BPS, GMC">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Graduate Outcome Source</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.graduate_outcome_source||'')}"
+              oninput="updProg(${i},'graduate_outcome_source',this.value)" placeholder="e.g. HESA 2023/24">
+          </div>
+          <div class="col-md-2">
+            <label class="form-label small fw-semibold">Outcome Date</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.graduate_outcome_date||'')}"
+              oninput="updProg(${i},'graduate_outcome_date',this.value)" placeholder="e.g. 2024">
+          </div>
+
+          <!-- ── Scholarship Details ───────────────────────────────── -->
+          <div class="col-12 mt-1"><hr class="my-1"><span class="text-muted small fw-semibold text-uppercase" style="letter-spacing:.05em;font-size:.68rem">Scholarship Details</span></div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Scholarship Amount</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.scholarship_amount||'')}"
+              oninput="updProg(${i},'scholarship_amount',this.value)" placeholder="e.g. £5,000/year">
+          </div>
+          <div class="col-md-8">
+            <label class="form-label small fw-semibold">Continuation Conditions</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.scholarship_conditions||'')}"
+              oninput="updProg(${i},'scholarship_conditions',this.value)" placeholder="e.g. Maintain 60% average each year">
+          </div>
+
+          <!-- ── Deadlines ─────────────────────────────────────────── -->
+          <div class="col-12 mt-1"><hr class="my-1"><span class="text-muted small fw-semibold text-uppercase" style="letter-spacing:.05em;font-size:.68rem">Deadlines</span></div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Application Deadline</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.application_deadline||'')}"
+              oninput="updProg(${i},'application_deadline',this.value)" placeholder="e.g. 31 Jan 2026 / Rolling">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Deposit Deadline</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.deposit_deadline||'')}"
+              oninput="updProg(${i},'deposit_deadline',this.value)" placeholder="e.g. 1 Apr 2026">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Scholarship Deadline</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.scholarship_deadline||'')}"
+              oninput="updProg(${i},'scholarship_deadline',this.value)" placeholder="e.g. 15 Dec 2025">
+          </div>
+
           <div class="col-12">
             <button type="button" class="btn btn-outline-info btn-sm" onclick="openReqEditor(${i})">
               <i class="bi bi-gear me-1"></i>Detailed Requirements (eligibility)

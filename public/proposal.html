@@ -167,6 +167,17 @@ function renderBasket() {
       : '';
     const gpa = p.gpa_requirement ? `<span><i class="bi bi-bar-chart-fill"></i>GPA ${esc(String(p.gpa_requirement))}</span>` : '';
     const loc = [p.city, p.country].filter(Boolean).join(', ');
+    const placementChip = p.placement_year ? `<span style="color:#7c3aed"><i class="bi bi-briefcase-fill"></i>Placement Year</span>` : '';
+    const internChip = p.internship_available
+      ? `<span style="color:#0369a1"><i class="bi bi-building-fill-check"></i>Internship${p.internship_paid ? ' (' + esc(p.internship_paid) + ')' : ''}</span>`
+      : '';
+    const accrChip = p.professional_accreditation
+      ? `<span><i class="bi bi-patch-check-fill"></i>${esc(p.professional_accreditation)}</span>`
+      : '';
+    const scholChip = p.scholarship_available
+      ? `<span style="color:#059669"><i class="bi bi-award-fill"></i>Burs${p.scholarship_amount ? ': ' + esc(p.scholarship_amount) : ''}</span>`
+      : '';
+    const appDl = p.application_deadline ? `<span><i class="bi bi-calendar-event"></i>Başvuru: ${esc(p.application_deadline)}</span>` : '';
 
     return `<div class="prog-row">
       <button class="remove-btn" onclick="removeFromBasket(${idx})" title="Kaldır"><i class="bi bi-x-lg"></i></button>
@@ -176,7 +187,7 @@ function renderBasket() {
         ${p.type_name ? `<span><i class="bi bi-mortarboard-fill"></i>${esc(p.type_name)}</span>` : ''}
         ${loc ? `<span><i class="bi bi-geo-alt-fill"></i>${esc(loc)}</span>` : ''}
         ${fee}${duration}${engReq}${gpa}
-        ${p.scholarship_available ? `<span style="color:#059669"><i class="bi bi-award-fill"></i>Burs</span>` : ''}
+        ${scholChip}${placementChip}${internChip}${accrChip}${appDl}
       </div>
     </div>`;
   }).join('');

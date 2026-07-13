@@ -94,9 +94,38 @@ router.post('/pdf', (req, res) => {
       if (p.intake_months) row('Kabul Dönemleri:', p.intake_months);
 
       if (p.scholarship_available) {
-        doc.fontSize(9).font('Bold').fillColor('#059669').text('✓ Burs İmkânı Mevcut', 60, y);
+        const schol = p.scholarship_amount
+          ? `Mevcut — ${p.scholarship_amount}`
+          : 'Mevcut';
+        doc.fontSize(9).font('Bold').fillColor('#059669').text(`✓ Burs İmkânı: ${schol}`, 60, y);
         y = doc.y + 2;
+        if (p.scholarship_conditions) row('Burs Koşulları:', p.scholarship_conditions);
       }
+
+      // Placement & internship
+      const placements = [];
+      if (p.placement_year) placements.push('Placement Year');
+      if (p.internship_available) {
+        const paid = p.internship_paid ? ` (${p.internship_paid})` : '';
+        placements.push(`Internship${paid}`);
+      }
+      if (p.live_industry_projects) placements.push('Live Industry Projects');
+      if (placements.length) row('Work Experience:', placements.join(' · '));
+      if (p.employer_partnerships) row('Employer Partnerships:', p.employer_partnerships);
+      if (p.professional_accreditation) row('Accreditation:', p.professional_accreditation);
+
+      // Graduate outcomes
+      if (p.graduate_outcome_source) {
+        const src = p.graduate_outcome_date
+          ? `${p.graduate_outcome_source} (${p.graduate_outcome_date})`
+          : p.graduate_outcome_source;
+        row('Graduate Outcome Data:', src);
+      }
+
+      // Deadlines
+      if (p.application_deadline) row('Application Deadline:', p.application_deadline);
+      if (p.deposit_deadline) row('Deposit Deadline:', p.deposit_deadline);
+      if (p.scholarship_deadline) row('Scholarship Deadline:', p.scholarship_deadline);
 
       y += 10;
 

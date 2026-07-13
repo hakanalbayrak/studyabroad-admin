@@ -1006,7 +1006,15 @@ function addToProposal(programId) {
     duration: p.duration, english_req_type: p.english_req_type, english_req_score: p.english_req_score,
     gpa_requirement: p.gpa_requirement, intake_months: p.intake_months,
     language_of_instruction: p.language_of_instruction,
-    city: p.city, country: p.country, scholarship_available: p.scholarship_available
+    city: p.city, country: p.country, scholarship_available: p.scholarship_available,
+    placement_year: p.placement_year, internship_available: p.internship_available,
+    international_eligible: p.international_eligible, internship_paid: p.internship_paid,
+    employer_partnerships: p.employer_partnerships, live_industry_projects: p.live_industry_projects,
+    professional_accreditation: p.professional_accreditation,
+    graduate_outcome_source: p.graduate_outcome_source, graduate_outcome_date: p.graduate_outcome_date,
+    scholarship_amount: p.scholarship_amount, scholarship_conditions: p.scholarship_conditions,
+    application_deadline: p.application_deadline, deposit_deadline: p.deposit_deadline,
+    scholarship_deadline: p.scholarship_deadline
   });
   localStorage.setItem('pe_proposal', JSON.stringify(basket));
   updateProposalBadge();
