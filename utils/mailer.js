@@ -67,7 +67,19 @@ async function sendLeadNotification(lead) {
     </div>`;
 
   try {
-    await t.sendMail({ from: fromAddr(), to, subject, text, html });
+    await t.sendMail({
+      from: fromAddr(),
+      to,
+      replyTo: `"${lead.student_name}" <${lead.email}>`,
+      subject,
+      priority: 'high',
+      headers: {
+        'X-Entity-Ref-ID': `lead-${Date.now()}`,
+        'X-Auto-Response-Suppress': 'OOF, AutoReply',
+      },
+      text,
+      html,
+    });
   } catch (e) {
     console.error('[mailer] Failed to send lead notification:', e.message);
   }
