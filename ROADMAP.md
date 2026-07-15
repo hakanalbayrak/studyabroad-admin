@@ -30,14 +30,19 @@ JWT_SECRET=<a long random string if not already set>
   c. Restart app: touch `/home/matur124/studyabroad.kampanya.website/tmp/restart.txt`
      (or use cPanel → Setup Node.js App → Restart)
 
-### 3. Email deliverability — DKIM
-DMARC record is live ✅ (confirmed via MXToolbox).
-SPF: run `spf:paneledu.com` on mxtoolbox.com to verify.
-DKIM: not yet set up. Options:
-  a. Search "Email Deliverability" in Cenuta control panel search bar
-  b. If not found → open a support ticket with Cenuta:
-     "paneledu.com için DKIM kaydını aktif eder misiniz?"
-  After DKIM is active, Gmail spam rate will drop significantly.
+### 3. Email deliverability — Resend domain verification
+SMTP relay: Resend (smtp.resend.com), MAIL_FROM: info@paneledu.com ✅
+DMARC record: live ✅ (confirmed via MXToolbox)
+DKIM: NOT YET — paneledu.com is not verified in Resend dashboard.
+      This is why emails land in spam: Resend cannot sign outgoing mail
+      with a DKIM key for an unverified domain.
+
+Fix (15 min):
+  a. resend.com/domains → Add Domain → paneledu.com
+  b. Copy the 3 DNS records Resend provides (DKIM TXT, SPF TXT, DMARC TXT)
+  c. cPanel → Zone Editor → paneledu.com → add all 3 records
+  d. Back in Resend → click Verify → wait for green status
+  After verification all outgoing mail will carry Resend's DKIM signature → inbox.
 
 ### 4. Google Maps API key
 File: `public/orbit/index.html` → `const GOOGLE_MAPS_KEY = '...'`
