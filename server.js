@@ -530,15 +530,7 @@ app.get('/api/public/universities/:id', async (req, res) => {
     if (!entity) return res.status(404).json({ error: 'Not found' });
 
     const [programs] = await db.query(`
-      SELECT p.id, p.name, p.language_of_instruction, p.duration,
-        p.tuition_fee, p.tuition_currency, p.intake_months,
-        p.english_req_type, p.english_req_score, p.gpa_requirement,
-        p.scholarship_available, p.description_en,
-        p.placement_year, p.internship_available, p.international_eligible, p.internship_paid,
-        p.employer_partnerships, p.live_industry_projects, p.professional_accreditation,
-        p.graduate_outcome_source, p.graduate_outcome_date,
-        p.scholarship_amount, p.scholarship_conditions,
-        p.application_deadline, p.deposit_deadline, p.scholarship_deadline,
+      SELECT p.*,
         pt.name as type_name
       FROM programs p
       JOIN program_types pt ON pt.id = p.program_type_id
@@ -568,16 +560,7 @@ app.get('/api/public/programs', async (req, res) => {
     if (scholarship === '1') { where.push('p.scholarship_available = 1'); }
 
     const [rows] = await db.query(`
-      SELECT p.id, p.name, p.language_of_instruction, p.duration,
-        p.tuition_fee, p.tuition_currency, p.intake_months,
-        p.english_req_type, p.english_req_score, p.gpa_requirement,
-        p.requirements_json, p.field,
-        p.scholarship_available, p.description_en,
-        p.placement_year, p.internship_available, p.international_eligible, p.internship_paid,
-        p.employer_partnerships, p.live_industry_projects, p.professional_accreditation,
-        p.graduate_outcome_source, p.graduate_outcome_date,
-        p.scholarship_amount, p.scholarship_conditions,
-        p.application_deadline, p.deposit_deadline, p.scholarship_deadline,
+      SELECT p.*,
         pt.name as type_name, pt.category as type_category,
         e.id as university_id, e.name as university_name,
         e.qs_rank, e.the_rank,
