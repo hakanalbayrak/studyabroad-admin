@@ -2,12 +2,8 @@
 
 ## ⚡ Pending — needs action (as of 2026-07-15)
 
-### 1. DB Migration — run once in phpMyAdmin
-File: `database/add_program_detail_fields.sql`
-Adds 14 new columns to the `programs` table (placement year, internship, accreditation,
-graduate outcome source/date, scholarship amount/conditions, 3 deadlines).
-Without this the new admin form fields silently fail to save.
-→ cPanel → phpMyAdmin → select `matur124_studyabroad` → SQL tab → paste file → Go
+### 1. DB Migration ✅ DONE (2026-07-15)
+All 14 new columns confirmed present in `programs` table.
 
 ### 2. SMTP config — add to .env on production server
 File: `/home/matur124/studyabroad.kampanya.website/.env`
