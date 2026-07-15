@@ -1,5 +1,50 @@
 # Roadmap
 
+## ⚡ Pending — needs action (as of 2026-07-15)
+
+### 1. DB Migration — run once in phpMyAdmin
+File: `database/add_program_detail_fields.sql`
+Adds 14 new columns to the `programs` table (placement year, internship, accreditation,
+graduate outcome source/date, scholarship amount/conditions, 3 deadlines).
+Without this the new admin form fields silently fail to save.
+→ cPanel → phpMyAdmin → select `matur124_studyabroad` → SQL tab → paste file → Go
+
+### 2. SMTP config — add to .env on production server
+File: `/home/matur124/studyabroad.kampanya.website/.env`
+Currently the app has NO email settings; all notifications are silently skipped.
+Steps:
+  a. cPanel → Email Accounts → create `noreply@paneledu.com`
+  b. Add these lines to .env (edit via File Manager → right-click .env → Edit):
+
+```
+SMTP_HOST=mail.paneledu.com
+SMTP_PORT=465
+SMTP_USER=noreply@paneledu.com
+SMTP_PASS=<the password you set>
+MAIL_FROM=noreply@paneledu.com
+NOTIFY_EMAIL=hkn3958@gmail.com
+APP_URL=https://paneledu.com
+JWT_SECRET=<a long random string if not already set>
+```
+
+  c. Restart app: touch `/home/matur124/studyabroad.kampanya.website/tmp/restart.txt`
+     (or use cPanel → Setup Node.js App → Restart)
+
+### 3. Email deliverability — DKIM
+DMARC record is live ✅ (confirmed via MXToolbox).
+SPF: run `spf:paneledu.com` on mxtoolbox.com to verify.
+DKIM: not yet set up. Options:
+  a. Search "Email Deliverability" in Cenuta control panel search bar
+  b. If not found → open a support ticket with Cenuta:
+     "paneledu.com için DKIM kaydını aktif eder misiniz?"
+  After DKIM is active, Gmail spam rate will drop significantly.
+
+### 4. Google Maps API key
+File: `public/orbit/index.html` → `const GOOGLE_MAPS_KEY = '...'`
+Previous key was revoked. Awaiting new key from user.
+
+---
+
 ## Done
 - Homepage redesign — search-first, featured cards, paginated results
 - Admin UX — save button at top, entity search bar, go-to-top button
