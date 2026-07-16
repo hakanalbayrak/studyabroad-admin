@@ -165,7 +165,14 @@ async function load() {
 
 function renderHero() {
   const u = university;
-  document.getElementById('uName').textContent = u.name;
+  const nameEl = document.getElementById('uName');
+  if (u.logo_url) {
+    nameEl.innerHTML = `<img src="${esc(u.logo_url)}" alt="" style="width:44px;height:44px;object-fit:contain;border-radius:8px;border:1px solid var(--line);background:var(--surface);padding:3px;margin-right:12px;vertical-align:middle;flex-shrink:0" onerror="this.style.display='none'">${esc(u.name)}`;
+    nameEl.style.display = 'flex';
+    nameEl.style.alignItems = 'center';
+  } else {
+    nameEl.textContent = u.name;
+  }
   document.getElementById('uLoc').textContent = [u.city, u.country].filter(Boolean).join(', ');
 
   // Rankings

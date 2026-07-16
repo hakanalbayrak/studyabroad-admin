@@ -488,7 +488,7 @@ app.get('/api/public/lang', (req, res) => {
 app.get('/api/public/universities', async (req, res) => {
   try {
     const [rows] = await db.query(`
-      SELECT e.id, e.name, e.type, e.description_en, e.featured,
+      SELECT e.id, e.name, e.type, e.logo_url, e.description_en, e.featured,
         e.qs_rank, e.the_rank, e.shanghai_rank, e.leiden_rank,
         el.city, el.country, el.continent,
         el.latitude, el.longitude,
@@ -563,6 +563,7 @@ app.get('/api/public/programs', async (req, res) => {
       SELECT p.*,
         pt.name as type_name, pt.category as type_category,
         e.id as university_id, e.name as university_name,
+        e.logo_url as university_logo_url,
         e.qs_rank, e.the_rank,
         el.city, el.country
       FROM programs p

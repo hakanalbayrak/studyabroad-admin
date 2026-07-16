@@ -445,7 +445,10 @@ function cardHtml(u) {
     <div class="uni-card" onclick="goToDetail(${u.id})">
       <div class="card-top">
         <div class="d-flex align-items-start justify-content-between gap-1 mb-1">
-          <div class="card-name">${esc(u.name)}</div>
+          <div class="card-name d-flex align-items-center gap-2">
+            ${u.logo_url ? `<img src="${esc(u.logo_url)}" alt="" style="width:28px;height:28px;object-fit:contain;border-radius:5px;border:1px solid var(--line);background:var(--surface);padding:2px;flex-shrink:0" onerror="this.style.display='none'">` : ''}
+            ${esc(u.name)}
+          </div>
           ${u.featured ? `<span class="featured-star flex-shrink-0">${window.t ? window.t('h.feat.star') : '★ Öne Çıkan'}</span>` : ''}
         </div>
         <div class="card-location"><i class="bi bi-geo-alt-fill me-1"></i>${[u.city, u.country].filter(Boolean).join(', ')}</div>

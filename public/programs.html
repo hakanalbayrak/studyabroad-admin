@@ -785,7 +785,12 @@ function renderCards() {
       <div class="prog-card h-100 d-flex flex-column" onclick="window.location.href='/orbit?uniId=${p.university_id}&back=/programs'">
         <div style="flex:1">
           <div class="prog-name">${esc(p.name)}</div>
-          <div class="prog-uni"><i class="bi bi-building me-1"></i>${esc(p.university_name)}</div>
+          <div class="prog-uni d-flex align-items-center gap-1">
+            ${p.university_logo_url
+              ? `<img src="${esc(p.university_logo_url)}" alt="" style="width:18px;height:18px;object-fit:contain;border-radius:3px;flex-shrink:0" onerror="this.replaceWith(document.createRange().createContextualFragment('<i class=\\'bi bi-building\\'></i>'))">`
+              : '<i class="bi bi-building"></i>'}
+            ${esc(p.university_name)}
+          </div>
           <div class="prog-meta">
             <span class="meta-chip chip-type">${esc(p.type_name)}</span>
             ${p.language_of_instruction ? `<span class="meta-chip chip-lang"><i class="bi bi-translate me-1"></i>${esc(p.language_of_instruction)}</span>` : ''}
