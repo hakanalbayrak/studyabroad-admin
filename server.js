@@ -16,8 +16,49 @@ app.get('/admin', (req, res) => {
 });
 
 // Serve university detail page at /university?id=...
-app.get('/university', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/university.html'));
+// Injects dynamic SEO meta tags server-side so crawlers see them without JS
+const fs = require('fs');
+const htmlEsc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+let universityHtmlCache = null;
+app.get('/university', async (req, res) => {
+  const id = parseInt(req.query.id);
+  if (!id) return res.sendFile(path.join(__dirname, 'public/university.html'));
+  try {
+    const [[u]] = await db.query(
+      `SELECT e.name, e.description_en, e.logo_url, el.city, el.country
+       FROM entities e
+       LEFT JOIN entity_locations el ON el.id = (SELECT MIN(id) FROM entity_locations WHERE entity_id = e.id)
+       WHERE e.id = ? AND e.status != 'inactive'`,
+      [id]
+    );
+    if (!u) return res.sendFile(path.join(__dirname, 'public/university.html'));
+
+    if (!universityHtmlCache) universityHtmlCache = fs.readFileSync(path.join(__dirname, 'public/university.html'), 'utf8');
+    const title = `${u.name} — PANELEDU`;
+    const loc = [u.city, u.country].filter(Boolean).join(', ');
+    const desc = u.description_en
+      ? u.description_en.slice(0, 155)
+      : `${u.name}${loc ? ' · ' + loc : ''} — programs, admission requirements and tuition fees on PANELEDU.`;
+    const pageUrl = `https://paneledu.com/university?id=${id}`;
+    const meta = [
+      `<title>${htmlEsc(title)}</title>`,
+      `<meta name="description" content="${htmlEsc(desc)}">`,
+      `<link rel="canonical" href="${pageUrl}">`,
+      `<meta property="og:type" content="website">`,
+      `<meta property="og:title" content="${htmlEsc(title)}">`,
+      `<meta property="og:description" content="${htmlEsc(desc)}">`,
+      `<meta property="og:url" content="${pageUrl}">`,
+      u.logo_url ? `<meta property="og:image" content="${htmlEsc(u.logo_url)}">` : '',
+      `<meta name="twitter:card" content="summary">`,
+      `<meta name="twitter:title" content="${htmlEsc(title)}">`,
+      `<meta name="twitter:description" content="${htmlEsc(desc)}">`,
+    ].filter(Boolean).join('\n  ');
+    const html = universityHtmlCache.replace('<title>University — PANELEDU</title>', meta);
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    res.send(html);
+  } catch (e) {
+    res.sendFile(path.join(__dirname, 'public/university.html'));
+  }
 });
 
 // Serve program search page at /programs
