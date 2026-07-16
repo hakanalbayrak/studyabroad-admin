@@ -392,6 +392,8 @@ let eligActive = false;
 let eligCriteria = {};
 let eligStudent = null;
 let eligOnlyEligible = true;
+let programsLoaded = false;
+let fetchingPromise = null;
 
 // Proposal basket: only shown to admin/advisor users
 const canPropose = (() => {
@@ -407,16 +409,11 @@ const canPropose = (() => {
 // ── Init ──────────────────────────────────────────────────────────────
 async function init() {
   try {
-    const [programs, options] = await Promise.all([
-      fetch('/api/public/programs?limit=10000').then(r => r.json()),
-      fetch('/api/public/filter-options').then(r => r.json())
-    ]);
-    allPrograms = programs.map(p => ({ ...p, type_name: normalizeType(p.type_name) }));
+    const options = await fetch('/api/public/filter-options').then(r => r.json());
     buildFilterChips(options);
+    if (options.stats) updateStatsFromServer(options.stats);
     document.getElementById('loadingMsg').style.display = 'none';
-    applyFilters();
-    updateStats();
-    // Quick-start chips inside the no-filter prompt
+    document.getElementById('noFilterMsg').classList.remove('d-none');
     const qtc = document.getElementById('quickTypeChips');
     if (qtc && options.types) {
       qtc.innerHTML = options.types.slice(0, 6).map(t =>
@@ -427,6 +424,34 @@ async function init() {
     document.getElementById('loadingMsg').innerHTML =
       '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>' + (window.t ? window.t('p.err.load') : 'Programlar yüklenemedi.');
   }
+}
+
+function updateStatsFromServer(stats) {
+  document.getElementById('stTotal').textContent = Number(stats.total_programs).toLocaleString('tr');
+  document.getElementById('stUnis').textContent = Number(stats.total_unis).toLocaleString('tr');
+  document.getElementById('stScholar').textContent = Number(stats.total_scholarship).toLocaleString('tr');
+  document.getElementById('stCountries').textContent = Number(stats.total_countries).toLocaleString('tr');
+}
+
+async function fetchPrograms() {
+  if (programsLoaded) return;
+  if (!fetchingPromise) {
+    fetchingPromise = fetch('/api/public/programs?limit=10000')
+      .then(r => r.json())
+      .then(data => {
+        allPrograms = data.map(p => ({ ...p, type_name: normalizeType(p.type_name) }));
+        updateStats();
+        programsLoaded = true;
+      })
+      .catch(e => {
+        console.error('Failed to load programs:', e);
+        document.getElementById('loadingMsg').innerHTML =
+          '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>' +
+          (window.t ? window.t('p.err.load') : 'Programlar yüklenemedi.');
+      })
+      .finally(() => { fetchingPromise = null; });
+  }
+  return fetchingPromise;
 }
 
 function normalizeType(t) {
@@ -602,7 +627,7 @@ function hasActiveFilter() {
     state.scholarship || state.engTypes.size > 0 || eligActive;
 }
 
-function applyFilters() {
+async function applyFilters() {
   renderPills();
   if (!hasActiveFilter()) {
     filteredPrograms = [];
@@ -615,6 +640,17 @@ function applyFilters() {
     return;
   }
   document.getElementById('noFilterMsg').classList.add('d-none');
+
+  if (!programsLoaded) {
+    document.getElementById('loadingMsg').style.display = 'block';
+    document.getElementById('cardsContainer').innerHTML = '';
+    document.getElementById('pagination').innerHTML = '';
+    document.getElementById('resultCount').innerHTML = '';
+    await fetchPrograms();
+    document.getElementById('loadingMsg').style.display = 'none';
+    if (!programsLoaded) return;
+  }
+
   filteredPrograms = allPrograms.filter(filterProgram);
   const c = filteredPrograms.length;
   const foundLbl = window.t ? window.t('p.found') : 'program bulundu';

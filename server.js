@@ -580,13 +580,31 @@ app.get('/api/public/programs', async (req, res) => {
 // Public filter options (distinct values for dropdowns)
 app.get('/api/public/filter-options', async (req, res) => {
   try {
-    const [[countries], [types], [fields], [categories]] = await Promise.all([
+    const [[countries], [types], [fields], [categories], [[stats]]] = await Promise.all([
       db.query(`SELECT DISTINCT el.country FROM entity_locations el JOIN entities e ON e.id=el.entity_id WHERE e.status != 'inactive' AND el.country IS NOT NULL ORDER BY el.country`),
       db.query(`SELECT DISTINCT pt.name FROM program_types pt JOIN programs p ON p.program_type_id=pt.id WHERE p.status='active' ORDER BY pt.name`),
       db.query(`SELECT DISTINCT p.field FROM programs p WHERE p.status='active' AND p.field IS NOT NULL AND p.field != '' ORDER BY p.field`),
-      db.query(`SELECT DISTINCT pt.category FROM program_types pt JOIN programs p ON p.program_type_id=pt.id WHERE p.status='active' ORDER BY pt.category`)
+      db.query(`SELECT DISTINCT pt.category FROM program_types pt JOIN programs p ON p.program_type_id=pt.id WHERE p.status='active' ORDER BY pt.category`),
+      db.query(`SELECT COUNT(*) as total_programs, COUNT(DISTINCT el.entity_id) as total_unis,
+                       COALESCE(SUM(p.scholarship_available),0) as total_scholarship,
+                       COUNT(DISTINCT el.country) as total_countries
+                FROM programs p
+                JOIN entity_locations el ON el.id = p.entity_location_id
+                JOIN entities e ON e.id = el.entity_id
+                WHERE p.status = 'active' AND e.status != 'inactive'`)
     ]);
-    res.json({ countries: countries.map(r => r.country), types: types.map(r => r.name), fields: fields.map(r => r.field), categories: categories.map(r => r.category) });
+    res.json({
+      countries: countries.map(r => r.country),
+      types: types.map(r => r.name),
+      fields: fields.map(r => r.field),
+      categories: categories.map(r => r.category),
+      stats: {
+        total_programs: stats.total_programs,
+        total_unis: stats.total_unis,
+        total_scholarship: stats.total_scholarship,
+        total_countries: stats.total_countries
+      }
+    });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
