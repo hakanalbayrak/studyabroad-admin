@@ -667,6 +667,46 @@ app.post('/api/public/leads', async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+// Admin dashboard stats
+app.get('/api/admin/dashboard', requireRole('admin'), async (req, res) => {
+  try {
+    const [
+      [[leads]],
+      [dailyLeads],
+      [[apps]]
+    ] = await Promise.all([
+      db.query(`SELECT COUNT(*) as total,
+        COALESCE(SUM(status='new'),0) as new_count,
+        COALESCE(SUM(status='contacted'),0) as contacted,
+        COALESCE(SUM(status='converted'),0) as converted
+        FROM leads`),
+      db.query(`SELECT DATE(created_at) as day, COUNT(*) as count
+        FROM leads
+        WHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 29 DAY)
+        GROUP BY DATE(created_at)
+        ORDER BY day ASC`),
+      db.query(`SELECT COUNT(*) as total,
+        COALESCE(SUM(status='submitted'),0) as submitted,
+        COALESCE(SUM(status='reviewing'),0) as reviewing,
+        COALESCE(SUM(status='approved'),0) as approved,
+        COALESCE(SUM(status='rejected'),0) as rejected
+        FROM applications`)
+    ]);
+
+    // Fill in missing days with 0
+    const trend = [];
+    for (let i = 29; i >= 0; i--) {
+      const d = new Date();
+      d.setDate(d.getDate() - i);
+      const day = d.toISOString().slice(0, 10);
+      const found = dailyLeads.find(r => r.day.toISOString?.().slice(0, 10) === day || String(r.day).slice(0, 10) === day);
+      trend.push({ day, count: found ? Number(found.count) : 0 });
+    }
+
+    res.json({ leads, apps, trend });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 // Admin: list leads
 app.get('/api/admin/leads', requireRole('admin'), async (req, res) => {
   try {

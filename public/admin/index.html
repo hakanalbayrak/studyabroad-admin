@@ -135,7 +135,9 @@
     <!-- DASHBOARD -->
     <div id="dashboardSection" class="section-content">
       <h4 class="fw-bold mb-4">Dashboard</h4>
-      <div class="row g-3">
+
+      <!-- Content stats row -->
+      <div class="row g-3 mb-4">
         <div class="col-6 col-lg-3">
           <div class="stat-card card p-3">
             <div class="d-flex align-items-center gap-3">
@@ -166,6 +168,61 @@
               <div class="rounded-3 bg-info bg-opacity-10 p-2"><i class="bi bi-camera-video text-info fs-4"></i></div>
               <div><div class="text-muted small">Orbit Configs</div><div class="fw-bold fs-4" id="statOrbits">—</div></div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lead funnel + sparkline row -->
+      <div class="row g-3 mb-4">
+        <!-- Lead funnel -->
+        <div class="col-12 col-lg-5">
+          <div class="card p-4 h-100">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="fw-bold"><i class="bi bi-funnel-fill text-primary me-2"></i>Lead Funnel</div>
+              <span class="text-muted small" id="dashLeadTotal"></span>
+            </div>
+            <div id="dashFunnel"></div>
+          </div>
+        </div>
+        <!-- 30-day sparkline -->
+        <div class="col-12 col-lg-7">
+          <div class="card p-4 h-100">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="fw-bold"><i class="bi bi-graph-up text-success me-2"></i>New Leads — Last 30 Days</div>
+              <span class="badge bg-success bg-opacity-10 text-success fw-semibold" id="dashLeadSum"></span>
+            </div>
+            <div style="position:relative;height:120px">
+              <svg id="dashSparkline" width="100%" height="120" viewBox="0 0 600 120" preserveAspectRatio="none" style="display:block"></svg>
+              <div id="dashSparkLabels" style="display:flex;justify-content:space-between;font-size:.65rem;color:#94a3b8;margin-top:4px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Applications row -->
+      <div class="row g-3">
+        <div class="col-6 col-lg-3">
+          <div class="card p-3 text-center">
+            <div class="text-muted small mb-1">Total Leads</div>
+            <div class="fw-bold fs-3 text-primary" id="dashTotalLeads">—</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card p-3 text-center">
+            <div class="text-muted small mb-1">Converted</div>
+            <div class="fw-bold fs-3 text-success" id="dashConverted">—</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card p-3 text-center">
+            <div class="text-muted small mb-1">Applications</div>
+            <div class="fw-bold fs-3 text-warning" id="dashApps">—</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card p-3 text-center">
+            <div class="text-muted small mb-1">Approved</div>
+            <div class="fw-bold fs-3 text-info" id="dashApproved">—</div>
           </div>
         </div>
       </div>
@@ -1289,13 +1346,76 @@ function showSection(name) {
 
 async function loadStats() {
   try {
-    const res = await api('GET', '/api/entities/stats');
-    const d = await res.json();
+    const [r1, r2] = await Promise.all([
+      api('GET', '/api/entities/stats'),
+      api('GET', '/api/admin/dashboard')
+    ]);
+    const d = await r1.json();
     document.getElementById('statEntities').textContent = d.entities;
     document.getElementById('statLocations').textContent = d.locations;
     document.getElementById('statPrograms').textContent = d.programs;
     document.getElementById('statOrbits').textContent = d.orbits;
+
+    const dash = await r2.json();
+    renderDashboard(dash);
   } catch {}
+}
+
+function renderDashboard({ leads, apps, trend }) {
+  // Bottom stat tiles
+  document.getElementById('dashTotalLeads').textContent = leads.total ?? 0;
+  document.getElementById('dashConverted').textContent = leads.converted ?? 0;
+  document.getElementById('dashApps').textContent = apps.total ?? 0;
+  document.getElementById('dashApproved').textContent = apps.approved ?? 0;
+
+  // Lead funnel
+  const total = Number(leads.total) || 1;
+  document.getElementById('dashLeadTotal').textContent = `${leads.total} total`;
+  const stages = [
+    { label: 'New',       val: Number(leads.new_count), color: '#6366f1' },
+    { label: 'Contacted', val: Number(leads.contacted),  color: '#0891b2' },
+    { label: 'Converted', val: Number(leads.converted),  color: '#059669' },
+  ];
+  document.getElementById('dashFunnel').innerHTML = stages.map(s => {
+    const pct = Math.round(s.val / total * 100);
+    return `<div class="mb-3">
+      <div class="d-flex justify-content-between small mb-1">
+        <span class="fw-semibold">${s.label}</span>
+        <span class="text-muted">${s.val} <span class="ms-1" style="color:${s.color}">${pct}%</span></span>
+      </div>
+      <div style="background:#e2e8f0;border-radius:6px;height:10px;overflow:hidden">
+        <div style="width:${pct}%;background:${s.color};height:100%;border-radius:6px;transition:width .6s"></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // 30-day sparkline (SVG)
+  const counts = trend.map(t => t.count);
+  const maxVal = Math.max(...counts, 1);
+  const W = 600, H = 100, pad = 8;
+  const xs = counts.map((_, i) => pad + (i / (counts.length - 1)) * (W - pad * 2));
+  const ys = counts.map(v => H - pad - (v / maxVal) * (H - pad * 2));
+  const area = `M${xs[0]},${H - pad} ` +
+    xs.map((x, i) => `L${x},${ys[i]}`).join(' ') +
+    ` L${xs[xs.length - 1]},${H - pad} Z`;
+  const line = xs.map((x, i) => `${i === 0 ? 'M' : 'L'}${x},${ys[i]}`).join(' ');
+  const dots = counts.map((v, i) => v > 0 ? `<circle cx="${xs[i]}" cy="${ys[i]}" r="3" fill="#059669"/>` : '').join('');
+  document.getElementById('dashSparkline').innerHTML = `
+    <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#059669" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </linearGradient></defs>
+    <path d="${area}" fill="url(#sg)"/>
+    <path d="${line}" fill="none" stroke="#059669" stroke-width="2" stroke-linejoin="round"/>
+    ${dots}`;
+
+  const sum = counts.reduce((a, b) => a + b, 0);
+  document.getElementById('dashLeadSum').textContent = `${sum} leads`;
+
+  // Labels: first, mid, last date
+  const labels = [trend[0].day.slice(5), trend[14].day.slice(5), trend[29].day.slice(5)];
+  document.getElementById('dashSparkLabels').innerHTML =
+    labels.map(l => `<span>${l}</span>`).join('');
 }
 
 async function loadEntities() {
