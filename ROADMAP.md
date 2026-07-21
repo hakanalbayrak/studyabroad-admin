@@ -58,11 +58,29 @@ Previous key was revoked. Awaiting new key from user.
 - Passwordless OTP email sign-in for end users
 
 ## In progress / next
-- Programs page pagination (`/programs` still loads all at init)
-- University logos (upload/link + display on cards)
-- SEO meta tags (dynamic per university detail page)
+- Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
+- University logos (upload/link + display on cards) ✅ DONE (2026-07-21)
+- SEO meta tags (dynamic per university detail page) ✅ DONE (2026-07-21)
 - Sitemap / robots.txt
-- Admin dashboard charts (lead funnel, conversions)
+- Admin dashboard charts (lead funnel, conversions) ✅ DONE (2026-07-21)
+
+### Durable inbox monitoring / alert system (needed)
+As a stopgap (2026-07-21) a Claude Code session-scoped cron job checks Gmail
+daily for paneledu.com-related mail (security alerts, deploy/system issues,
+new leads, abnormal DMARC/SPF failure rates) and pushes a notification when
+something needs action. **This is temporary** — it lives only in one Claude
+session and auto-expires after 7 days.
+
+We need a real, permanent version of this:
+- A proper cron job (cPanel cron or a small always-on script) that checks
+  inbox/DMARC reports/deploy logs on a schedule, not tied to any chat session.
+- Define concrete "important" triggers: security/abuse notices (Google Cloud,
+  registrar, hosting), deploy or server-down failures, new lead arrivals,
+  DMARC/SPF reports with a non-zero failure rate.
+- Alerting channel TBD — email digest, SMS, Slack/Telegram bot, or push via
+  a small notification service.
+- Consider folding this into the existing `/api/auto/remind` cron pattern
+  already used for application reminders (`CRON_SECRET`-gated endpoint).
 
 ## Future / larger
 
