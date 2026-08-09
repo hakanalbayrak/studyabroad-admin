@@ -40,9 +40,10 @@ Fix (15 min):
   d. Back in Resend → click Verify → wait for green status
   After verification all outgoing mail will carry Resend's DKIM signature → inbox.
 
-### 4. Google Maps API key
+### 4. Google Maps API key ✅ DONE (2026-07-21)
 File: `public/orbit/index.html` → `const GOOGLE_MAPS_KEY = '...'`
-Previous key was revoked. Awaiting new key from user.
+New key added, website restrictions (paneledu.com/*, *.paneledu.com/*,
+studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
 
 ---
 
