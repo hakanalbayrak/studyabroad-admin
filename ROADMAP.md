@@ -57,6 +57,9 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
 - Email notifications (SMTP via nodemailer) on new leads
 - Lead reply from admin panel with threaded reply history
 - Passwordless OTP email sign-in for end users
+- Pruned catalog to 5 focus countries — Spain, Netherlands, United Kingdom,
+  Germany, Hungary (`scripts/2026-08-09-prune-countries.sql`, soft-deactivated
+  via `entities.status='inactive'`, reversible) (2026-08-11)
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
