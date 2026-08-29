@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — PANELEDU</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <style>
+    body { background: #0b1120; color: #e2e8f0; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: system-ui, sans-serif; }
+    .card { background: #1e293b; border: 1px solid rgba(255,255,255,.08); border-radius: 16px; width: 400px; padding: 40px; }
+    .form-control { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); color: #e2e8f0; }
+    .form-control:focus { background: rgba(255,255,255,.09); border-color: #6366f1; color: #f1f5f9; box-shadow: 0 0 0 3px rgba(99,102,241,.2); }
+    .form-control::placeholder { color: #475569; }
+    .btn-primary { background: #6366f1; border-color: #6366f1; }
+    .btn-primary:hover { background: #4f46e5; border-color: #4f46e5; }
+    a { color: #818cf8; }
+  </style>
+</head>
+<body>
+  <div class="card shadow-lg">
+    <div class="text-center mb-4">
+      <i class="bi bi-person-plus" style="font-size:2.4rem;color:#818cf8"></i>
+      <h5 class="fw-bold mt-2 mb-0 text-white" data-i18n="reg.title">Create Account</h5>
+      <p class="text-muted small mt-1" data-i18n="reg.subtitle">Students, parents, and consultants</p>
+    </div>
+    <div id="errBox" class="alert alert-danger d-none small py-2 mb-3"></div>
+    <div class="mb-3">
+      <label class="form-label small fw-semibold text-muted" data-i18n="reg.name.lbl">Full Name</label>
+      <input type="text" id="name" class="form-control" data-i18n-ph="reg.name.ph" placeholder="Your full name">
+    </div>
+    <div class="mb-3">
+      <label class="form-label small fw-semibold text-muted" data-i18n="reg.email.lbl">Email</label>
+      <input type="email" id="email" class="form-control" data-i18n-ph="reg.email.ph" placeholder="you@example.com">
+    </div>
+    <div class="mb-3">
+      <label class="form-label small fw-semibold text-muted"><span data-i18n="reg.pw.lbl">Password</span> <span class="text-muted fw-normal" data-i18n="reg.pw.min">(min 8 chars)</span></label>
+      <input type="password" id="password" class="form-control" placeholder="••••••••">
+    </div>
+    <div class="mb-4">
+      <label class="form-label small fw-semibold text-muted" data-i18n="reg.confirm.lbl">Confirm Password</label>
+      <input type="password" id="confirm" class="form-control" placeholder="••••••••">
+    </div>
+    <button id="regBtn" class="btn btn-primary w-100 fw-semibold" onclick="doRegister()" data-i18n="reg.create.btn">Create Account</button>
+    <hr style="border-color:rgba(255,255,255,.08);margin:20px 0">
+    <div class="text-center small text-muted">
+      <span data-i18n="reg.already">Already have an account?</span> <a href="/login" data-i18n="reg.signin">Sign in</a>
+    </div>
+  </div>
+  <script>
+    function T(k){ return window.t ? window.t(k) : k; }
+    document.getElementById('confirm').addEventListener('keydown', e => { if (e.key === 'Enter') doRegister(); });
+
+    async function doRegister() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const confirm = document.getElementById('confirm').value;
+      const err = document.getElementById('errBox');
+      err.classList.add('d-none');
+
+      if (!name || !email || !password) { err.textContent = T('reg.err.fields'); err.classList.remove('d-none'); return; }
+      if (password !== confirm) { err.textContent = T('reg.err.match'); err.classList.remove('d-none'); return; }
+      if (password.length < 8) { err.textContent = T('reg.err.len'); err.classList.remove('d-none'); return; }
+
+      const btn = document.getElementById('regBtn');
+      btn.disabled = true;
+      btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>' + T('reg.creating');
+      try {
+        const res = await fetch('/api/auth/register', {
+          method: 'POST', headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({ name, email, password })
+        });
+        const d = await res.json();
+        if (!res.ok) throw new Error(d.error || 'Registration failed');
+        localStorage.setItem('sa_token', d.token);
+        localStorage.setItem('sa_role', d.role);
+        localStorage.setItem('sa_name', d.name);
+        location.href = '/portal';
+      } catch (e) {
+        err.textContent = e.message; err.classList.remove('d-none');
+        btn.disabled = false; btn.textContent = T('reg.create.btn');
+      }
+    }
+  </script>
+</body>
+</html>

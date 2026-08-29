@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Başvuru Yap — PANELEDU</title>
+  <meta name="description" content="Yurt dışı üniversite başvurunu tamamla. Ön kabul al.">
+  <meta property="og:title" content="Başvuru Yap — PANELEDU">
+  <meta property="og:url" content="https://paneledu.com/apply">
+  <link rel="canonical" href="https://paneledu.com/apply">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="/css/site.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <style>
+    * { -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
+    .apply-wrap { max-width: 680px; margin: 0 auto; padding: 24px 16px 120px; }
+
+    /* Page header */
+    .page-hdr { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+    .page-hdr a { color: var(--muted); text-decoration: none; font-size: 1.1rem; flex-shrink: 0; }
+    .page-hdr h1 { font-size: 1.25rem; font-weight: 900; color: var(--text); margin: 0; display: flex; align-items: center; gap: 10px; }
+
+    /* University banner */
+    .uni-banner { background: rgba(99,102,241,.07); border: 1.5px solid rgba(99,102,241,.25); border-radius: 16px; padding: 16px 18px; margin-bottom: 22px; }
+    .uni-banner .u-name { font-size: 1rem; font-weight: 800; color: var(--text); margin-bottom: 3px; }
+    .uni-banner .u-loc  { font-size: .78rem; color: var(--muted); }
+    .uni-banner .u-prog { margin-top: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .prog-chip { display: inline-flex; align-items: center; gap: 6px; background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.3); border-radius: 8px; padding: 5px 11px; font-size: .8rem; font-weight: 700; color: var(--accent); }
+
+    /* Form labels & inputs */
+    .lbl { font-size: .8rem; font-weight: 700; color: var(--text); margin-bottom: 6px; display: block; }
+    .lbl .opt { font-weight: 500; color: var(--muted); font-size: .76rem; }
+    .req { color: #ef4444; }
+    .fld {
+      width: 100%; background: var(--surface); border: 1.5px solid var(--line);
+      border-radius: 12px; padding: 13px 14px; color: var(--text); font-size: .92rem; margin-bottom: 16px;
+      appearance: none; -webkit-appearance: none;
+    }
+    .fld:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.14); }
+    select.fld {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3E%3Cpath fill='%236b7280' d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
+    }
+    select.fld option { background: #fff; color: #111; }
+    .fld::placeholder { color: var(--muted); }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+    @media (max-width: 520px) { .grid2 { grid-template-columns: 1fr; } }
+
+    /* Section divider */
+    .sec-div { display: flex; align-items: center; gap: 10px; margin: 20px 0 18px; }
+    .sec-div span { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); white-space: nowrap; }
+    .sec-div::before, .sec-div::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+
+    /* Chips */
+    .chip-grid { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+    .chip {
+      padding: 10px 18px; border-radius: 30px; font-size: .9rem; font-weight: 600;
+      border: 1.5px solid var(--line); background: var(--surface); color: var(--muted);
+      cursor: pointer; transition: all .15s; user-select: none;
+    }
+    .chip:hover { border-color: var(--accent); color: var(--accent); }
+    .chip.sel { border-color: var(--accent); background: rgba(99,102,241,.12); color: var(--accent); }
+    @media (max-width: 520px) {
+      .chip-grid { gap: 8px; }
+      .chip { padding: 12px 20px; font-size: .95rem; }
+    }
+
+    /* Card chips (education status) */
+    .card-chips { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px; }
+    .card-chip { padding: 14px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--surface); cursor: pointer; transition: all .15s; text-align: center; }
+    .card-chip:hover { border-color: var(--accent); }
+    .card-chip.sel { border-color: var(--accent); background: rgba(99,102,241,.08); }
+    .card-chip .cc-icon { font-size: 1.4rem; color: var(--muted); margin-bottom: 5px; }
+    .card-chip.sel .cc-icon { color: var(--accent); }
+    .card-chip .cc-lbl { font-size: .86rem; font-weight: 700; color: var(--text); }
+    .card-chip .cc-sub { font-size: .72rem; color: var(--muted); margin-top: 2px; }
+
+    /* Yes/No row */
+    .yn-row { display: flex; gap: 10px; margin-bottom: 14px; }
+    .yn-btn { flex: 1; padding: 10px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); font-weight: 700; font-size: .86rem; cursor: pointer; text-align: center; transition: all .15s; }
+    .yn-btn.sel { border-color: var(--accent); background: rgba(99,102,241,.1); color: var(--accent); }
+
+    /* Sub-section indent */
+    .sub-box { background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin-bottom: 16px; }
+    .sub-box .lbl { margin-bottom: 8px; }
+
+    /* Tag input */
+    .tag-wrap { border: 1.5px solid var(--line); border-radius: 12px; padding: 9px 12px; background: var(--surface); margin-bottom: 14px; min-height: 48px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+    .tag-wrap:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,.14); }
+    .subject-tag { background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.3); color: var(--accent); border-radius: 20px; padding: 3px 10px; font-size: .78rem; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; }
+    .subject-tag button { background: none; border: none; color: var(--accent); cursor: pointer; padding: 0; font-size: .85rem; line-height: 1; }
+    .tag-wrap input { border: none; outline: none; background: transparent; font-size: .85rem; color: var(--text); flex: 1; min-width: 120px; }
+    .tag-sug { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow-lg); padding: 5px 0; display: none; position: relative; z-index: 10; max-height: 180px; overflow-y: auto; }
+    .tag-sug.open { display: block; }
+    .sug-item { padding: 8px 14px; font-size: .83rem; cursor: pointer; color: var(--text); }
+    .sug-item:hover { background: var(--surface-2); color: var(--accent); }
+
+    /* Error */
+    .err-msg { color: #dc2626; font-size: .78rem; margin: -10px 0 12px; display: none; }
+
+    /* Submit button */
+    .btn-submit { width: 100%; background: var(--grad); border: none; color: #fff; border-radius: 14px; font-size: 1rem; font-weight: 700; padding: 16px; box-shadow: 0 6px 22px rgba(99,102,241,.35); cursor: pointer; margin-top: 10px; transition: opacity .15s, transform .12s; display: flex; align-items: center; justify-content: center; gap: 10px; }
+    .btn-submit:hover { opacity: .92; transform: translateY(-1px); }
+    .btn-submit:disabled { opacity: .45; box-shadow: none; cursor: default; transform: none; }
+
+    /* Funnel progress */
+    .prog-bar { display: flex; gap: 4px; margin-bottom: 6px; }
+    .prog-bar .seg { flex: 1; height: 4px; border-radius: 4px; background: var(--line); transition: background .2s; }
+    .prog-bar .seg.on { background: var(--accent); }
+    .prog-label { font-size: .73rem; color: var(--muted); margin-bottom: 22px; }
+    .step-h { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+    .step-sub { font-size: .82rem; color: var(--muted); margin-bottom: 20px; }
+    /* Funnel fills the viewport so footer doesn't float into view */
+    #funnelMode { min-height: calc(100svh - 140px); }
+
+    /* Funnel sticky nav */
+    .cta-bar { position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg,var(--bg) 70%,transparent); padding: 14px 16px calc(14px + env(safe-area-inset-bottom)); z-index: 90; }
+    .cta-inner { max-width: 680px; margin: 0 auto; display: flex; gap: 10px; }
+    .btn-back { background: var(--surface); border: 1.5px solid var(--line); color: var(--muted); border-radius: 14px; font-size: .95rem; font-weight: 600; padding: 14px 20px; cursor: pointer; }
+    .btn-next { flex: 1; background: var(--grad); border: none; color: #fff; border-radius: 14px; font-size: 1rem; font-weight: 700; padding: 14px; box-shadow: 0 6px 22px rgba(99,102,241,.35); cursor: pointer; }
+    .btn-next:disabled { opacity: .45; box-shadow: none; cursor: default; }
+
+    /* Spinner */
+    .spinner-ring { width: 34px; height: 34px; border: 3px solid rgba(99,102,241,.2); border-top-color: #6366f1; border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 14px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Success */
+    .success-wrap { text-align: center; padding: 60px 16px; }
+    .success-wrap .ic { width: 80px; height: 80px; border-radius: 50%; background: rgba(16,185,129,.12); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+    .success-wrap .ic i { font-size: 2.4rem; color: #059669; }
+    .success-btns { margin-top: 32px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-home { background: var(--grad); border: none; color: #fff; font-weight: 700; border-radius: 14px; padding: 13px 24px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: .95rem; }
+    .btn-ghost-sm { background: var(--surface); border: 1.5px solid var(--line); color: var(--muted); font-weight: 600; border-radius: 14px; padding: 12px 22px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: .9rem; }
+  </style>
+</head>
+<body class="pe-theme">
+<div class="apply-wrap" id="appWrap">
+
+  <div class="page-hdr">
+    <a href="/" id="backLink" title="Geri"><i class="bi bi-arrow-left"></i></a>
+    <h1><i class="bi bi-send-check-fill" style="color:var(--accent)"></i> <span data-i18n="apply.title">Başvuru Yap</span></h1>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       SHORTCUT MODE — arrived with ?uni= pre-selected
+       ══════════════════════════════════════════════════════════════ -->
+  <div id="shortcutMode" style="display:none">
+
+    <div id="scBanner" class="uni-banner"></div>
+
+    <!-- Program selector (only when ?program not in URL) -->
+    <div id="scProgramWrap" style="display:none">
+      <label class="lbl" data-i18n="apply.prog.lbl">Program</label>
+      <select class="fld" id="scProgramSelect" onchange="onScProgramChange()">
+        <option value="" data-i18n="apply.prog.sel">Program seçin…</option>
+      </select>
+    </div>
+
+    <!-- Intake — nearest auto-selected -->
+    <label class="lbl"><span data-i18n="apply.intake.lbl">Intake</span> <span class="opt">(<span data-i18n="apply.intake.opt">isteğe bağlı</span>)</span></label>
+    <div class="chip-grid" id="scIntakeChips" style="margin-bottom:18px"></div>
+    <input type="hidden" id="scIntake">
+
+    <!-- Contact -->
+    <div class="sec-div"><span data-i18n="apply.contact">İletişim Bilgileri</span></div>
+    <div class="grid2">
+      <div>
+        <label class="lbl"><span data-i18n="apply.firstname">Ad</span> <span class="req">*</span></label>
+        <input type="text" class="fld" id="scFirstName" placeholder="Adın" data-i18n-ph="apply.fn.ph">
+        <div class="err-msg" id="scFirstNameErr" data-i18n="apply.err.fn">Lütfen adını gir.</div>
+      </div>
+      <div>
+        <label class="lbl"><span data-i18n="apply.lastname">Soyad</span> <span class="req">*</span></label>
+        <input type="text" class="fld" id="scLastName" placeholder="Soyadın" data-i18n-ph="apply.ln.ph">
+        <div class="err-msg" id="scLastNameErr" data-i18n="apply.err.ln">Lütfen soyadını gir.</div>
+      </div>
+    </div>
+    <label class="lbl"><span data-i18n="apply.email.lbl">E-posta</span> <span class="req">*</span></label>
+    <input type="email" class="fld" id="scEmail" placeholder="ornek@eposta.com" data-i18n-ph="apply.email.ph">
+    <div class="err-msg" id="scEmailErr" data-i18n="apply.email.err">Geçerli bir e-posta adresi gir.</div>
+    <label class="lbl"><span data-i18n="apply.phone.lbl">Telefon</span> <span class="req">*</span></label>
+    <input type="tel" class="fld" id="scPhone" placeholder="+90 …" data-i18n-ph="apply.phone.ph">
+    <div class="err-msg" id="scPhoneErr" data-i18n="apply.err.phone">Lütfen telefon numaranı gir.</div>
+
+    <!-- Academic profile — all optional -->
+    <div class="sec-div"><span data-i18n="apply.academic">Akademik Profil — tümü isteğe bağlı</span></div>
+
+    <!-- Education status -->
+    <label class="lbl" data-i18n="apply.edu.lbl">Eğitim durumu</label>
+    <div class="card-chips">
+      <div class="card-chip" data-val="highschool" onclick="scCard('eduStatus',this)">
+        <div class="cc-icon"><i class="bi bi-mortarboard"></i></div>
+        <div class="cc-lbl" data-i18n="apply.hs.lbl">Lise Öğrencisi</div>
+        <div class="cc-sub" data-i18n="apply.hs.sub">Henüz mezun olmadım</div>
+      </div>
+      <div class="card-chip" data-val="graduated" onclick="scCard('eduStatus',this)">
+        <div class="cc-icon"><i class="bi bi-award"></i></div>
+        <div class="cc-lbl" data-i18n="apply.grad.lbl">Mezun</div>
+        <div class="cc-sub" data-i18n="apply.grad.sub">Lise / üniversite mezunu</div>
+      </div>
+    </div>
+
+    <!-- GPA -->
+    <label class="lbl" data-i18n="apply.gpa.lbl">GPA (100 üzerinden)</label>
+    <div class="chip-grid">
+      <div class="chip" data-f="gpa" data-v="96-100" onclick="scChip('gpa',this)">96–100</div>
+      <div class="chip" data-f="gpa" data-v="81-95"  onclick="scChip('gpa',this)">81–95</div>
+      <div class="chip" data-f="gpa" data-v="70-80"  onclick="scChip('gpa',this)">70–80</div>
+      <div class="chip" data-f="gpa" data-v="60-69"  onclick="scChip('gpa',this)">60–69</div>
+    </div>
+
+    <!-- English level -->
+    <label class="lbl" data-i18n="apply.eng.lbl">İngilizce seviyesi</label>
+    <div class="chip-grid">
+      <div class="chip" data-f="engLevel" data-v="Beginner"     onclick="scChip('engLevel',this)"><span data-i18n="apply.begin">Başlangıç</span> <span style="opacity:.6;font-weight:400">(A1-A2)</span></div>
+      <div class="chip" data-f="engLevel" data-v="Intermediate" onclick="scChip('engLevel',this)"><span data-i18n="apply.inter">Orta</span> <span style="opacity:.6;font-weight:400">(B1-B2)</span></div>
+      <div class="chip" data-f="engLevel" data-v="Advanced"     onclick="scChip('engLevel',this)"><span data-i18n="apply.adv">İleri</span> <span style="opacity:.6;font-weight:400">(C1-C2)</span></div>
+    </div>
+
+    <!-- English test -->
+    <label class="lbl" data-i18n="apply.eng.q">İngilizce sınav sonucu var mı?</label>
+    <div class="yn-row">
+      <div class="yn-btn" data-v="yes" onclick="scYN('engTest',this);scToggle('engTestBox')" data-i18n="apply.yn.yes">Var</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('engTest',this);scHide('engTestBox')" data-i18n="apply.yn.no.plan">Yok / Planlamıyorum</div>
+    </div>
+    <div id="engTestBox" style="display:none">
+      <div class="sub-box">
+        <label class="lbl" data-i18n="apply.test.type">Sınav türü</label>
+        <div class="chip-grid">
+          <div class="chip" data-f="engTestType" data-v="IELTS"   onclick="scChip('engTestType',this);buildEngScoreChips()">IELTS</div>
+          <div class="chip" data-f="engTestType" data-v="TOEFL"   onclick="scChip('engTestType',this);buildEngScoreChips()">TOEFL</div>
+          <div class="chip" data-f="engTestType" data-v="Duolingo" onclick="scChip('engTestType',this);buildEngScoreChips()">Duolingo</div>
+          <div class="chip" data-f="engTestType" data-v="Pearson"  onclick="scChip('engTestType',this);buildEngScoreChips()">Pearson (PTE)</div>
+        </div>
+        <div id="engScoreBox" style="display:none">
+          <label class="lbl" id="engScoreLbl" data-i18n="apply.score.rng">Puan aralığı</label>
+          <div class="chip-grid" id="engScoreChips"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAT -->
+    <label class="lbl">SAT</label>
+    <div class="yn-row">
+      <div class="yn-btn" data-v="yes" onclick="scYN('satHas',this);scToggle('satBox')" data-i18n="apply.yn.yes">Var</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('satHas',this);scHide('satBox')" data-i18n="apply.yn.no">Yok</div>
+    </div>
+    <div id="satBox" style="display:none" class="sub-box">
+      <label class="lbl" data-i18n="apply.score.rng">Puan aralığı</label>
+      <div class="chip-grid">
+        <div class="chip" data-f="satScore" data-v="900-1000"  onclick="scChip('satScore',this)">900–1000</div>
+        <div class="chip" data-f="satScore" data-v="1000-1100" onclick="scChip('satScore',this)">1000–1100</div>
+        <div class="chip" data-f="satScore" data-v="1100-1200" onclick="scChip('satScore',this)">1100–1200</div>
+        <div class="chip" data-f="satScore" data-v="1200-1300" onclick="scChip('satScore',this)">1200–1300</div>
+        <div class="chip" data-f="satScore" data-v="1300-1400" onclick="scChip('satScore',this)">1300–1400</div>
+        <div class="chip" data-f="satScore" data-v="1400+"     onclick="scChip('satScore',this)">1400+</div>
+      </div>
+    </div>
+
+    <!-- GRE -->
+    <label class="lbl">GRE</label>
+    <div class="yn-row">
+      <div class="yn-btn" data-v="yes" onclick="scYN('greHas',this);scToggle('greBox')" data-i18n="apply.yn.yes">Var</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('greHas',this);scHide('greBox')" data-i18n="apply.yn.no">Yok</div>
+    </div>
+    <div id="greBox" style="display:none" class="sub-box">
+      <label class="lbl" data-i18n="apply.score.rng">Puan aralığı</label>
+      <div class="chip-grid">
+        <div class="chip" data-f="greScore" data-v="290-300" onclick="scChip('greScore',this)">290–300</div>
+        <div class="chip" data-f="greScore" data-v="300-310" onclick="scChip('greScore',this)">300–310</div>
+        <div class="chip" data-f="greScore" data-v="310-320" onclick="scChip('greScore',this)">310–320</div>
+        <div class="chip" data-f="greScore" data-v="320-330" onclick="scChip('greScore',this)">320–330</div>
+        <div class="chip" data-f="greScore" data-v="330+"    onclick="scChip('greScore',this)">330+</div>
+      </div>
+    </div>
+
+    <!-- GMAT -->
+    <label class="lbl">GMAT</label>
+    <div class="yn-row">
+      <div class="yn-btn" data-v="yes" onclick="scYN('gmatHas',this);scToggle('gmatBox')" data-i18n="apply.yn.yes">Var</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('gmatHas',this);scHide('gmatBox')" data-i18n="apply.yn.no">Yok</div>
+    </div>
+    <div id="gmatBox" style="display:none" class="sub-box">
+      <label class="lbl" data-i18n="apply.score.rng">Puan aralığı</label>
+      <div class="chip-grid">
+        <div class="chip" data-f="gmatScore" data-v="500-549" onclick="scChip('gmatScore',this)">500–549</div>
+        <div class="chip" data-f="gmatScore" data-v="550-599" onclick="scChip('gmatScore',this)">550–599</div>
+        <div class="chip" data-f="gmatScore" data-v="600-649" onclick="scChip('gmatScore',this)">600–649</div>
+        <div class="chip" data-f="gmatScore" data-v="650-699" onclick="scChip('gmatScore',this)">650–699</div>
+        <div class="chip" data-f="gmatScore" data-v="700+"    onclick="scChip('gmatScore',this)">700+</div>
+      </div>
+    </div>
+
+    <!-- AP -->
+    <label class="lbl" data-i18n="apply.ap.lbl">AP (Advanced Placement) dersleri</label>
+    <div class="yn-row">
+      <div class="yn-btn" data-v="yes" onclick="scYN('apHas',this);scToggle('apBox')" data-i18n="apply.took">Aldım</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('apHas',this);scHide('apBox')" data-i18n="apply.not.took">Almadım</div>
+    </div>
+    <div id="apBox" style="display:none" class="sub-box">
+      <label class="lbl"><span data-i18n="apply.ap.tags">AP dersleri</span> <span class="opt">(<span data-i18n="apply.ap.hint">yaz + Enter</span>)</span></label>
+      <div class="tag-wrap" id="apTagWrap"><input type="text" id="apInput" placeholder="Örn. Calculus BC…" data-i18n-ph="apply.ap.ph" autocomplete="off" oninput="showSug('ap')" onkeydown="tagKey(event,'ap')"></div>
+      <div class="tag-sug" id="apSug"></div>
+    </div>
+
+    <!-- IB -->
+    <label class="lbl" data-i18n="apply.ib.lbl">IB (International Baccalaureate) dersleri</label>
+    <div class="yn-row">
+      <div class="yn-btn" data-v="yes" onclick="scYN('ibHas',this);scToggle('ibBox')" data-i18n="apply.took">Aldım</div>
+      <div class="yn-btn" data-v="no"  onclick="scYN('ibHas',this);scHide('ibBox')" data-i18n="apply.not.took">Almadım</div>
+    </div>
+    <div id="ibBox" style="display:none" class="sub-box">
+      <label class="lbl">Higher Level (HL)</label>
+      <div class="tag-wrap" id="ibHlTagWrap"><input type="text" id="ibHlInput" placeholder="Örn. Mathematics HL…" data-i18n-ph="apply.ib.hl.ph" autocomplete="off" oninput="showSug('ibHl')" onkeydown="tagKey(event,'ibHl')"></div>
+      <div class="tag-sug" id="ibHlSug"></div>
+      <label class="lbl" style="margin-top:10px">Standard Level (SL)</label>
+      <div class="tag-wrap" id="ibSlTagWrap"><input type="text" id="ibSlInput" placeholder="Örn. Physics SL…" data-i18n-ph="apply.ib.sl.ph" autocomplete="off" oninput="showSug('ibSl')" onkeydown="tagKey(event,'ibSl')"></div>
+      <div class="tag-sug" id="ibSlSug"></div>
+    </div>
+
+    <button class="btn-submit" id="scSubmitBtn" onclick="scSubmit()">
+      <i class="bi bi-send-fill"></i> <span data-i18n="apply.submit">Başvuruyu Gönder</span>
+    </button>
+  </div><!-- /shortcutMode -->
+
+  <!-- ══════════════════════════════════════════════════════════════
+       FUNNEL MODE — cold start (no ?uni=)
+       ══════════════════════════════════════════════════════════════ -->
+  <div id="funnelMode" style="display:none">
+    <div class="prog-bar" id="progBar"></div>
+    <div class="prog-label" id="progLabel"></div>
+
+    <div class="wiz-step" data-step="1">
+      <div class="step-h" data-i18n="apply.step1.h">Hangi kıtada okumak istiyorsun?</div>
+      <div class="step-sub" data-i18n="apply.step1.s">Birini seç — ülke ve okul listesi buna göre filtrelenecek.</div>
+      <div class="chip-grid" id="continentChips"></div>
+    </div>
+    <div class="wiz-step" data-step="2" style="display:none">
+      <div class="step-h">Hangi ülke?</div>
+      <div class="step-sub" id="countryStepSub">Seçtiğin kıtadaki ülkeler listeleniyor.</div>
+      <div class="chip-grid" id="countryChips"></div>
+    </div>
+    <div class="wiz-step" data-step="3" style="display:none">
+      <div class="step-h">Hangi program türü?</div>
+      <div class="step-sub" id="typeStepSub">Okumak istediğin program türünü seç.</div>
+      <div class="chip-grid" id="typeChips"></div>
+    </div>
+    <div class="wiz-step" data-step="4" style="display:none">
+      <div class="step-h">Hangi üniversite?</div>
+      <div class="step-sub" id="schoolStepSub">Seçtiğin kriterlere uyan üniversiteler listeleniyor.</div>
+      <label class="lbl">Üniversite seç</label>
+      <select class="fld" id="schoolSelect" onchange="onSchoolChange()"><option value="">Üniversite seçin…</option></select>
+    </div>
+    <div class="wiz-step" data-step="5" style="display:none">
+      <div class="step-h">Hangi program?</div>
+      <div class="step-sub">Başvurmak istediğin programı ve başlangıç dönemini seç.</div>
+      <label class="lbl">Program</label>
+      <select class="fld" id="programSelect" onchange="onProgramChange()"><option value="">Program seçin…</option></select>
+      <label class="lbl" style="margin-top:4px">Intake</label>
+      <select class="fld" id="intakeSelect"><option value="">Seçin…</option></select>
+    </div>
+    <div class="wiz-step" data-step="6" style="display:none">
+      <div class="step-h" data-i18n="apply.step5.h">İletişim &amp; Profil</div>
+      <div class="step-sub" data-i18n="apply.step5.s">Ad, soyad, e-posta ve telefon zorunludur.</div>
+      <div class="grid2">
+        <div>
+          <label class="lbl"><span data-i18n="apply.firstname">Ad</span> <span class="req">*</span></label>
+          <input type="text" class="fld" id="f_first_name" placeholder="Adın" data-i18n-ph="apply.fn.ph">
+          <div class="err-msg" id="f_fn_err" data-i18n="apply.err.fn">Lütfen adını gir.</div>
+        </div>
+        <div>
+          <label class="lbl"><span data-i18n="apply.lastname">Soyad</span> <span class="req">*</span></label>
+          <input type="text" class="fld" id="f_last_name" placeholder="Soyadın" data-i18n-ph="apply.ln.ph">
+          <div class="err-msg" id="f_ln_err" data-i18n="apply.err.ln">Lütfen soyadını gir.</div>
+        </div>
+      </div>
+      <label class="lbl"><span data-i18n="apply.email.lbl">E-posta</span> <span class="req">*</span></label>
+      <input type="email" class="fld" id="f_email" placeholder="ornek@eposta.com" data-i18n-ph="apply.email.ph">
+      <div class="err-msg" id="err_email" data-i18n="apply.email.err">Geçerli bir e-posta adresi gir.</div>
+      <label class="lbl"><span data-i18n="apply.phone.lbl">Telefon</span> <span class="req">*</span></label>
+      <input type="tel" class="fld" id="f_phone" placeholder="+90 …" data-i18n-ph="apply.phone.ph">
+      <div class="err-msg" id="f_phone_err" data-i18n="apply.err.phone">Lütfen telefon numaranı gir.</div>
+      <div class="sec-div"><span data-i18n="apply.profile">Öğrenci Profili (isteğe bağlı)</span></div>
+      <label class="lbl" data-i18n="apply.edu.lbl">Eğitim durumu</label>
+      <div class="card-chips">
+        <div class="card-chip" data-val="highschool" onclick="fCard('eduStatus',this)">
+          <div class="cc-icon"><i class="bi bi-mortarboard"></i></div>
+          <div class="cc-lbl" data-i18n="apply.hs.lbl">Lise Öğrencisi</div>
+          <div class="cc-sub" data-i18n="apply.hs.sub">Henüz mezun olmadım</div>
+        </div>
+        <div class="card-chip" data-val="graduated" onclick="fCard('eduStatus',this)">
+          <div class="cc-icon"><i class="bi bi-award"></i></div>
+          <div class="cc-lbl" data-i18n="apply.grad.lbl">Mezun</div>
+          <div class="cc-sub" data-i18n="apply.grad.sub">Lise / üniversite mezunu</div>
+        </div>
+      </div>
+      <label class="lbl" data-i18n="apply.eng.lbl">İngilizce seviyesi</label>
+      <div class="chip-grid">
+        <div class="chip" data-f="fEngLevel" data-v="Beginner"     onclick="fChip('fEngLevel',this)"><span data-i18n="apply.begin">Başlangıç</span> <span style="opacity:.6;font-weight:400">(A1-A2)</span></div>
+        <div class="chip" data-f="fEngLevel" data-v="Intermediate" onclick="fChip('fEngLevel',this)"><span data-i18n="apply.inter">Orta</span> <span style="opacity:.6;font-weight:400">(B1-B2)</span></div>
+        <div class="chip" data-f="fEngLevel" data-v="Advanced"     onclick="fChip('fEngLevel',this)"><span data-i18n="apply.adv">İleri</span> <span style="opacity:.6;font-weight:400">(C1-C2)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div id="loadingState" style="display:none;text-align:center;padding:60px 0">
+    <div class="spinner-ring"></div>
+    <p style="color:var(--muted);font-size:.9rem" data-i18n="apply.loading">Yükleniyor…</p>
+  </div>
+  <!-- Submitting -->
+  <div id="submitState" style="display:none;text-align:center;padding:60px 0">
+    <div class="spinner-ring"></div>
+    <p style="color:var(--muted);font-size:.9rem" data-i18n="apply.submitting">Başvurun gönderiliyor…</p>
+  </div>
+  <!-- Success -->
+  <div id="successState" style="display:none">
+    <div class="success-wrap">
+      <div class="ic"><i class="bi bi-check-lg"></i></div>
+      <h4 style="font-weight:900;color:var(--text)" data-i18n="apply.ok.h">Başvurun Alındı!</h4>
+      <p style="color:var(--muted);font-size:.9rem;max-width:440px;margin:10px auto 0;line-height:1.6" data-i18n="apply.ok.p">
+        Teşekkürler! Ekibimiz başvurunu inceleyip en kısa sürede e-posta veya telefon ile seninle iletişime geçecek.
+      </p>
+      <div class="success-btns">
+        <a href="/" class="btn-home"><i class="bi bi-house-fill"></i> <span data-i18n="apply.home">Ana Sayfa</span></a>
+        <a href="/match" class="btn-ghost-sm"><i class="bi bi-magic"></i> <span data-i18n="apply.wizard">Profil Sihirbazı</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Funnel sticky nav -->
+<div class="cta-bar" id="ctaBar" style="display:none">
+  <div class="cta-inner">
+    <button class="btn-back" id="backBtn" onclick="prevStep()" style="display:none"><i class="bi bi-arrow-left"></i></button>
+    <button class="btn-next" id="nextBtn" onclick="nextStep()">Devam <i class="bi bi-arrow-right" style="margin-left:6px"></i></button>
+  </div>
+</div>
+
+<script>
+// ── Shared helpers ─────────────────────────────────────────────────────────
+function esc(s) { return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function validEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+
+const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+function nearestIntakeValue(monthsStr) {
+  if (!monthsStr) return null;
+  const months = monthsStr.split(',').map(s => s.trim()).filter(Boolean);
+  if (!months.length) return null;
+  const now = new Date();
+  const curM = now.getMonth(), curY = now.getFullYear();
+  let best = null, bestDiff = Infinity;
+  for (const m of months) {
+    const idx = MONTH_NAMES.findIndex(n => m.toLowerCase().includes(n.toLowerCase()));
+    if (idx === -1) continue;
+    for (const yo of [0, 1]) {
+      const diff = (curY + yo - curY) * 12 + (idx - curM);
+      if (diff >= 0 && diff < bestDiff) {
+        bestDiff = diff;
+        best = MONTH_NAMES[idx] + ' ' + (curY + yo);
+      }
+    }
+  }
+  return best;
+}
+
+// ── AP / IB subject lists ──────────────────────────────────────────────────
+const AP_LIST = ['Biology','Calculus AB','Calculus BC','Chemistry','Computer Science A','Computer Science Principles',
+  'Economics (Macro)','Economics (Micro)','English Language','English Literature','Environmental Science',
+  'European History','French Language','German Language','Government & Politics (US)','Government & Politics (Comparative)',
+  'Human Geography','Music Theory','Physics 1','Physics 2','Physics C: Mechanics','Physics C: E&M',
+  'Psychology','Research','Seminar','Spanish Language','Spanish Literature','Statistics','US History','World History'];
+const IB_LIST = ['Biology HL','Biology SL','Business Management HL','Business Management SL',
+  'Chemistry HL','Chemistry SL','Computer Science HL','Computer Science SL',
+  'Economics HL','Economics SL','English A HL','English A SL','English B HL','English B SL',
+  'Film HL','Film SL','Geography HL','Geography SL','Global Politics HL','Global Politics SL',
+  'History HL','History SL','Language & Literature HL','Language & Literature SL',
+  'Mathematics: Analysis HL','Mathematics: Analysis SL','Mathematics: Applications HL','Mathematics: Applications SL',
+  'Music HL','Music SL','Philosophy HL','Philosophy SL','Physics HL','Physics SL',
+  'Psychology HL','Psychology SL','Theatre HL','Theatre SL','Turkish A HL','Turkish A SL',
+  'Visual Arts HL','Visual Arts SL'];
+
+const tags = { ap: [], ibHl: [], ibSl: [] };
+
+function poolFor(type) { return type === 'ap' ? AP_LIST : IB_LIST; }
+function inputFor(type) { return document.getElementById(type === 'ap' ? 'apInput' : (type === 'ibHl' ? 'ibHlInput' : 'ibSlInput')); }
+function sugFor(type)   { return document.getElementById(type === 'ap' ? 'apSug'   : (type === 'ibHl' ? 'ibHlSug'   : 'ibSlSug')); }
+function wrapFor(type)  { return document.getElementById(type === 'ap' ? 'apTagWrap': (type === 'ibHl' ? 'ibHlTagWrap': 'ibSlTagWrap')); }
+
+function showSug(type) {
+  const q = inputFor(type).value.toLowerCase().trim();
+  const sug = sugFor(type);
+  if (!q) { sug.classList.remove('open'); return; }
+  const matches = poolFor(type).filter(s => s.toLowerCase().includes(q) && !tags[type].includes(s)).slice(0, 8);
+  sug.innerHTML = matches.map(s => `<div class="sug-item" onclick="addTag('${type}','${s.replace(/'/g,"\\'")}')">${esc(s)}</div>`).join('');
+  sug.classList.toggle('open', matches.length > 0);
+}
+function addTag(type, val) {
+  if (tags[type].includes(val)) return;
+  tags[type].push(val);
+  renderTags(type);
+  inputFor(type).value = '';
+  sugFor(type).classList.remove('open');
+}
+function removeTag(type, val) { tags[type] = tags[type].filter(t => t !== val); renderTags(type); }
+function renderTags(type) {
+  const wrap = wrapFor(type), inp = inputFor(type);
+  wrap.querySelectorAll('.subject-tag').forEach(t => t.remove());
+  tags[type].forEach(v => {
+    const span = document.createElement('span');
+    span.className = 'subject-tag';
+    span.innerHTML = esc(v) + `<button type="button" onclick="removeTag('${type}','${v.replace(/'/g,"\\'")}')" ><i class="bi bi-x"></i></button>`;
+    wrap.insertBefore(span, inp);
+  });
+}
+function tagKey(e, type) {
+  if (e.key === 'Enter' || e.key === ',') {
+    e.preventDefault();
+    const v = inputFor(type).value.trim();
+    if (v) addTag(type, v);
+  } else if (e.key === 'Escape') { sugFor(type).classList.remove('open'); }
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.tag-wrap') && !e.target.closest('.tag-sug'))
+    document.querySelectorAll('.tag-sug').forEach(s => s.classList.remove('open'));
+});
+
+// ══════════════════════════════════════════════════════════════════════════
+// SHORTCUT MODE
+// ══════════════════════════════════════════════════════════════════════════
+const params    = new URLSearchParams(location.search);
+const URL_UNI   = params.get('uni');
+const URL_PROG  = params.get('program');
+
+const scSel = { eduStatus:null, gpa:null, engLevel:null, engTest:null, engTestType:null, engTestScore:null,
+                satHas:null, satScore:null, greHas:null, greScore:null, gmatHas:null, gmatScore:null,
+                apHas:null, ibHas:null };
+let scUniData = null, scProgData = null, scPrograms = [];
+
+const ENG_SCORES = {
+  IELTS:   ['4.5','5.0','5.5','6.0','6.5','7.0','7.5','8.0','8.5+'],
+  TOEFL:   ['60-69','70-79','80-89','90-99','100-109','110+'],
+  Duolingo:['85-94','95-104','105-114','115-124','125+'],
+  Pearson: ['42-49','50-57','58-64','65-72','73+']
+};
+
+function scChip(field, el) {
+  document.querySelectorAll(`[data-f="${field}"]`).forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  scSel[field] = el.dataset.v;
+}
+function scCard(field, el) {
+  el.closest('.card-chips').querySelectorAll('.card-chip').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  scSel[field] = el.dataset.val;
+}
+function scYN(field, el) {
+  el.parentElement.querySelectorAll('.yn-btn').forEach(b => b.classList.remove('sel'));
+  el.classList.add('sel');
+  scSel[field] = el.dataset.v;
+}
+function scToggle(id) { document.getElementById(id).style.display = 'block'; }
+function scHide(id)   { document.getElementById(id).style.display = 'none'; }
+
+function buildEngScoreChips() {
+  const type = scSel.engTestType;
+  if (!type || !ENG_SCORES[type]) return;
+  scSel.engTestScore = null;
+  const chips = ENG_SCORES[type].map(v =>
+    `<div class="chip" data-f="engTestScore" data-v="${v}" onclick="scChip('engTestScore',this)">${v}</div>`).join('');
+  document.getElementById('engScoreLbl').textContent = type + ' — ' + (window.t ? window.t('apply.score.rng') : 'Puan aralığı');
+  document.getElementById('engScoreChips').innerHTML = chips;
+  document.getElementById('engScoreBox').style.display = 'block';
+}
+
+function buildIntakeOptions(monthsStr, nearestVal) {
+  const months = (monthsStr || '').split(',').map(s => s.trim()).filter(Boolean);
+  const now = new Date();
+  const curY = now.getFullYear(), curM = now.getMonth();
+  const container = document.getElementById('scIntakeChips');
+  const hidden = document.getElementById('scIntake');
+
+  // Build labelled options for this year + next year
+  const options = [];
+  for (const m of months) {
+    const idx = MONTH_NAMES.findIndex(n => m.toLowerCase().includes(n.toLowerCase()));
+    if (idx === -1) { options.push({ val: m, label: m }); continue; }
+    for (const yo of [0, 1]) {
+      const diff = yo * 12 + (idx - curM);
+      if (diff >= -1) {
+        const label = MONTH_NAMES[idx] + ' ' + (curY + yo);
+        if (!options.find(o => o.val === label)) options.push({ val: label, label });
+      }
+    }
+  }
+  options.sort((a, b) => {
+    const parse = s => { const p = s.split(' '); return parseInt(p[1])*12 + MONTH_NAMES.indexOf(p[0]); };
+    return parse(a.val) - parse(b.val);
+  });
+
+  container.innerHTML = options.map(o =>
+    `<div class="chip${o.val === nearestVal ? ' sel' : ''}" onclick="selectIntake(this,'${esc(o.val)}')">${esc(o.label)}</div>`
+  ).join('');
+  hidden.value = nearestVal || '';
+}
+
+function selectIntake(el, val) {
+  document.querySelectorAll('#scIntakeChips .chip').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  document.getElementById('scIntake').value = val;
+}
+
+function updateScBanner() {
+  if (!scUniData) return;
+  const u = scUniData;
+  const loc = [u.city, u.country].filter(Boolean).join(', ');
+  document.getElementById('scBanner').innerHTML =
+    `<div class="u-name">${esc(u.name)}</div>` +
+    (loc ? `<div class="u-loc"><i class="bi bi-geo-alt-fill" style="margin-right:4px"></i>${esc(loc)}</div>` : '') +
+    (scProgData ? `<div class="u-prog"><span class="prog-chip"><i class="bi bi-mortarboard-fill" style="margin-right:6px"></i>${esc(scProgData.name)}${scProgData.type_name ? ' · '+esc(scProgData.type_name) : ''}${scProgData.duration ? ' · '+esc(scProgData.duration) : ''}</span></div>` : '');
+}
+
+function onScProgramChange() {
+  const id = document.getElementById('scProgramSelect').value;
+  scProgData = scPrograms.find(p => String(p.id) === String(id)) || null;
+  updateScBanner();
+  if (scProgData) {
+    const nearest = nearestIntakeValue(scProgData.intake_months);
+    buildIntakeOptions(scProgData.intake_months, nearest);
+  }
+}
+
+async function initShortcut() {
+  document.getElementById('loadingState').style.display = 'block';
+  try {
+    const r = await fetch('/api/public/universities/' + encodeURIComponent(URL_UNI));
+    if (!r.ok) throw new Error();
+    scUniData = await r.json();
+    scPrograms = scUniData.programs || [];
+
+    if (URL_PROG) {
+      scProgData = scPrograms.find(p => String(p.id) === String(URL_PROG)) || null;
+    }
+    if (!URL_PROG && scPrograms.length) {
+      const sel = document.getElementById('scProgramSelect');
+      sel.innerHTML = '<option value="">' + (window.t ? window.t('apply.prog.sel') : 'Program seçin…') + '</option>' +
+        scPrograms.map(p => `<option value="${p.id}">${esc(p.name)}${p.type_name?' ('+esc(p.type_name)+')':''}${p.duration?' · '+esc(p.duration):''}</option>`).join('');
+      document.getElementById('scProgramWrap').style.display = 'block';
+    }
+
+    // Build intake options with nearest pre-selected
+    const nearestVal = nearestIntakeValue(scProgData ? scProgData.intake_months : null);
+    buildIntakeOptions(scProgData ? scProgData.intake_months : '', nearestVal);
+
+    updateScBanner();
+
+    // Back link → orbit if coordinates available
+    const bl = document.getElementById('backLink');
+    if (scUniData.latitude && scUniData.longitude) {
+      const op = new URLSearchParams({ name: scUniData.name, uniId: scUniData.id,
+        lat: scUniData.orbit_center_lat || scUniData.latitude,
+        lng: scUniData.orbit_center_lng || scUniData.longitude });
+      bl.href = '/orbit?' + op.toString();
+    } else { bl.href = '/'; }
+  } catch(_) {
+    document.getElementById('scBanner').innerHTML = '<div class="u-name" style="color:var(--muted)">' + (window.t ? window.t('apply.uni.err') : 'Üniversite yüklenemedi') + '</div>';
+  }
+  document.getElementById('loadingState').style.display = 'none';
+  document.getElementById('shortcutMode').style.display = 'block';
+}
+
+async function scSubmit() {
+  const firstName = (document.getElementById('scFirstName').value || '').trim();
+  const lastName  = (document.getElementById('scLastName').value  || '').trim();
+  const email     = (document.getElementById('scEmail').value     || '').trim();
+  const phone     = (document.getElementById('scPhone').value     || '').trim();
+
+  document.getElementById('scFirstNameErr').style.display = 'none';
+  document.getElementById('scLastNameErr').style.display  = 'none';
+  document.getElementById('scEmailErr').style.display     = 'none';
+  document.getElementById('scPhoneErr').style.display     = 'none';
+
+  let firstErr = null;
+  if (!firstName)        { document.getElementById('scFirstNameErr').style.display = 'block'; firstErr = firstErr || 'scFirstName'; }
+  if (!lastName)         { document.getElementById('scLastNameErr').style.display  = 'block'; firstErr = firstErr || 'scLastName'; }
+  if (!validEmail(email)){ document.getElementById('scEmailErr').style.display     = 'block'; firstErr = firstErr || 'scEmail'; }
+  if (!phone)            { document.getElementById('scPhoneErr').style.display     = 'block'; firstErr = firstErr || 'scPhone'; }
+  if (firstErr) { document.getElementById(firstErr).focus(); return; }
+
+  const intake = document.getElementById('scIntake').value;
+  const progSel = document.getElementById('scProgramSelect');
+  const progId = scProgData ? scProgData.id : (progSel ? progSel.value : URL_PROG);
+
+  const noteParts = [];
+  if (scSel.eduStatus) noteParts.push('Eğitim: ' + (scSel.eduStatus === 'highschool' ? 'Lise öğrencisi' : 'Mezun'));
+  if (scSel.gpa)       noteParts.push('GPA: ' + scSel.gpa);
+  if (scSel.engLevel)  noteParts.push('İngilizce: ' + scSel.engLevel);
+  if (scSel.engTest === 'yes' && scSel.engTestType) noteParts.push(scSel.engTestType + (scSel.engTestScore ? ' ' + scSel.engTestScore : ''));
+  if (scSel.satHas  === 'yes') noteParts.push('SAT'  + (scSel.satScore  ? ' ' + scSel.satScore  : ''));
+  if (scSel.greHas  === 'yes') noteParts.push('GRE'  + (scSel.greScore  ? ' ' + scSel.greScore  : ''));
+  if (scSel.gmatHas === 'yes') noteParts.push('GMAT' + (scSel.gmatScore ? ' ' + scSel.gmatScore : ''));
+  if (scSel.apHas   === 'yes' && tags.ap.length) noteParts.push('AP: ' + tags.ap.join(', '));
+  if (scSel.ibHas   === 'yes') {
+    if (tags.ibHl.length) noteParts.push('IB HL: ' + tags.ibHl.join(', '));
+    if (tags.ibSl.length) noteParts.push('IB SL: ' + tags.ibSl.join(', '));
+  }
+
+  const body = {
+    email,
+    first_name:      firstName,
+    last_name:       lastName,
+    phone:           phone,
+    university_id:   scUniData ? scUniData.id : null,
+    university_name: scUniData ? scUniData.name : '',
+    country:         scUniData ? (scUniData.country || '') : '',
+    program_id:      progId || null,
+    program_name:    scProgData ? scProgData.name : '',
+    graduation_gpa:  scSel.gpa || '',
+    english_test_type:  (scSel.engTest === 'yes' ? scSel.engTestType : (scSel.engTest === 'no' ? 'None' : '')) || '',
+    english_test_score: scSel.engTestScore || '',
+    desired_intake:  intake || '',
+    notes:           noteParts.join(' | ')
+  };
+
+  document.getElementById('shortcutMode').style.display = 'none';
+  document.getElementById('submitState').style.display = 'block';
+  window.scrollTo({ top: 0 });
+  try {
+    const r = await fetch('/api/public/applications', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)
+    });
+    const res = await r.json();
+    if (!r.ok) throw new Error(res.error || 'Hata oluştu.');
+    document.getElementById('submitState').style.display = 'none';
+    document.getElementById('successState').style.display = 'block';
+    window.scrollTo({ top: 0 });
+  } catch(e) {
+    document.getElementById('submitState').style.display = 'none';
+    document.getElementById('shortcutMode').style.display = 'block';
+    alert(e.message || (window.t ? window.t('apply.err.gen') : 'Bir hata oluştu, lütfen tekrar dene.'));
+  }
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// FUNNEL MODE (cold start)
+// ══════════════════════════════════════════════════════════════════════════
+const TOTAL_STEPS = 6;
+let curStep = 1;
+let allUnis = [], allCountryProgs = [], fPrograms = [];
+const fSel = { continent:null, country:null, progType:null, schoolId:null, schoolName:null,
+               programId:null, programName:null, eduStatus:null, fEngLevel:null };
+const CONTINENTS = [
+  {val:'Europe',        label:'Avrupa 🇪🇺'},
+  {val:'North America', label:'Kuzey Amerika 🌎'},
+  {val:'Australia',     label:'Avustralya 🦘'},
+  {val:'Asia',          label:'Asya 🌏'},
+  {val:'UK',            label:'Birleşik Krallık 🇬🇧'},
+];
+const STEP_LABELS = ['Kıta','Ülke','Program Türü','Okul','Program','İletişim & Profil'];
+
+async function initFunnel() {
+  document.getElementById('funnelMode').style.display = 'block';
+  document.getElementById('ctaBar').style.display = 'block';
+  document.getElementById('continentChips').innerHTML = CONTINENTS.map(c =>
+    `<div class="chip" data-f="continent" data-v="${c.val}" onclick="pickContinent(this)">${c.label}</div>`).join('');
+  try {
+    const uniResp = await (await fetch('/api/public/universities?limit=2000')).json();
+    allUnis = Array.isArray(uniResp) ? uniResp : (uniResp.data || []);
+  } catch(_) {}
+  renderProgress();
+  showStep(1);
+}
+
+function pickContinent(el) {
+  document.querySelectorAll('[data-f="continent"]').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  fSel.continent = el.dataset.v;
+  fSel.country = null; fSel.progType = null; fSel.schoolId = null;
+  const unis = allUnis.filter(u =>
+    fSel.continent === 'UK'
+      ? (u.continent === 'UK' || u.country === 'United Kingdom' || u.country === 'UK')
+      : u.continent === fSel.continent
+  );
+  const countries = [...new Set(unis.map(u => u.country).filter(Boolean))].sort();
+  document.getElementById('countryChips').innerHTML = countries.length
+    ? countries.map(c => `<div class="chip" data-f="country" data-v="${esc(c)}" onclick="pickCountry(this)">${esc(c)}</div>`).join('')
+    : '<p style="color:var(--muted);font-size:.85rem">Bu kıtada kayıtlı üniversite bulunamadı.</p>';
+  document.getElementById('countryStepSub').textContent = fSel.continent + ' kıtasındaki ülkeler listeleniyor.';
+}
+
+async function pickCountry(el) {
+  document.querySelectorAll('[data-f="country"]').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  fSel.country = el.dataset.v;
+  fSel.progType = null; fSel.schoolId = null;
+  document.getElementById('typeChips').innerHTML = '<span style="color:var(--muted);font-size:.84rem">Yükleniyor…</span>';
+  document.getElementById('typeStepSub').textContent = fSel.country + ' için program türleri yükleniyor.';
+  allCountryProgs = [];
+  try {
+    const r = await (await fetch('/api/public/programs?country=' + encodeURIComponent(fSel.country) + '&limit=2000')).json();
+    allCountryProgs = Array.isArray(r) ? r : (r.data || []);
+  } catch(_) {}
+  const types = [...new Set(allCountryProgs.map(p => p.type_name).filter(Boolean))].sort();
+  document.getElementById('typeChips').innerHTML =
+    types.map(t => `<div class="chip" data-f="progType" data-v="${esc(t)}" onclick="pickType(this)">${esc(t)}</div>`).join('') +
+    `<div class="chip" data-f="progType" data-v="" onclick="pickType(this)" style="opacity:.7">Farketmez</div>`;
+  document.getElementById('typeStepSub').textContent = fSel.country + ' için program türünü seç.';
+}
+
+function pickType(el) {
+  document.querySelectorAll('[data-f="progType"]').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  fSel.progType = el.dataset.v || null;
+  const filtered = fSel.progType
+    ? allCountryProgs.filter(p => p.type_name === fSel.progType)
+    : allCountryProgs;
+  const schoolMap = new Map();
+  filtered.forEach(p => { if (p.university_id && !schoolMap.has(p.university_id)) schoolMap.set(p.university_id, p.university_name); });
+  const sorted = [...schoolMap.entries()].sort((a, b) => a[1].localeCompare(b[1]));
+  document.getElementById('schoolSelect').innerHTML =
+    '<option value="">Üniversite seçin…</option>' +
+    sorted.map(([id, name]) => `<option value="${id}">${esc(name)}</option>`).join('');
+  document.getElementById('schoolStepSub').textContent =
+    (fSel.progType || 'Tüm') + ' programları olan ' + fSel.country + ' üniversiteleri.';
+}
+
+function onSchoolChange() {
+  const id = document.getElementById('schoolSelect').value;
+  fSel.schoolId = id ? parseInt(id) : null;
+  fSel.schoolName = id ? ((allUnis.find(u => u.id == id) || {}).name || (allCountryProgs.find(p => p.university_id == id) || {}).university_name || '') : '';
+  fPrograms = allCountryProgs.filter(p =>
+    p.university_id == id && (!fSel.progType || p.type_name === fSel.progType)
+  );
+  const progSel = 'Program seçin…';
+  document.getElementById('programSelect').innerHTML = '<option value="">' + progSel + '</option>' +
+    fPrograms.map(p => `<option value="${p.id}">${esc(p.name)}${p.type_name?' ('+esc(p.type_name)+')':''}${p.duration?' · '+esc(p.duration):''}</option>`).join('');
+  document.getElementById('intakeSelect').innerHTML = '<option value="">Seçin…</option>';
+}
+
+function onProgramChange() {
+  const id = document.getElementById('programSelect').value;
+  fSel.programId = id ? parseInt(id) : null;
+  const p = fPrograms.find(x => x.id == id);
+  fSel.programName = p ? p.name : null;
+  const nearest = p ? nearestIntakeValue(p.intake_months) : null;
+  const months = p ? (p.intake_months || '').split(',').map(s => s.trim()).filter(Boolean) : [];
+  const is = document.getElementById('intakeSelect');
+  is.innerHTML = '<option value="">Seçin…</option>' + months.map(m => `<option value="${esc(m)}">${esc(m)}</option>`).join('');
+  if (nearest) { const opt = [...is.options].find(o => o.value.includes(nearest.split(' ')[0])); if (opt) opt.selected = true; }
+}
+function fChip(field, el) { document.querySelectorAll(`[data-f="${field}"]`).forEach(c => c.classList.remove('sel')); el.classList.add('sel'); fSel[field] = el.dataset.v; }
+function fCard(field, el) { el.closest('.card-chips').querySelectorAll('.card-chip').forEach(c => c.classList.remove('sel')); el.classList.add('sel'); fSel[field] = el.dataset.val; }
+
+function renderProgress() {
+  document.getElementById('progBar').innerHTML = Array.from({length:TOTAL_STEPS}, (_,i) => `<div class="seg${i<curStep?' on':''}"></div>`).join('');
+  document.getElementById('progLabel').textContent = 'Adım ' + curStep + ' / ' + TOTAL_STEPS + ' — ' + (STEP_LABELS[curStep-1] || '');
+}
+function showStep(n) {
+  curStep = n;
+  document.querySelectorAll('.wiz-step').forEach(el => el.style.display = parseInt(el.dataset.step) === n ? 'block' : 'none');
+  document.getElementById('backBtn').style.display = n > 1 ? 'block' : 'none';
+  document.getElementById('nextBtn').innerHTML = n === TOTAL_STEPS
+    ? '<i class="bi bi-send" style="margin-right:6px"></i>Başvuruyu Gönder'
+    : 'Devam <i class="bi bi-arrow-right" style="margin-left:6px"></i>';
+  renderProgress();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function validateStep(n) {
+  if (n === 1 && !fSel.continent) { alert('Lütfen bir kıta seç.'); return false; }
+  if (n === 2 && !fSel.country) { alert('Lütfen bir ülke seç.'); return false; }
+  if (n === 4 && !document.getElementById('schoolSelect').value) { alert('Lütfen bir üniversite seç.'); return false; }
+  return true;
+}
+function nextStep() { if (!validateStep(curStep)) return; if (curStep === TOTAL_STEPS) { funnelSubmit(); return; } showStep(curStep + 1); }
+function prevStep() { if (curStep > 1) showStep(curStep - 1); }
+
+async function funnelSubmit() {
+  const firstName = (document.getElementById('f_first_name').value || '').trim();
+  const lastName  = (document.getElementById('f_last_name').value  || '').trim();
+  const email     = (document.getElementById('f_email').value      || '').trim();
+  const phone     = (document.getElementById('f_phone').value      || '').trim();
+
+  document.getElementById('f_fn_err').style.display    = 'none';
+  document.getElementById('f_ln_err').style.display    = 'none';
+  document.getElementById('err_email').style.display   = 'none';
+  document.getElementById('f_phone_err').style.display = 'none';
+
+  let firstErr = null;
+  if (!firstName)        { document.getElementById('f_fn_err').style.display    = 'block'; firstErr = firstErr || 'f_first_name'; }
+  if (!lastName)         { document.getElementById('f_ln_err').style.display    = 'block'; firstErr = firstErr || 'f_last_name'; }
+  if (!validEmail(email)){ document.getElementById('err_email').style.display   = 'block'; firstErr = firstErr || 'f_email'; }
+  if (!phone)            { document.getElementById('f_phone_err').style.display = 'block'; firstErr = firstErr || 'f_phone'; }
+  if (firstErr) { document.getElementById(firstErr).focus(); return; }
+
+  const notes = [
+    fSel.eduStatus ? ('Eğitim: ' + (fSel.eduStatus === 'highschool' ? 'Lise öğrencisi' : 'Mezun')) : '',
+    fSel.fEngLevel ? ('İngilizce: ' + fSel.fEngLevel) : ''
+  ].filter(Boolean).join(' | ');
+  const body = {
+    email, first_name: firstName,
+    last_name: lastName,
+    phone: phone,
+    university_id: fSel.schoolId, university_name: fSel.schoolName||'',
+    country: fSel.country||'', program_id: fSel.programId, program_name: fSel.programName||'',
+    desired_intake: document.getElementById('intakeSelect').value||'', notes
+  };
+  document.getElementById('funnelMode').style.display = 'none';
+  document.getElementById('ctaBar').style.display = 'none';
+  document.getElementById('submitState').style.display = 'block';
+  window.scrollTo({ top: 0 });
+  try {
+    const r = await fetch('/api/public/applications', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+    const res = await r.json();
+    if (!r.ok) throw new Error(res.error || 'Hata oluştu.');
+    document.getElementById('submitState').style.display = 'none';
+    document.getElementById('successState').style.display = 'block';
+    window.scrollTo({ top: 0 });
+  } catch(e) {
+    document.getElementById('submitState').style.display = 'none';
+    document.getElementById('funnelMode').style.display = 'block';
+    document.getElementById('ctaBar').style.display = 'block';
+    showStep(TOTAL_STEPS);
+    alert(e.message || (window.t ? window.t('apply.err.gen') : 'Bir hata oluştu, lütfen tekrar dene.'));
+  }
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────
+if (URL_UNI) { initShortcut(); } else { initFunnel(); }
+</script>
+<script src="/js/chrome.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ön Kabul Belgesi — PANELEDU</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="/css/site.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <style>
+    .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    .cert { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow-lg); overflow: hidden; }
+    .cert-top { background: var(--grad); color: #fff; padding: 30px 32px; }
+    .cert-top .brand { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; opacity: .92; }
+    .cert-top h1 { font-size: 1.7rem; font-weight: 800; margin: 6px 0 0; }
+    .cert-body { padding: 30px 32px; }
+    .cert-row { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
+    .cert-row:last-child { border-bottom: none; }
+    .cert-row .l { color: var(--muted); }
+    .cert-row .v { font-weight: 700; text-align: right; }
+    .cond { background: var(--surface-2); border-radius: 12px; padding: 16px; margin-top: 18px; font-size: .92rem; line-height: 1.55; }
+    .seal { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; color: var(--accent); font-weight: 700; }
+    .disclaimer { color: var(--muted); font-size: .8rem; margin-top: 20px; line-height: 1.5; }
+    .loading, .errbox { text-align: center; padding: 70px 16px; color: var(--muted); }
+    @media print { .pe-nav, .pe-footer, .noprint { display: none !important; } body { background: #fff; } }
+  </style>
+</head>
+<body class="pe-theme">
+  <div class="wrap">
+    <div id="loading" class="loading"><div class="spinner-border" style="color:var(--accent)"></div><div class="mt-3" data-i18n="acc.loading">Belge yükleniyor…</div></div>
+    <div id="errbox" class="errbox" style="display:none"></div>
+
+    <div id="cert" class="cert" style="display:none">
+      <div class="cert-top">
+        <div class="brand">PANELEDU</div>
+        <h1 id="certTitle" data-i18n="acc.title.pre">Ön Kabul Belgesi</h1>
+      </div>
+      <div class="cert-body">
+        <p style="font-size:1.02rem"><span data-i18n="acc.dear">Sayın</span> <b id="cName">—</b>,</p>
+        <p id="cCongratsP" style="line-height:1.6">Tebrikler! Aşağıdaki program için <b id="cKind">ön kabul</b> almaya hak kazandınız.</p>
+
+        <div class="cert-row"><span class="l" data-i18n="acc.uni">Üniversite</span><span class="v" id="cUni">—</span></div>
+        <div class="cert-row"><span class="l" data-i18n="acc.prog">Program</span><span class="v" id="cProg">—</span></div>
+        <div class="cert-row"><span class="l" data-i18n="acc.ctry">Ülke</span><span class="v" id="cCountry">—</span></div>
+        <div class="cert-row"><span class="l" data-i18n="acc.intake">Başlangıç</span><span class="v" id="cIntake">—</span></div>
+        <div class="cert-row"><span class="l" data-i18n="acc.ref">Referans No</span><span class="v" id="cRef">—</span></div>
+        <div class="cert-row"><span class="l" data-i18n="acc.date">Düzenlenme tarihi</span><span class="v" id="cDate">—</span></div>
+
+        <div id="cCondWrap" class="cond" style="display:none">
+          <b data-i18n="acc.cond.title">Koşullar:</b><br><span id="cCond"></span>
+        </div>
+
+        <div class="seal"><i class="bi bi-patch-check-fill" style="font-size:1.3rem"></i><span data-i18n="acc.seal">PANELEDU tarafından onaylandı</span></div>
+
+        <p class="disclaimer" data-i18n="acc.disclaimer">Bu belge PANELEDU tarafından düzenlenen bir ön değerlendirmedir; üniversitenin nihai kabul kararı yerine geçmez. Ekibimiz kalan adımlarda size rehberlik edecektir.</p>
+
+        <div class="noprint mt-4 d-flex gap-2 flex-wrap">
+          <button class="btn-grad" onclick="window.print()"><i class="bi bi-printer-fill"></i><span data-i18n="acc.print">Yazdır / PDF kaydet</span></button>
+          <a class="btn-ghost" href="/portal"><i class="bi bi-person"></i><span data-i18n="acc.portal">Öğrenci paneli</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="/js/chrome.js"></script>
+  <script>
+    function T(k){ return window.t ? window.t(k) : k; }
+    function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    const ref = new URLSearchParams(location.search).get('ref');
+
+    async function load() {
+      if (!ref) { showErr(T('acc.err.invalid')); return; }
+      try {
+        const r = await fetch('/api/public/applications/acceptance/' + encodeURIComponent(ref));
+        if (!r.ok) { showErr(T('acc.err.notfound')); return; }
+        const a = await r.json();
+        const conditional = a.status === 'conditional';
+        document.getElementById('certTitle').textContent = conditional ? T('acc.title.cond') : T('acc.title.pre');
+        document.getElementById('cKind').textContent = conditional ? T('acc.kind.cond') : T('acc.kind.pre');
+        document.getElementById('cName').textContent = [a.first_name, a.last_name].filter(Boolean).join(' ') || '—';
+        document.getElementById('cUni').textContent = a.university_name || '—';
+        document.getElementById('cProg').textContent = a.program_name || '—';
+        document.getElementById('cCountry').textContent = a.country || '—';
+        document.getElementById('cIntake').textContent = a.desired_intake || '—';
+        document.getElementById('cRef').textContent = a.preaccept_ref || ref;
+        const lang = window.i18n ? window.i18n.getLang() : 'tr';
+        document.getElementById('cDate').textContent = a.preaccept_issued_at
+          ? new Date(a.preaccept_issued_at).toLocaleDateString(lang === 'tr' ? 'tr-TR' : 'en-GB')
+          : '—';
+        if (a.preaccept_conditions) {
+          document.getElementById('cCond').textContent = a.preaccept_conditions;
+          document.getElementById('cCondWrap').style.display = 'block';
+        }
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('cert').style.display = 'block';
+      } catch (e) { showErr(T('acc.err.generic')); }
+    }
+    function showErr(m) {
+      document.getElementById('loading').style.display = 'none';
+      const e = document.getElementById('errbox');
+      e.innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:10px;color:#ef4444"></i>' + esc(m);
+      e.style.display = 'block';
+    }
+    load();
+  </script>
+</body>
+</html>

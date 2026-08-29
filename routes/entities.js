@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const db = require('../db');
+const { autoGeoLookup } = require('../utils/geoLookup');
 
 // Entity list with location preview and program count
 router.get('/', async (req, res) => {
@@ -7,14 +8,20 @@ router.get('/', async (req, res) => {
     const [rows] = await db.query(`
       SELECT e.*,
         el.city, el.country, el.id as location_id,
-        COALESCE((
-          SELECT COUNT(*) FROM programs p
-          WHERE p.entity_location_id IN (SELECT id FROM entity_locations WHERE entity_id = e.id)
-        ), 0) as programs_count
+        el.latitude, el.longitude,
+        COALESCE(pc.cnt, 0) as programs_count,
+        oc.id as orbit_config_id, oc.coord_locked
       FROM entities e
       LEFT JOIN entity_locations el ON el.id = (
         SELECT MIN(id) FROM entity_locations WHERE entity_id = e.id
       )
+      LEFT JOIN orbit_configs oc ON oc.entity_location_id = el.id
+      LEFT JOIN (
+        SELECT el2.entity_id, COUNT(p.id) as cnt
+        FROM programs p
+        JOIN entity_locations el2 ON el2.id = p.entity_location_id
+        GROUP BY el2.entity_id
+      ) pc ON pc.entity_id = e.id
       ORDER BY e.name
     `);
     res.json(rows);
@@ -80,9 +87,17 @@ router.post('/full', async (req, res) => {
     }
 
     const [entRes] = await conn.query(
-      'INSERT INTO entities (name, type, website_url, logo_url, description_en, status) VALUES (?, ?, ?, ?, ?, ?)',
+      `INSERT INTO entities (name, type, website_url, logo_url, description_en,
+        qs_rank, qs_rank_year, the_rank, the_rank_year,
+        leiden_rank, leiden_rank_year, shanghai_rank, shanghai_rank_year, status, featured)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [entity.name, entity.type, entity.website_url || null, entity.logo_url || null,
-       entity.description_en || null, entity.status || 'pending']
+       entity.description_en || null,
+       entity.qs_rank || null, entity.qs_rank_year || null,
+       entity.the_rank || null, entity.the_rank_year || null,
+       entity.leiden_rank || null, entity.leiden_rank_year || null,
+       entity.shanghai_rank || null, entity.shanghai_rank_year || null,
+       entity.status || 'pending', entity.featured ? 1 : 0]
     );
     const entityId = entRes.insertId;
 
@@ -116,18 +131,46 @@ router.post('/full', async (req, res) => {
       await conn.query(
         `INSERT INTO programs (entity_location_id, program_type_id, name, language_of_instruction,
          duration, tuition_fee, tuition_currency, intake_months, english_req_type, english_req_score,
-         gpa_requirement, scholarship_available, description_en, status)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+         gpa_requirement, requirements_json, field, scholarship_available, description_en, status,
+         placement_year, internship_available, international_eligible, internship_paid,
+         employer_partnerships, live_industry_projects, professional_accreditation,
+         graduate_outcome_source, graduate_outcome_date,
+         scholarship_amount, scholarship_conditions,
+         application_deadline, deposit_deadline, scholarship_deadline)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
+                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         [locationId, p.program_type_id, p.name, p.language_of_instruction || 'English',
          p.duration || null, p.tuition_fee || null, p.tuition_currency || 'EUR',
          p.intake_months || null, p.english_req_type || 'None', p.english_req_score || null,
-         p.gpa_requirement || null, p.scholarship_available ? 1 : 0,
-         p.description_en || null, p.status || 'active']
+         p.gpa_requirement || null,
+         p.requirements_json ? (typeof p.requirements_json === 'string' ? p.requirements_json : JSON.stringify(p.requirements_json)) : null,
+         p.field || null,
+         p.scholarship_available ? 1 : 0,
+         p.description_en || null, p.status || 'active',
+         p.placement_year ? 1 : 0,
+         p.internship_available ? 1 : 0,
+         p.international_eligible !== false ? 1 : 0,
+         p.internship_paid || null,
+         p.employer_partnerships || null,
+         p.live_industry_projects ? 1 : 0,
+         p.professional_accreditation || null,
+         p.graduate_outcome_source || null,
+         p.graduate_outcome_date || null,
+         p.scholarship_amount || null,
+         p.scholarship_conditions || null,
+         p.application_deadline || null,
+         p.deposit_deadline || null,
+         p.scholarship_deadline || null]
       );
     }
 
     await conn.commit();
     res.status(201).json({ id: entityId });
+
+    // Auto-fill coordinates in the background if none were provided
+    if (!location.latitude && !location.longitude) {
+      autoGeoLookup(locationId, entity.name, location.country, location.city);
+    }
   } catch (e) {
     await conn.rollback();
     res.status(500).json({ error: e.message });
@@ -157,9 +200,17 @@ router.put('/full/:id', async (req, res) => {
     const entityId = req.params.id;
 
     await conn.query(
-      'UPDATE entities SET name=?, type=?, website_url=?, logo_url=?, description_en=?, status=? WHERE id=?',
+      `UPDATE entities SET name=?, type=?, website_url=?, logo_url=?, description_en=?,
+        qs_rank=?, qs_rank_year=?, the_rank=?, the_rank_year=?,
+        leiden_rank=?, leiden_rank_year=?, shanghai_rank=?, shanghai_rank_year=?, status=?, featured=?
+       WHERE id=?`,
       [entity.name, entity.type, entity.website_url || null, entity.logo_url || null,
-       entity.description_en || null, entity.status, entityId]
+       entity.description_en || null,
+       entity.qs_rank || null, entity.qs_rank_year || null,
+       entity.the_rank || null, entity.the_rank_year || null,
+       entity.leiden_rank || null, entity.leiden_rank_year || null,
+       entity.shanghai_rank || null, entity.shanghai_rank_year || null,
+       entity.status, entity.featured ? 1 : 0, entityId]
     );
 
     const [existingLocs] = await conn.query('SELECT id FROM entity_locations WHERE entity_id = ? LIMIT 1', [entityId]);
@@ -221,18 +272,46 @@ router.put('/full/:id', async (req, res) => {
       await conn.query(
         `INSERT INTO programs (entity_location_id, program_type_id, name, language_of_instruction,
          duration, tuition_fee, tuition_currency, intake_months, english_req_type, english_req_score,
-         gpa_requirement, scholarship_available, description_en, status)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+         gpa_requirement, requirements_json, field, scholarship_available, description_en, status,
+         placement_year, internship_available, international_eligible, internship_paid,
+         employer_partnerships, live_industry_projects, professional_accreditation,
+         graduate_outcome_source, graduate_outcome_date,
+         scholarship_amount, scholarship_conditions,
+         application_deadline, deposit_deadline, scholarship_deadline)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
+                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         [locationId, p.program_type_id, p.name, p.language_of_instruction || 'English',
          p.duration || null, p.tuition_fee || null, p.tuition_currency || 'EUR',
          p.intake_months || null, p.english_req_type || 'None', p.english_req_score || null,
-         p.gpa_requirement || null, p.scholarship_available ? 1 : 0,
-         p.description_en || null, p.status || 'active']
+         p.gpa_requirement || null,
+         p.requirements_json ? (typeof p.requirements_json === 'string' ? p.requirements_json : JSON.stringify(p.requirements_json)) : null,
+         p.field || null,
+         p.scholarship_available ? 1 : 0,
+         p.description_en || null, p.status || 'active',
+         p.placement_year ? 1 : 0,
+         p.internship_available ? 1 : 0,
+         p.international_eligible !== false ? 1 : 0,
+         p.internship_paid || null,
+         p.employer_partnerships || null,
+         p.live_industry_projects ? 1 : 0,
+         p.professional_accreditation || null,
+         p.graduate_outcome_source || null,
+         p.graduate_outcome_date || null,
+         p.scholarship_amount || null,
+         p.scholarship_conditions || null,
+         p.application_deadline || null,
+         p.deposit_deadline || null,
+         p.scholarship_deadline || null]
       );
     }
 
     await conn.commit();
     res.json({ success: true });
+
+    // Auto-fill coordinates in the background if none were provided
+    if (!location.latitude && !location.longitude) {
+      autoGeoLookup(locationId, entity.name, location.country, location.city);
+    }
   } catch (e) {
     await conn.rollback();
     res.status(500).json({ error: e.message });

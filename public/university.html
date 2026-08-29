@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University — PANELEDU</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/site.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <style>
+    /* Hero */
+    .hero { background: var(--grad-soft); padding: 48px 0 36px; border-bottom: 1px solid var(--line); }
+    .uni-name { font-size: clamp(1.5rem, 3vw, 2.4rem); font-weight: 800; color: var(--text); margin-bottom: 6px; }
+    .uni-loc { color: var(--muted); font-size: .95rem; margin-bottom: 16px; }
+    .rank-pill { display:inline-flex; align-items:center; gap:5px; font-size:.78rem; font-weight:700; padding:4px 12px; border-radius:20px; margin-right:6px; margin-bottom:6px; }
+    .rqs  { background:rgba(99,102,241,.14);  color:#4f46e5; }
+    .rthe { background:rgba(16,185,129,.14); color:#059669; }
+    .rsh  { background:rgba(245,158,11,.16); color:#b45309; }
+    .rlei { background:rgba(6,182,212,.14); color:#0891b2; }
+    .orbit-btn { background: var(--grad); border:none; color:#fff; font-weight:700; font-size:.9rem; padding:10px 22px; border-radius:10px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:opacity .15s; }
+    .orbit-btn:hover { opacity:.88; }
+    .orbit-btn.disabled { background:var(--surface-2); color:var(--muted); cursor:default; border:1px solid var(--line); }
+    .desc { color:var(--muted); font-size:.9rem; line-height:1.65; max-width:680px; margin-top:14px; }
+
+    /* Info chips */
+    .info-chip { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:8px 14px; font-size:.8rem; color:var(--muted); display:inline-flex; align-items:center; gap:6px; margin-right:8px; margin-top:8px; }
+    .info-chip b { color:var(--text); }
+
+    /* Programs section */
+    #programsSection { padding: 36px 0 64px; }
+    .section-head { font-size:1.15rem; font-weight:700; color:var(--text); margin-bottom:20px; }
+
+    /* Filter bar */
+    .filter-bar { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin-bottom:24px; box-shadow:var(--shadow); }
+    .filter-bar input, .filter-bar select { background:var(--surface); border:1px solid var(--line); color:var(--text); border-radius:8px; font-size:.85rem; }
+    .filter-bar input::placeholder { color:var(--muted); }
+    .filter-bar input:focus, .filter-bar select:focus { background:var(--surface); border-color:var(--accent); box-shadow:0 0 0 3px rgba(99,102,241,.2); color:var(--text); outline:none; }
+    .filter-bar select option { background:#fff; }
+    #resultCount { font-size:.8rem; color:var(--muted); }
+
+    /* Program cards */
+    .prog-card { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin-bottom:10px; transition:border-color .15s; box-shadow:var(--shadow); }
+    .prog-card:hover { border-color:rgba(99,102,241,.35); }
+    .prog-name { font-weight:700; color:var(--text); font-size:.95rem; margin-bottom:4px; }
+    .prog-type { font-size:.72rem; font-weight:700; padding:2px 9px; border-radius:20px; background:rgba(99,102,241,.12); color:#4f46e5; margin-bottom:10px; display:inline-block; }
+    .prog-meta { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:10px; }
+    .meta-item { font-size:.78rem; color:var(--muted); display:flex; align-items:center; gap:4px; }
+    .meta-item i { color:var(--muted); }
+    .meta-item .val { color:var(--text); font-weight:600; }
+    .prog-req { font-size:.76rem; color:var(--muted); background:var(--surface-2); border-radius:6px; padding:8px 12px; border-left:2px solid rgba(99,102,241,.4); }
+    .prog-req b { color:var(--text); }
+    .badge-scholarship { background:rgba(16,185,129,.14); color:#059669; font-size:.68rem; font-weight:700; padding:2px 8px; border-radius:20px; }
+    .no-results { text-align:center; color:var(--muted); padding:60px 0; }
+
+    /* Type tabs */
+    .type-tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
+    .type-tab { background:var(--surface); border:1px solid var(--line); color:var(--muted); border-radius:8px; padding:5px 14px; font-size:.8rem; font-weight:600; cursor:pointer; transition:all .12s; }
+    .type-tab:hover { background:var(--surface-2); color:var(--text); }
+    .type-tab.active { background:rgba(99,102,241,.12); border-color:rgba(99,102,241,.5); color:var(--accent); }
+  </style>
+</head>
+<body class="pe-theme">
+
+<span id="navName" hidden></span>
+
+<div class="hero" id="hero">
+  <div class="container">
+    <div id="heroSkeleton" style="color:var(--muted)">Loading…</div>
+    <div id="heroContent" class="d-none">
+      <div class="d-flex align-items-start justify-content-between flex-wrap gap-3">
+        <div class="flex-grow-1">
+          <div class="uni-name" id="uName"></div>
+          <div class="uni-loc"><i class="bi bi-geo-alt-fill me-1"></i><span id="uLoc"></span></div>
+          <div id="uRanks"></div>
+          <div id="uInfo"></div>
+          <div class="desc d-none" id="uDesc"></div>
+        </div>
+        <div class="text-end" style="min-width:160px">
+          <button class="orbit-btn disabled" id="orbitBtn" onclick="openOrbit()">
+            <i class="bi bi-camera-video-fill"></i><span data-i18n="uni.3d">3D Campus View</span>
+          </button>
+          <div id="orbitNote" class="mt-2" style="font-size:.72rem;color:var(--muted)"></div>
+          <a id="websiteLink" href="#" target="_blank" class="d-none mt-2 d-inline-flex align-items-center gap-1" style="font-size:.78rem;color:var(--muted);text-decoration:none">
+            <i class="bi bi-box-arrow-up-right"></i><span data-i18n="uni.website">Official website</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="programsSection">
+  <div class="container">
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <div class="row g-2 align-items-end">
+        <div class="col-12 col-md-4">
+          <input type="text" class="form-control form-control-sm" id="progSearch" data-i18n-ph="uni.search.ph" placeholder="Search programs…" oninput="applyFilters()">
+        </div>
+        <div class="col-6 col-md-2">
+          <select class="form-select form-select-sm" id="langFilter" onchange="applyFilters()">
+            <option value="" data-i18n="uni.lang.any">Any language</option>
+            <option>English</option>
+            <option>German</option>
+            <option>French</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-2">
+          <select class="form-select form-select-sm" id="engFilter" onchange="applyFilters()">
+            <option value="" data-i18n="uni.eng.any">Any English req.</option>
+            <option>None</option>
+            <option>IELTS</option>
+            <option>TOEFL</option>
+            <option>Duolingo</option>
+            <option>PTE</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-2">
+          <input type="number" class="form-control form-control-sm" id="maxFee" data-i18n-ph="uni.fee.ph" placeholder="Max fee (USD)" oninput="applyFilters()">
+        </div>
+        <div class="col-6 col-md-2 text-end">
+          <span id="resultCount" class="small"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Type tabs -->
+    <div class="type-tabs" id="typeTabs"></div>
+
+    <!-- Program list -->
+    <div id="progList"></div>
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const uniId = params.get('id');
+let university = null;
+let allPrograms = [];
+let activeType = '';
+
+function T(k){ return window.t ? window.t(k) : k; }
+
+if (!uniId) { location.href = '/'; }
+
+async function load() {
+  try {
+    const res = await fetch(`/api/public/universities/${uniId}`);
+    if (!res.ok) { location.href = '/'; return; }
+    university = await res.json();
+    allPrograms = university.programs || [];
+    renderHero();
+    renderTypeTabs();
+    applyFilters();
+    document.getElementById('heroSkeleton').style.display = 'none';
+    document.getElementById('heroContent').classList.remove('d-none');
+    document.title = university.name + ' — PANELEDU';
+    document.getElementById('navName').textContent = university.name;
+  } catch(e) {
+    document.getElementById('heroSkeleton').textContent = T('uni.err.load');
+  }
+}
+
+function renderHero() {
+  const u = university;
+  const nameEl = document.getElementById('uName');
+  if (u.logo_url) {
+    nameEl.innerHTML = `<img src="${esc(u.logo_url)}" alt="" style="width:44px;height:44px;object-fit:contain;border-radius:8px;border:1px solid var(--line);background:var(--surface);padding:3px;margin-right:12px;vertical-align:middle;flex-shrink:0" onerror="this.style.display='none'">${esc(u.name)}`;
+    nameEl.style.display = 'flex';
+    nameEl.style.alignItems = 'center';
+  } else {
+    nameEl.textContent = u.name;
+  }
+  document.getElementById('uLoc').textContent = [u.city, u.country].filter(Boolean).join(', ');
+
+  // Rankings
+  const ranks = [];
+  if (u.qs_rank)       ranks.push(`<span class="rank-pill rqs"><i class="bi bi-trophy-fill"></i>QS #${u.qs_rank}${u.qs_rank_year ? ' <small>('+u.qs_rank_year+')</small>' : ''}</span>`);
+  if (u.the_rank)      ranks.push(`<span class="rank-pill rthe"><i class="bi bi-trophy-fill"></i>THE #${u.the_rank}${u.the_rank_year ? ' <small>('+u.the_rank_year+')</small>' : ''}</span>`);
+  if (u.shanghai_rank) ranks.push(`<span class="rank-pill rsh"><i class="bi bi-trophy-fill"></i>Shanghai #${u.shanghai_rank}${u.shanghai_rank_year ? ' <small>('+u.shanghai_rank_year+')</small>' : ''}</span>`);
+  if (u.leiden_rank)   ranks.push(`<span class="rank-pill rlei"><i class="bi bi-trophy-fill"></i>Leiden #${u.leiden_rank}${u.leiden_rank_year ? ' <small>('+u.leiden_rank_year+')</small>' : ''}</span>`);
+  document.getElementById('uRanks').innerHTML = ranks.join('');
+
+  // Info chips
+  const chips = [];
+  if (u.continent)  chips.push(`<span class="info-chip"><i class="bi bi-globe2"></i><b>${esc(u.continent)}</b></span>`);
+  if (u.closest_airport_code) chips.push(`<span class="info-chip"><i class="bi bi-airplane"></i>${T('uni.airport')}: <b>${esc(u.closest_airport_code)}</b></span>`);
+  if (u.flight_duration_from_ist_min) chips.push(`<span class="info-chip"><i class="bi bi-clock"></i>${T('uni.istanbul')}: <b>~${Math.round(u.flight_duration_from_ist_min/60*10)/10} hrs</b></span>`);
+  chips.push(`<span class="info-chip"><i class="bi bi-mortarboard"></i><b>${allPrograms.length}</b> ${T('uni.programs')}</span>`);
+  document.getElementById('uInfo').innerHTML = chips.join('');
+
+  // Description
+  if (u.description_en) {
+    const d = document.getElementById('uDesc');
+    d.textContent = u.description_en;
+    d.classList.remove('d-none');
+  }
+
+  // Orbit button
+  const hasOrbit = u.latitude && u.longitude;
+  const btn = document.getElementById('orbitBtn');
+  if (hasOrbit) {
+    btn.classList.remove('disabled');
+    document.getElementById('orbitNote').textContent = '';
+  } else {
+    document.getElementById('orbitNote').textContent = T('uni.no.3d');
+  }
+
+  // Website
+  if (u.website_url) {
+    const a = document.getElementById('websiteLink');
+    a.href = u.website_url;
+    a.classList.remove('d-none');
+  }
+}
+
+function renderTypeTabs() {
+  const types = [...new Set(allPrograms.map(p => p.type_name).filter(Boolean))].sort();
+  const tabs = document.getElementById('typeTabs');
+  tabs.innerHTML = `<span class="type-tab active" data-type="">${T('uni.all')} (${allPrograms.length})</span>` +
+    types.map(t => {
+      const count = allPrograms.filter(p => p.type_name === t).length;
+      return `<span class="type-tab" data-type="${esc(t)}">${esc(t)} <span style="opacity:.6">(${count})</span></span>`;
+    }).join('');
+  tabs.querySelectorAll('.type-tab').forEach(el => el.addEventListener('click', () => setType(el.dataset.type)));
+}
+
+function setType(t) {
+  activeType = t;
+  document.querySelectorAll('.type-tab').forEach(el => {
+    el.classList.toggle('active', el.dataset.type === t);
+  });
+  applyFilters();
+}
+
+function applyFilters() {
+  const q = document.getElementById('progSearch').value.toLowerCase();
+  const lang = document.getElementById('langFilter').value;
+  const eng = document.getElementById('engFilter').value;
+  const maxFee = parseFloat(document.getElementById('maxFee').value) || null;
+
+  const filtered = allPrograms.filter(p => {
+    if (activeType && p.type_name !== activeType) return false;
+    if (q && !p.name.toLowerCase().includes(q) && !(p.description_en||'').toLowerCase().includes(q)) return false;
+    if (lang && !(p.language_of_instruction||'').toLowerCase().includes(lang.toLowerCase())) return false;
+    if (eng && (p.english_req_type || 'None') !== eng) return false;
+    if (maxFee && p.tuition_fee && p.tuition_fee > maxFee) return false;
+    return true;
+  });
+
+  document.getElementById('resultCount').textContent = filtered.length + ' ' + (filtered.length !== 1 ? T('uni.results.p') : T('uni.results'));
+  renderPrograms(filtered);
+}
+
+function renderPrograms(progs) {
+  const list = document.getElementById('progList');
+  if (!progs.length) {
+    list.innerHTML = `<div class="no-results"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:10px"></i>${T('uni.no.match')}</div>`;
+    return;
+  }
+  list.innerHTML = progs.map(p => {
+    const fee = p.tuition_fee ? `${Number(p.tuition_fee).toLocaleString()} ${p.tuition_currency || 'USD'}` : T('uni.contact.free');
+    const eng = p.english_req_type && p.english_req_type !== 'None'
+      ? `${p.english_req_type}${p.english_req_score ? ' ' + p.english_req_score : ''}`
+      : T('uni.no.eng');
+    const domain = p.description_en && p.description_en.startsWith('Domain: ')
+      ? p.description_en.split(' | ')[0].replace('Domain: ', '') : '';
+    const notes = p.description_en && p.description_en.includes(' | ')
+      ? p.description_en.split(' | ').slice(1).join(' | ') : (p.description_en && !p.description_en.startsWith('Domain: ') ? p.description_en : '');
+    return `<div class="prog-card">
+      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+        <div class="flex-grow-1">
+          <div class="prog-name">${esc(p.name)}</div>
+          <span class="prog-type">${esc(p.type_name)}</span>
+          ${p.scholarship_available ? ` <span class="badge-scholarship"><i class="bi bi-star-fill me-1"></i>${T('uni.scholarship')}</span>` : ''}
+          ${domain ? `<div style="font-size:.75rem;color:var(--muted);margin-bottom:8px">${esc(domain)}</div>` : ''}
+          <div class="prog-meta">
+            <span class="meta-item"><i class="bi bi-currency-dollar"></i><span class="val">${esc(fee)}</span></span>
+            ${p.duration ? `<span class="meta-item"><i class="bi bi-calendar3"></i><span class="val">${esc(p.duration)}</span></span>` : ''}
+            ${p.intake_months ? `<span class="meta-item"><i class="bi bi-calendar-check"></i>${T('uni.intake')}: <span class="val">${esc(p.intake_months)}</span></span>` : ''}
+            <span class="meta-item"><i class="bi bi-translate"></i><span class="val">${esc(p.language_of_instruction||'English')}</span></span>
+          </div>
+          <div class="prog-req">
+            <b>${T('uni.req')}:</b>&nbsp;
+            ${p.gpa_requirement ? `GPA ${esc(p.gpa_requirement)} &nbsp;·&nbsp; ` : ''}
+            ${esc(eng)}
+            ${notes ? `&nbsp;·&nbsp; ${esc(notes)}` : ''}
+          </div>
+        </div>
+        <div style="flex-shrink:0;margin-top:4px">
+          <button style="background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.35);color:var(--accent);font-size:.78rem;font-weight:600;border-radius:8px;padding:6px 14px;cursor:pointer;white-space:nowrap"
+            onclick="openLeadModal(${p.id})">
+            <i class="bi bi-envelope-fill me-1"></i>${T('uni.req.info')}
+          </button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openOrbit() {
+  const u = university;
+  if (!u.latitude && !u.longitude) return;
+  const lat   = u.orbit_center_lat  ?? u.latitude;
+  const lng   = u.orbit_center_lng  ?? u.longitude;
+  const alt   = u.orbit_altitude    ?? 400;
+  const pitch = u.orbit_pitch       ?? -45;
+  const head  = u.orbit_initial_heading ?? 0;
+  const range = u.orbit_range       ?? 400;
+  const speed = u.orbit_rotation_speed ?? 0.12;
+  const rot   = u.orbit_rotation_type  ?? '360';
+  const p = new URLSearchParams({ name: u.name, uniId: u.id, lat, lng, alt, pitch, heading: head, range, speed, rot });
+  if (u.scan_target_lat && u.scan_target_lng) {
+    p.set('scanLat', u.scan_target_lat);
+    p.set('scanLng', u.scan_target_lng);
+    p.set('scan', u.scan_effect_enabled ? '1' : '0');
+  }
+  window.open('/orbit?' + p.toString(), '_blank');
+}
+
+function esc(s) { return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// ── Lead modal ────────────────────────────────────────────────────────────────
+let leadCtx = {};
+
+function openLeadModal(programId) {
+  const p = university.programs.find(x => x.id === programId);
+  if (!p) return;
+  leadCtx = { programId, programName: p.name, universityId: university.id, universityName: university.name, country: university.country };
+  document.getElementById('leadProgName').textContent = leadCtx.programName;
+  document.getElementById('leadUniName').textContent = leadCtx.universityName;
+  document.getElementById('leadName').value = '';
+  document.getElementById('leadEmail').value = '';
+  document.getElementById('leadPhone').value = '';
+  document.getElementById('leadMsg').value = '';
+  document.getElementById('leadError').textContent = '';
+  document.getElementById('leadSuccess').classList.add('d-none');
+  document.getElementById('leadFormBody').classList.remove('d-none');
+  document.getElementById('leadModal').style.display = 'flex';
+}
+
+function closeLeadModal() {
+  document.getElementById('leadModal').style.display = 'none';
+}
+
+async function submitLead() {
+  const btn = document.getElementById('leadSubmitBtn');
+  const errEl = document.getElementById('leadError');
+  errEl.textContent = '';
+  const name = document.getElementById('leadName').value.trim();
+  const email = document.getElementById('leadEmail').value.trim();
+  const phone = document.getElementById('leadPhone').value.trim();
+  const message = document.getElementById('leadMsg').value.trim();
+  if (!name || !email) { errEl.textContent = T('uni.err.reqd'); return; }
+  btn.disabled = true; btn.textContent = T('uni.sending');
+  try {
+    const r = await fetch('/api/public/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        student_name: name, email, phone, message,
+        program_id: leadCtx.programId, program_name: leadCtx.programName,
+        university_id: leadCtx.universityId, university_name: leadCtx.universityName,
+        country: leadCtx.country
+      })
+    });
+    const d = await r.json();
+    if (!r.ok) { errEl.textContent = d.error || T('uni.err.generic'); return; }
+    document.getElementById('leadFormBody').classList.add('d-none');
+    document.getElementById('leadSuccess').classList.remove('d-none');
+  } catch (e) {
+    errEl.textContent = T('uni.err.net');
+  } finally {
+    btn.disabled = false; btn.textContent = T('uni.send');
+  }
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLeadModal(); });
+
+load();
+</script>
+
+<!-- Lead Modal -->
+<div id="leadModal" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(30,41,59,.45);align-items:center;justify-content:center;padding:16px" onclick="if(event.target===this)closeLeadModal()">
+  <div style="background:var(--surface);border:1px solid var(--line);border-radius:16px;width:100%;max-width:480px;padding:28px 28px 24px;box-shadow:var(--shadow-lg)">
+    <div class="d-flex justify-content-between align-items-start mb-3">
+      <div>
+        <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px" data-i18n="uni.req.modal">Request Information</div>
+        <div id="leadProgName" style="font-size:1rem;font-weight:700;color:var(--text);line-height:1.3"></div>
+        <div id="leadUniName" style="font-size:.82rem;color:var(--accent);margin-top:2px"></div>
+      </div>
+      <button onclick="closeLeadModal()" style="background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;padding:0 0 0 12px">&times;</button>
+    </div>
+    <div id="leadFormBody">
+      <div class="mb-3">
+        <input id="leadName" type="text" data-i18n-ph="uni.name.ph" placeholder="Your full name *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
+      </div>
+      <div class="mb-3">
+        <input id="leadEmail" type="email" data-i18n-ph="uni.email.ph" placeholder="Email address *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
+      </div>
+      <div class="mb-3">
+        <input id="leadPhone" type="tel" data-i18n-ph="uni.phone.ph" placeholder="Phone / WhatsApp (optional)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
+      </div>
+      <div class="mb-3">
+        <textarea id="leadMsg" rows="3" data-i18n-ph="uni.msg.ph" placeholder="Any questions or comments (optional)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none;resize:vertical" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'"></textarea>
+      </div>
+      <div id="leadError" style="color:#dc2626;font-size:.8rem;margin-bottom:8px"></div>
+      <div class="d-flex gap-2">
+        <button id="leadSubmitBtn" onclick="submitLead()" style="flex:1;background:var(--grad);border:none;color:#fff;font-weight:700;font-size:.9rem;padding:10px;border-radius:8px;cursor:pointer" data-i18n="uni.send">Send Request</button>
+        <button onclick="closeLeadModal()" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.88rem;padding:10px 16px;border-radius:8px;cursor:pointer" data-i18n="uni.cancel">Cancel</button>
+      </div>
+    </div>
+    <div id="leadSuccess" class="d-none text-center" style="padding:16px 0">
+      <div style="font-size:2.5rem;margin-bottom:12px">✅</div>
+      <div style="font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:6px" data-i18n="uni.success.h">Request sent!</div>
+      <div style="font-size:.85rem;color:var(--muted);margin-bottom:20px" data-i18n="uni.success.p">We'll be in touch soon.</div>
+      <button onclick="closeLeadModal()" style="background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.88rem;padding:8px 20px;border-radius:8px;cursor:pointer" data-i18n="uni.close">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/chrome.js"></script>
+</body>
+</html>

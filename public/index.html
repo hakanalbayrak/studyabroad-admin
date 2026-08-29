@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PANELEDU — Yurt Dışında Üniversite Bul</title>
+  <meta name="description" content="Yurt dışında üniversite bulmak için en kolay yol. 500+ program, 24+ ülke, kişiselleştirilmiş okul eşleştirme, 3D kampüs turu ve online başvuru.">
+  <meta property="og:title" content="PANELEDU — Yurt Dışında Üniversite Bul">
+  <meta property="og:description" content="Yurt dışında üniversite bulmak için en kolay yol. 500+ program, 24+ ülke, kişiselleştirilmiş okul eşleştirme.">
+  <meta property="og:url" content="https://paneledu.com/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://paneledu.com/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/site.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <style>
+    /* Hero */
+    .hero { background: var(--grad-soft); padding: 72px 0 56px; text-align: center; position: relative; overflow: hidden; transition: background .6s; }
+    .hero h1 { font-size: clamp(1.9rem, 4.5vw, 3.4rem); font-weight: 900; margin-bottom: 10px; line-height: 1.18; }
+    .hero p { color: var(--muted); font-size: 1.08rem; max-width: 520px; margin: 0 auto 36px; line-height: 1.6; transition: color .6s; }
+    .hero .container { position: relative; z-index: 2; }
+
+    /* Orbit background iframe */
+    #orbitBgWrap {
+      position: absolute; inset: 0; z-index: 0;
+      opacity: 0; transition: opacity 2.5s ease; pointer-events: none;
+    }
+    #orbitBgFrame { width: 100%; height: 100%; border: none; display: block; }
+    #heroOverlay {
+      position: absolute; inset: 0; z-index: 1; pointer-events: none;
+      background: linear-gradient(180deg, rgba(5,9,18,.72) 0%, rgba(5,9,18,.58) 55%, rgba(5,9,18,.82) 85%, #f8fafc 100%);
+      opacity: 0; transition: opacity 2.5s ease;
+    }
+
+    /* Dark hero state (when Cesium is visible) */
+    .hero.orbit-dark { background: #050912; }
+    .hero.orbit-dark p { color: rgba(255,255,255,.78); }
+    .hero.orbit-dark .stat-lbl { color: rgba(255,255,255,.58); }
+    .hero.orbit-dark .stats-row { border-top-color: rgba(255,255,255,.12); }
+    .hero.orbit-dark .search-bar { box-shadow: 0 0 0 1px rgba(255,255,255,.12), 0 14px 40px rgba(0,0,0,.4); }
+    .hero.orbit-dark .search-filters select { background: rgba(255,255,255,.96); }
+    .hero.orbit-dark .btn-action { background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.25); color: #fff; }
+    .hero.orbit-dark .btn-action:hover { background: rgba(255,255,255,.22); }
+
+    /* Search */
+    .search-wrap { max-width: 680px; margin: 0 auto 16px; }
+    .search-bar { display: flex; background: var(--surface); border: 1.5px solid var(--line); border-radius: 16px; overflow: hidden; transition: border-color .15s, box-shadow .15s; box-shadow: var(--shadow-lg); }
+    .search-bar:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(99,102,241,.18); }
+    .search-bar input { flex: 1; background: transparent; border: none; color: var(--text); padding: 16px 20px; font-size: 1rem; outline: none; }
+    .search-bar input::placeholder { color: var(--muted); }
+    .search-bar button { background: var(--accent); border: none; color: #fff; padding: 0 26px; font-weight: 700; font-size: .92rem; cursor: pointer; transition: opacity .15s; letter-spacing: .01em; }
+    .search-bar button:hover { opacity: .88; }
+    .search-filters { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    .search-filters select { background: var(--surface); border: 1.5px solid var(--line); color: var(--text); border-radius: 10px; padding: 8px 14px; font-size: .84rem; cursor: pointer; min-width: 110px; }
+    .search-filters select:focus { outline: none; border-color: var(--accent); }
+    .search-filters select option { background: #fff; }
+    .btn-action { background: rgba(99,102,241,.1); border: 1.5px solid rgba(99,102,241,.28); color: var(--accent); border-radius: 10px; padding: 8px 16px; font-size: .84rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all .15s; }
+    .btn-action:hover { background: rgba(99,102,241,.18); color: var(--accent); }
+
+    /* Stats row */
+    .stats-row { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--line); }
+    .stat-item { text-align: center; }
+    .stat-num { font-size: 1.7rem; font-weight: 900; line-height: 1; }
+    .stat-lbl { font-size: .78rem; color: var(--muted); margin-top: 3px; font-weight: 500; }
+
+    /* Section label */
+    .sec-label { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .sec-label span { flex: 1; height: 1px; background: var(--line); }
+
+    /* Profile wizard hero CTA — full-width gradient button */
+    .wizard-cta {
+      background: var(--grad);
+      border: none; border-radius: 20px;
+      padding: 22px 28px; margin: 0 auto 22px; max-width: 680px;
+      display: flex; align-items: center; gap: 18px;
+      box-shadow: 0 8px 32px rgba(99,102,241,.38);
+      text-decoration: none; cursor: pointer;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .wizard-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(99,102,241,.5); }
+    .wizard-cta-icon { width: 48px; height: 48px; border-radius: 14px; background: rgba(255,255,255,.2); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: #fff; flex-shrink: 0; }
+    .wizard-cta-text { flex: 1; text-align: left; }
+    .wizard-cta-title { font-size: 1.08rem; font-weight: 800; color: #fff; margin-bottom: 4px; line-height: 1.3; }
+    .wizard-cta-sub { font-size: .82rem; color: rgba(255,255,255,.8); line-height: 1.45; }
+    .hero.orbit-dark .wizard-cta { box-shadow: 0 8px 32px rgba(99,102,241,.55); }
+
+    /* Mobile CTA row (replaces wizard card on small screens) */
+    .hero-mobile-ctas { display: none; gap: 8px; margin: 0 auto 18px; max-width: 680px; }
+    .hero-cta-m { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 12px 10px; border-radius: 12px; font-size: .88rem; font-weight: 700; text-decoration: none; transition: all .15s; }
+    .hero-cta-m.primary { background: var(--grad); color: #fff; box-shadow: 0 4px 14px rgba(99,102,241,.38); }
+    .hero-cta-m.primary:hover { color: #fff; opacity: .92; }
+    .hero-cta-m.secondary { background: rgba(99,102,241,.1); border: 1.5px solid rgba(99,102,241,.3); color: var(--accent); }
+    .hero-cta-m.secondary:hover { background: rgba(99,102,241,.18); color: var(--accent); }
+    .hero.orbit-dark .hero-cta-m.secondary { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.25); color: #fff; }
+
+    /* Mobile hero adjustments */
+    @media (max-width: 600px) {
+      .hero { padding: 36px 0 16px; }
+      .wizard-cta { display: none; }
+      .hero-mobile-ctas { display: flex; }
+      .search-bar input { font-size: .88rem; padding: 13px 14px; }
+      .search-bar button { padding: 0 18px; font-size: .85rem; }
+    }
+
+    /* How it works */
+    .how-section { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 52px 0 60px; margin: 0; }
+    .how-section .sec-hdr { text-align: center; margin-bottom: 36px; }
+    .how-section .sec-label { font-size: 1rem; letter-spacing: .14em; color: var(--accent); font-weight: 800; margin-bottom: 20px; }
+    .how-section .sec-hdr h2 { font-size: 1.75rem; font-weight: 900; color: var(--text); margin: 0; }
+    .how-step {
+      text-align: center; padding: 28px 20px 24px;
+      background: var(--surface); border: 1.5px solid var(--line);
+      border-radius: 20px; box-shadow: 0 4px 20px rgba(30,41,59,.07);
+      display: flex; flex-direction: column; align-items: center; height: 100%;
+    }
+    .how-icon {
+      width: 72px; height: 72px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px; font-size: 1.75rem; flex-shrink: 0;
+    }
+    .how-icon.c1 { background: linear-gradient(135deg,#ede9fe,#c7d2fe); }
+    .how-icon.c2 { background: linear-gradient(135deg,#f3e8ff,#e9d5ff); }
+    .how-icon.c3 { background: linear-gradient(135deg,#e0f2fe,#bae6fd); }
+    .how-num {
+      font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--accent); background: rgba(99,102,241,.1); border-radius: 99px;
+      padding: 3px 10px; margin-bottom: 10px;
+    }
+    .how-title { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 10px; line-height: 1.3; }
+    .how-desc { font-size: .87rem; color: var(--muted); line-height: 1.6; flex: 1; }
+    .how-btn-wrap { margin-top: 20px; }
+    .how-arrow { color: var(--line); font-size: 1.5rem; display: flex; align-items: center; padding-bottom: 32px; }
+    @media (max-width: 767px) {
+      .how-section { padding: 44px 0 48px; }
+      .how-section .sec-hdr { margin-bottom: 28px; }
+      .how-section .sec-label { font-size: .94rem; margin-bottom: 18px; }
+    }
+
+    /* English test CTA */
+    .test-cta { background: var(--grad); border-radius: 20px; padding: 32px 28px; color: #fff; margin: 48px 0 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .test-cta h3 { font-size: 1.3rem; font-weight: 800; margin: 0 0 6px; }
+    .test-cta p { font-size: .92rem; opacity: .9; margin: 0; }
+    .btn-white { background: #fff; border: none; color: var(--accent); font-weight: 700; border-radius: 12px; padding: 12px 24px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: .95rem; transition: transform .12s, box-shadow .12s; box-shadow: 0 4px 16px rgba(0,0,0,.15); }
+    .btn-white:hover { transform: translateY(-1px); box-shadow: 0 7px 22px rgba(0,0,0,.2); color: var(--accent); }
+
+    /* University cards */
+    .uni-card { background: var(--surface); border: 1.5px solid var(--line); border-radius: 16px; overflow: hidden; transition: all .18s; cursor: pointer; display: flex; flex-direction: column; height: 100%; box-shadow: var(--shadow); }
+    .uni-card:hover { border-color: rgba(99,102,241,.4); transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .card-top { padding: 18px 18px 12px; flex: 1; }
+    .card-name { font-size: .95rem; font-weight: 700; color: var(--text); margin-bottom: 4px; line-height: 1.35; }
+    .card-location { font-size: .77rem; color: var(--muted); margin-bottom: 8px; }
+    .card-ranks { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
+    .rank-badge { font-size: .68rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+    .rank-qs  { background: rgba(99,102,241,.14); color: #4f46e5; }
+    .rank-the { background: rgba(16,185,129,.14); color: #059669; }
+    .rank-sh  { background: rgba(245,158,11,.16); color: #b45309; }
+    .card-desc { font-size: .76rem; color: var(--muted); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .card-footer-strip { background: var(--surface-2); padding: 10px 18px; display: flex; justify-content: space-between; align-items: center; gap: 8px; border-top: 1px solid var(--line); }
+    .featured-star { font-size: .68rem; background: rgba(245,158,11,.14); color: #b45309; border: 1px solid rgba(245,158,11,.3); border-radius: 20px; padding: 1px 8px; font-weight: 700; }
+    /* Pagination */
+    #paginationWrap { display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; padding: 24px 0 8px; }
+    .pg-btn { background: var(--surface); border: 1.5px solid var(--line); color: var(--muted); border-radius: 10px; padding: 6px 13px; font-size: .83rem; cursor: pointer; min-width: 38px; transition: all .12s; }
+    .pg-btn:hover:not(:disabled) { background: rgba(99,102,241,.08); border-color: rgba(99,102,241,.4); color: var(--accent); }
+    .pg-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; }
+    .pg-btn:disabled { opacity: .4; cursor: default; }
+    #perPageSel { background: var(--surface); border: 1.5px solid var(--line); color: var(--muted); border-radius: 8px; padding: 6px 10px; font-size: .8rem; }
+
+    #emptyMsg { text-align: center; color: var(--muted); padding: 60px 0; }
+    #loadingSpinner { text-align: center; color: var(--muted); padding: 60px 0; }
+    .spinner-ring { width: 36px; height: 36px; border: 3px solid rgba(99,102,241,.2); border-top-color: #6366f1; border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 12px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Compare */
+    .cmp-btn { background: var(--surface); border: 1.5px solid var(--line); color: var(--muted); font-size: .71rem; font-weight: 600; border-radius: 8px; padding: 4px 10px; cursor: pointer; transition: all .15s; white-space: nowrap; }
+    .cmp-btn:hover { background: rgba(99,102,241,.08); border-color: rgba(99,102,241,.4); color: var(--accent); }
+    .cmp-btn.selected { background: rgba(99,102,241,.12); border-color: #6366f1; color: var(--accent); }
+    #compareTray { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1040; background: var(--surface); border-top: 1px solid var(--line); padding: 12px 20px; display: none; align-items: center; gap: 10px; flex-wrap: wrap; box-shadow: 0 -4px 20px rgba(30,41,59,.12); }
+    .cmp-chip { background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.3); color: var(--accent); border-radius: 20px; padding: 3px 8px 3px 12px; font-size: .78rem; display: inline-flex; align-items: center; gap: 5px; }
+    .cmp-chip button { background: none; border: none; color: var(--accent); padding: 0; line-height: 1; cursor: pointer; font-size: .9rem; }
+    .cmp-table { width: 100%; border-collapse: collapse; }
+    .cmp-table th, .cmp-table td { padding: 11px 14px; }
+    .cmp-table thead tr { border-bottom: 2px solid rgba(99,102,241,.3); }
+    .cmp-table tbody tr { border-bottom: 1px solid var(--line); }
+    .cmp-table tbody tr:nth-child(even) { background: var(--surface-2); }
+    .cmp-row-label { font-size: .73rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  </style>
+</head>
+<body class="pe-theme">
+
+<!-- Hero -->
+<div class="hero" id="heroSection">
+  <!-- Cesium orbit background (desktop only, lazy-loaded) -->
+  <div id="orbitBgWrap">
+    <iframe id="orbitBgFrame" src="" title="3D Orbit Arka Plan" aria-hidden="true"></iframe>
+  </div>
+  <div id="heroOverlay"></div>
+
+  <div class="container">
+    <div class="mb-3">
+      <span id="heroBadge" style="display:inline-flex;align-items:center;gap:6px;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.25);border-radius:99px;padding:5px 14px;font-size:.8rem;font-weight:700;color:var(--accent);transition:all .6s">
+        <i class="bi bi-globe-americas"></i><span data-i18n="h.badge">Türkiye'nin Yurt Dışı Eğitim Platformu</span>
+      </span>
+    </div>
+    <h1 class="pe-grad-text" data-i18n-html="h.title">Hayalindeki Üniversiteyi<br>Yurt Dışında Bul</h1>
+    <p data-i18n="h.sub">Yurt dışında okumak istiyorsun ama nereden başlayacağını bilmiyor musun? Biz yardımcı olalım.</p>
+
+    <!-- Profil Sihirbazı — featured CTA -->
+    <a href="/match" class="wizard-cta">
+      <div class="wizard-cta-icon"><i class="bi bi-magic"></i></div>
+      <div class="wizard-cta-text">
+        <div class="wizard-cta-title">Kendine uygun programı keşfet ve ücretsiz başvuru yapmak için tıkla</div>
+        <div class="wizard-cta-sub">İstediğin okul ve bölümden ön kabul almak için başvuru yapıp deneme yapabilirsin.</div>
+      </div>
+    </a>
+
+    <!-- Mobile-only two-button row -->
+    <div class="hero-mobile-ctas">
+      <a href="/match" class="hero-cta-m primary"><i class="bi bi-magic"></i><span data-i18n="h.m.primary">Profil Sihirbazı</span></a>
+      <a href="/programs" class="hero-cta-m secondary"><i class="bi bi-mortarboard-fill"></i><span data-i18n="h.m.secondary">Programları Keşfet</span></a>
+    </div>
+
+    <div class="search-wrap" style="margin-bottom:22px">
+      <div class="search-bar">
+        <input type="text" id="searchInput" data-i18n-ph="h.search.ph" placeholder="Okumak istediğin bölümü veya üniversite adını yaz…" autocomplete="off" oninput="onSearch()">
+        <button onclick="onSearch()"><i class="bi bi-search me-1"></i><span data-i18n="h.search.btn">Ara</span></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- How it works -->
+<div class="how-section">
+  <div class="container">
+    <div class="sec-hdr">
+      <div class="sec-label" style="justify-content:center"><span style="max-width:60px"></span><span data-i18n="h.how.label">Nasıl Çalışır?</span><span style="max-width:60px"></span></div>
+      <h2 data-i18n="h.how.title">Yurt Dışı Eğitime 3 Adımda Başla</h2>
+    </div>
+    <div class="row g-4 align-items-stretch justify-content-center">
+      <div class="col-12 col-md-3">
+        <div class="how-step">
+          <div class="how-icon c1"><i class="bi bi-person-check-fill" style="color:var(--accent)"></i></div>
+          <div class="how-num" data-i18n="h.s1.num">Adım 1</div>
+          <div class="how-title" data-i18n="h.s1.title">Profilini Oluştur</div>
+          <div class="how-desc" data-i18n="h.s1.desc">Eğitim seviyeni, ilgi alanlarını, bütçeni ve hedef bölgeni belirle. Profil sihirbazımız sana özel okul listesi oluşturur.</div>
+          <div class="how-btn-wrap"><a href="/match" class="btn-action" style="font-size:.8rem;padding:7px 16px"><i class="bi bi-magic"></i><span data-i18n="h.s1.btn">Sihirbazı Başlat</span></a></div>
+        </div>
+      </div>
+      <div class="col-auto d-none d-md-flex how-arrow"><i class="bi bi-chevron-right"></i></div>
+      <div class="col-12 col-md-3">
+        <div class="how-step">
+          <div class="how-icon c2"><i class="bi bi-camera-video-fill" style="color:var(--accent-2)"></i></div>
+          <div class="how-num" data-i18n="h.s2.num">Adım 2</div>
+          <div class="how-title" data-i18n="h.s2.title">Keşfet &amp; Karşılaştır</div>
+          <div class="how-desc" data-i18n="h.s2.desc">3D kampüs turu yap, QS / THE / Shanghai sıralamalarını karşılaştır, program gereksinimlerini gör.</div>
+          <div class="how-btn-wrap"><a href="/programs" class="btn-action" style="font-size:.8rem;padding:7px 16px"><i class="bi bi-mortarboard-fill"></i><span data-i18n="h.s2.btn">Programlara Bak</span></a></div>
+        </div>
+      </div>
+      <div class="col-auto d-none d-md-flex how-arrow"><i class="bi bi-chevron-right"></i></div>
+      <div class="col-12 col-md-3">
+        <div class="how-step">
+          <div class="how-icon c3"><i class="bi bi-file-earmark-check-fill" style="color:var(--accent-3)"></i></div>
+          <div class="how-num" data-i18n="h.s3.num">Adım 3</div>
+          <div class="how-title" data-i18n="h.s3.title">Başvur</div>
+          <div class="how-desc" data-i18n="h.s3.desc">Belgelerini yükle, online başvurunu tamamla. Ön kabul alarak sürecini hızlandır.</div>
+          <div class="how-btn-wrap"><a href="/apply" class="btn-action" style="font-size:.8rem;padding:7px 16px"><i class="bi bi-send-fill"></i><span data-i18n="h.s3.btn">Başvuru Yap</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div style="padding: 48px 0 80px">
+  <div class="container">
+    <div id="loadingSpinner"><div class="spinner-ring"></div><span data-i18n="h.loading">Yükleniyor…</span></div>
+
+    <!-- Featured (when no search) -->
+    <div id="featuredSection" class="d-none">
+      <div class="sec-label"><i class="bi bi-star-fill" style="color:#f59e0b"></i><span data-i18n="h.featured">Öne Çıkan Üniversiteler</span><span></span></div>
+      <div class="row g-3" id="featuredGrid"></div>
+
+      <!-- English test CTA -->
+      <div class="test-cta">
+        <div>
+          <h3><i class="bi bi-journal-check me-2"></i><span data-i18n="h.test.title">İngilizce Seviyeni Öğren</span></h3>
+          <p data-i18n="h.test.desc">20 soruluk CEFR testini ücretsiz yap. Sonuçlarını e-postayla al, hangi programlara uygun olduğunu gör.</p>
+        </div>
+        <a href="/test" class="btn-white flex-shrink-0"><i class="bi bi-play-fill"></i><span data-i18n="h.test.btn">Testi Başlat</span></a>
+      </div>
+    </div>
+
+    <!-- Search results -->
+    <div id="searchSection" class="d-none">
+      <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+        <div class="sec-label mb-0"><i class="bi bi-search"></i><span data-i18n="h.results">Arama Sonuçları</span><span style="min-width:40px"></span></div>
+        <div class="d-flex align-items-center gap-2">
+          <span style="font-size:.78rem;color:var(--muted)" id="searchResultInfo"></span>
+          <select id="perPageSel" onchange="goPage(1)">
+            <option value="10">10 / sayfa</option>
+            <option value="25" selected>25 / sayfa</option>
+            <option value="50">50 / sayfa</option>
+          </select>
+        </div>
+      </div>
+      <div id="emptyMsg" class="d-none"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i><span data-i18n="h.empty">Aramanızla eşleşen üniversite bulunamadı.</span></div>
+      <div class="row g-3" id="searchGrid"></div>
+      <div id="searchPagination"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Compare tray -->
+<div id="compareTray">
+  <span style="font-size:.8rem;color:var(--text);font-weight:600;white-space:nowrap">
+    <i class="bi bi-bar-chart-fill me-1" style="color:var(--accent)"></i><span data-i18n="h.compare">Karşılaştır</span> <span id="cmpCount">0</span>/3
+  </span>
+  <div id="cmpItems" class="d-flex gap-2 flex-wrap" style="flex:1"></div>
+  <button onclick="showComparison()" id="cmpNowBtn" class="btn btn-primary btn-sm px-4" style="white-space:nowrap" data-i18n="h.compare">Karşılaştır</button>
+  <button onclick="clearCompare()" class="btn btn-outline-secondary btn-sm" style="white-space:nowrap" data-i18n="h.clear">Temizle</button>
+</div>
+
+<!-- Compare modal -->
+<div class="modal fade" id="compareModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content" style="background:var(--surface);border:1px solid var(--line);color:var(--text)">
+      <div class="modal-header" style="border-color:var(--line)">
+        <h5 class="modal-title"><i class="bi bi-bar-chart-fill me-2" style="color:var(--accent)"></i><span data-i18n="h.cmp.title">Üniversite Karşılaştırması</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-0" id="compareModalBody" style="overflow-x:auto"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+let allUniversities = [];
+let filteredUniversities = [];
+let currentPage = 1;
+let isSearching = false;
+let compareSet = new Set();
+let compareModal;
+
+async function load() {
+  try {
+    allUniversities = await fetch('/api/public/universities').then(r => r.json());
+    document.getElementById('loadingSpinner').style.display = 'none';
+    updateStats();
+    showFeatured();
+  } catch (e) {
+    document.getElementById('loadingSpinner').innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>' + (window.t ? window.t('h.err.load') : 'Üniversiteler yüklenemedi.');
+  }
+}
+
+function updateStats() {
+  const countries = new Set(allUniversities.map(u => u.country).filter(Boolean));
+}
+
+
+function hasOrbit(u) { return !!(u.latitude && u.longitude); }
+
+function showFeatured() {
+  isSearching = false;
+  document.getElementById('featuredSection').classList.remove('d-none');
+  document.getElementById('searchSection').classList.add('d-none');
+  const featured = allUniversities.filter(u => u.featured);
+  document.getElementById('featuredGrid').innerHTML = featured.length
+    ? featured.map(u => cardHtml(u)).join('')
+    : '<div class="col-12"><p class="text-muted small">Henüz öne çıkan üniversite yok — admin panelinden işaretleyebilirsiniz.</p></div>';
+}
+
+function onSearch() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  if (!q) { showFeatured(); return; }
+  isSearching = true;
+  document.getElementById('featuredSection').classList.add('d-none');
+  document.getElementById('searchSection').classList.remove('d-none');
+  filteredUniversities = allUniversities.filter(u => {
+    return u.name.toLowerCase().includes(q)
+      || (u.city||'').toLowerCase().includes(q)
+      || (u.country||'').toLowerCase().includes(q)
+      || (u.description_en||'').toLowerCase().includes(q);
+  });
+  currentPage = 1;
+  renderSearchResults();
+}
+
+function renderSearchResults() {
+  const perPage = parseInt(document.getElementById('perPageSel').value) || 25;
+  const total = filteredUniversities.length;
+  const totalPages = Math.max(1, Math.ceil(total / perPage));
+  currentPage = Math.min(currentPage, totalPages);
+  const start = (currentPage - 1) * perPage;
+  const slice = filteredUniversities.slice(start, start + perPage);
+  document.getElementById('emptyMsg').classList.toggle('d-none', total > 0);
+  document.getElementById('searchGrid').innerHTML = slice.map(u => cardHtml(u)).join('');
+  document.getElementById('searchResultInfo').textContent = total + ' ' + (window.t ? window.t('h.result.lbl') : 'sonuç');
+  renderPagination(totalPages, perPage, total, start);
+}
+
+function goPage(p) {
+  currentPage = p;
+  renderSearchResults();
+  window.scrollTo({ top: document.getElementById('searchSection').offsetTop - 20, behavior: 'smooth' });
+}
+
+function renderPagination(totalPages, perPage, total, start) {
+  const wrap = document.getElementById('searchPagination');
+  if (totalPages <= 1) { wrap.innerHTML = ''; return; }
+  const showing = Math.min(start + perPage, total);
+  const prevLbl = window.t ? window.t('h.prev') : '‹ Önceki';
+  const nextLbl = window.t ? window.t('h.next') : 'Sonraki ›';
+  let html = `<div id="paginationWrap">
+    <button class="pg-btn" onclick="goPage(${currentPage-1})" ${currentPage===1?'disabled':''}>${prevLbl}</button>`;
+  pageRange(currentPage, totalPages).forEach(p => {
+    if (p === '...') html += `<span class="pg-btn" style="cursor:default">…</span>`;
+    else html += `<button class="pg-btn ${p===currentPage?'active':''}" onclick="goPage(${p})">${p}</button>`;
+  });
+  html += `<button class="pg-btn" onclick="goPage(${currentPage+1})" ${currentPage===totalPages?'disabled':''}>${nextLbl}</button>`;
+  html += `<span style="font-size:.75rem;color:var(--muted);margin-left:4px">${start+1}–${showing} / ${total}</span></div>`;
+  wrap.innerHTML = html;
+}
+
+function pageRange(cur, total) {
+  if (total <= 7) return Array.from({length: total}, (_,i) => i+1);
+  const pages = new Set([1, total, cur]);
+  if (cur > 1) pages.add(cur-1);
+  if (cur < total) pages.add(cur+1);
+  const sorted = [...pages].sort((a,b) => a-b);
+  const result = []; let prev = 0;
+  for (const p of sorted) { if (p - prev > 1) result.push('...'); result.push(p); prev = p; }
+  return result;
+}
+
+function cardHtml(u) {
+  const orbit = hasOrbit(u);
+  const sel = compareSet.has(u.id);
+  const ranks = [];
+  if (u.qs_rank)       ranks.push(`<span class="rank-badge rank-qs">QS #${u.qs_rank}</span>`);
+  if (u.the_rank)      ranks.push(`<span class="rank-badge rank-the">THE #${u.the_rank}</span>`);
+  if (u.shanghai_rank) ranks.push(`<span class="rank-badge rank-sh">SH #${u.shanghai_rank}</span>`);
+  return `<div class="col-12 col-sm-6 col-lg-4">
+    <div class="uni-card" onclick="goToDetail(${u.id})">
+      <div class="card-top">
+        <div class="d-flex align-items-start justify-content-between gap-1 mb-1">
+          <div class="card-name d-flex align-items-center gap-2">
+            ${u.logo_url ? `<img src="${esc(u.logo_url)}" alt="" style="width:28px;height:28px;object-fit:contain;border-radius:5px;border:1px solid var(--line);background:var(--surface);padding:2px;flex-shrink:0" onerror="this.style.display='none'">` : ''}
+            ${esc(u.name)}
+          </div>
+          ${u.featured ? `<span class="featured-star flex-shrink-0">${window.t ? window.t('h.feat.star') : '★ Öne Çıkan'}</span>` : ''}
+        </div>
+        <div class="card-location"><i class="bi bi-geo-alt-fill me-1"></i>${[u.city, u.country].filter(Boolean).join(', ')}</div>
+        ${ranks.length ? `<div class="card-ranks">${ranks.join('')}</div>` : ''}
+        ${u.description_en ? `<div class="card-desc">${esc(u.description_en)}</div>` : ''}
+      </div>
+      <div class="card-footer-strip">
+        <button class="cmp-btn${sel ? ' selected' : ''}" data-id="${u.id}" onclick="event.stopPropagation();toggleCompare(${u.id})" title="${sel ? (window.t ? window.t('h.remove') : 'Karşılaştırmadan çıkar') : (window.t ? window.t('h.compare') : 'Karşılaştır')}">
+          <i class="bi bi-${sel ? 'check2' : 'plus-lg'} me-1"></i>${sel ? (window.t ? window.t('h.added') : 'Eklendi') : (window.t ? window.t('h.compare') : 'Karşılaştır')}
+        </button>
+        ${orbit ? `<span style="font-size:.71rem;color:var(--accent);font-weight:600"><i class="bi bi-camera-video-fill me-1"></i>3D Orbit</span>` : ''}
+      </div>
+    </div>
+  </div>`;
+}
+
+function goToDetail(id) {
+  const u = allUniversities.find(x => x.id === id);
+  if (u && (u.latitude || u.orbit_center_lat)) {
+    const lat = u.orbit_center_lat ?? u.latitude, lng = u.orbit_center_lng ?? u.longitude;
+    const params = new URLSearchParams({ name: u.name, uniId: u.id, lat, lng,
+      alt: u.orbit_altitude ?? 400, pitch: u.orbit_pitch ?? -45,
+      heading: u.orbit_initial_heading ?? 0, range: u.orbit_range ?? 400,
+      speed: u.orbit_rotation_speed ?? 0.12, rot: u.orbit_rotation_type ?? '360' });
+    if (u.scan_target_lat && u.scan_target_lng) {
+      params.set('scanLat', u.scan_target_lat); params.set('scanLng', u.scan_target_lng);
+      params.set('scan', u.scan_effect_enabled ? '1' : '0');
+    }
+    window.location.href = '/orbit?' + params.toString();
+  } else {
+    window.location.href = '/university?id=' + id;
+  }
+}
+
+
+function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// Compare
+function toggleCompare(id) {
+  if (compareSet.has(id)) { compareSet.delete(id); }
+  else {
+    if (compareSet.size >= 3) {
+      const btn = document.querySelector(`.cmp-btn[data-id="${id}"]`);
+      if (btn) { btn.textContent = window.t ? window.t('h.max3') : 'Maks 3!'; setTimeout(() => { btn.innerHTML = `<i class="bi bi-plus-lg me-1"></i>${window.t ? window.t('h.compare') : 'Karşılaştır'}`; }, 1200); }
+      return;
+    }
+    compareSet.add(id);
+  }
+  document.querySelectorAll(`.cmp-btn[data-id="${id}"]`).forEach(btn => {
+    const s = compareSet.has(id);
+    btn.classList.toggle('selected', s);
+    btn.innerHTML = `<i class="bi bi-${s ? 'check2' : 'plus-lg'} me-1"></i>${s ? (window.t ? window.t('h.added') : 'Eklendi') : (window.t ? window.t('h.compare') : 'Karşılaştır')}`;
+  });
+  updateCompareTray();
+}
+
+function updateCompareTray() {
+  const tray = document.getElementById('compareTray');
+  if (compareSet.size === 0) { tray.style.display = 'none'; return; }
+  tray.style.display = 'flex';
+  document.getElementById('cmpCount').textContent = compareSet.size;
+  document.getElementById('cmpNowBtn').disabled = compareSet.size < 2;
+  const unis = [...compareSet].map(id => allUniversities.find(u => u.id === id)).filter(Boolean);
+  document.getElementById('cmpItems').innerHTML = unis.map(u =>
+    `<span class="cmp-chip">${esc(u.name.length > 28 ? u.name.slice(0,28) + '…' : u.name)}<button onclick="toggleCompare(${u.id})" title="Çıkar"><i class="bi bi-x"></i></button></span>`
+  ).join('');
+}
+
+function clearCompare() {
+  compareSet.clear();
+  document.querySelectorAll('.cmp-btn.selected').forEach(btn => {
+    btn.classList.remove('selected');
+    btn.innerHTML = `<i class="bi bi-plus-lg me-1"></i>${window.t ? window.t('h.compare') : 'Karşılaştır'}`;
+  });
+  updateCompareTray();
+}
+
+function showComparison() {
+  if (compareSet.size < 2) return;
+  const unis = [...compareSet].map(id => allUniversities.find(u => u.id === id)).filter(Boolean);
+  const _t = key => window.t ? window.t(key) : key;
+  const rows = [
+    [_t('h.cmp.country'), u => esc(u.country || '—')],
+    [_t('h.cmp.city'),    u => esc(u.city || '—')],
+    [_t('h.cmp.cont'),    u => esc(u.continent || '—')],
+    [_t('h.cmp.qs'),      u => u.qs_rank       ? `<span style="background:rgba(99,102,241,.14);color:#4f46e5;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.qs_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.the'),     u => u.the_rank      ? `<span style="background:rgba(16,185,129,.14);color:#059669;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.the_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.sh'),      u => u.shanghai_rank ? `<span style="background:rgba(245,158,11,.16);color:#b45309;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.shanghai_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.leiden'),  u => u.leiden_rank   ? `<span style="background:rgba(139,92,246,.14);color:#7c3aed;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.leiden_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.orbit'),   u => (u.latitude && u.longitude) ? `<span style="color:#059669"><i class="bi bi-check-circle-fill me-1"></i>${_t('h.cmp.avail')}</span>` : '<span style="color:var(--muted)">—</span>'],
+  ];
+  const colPct = Math.floor(80 / unis.length);
+  let html = `<table class="cmp-table"><thead><tr>
+    <th style="width:18%;color:var(--muted);font-size:.75rem"></th>
+    ${unis.map(u => `<th style="width:${colPct}%">
+      <div style="font-size:.93rem;font-weight:700;color:var(--text);margin-bottom:4px">${esc(u.name)}</div>
+      <div style="font-size:.74rem;color:var(--muted);margin-bottom:8px">${esc([u.city, u.country].filter(Boolean).join(', '))}</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        <a href="/university?id=${u.id}" style="font-size:.71rem;color:var(--accent);text-decoration:none;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.3);border-radius:6px;padding:2px 9px"><i class="bi bi-arrow-right-circle me-1"></i>${_t('h.cmp.detail')}</a>
+        ${(u.latitude && u.longitude) ? `<button onclick="openOrbit(${u.id})" style="font-size:.71rem;color:var(--accent);background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.3);border-radius:6px;padding:2px 9px;cursor:pointer"><i class="bi bi-camera-video-fill me-1"></i>3D</button>` : ''}
+      </div>
+    </th>`).join('')}
+  </tr></thead><tbody>
+    ${rows.map(row => `<tr><td class="cmp-row-label">${row[0]}</td>${unis.map(u => `<td style="font-size:.87rem">${row[1](u)}</td>`).join('')}</tr>`).join('')}
+  </tbody></table>`;
+  document.getElementById('compareModalBody').innerHTML = html;
+  if (!compareModal) compareModal = new bootstrap.Modal(document.getElementById('compareModal'));
+  compareModal.show();
+}
+
+load();
+const ref = new URLSearchParams(location.search).get('ref');
+if (ref) localStorage.setItem('sa_referral', ref);
+
+// ── Cesium orbit background (desktop only, lazy after page load) ──────────
+(function() {
+  if (window.matchMedia && !window.matchMedia('(min-width: 900px)').matches) return;
+
+  function activateOrbit() {
+    const hero   = document.getElementById('heroSection');
+    const wrap   = document.getElementById('orbitBgWrap');
+    const overlay= document.getElementById('heroOverlay');
+    const badge  = document.getElementById('heroBadge');
+
+    // Apply dark state immediately on activate
+    hero.classList.add('orbit-dark');
+    overlay.style.opacity = '1';
+
+    // Badge — lighter version for dark bg
+    if (badge) {
+      badge.style.background = 'rgba(99,102,241,.22)';
+      badge.style.borderColor = 'rgba(99,102,241,.55)';
+      badge.style.color = '#a5b4fc';
+    }
+
+    // Stat labels / stats row
+    document.querySelectorAll('.stat-lbl').forEach(function(el) {
+      el.style.transition = 'color .6s';
+      el.style.color = 'rgba(255,255,255,.6)';
+    });
+    var sr = document.querySelector('.stats-row');
+    if (sr) sr.style.borderTopColor = 'rgba(255,255,255,.14)';
+
+    // Fade in iframe
+    wrap.style.opacity = '1';
+  }
+
+  window.addEventListener('message', function(e) {
+    if (e.data === 'orbit-ready') activateOrbit();
+  });
+
+  // Load iframe 1.8s after page is interactive
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var frame = document.getElementById('orbitBgFrame');
+      if (frame) frame.src = '/orbit-bg';
+    }, 1800);
+  });
+})();
+</script>
+<script src="/js/chrome.js"></script>
+</body>
+</html>

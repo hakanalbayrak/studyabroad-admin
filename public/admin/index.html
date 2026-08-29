@@ -39,6 +39,10 @@
     .req { color: #ef4444; }
     .field-hint { font-size: 0.75rem; color: #9ca3af; font-weight: 400; }
     #entityFormView { max-width: 960px; }
+    .place-result { padding:10px 12px; border:1px solid #e2e8f0; border-radius:8px; margin-bottom:6px; cursor:pointer; transition:all .12s; }
+    .place-result:hover { background:#f0f4ff; border-color:#6366f1; }
+    .place-result-name { font-weight:600; font-size:.88rem; color:#1e293b; }
+    .place-result-addr { font-size:.76rem; color:#6b7280; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   </style>
 </head>
 <body>
@@ -73,11 +77,13 @@
         <p class="text-muted small mt-1">Admin access only</p>
       </div>
       <div id="loginError" class="alert alert-danger d-none small py-2"></div>
-      <div class="input-group mb-3">
-        <input type="password" class="form-control" id="loginPassword" placeholder="Password" autofocus>
-        <button class="btn btn-outline-secondary" type="button" id="togglePw" tabindex="-1" title="Show / hide password">
-          <i class="bi bi-eye"></i>
-        </button>
+      <input type="email" class="form-control form-control-lg mb-2" id="loginEmail"
+             placeholder="Email address" autocomplete="email">
+      <input type="password" class="form-control form-control-lg mb-2" id="loginPassword"
+             placeholder="Password" autocomplete="current-password">
+      <div class="form-check mb-3 ms-1">
+        <input class="form-check-input" type="checkbox" id="togglePw">
+        <label class="form-check-label text-muted small" for="togglePw">Show password</label>
       </div>
       <button class="btn btn-primary w-100 fw-semibold" id="loginBtn">Sign In</button>
     </div>
@@ -95,6 +101,27 @@
       <a href="#" class="nav-link" data-sec="entities" onclick="showSection('entities');return false;">
         <i class="bi bi-building"></i>Entities
       </a>
+      <a href="#" class="nav-link" data-sec="tools" onclick="showSection('tools');return false;">
+        <i class="bi bi-tools"></i>Tools
+      </a>
+      <a href="#" class="nav-link" data-sec="leads" onclick="showSection('leads');return false;">
+        <i class="bi bi-envelope-fill"></i>Leads <span id="newLeadsBadge" class="badge bg-danger ms-auto d-none" style="font-size:.65rem"></span>
+      </a>
+      <a href="#" class="nav-link" data-sec="applications" onclick="showSection('applications');return false;">
+        <i class="bi bi-file-earmark-person-fill"></i>Applications
+      </a>
+      <a href="#" class="nav-link" data-sec="users" onclick="showSection('users');return false;">
+        <i class="bi bi-people-fill"></i>Users
+      </a>
+      <a href="#" class="nav-link" data-sec="engtest" onclick="showSection('engtest');return false;">
+        <i class="bi bi-journal-check"></i>Eng. Test
+      </a>
+      <a href="#" class="nav-link" data-sec="docs" onclick="showSection('docs');return false;">
+        <i class="bi bi-file-earmark-check-fill"></i>Doc Review
+      </a>
+      <a href="#" class="nav-link" data-sec="tiers" onclick="showSection('tiers');return false;">
+        <i class="bi bi-layers-fill"></i>Sub. Tiers
+      </a>
     </div>
     <div class="p-3 border-top border-secondary">
       <button class="btn btn-outline-light btn-sm w-100 opacity-75" onclick="doLogout()">
@@ -108,7 +135,9 @@
     <!-- DASHBOARD -->
     <div id="dashboardSection" class="section-content">
       <h4 class="fw-bold mb-4">Dashboard</h4>
-      <div class="row g-3">
+
+      <!-- Content stats row -->
+      <div class="row g-3 mb-4">
         <div class="col-6 col-lg-3">
           <div class="stat-card card p-3">
             <div class="d-flex align-items-center gap-3">
@@ -142,6 +171,61 @@
           </div>
         </div>
       </div>
+
+      <!-- Lead funnel + sparkline row -->
+      <div class="row g-3 mb-4">
+        <!-- Lead funnel -->
+        <div class="col-12 col-lg-5">
+          <div class="card p-4 h-100">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="fw-bold"><i class="bi bi-funnel-fill text-primary me-2"></i>Lead Funnel</div>
+              <span class="text-muted small" id="dashLeadTotal"></span>
+            </div>
+            <div id="dashFunnel"></div>
+          </div>
+        </div>
+        <!-- 30-day sparkline -->
+        <div class="col-12 col-lg-7">
+          <div class="card p-4 h-100">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="fw-bold"><i class="bi bi-graph-up text-success me-2"></i>New Leads — Last 30 Days</div>
+              <span class="badge bg-success bg-opacity-10 text-success fw-semibold" id="dashLeadSum"></span>
+            </div>
+            <div style="position:relative;height:120px">
+              <svg id="dashSparkline" width="100%" height="120" viewBox="0 0 600 120" preserveAspectRatio="none" style="display:block"></svg>
+              <div id="dashSparkLabels" style="display:flex;justify-content:space-between;font-size:.65rem;color:#94a3b8;margin-top:4px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Applications row -->
+      <div class="row g-3">
+        <div class="col-6 col-lg-3">
+          <div class="card p-3 text-center">
+            <div class="text-muted small mb-1">Total Leads</div>
+            <div class="fw-bold fs-3 text-primary" id="dashTotalLeads">—</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card p-3 text-center">
+            <div class="text-muted small mb-1">Converted</div>
+            <div class="fw-bold fs-3 text-success" id="dashConverted">—</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card p-3 text-center">
+            <div class="text-muted small mb-1">Applications</div>
+            <div class="fw-bold fs-3 text-warning" id="dashApps">—</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card p-3 text-center">
+            <div class="text-muted small mb-1">Approved</div>
+            <div class="fw-bold fs-3 text-info" id="dashApproved">—</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ENTITIES -->
@@ -149,11 +233,14 @@
 
       <!-- List -->
       <div id="entityListView">
-        <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
           <h4 class="fw-bold mb-0">Entities</h4>
-          <button class="btn btn-primary btn-sm" onclick="openEntityForm(null)">
-            <i class="bi bi-plus-lg me-1"></i>Add New Entity
-          </button>
+          <div class="d-flex gap-2 align-items-center flex-wrap">
+            <input type="text" class="form-control form-control-sm" id="entitySearch" placeholder="Search name, city, country…" style="width:220px" oninput="filterEntities()">
+            <button class="btn btn-primary btn-sm" onclick="openEntityForm(null)">
+              <i class="bi bi-plus-lg me-1"></i>Add New Entity
+            </button>
+          </div>
         </div>
         <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
           <table class="table table-hover mb-0 align-middle">
@@ -182,6 +269,22 @@
             <i class="bi bi-arrow-left me-1"></i>Back
           </button>
           <h4 class="fw-bold mb-0" id="entityFormTitle">Add New Entity</h4>
+          <button class="btn btn-primary btn-sm ms-auto px-3 fw-semibold" id="saveBtnTop" onclick="saveEntity()">
+            <i class="bi bi-check-lg me-1"></i>Save Entity
+          </button>
+        </div>
+
+        <!-- Institution Search -->
+        <div class="form-section mb-3">
+          <div class="section-label"><i class="bi bi-search"></i>Find Institution <span class="ms-1 text-muted fw-normal" style="font-size:.75rem;text-transform:none;letter-spacing:0">— search to auto-fill name, address &amp; coordinates</span></div>
+          <div class="input-group">
+            <input type="text" class="form-control" id="searchQ" placeholder="e.g. University of Hamburg, MIT, Kadir Has University..."
+              onkeydown="if(event.key==='Enter'){doPlaceSearch();event.preventDefault()}">
+            <button class="btn btn-outline-primary" onclick="doPlaceSearch()" id="searchBtn">
+              <i class="bi bi-search me-1"></i>Search
+            </button>
+          </div>
+          <div id="searchResults" class="mt-2"></div>
         </div>
 
         <!-- Section 1: Entity Information -->
@@ -214,7 +317,11 @@
               <input type="url" class="form-control" id="fLogo" placeholder="https://...logo.png">
             </div>
             <div class="col-md-8">
-              <label class="form-label fw-semibold small">Description</label>
+              <label class="form-label fw-semibold small">Description
+                <button type="button" class="btn btn-link btn-sm p-0 ms-2 text-primary" style="font-size:.75rem;vertical-align:baseline" onclick="fetchWikiDescription()">
+                  <i class="bi bi-wikipedia me-1"></i>Fetch from Wikipedia
+                </button>
+              </label>
               <textarea class="form-control" id="fDesc" rows="2" placeholder="Short description in English..."></textarea>
             </div>
             <div class="col-md-4">
@@ -225,10 +332,78 @@
                 <option value="inactive">Inactive</option>
               </select>
             </div>
+            <div class="col-md-4 d-flex align-items-end pb-1">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="fFeatured">
+                <label class="form-check-label fw-semibold small" for="fFeatured">
+                  Featured on homepage <span class="text-muted fw-normal">(shows in spotlight)</span>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Section 2: Location -->
+        <!-- Section 2b: Rankings -->
+        <div class="form-section">
+          <div class="section-label d-flex align-items-center">
+            <span><i class="bi bi-trophy"></i>Rankings</span>
+            <span class="ms-1 text-muted fw-normal" style="font-size:.75rem;text-transform:none;letter-spacing:0">— world rank + year for each index</span>
+            <button type="button" class="btn btn-outline-secondary btn-sm ms-auto" onclick="lookupRankings()" id="rankBtn">
+              <i class="bi bi-stars me-1"></i>Auto-lookup
+            </button>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">QS Rank</label>
+              <input type="number" class="form-control" id="fQsRank" placeholder="e.g. 84">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">QS Year</label>
+              <input type="number" class="form-control" id="fQsYear" placeholder="2025" min="2000" max="2100">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">THE Rank</label>
+              <input type="number" class="form-control" id="fTheRank" placeholder="e.g. 120">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">THE Year</label>
+              <input type="number" class="form-control" id="fTheYear" placeholder="2025" min="2000" max="2100">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">Leiden Rank</label>
+              <input type="number" class="form-control" id="fLeidenRank" placeholder="e.g. 55">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">Leiden Year</label>
+              <input type="number" class="form-control" id="fLeidenYear" placeholder="2024" min="2000" max="2100">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">Shanghai Rank</label>
+              <input type="number" class="form-control" id="fShanghaiRank" placeholder="e.g. 201">
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label fw-semibold small">Shanghai Year</label>
+              <input type="number" class="form-control" id="fShanghaiYear" placeholder="2024" min="2000" max="2100">
+            </div>
+            <div class="col-12">
+              <div id="rankingResult" class="small text-muted"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: Programs -->
+        <div class="form-section">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="section-label mb-0"><i class="bi bi-mortarboard"></i>Programs</div>
+            <button type="button" class="btn btn-outline-primary btn-sm" onclick="addProgram()">
+              <i class="bi bi-plus-lg me-1"></i>Add Program
+            </button>
+          </div>
+          <p class="text-muted small mb-2" id="noProgMsg">No programs yet — click "Add Program" to add one.</p>
+          <div id="programsList"></div>
+        </div>
+
+        <!-- Section 4: Location -->
         <div class="form-section">
           <div class="section-label"><i class="bi bi-geo-alt"></i>Location</div>
           <div class="row g-3">
@@ -261,6 +436,15 @@
               <label class="form-label fw-semibold small">Address</label>
               <input type="text" class="form-control" id="fAddress" placeholder="Full street address...">
             </div>
+            <div class="col-12">
+              <label class="form-label fw-semibold small">Paste coordinates from Google Maps <span class="field-hint">(DMS or decimal — e.g. 51°33'46.6"N 5°02'33.7"E)</span></label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="fDMS" placeholder='51°33\'46.6"N 5°02\'33.7"E  or  51.5629, 5.0427'>
+                <button class="btn btn-outline-secondary" type="button" onclick="convertCoords()">
+                  <i class="bi bi-pin-map me-1"></i>Set
+                </button>
+              </div>
+            </div>
             <div class="col-md-3">
               <label class="form-label fw-semibold small">Latitude</label>
               <input type="number" class="form-control" id="fLat" step="0.0000001" placeholder="53.5753" oninput="syncOrbitCenter()">
@@ -269,15 +453,20 @@
               <label class="form-label fw-semibold small">Longitude</label>
               <input type="number" class="form-control" id="fLng" step="0.0000001" placeholder="10.0153" oninput="syncOrbitCenter()">
             </div>
+            <div class="col-md-6 d-flex align-items-end">
+              <button type="button" class="btn btn-outline-secondary btn-sm w-100" onclick="findAirport()" id="airportBtn">
+                <i class="bi bi-airplane me-1"></i>Find Nearest Airport &amp; Flight Time from Istanbul
+              </button>
+            </div>
             <div class="col-md-4">
               <label class="form-label fw-semibold small">Closest Airport</label>
               <input type="text" class="form-control" id="fAirportName" placeholder="e.g. Hamburg Airport">
             </div>
-            <div class="col-md-1" style="min-width:90px">
+            <div class="col-md-2" style="min-width:90px">
               <label class="form-label fw-semibold small">IATA</label>
               <input type="text" class="form-control text-uppercase" id="fAirportCode" maxlength="3" placeholder="HAM">
             </div>
-            <div class="col-md-2" style="min-width:170px">
+            <div class="col-md-3" style="min-width:170px">
               <label class="form-label fw-semibold small">Flight from Istanbul <span class="field-hint">(min)</span></label>
               <input type="number" class="form-control" id="fFlightMin" placeholder="180">
             </div>
@@ -291,11 +480,14 @@
           </div>
         </div>
 
-        <!-- Section 3: Orbit Camera -->
+        <!-- Section 5: Orbit Camera -->
         <div class="form-section">
-          <div class="section-label">
-            <i class="bi bi-camera-video"></i>Orbit Camera Config
+          <div class="section-label d-flex align-items-center">
+            <span><i class="bi bi-camera-video"></i>Orbit Camera Config</span>
             <span class="ms-1 text-muted fw-normal" style="font-size:.75rem;text-transform:none;letter-spacing:0">— defaults pre-filled, adjust per campus</span>
+            <button type="button" class="btn btn-outline-primary btn-sm ms-auto" onclick="previewOrbit()">
+              <i class="bi bi-play-circle me-1"></i>Preview Orbit
+            </button>
           </div>
           <div class="row g-3">
             <div class="col-md-6">
@@ -359,18 +551,6 @@
           </div>
         </div>
 
-        <!-- Section 4: Programs -->
-        <div class="form-section">
-          <div class="d-flex align-items-center justify-content-between mb-3">
-            <div class="section-label mb-0"><i class="bi bi-mortarboard"></i>Programs</div>
-            <button type="button" class="btn btn-outline-primary btn-sm" onclick="addProgram()">
-              <i class="bi bi-plus-lg me-1"></i>Add Program
-            </button>
-          </div>
-          <p class="text-muted small mb-2" id="noProgMsg">No programs yet — click "Add Program" to add one.</p>
-          <div id="programsList"></div>
-        </div>
-
         <div class="d-flex gap-2 pb-5">
           <button class="btn btn-primary px-4 fw-semibold" id="saveBtn" onclick="saveEntity()">
             <i class="bi bi-check-lg me-1"></i>Save Entity
@@ -380,8 +560,595 @@
       </div>
 
     </div><!-- /entitiesSection -->
+
+    <!-- TOOLS -->
+    <div id="toolsSection" class="section-content">
+      <h4 class="fw-bold mb-4">Tools</h4>
+
+      <!-- Bulk Rankings -->
+      <div class="card shadow-sm border-0 rounded-3 mb-4">
+        <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
+          <h6 class="fw-bold mb-0"><i class="bi bi-bar-chart-fill text-primary me-2"></i>Bulk Rankings Fetcher</h6>
+          <p class="text-muted small mb-0 mt-1">Automatically fetch QS, THE, Shanghai &amp; Leiden rankings for entities via Wikipedia + Gemini. Rate-limited to avoid blocks (≈1.5 s / entity).</p>
+        </div>
+        <div class="card-body px-4 pb-4">
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <button class="btn btn-outline-secondary btn-sm" id="bulkMissingBtn" onclick="startBulkRankings('missing')">
+              <i class="bi bi-database-fill-up me-1"></i>Fetch missing rankings only
+            </button>
+            <button class="btn btn-outline-primary btn-sm" id="bulkAllBtn" onclick="startBulkRankings('all')">
+              <i class="bi bi-arrow-repeat me-1"></i>Re-fetch all entities
+            </button>
+            <button class="btn btn-danger btn-sm d-none" id="bulkStopBtn" onclick="stopBulkJob()">
+              <i class="bi bi-stop-fill me-1"></i>Stop
+            </button>
+          </div>
+
+          <div id="bulkProgress" class="d-none mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="small text-muted" id="bulkProgressText">Starting…</span>
+              <span class="small fw-semibold" id="bulkProgressPct">0%</span>
+            </div>
+            <div class="progress" style="height:8px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" id="bulkProgressBar" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div id="bulkResults" class="d-none">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-semibold small" id="bulkSummary"></span>
+              <button class="btn btn-outline-secondary btn-sm" onclick="exportBulkCSV()">
+                <i class="bi bi-download me-1"></i>Export CSV
+              </button>
+            </div>
+            <div class="table-responsive rounded-2 border" style="max-height:420px;overflow-y:auto">
+              <table class="table table-sm table-hover mb-0">
+                <thead class="sticky-top" style="background:#f8fafc">
+                  <tr>
+                    <th class="ps-3">Entity</th>
+                    <th class="text-center">QS</th>
+                    <th class="text-center">THE</th>
+                    <th class="text-center">Shanghai</th>
+                    <th class="text-center">Leiden</th>
+                    <th>Sources</th>
+                    <th class="pe-3">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="bulkResultsBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bulk Geo-lookup -->
+      <div class="card shadow-sm border-0 rounded-3 mb-4">
+        <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
+          <h6 class="fw-bold mb-0"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Bulk Coordinate Lookup</h6>
+          <p class="text-muted small mb-0 mt-1">Auto-fetch latitude &amp; longitude for all entities that have no coordinates yet. Uses Google Places (most accurate) with cleaned queries, falling back to OpenStreetMap, then city center — so nothing is left blank. Also creates a default orbit config for each.</p>
+        </div>
+        <div class="card-body px-4 pb-4">
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <button class="btn btn-danger btn-sm" id="geoStartBtn" onclick="startBulkGeo('missing')">
+              <i class="bi bi-geo-alt me-1"></i>Lookup missing coordinates
+            </button>
+            <button class="btn btn-outline-danger btn-sm" id="geoAllBtn" onclick="startBulkGeo('all')">
+              <i class="bi bi-arrow-repeat me-1"></i>Re-fetch all (fix wrong cities)
+            </button>
+            <button class="btn btn-outline-secondary btn-sm d-none" id="geoStopBtn" onclick="stopBulkGeo()">
+              <i class="bi bi-stop-fill me-1"></i>Stop
+            </button>
+          </div>
+          <div id="geoProgress" class="d-none mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="small text-muted" id="geoProgressText">Starting…</span>
+              <span class="small fw-semibold" id="geoProgressPct">0%</span>
+            </div>
+            <div class="progress" style="height:8px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" id="geoProgressBar" style="width:0%"></div>
+            </div>
+          </div>
+          <div id="geoResults" class="d-none">
+            <span class="fw-semibold small" id="geoSummary"></span>
+            <div class="table-responsive rounded-2 border mt-2" style="max-height:300px;overflow-y:auto">
+              <table class="table table-sm table-hover mb-0">
+                <thead class="sticky-top" style="background:#f8fafc">
+                  <tr><th class="ps-3">University</th><th>Resolved City</th><th>Lat</th><th>Lng</th><th>Source</th><th class="pe-3">Status</th></tr>
+                </thead>
+                <tbody id="geoResultsBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSV Full Import -->
+      <div class="card shadow-sm border-0 rounded-3 mb-4">
+        <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
+          <h6 class="fw-bold mb-0"><i class="bi bi-filetype-csv text-warning me-2"></i>CSV Full Import — Universities + Programs</h6>
+          <p class="text-muted small mb-0 mt-1">Upload the exported CSV to bulk-import all universities, locations and programs at once. Existing universities are skipped (no duplicates). Needs the city column fix first (run in phpMyAdmin if not done).</p>
+        </div>
+        <div class="card-body px-4 pb-4">
+          <div class="alert alert-info py-2 small mb-3">
+            <i class="bi bi-info-circle me-1"></i>
+            <strong>Before first use:</strong> run this in phpMyAdmin →
+            <code>ALTER TABLE entity_locations MODIFY city VARCHAR(100) NULL;</code>
+          </div>
+          <div class="d-flex align-items-end gap-3 flex-wrap">
+            <div>
+              <label class="form-label small fw-semibold">Select CSV file</label>
+              <input type="file" class="form-control form-control-sm" id="csvFile" accept=".csv">
+            </div>
+            <button class="btn btn-warning btn-sm" id="csvImportBtn" onclick="runCsvImport()">
+              <i class="bi bi-rocket-takeoff me-1"></i>Import All
+            </button>
+          </div>
+          <div id="csvImportProgress" class="d-none mt-3">
+            <div class="progress mb-2" style="height:8px">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:100%"></div>
+            </div>
+            <span class="small text-muted">Uploading and processing — this may take 30–60 seconds for large files…</span>
+          </div>
+          <div id="csvImportResult" class="d-none mt-3">
+            <div class="alert mb-0" id="csvImportResultAlert"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Import Universities (name list) -->
+      <div class="card shadow-sm border-0 rounded-3 mb-4">
+        <div class="card-header border-0 bg-transparent pt-4 pb-2 px-4">
+          <h6 class="fw-bold mb-0"><i class="bi bi-cloud-upload text-success me-2"></i>Import Universities</h6>
+          <p class="text-muted small mb-0 mt-1">Paste a list of university names (one per line) to bulk-create entities. Already existing names are skipped automatically.</p>
+        </div>
+        <div class="card-body px-4 pb-4">
+          <div class="row g-3 mb-3">
+            <div class="col-md-8">
+              <label class="form-label small fw-semibold">University names <span class="text-muted fw-normal">(one per line)</span></label>
+              <textarea class="form-control font-monospace" id="importNames" rows="10"
+                placeholder="University of Oxford&#10;Stanford University&#10;Tilburg University&#10;..."></textarea>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label small fw-semibold">Entity Type</label>
+              <select class="form-select form-select-sm mb-3" id="importType">
+                <option value="university" selected>University</option>
+                <option value="college">College</option>
+                <option value="institution">Institution</option>
+              </select>
+              <label class="form-label small fw-semibold">Status</label>
+              <select class="form-select form-select-sm mb-3" id="importStatus">
+                <option value="pending" selected>Pending</option>
+                <option value="active">Active</option>
+              </select>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="importFetchRankings" checked>
+                <label class="form-check-label small" for="importFetchRankings">
+                  Auto-fetch rankings after import
+                </label>
+              </div>
+              <button class="btn btn-success w-100" id="importBtn" onclick="importUniversities()">
+                <i class="bi bi-cloud-upload me-1"></i>Import
+              </button>
+            </div>
+          </div>
+          <div id="importResult" class="d-none">
+            <div class="alert mb-0" id="importResultAlert"></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /toolsSection -->
+
+    <!-- ── Leads ─────────────────────────────────────────────────────────── -->
+    <div id="leadsSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <h4 class="fw-bold mb-0"><i class="bi bi-envelope-fill me-2 text-primary"></i>Student Leads</h4>
+        <div class="d-flex gap-2 flex-wrap">
+          <input type="text" class="form-control form-control-sm" id="leadSearch" placeholder="Search name / email / program…" style="width:220px" oninput="filterLeads()">
+          <select class="form-select form-select-sm" id="leadStatusFilter" style="width:140px" onchange="filterLeads()">
+            <option value="">All statuses</option>
+            <option value="new">New</option>
+            <option value="contacted">Contacted</option>
+            <option value="converted">Converted</option>
+            <option value="closed">Closed</option>
+          </select>
+          <button class="btn btn-outline-secondary btn-sm" onclick="loadLeads()"><i class="bi bi-arrow-clockwise"></i></button>
+          <a href="/api/admin/leads/export" class="btn btn-outline-success btn-sm"><i class="bi bi-download me-1"></i>Export CSV</a>
+        </div>
+      </div>
+
+      <!-- Stats row -->
+      <div class="row g-3 mb-4" id="leadsStats">
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)"><div class="fw-bold fs-4" id="ls_total">—</div><div class="small text-muted">Total</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2)"><div class="fw-bold fs-4 text-danger" id="ls_new">—</div><div class="small text-muted">New</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.2)"><div class="fw-bold fs-4" style="color:#fbbf24" id="ls_contacted">—</div><div class="small text-muted">Contacted</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2)"><div class="fw-bold fs-4 text-success" id="ls_converted">—</div><div class="small text-muted">Converted</div></div></div>
+      </div>
+
+      <div id="leadsTableWrap">
+        <div class="text-center text-muted py-5">Loading leads…</div>
+      </div>
+    </div><!-- /leadsSection -->
+
+    <!-- USERS -->
+    <div id="usersSection" class="section-content">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="fw-bold mb-0"><i class="bi bi-people-fill me-2 text-primary"></i>Users</h4>
+        <button class="btn btn-primary btn-sm" onclick="openUserModal(null)">
+          <i class="bi bi-person-plus me-1"></i>Add User
+        </button>
+      </div>
+      <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
+        <table class="table table-hover mb-0 align-middle">
+          <thead style="background:#1e293b;color:#e2e8f0">
+            <tr>
+              <th class="ps-3">Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Tier</th>
+              <th>Affiliate Code</th>
+              <th>Created</th>
+              <th class="text-end pe-3">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody">
+            <tr><td colspan="8" class="text-center text-muted py-5">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- /usersSection -->
+
+    <!-- ── Applications ──────────────────────────────────────────────────── -->
+    <div id="applicationsSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <h4 class="fw-bold mb-0"><i class="bi bi-file-earmark-person-fill me-2 text-primary"></i>Applications</h4>
+        <div class="d-flex gap-2 flex-wrap">
+          <input type="text" class="form-control form-control-sm" id="appSearch" placeholder="Search name / email / university / program…" style="width:240px" oninput="filterApplications()">
+          <select class="form-select form-select-sm" id="appStatusFilter" style="width:150px" onchange="filterApplications()">
+            <option value="">All statuses</option>
+            <option value="submitted">Submitted</option>
+            <option value="reviewing">Reviewing</option>
+            <option value="pre_accepted">Pre-accepted</option>
+            <option value="conditional">Conditional</option>
+            <option value="rejected">Rejected</option>
+            <option value="completed">Completed</option>
+          </select>
+          <button class="btn btn-outline-warning btn-sm" onclick="bulkRemind()" title="Send reminder to all submitted/reviewing applicants"><i class="bi bi-bell me-1"></i>Bulk Remind</button>
+          <button class="btn btn-outline-secondary btn-sm" onclick="loadApplications()"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+      </div>
+
+      <!-- Stats row -->
+      <div class="row g-3 mb-4">
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(255,255,255,.04);border:1px solid rgba(0,0,0,.06)"><div class="fw-bold fs-4" id="as_total">—</div><div class="small text-muted">Total</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.2)"><div class="fw-bold fs-4 text-primary" id="as_submitted">—</div><div class="small text-muted">Submitted</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.2)"><div class="fw-bold fs-4" style="color:#d97706" id="as_reviewing">—</div><div class="small text-muted">Reviewing</div></div></div>
+        <div class="col-6 col-md-3"><div class="p-3 rounded-3 text-center" style="background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2)"><div class="fw-bold fs-4 text-success" id="as_accepted">—</div><div class="small text-muted">Accepted</div></div></div>
+      </div>
+
+      <div id="appsTableWrap">
+        <div class="text-center text-muted py-5">Loading applications…</div>
+      </div>
+    </div><!-- /applicationsSection -->
+
+    <!-- ── English Test Results ──────────────────────────────────────── -->
+    <div id="engtestSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <h4 class="fw-bold mb-0"><i class="bi bi-journal-check me-2 text-primary"></i>English Test Results</h4>
+        <div class="d-flex gap-2">
+          <input type="text" class="form-control form-control-sm" id="etSearch" placeholder="Search email…" style="width:220px" oninput="filterEngTest()">
+          <select class="form-select form-select-sm" id="etLevelFilter" style="width:130px" onchange="filterEngTest()">
+            <option value="">All levels</option>
+            <option>A1</option><option>A2</option><option>B1</option>
+            <option>B2</option><option>C1</option><option>C2</option>
+          </select>
+          <button class="btn btn-outline-secondary btn-sm" onclick="loadEngTest()"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+      </div>
+      <div id="etTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
+    </div><!-- /engtestSection -->
+
+    <!-- ── Document Review Queue ───────────────────────────────────────────── -->
+    <div id="docsSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <h4 class="fw-bold mb-0"><i class="bi bi-file-earmark-check-fill me-2 text-primary"></i>Document Review</h4>
+        <div class="d-flex gap-2">
+          <select class="form-select form-select-sm" id="docStatusFilter" style="width:180px" onchange="loadDocs()">
+            <option value="">All statuses</option>
+            <option value="pending">Pending</option>
+            <option value="ok">Approved</option>
+            <option value="needs_resubmit">Needs Resubmit</option>
+          </select>
+          <button class="btn btn-outline-secondary btn-sm" onclick="loadDocs()"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+      </div>
+      <div id="docsTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
+    </div><!-- /docsSection -->
+
+    <!-- ── Subscription Tiers ──────────────────────────────────────────────── -->
+    <div id="tiersSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <h4 class="fw-bold mb-0"><i class="bi bi-layers-fill me-2 text-primary"></i>Subscription Tiers</h4>
+        <button class="btn btn-primary btn-sm" onclick="openTierModal(null)"><i class="bi bi-plus-lg me-1"></i>Add Tier</button>
+      </div>
+      <div id="tiersTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
+    </div><!-- /tiersSection -->
+
   </div><!-- /mainContent -->
 </div><!-- /adminApp -->
+
+<!-- User modal -->
+<div class="modal fade" id="userModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="userModalTitle">Add User</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Name</label>
+          <input type="text" class="form-control" id="uName" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+        </div>
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Email</label>
+          <input type="email" class="form-control" id="uEmail" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+        </div>
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Password <span id="uPwHint" class="text-muted fw-normal">(leave blank to keep existing)</span></label>
+          <input type="password" class="form-control" id="uPassword" placeholder="••••••••" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Role</label>
+            <select class="form-select" id="uRole" style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="enduser">End User</option>
+              <option value="affiliate">Affiliate</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Status</label>
+            <select class="form-select" id="uStatus" style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="active">Active</option>
+              <option value="pending">Pending</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </div>
+        </div>
+        <div class="mt-3">
+          <label class="form-label small fw-semibold">Subscription Tier</label>
+          <select class="form-select" id="uTierId" style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+            <option value="">— unassigned —</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary" id="uSaveBtn" onclick="saveUser()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tier modal -->
+<div class="modal fade" id="tierModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="tierModalTitle">Add Tier</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3 mb-3">
+          <div class="col-md-8">
+            <label class="form-label small fw-semibold">Tier Name <span class="req">*</span></label>
+            <input type="text" class="form-control" id="tmName" placeholder="e.g. Pro" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Level</label>
+            <input type="number" class="form-control" id="tmLevel" min="1" value="1" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+          </div>
+        </div>
+        <div class="row g-3 mb-3">
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Price / month</label>
+            <input type="number" class="form-control" id="tmPrice" min="0" step="0.01" value="0" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Currency</label>
+            <select class="form-select" id="tmCurrency" style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="TRY">TRY</option>
+              <option value="GBP">GBP</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Description</label>
+          <textarea class="form-control" id="tmDesc" rows="3" placeholder="What does this tier include?" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary" onclick="saveTier()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lead detail + reply modal -->
+<div class="modal fade" id="leadModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title"><i class="bi bi-person-lines-fill me-2 text-primary"></i>Lead Details</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="leadDetailBody"></div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <h6 class="fw-semibold mb-2"><i class="bi bi-chat-left-text me-1"></i>Conversation</h6>
+        <div id="leadReplies" class="mb-3"><div class="text-muted small">Loading…</div></div>
+
+        <label class="form-label small fw-semibold">Reply to student</label>
+        <textarea id="replyBody" rows="4" class="form-control" placeholder="Type your reply… it will be emailed to the student."
+          style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0"></textarea>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary" id="sendReplyBtn" onclick="sendReply()"><i class="bi bi-send me-1"></i>Send Reply</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Application detail modal -->
+<div class="modal fade" id="appModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title"><i class="bi bi-file-earmark-person-fill me-2 text-primary"></i>Application Details</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="appDetailBody"><div class="text-muted small">Loading…</div></div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <h6 class="fw-semibold mb-2"><i class="bi bi-paperclip me-1"></i>Documents</h6>
+        <div id="appDocs" class="mb-3"><div class="text-muted small">Loading…</div></div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div>
+          <label class="form-label small fw-semibold"><i class="bi bi-bell me-1 text-warning"></i>Send reminder to applicant</label>
+          <textarea id="appReminderMsg" rows="2" class="form-control mb-2" placeholder="Custom message (Turkish) — leave blank for default reminder text"
+            style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0;font-size:.85rem"></textarea>
+          <button class="btn btn-outline-warning btn-sm" onclick="sendReminder()"><i class="bi bi-bell me-1"></i>Send Reminder Email</button>
+        </div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div class="row g-3">
+          <div class="col-md-5">
+            <label class="form-label small fw-semibold">Status</label>
+            <select class="form-select" id="appStatusSelect" style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="submitted">Submitted</option>
+              <option value="reviewing">Reviewing</option>
+              <option value="pre_accepted">Pre-accepted</option>
+              <option value="conditional">Conditional</option>
+              <option value="rejected">Rejected</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+          <div class="col-md-7">
+            <label class="form-label small fw-semibold">Internal notes</label>
+            <textarea id="appNotes" rows="2" class="form-control" placeholder="Admin notes…"
+              style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0"></textarea>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="appNotifyCheck">
+              <label class="form-check-label small text-muted" for="appNotifyCheck">Email applicant about this status change</label>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div>
+          <label class="form-label small fw-semibold"><i class="bi bi-patch-check-fill me-1 text-success"></i>Pre-acceptance (emails the student a PANELEDU letter)</label>
+          <textarea id="appPreConditions" rows="2" class="form-control mb-2" placeholder="Conditions (optional) — e.g. submit IELTS 6.0 by 1 Aug 2026"
+            style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0"></textarea>
+          <div id="appPreInfo" class="small text-muted mb-2"></div>
+          <div class="d-flex gap-2 flex-wrap">
+            <button class="btn btn-success btn-sm" onclick="issuePreAccept(false)"><i class="bi bi-patch-check me-1"></i>Issue pre-acceptance</button>
+            <button class="btn btn-warning btn-sm" onclick="issuePreAccept(true)"><i class="bi bi-hourglass-split me-1"></i>Issue conditional</button>
+            <button class="btn btn-sm" id="downloadPdfBtn" style="display:none;background:#6366f1;color:#fff;border:none" onclick="downloadPreAcceptPdf()"><i class="bi bi-file-earmark-pdf me-1"></i>Download PDF</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary" id="appSaveBtn" onclick="saveApplication()"><i class="bi bi-check-lg me-1"></i>Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Detailed requirements (eligibility) editor modal -->
+<div class="modal fade" id="reqModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title"><i class="bi bi-gear me-2 text-info"></i>Detailed Requirements</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted small">These structured requirements drive the public eligibility matcher. Leave a section empty to skip it.</p>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Minimum education level</label>
+            <select class="form-select" id="reqLevel" onchange="reqChanged()"
+              style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="none">None / not required</option>
+              <option value="highschool">High school</option>
+              <option value="bachelor">Bachelor</option>
+              <option value="master">Master</option>
+              <option value="phd">PhD</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">Minimum GPA</label>
+            <input type="number" step="0.01" class="form-control" id="reqGpaMin" oninput="reqChanged()"
+              placeholder="e.g. 3.0" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">GPA scale</label>
+            <select class="form-select" id="reqGpaScale" onchange="reqChanged()"
+              style="background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0">
+              <option value="4.0">4.0</option>
+              <option value="4.3">4.3</option>
+              <option value="5.0">5.0</option>
+              <option value="10.0">10.0</option>
+              <option value="20">20</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+        </div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h6 class="fw-semibold mb-0">Qualifications <span class="text-muted small fw-normal">(accepted if ANY one matches)</span></h6>
+          <button type="button" class="btn btn-outline-light btn-sm" onclick="reqAddQual()"><i class="bi bi-plus"></i> Add</button>
+        </div>
+        <div id="reqQuals"></div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h6 class="fw-semibold mb-0">English tests <span class="text-muted small fw-normal">(accepted if ANY one matches)</span></h6>
+          <button type="button" class="btn btn-outline-light btn-sm" onclick="reqAddEng()"><i class="bi bi-plus"></i> Add</button>
+        </div>
+        <div id="reqEng"></div>
+
+        <hr style="border-color:rgba(255,255,255,.1)">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h6 class="fw-semibold mb-0">Standardized tests <span class="text-muted small fw-normal">(accepted if ANY one matches)</span></h6>
+          <button type="button" class="btn btn-outline-light btn-sm" onclick="reqAddStd()"><i class="bi bi-plus"></i> Add</button>
+        </div>
+        <div id="reqStd"></div>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-primary" data-bs-dismiss="modal"><i class="bi bi-check-lg me-1"></i>Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Go to top button -->
+<button id="goTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+  title="Back to top"
+  style="position:fixed;bottom:28px;right:28px;z-index:999;width:42px;height:42px;border-radius:50%;background:#6366f1;border:none;color:#fff;display:none;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);cursor:pointer;font-size:1.1rem;transition:opacity .2s">
+  <i class="bi bi-chevron-up"></i>
+</button>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -389,7 +1156,13 @@ let token = localStorage.getItem('sa_token');
 let editingId = null;
 let formPrograms = [];
 let programTypes = [];
+let allEntitiesList = [];
 const confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'));
+
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('goTopBtn');
+  btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+});
 
 async function api(method, url, body) {
   const opts = { method, headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` } };
@@ -416,28 +1189,114 @@ function toast(msg, type) {
 }
 
 document.getElementById('loginPassword').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+document.getElementById('loginEmail').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
 document.getElementById('loginBtn').addEventListener('click', doLogin);
-document.getElementById('togglePw').addEventListener('click', () => {
-  const inp = document.getElementById('loginPassword');
-  const icon = document.querySelector('#togglePw i');
-  if (inp.type === 'password') { inp.type = 'text'; icon.className = 'bi bi-eye-slash'; }
-  else { inp.type = 'password'; icon.className = 'bi bi-eye'; }
-  inp.focus();
+document.getElementById('togglePw').addEventListener('change', function () {
+  document.getElementById('loginPassword').type = this.checked ? 'text' : 'password';
 });
 
+// ── Institution search (Nominatim / OpenStreetMap) ───────────────────────────
+const COUNTRY_CONTINENT = {
+  DE:'Europe',FR:'Europe',GB:'Europe',IT:'Europe',ES:'Europe',NL:'Europe',BE:'Europe',
+  CH:'Europe',AT:'Europe',SE:'Europe',NO:'Europe',DK:'Europe',FI:'Europe',PL:'Europe',
+  CZ:'Europe',HU:'Europe',RO:'Europe',PT:'Europe',GR:'Europe',IE:'Europe',SK:'Europe',
+  HR:'Europe',BG:'Europe',SI:'Europe',RS:'Europe',BA:'Europe',ME:'Europe',MK:'Europe',
+  AL:'Europe',LT:'Europe',LV:'Europe',EE:'Europe',LU:'Europe',MT:'Europe',CY:'Europe',
+  IS:'Europe',UA:'Europe',BY:'Europe',MD:'Europe',GE:'Europe',AM:'Europe',AZ:'Europe',
+  TR:'Middle East',SA:'Middle East',AE:'Middle East',IL:'Middle East',JO:'Middle East',
+  LB:'Middle East',IQ:'Middle East',IR:'Middle East',KW:'Middle East',QA:'Middle East',
+  BH:'Middle East',OM:'Middle East',YE:'Middle East',SY:'Middle East',PS:'Middle East',
+  CN:'Asia',JP:'Asia',KR:'Asia',IN:'Asia',SG:'Asia',TH:'Asia',MY:'Asia',VN:'Asia',
+  ID:'Asia',PH:'Asia',TW:'Asia',HK:'Asia',BD:'Asia',LK:'Asia',NP:'Asia',PK:'Asia',
+  KZ:'Asia',UZ:'Asia',MN:'Asia',LA:'Asia',KH:'Asia',MM:'Asia',BN:'Asia',
+  US:'North America',CA:'North America',MX:'North America',CU:'North America',
+  JM:'North America',HT:'North America',DO:'North America',TT:'North America',
+  GT:'North America',BZ:'North America',HN:'North America',SV:'North America',
+  NI:'North America',CR:'North America',PA:'North America',
+  BR:'South America',AR:'South America',CL:'South America',CO:'South America',
+  PE:'South America',VE:'South America',EC:'South America',BO:'South America',
+  PY:'South America',UY:'South America',
+  ZA:'Africa',NG:'Africa',EG:'Africa',KE:'Africa',GH:'Africa',TZ:'Africa',
+  ET:'Africa',UG:'Africa',MA:'Africa',TN:'Africa',DZ:'Africa',SN:'Africa',
+  CM:'Africa',ZM:'Africa',ZW:'Africa',MZ:'Africa',
+  AU:'Oceania',NZ:'Oceania',FJ:'Oceania'
+};
+
+let _placeResults = [];
+
+async function doPlaceSearch() {
+  const q = document.getElementById('searchQ').value.trim();
+  if (!q) return;
+  const btn = document.getElementById('searchBtn');
+  const box = document.getElementById('searchResults');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Searching...';
+  box.innerHTML = '';
+  try {
+    const url = 'https://nominatim.openstreetmap.org/search?format=json&limit=6&addressdetails=1&accept-language=en&q=' + encodeURIComponent(q);
+    const data = await (await fetch(url)).json();
+    _placeResults = data;
+    if (!data.length) {
+      box.innerHTML = '<div class="text-muted small p-2">No results found. Try a more specific name or add the city.</div>';
+      return;
+    }
+    box.innerHTML = data.map((r, i) => {
+      const a = r.address;
+      const name = a.amenity || a.university || a.college || a.school || r.display_name.split(',')[0];
+      return `<div class="place-result" onclick="applyPlace(${i})">
+        <div class="place-result-name">${name}</div>
+        <div class="place-result-addr">${r.display_name}</div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    box.innerHTML = `<div class="text-danger small p-2">Search error: ${e.message}</div>`;
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="bi bi-search me-1"></i>Search';
+  }
+}
+
+function applyPlace(idx) {
+  const r = _placeResults[idx];
+  if (!r) return;
+  const a = r.address;
+  const name = a.amenity || a.university || a.college || a.school || r.display_name.split(',')[0];
+  const city = a.city || a.town || a.village || a.municipality || a.county || '';
+  const country = a.country || '';
+  const continent = COUNTRY_CONTINENT[(a.country_code || '').toUpperCase()] || '';
+  const addrParts = [a.road, city, a.postcode, country].filter(Boolean);
+
+  const s = (id, v) => { const el = document.getElementById(id); if (el && v) el.value = v; };
+  s('fName', name);
+  s('fCity', city);
+  s('fCountry', country);
+  s('fAddress', addrParts.join(', '));
+  s('fLat', parseFloat(r.lat).toFixed(7));
+  s('fLng', parseFloat(r.lon).toFixed(7));
+  if (continent) s('fContinent', continent);
+  syncOrbitCenter();
+
+  document.getElementById('searchResults').innerHTML =
+    '<div class="text-success small p-2"><i class="bi bi-check-circle me-1"></i>Details filled — review and adjust below if needed.</div>';
+  toast('Location filled from search — review the details.', 'success');
+}
+// ─────────────────────────────────────────────────────────────────────────────
+
 async function doLogin() {
+  const email = document.getElementById('loginEmail').value.trim();
   const pw = document.getElementById('loginPassword').value;
-  if (!pw) return;
+  if (!email || !pw) return;
   const btn = document.getElementById('loginBtn');
   btn.disabled = true; btn.textContent = '...';
   document.getElementById('loginError').classList.add('d-none');
   try {
-    const res = await fetch('/api/admin/login', {
+    const res = await fetch('/api/auth/login', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ password: pw })
+      body: JSON.stringify({ email, password: pw })
     });
     const d = await res.json();
     if (!res.ok) throw new Error(d.error || 'Login failed');
+    if (d.role !== 'admin') throw new Error('Admin access only');
     token = d.token;
     localStorage.setItem('sa_token', token);
     initApp();
@@ -477,17 +1336,86 @@ function showSection(name) {
   if (nav) nav.classList.add('active');
   if (name === 'dashboard') loadStats();
   if (name === 'entities') { closeEntityForm(); loadEntities(); }
+  if (name === 'leads') loadLeads();
+  if (name === 'users') loadUsers();
+  if (name === 'applications') loadApplications();
+  if (name === 'engtest') loadEngTest();
+  if (name === 'docs') loadDocs();
+  if (name === 'tiers') loadTiers();
 }
 
 async function loadStats() {
   try {
-    const res = await api('GET', '/api/entities/stats');
-    const d = await res.json();
+    const [r1, r2] = await Promise.all([
+      api('GET', '/api/entities/stats'),
+      api('GET', '/api/admin/dashboard')
+    ]);
+    const d = await r1.json();
     document.getElementById('statEntities').textContent = d.entities;
     document.getElementById('statLocations').textContent = d.locations;
     document.getElementById('statPrograms').textContent = d.programs;
     document.getElementById('statOrbits').textContent = d.orbits;
+
+    const dash = await r2.json();
+    renderDashboard(dash);
   } catch {}
+}
+
+function renderDashboard({ leads, apps, trend }) {
+  // Bottom stat tiles
+  document.getElementById('dashTotalLeads').textContent = leads.total ?? 0;
+  document.getElementById('dashConverted').textContent = leads.converted ?? 0;
+  document.getElementById('dashApps').textContent = apps.total ?? 0;
+  document.getElementById('dashApproved').textContent = apps.approved ?? 0;
+
+  // Lead funnel
+  const total = Number(leads.total) || 1;
+  document.getElementById('dashLeadTotal').textContent = `${leads.total} total`;
+  const stages = [
+    { label: 'New',       val: Number(leads.new_count), color: '#6366f1' },
+    { label: 'Contacted', val: Number(leads.contacted),  color: '#0891b2' },
+    { label: 'Converted', val: Number(leads.converted),  color: '#059669' },
+  ];
+  document.getElementById('dashFunnel').innerHTML = stages.map(s => {
+    const pct = Math.round(s.val / total * 100);
+    return `<div class="mb-3">
+      <div class="d-flex justify-content-between small mb-1">
+        <span class="fw-semibold">${s.label}</span>
+        <span class="text-muted">${s.val} <span class="ms-1" style="color:${s.color}">${pct}%</span></span>
+      </div>
+      <div style="background:#e2e8f0;border-radius:6px;height:10px;overflow:hidden">
+        <div style="width:${pct}%;background:${s.color};height:100%;border-radius:6px;transition:width .6s"></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // 30-day sparkline (SVG)
+  const counts = trend.map(t => t.count);
+  const maxVal = Math.max(...counts, 1);
+  const W = 600, H = 100, pad = 8;
+  const xs = counts.map((_, i) => pad + (i / (counts.length - 1)) * (W - pad * 2));
+  const ys = counts.map(v => H - pad - (v / maxVal) * (H - pad * 2));
+  const area = `M${xs[0]},${H - pad} ` +
+    xs.map((x, i) => `L${x},${ys[i]}`).join(' ') +
+    ` L${xs[xs.length - 1]},${H - pad} Z`;
+  const line = xs.map((x, i) => `${i === 0 ? 'M' : 'L'}${x},${ys[i]}`).join(' ');
+  const dots = counts.map((v, i) => v > 0 ? `<circle cx="${xs[i]}" cy="${ys[i]}" r="3" fill="#059669"/>` : '').join('');
+  document.getElementById('dashSparkline').innerHTML = `
+    <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#059669" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </linearGradient></defs>
+    <path d="${area}" fill="url(#sg)"/>
+    <path d="${line}" fill="none" stroke="#059669" stroke-width="2" stroke-linejoin="round"/>
+    ${dots}`;
+
+  const sum = counts.reduce((a, b) => a + b, 0);
+  document.getElementById('dashLeadSum').textContent = `${sum} leads`;
+
+  // Labels: first, mid, last date
+  const labels = [trend[0].day.slice(5), trend[14].day.slice(5), trend[29].day.slice(5)];
+  document.getElementById('dashSparkLabels').innerHTML =
+    labels.map(l => `<span>${l}</span>`).join('');
 }
 
 async function loadEntities() {
@@ -496,35 +1424,56 @@ async function loadEntities() {
     <span class="spinner-border spinner-border-sm me-2"></span>Loading...</td></tr>`;
   try {
     const res = await api('GET', '/api/entities');
-    const list = await res.json();
-    if (!list.length) {
-      tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted py-5">
-        No entities yet. <a href="#" onclick="openEntityForm(null);return false;">Add the first one</a></td></tr>`;
-      return;
-    }
-    tbody.innerHTML = list.map((e, i) => `
-      <tr>
-        <td class="ps-3 text-muted small">${i + 1}</td>
-        <td>
-          ${e.logo_url ? `<img src="${esc(e.logo_url)}" class="entity-logo me-2" onerror="this.style.display='none'">` : ''}
-          <strong>${esc(e.name)}</strong>
-        </td>
-        <td><span class="badge bg-light text-dark border small">${typeLabel(e.type)}</span></td>
-        <td class="text-muted small">${e.city ? `${esc(e.city)}, ${esc(e.country)}` : '—'}</td>
-        <td class="text-center"><span class="badge bg-primary bg-opacity-15 text-primary">${e.programs_count}</span></td>
-        <td><span class="badge badge-${e.status}">${cap(e.status)}</span></td>
-        <td class="text-end pe-3">
-          <button class="btn btn-outline-secondary btn-sm table-actions me-1" onclick="openEntityForm(${e.id})">
-            <i class="bi bi-pencil"></i>
-          </button>
-          <button class="btn btn-outline-danger btn-sm table-actions" onclick="confirmDel(${e.id},'${esc(e.name).replace(/'/g,"\\'")}')">
-            <i class="bi bi-trash"></i>
-          </button>
-        </td>
-      </tr>`).join('');
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || `Server error ${res.status}`);
+    allEntitiesList = Array.isArray(data) ? data : [];
+    filterEntities();
   } catch (e) {
-    tbody.innerHTML = `<tr><td colspan="7" class="text-center text-danger py-4">${esc(e.message)}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="7" class="text-center text-danger py-4"><i class="bi bi-exclamation-triangle me-2"></i>${esc(e.message)}</td></tr>`;
   }
+}
+
+function filterEntities() {
+  const q = (document.getElementById('entitySearch')?.value || '').toLowerCase();
+  const filtered = q
+    ? allEntitiesList.filter(e =>
+        e.name.toLowerCase().includes(q) ||
+        (e.city||'').toLowerCase().includes(q) ||
+        (e.country||'').toLowerCase().includes(q) ||
+        (e.type||'').toLowerCase().includes(q)
+      )
+    : allEntitiesList;
+  renderEntitiesTable(filtered);
+}
+
+function renderEntitiesTable(list) {
+  const tbody = document.getElementById('entitiesTableBody');
+  if (!list.length) {
+    tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted py-5">
+      ${allEntitiesList.length ? 'No matches found.' : 'No entities yet. <a href="#" onclick="openEntityForm(null);return false;">Add the first one</a>'}</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = list.map((e, i) => `
+    <tr>
+      <td class="ps-3 text-muted small">${i + 1}</td>
+      <td>
+        ${e.logo_url ? `<img src="${esc(e.logo_url)}" class="entity-logo me-2" onerror="this.style.display='none'">` : ''}
+        <strong>${esc(e.name)}</strong>
+      </td>
+      <td><span class="badge bg-light text-dark border small">${typeLabel(e.type)}</span></td>
+      <td class="text-muted small">${e.city ? `${esc(e.city)}, ${esc(e.country)}` : '—'}</td>
+      <td class="text-center"><span class="badge bg-primary bg-opacity-15 text-primary">${e.programs_count}</span></td>
+      <td><span class="badge badge-${e.status}">${cap(e.status)}</span></td>
+      <td class="text-end pe-3">
+        ${e.latitude && e.longitude ? `<button class="btn ${e.coord_locked ? 'btn-warning' : 'btn-outline-primary'} btn-sm table-actions me-1" title="${e.coord_locked ? 'Orbit Önizleme (Koordinatlar Kilitli)' : 'Orbit Önizleme'}" onclick="openOrbitPreview('${esc(e.name).replace(/'/g,"\\'")}',${e.latitude},${e.longitude},${e.id},${e.orbit_config_id||'null'})"><i class="bi bi-globe2"></i>${e.coord_locked ? '<i class=\'bi bi-lock-fill ms-1\' style=\'font-size:.65rem;vertical-align:middle\'></i>' : ''}</button>` : ''}
+        <button class="btn btn-outline-secondary btn-sm table-actions me-1" onclick="openEntityForm(${e.id})">
+          <i class="bi bi-pencil"></i>
+        </button>
+        <button class="btn btn-outline-danger btn-sm table-actions" onclick="confirmDel(${e.id},'${esc(e.name).replace(/'/g,"\\'")}')">
+          <i class="bi bi-trash"></i>
+        </button>
+      </td>
+    </tr>`).join('');
 }
 
 function typeLabel(t) {
@@ -567,10 +1516,29 @@ function closeEntityForm() {
   document.getElementById('entityListView').classList.remove('d-none');
 }
 
+function previewOrbit() {
+  const g = id => document.getElementById(id)?.value?.trim() || '';
+  const lat = g('fOrbitLat') || g('fLat');
+  const lng = g('fOrbitLng') || g('fLng');
+  if (!lat || !lng) { toast('No coordinates yet — use the institution search at the top to auto-fill, or enter Latitude/Longitude in the Location section.', 'error'); return; }
+  const p = new URLSearchParams({
+    name: g('fName') || 'Entity',
+    lat, lng,
+    alt: g('fOrbitAlt') || '400',
+    pitch: g('fOrbitPitch') || '-45',
+    heading: g('fOrbitHeading') || '0',
+    range: g('fOrbitRange') || '400',
+    speed: g('fOrbitSpeed') || '0.12',
+    rot: document.getElementById('fOrbitRotType')?.value || '360'
+  });
+  window.open('/orbit/?' + p.toString(), '_blank');
+}
+
 function resetForm() {
-  const ids = ['fName','fType','fWebsite','fLogo','fDesc','fCity','fCountry','fCampus','fAddress','fLat','fLng','fAirportName','fAirportCode','fFlightMin','fOrbitLat','fOrbitLng','fScanLat','fScanLng'];
+  const ids = ['fName','fType','fWebsite','fLogo','fDesc','fCity','fCountry','fCampus','fAddress','fLat','fLng','fAirportName','fAirportCode','fFlightMin','fOrbitLat','fOrbitLng','fScanLat','fScanLng','fQsRank','fQsYear','fTheRank','fTheYear','fLeidenRank','fLeidenYear','fShanghaiRank','fShanghaiYear'];
   ids.forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
   document.getElementById('fStatus').value = 'pending';
+  document.getElementById('fFeatured').checked = false;
   document.getElementById('fContinent').value = '';
   document.getElementById('fLocStatus').value = 'active';
   document.getElementById('fOrbitAlt').value = 400;
@@ -589,7 +1557,13 @@ function fillForm(d) {
   const { entity: e, location: l, orbit: o, programs: ps } = d;
   const set = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.value = v; };
   const chk = (id, v) => { const el = document.getElementById(id); if (el) el.checked = !!v; };
-  if (e) { set('fName', e.name); set('fType', e.type); set('fWebsite', e.website_url||''); set('fLogo', e.logo_url||''); set('fDesc', e.description_en||''); set('fStatus', e.status); }
+  if (e) {
+    set('fName', e.name); set('fType', e.type); set('fWebsite', e.website_url||''); set('fLogo', e.logo_url||''); set('fDesc', e.description_en||''); set('fStatus', e.status); chk('fFeatured', e.featured);
+    set('fQsRank', e.qs_rank||''); set('fQsYear', e.qs_rank_year||'');
+    set('fTheRank', e.the_rank||''); set('fTheYear', e.the_rank_year||'');
+    set('fLeidenRank', e.leiden_rank||''); set('fLeidenYear', e.leiden_rank_year||'');
+    set('fShanghaiRank', e.shanghai_rank||''); set('fShanghaiYear', e.shanghai_rank_year||'');
+  }
   if (l) { set('fCity', l.city); set('fCountry', l.country); set('fContinent', l.continent); set('fCampus', l.campus_name||''); set('fAddress', l.address||''); set('fLat', l.latitude||''); set('fLng', l.longitude||''); set('fAirportName', l.closest_airport_name||''); set('fAirportCode', l.closest_airport_code||''); set('fFlightMin', l.flight_duration_from_ist_min||''); set('fLocStatus', l.status); }
   if (o) { set('fOrbitLat', o.orbit_center_lat??''); set('fOrbitLng', o.orbit_center_lng??''); set('fOrbitAlt', o.orbit_altitude??400); set('fOrbitPitch', o.orbit_pitch??-45); set('fOrbitHeading', o.orbit_initial_heading??0); set('fOrbitRange', o.orbit_range??400); set('fOrbitRotType', o.orbit_rotation_type||'360'); set('fOrbitSpeed', o.orbit_rotation_speed??0.12); chk('fOrbitScanEnable', o.scan_effect_enabled); set('fScanLat', o.scan_target_lat??''); set('fScanLng', o.scan_target_lng??''); set('fCamV', o.camera_v_offset??0); set('fCamH', o.camera_h_offset??0); }
   formPrograms = (ps || []).map(p => ({ ...p })); renderPrograms();
@@ -600,12 +1574,163 @@ function syncOrbitCenter() {
   const lng = document.getElementById('fLng').value;
   const oLat = document.getElementById('fOrbitLat');
   const oLng = document.getElementById('fOrbitLng');
+  const sLat = document.getElementById('fScanLat');
+  const sLng = document.getElementById('fScanLng');
   if (!oLat.value && lat) oLat.value = lat;
   if (!oLng.value && lng) oLng.value = lng;
+  if (!sLat.value && lat) sLat.value = lat;
+  if (!sLng.value && lng) sLng.value = lng;
+}
+
+function convertCoords() {
+  const raw = document.getElementById('fDMS').value.trim();
+  if (!raw) return;
+  let lat, lng;
+
+  // Try DMS: 51°33'46.6"N 5°02'33.7"E  (any spacing/punctuation variants)
+  const dms = raw.match(/(\d+)[°\s]+(\d+)['\s]+([\d.]+)["″\s]*([NS])[\s,;]*(\d+)[°\s]+(\d+)['\s]+([\d.]+)["″\s]*([EW])/i);
+  if (dms) {
+    const [,d1,m1,s1,ns,d2,m2,s2,ew] = dms;
+    lat = (+d1 + +m1/60 + +s1/3600) * (/S/i.test(ns) ? -1 : 1);
+    lng = (+d2 + +m2/60 + +s2/3600) * (/W/i.test(ew) ? -1 : 1);
+  } else {
+    // Try decimal: "51.5629, 5.0427" or "51.5629 5.0427"
+    const dec = raw.match(/(-?[\d.]+)[\s,;]+(-?[\d.]+)/);
+    if (dec) { lat = +dec[1]; lng = +dec[2]; }
+  }
+
+  if (!isFinite(lat) || !isFinite(lng)) {
+    toast('Could not read those coordinates — try copying the full line from Google Maps.', 'error');
+    return;
+  }
+  document.getElementById('fLat').value = lat.toFixed(7);
+  document.getElementById('fLng').value = lng.toFixed(7);
+  document.getElementById('fDMS').value = '';
+  syncOrbitCenter();
+  toast(`Coordinates set: ${lat.toFixed(5)}, ${lng.toFixed(5)}`, 'success');
+}
+
+async function lookupRankings() {
+  const name = document.getElementById('fName').value.trim();
+  if (!name) { toast('Enter the institution name first.', 'error'); return; }
+  const btn = document.getElementById('rankBtn');
+  const info = document.getElementById('rankingResult');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Searching via Google...';
+  info.innerHTML = '<span class="text-muted small">Asking Gemini to search Google for current rankings — this takes a few seconds...</span>';
+  try {
+    const res = await api('GET', '/api/lookup/rankings?name=' + encodeURIComponent(name));
+    const d = await res.json();
+    if (!res.ok) {
+      info.innerHTML = `<span class="text-danger"><i class="bi bi-exclamation-circle me-1"></i>${esc(d.error)}</span>`;
+      return;
+    }
+    const s = (id, val) => { if (val) document.getElementById(id).value = val; };
+    s('fQsRank', d.qs_rank); s('fQsYear', d.qs_year);
+    s('fTheRank', d.the_rank); s('fTheYear', d.the_year);
+    s('fShanghaiRank', d.shanghai_rank); s('fShanghaiYear', d.shanghai_year);
+    s('fLeidenRank', d.leiden_rank); s('fLeidenYear', d.leiden_year);
+    const rows = [
+      ['QS', d.qs_rank, d.qs_year],
+      ['THE', d.the_rank, d.the_year],
+      ['Shanghai', d.shanghai_rank, d.shanghai_year],
+      ['Leiden', d.leiden_rank, d.leiden_year]
+    ];
+    const filled = rows.filter(r => r[1]);
+    const missing = rows.filter(r => !r[1]).map(r => r[0]);
+    let html = '';
+    if (filled.length) html += '<span class="text-success"><i class="bi bi-check-circle me-1"></i>' +
+      filled.map(r => `<strong>${r[0]}</strong>: #${r[1]} (${r[2]})`).join(' &nbsp;·&nbsp; ') + '</span>';
+    if (missing.length) html += `<br><span class="text-muted small">Not found: ${missing.join(', ')} — enter manually</span>`;
+    if (d.sources?.length) html += `<br><span class="text-muted small">Sources: ` +
+      d.sources.map(u => `<a href="${esc(u)}" target="_blank" class="text-muted">${esc(u.replace(/https?:\/\/(www\.)?/,'').split('/')[0])}</a>`).join(', ') + '</span>';
+    info.innerHTML = html || '<span class="text-muted">No ranking data found — enter manually.</span>';
+    if (filled.length) toast(`Found ${filled.length} ranking(s) for ${name}`, 'success');
+  } catch(e) {
+    info.innerHTML = `<span class="text-danger">${esc(e.message)}</span>`;
+  } finally {
+    btn.disabled = false; btn.innerHTML = '<i class="bi bi-stars me-1"></i>Auto-lookup';
+  }
+}
+
+function openOrbitPreview(name, lat, lng, uniId, orbitId) {
+  const p = new URLSearchParams({
+    name, lat, lng,
+    uniId: uniId || '',
+    adminMode: '1',
+    orbitId: orbitId || ''
+  });
+  window.open('/orbit/?' + p.toString(), '_blank');
+}
+
+function haversineKm(lat1, lon1, lat2, lon2) {
+  const R = 6371, d2r = Math.PI / 180;
+  const dLat = (lat2 - lat1) * d2r, dLon = (lon2 - lon1) * d2r;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*d2r)*Math.cos(lat2*d2r)*Math.sin(dLon/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+async function findAirport() {
+  const lat = parseFloat(document.getElementById('fLat').value);
+  const lng = parseFloat(document.getElementById('fLng').value);
+  if (!isFinite(lat) || !isFinite(lng)) {
+    toast('Set the coordinates first, then find the nearest airport.', 'error'); return;
+  }
+  const btn = document.getElementById('airportBtn');
+  btn.disabled = true; btn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Searching...';
+  try {
+    const query = `[out:json][timeout:20];node["aeroway"="aerodrome"]["iata"](around:600000,${lat},${lng});out body;`;
+    const resp = await fetch('https://overpass-api.de/api/interpreter', {
+      method: 'POST', body: 'data=' + encodeURIComponent(query)
+    });
+    const data = await resp.json();
+    if (!data.elements?.length) { toast('No airports found within 600 km.', 'warn'); return; }
+    const nearest = data.elements.reduce((best, n) => {
+      const d = haversineKm(lat, lng, n.lat, n.lon);
+      return d < best.d ? { d, n } : best;
+    }, { d: Infinity, n: null }).n;
+    if (!nearest) return;
+    const iata = nearest.tags.iata || '';
+    const name = nearest.tags.name || nearest.tags['name:en'] || '';
+    const distKm = haversineKm(lat, lng, nearest.lat, nearest.lon);
+    // Istanbul Airport IST: 41.2753, 28.7519
+    const istDist = haversineKm(41.2753, 28.7519, nearest.lat, nearest.lon);
+    const flightMin = Math.round(istDist / 850 * 60 + 50);
+    document.getElementById('fAirportName').value = name;
+    document.getElementById('fAirportCode').value = iata;
+    document.getElementById('fFlightMin').value = flightMin;
+    toast(`Found: ${name} (${iata}) — ${Math.round(distKm)} km away. Flight from Istanbul ≈ ${flightMin} min.`, 'success');
+  } catch(e) {
+    toast('Airport lookup failed: ' + e.message, 'error');
+  } finally {
+    btn.disabled = false; btn.innerHTML = '<i class="bi bi-airplane me-1"></i>Find Nearest Airport &amp; Flight Time from Istanbul';
+  }
+}
+
+async function fetchWikiDescription() {
+  const name = document.getElementById('fName').value.trim();
+  if (!name) { toast('Enter the institution name first.', 'error'); return; }
+  try {
+    const search = await (await fetch(
+      `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(name)}&format=json&origin=*&srlimit=1`
+    )).json();
+    const title = search.query?.search?.[0]?.title;
+    if (!title) { toast('No Wikipedia article found for this name.', 'warn'); return; }
+    const summary = await (await fetch(
+      `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`
+    )).json();
+    const extract = summary.extract;
+    if (!extract) { toast('Wikipedia article found but has no description.', 'warn'); return; }
+    const short = extract.split('. ').slice(0, 3).join('. ') + '.';
+    document.getElementById('fDesc').value = short;
+    toast(`Description fetched from Wikipedia: "${title}"`, 'success');
+  } catch(e) {
+    toast('Wikipedia fetch failed: ' + e.message, 'error');
+  }
 }
 
 function addProgram() {
-  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', scholarship_available:false, description_en:'', status:'active' });
+  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', field:'', scholarship_available:false, description_en:'', status:'active', requirements_json:null, placement_year:false, internship_available:false, international_eligible:true, internship_paid:'', employer_partnerships:'', live_industry_projects:false, professional_accreditation:'', graduate_outcome_source:'', graduate_outcome_date:'', scholarship_amount:'', scholarship_conditions:'', application_deadline:'', deposit_deadline:'', scholarship_deadline:'' });
   renderPrograms();
   setTimeout(() => {
     const cards = document.querySelectorAll('.program-card');
@@ -719,6 +1844,12 @@ function renderPrograms() {
               oninput="updProg(${i},'gpa_requirement',this.value)" placeholder="e.g. 2.5 / 4.0">
           </div>
           <div class="col-md-4">
+            <label class="form-label small fw-semibold">Field / Discipline</label>
+            <select class="form-select form-select-sm" onchange="updProg(${i},'field',this.value)">
+              ${['','Business & Economics','Engineering','Medicine & Health','AI & Technology','Social Sciences','Other'].map(f=>`<option value="${esc(f)}" ${(p.field||'')===f?'selected':''}>${f||'— auto (by name) —'}</option>`).join('')}
+            </select>
+          </div>
+          <div class="col-md-4">
             <label class="form-label small fw-semibold">Status</label>
             <select class="form-select form-select-sm" onchange="updProg(${i},'status',this.value)">
               <option ${(p.status||'active')==='active'?'selected':''} value="active">Active</option>
@@ -739,6 +1870,110 @@ function renderPrograms() {
               oninput="updProg(${i},'description_en',this.value)"
               placeholder="Additional notes...">${esc(p.description_en||'')}</textarea>
           </div>
+
+          <!-- ── Placement & Internship ────────────────────────────── -->
+          <div class="col-12 mt-1"><hr class="my-1"><span class="text-muted small fw-semibold text-uppercase" style="letter-spacing:.05em;font-size:.68rem">Placement & Internship</span></div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold d-block">Placement Year</label>
+            <div class="form-check form-switch mt-1">
+              <input class="form-check-input" type="checkbox" role="switch" id="ppy_${i}"
+                ${p.placement_year?'checked':''} onchange="updProg(${i},'placement_year',this.checked)">
+              <label class="form-check-label small" for="ppy_${i}">Available</label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold d-block">Internship</label>
+            <div class="form-check form-switch mt-1">
+              <input class="form-check-input" type="checkbox" role="switch" id="pia_${i}"
+                ${p.internship_available?'checked':''} onchange="updProg(${i},'internship_available',this.checked)">
+              <label class="form-check-label small" for="pia_${i}">Available</label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold">Paid / Unpaid</label>
+            <select class="form-select form-select-sm" onchange="updProg(${i},'internship_paid',this.value)">
+              ${['','paid','unpaid','both'].map(v=>`<option value="${v}" ${(p.internship_paid||'')===v?'selected':''}>${v||'— N/A —'}</option>`).join('')}
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold d-block">Intl. Students Eligible</label>
+            <div class="form-check form-switch mt-1">
+              <input class="form-check-input" type="checkbox" role="switch" id="pie_${i}"
+                ${p.international_eligible!==false?'checked':''} onchange="updProg(${i},'international_eligible',this.checked)">
+              <label class="form-check-label small" for="pie_${i}">Yes</label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold d-block">Live Industry Projects</label>
+            <div class="form-check form-switch mt-1">
+              <input class="form-check-input" type="checkbox" role="switch" id="plp_${i}"
+                ${p.live_industry_projects?'checked':''} onchange="updProg(${i},'live_industry_projects',this.checked)">
+              <label class="form-check-label small" for="plp_${i}">Yes</label>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <label class="form-label small fw-semibold">Employer Partnerships</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.employer_partnerships||'')}"
+              oninput="updProg(${i},'employer_partnerships',this.value)" placeholder="e.g. Deloitte, PwC, NHS">
+          </div>
+
+          <!-- ── Accreditation & Outcomes ──────────────────────────── -->
+          <div class="col-12 mt-1"><hr class="my-1"><span class="text-muted small fw-semibold text-uppercase" style="letter-spacing:.05em;font-size:.68rem">Accreditation & Graduate Outcomes</span></div>
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Professional Accreditation</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.professional_accreditation||'')}"
+              oninput="updProg(${i},'professional_accreditation',this.value)" placeholder="e.g. AACSB, EQUIS, BPS, GMC">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Graduate Outcome Source</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.graduate_outcome_source||'')}"
+              oninput="updProg(${i},'graduate_outcome_source',this.value)" placeholder="e.g. HESA 2023/24">
+          </div>
+          <div class="col-md-2">
+            <label class="form-label small fw-semibold">Outcome Date</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.graduate_outcome_date||'')}"
+              oninput="updProg(${i},'graduate_outcome_date',this.value)" placeholder="e.g. 2024">
+          </div>
+
+          <!-- ── Scholarship Details ───────────────────────────────── -->
+          <div class="col-12 mt-1"><hr class="my-1"><span class="text-muted small fw-semibold text-uppercase" style="letter-spacing:.05em;font-size:.68rem">Scholarship Details</span></div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Scholarship Amount</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.scholarship_amount||'')}"
+              oninput="updProg(${i},'scholarship_amount',this.value)" placeholder="e.g. £5,000/year">
+          </div>
+          <div class="col-md-8">
+            <label class="form-label small fw-semibold">Continuation Conditions</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.scholarship_conditions||'')}"
+              oninput="updProg(${i},'scholarship_conditions',this.value)" placeholder="e.g. Maintain 60% average each year">
+          </div>
+
+          <!-- ── Deadlines ─────────────────────────────────────────── -->
+          <div class="col-12 mt-1"><hr class="my-1"><span class="text-muted small fw-semibold text-uppercase" style="letter-spacing:.05em;font-size:.68rem">Deadlines</span></div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Application Deadline</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.application_deadline||'')}"
+              oninput="updProg(${i},'application_deadline',this.value)" placeholder="e.g. 31 Jan 2026 / Rolling">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Deposit Deadline</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.deposit_deadline||'')}"
+              oninput="updProg(${i},'deposit_deadline',this.value)" placeholder="e.g. 1 Apr 2026">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label small fw-semibold">Scholarship Deadline</label>
+            <input type="text" class="form-control form-control-sm" value="${esc(p.scholarship_deadline||'')}"
+              oninput="updProg(${i},'scholarship_deadline',this.value)" placeholder="e.g. 15 Dec 2025">
+          </div>
+
+          <div class="col-12">
+            <button type="button" class="btn btn-outline-info btn-sm" onclick="openReqEditor(${i})">
+              <i class="bi bi-gear me-1"></i>Detailed Requirements (eligibility)
+            </button>
+            <div class="form-text text-muted small mt-1">
+              The detailed editor powers the eligibility matcher on the public site. The simple English / GPA fields above still feed legacy columns and list filters.
+            </div>
+          </div>
         </div>
       </div>
     </div>`;
@@ -748,6 +1983,125 @@ function renderPrograms() {
     const el = document.getElementById(`pt_${i}`);
     if (el && p.program_type_id) el.value = p.program_type_id;
   });
+}
+
+// ── Detailed requirements (eligibility) editor ─────────────────────────────────
+let reqEditingIdx = -1;
+const REQ_QUAL_TYPES = ['IB','A-Level','AP','National Diploma','Foundation','Other'];
+const REQ_ENG_TESTS  = ['IELTS','TOEFL','Duolingo','PTE','Cambridge'];
+const REQ_STD_TESTS  = ['GRE','GMAT','SAT'];
+// Working draft of the lists while the modal is open
+let reqDraft = { quals: [], eng: [], std: [] };
+
+function reqParse(raw) {
+  if (!raw) return null;
+  if (typeof raw === 'object') return raw;
+  try { return JSON.parse(raw); } catch (e) { return null; }
+}
+
+function openReqEditor(i) {
+  reqEditingIdx = i;
+  const reqs = reqParse(formPrograms[i].requirements_json) || {};
+  document.getElementById('reqLevel').value = reqs.education_level || 'none';
+  document.getElementById('reqGpaMin').value = (reqs.gpa && reqs.gpa.min != null) ? reqs.gpa.min : '';
+  document.getElementById('reqGpaScale').value = (reqs.gpa && reqs.gpa.scale) ? String(reqs.gpa.scale) : '4.0';
+  reqDraft = {
+    quals: Array.isArray(reqs.qualifications) ? reqs.qualifications.map(q => ({ type: q.type || 'IB', min: q.min != null ? String(q.min) : '' })) : [],
+    eng:   Array.isArray(reqs.english) ? reqs.english.map(e => ({ test: e.test || 'IELTS', min: e.min != null ? String(e.min) : '' })) : [],
+    std:   Array.isArray(reqs.standardized) ? reqs.standardized.map(s => ({ test: s.test || 'GRE', min: s.min != null ? String(s.min) : '' })) : []
+  };
+  reqRenderLists();
+  const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('reqModal'));
+  modal.show();
+}
+
+function reqSelect(options, current) {
+  return options.map(o => `<option ${String(current) === o ? 'selected' : ''} value="${esc(o)}">${esc(o)}</option>`).join('');
+}
+
+function reqRenderLists() {
+  const selStyle = 'background:#1e293b;border-color:rgba(255,255,255,.15);color:#e2e8f0';
+  const inStyle  = 'background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0';
+
+  document.getElementById('reqQuals').innerHTML = reqDraft.quals.map((q, k) => `
+    <div class="row g-2 mb-2 align-items-center">
+      <div class="col-5">
+        <select class="form-select form-select-sm" style="${selStyle}" onchange="reqUpd('quals',${k},'type',this.value)">
+          ${reqSelect(REQ_QUAL_TYPES, q.type)}
+        </select>
+      </div>
+      <div class="col-6">
+        <input type="text" class="form-control form-control-sm" style="${inStyle}" value="${esc(q.min||'')}"
+          oninput="reqUpd('quals',${k},'min',this.value)" placeholder='min, e.g. "32" or "BBB" (blank = no minimum)'>
+      </div>
+      <div class="col-1 text-end">
+        <button type="button" class="btn btn-outline-danger btn-sm py-0 px-2" onclick="reqDel('quals',${k})"><i class="bi bi-x"></i></button>
+      </div>
+    </div>`).join('') || '<div class="text-muted small mb-2">No qualifications added.</div>';
+
+  document.getElementById('reqEng').innerHTML = reqDraft.eng.map((e, k) => `
+    <div class="row g-2 mb-2 align-items-center">
+      <div class="col-5">
+        <select class="form-select form-select-sm" style="${selStyle}" onchange="reqUpd('eng',${k},'test',this.value)">
+          ${reqSelect(REQ_ENG_TESTS, e.test)}
+        </select>
+      </div>
+      <div class="col-6">
+        <input type="number" step="0.1" class="form-control form-control-sm" style="${inStyle}" value="${esc(e.min||'')}"
+          oninput="reqUpd('eng',${k},'min',this.value)" placeholder="min score, e.g. 6.5">
+      </div>
+      <div class="col-1 text-end">
+        <button type="button" class="btn btn-outline-danger btn-sm py-0 px-2" onclick="reqDel('eng',${k})"><i class="bi bi-x"></i></button>
+      </div>
+    </div>`).join('') || '<div class="text-muted small mb-2">No English tests added.</div>';
+
+  document.getElementById('reqStd').innerHTML = reqDraft.std.map((s, k) => `
+    <div class="row g-2 mb-2 align-items-center">
+      <div class="col-5">
+        <select class="form-select form-select-sm" style="${selStyle}" onchange="reqUpd('std',${k},'test',this.value)">
+          ${reqSelect(REQ_STD_TESTS, s.test)}
+        </select>
+      </div>
+      <div class="col-6">
+        <input type="number" step="1" class="form-control form-control-sm" style="${inStyle}" value="${esc(s.min||'')}"
+          oninput="reqUpd('std',${k},'min',this.value)" placeholder="min score, e.g. 310">
+      </div>
+      <div class="col-1 text-end">
+        <button type="button" class="btn btn-outline-danger btn-sm py-0 px-2" onclick="reqDel('std',${k})"><i class="bi bi-x"></i></button>
+      </div>
+    </div>`).join('') || '<div class="text-muted small mb-2">No standardized tests added.</div>';
+}
+
+function reqAddQual() { reqDraft.quals.push({ type: 'IB', min: '' }); reqRenderLists(); reqChanged(); }
+function reqAddEng()  { reqDraft.eng.push({ test: 'IELTS', min: '' }); reqRenderLists(); reqChanged(); }
+function reqAddStd()  { reqDraft.std.push({ test: 'GRE', min: '' }); reqRenderLists(); reqChanged(); }
+function reqDel(list, k) { reqDraft[list].splice(k, 1); reqRenderLists(); reqChanged(); }
+function reqUpd(list, k, field, val) { if (reqDraft[list][k]) { reqDraft[list][k][field] = val; reqChanged(); } }
+
+// Assemble and write back to formPrograms[reqEditingIdx].requirements_json (omit empty sections)
+function reqChanged() {
+  if (reqEditingIdx < 0 || !formPrograms[reqEditingIdx]) return;
+  const out = {};
+  const level = document.getElementById('reqLevel').value;
+  if (level && level !== 'none') out.education_level = level;
+
+  const gpaMin = document.getElementById('reqGpaMin').value.trim();
+  if (gpaMin !== '') out.gpa = { min: parseFloat(gpaMin), scale: document.getElementById('reqGpaScale').value };
+
+  const quals = reqDraft.quals.filter(q => q.type).map(q => {
+    const o = { type: q.type };
+    if (q.min != null && String(q.min).trim() !== '') o.min = String(q.min).trim();
+    return o;
+  });
+  if (quals.length) out.qualifications = quals;
+
+  const eng = reqDraft.eng.filter(e => e.test && String(e.min).trim() !== '').map(e => ({ test: e.test, min: parseFloat(e.min) }));
+  if (eng.length) out.english = eng;
+
+  const std = reqDraft.std.filter(s => s.test && String(s.min).trim() !== '').map(s => ({ test: s.test, min: parseFloat(s.min) }));
+  if (std.length) out.standardized = std;
+
+  formPrograms[reqEditingIdx].requirements_json = Object.keys(out).length ? out : null;
 }
 
 async function saveEntity() {
@@ -769,15 +2123,18 @@ async function saveEntity() {
   }
 
   const payload = {
-    entity: { name: v('fName'), type: v('fType'), website_url: v('fWebsite')||null, logo_url: v('fLogo')||null, description_en: v('fDesc')||null, status: v('fStatus') },
+    entity: { name: v('fName'), type: v('fType'), website_url: v('fWebsite')||null, logo_url: v('fLogo')||null, description_en: v('fDesc')||null, status: v('fStatus'), featured: document.getElementById('fFeatured').checked,
+      qs_rank: ni('fQsRank'), qs_rank_year: ni('fQsYear'),
+      the_rank: ni('fTheRank'), the_rank_year: ni('fTheYear'),
+      leiden_rank: ni('fLeidenRank'), leiden_rank_year: ni('fLeidenYear'),
+      shanghai_rank: ni('fShanghaiRank'), shanghai_rank_year: ni('fShanghaiYear') },
     location: { city: v('fCity'), country: v('fCountry'), continent: v('fContinent'), campus_name: v('fCampus')||null, address: v('fAddress')||null, latitude: n('fLat'), longitude: n('fLng'), closest_airport_name: v('fAirportName')||null, closest_airport_code: document.getElementById('fAirportCode')?.value?.trim()?.toUpperCase()||null, flight_duration_from_ist_min: ni('fFlightMin'), status: v('fLocStatus') },
     orbit: { orbit_center_lat: n('fOrbitLat'), orbit_center_lng: n('fOrbitLng'), orbit_altitude: n('fOrbitAlt')??400, orbit_pitch: n('fOrbitPitch')??-45, orbit_initial_heading: n('fOrbitHeading')??0, orbit_range: n('fOrbitRange')??400, orbit_rotation_type: v('fOrbitRotType'), orbit_rotation_speed: n('fOrbitSpeed')??0.12, scan_target_lat: n('fScanLat'), scan_target_lng: n('fScanLng'), scan_effect_enabled: c('fOrbitScanEnable'), camera_v_offset: n('fCamV')??0, camera_h_offset: n('fCamH')??0 },
     programs: formPrograms.map(p => ({ ...p, program_type_id: parseInt(p.program_type_id), tuition_fee: p.tuition_fee ? parseFloat(p.tuition_fee) : null, scholarship_available: !!p.scholarship_available }))
   };
 
-  const btn = document.getElementById('saveBtn');
-  btn.disabled = true;
-  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Saving...';
+  const saveBtns = [document.getElementById('saveBtn'), document.getElementById('saveBtnTop')];
+  saveBtns.forEach(b => { if (b) { b.disabled = true; b.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Saving...'; } });
 
   try {
     const res = editingId
@@ -789,13 +2146,1063 @@ async function saveEntity() {
   } catch (e) {
     toast(e.message, 'error');
   } finally {
-    btn.disabled = false;
-    btn.innerHTML = '<i class="bi bi-check-lg me-1"></i>Save Entity';
+    saveBtns.forEach(b => { if (b) { b.disabled = false; b.innerHTML = '<i class="bi bi-check-lg me-1"></i>Save Entity'; } });
   }
 }
 
 function esc(s) { return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
+
+// ── Bulk Rankings ─────────────────────────────────────────────────────────────
+let bulkJobId = null;
+let bulkPollTimer = null;
+let bulkResultsData = [];
+
+async function startBulkRankings(mode) {
+  document.getElementById('bulkMissingBtn').disabled = true;
+  document.getElementById('bulkAllBtn').disabled = true;
+  document.getElementById('bulkStopBtn').classList.remove('d-none');
+  document.getElementById('bulkProgress').classList.remove('d-none');
+  document.getElementById('bulkResults').classList.add('d-none');
+  setProgress(0, 0, 'Starting…');
+  bulkResultsData = [];
+
+  try {
+    const res = await api('POST', '/api/bulk/rankings', { mode });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Failed to start');
+    if (!data.jobId) { toast(data.message || 'No entities to process.', 'warn'); resetBulkUI(); return; }
+    bulkJobId = data.jobId;
+    toast(`Bulk job started — ${data.total} entities queued.`, 'success');
+    bulkPollTimer = setInterval(pollBulkJob, 2500);
+  } catch(e) {
+    toast('Could not start bulk job: ' + e.message, 'error');
+    resetBulkUI();
+  }
+}
+
+async function pollBulkJob() {
+  if (!bulkJobId) return;
+  try {
+    const res = await api('GET', '/api/bulk/rankings/' + bulkJobId);
+    const job = await res.json();
+    const pct = job.total ? Math.round(job.processed / job.total * 100) : 0;
+    setProgress(pct, job.total, `Processing ${job.processed} of ${job.total}…`);
+    if (job.status === 'done' || job.status === 'stopped' || job.status === 'error') {
+      clearInterval(bulkPollTimer); bulkPollTimer = null;
+      bulkResultsData = job.results || [];
+      renderBulkResults(job);
+      resetBulkUI();
+      const msg = job.status === 'stopped' ? 'Job stopped.' : `Done — ${job.results.length} updated, ${job.errors.length} errors.`;
+      toast(msg, job.errors.length ? 'warn' : 'success');
+    }
+  } catch(e) { /* ignore poll errors */ }
+}
+
+async function stopBulkJob() {
+  if (!bulkJobId) return;
+  try { await api('DELETE', '/api/bulk/rankings/' + bulkJobId); } catch {}
+  clearInterval(bulkPollTimer); bulkPollTimer = null;
+  resetBulkUI();
+  toast('Stop requested.', 'warn');
+}
+
+function setProgress(pct, total, text) {
+  document.getElementById('bulkProgressBar').style.width = pct + '%';
+  document.getElementById('bulkProgressPct').textContent = pct + '%';
+  document.getElementById('bulkProgressText').textContent = text;
+}
+
+function resetBulkUI() {
+  document.getElementById('bulkMissingBtn').disabled = false;
+  document.getElementById('bulkAllBtn').disabled = false;
+  document.getElementById('bulkStopBtn').classList.add('d-none');
+}
+
+function renderBulkResults(job) {
+  const allRows = (job.results || []).map(r => ({ ...r, _ok: true }))
+    .concat((job.errors || []).map(r => ({ ...r, _ok: false })));
+  const found = (job.results || []).filter(r => r.qs_rank || r.the_rank || r.shanghai_rank || r.leiden_rank).length;
+  document.getElementById('bulkSummary').textContent =
+    `${job.results.length} updated · ${found} with ranking data · ${job.errors.length} errors`;
+  document.getElementById('bulkResultsBody').innerHTML = allRows.map(r => `
+    <tr class="${r._ok ? '' : 'table-danger'}">
+      <td class="ps-3 small">${esc(r.name)}</td>
+      <td class="text-center">${r.qs_rank ? `<span class="badge bg-primary">#${r.qs_rank}</span>` : '<span class="text-muted small">—</span>'}</td>
+      <td class="text-center">${r.the_rank ? `<span class="badge bg-success">#${r.the_rank}</span>` : '<span class="text-muted small">—</span>'}</td>
+      <td class="text-center">${r.shanghai_rank ? `<span class="badge bg-warning text-dark">#${r.shanghai_rank}</span>` : '<span class="text-muted small">—</span>'}</td>
+      <td class="text-center">${r.leiden_rank ? `<span class="badge bg-info text-dark">#${r.leiden_rank}</span>` : '<span class="text-muted small">—</span>'}</td>
+      <td class="small text-muted">${esc((r.sources||[]).join(', ')||'—')}</td>
+      <td class="pe-3"><span class="badge ${r._ok ? 'bg-success' : 'bg-danger'}">${r._ok ? 'Updated' : 'Error'}</span></td>
+    </tr>`).join('');
+  document.getElementById('bulkResults').classList.remove('d-none');
+}
+
+// ── Bulk Geo-lookup ───────────────────────────────────────────────────────────
+let geoJobId = null;
+let geoPollTimer = null;
+
+async function startBulkGeo(mode) {
+  document.getElementById('geoStartBtn').disabled = true;
+  document.getElementById('geoAllBtn').disabled = true;
+  document.getElementById('geoStopBtn').classList.remove('d-none');
+  document.getElementById('geoProgress').classList.remove('d-none');
+  document.getElementById('geoResults').classList.add('d-none');
+  setGeoProgress(0, 0, 'Starting…');
+  try {
+    const res = await api('POST', '/api/bulk/geo-lookup', { mode });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Failed to start');
+    if (!data.jobId) { toast(data.message || 'All entities already have coordinates.', 'success'); resetGeoUI(); return; }
+    geoJobId = data.jobId;
+    toast(`Geo-lookup started — ${data.total} entities queued (≈${Math.ceil(data.total * 0.4 / 60)} min).`, 'success');
+    geoPollTimer = setInterval(pollGeoJob, 2500);
+  } catch(e) {
+    toast('Could not start geo-lookup: ' + e.message, 'error');
+    resetGeoUI();
+  }
+}
+
+async function pollGeoJob() {
+  if (!geoJobId) return;
+  try {
+    const res = await api('GET', '/api/bulk/geo-lookup/' + geoJobId);
+    const job = await res.json();
+    const pct = job.total ? Math.round(job.processed / job.total * 100) : 0;
+    setGeoProgress(pct, job.total, `Processing ${job.processed} of ${job.total}…`);
+    if (job.status === 'done' || job.status === 'stopped' || job.status === 'error') {
+      clearInterval(geoPollTimer); geoPollTimer = null;
+      renderGeoResults(job);
+      resetGeoUI();
+      toast(`Geo-lookup done — ${job.results.length} found, ${job.notFound.length} not found, ${job.errors.length} errors.`, job.notFound.length ? 'warn' : 'success');
+    }
+  } catch(e) {}
+}
+
+async function stopBulkGeo() {
+  if (!geoJobId) return;
+  try { await api('DELETE', '/api/bulk/geo-lookup/' + geoJobId); } catch {}
+  clearInterval(geoPollTimer); geoPollTimer = null;
+  resetGeoUI();
+  toast('Geo-lookup stopped.', 'warn');
+}
+
+function setGeoProgress(pct, total, text) {
+  document.getElementById('geoProgressBar').style.width = pct + '%';
+  document.getElementById('geoProgressPct').textContent = pct + '%';
+  document.getElementById('geoProgressText').textContent = text;
+}
+
+function resetGeoUI() {
+  document.getElementById('geoStartBtn').disabled = false;
+  document.getElementById('geoAllBtn').disabled = false;
+  document.getElementById('geoStopBtn').classList.add('d-none');
+}
+
+function renderGeoResults(job) {
+  document.getElementById('geoSummary').textContent =
+    `${job.results.length} found · ${job.notFound.length} not found · ${job.errors.length} errors`;
+  const rows = [
+    ...job.results.map(r => ({ ...r, _s: 'ok' })),
+    ...job.notFound.map(r => ({ ...r, _s: 'notfound' })),
+    ...job.errors.map(r => ({ ...r, _s: 'error' }))
+  ];
+  document.getElementById('geoResultsBody').innerHTML = rows.map(r => `
+    <tr class="${r._s === 'ok' ? '' : r._s === 'notfound' ? 'table-warning' : 'table-danger'}">
+      <td class="ps-3 small">${esc(r.entity_name)}</td>
+      <td class="small text-muted">${esc(r.city || '—')}</td>
+      <td class="small">${r.lat ? r.lat.toFixed(5) : '—'}</td>
+      <td class="small">${r.lng ? r.lng.toFixed(5) : '—'}</td>
+      <td class="small">${r.source ? `<span class="badge ${r.source === 'google' ? 'bg-primary' : 'bg-secondary'}">${r.source === 'google' ? 'Google' : 'OSM'}</span>` : '—'}</td>
+      <td class="pe-3"><span class="badge ${r._s === 'ok' ? 'bg-success' : r._s === 'notfound' ? 'bg-warning text-dark' : 'bg-danger'}">${r._s === 'ok' ? 'Found' : r._s === 'notfound' ? 'Not found' : 'Error'}</span></td>
+    </tr>`).join('');
+  document.getElementById('geoResults').classList.remove('d-none');
+}
+
+async function runCsvImport() {
+  const fileInput = document.getElementById('csvFile');
+  if (!fileInput.files[0]) { toast('Select a CSV file first.', 'warn'); return; }
+
+  const btn = document.getElementById('csvImportBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Importing…';
+  document.getElementById('csvImportProgress').classList.remove('d-none');
+  document.getElementById('csvImportResult').classList.add('d-none');
+
+  try {
+    const formData = new FormData();
+    formData.append('file', fileInput.files[0]);
+
+    const res = await fetch('/api/bulk/csv-import', {
+      method: 'POST',
+      headers: { 'Authorization': 'Bearer ' + token },
+      body: formData
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Import failed');
+
+    const alertEl = document.getElementById('csvImportResultAlert');
+    alertEl.className = 'alert alert-success mb-0';
+    alertEl.innerHTML = `<i class="bi bi-check-circle me-1"></i>
+      <strong>${data.programsCreated.toLocaleString()}</strong> programs imported &nbsp;·&nbsp;
+      <strong>${data.entitiesCreated}</strong> universities created &nbsp;·&nbsp;
+      <strong>${data.locationsCreated}</strong> locations created &nbsp;·&nbsp;
+      <strong>${data.errors}</strong> errors
+      <br><small class="text-muted">Total rows processed: ${data.total.toLocaleString()}</small>`;
+    document.getElementById('csvImportResult').classList.remove('d-none');
+    fileInput.value = '';
+    toast(`Import complete — ${data.programsCreated.toLocaleString()} programs added!`, 'success');
+    loadStats();
+  } catch(e) {
+    const alertEl = document.getElementById('csvImportResultAlert');
+    alertEl.className = 'alert alert-danger mb-0';
+    alertEl.innerHTML = `<i class="bi bi-exclamation-circle me-1"></i>${esc(e.message)}`;
+    document.getElementById('csvImportResult').classList.remove('d-none');
+    toast('Import failed: ' + e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="bi bi-rocket-takeoff me-1"></i>Import All';
+    document.getElementById('csvImportProgress').classList.add('d-none');
+  }
+}
+
+async function importUniversities() {
+  const raw = document.getElementById('importNames').value;
+  const names = raw.split('\n').map(s => s.trim()).filter(s => s.length > 0);
+  if (!names.length) { toast('Paste at least one university name.', 'warn'); return; }
+
+  const type = document.getElementById('importType').value;
+  const status = document.getElementById('importStatus').value;
+  const fetchRankings = document.getElementById('importFetchRankings').checked;
+
+  const btn = document.getElementById('importBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Importing…';
+
+  try {
+    const res = await api('POST', '/api/bulk/import', { names, type, status });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Import failed');
+
+    const alertEl = document.getElementById('importResultAlert');
+    alertEl.className = 'alert alert-success mb-0';
+    alertEl.innerHTML = `<i class="bi bi-check-circle me-1"></i>
+      <strong>${data.created}</strong> created &nbsp;·&nbsp;
+      <strong>${data.skipped}</strong> already existed &nbsp;·&nbsp;
+      <strong>${data.errors}</strong> errors`;
+    document.getElementById('importResult').classList.remove('d-none');
+    document.getElementById('importNames').value = '';
+    toast(`Import done: ${data.created} new universities added.`, 'success');
+    loadStats();
+
+    if (fetchRankings && data.created > 0) {
+      toast('Starting bulk rankings fetch for new entities…', 'success');
+      setTimeout(() => startBulkRankings('missing'), 1000);
+    }
+  } catch(e) {
+    toast('Import failed: ' + e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="bi bi-cloud-upload me-1"></i>Import';
+  }
+}
+
+function exportBulkCSV() {
+  if (!bulkResultsData.length) { toast('No results to export.', 'warn'); return; }
+  const hdr = ['Name','QS Rank','QS Year','THE Rank','THE Year','Shanghai Rank','Shanghai Year','Leiden Rank','Leiden Year','Sources'];
+  const rows = bulkResultsData.map(r => [
+    r.name, r.qs_rank||'', r.qs_year||'', r.the_rank||'', r.the_year||'',
+    r.shanghai_rank||'', r.shanghai_year||'', r.leiden_rank||'', r.leiden_year||'',
+    (r.sources||[]).join('; ')
+  ]);
+  const csv = [hdr, ...rows].map(row => row.map(c => `"${String(c).replace(/"/g,'""')}"`).join(',')).join('\n');
+  const a = document.createElement('a');
+  a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+  a.download = `rankings_${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+}
+
+// ── Leads ─────────────────────────────────────────────────────────────────────
+let allLeads = [];
+
+async function loadLeads() {
+  try {
+    const r = await api('GET', '/api/admin/leads');
+    allLeads = r.ok ? await r.json() : [];
+    const sr = await api('GET', '/api/admin/leads/stats');
+    if (sr.ok) {
+      const s = await sr.json();
+      document.getElementById('ls_total').textContent = s.total || 0;
+      document.getElementById('ls_new').textContent = s.new_count || 0;
+      document.getElementById('ls_contacted').textContent = s.contacted || 0;
+      document.getElementById('ls_converted').textContent = s.converted || 0;
+      const badge = document.getElementById('newLeadsBadge');
+      if (s.new_count > 0) { badge.textContent = s.new_count; badge.classList.remove('d-none'); }
+      else badge.classList.add('d-none');
+    }
+    filterLeads();
+  } catch (e) {
+    document.getElementById('leadsTableWrap').innerHTML = '<div class="text-danger small p-3">Failed to load leads.</div>';
+  }
+}
+
+function filterLeads() {
+  const q = (document.getElementById('leadSearch').value || '').toLowerCase();
+  const st = document.getElementById('leadStatusFilter').value;
+  const filtered = allLeads.filter(l => {
+    if (st && l.status !== st) return false;
+    if (q && !['student_name','email','program_name','university_name'].some(k => (l[k]||'').toLowerCase().includes(q))) return false;
+    return true;
+  });
+  renderLeadsTable(filtered);
+}
+
+const STATUS_COLORS = { new: 'danger', contacted: 'warning', converted: 'success', closed: 'secondary' };
+
+function renderLeadsTable(leads) {
+  const wrap = document.getElementById('leadsTableWrap');
+  if (!leads.length) { wrap.innerHTML = '<div class="text-muted small text-center py-5">No leads found.</div>'; return; }
+  wrap.innerHTML = `<div class="table-responsive">
+    <table class="table table-hover table-sm align-middle mb-0" style="font-size:.83rem">
+      <thead class="table-dark">
+        <tr>
+          <th>Date</th><th>Name</th><th>Email</th><th>Phone</th>
+          <th>Program</th><th>University</th><th>Country</th>
+          <th>Status</th><th>Notes</th><th></th>
+        </tr>
+      </thead>
+      <tbody>
+        ${leads.map(l => `<tr>
+          <td style="white-space:nowrap;color:#6c757d">${new Date(l.created_at).toLocaleDateString()}</td>
+          <td class="fw-semibold">${esc2(l.student_name)}${l.message?' <i class="bi bi-chat-left-text-fill text-primary" style="font-size:.7rem" title="Has message"></i>':''}</td>
+          <td><a href="mailto:${esc2(l.email)}" style="color:#818cf8">${esc2(l.email)}</a></td>
+          <td>${esc2(l.phone||'—')}</td>
+          <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(l.program_name||'')}">${esc2(l.program_name||'—')}</td>
+          <td style="max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc2(l.university_name||'—')}</td>
+          <td>${esc2(l.country||'—')}</td>
+          <td>
+            <select class="form-select form-select-sm py-0" style="font-size:.75rem;width:110px" onchange="updateLeadStatus(${l.id},this.value)">
+              ${['new','contacted','converted','closed'].map(s => `<option value="${s}"${l.status===s?' selected':''}>${s}</option>`).join('')}
+            </select>
+          </td>
+          <td>
+            <input type="text" value="${esc2(l.notes||'')}" placeholder="Add note…" class="form-control form-control-sm" style="min-width:120px;font-size:.75rem"
+              onblur="updateLeadNotes(${l.id},this.value)">
+          </td>
+          <td><button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem;white-space:nowrap" onclick="openLeadDetail(${l.id})"><i class="bi bi-eye me-1"></i>View</button></td>
+        </tr>`).join('')}
+      </tbody>
+    </table>
+  </div>
+  <div class="text-muted small mt-2 text-end">${leads.length} lead${leads.length!==1?'s':''}</div>`;
+}
+
+async function updateLeadStatus(id, status) {
+  await api('PATCH', `/api/admin/leads/${id}`, { status });
+  const lead = allLeads.find(l => l.id === id);
+  if (lead) lead.status = status;
+  const sr = await api('GET', '/api/admin/leads/stats');
+  if (sr.ok) {
+    const s = await sr.json();
+    document.getElementById('ls_new').textContent = s.new_count || 0;
+    document.getElementById('ls_contacted').textContent = s.contacted || 0;
+    document.getElementById('ls_converted').textContent = s.converted || 0;
+    const badge = document.getElementById('newLeadsBadge');
+    if (s.new_count > 0) { badge.textContent = s.new_count; badge.classList.remove('d-none'); }
+    else badge.classList.add('d-none');
+  }
+}
+
+async function updateLeadNotes(id, notes) {
+  await api('PATCH', `/api/admin/leads/${id}`, { notes });
+  const lead = allLeads.find(l => l.id === id);
+  if (lead) lead.notes = notes;
+}
+
+let leadModal, currentLeadId = null;
+async function openLeadDetail(id) {
+  currentLeadId = id;
+  const l = allLeads.find(x => x.id === id);
+  if (!l) return;
+  leadModal = leadModal || new bootstrap.Modal(document.getElementById('leadModal'));
+  const row = (label, val) => `<tr><td style="padding:4px 0;color:#94a3b8;width:120px">${label}</td><td style="padding:4px 0">${esc2(val||'—')}</td></tr>`;
+  document.getElementById('leadDetailBody').innerHTML = `
+    <table style="width:100%;font-size:.86rem">
+      ${row('Name', l.student_name)}
+      ${row('Email', l.email)}
+      ${row('Phone', l.phone)}
+      ${row('Program', l.program_name)}
+      ${row('University', l.university_name)}
+      ${row('Country', l.country)}
+      ${row('Received', new Date(l.created_at).toLocaleString())}
+    </table>
+    ${l.message ? `<div class="mt-3 p-3 rounded" style="background:rgba(255,255,255,.05)"><div class="small text-muted mb-1">Student's message</div>${esc2(l.message).replace(/\n/g,'<br>')}</div>` : '<div class="mt-3 text-muted small fst-italic">No message was included.</div>'}`;
+  document.getElementById('replyBody').value = '';
+  document.getElementById('leadReplies').innerHTML = '<div class="text-muted small">Loading…</div>';
+  leadModal.show();
+  loadReplies(id);
+}
+
+async function loadReplies(id) {
+  const wrap = document.getElementById('leadReplies');
+  try {
+    const r = await api('GET', `/api/admin/leads/${id}/replies`);
+    const replies = r.ok ? await r.json() : [];
+    if (!replies.length) { wrap.innerHTML = '<div class="text-muted small fst-italic">No replies yet.</div>'; return; }
+    wrap.innerHTML = replies.map(rp => `
+      <div class="p-2 px-3 mb-2 rounded" style="background:rgba(99,102,241,.1);border-left:3px solid #6366f1">
+        <div class="small">${esc2(rp.body).replace(/\n/g,'<br>')}</div>
+        <div class="text-muted" style="font-size:.72rem;margin-top:4px">${esc2(rp.sent_by||'admin')} · ${new Date(rp.created_at).toLocaleString()}</div>
+      </div>`).join('');
+  } catch { wrap.innerHTML = '<div class="text-danger small">Failed to load replies.</div>'; }
+}
+
+async function sendReply() {
+  const body = document.getElementById('replyBody').value.trim();
+  if (!body) { toast('Write a reply first.', 'warn'); return; }
+  const btn = document.getElementById('sendReplyBtn');
+  btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Sending…';
+  try {
+    const r = await api('POST', `/api/admin/leads/${currentLeadId}/reply`, { body });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Failed to send');
+    toast('Reply sent.', 'success');
+    document.getElementById('replyBody').value = '';
+    loadReplies(currentLeadId);
+    const lead = allLeads.find(l => l.id === currentLeadId);
+    if (lead && lead.status === 'new') { lead.status = 'contacted'; filterLeads(); }
+  } catch (e) { toast(e.message, 'error'); }
+  finally { btn.disabled = false; btn.innerHTML = '<i class="bi bi-send me-1"></i>Send Reply'; }
+}
+
+function esc2(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// ── Users ─────────────────────────────────────────────────────────────────────
+let editingUserId = null;
+let userModal;
+
+async function loadUsers() {
+  const tbody = document.getElementById('usersTableBody');
+  tbody.innerHTML = '<tr><td colspan="7" class="text-center text-muted py-5"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</td></tr>';
+  try {
+    const res = await api('GET', '/api/admin/users');
+    const list = await res.json();
+    if (!list.length) { tbody.innerHTML = '<tr><td colspan="7" class="text-center text-muted py-5">No users yet.</td></tr>'; return; }
+    const roleColors = { admin: 'primary', affiliate: 'success', enduser: 'secondary' };
+    tbody.innerHTML = list.map(u => `
+      <tr>
+        <td class="ps-3 fw-semibold">${esc(u.name)}</td>
+        <td class="text-muted small">${esc(u.email)}</td>
+        <td><span class="badge bg-${roleColors[u.role] || 'secondary'}">${u.role}</span></td>
+        <td><span class="badge badge-${u.status}">${cap(u.status)}</span></td>
+        <td class="small text-muted">${u.tier_name ? `<span class="badge bg-info bg-opacity-75">${esc(u.tier_name)}</span>` : '<span class="text-muted">—</span>'}</td>
+        <td class="small text-muted font-monospace">${u.affiliate_code || '—'}</td>
+        <td class="small text-muted">${new Date(u.created_at).toLocaleDateString()}</td>
+        <td class="text-end pe-3">
+          <button class="btn btn-outline-secondary btn-sm me-1" onclick="openUserModal(${u.id}, '${esc(u.name).replace(/'/g,"\\'")}', '${esc(u.email)}', '${u.role}', '${u.status}', ${u.subscription_tier_id||'null'})"><i class="bi bi-pencil"></i></button>
+          <button class="btn btn-outline-danger btn-sm" onclick="deleteUser(${u.id}, '${esc(u.name).replace(/'/g,"\\'")}')"><i class="bi bi-trash"></i></button>
+        </td>
+      </tr>`).join('');
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="7" class="text-center text-danger py-4">${esc(e.message)}</td></tr>`;
+  }
+}
+
+function openUserModal(id, name = '', email = '', role = 'enduser', status = 'active', tierId = null) {
+  editingUserId = id;
+  document.getElementById('userModalTitle').textContent = id ? 'Edit User' : 'Add User';
+  document.getElementById('uName').value = name;
+  document.getElementById('uEmail').value = email;
+  document.getElementById('uEmail').disabled = !!id;
+  document.getElementById('uRole').value = role;
+  document.getElementById('uStatus').value = status;
+  document.getElementById('uPassword').value = '';
+  document.getElementById('uPwHint').style.display = id ? '' : 'none';
+  // Populate tier selector — load fresh from API if empty
+  const sel = document.getElementById('uTierId');
+  if (allTiers.length) populateTierSelects();
+  else api('GET', '/api/admin/tiers').then(r => r.json()).then(t => { allTiers = t; populateTierSelects(); }).catch(() => {});
+  sel.value = tierId || '';
+  if (!userModal) userModal = new bootstrap.Modal(document.getElementById('userModal'));
+  userModal.show();
+}
+
+async function saveUser() {
+  const name = document.getElementById('uName').value.trim();
+  const email = document.getElementById('uEmail').value.trim();
+  const password = document.getElementById('uPassword').value;
+  const role = document.getElementById('uRole').value;
+  const status = document.getElementById('uStatus').value;
+
+  const btn = document.getElementById('uSaveBtn');
+  btn.disabled = true; btn.textContent = 'Saving…';
+  try {
+    const tierId = document.getElementById('uTierId').value;
+    const body = { name, role, status, subscription_tier_id: tierId ? parseInt(tierId) : null };
+    if (!editingUserId) { body.email = email; body.password = password; }
+    else if (password) body.password = password;
+
+    const res = editingUserId
+      ? await api('PUT', '/api/admin/users/' + editingUserId, body)
+      : await api('POST', '/api/admin/users', body);
+    if (!res.ok) throw new Error((await res.json()).error || 'Save failed');
+    userModal.hide();
+    toast(editingUserId ? 'User updated.' : 'User created.');
+    loadUsers();
+  } catch (e) { toast(e.message, 'error'); }
+  finally { btn.disabled = false; btn.textContent = 'Save'; }
+}
+
+async function deleteUser(id, name) {
+  document.getElementById('confirmMsg').textContent = `Delete user "${name}"?`;
+  document.getElementById('confirmBtn').onclick = async () => {
+    try {
+      await api('DELETE', '/api/admin/users/' + id);
+      confirmModal.hide(); toast('User deleted.');
+      loadUsers();
+    } catch (e) { toast(e.message, 'error'); }
+  };
+  confirmModal.show();
+}
+
+// ── Applications ───────────────────────────────────────────────────────────────
+let allApplications = [];
+let appModal = null;
+let currentAppId = null;
+
+const APP_STATUSES = ['submitted','reviewing','pre_accepted','conditional','rejected','completed'];
+const APP_STATUS_LABEL = { submitted:'Submitted', reviewing:'Reviewing', pre_accepted:'Pre-accepted', conditional:'Conditional', rejected:'Rejected', completed:'Completed' };
+
+async function loadApplications() {
+  try {
+    const r = await api('GET', '/api/admin/applications');
+    allApplications = r.ok ? await r.json() : [];
+    const sr = await api('GET', '/api/admin/applications/stats');
+    if (sr.ok) {
+      const s = await sr.json();
+      document.getElementById('as_total').textContent = s.total || 0;
+      document.getElementById('as_submitted').textContent = s.submitted || 0;
+      document.getElementById('as_reviewing').textContent = s.reviewing || 0;
+      document.getElementById('as_accepted').textContent = s.accepted || 0;
+    }
+    filterApplications();
+  } catch (e) {
+    document.getElementById('appsTableWrap').innerHTML = '<div class="text-danger small p-3">Failed to load applications.</div>';
+  }
+}
+
+function filterApplications() {
+  const q = (document.getElementById('appSearch').value || '').toLowerCase();
+  const st = document.getElementById('appStatusFilter').value;
+  const filtered = allApplications.filter(a => {
+    if (st && a.status !== st) return false;
+    if (q) {
+      const name = [a.first_name, a.last_name].filter(Boolean).join(' ');
+      const hay = [name, a.email, a.university_name, a.program_name].map(v => (v || '').toLowerCase());
+      if (!hay.some(v => v.includes(q))) return false;
+    }
+    return true;
+  });
+  renderApplicationsTable(filtered);
+}
+
+function renderApplicationsTable(apps) {
+  const wrap = document.getElementById('appsTableWrap');
+  if (!apps.length) { wrap.innerHTML = '<div class="text-muted small text-center py-5">No applications found.</div>'; return; }
+  wrap.innerHTML = `<div class="table-responsive">
+    <table class="table table-hover table-sm align-middle mb-0" style="font-size:.83rem">
+      <thead class="table-dark">
+        <tr>
+          <th>Date</th><th>Name</th><th>Email</th><th>University</th>
+          <th>Program</th><th>Intake</th><th>Status</th><th class="text-center">Docs</th><th></th>
+        </tr>
+      </thead>
+      <tbody>
+        ${apps.map(a => {
+          const name = [a.first_name, a.last_name].filter(Boolean).join(' ') || '—';
+          return `<tr>
+          <td style="white-space:nowrap;color:#6c757d">${a.created_at ? new Date(a.created_at).toLocaleDateString() : '—'}</td>
+          <td class="fw-semibold">${esc2(name)}</td>
+          <td><a href="mailto:${esc2(a.email)}" style="color:#818cf8">${esc2(a.email)}</a></td>
+          <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(a.university_name||'')}">${esc2(a.university_name||'—')}</td>
+          <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(a.program_name||'')}">${esc2(a.program_name||'—')}</td>
+          <td>${esc2(a.desired_intake||'—')}</td>
+          <td>
+            <select class="form-select form-select-sm py-0" style="font-size:.75rem;width:130px" onchange="updateAppStatus(${a.id},this.value)">
+              ${APP_STATUSES.map(s => `<option value="${s}"${a.status===s?' selected':''}>${APP_STATUS_LABEL[s]}</option>`).join('')}
+            </select>
+          </td>
+          <td class="text-center">${a.doc_count > 0 ? `<span class="badge bg-secondary">${a.doc_count}</span>` : '<span class="text-muted">0</span>'}</td>
+          <td><button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem;white-space:nowrap" onclick="openApplication(${a.id})"><i class="bi bi-eye me-1"></i>View</button></td>
+        </tr>`;}).join('')}
+      </tbody>
+    </table>
+  </div>
+  <div class="text-muted small mt-2 text-end">${apps.length} application${apps.length!==1?'s':''}</div>`;
+}
+
+async function updateAppStatus(id, status) {
+  try {
+    const r = await api('PATCH', `/api/admin/applications/${id}`, { status });
+    if (!r.ok) throw new Error('Update failed');
+    const app = allApplications.find(a => a.id === id);
+    if (app) app.status = status;
+    const sr = await api('GET', '/api/admin/applications/stats');
+    if (sr.ok) {
+      const s = await sr.json();
+      document.getElementById('as_total').textContent = s.total || 0;
+      document.getElementById('as_submitted').textContent = s.submitted || 0;
+      document.getElementById('as_reviewing').textContent = s.reviewing || 0;
+      document.getElementById('as_accepted').textContent = s.accepted || 0;
+    }
+    toast('Status updated.');
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function openApplication(id) {
+  currentAppId = id;
+  appModal = appModal || new bootstrap.Modal(document.getElementById('appModal'));
+  document.getElementById('appDetailBody').innerHTML = '<div class="text-muted small">Loading…</div>';
+  document.getElementById('appDocs').innerHTML = '<div class="text-muted small">Loading…</div>';
+  appModal.show();
+  try {
+    const r = await api('GET', `/api/admin/applications/${id}`);
+    if (!r.ok) throw new Error('Failed to load application');
+    const a = await r.json();
+    renderApplicationDetail(a);
+  } catch (e) {
+    document.getElementById('appDetailBody').innerHTML = `<div class="text-danger small">${esc2(e.message)}</div>`;
+  }
+}
+
+function renderApplicationDetail(a) {
+  const row = (label, val) => `<tr><td style="padding:4px 0;color:#94a3b8;width:150px">${label}</td><td style="padding:4px 0">${esc2(val||'—')}</td></tr>`;
+  const fmtDate = d => d ? new Date(d).toLocaleDateString() : '';
+  const grp = (title, rows) => `<h6 class="fw-semibold mt-3 mb-1" style="color:#a5b4fc"><i class="bi bi-dot"></i>${title}</h6><table style="width:100%;font-size:.86rem">${rows}</table>`;
+  const name = [a.first_name, a.last_name].filter(Boolean).join(' ');
+
+  document.getElementById('appDetailBody').innerHTML =
+    grp('Identity',
+      row('Name', name) +
+      row('Email', a.email) +
+      row('Phone', a.phone) +
+      row('Date of birth', fmtDate(a.date_of_birth)) +
+      row('Place of birth', a.place_of_birth) +
+      row('Nationality', a.nationality) +
+      row('Residence country', a.residence_country) +
+      row('Address', a.address)
+    ) +
+    grp('Passport',
+      row('Passport no', a.passport_no) +
+      row('Issued by', a.passport_issued_by) +
+      row('Issue date', fmtDate(a.passport_issue_date)) +
+      row('Expiry date', fmtDate(a.passport_expiry_date))
+    ) +
+    grp('Education',
+      row('High school', a.high_school) +
+      row('GPA', a.graduation_gpa) +
+      row('Field of interest', a.field_of_interest) +
+      row('English test', a.english_test_type) +
+      row('English score', a.english_test_score) +
+      row('Planned test date', fmtDate(a.english_test_planned_date))
+    ) +
+    grp('Application',
+      row('University', a.university_name) +
+      row('Program', a.program_name) +
+      row('Country', a.country) +
+      row('Desired intake', a.desired_intake) +
+      row('Status', APP_STATUS_LABEL[a.status] || a.status) +
+      row('Submitted', a.created_at ? new Date(a.created_at).toLocaleString() : '')
+    );
+
+  // Documents
+  const docs = a.documents || [];
+  const dWrap = document.getElementById('appDocs');
+  if (!docs.length) {
+    dWrap.innerHTML = '<div class="text-muted small fst-italic">No documents uploaded.</div>';
+  } else {
+    const DOC_STATUS = {
+      pending:        { label: 'Pending',   cls: 'bg-secondary' },
+      ok:             { label: 'OK',        cls: 'bg-success' },
+      needs_resubmit: { label: 'Resubmit',  cls: 'bg-danger' },
+    };
+    dWrap.innerHTML = docs.map(d => {
+      const sizeKb = d.size_bytes ? Math.max(1, Math.round(d.size_bytes / 1024)) + ' KB' : '';
+      const rs = d.review_status || 'pending';
+      const { label, cls } = DOC_STATUS[rs] || DOC_STATUS.pending;
+      const nextStatus = { pending: 'ok', ok: 'needs_resubmit', needs_resubmit: 'pending' }[rs] || 'ok';
+      const nextIcon  = { pending: 'bi-check-circle', ok: 'bi-exclamation-circle', needs_resubmit: 'bi-arrow-counterclockwise' }[rs];
+      return `<div class="d-flex align-items-center justify-content-between gap-2 p-2 mb-2 rounded" style="background:rgba(255,255,255,.05)">
+        <div style="min-width:0;flex:1">
+          <div class="d-flex align-items-center gap-2">
+            <span class="fw-semibold small">${esc2(d.doc_type || 'document')}</span>
+            <span class="badge ${cls}" style="font-size:.65rem">${label}</span>
+          </div>
+          <div class="text-muted" style="font-size:.74rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc2(d.original_name||'')}${sizeKb ? ' · ' + sizeKb : ''}</div>
+        </div>
+        <div class="d-flex gap-1 flex-shrink-0">
+          <button class="btn btn-outline-secondary btn-sm py-0 px-2" title="Cycle status" onclick="cycleDocStatus(${a.id},${d.id},'${rs}')"><i class="bi ${nextIcon}"></i></button>
+          <button class="btn btn-outline-light btn-sm py-0 px-2" onclick="downloadAppDoc(${a.id},${d.id},'${esc2(d.original_name||'document').replace(/'/g,"\\'")}')"><i class="bi bi-download"></i></button>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  // Status + notes
+  document.getElementById('appStatusSelect').value = a.status || 'submitted';
+  document.getElementById('appNotes').value = a.notes || '';
+
+  // Pre-acceptance
+  document.getElementById('appPreConditions').value = a.preaccept_conditions || '';
+  const preInfo = document.getElementById('appPreInfo');
+  preInfo.innerHTML = a.preaccept_issued_at
+    ? `<i class="bi bi-check-circle-fill text-success me-1"></i>Issued <b>${esc2(a.preaccept_ref || '')}</b> on ${new Date(a.preaccept_issued_at).toLocaleDateString()} · <a href="/acceptance?ref=${encodeURIComponent(a.preaccept_ref||'')}" target="_blank" style="color:#818cf8">view letter</a>`
+    : 'Not issued yet.';
+  document.getElementById('downloadPdfBtn').style.display = a.preaccept_ref ? '' : 'none';
+}
+
+function downloadPreAcceptPdf() {
+  window.open(`/api/admin/applications/${currentAppId}/preaccept-pdf`, '_blank');
+}
+
+async function issuePreAccept(conditional) {
+  const conditions = document.getElementById('appPreConditions').value.trim();
+  if (!confirm(conditional ? 'Issue a CONDITIONAL acceptance and email the student?' : 'Issue a pre-acceptance and email the student?')) return;
+  try {
+    const r = await api('POST', `/api/admin/applications/${currentAppId}/preaccept`, { conditional, conditions });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Failed');
+    toast('Pre-acceptance issued: ' + d.ref);
+    const app = allApplications.find(a => a.id === currentAppId);
+    if (app) app.status = conditional ? 'conditional' : 'pre_accepted';
+    openApplication(currentAppId); // refresh modal
+    loadApplications();
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function downloadAppDoc(appId, docId, name) {
+  try {
+    const res = await fetch(`/api/admin/applications/${appId}/documents/${docId}/download`, {
+      headers: { 'Authorization': `Bearer ${token}` }
+    });
+    if (!res.ok) throw new Error('Download failed');
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = name || 'document';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function saveApplication() {
+  const status = document.getElementById('appStatusSelect').value;
+  const notes = document.getElementById('appNotes').value;
+  const notifyApplicant = document.getElementById('appNotifyCheck').checked;
+  const btn = document.getElementById('appSaveBtn');
+  btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Saving…';
+  try {
+    const r = await api('PATCH', `/api/admin/applications/${currentAppId}`, { status, notes, notifyApplicant });
+    if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || 'Save failed');
+    const app = allApplications.find(a => a.id === currentAppId);
+    if (app) { app.status = status; app.notes = notes; }
+    toast('Application saved.' + (notifyApplicant ? ' Student notified.' : ''));
+    appModal.hide();
+    loadApplications();
+  } catch (e) { toast(e.message, 'error'); }
+  finally { btn.disabled = false; btn.innerHTML = '<i class="bi bi-check-lg me-1"></i>Save'; }
+}
+
+async function sendReminder() {
+  const message = document.getElementById('appReminderMsg').value.trim();
+  if (!confirm('Send reminder email to this applicant?')) return;
+  try {
+    const r = await api('POST', `/api/admin/applications/${currentAppId}/remind`, { message });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Failed');
+    toast(d.ok ? 'Reminder sent.' : 'Could not send (SMTP not configured?)');
+    document.getElementById('appReminderMsg').value = '';
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function cycleDocStatus(appId, docId, currentStatus) {
+  const next = { pending: 'ok', ok: 'needs_resubmit', needs_resubmit: 'pending' };
+  const review_status = next[currentStatus] || 'ok';
+  try {
+    const r = await api('PATCH', `/api/admin/applications/${appId}/documents/${docId}`, { review_status });
+    if (!r.ok) throw new Error('Failed to update');
+    openApplication(appId);
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function bulkRemind() {
+  if (!confirm('Send a reminder email to ALL submitted / reviewing applicants?\n\nThis sends the default reminder message to each of them.')) return;
+  try {
+    const r = await api('POST', '/api/admin/applications/bulk-remind', {});
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Failed');
+    toast(`Bulk reminder: ${d.sent} email(s) sent.`);
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+// ── Document Review Queue ────────────────────────────────────────────────────
+let allDocs = [];
+
+async function loadDocs() {
+  document.getElementById('docsTableWrap').innerHTML = '<div class="text-center text-muted py-5"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</div>';
+  try {
+    const status = document.getElementById('docStatusFilter')?.value || '';
+    const qs = status ? '?status=' + encodeURIComponent(status) : '';
+    const r = await api('GET', '/api/admin/applications/documents' + qs);
+    allDocs = await r.json();
+    renderDocsTable(allDocs);
+  } catch (e) {
+    document.getElementById('docsTableWrap').innerHTML = `<div class="text-danger small p-3">${esc2(e.message)}</div>`;
+  }
+}
+
+const DOC_STATUS_INFO = {
+  pending: { color: '#f59e0b', label: 'Pending' },
+  ok: { color: '#10b981', label: 'Approved' },
+  needs_resubmit: { color: '#ef4444', label: 'Needs Resubmit' }
+};
+
+const APP_STATUS_COLOR = {
+  submitted: '#3b82f6', reviewing: '#d97706', pre_accepted: '#10b981',
+  conditional: '#f59e0b', rejected: '#ef4444', completed: '#6b7280'
+};
+
+function renderDocsTable(docs) {
+  const wrap = document.getElementById('docsTableWrap');
+  if (!docs.length) {
+    wrap.innerHTML = '<div class="text-muted small text-center py-5">No documents found.</div>';
+    return;
+  }
+  const fmtSize = b => {
+    if (!b) return '—';
+    if (b > 1048576) return (b / 1048576).toFixed(1) + ' MB';
+    if (b > 1024) return Math.round(b / 1024) + ' KB';
+    return b + ' B';
+  };
+  wrap.innerHTML = `<div class="table-responsive">
+    <table class="table table-hover table-sm align-middle mb-0" style="font-size:.83rem">
+      <thead class="table-dark">
+        <tr>
+          <th>Date</th><th>Applicant</th><th>University</th><th>Doc Type</th>
+          <th>File</th><th>Size</th><th>App Status</th><th>Review</th><th class="text-end pe-2">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${docs.map(d => {
+          const info = DOC_STATUS_INFO[d.review_status] || { color: '#94a3b8', label: d.review_status };
+          const appColor = APP_STATUS_COLOR[d.app_status] || '#64748b';
+          const appLabel = APP_STATUS_LABEL[d.app_status] || d.app_status || '—';
+          const name = [d.first_name, d.last_name].filter(Boolean).join(' ') || '—';
+          return `<tr>
+            <td style="white-space:nowrap;color:#6c757d">${d.uploaded_at ? new Date(d.uploaded_at).toLocaleDateString() : '—'}</td>
+            <td class="fw-semibold">${esc2(name)}</td>
+            <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(d.university_name||'')}">${esc2(d.university_name||'—')}</td>
+            <td>${esc2(d.doc_type||'—')}</td>
+            <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(d.original_name||'')}">${esc2(d.original_name||'—')}</td>
+            <td style="white-space:nowrap">${fmtSize(d.size_bytes)}</td>
+            <td><span class="badge" style="background:${appColor}">${esc2(appLabel)}</span></td>
+            <td>
+              <button class="btn btn-sm py-0 px-2 fw-semibold" style="font-size:.72rem;background:${info.color};color:#fff;border:none;white-space:nowrap"
+                onclick="cycleDocStatusGlobal(${d.application_id},${d.id},'${d.review_status}')">
+                ${info.label}
+              </button>
+            </td>
+            <td class="text-end pe-2">
+              <a href="/api/admin/applications/${d.application_id}/documents/${d.id}/download"
+                class="btn btn-outline-secondary btn-sm py-0 me-1" title="Download"><i class="bi bi-download"></i></a>
+              <button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem"
+                onclick="openApplication(${d.application_id})" title="View application"><i class="bi bi-eye"></i></button>
+            </td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+    </table>
+  </div>
+  <div class="text-muted small mt-2 text-end">${docs.length} document${docs.length !== 1 ? 's' : ''}</div>`;
+}
+
+async function cycleDocStatusGlobal(appId, docId, currentStatus) {
+  const next = { pending: 'ok', ok: 'needs_resubmit', needs_resubmit: 'pending' };
+  const review_status = next[currentStatus] || 'ok';
+  try {
+    const r = await api('PATCH', `/api/admin/applications/${appId}/documents/${docId}`, { review_status });
+    if (!r.ok) throw new Error('Update failed');
+    const doc = allDocs.find(d => d.id === docId);
+    if (doc) doc.review_status = review_status;
+    renderDocsTable(allDocs);
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+// ── Subscription Tiers ────────────────────────────────────────────────────────
+let allTiers = [];
+let tierModal = null;
+let editingTierId = null;
+
+async function loadTiers() {
+  document.getElementById('tiersTableWrap').innerHTML = '<div class="text-center text-muted py-5"><span class="spinner-border spinner-border-sm me-2"></span>Loading…</div>';
+  try {
+    const r = await api('GET', '/api/admin/tiers');
+    allTiers = await r.json();
+    renderTiersTable();
+    populateTierSelects();
+  } catch (e) {
+    document.getElementById('tiersTableWrap').innerHTML = `<div class="text-danger small p-3">${esc2(e.message)}</div>`;
+  }
+}
+
+function populateTierSelects() {
+  const sel = document.getElementById('uTierId');
+  if (!sel) return;
+  const cur = sel.value;
+  sel.innerHTML = '<option value="">— unassigned —</option>' + allTiers.map(t => `<option value="${t.id}">${esc2(t.name)}</option>`).join('');
+  if (cur) sel.value = cur;
+}
+
+function renderTiersTable() {
+  const wrap = document.getElementById('tiersTableWrap');
+  if (!allTiers.length) {
+    wrap.innerHTML = '<div class="text-muted text-center py-5">No tiers yet. Add one to get started.</div>';
+    return;
+  }
+  wrap.innerHTML = `<div class="card shadow-sm border-0 rounded-3 overflow-hidden">
+    <table class="table table-hover mb-0 align-middle">
+      <thead style="background:#1e293b;color:#e2e8f0">
+        <tr>
+          <th class="ps-3" style="width:50px">#</th>
+          <th>Name</th>
+          <th style="width:80px">Level</th>
+          <th style="width:140px">Price / month</th>
+          <th>Description</th>
+          <th class="text-end pe-3" style="width:110px">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${allTiers.map(t => `<tr>
+          <td class="ps-3 text-muted">${t.id}</td>
+          <td class="fw-semibold">${esc2(t.name)}</td>
+          <td><span class="badge bg-secondary">${t.level}</span></td>
+          <td>${parseFloat(t.price_monthly) > 0 ? esc2(t.price_currency) + ' ' + parseFloat(t.price_monthly).toFixed(2) : '<span class="text-muted">Free</span>'}</td>
+          <td class="text-muted" style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc2(t.description || '')}</td>
+          <td class="text-end pe-3">
+            <button class="btn btn-outline-primary btn-sm py-0 me-1" onclick="openTierModal(${t.id})"><i class="bi bi-pencil"></i></button>
+            <button class="btn btn-outline-danger btn-sm py-0" onclick="deleteTier(${t.id})"><i class="bi bi-trash"></i></button>
+          </td>
+        </tr>`).join('')}
+      </tbody>
+    </table>
+  </div>
+  <div class="text-muted small mt-2">${allTiers.length} tier${allTiers.length !== 1 ? 's' : ''}</div>`;
+}
+
+function openTierModal(id) {
+  editingTierId = id;
+  if (!tierModal) tierModal = new bootstrap.Modal(document.getElementById('tierModal'));
+  if (id) {
+    const t = allTiers.find(x => x.id === id);
+    if (!t) return;
+    document.getElementById('tmName').value = t.name || '';
+    document.getElementById('tmLevel').value = t.level || 1;
+    document.getElementById('tmPrice').value = t.price_monthly || 0;
+    document.getElementById('tmCurrency').value = t.price_currency || 'USD';
+    document.getElementById('tmDesc').value = t.description || '';
+    document.getElementById('tierModalTitle').textContent = 'Edit Tier';
+  } else {
+    document.getElementById('tmName').value = '';
+    document.getElementById('tmLevel').value = allTiers.length + 1;
+    document.getElementById('tmPrice').value = 0;
+    document.getElementById('tmCurrency').value = 'USD';
+    document.getElementById('tmDesc').value = '';
+    document.getElementById('tierModalTitle').textContent = 'Add Tier';
+  }
+  tierModal.show();
+}
+
+async function saveTier() {
+  const body = {
+    name: document.getElementById('tmName').value.trim(),
+    level: parseInt(document.getElementById('tmLevel').value) || 1,
+    price_monthly: parseFloat(document.getElementById('tmPrice').value) || 0,
+    price_currency: document.getElementById('tmCurrency').value || 'USD',
+    description: document.getElementById('tmDesc').value.trim()
+  };
+  if (!body.name) { toast('Tier name is required.', 'error'); return; }
+  try {
+    const r = editingTierId
+      ? await api('PATCH', '/api/admin/tiers/' + editingTierId, body)
+      : await api('POST', '/api/admin/tiers', body);
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Save failed');
+    toast(editingTierId ? 'Tier updated.' : 'Tier created.');
+    tierModal.hide();
+    loadTiers();
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function deleteTier(id) {
+  const t = allTiers.find(x => x.id === id);
+  document.getElementById('confirmMsg').textContent = `Delete tier "${t ? t.name : id}"?`;
+  document.getElementById('confirmBtn').onclick = async () => {
+    try {
+      const r = await api('DELETE', '/api/admin/tiers/' + id);
+      if (!r.ok) throw new Error((await r.json()).error || 'Failed');
+      confirmModal.hide();
+      toast('Tier deleted.');
+      loadTiers();
+    } catch (e) { toast(e.message, 'error'); }
+  };
+  confirmModal.show();
+}
+
+// ── English Test ─────────────────────────────────────────────────────────────
+let allEngTest = [];
+
+async function loadEngTest() {
+  document.getElementById('etTableWrap').innerHTML = '<div class="text-center text-muted py-5">Loading…</div>';
+  try {
+    const r = await api('GET', '/api/admin/english-test');
+    allEngTest = await r.json();
+    filterEngTest();
+  } catch (e) {
+    document.getElementById('etTableWrap').innerHTML = `<div class="text-danger small">${esc2(e.message)}</div>`;
+  }
+}
+
+function filterEngTest() {
+  const q = (document.getElementById('etSearch')?.value || '').toLowerCase();
+  const lv = document.getElementById('etLevelFilter')?.value || '';
+  const rows = allEngTest.filter(r =>
+    (!q || r.email.toLowerCase().includes(q)) &&
+    (!lv || r.level === lv)
+  );
+  const LEVEL_COLOR = { A1:'#94a3b8', A2:'#64748b', B1:'#3b82f6', B2:'#8b5cf6', C1:'#10b981', C2:'#f59e0b' };
+  const wrap = document.getElementById('etTableWrap');
+  if (!rows.length) {
+    wrap.innerHTML = '<div class="text-center text-muted py-5">No results yet.</div>';
+    return;
+  }
+  wrap.innerHTML = `<div class="table-responsive"><table class="table table-hover align-middle" style="font-size:.87rem">
+    <thead><tr style="color:#94a3b8;font-size:.78rem;text-transform:uppercase">
+      <th>Email</th><th>Level</th><th>Score</th><th>Date</th>
+    </tr></thead>
+    <tbody>
+      ${rows.map(r => `<tr>
+        <td>${esc2(r.email)}</td>
+        <td><span class="badge" style="background:${LEVEL_COLOR[r.level]||'#64748b'};font-size:.8rem">${esc2(r.level)}</span></td>
+        <td>${r.score}/20</td>
+        <td style="color:#64748b">${r.created_at ? new Date(r.created_at).toLocaleDateString() : ''}</td>
+      </tr>`).join('')}
+    </tbody>
+  </table></div>
+  <div class="text-muted small mt-1">${rows.length} result(s)</div>`;
+}
 </script>
 </body>
 </html>
