@@ -831,6 +831,9 @@ app.get('/api/auto/remind', async (req, res) => {
 
 // ── Auto-deploy webhook ───────────────────────────────────────────────────────
 // GitHub sends a POST here on every push. Pulls latest code and restarts.
+const { sendCriticalAlert } = require('./utils/mailer');
+const DEPLOY_LOG_PATH = path.join(__dirname, 'logs', 'last-deploy.json');
+
 app.post('/api/deploy', (req, res) => {
   const secret = process.env.DEPLOY_SECRET;
   if (!secret || req.query.secret !== secret) {
@@ -840,12 +843,49 @@ app.post('/api/deploy', (req, res) => {
   setTimeout(() => {
     require('child_process').exec(
       `cd "${__dirname}" && git pull 2>&1 && npm install --production 2>&1`,
-      (err, out) => {
+      async (err, out) => {
         console.log('[deploy]', out || err?.message);
+        try {
+          fs.mkdirSync(path.dirname(DEPLOY_LOG_PATH), { recursive: true });
+          fs.writeFileSync(DEPLOY_LOG_PATH, JSON.stringify({
+            ok: !err, timestamp: new Date().toISOString(), output: out || err?.message || '',
+          }));
+        } catch (e) { console.error('[deploy] failed to write deploy log:', e.message); }
+        if (err) {
+          await sendCriticalAlert('Deploy failed', `git pull / npm install failed on paneledu.com:\n\n${out || err.message}`).catch(() => {});
+        }
         process.exit(0); // Passenger auto-restarts the app
       }
     );
   }, 300);
+});
+
+// Scheduled health-check endpoint — call from cPanel cron with CRON_SECRET.
+// Alerts only on a real problem (DB down or last deploy failed); silent otherwise.
+// e.g. curl -H "Authorization: Bearer SECRET" "https://paneledu.com/api/auto/monitor"
+app.get('/api/auto/monitor', async (req, res) => {
+  const authHeader = req.headers.authorization || '';
+  const provided = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : req.query.k;
+  if (!process.env.CRON_SECRET || provided !== process.env.CRON_SECRET) {
+    return res.status(403).json({ error: 'Forbidden' });
+  }
+  const problems = [];
+  try {
+    await db.query('SELECT 1');
+  } catch (e) {
+    problems.push(`Database unreachable: ${e.message}`);
+  }
+  try {
+    const lastDeploy = JSON.parse(fs.readFileSync(DEPLOY_LOG_PATH, 'utf8'));
+    if (!lastDeploy.ok) {
+      problems.push(`Last deploy (${lastDeploy.timestamp}) failed:\n${lastDeploy.output}`);
+    }
+  } catch (e) { /* no deploy log yet — nothing deployed since this feature shipped */ }
+
+  if (problems.length) {
+    await sendCriticalAlert('Critical issue on paneledu.com', problems.join('\n\n---\n\n')).catch(() => {});
+  }
+  res.json({ ok: problems.length === 0, problems });
 });
 
 // 404 handler — must be last

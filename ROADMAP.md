@@ -5,40 +5,16 @@
 ### 1. DB Migration ✅ DONE (2026-07-15)
 All 14 new columns confirmed present in `programs` table.
 
-### 2. SMTP config — add to .env on production server
-File: `/home/matur124/studyabroad.kampanya.website/.env`
-Currently the app has NO email settings; all notifications are silently skipped.
-Steps:
-  a. cPanel → Email Accounts → create `noreply@paneledu.com`
-  b. Add these lines to .env (edit via File Manager → right-click .env → Edit):
+### 2. SMTP config ✅ DONE
+Production `.env` has `SMTP_HOST=smtp.resend.com` — app sends via Resend, not
+a cPanel mailbox. Superseded the original cPanel-mailbox plan.
 
-```
-SMTP_HOST=mail.paneledu.com
-SMTP_PORT=465
-SMTP_USER=noreply@paneledu.com
-SMTP_PASS=<the password you set>
-MAIL_FROM=noreply@paneledu.com
-NOTIFY_EMAIL=hkn3958@gmail.com
-APP_URL=https://paneledu.com
-JWT_SECRET=<a long random string if not already set>
-```
-
-  c. Restart app: touch `/home/matur124/studyabroad.kampanya.website/tmp/restart.txt`
-     (or use cPanel → Setup Node.js App → Restart)
-
-### 3. Email deliverability — Resend domain verification
+### 3. Email deliverability — Resend domain verification ✅ DONE (2026-08-28)
 SMTP relay: Resend (smtp.resend.com), MAIL_FROM: info@paneledu.com ✅
-DMARC record: live ✅ (confirmed via MXToolbox)
-DKIM: NOT YET — paneledu.com is not verified in Resend dashboard.
-      This is why emails land in spam: Resend cannot sign outgoing mail
-      with a DKIM key for an unverified domain.
-
-Fix (15 min):
-  a. resend.com/domains → Add Domain → paneledu.com
-  b. Copy the 3 DNS records Resend provides (DKIM TXT, SPF TXT, DMARC TXT)
-  c. cPanel → Zone Editor → paneledu.com → add all 3 records
-  d. Back in Resend → click Verify → wait for green status
-  After verification all outgoing mail will carry Resend's DKIM signature → inbox.
+DMARC record: live ✅, `rua` now points to info@paneledu.com (moved 2026-08-28,
+was hkn3958@gmail.com — stopped daily aggregate reports landing in personal inbox)
+DKIM: paneledu.com shows "Verified" in Resend dashboard ✅
+All outgoing mail now carries Resend's DKIM signature → inbox, not spam.
 
 ### 4. Google Maps API key ✅ DONE (2026-07-21)
 File: `public/orbit/index.html` → `const GOOGLE_MAPS_KEY = '...'`
@@ -68,23 +44,34 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
 - Sitemap / robots.txt
 - Admin dashboard charts (lead funnel, conversions) ✅ DONE (2026-07-21)
 
-### Durable inbox monitoring / alert system (needed)
-As a stopgap (2026-07-21) a Claude Code session-scoped cron job checks Gmail
-daily for paneledu.com-related mail (security alerts, deploy/system issues,
-new leads, abnormal DMARC/SPF failure rates) and pushes a notification when
-something needs action. **This is temporary** — it lives only in one Claude
-session and auto-expires after 7 days.
+### Durable critical-alert monitoring ✅ DONE (2026-08-28)
+Replaced the temporary session-scoped Gmail-checking stopgap with a permanent,
+app-side health check — scope decided: **critical errors only** (DB down /
+deploy failed), not a Gmail security-mail scanner (that needs a separate
+OAuth integration, out of scope for now).
 
-We need a real, permanent version of this:
-- A proper cron job (cPanel cron or a small always-on script) that checks
-  inbox/DMARC reports/deploy logs on a schedule, not tied to any chat session.
-- Define concrete "important" triggers: security/abuse notices (Google Cloud,
-  registrar, hosting), deploy or server-down failures, new lead arrivals,
-  DMARC/SPF reports with a non-zero failure rate.
-- Alerting channel TBD — email digest, SMS, Slack/Telegram bot, or push via
-  a small notification service.
-- Consider folding this into the existing `/api/auto/remind` cron pattern
-  already used for application reminders (`CRON_SECRET`-gated endpoint).
+- `POST /api/deploy` now writes each deploy's outcome to `logs/last-deploy.json`
+  (`{ok, timestamp, output}`) and, on failure, immediately emails a critical
+  alert via `sendCriticalAlert()` (`utils/mailer.js`).
+- `GET /api/auto/monitor` (new, `CRON_SECRET`-gated, same pattern as
+  `/api/auto/remind`): checks DB connectivity (`SELECT 1`) and the last
+  deploy's outcome; emails a critical alert only if something is actually
+  wrong, otherwise responds silently (`{ok: true, problems: []}`).
+- Alert destination: `NOTIFY_EMAIL` (`info@paneledu.com`), via Resend — same
+  verified sender as everything else.
+
+**Still needed from you (cPanel):** add a cron job so `/api/auto/monitor`
+actually gets called on a schedule —
+```
+curl -s -H "Authorization: Bearer <CRON_SECRET>" "https://paneledu.com/api/auto/monitor"
+```
+Every 15–30 min is reasonable. Set `CRON_SECRET` in production `.env` first
+(same value used in the cron command).
+
+**Explicitly out of scope (not built):** scanning Gmail for security/abuse
+notices from Google Cloud/registrar/hosting, and DMARC/SPF failure-rate
+alerting — both would need a separate inbox-reading integration (OAuth),
+which is a bigger, separate piece of work if wanted later.
 
 ## Future / larger
 

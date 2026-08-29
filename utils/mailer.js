@@ -378,11 +378,33 @@ async function sendEnglishTestResult(email, level, score) {
   }
 }
 
+// Critical system alert (DB down, deploy failed, etc.) to the ops inbox. Fire-and-forget.
+async function sendCriticalAlert(subject, details) {
+  const t = getTransport();
+  if (!t) return false;
+  const to = process.env.NOTIFY_EMAIL || process.env.SMTP_USER;
+  if (!to) return false;
+  try {
+    await t.sendMail({
+      from: fromAddr(),
+      to,
+      subject: `🚨 ${subject}`,
+      priority: 'high',
+      text: details,
+      html: `<pre style="font-family:ui-monospace,monospace;white-space:pre-wrap;font-size:.85rem;color:#1e293b">${esc(details)}</pre>`,
+    });
+    return true;
+  } catch (e) {
+    console.error('[mailer] critical alert failed:', e.message);
+    return false;
+  }
+}
+
 function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 module.exports = {
   sendLeadNotification, sendLeadReply, sendOtpCode,
   sendApplicationNotice, sendPreAcceptance,
   sendApplicationReminder, sendStatusUpdate,
-  sendEnglishTestResult,
+  sendEnglishTestResult, sendCriticalAlert,
 };
