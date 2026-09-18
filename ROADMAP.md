@@ -60,16 +60,11 @@ OAuth integration, out of scope for now).
 - Alert destination: `NOTIFY_EMAIL` (`info@paneledu.com`), via Resend — same
   verified sender as everything else.
 
-**Still needed from you (cPanel):** add a cron job so `/api/auto/monitor`
-actually gets called on a schedule — must include a `User-Agent` header or
-the server's own WAF returns a generic 403 before the request ever reaches
-the app (same reason the deploy webhook curl in this file's own instructions
-sets one) —
+**cPanel cron job: ✅ live (2026-09-18)** — confirmed working, returns
+`{"ok":true,"problems":[]}`:
 ```
 curl -s -H "Authorization: Bearer <CRON_SECRET>" -H "User-Agent: Mozilla/5.0" "https://paneledu.com/api/auto/monitor"
 ```
-Every 15–30 min is reasonable. Set `CRON_SECRET` in production `.env` first
-(same value used in the cron command).
 
 **Explicitly out of scope (not built):** scanning Gmail for security/abuse
 notices from Google Cloud/registrar/hosting, and DMARC/SPF failure-rate
