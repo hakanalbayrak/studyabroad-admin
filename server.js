@@ -147,10 +147,16 @@ app.post('/api/public/english-test', async (req, res) => {
       return res.status(400).json({ error: 'Valid email required.' });
     }
     if (!level || !score && score !== 0) return res.status(400).json({ error: 'Missing result data.' });
+    const cleanEmail = email.toLowerCase().trim();
     await db.query(
       'INSERT INTO english_test_results (email, level, score, answers) VALUES (?, ?, ?, ?)',
-      [email.toLowerCase().trim(), level, parseInt(score) || 0, JSON.stringify(answers || [])]
+      [cleanEmail, level, parseInt(score) || 0, JSON.stringify(answers || [])]
     );
+    db.query(
+      `INSERT INTO leads (student_name, email, message)
+       VALUES ('', ?, ?)`,
+      [cleanEmail, `İngilizce testi sonucu: ${level} (${parseInt(score) || 0}/20 doğru)`]
+    ).catch(() => {});
     res.json({ ok: true });
     const { sendEnglishTestResult } = require('./utils/mailer');
     sendEnglishTestResult(email, level, score).catch(() => {});
