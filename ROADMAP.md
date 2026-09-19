@@ -155,13 +155,21 @@ Redesign `/programs` eligibility into a short, tap-friendly wizard:
 - Admin receives applications, manages student docs & info, tracks status.
 - Systematic **reminder emails** (deadlines, missing docs, next steps).
 
-### Epic 6 — English level test (lead magnet)
-- 20-question CEFR test (≈3 per level A1–C2). Email-gated result delivery.
-- Result emailed, then upsell via affiliate links (IELTS course, etc.).
+### Epic 6 — English level test (lead magnet) ✅ DONE, verified live (2026-09-19)
+20-question CEFR test (4 per level A1–C1, randomized from a 12-question bank
+per level), email-gated result delivery. `/test` page, linked from nav/footer/
+homepage. `POST /api/public/english-test` stores the result and emails it
+(CEFR level + advice); `GET /api/admin/english-test` + admin panel section
+(search/filter) for reviewing submissions. `database/add_english_test.sql`
+confirmed applied in production — live end-to-end test (2026-09-19): result
+page shown, row saved, email received.
 
-### Epic 7 — Affiliate marketing infrastructure
-- Affiliate links/banners/buttons for IELTS, TOEFL, Duolingo, Pearson/PTE, AP,
-  and language schools. Commission tracking. Placed on site + in emails.
+### Epic 7 — Affiliate marketing infrastructure — groundwork only
+Static (non-tracked) links to British Council IELTS, ETS TOEFL, and Duolingo
+English Test are already placed on the `/test` result page and in the result
+email (part of Epic 6's build). Still missing for the full epic: real
+affiliate/partner accounts per provider, tracked links, commission capture,
+and placement on more pages (not just the test result).
 - Needs: affiliate accounts/links from each provider (user to supply).
 
 ### Epic 8 — AI data agent (see "AI Data Agent" above)
