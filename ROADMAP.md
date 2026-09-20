@@ -115,73 +115,77 @@ platform. Mobile-first is a HARD requirement across every epic (most users are
 on phones — zero layout shift, fully responsive). No email is collected during
 browsing; email is only captured at "Apply" or to view a test result.
 
-### Epic 1 — Simplified eligibility funnel (entry point)
-Redesign `/programs` eligibility into a short, tap-friendly wizard:
-- Education status: high-school graduate / 12th grade
-- Fields of interest (multi-select, 4–5 broad areas): Business & Economics,
-  Engineering, Medicine & Health, AI & Technology, Social Sciences (history,
-  sociology, psychology…)
-- English level: A1–A2 (Beginner) / B1–B2 (Intermediate) / C1–C2 (Advanced)
-- Annual budget: €0–5k / €5–10k / €10–15k / €15k+
-- Region: Europe / USA-Canada / Australia / UK
-- AP / IB diploma: yes / no (optional, never mandatory)
-- Output: ranked school list by **easiest acceptance + budget fit** (heuristic
-  using ranking band, requirement gap vs profile, and budget).
-- **Data prerequisite:** programs/entities need a **discipline/field tag** and a
-  **country→region** mapping (neither exists yet).
+**Full audit done 2026-09-20** — most of this section was stale: 6 of 8 epics
+turned out to already be built (from earlier sessions, never logged here).
+Re-verified against the actual code, file by file. Corrected below.
 
-### Epic 2 — Results list + richer 3D detail page
-- Ranked results show location, fees, details, available departments.
-- Click a school → expandable dropdown of departments.
-- "View details" → the Orbit 3D page, redesigned as a larger window with corner
-  info panels: departments, annual fee, language requirement, intake dates.
+### Epic 1 — Simplified eligibility funnel ✅ DONE
+`public/match.html` + `public/js/match.js` — 7-step chip wizard (education
+status, degree, fields of interest, English level A1–C2 buckets, budget,
+region, AP/IB), mobile-first, exactly matching the original spec. Ranks
+client-side against `/api/public/programs` (`rankSchools`/`scoreProgram`,
+match.js:117–153) by English fit + rank band + budget comfort + AP/IB bonus.
+Discipline tag prerequisite: `programs.field` column, live in
+`/api/public/filter-options` and `/programs` filter chips. One shortcut, not
+a blocker: **region is a hardcoded JS map** (match.js:49–64), not DB-driven —
+fine as long as the 5 focus countries don't grow much.
 
-### Epic 3 — Application flow ("Apply now")
-- Triggered by "Apply" → only now collect email + full applicant profile:
-  name, surname, DOB, passport no., passport issue/expiry dates, place of birth,
-  passport "issued by", nationality, country of residence, address, phone, email,
-  high school, graduation GPA, field, English test score (or "will take on date"),
-  desired intake.
-- Document upload step (mandatory vs optional): passport, HS diploma, HS
-  transcript, English score (if any), YKS result, ÖSYM placement.
-- New tables: `applications`, `application_documents`.
+### Epic 2 — Results list + richer 3D detail page ✅ DONE
+match.js results show ranked schools with "easiest acceptance" badges and
+expandable department dropdowns. Orbit 3D page already has the corner info
+panels (departments, fee, language, intake) — see the Orbit HUD design-
+identity work above.
 
-### Epic 4 — Pre-acceptance ("ön kabul") engine
-- System issues a **PANELEDU-branded** preliminary/conditional acceptance (NOT
-  school logos): "Conditional acceptance — complete English by <date> / pay
-  application fee to proceed." Speeds the funnel and creates momentum.
+### Epic 3 — Application flow ("Apply now") ⚠️ PARTIAL — real gap
+Backend is fully built: `database/add_applications.sql` (full applicant
+schema — passport fields, GPA, English test, etc.), `routes/applications.js`
+(`POST /api/public/applications`, document upload via multer,
+10MB, PDF/JPG/PNG). **But `public/apply.html` only submits a subset**
+(name, phone, email, university/program, intake, notes — missing DOB,
+passport data, nationality, address, GPA, English score) **and there is no
+public-facing document upload UI at all** — the API supports it, nothing on
+the site calls it. This is the one epic with real remaining work.
 
-### Epic 5 — Admin: application & document management + reminders
-- Admin receives applications, manages student docs & info, tracks status.
-- Systematic **reminder emails** (deadlines, missing docs, next steps).
+### Epic 4 — Pre-acceptance ("ön kabul") engine ✅ DONE
+`database/add_preacceptance.sql`, `routes/applications.js` (`POST
+/:id/preaccept`), `utils/pdfgen.js` (PANELEDU-branded PDF, explicitly not a
+university decision), `public/acceptance.html` (public verification by ref).
+
+### Epic 5 — Admin: application & document management + reminders ✅ DONE
+Admin panel has an Applications section and a Document Review queue.
+Reminders: per-application, bulk, cron-callable (`/api/auto/remind`), plus
+`scripts/remind.js` for stale applications.
 
 ### Epic 6 — English level test (lead magnet) ✅ DONE, verified live (2026-09-19)
-20-question CEFR test (4 per level A1–C1, randomized from a 12-question bank
-per level), email-gated result delivery. `/test` page, linked from nav/footer/
-homepage. `POST /api/public/english-test` stores the result and emails it
-(CEFR level + advice); `GET /api/admin/english-test` + admin panel section
-(search/filter) for reviewing submissions. `database/add_english_test.sql`
-confirmed applied in production — live end-to-end test (2026-09-19): result
-page shown, row saved, email received.
+20-question CEFR test, email-gated result delivery, admin panel section,
+now also creates a lead (2026-09-19). Full details above.
 
-### Epic 7 — Affiliate marketing infrastructure — groundwork only
-Static (non-tracked) links to British Council IELTS, ETS TOEFL, and Duolingo
-English Test are already placed on the `/test` result page and in the result
-email (part of Epic 6's build). Still missing for the full epic: real
-affiliate/partner accounts per provider, tracked links, commission capture,
-and placement on more pages (not just the test result).
-- Needs: affiliate accounts/links from each provider (user to supply).
+### Epic 7 — Affiliate marketing infrastructure ⚠️ PARTIAL — different shape than planned
+Two separate things got conflated in the original plan:
+1. **"Refer a lead to us" affiliate program — already built**:
+   `users.affiliate_code`, `leads.referred_by`, `routes/affiliate.js`
+   (dashboard, stats), `public/affiliate/index.html`. This is a real, tracked
+   referral system, just not what this epic originally described.
+2. **Provider-side commission links (IELTS/TOEFL/Duolingo etc.) — still just
+   static, non-tracked links** on the `/test` result page (from Epic 6). No
+   commission tracking, no real affiliate accounts with those providers.
+- Needs: affiliate accounts/links from each provider (user to supply) — only
+  remaining blocker, and it's an external dependency, not code.
 
-### Epic 8 — AI data agent (see "AI Data Agent" above)
+### Epic 8 — AI data agent + contribution review queue — NOT STARTED
+Confirmed genuinely not built: no `contributions` table, no route, no admin
+UI. See "AI Data Agent" design above — still the plan, not yet built.
 - Prioritize a **partner school list** (user to supply) over raw QS top.
-- Agent loads ranking + program data into admin via the review queue; fills the
-  large gaps where ranking/requirement data is currently missing.
 
 ### Cross-cutting requirements
-- **Mobile-first** everywhere (highest priority).
-- **Payments** for application fees / pre-acceptance — provider TBD
-  (iyzico/PayTR for TR; Paddle/Lemon Squeezy for global USD; Stripe only via a
-  foreign entity). See payments discussion.
+- **Mobile-first**: consistently present across pages already built.
+- **Account types**: already beyond admin-only — `admin`, `advisor`,
+  `affiliate`, `enduser` roles all exist and are in use (middleware/auth.js,
+  `users.role`). Adding more (e.g. `counselor`) needs no schema change.
+- **Payments** for application fees / pre-acceptance — confirmed **not
+  started**, provider TBD (iyzico/PayTR for TR; Paddle/Lemon Squeezy for
+  global USD; Stripe only via a foreign entity).
+- **WordPress integration** — confirmed **not started**.
 
 ### WordPress integration
 - WP on root domain for content/blog/marketing; Node app stays on subdomain.
