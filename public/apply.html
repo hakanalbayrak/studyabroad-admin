@@ -124,6 +124,16 @@
     .spinner-ring { width: 34px; height: 34px; border: 3px solid rgba(99,102,241,.2); border-top-color: #6366f1; border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 14px; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
+    /* Document upload */
+    .doc-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; background: var(--surface); border: 1.5px solid var(--line); border-radius: 14px; margin-bottom: 10px; }
+    .doc-row.uploaded { border-color: #10b981; background: rgba(16,185,129,.06); }
+    .doc-row-main { display: flex; align-items: center; gap: 10px; font-size: .87rem; font-weight: 600; color: var(--text); }
+    .doc-row-main i { font-size: 1.1rem; color: var(--accent); flex-shrink: 0; }
+    .doc-upload-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--surface-2); border: 1.5px solid var(--line); border-radius: 10px; padding: 8px 14px; font-size: .78rem; font-weight: 700; color: var(--accent); cursor: pointer; white-space: nowrap; }
+    .doc-upload-btn:hover { border-color: var(--accent); }
+    .doc-upload-btn.done { color: #059669; border-color: #10b981; cursor: default; }
+    .doc-upload-btn input[type="file"] { display: none; }
+
     /* Success */
     .success-wrap { text-align: center; padding: 60px 16px; }
     .success-wrap .ic { width: 80px; height: 80px; border-radius: 50%; background: rgba(16,185,129,.12); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
@@ -318,6 +328,53 @@
       <div class="tag-sug" id="ibSlSug"></div>
     </div>
 
+    <!-- Identity & passport -->
+    <div class="sec-div"><span data-i18n="apply.idpass">Kimlik &amp; Pasaport — isteğe bağlı</span></div>
+    <div class="grid2">
+      <div>
+        <label class="lbl" data-i18n="apply.dob">Doğum tarihi</label>
+        <input type="date" class="fld" id="scDob">
+      </div>
+      <div>
+        <label class="lbl" data-i18n="apply.pob">Doğum yeri</label>
+        <input type="text" class="fld" id="scPob" placeholder="Şehir, ülke" data-i18n-ph="apply.pob.ph">
+      </div>
+    </div>
+    <div class="grid2">
+      <div>
+        <label class="lbl" data-i18n="apply.nat">Uyruk</label>
+        <input type="text" class="fld" id="scNationality" placeholder="Örn. Türkiye" data-i18n-ph="apply.nat.ph">
+      </div>
+      <div>
+        <label class="lbl" data-i18n="apply.res">İkamet ülkesi</label>
+        <input type="text" class="fld" id="scResidence" placeholder="Örn. Türkiye" data-i18n-ph="apply.nat.ph">
+      </div>
+    </div>
+    <label class="lbl" data-i18n="apply.addr">Adres</label>
+    <input type="text" class="fld" id="scAddress" placeholder="Açık adres" data-i18n-ph="apply.addr.ph">
+    <label class="lbl" data-i18n="apply.hs">Lise</label>
+    <input type="text" class="fld" id="scHighSchool" placeholder="Lise adı" data-i18n-ph="apply.hs.ph">
+    <div class="grid2">
+      <div>
+        <label class="lbl" data-i18n="apply.pp.no">Pasaport no</label>
+        <input type="text" class="fld" id="scPassportNo">
+      </div>
+      <div>
+        <label class="lbl" data-i18n="apply.pp.by">Veren makam</label>
+        <input type="text" class="fld" id="scPassportIssuedBy" placeholder="Örn. Nüfus Müdürlüğü" data-i18n-ph="apply.pp.by.ph">
+      </div>
+    </div>
+    <div class="grid2">
+      <div>
+        <label class="lbl" data-i18n="apply.pp.issue">Pasaport veriliş tarihi</label>
+        <input type="date" class="fld" id="scPassportIssue">
+      </div>
+      <div>
+        <label class="lbl" data-i18n="apply.pp.expiry">Pasaport son geçerlilik</label>
+        <input type="date" class="fld" id="scPassportExpiry">
+      </div>
+    </div>
+
     <button class="btn-submit" id="scSubmitBtn" onclick="scSubmit()">
       <i class="bi bi-send-fill"></i> <span data-i18n="apply.submit">Başvuruyu Gönder</span>
     </button>
@@ -401,6 +458,54 @@
         <div class="chip" data-f="fEngLevel" data-v="Advanced"     onclick="fChip('fEngLevel',this)"><span data-i18n="apply.adv">İleri</span> <span style="opacity:.6;font-weight:400">(C1-C2)</span></div>
       </div>
     </div>
+    <div class="wiz-step" data-step="7" style="display:none">
+      <div class="step-h" data-i18n="apply.idpass">Kimlik &amp; Pasaport</div>
+      <div class="step-sub" data-i18n="apply.idpass.s">İsteğe bağlı — daha sonra da tamamlayabilirsin.</div>
+      <div class="grid2">
+        <div>
+          <label class="lbl" data-i18n="apply.dob">Doğum tarihi</label>
+          <input type="date" class="fld" id="f_dob">
+        </div>
+        <div>
+          <label class="lbl" data-i18n="apply.pob">Doğum yeri</label>
+          <input type="text" class="fld" id="f_pob" placeholder="Şehir, ülke" data-i18n-ph="apply.pob.ph">
+        </div>
+      </div>
+      <div class="grid2">
+        <div>
+          <label class="lbl" data-i18n="apply.nat">Uyruk</label>
+          <input type="text" class="fld" id="f_nationality" placeholder="Örn. Türkiye" data-i18n-ph="apply.nat.ph">
+        </div>
+        <div>
+          <label class="lbl" data-i18n="apply.res">İkamet ülkesi</label>
+          <input type="text" class="fld" id="f_residence" placeholder="Örn. Türkiye" data-i18n-ph="apply.nat.ph">
+        </div>
+      </div>
+      <label class="lbl" data-i18n="apply.addr">Adres</label>
+      <input type="text" class="fld" id="f_address" placeholder="Açık adres" data-i18n-ph="apply.addr.ph">
+      <label class="lbl" data-i18n="apply.hs">Lise</label>
+      <input type="text" class="fld" id="f_highschool" placeholder="Lise adı" data-i18n-ph="apply.hs.ph">
+      <div class="grid2">
+        <div>
+          <label class="lbl" data-i18n="apply.pp.no">Pasaport no</label>
+          <input type="text" class="fld" id="f_passport_no">
+        </div>
+        <div>
+          <label class="lbl" data-i18n="apply.pp.by">Veren makam</label>
+          <input type="text" class="fld" id="f_passport_issued_by" placeholder="Örn. Nüfus Müdürlüğü" data-i18n-ph="apply.pp.by.ph">
+        </div>
+      </div>
+      <div class="grid2">
+        <div>
+          <label class="lbl" data-i18n="apply.pp.issue">Pasaport veriliş tarihi</label>
+          <input type="date" class="fld" id="f_passport_issue">
+        </div>
+        <div>
+          <label class="lbl" data-i18n="apply.pp.expiry">Pasaport son geçerlilik</label>
+          <input type="date" class="fld" id="f_passport_expiry">
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Loading -->
@@ -413,6 +518,19 @@
     <div class="spinner-ring"></div>
     <p style="color:var(--muted);font-size:.9rem" data-i18n="apply.submitting">Başvurun gönderiliyor…</p>
   </div>
+  <!-- Document upload (shown after a successful submission) -->
+  <div id="docUploadState" style="display:none">
+    <div style="text-align:center;margin-bottom:24px">
+      <div class="ic" style="width:64px;height:64px;margin:0 auto 14px;background:rgba(99,102,241,.1)"><i class="bi bi-cloud-arrow-up-fill" style="font-size:1.7rem;color:var(--accent)"></i></div>
+      <h4 style="font-weight:900;color:var(--text)" data-i18n="apply.docs.h">Belgelerini Yükle</h4>
+      <p style="color:var(--muted);font-size:.86rem;max-width:420px;margin:8px auto 0" data-i18n="apply.docs.p">İsteğe bağlı — şimdi yükleyebilir ya da daha sonra tamamlayabilirsin.</p>
+    </div>
+    <div id="docUploadList"></div>
+    <button class="btn-submit" onclick="goToSuccess()" style="margin-top:8px">
+      <i class="bi bi-arrow-right"></i> <span data-i18n="apply.docs.continue">Devam Et</span>
+    </button>
+  </div>
+
   <!-- Success -->
   <div id="successState" style="display:none">
     <div class="success-wrap">
@@ -441,6 +559,58 @@
 // ── Shared helpers ─────────────────────────────────────────────────────────
 function esc(s) { return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function validEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+
+// ── Document upload (shown after a successful submission) ──────────────────
+const DOC_TYPES = [
+  { key: 'passport',       label: 'Pasaport',                    icon: 'bi-file-earmark-person' },
+  { key: 'hs_diploma',     label: 'Lise Diploması',               icon: 'bi-award' },
+  { key: 'hs_transcript',  label: 'Lise Transkripti',             icon: 'bi-file-earmark-text' },
+  { key: 'english_score',  label: 'İngilizce Sınav Sonucu',       icon: 'bi-translate' },
+  { key: 'yks_result',     label: 'YKS Sonuç Belgesi',            icon: 'bi-clipboard-check' },
+  { key: 'osym_placement', label: 'ÖSYM Yerleştirme Belgesi',     icon: 'bi-file-earmark-check' },
+];
+let currentAppId = null, currentUploadToken = null;
+
+function renderDocUpload() {
+  document.getElementById('docUploadList').innerHTML = DOC_TYPES.map(d => `
+    <div class="doc-row" id="docRow_${d.key}">
+      <div class="doc-row-main"><i class="bi ${d.icon}"></i><span>${esc(d.label)}</span></div>
+      <label class="doc-upload-btn" id="docBtn_${d.key}">
+        <i class="bi bi-upload"></i> Yükle
+        <input type="file" accept=".pdf,.jpg,.jpeg,.png,.webp" onchange="uploadDoc('${d.key}', this)">
+      </label>
+    </div>`).join('');
+}
+
+async function uploadDoc(docType, input) {
+  const file = input.files[0];
+  if (!file || !currentAppId) return;
+  const btn = document.getElementById('docBtn_' + docType);
+  const row = document.getElementById('docRow_' + docType);
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span>';
+  const fd = new FormData();
+  fd.append('file', file);
+  fd.append('doc_type', docType);
+  fd.append('token', currentUploadToken);
+  try {
+    const r = await fetch(`/api/public/applications/${currentAppId}/documents`, { method: 'POST', body: fd });
+    const res = await r.json();
+    if (!r.ok) throw new Error(res.error || 'Yükleme başarısız.');
+    row.classList.add('uploaded');
+    btn.classList.add('done');
+    btn.innerHTML = '<i class="bi bi-check-lg"></i> Yüklendi';
+  } catch (e) {
+    btn.classList.remove('done');
+    btn.innerHTML = '<i class="bi bi-upload"></i> Yükle<input type="file" accept=".pdf,.jpg,.jpeg,.png,.webp" onchange="uploadDoc(\'' + docType + '\', this)">';
+    alert(e.message);
+  }
+}
+
+function goToSuccess() {
+  document.getElementById('docUploadState').style.display = 'none';
+  document.getElementById('successState').style.display = 'block';
+  window.scrollTo({ top: 0 });
+}
 
 const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
@@ -720,7 +890,17 @@ async function scSubmit() {
     english_test_type:  (scSel.engTest === 'yes' ? scSel.engTestType : (scSel.engTest === 'no' ? 'None' : '')) || '',
     english_test_score: scSel.engTestScore || '',
     desired_intake:  intake || '',
-    notes:           noteParts.join(' | ')
+    notes:           noteParts.join(' | '),
+    date_of_birth:        document.getElementById('scDob').value || '',
+    place_of_birth:       (document.getElementById('scPob').value || '').trim(),
+    nationality:          (document.getElementById('scNationality').value || '').trim(),
+    residence_country:    (document.getElementById('scResidence').value || '').trim(),
+    address:              (document.getElementById('scAddress').value || '').trim(),
+    high_school:          (document.getElementById('scHighSchool').value || '').trim(),
+    passport_no:          (document.getElementById('scPassportNo').value || '').trim(),
+    passport_issued_by:   (document.getElementById('scPassportIssuedBy').value || '').trim(),
+    passport_issue_date:  document.getElementById('scPassportIssue').value || '',
+    passport_expiry_date: document.getElementById('scPassportExpiry').value || ''
   };
 
   document.getElementById('shortcutMode').style.display = 'none';
@@ -732,8 +912,10 @@ async function scSubmit() {
     });
     const res = await r.json();
     if (!r.ok) throw new Error(res.error || 'Hata oluştu.');
+    currentAppId = res.id; currentUploadToken = res.upload_token;
     document.getElementById('submitState').style.display = 'none';
-    document.getElementById('successState').style.display = 'block';
+    renderDocUpload();
+    document.getElementById('docUploadState').style.display = 'block';
     window.scrollTo({ top: 0 });
   } catch(e) {
     document.getElementById('submitState').style.display = 'none';
@@ -745,7 +927,7 @@ async function scSubmit() {
 // ══════════════════════════════════════════════════════════════════════════
 // FUNNEL MODE (cold start)
 // ══════════════════════════════════════════════════════════════════════════
-const TOTAL_STEPS = 6;
+const TOTAL_STEPS = 7;
 let curStep = 1;
 let allUnis = [], allCountryProgs = [], fPrograms = [];
 const fSel = { continent:null, country:null, progType:null, schoolId:null, schoolName:null,
@@ -757,7 +939,7 @@ const CONTINENTS = [
   {val:'Asia',          label:'Asya 🌏'},
   {val:'UK',            label:'Birleşik Krallık 🇬🇧'},
 ];
-const STEP_LABELS = ['Kıta','Ülke','Program Türü','Okul','Program','İletişim & Profil'];
+const STEP_LABELS = ['Kıta','Ülke','Program Türü','Okul','Program','İletişim & Profil','Kimlik & Pasaport'];
 
 async function initFunnel() {
   document.getElementById('funnelMode').style.display = 'block';
@@ -903,7 +1085,17 @@ async function funnelSubmit() {
     phone: phone,
     university_id: fSel.schoolId, university_name: fSel.schoolName||'',
     country: fSel.country||'', program_id: fSel.programId, program_name: fSel.programName||'',
-    desired_intake: document.getElementById('intakeSelect').value||'', notes
+    desired_intake: document.getElementById('intakeSelect').value||'', notes,
+    date_of_birth:        document.getElementById('f_dob').value || '',
+    place_of_birth:       (document.getElementById('f_pob').value || '').trim(),
+    nationality:          (document.getElementById('f_nationality').value || '').trim(),
+    residence_country:    (document.getElementById('f_residence').value || '').trim(),
+    address:              (document.getElementById('f_address').value || '').trim(),
+    high_school:          (document.getElementById('f_highschool').value || '').trim(),
+    passport_no:          (document.getElementById('f_passport_no').value || '').trim(),
+    passport_issued_by:   (document.getElementById('f_passport_issued_by').value || '').trim(),
+    passport_issue_date:  document.getElementById('f_passport_issue').value || '',
+    passport_expiry_date: document.getElementById('f_passport_expiry').value || ''
   };
   document.getElementById('funnelMode').style.display = 'none';
   document.getElementById('ctaBar').style.display = 'none';
@@ -913,8 +1105,10 @@ async function funnelSubmit() {
     const r = await fetch('/api/public/applications', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
     const res = await r.json();
     if (!r.ok) throw new Error(res.error || 'Hata oluştu.');
+    currentAppId = res.id; currentUploadToken = res.upload_token;
     document.getElementById('submitState').style.display = 'none';
-    document.getElementById('successState').style.display = 'block';
+    renderDocUpload();
+    document.getElementById('docUploadState').style.display = 'block';
     window.scrollTo({ top: 0 });
   } catch(e) {
     document.getElementById('submitState').style.display = 'none';
