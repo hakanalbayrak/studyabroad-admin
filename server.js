@@ -152,19 +152,16 @@ app.post('/api/public/english-test', async (req, res) => {
       'INSERT INTO english_test_results (email, level, score, answers) VALUES (?, ?, ?, ?)',
       [cleanEmail, level, parseInt(score) || 0, JSON.stringify(answers || [])]
     );
-    let leadCreated = false, leadError = null;
     try {
       await db.query(
         `INSERT INTO leads (student_name, email, message)
          VALUES ('', ?, ?)`,
         [cleanEmail, `İngilizce testi sonucu: ${level} (${parseInt(score) || 0}/20 doğru)`]
       );
-      leadCreated = true;
     } catch (e) {
-      leadError = e.message;
       console.error('[english-test] lead insert failed:', e.message);
     }
-    res.json({ ok: true, leadCreated, leadError });
+    res.json({ ok: true });
     const { sendEnglishTestResult } = require('./utils/mailer');
     sendEnglishTestResult(email, level, score).catch(() => {});
   } catch (e) { res.status(500).json({ error: e.message }); }
