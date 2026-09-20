@@ -753,6 +753,7 @@
           </select>
           <button class="btn btn-outline-secondary btn-sm" onclick="loadLeads()"><i class="bi bi-arrow-clockwise"></i></button>
           <a href="/api/admin/leads/export" class="btn btn-outline-success btn-sm"><i class="bi bi-download me-1"></i>Export CSV</a>
+          <button class="btn btn-danger btn-sm d-none" id="leadBulkDeleteBtn" onclick="bulkDeleteLeads()"><i class="bi bi-trash me-1"></i>Delete Selected (<span id="leadBulkCount">0</span>)</button>
         </div>
       </div>
 
@@ -843,6 +844,7 @@
             <option>B2</option><option>C1</option><option>C2</option>
           </select>
           <button class="btn btn-outline-secondary btn-sm" onclick="loadEngTest()"><i class="bi bi-arrow-clockwise"></i></button>
+          <button class="btn btn-danger btn-sm d-none" id="etBulkDeleteBtn" onclick="bulkDeleteEngTest()"><i class="bi bi-trash me-1"></i>Delete Selected (<span id="etBulkCount">0</span>)</button>
         </div>
       </div>
       <div id="etTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
@@ -2424,6 +2426,7 @@ function exportBulkCSV() {
 
 // ── Leads ─────────────────────────────────────────────────────────────────────
 let allLeads = [];
+let selectedLeads = new Set();
 
 async function loadLeads() {
   try {
@@ -2466,6 +2469,7 @@ function renderLeadsTable(leads) {
     <table class="table table-hover table-sm align-middle mb-0" style="font-size:.83rem">
       <thead class="table-dark">
         <tr>
+          <th style="width:30px"><input type="checkbox" id="leadSelectAll" onchange="toggleAllLeads(this.checked)"></th>
           <th>Date</th><th>Name</th><th>Email</th><th>Phone</th>
           <th>Program</th><th>University</th><th>Country</th>
           <th>Status</th><th>Notes</th><th></th>
@@ -2473,6 +2477,7 @@ function renderLeadsTable(leads) {
       </thead>
       <tbody>
         ${leads.map(l => `<tr>
+          <td><input type="checkbox" class="lead-chk" data-id="${l.id}" onchange="toggleLeadSelect(${l.id},this.checked)" ${selectedLeads.has(l.id)?'checked':''}></td>
           <td style="white-space:nowrap;color:#6c757d">${new Date(l.created_at).toLocaleDateString()}</td>
           <td class="fw-semibold">${esc2(l.student_name)}${l.message?' <i class="bi bi-chat-left-text-fill text-primary" style="font-size:.7rem" title="Has message"></i>':''}</td>
           <td><a href="mailto:${esc2(l.email)}" style="color:#818cf8">${esc2(l.email)}</a></td>
@@ -2498,6 +2503,41 @@ function renderLeadsTable(leads) {
     </table>
   </div>
   <div class="text-muted small mt-2 text-end">${leads.length} lead${leads.length!==1?'s':''}</div>`;
+  updateLeadBulkUI();
+}
+
+function toggleAllLeads(checked) {
+  document.querySelectorAll('.lead-chk').forEach(cb => {
+    cb.checked = checked;
+    const id = parseInt(cb.dataset.id);
+    if (checked) selectedLeads.add(id); else selectedLeads.delete(id);
+  });
+  updateLeadBulkUI();
+}
+
+function toggleLeadSelect(id, checked) {
+  if (checked) selectedLeads.add(id); else selectedLeads.delete(id);
+  updateLeadBulkUI();
+}
+
+function updateLeadBulkUI() {
+  const btn = document.getElementById('leadBulkDeleteBtn');
+  const count = document.getElementById('leadBulkCount');
+  if (!btn) return;
+  count.textContent = selectedLeads.size;
+  btn.classList.toggle('d-none', selectedLeads.size === 0);
+  const selectAll = document.getElementById('leadSelectAll');
+  const chks = document.querySelectorAll('.lead-chk');
+  if (selectAll) selectAll.checked = chks.length > 0 && [...chks].every(cb => cb.checked);
+}
+
+async function bulkDeleteLeads() {
+  if (!selectedLeads.size) return;
+  if (!confirm(`${selectedLeads.size} lead silinsin mi?`)) return;
+  await Promise.all([...selectedLeads].map(id => api('DELETE', `/api/admin/leads/${id}`)));
+  allLeads = allLeads.filter(l => !selectedLeads.has(l.id));
+  selectedLeads.clear();
+  filterLeads();
 }
 
 async function updateLeadStatus(id, status) {
@@ -3173,6 +3213,7 @@ async function deleteTier(id) {
 
 // ── English Test ─────────────────────────────────────────────────────────────
 let allEngTest = [];
+let selectedEngTest = new Set();
 
 async function loadEngTest() {
   document.getElementById('etTableWrap').innerHTML = '<div class="text-center text-muted py-5">Loading…</div>';
@@ -3196,14 +3237,17 @@ function filterEngTest() {
   const wrap = document.getElementById('etTableWrap');
   if (!rows.length) {
     wrap.innerHTML = '<div class="text-center text-muted py-5">No results yet.</div>';
+    updateEtBulkUI();
     return;
   }
   wrap.innerHTML = `<div class="table-responsive"><table class="table table-hover align-middle" style="font-size:.87rem">
     <thead><tr style="color:#94a3b8;font-size:.78rem;text-transform:uppercase">
+      <th style="width:30px"><input type="checkbox" id="etSelectAll" onchange="toggleAllEngTest(this.checked)"></th>
       <th>Email</th><th>Level</th><th>Score</th><th>Date</th><th></th>
     </tr></thead>
     <tbody>
       ${rows.map(r => `<tr>
+        <td><input type="checkbox" class="et-chk" data-id="${r.id}" onchange="toggleEngTestSelect(${r.id},this.checked)" ${selectedEngTest.has(r.id)?'checked':''}></td>
         <td>${esc2(r.email)}</td>
         <td><span class="badge" style="background:${LEVEL_COLOR[r.level]||'#64748b'};font-size:.8rem">${esc2(r.level)}</span></td>
         <td>${r.score}/20</td>
@@ -3213,12 +3257,48 @@ function filterEngTest() {
     </tbody>
   </table></div>
   <div class="text-muted small mt-1">${rows.length} result(s)</div>`;
+  updateEtBulkUI();
 }
 
 async function deleteEngTest(id) {
   if (!confirm('Bu test sonucunu sil?')) return;
   await api('DELETE', `/api/admin/english-test/${id}`);
   allEngTest = allEngTest.filter(r => r.id !== id);
+  selectedEngTest.delete(id);
+  filterEngTest();
+}
+
+function toggleAllEngTest(checked) {
+  document.querySelectorAll('.et-chk').forEach(cb => {
+    cb.checked = checked;
+    const id = parseInt(cb.dataset.id);
+    if (checked) selectedEngTest.add(id); else selectedEngTest.delete(id);
+  });
+  updateEtBulkUI();
+}
+
+function toggleEngTestSelect(id, checked) {
+  if (checked) selectedEngTest.add(id); else selectedEngTest.delete(id);
+  updateEtBulkUI();
+}
+
+function updateEtBulkUI() {
+  const btn = document.getElementById('etBulkDeleteBtn');
+  const count = document.getElementById('etBulkCount');
+  if (!btn) return;
+  count.textContent = selectedEngTest.size;
+  btn.classList.toggle('d-none', selectedEngTest.size === 0);
+  const selectAll = document.getElementById('etSelectAll');
+  const chks = document.querySelectorAll('.et-chk');
+  if (selectAll) selectAll.checked = chks.length > 0 && [...chks].every(cb => cb.checked);
+}
+
+async function bulkDeleteEngTest() {
+  if (!selectedEngTest.size) return;
+  if (!confirm(`${selectedEngTest.size} test sonucu silinsin mi?`)) return;
+  await Promise.all([...selectedEngTest].map(id => api('DELETE', `/api/admin/english-test/${id}`)));
+  allEngTest = allEngTest.filter(r => !selectedEngTest.has(r.id));
+  selectedEngTest.clear();
   filterEngTest();
 }
 </script>
