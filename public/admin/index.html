@@ -2489,7 +2489,10 @@ function renderLeadsTable(leads) {
             <input type="text" value="${esc2(l.notes||'')}" placeholder="Add note…" class="form-control form-control-sm" style="min-width:120px;font-size:.75rem"
               onblur="updateLeadNotes(${l.id},this.value)">
           </td>
-          <td><button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem;white-space:nowrap" onclick="openLeadDetail(${l.id})"><i class="bi bi-eye me-1"></i>View</button></td>
+          <td style="white-space:nowrap">
+            <button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem" onclick="openLeadDetail(${l.id})"><i class="bi bi-eye me-1"></i>View</button>
+            <button class="btn btn-outline-danger btn-sm py-0 ms-1" style="font-size:.72rem" onclick="deleteLead(${l.id})"><i class="bi bi-trash"></i></button>
+          </td>
         </tr>`).join('')}
       </tbody>
     </table>
@@ -2517,6 +2520,13 @@ async function updateLeadNotes(id, notes) {
   await api('PATCH', `/api/admin/leads/${id}`, { notes });
   const lead = allLeads.find(l => l.id === id);
   if (lead) lead.notes = notes;
+}
+
+async function deleteLead(id) {
+  if (!confirm('Bu lead\'i sil?')) return;
+  await api('DELETE', `/api/admin/leads/${id}`);
+  allLeads = allLeads.filter(l => l.id !== id);
+  filterLeads();
 }
 
 let leadModal, currentLeadId = null;
@@ -3190,7 +3200,7 @@ function filterEngTest() {
   }
   wrap.innerHTML = `<div class="table-responsive"><table class="table table-hover align-middle" style="font-size:.87rem">
     <thead><tr style="color:#94a3b8;font-size:.78rem;text-transform:uppercase">
-      <th>Email</th><th>Level</th><th>Score</th><th>Date</th>
+      <th>Email</th><th>Level</th><th>Score</th><th>Date</th><th></th>
     </tr></thead>
     <tbody>
       ${rows.map(r => `<tr>
@@ -3198,10 +3208,18 @@ function filterEngTest() {
         <td><span class="badge" style="background:${LEVEL_COLOR[r.level]||'#64748b'};font-size:.8rem">${esc2(r.level)}</span></td>
         <td>${r.score}/20</td>
         <td style="color:#64748b">${r.created_at ? new Date(r.created_at).toLocaleDateString() : ''}</td>
+        <td><button class="btn btn-outline-danger btn-sm py-0" style="font-size:.72rem" onclick="deleteEngTest(${r.id})"><i class="bi bi-trash"></i></button></td>
       </tr>`).join('')}
     </tbody>
   </table></div>
   <div class="text-muted small mt-1">${rows.length} result(s)</div>`;
+}
+
+async function deleteEngTest(id) {
+  if (!confirm('Bu test sonucunu sil?')) return;
+  await api('DELETE', `/api/admin/english-test/${id}`);
+  allEngTest = allEngTest.filter(r => r.id !== id);
+  filterEngTest();
 }
 </script>
 </body>

@@ -176,6 +176,13 @@ app.get('/api/admin/english-test', requireRole('admin'), async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+app.delete('/api/admin/english-test/:id', requireRole('admin'), async (req, res) => {
+  try {
+    await db.query('DELETE FROM english_test_results WHERE id = ?', [req.params.id]);
+    res.json({ ok: true });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 // Legacy admin login — maps to new JWT system for backward compatibility
 app.post('/api/admin/login', async (req, res) => {
   const { email, password } = req.body;
@@ -730,6 +737,14 @@ app.get('/api/admin/leads', requireRole('admin'), async (req, res) => {
       vals
     );
     res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Admin: delete a lead
+app.delete('/api/admin/leads/:id', requireRole('admin'), async (req, res) => {
+  try {
+    await db.query('DELETE FROM leads WHERE id = ?', [req.params.id]);
+    res.json({ ok: true });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
