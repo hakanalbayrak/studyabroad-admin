@@ -337,7 +337,7 @@ async function sendEnglishTestResult(email, level, score) {
             <td style="padding:8px 12px;background:#f8fafc;border-radius:8px;margin-bottom:6px">
               <strong>IELTS Hazırlık</strong><br>
               <span style="color:#64748b;font-size:.85rem">Resmi sınav için en kapsamlı kurs</span><br>
-              <a href="https://www.britishcouncil.org.tr/sinav/ielts" style="color:#6366f1;font-size:.85rem">→ British Council IELTS</a>
+              <a href="${process.env.APP_URL || 'https://paneledu.com'}/api/go/ielts" style="color:#6366f1;font-size:.85rem">→ British Council IELTS</a>
             </td>
           </tr>
           <tr><td style="height:6px"></td></tr>
@@ -345,7 +345,7 @@ async function sendEnglishTestResult(email, level, score) {
             <td style="padding:8px 12px;background:#f8fafc;border-radius:8px">
               <strong>TOEFL Hazırlık</strong><br>
               <span style="color:#64748b;font-size:.85rem">ABD üniversiteleri için standart sınav</span><br>
-              <a href="https://www.ets.org/toefl" style="color:#6366f1;font-size:.85rem">→ ETS TOEFL</a>
+              <a href="${process.env.APP_URL || 'https://paneledu.com'}/api/go/toefl" style="color:#6366f1;font-size:.85rem">→ ETS TOEFL</a>
             </td>
           </tr>
           <tr><td style="height:6px"></td></tr>
@@ -353,7 +353,7 @@ async function sendEnglishTestResult(email, level, score) {
             <td style="padding:8px 12px;background:#f8fafc;border-radius:8px">
               <strong>Duolingo English Test</strong><br>
               <span style="color:#64748b;font-size:.85rem">Online, hızlı ve 500+ üniversite kabul ediyor</span><br>
-              <a href="https://englishtest.duolingo.com" style="color:#6366f1;font-size:.85rem">→ Duolingo English Test</a>
+              <a href="${process.env.APP_URL || 'https://paneledu.com'}/api/go/duolingo" style="color:#6366f1;font-size:.85rem">→ Duolingo English Test</a>
             </td>
           </tr>
         </table>

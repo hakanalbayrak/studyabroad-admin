@@ -139,6 +139,39 @@ app.use('/api/public/applications', applications.publicRouter);
 app.use('/api/admin/applications', requireRole('admin'), applications.adminRouter);
 app.use('/api/admin/tiers', requireRole('admin'), require('./routes/subscriptions'));
 
+// Provider affiliate links (IELTS/TOEFL/Duolingo/etc) — tracked redirect so
+// the destination URL can be swapped from the admin panel without a deploy.
+app.get('/api/go/:provider', async (req, res) => {
+  try {
+    const [[row]] = await db.query(
+      'SELECT url FROM affiliate_links WHERE provider_key = ?',
+      [req.params.provider.toLowerCase()]
+    );
+    if (!row) return res.status(404).send('Unknown provider.');
+    db.query('UPDATE affiliate_links SET clicks = clicks + 1 WHERE provider_key = ?', [req.params.provider.toLowerCase()]).catch(() => {});
+    res.redirect(302, row.url);
+  } catch (e) { res.status(500).send('Error.'); }
+});
+
+app.get('/api/admin/affiliate-links', requireRole('admin'), async (req, res) => {
+  try {
+    const [rows] = await db.query('SELECT * FROM affiliate_links ORDER BY provider_key');
+    res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+app.patch('/api/admin/affiliate-links/:id', requireRole('admin'), async (req, res) => {
+  try {
+    const sets = [], vals = [];
+    if (req.body.url !== undefined) { sets.push('url = ?'); vals.push(String(req.body.url).slice(0, 500)); }
+    if (req.body.label !== undefined) { sets.push('label = ?'); vals.push(String(req.body.label).slice(0, 100)); }
+    if (!sets.length) return res.status(400).json({ error: 'Nothing to update.' });
+    vals.push(req.params.id);
+    await db.query(`UPDATE affiliate_links SET ${sets.join(', ')} WHERE id = ?`, vals);
+    res.json({ ok: true });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 // English level test
 app.post('/api/public/english-test', async (req, res) => {
   try {

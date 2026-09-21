@@ -122,6 +122,9 @@
       <a href="#" class="nav-link" data-sec="tiers" onclick="showSection('tiers');return false;">
         <i class="bi bi-layers-fill"></i>Sub. Tiers
       </a>
+      <a href="#" class="nav-link" data-sec="afflinks" onclick="showSection('afflinks');return false;">
+        <i class="bi bi-link-45deg"></i>Affiliate Links
+      </a>
     </div>
     <div class="p-3 border-top border-secondary">
       <button class="btn btn-outline-light btn-sm w-100 opacity-75" onclick="doLogout()">
@@ -876,6 +879,16 @@
       <div id="tiersTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
     </div><!-- /tiersSection -->
 
+    <!-- ── Affiliate Links ──────────────────────────────────────────────────── -->
+    <div id="afflinksSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <h4 class="fw-bold mb-0"><i class="bi bi-link-45deg me-2 text-primary"></i>Affiliate Links</h4>
+        <button class="btn btn-outline-secondary btn-sm" onclick="loadAffLinks()"><i class="bi bi-arrow-clockwise"></i></button>
+      </div>
+      <p class="text-muted small mb-3">These are the destinations behind <code>/api/go/&lt;provider&gt;</code> — used on the English test page, its result email, and the Apply form's English-proof hint. Currently plain provider pages (placeholders); swap in real affiliate/commission links here once you have them, no deploy needed.</p>
+      <div id="afflinksTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
+    </div><!-- /afflinksSection -->
+
   </div><!-- /mainContent -->
 </div><!-- /adminApp -->
 
@@ -1344,6 +1357,7 @@ function showSection(name) {
   if (name === 'engtest') loadEngTest();
   if (name === 'docs') loadDocs();
   if (name === 'tiers') loadTiers();
+  if (name === 'afflinks') loadAffLinks();
 }
 
 async function loadStats() {
@@ -3300,6 +3314,54 @@ async function bulkDeleteEngTest() {
   allEngTest = allEngTest.filter(r => !selectedEngTest.has(r.id));
   selectedEngTest.clear();
   filterEngTest();
+}
+
+// ── Affiliate Links ─────────────────────────────────────────────────────────
+let allAffLinks = [];
+
+async function loadAffLinks() {
+  document.getElementById('afflinksTableWrap').innerHTML = '<div class="text-center text-muted py-5">Loading…</div>';
+  try {
+    const r = await api('GET', '/api/admin/affiliate-links');
+    allAffLinks = await r.json();
+    renderAffLinks();
+  } catch (e) {
+    document.getElementById('afflinksTableWrap').innerHTML = `<div class="text-danger small">${esc2(e.message)}</div>`;
+  }
+}
+
+function renderAffLinks() {
+  const wrap = document.getElementById('afflinksTableWrap');
+  if (!allAffLinks.length) { wrap.innerHTML = '<div class="text-muted small text-center py-5">No links yet.</div>'; return; }
+  wrap.innerHTML = `<div class="table-responsive">
+    <table class="table table-hover align-middle" style="font-size:.87rem">
+      <thead><tr style="color:#94a3b8;font-size:.78rem;text-transform:uppercase">
+        <th>Provider</th><th>Label</th><th>URL</th><th>Clicks</th><th></th>
+      </tr></thead>
+      <tbody>
+        ${allAffLinks.map(l => `<tr>
+          <td><code>${esc2(l.provider_key)}</code></td>
+          <td style="min-width:160px"><input type="text" class="form-control form-control-sm" id="afLabel_${l.id}" value="${esc2(l.label)}"></td>
+          <td style="min-width:320px"><input type="text" class="form-control form-control-sm" id="afUrl_${l.id}" value="${esc2(l.url)}"></td>
+          <td>${l.clicks}</td>
+          <td><button class="btn btn-primary btn-sm py-0" style="font-size:.72rem" onclick="saveAffLink(${l.id})"><i class="bi bi-check-lg me-1"></i>Save</button></td>
+        </tr>`).join('')}
+      </tbody>
+    </table>
+  </div>`;
+}
+
+async function saveAffLink(id) {
+  const label = document.getElementById('afLabel_' + id).value.trim();
+  const url = document.getElementById('afUrl_' + id).value.trim();
+  if (!url) { toast('URL is required.', 'error'); return; }
+  try {
+    const r = await api('PATCH', `/api/admin/affiliate-links/${id}`, { label, url });
+    if (!r.ok) throw new Error((await r.json()).error || 'Save failed');
+    const l = allAffLinks.find(x => x.id === id);
+    if (l) { l.label = label; l.url = url; }
+    toast('Link updated.');
+  } catch (e) { toast(e.message, 'error'); }
 }
 </script>
 </body>

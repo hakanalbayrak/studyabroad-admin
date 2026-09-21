@@ -528,11 +528,11 @@ const DOC_TYPES = [
   { key: 'english_score',  label: 'İngilizce Sınav Belgesi (varsa)', icon: 'bi-translate' },
 ];
 const ENGLISH_AFFILIATE = {
-  IELTS:    { label: 'IELTS',    url: 'https://www.britishcouncil.org.tr/sinav/ielts' },
-  TOEFL:    { label: 'TOEFL',    url: 'https://www.ets.org/toefl' },
-  Duolingo: { label: 'Duolingo English Test', url: 'https://englishtest.duolingo.com' },
-  PTE:      { label: 'Pearson PTE', url: 'https://www.pearsonpte.com' },
-  Cambridge:{ label: 'Cambridge English', url: 'https://www.cambridgeenglish.org' },
+  IELTS:    { label: 'IELTS',    url: '/api/go/ielts' },
+  TOEFL:    { label: 'TOEFL',    url: '/api/go/toefl' },
+  Duolingo: { label: 'Duolingo English Test', url: '/api/go/duolingo' },
+  PTE:      { label: 'Pearson PTE', url: '/api/go/pte' },
+  Cambridge:{ label: 'Cambridge English', url: '/api/go/cambridge' },
 };
 let currentAppId = null, currentUploadToken = null, requiredEnglishTest = null;
 
