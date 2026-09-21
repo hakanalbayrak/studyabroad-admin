@@ -136,15 +136,20 @@ expandable department dropdowns. Orbit 3D page already has the corner info
 panels (departments, fee, language, intake) — see the Orbit HUD design-
 identity work above.
 
-### Epic 3 — Application flow ("Apply now") ⚠️ PARTIAL — real gap
-Backend is fully built: `database/add_applications.sql` (full applicant
-schema — passport fields, GPA, English test, etc.), `routes/applications.js`
-(`POST /api/public/applications`, document upload via multer,
-10MB, PDF/JPG/PNG). **But `public/apply.html` only submits a subset**
-(name, phone, email, university/program, intake, notes — missing DOB,
-passport data, nationality, address, GPA, English score) **and there is no
-public-facing document upload UI at all** — the API supports it, nothing on
-the site calls it. This is the one epic with real remaining work.
+### Epic 3 — Application flow ("Apply now") ✅ BUILT (2026-09-21), needs live verification
+Backend was already complete (`database/add_applications.sql`,
+`routes/applications.js`). `public/apply.html` now also collects identity
+info (DOB, place of birth, nationality, residence, address, high school —
+optional, both in shortcut and funnel/cold-start mode) and, after a
+successful submission, shows a document upload step scoped to **only
+transcript + English test proof** (no passport/diploma/YKS/ÖSYM upload at
+this stage, per direction 2026-09-21 — passport comes later in the process).
+The English-proof row shows an affiliate link to the specific test
+(IELTS/TOEFL/Duolingo/PTE/Cambridge) the chosen program requires when the
+student doesn't have a score yet.
+Verified via curl against production (create + upload both succeed), but the
+real browser flow (both modes, mobile) hasn't been clicked through yet — see
+`docs/APPLY_FLOW_CHECKLIST.md`.
 
 ### Epic 4 — Pre-acceptance ("ön kabul") engine ✅ DONE
 `database/add_preacceptance.sql`, `routes/applications.js` (`POST
