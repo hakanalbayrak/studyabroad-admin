@@ -165,17 +165,24 @@ Reminders: per-application, bulk, cron-callable (`/api/auto/remind`), plus
 20-question CEFR test, email-gated result delivery, admin panel section,
 now also creates a lead (2026-09-19). Full details above.
 
-### Epic 7 — Affiliate marketing infrastructure ⚠️ PARTIAL — different shape than planned
+### Epic 7 — Affiliate marketing infrastructure ✅ DONE (placeholders), verified live (2026-09-22)
 Two separate things got conflated in the original plan:
 1. **"Refer a lead to us" affiliate program — already built**:
    `users.affiliate_code`, `leads.referred_by`, `routes/affiliate.js`
-   (dashboard, stats), `public/affiliate/index.html`. This is a real, tracked
-   referral system, just not what this epic originally described.
-2. **Provider-side commission links (IELTS/TOEFL/Duolingo etc.) — still just
-   static, non-tracked links** on the `/test` result page (from Epic 6). No
-   commission tracking, no real affiliate accounts with those providers.
-- Needs: affiliate accounts/links from each provider (user to supply) — only
-  remaining blocker, and it's an external dependency, not code.
+   (dashboard, stats), `public/affiliate/index.html`.
+2. **Provider-side links (IELTS/TOEFL/Duolingo/PTE/Cambridge) — tracked-
+   redirect infrastructure built (2026-09-22)**: new `affiliate_links` table
+   (provider_key, label, url, clicks), `GET /api/go/:provider` (counts the
+   click, 302s to the current URL), admin **Affiliate Links** panel section
+   (edit url/label per provider, see clicks — no deploy needed to change a
+   destination). Every hardcoded provider URL (test.html result page,
+   result email, apply.html's English-proof hint) now goes through
+   `/api/go/<provider>`. Verified live: all 5 providers 302 correctly,
+   unknown provider 404s.
+- **Still placeholders**: URLs are currently the providers' plain pages, not
+  real commission links — swap them in via the admin panel the moment real
+  affiliate accounts/links are supplied (user to supply); no code change
+  needed for that.
 
 ### Epic 8 — AI data agent + contribution review queue — NOT STARTED
 Confirmed genuinely not built: no `contributions` table, no route, no admin
