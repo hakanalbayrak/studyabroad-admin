@@ -147,9 +147,13 @@ this stage, per direction 2026-09-21 — passport comes later in the process).
 The English-proof row shows an affiliate link to the specific test
 (IELTS/TOEFL/Duolingo/PTE/Cambridge) the chosen program requires when the
 student doesn't have a score yet.
-Verified via curl against production (create + upload both succeed), but the
-real browser flow (both modes, mobile) hasn't been clicked through yet — see
-`docs/APPLY_FLOW_CHECKLIST.md`.
+Verified via curl against production, then via an automated Playwright pass
+against production (2026-09-22) — shortcut mode, funnel mode (all 7 steps),
+document upload scoping, the IELTS affiliate hint, and mobile layout for
+most steps all confirmed working. A few items are still open (admin-side
+display — needs a human with admin login; mobile document-upload screen —
+inconclusive due to sandbox network flakiness, not a suspected bug). See
+`docs/APPLY_FLOW_CHECKLIST.md` for the itemized results.
 
 ### Epic 4 — Pre-acceptance ("ön kabul") engine ✅ DONE
 `database/add_preacceptance.sql`, `routes/applications.js` (`POST
