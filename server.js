@@ -138,6 +138,9 @@ const applications = require('./routes/applications');
 app.use('/api/public/applications', applications.publicRouter);
 app.use('/api/admin/applications', requireRole('admin'), applications.adminRouter);
 app.use('/api/admin/tiers', requireRole('admin'), require('./routes/subscriptions'));
+const contributions = require('./routes/contributions');
+app.use('/api/contributions', contributions.publicRouter);
+app.use('/api/admin/contributions', requireRole('admin'), contributions.adminRouter);
 
 // Provider affiliate links (IELTS/TOEFL/Duolingo/etc) — tracked redirect so
 // the destination URL can be swapped from the admin panel without a deploy.

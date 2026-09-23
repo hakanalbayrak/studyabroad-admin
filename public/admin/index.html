@@ -125,6 +125,9 @@
       <a href="#" class="nav-link" data-sec="afflinks" onclick="showSection('afflinks');return false;">
         <i class="bi bi-link-45deg"></i>Affiliate Links
       </a>
+      <a href="#" class="nav-link" data-sec="contributions" onclick="showSection('contributions');return false;">
+        <i class="bi bi-inbox-fill"></i>Contributions
+      </a>
     </div>
     <div class="p-3 border-top border-secondary">
       <button class="btn btn-outline-light btn-sm w-100 opacity-75" onclick="doLogout()">
@@ -890,6 +893,30 @@
       <div id="afflinksTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
     </div><!-- /afflinksSection -->
 
+    <!-- ── Contribution Review Queue ────────────────────────────────────────── -->
+    <div id="contributionsSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <h4 class="fw-bold mb-0"><i class="bi bi-inbox-fill me-2 text-primary"></i>Contributions</h4>
+        <div class="d-flex gap-2">
+          <select class="form-select form-select-sm" id="contribStatusFilter" style="width:150px" onchange="loadContributions()">
+            <option value="pending" selected>Pending</option>
+            <option value="approved">Approved</option>
+            <option value="rejected">Rejected</option>
+            <option value="">All</option>
+          </select>
+          <select class="form-select form-select-sm" id="contribTypeFilter" style="width:130px" onchange="loadContributions()">
+            <option value="">All types</option>
+            <option value="entity">Entity</option>
+            <option value="program">Program</option>
+            <option value="ranking">Ranking</option>
+          </select>
+          <button class="btn btn-outline-secondary btn-sm" onclick="loadContributions()"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+      </div>
+      <p class="text-muted small mb-3">Proposed data — from the (future) AI data agent, or submitted manually via <code>POST /api/contributions</code> — waiting for review before it touches live entities/programs. Nothing here is ever written live without an explicit Approve.</p>
+      <div id="contribTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
+    </div><!-- /contributionsSection -->
+
   </div><!-- /mainContent -->
 </div><!-- /adminApp -->
 
@@ -1016,6 +1043,46 @@
       <div class="modal-footer border-0">
         <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button class="btn btn-primary" id="sendReplyBtn" onclick="sendReply()"><i class="bi bi-send me-1"></i>Send Reply</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contribution review modal -->
+<div class="modal fade" id="contribModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title"><i class="bi bi-inbox-fill me-2 text-primary"></i>Contribution #<span id="cmId"></span></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-2 small">
+          <b>Type:</b> <span id="cmType" class="badge bg-secondary"></span>
+          &nbsp;<b>Target:</b> <span id="cmTarget"></span>
+          &nbsp;<b>Status:</b> <span id="cmStatus"></span>
+        </div>
+        <div class="mb-3 small"><b>Source:</b> <a id="cmSource" href="#" target="_blank" rel="noopener" style="color:#818cf8"></a></div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Current (live)</label>
+            <pre id="cmCurrent" class="p-2 rounded" style="background:rgba(255,255,255,.05);font-size:.78rem;max-height:360px;overflow:auto;white-space:pre-wrap">—</pre>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label small fw-semibold">Proposed (editable — JSON)</label>
+            <textarea id="cmPayload" class="form-control" rows="16" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0;font-family:ui-monospace,monospace;font-size:.78rem"></textarea>
+          </div>
+        </div>
+        <div class="mt-3">
+          <label class="form-label small fw-semibold">Reviewer note <span class="text-muted fw-normal">(shown on reject)</span></label>
+          <input type="text" class="form-control form-control-sm" id="cmNote" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#e2e8f0">
+        </div>
+        <div id="cmError" class="text-danger small mt-2" style="display:none"></div>
+      </div>
+      <div class="modal-footer border-0">
+        <button class="btn btn-outline-light btn-sm" onclick="saveContribPayload()"><i class="bi bi-save me-1"></i>Save Edit</button>
+        <button class="btn btn-outline-danger btn-sm" id="cmRejectBtn" onclick="rejectContrib()"><i class="bi bi-x-lg me-1"></i>Reject</button>
+        <button class="btn btn-success btn-sm" id="cmApproveBtn" onclick="approveContrib()"><i class="bi bi-check-lg me-1"></i>Approve</button>
       </div>
     </div>
   </div>
@@ -1359,6 +1426,7 @@ function showSection(name) {
   if (name === 'docs') loadDocs();
   if (name === 'tiers') loadTiers();
   if (name === 'afflinks') loadAffLinks();
+  if (name === 'contributions') loadContributions();
 }
 
 async function loadStats() {
@@ -3412,6 +3480,116 @@ async function saveAffLink(id) {
     if (l) { l.label = label; l.url = url; }
     toast('Link updated.');
   } catch (e) { toast(e.message, 'error'); }
+}
+
+// ── Contribution Review Queue ───────────────────────────────────────────────
+let allContributions = [], contribModal, currentContribId = null;
+
+async function loadContributions() {
+  document.getElementById('contribTableWrap').innerHTML = '<div class="text-center text-muted py-5">Loading…</div>';
+  try {
+    const status = document.getElementById('contribStatusFilter')?.value || '';
+    const type = document.getElementById('contribTypeFilter')?.value || '';
+    const qs = new URLSearchParams();
+    if (status) qs.set('status', status);
+    if (type) qs.set('type', type);
+    const r = await api('GET', '/api/admin/contributions' + (qs.toString() ? '?' + qs.toString() : ''));
+    allContributions = r.ok ? await r.json() : [];
+    renderContribTable();
+  } catch (e) {
+    document.getElementById('contribTableWrap').innerHTML = `<div class="text-danger small">${esc2(e.message)}</div>`;
+  }
+}
+
+const CONTRIB_STATUS_COLOR = { pending: '#d97706', approved: '#059669', rejected: '#dc2626' };
+
+function renderContribTable() {
+  const wrap = document.getElementById('contribTableWrap');
+  if (!allContributions.length) { wrap.innerHTML = '<div class="text-muted small text-center py-5">No contributions found.</div>'; return; }
+  wrap.innerHTML = `<div class="table-responsive">
+    <table class="table table-hover align-middle" style="font-size:.85rem">
+      <thead><tr style="color:#94a3b8;font-size:.78rem;text-transform:uppercase">
+        <th>Date</th><th>Type</th><th>Target</th><th>Source</th><th>Submitted by</th><th>Status</th><th></th>
+      </tr></thead>
+      <tbody>
+        ${allContributions.map(c => `<tr>
+          <td style="white-space:nowrap;color:#6c757d">${c.created_at ? new Date(c.created_at).toLocaleDateString() : ''}</td>
+          <td><span class="badge bg-secondary">${esc2(c.type)}</span></td>
+          <td>${c.target_id ? '#' + c.target_id : '<span class="text-muted">New</span>'}</td>
+          <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"><a href="${esc2(c.source_url)}" target="_blank" rel="noopener" title="${esc2(c.source_url)}">${esc2(c.source_url)}</a></td>
+          <td>${esc2(c.submitted_by || '—')}</td>
+          <td><span class="badge" style="background:${CONTRIB_STATUS_COLOR[c.status] || '#64748b'}">${esc2(c.status)}</span></td>
+          <td><button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem" onclick="openContribution(${c.id})"><i class="bi bi-eye me-1"></i>Review</button></td>
+        </tr>`).join('')}
+      </tbody>
+    </table>
+  </div>
+  <div class="text-muted small mt-2 text-end">${allContributions.length} contribution${allContributions.length !== 1 ? 's' : ''}</div>`;
+}
+
+async function openContribution(id) {
+  currentContribId = id;
+  contribModal = contribModal || new bootstrap.Modal(document.getElementById('contribModal'));
+  document.getElementById('cmError').style.display = 'none';
+  document.getElementById('cmNote').value = '';
+  try {
+    const r = await api('GET', `/api/admin/contributions/${id}`);
+    if (!r.ok) throw new Error((await r.json()).error || 'Failed to load.');
+    const c = await r.json();
+    document.getElementById('cmId').textContent = c.id;
+    document.getElementById('cmType').textContent = c.type;
+    document.getElementById('cmTarget').textContent = c.target_id ? ('#' + c.target_id) : 'New record';
+    document.getElementById('cmStatus').textContent = c.status;
+    document.getElementById('cmSource').href = c.source_url;
+    document.getElementById('cmSource').textContent = c.source_url;
+    document.getElementById('cmCurrent').textContent = c.current ? JSON.stringify(c.current, null, 2) : '(no existing record — this is a new one)';
+    document.getElementById('cmPayload').value = JSON.stringify(c.payload, null, 2);
+    const reviewed = c.status !== 'pending';
+    document.getElementById('cmApproveBtn').disabled = reviewed;
+    document.getElementById('cmRejectBtn').disabled = reviewed;
+    document.getElementById('cmPayload').disabled = reviewed;
+    contribModal.show();
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+async function saveContribPayload() {
+  let payload;
+  try { payload = JSON.parse(document.getElementById('cmPayload').value); }
+  catch (e) { showContribError('Invalid JSON: ' + e.message); return; }
+  try {
+    const r = await api('PATCH', `/api/admin/contributions/${currentContribId}`, { payload });
+    if (!r.ok) throw new Error((await r.json()).error || 'Save failed');
+    toast('Payload updated.');
+  } catch (e) { showContribError(e.message); }
+}
+
+async function approveContrib() {
+  await saveContribPayload();
+  try {
+    const r = await api('POST', `/api/admin/contributions/${currentContribId}/approve`);
+    const res = await r.json();
+    if (!r.ok) throw new Error(res.error || 'Approve failed');
+    toast('Approved — written to live data.');
+    contribModal.hide();
+    loadContributions();
+  } catch (e) { showContribError(e.message); }
+}
+
+async function rejectContrib() {
+  try {
+    const note = document.getElementById('cmNote').value.trim();
+    const r = await api('POST', `/api/admin/contributions/${currentContribId}/reject`, { note });
+    if (!r.ok) throw new Error((await r.json()).error || 'Reject failed');
+    toast('Rejected.');
+    contribModal.hide();
+    loadContributions();
+  } catch (e) { showContribError(e.message); }
+}
+
+function showContribError(msg) {
+  const el = document.getElementById('cmError');
+  el.textContent = msg;
+  el.style.display = 'block';
 }
 </script>
 </body>
