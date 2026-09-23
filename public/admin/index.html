@@ -819,6 +819,7 @@
           </select>
           <button class="btn btn-outline-warning btn-sm" onclick="bulkRemind()" title="Send reminder to all submitted/reviewing applicants"><i class="bi bi-bell me-1"></i>Bulk Remind</button>
           <button class="btn btn-outline-secondary btn-sm" onclick="loadApplications()"><i class="bi bi-arrow-clockwise"></i></button>
+          <button class="btn btn-danger btn-sm d-none" id="appBulkDeleteBtn" onclick="bulkDeleteApplications()"><i class="bi bi-trash me-1"></i>Delete Selected (<span id="appBulkCount">0</span>)</button>
         </div>
       </div>
 
@@ -2731,6 +2732,7 @@ async function deleteUser(id, name) {
 
 // ── Applications ───────────────────────────────────────────────────────────────
 let allApplications = [];
+let selectedApps = new Set();
 let appModal = null;
 let currentAppId = null;
 
@@ -2777,6 +2779,7 @@ function renderApplicationsTable(apps) {
     <table class="table table-hover table-sm align-middle mb-0" style="font-size:.83rem">
       <thead class="table-dark">
         <tr>
+          <th style="width:30px"><input type="checkbox" id="appSelectAll" onchange="toggleAllApps(this.checked)"></th>
           <th>Date</th><th>Name</th><th>Email</th><th>University</th>
           <th>Program</th><th>Intake</th><th>Status</th><th class="text-center">Docs</th><th></th>
         </tr>
@@ -2785,6 +2788,7 @@ function renderApplicationsTable(apps) {
         ${apps.map(a => {
           const name = [a.first_name, a.last_name].filter(Boolean).join(' ') || '—';
           return `<tr>
+          <td><input type="checkbox" class="app-chk" data-id="${a.id}" onchange="toggleAppSelect(${a.id},this.checked)" ${selectedApps.has(a.id)?'checked':''}></td>
           <td style="white-space:nowrap;color:#6c757d">${a.created_at ? new Date(a.created_at).toLocaleDateString() : '—'}</td>
           <td class="fw-semibold">${esc2(name)}</td>
           <td><a href="mailto:${esc2(a.email)}" style="color:#818cf8">${esc2(a.email)}</a></td>
@@ -2797,12 +2801,58 @@ function renderApplicationsTable(apps) {
             </select>
           </td>
           <td class="text-center">${a.doc_count > 0 ? `<span class="badge bg-secondary">${a.doc_count}</span>` : '<span class="text-muted">0</span>'}</td>
-          <td><button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem;white-space:nowrap" onclick="openApplication(${a.id})"><i class="bi bi-eye me-1"></i>View</button></td>
+          <td style="white-space:nowrap">
+            <button class="btn btn-outline-primary btn-sm py-0" style="font-size:.72rem" onclick="openApplication(${a.id})"><i class="bi bi-eye me-1"></i>View</button>
+            <button class="btn btn-outline-danger btn-sm py-0 ms-1" style="font-size:.72rem" onclick="deleteApplication(${a.id})"><i class="bi bi-trash"></i></button>
+          </td>
         </tr>`;}).join('')}
       </tbody>
     </table>
   </div>
   <div class="text-muted small mt-2 text-end">${apps.length} application${apps.length!==1?'s':''}</div>`;
+  updateAppBulkUI();
+}
+
+function toggleAllApps(checked) {
+  document.querySelectorAll('.app-chk').forEach(cb => {
+    cb.checked = checked;
+    const id = parseInt(cb.dataset.id);
+    if (checked) selectedApps.add(id); else selectedApps.delete(id);
+  });
+  updateAppBulkUI();
+}
+
+function toggleAppSelect(id, checked) {
+  if (checked) selectedApps.add(id); else selectedApps.delete(id);
+  updateAppBulkUI();
+}
+
+function updateAppBulkUI() {
+  const btn = document.getElementById('appBulkDeleteBtn');
+  const count = document.getElementById('appBulkCount');
+  if (!btn) return;
+  count.textContent = selectedApps.size;
+  btn.classList.toggle('d-none', selectedApps.size === 0);
+  const selectAll = document.getElementById('appSelectAll');
+  const chks = document.querySelectorAll('.app-chk');
+  if (selectAll) selectAll.checked = chks.length > 0 && [...chks].every(cb => cb.checked);
+}
+
+async function deleteApplication(id) {
+  if (!confirm('Bu başvuruyu ve yüklenen belgelerini sil?')) return;
+  await api('DELETE', `/api/admin/applications/${id}`);
+  allApplications = allApplications.filter(a => a.id !== id);
+  selectedApps.delete(id);
+  filterApplications();
+}
+
+async function bulkDeleteApplications() {
+  if (!selectedApps.size) return;
+  if (!confirm(`${selectedApps.size} başvuru ve belgeleri silinsin mi?`)) return;
+  await Promise.all([...selectedApps].map(id => api('DELETE', `/api/admin/applications/${id}`)));
+  allApplications = allApplications.filter(a => !selectedApps.has(a.id));
+  selectedApps.clear();
+  filterApplications();
 }
 
 async function updateAppStatus(id, status) {

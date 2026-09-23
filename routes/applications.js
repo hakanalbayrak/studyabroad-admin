@@ -207,6 +207,16 @@ publicRouter.get('/:id/preaccept-pdf', async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+// Delete an application and its uploaded document files
+adminRouter.delete('/:id', async (req, res) => {
+  try {
+    const [docs] = await db.query('SELECT stored_name FROM application_documents WHERE application_id = ?', [req.params.id]);
+    docs.forEach(d => fs.unlink(path.join(UPLOAD_DIR, d.stored_name), () => {}));
+    await db.query('DELETE FROM applications WHERE id = ?', [req.params.id]);
+    res.json({ ok: true });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 adminRouter.patch('/:id', async (req, res) => {
   try {
     const sets = [], vals = [];
