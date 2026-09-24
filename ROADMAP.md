@@ -188,9 +188,26 @@ Two separate things got conflated in the original plan:
   affiliate accounts/links are supplied (user to supply); no code change
   needed for that.
 
-### Epic 8 — AI data agent + contribution review queue — NOT STARTED
-Confirmed genuinely not built: no `contributions` table, no route, no admin
-UI. See "AI Data Agent" design above — still the plan, not yet built.
+### Epic 8 — AI data agent + contribution review queue — PART 1 ✅ DONE (2026-09-24)
+**Part 1 — Contribution Review Queue: built and deployed.**
+- `contributions` table (`type`, `target_id`, `payload` JSON, `source_url`,
+  `submitted_by`, `status`, `reviewer_note`) — migration run in production.
+- `POST /api/contributions` — token-gated (`CONTRIBUTIONS_TOKEN`) public
+  submit endpoint for the future agent (or manual entry); verified live
+  (returns 403 without a valid token, confirming the route is mounted).
+- Admin: `GET/PATCH /api/admin/contributions`, `POST /:id/approve`,
+  `POST /:id/reject`, `DELETE /:id` — approve writes whitelisted columns
+  into `entities`/`entity_locations`/`programs` (new record or update to an
+  existing `target_id`), never accepts arbitrary payload keys.
+- Admin panel "Contributions" section — list with status/type filters, a
+  review modal showing live-vs-proposed data side by side with an editable
+  JSON payload, Approve/Reject actions.
+
+**Part 2 — the actual AI agent (reads ranking sites / university catalogs,
+calls `POST /api/contributions`) — NOT STARTED.** The queue above is useful
+standalone (manual contributions can already be submitted for review), but
+nothing yet generates contributions automatically. Needs a decision on:
+data sources, run cadence/trigger, and where the agent itself runs.
 - Prioritize a **partner school list** (user to supply) over raw QS top.
 
 ### Cross-cutting requirements
