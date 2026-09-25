@@ -41,10 +41,16 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   `register.html`, `portal/index.html`. Added a shared
   `window.i18n.typeLabel()` helper (`m.type.*` keys) so program-type names
   translate consistently everywhere instead of each page reinventing it.
-  **Not done yet, flagged as follow-up**: `programs.html`'s eligibility
-  side panel is entirely English-only regardless of page language (the
-  inverse bug), and `about.html`'s body has no i18n coverage beyond
-  section headers — both need a fuller rewrite than the rest of this pass.
+  **Follow-up also done (2026-09-25)**: `programs.html`'s eligibility side
+  panel (was entirely English-only regardless of page language — the
+  inverse bug) and `about.html`'s full body (mission, values, services,
+  affiliate disclosure, company info, contact form) are now fully
+  localized, including fixing several existing dictionary entries whose
+  stored TR text no longer matched the live page copy. `eligibility.js`
+  (the shared match engine) also got a soft `window.t()` hook so its
+  criterion labels translate too. Verified: every `data-i18n*`/`t()`/`T()`
+  key used anywhere in `public/` now resolves in both `T.tr` and `T.en`
+  (595 keys each, no duplicates, no orphans).
 - Homepage redesign — search-first, featured cards, paginated results
 - Admin UX — save button at top, entity search bar, go-to-top button
 - University comparison — side-by-side modal
