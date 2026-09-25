@@ -36,6 +36,16 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
 - Pruned catalog to 5 focus countries — Spain, Netherlands, United Kingdom,
   Germany, Hungary (`scripts/2026-08-09-prune-countries.sql`, soft-deactivated
   via `entities.status='inactive'`, reversible) (2026-08-11)
+- Bulk-imported user-supplied catalog export via `/api/bulk/csv-import`
+  (2026-09-25): 70 new universities, 70 new locations, 20,865 programs
+  across 15 countries (AU, AT, BE, CA, CY, FR, DE, HU, IE, MT, NL, ES, UAE,
+  UK, US), all credential levels (Bachelor's/Master's/Diploma/Grad
+  Cert/Foundation-Pathway-IYO incl. pre-master/etc.), 0 errors. Credential
+  levels now map onto the pre-seeded `program_types` instead of creating
+  duplicates (`routes/csvImport.js`). **Note**: this pulls in universities
+  from several countries outside the earlier 5-country focus pruning above
+  — all created with `status='active'`, so they're live in search unless
+  re-pruned.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
