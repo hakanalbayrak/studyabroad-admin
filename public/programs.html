@@ -136,34 +136,34 @@
   <div class="container">
     <div class="row g-3 align-items-end">
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-mortarboard-fill me-1"></i>Highest education completed</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-mortarboard-fill me-1"></i><span data-i18n="p.elig.level.lbl">Tamamlanan en yüksek eğitim</span></label>
         <select id="eligLevel" class="form-select form-select-sm elig-input">
-          <option value="none">None / not specified</option>
-          <option value="highschool">High school</option>
-          <option value="bachelor">Bachelor</option>
-          <option value="master">Master</option>
-          <option value="phd">PhD</option>
+          <option value="none" data-i18n="p.elig.level.none">Yok / belirtilmedi</option>
+          <option value="highschool" data-i18n="p.elig.level.hs">Lise</option>
+          <option value="bachelor" data-i18n="p.elig.level.bach">Lisans</option>
+          <option value="master" data-i18n="p.elig.level.master">Yüksek Lisans</option>
+          <option value="phd" data-i18n="p.elig.level.phd">Doktora</option>
         </select>
       </div>
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-patch-check-fill me-1"></i>Qualification</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-patch-check-fill me-1"></i><span data-i18n="p.elig.qual.lbl">Yeterlilik</span></label>
         <div class="input-group input-group-sm">
           <select id="eligQualType" class="form-select form-select-sm elig-input">
             <option value="">—</option>
             <option value="IB">IB</option>
             <option value="A-Level">A-Level</option>
             <option value="AP">AP</option>
-            <option value="National Diploma">National Diploma</option>
-            <option value="Foundation">Foundation</option>
-            <option value="Other">Other</option>
+            <option value="National Diploma" data-i18n="p.elig.qual.natdip">Ulusal Diploma</option>
+            <option value="Foundation" data-i18n="p.elig.qual.foundation">Foundation</option>
+            <option value="Other" data-i18n="p.elig.qual.other">Diğer</option>
           </select>
-          <input type="text" id="eligQualValue" class="form-control elig-input" placeholder='e.g. "34" or "AAB"'>
+          <input type="text" id="eligQualValue" class="form-control elig-input" placeholder='ör. "34" veya "AAB"' data-i18n-ph="p.elig.qual.ph">
         </div>
       </div>
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-bar-chart-fill me-1"></i>Your GPA</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-bar-chart-fill me-1"></i><span data-i18n="p.elig.gpa.lbl">GPA'n</span></label>
         <div class="input-group input-group-sm">
-          <input type="number" id="eligGpa" class="form-control elig-input" placeholder="e.g. 3.2" min="0" step="0.01">
+          <input type="number" id="eligGpa" class="form-control elig-input" placeholder="ör. 3.2" data-i18n-ph="p.elig.gpa.ph" min="0" step="0.01">
           <select id="eligGpaScale" class="form-select elig-input" style="max-width:80px">
             <option value="4.0">/4.0</option>
             <option value="4.3">/4.3</option>
@@ -175,7 +175,7 @@
         </div>
       </div>
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-translate me-1"></i>English test</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-translate me-1"></i><span data-i18n="p.elig.eng.lbl">İngilizce sınavı</span></label>
         <div class="input-group input-group-sm">
           <select id="eligEngType" class="form-select form-select-sm elig-input">
             <option value="">—</option>
@@ -185,11 +185,11 @@
             <option value="PTE">PTE</option>
             <option value="Cambridge">Cambridge</option>
           </select>
-          <input type="number" id="eligEngScore" class="form-control elig-input" placeholder="score" step="0.5" min="0">
+          <input type="number" id="eligEngScore" class="form-control elig-input" placeholder="puan" data-i18n-ph="p.elig.score.ph" step="0.5" min="0">
         </div>
       </div>
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-clipboard-data-fill me-1"></i>Standardized test (optional)</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-clipboard-data-fill me-1"></i><span data-i18n="p.elig.std.lbl">Standart sınav (isteğe bağlı)</span></label>
         <div class="input-group input-group-sm">
           <select id="eligStdType" class="form-select form-select-sm elig-input">
             <option value="">—</option>
@@ -197,25 +197,25 @@
             <option value="GMAT">GMAT</option>
             <option value="SAT">SAT</option>
           </select>
-          <input type="number" id="eligStdScore" class="form-control elig-input" placeholder="score" step="1" min="0">
+          <input type="number" id="eligStdScore" class="form-control elig-input" placeholder="puan" data-i18n-ph="p.elig.score.ph" step="1" min="0">
         </div>
       </div>
       <div class="col-6 col-md-3">
-        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-currency-dollar me-1"></i>Max tuition budget ($/year)</label>
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-currency-dollar me-1"></i><span data-i18n="p.elig.fee.lbl">Maks. yıllık ücret bütçesi ($/yıl)</span></label>
         <div class="input-group input-group-sm">
           <span class="input-group-text" style="background:var(--surface-2);border-color:var(--line);color:var(--muted);font-size:.8rem">$</span>
-          <input type="number" id="eligFee" class="form-control elig-input" placeholder="e.g. 15000" min="0" step="1000">
+          <input type="number" id="eligFee" class="form-control elig-input" placeholder="ör. 15000" data-i18n-ph="p.elig.fee.ph" min="0" step="1000">
         </div>
       </div>
       <div class="col-12 col-md-4 d-flex align-items-center gap-3">
         <label class="d-flex align-items-center gap-2" style="font-size:.78rem;color:var(--text);cursor:pointer;margin:0">
           <input type="checkbox" id="eligOnlyEligible" checked style="accent-color:#6366f1;width:16px;height:16px">
-          Show only eligible programs
+          <span data-i18n="p.elig.onlyeligible">Sadece uygun olduğum programları göster</span>
         </label>
       </div>
       <div class="col-12 col-md-2 d-flex gap-2">
-        <button onclick="applyEligibility()" class="btn-match flex-grow-1"><i class="bi bi-magic me-1"></i>Match</button>
-        <button onclick="clearEligibility()" class="btn-reset-elig">Reset</button>
+        <button onclick="applyEligibility()" class="btn-match flex-grow-1"><i class="bi bi-magic me-1"></i><span data-i18n="p.elig.match.btn">Eşleştir</span></button>
+        <button onclick="clearEligibility()" class="btn-reset-elig" data-i18n="p.elig.reset.btn">Sıfırla</button>
       </div>
     </div>
     <div id="eligResult" style="display:none;margin-top:14px;padding:10px 14px;border-radius:10px;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);font-size:.82rem;color:var(--muted)"></div>
@@ -260,13 +260,13 @@
 
       <!-- Kategori (program category) -->
       <div class="filter-group" id="categoryGroup" style="display:none">
-        <span class="filter-group-label"><i class="bi bi-grid-fill me-1"></i><span>Kategori</span></span>
+        <span class="filter-group-label"><i class="bi bi-grid-fill me-1"></i><span data-i18n="p.category.lbl">Kategori</span></span>
         <div class="chip-row" id="categoryChips"></div>
       </div>
 
       <!-- Alan / Fakülte (field — only shown when data exists) -->
       <div class="filter-group" id="fieldGroup" style="display:none">
-        <span class="filter-group-label"><i class="bi bi-journal-bookmark-fill me-1"></i><span>Alan / Fakülte</span></span>
+        <span class="filter-group-label"><i class="bi bi-journal-bookmark-fill me-1"></i><span data-i18n="p.field.lbl">Alan / Fakülte</span></span>
         <div class="chip-row scroll" id="fieldChips"></div>
       </div>
 
@@ -344,8 +344,8 @@
     </div>
     <div id="noFilterMsg" class="d-none" style="text-align:center;padding:64px 0 80px">
       <i class="bi bi-compass" style="font-size:3rem;display:block;margin-bottom:16px;color:var(--accent);opacity:.6"></i>
-      <div style="font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:10px">Programları keşfetmeye başlayın</div>
-      <div style="font-size:.88rem;color:var(--muted);max-width:420px;margin:0 auto 24px;line-height:1.6">Program adı veya üniversite arayın, ya da yukarıdaki filtrelerden derece türü, ülke veya bütçe seçin.</div>
+      <div style="font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:10px" data-i18n="p.nofilter.title">Programları keşfetmeye başlayın</div>
+      <div style="font-size:.88rem;color:var(--muted);max-width:420px;margin:0 auto 24px;line-height:1.6" data-i18n="p.nofilter.sub">Program adı veya üniversite arayın, ya da yukarıdaki filtrelerden derece türü, ülke veya bütçe seçin.</div>
       <div id="quickTypeChips" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center"></div>
     </div>
     <div class="row g-3" id="cardsContainer"></div>
@@ -356,12 +356,23 @@
 <script src="/js/eligibility.js"></script>
 <script>
 // ── State ─────────────────────────────────────────────────────────────
-const CATEGORY_LABELS = {
-  undergraduate: 'Lisans (Undergraduate)',
-  postgraduate: 'Lisansüstü (Postgraduate)',
-  preparation: 'Hazırlık / Pathway',
-  other: 'Diğer'
-};
+function _t(k, fb) { return window.t ? window.t(k) : fb; }
+function categoryLabel(c) {
+  const key = { undergraduate: 'p.cat.undergrad', postgraduate: 'p.cat.postgrad', preparation: 'p.cat.prep', other: 'p.cat.other' }[c];
+  return key ? _t(key, c) : c;
+}
+// normalizeType()'s bucket names are the internal matching key (stable across
+// a session — a language switch does a full page reload) — only the
+// DISPLAYED label is translated, via typeBucketLabel().
+function typeBucketLabel(bucket) {
+  const key = {
+    "Bachelor's": 'p.typebucket.bachelor', "Master's": 'p.typebucket.master', 'MBA': 'p.typebucket.mba',
+    'PhD': 'p.typebucket.phd', 'Associate': 'p.typebucket.associate', 'Foundation': 'p.typebucket.foundation',
+    'Diploma / Certificate': 'p.typebucket.diplomacert', 'Pathway Programs': 'p.typebucket.pathway',
+    'Pre-Master Programs': 'p.typebucket.premaster', 'Other Credentials': 'p.typebucket.other'
+  }[bucket];
+  return key ? _t(key, bucket) : bucket;
+}
 
 const state = {
   q: '',
@@ -416,8 +427,13 @@ async function init() {
     document.getElementById('noFilterMsg').classList.remove('d-none');
     const qtc = document.getElementById('quickTypeChips');
     if (qtc && options.types) {
-      qtc.innerHTML = options.types.slice(0, 6).map(t =>
-        `<div class="fchip" onclick="toggleType('${esc(t)}')">${esc(t)}</div>`
+      // options.types are raw DB program_types.name values (e.g. "Bachelor
+      // Programs") — normalize to the same bucket key used by state.types
+      // (set from normalizeType(p.type_name) in fetchPrograms()), or the
+      // click wouldn't actually match any program.
+      const normTypes = [...new Set(options.types.map(normalizeType))];
+      qtc.innerHTML = normTypes.slice(0, 6).map(t =>
+        `<div class="fchip" onclick="toggleType('${esc(t)}')">${esc(typeBucketLabel(t))}</div>`
       ).join('');
     }
   } catch (e) {
@@ -472,7 +488,7 @@ function buildFilterChips({ countries, types, fields, categories }) {
   const normTypes = [...new Set((types || []).map(normalizeType))].sort();
   const typeRow = document.getElementById('typeChips');
   typeRow.innerHTML = normTypes.map(t =>
-    `<div class="fchip" data-type="${esc(t)}" onclick="toggleType('${esc(t)}')">${esc(t)}</div>`
+    `<div class="fchip" data-type="${esc(t)}" onclick="toggleType('${esc(t)}')">${esc(typeBucketLabel(t))}</div>`
   ).join('');
 
   // Category chips (undergraduate / postgraduate / etc.)
@@ -480,7 +496,7 @@ function buildFilterChips({ countries, types, fields, categories }) {
   const catGroup = document.getElementById('categoryGroup');
   if (categories && categories.length) {
     catRow.innerHTML = categories.map(c =>
-      `<div class="fchip" data-cat="${esc(c)}" onclick="toggleCategory('${esc(c)}')">${esc(CATEGORY_LABELS[c] || c)}</div>`
+      `<div class="fchip" data-cat="${esc(c)}" onclick="toggleCategory('${esc(c)}')">${esc(categoryLabel(c))}</div>`
     ).join('');
     catGroup.style.display = '';
   }
@@ -663,8 +679,8 @@ async function applyFilters() {
 function renderPills() {
   const row = document.getElementById('pillsRow');
   const pills = [];
-  state.types.forEach(t => pills.push({ label: t, type: 'type', val: t }));
-  state.categories.forEach(c => pills.push({ label: CATEGORY_LABELS[c] || c, type: 'category', val: c }));
+  state.types.forEach(t => pills.push({ label: typeBucketLabel(t), type: 'type', val: t }));
+  state.categories.forEach(c => pills.push({ label: categoryLabel(c), type: 'category', val: c }));
   state.fields.forEach(f => pills.push({ label: f, type: 'field', val: f }));
   state.countries.forEach(c => pills.push({ label: c, type: 'country', val: c }));
   if (state.budget) pills.push({ label: state.budget.label, type: 'budget', val: '' });
@@ -771,12 +787,12 @@ function renderCards() {
       const m = eligMatch(p);
       if (m) {
         if (m.eligible) {
-          eligBlock = `<div style="margin-top:10px"><span style="display:inline-block;background:rgba(16,185,129,.14);border:1px solid rgba(16,185,129,.4);color:#059669;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px"><i class="bi bi-check-circle-fill me-1"></i>Eligible</span></div>`;
+          eligBlock = `<div style="margin-top:10px"><span style="display:inline-block;background:rgba(16,185,129,.14);border:1px solid rgba(16,185,129,.4);color:#059669;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px"><i class="bi bi-check-circle-fill me-1"></i>${_t('p.elig.badge.eligible', 'Eligible')}</span></div>`;
         } else {
           const fails = m.results.filter(r => !r.pass)
             .map(r => `<span style="display:inline-block;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.35);color:#dc2626;font-size:.68rem;padding:2px 8px;border-radius:999px;margin:2px 3px 0 0">${esc(r.label + (r.detail ? ': ' + r.detail : ''))}</span>`)
             .join('');
-          eligBlock = `<div style="margin-top:10px"><span style="display:inline-block;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.4);color:#b45309;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px"><i class="bi bi-exclamation-circle-fill me-1"></i>Partial</span><div style="margin-top:6px">${fails}</div></div>`;
+          eligBlock = `<div style="margin-top:10px"><span style="display:inline-block;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.4);color:#b45309;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px"><i class="bi bi-exclamation-circle-fill me-1"></i>${_t('p.elig.badge.partial', 'Partial')}</span><div style="margin-top:6px">${fails}</div></div>`;
         }
       }
     }
@@ -792,7 +808,7 @@ function renderCards() {
             ${esc(p.university_name)}
           </div>
           <div class="prog-meta">
-            <span class="meta-chip chip-type">${esc(p.type_name)}</span>
+            <span class="meta-chip chip-type">${esc(typeBucketLabel(p.type_name))}</span>
             ${p.language_of_instruction ? `<span class="meta-chip chip-lang"><i class="bi bi-translate me-1"></i>${esc(p.language_of_instruction)}</span>` : ''}
             ${p.scholarship_available ? `<span class="meta-chip chip-scholar"><i class="bi bi-award-fill me-1"></i>${window.t ? window.t('p.schol.avail') : 'Burs'}</span>` : ''}
           </div>
@@ -955,17 +971,19 @@ function applyEligibility() {
     const m = eligMatch(p);
     if (m ? m.eligible : legacyEligible(p)) eligibleCount++;
   });
+  const ELIG_LEVEL_KEY = { highschool: 'p.elig.level.hs', bachelor: 'p.elig.level.bach', master: 'p.elig.level.master', phd: 'p.elig.level.phd' };
+  const _t = (k, fb) => window.t ? window.t(k) : fb;
   const criteria = [];
-  if (level !== 'none') criteria.push(esc(level));
+  if (level !== 'none') criteria.push(esc(ELIG_LEVEL_KEY[level] ? _t(ELIG_LEVEL_KEY[level], level) : level));
   if (qualType) criteria.push(esc(qualType) + (qualValue ? ' ' + esc(qualValue) : ''));
   if (gpaRaw !== '') criteria.push('GPA ' + esc(gpaRaw) + '/' + esc(gpaScale));
   if (engType) criteria.push(esc(engType) + (engScoreRaw ? ' ' + esc(engScoreRaw) : ''));
   if (stdType) criteria.push(esc(stdType) + (stdScoreRaw ? ' ' + esc(stdScoreRaw) : ''));
-  if (eligCriteria.maxFee !== null) criteria.push('bütçe $' + eligCriteria.maxFee.toLocaleString());
+  if (eligCriteria.maxFee !== null) criteria.push(_t('p.elig.budget', 'bütçe $') + eligCriteria.maxFee.toLocaleString());
   el.innerHTML = `<i class="bi bi-check-circle-fill me-1" style="color:#059669"></i>
-    Profiline uyan <b style="color:var(--text)">${eligibleCount} program</b>
+    ${_t('p.elig.matchcount', 'Profiline uyan')} <b style="color:var(--text)">${eligibleCount} ${_t('p.elig.programword', 'program')}</b>
     ${criteria.length ? `<span style="color:var(--muted)"> · ${criteria.join(', ')}</span>` : ''}.
-    <button onclick="clearEligibility()" style="background:none;border:none;color:var(--accent);font-size:.78rem;cursor:pointer;margin-left:8px;text-decoration:underline">Temizle</button>`;
+    <button onclick="clearEligibility()" style="background:none;border:none;color:var(--accent);font-size:.78rem;cursor:pointer;margin-left:8px;text-decoration:underline">${_t('p.elig.reset.btn', 'Sıfırla')}</button>`;
 }
 
 function clearEligibility() {

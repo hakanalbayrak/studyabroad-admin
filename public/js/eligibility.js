@@ -71,6 +71,17 @@
 
   function num(x) { var n = parseFloat(x); return isNaN(n) ? null : n; }
 
+  // Soft i18n hook — degrades to English if window.t isn't loaded (this
+  // module stays dependency-free; it just uses i18n.js opportunistically).
+  function _t(key, fb) {
+    return (typeof window !== 'undefined' && window.t) ? window.t(key) : fb;
+  }
+  var LEVEL_LABEL_KEY = { highschool: 'p.elig.level.hs', bachelor: 'p.elig.level.bach', master: 'p.elig.level.master', phd: 'p.elig.level.phd' };
+  function levelLabel(level) {
+    var key = LEVEL_LABEL_KEY[level];
+    return key ? _t(key, level) : level;
+  }
+
   // ── Main matcher ───────────────────────────────────────────────────────────
   // Returns { eligible, anyCriteria, results:[{key,label,pass,detail}] }
   function matchProgram(student, reqs) {
@@ -89,8 +100,8 @@
     // Education level
     if (reqs.education_level && reqs.education_level !== 'none') {
       var lvlPass = student.level ? levelMeets(student.level, reqs.education_level) : false;
-      add('level', 'Education level', lvlPass,
-        lvlPass ? '' : 'Requires completed ' + reqs.education_level);
+      add('level', _t('p.elig.crit.level', 'Education level'), lvlPass,
+        lvlPass ? '' : _t('p.elig.detail.requires', 'Requires completed') + ' ' + levelLabel(reqs.education_level));
     }
 
     // GPA
@@ -100,9 +111,9 @@
         var sN = normalizeGpa(student.gpa, student.gpaScale || '100');
         var rN = normalizeGpa(reqs.gpa.min, reqs.gpa.scale || '100');
         var gpaPass = (sN != null && rN != null) ? sN >= rN : true;
-        add('gpa', label, gpaPass, gpaPass ? '' : 'Below minimum');
+        add('gpa', label, gpaPass, gpaPass ? '' : _t('p.elig.detail.belowmin', 'Below minimum'));
       } else {
-        add('gpa', label, false, 'Enter your GPA');
+        add('gpa', label, false, _t('p.elig.detail.entergpa', 'Enter your GPA'));
       }
     }
 
@@ -116,10 +127,11 @@
               && qualMeets(q.type, student.qualValue, q.min)) { qPass = true; break; }
         }
       }
+      var orWord = _t('p.elig.or', 'or');
       var accepted = reqs.qualifications.map(function (q) {
         return q.min ? (q.type + ' ' + q.min) : q.type;
-      }).join(' or ');
-      add('qual', 'Qualification', qPass, qPass ? '' : 'Accepts: ' + accepted);
+      }).join(' ' + orWord + ' ');
+      add('qual', _t('p.elig.crit.qual', 'Qualification'), qPass, qPass ? '' : _t('p.elig.detail.accepts', 'Accepts') + ': ' + accepted);
     }
 
     // English (OR across accepted tests)
@@ -135,8 +147,8 @@
           ePass = true; break;
         }
       }
-      var engAccepted = reqs.english.map(function (e) { return e.test + ' ' + e.min; }).join(' or ');
-      add('english', 'English', ePass, ePass ? '' : 'Accepts: ' + engAccepted);
+      var engAccepted = reqs.english.map(function (e) { return e.test + ' ' + e.min; }).join(' ' + _t('p.elig.or', 'or') + ' ');
+      add('english', _t('p.elig.crit.english', 'English'), ePass, ePass ? '' : _t('p.elig.detail.accepts', 'Accepts') + ': ' + engAccepted);
     }
 
     // Standardized tests (OR)
@@ -152,8 +164,8 @@
           sPass = true; break;
         }
       }
-      var stdAccepted = reqs.standardized.map(function (s) { return s.test + ' ' + s.min; }).join(' or ');
-      add('standardized', 'Standardized test', sPass, sPass ? '' : 'Needs: ' + stdAccepted);
+      var stdAccepted = reqs.standardized.map(function (s) { return s.test + ' ' + s.min; }).join(' ' + _t('p.elig.or', 'or') + ' ');
+      add('standardized', _t('p.elig.crit.std', 'Standardized test'), sPass, sPass ? '' : _t('p.elig.detail.needs', 'Needs') + ': ' + stdAccepted);
     }
 
     return { eligible: eligible, anyCriteria: anyCriteria, results: results };
