@@ -188,6 +188,7 @@ router.post('/', upload.single('file'), async (req, res) => {
       const courseName= (row['Course Name'] || '').trim();
       if (!uniName || !courseName || !credLevel) continue;
       if (country === 'Turkey') continue;
+      if (credLevel === 'Work & Study') continue;
       const lang = inferLanguage(courseName);
       if (lang === 'Turkish' || lang === 'English/Turkish') continue;
       if (/work.{0,6}study|work and study/i.test(courseName)) continue;
