@@ -43,18 +43,26 @@ router.post('/', async (req, res) => {
     report.dedupDeletedByOldType = {};
     for (const [oldName, newNames] of Object.entries(OLD_TO_NEW)) {
       const placeholders = newNames.map(() => '?').join(',');
+      // Wrapped as a derived table (to_delete) — MySQL won't allow DELETE
+      // FROM a table while a subquery in the same statement also selects
+      // from it, unless that subquery is materialized as a derived table.
       const [r] = await db.query(
-        `DELETE old FROM programs old
-         JOIN program_types opt ON opt.id = old.program_type_id
-         JOIN entity_locations oel ON oel.id = old.entity_location_id
-         WHERE opt.name = ?
-         AND EXISTS (
-           SELECT 1 FROM programs new
-           JOIN program_types npt ON npt.id = new.program_type_id
-           JOIN entity_locations nel ON nel.id = new.entity_location_id
-           WHERE npt.name IN (${placeholders})
-             AND nel.entity_id = oel.entity_id
-             AND TRIM(new.name) = TRIM(old.name)
+        `DELETE FROM programs WHERE id IN (
+           SELECT id FROM (
+             SELECT old.id
+             FROM programs old
+             JOIN program_types opt ON opt.id = old.program_type_id
+             JOIN entity_locations oel ON oel.id = old.entity_location_id
+             WHERE opt.name = ?
+             AND EXISTS (
+               SELECT 1 FROM programs new
+               JOIN program_types npt ON npt.id = new.program_type_id
+               JOIN entity_locations nel ON nel.id = new.entity_location_id
+               WHERE npt.name IN (${placeholders})
+                 AND nel.entity_id = oel.entity_id
+                 AND TRIM(new.name) = TRIM(old.name)
+             )
+           ) AS to_delete
          )`,
         [oldName, ...newNames]
       );
