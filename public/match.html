@@ -89,8 +89,8 @@
     <div class="step-label" data-i18n="m.s2">2. Hangi dereceyi okumak istiyorsun?</div>
     <div class="step-hint" data-i18n="m.s2.hint">Eğitim durumuna göre öneriyoruz — istersen değiştir (ör. ikinci lisans)</div>
     <div class="chips" data-group="degree" data-multi="0">
-      <button class="chip" data-val="bachelor"><i class="bi bi-1-circle"></i><span data-i18n="m.s2.bach">Lisans</span><span class="sub">Bachelor</span></button>
-      <button class="chip" data-val="master"><i class="bi bi-2-circle"></i><span data-i18n="m.s2.master">Yüksek Lisans</span><span class="sub">Master</span></button>
+      <button class="chip" data-val="bachelor"><i class="bi bi-1-circle"></i><span data-i18n="m.s2.bach">Lisans</span></button>
+      <button class="chip" data-val="master"><i class="bi bi-2-circle"></i><span data-i18n="m.s2.master">Yüksek Lisans</span></button>
     </div>
   </div>
 
@@ -98,20 +98,20 @@
     <div class="step-label" data-i18n="m.s3">3. İlgilendiğin alanlar</div>
     <div class="step-hint" data-i18n="m.s3.hint">Birden fazla seçebilirsin</div>
     <div class="chips cols3" data-group="fields" data-multi="1">
-      <button class="chip" data-val="Business & Economics"><i class="bi bi-briefcase"></i>İşletme &amp; Ekonomi</button>
-      <button class="chip" data-val="Engineering"><i class="bi bi-gear-wide-connected"></i>Mühendislik</button>
-      <button class="chip" data-val="Medicine & Health"><i class="bi bi-heart-pulse"></i>Tıp &amp; Sağlık</button>
-      <button class="chip" data-val="AI & Technology"><i class="bi bi-cpu"></i>Yapay Zeka &amp; Teknoloji</button>
-      <button class="chip" data-val="Social Sciences"><i class="bi bi-people"></i>Sosyal Bilimler</button>
+      <button class="chip" data-val="Business & Economics"><i class="bi bi-briefcase"></i><span data-i18n="m.field.business">İşletme &amp; Ekonomi</span></button>
+      <button class="chip" data-val="Engineering"><i class="bi bi-gear-wide-connected"></i><span data-i18n="m.field.engineering">Mühendislik</span></button>
+      <button class="chip" data-val="Medicine & Health"><i class="bi bi-heart-pulse"></i><span data-i18n="m.field.medicine">Tıp &amp; Sağlık</span></button>
+      <button class="chip" data-val="AI & Technology"><i class="bi bi-cpu"></i><span data-i18n="m.field.ai">Yapay Zeka &amp; Teknoloji</span></button>
+      <button class="chip" data-val="Social Sciences"><i class="bi bi-people"></i><span data-i18n="m.field.social">Sosyal Bilimler</span></button>
     </div>
   </div>
 
   <div class="step">
     <div class="step-label" data-i18n="m.s4">4. İngilizce seviyen</div>
     <div class="chips cols3" data-group="english" data-multi="0">
-      <button class="chip" data-val="A1-A2"><i class="bi bi-1-circle"></i>A1–A2<span class="sub">Başlangıç</span></button>
-      <button class="chip" data-val="B1-B2"><i class="bi bi-2-circle"></i>B1–B2<span class="sub">Orta</span></button>
-      <button class="chip" data-val="C1-C2"><i class="bi bi-3-circle"></i>C1–C2<span class="sub">İleri</span></button>
+      <button class="chip" data-val="A1-A2"><i class="bi bi-1-circle"></i>A1–A2<span class="sub" data-i18n="m.eng.a1.sub">Başlangıç</span></button>
+      <button class="chip" data-val="B1-B2"><i class="bi bi-2-circle"></i>B1–B2<span class="sub" data-i18n="m.eng.b1.sub">Orta</span></button>
+      <button class="chip" data-val="C1-C2"><i class="bi bi-3-circle"></i>C1–C2<span class="sub" data-i18n="m.eng.c1.sub">İleri</span></button>
     </div>
   </div>
 
@@ -128,10 +128,10 @@
   <div class="step">
     <div class="step-label" data-i18n="m.s6">6. Hangi bölge?</div>
     <div class="chips" data-group="region" data-multi="0">
-      <button class="chip" data-val="Europe"><i class="bi bi-globe-europe-africa"></i>Avrupa</button>
-      <button class="chip" data-val="USA/Canada"><i class="bi bi-globe-americas"></i>Amerika / Kanada</button>
-      <button class="chip" data-val="UK"><i class="bi bi-globe"></i>İngiltere</button>
-      <button class="chip" data-val="Australia"><i class="bi bi-globe-asia-australia"></i>Avustralya</button>
+      <button class="chip" data-val="Europe"><i class="bi bi-globe-europe-africa"></i><span data-i18n="m.region.europe">Avrupa</span></button>
+      <button class="chip" data-val="USA/Canada"><i class="bi bi-globe-americas"></i><span data-i18n="m.region.usca">Amerika / Kanada</span></button>
+      <button class="chip" data-val="UK"><i class="bi bi-globe"></i><span data-i18n="m.region.uk">İngiltere</span></button>
+      <button class="chip" data-val="Australia"><i class="bi bi-globe-asia-australia"></i><span data-i18n="m.region.australia">Avustralya</span></button>
     </div>
   </div>
 
@@ -205,6 +205,24 @@
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
+  // program_types.name is always stored in English in the DB (e.g. "Bachelor
+  // Programs") — translate it before showing it in otherwise-localized copy.
+  var TYPE_NAME_TO_KEY = {
+    'Bachelor Programs':   'm.type.bachelor',
+    'Master Programs':     'm.type.master',
+    'Foundation Programs': 'm.type.foundation',
+    'Pathway Programs':    'm.type.pathway',
+    'Pre-Master Programs': 'm.type.premaster',
+    'Diploma Programs':    'm.type.diploma',
+    'Certificate Programs':'m.type.certificate',
+    'Other Credentials':   'm.type.other'
+  };
+  function typeLabel(name) {
+    var key = TYPE_NAME_TO_KEY[name];
+    if (!key) return name;
+    return window.t ? window.t(key) : name;
+  }
+
   var allPrograms = null;
   async function runSearch() {
     var btn = document.getElementById('goBtn');
@@ -262,7 +280,7 @@
       var rankBadge = rank ? '<span class="badge-soft rank-badge">QS #' + rank + '</span>' : '';
       var uniUrl = '/university?id=' + s.university_id;
       var depts = s.programs.map(function (p) {
-        var meta = [p.type_name, p.duration].filter(Boolean).map(esc).join(' · ');
+        var meta = [typeLabel(p.type_name), p.duration].filter(Boolean).map(esc).join(' · ');
         return '<div class="dept-row"><span>' + esc(p.name) + (meta ? ' <span style="color:var(--muted)">· ' + meta + '</span>' : '') + '</span><span class="dept-fee">' + feeText(p) + '</span></div>';
       }).join('');
       return '<div class="school-card">' +
