@@ -24,6 +24,27 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
 ---
 
 ## Done
+- **Removed Finland from the catalog** (2026-09-25) — 8 entities, 144
+  programs soft-deactivated (`status='inactive'`, reversible), per
+  direction. Down to 17 countries, 22,897 active programs, 326 unis.
+- **TR/EN language-consistency audit + fixes** (2026-09-25) — full pass
+  over every public page against `public/js/i18n.js`. Fixed: the
+  eligibility wizard (`match.html`) showing hardcoded English sub-labels
+  and raw English `program_types.name` DB values inside Turkish copy;
+  `apply.html` missing 15 dictionary keys that froze the whole Identity
+  Info + document-upload screen in Turkish regardless of language, plus
+  several unwired funnel-step headings/alerts; `test.html`'s CEFR result
+  screen always showing Turkish explanations even after an English-mode
+  test; `acceptance.html`'s congrats sentence not using an already-
+  translated key; `university.html` printing the raw English type name
+  with no translation at all; smaller fixes on `index.html`, `login.html`,
+  `register.html`, `portal/index.html`. Added a shared
+  `window.i18n.typeLabel()` helper (`m.type.*` keys) so program-type names
+  translate consistently everywhere instead of each page reinventing it.
+  **Not done yet, flagged as follow-up**: `programs.html`'s eligibility
+  side panel is entirely English-only regardless of page language (the
+  inverse bug), and `about.html`'s body has no i18n coverage beyond
+  section headers — both need a fuller rewrite than the rest of this pass.
 - Homepage redesign — search-first, featured cards, paginated results
 - Admin UX — save button at top, entity search bar, go-to-top button
 - University comparison — side-by-side modal
