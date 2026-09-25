@@ -44,8 +44,8 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   levels now map onto the pre-seeded `program_types` instead of creating
   duplicates (`routes/csvImport.js`). **Note**: this pulls in universities
   from several countries outside the earlier 5-country focus pruning above
-  — all created with `status='active'`, so they're live in search unless
-  re-pruned.
+  — all created with `status='active'` and live in search. Confirmed
+  intentional: the country focus has widened beyond the original 5.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
