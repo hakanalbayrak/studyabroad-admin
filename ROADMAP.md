@@ -51,7 +51,7 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
 - University logos (upload/link + display on cards) ✅ DONE (2026-07-21)
 - SEO meta tags (dynamic per university detail page) ✅ DONE (2026-07-21)
-- Sitemap / robots.txt
+- Sitemap / robots.txt ✅ DONE (`public/sitemap.xml`, `public/robots.txt` live)
 - Admin dashboard charts (lead funnel, conversions) ✅ DONE (2026-07-21)
 
 ### Durable critical-alert monitoring ✅ DONE (2026-08-28)
