@@ -46,6 +46,30 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   from several countries outside the earlier 5-country focus pruning above
   — all created with `status='active'` and live in search. Confirmed
   intentional: the country focus has widened beyond the original 5.
+- **Fixed `/programs` filters (2026-09-25)** — root cause: an earlier,
+  unlogged bulk import (2026-06-14, 17,829 programs) had created
+  `program_types` rows named after raw CSV credential-level strings, all
+  silently defaulted to `category='undergraduate'` (no explicit category on
+  insert, non-strict MySQL) — this is why the category filter only ever
+  showed "undergraduate" and the type-chip row showed confusing duplicates
+  (e.g. both "Bachelor Programs" and "Bachelor's Degree"). The 2026-09-25
+  CSV import then duplicated most of the same programs under the correctly
+  mapped types. One-off cleanup (`routes/catalogCleanup.js`, run once via
+  admin API then removed): deduped 15,536 duplicate programs, remapped
+  2,149 non-duplicate survivors onto the canonical types, fixed all 7
+  affected `program_types.category` values, deleted the 6 now-empty broken
+  type rows, reactivated 178 entities that were stuck `status='inactive'`
+  from an earlier country-focus prune while still holding active programs,
+  and removed **Work & Study** programs entirely (per direction) — also
+  skipped going forward in `routes/csvImport.js`. Verified live:
+  `/api/public/filter-options` now returns 18 countries, 8 clean program
+  types, all 4 correct categories, 23,041 active programs across 334
+  universities.
+  **Known separate gap, not fixed here**: `programs.field` (discipline tag,
+  used for the field-of-study filter chips) is NULL on effectively the
+  entire catalog — the "fields" filter has been empty since before this
+  session, not something today's import caused. Needs its own pass
+  (backfill from the CSV's `Domain` column or similar) if wanted.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
