@@ -34,6 +34,29 @@ const COUNTRY_CAPITAL = {
   'Australia': 'Sydney', 'United Arab Emirates': 'Dubai', 'Georgia': 'Tbilisi',
 };
 
+// Credential Level (from the export) → existing program_types.name, so imports
+// reuse the pre-seeded types instead of creating duplicate near-identical ones.
+const CREDENTIAL_TYPE_MAP = {
+  "Bachelor's Degree": 'Bachelor Programs',
+  "Master's Degree": 'Master Programs',
+  'Diploma & Associate Degree': 'Diploma Programs',
+  'Graduate Certificate & Diploma': 'Certificate Programs',
+};
+
+// "Foundation, Pathway and IYO" bundles 3 distinct seeded types together —
+// split it back out by sniffing the course name.
+function resolveFoundationPathwayType(courseName) {
+  const n = (courseName || '').toLowerCase();
+  if (/pre-?master/.test(n)) return 'Pre-Master Programs';
+  if (/foundation/.test(n)) return 'Foundation Programs';
+  return 'Pathway Programs';
+}
+
+function resolveProgramTypeName(credLevel, courseName) {
+  if (credLevel === 'Foundation, Pathway and IYO') return resolveFoundationPathwayType(courseName);
+  return CREDENTIAL_TYPE_MAP[credLevel] || credLevel;
+}
+
 // Cities to look for in university names (order matters — more specific first)
 const CITY_KEYWORDS = [
   'Istanbul', 'Ankara', 'Izmir', 'Bursa', 'Antalya', 'Gaziantep', 'Konya',
@@ -196,12 +219,13 @@ router.post('/', upload.single('file'), async (req, res) => {
         locationsCreated++;
       }
 
-      // 3. Program type
-      let ptId = ptCache[credLevel];
+      // 3. Program type — mapped onto the existing seeded types where possible
+      const ptName = resolveProgramTypeName(credLevel, courseName);
+      let ptId = ptCache[ptName];
       if (!ptId) {
-        const [r] = await db.query('INSERT INTO program_types (name) VALUES (?)', [credLevel]);
+        const [r] = await db.query('INSERT INTO program_types (name) VALUES (?)', [ptName]);
         ptId = r.insertId;
-        ptCache[credLevel] = ptId;
+        ptCache[ptName] = ptId;
       }
 
       // 4. Parse fields
