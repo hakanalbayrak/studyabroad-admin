@@ -66,7 +66,7 @@
 
 <div class="hero" id="hero">
   <div class="container">
-    <div id="heroSkeleton" style="color:var(--muted)">Loading…</div>
+    <div id="heroSkeleton" style="color:var(--muted)" data-i18n="h.loading">Yükleniyor…</div>
     <div id="heroContent" class="d-none">
       <div class="d-flex align-items-start justify-content-between flex-wrap gap-3">
         <div class="flex-grow-1">
@@ -222,7 +222,8 @@ function renderTypeTabs() {
   tabs.innerHTML = `<span class="type-tab active" data-type="">${T('uni.all')} (${allPrograms.length})</span>` +
     types.map(t => {
       const count = allPrograms.filter(p => p.type_name === t).length;
-      return `<span class="type-tab" data-type="${esc(t)}">${esc(t)} <span style="opacity:.6">(${count})</span></span>`;
+      const label = window.i18n && window.i18n.typeLabel ? window.i18n.typeLabel(t) : t;
+      return `<span class="type-tab" data-type="${esc(t)}">${esc(label)} <span style="opacity:.6">(${count})</span></span>`;
     }).join('');
   tabs.querySelectorAll('.type-tab').forEach(el => el.addEventListener('click', () => setType(el.dataset.type)));
 }
@@ -273,7 +274,7 @@ function renderPrograms(progs) {
       <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
         <div class="flex-grow-1">
           <div class="prog-name">${esc(p.name)}</div>
-          <span class="prog-type">${esc(p.type_name)}</span>
+          <span class="prog-type">${esc(window.i18n && window.i18n.typeLabel ? window.i18n.typeLabel(p.type_name) : p.type_name)}</span>
           ${p.scholarship_available ? ` <span class="badge-scholarship"><i class="bi bi-star-fill me-1"></i>${T('uni.scholarship')}</span>` : ''}
           ${domain ? `<div style="font-size:.75rem;color:var(--muted);margin-bottom:8px">${esc(domain)}</div>` : ''}
           <div class="prog-meta">

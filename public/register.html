@@ -73,7 +73,7 @@
           body: JSON.stringify({ name, email, password })
         });
         const d = await res.json();
-        if (!res.ok) throw new Error(d.error || 'Registration failed');
+        if (!res.ok) throw new Error(d.error || T('reg.err.failed'));
         localStorage.setItem('sa_token', d.token);
         localStorage.setItem('sa_role', d.role);
         localStorage.setItem('sa_name', d.name);

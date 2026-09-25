@@ -205,22 +205,8 @@
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-  // program_types.name is always stored in English in the DB (e.g. "Bachelor
-  // Programs") — translate it before showing it in otherwise-localized copy.
-  var TYPE_NAME_TO_KEY = {
-    'Bachelor Programs':   'm.type.bachelor',
-    'Master Programs':     'm.type.master',
-    'Foundation Programs': 'm.type.foundation',
-    'Pathway Programs':    'm.type.pathway',
-    'Pre-Master Programs': 'm.type.premaster',
-    'Diploma Programs':    'm.type.diploma',
-    'Certificate Programs':'m.type.certificate',
-    'Other Credentials':   'm.type.other'
-  };
   function typeLabel(name) {
-    var key = TYPE_NAME_TO_KEY[name];
-    if (!key) return name;
-    return window.t ? window.t(key) : name;
+    return (window.i18n && window.i18n.typeLabel) ? window.i18n.typeLabel(name) : name;
   }
 
   var allPrograms = null;

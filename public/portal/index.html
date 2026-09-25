@@ -255,7 +255,7 @@
 
     // Update welcome sub text
     document.getElementById('welcomeSub').textContent =
-      list.length + ' ' + (list.length === 1 ? T('port.tab.apps').replace('My ', '').toLowerCase() : T('port.tab.apps').replace('My ', '').toLowerCase());
+      list.length + ' ' + T(list.length === 1 ? 'port.apps.count.one' : 'port.apps.count.many');
 
     el.innerHTML = list.map(a => {
       const date = new Date(a.created_at).toLocaleDateString(

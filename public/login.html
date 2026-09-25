@@ -120,7 +120,7 @@
       try {
         const res = await fetch('/api/auth/otp/verify', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email: otpEmail, code }) });
         const d = await res.json();
-        if (!res.ok) throw new Error(d.error || 'Invalid code');
+        if (!res.ok) throw new Error(d.error || T('login.err.invalidcode'));
         finishLogin(d);
       } catch(e){ showErr(e.message); btn.disabled=false; btn.textContent=T('login.verify.btn'); }
     }
@@ -136,7 +136,7 @@
       try {
         const res = await fetch('/api/auth/login', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email, password }) });
         const d = await res.json();
-        if (!res.ok) throw new Error(d.error || 'Login failed');
+        if (!res.ok) throw new Error(d.error || T('login.err.failed'));
         finishLogin(d);
       } catch(e){ showErr(e.message); btn.disabled=false; btn.textContent=T('login.pw.btn'); }
     }

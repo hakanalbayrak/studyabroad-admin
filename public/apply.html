@@ -147,7 +147,7 @@
 <div class="apply-wrap" id="appWrap">
 
   <div class="page-hdr">
-    <a href="/" id="backLink" title="Geri"><i class="bi bi-arrow-left"></i></a>
+    <a href="/" id="backLink" title="Geri" data-i18n-title="apply.back.title"><i class="bi bi-arrow-left"></i></a>
     <h1><i class="bi bi-send-check-fill" style="color:var(--accent)"></i> <span data-i18n="apply.title">Başvuru Yap</span></h1>
   </div>
 
@@ -329,7 +329,7 @@
     </div>
 
     <!-- Identity -->
-    <div class="sec-div"><span data-i18n="apply.idinfo">Kimlik Bilgileri — isteğe bağlı</span></div>
+    <div class="sec-div"><span data-i18n="apply.idinfo.opt">Kimlik Bilgileri — isteğe bağlı</span></div>
     <div class="grid2">
       <div>
         <label class="lbl" data-i18n="apply.dob">Doğum tarihi</label>
@@ -373,28 +373,28 @@
       <div class="chip-grid" id="continentChips"></div>
     </div>
     <div class="wiz-step" data-step="2" style="display:none">
-      <div class="step-h">Hangi ülke?</div>
-      <div class="step-sub" id="countryStepSub">Seçtiğin kıtadaki ülkeler listeleniyor.</div>
+      <div class="step-h" data-i18n="apply.step2.h">Hangi ülke?</div>
+      <div class="step-sub" id="countryStepSub" data-i18n="apply.step2.s">Seçtiğin kıtadaki ülkeler listeleniyor.</div>
       <div class="chip-grid" id="countryChips"></div>
     </div>
     <div class="wiz-step" data-step="3" style="display:none">
-      <div class="step-h">Hangi program türü?</div>
-      <div class="step-sub" id="typeStepSub">Okumak istediğin program türünü seç.</div>
+      <div class="step-h" data-i18n="apply.step3type.h">Hangi program türü?</div>
+      <div class="step-sub" id="typeStepSub" data-i18n="apply.step3type.s">Okumak istediğin program türünü seç.</div>
       <div class="chip-grid" id="typeChips"></div>
     </div>
     <div class="wiz-step" data-step="4" style="display:none">
-      <div class="step-h">Hangi üniversite?</div>
-      <div class="step-sub" id="schoolStepSub">Seçtiğin kriterlere uyan üniversiteler listeleniyor.</div>
-      <label class="lbl">Üniversite seç</label>
-      <select class="fld" id="schoolSelect" onchange="onSchoolChange()"><option value="">Üniversite seçin…</option></select>
+      <div class="step-h" data-i18n="apply.step3.h">Hangi üniversite?</div>
+      <div class="step-sub" id="schoolStepSub" data-i18n="apply.step3.s">Seçtiğin kriterlere uyan üniversiteler listeleniyor.</div>
+      <label class="lbl" data-i18n="apply.sch.lbl">Üniversite seç</label>
+      <select class="fld" id="schoolSelect" onchange="onSchoolChange()"><option value="" data-i18n="apply.sch.sel">Üniversite seçin…</option></select>
     </div>
     <div class="wiz-step" data-step="5" style="display:none">
-      <div class="step-h">Hangi program?</div>
-      <div class="step-sub">Başvurmak istediğin programı ve başlangıç dönemini seç.</div>
-      <label class="lbl">Program</label>
-      <select class="fld" id="programSelect" onchange="onProgramChange()"><option value="">Program seçin…</option></select>
-      <label class="lbl" style="margin-top:4px">Intake</label>
-      <select class="fld" id="intakeSelect"><option value="">Seçin…</option></select>
+      <div class="step-h" data-i18n="apply.step4.h">Hangi program?</div>
+      <div class="step-sub" data-i18n="apply.step4.s">Başvurmak istediğin programı ve başlangıç dönemini seç.</div>
+      <label class="lbl" data-i18n="apply.prog.lbl">Program</label>
+      <select class="fld" id="programSelect" onchange="onProgramChange()"><option value="" data-i18n="apply.prog.sel">Program seçin…</option></select>
+      <label class="lbl" style="margin-top:4px" data-i18n="apply.intake.lbl">Intake</label>
+      <select class="fld" id="intakeSelect"><option value="" data-i18n="apply.intake.sel">Seçin…</option></select>
     </div>
     <div class="wiz-step" data-step="6" style="display:none">
       <div class="step-h" data-i18n="apply.step5.h">İletişim &amp; Profil</div>
@@ -511,7 +511,7 @@
 <div class="cta-bar" id="ctaBar" style="display:none">
   <div class="cta-inner">
     <button class="btn-back" id="backBtn" onclick="prevStep()" style="display:none"><i class="bi bi-arrow-left"></i></button>
-    <button class="btn-next" id="nextBtn" onclick="nextStep()">Devam <i class="bi bi-arrow-right" style="margin-left:6px"></i></button>
+    <button class="btn-next" id="nextBtn" onclick="nextStep()"><span data-i18n="apply.continue">Devam</span> <i class="bi bi-arrow-right" style="margin-left:6px"></i></button>
   </div>
 </div>
 
@@ -523,9 +523,10 @@ function validEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
 // ── Document upload (shown after a successful submission) ──────────────────
 // Only transcript + English test proof are requested at this stage — no
 // passport, diploma, YKS or ÖSYM upload here (comes later in the process).
+function _t(k, fb) { return window.t ? window.t(k) : fb; }
 const DOC_TYPES = [
-  { key: 'hs_transcript',  label: 'Lise Transkripti',           icon: 'bi-file-earmark-text' },
-  { key: 'english_score',  label: 'İngilizce Sınav Belgesi (varsa)', icon: 'bi-translate' },
+  { key: 'hs_transcript',  labelKey: 'apply.doc.transcript', labelFb: 'Lise Transkripti',           icon: 'bi-file-earmark-text' },
+  { key: 'english_score',  labelKey: 'apply.doc.engscore',   labelFb: 'İngilizce Sınav Belgesi (varsa)', icon: 'bi-translate' },
 ];
 const ENGLISH_AFFILIATE = {
   IELTS:    { label: 'IELTS',    url: '/api/go/ielts' },
@@ -541,14 +542,14 @@ function renderDocUpload() {
     const hint = (d.key === 'english_score' && requiredEnglishTest && ENGLISH_AFFILIATE[requiredEnglishTest])
       ? `<div style="font-size:.78rem;color:var(--muted);margin:-4px 0 10px 4px">
            <i class="bi bi-info-circle" style="margin-right:4px"></i>
-           Belgen yok mu? Bu okulun kabul ettiği sınav: <b style="color:var(--text)">${esc(ENGLISH_AFFILIATE[requiredEnglishTest].label)}</b> —
-           <a href="${ENGLISH_AFFILIATE[requiredEnglishTest].url}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700">sınava hazırlan →</a>
+           ${_t('apply.doc.nohint', 'Belgen yok mu? Bu okulun kabul ettiği sınav:')} <b style="color:var(--text)">${esc(ENGLISH_AFFILIATE[requiredEnglishTest].label)}</b> —
+           <a href="${ENGLISH_AFFILIATE[requiredEnglishTest].url}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700">${_t('apply.doc.prep', 'sınava hazırlan')} →</a>
          </div>`
       : '';
     return `<div class="doc-row" id="docRow_${d.key}">
-      <div class="doc-row-main"><i class="bi ${d.icon}"></i><span>${esc(d.label)}</span></div>
+      <div class="doc-row-main"><i class="bi ${d.icon}"></i><span>${esc(_t(d.labelKey, d.labelFb))}</span></div>
       <label class="doc-upload-btn" id="docBtn_${d.key}">
-        <i class="bi bi-upload"></i> Yükle
+        <i class="bi bi-upload"></i> ${_t('apply.doc.upload', 'Yükle')}
         <input type="file" accept=".pdf,.jpg,.jpeg,.png,.webp" onchange="uploadDoc('${d.key}', this)">
       </label>
     </div>${hint}`;
@@ -568,13 +569,13 @@ async function uploadDoc(docType, input) {
   try {
     const r = await fetch(`/api/public/applications/${currentAppId}/documents`, { method: 'POST', body: fd });
     const res = await r.json();
-    if (!r.ok) throw new Error(res.error || 'Yükleme başarısız.');
+    if (!r.ok) throw new Error(res.error || _t('apply.doc.failed', 'Yükleme başarısız.'));
     row.classList.add('uploaded');
     btn.classList.add('done');
-    btn.innerHTML = '<i class="bi bi-check-lg"></i> Yüklendi';
+    btn.innerHTML = '<i class="bi bi-check-lg"></i> ' + _t('apply.doc.uploaded', 'Yüklendi');
   } catch (e) {
     btn.classList.remove('done');
-    btn.innerHTML = '<i class="bi bi-upload"></i> Yükle<input type="file" accept=".pdf,.jpg,.jpeg,.png,.webp" onchange="uploadDoc(\'' + docType + '\', this)">';
+    btn.innerHTML = '<i class="bi bi-upload"></i> ' + _t('apply.doc.upload', 'Yükle') + '<input type="file" accept=".pdf,.jpg,.jpeg,.png,.webp" onchange="uploadDoc(\'' + docType + '\', this)">';
     alert(e.message);
   }
 }
@@ -903,13 +904,15 @@ let allUnis = [], allCountryProgs = [], fPrograms = [];
 const fSel = { continent:null, country:null, progType:null, schoolId:null, schoolName:null,
                programId:null, programName:null, eduStatus:null, fEngLevel:null };
 const CONTINENTS = [
-  {val:'Europe',        label:'Avrupa 🇪🇺'},
-  {val:'North America', label:'Kuzey Amerika 🌎'},
-  {val:'Australia',     label:'Avustralya 🦘'},
-  {val:'Asia',          label:'Asya 🌏'},
-  {val:'UK',            label:'Birleşik Krallık 🇬🇧'},
+  {val:'Europe',        get label() { return _t('apply.cont.eu', 'Avrupa') + ' 🇪🇺'; }},
+  {val:'North America', get label() { return _t('apply.cont.na', 'Kuzey Amerika') + ' 🌎'; }},
+  {val:'Australia',     get label() { return _t('apply.cont.au', 'Avustralya') + ' 🦘'; }},
+  {val:'Asia',          get label() { return _t('apply.cont.as', 'Asya') + ' 🌏'; }},
+  {val:'UK',            get label() { return _t('apply.cont.uk', 'Birleşik Krallık') + ' 🇬🇧'; }},
 ];
-const STEP_LABELS = ['Kıta','Ülke','Program Türü','Okul','Program','İletişim & Profil','Kimlik Bilgileri'];
+function stepLabels() {
+  return _t('apply.steps', 'Kıta,Ülke,Program Türü,Okul,Program,İletişim & Profil,Kimlik Bilgileri').split(',');
+}
 
 async function initFunnel() {
   document.getElementById('funnelMode').style.display = 'block';
@@ -1006,22 +1009,22 @@ function fCard(field, el) { el.closest('.card-chips').querySelectorAll('.card-ch
 
 function renderProgress() {
   document.getElementById('progBar').innerHTML = Array.from({length:TOTAL_STEPS}, (_,i) => `<div class="seg${i<curStep?' on':''}"></div>`).join('');
-  document.getElementById('progLabel').textContent = 'Adım ' + curStep + ' / ' + TOTAL_STEPS + ' — ' + (STEP_LABELS[curStep-1] || '');
+  document.getElementById('progLabel').textContent = _t('apply.step.of', 'Adım') + ' ' + curStep + ' / ' + TOTAL_STEPS + ' — ' + (stepLabels()[curStep-1] || '');
 }
 function showStep(n) {
   curStep = n;
   document.querySelectorAll('.wiz-step').forEach(el => el.style.display = parseInt(el.dataset.step) === n ? 'block' : 'none');
   document.getElementById('backBtn').style.display = n > 1 ? 'block' : 'none';
   document.getElementById('nextBtn').innerHTML = n === TOTAL_STEPS
-    ? '<i class="bi bi-send" style="margin-right:6px"></i>Başvuruyu Gönder'
-    : 'Devam <i class="bi bi-arrow-right" style="margin-left:6px"></i>';
+    ? '<i class="bi bi-send" style="margin-right:6px"></i>' + _t('apply.submit', 'Başvuruyu Gönder')
+    : _t('apply.continue', 'Devam') + ' <i class="bi bi-arrow-right" style="margin-left:6px"></i>';
   renderProgress();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function validateStep(n) {
-  if (n === 1 && !fSel.continent) { alert('Lütfen bir kıta seç.'); return false; }
-  if (n === 2 && !fSel.country) { alert('Lütfen bir ülke seç.'); return false; }
-  if (n === 4 && !document.getElementById('schoolSelect').value) { alert('Lütfen bir üniversite seç.'); return false; }
+  if (n === 1 && !fSel.continent) { alert(_t('apply.err.cont', 'Lütfen bir kıta seç.')); return false; }
+  if (n === 2 && !fSel.country) { alert(_t('apply.err.ctry', 'Lütfen bir ülke seç.')); return false; }
+  if (n === 4 && !document.getElementById('schoolSelect').value) { alert(_t('apply.err.sch', 'Lütfen bir üniversite seç.')); return false; }
   return true;
 }
 function nextStep() { if (!validateStep(curStep)) return; if (curStep === TOTAL_STEPS) { funnelSubmit(); return; } showStep(curStep + 1); }

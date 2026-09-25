@@ -39,6 +39,8 @@
       'h.wiz.title':   'Programlara Uygunluğunu Öğren',
       'h.wiz.sub':     'GPA\'nı, İngilizce seviyeni ve hedef bölgeni gir — sana en uygun üniversite programlarını sıralayalım.',
       'h.wiz.btn':     'Profil Sihirbazı',
+      'h.wizcta.title':'Kendine uygun programı keşfet ve ücretsiz başvuru yapmak için tıkla',
+      'h.wizcta.sub':  'İstediğin okul ve bölümden ön kabul almak için başvuru yapıp deneme yapabilirsin.',
       'h.m.primary':   'Profil Sihirbazı',
       'h.m.secondary': 'Programları Keşfet',
       'h.search.ph':   'Okumak istediğin bölümü veya üniversite adını yaz…',
@@ -66,6 +68,7 @@
       'h.results':     'Arama Sonuçları',
       'h.loading':     'Yükleniyor…',
       'h.err.load':    'Üniversiteler yüklenemedi.',
+      'h.nofeatured':  'Henüz öne çıkan üniversite yok — admin panelinden işaretleyebilirsiniz.',
       'h.empty':       'Aramanızla eşleşen üniversite bulunamadı.',
       'h.result.lbl':  'sonuç',
       'h.per.page':    '/ sayfa',
@@ -167,6 +170,19 @@
       't.find':       'Yurt dışı eğitim programı bulmak ister misiniz?',
       't.find.btn':   'Okul Bul',
       't.q.of':       'Soru',
+      't.score.of20': '20 sorudan {n} doğru',
+      't.cefr.a1.label':'A1 — Başlangıç',
+      't.cefr.a1.desc': 'Temel gündelik ifadeleri anlayabilirsiniz. Düzenli pratikle hızla ilerliyebilirsiniz.',
+      't.cefr.a2.label':'A2 — Temel',
+      't.cefr.a2.desc': 'Sık kullanılan ifadeleri anlıyorsunuz. IELTS / TOEFL hazırlığı için önce B1\'e ulaşmanız önerilir.',
+      't.cefr.b1.label':'B1 — Orta-Alt',
+      't.cefr.b1.desc': 'Net ifadelerle gündelik durumlarla başa çıkabilirsiniz. IELTS hazırlığına başlamak için iyi bir nokta.',
+      't.cefr.b2.label':'B2 — Orta-Üst',
+      't.cefr.b2.desc': 'İngilizce konuşulan ortamlarda rahatlıkla iletişim kurabilirsiniz. IELTS 5.5–6.5 hedefiniz olabilir.',
+      't.cefr.c1.label':'C1 — İleri',
+      't.cefr.c1.desc': 'Karmaşık metinleri anlıyor, akıcı konuşabiliyorsunuz. IELTS 7.0+ ve üst düzey programlar sizin için.',
+      't.cefr.c2.label':'C2 — Üst',
+      't.cefr.c2.desc': 'Neredeyse anadil seviyesindesiniz. Herhangi bir program için yeterliliğiniz var.',
       't.ielts':      'IELTS Hazırlık',
       't.ielts.d':    'Resmi IELTS sınavı için British Council kaynakları',
       't.toefl':      'TOEFL iBT',
@@ -304,12 +320,46 @@
       'apply.step1.h':   'Hangi kıtada okumak istiyorsun?',
       'apply.step1.s':   'Birini seç — ülke ve okul listesi buna göre filtrelenecek.',
       'apply.step2.h':   'Hangi ülke?',
+      'apply.step2.s':   'Seçtiğin kıtadaki ülkeler listeleniyor.',
+      'apply.step3type.h':'Hangi program türü?',
+      'apply.step3type.s':'Okumak istediğin program türünü seç.',
       'apply.step3.h':   'Hangi üniversite?',
+      'apply.step3.s':   'Seçtiğin kriterlere uyan üniversiteler listeleniyor.',
+      'apply.sch.lbl':   'Üniversite seç',
       'apply.step4.h':   'Hangi program?',
       'apply.step4.s':   'Başvurmak istediğin programı ve başlangıç dönemini seç.',
       'apply.step5.h':   'İletişim & Profil',
       'apply.step5.s':   'Ad, soyad, e-posta ve telefon zorunludur.',
-      'apply.steps':     'Kıta,Ülke,Okul,Program,İletişim & Profil',
+      'apply.steps':     'Kıta,Ülke,Program Türü,Okul,Program,İletişim & Profil,Kimlik Bilgileri',
+      'apply.cont.eu':   'Avrupa',
+      'apply.cont.na':   'Kuzey Amerika',
+      'apply.cont.au':   'Avustralya',
+      'apply.cont.as':   'Asya',
+      'apply.cont.uk':   'Birleşik Krallık',
+      'apply.back.title':'Geri',
+      'apply.idinfo.opt':'Kimlik Bilgileri — isteğe bağlı',
+      'apply.idinfo':    'Kimlik Bilgileri',
+      'apply.dob':       'Doğum tarihi',
+      'apply.pob':       'Doğum yeri',
+      'apply.pob.ph':    'Şehir, ülke',
+      'apply.nat':       'Uyruk',
+      'apply.nat.ph':    'Örn. Türkiye',
+      'apply.res':       'İkamet ülkesi',
+      'apply.addr':      'Adres',
+      'apply.addr.ph':   'Açık adres',
+      'apply.hs':        'Lise',
+      'apply.hs.ph':     'Lise adı',
+      'apply.idpass.s':  'İsteğe bağlı — daha sonra da tamamlayabilirsin.',
+      'apply.docs.h':    'Belgelerini Yükle',
+      'apply.docs.p':    'İsteğe bağlı — şimdi yükleyebilir ya da daha sonra tamamlayabilirsin.',
+      'apply.docs.continue':'Devam Et',
+      'apply.doc.transcript':'Lise Transkripti',
+      'apply.doc.engscore':  'İngilizce Sınav Belgesi (varsa)',
+      'apply.doc.nohint':'Belgen yok mu? Bu okulun kabul ettiği sınav:',
+      'apply.doc.prep':  'sınava hazırlan',
+      'apply.doc.upload':'Yükle',
+      'apply.doc.uploaded':'Yüklendi',
+      'apply.doc.failed':'Yükleme başarısız.',
       /* ── Login ── */
       'login.title':      'Giriş Yap',
       'login.sub.default':'E-posta ile giriş yap',
@@ -335,6 +385,8 @@
       'login.err.email':  'E-postanı gir.',
       'login.err.code':   '6 haneli kodu girin.',
       'login.err.fields': 'E-posta ve şifre girin.',
+      'login.err.invalidcode': 'Geçersiz kod.',
+      'login.err.failed': 'Giriş başarısız.',
       /* ── Register ── */
       'reg.title':        'Hesap Oluştur',
       'reg.subtitle':     'Öğrenciler, veliler ve danışmanlar',
@@ -352,6 +404,7 @@
       'reg.err.fields':   'Tüm alanlar zorunludur.',
       'reg.err.match':    'Şifreler eşleşmiyor.',
       'reg.err.len':      'Şifre en az 8 karakter olmalıdır.',
+      'reg.err.failed':   'Kayıt başarısız.',
       /* ── Acceptance ── */
       'acc.loading':      'Belge yükleniyor…',
       'acc.title.pre':    'Ön Kabul Belgesi',
@@ -424,6 +477,8 @@
       'port.logout':        'Çıkış',
       'port.apply':         'Yeni Başvuru',
       'port.tab.apps':      'Başvurularım',
+      'port.apps.count.one':  'başvuru',
+      'port.apps.count.many': 'başvuru',
       'port.tab.saved':     'Kaydedilenler',
       'port.tab.leads':     'Sorgularım',
       'port.tab.profile':   'Profilim',
@@ -490,6 +545,8 @@
       'h.wiz.title':   'Check Your Programme Eligibility',
       'h.wiz.sub':     'Enter your GPA, English level and target region — we\'ll rank the best-fit university programmes for you.',
       'h.wiz.btn':     'Profile Wizard',
+      'h.wizcta.title':'Discover the right programme for you and apply for free',
+      'h.wizcta.sub':  'Apply and get a trial pre-acceptance from the school and programme you want.',
       'h.m.primary':   'Profile Wizard',
       'h.m.secondary': 'Explore Programmes',
       'h.search.ph':   'Type a subject or university name…',
@@ -517,6 +574,7 @@
       'h.results':     'Search Results',
       'h.loading':     'Loading…',
       'h.err.load':    'Could not load universities.',
+      'h.nofeatured':  'No featured universities yet — mark some from the admin panel.',
       'h.empty':       'No universities match your search.',
       'h.result.lbl':  'results',
       'h.per.page':    '/ page',
@@ -618,6 +676,19 @@
       't.find':       'Want to find a study abroad programme?',
       't.find.btn':   'Find Schools',
       't.q.of':       'Question',
+      't.score.of20': '{n} out of 20 correct',
+      't.cefr.a1.label':'A1 — Beginner',
+      't.cefr.a1.desc': 'You can understand basic everyday expressions. Regular practice will help you progress quickly.',
+      't.cefr.a2.label':'A2 — Elementary',
+      't.cefr.a2.desc': 'You understand frequently used expressions. We recommend reaching B1 before starting IELTS / TOEFL prep.',
+      't.cefr.b1.label':'B1 — Intermediate',
+      't.cefr.b1.desc': 'You can handle everyday situations with clear language. A good point to start IELTS preparation.',
+      't.cefr.b2.label':'B2 — Upper-Intermediate',
+      't.cefr.b2.desc': 'You can communicate comfortably in English-speaking environments. An IELTS 5.5–6.5 target is realistic.',
+      't.cefr.c1.label':'C1 — Advanced',
+      't.cefr.c1.desc': 'You understand complex texts and speak fluently. IELTS 7.0+ and top-tier programmes are within reach.',
+      't.cefr.c2.label':'C2 — Proficient',
+      't.cefr.c2.desc': "You're at near-native level. You qualify for virtually any programme.",
       't.ielts':      'IELTS Preparation',
       't.ielts.d':    'British Council resources for the official IELTS exam',
       't.toefl':      'TOEFL iBT',
@@ -755,12 +826,46 @@
       'apply.step1.h':   'Which continent would you like to study in?',
       'apply.step1.s':   'Choose one — the country and school list will be filtered accordingly.',
       'apply.step2.h':   'Which country?',
+      'apply.step2.s':   'Countries in your selected continent are listed.',
+      'apply.step3type.h':'Which programme type?',
+      'apply.step3type.s':'Choose the type of programme you want to study.',
       'apply.step3.h':   'Which university?',
+      'apply.step3.s':   'Universities matching your criteria are listed.',
+      'apply.sch.lbl':   'Choose university',
       'apply.step4.h':   'Which programme?',
       'apply.step4.s':   'Select the programme and start term you want to apply to.',
       'apply.step5.h':   'Contact & Profile',
       'apply.step5.s':   'First name, last name, email and phone are required.',
-      'apply.steps':     'Continent,Country,School,Programme,Contact & Profile',
+      'apply.steps':     'Continent,Country,Programme Type,School,Programme,Contact & Profile,Identity Info',
+      'apply.cont.eu':   'Europe',
+      'apply.cont.na':   'North America',
+      'apply.cont.au':   'Australia',
+      'apply.cont.as':   'Asia',
+      'apply.cont.uk':   'United Kingdom',
+      'apply.back.title':'Back',
+      'apply.idinfo.opt':'Identity Info — optional',
+      'apply.idinfo':    'Identity Info',
+      'apply.dob':       'Date of birth',
+      'apply.pob':       'Place of birth',
+      'apply.pob.ph':    'City, country',
+      'apply.nat':       'Nationality',
+      'apply.nat.ph':    'e.g. Turkey',
+      'apply.res':       'Country of residence',
+      'apply.addr':      'Address',
+      'apply.addr.ph':   'Full address',
+      'apply.hs':        'High school',
+      'apply.hs.ph':     'High school name',
+      'apply.idpass.s':  'Optional — you can complete this later too.',
+      'apply.docs.h':    'Upload Your Documents',
+      'apply.docs.p':    'Optional — you can upload now or finish this later.',
+      'apply.docs.continue':'Continue',
+      'apply.doc.transcript':'High School Transcript',
+      'apply.doc.engscore':  'English Test Certificate (if any)',
+      'apply.doc.nohint':"Don't have it yet? This school accepts:",
+      'apply.doc.prep':  'prepare for the exam',
+      'apply.doc.upload':'Upload',
+      'apply.doc.uploaded':'Uploaded',
+      'apply.doc.failed':'Upload failed.',
       /* ── Login ── */
       'login.title':      'Sign In',
       'login.sub.default':'Sign in with your email',
@@ -786,6 +891,8 @@
       'login.err.email':  'Enter your email.',
       'login.err.code':   'Enter the 6-digit code.',
       'login.err.fields': 'Enter email and password.',
+      'login.err.invalidcode': 'Invalid code.',
+      'login.err.failed': 'Login failed.',
       /* ── Register ── */
       'reg.title':        'Create Account',
       'reg.subtitle':     'Students, parents, and consultants',
@@ -803,6 +910,7 @@
       'reg.err.fields':   'All fields are required.',
       'reg.err.match':    'Passwords do not match.',
       'reg.err.len':      'Password must be at least 8 characters.',
+      'reg.err.failed':   'Registration failed.',
       /* ── Acceptance ── */
       'acc.loading':      'Loading document…',
       'acc.title.pre':    'Pre-Acceptance Letter',
@@ -875,6 +983,8 @@
       'port.logout':        'Sign Out',
       'port.apply':         'New Application',
       'port.tab.apps':      'My Applications',
+      'port.apps.count.one':  'application',
+      'port.apps.count.many': 'applications',
       'port.tab.saved':     'Saved Universities',
       'port.tab.leads':     'My Inquiries',
       'port.tab.profile':   'My Profile',
@@ -916,6 +1026,23 @@
     return localStorage.getItem('paneleduLang') || 'tr';
   }
 
+  /* program_types.name is always stored in English in the DB (e.g. "Bachelor
+     Programs") — translate it before showing it in otherwise-localized copy. */
+  var PROGRAM_TYPE_NAME_KEY = {
+    'Bachelor Programs':   'm.type.bachelor',
+    'Master Programs':     'm.type.master',
+    'Foundation Programs': 'm.type.foundation',
+    'Pathway Programs':    'm.type.pathway',
+    'Pre-Master Programs': 'm.type.premaster',
+    'Diploma Programs':    'm.type.diploma',
+    'Certificate Programs':'m.type.certificate',
+    'Other Credentials':   'm.type.other'
+  };
+  function typeLabel(name) {
+    var key = PROGRAM_TYPE_NAME_KEY[name];
+    return key ? t(key) : name;
+  }
+
   function t(key) {
     var lang = getLang();
     var d = T[lang];
@@ -941,6 +1068,10 @@
       var k = el.getAttribute('data-i18n-ph');
       if (d[k] !== undefined) el.placeholder = d[k];
     });
+    document.querySelectorAll('[data-i18n-title]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n-title');
+      if (d[k] !== undefined) el.title = d[k];
+    });
 
     /* Update language toggle button */
     var btn = document.getElementById('peLangBtn');
@@ -961,7 +1092,7 @@
 
   /* Public API */
   window.t = t;
-  window.i18n = { t: t, getLang: getLang, apply: applyAll };
+  window.i18n = { t: t, getLang: getLang, apply: applyAll, typeLabel: typeLabel };
 
   /* ── Initialise ──────────────────────────────────────────────────────────── */
   function init() {

@@ -54,12 +54,12 @@
       <h1 style="font-size:1.5rem;font-weight:900;color:var(--text);margin-bottom:8px" data-i18n="t.title">İngilizce Seviye Testi</h1>
       <p style="color:var(--muted);margin-bottom:16px;line-height:1.55" data-i18n="t.intro">20 soruluk bu test yaklaşık 5 dakika sürer ve CEFR seviyenizi belirler. Sonuçlar e-posta ile gönderilir.</p>
       <div class="level-list">
-        <span class="level-chip">A1 Başlangıç</span>
-        <span class="level-chip">A2 Temel</span>
-        <span class="level-chip">B1 Orta-Alt</span>
-        <span class="level-chip">B2 Orta-Üst</span>
-        <span class="level-chip">C1 İleri</span>
-        <span class="level-chip">C2 Üst</span>
+        <span class="level-chip" data-i18n="t.cefr.a1.label">A1 — Başlangıç</span>
+        <span class="level-chip" data-i18n="t.cefr.a2.label">A2 — Temel</span>
+        <span class="level-chip" data-i18n="t.cefr.b1.label">B1 — Orta-Alt</span>
+        <span class="level-chip" data-i18n="t.cefr.b2.label">B2 — Orta-Üst</span>
+        <span class="level-chip" data-i18n="t.cefr.c1.label">C1 — İleri</span>
+        <span class="level-chip" data-i18n="t.cefr.c2.label">C2 — Üst</span>
       </div>
       <button class="btn-grad w-100 mt-2" onclick="startTest()">
         <i class="bi bi-play-fill me-1"></i><span data-i18n="t.start">Teste Başla</span>
@@ -221,14 +221,20 @@
 
   let QUESTIONS = [];
 
-  const CEFR_INFO = {
-    A1: { label:'A1 — Başlangıç', desc:'Temel gündelik ifadeleri anlayabilirsiniz. Düzenli pratikle hızla ilerliyebilirsiniz.' },
-    A2: { label:'A2 — Temel',      desc:'Sık kullanılan ifadeleri anlıyorsunuz. IELTS / TOEFL hazırlığı için önce B1\'e ulaşmanız önerilir.' },
-    B1: { label:'B1 — Orta-Alt',   desc:'Net ifadelerle gündelik durumlarla başa çıkabilirsiniz. IELTS hazırlığına başlamak için iyi bir nokta.' },
-    B2: { label:'B2 — Orta-Üst',   desc:'İngilizce konuşulan ortamlarda rahatlıkla iletişim kurabilirsiniz. IELTS 5.5–6.5 hedefiniz olabilir.' },
-    C1: { label:'C1 — İleri',       desc:'Karmaşık metinleri anlıyor, akıcı konuşabiliyorsunuz. IELTS 7.0+ ve üst düzey programlar sizin için.' },
-    C2: { label:'C2 — Üst',         desc:'Neredeyse anadil seviyesindesiniz. Herhangi bir program için yeterliliğiniz var.' },
+  const CEFR_KEYS = {
+    A1: { label:'t.cefr.a1.label', desc:'t.cefr.a1.desc' },
+    A2: { label:'t.cefr.a2.label', desc:'t.cefr.a2.desc' },
+    B1: { label:'t.cefr.b1.label', desc:'t.cefr.b1.desc' },
+    B2: { label:'t.cefr.b2.label', desc:'t.cefr.b2.desc' },
+    C1: { label:'t.cefr.c1.label', desc:'t.cefr.c1.desc' },
+    C2: { label:'t.cefr.c2.label', desc:'t.cefr.c2.desc' },
   };
+  function cefrInfo(level) {
+    const k = CEFR_KEYS[level];
+    if (!k) return { label: level, desc: '' };
+    const _t = key => window.t ? window.t(key) : key;
+    return { label: _t(k.label), desc: _t(k.desc) };
+  }
 
   let current = 0;
   let selected = [];
@@ -339,9 +345,9 @@
 
   function showResultCard(level, score) {
     document.getElementById('emailGate').style.display = 'none';
-    const info = CEFR_INFO[level] || { label: level, desc: '' };
+    const info = cefrInfo(level);
     document.getElementById('resLevel').textContent = info.label;
-    document.getElementById('resScore').textContent = `20 sorudan ${score} doğru`;
+    document.getElementById('resScore').textContent = (window.t ? window.t('t.score.of20') : '20 sorudan {n} doğru').replace('{n}', score);
     document.getElementById('resDesc').textContent = info.desc;
     document.getElementById('resultCard').style.display = 'block';
   }

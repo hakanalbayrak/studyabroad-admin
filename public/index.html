@@ -209,8 +209,8 @@
     <a href="/match" class="wizard-cta">
       <div class="wizard-cta-icon"><i class="bi bi-magic"></i></div>
       <div class="wizard-cta-text">
-        <div class="wizard-cta-title">Kendine uygun programı keşfet ve ücretsiz başvuru yapmak için tıkla</div>
-        <div class="wizard-cta-sub">İstediğin okul ve bölümden ön kabul almak için başvuru yapıp deneme yapabilirsin.</div>
+        <div class="wizard-cta-title" data-i18n="h.wizcta.title">Kendine uygun programı keşfet ve ücretsiz başvuru yapmak için tıkla</div>
+        <div class="wizard-cta-sub" data-i18n="h.wizcta.sub">İstediğin okul ve bölümden ön kabul almak için başvuru yapıp deneme yapabilirsin.</div>
       </div>
     </a>
 
@@ -298,9 +298,9 @@
         <div class="d-flex align-items-center gap-2">
           <span style="font-size:.78rem;color:var(--muted)" id="searchResultInfo"></span>
           <select id="perPageSel" onchange="goPage(1)">
-            <option value="10">10 / sayfa</option>
-            <option value="25" selected>25 / sayfa</option>
-            <option value="50">50 / sayfa</option>
+            <option value="10" data-n="10">10 / sayfa</option>
+            <option value="25" selected data-n="25">25 / sayfa</option>
+            <option value="50" data-n="50">50 / sayfa</option>
           </select>
         </div>
       </div>
@@ -344,6 +344,9 @@ let compareSet = new Set();
 let compareModal;
 
 async function load() {
+  document.querySelectorAll('#perPageSel option').forEach(o => {
+    o.textContent = o.dataset.n + ' ' + (window.t ? window.t('h.per.page') : '/ sayfa');
+  });
   try {
     allUniversities = await fetch('/api/public/universities').then(r => r.json());
     document.getElementById('loadingSpinner').style.display = 'none';
@@ -368,7 +371,7 @@ function showFeatured() {
   const featured = allUniversities.filter(u => u.featured);
   document.getElementById('featuredGrid').innerHTML = featured.length
     ? featured.map(u => cardHtml(u)).join('')
-    : '<div class="col-12"><p class="text-muted small">Henüz öne çıkan üniversite yok — admin panelinden işaretleyebilirsiniz.</p></div>';
+    : '<div class="col-12"><p class="text-muted small">' + (window.t ? window.t('h.nofeatured') : 'Henüz öne çıkan üniversite yok — admin panelinden işaretleyebilirsiniz.') + '</p></div>';
 }
 
 function onSearch() {
