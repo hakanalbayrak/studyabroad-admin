@@ -97,6 +97,33 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   entire catalog — the "fields" filter has been empty since before this
   session, not something today's import caused. Needs its own pass
   (backfill from the CSV's `Domain` column or similar) if wanted.
+- **`programs.field` gap above — fixed (2026-09-26)**: the CSV's "Domain"
+  column turned out to be the program's academic subject area (e.g.
+  "Business & Economics, Analytics"), not a website domain (an assumption
+  briefly and incorrectly acted on — see next bullet). `routes/csvImport.js`
+  now writes it straight to `programs.field`; one-off backfill applied it to
+  all 23,038 already-imported programs (90 distinct subject areas). The
+  "Alan / Fakülte" filter on `/programs` is now populated for the first time.
+- **New: per-program source page link (2026-09-26)** — added
+  `programs.source_url`: a direct link to that exact program's page on the
+  university's own website, editable per-program in the admin panel
+  ("Program Page URL" field) and shown as a "view on university website"
+  button on both `/programs` cards and university detail pages (falls back
+  to the university's own `website_url` if no program-specific link is set
+  yet). Piloted end-to-end on Bentley University's 5 programs (real links
+  found via search, saved through the API, confirmed live on
+  `/api/public/programs?entity_id=353`) — https://paneledu.com/university?id=353
+  to check. **Not yet done**: the other ~23,000 imported programs have no
+  `source_url` — the CSV export never contained one, so there's no bulk
+  shortcut; it has to be found per program (or per university, for
+  programs whose page can be found from the university's own listing).
+  Scaling this up needs a decision on approach (manual admin entry over
+  time vs. a larger automated research pass) — flagged for the user rather
+  than run at full scale unattended.
+  (Aside, discovered while investigating: an earlier attempt at
+  backfilling `entities.website_url` from that same "Domain" column wrote
+  garbage into 333 entities' `website_url` before the mix-up was caught;
+  rolled back the same session, confirmed no lasting effect.)
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
