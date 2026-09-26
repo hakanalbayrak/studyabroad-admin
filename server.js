@@ -865,7 +865,7 @@ app.use('/api/programs', requireRole('admin'), require('./routes/programs'));
 app.use('/api/orbit', requireRole('admin'), require('./routes/orbit'));
 app.use('/api/program-types', requireRole('admin'), require('./routes/programTypes'));
 app.use('/api/bulk/csv-import', requireRole('admin'), require('./routes/csvImport'));
-app.use('/api/admin/migrate-20260926', requireRole('admin'), require('./routes/migrate20260926'));
+app.use('/api/admin/migrate-20260926b', requireRole('admin'), require('./routes/migrate20260926b'));
 
 // Scheduled reminder endpoint — call from cPanel cron with CRON_SECRET
 // e.g. curl -H "Authorization: Bearer SECRET" "https://paneledu.com/api/auto/remind"

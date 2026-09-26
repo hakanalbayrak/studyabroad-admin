@@ -235,16 +235,17 @@ router.post('/', upload.single('file'), async (req, res) => {
       const duration = normalizeDuration(row['Course Duration']);
       const intake = normalizeIntake(row['Intakes Duration']);
       const language = inferLanguage(courseName);
-      const notes = [row['Domain'] ? `Domain: ${row['Domain']}` : '', row['Notes'] || ''].filter(Boolean).join(' | ') || null;
+      const field = row['Domain'] ? row['Domain'].trim() : null; // "Domain" in the export = academic subject area, e.g. "Business & Economics"
+      const notes = row['Notes'] || null;
 
       // 5. Program
       await db.query(
         `INSERT INTO programs (entity_location_id, program_type_id, name, language_of_instruction,
          duration, tuition_fee, tuition_currency, intake_months, english_req_type, english_req_score,
-         gpa_requirement, description_en, status)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'active')`,
+         gpa_requirement, field, description_en, status)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'active')`,
         [locationId, ptId, courseName, language, duration, fee, currency,
-         intake, engType, engScore || null, gpa, notes]
+         intake, engType, engScore || null, gpa, field, notes]
       );
       programsCreated++;
     } catch (e) {

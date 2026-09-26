@@ -290,11 +290,15 @@ function renderPrograms(progs) {
             ${notes ? `&nbsp;·&nbsp; ${esc(notes)}` : ''}
           </div>
         </div>
-        <div style="flex-shrink:0;margin-top:4px">
+        <div style="flex-shrink:0;margin-top:4px;display:flex;flex-direction:column;gap:6px;align-items:stretch">
           <button style="background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.35);color:var(--accent);font-size:.78rem;font-weight:600;border-radius:8px;padding:6px 14px;cursor:pointer;white-space:nowrap"
             onclick="openLeadModal(${p.id})">
             <i class="bi bi-envelope-fill me-1"></i>${T('uni.req.info')}
           </button>
+          ${(p.source_url || university.website_url) ? `<a style="background:transparent;border:1px solid var(--line);color:var(--muted);font-size:.72rem;font-weight:600;border-radius:8px;padding:6px 14px;text-align:center;text-decoration:none;white-space:nowrap"
+            href="${esc(p.source_url || university.website_url)}" target="_blank" rel="noopener">
+            <i class="bi bi-box-arrow-up-right me-1"></i>${T('p.viewsite.title')}
+          </a>` : ''}
         </div>
       </div>
     </div>`;

@@ -1815,7 +1815,7 @@ async function fetchWikiDescription() {
 }
 
 function addProgram() {
-  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', field:'', scholarship_available:false, description_en:'', status:'active', requirements_json:null, placement_year:false, internship_available:false, international_eligible:true, internship_paid:'', employer_partnerships:'', live_industry_projects:false, professional_accreditation:'', graduate_outcome_source:'', graduate_outcome_date:'', scholarship_amount:'', scholarship_conditions:'', application_deadline:'', deposit_deadline:'', scholarship_deadline:'' });
+  formPrograms.push({ program_type_id:'', name:'', language_of_instruction:'English', duration:'', tuition_fee:'', tuition_currency:'EUR', intake_months:'', english_req_type:'None', english_req_score:'', gpa_requirement:'', field:'', scholarship_available:false, description_en:'', source_url:'', status:'active', requirements_json:null, placement_year:false, internship_available:false, international_eligible:true, internship_paid:'', employer_partnerships:'', live_industry_projects:false, professional_accreditation:'', graduate_outcome_source:'', graduate_outcome_date:'', scholarship_amount:'', scholarship_conditions:'', application_deadline:'', deposit_deadline:'', scholarship_deadline:'' });
   renderPrograms();
   setTimeout(() => {
     const cards = document.querySelectorAll('.program-card');
@@ -1947,6 +1947,14 @@ function renderPrograms() {
               <input class="form-check-input" type="checkbox" role="switch" id="psc_${i}"
                 ${p.scholarship_available?'checked':''} onchange="updProg(${i},'scholarship_available',this.checked)">
               <label class="form-check-label small" for="psc_${i}">Available</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <label class="form-label small fw-semibold">Program Page URL <span class="text-muted fw-normal">(link to this exact program on the university's own website)</span></label>
+            <div class="input-group input-group-sm">
+              <input type="url" class="form-control form-control-sm" value="${esc(p.source_url||'')}"
+                oninput="updProg(${i},'source_url',this.value)" placeholder="https://university.edu/programs/bsc-computer-science">
+              ${p.source_url ? `<a class="btn btn-outline-secondary" href="${esc(p.source_url)}" target="_blank" rel="noopener" title="Open link"><i class="bi bi-box-arrow-up-right"></i></a>` : ''}
             </div>
           </div>
           <div class="col-12">

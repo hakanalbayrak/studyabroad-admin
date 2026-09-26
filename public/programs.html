@@ -832,6 +832,10 @@ function renderCards() {
             onclick="event.stopPropagation();openLeadModal(${p.id})">
             <i class="bi bi-envelope-fill"></i>
           </button>
+          ${(p.source_url || p.university_website_url) ? `<a class="btn btn-sm" style="background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.25);color:var(--accent);font-size:.78rem;font-weight:600;border-radius:8px;padding:6px 10px"
+            href="${esc(p.source_url || p.university_website_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" data-i18n-title="p.viewsite.title" title="${window.t ? window.t('p.viewsite.title') : 'View on university website'}">
+            <i class="bi bi-box-arrow-up-right"></i>
+          </a>` : ''}
         </div>
       </div>
     </div>`;
