@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body, #c { width:100%; height:100%; margin:0; padding:0; overflow:hidden; background:#050912; }
+    #fade { position:fixed; inset:0; background:#050912; z-index:10; pointer-events:none; opacity:0; transition:opacity 1.2s ease; }
+    .cesium-viewer-bottom,.cesium-viewer-animationContainer,
+    .cesium-viewer-timelineContainer,.cesium-widget-credits { display:none !important; }
+  </style>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.124/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.124/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+</head>
+<body>
+  <div id="c"></div>
+  <div id="fade"></div>
+  <script>
+    const GOOGLE_MAPS_KEY = 'AIzaSyCDvg77OufOzvBqRqYMThhN0dZC2heEpSQ';
+    const DWELL_TICKS = 20 * 60; // ~20s at 60fps
+    const DEFAULT_SPEED = 0.07;
+
+    let viewer, unis = [], idx = 0, tick = 0, currentPreRender = null, transitioning = false;
+
+    async function init() {
+      try {
+        const r = await fetch('/api/public/universities?limit=2000');
+        const d = await r.json();
+        unis = (d.data || []).filter(u => u.latitude && u.longitude);
+      } catch(_) {}
+
+      if (!unis.length) return;
+
+      // Fisher-Yates shuffle for random order
+      for (let i = unis.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [unis[i], unis[j]] = [unis[j], unis[i]];
+      }
+
+      try {
+        viewer = new Cesium.Viewer('c', {
+          globe: false, baseLayerPicker: false, geocoder: false, homeButton: false,
+          sceneModePicker: false, navigationHelpButton: false, animation: false,
+          timeline: false, fullscreenButton: false, infoBox: false,
+          selectionIndicator: false, creditContainer: document.createElement('div')
+        });
+        viewer.scene.skyAtmosphere.show = true;
+      } catch(e) { return; }
+
+      try {
+        const ts = await Cesium.createGooglePhotorealistic3DTileset({ key: GOOGLE_MAPS_KEY });
+        viewer.scene.primitives.add(ts);
+      } catch(e) { return; }
+
+      orbitUni();
+      // Tell parent the orbit is ready
+      try { window.parent.postMessage('orbit-ready', '*'); } catch(_) {}
+    }
+
+    function orbitUni() {
+      if (!viewer || !unis.length) return;
+      const u = unis[idx % unis.length];
+      const lat = parseFloat(u.orbit_center_lat || u.latitude);
+      const lng = parseFloat(u.orbit_center_lng || u.longitude);
+      const range = parseFloat(u.orbit_range || 500);
+      const pitch = Cesium.Math.toRadians(parseFloat(u.orbit_pitch || -38));
+      const speed = parseFloat(u.orbit_rotation_speed || DEFAULT_SPEED);
+      const target = Cesium.Cartesian3.fromDegrees(lng, lat, 0);
+      let h = Cesium.Math.toRadians(Math.random() * 360);
+      tick = 0;
+
+      if (currentPreRender) {
+        try { viewer.scene.preRender.removeEventListener(currentPreRender); } catch(_) {}
+      }
+
+      currentPreRender = function() {
+        if (document.hidden) return;
+        h += Cesium.Math.toRadians(speed);
+        viewer.camera.lookAt(target, new Cesium.HeadingPitchRange(h, pitch, range));
+        tick++;
+        if (tick >= DWELL_TICKS && !transitioning) {
+          transitioning = true;
+          crossFade();
+        }
+      };
+      viewer.scene.preRender.addEventListener(currentPreRender);
+    }
+
+    function crossFade() {
+      const fade = document.getElementById('fade');
+      fade.style.opacity = '1';
+      setTimeout(function() {
+        idx++;
+        orbitUni();
+        setTimeout(function() {
+          fade.style.opacity = '0';
+          transitioning = false;
+        }, 400);
+      }, 1200);
+    }
+
+    init().catch(function() {});
+  </script>
+</body>
+</html>

@@ -45,22 +45,32 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-  const { entity_location_id, orbit_center_lat, orbit_center_lng, orbit_altitude, orbit_pitch,
+  const { orbit_center_lat, orbit_center_lng, orbit_altitude, orbit_pitch,
           orbit_initial_heading, orbit_range, orbit_rotation_type, orbit_rotation_speed,
           scan_target_lat, scan_target_lng, scan_effect_enabled, camera_v_offset, camera_h_offset } = req.body;
   try {
     await db.query(
-      `UPDATE orbit_configs SET entity_location_id=?, orbit_center_lat=?, orbit_center_lng=?,
+      `UPDATE orbit_configs SET orbit_center_lat=?, orbit_center_lng=?,
        orbit_altitude=?, orbit_pitch=?, orbit_initial_heading=?, orbit_range=?,
        orbit_rotation_type=?, orbit_rotation_speed=?, scan_target_lat=?, scan_target_lng=?,
        scan_effect_enabled=?, camera_v_offset=?, camera_h_offset=? WHERE id=?`,
-      [entity_location_id, orbit_center_lat || null, orbit_center_lng || null,
-       orbit_altitude || 400, orbit_pitch || -22.00, orbit_initial_heading || 0,
-       orbit_range || 400, orbit_rotation_type || '360', orbit_rotation_speed || 0.12,
-       scan_target_lat || null, scan_target_lng || null, scan_effect_enabled ? 1 : 0,
-       camera_v_offset || 0, camera_h_offset || 0, req.params.id]
+      [orbit_center_lat ?? null, orbit_center_lng ?? null,
+       orbit_altitude ?? 400, orbit_pitch ?? -45, orbit_initial_heading ?? 0,
+       orbit_range ?? 400, orbit_rotation_type || '360', orbit_rotation_speed ?? 0.12,
+       scan_target_lat ?? null, scan_target_lng ?? null, scan_effect_enabled ? 1 : 0,
+       camera_v_offset ?? 0, camera_h_offset ?? 0, req.params.id]
     );
     res.json({ success: true });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+router.post('/:id/lock', async (req, res) => {
+  try {
+    const [rows] = await db.query('SELECT id, coord_locked FROM orbit_configs WHERE id = ?', [req.params.id]);
+    if (!rows.length) return res.status(404).json({ error: 'Not found' });
+    const newLocked = rows[0].coord_locked ? 0 : 1;
+    await db.query('UPDATE orbit_configs SET coord_locked=? WHERE id=?', [newLocked, req.params.id]);
+    res.json({ success: true, coord_locked: newLocked });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 

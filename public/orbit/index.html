@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>3D Kampüs Görünümü</title>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.124/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.124/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    html, body, #cesiumContainer { width:100%; height:100%; margin:0; padding:0; overflow:hidden; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background:#0b1020; color:#e6e9f0; }
+    * { -webkit-tap-highlight-color: transparent; }
+
+    /* Top-right controls */
+    #topControls { position:absolute; top:14px; right:14px; z-index:30; display:flex; gap:8px; }
+    .ctrl {
+      background:rgba(11,16,32,.85); color:#cbd5e1; border:1px solid rgba(255,255,255,.15);
+      border-radius:10px; padding:8px 14px; font-size:.8rem; font-weight:600; cursor:pointer;
+      backdrop-filter:blur(6px); display:flex; align-items:center; gap:6px; text-decoration:none; transition:all .15s; white-space:nowrap;
+    }
+    .ctrl:hover { background:rgba(99,102,241,.25); border-color:rgba(99,102,241,.5); color:#a5b4fc; }
+
+    /* Top-left university header */
+    #uHeader {
+      position:absolute; top:14px; left:14px; z-index:20;
+      max-width:calc(100vw - 180px);
+      background:rgba(11,16,32,.85); border:1px solid rgba(255,255,255,.12); border-radius:14px;
+      padding:13px 16px; backdrop-filter:blur(6px); box-sizing:border-box;
+    }
+    #uName { font-size:1.05rem; font-weight:800; color:#f8fafc; line-height:1.3; word-break:break-word; }
+    #uLoc { font-size:.8rem; color:#94a3b8; margin-top:3px; }
+    #uRanks { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+    .rank-chip { font-size:.68rem; font-weight:700; padding:3px 8px; border-radius:20px; background:rgba(99,102,241,.2); color:#a5b4fc; }
+
+    /* Bottom dock with corner cards */
+    #dockToggle {
+      position:absolute; left:50%; transform:translateX(-50%); bottom:calc(14px + env(safe-area-inset-bottom));
+      z-index:31; display:none;
+    }
+    #dock {
+      position:absolute; left:14px; right:14px; bottom:calc(14px + env(safe-area-inset-bottom));
+      z-index:20; display:flex; align-items:flex-end; justify-content:space-between; gap:14px; pointer-events:none;
+      box-sizing:border-box;
+    }
+    .dock-card {
+      background:rgba(11,16,32,.88); border:1px solid rgba(255,255,255,.12); border-radius:14px;
+      padding:14px 16px; backdrop-filter:blur(7px); pointer-events:auto; box-sizing:border-box; min-width:0;
+    }
+    #factsCard { width:300px; flex-shrink:0; }
+    #deptCard { width:340px; flex-shrink:0; }
+    .dock-title { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:#818cf8; margin-bottom:10px; }
+    .fact { display:flex; justify-content:space-between; align-items:baseline; gap:10px; font-size:.84rem; padding:5px 0; color:#94a3b8; border-bottom:1px solid rgba(255,255,255,.06); }
+    .fact:last-of-type { border-bottom:none; }
+    .fact span { flex-shrink:0; }
+    .fact b { color:#f1f5f9; font-weight:700; text-align:right; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:55%; }
+    .fact b.cost { color:#fcd34d; }
+    .apply-btn {
+      display:flex; align-items:center; justify-content:center; gap:7px;
+      margin-top:12px; background:linear-gradient(135deg,#6366f1,#8b5cf6);
+      color:#fff; font-weight:700; font-size:.85rem; padding:11px 12px; border-radius:10px;
+      text-decoration:none; box-sizing:border-box; width:100%;
+    }
+    .apply-btn:hover { opacity:.9; color:#fff; }
+    .dept-scroll { max-height:260px; overflow-y:auto; margin:-2px -4px 0; padding:0 4px; }
+    .dept-scroll::-webkit-scrollbar { width:5px; }
+    .dept-scroll::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
+    /* Program group accordion */
+    .prog-group { margin-bottom:6px; }
+    .prog-group-hdr {
+      display:flex; align-items:center; justify-content:space-between; gap:8px;
+      padding:7px 0; cursor:pointer; border-bottom:1px solid rgba(255,255,255,.08);
+      font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:.06em; color:#818cf8;
+      user-select:none;
+    }
+    .prog-group-hdr .cnt { background:rgba(99,102,241,.2); border-radius:20px; padding:1px 7px; font-size:.65rem; color:#a5b4fc; }
+    .prog-group-body { display:none; }
+    .prog-group-body.open { display:block; }
+    .prog-item { border-bottom:1px solid rgba(255,255,255,.05); }
+    .prog-item:last-child { border-bottom:none; }
+    .prog-hdr {
+      display:flex; align-items:center; gap:6px; padding:8px 0 6px; cursor:pointer;
+    }
+    .prog-arrow { font-size:.65rem; color:#64748b; flex-shrink:0; transition:transform .15s; }
+    .prog-hdr.open .prog-arrow { transform:rotate(90deg); }
+    .prog-title { font-size:.82rem; color:#e6e9f0; font-weight:600; line-height:1.25; flex:1; }
+    .prog-subtitle { font-size:.7rem; color:#64748b; display:flex; gap:6px; flex-wrap:wrap; margin-top:1px; }
+    .prog-subtitle .fee { color:#fcd34d; font-weight:600; }
+    .prog-detail { padding:6px 0 10px 14px; display:none; }
+    .prog-detail.open { display:block; }
+    .req-row { display:flex; gap:6px; align-items:flex-start; font-size:.73rem; padding:3px 0; color:#94a3b8; }
+    .req-row i { color:#818cf8; font-size:.8rem; flex-shrink:0; margin-top:1px; }
+    .req-row b { color:#e2e8f0; font-weight:600; }
+    .prog-apply { display:inline-block; margin-top:8px; background:linear-gradient(135deg,#6366f1,#8b5cf6); color:#fff; font-weight:700; font-size:.75rem; padding:6px 14px; border-radius:8px; text-decoration:none; border:none; cursor:pointer; }
+    .prog-apply:hover { opacity:.88; }
+
+    /* Error overlay */
+    #msg { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:40;
+      background:rgba(11,16,32,.95); border:1px solid rgba(255,255,255,.15); border-radius:12px;
+      padding:20px 24px; max-width:420px; font-size:.9rem; display:none; }
+    #msg b { color:#f87171; }
+
+    /* Mobile: stack the dock into a collapsible bottom sheet */
+    @media (max-width: 760px) {
+      #uHeader { max-width:calc(100vw - 170px); padding:10px 13px; }
+      #uName { font-size:.88rem; }
+      #topControls { gap:6px; }
+      .ctrl { padding:7px 10px; font-size:.75rem; }
+      #dock {
+        flex-direction:column; align-items:stretch; gap:8px;
+        max-height:52vh; overflow-y:auto; overflow-x:hidden;
+        left:10px; right:10px;
+      }
+      #factsCard, #deptCard { width:100%; }
+      .fact b { max-width:58%; }
+      .dept-scroll { max-height:28vh; }
+      #dock.hidden { display:none; }
+      #dockToggle { display:flex; }
+    }
+    .cesium-viewer-bottom, .cesium-viewer-animationContainer, .cesium-viewer-timelineContainer { display:none !important; }
+
+    /* Admin orbit editor panel */
+    #adminPanel {
+      position:absolute; top:65px; right:14px; z-index:35;
+      background:rgba(11,16,32,.93); border:1.5px solid rgba(99,102,241,.45);
+      border-radius:14px; padding:14px 16px; backdrop-filter:blur(8px);
+      width:260px; box-sizing:border-box; display:none;
+    }
+    #adminPanel.visible { display:block; }
+    .ap-title { font-size:.7rem; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:#818cf8; margin-bottom:12px; display:flex; align-items:center; gap:6px; }
+    .ap-row { display:flex; align-items:center; gap:6px; margin-bottom:7px; }
+    .ap-label { font-size:.7rem; color:#94a3b8; width:90px; flex-shrink:0; }
+    .ap-btn { background:rgba(99,102,241,.2); border:1px solid rgba(99,102,241,.35); color:#a5b4fc; border-radius:6px; width:24px; height:24px; font-size:.9rem; cursor:pointer; display:flex; align-items:center; justify-content:center; padding:0; line-height:1; }
+    .ap-btn:hover { background:rgba(99,102,241,.4); }
+    .ap-val { font-size:.76rem; color:#f1f5f9; font-weight:700; flex:1; text-align:center; min-width:60px; font-variant-numeric:tabular-nums; }
+    .ap-divider { border:none; border-top:1px solid rgba(255,255,255,.07); margin:10px 0 8px; }
+    .ap-actions { display:flex; gap:7px; }
+    .ap-save { flex:1; background:linear-gradient(135deg,#6366f1,#8b5cf6); color:#fff; font-weight:700; font-size:.75rem; padding:7px; border:none; border-radius:8px; cursor:pointer; }
+    .ap-save:hover { opacity:.88; }
+    .ap-lock-btn { background:rgba(251,191,36,.15); border:1px solid rgba(251,191,36,.4); color:#fbbf24; font-weight:700; font-size:.75rem; padding:7px 10px; border-radius:8px; cursor:pointer; white-space:nowrap; }
+    .ap-lock-btn:hover { background:rgba(251,191,36,.3); }
+    .ap-lock-btn.locked { background:rgba(248,113,113,.15); border-color:rgba(248,113,113,.4); color:#f87171; }
+    .ap-lock-btn.locked:hover { background:rgba(248,113,113,.3); }
+    .ap-status { font-size:.68rem; color:#64748b; text-align:center; min-height:14px; margin-top:7px; }
+    @media (max-width:760px) { #adminPanel.visible { display:none; } }
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+
+  <!-- Top-right controls -->
+  <div id="topControls">
+    <button id="toggleBtn" class="ctrl"><i class="bi bi-pause-fill"></i> Durdur</button>
+    <a id="backBtn" class="ctrl" href="/"><i class="bi bi-arrow-left"></i> Geri</a>
+  </div>
+
+  <!-- Top-left university header -->
+  <div id="uHeader" style="display:none">
+    <div id="uName">—</div>
+    <div id="uLoc"></div>
+    <div id="uRanks"></div>
+  </div>
+
+  <!-- Mobile dock toggle -->
+  <button id="dockToggle" class="ctrl" onclick="toggleDock()"><i class="bi bi-chevron-down"></i> Bilgileri gizle</button>
+
+  <!-- Bottom dock (corner cards) -->
+  <div id="dock" style="display:none">
+    <div class="dock-card" id="factsCard">
+      <div class="dock-title">Önemli Bilgiler</div>
+      <div class="fact"><span>Yıllık ücret</span><b class="cost" id="fFee">—</b></div>
+      <div class="fact"><span>Eğitim dili</span><b id="fLang">—</b></div>
+      <div class="fact"><span>Başlangıç (intake)</span><b id="fIntake">—</b></div>
+      <a id="applyBtn" class="apply-btn" href="#"><i class="bi bi-send-fill"></i> Başvur / Bilgi Al</a>
+    </div>
+    <div class="dock-card" id="deptCard">
+      <div class="dock-title">Programlar (<span id="deptCount">0</span>)</div>
+      <div id="deptList" class="dept-scroll"></div>
+    </div>
+  </div>
+
+  <div id="msg"></div>
+
+  <!-- Admin orbit editor (visible only in adminMode on desktop) -->
+  <div id="adminPanel">
+    <div class="ap-title"><i class="bi bi-sliders"></i> Orbit Düzenleyici</div>
+    <div class="ap-row">
+      <span class="ap-label">Enlem (lat)</span>
+      <button class="ap-btn" onclick="apAdj('lat',-0.001)">−</button>
+      <span class="ap-val" id="apLat">—</span>
+      <button class="ap-btn" onclick="apAdj('lat',0.001)">+</button>
+    </div>
+    <div class="ap-row">
+      <span class="ap-label">Boylam (lng)</span>
+      <button class="ap-btn" onclick="apAdj('lng',-0.001)">−</button>
+      <span class="ap-val" id="apLng">—</span>
+      <button class="ap-btn" onclick="apAdj('lng',0.001)">+</button>
+    </div>
+    <div class="ap-row">
+      <span class="ap-label">Açı (pitch°)</span>
+      <button class="ap-btn" onclick="apAdj('pitch',-1)">−</button>
+      <span class="ap-val" id="apPitch">—</span>
+      <button class="ap-btn" onclick="apAdj('pitch',1)">+</button>
+    </div>
+    <div class="ap-row">
+      <span class="ap-label">Menzil (m)</span>
+      <button class="ap-btn" onclick="apAdj('range',-10)">−</button>
+      <span class="ap-val" id="apRange">—</span>
+      <button class="ap-btn" onclick="apAdj('range',10)">+</button>
+    </div>
+    <div class="ap-row">
+      <span class="ap-label">Hız</span>
+      <button class="ap-btn" onclick="apAdj('speed',-0.01)">−</button>
+      <span class="ap-val" id="apSpeed">—</span>
+      <button class="ap-btn" onclick="apAdj('speed',0.01)">+</button>
+    </div>
+    <hr class="ap-divider">
+    <div class="ap-actions">
+      <button class="ap-save" onclick="apSave()"><i class="bi bi-floppy-fill me-1"></i>Kaydet</button>
+      <button class="ap-lock-btn" id="apLockBtn" onclick="apToggleLock()"><i class="bi bi-unlock-fill me-1"></i>Kilitle</button>
+    </div>
+    <div class="ap-status" id="apStatus"></div>
+  </div>
+
+  <script>
+    const GOOGLE_MAPS_KEY = 'AIzaSyAgwh7vUamZBhSYHKxEUgVaPvRd9elEMOk';
+    const q = new URLSearchParams(location.search);
+    const num = (k, d) => { const v = parseFloat(q.get(k)); return Number.isFinite(v) ? v : d; };
+
+    const cfg = {
+      name:       q.get('name') || '3D Kampüs',
+      uniId:      q.get('uniId') || null,
+      lat:        num('lat', NaN),
+      lng:        num('lng', NaN),
+      alt:        num('alt', 400),
+      pitch:      num('pitch', -45),
+      heading:    num('heading', 0),
+      range:      num('range', 400),
+      speed:      num('speed', 0.12),
+      rot:        q.get('rot') || '360',
+      adminMode:  q.get('adminMode') === '1',
+      orbitId:    q.get('orbitId') || null,
+      adminToken: localStorage.getItem('sa_token') || null
+    };
+
+    function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+    // Back button + apply target
+    const backBtn = document.getElementById('backBtn');
+    const backUrl = q.get('back') || (cfg.uniId ? '/university?id=' + cfg.uniId : '/');
+    backBtn.href = backUrl;
+    if (cfg.uniId) {
+      document.getElementById('applyBtn').href = '/apply?uni=' + cfg.uniId;
+    }
+
+    // Mobile dock toggle
+    let dockShown = true;
+    function toggleDock() {
+      dockShown = !dockShown;
+      document.getElementById('dock').classList.toggle('hidden', !dockShown);
+      document.getElementById('dockToggle').innerHTML = dockShown
+        ? '<i class="bi bi-chevron-down"></i> Bilgileri gizle'
+        : '<i class="bi bi-chevron-up"></i> Bilgileri göster';
+    }
+
+    // ── Load student-facing university info into the corner panels ──
+    const FX = { EUR:1, USD:0.92, GBP:1.17, AUD:0.61, CAD:0.68 };
+    function feeEur(p){ if(p.tuition_fee==null||p.tuition_fee==='')return null; const f=parseFloat(p.tuition_fee); if(isNaN(f))return null; return Math.round(f*(FX[(p.tuition_currency||'EUR').toUpperCase()]||1)); }
+
+    function buildProgDetail(p, uniId) {
+      const rows = [];
+      if (p.gpa_requirement) rows.push('<div class="req-row"><i class="bi bi-bar-chart-fill"></i><span>GPA: <b>' + esc(p.gpa_requirement) + '</b></span></div>');
+      if (p.english_req_type && p.english_req_type !== 'None') {
+        const score = p.english_req_score ? ' <b>' + esc(p.english_req_score) + '</b>' : '';
+        rows.push('<div class="req-row"><i class="bi bi-translate"></i><span>' + esc(p.english_req_type) + score + '</span></div>');
+      }
+      // Parse requirements_json for extra tests
+      try {
+        const reqs = typeof p.requirements_json === 'string' ? JSON.parse(p.requirements_json) : (p.requirements_json || {});
+        if (reqs.sat)   rows.push('<div class="req-row"><i class="bi bi-pencil-square"></i><span>SAT: <b>' + esc(reqs.sat) + '</b></span></div>');
+        if (reqs.gmat)  rows.push('<div class="req-row"><i class="bi bi-pencil-square"></i><span>GMAT: <b>' + esc(reqs.gmat) + '</b></span></div>');
+        if (reqs.gre)   rows.push('<div class="req-row"><i class="bi bi-pencil-square"></i><span>GRE: <b>' + esc(reqs.gre) + '</b></span></div>');
+        if (reqs.ap)    rows.push('<div class="req-row"><i class="bi bi-journal-check"></i><span>AP: <b>' + esc(reqs.ap) + '</b></span></div>');
+        if (reqs.ib)    rows.push('<div class="req-row"><i class="bi bi-journal-check"></i><span>IB: <b>' + esc(reqs.ib) + '</b></span></div>');
+        if (reqs.alevel) rows.push('<div class="req-row"><i class="bi bi-journal-check"></i><span>A-Level: <b>' + esc(reqs.alevel) + '</b></span></div>');
+        if (reqs.deadline) rows.push('<div class="req-row"><i class="bi bi-calendar-event"></i><span>Başvuru: <b>' + esc(reqs.deadline) + '</b></span></div>');
+      } catch(_) {}
+      const intakes = (p.intake_months || '').split(',').map(s => s.trim()).filter(Boolean);
+      if (intakes.length) rows.push('<div class="req-row"><i class="bi bi-calendar3"></i><span>Intake: <b>' + esc(intakes.join(', ')) + '</b></span></div>');
+      const applyUrl = '/apply?uni=' + (uniId || '') + '&program=' + p.id;
+      return rows.join('') + '<a class="prog-apply" href="' + applyUrl + '"><i class="bi bi-send-fill me-1"></i>Başvur</a>';
+    }
+
+    function buildProgGroup(label, progs, uniId) {
+      if (!progs.length) return '';
+      const items = progs.map((p, i) => {
+        const fe = feeEur(p);
+        const subtitle = [p.duration, fe != null ? '<span class="fee">€' + fe.toLocaleString('tr-TR') + '/yıl</span>' : null]
+          .filter(Boolean).join(' · ');
+        const uid = 'pg_' + label.replace(/\s/g,'') + '_' + i;
+        return '<div class="prog-item">' +
+          '<div class="prog-hdr" onclick="toggleProg(\'' + uid + '\', this)">' +
+            '<span class="prog-arrow bi bi-chevron-right"></span>' +
+            '<div><div class="prog-title">' + esc(p.name) + '</div>' +
+            '<div class="prog-subtitle">' + subtitle + '</div></div>' +
+          '</div>' +
+          '<div class="prog-detail" id="' + uid + '">' + buildProgDetail(p, uniId) + '</div>' +
+        '</div>';
+      }).join('');
+      const gid = 'grp_' + label.replace(/\s/g,'');
+      return '<div class="prog-group">' +
+        '<div class="prog-group-hdr" onclick="toggleGroup(\'' + gid + '\', this)">' +
+          label + '<span class="cnt">' + progs.length + '</span>' +
+        '</div>' +
+        '<div class="prog-group-body" id="' + gid + '">' + items + '</div>' +
+      '</div>';
+    }
+
+    function toggleGroup(id, hdr) {
+      const body = document.getElementById(id);
+      if (!body) return;
+      body.classList.toggle('open');
+    }
+    function toggleProg(id, hdr) {
+      const detail = document.getElementById(id);
+      if (!detail) return;
+      detail.classList.toggle('open');
+      hdr.classList.toggle('open');
+    }
+
+    function showMsg(html) {
+      const m = document.getElementById('msg');
+      m.innerHTML = html + '<br><br><a href="' + backUrl + '" style="color:#818cf8">← Geri dön</a>';
+      m.style.display = 'block';
+    }
+
+    function populateUniPanel(u) {
+      document.title = u.name + ' — 3D Kampüs';
+      document.getElementById('uName').textContent = u.name;
+      document.getElementById('uLoc').innerHTML = '<i class="bi bi-geo-alt-fill"></i> ' + esc([u.city, u.country].filter(Boolean).join(', '));
+      const ranks = [];
+      if (u.qs_rank) ranks.push('QS #' + u.qs_rank);
+      if (u.the_rank) ranks.push('THE #' + u.the_rank);
+      if (u.shanghai_rank) ranks.push('ARWU #' + u.shanghai_rank);
+      document.getElementById('uRanks').innerHTML = ranks.map(x => '<span class="rank-chip">' + esc(x) + '</span>').join('');
+      document.getElementById('uHeader').style.display = 'block';
+
+      const progs = u.programs || [];
+      const fees = progs.map(feeEur).filter(v => v != null);
+      let feeText = 'Talep üzerine';
+      if (fees.length) {
+        const lo = Math.min.apply(null, fees), hi = Math.max.apply(null, fees);
+        feeText = lo === hi ? '€' + lo.toLocaleString('tr-TR') : '€' + lo.toLocaleString('tr-TR') + ' – €' + hi.toLocaleString('tr-TR');
+      }
+      document.getElementById('fFee').textContent = feeText;
+
+      const langs = [...new Set(progs.map(p => (p.language_of_instruction || '').trim()).filter(Boolean))];
+      document.getElementById('fLang').textContent = langs.length ? langs.slice(0, 3).join(', ') : 'English';
+
+      const intakes = [...new Set(progs.flatMap(p => (p.intake_months || '').split(',').map(s => s.trim()).filter(Boolean)))];
+      document.getElementById('fIntake').textContent = intakes.length ? intakes.join(', ') : '—';
+
+      document.getElementById('deptCount').textContent = progs.length;
+      if (!progs.length) {
+        document.getElementById('deptList').innerHTML = '<div style="color:#64748b;font-size:.8rem;padding:8px 0">Program bilgisi yok.</div>';
+      } else {
+        const bach = progs.filter(p => /bachelor|lisans|undergrad|bsc|ba\b|beng/i.test(p.type_name || ''));
+        const mast = progs.filter(p => /master|yüksek|msc|ma\b|mba|meng/i.test(p.type_name || ''));
+        const other = progs.filter(p => !bach.includes(p) && !mast.includes(p));
+        document.getElementById('deptList').innerHTML =
+          buildProgGroup('Lisans (Bachelor)', bach, cfg.uniId) +
+          buildProgGroup('Yüksek Lisans (Master)', mast, cfg.uniId) +
+          buildProgGroup('Diğer', other, cfg.uniId);
+        const firstGrp = document.querySelector('.prog-group-body');
+        if (firstGrp) firstGrp.classList.add('open');
+      }
+      document.getElementById('dock').style.display = 'flex';
+    }
+
+    // ── Mutable camera state (updated by admin panel after Cesium init) ────────
+    let _orbitTarget = null, _currentPitch = 0, _currentRange = 400;
+
+    function refreshOrbitCamera() {
+      if (_orbitTarget === null) return; // Cesium not yet initialized
+      _orbitTarget = Cesium.Cartesian3.fromDegrees(cfg.lng, cfg.lat, 0);
+      _currentPitch = Cesium.Math.toRadians(cfg.pitch);
+      _currentRange = Math.max(cfg.range, 1);
+    }
+
+    // ── Admin orbit editor ──────────────────────────────────────────────────
+    let _orbitConfig = null;
+    let apLocked = false;
+
+    function apInit(coordLocked) {
+      apLocked = !!coordLocked;
+      document.getElementById('adminPanel').classList.add('visible');
+      apRender();
+    }
+
+    function apRender() {
+      const latEl = document.getElementById('apLat');
+      if (!latEl) return;
+      latEl.textContent = isFinite(cfg.lat) ? cfg.lat.toFixed(5) : '—';
+      document.getElementById('apLng').textContent   = isFinite(cfg.lng) ? cfg.lng.toFixed(5) : '—';
+      document.getElementById('apPitch').textContent = cfg.pitch + '°';
+      document.getElementById('apRange').textContent = cfg.range + ' m';
+      document.getElementById('apSpeed').textContent = cfg.speed.toFixed(2);
+      const lb = document.getElementById('apLockBtn');
+      if (apLocked) {
+        lb.className = 'ap-lock-btn locked';
+        lb.innerHTML = '<i class="bi bi-lock-fill me-1"></i>Kilitli';
+      } else {
+        lb.className = 'ap-lock-btn';
+        lb.innerHTML = '<i class="bi bi-unlock-fill me-1"></i>Kilitle';
+      }
+    }
+
+    function apAdj(key, delta) {
+      cfg[key] = parseFloat((cfg[key] + delta).toFixed(6));
+      refreshOrbitCamera();
+      apRender();
+    }
+
+    async function apSave() {
+      if (!cfg.orbitId) { apSetStatus('❌ Orbit ID yok'); return; }
+      apSetStatus('Kaydediliyor…');
+      try {
+        const base = _orbitConfig || {};
+        const payload = {
+          orbit_center_lat: cfg.lat,
+          orbit_center_lng: cfg.lng,
+          orbit_pitch: cfg.pitch,
+          orbit_range: cfg.range,
+          orbit_rotation_speed: cfg.speed,
+          orbit_altitude: base.orbit_altitude ?? 400,
+          orbit_initial_heading: base.orbit_initial_heading ?? 0,
+          orbit_rotation_type: base.orbit_rotation_type || '360',
+          scan_target_lat: base.scan_target_lat ?? null,
+          scan_target_lng: base.scan_target_lng ?? null,
+          scan_effect_enabled: base.scan_effect_enabled || 0,
+          camera_v_offset: base.camera_v_offset ?? 0,
+          camera_h_offset: base.camera_h_offset ?? 0
+        };
+        const r = await fetch('/api/orbit/' + cfg.orbitId, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + cfg.adminToken },
+          body: JSON.stringify(payload)
+        });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error || 'Hata');
+        if (_orbitConfig) Object.assign(_orbitConfig, payload);
+        apSetStatus('✅ Kaydedildi');
+      } catch(e) { apSetStatus('❌ ' + e.message); }
+    }
+
+    async function apToggleLock() {
+      if (!cfg.orbitId) { apSetStatus('❌ Orbit ID yok'); return; }
+      apSetStatus('…');
+      try {
+        const r = await fetch('/api/orbit/' + cfg.orbitId + '/lock', {
+          method: 'POST',
+          headers: { 'Authorization': 'Bearer ' + cfg.adminToken }
+        });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error || 'Hata');
+        apLocked = d.coord_locked === 1;
+        if (_orbitConfig) _orbitConfig.coord_locked = apLocked ? 1 : 0;
+        apRender();
+        apSetStatus(apLocked ? '🔒 Koordinatlar kilitlendi' : '🔓 Kilit açıldı');
+      } catch(e) { apSetStatus('❌ ' + e.message); }
+    }
+
+    function apSetStatus(msg) {
+      const s = document.getElementById('apStatus');
+      if (s) { s.textContent = msg; setTimeout(() => { if (s) s.textContent = ''; }, 3000); }
+    }
+
+    // Single async main: fetch uni data first (to get coords if missing), then init Cesium
+    (async function main() {
+      // Phase 1: if uniId provided, fetch university to get coords + populate UI
+      if (cfg.uniId) {
+        try {
+          const r = await fetch('/api/public/universities/' + cfg.uniId);
+          if (r.ok) {
+            const u = await r.json();
+            // Fill missing coords from university record
+            if (!isFinite(cfg.lat)) cfg.lat = parseFloat(u.orbit_center_lat || u.latitude || NaN);
+            if (!isFinite(cfg.lng)) cfg.lng = parseFloat(u.orbit_center_lng || u.longitude || NaN);
+            if (cfg.range === 400 && u.orbit_range)   cfg.range = parseFloat(u.orbit_range);
+            if (cfg.pitch === -45 && u.orbit_pitch)   cfg.pitch = parseFloat(u.orbit_pitch);
+            if (cfg.speed === 0.12 && u.orbit_rotation_speed) cfg.speed = parseFloat(u.orbit_rotation_speed);
+            populateUniPanel(u);
+          }
+        } catch(e) { /* silently continue — 3D still works if info fails */ }
+      }
+
+      // Phase 1b: admin mode — fetch full orbit config to get coord_locked + accurate values
+      if (cfg.adminMode && cfg.orbitId && cfg.adminToken) {
+        try {
+          const r = await fetch('/api/orbit/' + cfg.orbitId, {
+            headers: { 'Authorization': 'Bearer ' + cfg.adminToken }
+          });
+          if (r.ok) {
+            _orbitConfig = await r.json();
+            if (isFinite(_orbitConfig.orbit_center_lat)) cfg.lat = _orbitConfig.orbit_center_lat;
+            if (isFinite(_orbitConfig.orbit_center_lng)) cfg.lng = _orbitConfig.orbit_center_lng;
+            if (_orbitConfig.orbit_pitch != null) cfg.pitch = _orbitConfig.orbit_pitch;
+            if (_orbitConfig.orbit_range != null) cfg.range = _orbitConfig.orbit_range;
+            if (_orbitConfig.orbit_rotation_speed != null) cfg.speed = _orbitConfig.orbit_rotation_speed;
+          }
+        } catch(e) {}
+        apInit(_orbitConfig ? _orbitConfig.coord_locked : false);
+      }
+
+      // Phase 2: coord check (now after possible fallback from university data)
+      if (!isFinite(cfg.lat) || !isFinite(cfg.lng)) {
+        showMsg('<b>Koordinat yok</b><br>Bu kampüsün konumu tanımlı değil. Admin panelinden ekleyip tekrar deneyin.');
+        return;
+      }
+
+      // Phase 3: init Cesium viewer
+      let viewer;
+      try {
+        viewer = new Cesium.Viewer('cesiumContainer', {
+          globe: false,
+          baseLayerPicker: false, geocoder: false, homeButton: false,
+          sceneModePicker: false, navigationHelpButton: false, animation: false,
+          timeline: false, fullscreenButton: false, infoBox: false,
+          selectionIndicator: false, creditContainer: document.createElement('div')
+        });
+        viewer.scene.skyAtmosphere.show = true;
+      } catch (e) {
+        showMsg('<b>Görüntüleyici yüklenemedi</b><br>' + e.message);
+        return;
+      }
+
+      try {
+        const tileset = await Cesium.createGooglePhotorealistic3DTileset({ key: GOOGLE_MAPS_KEY });
+        viewer.scene.primitives.add(tileset);
+      } catch (e) {
+        showMsg('<b>3D harita yüklenemedi</b><br>' + (e && e.message ? e.message : e));
+        return;
+      }
+
+      const scanLat = num('scanLat', NaN);
+      const scanLng = num('scanLng', NaN);
+      const scanEnabled = q.get('scan') === '1' && isFinite(scanLat) && isFinite(scanLng);
+      const scanTarget = scanEnabled ? Cesium.Cartesian3.fromDegrees(scanLng, scanLat, 0) : null;
+
+      // Initialize mutable camera state (can be updated by admin panel)
+      _orbitTarget  = Cesium.Cartesian3.fromDegrees(cfg.lng, cfg.lat, 0);
+      _currentPitch = Cesium.Math.toRadians(cfg.pitch);
+      _currentRange = Math.max(cfg.range, 1);
+
+      let heading = Cesium.Math.toRadians(cfg.heading);
+      let running = true;
+
+      viewer.scene.preRender.addEventListener(function () {
+        if (running) heading += Cesium.Math.toRadians(cfg.speed);
+        viewer.camera.lookAt(scanEnabled ? scanTarget : _orbitTarget,
+          new Cesium.HeadingPitchRange(heading, _currentPitch, _currentRange));
+      });
+
+      const btn = document.getElementById('toggleBtn');
+      btn.onclick = function () {
+        running = !running;
+        btn.innerHTML = running
+          ? '<i class="bi bi-pause-fill"></i> Durdur'
+          : '<i class="bi bi-play-fill"></i> Döndür';
+      };
+    })();
+  </script>
+</body>
+</html>
