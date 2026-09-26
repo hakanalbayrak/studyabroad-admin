@@ -657,7 +657,7 @@ app.get('/api/public/programs', async (req, res) => {
       SELECT p.*,
         pt.name as type_name, pt.category as type_category,
         e.id as university_id, e.name as university_name,
-        e.logo_url as university_logo_url,
+        e.logo_url as university_logo_url, e.website_url as university_website_url,
         e.qs_rank, e.the_rank,
         el.city, el.country
       FROM programs p
