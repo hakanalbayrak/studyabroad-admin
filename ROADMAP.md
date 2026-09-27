@@ -269,14 +269,28 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     Education, Master of Nutrition, Master of Pharmacy) — no confirmed
     page found. Live: `/api/public/programs?entity_id=198`.
 
-  **Status after this batch**: 9 universities now have real per-program
+  - **Australian Catholic University** (126 programs, id 282) — 84 of 126
+    (67%). ACU's `acu.edu.au/course/<slug>` URLs are name-derived rather
+    than opaque codes (e.g. "bachelor-of-nursing", double degrees as
+    "bachelor-of-Xbachelor-of-Y" concatenated with no separator), and this
+    held reliably across ~40 verified cases — but the site inconsistently
+    indexes some pages with underscores instead of dashes, with no way to
+    fetch-verify a guess here (site blocks automated fetches). To stay
+    consistent with not saving unverified links, only rows with an actual
+    search hit for that exact program got a `source_url`; plausible-but-
+    unseen slugs (many similar dual-degree combos, a few standalone majors
+    like Bachelor of Occupational Therapy, Bachelor of Creative Arts) were
+    left unset rather than pattern-guessed. Live:
+    `/api/public/programs?entity_id=282`.
+
+  **Status after this batch**: 10 universities now have real per-program
   links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
-  Alberta, American University, Charles Darwin ≈ 552 programs), all 19
-  QS-ranked universities have at least an entity-level fallback link. 10
+  Alberta, American University, Charles Darwin, ACU ≈ 636 programs), all
+  19 QS-ranked universities have at least an entity-level fallback link. 9
   large ranked universities remain untouched at the per-program level
-  (Australian Catholic University, Anglia Ruskin University, Oregon
+  (Anglia Ruskin University, Oregon
   State, Adelaide, UCD, Bangor, Sussex, Nottingham Trent, Aberdeen, Arizona
-  State) — these range 126 to 485 programs each, so covering all of them
+  State) — these range 147 to 485 programs each, so covering all of them
   the same way is a multi-session effort, continuing incrementally.
 
 ## In progress / next
