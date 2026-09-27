@@ -163,6 +163,26 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     full-catalog coverage needs either per-link verification (slow) or
     accepting lower confidence for smaller institutions — still awaiting
     direction from the user on which trade-off to take before scaling up.
+- **source_url rollout, batch 2 — big/known universities first** (2026-09-27,
+  per user direction): for large catalogs (dozens–hundreds of programs per
+  university), verifying one specific deep link per program isn't practical
+  at reasonable speed, so used a tiered approach:
+  - Set `entities.website_url` (verified official domain) for the 19 active
+    universities that carry a QS rank — Adelaide, Alberta, UCD, Arizona
+    State, Nottingham Trent, Aberdeen, Charles University, Sussex,
+    Tasmania, Bangor, Ajman, CQUniversity, Anglia Ruskin University,
+    Charles Darwin, American University, Szeged, Oregon State, Australian
+    Catholic University — instantly gives every one of their ~2,900
+    combined programs a working fallback link (already live via the
+    existing UI fallback logic, no further deploy needed).
+  - For the smallest of these (**Anglia Ruskin University College** — an
+    ARU foundation/pathway partner, real official domain turned out to be
+    **arucollege.com**, not aru.ac.uk), went further and set a verified
+    per-subject `source_url` on all 23 programs (11 subject pathways ×
+    Foundation/First-Year-Degree, e.g. `/undergraduate/law-and-policing/`).
+  - Remaining 18 ranked universities (32 to 485 programs each) still only
+    have the entity-level fallback link, not per-program deep links — full
+    per-program coverage for these would take substantially longer.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
