@@ -212,6 +212,15 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     "Master in Digital Sociology" without a link — no official page found
     for it under any of the tried paths. Live:
     `/api/public/programs?entity_id=264`.
+  - **University of Tasmania** (43 programs, id 296) — course pages here are
+    keyed by internal course code (e.g. `p3h`, `b3a`, `24v1`), not a
+    guessable name slug, so per-program search was unavoidable. Confirmed
+    40 of 43 exact course pages (including all 4 joint Maritime Engineering
+    variants — standalone, plus partner-university versions with AUT, ECU
+    and Flinders). Left 3 unset (Bachelor of Applied Science in Marine
+    Engineering, Bachelor of Music ± Honours) — no matching official page
+    turned up under any query tried. Live:
+    `/api/public/programs?entity_id=296`.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
