@@ -183,6 +183,24 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   - Remaining 18 ranked universities (32 to 485 programs each) still only
     have the entity-level fallback link, not per-program deep links — full
     per-program coverage for these would take substantially longer.
+  - User asked about offloading this to their own Google AI Plus + a VPS
+    agent to save this session's tokens. Checked feasibility: got a Gemini
+    API key from the user, confirmed plain generateContent calls work, but
+    the Google Search grounding tool (needed for real, non-hallucinated
+    URLs) hit `RESOURCE_EXHAUSTED` immediately — grounding needs billing
+    enabled on the linked Google Cloud project, separate from the AI Plus
+    consumer subscription. User chose not to set up billing; continuing
+    the lookups in this session instead with the built-in web search tool.
+  - **Charles University** (32 programs, id 183) — went ahead and did full
+    per-program `source_url` despite the size, since its 32 programs split
+    cleanly across ~9 distinct faculties, each with its own domain (e.g.
+    `lf1.cuni.cz`, `mff.cuni.cz`, `fsv.cuni.cz`, `pedf.cuni.cz`,
+    `ftvs.cuni.cz`, `ujop.cuni.cz` for the Poděbrady FAST/MedFAST pathway
+    programs). All 32 verified via search-indexed official pages, several
+    exact per-program pages found (e.g. Computer Science, Economics and
+    Finance, History and Area Studies), others linked to the right
+    faculty's programme listing page where no single-program page could be
+    confirmed. Live: `/api/public/programs?entity_id=183`.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
