@@ -221,6 +221,14 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     Engineering, Bachelor of Music ± Honours) — no matching official page
     turned up under any query tried. Live:
     `/api/public/programs?entity_id=296`.
+  - **University of Szeged** (57 programs, id 171) — unlike the last two,
+    `u-szeged.hu` didn't block automated fetches, so its two central
+    listing pages (`/english/bachelor-programmes`,
+    `/english/master-programmes`) could just be read directly and gave
+    exact links for almost everything in 2 requests instead of dozens of
+    searches. Covered all 57, including the Béla Bartók Faculty of Arts'
+    two prep courses (on its own `music.u-szeged.hu` subdomain) and the Law
+    Faculty's "Gateway" pathway. Live: `/api/public/programs?entity_id=171`.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
