@@ -124,6 +124,35 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   backfilling `entities.website_url` from that same "Domain" column wrote
   garbage into 333 entities' `website_url` before the mix-up was caught;
   rolled back the same session, confirmed no lasting effect.)
+- **Investigated the 4 active universities with zero programs** (2026-09-26,
+  raised by user re: whether the uploaded Excel is complete):
+  - **Alliant International University** — is in the source Excel, but its
+    only row is credential level "Work & Study", which the importer skips
+    per earlier direction to drop Work & Study programs entirely. Working
+    as intended; entity is just an empty shell as a result.
+  - **European School of Economics - London** — same story: all 15 of its
+    Excel rows are "Work & Study", correctly all skipped.
+  - **Constructor University** (id 2, pre-dates this session, 0 programs) —
+    turned out to be a **duplicate entity**: the Excel has it as
+    "Constructor (Jacobs) University, Bremen" (id 47, 26 programs, already
+    live). Deactivated the empty id-2 duplicate (`status='inactive'`,
+    reversible) so the catalog doesn't show a dead second entry for the
+    same school.
+  - **Tilburg University** (id 3, pre-dates this session) — genuinely
+    absent from the Excel, no name variant found either. Confirmed to the
+    user rather than guessed at.
+  - Piloted a second, smaller batch of source_url lookups (CY Tech, KEYCE
+    Business School) to test how well this scales beyond well-known
+    universities like Bentley: search results for smaller/private schools
+    are dominated by third-party aggregators (Mastersportal, educations.com,
+    MSM Unify) rather than the school's own site, and even once an official
+    domain is found, individual guessed URLs can 404 — one candidate had to
+    be discarded after fetch-verification failed. Only saved links verified
+    by actually fetching the page (1 of 3 CY Tech programs; the 3 KEYCE
+    ones were left unset rather than saving an unverified guess). Confirms
+    full-catalog coverage needs either per-link verification (slow) or
+    accepting lower confidence for smaller institutions — still awaiting
+    direction from the user on which trade-off to take before scaling up.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
