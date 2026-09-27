@@ -245,14 +245,24 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     page found for these within a reasonable search budget. Live:
     `/api/public/programs?entity_id=239`.
 
-  **Status after this batch**: 7 universities now have real per-program
+  - **American University** (93 programs, id 107) — 100% coverage. Its
+    central `/cas/advising/degrees.cfm` page listed almost every College of
+    Arts & Sciences major with a direct link in one fetch; the other
+    schools (Kogod Business, SIS, SPA, School of Communication, School of
+    Education) needed individual searches. A handful of majors that are
+    really specializations within one degree (e.g. Kogod's Management,
+    Marketing, International Business) don't have their own page, so those
+    point to the school's shared majors-list page instead of a dead-end
+    guess. Live: `/api/public/programs?entity_id=107`.
+
+  **Status after this batch**: 8 universities now have real per-program
   links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
-  Alberta ≈ 350 programs), all 19 QS-ranked universities have at least an
-  entity-level fallback link. 12 large ranked universities remain
-  untouched at the per-program level (American University, Charles Darwin,
-  Australian Catholic University, Anglia Ruskin University, Oregon State,
-  Adelaide, UCD, Bangor, Sussex, Nottingham Trent, Aberdeen, Arizona
-  State) — these range 93 to 485 programs each, so covering all of them
+  Alberta, American University ≈ 443 programs), all 19 QS-ranked
+  universities have at least an entity-level fallback link. 11 large
+  ranked universities remain untouched at the per-program level (Charles
+  Darwin, Australian Catholic University, Anglia Ruskin University, Oregon
+  State, Adelaide, UCD, Bangor, Sussex, Nottingham Trent, Aberdeen, Arizona
+  State) — these range 120 to 485 programs each, so covering all of them
   the same way is a multi-session effort, continuing incrementally.
 
 ## In progress / next
