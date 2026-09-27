@@ -201,6 +201,17 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     Finance, History and Area Studies), others linked to the right
     faculty's programme listing page where no single-program page could be
     confirmed. Live: `/api/public/programs?entity_id=183`.
+  - **Ajman University** (39 programs, id 264) — single domain (ajman.ac.ae)
+    but several different URL path conventions per college (a shared
+    `academics/academic-programs-majors/programs/<slug>` catalog path for
+    most majors, plus separate `medicine/`, `dentistry/`, `pharmacy/`,
+    `engineering/`, `cba/`, `cad/` college-specific paths). Verified 38 of
+    39 by actually fetching each candidate page (not just trusting a
+    guessed slug — one candidate slug pattern was wrong and had to be
+    re-searched, confirming this is worth doing per program). Left
+    "Master in Digital Sociology" without a link — no official page found
+    for it under any of the tried paths. Live:
+    `/api/public/programs?entity_id=264`.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
