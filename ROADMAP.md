@@ -234,6 +234,26 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     reliably in search snippets without needing fetch verification, so this
     went faster than Tasmania despite being a bigger catalog. Live:
     `/api/public/programs?entity_id=204`.
+  - **University of Alberta** (69 programs, id 239) — 59 of 69 confirmed
+    (`ualberta.ca/en/undergraduate-programs/<degree-major-slug>.html`
+    pattern, consistent across Business, ALES/Agriculture, Arts and
+    Science faculties). Left 10 unset (Ancient and Medieval Studies,
+    Chemical and Physical Sciences, Creativity and Culture, Environmental
+    Economics and Policy, History, History of Art/Design/Visual Culture,
+    Human Geography, Nutrition & Food Science General Program, Performance
+    Based Pedagogy, Women's and Gender Studies) — no confirmed dedicated
+    page found for these within a reasonable search budget. Live:
+    `/api/public/programs?entity_id=239`.
+
+  **Status after this batch**: 7 universities now have real per-program
+  links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
+  Alberta ≈ 350 programs), all 19 QS-ranked universities have at least an
+  entity-level fallback link. 12 large ranked universities remain
+  untouched at the per-program level (American University, Charles Darwin,
+  Australian Catholic University, Anglia Ruskin University, Oregon State,
+  Adelaide, UCD, Bangor, Sussex, Nottingham Trent, Aberdeen, Arizona
+  State) — these range 93 to 485 programs each, so covering all of them
+  the same way is a multi-session effort, continuing incrementally.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
