@@ -229,6 +229,11 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     searches. Covered all 57, including the Béla Bartók Faculty of Arts'
     two prep courses (on its own `music.u-szeged.hu` subdomain) and the Law
     Faculty's "Gateway" pathway. Live: `/api/public/programs?entity_id=171`.
+  - **Central Queensland University (CQUniversity)** (64 programs, id 204) —
+    100% coverage. Course codes here (e.g. `cl86`, `700080`) came up
+    reliably in search snippets without needing fetch verification, so this
+    went faster than Tasmania despite being a bigger catalog. Live:
+    `/api/public/programs?entity_id=204`.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
