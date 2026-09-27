@@ -283,14 +283,24 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     left unset rather than pattern-guessed. Live:
     `/api/public/programs?entity_id=282`.
 
-  **Status after this batch**: 10 universities now have real per-program
+  - **Anglia Ruskin University** (147 programs, id 86) — 115 of 147 (78%).
+    `aru.ac.uk` doesn't block automated fetches and its course-search
+    results page paginates through the *entire* catalogue (~22 pages),
+    each with real names + URLs, so this was read directly rather than
+    searched — much faster than a per-program search would have been for
+    a catalogue this size. Left 32 unset where the DB's program name
+    didn't clearly match anything in the harvested list (mostly narrower
+    "Business with X" majors and a few others not offered as their own
+    named course). Live: `/api/public/programs?entity_id=86`.
+
+  **Status after this batch**: 11 universities now have real per-program
   links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
-  Alberta, American University, Charles Darwin, ACU ≈ 636 programs), all
-  19 QS-ranked universities have at least an entity-level fallback link. 9
-  large ranked universities remain untouched at the per-program level
-  (Anglia Ruskin University, Oregon
-  State, Adelaide, UCD, Bangor, Sussex, Nottingham Trent, Aberdeen, Arizona
-  State) — these range 147 to 485 programs each, so covering all of them
+  Alberta, American University, Charles Darwin, ACU, Anglia Ruskin
+  University ≈ 751 programs), all 19 QS-ranked universities have at least
+  an entity-level fallback link. 8 large ranked universities remain
+  untouched at the per-program level (Oregon State, Adelaide, UCD, Bangor,
+  Sussex, Nottingham Trent, Aberdeen, Arizona State) — these range 162 to
+  485 programs each, so covering all of them
   the same way is a multi-session effort, continuing incrementally.
 
 ## In progress / next
