@@ -135,12 +135,22 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   - **Constructor University** (id 2, pre-dates this session, 0 programs) —
     turned out to be a **duplicate entity**: the Excel has it as
     "Constructor (Jacobs) University, Bremen" (id 47, 26 programs, already
-    live). Deactivated the empty id-2 duplicate (`status='inactive'`,
-    reversible) so the catalog doesn't show a dead second entry for the
-    same school.
+    live) — confirmed by the user to be the same school under an old name.
+    Deactivated the empty id-2 duplicate (`status='inactive'`, reversible)
+    and renamed id 47 to the school's current name, "Constructor
+    University", for consistency.
   - **Tilburg University** (id 3, pre-dates this session) — genuinely
     absent from the Excel, no name variant found either. Confirmed to the
-    user rather than guessed at.
+    user rather than guessed at. Per the user's request, manually researched
+    and added its full-time English-taught programs directly from
+    tilburguniversity.edu (search-indexed pages, since the site blocks
+    direct fetches): **11 Bachelor's + 14 Master's = 25 programs**, each
+    with a verified `source_url` to its real official program page. This is
+    a solid subset, not Tilburg's entire English-taught catalog (~14
+    Bachelor's + 50+ Master's exist in total) — picked the ones confirmable
+    with a real, checkable link rather than guessing at the rest. Live:
+    `/api/public/programs?entity_id=3` → 25 programs,
+    https://paneledu.com/university?id=3 to check.
   - Piloted a second, smaller batch of source_url lookups (CY Tech, KEYCE
     Business School) to test how well this scales beyond well-known
     universities like Bentley: search results for smaller/private schools
