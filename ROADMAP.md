@@ -255,14 +255,28 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     point to the school's shared majors-list page instead of a dead-end
     guess. Live: `/api/public/programs?entity_id=107`.
 
-  **Status after this batch**: 8 universities now have real per-program
+  - **Charles Darwin University** (120 programs, id 198) — 109 of 120
+    confirmed (`cdu.edu.au/study/course/<name>-<code>` pattern, code not
+    guessable so needed per-program search, but many DB rows are really
+    majors/specialisations within one course code — e.g. all 9 "Bachelor
+    of Business - X" rows and all 4 "Bachelor of Environmental Science -
+    X" rows share their base course's single page). Left 11 unset
+    (Associate Degree of Exercise and Sport Science, Bachelor of Digital
+    Enterprise, Bachelor of Education Secondary, Bachelor of Health
+    Science/Master of Physiotherapy, Bachelor of Medical Laboratory
+    Science Honours, Graduate Diploma of Indigenous Policy Development,
+    Graduate Diploma of Specialist Education, Master of Arts, Master of
+    Education, Master of Nutrition, Master of Pharmacy) — no confirmed
+    page found. Live: `/api/public/programs?entity_id=198`.
+
+  **Status after this batch**: 9 universities now have real per-program
   links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
-  Alberta, American University ≈ 443 programs), all 19 QS-ranked
-  universities have at least an entity-level fallback link. 11 large
-  ranked universities remain untouched at the per-program level (Charles
-  Darwin, Australian Catholic University, Anglia Ruskin University, Oregon
+  Alberta, American University, Charles Darwin ≈ 552 programs), all 19
+  QS-ranked universities have at least an entity-level fallback link. 10
+  large ranked universities remain untouched at the per-program level
+  (Australian Catholic University, Anglia Ruskin University, Oregon
   State, Adelaide, UCD, Bangor, Sussex, Nottingham Trent, Aberdeen, Arizona
-  State) — these range 120 to 485 programs each, so covering all of them
+  State) — these range 126 to 485 programs each, so covering all of them
   the same way is a multi-session effort, continuing incrementally.
 
 ## In progress / next
