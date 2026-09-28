@@ -488,14 +488,68 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     entrepreneurship listings). Live: `/api/public/programs?entity_id=101`
     — https://paneledu.com/university?id=101 to check.
 
-  **Status after this batch**: 17 universities now have real per-program
+  - **University of Aberdeen** (433 programs, id 251) — 405/433 (93.5%):
+    Bachelor's 299/301 (99.3%), Master's 106/132 (80.3%). `abdn.ac.uk` isn't
+    bot-blocked, but the real discovery this time was Aberdeen's **"flexible
+    degree" curriculum**: undergrads pick a main subject and can combine it
+    with dozens of others, so the DB carries huge families of separate rows
+    ("Accountancy", "Accountancy and French", "Accountancy and German", …)
+    that don't get their own page on Aberdeen's site — only the single
+    subject-area page for the *leading* subject does. Rather than searching
+    all 301 Bachelor's rows individually, grouped them by leading subject
+    first (95 distinct groups after handling DB spelling/hyphenation
+    inconsistencies and a handful of atomic exceptions — e.g. "Molecular and
+    Cellular Biology", "Philosophy, Politics and Economics", the Engineering
+    family — whose own "and" isn't a joint-honours separator), searched and
+    fetch-verified one URL per group, then bulk-applied it to every member
+    row. This cut ~301 lookups down to ~95 and got Bachelor's to 99% (the 2
+    holdouts — Mechanical Engineering with Biomechanics/with Subsea
+    Technology — confirmed absent from Aberdeen's own live degree listing,
+    left unset). Also found and reused Aberdeen's own site-search endpoint
+    (`/study/undergraduate/degree-programmes/?q=<terms>&view=detailed`) to
+    resolve tricky families like all 12 "Law with options in X" degrees and
+    the 6 International Business language variants, each of which turned
+    out to have its own dedicated page after all. Master's programmes are
+    each individually named (no flexible-degree grouping), and a full fetch
+    of Aberdeen's own postgraduate-taught listing page
+    (`degree-programmes/?view=detailed&limit=All`) gave name→URL pairs
+    directly for 99 of 132 in one shot; the rest needed per-program
+    WebSearch. **Repeat of the Sussex pitfall, worth flagging again**: for
+    the remaining ~25 Master's names, several old numeric-ID URLs found via
+    search now 301-redirect to a *different*, live, 200-OK page — e.g.
+    "Archaeology of the North" → generic "Archaeology"; "Comparative
+    Literature" → renamed "Literatures, Environments and Places"; "Health
+    Psychology" → merged into "Applied Health Sciences"; "Biomolecular
+    Archaeology" → "Bioarchaeological Science"; several School-of-Biological-
+    Sciences programmes (Ecology and Conservation, Environmental Science)
+    now redirect to a generic "Exciting Changes Coming to Our Postgraduate
+    Degrees in 2026" announcement page. All of these are genuinely
+    discontinued/renamed programmes, not save-able matches — caught by
+    always following redirects and checking the *final* URL/title, not the
+    searched one, then left unset. One exception where a single umbrella
+    page legitimately covers several DB rows: Aberdeen's MSc "Strategic
+    Studies" page explicitly names its three pathways — Energy Security,
+    International Law, Management — in the page body, so those 3 DB rows
+    correctly point at that one shared page; a 4th DB row, "Strategic
+    Studies and Diplomacy", isn't one of the named pathways and was left
+    unset rather than assumed. Session also hit a mid-task infrastructure
+    hiccup — the sandbox's Bash container reset partway through, losing all
+    local scratch files (intermediate URL lists, save-tracking) though the
+    97 programs already PUT to the live API by that point were unaffected;
+    recovered by re-querying the live API for already-saved rows and
+    rebuilding from there rather than restarting, which is also how the
+    "Comparative Literature" redirect above got caught on a second pass.
+    Live: `/api/public/programs?entity_id=251` —
+    https://paneledu.com/university?id=251 to check.
+
+  **Status after this batch**: 18 universities now have real per-program
   links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
   Alberta, American University, Charles Darwin, ACU, Anglia Ruskin
   University, Oregon State, Adelaide, UCD, Bangor, Sussex, Nottingham
-  Trent, Arizona State University), all 19 QS-ranked universities have at
-  least an entity-level fallback link. 1 large ranked university remains
-  untouched at the per-program level: Aberdeen (433 programs) — the last
-  one in this project's backlog once it's done.
+  Trent, Arizona State University, Aberdeen), all 19 QS-ranked universities
+  have at least an entity-level fallback link. That closes out this
+  project's backlog of large ranked universities queued for per-program
+  `source_url` coverage.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
