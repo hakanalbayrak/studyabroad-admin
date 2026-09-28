@@ -447,14 +447,55 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     Live: `/api/public/programs?entity_id=162` —
     https://paneledu.com/university?id=162 to check.
 
-  **Status after this batch**: 16 universities now have real per-program
+  - **Arizona State University** (485 programs, id 101) — 481/485 (99%):
+    Bachelor's 294/297 (99%), Master's 187/188 (99%), by far the largest
+    university in this project's backlog. `asu.edu`/`degrees.asu.edu` isn't
+    bot-blocked, but the real time-saver was `https://degrees.asu.edu/
+    sitemap.xml` — a single fetch that lists **every** live degree page
+    (507 bachelor's `/bachelors/major/<college>/<code>/<slug>` URLs + 829
+    `/masters-phd/major/<college>/<code>/<slug>` URLs, the latter mixing
+    Master's and PhD pages under one path). That turned this into a mostly
+    offline slug-matching problem against our 485 DB rows instead of ~485
+    individual WebSearches — the whole catalog was resolved without using
+    WebSearch at all, then every one of the 461 distinct candidate URLs was
+    still direct-fetched (all 200) and its page `<h1>` compared token-by-
+    token against the DB program name/degree type before saving, per the
+    non-negotiable verify rule. Notable finding worth flagging since it's
+    unique to ASU in this project so far: **the DB's degree-type prefix is
+    reversed** vs. every other university here — rows read "BA American
+    Studies" / "MS Statistics" (degree first) instead of the usual
+    "American Studies BA" suffix style, so matching had to strip the
+    leading token and degree-check against the *end* of the fetched page's
+    `<h1>` (e.g. "American Studies, BA") rather than the start. Two other
+    ASU quirks surfaced during matching: (a) our DB's whole "Digital
+    Culture" family (10 rows, base + 9 concentrations) is ASU's renamed
+    "Media Arts and Sciences" program on the live site — slugs and titles
+    read "media-arts-and-sciences[-concentration]", not "digital-culture"
+    anywhere, caught only by noticing the slug-similarity score was ~0 for
+    all 10 and manually cross-referencing the school's major list; (b) most
+    "LLM Master of Laws (<concentration>)" DB rows (Business Law, Criminal
+    Law, Health Law, Indian Gaming, International Law, Patent Practice,
+    etc. — 11 of 17) don't get their own page at all, they're all
+    concentrations documented on ASU's single general `laws-llm` page,
+    while 3 concentrations (Biotechnology and Genomics, Global Legal
+    Studies, Tribal Policy/Law/Government) do have their own distinct LLM
+    pages — verified via each page's own content, not assumed. Left unset
+    rather than guessed (4 programs): BA Environmental Science and BA
+    Statistics (ASU's site only has BS versions of both under those exact
+    subject names — no BA-titled page exists), MM Music Composition (only
+    a DMA Music Composition page exists), and BS Food and Nutrition
+    Entrepreneurship (no matching page found under nutrition, food, or
+    entrepreneurship listings). Live: `/api/public/programs?entity_id=101`
+    — https://paneledu.com/university?id=101 to check.
+
+  **Status after this batch**: 17 universities now have real per-program
   links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
   Alberta, American University, Charles Darwin, ACU, Anglia Ruskin
   University, Oregon State, Adelaide, UCD, Bangor, Sussex, Nottingham
-  Trent), all 19 QS-ranked universities have at least an entity-level
-  fallback link. 2 large ranked universities remain untouched at the
-  per-program level: Aberdeen (433 programs), Arizona State University
-  (485 programs) — continuing incrementally.
+  Trent, Arizona State University), all 19 QS-ranked universities have at
+  least an entity-level fallback link. 1 large ranked university remains
+  untouched at the per-program level: Aberdeen (433 programs) — the last
+  one in this project's backlog once it's done.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
