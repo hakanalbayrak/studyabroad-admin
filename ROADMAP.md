@@ -419,14 +419,42 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     situation as Bangor, left unset rather than guessed. Live:
     `/api/public/programs?entity_id=157`.
 
-  **Status after this batch**: 15 universities now have real per-program
+  - **Nottingham Trent University** (314 programs, id 162) — 219/314 (70%):
+    Bachelor's 139/193 (72%), Master's 80/121 (66%). `ntu.ac.uk`'s WAF
+    returns 403 to every direct fetch from this environment (plain curl,
+    WebFetch, even a Googlebot UA), so unlike Bangor/Sussex/Adelaide above
+    there was no fetch-verification path available at all — this one was
+    pure `WebSearch`-title-match end to end: only saved a URL when the
+    search result's own title named the exact program and degree type,
+    batching 2-4 program names per query. Several systematic near-misses
+    worth flagging for whoever continues this: (a) three DB rows specify
+    "BA (Hons)" for what NTU's live site titles "BSc (Hons)" — Economics,
+    Economics with Business, Economics with International Finance and
+    Banking — left unset rather than save a wrong degree-type match;
+    (b) a handful of DB program names carry old NTU titles that have since
+    been renamed or discontinued (Childhood (SEN and Inclusion) → renamed
+    "Special Educational Needs, Disability and Inclusion"; the three
+    "Global Studies and X" joint honours — History, International
+    Relations, Media — confirmed discontinued after September 2022; IT
+    Security MSc → renamed "Cyber Security MSc"; "Human Rights and Justice
+    LLM" → shortened to "Human Rights LLM", which the *other* DB row of
+    that same name matched instead) — left the stale-named entries unset
+    each time rather than assume the rename. The session's built-in
+    WebSearch budget (200 calls) ran out partway through the alphabet, at
+    "Property Development and Planning" — the remaining ~14% of the
+    catalog (Psychology cluster through Zoology, roughly items 271-314)
+    wasn't attempted this session; a follow-up session can pick up there.
+    Live: `/api/public/programs?entity_id=162` —
+    https://paneledu.com/university?id=162 to check.
+
+  **Status after this batch**: 16 universities now have real per-program
   links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
   Alberta, American University, Charles Darwin, ACU, Anglia Ruskin
-  University, Oregon State, Adelaide, UCD, Bangor, Sussex), all 19
-  QS-ranked universities have at least an entity-level fallback link. 3
-  large ranked universities remain untouched at the per-program level:
-  Nottingham Trent (314 programs), Aberdeen (433 programs), Arizona State
-  University (485 programs) — smallest first, continuing incrementally.
+  University, Oregon State, Adelaide, UCD, Bangor, Sussex, Nottingham
+  Trent), all 19 QS-ranked universities have at least an entity-level
+  fallback link. 2 large ranked universities remain untouched at the
+  per-program level: Aberdeen (433 programs), Arizona State University
+  (485 programs) — continuing incrementally.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
