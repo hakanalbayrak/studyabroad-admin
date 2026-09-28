@@ -329,19 +329,20 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   remain untouched at the per-program level (Adelaide, UCD, Bangor,
   Sussex, Nottingham Trent, Aberdeen, Arizona State) — these range 205 to
   485 programs each, so covering all of them is a multi-session effort,
-  - **University of Adelaide — in progress** (205 programs, id 284): 105
-    saved so far (51%). Adelaide's `degree-finder` uses opaque codes (e.g.
-    `bada_bapda.html`) with no derivable pattern, and — worth flagging —
-    the University of Adelaide merged with University of South Australia
-    into "Adelaide University" on 31 March 2026; confirmed the old
-    `adelaide.edu.au` domain and `/degree-finder/` URLs are still live
-    under the merged entity. Also discovered a second, newer catalog at
-    `adelaide.edu.au/study/degrees/<name-slug>/` from the post-merger
+  - **University of Adelaide** (205 programs, id 284): 123 saved (60%),
+    settled here after several rounds. Adelaide's `degree-finder` uses
+    opaque codes (e.g. `bada_bapda.html`) with no derivable pattern, and —
+    worth flagging — the University of Adelaide merged with University of
+    South Australia into "Adelaide University" on 31 March 2026; confirmed
+    the old `adelaide.edu.au` domain and `/degree-finder/` URLs are still
+    live under the merged entity. Also discovered a second, newer catalog
+    at `adelaide.edu.au/study/degrees/<name-slug>/` from the post-merger
     site — cleaner and name-derived, but several programs were renamed in
     the merger (e.g. old "Bachelor of Criminology" → new "Bachelor of
     Criminology and Criminal Justice"), so it's only used where a clear
     match to our catalog's existing (pre-merger) program name was
-    confirmed, not assumed. Continuing in a later batch. Live:
+    confirmed, not assumed. Remaining ~80 unset mostly need more targeted
+    per-program searches than the ones tried so far turned up. Live:
     `/api/public/programs?entity_id=284`.
   continuing incrementally.
 
