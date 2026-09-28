@@ -303,6 +303,34 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   485 programs each, so covering all of them
   the same way is a multi-session effort, continuing incrementally.
 
+  - **Oregon State University** (162 programs, id 97) — 147 of 162 (91%).
+    This catalog turned out to be INTO OSU's pathway-provider listing, not
+    a plain OSU export: every Bachelor's row carries an "-International
+    Direct" suffix (INTO's direct-entry admission route into a normal OSU
+    major), plus 32 rows that are literally INTO's own "Graduate Pathway
+    in X" / "Undergraduate Transfer Program - X" tracks (not separate OSU
+    degrees at all). Linked the real majors to their actual OSU catalog
+    page at `catalog.oregonstate.edu` (the degree itself, not the INTO
+    admission route) and pointed all 32 INTO-specific pathway/transfer
+    rows at `intoosu.oregonstate.edu/programs`, the one real page that
+    describes them. Left 15 unset (Design and Innovation Management,
+    Ecampus Business Information Systems, Environmental Sciences,
+    General Engineering, German, Management, Radiation Health Physics,
+    Speech Communication, Women Gender and Sexuality Studies, Wood
+    Innovation for Sustainability, Zoology) — existence confirmed via
+    search but no exact catalog page URL surfaced. Live:
+    `/api/public/programs?entity_id=97`.
+
+  **Status after this batch**: 12 universities now have real per-program
+  links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
+  Alberta, American University, Charles Darwin, ACU, Anglia Ruskin
+  University, Oregon State ≈ 898 programs), all 19 QS-ranked universities
+  have at least an entity-level fallback link. 7 large ranked universities
+  remain untouched at the per-program level (Adelaide, UCD, Bangor,
+  Sussex, Nottingham Trent, Aberdeen, Arizona State) — these range 205 to
+  485 programs each, so covering all of them is a multi-session effort,
+  continuing incrementally.
+
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
 - University logos (upload/link + display on cards) ✅ DONE (2026-07-21)
