@@ -344,6 +344,22 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     confirmed, not assumed. Remaining ~80 unset mostly need more targeted
     per-program searches than the ones tried so far turned up. Live:
     `/api/public/programs?entity_id=284`.
+
+  - **University College Dublin** (238 programs, id 226) — 100% coverage,
+    fastest of any large university this session. Every UCD program name
+    in our catalog already carries UCD's own official programme code in
+    parentheses at the end (e.g. "... (BSS3)", "MSc Finance FT (B269)"),
+    and confirmed via search that `ucd.ie/courses/<code lowercased>` is
+    UCD's own stable course-page URL keyed on that exact code (their
+    admissions/CAO systems use the same codes as primary identifiers) —
+    so instead of searching per program, extracted the code straight from
+    each DB row's own name and built the URL directly, verified against
+    a handful of codes via search before trusting the rest. Note: UCD also
+    has prettier name-based aliases for some courses (e.g.
+    `ucd.ie/courses/msc-behavioural-neuroscience`) that coexist with the
+    code-based ones — used the code-based form throughout since it's the
+    one guaranteed to exist for every program, not just the marketed few.
+    Live: `/api/public/programs?entity_id=226`.
   continuing incrementally.
 
 ## In progress / next
