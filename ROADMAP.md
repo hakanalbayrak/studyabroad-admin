@@ -392,15 +392,41 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
       hard 404s) back to unset rather than keep a link that shows visitors
       an error page. Live: `/api/public/programs?entity_id=60`.
 
-  **Status after this batch**: 14 universities now have real per-program
+  - **University of Sussex** (264 programs, id 157) — 235/264 (89%).
+    `sussex.ac.uk` isn't bot-blocked at all, so this one was pure
+    slugify + direct-fetch-verify (`/study/undergraduate/courses/<slug>`
+    and `/study/masters/courses/<slug>`), no search needed for the bulk of
+    it — 263/264 on the very first pass. One caught-late bug worth noting
+    for future universities: the verify loop originally followed redirects
+    up to N hops and accepted whatever it landed on as "verified", but a
+    wrong/stale slug on this site 302-redirects to the **generic**
+    `/study/masters/courses` or `/study/undergraduate/courses` listing
+    page, which itself then 200s — so "followed a redirect to a 200" is
+    **not** proof of a real program page. That silently saved 60 programs
+    pointing at the bare listing page instead of their own course. Caught
+    it by spot-checking a saved URL and finding it 302'd when re-fetched
+    without redirect-following; fixed by re-verifying with **no** redirect
+    stored 200 (any 30x = fail), reverted the 60 bad saves, and reran.
+    Recovered 29 of them (19 were integrated-masters degrees — MSci/MPhys/
+    MChem/MEng/MMath — which Sussex files under `/undergraduate/courses/`
+    even though our DB tags them "Master Programs"; 10 were subject-area
+    names in our catalog, e.g. "Media and Communications", that map to
+    Sussex's `/study/subjects/<slug>/masters` hub page rather than a single
+    course). Remaining 29 unset: mostly single MA/MSc titles that Google
+    still has indexed at a specific-looking URL but which 302 to the
+    generic listing on the live site right now (re-confirmed via a second,
+    independent fetch path) — same "stale index, dead/changed live page"
+    situation as Bangor, left unset rather than guessed. Live:
+    `/api/public/programs?entity_id=157`.
+
+  **Status after this batch**: 15 universities now have real per-program
   links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
   Alberta, American University, Charles Darwin, ACU, Anglia Ruskin
-  University, Oregon State, Adelaide, UCD, Bangor), all 19 QS-ranked
-  universities have at least an entity-level fallback link. 4 large ranked
-  universities remain untouched at the per-program level: Sussex (264
-  programs), Nottingham Trent (314 programs), Aberdeen (433 programs),
-  Arizona State University (485 programs) — smallest first, continuing
-  incrementally.
+  University, Oregon State, Adelaide, UCD, Bangor, Sussex), all 19
+  QS-ranked universities have at least an entity-level fallback link. 3
+  large ranked universities remain untouched at the per-program level:
+  Nottingham Trent (314 programs), Aberdeen (433 programs), Arizona State
+  University (485 programs) — smallest first, continuing incrementally.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
