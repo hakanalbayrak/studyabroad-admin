@@ -360,7 +360,47 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     code-based ones — used the code-based form throughout since it's the
     one guaranteed to exist for every program, not just the marketed few.
     Live: `/api/public/programs?entity_id=226`.
-  continuing incrementally.
+
+  - **Bangor University** (256 programs, id 60) — 210/256 overall (82%):
+    Masters 90/96 (94%), Bachelor's 120/160 (75%). Two distinct methods per
+    level since Bangor uses two different URL schemes:
+    - *Masters*: direct slugify + fetch-verify loop against
+      `bangor.ac.uk/courses/postgraduate-taught/<slug>`, retrying 301s
+      (follow `Location`) and transient 403s with backoff; final 6 holdouts
+      left unset rather than guessed.
+    - *Bachelor's*: UCAS codes aren't embedded in our DB names here (unlike
+      UCD), so instead harvested the full undergrad catalog by paging
+      `bangor.ac.uk/courses?level_of_study=wt_undergraduate_programme&page=N`
+      (11 pages) into a Name→URL table, then matched by normalizing both
+      sides (stripping degree-type tokens/parentheticals, mapping
+      Cymraeg↔Welsh) — got 104/160 this way, then closed most of the rest
+      with targeted `WebSearch` hits for the remaining single-subject and
+      joint-honours names.
+    - **New failure mode found and handled**: a chunk of the WebSearch-
+      matched URLs turned out to be real, Google-indexed Bangor pages that
+      still 403 — but on inspection the response body is Bangor's own
+      themed Drupal **"Access Denied"** page (`<title>Access denied |
+      Bangor University</title>`, live `node/<id>` path), not a WAF/rate-
+      limit block — confirmed by (a) re-checking a known-good URL
+      immediately after in the same session still returning 200, and (b)
+      fetching the same blocked URL from a second, independent network
+      path (`WebFetch`) and getting the same 403. These are genuinely
+      **discontinued/closed-admissions courses** still indexed by Google
+      (one page explicitly said "not accepting Sept 2024 entry, see X
+      instead"). Treated exactly like an unverifiable link: reverted all
+      31 such matches (25 access-denied + 4 redirect-loop-to-nowhere + 2
+      hard 404s) back to unset rather than keep a link that shows visitors
+      an error page. Live: `/api/public/programs?entity_id=60`.
+
+  **Status after this batch**: 14 universities now have real per-program
+  links (ARU College, Charles University, Ajman, Tasmania, Szeged, CQU,
+  Alberta, American University, Charles Darwin, ACU, Anglia Ruskin
+  University, Oregon State, Adelaide, UCD, Bangor), all 19 QS-ranked
+  universities have at least an entity-level fallback link. 4 large ranked
+  universities remain untouched at the per-program level: Sussex (264
+  programs), Nottingham Trent (314 programs), Aberdeen (433 programs),
+  Arizona State University (485 programs) — smallest first, continuing
+  incrementally.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
