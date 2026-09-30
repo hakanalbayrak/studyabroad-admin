@@ -616,6 +616,67 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     indexed URL now 404s, a stale-index case like earlier universities in
     this project).
 
+- **source_url rollout, batch 5 — SRH University Germany, all 9 campuses
+  (2026-09-30)**: first org-cluster batch in this project — instead of one
+  university, covered every SRH University campus entity in the catalog
+  (Berlin 71, Cologne 4, Dresden 9, Fuerth 3, Hamburg 10, Heidelberg 23,
+  Leipzig 6, Munich 9, Stuttgart 4 = 139 programs, verified via the admin
+  API before starting; all had `source_url` unset). **Overall: 93/139
+  (66.9%)**.
+  - All 9 campuses share one unified site, `srh-university.de` — SRH merged
+    5 previously independent SRH universities into this single domain in
+    2024, and each program has one canonical page (`/en/<bachelor|master|
+    mba>/<slug>/<code>/`) whose own subtitle line (e.g. "Bachelor of Arts |
+    Berlin, Heidelberg, Leipzig") lists every campus that actually offers
+    it — used as the ground-truth per-campus confirmation, always read from
+    the raw fetched HTML (`curl`+`grep`) rather than trusted from a
+    WebFetch/WebSearch summary, several of which turned out to hallucinate
+    plausible-sounding "Location:" values not actually present on the page.
+  - **Berlin 64/71 (90%), Dresden 9/9 (100%), Leipzig 5/6 (83%), Heidelberg
+    15/23 (65%)** — harvested from each campus's own `/en/our-campuses/
+    <city>/` page (Berlin) and `/en/programme-finder/locations/<city>`
+    (Dresden, Heidelberg, Leipzig), which return clean name+URL lists
+    server-rendered (no JS needed), then bulk-matched to DB rows by name
+    and verified per-URL via direct fetch. Left unset: Berlin's Bachelor
+    "User Experience Design & Content Creation" (its guessed URL 301-
+    redirects to an unrelated program page — the same known "redirects to
+    a generic/other page" pitfall this project has hit before), BSc
+    Computer Science – Healthcare Management, Executive MBA General
+    Management, Sustainable Battery Production Engineering, two Supply-
+    Chain/Hotel-Management rows whose DB names don't match any current
+    Berlin page; Heidelberg's Water Management/Technology, Blockchain
+    Technology, International Business & Engineering, Global Business and
+    Leadership (2 rows) and International Management and Leadership — all
+    six of these last Heidelberg names return 404 or redirect to a generic
+    category page on the current site, i.e. genuinely discontinued/
+    renamed, not guessable; Leipzig's Automotive-Technology-and-Management
+    IBA specialization (no page on `srh-university.de`, only on the
+    separate `apply.srh.de` application portal, which isn't a program's own
+    descriptive page).
+  - **Cologne, Fuerth, Hamburg, Munich, Stuttgart: 0/30 (0%) — not a
+    coverage gap, a real closure.** WebSearch turned up SRH's own 2026-08-04
+    announcement (`srh-university.de/en/folder/news/2026/08-26/srh-
+    university-to-realign-its-strategy/`): SRH is closing six locations
+    (Bremen, Fürth, Hamburg, Cologne, Munich, Stuttgart) by end 2027/spring
+    2028, no new enrolment from winter 2026/27, consolidating around five
+    core sites (Berlin, Dresden, Gera, Heidelberg, Leipzig). This matches
+    what the live site shows first-hand: each of these 5 campuses' own
+    `/en/our-campuses/<city>/` page now states "Applications no longer
+    possible at Campus <city>", the programme-finder returns no results
+    filtered to them, and every DB program name for these 5 campuses that
+    still has a live page on the unified site now lists only a *different*
+    (surviving) campus in its own "Location:" line — e.g. Munich's B.A.
+    Computer Science page says "Berlin, Heidelberg, Leipzig", not Munich.
+    Several plausible guessed/search-indexed URLs for these rows do return
+    HTTP 200, but only by redirecting to a generic category-listing page
+    that doesn't name the specific campus — caught and rejected per this
+    project's standing pitfall check, confirmed via raw HTML rather than
+    tool summaries. Left unset rather than saved.
+  - Live test links: `https://paneledu.com/university?id=42` (Berlin),
+    `?id=323` (Cologne), `?id=43` (Dresden), `?id=322` (Fuerth), `?id=44`
+    (Hamburg), `?id=45` (Heidelberg), `?id=321` (Leipzig), `?id=320`
+    (Munich), `?id=287` (Stuttgart).
+
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
 - University logos (upload/link + display on cards) ✅ DONE (2026-07-21)
