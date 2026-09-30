@@ -763,6 +763,78 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     `?id=172` (IBS), `?id=91` (McDaniel), `?id=364` (Obuda), `?id=174`
     (Pecs), `?id=90` (Veterinary Medicine).
 
+- **source_url rollout, batch 7 — Czech Republic, all universities
+  (2026-09-30)**: second country-based batch — covered every Czech
+  university in the catalog other than Charles University (already 100%
+  from a prior session). Verified counts via the admin API before
+  starting: 172 Czech Republic rows total, 140 across the 7 target
+  universities, all `source_url` unset. **Overall: 132/140 (94%)**.
+  - **Brno University of Technology** (14, id 232) — 14/14 (100%),
+    **Technical University of Liberec** (12, id 234) — 12/12 (100%),
+    **Palacky University** (6, id 182) — 6/6 (100%), **Charles University
+    - First Faculty of Medicine in Prague** (2, id 230) — 2/2 (100%): all
+    four resolved fully. VUT and TUL both publish a central "English
+    programmes" catalogue page per faculty/level on their own domain
+    (`vutbr.cz`/`tul.cz`) with direct per-program links, harvested and
+    matched by name in one pass each.
+  - Palacky confirmed the project's known **pathway/foundation-year
+    pitfall in reverse**: its "Petroleum Engineering" bachelor+master rows
+    turned out to be a real, direct-entry degree — just run out of a
+    satellite site (`petroleum.upol.cz`) covering a joint programme in
+    Erbil/Olomouc — not a mislabeled pathway provider.
+  - Charles University - First Faculty of Medicine's two rows
+    ("MedCOMPLEX", "MedFAST (November intake)") **are** the pathway-
+    provider pattern confirmed directly this time: these aren't the
+    faculty's own program names anywhere on its site — they matched
+    ÚJOP UK (Charles University's own Institute for Language and
+    Preparatory Studies) foundation-year tracks "Medicine in English
+    COMPLEX" (September intake) and "Medicine and Pharmacy in English
+    FAST" (November intake) on `ujop.cuni.cz`, confirmed by intake month
+    matching exactly. Still Charles University's own institute (not a
+    third-party college), so saved as the direct, specific page.
+  - **Prague University of Economics & Business** (14, id 236) — 13/14
+    (93%): `admissions.vse.cz` and `vse.cz/english` between them list
+    every bachelor's and master's programme with a direct subdomain link
+    (`bba.vse.cz`, `ibb.vse.cz`, etc.) or a `vse.cz/english/study-at-vse/
+    master-programmes/<slug>/` page. Left unset: "Management in Creative
+    Industry" — the closest live programme, the Department of Arts
+    Management's "Arts Management", is explicitly Czech-language only on
+    its own site, not the same English-medium program our DB row names.
+  - **Czech Technical University** (37, id 233) — 36/37 (97%): CTU's many
+    faculties (FEL, FIT, FS, FA, FJFI, FD, FBMI, FSv, MIAS) each publish
+    their own English-programme page; FJFI in particular has one clean
+    listing page per degree level covering all 8 of its master's fields
+    (Mathematical Physics, Nuclear and Particle Physics, Nuclear
+    Engineering, Physical Electronics, Solid State Engineering, Plasma
+    Physics and Thermonuclear Fusion, Quantum Technologies, Nuclear
+    Chemistry) by exact name. Two MIAS rows ("Project and Process
+    Innovation Management", "Sustainability and Climate Change
+    Innovations") share MIAS's one Innovation Project Management MSc page
+    since both are specialisation tracks within that single program, not
+    separate pages. Left unset: "Nuclear Sciences and Physical
+    Engineering" (bachelor) — no FJFI bachelor field carries this exact
+    name (the closest, "Physical Engineering", is a distinct, separately-
+    accredited program), so not assumed to be the same row.
+  - **Ostrava Technical University** (55, id 235) — 49/55 (89%), the
+    largest university in this batch: `vsb.cz`'s own central bachelor's
+    and master's catalogue pages (`/degree-studies/<level>-degree/`) list
+    every English-taught programme faculty-by-faculty with a
+    `programmeId` query-string link, resolved and bulk-verified by
+    fetching each page's own `<h1>Study programme ...</h1>` and confirming
+    it matched the DB name exactly (49/49 verified, 0 mismatches). Left
+    unset (6): "Applied Sciences and Technologies" and "Engineering"
+    (bachelor) and "Petroleum Engineering" (bachelor) have no current
+    catalogue entry under those names (Petroleum Engineering is
+    master-only at VSB now); "Applied Mechanics" (master) is currently
+    offered only as a *branch* inside the "Design and Simulation of
+    Machines" programme, not its own page; "Information and Communication
+    Security" and "Brownfields Technical Redevelopment" (both master) have
+    stale search-indexed pages that return `programme not found` when
+    fetched directly — genuinely discontinued, not guessable.
+  - Live test links: `https://paneledu.com/university?id=232` (Brno UT),
+    `?id=230` (Charles University FFM), `?id=233` (CTU), `?id=235`
+    (Ostrava TU), `?id=182` (Palacky), `?id=236` (VSE), `?id=234` (TUL).
+
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
 - University logos (upload/link + display on cards) ✅ DONE (2026-07-21)
