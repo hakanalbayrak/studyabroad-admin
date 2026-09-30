@@ -1,0 +1,7 @@
+# Allow large file uploads to pass through to Node.js/Passenger
+LimitRequestBody 20971520
+
+# Disable request body size limit for upload endpoints
+<LocationMatch "^/api/.*">
+  LimitRequestBody 20971520
+</LocationMatch>

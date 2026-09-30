@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İngiltere, İrlanda, Hollanda, Almanya Karşılaştırması — PANELEDU</title>
+  <meta name="description" content="Dört popüler yurt dışı eğitim destinasyonunun eğitim ücretleri, yaşam maliyetleri, çalışma hakları ve oturma izni süreçlerinin detaylı karşılaştırması.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="/css/site.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <style>
+    /* ── Country palette ───────────────────────────────────────── */
+    :root {
+      --uk:  #012169;
+      --irl: #169B62;
+      --nl:  #C0392B;
+      --de:  #1a1a1a;
+    }
+
+    /* ── Article layout ────────────────────────────────────────── */
+    .art-hero {
+      background: linear-gradient(150deg, #0f1522 0%, #1a2240 60%, #1e1635 100%);
+      padding: 60px 0 52px;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .art-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .art-hero-inner { position: relative; max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    .art-eyebrow { display: flex; align-items: center; gap: 8px; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.55); margin-bottom: 20px; }
+    .art-eyebrow a { color: rgba(255,255,255,.55); text-decoration: none; }
+    .art-eyebrow a:hover { color: #fff; }
+    .art-hero h1 { font-size: clamp(1.7rem, 4vw, 2.6rem); font-weight: 900; line-height: 1.22; text-wrap: balance; margin: 0 0 16px; letter-spacing: -.02em; }
+    .art-hero .lead { font-size: 1rem; color: rgba(255,255,255,.72); line-height: 1.7; max-width: 680px; margin: 0 0 28px; }
+    .art-meta { display: flex; flex-wrap: wrap; gap: 18px; font-size: .78rem; color: rgba(255,255,255,.5); }
+    .art-meta span { display: flex; align-items: center; gap: 5px; }
+    .flag-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .flag-pill {
+      display: flex; align-items: center; gap: 7px;
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18);
+      border-radius: 999px; padding: 5px 14px 5px 10px;
+      font-size: .8rem; font-weight: 600; color: rgba(255,255,255,.9);
+    }
+    .flag-pill .dot { width: 8px; height: 8px; border-radius: 50%; }
+
+    /* ── Sticky in-article nav ─────────────────────────────────── */
+    .art-sidenav {
+      position: sticky; top: 54px; z-index: 90;
+      background: rgba(255,255,255,.93);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .art-sidenav-inner {
+      max-width: 860px; margin: 0 auto; padding: 0 20px;
+      display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none;
+    }
+    .art-sidenav-inner::-webkit-scrollbar { display: none; }
+    .art-sidenav-inner a {
+      padding: 13px 12px; font-size: .78rem; font-weight: 600; color: var(--muted);
+      text-decoration: none; white-space: nowrap; border-bottom: 2px solid transparent;
+      transition: color .15s, border-color .15s;
+    }
+    .art-sidenav-inner a:hover, .art-sidenav-inner a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+    /* ── Article body ──────────────────────────────────────────── */
+    .art-body { max-width: 860px; margin: 0 auto; padding: 0 20px 64px; }
+    .art-section { padding-top: 52px; }
+    .art-section h2 { font-size: 1.35rem; font-weight: 800; color: var(--text); margin: 0 0 6px; display: flex; align-items: center; gap: 10px; }
+    .art-section h2 .sec-icon { font-size: 1.2rem; }
+    .art-section .sec-sub { font-size: .88rem; color: var(--muted); margin: 0 0 24px; }
+    .art-prose { font-size: .92rem; line-height: 1.75; color: var(--text); margin-bottom: 24px; }
+
+    /* ── Comparison table (4 countries) ────────────────────────── */
+    .table-scroll { overflow-x: auto; border-radius: 14px; border: 1px solid var(--line); box-shadow: var(--shadow); margin-bottom: 8px; }
+    .cmp-table { width: 100%; border-collapse: collapse; min-width: 520px; }
+    .cmp-table th { padding: 14px 16px; text-align: center; font-size: .78rem; font-weight: 700; letter-spacing: .03em; border-bottom: 1px solid rgba(255,255,255,.15); white-space: nowrap; }
+    .cmp-table th.row-label { background: var(--surface-2); color: var(--muted); text-align: left; font-size: .7rem; text-transform: uppercase; letter-spacing: .07em; min-width: 160px; }
+    .cmp-table th.h-uk  { background: var(--uk);  color: #fff; }
+    .cmp-table th.h-irl { background: var(--irl); color: #fff; }
+    .cmp-table th.h-nl  { background: var(--nl);  color: #fff; }
+    .cmp-table th.h-de  { background: var(--de);  color: #fff; }
+    .cmp-table td { padding: 12px 14px; font-size: .82rem; color: var(--text); text-align: center; border-bottom: 1px solid var(--line); vertical-align: middle; font-variant-numeric: tabular-nums; }
+    .cmp-table td.row-label { text-align: left; font-weight: 600; color: var(--muted); font-size: .78rem; background: var(--surface-2); }
+    .cmp-table tr:last-child td { border-bottom: none; }
+    .cmp-table tr:hover td { background: var(--surface-2); }
+    .cmp-table tr:hover td.row-label { background: var(--surface-2); }
+    .flag-large { font-size: 1.5rem; display: block; margin-bottom: 2px; }
+    .country-name { font-weight: 800; font-size: .88rem; }
+    .score { display: inline-flex; gap: 3px; }
+    .score-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .score-dot.on  { background: var(--accent); }
+    .score-dot.off { background: var(--line); }
+    .score-badge { display: inline-block; font-size: .75rem; font-weight: 700; padding: 3px 9px; border-radius: 999px; }
+    .sb-green { background: rgba(16,185,129,.14); color: #059669; }
+    .sb-amber { background: rgba(245,158,11,.14);  color: #b45309; }
+    .sb-red   { background: rgba(239,68,68,.13);   color: #dc2626; }
+    .sb-blue  { background: rgba(99,102,241,.12);  color: var(--accent); }
+
+    /* ── Per-section country cards (4-col) ─────────────────────── */
+    .country-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 8px; }
+    @media (max-width: 760px) { .country-cards { grid-template-columns: repeat(2, 1fr); } }
+    .cc { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+    .cc-head { padding: 10px 12px 8px; color: #fff; }
+    .cc-flag { font-size: 1.4rem; }
+    .cc-name { font-size: .7rem; font-weight: 700; opacity: .85; margin-top: 2px; }
+    .cc-body { padding: 12px 12px 14px; }
+    .cc-main { font-size: .9rem; font-weight: 800; color: var(--text); line-height: 1.3; margin-bottom: 4px; }
+    .cc-sub  { font-size: .72rem; color: var(--muted); line-height: 1.5; }
+    .cc-badge { margin-top: 8px; }
+    .cc-head.uk  { background: var(--uk); }
+    .cc-head.irl { background: var(--irl); }
+    .cc-head.nl  { background: var(--nl); }
+    .cc-head.de  { background: var(--de); }
+
+    /* Bar chart */
+    .bar-row { display: flex; flex-direction: column; gap: 10px; }
+    .bar-item { display: flex; align-items: center; gap: 10px; }
+    .bar-label { width: 90px; font-size: .78rem; font-weight: 600; color: var(--muted); flex-shrink: 0; display: flex; align-items: center; gap: 6px; }
+    .bar-track { flex: 1; background: var(--line); border-radius: 999px; height: 8px; overflow: hidden; }
+    .bar-fill  { height: 100%; border-radius: 999px; }
+    .bar-val   { font-size: .78rem; font-weight: 700; color: var(--text); white-space: nowrap; font-variant-numeric: tabular-nums; min-width: 100px; text-align: right; }
+
+    /* Residency timeline */
+    .timeline { display: flex; flex-direction: column; }
+    .tl-item { display: flex; gap: 14px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .tl-item:last-child { border-bottom: none; }
+    .tl-flag { font-size: 1.6rem; flex-shrink: 0; }
+    .tl-name { font-size: .82rem; font-weight: 800; color: var(--text); margin-bottom: 6px; }
+    .tl-steps { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+    .tl-step-box { background: var(--surface-2); border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; font-size: .75rem; font-weight: 600; color: var(--text); white-space: nowrap; }
+    .tl-arr { color: var(--muted); font-size: .85rem; }
+    .tl-note { font-size: .72rem; color: var(--muted); margin-top: 6px; line-height: 1.55; }
+
+    /* Verdict */
+    .verdict-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+    .verdict-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+    .verdict-tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: 10px; }
+    .verdict-winner { font-size: 1.15rem; font-weight: 900; color: var(--text); margin-bottom: 6px; }
+    .verdict-why { font-size: .8rem; color: var(--muted); line-height: 1.6; }
+
+    /* Callout */
+    .callout { background: var(--surface-2); border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 24px 0; font-size: .85rem; line-height: 1.6; color: var(--text); }
+    .callout strong { color: var(--accent); }
+    .art-source { font-size: .72rem; color: var(--muted); margin-top: 6px; border-top: 1px solid var(--line); padding-top: 14px; }
+
+    /* Dark theme */
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d1117; --surface: #161b22; --surface-2: #1c2128; --text: #e6edf3; --muted: #7d8590; --line: rgba(255,255,255,.1); }
+      .art-sidenav { background: rgba(22,27,34,.95); }
+    }
+    :root[data-theme="dark"]  { --bg: #0d1117; --surface: #161b22; --surface-2: #1c2128; --text: #e6edf3; --muted: #7d8590; --line: rgba(255,255,255,.1); }
+    :root[data-theme="light"] { --bg: #f8fafc; --surface: #ffffff; --surface-2: #f1f5f9; --text: #1e293b; --muted: #64748b; --line: #e2e8f0; }
+  </style>
+</head>
+<body class="pe-theme">
+
+<!-- ── Hero ─────────────────────────────────────────────────────── -->
+<div class="art-hero">
+  <div class="art-hero-inner">
+    <div class="art-eyebrow">
+      <a href="/blog"><i class="bi bi-arrow-left"></i> Blog</a>
+      <span>·</span>
+      <span>Ülke Rehberi</span>
+    </div>
+    <h1>İngiltere, İrlanda,<br>Hollanda ve Almanya:<br>Kapsamlı Eğitim & Yerleşim Karşılaştırması</h1>
+    <p class="lead">Eğitim ücretleri, yaşam maliyetleri, mezuniyet sonrası çalışma hakları ve oturma izni süreçleri — dört popüler destinasyonun tüm avantajları ve dezavantajları tek sayfada.</p>
+    <div class="art-meta">
+      <span><i class="bi bi-calendar3"></i> Temmuz 2025</span>
+      <span><i class="bi bi-clock"></i> 7 dk okuma</span>
+      <span><i class="bi bi-pencil"></i> PANELEDU Danışmanlık Ekibi</span>
+    </div>
+    <div class="flag-row">
+      <div class="flag-pill"><span class="dot" style="background:#C8102E"></span>🇬🇧 İngiltere</div>
+      <div class="flag-pill"><span class="dot" style="background:#169B62"></span>🇮🇪 İrlanda</div>
+      <div class="flag-pill"><span class="dot" style="background:#FF6600"></span>🇳🇱 Hollanda</div>
+      <div class="flag-pill"><span class="dot" style="background:#FFCE00"></span>🇩🇪 Almanya</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Sticky section nav ─────────────────────────────────────── -->
+<div class="art-sidenav">
+  <div class="art-sidenav-inner">
+    <a href="#genel-bakis">Genel Bakış</a>
+    <a href="#egitim-ucretleri">Eğitim Ücretleri</a>
+    <a href="#yasam-maliyeti">Yaşam Maliyeti</a>
+    <a href="#mezuniyet-sonrasi">Mezuniyet Sonrası</a>
+    <a href="#oturma-izni">Oturma İzni</a>
+    <a href="#avantajlar">Artı / Eksileri</a>
+    <a href="#karar-rehberi">Karar Rehberi</a>
+  </div>
+</div>
+
+<!-- ── Article body ──────────────────────────────────────────── -->
+<div class="art-body">
+
+  <!-- ── GENEL BAKIŞ ────────────────────────────────────────── -->
+  <div class="art-section" id="genel-bakis">
+    <h2><span class="sec-icon">🗺️</span> Genel Bakış</h2>
+    <p class="sec-sub">Dört destinasyonun temel metriklerinin yan yana karşılaştırması</p>
+    <p class="art-prose">Yurt dışında eğitim kararı verirken sadece üniversite prestijine odaklanmak büyük bir hata. Eğitim maliyeti, günlük yaşam giderleri, mezun olduktan sonra o ülkede çalışabilme süresi ve uzun vadede oturma izni elde etme imkânı en az prestij kadar belirleyici. Bu karşılaştırma, dört popüler Avrupa destinasyonunu altı farklı boyutta değerlendiriyor.</p>
+
+    <div class="table-scroll">
+      <table class="cmp-table">
+        <thead>
+          <tr>
+            <th class="row-label">Kriter</th>
+            <th class="h-uk"><span class="flag-large">🇬🇧</span><span class="country-name">İngiltere</span></th>
+            <th class="h-irl"><span class="flag-large">🇮🇪</span><span class="country-name">İrlanda</span></th>
+            <th class="h-nl"><span class="flag-large">🇳🇱</span><span class="country-name">Hollanda</span></th>
+            <th class="h-de"><span class="flag-large">🇩🇪</span><span class="country-name">Almanya</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-label">Yıllık Eğitim Ücreti</td>
+            <td>£11k – 38k</td>
+            <td>€10k – 25k</td>
+            <td>€8k – 20k</td>
+            <td><strong style="color:#059669">€0 – 25.000*</strong></td>
+          </tr>
+          <tr>
+            <td class="row-label">Aylık Yaşam Gideri</td>
+            <td>£1,100–2,200</td>
+            <td>€1,400–2,200</td>
+            <td>€1,000–1,500</td>
+            <td><strong style="color:#059669">€850–1,200</strong></td>
+          </tr>
+          <tr>
+            <td class="row-label">Mezuniyet Sonrası Çalışma</td>
+            <td><span class="score-badge sb-blue">2 yıl</span></td>
+            <td><span class="score-badge sb-amber">1–2 yıl</span></td>
+            <td><span class="score-badge sb-amber">1 yıl + HSM</span></td>
+            <td><span class="score-badge sb-blue">18 ay</span></td>
+          </tr>
+          <tr>
+            <td class="row-label">Daimi Oturma (min. yıl)</td>
+            <td>5 yıl</td>
+            <td>5 yıl</td>
+            <td>5 yıl</td>
+            <td><strong style="color:#059669">4 yıl</strong></td>
+          </tr>
+          <tr>
+            <td class="row-label">Üniversite Prestiji</td>
+            <td><span class="score"><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span></span></td>
+            <td><span class="score"><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot off"></span><span class="score-dot off"></span></span></td>
+            <td><span class="score"><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot off"></span></span></td>
+            <td><span class="score"><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot off"></span></span></td>
+          </tr>
+          <tr>
+            <td class="row-label">Genel Yaşam Kalitesi</td>
+            <td><span class="score"><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot off"></span></span></td>
+            <td><span class="score"><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot off"></span></span></td>
+            <td><span class="score"><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot off"></span></span></td>
+            <td><span class="score"><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot on"></span><span class="score-dot off"></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="art-source">* Almanya devlet üniversiteleri uluslararası öğrencilerden harç almaz (dönemlik ~€300 idari katkı payı hariç). Özel üniversiteler €5.000–€25.000/yıl aralığında ücret alır. | Veriler 2024–25 dönemi için geçerlidir.</p>
+  </div>
+
+  <!-- ── EĞİTİM ÜCRETLERİ ────────────────────────────────────── -->
+  <div class="art-section" id="egitim-ucretleri">
+    <h2><span class="sec-icon">🎓</span> Eğitim Ücretleri</h2>
+    <p class="sec-sub">Lisans ve yüksek lisans için uluslararası öğrenci ücret aralıkları</p>
+    <p class="art-prose">Eğitim ücretleri ülkeden ülkeye, üniversiteden üniversiteye ve programdan programa ciddi farklılıklar gösterir. Aşağıdaki rakamlar uluslararası öğrencilerin ödediği yıllık ücretlerin genel ortalamasını yansıtmaktadır.</p>
+
+    <div class="country-cards">
+      <div class="cc">
+        <div class="cc-head uk"><div class="cc-flag">🇬🇧</div><div class="cc-name">İngiltere</div></div>
+        <div class="cc-body">
+          <div class="cc-main">£11,400 – 38,000<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">/yıl</span></div>
+          <div class="cc-sub">Tıp/Hukuk gibi branşlar en üst bantta. 1 yıllık Yüksek Lisans programı maliyet avantajı sağlar.</div>
+          <div class="cc-badge"><span class="score-badge sb-red">Pahalı</span></div>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-head irl"><div class="cc-flag">🇮🇪</div><div class="cc-name">İrlanda</div></div>
+        <div class="cc-body">
+          <div class="cc-main">€10,000 – 25,000<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">/yıl</span></div>
+          <div class="cc-sub">AB üyesi olduğundan bazı AB fonu destekli burslar için başvurulabilir.</div>
+          <div class="cc-badge"><span class="score-badge sb-amber">Orta</span></div>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-head nl"><div class="cc-flag">🇳🇱</div><div class="cc-name">Hollanda</div></div>
+        <div class="cc-body">
+          <div class="cc-main">€8,000 – 20,000<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">/yıl</span></div>
+          <div class="cc-sub">Avrupa'nın en iyi ücret/kalite dengesi. İngilizce program yelpazesi çok geniş.</div>
+          <div class="cc-badge"><span class="score-badge sb-green">Uygun</span></div>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-head de"><div class="cc-flag">🇩🇪</div><div class="cc-name">Almanya</div></div>
+        <div class="cc-body">
+          <div class="cc-main">€0 – 25,000<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">/yıl</span></div>
+          <div class="cc-sub">Devlet üniversiteleri uluslararası öğrencilerden de harç almaz (~€300/dönem idari ücret). Özel üniversiteler €5k–€25k aralığında.</div>
+          <div class="cc-badge"><span class="score-badge sb-green">Çok Uygun (devlet)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bar-row" style="margin-top:24px">
+      <div class="bar-item">
+        <span class="bar-label">🇬🇧 UK</span>
+        <div class="bar-track"><div class="bar-fill" style="width:95%;background:var(--uk)"></div></div>
+        <span class="bar-val">£11k – 38k/yıl</span>
+      </div>
+      <div class="bar-item">
+        <span class="bar-label">🇮🇪 IRL</span>
+        <div class="bar-track"><div class="bar-fill" style="width:58%;background:var(--irl)"></div></div>
+        <span class="bar-val">€10k – 25k/yıl</span>
+      </div>
+      <div class="bar-item">
+        <span class="bar-label">🇳🇱 NL</span>
+        <div class="bar-track"><div class="bar-fill" style="width:42%;background:var(--nl)"></div></div>
+        <span class="bar-val">€8k – 20k/yıl</span>
+      </div>
+      <div class="bar-item">
+        <span class="bar-label">🇩🇪 DE</span>
+        <div class="bar-track"><div class="bar-fill" style="width:5%;background:var(--de)"></div></div>
+        <span class="bar-val" style="color:#059669;font-weight:800">~€0 (devlet)</span>
+      </div>
+    </div>
+    <p class="art-source">* Çubuklar tipik uluslararası öğrenci ücretinin görece maliyetini yansıtır.</p>
+
+    <div class="callout">
+      <strong>💡 Almanya Avantajı:</strong> Almanya devlet üniversitelerinde eğitim uluslararası öğrenciler için de büyük ölçüde ücretsizdir; sadece dönemlik yaklaşık €300 idari ücret ödenir. Bu durum, dört yıllık eğitim boyunca diğer destinasyonlara kıyasla <strong>onlarca bin Euro</strong> tasarruf anlamına gelir.
+    </div>
+  </div>
+
+  <!-- ── YAŞAM MALİYETİ ─────────────────────────────────────── -->
+  <div class="art-section" id="yasam-maliyeti">
+    <h2><span class="sec-icon">🏠</span> Yaşam Maliyeti</h2>
+    <p class="sec-sub">Kira, yiyecek, ulaşım dahil aylık ortalama öğrenci harcaması</p>
+    <p class="art-prose">Eğitim ücretinden sonra en önemli maliyet kalemi günlük yaşam giderleridir. Kira, yemek, ulaşım ve sosyal harcamalar ülkeye ve şehre göre büyük farklılıklar gösterir.</p>
+
+    <div class="country-cards">
+      <div class="cc">
+        <div class="cc-head uk"><div class="cc-flag">🇬🇧</div><div class="cc-name">İngiltere</div></div>
+        <div class="cc-body">
+          <div class="cc-main">£1,100–2,200<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">/ay</span></div>
+          <div class="cc-sub">Londra en pahalı seçenek. Kuzey şehirleri (Manchester, Sheffield) belirgin ölçüde daha uygun.</div>
+          <div class="cc-badge"><span class="score-badge sb-red">Yüksek</span></div>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-head irl"><div class="cc-flag">🇮🇪</div><div class="cc-name">İrlanda</div></div>
+        <div class="cc-body">
+          <div class="cc-main">€1,400–2,200<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">/ay</span></div>
+          <div class="cc-sub">Dublin konut krizi tüm Avrupa'nın gündeminde. Diğer şehirler daha uygun fakat seçenek sınırlı.</div>
+          <div class="cc-badge"><span class="score-badge sb-red">Yüksek (Dublin)</span></div>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-head nl"><div class="cc-flag">🇳🇱</div><div class="cc-name">Hollanda</div></div>
+        <div class="cc-body">
+          <div class="cc-main">€1,000–1,500<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">/ay</span></div>
+          <div class="cc-sub">Amsterdam pahalı; Eindhoven, Tilburg, Maastricht önemli ölçüde daha uygun.</div>
+          <div class="cc-badge"><span class="score-badge sb-amber">Orta</span></div>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-head de"><div class="cc-flag">🇩🇪</div><div class="cc-name">Almanya</div></div>
+        <div class="cc-body">
+          <div class="cc-main">€850–1,200<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">/ay</span></div>
+          <div class="cc-sub">Avrupa'nın en uygun fiyatlı büyük ekonomisi. Öğrenci yurtları ve ucuz toplu ulaşım büyük avantaj.</div>
+          <div class="cc-badge"><span class="score-badge sb-green">Uygun</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bar-row" style="margin-top:24px">
+      <div class="bar-item">
+        <span class="bar-label">🇬🇧 UK</span>
+        <div class="bar-track"><div class="bar-fill" style="width:90%;background:var(--uk)"></div></div>
+        <span class="bar-val">£1,100–2,200/ay</span>
+      </div>
+      <div class="bar-item">
+        <span class="bar-label">🇮🇪 IRL</span>
+        <div class="bar-track"><div class="bar-fill" style="width:85%;background:var(--irl)"></div></div>
+        <span class="bar-val">€1,400–2,200/ay</span>
+      </div>
+      <div class="bar-item">
+        <span class="bar-label">🇳🇱 NL</span>
+        <div class="bar-track"><div class="bar-fill" style="width:58%;background:var(--nl)"></div></div>
+        <span class="bar-val">€1,000–1,500/ay</span>
+      </div>
+      <div class="bar-item">
+        <span class="bar-label">🇩🇪 DE</span>
+        <div class="bar-track"><div class="bar-fill" style="width:44%;background:var(--de)"></div></div>
+        <span class="bar-val" style="color:#059669;font-weight:800">€850–1,200/ay</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MEZUNİYET SONRASI ───────────────────────────────────── -->
+  <div class="art-section" id="mezuniyet-sonrasi">
+    <h2><span class="sec-icon">💼</span> Mezuniyet Sonrası Çalışma Hakları</h2>
+    <p class="sec-sub">Her ülkenin uluslararası mezunlara tanıdığı iş arama ve çalışma süresi</p>
+    <p class="art-prose">Mezuniyet sonrası elde edeceğiniz çalışma vizesi, yatırımınızın geri dönüşünü doğrudan etkiler. İş deneyimi kazanmak hem kariyer hem de ilerideki oturma izni sürecinin kritik adımıdır.</p>
+
+    <div class="country-cards">
+      <div class="cc">
+        <div class="cc-head uk"><div class="cc-flag">🇬🇧</div><div class="cc-name">İngiltere</div></div>
+        <div class="cc-body">
+          <div class="cc-main">Graduate Route<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">2 yıl (PhD: 3 yıl)</span></div>
+          <div class="cc-sub">İş bulma zorunluluğu yok. Mezuniyetin hemen ardından başvurulur. İngiltere'de herhangi bir işte çalışılabilir.</div>
+          <div class="cc-badge"><span class="score-badge sb-blue">2 yıl</span></div>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-head irl"><div class="cc-flag">🇮🇪</div><div class="cc-name">İrlanda</div></div>
+        <div class="cc-body">
+          <div class="cc-main">Third Level Graduate<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">1–2 yıl</span></div>
+          <div class="cc-sub">Lisans mezununa 1 yıl, yüksek lisans/doktora mezununa 2 yıl. AB içinde iş arama kolaylığı var.</div>
+          <div class="cc-badge"><span class="score-badge sb-amber">1–2 yıl</span></div>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-head nl"><div class="cc-flag">🇳🇱</div><div class="cc-name">Hollanda</div></div>
+        <div class="cc-body">
+          <div class="cc-main">Zoekjaar Vizesi<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">1 yıl</span></div>
+          <div class="cc-sub">1 yıl iş arama vizesinin ardından Highly Skilled Migrant (HSM) statüsüyle çalışmaya devam edilebilir.</div>
+          <div class="cc-badge"><span class="score-badge sb-amber">1 yıl + HSM</span></div>
+        </div>
+      </div>
+      <div class="cc">
+        <div class="cc-head de"><div class="cc-flag">🇩🇪</div><div class="cc-name">Almanya</div></div>
+        <div class="cc-body">
+          <div class="cc-main">İş Arama Vizesi<br><span style="font-size:.75rem;font-weight:400;color:var(--muted)">18 ay</span></div>
+          <div class="cc-sub">18 ay içinde meslekle ilgili bir iş bulunması gerekir. Güçlü sanayi ve teknoloji sektörü iş bulmayı kolaylaştırır.</div>
+          <div class="cc-badge"><span class="score-badge sb-blue">18 ay</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>💡 Hollanda Avantajı:</strong> Zoekjaar vizesi bittikten sonra Highly Skilled Migrant (HSM) statüsü ile çalışmak oldukça hızlı. HSM için belirli bir maaş eşiği yeterli; iş bulduktan sonra uzun vadeli oturma iznine geçiş kolaylaşıyor.
+    </div>
+  </div>
+
+  <!-- ── OTURMA İZNİ ────────────────────────────────────────── -->
+  <div class="art-section" id="oturma-izni">
+    <h2><span class="sec-icon">🏡</span> Oturma İzni & Vatandaşlık Yolu</h2>
+    <p class="sec-sub">Mezuniyetten kalıcı oturma iznine ve vatandaşlığa giden süreçler</p>
+    <p class="art-prose">Uzun vadede bir ülkede kalmayı düşünüyorsanız oturma izni ve vatandaşlık süreçleri kritik. Aşağıda her ülkedeki tipik yol haritası özetlenmiştir.</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-flag">🇬🇧</div>
+        <div>
+          <div class="tl-name">İngiltere — 6 yılda vatandaşlık</div>
+          <div class="tl-steps">
+            <div class="tl-step-box">Graduate Route<br><small>2 yıl</small></div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Skilled Worker Vizesi</div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">ILR (5. yılda)</div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Vatandaşlık (6. yılda)</div>
+          </div>
+          <div class="tl-note">Skilled Worker vizesi için sponsorlu iş teklifi ve yeterli maaş eşiği (genellikle £38,700+) gereklidir.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-flag">🇮🇪</div>
+        <div>
+          <div class="tl-name">İrlanda — 5+1 yılda vatandaşlık</div>
+          <div class="tl-steps">
+            <div class="tl-step-box">Graduate Programme<br><small>1–2 yıl</small></div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Critical Skills / General Employment İzni</div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Uzun Dönemli Oturma (5. yılda)</div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Vatandaşlık</div>
+          </div>
+          <div class="tl-note">Critical Skills listesindeki meslekler (IT, mühendislik, sağlık) için hızlı işlem yapılır. AB pasaportu kapıyı açar.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-flag">🇳🇱</div>
+        <div>
+          <div class="tl-name">Hollanda — 5 yılda kalıcı oturma</div>
+          <div class="tl-steps">
+            <div class="tl-step-box">Zoekjaar<br><small>1 yıl</small></div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Highly Skilled Migrant (HSM)</div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Kalıcı Oturma (5. yılda)</div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Vatandaşlık</div>
+          </div>
+          <div class="tl-note">HSM statüsü için asgari maaş eşiği uygulanır (2024: 35 yaş altı ~€4,171/ay). Avrupa'nın en modern göçmenlik sistemlerinden biri.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-flag">🇩🇪</div>
+        <div>
+          <div class="tl-name">Almanya — 4 yılda oturma (Mavi Kart ile 21 ay)</div>
+          <div class="tl-steps">
+            <div class="tl-step-box">İş Arama Vizesi<br><small>18 ay</small></div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Fachkraft Vizesi / Mavi Kart AB</div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Niederlassungserlaubnis (4 yılda)</div>
+            <div class="tl-arr">→</div>
+            <div class="tl-step-box">Vatandaşlık (5 yıl+)</div>
+          </div>
+          <div class="tl-note">2023'te güncellenen Göçmenlik Yasası ile nitelikli işgücüne yönelik süreçler kolaylaştırıldı. EU Mavi Kart sahipleri 21 ayda kalıcı oturma iznine başvurabilir.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── AVANTAJLAR / DEZAVANTAJLAR ────────────────────────── -->
+  <div class="art-section" id="avantajlar">
+    <h2><span class="sec-icon">⚖️</span> Artıları ve Eksileri</h2>
+    <p class="sec-sub">Her destinasyonun güçlü ve zayıf yönleri özetinde</p>
+
+    <div class="table-scroll">
+      <table class="cmp-table">
+        <thead>
+          <tr>
+            <th class="row-label">Ülke</th>
+            <th style="background:rgba(16,185,129,.1);color:#059669;font-weight:800;min-width:200px">✅ Güçlü Yönler</th>
+            <th style="background:rgba(239,68,68,.08);color:#dc2626;font-weight:800;min-width:200px">⚠️ Dikkat Edilmesi Gerekenler</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-label" style="font-weight:800;font-size:.88rem">🇬🇧 İngiltere</td>
+            <td style="text-align:left;font-size:.8rem">Oxford, Cambridge, Imperial gibi dünya sıralama liderleri · 1 yıllık Yüksek Lisans maliyeti düşürür · İngilizce · Küresel mezun ağı</td>
+            <td style="text-align:left;font-size:.8rem">Yüksek harçlar ve Londra'da yüksek kira · Vize ücreti ve IHS sağlık sigortası ek maliyet · Brexit sonrası AB'ye erişim yok</td>
+          </tr>
+          <tr>
+            <td class="row-label" style="font-weight:800;font-size:.88rem">🇮🇪 İrlanda</td>
+            <td style="text-align:left;font-size:.8rem">AB pasaportu imkânı · Google, Meta, Apple Avrupa merkezi · İngilizce · AB içinde serbest dolaşım hakkı</td>
+            <td style="text-align:left;font-size:.8rem">Dublin'de konut krizi ciddi · Görece küçük iş piyasası · Yaşam maliyeti yüksek</td>
+          </tr>
+          <tr>
+            <td class="row-label" style="font-weight:800;font-size:.88rem">🇳🇱 Hollanda</td>
+            <td style="text-align:left;font-size:.8rem">İngilizce programlarda Avrupa lideri · Güçlü teknoloji/finans sektörü · AB içi hareket · HSM hızlı yolu · Liberal ve çok kültürlü</td>
+            <td style="text-align:left;font-size:.8rem">Harçlar AB üyelerine kıyasla yüksek · Amsterdam kira maliyeti çarpıcı · Hollandaca bilmek kariyer için avantaj</td>
+          </tr>
+          <tr>
+            <td class="row-label" style="font-weight:800;font-size:.88rem">🇩🇪 Almanya</td>
+            <td style="text-align:left;font-size:.8rem">Büyük ölçüde ücretsiz eğitim · En ucuz yaşam maliyeti · Güçlü sanayii/mühendislik sektörü · Mavi Kart AB · 2023 Göçmenlik Kanunu</td>
+            <td style="text-align:left;font-size:.8rem">Çoğu iş ilanı Almanca gerektirir · Dil eğitimi ek yatırım ister · Bürokrasi yavaş olabilir · Sosyal entegrasyon zaman alır</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── KARAR REHBERİ ──────────────────────────────────────── -->
+  <div class="art-section" id="karar-rehberi">
+    <h2><span class="sec-icon">🎯</span> Sana En Uygun Hangisi?</h2>
+    <p class="sec-sub">Profilinize göre en uygun destinasyon önerisi</p>
+
+    <div class="verdict-grid">
+      <div class="verdict-card">
+        <div class="verdict-tag">💰 Bütçe Önceliğin Varsa</div>
+        <div class="verdict-winner">🇩🇪 Almanya</div>
+        <div class="verdict-why">Devlet üniversiteleri büyük ölçüde ücretsiz, yaşam maliyeti Avrupa'nın en düşüğü. Almanca öğrenmek için motivasyonunuz varsa STEM alanlarında en güçlü seçenek.</div>
+      </div>
+      <div class="verdict-card">
+        <div class="verdict-tag">🏆 Prestij & Global Ağ İçin</div>
+        <div class="verdict-winner">🇬🇧 İngiltere</div>
+        <div class="verdict-why">Dünya sıralamalarında zirvede yer alan üniversiteler, tanınan diplomalar ve güçlü mezun ağları. 1 yıllık Yüksek Lisans programları toplam maliyeti görece düşürür.</div>
+      </div>
+      <div class="verdict-card">
+        <div class="verdict-tag">💻 Teknoloji Kariyeri & AB Pasaportu</div>
+        <div class="verdict-winner">🇮🇪 İrlanda</div>
+        <div class="verdict-why">Google, Meta, LinkedIn, Apple'ın Avrupa genel merkezleri Dublin'de. İngilizce, AB vatandaşlığı imkânı ve teknoloji sektöründe güçlü iş yerleşim oranı.</div>
+      </div>
+      <div class="verdict-card">
+        <div class="verdict-tag">⚡ Hız & Kalite Dengesi</div>
+        <div class="verdict-winner">🇳🇱 Hollanda</div>
+        <div class="verdict-why">İngilizce program yelpazesinde Avrupa lideri, makul harçlar, hızlı HSM vizesi ve canlı şehir hayatı. Almanca öğrenmek istemiyorsanız en iyi bütçe/kalite dengesi.</div>
+      </div>
+      <div class="verdict-card">
+        <div class="verdict-tag">🔧 Mühendislik & Endüstri</div>
+        <div class="verdict-winner">🇩🇪 Almanya</div>
+        <div class="verdict-why">Volkswagen, BMW, Siemens, SAP, Bosch — dünyanın en güçlü mühendislik sektörü Almanya'da. Staj imkânları ve ücretsiz eğitimin birleşimi STEM öğrencileri için benzersiz.</div>
+      </div>
+      <div class="verdict-card">
+        <div class="verdict-tag">🌍 AB Erişimi & Esneklik</div>
+        <div class="verdict-winner">🇮🇪 veya 🇳🇱</div>
+        <div class="verdict-why">Her iki ülke de AB üyesi; mezuniyet sonrası tüm AB ülkelerinde çalışma kapısı açık. İrlanda AB pasaportu, Hollanda ise HSM yoluyla daha hızlı statü sunuyor.</div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:32px">
+      <strong>📌 Unutmayın:</strong> Bu karşılaştırma genel eğilimleri yansıtır. Üniversite, program ve şehir seçimi rakamları önemli ölçüde değiştirebilir. PANELEDU'nun danışman ekibi, profilinize özel kişiselleştirilmiş bir yol haritası oluşturmanıza yardımcı olabilir.
+    </div>
+
+    <div style="text-align:center;margin-top:40px;padding:36px 24px;background:var(--grad-soft);border-radius:16px;border:1px solid rgba(99,102,241,.18)">
+      <div style="font-size:1.2rem;font-weight:800;color:var(--text);margin-bottom:8px">Bu ülkelerdeki programları inceleyin</div>
+      <div style="font-size:.88rem;color:var(--muted);margin-bottom:22px">Binlerce program, karşılaştırmalı ücretler ve uygunluk kontrolü tek platformda.</div>
+      <a href="/programs" class="btn-grad" style="display:inline-flex">
+        <i class="bi bi-search"></i> Programları Keşfet
+      </a>
+    </div>
+  </div>
+
+</div><!-- /art-body -->
+
+<script>
+(function () {
+  var sections = document.querySelectorAll('.art-section[id]');
+  var navLinks = document.querySelectorAll('.art-sidenav-inner a');
+  if (!sections.length || !navLinks.length) return;
+  function onScroll() {
+    var scrollY = window.scrollY + 120;
+    var current = '';
+    sections.forEach(function (s) { if (s.offsetTop <= scrollY) current = s.id; });
+    navLinks.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+
+<script src="/js/chrome.js"></script>
+</body>
+</html>
