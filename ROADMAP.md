@@ -835,6 +835,148 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     `?id=230` (Charles University FFM), `?id=233` (CTU), `?id=235`
     (Ostrava TU), `?id=182` (Palacky), `?id=236` (VSE), `?id=234` (TUL).
 
+- **source_url rollout, batch 8 — Germany (non-SRH), 18 private/international
+  universities (2026-09-30)**: third country-based batch — covered every
+  German private/international university in the catalog other than the 9
+  SRH University campuses (batch 5, separate agent) and pathway-provider
+  colleges already covered elsewhere. Verified counts via the admin API
+  before starting: exactly 400 rows across the 18 target entities, all
+  `source_url` unset. **Overall: 355/400 (88.8%)**.
+  - **Berlin International University of Applied Science (11) — 11/11
+    (100%) and Whitecliffe University of Applied Sciences (11) — 11/11
+    (100%)**: solved together — `berlin-international.de` 301-redirects to
+    `whitecliffe.de` (a straight rebrand, confirmed by fetching the live
+    site), and both catalog entities carry an *identical* 11-program list
+    with sequential-but-separate DB ids, so both point at the same
+    `whitecliffe.de/en/programs/<slug>/` pages.
+  - **XU Exponential University (6) — 6/6 (100%)**, **Munich University of
+    Digital Technologies/MUDT (6) — 6/6 (100%)**, **GISMA University Berlin
+    (11) — 11/11 (100%)**, **Fresenius University of Applied Sciences (25)
+    — 25/25 (100%)**, **Lancaster University Leipzig (15) — 15/15 (100%)**:
+    all fully resolved via each institution's own program-listing pages
+    (`xu-university.com`, `uni-munich.de`, `gisma.com/programmes`,
+    `hs-fresenius.com/study-programs/`, `lancasterleipzig.de/study/`).
+    Fresenius notably splits its fashion/design programmes onto a sister
+    domain, `amdnet.com` (AMD Akademie Mode & Design, same corporate group)
+    — confirmed via redirect chains from the Fresenius pages themselves,
+    not guessed. Lancaster's shared Foundation and Pre-Master's pages each
+    legitimately cover both a Business and a Computer Science DB row (one
+    page, two tracks documented in its own body text).
+  - **Constructor University (26) — 24/26 (92%)**: full bachelor's +
+    master's catalogue harvested in two page-fetches from
+    `constructor.university/programs/{undergraduate,graduate}-education`.
+    Left unset: "BSc Data Science and Software Development" and "MA
+    International Relations" — both older/legacy DB names with no current
+    page of that exact title (the live MA in IR is a joint program with
+    University of Bremen, not on Constructor's own program listing).
+  - **University of Europe for Applied Sciences/UE Germany (55) — 53/55
+    (96%)**: resolved almost the whole catalog in one shot from the site's
+    own `programme-sitemap.xml` (WordPress/Yoast), which lists every
+    bachelor/master/MBA/pre-course page directly — far faster than
+    per-program search. "Corporate Management MSc" only has a live page in
+    German (`/de/studiengaenge/master/corporate-management`), used anyway
+    since it's still the program's own specific page. Left unset: "Creative
+    Computing MA" (no matching page found) and "Digital Product Management
+    BA" (its guessed URL redirects to the generic `/programmes` listing —
+    the known pitfall, caught and rejected).
+  - **Berlin School of Business and Innovation/BSBI (57) — 55/57 (96%)**,
+    the largest single institution in this project so far: same
+    sitemap-first approach on `berlinsbi.com/programme-sitemap.xml` (68
+    program URLs enumerated directly). Several catalog rows only differ by
+    academic partner (UCA, Uninettuno, Chichester, Roehampton, Concordia
+    University Chicago) sharing near-identical names — resolved by
+    following each partner-specific redirect to its own distinct page
+    (e.g. `global-mba-uninettuno` → `global-mba-hamburg-chichester`,
+    confirming a partnership rebrand) rather than assuming one generic
+    page covers all partners. Left unset: "BA Economics and Business
+    Administration" (its URL redirects into a broken `/programmes/
+    licenciaturas/` path that itself 404s) and "Fashion & Luxury Brand
+    Management Professional Master (BSBI)" (sitemap-listed URL 404s
+    live despite being indexed).
+  - **Macromedia University (29) — 26/29 (90%)**: resolved via the site's
+    bachelor/master "all-courses" listing pages plus a few targeted
+    searches for programs outside that index (Acting, Design B.A.,
+    Management B.A.). Left unset: "Acting B.A." (its own cluster page now
+    lists only Filmmaking — the program appears discontinued), "Design
+    Management MA" and "UI/UX Design B.Sc." (both now 404/merged into
+    other specializations, confirmed via direct fetch of the live cluster
+    pages, not just search snippets).
+  - **MDH University of Applied Sciences (21) — 18/21 (86%)**: MDH is
+    Mediadesign Hochschule (confirmed by the exact program-name match: Art
+    Market Management, Digital Film Design, Legal Tech, etc.) —
+    `mediadesign.de/en/{bachelor,master}/` listing plus targeted searches
+    for its Information Technology specialisation tracks. Left unset: the
+    IT bachelor's "Artificial Intelligence and Data Analytics" and
+    "Network Engineering and Cyber Security" tracks and the IT master's
+    "Front-end Development and Usability" track — all three now redirect
+    to the generic IT program page rather than a specific track page.
+  - **Munich Business School (17) — 16/17 (94%)**: `munich-business-school.
+    de`'s Master in International Business page documents 7 named
+    specialisation sub-pages (Luxury Management, Corporate Finance, Global
+    Family Business, etc.) each with its own URL, matched directly. Left
+    unset: "Master International Business | Finance" — an old-style
+    legacy DB name that's genuinely ambiguous between two current, already-
+    used pages (the standalone "Master in Finance" and the "Corporate
+    Finance" specialisation), not assumed to be either one.
+  - **Schiller International University - Heidelberg (14) — 13/14 (93%)**:
+    `schiller.edu/programs/` lists every bachelor/master/MBA program
+    directly. Left unset: "BSc Applied Mathematics and Artificial
+    Intelligence" — its guessed URL 301-redirects to the unrelated
+    Computer Science program page (the known "redirects to a different
+    real page" pitfall), and third-party listings note this program is
+    only offered at Schiller's Madrid/Paris campuses, not Heidelberg.
+  - **EU Business School - Munich Campus (38) — 34/38 (90%)**: the largest
+    remaining gap category was its many "MBA in X" pathway programs
+    (Dublin Business School / UVic-UCC partner degrees) — most resolved
+    via `euruni.edu/en/MBA/<slug>-Munich.html` pages found through the
+    school's own Bachelor's/Master's/MBA listing pages. Left unset (4):
+    "MBA in Global Banking & Finance", "MBA in International Business",
+    "MBA in International Marketing" and "MBA in Digital Business" — all
+    four now redirect to the exact same generic `Scripts/Index.aspx?
+    id=24005` fallback page (confirmed identical target across all four,
+    the clearest case of the "redirects to a generic listing" pitfall
+    seen in this project).
+  - **IU - International University of Applied Sciences (32) — 19/32
+    (59%)**, the weakest coverage in this batch: `iu.org`'s current
+    on-campus catalogue (read directly from its own `sitemap.xml`, since
+    the rendered pages return an oversized `Link:` preload header that
+    breaks normal fetching) has been heavily consolidated into far fewer
+    named programs than the DB reflects — e.g. the DB's 8 separate MBA
+    specialisations beyond the ones still offered (Big Data Management,
+    E-Sports Management, Innovation & Entrepreneurship, Salesforce & Sales
+    Management, International Marketing) and the standalone Cyber Security
+    *bachelor's* (its guessed URL now redirects to the Cyber Security
+    *master's* page — a cross-level pitfall variant, caught and rejected)
+    no longer exist as distinct current offerings. Left unset accordingly
+    rather than mapping to a mismatched surviving page.
+  - **Cologne Business School (19) — 9/19 (47%)**, the other weak point:
+    `cbs.de` migrated from an older URL structure
+    (`/en/courses/{bachelor,master}/...`) to a newer one
+    (`/en/{bachelors,masters}-degree-germany/...`), and most of the old
+    slugs now 301-redirect to a *generic* listing page rather than their
+    new specific equivalent — caught via raw redirect-target inspection,
+    not assumed fixed by a 200 status. Only programs findable directly on
+    the new site structure were saved.
+  - **PFH Private University of Applied Sciences (7) — 3/7 (43%)**: the
+    weakest coverage in this batch. PFH's current English master's listing
+    (`pfh.de/en/study-program-degree/master`) shows only General
+    Management, MBA and UX Management & Design — its four Stade-campus
+    engineering programs (Digitalization and Automation, Industrial
+    Engineering, Lightweight Engineering & Composites, New Mobility and
+    Modern Drive Concepts) all now redirect to the generic master listing
+    page on both the English and German site, suggesting that campus's
+    programs were discontinued or restructured; left unset rather than
+    guessed.
+  - Live test links: `https://paneledu.com/university?id=361` (Berlin
+    International), `?id=363` (Whitecliffe), `?id=46` (BSBI), `?id=125`
+    (Cologne Business School), `?id=47` (Constructor University), `?id=48`
+    (EU Business School Munich), `?id=365` (Fresenius), `?id=124` (GISMA),
+    `?id=181` (IU), `?id=49` (Lancaster University Leipzig), `?id=105`
+    (Macromedia University), `?id=340` (MDH), `?id=176` (Munich Business
+    School), `?id=316` (MUDT), `?id=227` (PFH), `?id=303` (Schiller
+    International Heidelberg), `?id=143` (University of Europe/UE
+    Germany), `?id=121` (XU Exponential University).
+
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
 - University logos (upload/link + display on cards) ✅ DONE (2026-07-21)
