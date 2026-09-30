@@ -551,6 +551,71 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   project's backlog of large ranked universities queued for per-program
   `source_url` coverage.
 
+- **source_url rollout, batch 4 — pathway-provider colleges (2026-09-30)**:
+  switched focus from direct-entry universities to the **Navitas, Kaplan
+  and INTO pathway/foundation colleges** in the catalog (Study Group has
+  no separately-named entity in our catalog currently — its partner
+  universities, e.g. Aberdeen/Surrey/Sussex, are only present as the real
+  direct-entry university, already covered above). Identified the correct
+  set first by cross-referencing our 335 entity names against each
+  provider's own official partner-college list (`navitas.com/study/
+  colleges-campuses`, `kaplanpathways.com`, `intostudy.com`) rather than
+  guessing from name patterns — this caught that "University of Aberdeen"
+  and "University of Sussex" in our catalog are the real universities
+  (confirmed: genuine BSc/MSc-named degrees matching the university's own
+  site), not Study Group's foundation-year catalog, so no cross-contamination
+  there.
+  - **19 Navitas colleges** (UK: Birmingham City International College,
+    Brunel Pathway College, Hertfordshire, International College Portsmouth,
+    Robert Gordon, Keele, Plymouth; Canada: Fraser International College
+    (SFU), Manitoba, Toronto Metropolitan, ULethbridge Calgary, Wilfrid
+    Laurier; Netherlands: Twente Pathway College; Australia: Deakin
+    College; plus ARU College, already 100% from a prior session) — each
+    college's own course-listing page was harvested directly (all
+    fetchable, no WAF blocks) and matched to our DB's Foundation/First-
+    Year/Pre-Master's rows by subject, since these colleges group programs
+    by broad subject area rather than by individual named degree.
+    **Fraser International College is the one exception**: entity name
+    says "(SFU)" but roughly 55 of its 71 DB rows turned out to be **real
+    Simon Fraser University major names** (Accounting, Economics,
+    Psychology, etc.) rather than FIC's own pathway pages — SFU confirmed
+    these are BBA/degree *concentrations*, most without a standalone
+    admissions page, so they were linked to SFU's own official A-Z program
+    list (`sfu.ca/students/admission/programs/a-z/...`) instead of FIC's
+    site, while FIC's actual ~16 "University Transfer Program" rows went to
+    fraseric.ca. One Navitas partnership is confirmed **discontinued**:
+    Leicester Global Study Centre's Navitas partnership ended September
+    2024 — no live page exists anywhere for its 5 DB rows, left unset
+    rather than link an archived/dead page.
+  - **Kaplan Business School** (Australia, a Kaplan-owned school in its own
+    right, not a pathway into another university) — 28/28 (100%), via
+    Kaplan's own course directory page giving direct `/node/NNNN` links
+    for every program, each verified live.
+  - **INTO London** and **INTO Manchester** — INTO's own course pages
+    live on `intostudy.com` under a university-slug path; discovered
+    mid-task that INTO Manchester's granular old foundation names (8 DB
+    rows: Aerospace/Chemical/Civil Engineering, Biosciences, Humanities
+    and Social Sciences, Maths and Computer Science, Mechanical and
+    Electrical Engineering, Pharmacy, Physical and Natural Sciences,
+    Psychology) are still individually live today, just filed under the
+    `the-university-of-manchester` slug rather than `into-manchester` —
+    8/8 matched exactly once that was found. INTO London's older
+    duration-variant rows (standard/extended terms of the same course)
+    correctly share one URL each, matching this project's established
+    precedent for that pattern.
+  - **Overall for this batch: 287/308 (93%)** across all Navitas + Kaplan
+    + INTO entities. Left unset: Leicester (5, partnership ended), TMUIC's
+    Hospitality/Tourism and Professional Communication (2, no current
+    page found), Brunel's Design foundation (1, no current page found),
+    and 11 FIC "Bachelor Programs" rows too loosely defined to confidently
+    match a specific SFU page (Behavioral Sciences, Computer Graphics and
+    Multimedia, Environmental Health and Toxicology, Health Education,
+    International Health, Media and Culture, Nutrition, Political Economy
+    and Policy, Public Health Program Management, Visual Culture and
+    Performance Studies, Technology and Society — this last one's search-
+    indexed URL now 404s, a stale-index case like earlier universities in
+    this project).
+
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
 - University logos (upload/link + display on cards) ✅ DONE (2026-07-21)
