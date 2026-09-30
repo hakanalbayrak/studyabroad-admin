@@ -677,6 +677,92 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     (Hamburg), `?id=45` (Heidelberg), `?id=321` (Leipzig), `?id=320`
     (Munich), `?id=287` (Stuttgart).
 
+- **source_url rollout, batch 6 — Hungary, all universities (2026-09-30)**:
+  first **country-based** batch rather than a named-university or org-cluster
+  one — covered every Hungarian university in the catalog other than
+  University of Szeged (already 100% from a prior session). Verified counts
+  via the admin API before starting: 294 Hungary rows total, 237 across the
+  9 target universities, all `source_url` unset. **Overall: 220/237 (93%)**.
+  - **Budapest University of Economics and Business** (9, id 366) — 9/9
+    (100%), **Hungarian University of Sports Science** (5, id 318) — 5/5
+    (100%), **McDaniel College Budapest** (8, id 91) — 8/8 (100%), **Obuda
+    University** (22, id 364) — 22/22 (100%): each university's own English
+    site was reachable (not bot-blocked) and had either a per-program page
+    or, for Obuda specifically, one unified long-form page per degree level
+    (`/undergraduate-programs/`, `/graduate-programs/`) that lists every
+    programme inline with no separate per-slug URLs — used as-is since it's
+    still each program's genuine, specific description on the university's
+    own site, not a generic listing page. McDaniel's three Pre-Medical DB
+    rows (Extended/Intensive/Year) all point at one page,
+    `mcdaniel.hu/home/pre-med-program/`, which explicitly documents all
+    three track variants in its own body text.
+  - **Budapest Corvinus University** (41, id 173) — 38/41 (93%): the live
+    `uni-corvinus.hu` site is bilingual via `?lang=en` on the same URL
+    (confirmed by title-checking each page, e.g. "Nemzetközi gazdálkodás"
+    →"International Business"). A single fetch of the school's own masters-
+    programme directory page yielded direct bachelor's/master's slugs for
+    36 of 41 rows in one shot; the remaining 5 (two MBAs, Diversity &
+    Inclusion Management MSc, Preparatory Programme) were resolved
+    individually via WebSearch. Left unset: "MSc in General Management" (an
+    older/duplicate-looking DB row with no live page of that exact name —
+    the current "MSc Management" page never uses "General Management" as an
+    alt title, so not assumed to be the same program) and "Full-time MBA" /
+    "MSc in Diversity and Inclusion Management" (both had search-indexed
+    URLs that now redirect to unrelated pages — the "redirects to a generic
+    page" pitfall — confirmed via raw HTML, not saved).
+  - **Budapest Metropolitan University** (34, id 170) — 31/34 (91%): the
+    site's `/en/kepzesek` listing is a Next.js page that only server-renders
+    ~12 items at a time, so the full catalog was reconstructed by querying
+    its own filter combinations (`?kepzesi_szint=<alapkepzes|mesterkepzes>
+    &kepzesi_terulet=<uzlet|muveszet|turizmus|kommunikacio>`) across both
+    degree levels and all 4 subject areas. **Caught the known pitfall
+    directly**: several plausible guessed slugs (e.g.
+    `human-resource-counselling-ma`, `business-development-msc`) all
+    returned HTTP 200 but were confirmed to be an identical ~117KB soft-404
+    React shell (checked via response byte-size, not just status code) —
+    left unset rather than saved. One shared preparatory-programs hub page
+    (`/en/preparatory-programs`) legitimately covers 5 DB rows (English
+    Preparatory Program, Intensive Preparatory Program, Pre-Master for
+    Business/Communication, Professional Foundation for Art/Business
+    Programs) since its own body text has a distinct section for each.
+  - **International Business School (IBS) Budapest** (28, id 172) — 22/28
+    (79%): full bachelor's + postgraduate catalogs harvested directly from
+    `ibs-b.hu`'s own programme-listing pages. Notable finding: DB rows named
+    "MSc in Strategic International Management with Finance/Marketing/AI
+    and Cybersecurity" turned out to correspond to pages whose own URL slugs
+    read differently (`msc-in-strategic-finance`, `msc-in-strategic-
+    marketing`) — confirmed via each page's `og:title` meta tag, which does
+    read "MSc in Strategic International Management with Finance" etc.,
+    matching the DB exactly even though the URL doesn't. Left unset (6):
+    MBA in Strategic Data-Driven Management, MSc Business Administration and
+    Management, MSc International Business Economics, MSc Strategic Human
+    Resource Management, and the "with Human Resource Management" / "with
+    Hospitality" specialisations of Strategic International Management —
+    all of these are referenced by name in the site's own newsletter-signup
+    checkbox list (confirming the programs exist) but every guessed/
+    search-indexed URL for them returns a genuine 404, not a live page.
+  - **Pecs University** (89, id 174) — 84/89 (94%), by far the largest
+    university in this batch: `international.pte.hu/study-programs/<slug>`
+    resolved almost the whole catalog from one WebFetch of the site's own
+    full program-directory page, which lists Bachelor's, Master's, one-tier
+    and doctoral programmes with direct links. Left unset (5): "BA Classical
+    Music" (the DB name is a generic label — the actual site only has
+    instrument-specific pages: Piano/Guitar/Flute/Violin/Viola — no single
+    page it unambiguously maps to), and BSc Electrical Engineering, BSc
+    Mathematics, MSc Applied Mathematics, and MSc Nursing APRN (Emergency
+    Care) — all four have a real, findable URL slug on the site, but every
+    one of them currently serves an actual "Access denied" page (HTTP 403,
+    confirmed by title-checking the raw response, not just the status code)
+    rather than a soft-404 — i.e. genuinely unpublished/restricted pages,
+    not guessable.
+  - **University of Veterinary Medicine, Budapest** (1, id 90) — 1/1 (100%):
+    `univet.hu/en/education/undergraduate-program/`, confirmed by title and
+    body content.
+  - Live test links: `https://paneledu.com/university?id=173` (Corvinus),
+    `?id=170` (Metropolitan), `?id=366` (BGE), `?id=318` (Sports Science),
+    `?id=172` (IBS), `?id=91` (McDaniel), `?id=364` (Obuda), `?id=174`
+    (Pecs), `?id=90` (Veterinary Medicine).
+
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
 - University logos (upload/link + display on cards) ✅ DONE (2026-07-21)
