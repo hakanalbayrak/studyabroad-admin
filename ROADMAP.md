@@ -1022,6 +1022,13 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
   entities. A JSON backup of the deleted program rows was kept in the
   session scratchpad only (not in git). Remaining SRH campuses: Berlin,
   Dresden, Heidelberg, Leipzig.
+- **Unmatched legacy rows deactivated (2026-10-04)**: on the owner's
+  instruction, the 21 IU (11) and Cologne Business School (10) programs
+  with no verifiable current page were set `status='inactive'` (not
+  deleted) so they no longer show publicly; reactivate any of them from
+  the admin panel if a real page turns up. Both institutions now have
+  every *active* program linked (IU 21/21, CBS 9/9, PFH 7/7). Row ids/names
+  kept in the session scratchpad only.
 - **Orbit 3D view fixed (2026-10-04)**: no code change — the Google Cloud
   project behind the key needed (1) Map Tiles API enabled, billing linked,
   and (2) Map Tiles API added to the key's API restrictions. Verified with
