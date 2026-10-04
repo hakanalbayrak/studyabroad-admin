@@ -976,6 +976,40 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     School), `?id=316` (MUDT), `?id=227` (PFH), `?id=303` (Schiller
     International Heidelberg), `?id=143` (University of Europe/UE
     Germany), `?id=121` (XU Exponential University).
+  - **Follow-up (2026-10-04) — IU, CBS, PFH re-pass; overall now 361/400
+    (90.3%)**: only previously-empty rows touched, every URL checked by
+    final-destination title/h1 (a 200 alone not trusted).
+    - **PFH — 7/7 (100%)**: the four Stade/Göttingen engineering masters
+      do have live pages, just not under `/study-program-degree/` (those
+      slugs redirect to the generic master listing, which is why the first
+      pass missed them) but as PFH's own landing pages
+      `pfh.de/en/lp/master/{digitalization-and-automation,industrial-
+      engineering,lightweight-engineering-composites,new-mobility-
+      micromobility}`; h1 names each programme exactly. "New Mobility and
+      Modern Drive Concepts" was matched to "New Mobility - Micromobility"
+      because that page's own body text still describes "modern drive
+      concepts", four semesters, taught in English.
+    - **IU — 21/32 (66%)**: added "Bachelor's Pathway" (matched to the
+      12-month English "IU Pathway Programme" bridging course into
+      bachelor's degrees, `/on-campus/preparation-programmes/`) and
+      "International Management - One Year Program" (matched to the 60
+      ECTS / 12-month variant, `/masters/international-management-on-
+      campus/60-ects/`). Left unset (11): the 5 legacy MBA specialisations
+      (404 on-campus, only third-party/online listings remain), Bachelor
+      Cyber Security (redirects to the master's page), "Business and IT"
+      and "Industrial Engineering and Management" bachelors (nothing in
+      `sitemap.xml`), "Data Science - One Year Program" (only a 120 ECTS /
+      24-month Data Science page exists, already used by the other row),
+      and "Management" / "Management - Two Years" (current page is titled
+      "International Management", not clearly the same programme).
+    - **CBS — 9/19 (47%), unchanged**: the 10 missing rows are former
+      International Business tracks (Digital/Financial/Marketing/HR/
+      International Trade/Management Consulting, bachelor + master
+      variants and Digital Transformation Management). Their old
+      `/en/courses/...` slugs now redirect to the generic bachelor listing
+      or to the parent International Business page (h1 does not name the
+      track), and the only remaining pages are already used by other rows
+      or are generic `/en/topics/...` overviews. Left unset.
 
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
