@@ -1011,6 +1011,22 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
       track), and the only remaining pages are already used by other rows
       or are generic `/en/topics/...` overviews. Left unset.
 
+- **Closed-campus removal (2026-10-04)**: on the owner's instruction, the
+  entities that no longer exist were removed from the catalog entirely
+  instead of being left linkless: SRH University campuses **Cologne,
+  Fuerth, Hamburg, Munich, Stuttgart** (closing; no new enrollment, 30
+  programs) and **Leicester Global Study Centre** (Navitas partnership
+  ended Sept 2024, 5 programs). 35 programs + 6 entities (with their
+  locations/orbit configs) deleted via the admin API after confirming no
+  application referenced them. Catalog is now 23,031 programs / 334
+  entities. A JSON backup of the deleted program rows was kept in the
+  session scratchpad only (not in git). Remaining SRH campuses: Berlin,
+  Dresden, Heidelberg, Leipzig.
+- **Orbit 3D view fixed (2026-10-04)**: no code change — the Google Cloud
+  project behind the key needed (1) Map Tiles API enabled, billing linked,
+  and (2) Map Tiles API added to the key's API restrictions. Verified with
+  a referer-matched request to `tile.googleapis.com/v1/3dtiles/root.json`.
+
 ## In progress / next
 - Programs page pagination (`/programs` still loads all at init) ✅ DONE (2026-07-21)
 - University logos (upload/link + display on cards) ✅ DONE (2026-07-21)
