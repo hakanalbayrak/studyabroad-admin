@@ -1203,6 +1203,83 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     `?id=142` (INSA), `?id=34` (TBS), `?id=221` (Ascencia), `?id=292`
     and `?id=301` (Geneva Business School).
 
+- **source_url rollout, batch 12 — France, 22 entities (2026-10-08)**:
+  verified via the admin API: 168 active rows across the 22 French
+  entities, all `source_url` unset except 1 pre-existing (CY Tech's Big
+  Data DU, left untouched). **Overall: 130/168 (77.4%)**, 129 new links.
+  Lower than earlier batches mainly because 4 of the 22 entities (15 rows)
+  belong to one school group whose websites are currently down (see below). Method: sitemaps /
+  WP-REST / listing pages harvested with curl, names matched offline, then
+  each final page's title/h1 checked by fetch; several stale slugs
+  redirected to a generic listing or to a *different* program (EDC's
+  "business consulting" slug lands on Business Development; PSB's
+  "sustainability & business development" slug lands on International
+  Management) and were rejected.
+  - **100%**: EPITA (55) 4/4 (`/en/*-program-overview/`), IMT Atlantique
+    (218) 5/5 (exact `msc/<track>` pages, only the `/fr/` paths resolve —
+    the `/en/` ones 404), Istituto Marangoni Paris (168) 19/19 (pages are
+    multi-campus, one page per course name), Rennes SB (305) 12/12, ISC
+    Paris (312) 9/9 (two bachelors use the French pages, which are the
+    only ones that exist), Sup de Luxe (311) 4/4, Vatel (219) 2/2 (the
+    pages list the "European Bachelor/MBA" degree names verbatim), TOP
+    Tech College (215) 8/8 (all from its WP REST `master-programs` page),
+    CY Tech (308) 3/3.
+  - **Toulouse Business School (56) — 13/13, WebSearch-only**:
+    `tbs-education.com` returns 403 to every fetch, so every link comes
+    from a real WebSearch hit whose title matches the program (none could
+    be fetched to confirm the final page). "MSc International Business"
+    uses the Toulouse-campus page (a separate Barcelona page exists).
+  - **KEDGE (304) — 15/17**: programme list on `etudiant.kedge.edu`, plus
+    `student.kedge.edu` (English) and `wine.kedge.edu`. Unset: "MSc
+    Digital Marketing and Sales" and "MSc Sustainable Finance" (search
+    results show pages but the live URLs 404; the French "Marketing
+    Digital & Data" is a different Mastère Spécialisé).
+  - **Montpellier BS (57) — 7/10**: site moved to the new `mbs-education.com
+    /international/our-programmes/...` tree. Unset: "Management (Grande
+    Ecole)" (typed Bachelor in the DB, the Grande Ecole page is a Master,
+    so the level conflicts), "MSc Complex Project Management" and "MSc
+    Digital Transformation & Business Consulting" (both 404 live).
+    "MA in Management" -> Grande Ecole Programme (Master in Management).
+  - **Paris School of Business (302) — 9/11**: unset "MSc International
+    Management and Global Leadership" (live page is "...& Business
+    Development") and "MSc Sustainability and Business Development".
+  - **Schiller Paris (306) — 11/13**: Schiller pages are university-wide
+    (all campuses). Unset: "BSc Applied Mathematics and AI" and "MBA in
+    International Business" (both redirect to other programs).
+  - **EDC Paris (307) — 6/10**: unset Business Consulting, E-Business &
+    Digital Transformation, Finance, and Strategic Supply Chain (the
+    closest, "MSc Supply Chain Strategy", is not provably the renamed
+    program). "MSc Global Sports Management" links EDC's own URL, which
+    redirects to the partner Sports Management School page of the same
+    name.
+  - **Aivancity (309) — 3/4**: "MSc AI and Data Science" -> its Grande
+    Ecole program page (titled MSc AI & Data Science). Unset: the BSc (the
+    live bachelor is "Applied AI", not "AI and Data Science").
+  - **Collège de Paris group — 0/15 (College de Paris 213: 0/5, Ecole
+    Conte 214: 0/6, ECEMA 216: 0/1, KEYCE 217: 0/3)**:
+    these are all brands of the Collège de Paris group; their programs
+    lived on `collegedeparis.com/programs/...` (confirmed via Wayback
+    URLs and search hits), but that domain and `collegedeparis.fr` now
+    serve an OVH "Site not installed"/404 for every path, so no page can
+    be verified. ECEMA's own `ecema.fr` only lists French-language
+    mastères (e.g. "Manager des Organisations à l'International"), not
+    "International Sales Management". Worth re-checking if the site
+    returns. Top Tech College, also in the group, has its own working
+    site, hence the 100%.
+  - **École de Management Appliqué (256) — 0/7**: `ema.education` now only
+    lists a BTS, a "Bachelor Applied Management and Economics" and an "MBA
+    Sustainable Leadership"; the old Mastère/Bachelor in Business Law /
+    Finance / Creative Industries pages 404, so the DB rows look
+    discontinued. Not linked, not deactivated.
+  - **ESIGELEC (310) — 0/2**: the only official English page is the single
+    "Master of Technology" overview covering both tracks (EES and SEDT);
+    its h1 names neither, so it was not used.
+  - Live test links: `https://paneledu.com/university?id=55`, `?id=56`,
+    `?id=57`, `?id=168`, `?id=213`, `?id=214`, `?id=215`, `?id=216`,
+    `?id=217`, `?id=218`, `?id=219`, `?id=256`, `?id=302`, `?id=304`,
+    `?id=305`, `?id=306`, `?id=307`, `?id=308`, `?id=309`, `?id=310`,
+    `?id=311`, `?id=312`.
+
 - **Closed-campus removal (2026-10-04)**: on the owner's instruction, the
   entities that no longer exist were removed from the catalog entirely
   instead of being left linkless: SRH University campuses **Cologne,
