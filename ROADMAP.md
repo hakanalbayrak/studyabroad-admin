@@ -1132,6 +1132,77 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
     Barcelona), `?id=260` (Schiller Madrid), `?id=31` (UCAM), `?id=175`
     (Universidad Europea de Madrid).
 
+- **source_url rollout, batch 11 — Spain (business schools)
+  (2026-10-08)**: the ten Spanish business-school entities. Verified via
+  the admin API: 141 active rows, all `source_url` unset. **Overall:
+  123/141 (87.2%)**.
+  - **EU Business School - Barcelona (32) — 34/40 (85%)**: the sitemap
+    only lists category pages, so harvested the school's listing pages
+    (`/en/Programs/{Bachelor-s,Master-s-1,MBA,Foundation-Bridging}.html`)
+    and verified each `...-Barcelona.html` page's title/h1 by fetch.
+    Duplicate legacy rows (same program, two DB rows) share one page. Left
+    unset (6): Master in Finance and Master in Management (not offered in
+    Barcelona any more; `Finance-Barcelona.html` silently redirects to the
+    *MSc International Banking & Finance* page, a different program, so
+    rejected), Master in Business Analytics & Data Science (404 for
+    Barcelona), "BA Communication & Public Relations" (no page by that
+    name), and the two "(London Metropolitan University Diploma)" MBA/MSc
+    variants (the live pages never mention that award).
+  - **EAE Business School (33) — 13/13 (100%)**: `eaebarcelona.com/en/...`
+    program pages plus `eae.es/en/full-time/...` for the Big Data,
+    Digital Marketing & E-commerce and Luxury MBA rows. Several programs
+    have been renamed (Big Data -> "Business Analytics & AI" on the
+    Barcelona site), so the eae.es page with the original name was used.
+    "International MBA Barcelona-Berkeley" links to the International MBA
+    page (it does not mention Berkeley).
+  - **Barcelona Executive Business School/BEBS (54) — 13/13 (100%)**: the
+    real domain is `bebs.org` (the `bebs.edu.es` style domains do not
+    resolve); all links from `bebs_programs-sitemap.xml`. The "MBA
+    International e-Supply Chain" row maps to the renamed "MBA in Supply
+    Chain and International Maritime Logistics".
+  - **ESEI Business School (122) — 9/10 (90%)**: `eseibusinessschool.com`
+    (`esei.edu` is unreachable) via `programmes-sitemap.xml`. The two
+    "Business Management" rows split by duration (3 years -> bachelor, 1
+    year -> master). Left unset: "International Business" (no such
+    programme; only "International Relations and International Business").
+  - **European School of Economics - Madrid (35) — 12/15 (80%)**: ESE has
+    one multi-campus site, `ese.ac.uk`, whose `/locations/ese-madrid` page
+    lists the Madrid courses (`ese.education` is a dead WordPress
+    subdomain). Left unset: "BSc International Economics and Political
+    Science" (closest is "Global Political Sciences", different), and the
+    two "Short Courses with 3 months internship" rows (generic).
+  - **INSA Business School (142) — 18/19 (94.7%)**: this is INSA Barcelona
+    (`insabarcelona.com`, NOT `insa.es`/`insa.cat`, which are unrelated
+    sites), harvested from `estudios-sitemap.xml`. Left unset: "Master in
+    e-Tourism & Revenue Management" (no such page).
+  - **Toulouse Business School Barcelona (34) — 10/13 (77%)**:
+    `barcelona.tbs-education.com` returns a Cloudflare 403 to every fetch,
+    so URLs are WebSearch-only, matched on result titles. "Digital
+    Transformation" and "Digital Marketing and Analysis" pages carry the
+    renamed titles (…& AI for Business; AI-Driven Digital Marketing &
+    Analytics). Left unset: MSc Marketing Management (its slug now serves
+    the renamed AI-Driven Digital Marketing page), MSc Tourism & Hospitality
+    Management (only a generic landing page), MSc Fashion and Luxury
+    Management (live program is named "Fashion & Luxury Marketing", mapped
+    to the other row only).
+  - **ASCENCIA VALENCIA (221) — 6/10 (60%)**: a pathway-style catalog
+    (MS Elementary Education, diplomas, MBAs) assembled from aggregator
+    listings; the real campus site is `ascencia-business-school.es`, which
+    was returning HTTP 522 throughout, so the six links come from WebSearch
+    result titles only (not re-fetched). Left unset: both F&B and
+    Hospitality *diplomas* (only the MBA pages surfaced), "MS in
+    International Marketing" and "Ms in Elementary Education" (no page).
+    Worth re-verifying once the site is back up.
+  - **Geneva Business School (292) and (Spain campus) (301) — 4/4 (100%)
+    each**: `gbsge.com` is Cloudflare-blocked (WebSearch only). Bachelor
+    and Master of International Management are single multi-campus pages
+    (Geneva/Barcelona/Madrid) so the Barcelona and Madrid rows of both
+    entities share them. (`gbs.edu` is an unrelated US school.)
+  - Live test links: `https://paneledu.com/university?id=32` (EU),
+    `?id=33` (EAE), `?id=54` (BEBS), `?id=122` (ESEI), `?id=35` (ESE),
+    `?id=142` (INSA), `?id=34` (TBS), `?id=221` (Ascencia), `?id=292`
+    and `?id=301` (Geneva Business School).
+
 - **Closed-campus removal (2026-10-04)**: on the owner's instruction, the
   entities that no longer exist were removed from the catalog entirely
   instead of being left linkless: SRH University campuses **Cologne,
