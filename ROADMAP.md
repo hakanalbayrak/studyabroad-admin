@@ -1011,6 +1011,127 @@ studyabroad.kampanya.website/*) confirmed in Google Cloud Console.
       track), and the only remaining pages are already used by other rows
       or are generic `/en/topics/...` overviews. Left unset.
 
+- **source_url rollout, batch 9 — Netherlands, all 8 entities (2026-10-08)**:
+  fourth country-based batch. A first pass was interrupted before it could
+  be documented, so this entry also records what it did (inspected by
+  re-reading the saved URLs and re-fetching samples). Verified counts via
+  the admin API: 323 active rows across the 8 entities. **Overall:
+  308/323 (95.4%)**. Method: direct fetch of each school's own program
+  pages; every URL checked by final destination (HTTP 200, no redirect,
+  page title/h1 names the same subject and level). All saved URLs were
+  re-fetched in a full pass over Radboud, Twente, Fontys, Saxion,
+  Wittenborg (and all of Spain part A below); none redirected to a
+  generic page.
+  - **The three "(Turkish Students Only)" entities are not different
+    schools.** Radboud (326), Twente (325) and Tilburg (241) are the real
+    universities' *Turkish-track catalogs* — a separate entity used for
+    applications that go through the partner's Turkish channel (rows carry
+    the note "We can only accept Turkish students and students residing in
+    Turkiye"; fees are the non-EU institutional rates, English-taught).
+    Their location is a placeholder (Amsterdam) rather than Nijmegen /
+    Enschede / Tilburg. Because the programs are the universities' regular
+    English-taught programs, they point at the same official pages as the
+    mainstream programs (`ru.nl/en/education/{bachelors,masters}/<slug>`,
+    `utwente.nl/en/education/{bachelor,master}/programmes/...`).
+  - **Radboud University (Turkish Students Only) (326) — 99/100 (99%)**:
+    ~25 rows re-fetched; titles/h1 match. Several master's *specialisations*
+    legitimately share a parent page (e.g. six "... - Science, Management
+    and Innovation" rows share one SMI page whose h1 lists those parent
+    masters). Corrected one: "Biology - Adaptive Organisms" had been saved
+    as the stale slug `plant-and-animal-molecular-physiology` (its English
+    title is the old name); replaced with `/masters/adaptive-organisms`.
+    Added "Global Environment and Sustainability" and "Local Environmental
+    Change and Sustainable Cities". Note: `ru.nl` returns a 403 "Login"
+    page for those three slugs to scripted fetches, so they were accepted
+    on exact WebSearch title matches only (the rule for 403 sites). Left
+    unset: "Artificial Intelligence - Computational Cognitive Science" —
+    Radboud states that specialisation is not starting in 2026-27 or the
+    year after (the AI master offers only HCIS and MLNC).
+  - **University of Twente (Turkish Students Only) (325) — 104/105
+    (99%)**: ~35 rows re-fetched, all match. Renamed programs verified as
+    the same programme: "Spatial Engineering" -> page "Spatial Systems &
+    Society" (Studielink still uses the old name), "Business
+    Administration - Human Resource Management" -> specialisation "People,
+    Organisations & the Future of Work". Left unset: "Health Sciences -
+    Innovation in Healthcare" (its page redirects to the generic
+    specialisations overview; the current master lists only two
+    specialisations).
+  - **Tilburg University Bachelor Programs (Turkish Students Only) (241)
+    — 0/2**: the two rows are umbrella placeholders ("Bachelor Programs
+    (Turkish only)", "Master Programs (Turkish students only)"; type
+    "Other Credentials"), meaning "apply to any Tilburg BA/BSc/MA/MSc via
+    this channel", not single programs. No single official program page
+    exists; left unset by design.
+  - **Webster University Leiden (133) — 8/8 (100%)**: all on
+    `webster.nl/academics/*.php` (listing pages `graduate.php` /
+    `undergraduate.php`). Name drift handled: "International Relations
+    (MA)" -> "International Relations and Security Studies (MA)";
+    "Management: Emphasis on International Business (BA)" -> current
+    "Business Administration with an Emphasis in International Business
+    (BS)".
+  - **ONCampus Amsterdam (327) — 6/6 (100%)**: the pathway provider has
+    only two program pages. All five "MQP - <subject>" rows share
+    `oncampus.global/our-study-centres/oncampus-amsterdam/oncampus-
+    amsterdam-mqp` (its body lists the Business, Accountancy and Control,
+    Data Science and Business Analytics, Economics and Econometrics
+    pathways); "UPP - Business" -> `/oncampus-amsterdam-upp` (lists the
+    Business pathway modules).
+  - **Fontys (59) — 34/43 (79%)**: pattern `fontys.nl/en/Programmes/
+    <Name>-<level>-full-time.htm`, all re-checked. Left unset (9): the 7
+    Venlo/Plymouth MSc rows (Business and Management x2, Finance x2,
+    International Logistics & SCM, International Procurement & SCM,
+    Operations & SCM) — Fontys marks the logistics MSc "no longer
+    offered" and the others 404 / do not exist; "Music and Performing
+    Arts" (redirects to "Conservatory of Music", a different name);
+    "ICT Software Engineering" (4-year row; only the 3-year *accelerated*
+    ICT & Software Engineering page exists).
+  - **Saxion (332) — 17/18 (94%)**: `saxion.edu/programmes/{bachelor,
+    master}/<slug>`. Left unset: "Facility and Real Estate Management"
+    (master's page now 404 "no longer exists").
+  - **Wittenborg (58) — 40/41 (98%)**: `wittenborg.eu/<slug>.htm`. Left
+    unset: "Master of Business Management with specialisation in Tourism &
+    Hospitality" (site has separate "Tourism & Travel" and "Hospitality"
+    MBM pages, no combined one; not assumed).
+  - Live test links: `https://paneledu.com/university?id=59` (Fontys),
+    `?id=327` (ONCampus Amsterdam), `?id=326` (Radboud TR), `?id=332`
+    (Saxion), `?id=241` (Tilburg TR), `?id=325` (Twente TR), `?id=133`
+    (Webster Leiden), `?id=58` (Wittenborg).
+
+- **source_url rollout, batch 10 — Spain part A: universities/design
+  schools (2026-10-08)**: four entities (Spanish business schools are
+  covered by separate batches). Verified: 125 active rows. **Overall:
+  114/125 (91.2%)**; all saved URLs re-fetched, titles/h1 match.
+  - **Istituto Europeo di Design (Barcelona) (330) — 20/22 (91%)**:
+    `ied.es/cursos/barcelona/{master,postgrado,foundation,
+    bachelor-of-arts-honours,titulo-de-grado-superior-en-diseno}/<slug>`
+    (page titles are partly Spanish). "Graphic Design, pathway in
+    Advertising" maps to a page whose h1 is now "...pathway in Art
+    Direction" (title still says Advertising). Left unset: "Food Design"
+    (slug only resolves to the *Bilbao* campus master) and "Design for
+    Sustainable Fashion Technology" (slug redirects to Fashion Systems;
+    program not in the current 2026/27 Barcelona master's list).
+  - **Schiller International University - Madrid (260) — 12/13 (92%)**:
+    `schiller.edu/programs/<slug>/`. Left unset: "BS - Applied
+    Mathematics and AI" (no program page exists, only blog posts and a
+    campus page; guessed slugs 404).
+  - **UCAM (Murcia) (31) — 17/18 (94%)**: `international.ucam.edu/
+    studies/<slug>` (sports programmes under `/spanish-sports-
+    university/`). Left unset: "Master's Degree in Tolerance Studies and
+    Global Peace" (only a PDF brochure; no program page).
+  - **Universidad Europea de Madrid (175) — 65/72 (90%)**:
+    `universidadeuropea.com/en/<slug>/` and `creativecampus.
+    universidadeuropea.com/en/<slug>/` for design programs. Left unset
+    (7): Civil Engineering (guessed slug redirects to the generic
+    engineering listing), Master's Digital Business (redirects to the
+    Spanish *online* master), Master's Marketing (only "Digital Marketing"
+    / "Marketing Management", different programs), Double Bachelor's
+    Business Analytics and Economics, Advanced Degree in Fashion Design,
+    International Construction Management MBA, Sports Tourism and
+    Sportainment (no dedicated English page found).
+  - Live test links: `https://paneledu.com/university?id=330` (IED
+    Barcelona), `?id=260` (Schiller Madrid), `?id=31` (UCAM), `?id=175`
+    (Universidad Europea de Madrid).
+
 - **Closed-campus removal (2026-10-04)**: on the owner's instruction, the
   entities that no longer exist were removed from the catalog entirely
   instead of being left linkless: SRH University campuses **Cologne,
