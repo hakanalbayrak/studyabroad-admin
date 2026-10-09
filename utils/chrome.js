@@ -17,7 +17,7 @@ const NAV = [
 const NAV_HTML =
   '<a class="pe-skip" href="#main" data-i18n="a11y.skip">İçeriğe geç</a>' +
   '<header class="pe-nav"><nav class="pe-nav-inner" aria-label="Ana menü">' +
-    '<a class="pe-brand" href="/" aria-label="PANELEDU ana sayfa">' + MARK + '<span>paneledu</span></a>' +
+    '<a class="pe-brand" href="/" aria-label="PANELEDU ana sayfa" translate="no">' + MARK + '<span>paneledu</span></a>' +
     '<button class="pe-nav-toggle" type="button" aria-label="Menü" aria-expanded="false" aria-controls="peNavLinks"><span></span><span></span><span></span></button>' +
     '<div class="pe-nav-links" id="peNavLinks">' +
       NAV.map(([h, k, l]) => '<a href="' + h + '" data-i18n="' + k + '">' + l + '</a>').join('') +
@@ -28,7 +28,7 @@ const NAV_HTML =
 
 const FOOTER_HTML =
   '<footer class="pe-footer"><div class="pe-footer-inner">' +
-    '<div class="pe-footer-brand"><a class="pe-brand" href="/" aria-label="PANELEDU">' + MARK + '<span>paneledu</span></a>' +
+    '<div class="pe-footer-brand"><a class="pe-brand" href="/" aria-label="PANELEDU" translate="no">' + MARK + '<span>paneledu</span></a>' +
       '<p data-i18n="f.tagline">Yurt dışında eğitim için sana en uygun üniversite ve programları bul, karşılaştır, 3D kampüs turu yap ve başvur.</p></div>' +
     '<nav class="pe-footer-col" aria-label="Keşfet"><span class="h" data-i18n="f.explore">Keşfet</span>' +
       '<a href="/match" data-i18n="f.match">Okul Bul</a><a href="/programs" data-i18n="f.programs">Programlar</a>' +

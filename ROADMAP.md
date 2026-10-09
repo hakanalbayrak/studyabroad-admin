@@ -1,5 +1,19 @@
 # Roadmap
 
+## 2026-10-09: Campus Pop redesign (design system, speed, agent-friendly)
+
+Chosen look: option D "Campus Pop" (cream canvas, ink outlines, cobalt brand, sun-yellow actions, Unbounded + Rubik). Full rules in `DESIGN.md`. Delivered:
+- **Design system** in `public/css/site.css`; nav and footer are now server-rendered by `utils/chrome.js` (no JS needed, no layout shift), with skip link, aria-current and a mobile menu.
+- **Speed**: fonts self-hosted and subsetted (Turkish letters included, ~93 KB total), Bootstrap CSS/JS self-hosted in `public/vendor/`, Bootstrap Icons trimmed from ~230 KB to 18 KB, font preload, long-lived caching for fonts/images, 5-minute HTML cache. The Cesium orbit iframe was removed from the home hero (the full-screen 3D `/orbit` view is unchanged).
+- **Programs page bug fixed**: it only ever loaded the first 10,000 of 23,000+ programs (alphabetical by university). New server-side `GET /api/public/programs/search` (filters, sort, pagination, 24 per page); filters are mirrored in the URL; eligibility check runs over up to 2,500 server-filtered rows.
+- **University pages**: grouped by degree, "show more" paging (Sheffield went from 29,000 px to about 3,800 px tall), CollegeOrUniversity JSON-LD.
+- **Blog system**: Markdown files in `content/blog/` (see `_TEMPLATE.md`), server-rendered index/posts, TOC, takeaways, FAQ, callouts, related posts, RSS (`/blog/feed.xml`), BlogPosting/BreadcrumbList/FAQPage JSON-LD.
+- **Agent/SEO**: dynamic `/sitemap.xml` (static pages, posts, every university), `/llms.txt`, robots.txt allowing AI crawlers, WebSite SearchAction + Organization JSON-LD on home.
+- **Emails and PDFs** restyled (`utils/emailBrand.js`, `utils/pdfgen.js`).
+- Skills installed in `.claude/skills/` (taste-skill family, web-design-guidelines); reference design systems in `docs/design-references/`.
+- Not yet restyled: admin panel, student portal, affiliate dashboard, proposal and acceptance pages (they still use the old palette through shared variables).
+- Pending data work: the partial UK pathway-partner university import (Huddersfield 183 programs; Durham 6, Queen's Belfast and UEA empty but active) and the Warwick placement-row question; see conversation notes.
+
 ## ⚡ Pending — needs action (as of 2026-07-15)
 
 ### 1. DB Migration ✅ DONE (2026-07-15)

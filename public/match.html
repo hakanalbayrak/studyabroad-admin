@@ -26,7 +26,7 @@
       display:flex; align-items:center; gap:10px; width:100%;
       background:var(--surface); border:1.5px solid var(--line);
       border-radius:14px; padding:15px 16px; color:var(--text); font-size:.9rem; font-weight:600;
-      cursor:pointer; transition:all .15s; text-align:left; min-height:54px; line-height:1.25; box-shadow:var(--shadow);
+      cursor:pointer; transition: background-color .15s, border-color .15s, color .15s, transform .15s, box-shadow .15s; text-align:left; min-height:54px; line-height:1.25; box-shadow:var(--shadow);
     }
     .chip:active { transform:scale(.97); }
     .chip.on { background:rgba(43,68,255,.1); border-color:#2b44ff; color:var(--accent); box-shadow:0 0 0 3px rgba(43,68,255,.15); }
@@ -74,7 +74,7 @@
 
 <!-- ── Wizard ──────────────────────────────────────────────────────────── -->
 <div class="wrap" id="wizard">
-  <h4 class="fw-bold mb-1" style="color:var(--text)"><i class="bi bi-magic me-2" style="color:var(--accent)"></i><span data-i18n="m.title">Sana uygun okulları bulalım</span></h4>
+  <h1 class="fs-3 fw-bold mb-1" style="color:var(--text)"><i class="bi bi-magic me-2" style="color:var(--accent)"></i><span data-i18n="m.title">Sana uygun okulları bulalım</span></h1>
   <p style="font-size:.85rem;color:var(--muted);margin-bottom:24px" data-i18n="m.sub">Birkaç soruyu yanıtla — sana en uygun, kabul şansı yüksek okulları sıralayalım. Kayıt veya e-posta gerekmez.</p>
 
   <div class="step">
