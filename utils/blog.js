@@ -193,7 +193,7 @@ function renderIndex(query = {}) {
   ${cats.length > 1 ? `<nav class="cat-row" aria-label="Kategoriler"><a class="fchip${cat ? '' : ' sel'}" href="/blog">Tümü (${all.length})</a>${cats.map(c => `<a class="fchip${c === cat ? ' sel' : ''}" href="/blog?cat=${encodeURIComponent(c)}">${esc(c)} (${all.filter(p => p.category === c).length})</a>`).join('')}</nav>` : ''}
 </div></section>
 <section class="pe-section-tight"><div class="pe-wrap">
-  ${first ? card(first, true) : ''}
+  ${first ? card(first, true) : '<p class="blog-empty">İlk rehberler hazırlanıyor. Bu arada programları ve üniversiteleri inceleyebilirsin.</p>'}
   ${rest.length ? `<div class="post-grid">${rest.map(p => card(p)).join('')}</div>` : ''}
   ${pages > 1 ? `<nav class="pager" aria-label="Sayfalar">${Array.from({ length: pages }, (_, i) => `<a class="${i + 1 === page ? 'active' : ''}" href="/blog?${cat ? 'cat=' + encodeURIComponent(cat) + '&' : ''}page=${i + 1}">${i + 1}</a>`).join('')}</nav>` : ''}
 </div></section>
