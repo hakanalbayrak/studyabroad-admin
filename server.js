@@ -12,6 +12,17 @@ app.use(express.json({ limit: '5mb' }));
 const { chromeMiddleware, injectChrome } = require('./utils/chrome');
 const blog = require('./utils/blog');
 app.use(chromeMiddleware);
+// Blog is rendered from content/blog/*.md; it must precede express.static (public/blog/ exists).
+app.get('/blog', (req, res) => res.type('html').set('Cache-Control', 'public, max-age=300').send(blog.renderIndex(req.query)));
+app.get('/blog/feed.xml', (req, res) => res.type('application/rss+xml').send(blog.renderFeed()));
+app.get('/blog/:slug', (req, res) => {
+  const html = blog.renderPost(req.params.slug);
+  if (html) return res.type('html').set('Cache-Control', 'public, max-age=300').send(html);
+  res.sendFile(path.join(__dirname, `public/blog/${req.params.slug}.html`), err => {
+    if (err) res.status(404).sendFile(path.join(__dirname, 'public/404.html'));
+  });
+});
+
 // Dynamic sitemap: static pages, blog posts and every active university page.
 app.get('/sitemap.xml', async (req, res) => {
   try {
@@ -99,16 +110,6 @@ app.get('/proposal', (req, res) => {
 });
 
 // Blog
-app.get('/blog', (req, res) => res.type('html').set('Cache-Control', 'public, max-age=300').send(blog.renderIndex(req.query)));
-app.get('/blog/feed.xml', (req, res) => res.type('application/rss+xml').send(blog.renderFeed()));
-app.get('/blog/:slug', (req, res) => {
-  const html = blog.renderPost(req.params.slug);
-  if (html) return res.type('html').set('Cache-Control', 'public, max-age=300').send(html);
-  res.sendFile(path.join(__dirname, `public/blog/${req.params.slug}.html`), err => {
-    if (err) res.status(404).sendFile(path.join(__dirname, 'public/404.html'));
-  });
-});
-
 app.get('/match', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/match.html'));
 });
