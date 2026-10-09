@@ -2,7 +2,7 @@
 
 Chosen 2026-10-09 (option D of the second design round). Cream canvas, ink outlines, cobalt brand, sun-yellow actions, hard shadows. Built for students on phones: big tap targets, short pages, fast first paint.
 
-Reference systems used while designing live in `docs/design-references/` (Wise, Stripe, Linear, Notion, Vercel, Airbnb, Apple, Revolut, Shopify). Design skills live in `.claude/skills/` (taste-skill family, web-design-guidelines). Run the web-design-guidelines review on any page you change.
+Design inspiration came from public design systems (Wise, Stripe, Linear, Notion). The reference files and design skills were removed to keep sessions cheap; check new pages against the Rules below and the Vercel Web Interface Guidelines checklist (accessible names on icon buttons, visible focus, no `transition: all`, touch targets of 44px, reduced motion).
 
 ## Tokens (defined in `public/css/site.css`)
 

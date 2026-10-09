@@ -1,5 +1,15 @@
 # Roadmap
 
+## Priorities (decided 2026-10-09)
+
+1. **Verify the money path** (do next): submit one test application end to end (shortcut and funnel mode, including a phone), confirm it shows correctly in the admin Applications and Doc Review sections, upload a transcript from a phone, send one real email of each restyled template, and open/edit one entity in the admin panel. The apply form, admin panel and emails were all restyled on 2026-10-09, and this is the only path that earns money.
+2. **Finish checking everything, then build the AI data agent** (Epic 8 part 2): partner-school list from the owner first; the review queue already exists.
+3. **Payments** for application / pre-acceptance fees: provider still undecided; needs an owner decision before any work.
+4. **Real affiliate links** (reminder, not now): when IELTS / TOEFL / Duolingo / PTE / Cambridge affiliate accounts exist, paste the links into admin > Affiliate Links (no deploy needed).
+5. Data completeness (low): official-page links for the remaining ~19,000 programs (only admins and counselors see them), UK pathway-partner university import (Huddersfield done, Durham partial, others pending), Imperial/UCL import, Warwick placement rows and King's iBSc decisions.
+6. Blog posts: owner will commission; write them as Markdown in `content/blog/` (cheapest way to publish).
+- Dropped: WordPress integration (the blog runs in the app; WordPress would not reduce effort or tokens).
+
 ## 2026-10-09: Campus Pop redesign (design system, speed, agent-friendly)
 
 Chosen look: option D "Campus Pop" (cream canvas, ink outlines, cobalt brand, sun-yellow actions, Unbounded + Rubik). Full rules in `DESIGN.md`. Delivered:
@@ -10,7 +20,7 @@ Chosen look: option D "Campus Pop" (cream canvas, ink outlines, cobalt brand, su
 - **Blog system**: Markdown files in `content/blog/` (see `_TEMPLATE.md`), server-rendered index/posts, TOC, takeaways, FAQ, callouts, related posts, RSS (`/blog/feed.xml`), BlogPosting/BreadcrumbList/FAQPage JSON-LD.
 - **Agent/SEO**: dynamic `/sitemap.xml` (static pages, posts, every university), `/llms.txt`, robots.txt allowing AI crawlers, WebSite SearchAction + Organization JSON-LD on home.
 - **Emails and PDFs** restyled (`utils/emailBrand.js`, `utils/pdfgen.js`).
-- Skills installed in `.claude/skills/` (taste-skill family, web-design-guidelines); reference design systems in `docs/design-references/`.
+- Design skills and reference design systems used for this redesign were removed again (2026-10-09) to cut per-session token use; `DESIGN.md` holds the rules.
 - 2026-10-09 (later): admin panel (`public/css/admin.css`, mobile drawer), student portal, affiliate dashboard and the `/orbit` overlays are restyled in Campus Pop. The shared nav button shows the signed-in user's name and links to their dashboard.
 - Pending data work: the partial UK pathway-partner university import (Huddersfield 183 programs; Durham 6, Queen's Belfast and UEA empty but active) and the Warwick placement-row question; see conversation notes.
 
