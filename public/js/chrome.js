@@ -30,6 +30,16 @@
         if (e.key === 'Escape' && links.classList.contains('open')) { links.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); btn.focus(); }
       });
     }
+    // Signed-in visitors see their name and a link to their own dashboard instead of "Giriş".
+    try {
+      var tok = localStorage.getItem('sa_token'), role = localStorage.getItem('sa_role'), nm = (localStorage.getItem('sa_name') || '').split(' ')[0];
+      var cta = nav.querySelector('.pe-nav-links .btn-grad');
+      if (tok && cta) {
+        cta.href = role === 'admin' ? '/admin' : role === 'affiliate' ? '/affiliate' : '/portal';
+        cta.removeAttribute('data-i18n');
+        cta.textContent = nm || (role === 'admin' ? 'Admin' : 'Panel');
+      }
+    } catch (e) { /* storage unavailable */ }
     var lang = document.getElementById('peLangBtn');
     if (lang) lang.textContent = (localStorage.getItem('paneleduLang') || 'tr') === 'tr' ? 'EN' : 'TR';
     if (window.i18n && window.i18n.apply) window.i18n.apply();

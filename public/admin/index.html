@@ -3,47 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Study Abroad Admin</title>
+  <title>Admin | PANELEDU</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#14142b">
+  <link rel="icon" type="image/svg+xml" href="/img/mark.svg">
   <link href="/vendor/bootstrap.min.css" rel="stylesheet">
   <link href="/css/icons.css" rel="stylesheet">
-  <style>
-    :root { --sidebar-w: 240px; }
-    body { background: #f0f2f5; font-size: 0.92rem; }
-    #loginScreen { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #1e293b; }
-    #adminApp { display: none; }
-    #sidebar {
-      position: fixed; top: 0; left: 0; height: 100vh; width: var(--sidebar-w);
-      background: #1e293b; color: #fff; display: flex; flex-direction: column; z-index: 100;
-    }
-    #sidebar .brand { padding: 18px 20px; font-size: 0.95rem; font-weight: 700; border-bottom: 1px solid #334155; color: #e2e8f0; }
-    #sidebar .nav-link { color: #94a3b8; padding: 10px 20px; display: flex; align-items: center; gap: 10px; text-decoration: none; transition: all .15s; }
-    #sidebar .nav-link:hover, #sidebar .nav-link.active { color: #fff; background: #334155; }
-    #sidebar .nav-link i { width: 18px; text-align: center; }
-    #mainContent { margin-left: var(--sidebar-w); padding: 28px; min-height: 100vh; }
-    .section-content { display: none; }
-    .section-content.visible { display: block; }
-    .stat-card { border: none; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
-    .form-section { background: #fff; border-radius: 12px; padding: 22px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.07); }
-    .section-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #6366f1; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
-    .program-card { border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; margin-bottom: 12px; background: #fff; }
-    .prog-header { background: #f8fafc; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none; border-bottom: 1px solid #e2e8f0; }
-    .prog-header:hover { background: #f1f5f9; }
-    .prog-body { padding: 16px; }
-    .toast-container { position: fixed; top: 16px; right: 16px; z-index: 9999; min-width: 280px; }
-    .badge-active { background: #10b981; }
-    .badge-inactive { background: #6b7280; }
-    .badge-pending { background: #f59e0b; }
-    .table-actions button { padding: 3px 8px; }
-    .entity-logo { width: 32px; height: 32px; object-fit: contain; border-radius: 4px; border: 1px solid #e2e8f0; }
-    .form-label { margin-bottom: 4px; color: #374151; }
-    .req { color: #ef4444; }
-    .field-hint { font-size: 0.75rem; color: #9ca3af; font-weight: 400; }
-    #entityFormView { max-width: 960px; }
-    .place-result { padding:10px 12px; border:1px solid #e2e8f0; border-radius:8px; margin-bottom:6px; cursor:pointer; transition:all .12s; }
-    .place-result:hover { background:#f0f4ff; border-color:#6366f1; }
-    .place-result-name { font-weight:600; font-size:.88rem; color:#1e293b; }
-    .place-result-addr { font-size:.76rem; color:#6b7280; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-  </style>
+  <link href="/css/site.css?v=20261009" rel="stylesheet">
+  <link href="/css/admin.css?v=20261009" rel="stylesheet">
 </head>
 <body>
 
@@ -72,8 +39,8 @@
   <div class="card shadow" style="width:360px;border:none;border-radius:16px">
     <div class="card-body p-5">
       <div class="text-center mb-4">
-        <i class="bi bi-globe-americas text-primary" style="font-size:2.5rem"></i>
-        <h5 class="fw-bold mt-2 mb-0">Study Abroad Admin</h5>
+        <i class="bi bi-globe-americas" style="font-size:2.5rem;color:var(--accent)"></i>
+        <h1 class="fs-5 fw-bold mt-2 mb-0">PANELEDU Admin</h1>
         <p class="text-muted small mt-1">Admin access only</p>
       </div>
       <div id="loginError" class="alert alert-danger d-none small py-2"></div>
@@ -92,9 +59,11 @@
 
 <!-- ADMIN APP -->
 <div id="adminApp">
+  <div id="mobBar"><button type="button" id="navToggle" aria-label="Menu" aria-expanded="false"><i class="bi bi-list"></i></button><span class="t" translate="no">paneledu admin</span></div>
+  <div id="navScrim"></div>
   <nav id="sidebar">
-    <div class="brand"><i class="bi bi-globe-americas me-2"></i>Study Abroad</div>
-    <div class="flex-grow-1 mt-2">
+    <div class="brand" translate="no"><svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><rect x="5" y="5" width="32" height="32" rx="9" fill="#14142b" stroke="#ffd23f" stroke-width="0"/><rect x="2" y="2" width="32" height="32" rx="9" fill="#2b44ff" stroke="#ffd23f" stroke-width="2"/><path d="M12 27V11h8a5 5 0 0 1 0 10h-8" fill="none" stroke="#ffd23f" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg>paneledu<span class="tag">admin</span></div>
+    <div class="nav-wrap">
       <a href="#" class="nav-link" data-sec="dashboard" onclick="showSection('dashboard');return false;">
         <i class="bi bi-speedometer2"></i>Dashboard
       </a>
@@ -129,7 +98,7 @@
         <i class="bi bi-inbox-fill"></i>Contributions
       </a>
     </div>
-    <div class="p-3 border-top border-secondary">
+    <div class="logout-wrap">
       <button class="btn btn-outline-light btn-sm w-100 opacity-75" onclick="doLogout()">
         <i class="bi bi-box-arrow-left me-1"></i>Logout
       </button>
@@ -250,7 +219,7 @@
         </div>
         <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
           <table class="table table-hover mb-0 align-middle">
-            <thead style="background:#1e293b;color:#e2e8f0">
+            <thead style="background:#14142b;color:#fff">
               <tr>
                 <th class="ps-3" style="width:42px">#</th>
                 <th>Name</th>
@@ -786,7 +755,7 @@
       </div>
       <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
         <table class="table table-hover mb-0 align-middle">
-          <thead style="background:#1e293b;color:#e2e8f0">
+          <thead style="background:#14142b;color:#fff">
             <tr>
               <th class="ps-3">Name</th>
               <th>Email</th>
@@ -923,7 +892,7 @@
 <!-- User modal -->
 <div class="modal fade" id="userModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+    <div class="modal-content border-0 shadow" style="background:#14142b;color:#fff">
       <div class="modal-header border-0">
         <h5 class="modal-title" id="userModalTitle">Add User</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
@@ -977,7 +946,7 @@
 <!-- Tier modal -->
 <div class="modal fade" id="tierModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+    <div class="modal-content border-0 shadow" style="background:#14142b;color:#fff">
       <div class="modal-header border-0">
         <h5 class="modal-title" id="tierModalTitle">Add Tier</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
@@ -1024,7 +993,7 @@
 <!-- Lead detail + reply modal -->
 <div class="modal fade" id="leadModal" tabindex="-1">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+    <div class="modal-content border-0 shadow" style="background:#14142b;color:#fff">
       <div class="modal-header border-0">
         <h5 class="modal-title"><i class="bi bi-person-lines-fill me-2 text-primary"></i>Lead Details</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
@@ -1051,7 +1020,7 @@
 <!-- Contribution review modal -->
 <div class="modal fade" id="contribModal" tabindex="-1">
   <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+    <div class="modal-content border-0 shadow" style="background:#14142b;color:#fff">
       <div class="modal-header border-0">
         <h5 class="modal-title"><i class="bi bi-inbox-fill me-2 text-primary"></i>Contribution #<span id="cmId"></span></h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
@@ -1062,7 +1031,7 @@
           &nbsp;<b>Target:</b> <span id="cmTarget"></span>
           &nbsp;<b>Status:</b> <span id="cmStatus"></span>
         </div>
-        <div class="mb-3 small"><b>Source:</b> <a id="cmSource" href="#" target="_blank" rel="noopener" style="color:#818cf8"></a></div>
+        <div class="mb-3 small"><b>Source:</b> <a id="cmSource" href="#" target="_blank" rel="noopener" style="color:#2b44ff"></a></div>
         <div class="row g-3">
           <div class="col-md-6">
             <label class="form-label small fw-semibold">Current (live)</label>
@@ -1091,7 +1060,7 @@
 <!-- Application detail modal -->
 <div class="modal fade" id="appModal" tabindex="-1">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+    <div class="modal-content border-0 shadow" style="background:#14142b;color:#fff">
       <div class="modal-header border-0">
         <h5 class="modal-title"><i class="bi bi-file-earmark-person-fill me-2 text-primary"></i>Application Details</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
@@ -1144,7 +1113,7 @@
           <div class="d-flex gap-2 flex-wrap">
             <button class="btn btn-success btn-sm" onclick="issuePreAccept(false)"><i class="bi bi-patch-check me-1"></i>Issue pre-acceptance</button>
             <button class="btn btn-warning btn-sm" onclick="issuePreAccept(true)"><i class="bi bi-hourglass-split me-1"></i>Issue conditional</button>
-            <button class="btn btn-sm" id="downloadPdfBtn" style="display:none;background:#6366f1;color:#fff;border:none" onclick="downloadPreAcceptPdf()"><i class="bi bi-file-earmark-pdf me-1"></i>Download PDF</button>
+            <button class="btn btn-sm" id="downloadPdfBtn" style="display:none;background:#2b44ff;color:#fff;border:none" onclick="downloadPreAcceptPdf()"><i class="bi bi-file-earmark-pdf me-1"></i>Download PDF</button>
           </div>
         </div>
       </div>
@@ -1159,7 +1128,7 @@
 <!-- Detailed requirements (eligibility) editor modal -->
 <div class="modal fade" id="reqModal" tabindex="-1">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content border-0 shadow" style="background:#1e293b;color:#e2e8f0">
+    <div class="modal-content border-0 shadow" style="background:#14142b;color:#fff">
       <div class="modal-header border-0">
         <h5 class="modal-title"><i class="bi bi-gear me-2 text-info"></i>Detailed Requirements</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
@@ -1229,7 +1198,7 @@
 <!-- Go to top button -->
 <button id="goTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})"
   title="Back to top"
-  style="position:fixed;bottom:28px;right:28px;z-index:999;width:42px;height:42px;border-radius:50%;background:#6366f1;border:none;color:#fff;display:none;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);cursor:pointer;font-size:1.1rem;transition:opacity .2s">
+  style="position:fixed;bottom:28px;right:28px;z-index:999;width:42px;height:42px;border-radius:50%;background:#2b44ff;border:none;color:#fff;display:none;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);cursor:pointer;font-size:1.1rem;transition:opacity .2s">
   <i class="bi bi-chevron-up"></i>
 </button>
 
@@ -1457,7 +1426,7 @@ function renderDashboard({ leads, apps, trend }) {
   const total = Number(leads.total) || 1;
   document.getElementById('dashLeadTotal').textContent = `${leads.total} total`;
   const stages = [
-    { label: 'New',       val: Number(leads.new_count), color: '#6366f1' },
+    { label: 'New',       val: Number(leads.new_count), color: '#2b44ff' },
     { label: 'Contacted', val: Number(leads.contacted),  color: '#0891b2' },
     { label: 'Converted', val: Number(leads.converted),  color: '#059669' },
   ];
@@ -2571,7 +2540,7 @@ function renderLeadsTable(leads) {
           <td><input type="checkbox" class="lead-chk" data-id="${l.id}" onchange="toggleLeadSelect(${l.id},this.checked)" ${selectedLeads.has(l.id)?'checked':''}></td>
           <td style="white-space:nowrap;color:#6c757d">${new Date(l.created_at).toLocaleDateString()}</td>
           <td class="fw-semibold">${esc2(l.student_name)}${l.message?' <i class="bi bi-chat-left-text-fill text-primary" style="font-size:.7rem" title="Has message"></i>':''}</td>
-          <td><a href="mailto:${esc2(l.email)}" style="color:#818cf8">${esc2(l.email)}</a></td>
+          <td><a href="mailto:${esc2(l.email)}" style="color:#2b44ff">${esc2(l.email)}</a></td>
           <td>${esc2(l.phone||'—')}</td>
           <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(l.program_name||'')}">${esc2(l.program_name||'—')}</td>
           <td style="max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc2(l.university_name||'—')}</td>
@@ -2691,7 +2660,7 @@ async function loadReplies(id) {
     const replies = r.ok ? await r.json() : [];
     if (!replies.length) { wrap.innerHTML = '<div class="text-muted small fst-italic">No replies yet.</div>'; return; }
     wrap.innerHTML = replies.map(rp => `
-      <div class="p-2 px-3 mb-2 rounded" style="background:rgba(99,102,241,.1);border-left:3px solid #6366f1">
+      <div class="p-2 px-3 mb-2 rounded" style="background:rgba(99,102,241,.1);border-left:3px solid #2b44ff">
         <div class="small">${esc2(rp.body).replace(/\n/g,'<br>')}</div>
         <div class="text-muted" style="font-size:.72rem;margin-top:4px">${esc2(rp.sent_by||'admin')} · ${new Date(rp.created_at).toLocaleString()}</div>
       </div>`).join('');
@@ -2867,7 +2836,7 @@ function renderApplicationsTable(apps) {
           <td><input type="checkbox" class="app-chk" data-id="${a.id}" onchange="toggleAppSelect(${a.id},this.checked)" ${selectedApps.has(a.id)?'checked':''}></td>
           <td style="white-space:nowrap;color:#6c757d">${a.created_at ? new Date(a.created_at).toLocaleDateString() : '—'}</td>
           <td class="fw-semibold">${esc2(name)}</td>
-          <td><a href="mailto:${esc2(a.email)}" style="color:#818cf8">${esc2(a.email)}</a></td>
+          <td><a href="mailto:${esc2(a.email)}" style="color:#2b44ff">${esc2(a.email)}</a></td>
           <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(a.university_name||'')}">${esc2(a.university_name||'—')}</td>
           <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc2(a.program_name||'')}">${esc2(a.program_name||'—')}</td>
           <td>${esc2(a.desired_intake||'—')}</td>
@@ -3046,7 +3015,7 @@ function renderApplicationDetail(a) {
   document.getElementById('appPreConditions').value = a.preaccept_conditions || '';
   const preInfo = document.getElementById('appPreInfo');
   preInfo.innerHTML = a.preaccept_issued_at
-    ? `<i class="bi bi-check-circle-fill text-success me-1"></i>Issued <b>${esc2(a.preaccept_ref || '')}</b> on ${new Date(a.preaccept_issued_at).toLocaleDateString()} · <a href="/acceptance?ref=${encodeURIComponent(a.preaccept_ref||'')}" target="_blank" style="color:#818cf8">view letter</a>`
+    ? `<i class="bi bi-check-circle-fill text-success me-1"></i>Issued <b>${esc2(a.preaccept_ref || '')}</b> on ${new Date(a.preaccept_issued_at).toLocaleDateString()} · <a href="/acceptance?ref=${encodeURIComponent(a.preaccept_ref||'')}" target="_blank" style="color:#2b44ff">view letter</a>`
     : 'Not issued yet.';
   document.getElementById('downloadPdfBtn').style.display = a.preaccept_ref ? '' : 'none';
 }
@@ -3264,7 +3233,7 @@ function renderTiersTable() {
   }
   wrap.innerHTML = `<div class="card shadow-sm border-0 rounded-3 overflow-hidden">
     <table class="table table-hover mb-0 align-middle">
-      <thead style="background:#1e293b;color:#e2e8f0">
+      <thead style="background:#14142b;color:#fff">
         <tr>
           <th class="ps-3" style="width:50px">#</th>
           <th>Name</th>
@@ -3373,7 +3342,7 @@ function filterEngTest() {
     (!q || r.email.toLowerCase().includes(q)) &&
     (!lv || r.level === lv)
   );
-  const LEVEL_COLOR = { A1:'#94a3b8', A2:'#64748b', B1:'#3b82f6', B2:'#8b5cf6', C1:'#10b981', C2:'#f59e0b' };
+  const LEVEL_COLOR = { A1:'#94a3b8', A2:'#64748b', B1:'#3b82f6', B2:'#2b44ff', C1:'#10b981', C2:'#f59e0b' };
   const wrap = document.getElementById('etTableWrap');
   if (!rows.length) {
     wrap.innerHTML = '<div class="text-center text-muted py-5">No results yet.</div>';
@@ -3599,6 +3568,16 @@ function showContribError(msg) {
   el.textContent = msg;
   el.style.display = 'block';
 }
+</script>
+<script>
+  (function () {
+    var b = document.body, t = document.getElementById('navToggle'), sc = document.getElementById('navScrim');
+    function set(o) { b.classList.toggle('nav-open', o); t.setAttribute('aria-expanded', o ? 'true' : 'false'); }
+    t.addEventListener('click', function () { set(!b.classList.contains('nav-open')); });
+    sc.addEventListener('click', function () { set(false); });
+    document.getElementById('sidebar').addEventListener('click', function (e) { if (e.target.closest('.nav-link')) set(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+  })();
 </script>
 </body>
 </html>
