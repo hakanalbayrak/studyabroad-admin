@@ -24,7 +24,7 @@
     @media (min-width:520px){ .chips.cols3 { grid-template-columns:1fr 1fr 1fr; } }
     .chip {
       display:flex; align-items:center; gap:10px; width:100%;
-      background:var(--surface); border:1.5px solid var(--line);
+      background:var(--surface); border: var(--bw) solid var(--text);
       border-radius:14px; padding:15px 16px; color:var(--text); font-size:.9rem; font-weight:600;
       cursor:pointer; transition: background-color .15s, border-color .15s, color .15s, transform .15s, box-shadow .15s; text-align:left; min-height:54px; line-height:1.25; box-shadow:var(--shadow);
     }
@@ -36,12 +36,12 @@
     /* Sticky CTA */
     .cta-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg); border-top: var(--bw) solid var(--text); padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); z-index: 90; }
     .cta-bar .inner { max-width:680px; margin:0 auto; }
-    .btn-go { width:100%; background:var(--grad); border:none; color:#fff; border-radius:14px; font-size:1rem; font-weight:700; padding:15px; box-shadow:0 6px 22px rgba(43,68,255,.4); }
+    .btn-go { width:100%; background:var(--sun); border:var(--bw) solid var(--text); color:var(--text); box-shadow:var(--shadow-s); border-radius:14px; font-size:1rem; font-weight:700; padding:15px; box-shadow:0 6px 22px rgba(43,68,255,.4); }
     .btn-go:disabled { opacity:.5; box-shadow:none; }
     /* Results */
     .school-grid { display:grid; grid-template-columns:1fr; gap:14px; }
     @media (min-width:640px){ .school-grid { grid-template-columns:1fr 1fr; } }
-    .school-card { background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; box-shadow:var(--shadow); }
+    .school-card { background:var(--surface); border: var(--bw) solid var(--text); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; box-shadow:var(--shadow); }
     .school-name { font-size:1rem; font-weight:700; color:var(--text); text-decoration:none; }
     a.school-name:hover { color:var(--accent); text-decoration:underline; }
     .fact-row { display:flex; flex-wrap:wrap; gap:14px; margin-top:12px; }
@@ -60,14 +60,14 @@
     details.depts summary::-webkit-details-marker { display:none; }
     details.depts summary .chev { transition:transform .2s; display:inline-block; }
     details.depts[open] summary .chev { transform:rotate(90deg); }
-    .dept-row { display:flex; justify-content:space-between; gap:10px; font-size:.82rem; padding:7px 0; border-top:1px solid var(--line); }
+    .dept-row { display:flex; justify-content:space-between; gap:10px; font-size:.82rem; padding:7px 0; border-top:1px solid var(--line-soft); }
     .dept-fee { color:#b45309; font-weight:600; white-space:nowrap; }
     .btn-detail { width:100%; margin-top:12px; background:rgba(43,68,255,.1); border:1px solid rgba(43,68,255,.35); color:var(--accent); border-radius:10px; font-size:.85rem; font-weight:600; padding:9px; }
     .empty { text-align:center; color:var(--muted); padding:60px 16px; }
     .spinner-ring { width:34px; height:34px; border:3px solid rgba(43,68,255,.2); border-top-color:#2b44ff; border-radius:50%; animation:spin .8s linear infinite; margin:0 auto 14px; }
     @keyframes spin { to { transform:rotate(360deg); } }
     .result-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; flex-wrap:wrap; gap:8px; }
-    .btn-edit { background:var(--surface); border:1px solid var(--line); color:var(--muted); border-radius:9px; font-size:.8rem; padding:7px 14px; }
+    .btn-edit { background:var(--surface); border: var(--bw) solid var(--text); color:var(--muted); border-radius:9px; font-size:.8rem; padding:7px 14px; }
   </style>
 </head>
 <body class="pe-theme">

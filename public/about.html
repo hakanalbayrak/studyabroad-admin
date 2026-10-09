@@ -11,25 +11,25 @@
   <link href="/css/site.css?v=20261009" rel="stylesheet">
   <script src="/js/i18n.js"></script>
   <style>
-    .about-hero { background: var(--grad-soft); border-bottom: 1px solid rgba(43,68,255,.15); padding: 60px 0 48px; }
+    .about-hero { background: var(--bg); border-bottom: var(--bw) solid var(--text); padding: 60px 0 48px; }
     .about-hero h1 { font-size: clamp(1.7rem,4vw,2.6rem); font-weight: 900; color: var(--text); margin-bottom: 12px; }
     .about-hero p { color: var(--muted); font-size: 1.05rem; max-width: 560px; line-height: 1.65; }
     .section { padding: 56px 0; }
-    .section + .section { border-top: 1px solid var(--line); }
+    .section + .section { border-top: 1px solid var(--line-soft); }
     .sec-title { font-size: 1.3rem; font-weight: 800; color: var(--text); margin-bottom: 6px; }
     .sec-sub { font-size: .9rem; color: var(--muted); margin-bottom: 28px; line-height: 1.55; }
-    .value-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; box-shadow: var(--shadow); }
-    .value-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--grad-soft); border: 1px solid rgba(43,68,255,.2); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 14px; }
+    .value-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: 16px; padding: 24px; box-shadow: var(--shadow); }
+    .value-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--mist); border: var(--bw) solid var(--text); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 14px; }
     .value-title { font-size: .95rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
     .value-desc { font-size: .84rem; color: var(--muted); line-height: 1.55; }
-    .stat-box { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px 20px; text-align: center; box-shadow: var(--shadow); }
+    .stat-box { background: var(--surface); border: var(--bw) solid var(--text); border-radius: 16px; padding: 24px 20px; text-align: center; box-shadow: var(--shadow); }
     .stat-box .num { font-size: 2rem; font-weight: 900; line-height: 1; margin-bottom: 4px; }
     .stat-box .lbl { font-size: .8rem; color: var(--muted); font-weight: 600; }
-    .contact-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px; box-shadow: var(--shadow); }
-    .contact-field { width: 100%; background: var(--surface); border: 1.5px solid var(--line); border-radius: 10px; padding: 11px 14px; font-size: .92rem; color: var(--text); outline: none; transition: border-color .15s; }
+    .contact-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: 16px; padding: 28px; box-shadow: var(--shadow); }
+    .contact-field { width: 100%; background: var(--surface); border: var(--bw) solid var(--text); border-radius: 10px; padding: 11px 14px; font-size: .92rem; color: var(--text); outline: none; transition: border-color .15s; }
     .contact-field:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(43,68,255,.14); }
     .contact-field::placeholder { color: var(--muted); }
-    .info-row { display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    .info-row { display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line-soft); }
     .info-row:last-child { border-bottom: none; }
     .info-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(43,68,255,.1); display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; font-size: 1rem; }
     .info-label { font-size: .72rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
@@ -178,7 +178,7 @@
             PANELEDU, bazı test ve eğitim kuruluşlarıyla ortak program anlaşmaları kapsamında referans bağlantıları kullanabilir. Bu bağlantılar aracılığıyla gerçekleşen işlemler için küçük bir komisyon alabiliriz. Bu durum, sizi herhangi bir ek ücrete tabi tutmaz ve önerilerimizin bağımsızlığını etkilemez. Ortaklık ilişkimiz bulunan platformlar her zaman açıkça belirtilir.
           </p>
         </div>
-        <div style="margin-top:16px;background:var(--surface-2);border:1px solid var(--line);border-radius:16px;padding:24px">
+        <div style="margin-top:16px;background:var(--surface-2);border: var(--bw) solid var(--text);border-radius:16px;padding:24px">
           <div style="font-weight:700;font-size:.95rem;color:var(--text);margin-bottom:8px"><i class="bi bi-building me-2" style="color:var(--accent)"></i><span data-i18n="a.company.title">Şirket Bilgileri</span></div>
           <div class="info-row">
             <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
@@ -243,7 +243,7 @@
             </div>
           </div>
           <div id="contactSuccess">
-            <div style="font-size:2.5rem;margin-bottom:12px">✅</div>
+            <div style="font-size:2.5rem;margin-bottom:12px;color:var(--ok)"><i class="bi bi-check-circle-fill"></i></div>
             <div style="font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:6px" data-i18n="a.success.title">Mesajınız alındı!</div>
             <div style="font-size:.88rem;color:var(--muted)" data-i18n="a.success.desc">En kısa sürede size geri döneceğiz.</div>
           </div>

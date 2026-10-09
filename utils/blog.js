@@ -10,13 +10,7 @@ const DIR = path.join(__dirname, '..', 'content', 'blog');
 const SITE = 'https://paneledu.com';
 const PER_PAGE = 12;
 
-// Posts written as hand-made HTML before the Markdown system existed.
-const LEGACY = [{
-  slug: 'ulke-karsilastirmasi', legacy: true,
-  title: 'İngiltere, İrlanda, Hollanda ve Almanya: Kapsamlı Eğitim & Yerleşim Karşılaştırması',
-  summary: 'Eğitim ücretleri, yaşam maliyetleri, mezuniyet sonrası çalışma hakları ve oturma izni süreçleri. Dört ülkenin avantajları ve dezavantajları tek sayfada.',
-  date: '2025-07-01', category: 'Ülke Rehberi', tags: ['UK', 'IRL', 'NL', 'DE'], readingTime: 7, author: 'PANELEDU Editör',
-}];
+const LEGACY = []; // all posts are Markdown files now
 
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const slugify = s => String(s).toLowerCase()
@@ -233,6 +227,7 @@ function renderPost(slug) {
     test: ['İngilizce seviyeni öğren', '20 soruluk ücretsiz CEFR testi ile hangi programlara uygun olduğunu gör.', '/test', 'Testi Başlat'],
     programs: ['Programları keşfet', '23.000’den fazla programı ülke, bölüm ve ücrete göre filtrele.', '/programs', 'Programlar'] };
   const cta = ctaMap[post.cta] || ctaMap.match;
+  const toc = post.toc.length > 10 ? post.toc.filter(t => t.level === 2) : post.toc;
   const related = relatedFor(post, all);
   const html = head({ title: `${post.title} | PANELEDU`, description: post.summary, url, type: 'article', extra: ld.map(o => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join('') }) + `
 <body class="pe-theme"><main id="main">
@@ -245,14 +240,14 @@ function renderPost(slug) {
   </div></header>
   <div class="pe-wrap post-layout">
     <div class="post-main">
-      ${post.toc.length > 2 ? `<details class="toc-m"><summary>İçindekiler</summary><ol>${post.toc.map(t => `<li class="l${t.level}"><a href="#${t.id}">${esc(t.text)}</a></li>`).join('')}</ol></details>` : ''}
+      ${toc.length > 2 ? `<details class="toc-m"><summary>İçindekiler</summary><ol>${toc.map(t => `<li class="l${t.level}"><a href="#${t.id}">${esc(t.text)}</a></li>`).join('')}</ol></details>` : ''}
       ${Array.isArray(post.takeaways) && post.takeaways.length ? `<aside class="takeaways"><strong>Kısaca</strong><ul>${post.takeaways.map(t => `<li>${inline(t)}</li>`).join('')}</ul></aside>` : ''}
       <div class="prose">${post.html}</div>
       ${Array.isArray(post.faq) && post.faq.length ? `<section class="faq"><h2>Sık sorulan sorular</h2>${post.faq.map(f => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</section>` : ''}
       <div class="blog-cta"><div><h2>${cta[0]}</h2><p>${cta[1]}</p></div><a class="btn-grad" href="${cta[2]}">${cta[3]}</a></div>
       <div class="share"><button class="btn-ghost" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.href.split('#')[0]).then(()=>{this.textContent='Bağlantı kopyalandı'})"><i class="bi bi-link-45deg"></i> Bağlantıyı kopyala</button></div>
     </div>
-    ${post.toc.length > 2 ? `<aside class="toc-d" aria-label="İçindekiler"><strong>İçindekiler</strong><ol>${post.toc.map(t => `<li class="l${t.level}"><a href="#${t.id}">${esc(t.text)}</a></li>`).join('')}</ol></aside>` : ''}
+    ${toc.length > 2 ? `<aside class="toc-d" aria-label="İçindekiler"><strong>İçindekiler</strong><ol>${toc.map(t => `<li class="l${t.level}"><a href="#${t.id}">${esc(t.text)}</a></li>`).join('')}</ol></aside>` : ''}
   </div>
 </article>
 ${related.length ? `<section class="pe-section-tight"><div class="pe-wrap"><h2 class="rel-h">Bunları da oku</h2><div class="post-grid">${related.map(p => card(p)).join('')}</div></div></section>` : ''}

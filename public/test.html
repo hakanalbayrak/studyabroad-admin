@@ -14,8 +14,8 @@
   <style>
     .test-wrap { max-width: 640px; margin: 0 auto; padding: 24px 16px 80px; }
     .progress-bar-wrap { height: 6px; background: var(--line); border-radius: 99px; margin-bottom: 28px; overflow: hidden; }
-    .progress-bar-fill { height: 100%; background: var(--grad); border-radius: 99px; transition: width .4s ease; }
-    .q-card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 24px; box-shadow: var(--shadow); animation: fadeUp .3s ease; }
+    .progress-bar-fill { height: 100%; background: var(--accent); border-radius: 99px; transition: width .4s ease; }
+    .q-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: 18px; padding: 24px; box-shadow: var(--shadow); animation: fadeUp .3s ease; }
     @keyframes fadeUp { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
     .q-num { font-size: .8rem; font-weight: 700; color: var(--accent); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 8px; }
     .q-text { font-size: 1.1rem; font-weight: 700; color: var(--text); line-height: 1.45; margin-bottom: 20px; }
@@ -28,21 +28,21 @@
     .nav-btns { display: flex; gap: 10px; margin-top: 22px; }
 
     /* Email gate */
-    .email-gate { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 30px 24px; box-shadow: var(--shadow); text-align: center; }
+    .email-gate { background: var(--surface); border: var(--bw) solid var(--text); border-radius: 18px; padding: 30px 24px; box-shadow: var(--shadow); text-align: center; }
     .email-gate h2 { font-size: 1.4rem; font-weight: 800; color: var(--text); margin-bottom: 8px; }
-    .level-badge { display: inline-block; background: var(--grad); color: #fff; font-size: 2rem; font-weight: 900; padding: 12px 28px; border-radius: 16px; margin: 16px 0; letter-spacing: .04em; }
+    .level-badge { display: inline-block; background: var(--sun); color: var(--text); border: var(--bw) solid var(--text); box-shadow: var(--shadow); font-family: var(--f-display); font-size: 2rem; font-weight: 800; padding: 12px 28px; border-radius: 16px; margin: 16px 0; letter-spacing: .04em; }
     .score-row { color: var(--muted); font-size: .95rem; margin-bottom: 20px; }
     .level-desc { color: var(--text); font-size: 1rem; margin-bottom: 24px; line-height: 1.55; }
     .upsell-cards { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; text-align: left; }
-    .upsell-card { background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+    .upsell-card { background: var(--surface-2); border: var(--bw) solid var(--text); border-radius: 12px; padding: 14px 16px; }
     .upsell-card .uname { font-weight: 700; font-size: .95rem; color: var(--text); }
     .upsell-card .udesc { color: var(--muted); font-size: .83rem; margin: 2px 0 6px; }
     .upsell-card a { color: var(--accent); font-size: .85rem; font-weight: 600; text-decoration: none; }
     .email-input { border: 2px solid var(--line); border-radius: 12px; padding: 13px 16px; font-size: 1rem; width: 100%; color: var(--text); background: var(--surface); outline: none; transition: border-color .2s; }
     .email-input:focus { border-color: var(--accent); }
-    .intro-card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 30px 24px; box-shadow: var(--shadow); text-align: center; }
+    .intro-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: 18px; padding: 30px 24px; box-shadow: var(--shadow); text-align: center; }
     .level-list { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 18px 0; }
-    .level-chip { background: var(--surface-2); border: 1px solid var(--line); border-radius: 99px; padding: 5px 14px; font-size: .82rem; font-weight: 600; color: var(--muted); }
+    .level-chip { background: var(--surface-2); border: var(--bw) solid var(--text); border-radius: 99px; padding: 5px 14px; font-size: .82rem; font-weight: 600; color: var(--muted); }
   </style>
 </head>
 <body class="pe-theme">
@@ -50,7 +50,7 @@
 
     <!-- Intro screen -->
     <div id="introScreen" class="intro-card">
-      <div style="font-size:2.5rem;margin-bottom:12px">📝</div>
+      <div style="font-size:2.5rem;margin-bottom:12px;color:var(--accent)"><i class="bi bi-pencil-square"></i></div>
       <h1 style="font-size:1.5rem;font-weight:900;color:var(--text);margin-bottom:8px" data-i18n="t.title">İngilizce Seviye Testi</h1>
       <p style="color:var(--muted);margin-bottom:16px;line-height:1.55" data-i18n="t.intro">20 soruluk bu test yaklaşık 5 dakika sürer ve CEFR seviyenizi belirler. Sonuçlar e-posta ile gönderilir.</p>
       <div class="level-list">
@@ -79,7 +79,7 @@
     <!-- Email gate / results screen -->
     <div id="resultScreen" style="display:none">
       <div class="email-gate" id="emailGate">
-        <div style="font-size:2rem;margin-bottom:8px">🎉</div>
+        <div style="font-size:2rem;margin-bottom:8px;color:var(--ok)"><i class="bi bi-check-circle-fill"></i></div>
         <h2 data-i18n="t.done">Test tamamlandı!</h2>
         <p style="color:var(--muted);margin-bottom:16px" data-i18n="t.email.lbl">Seviyenizi görmek için e-posta adresinizi girin. Sonuçlarınız hemen gönderilir.</p>
         <input type="email" id="resultEmail" class="email-input" data-i18n-ph="t.email.ph" placeholder="ornek@email.com" style="margin-bottom:12px">
@@ -116,7 +116,7 @@
             </div>
           </div>
 
-          <div style="margin-top:24px;padding-top:18px;border-top:1px solid var(--line)">
+          <div style="margin-top:24px;padding-top:18px;border-top:1px solid var(--line-soft)">
             <p style="color:var(--muted);font-size:.9rem;margin-bottom:14px" data-i18n="t.find">Yurt dışı eğitim programı bulmak ister misiniz?</p>
             <a href="/match" class="btn-grad" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none">
               <i class="bi bi-mortarboard-fill"></i><span data-i18n="t.find.btn">Okul Bul</span>
