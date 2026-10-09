@@ -37,6 +37,10 @@ app.get('/sitemap.xml', async (req, res) => {
 });
 // Home and any directly requested .html page go through sendFile so they receive the shared chrome.
 app.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(__dirname, 'public/index.html')));
+// Dashboards live in folders; serve them before express.static so they get the shared chrome (and no 301 to /portal/).
+app.get(['/portal', '/portal/'], (req, res) => res.sendFile(path.join(__dirname, 'public/portal/index.html')));
+app.get(['/affiliate', '/affiliate/'], (req, res) => res.sendFile(path.join(__dirname, 'public/affiliate/index.html')));
+app.get(['/admin', '/admin/'], (req, res) => res.sendFile(path.join(__dirname, 'public/admin/index.html')));
 app.get(/^\/[\w\/-]+\.html$/, (req, res, next) => {
   const f = path.resolve(__dirname, 'public', '.' + req.path);
   if (!f.startsWith(path.resolve(__dirname, 'public') + path.sep) || !fs.existsSync(f)) return next();
