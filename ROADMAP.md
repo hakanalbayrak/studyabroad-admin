@@ -11,7 +11,7 @@ Chosen look: option D "Campus Pop" (cream canvas, ink outlines, cobalt brand, su
 - **Agent/SEO**: dynamic `/sitemap.xml` (static pages, posts, every university), `/llms.txt`, robots.txt allowing AI crawlers, WebSite SearchAction + Organization JSON-LD on home.
 - **Emails and PDFs** restyled (`utils/emailBrand.js`, `utils/pdfgen.js`).
 - Skills installed in `.claude/skills/` (taste-skill family, web-design-guidelines); reference design systems in `docs/design-references/`.
-- Not yet restyled: admin panel, student portal, affiliate dashboard, proposal and acceptance pages (they still use the old palette through shared variables).
+- 2026-10-09 (later): admin panel (`public/css/admin.css`, mobile drawer), student portal, affiliate dashboard and the `/orbit` overlays are restyled in Campus Pop. The shared nav button shows the signed-in user's name and links to their dashboard.
 - Pending data work: the partial UK pathway-partner university import (Huddersfield 183 programs; Durham 6, Queen's Belfast and UEA empty but active) and the Warwick placement-row question; see conversation notes.
 
 ## ⚡ Pending — needs action (as of 2026-07-15)
