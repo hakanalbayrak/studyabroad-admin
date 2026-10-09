@@ -2,13 +2,28 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const fs = require('fs');
 const { auth, requireRole, signToken } = require('./middleware/auth');
 const db = require('./db');
 
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: '5mb' }));
-app.use(express.static('public'));
+const { chromeMiddleware, injectChrome } = require('./utils/chrome');
+app.use(chromeMiddleware);
+// Home and any directly requested .html page go through sendFile so they receive the shared chrome.
+app.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(__dirname, 'public/index.html')));
+app.get(/^\/[\w\/-]+\.html$/, (req, res, next) => {
+  const f = path.resolve(__dirname, 'public', '.' + req.path);
+  if (!f.startsWith(path.resolve(__dirname, 'public') + path.sep) || !fs.existsSync(f)) return next();
+  res.sendFile(f);
+});
+app.use(express.static('public', {
+  setHeaders(res, file) {
+    if (/\/(fonts|img)\//.test(file)) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    else if (/\.(css|js)$/.test(file)) res.setHeader('Cache-Control', 'public, max-age=300, must-revalidate');
+  }
+}));
 
 // Serve admin panel at /admin
 app.get('/admin', (req, res) => {
@@ -17,7 +32,6 @@ app.get('/admin', (req, res) => {
 
 // Serve university detail page at /university?id=...
 // Injects dynamic SEO meta tags server-side so crawlers see them without JS
-const fs = require('fs');
 const htmlEsc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 let universityHtmlCache = null;
 app.get('/university', async (req, res) => {
@@ -55,7 +69,7 @@ app.get('/university', async (req, res) => {
     ].filter(Boolean).join('\n  ');
     const html = universityHtmlCache.replace('<title>University — PANELEDU</title>', meta);
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    res.send(html);
+    res.send(injectChrome(html));
   } catch (e) {
     res.sendFile(path.join(__dirname, 'public/university.html'));
   }
@@ -634,6 +648,63 @@ app.get('/api/public/universities/:id', async (req, res) => {
     `, [req.params.id]);
 
     res.json({ ...entity, programs });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Paginated, server-filtered program search used by /programs.
+// GET /api/public/programs/search?q=&type=a,b&category=a,b&field=a,b&country=a,b
+//   &budget=free|lt5|5-10|10-15|gt15&scholarship=1&eng=IELTS,None&sort=&page=1&per=24
+// "all=1" returns up to ALL_CAP rows in one response (used for the eligibility check).
+const ALL_CAP = 2500;
+app.get('/api/public/programs/search', async (req, res) => {
+  try {
+    const csv = v => (v ? String(v).split(',').map(x => x.trim()).filter(Boolean).slice(0, 40) : []);
+    const where = ['p.status = "active"', 'e.status != "inactive"'];
+    const vals = [];
+    const q = String(req.query.q || '').trim().slice(0, 100);
+    if (q) {
+      const like = '%' + q.replace(/[\\%_]/g, m => '\\' + m) + '%';
+      where.push('(p.name LIKE ? OR e.name LIKE ?)'); vals.push(like, like);
+    }
+    const inList = (col, arr) => { if (arr.length) { where.push(col + ' IN (' + arr.map(() => '?').join(',') + ')'); vals.push(...arr); } };
+    inList('pt.name', csv(req.query.type));
+    inList('pt.category', csv(req.query.category));
+    inList('p.field', csv(req.query.field));
+    inList('el.country', csv(req.query.country));
+    if (req.query.entity_id) { where.push('e.id = ?'); vals.push(parseInt(req.query.entity_id) || 0); }
+    if (req.query.scholarship === '1') where.push('p.scholarship_available = 1');
+    const eng = csv(req.query.eng);
+    if (eng.length) {
+      where.push('COALESCE(p.english_req_type, "None") IN (' + eng.map(() => '?').join(',') + ')'); vals.push(...eng);
+    }
+    const B = { free: '(p.tuition_fee IS NULL OR p.tuition_fee = 0)', lt5: 'p.tuition_fee >= 0 AND p.tuition_fee < 5000',
+      '5-10': 'p.tuition_fee >= 5000 AND p.tuition_fee < 10000', '10-15': 'p.tuition_fee >= 10000 AND p.tuition_fee < 15000', gt15: 'p.tuition_fee >= 15000' };
+    if (B[req.query.budget]) where.push('(' + B[req.query.budget] + ')');
+
+    const SORT = {
+      name: 'p.name, e.name',
+      'fee-asc': 'p.tuition_fee IS NULL, p.tuition_fee, e.name, p.name',
+      'fee-desc': 'p.tuition_fee IS NULL, p.tuition_fee DESC, e.name, p.name',
+      qs: 'e.qs_rank IS NULL, e.qs_rank, e.name, p.name',
+    };
+    const order = SORT[req.query.sort] || 'e.featured DESC, e.qs_rank IS NULL, e.qs_rank, e.name, p.name';
+    const from = `FROM programs p
+      JOIN program_types pt ON pt.id = p.program_type_id
+      JOIN entity_locations el ON el.id = p.entity_location_id
+      JOIN entities e ON e.id = el.entity_id
+      WHERE ${where.join(' AND ')}`;
+
+    const all = req.query.all === '1';
+    const per = all ? ALL_CAP : Math.min(Math.max(parseInt(req.query.per) || 24, 1), 100);
+    const page = all ? 1 : Math.max(parseInt(req.query.page) || 1, 1);
+    const [[{ total }]] = await db.query('SELECT COUNT(*) AS total ' + from, vals);
+    const [items] = await db.query(
+      `SELECT p.*, pt.name AS type_name, pt.category AS type_category,
+              e.id AS university_id, e.name AS university_name, e.logo_url AS university_logo_url,
+              e.website_url AS university_website_url, e.qs_rank, e.the_rank, el.city, el.country
+       ${from} ORDER BY ${order} LIMIT ? OFFSET ?`, [...vals, per, (page - 1) * per]);
+    res.set('Cache-Control', 'public, max-age=60');
+    res.json({ total, page, per, capped: all && total > ALL_CAP, items });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 

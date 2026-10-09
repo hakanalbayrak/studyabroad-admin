@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>University — PANELEDU</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/site.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/site.css?v=20261009" rel="stylesheet">
+  <link href="/css/icons.css" rel="stylesheet">
   <script src="/js/i18n.js"></script>
   <style>
     /* Hero */
@@ -14,7 +14,7 @@
     .uni-name { font-size: clamp(1.5rem, 3vw, 2.4rem); font-weight: 800; color: var(--text); margin-bottom: 6px; }
     .uni-loc { color: var(--muted); font-size: .95rem; margin-bottom: 16px; }
     .rank-pill { display:inline-flex; align-items:center; gap:5px; font-size:.78rem; font-weight:700; padding:4px 12px; border-radius:20px; margin-right:6px; margin-bottom:6px; }
-    .rqs  { background:rgba(99,102,241,.14);  color:#4f46e5; }
+    .rqs  { background:rgba(43,68,255,.14);  color:#2b44ff; }
     .rthe { background:rgba(16,185,129,.14); color:#059669; }
     .rsh  { background:rgba(245,158,11,.16); color:#b45309; }
     .rlei { background:rgba(6,182,212,.14); color:#0891b2; }
@@ -35,20 +35,20 @@
     .filter-bar { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin-bottom:24px; box-shadow:var(--shadow); }
     .filter-bar input, .filter-bar select { background:var(--surface); border:1px solid var(--line); color:var(--text); border-radius:8px; font-size:.85rem; }
     .filter-bar input::placeholder { color:var(--muted); }
-    .filter-bar input:focus, .filter-bar select:focus { background:var(--surface); border-color:var(--accent); box-shadow:0 0 0 3px rgba(99,102,241,.2); color:var(--text); outline:none; }
+    .filter-bar input:focus, .filter-bar select:focus { background:var(--surface); border-color:var(--accent); box-shadow:0 0 0 3px rgba(43,68,255,.2); color:var(--text); outline:none; }
     .filter-bar select option { background:#fff; }
     #resultCount { font-size:.8rem; color:var(--muted); }
 
     /* Program cards */
     .prog-card { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin-bottom:10px; transition:border-color .15s; box-shadow:var(--shadow); }
-    .prog-card:hover { border-color:rgba(99,102,241,.35); }
+    .prog-card:hover { border-color:rgba(43,68,255,.35); }
     .prog-name { font-weight:700; color:var(--text); font-size:.95rem; margin-bottom:4px; }
-    .prog-type { font-size:.72rem; font-weight:700; padding:2px 9px; border-radius:20px; background:rgba(99,102,241,.12); color:#4f46e5; margin-bottom:10px; display:inline-block; }
+    .prog-type { font-size:.72rem; font-weight:700; padding:2px 9px; border-radius:20px; background:rgba(43,68,255,.12); color:#2b44ff; margin-bottom:10px; display:inline-block; }
     .prog-meta { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:10px; }
     .meta-item { font-size:.78rem; color:var(--muted); display:flex; align-items:center; gap:4px; }
     .meta-item i { color:var(--muted); }
     .meta-item .val { color:var(--text); font-weight:600; }
-    .prog-req { font-size:.76rem; color:var(--muted); background:var(--surface-2); border-radius:6px; padding:8px 12px; border-left:2px solid rgba(99,102,241,.4); }
+    .prog-req { font-size:.76rem; color:var(--muted); background:var(--surface-2); border-radius:6px; padding:8px 12px; border-left:2px solid rgba(43,68,255,.4); }
     .prog-req b { color:var(--text); }
     .badge-scholarship { background:rgba(16,185,129,.14); color:#059669; font-size:.68rem; font-weight:700; padding:2px 8px; border-radius:20px; }
     .no-results { text-align:center; color:var(--muted); padding:60px 0; }
@@ -57,7 +57,7 @@
     .type-tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
     .type-tab { background:var(--surface); border:1px solid var(--line); color:var(--muted); border-radius:8px; padding:5px 14px; font-size:.8rem; font-weight:600; cursor:pointer; transition:all .12s; }
     .type-tab:hover { background:var(--surface-2); color:var(--text); }
-    .type-tab.active { background:rgba(99,102,241,.12); border-color:rgba(99,102,241,.5); color:var(--accent); }
+    .type-tab.active { background:rgba(43,68,255,.12); border-color:rgba(43,68,255,.5); color:var(--accent); }
   </style>
 </head>
 <body class="pe-theme">
@@ -291,7 +291,7 @@ function renderPrograms(progs) {
           </div>
         </div>
         <div style="flex-shrink:0;margin-top:4px;display:flex;flex-direction:column;gap:6px;align-items:stretch">
-          <button style="background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.35);color:var(--accent);font-size:.78rem;font-weight:600;border-radius:8px;padding:6px 14px;cursor:pointer;white-space:nowrap"
+          <button style="background:rgba(43,68,255,.1);border:1px solid rgba(43,68,255,.35);color:var(--accent);font-size:.78rem;font-weight:600;border-radius:8px;padding:6px 14px;cursor:pointer;white-space:nowrap"
             onclick="openLeadModal(${p.id})">
             <i class="bi bi-envelope-fill me-1"></i>${T('uni.req.info')}
           </button>
@@ -400,16 +400,16 @@ load();
     </div>
     <div id="leadFormBody">
       <div class="mb-3">
-        <input id="leadName" type="text" data-i18n-ph="uni.name.ph" placeholder="Your full name *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
+        <input id="leadName" type="text" data-i18n-ph="uni.name.ph" placeholder="Your full name *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'">
       </div>
       <div class="mb-3">
-        <input id="leadEmail" type="email" data-i18n-ph="uni.email.ph" placeholder="Email address *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
+        <input id="leadEmail" type="email" data-i18n-ph="uni.email.ph" placeholder="Email address *" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'">
       </div>
       <div class="mb-3">
-        <input id="leadPhone" type="tel" data-i18n-ph="uni.phone.ph" placeholder="Phone / WhatsApp (optional)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'">
+        <input id="leadPhone" type="tel" data-i18n-ph="uni.phone.ph" placeholder="Phone / WhatsApp (optional)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none" onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'">
       </div>
       <div class="mb-3">
-        <textarea id="leadMsg" rows="3" data-i18n-ph="uni.msg.ph" placeholder="Any questions or comments (optional)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none;resize:vertical" onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--line)'"></textarea>
+        <textarea id="leadMsg" rows="3" data-i18n-ph="uni.msg.ph" placeholder="Any questions or comments (optional)" style="width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:9px 12px;font-size:.88rem;outline:none;resize:vertical" onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'"></textarea>
       </div>
       <div id="leadError" style="color:#dc2626;font-size:.8rem;margin-bottom:8px"></div>
       <div class="d-flex gap-2">

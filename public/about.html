@@ -6,12 +6,12 @@
   <title>Hakkımızda & İletişim — PANELEDU</title>
   <meta name="description" content="PANELEDU, Türkiye'den yurt dışında eğitim almak isteyen öğrencilere üniversite bulma, program karşılaştırma ve başvuru süreçlerinde rehberlik eden dijital bir platformdur.">
   <link rel="canonical" href="https://paneledu.com/about">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="/css/site.css" rel="stylesheet">
+  <link href="/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/icons.css" rel="stylesheet">
+  <link href="/css/site.css?v=20261009" rel="stylesheet">
   <script src="/js/i18n.js"></script>
   <style>
-    .about-hero { background: var(--grad-soft); border-bottom: 1px solid rgba(99,102,241,.15); padding: 60px 0 48px; }
+    .about-hero { background: var(--grad-soft); border-bottom: 1px solid rgba(43,68,255,.15); padding: 60px 0 48px; }
     .about-hero h1 { font-size: clamp(1.7rem,4vw,2.6rem); font-weight: 900; color: var(--text); margin-bottom: 12px; }
     .about-hero p { color: var(--muted); font-size: 1.05rem; max-width: 560px; line-height: 1.65; }
     .section { padding: 56px 0; }
@@ -19,7 +19,7 @@
     .sec-title { font-size: 1.3rem; font-weight: 800; color: var(--text); margin-bottom: 6px; }
     .sec-sub { font-size: .9rem; color: var(--muted); margin-bottom: 28px; line-height: 1.55; }
     .value-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; box-shadow: var(--shadow); }
-    .value-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--grad-soft); border: 1px solid rgba(99,102,241,.2); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 14px; }
+    .value-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--grad-soft); border: 1px solid rgba(43,68,255,.2); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 14px; }
     .value-title { font-size: .95rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
     .value-desc { font-size: .84rem; color: var(--muted); line-height: 1.55; }
     .stat-box { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px 20px; text-align: center; box-shadow: var(--shadow); }
@@ -27,11 +27,11 @@
     .stat-box .lbl { font-size: .8rem; color: var(--muted); font-weight: 600; }
     .contact-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px; box-shadow: var(--shadow); }
     .contact-field { width: 100%; background: var(--surface); border: 1.5px solid var(--line); border-radius: 10px; padding: 11px 14px; font-size: .92rem; color: var(--text); outline: none; transition: border-color .15s; }
-    .contact-field:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(79,70,229,.14); }
+    .contact-field:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(43,68,255,.14); }
     .contact-field::placeholder { color: var(--muted); }
     .info-row { display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); }
     .info-row:last-child { border-bottom: none; }
-    .info-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(79,70,229,.1); display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; font-size: 1rem; }
+    .info-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(43,68,255,.1); display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; font-size: 1rem; }
     .info-label { font-size: .72rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
     .info-val { font-size: .9rem; color: var(--text); font-weight: 500; }
     #contactSuccess { display: none; text-align: center; padding: 20px 0; }
@@ -43,7 +43,7 @@
 <div class="about-hero">
   <div class="container">
     <div class="mb-3">
-      <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(79,70,229,.1);border:1px solid rgba(79,70,229,.25);border-radius:99px;padding:5px 14px;font-size:.8rem;font-weight:700;color:var(--accent)">
+      <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(43,68,255,.1);border:1px solid rgba(43,68,255,.25);border-radius:99px;padding:5px 14px;font-size:.8rem;font-weight:700;color:var(--accent)">
         <i class="bi bi-globe-americas"></i><span data-i18n="h.badge">Türkiye'nin Yurt Dışı Eğitim Platformu</span>
       </span>
     </div>
@@ -117,14 +117,14 @@
       </div>
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="value-card h-100">
-          <div class="value-icon"><i class="bi bi-eye" style="color:#9333ea"></i></div>
+          <div class="value-icon"><i class="bi bi-eye" style="color:#2b44ff"></i></div>
           <div class="value-title" data-i18n="a.val2.title">Şeffaf Bilgi</div>
           <div class="value-desc" data-i18n="a.val2.desc">Ücretler, giriş şartları ve burs olanakları dahil her bilgi kamuya açık, güncel ve doğrulanmıştır.</div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="value-card h-100">
-          <div class="value-icon"><i class="bi bi-person-heart" style="color:#0ea5e9"></i></div>
+          <div class="value-icon"><i class="bi bi-person-heart" style="color:#2b44ff"></i></div>
           <div class="value-title" data-i18n="a.val3.title">Öğrenci Önce</div>
           <div class="value-desc" data-i18n="a.val3.desc">Platform öğrenciler için ücretsizdir. Üniversitelerden aldığımız referans ücretleri, platformu geliştirmek için kullanılır.</div>
         </div>
@@ -149,15 +149,15 @@
         <div class="sec-sub" data-i18n="a.services.sub">Yurt dışı eğitim yolculuğunuzun her adımında yanınızdayız.</div>
         <div style="display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:12px;align-items:flex-start">
-            <div style="width:32px;height:32px;border-radius:9px;background:rgba(79,70,229,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-search" style="color:var(--accent)"></i></div>
+            <div style="width:32px;height:32px;border-radius:9px;background:rgba(43,68,255,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-search" style="color:var(--accent)"></i></div>
             <div><div style="font-weight:700;font-size:.9rem;color:var(--text)" data-i18n="a.svc1.title">Akıllı Program Arama</div><div style="font-size:.83rem;color:var(--muted);margin-top:2px" data-i18n="a.svc1.desc">Derece, ülke, bütçe ve burs filtresiyle binlerce program arasından anlık arama.</div></div>
           </div>
           <div style="display:flex;gap:12px;align-items:flex-start">
-            <div style="width:32px;height:32px;border-radius:9px;background:rgba(147,51,234,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-magic" style="color:#9333ea"></i></div>
+            <div style="width:32px;height:32px;border-radius:9px;background:rgba(43,68,255,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-magic" style="color:#2b44ff"></i></div>
             <div><div style="font-weight:700;font-size:.9rem;color:var(--text)" data-i18n="a.svc2.title">Profil Sihirbazı</div><div style="font-size:.83rem;color:var(--muted);margin-top:2px" data-i18n="a.svc2.desc">GPA'nızı, İngilizce skorunuzu ve bütçenizi girin; size en uygun programları sıralayalım.</div></div>
           </div>
           <div style="display:flex;gap:12px;align-items:flex-start">
-            <div style="width:32px;height:32px;border-radius:9px;background:rgba(14,165,233,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-camera-video-fill" style="color:#0ea5e9"></i></div>
+            <div style="width:32px;height:32px;border-radius:9px;background:rgba(14,165,233,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="bi bi-camera-video-fill" style="color:#2b44ff"></i></div>
             <div><div style="font-weight:700;font-size:.9rem;color:var(--text)" data-i18n="a.svc3.title">3D Kampüs Turu</div><div style="font-size:.83rem;color:var(--muted);margin-top:2px" data-i18n="a.svc3.desc">Google Photorealistic 3D teknolojisiyle kampüsleri sanal olarak gezin.</div></div>
           </div>
           <div style="display:flex;gap:12px;align-items:flex-start">
@@ -172,7 +172,7 @@
       </div>
       <div class="col-12 col-lg-7">
         <!-- Affiliate disclosure (important for partner approvals) -->
-        <div style="background:rgba(79,70,229,.05);border:1.5px solid rgba(79,70,229,.2);border-radius:16px;padding:24px">
+        <div style="background:rgba(43,68,255,.05);border:1.5px solid rgba(43,68,255,.2);border-radius:16px;padding:24px">
           <div style="font-size:.75rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px"><i class="bi bi-info-circle-fill me-1"></i><span data-i18n="a.affiliate.title">Ortaklık Açıklaması</span></div>
           <p style="font-size:.88rem;color:var(--muted);line-height:1.65;margin:0" data-i18n="a.affiliate.desc">
             PANELEDU, bazı test ve eğitim kuruluşlarıyla ortak program anlaşmaları kapsamında referans bağlantıları kullanabilir. Bu bağlantılar aracılığıyla gerçekleşen işlemler için küçük bir komisyon alabiliriz. Bu durum, sizi herhangi bir ek ücrete tabi tutmaz ve önerilerimizin bağımsızlığını etkilemez. Ortaklık ilişkimiz bulunan platformlar her zaman açıkça belirtilir.
