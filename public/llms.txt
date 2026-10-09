@@ -1,0 +1,20 @@
+# PANELEDU
+
+> PANELEDU helps Turkish-speaking students find, compare and apply to university programs abroad. The catalog lists 23,000+ bachelor and master programs at 300+ universities in 17 countries, with tuition, duration, intake, English requirements, rankings and a link to each program's official page where available.
+
+## Main pages
+- [Programs](https://paneledu.com/programs): search and filter all programs. Shareable filters: ?q=, ?country=, ?type=, ?field=, ?budget=free|lt5|5-10|10-15|gt15, ?scholarship=1, ?eng=IELTS
+- [Find a school](https://paneledu.com/match): a short questionnaire that returns matching universities
+- [Universities](https://paneledu.com/university?id=1): one page per university, e.g. /university?id=<id>
+- [Blog](https://paneledu.com/blog): country guides and application articles (RSS: /blog/feed.xml)
+- [English level test](https://paneledu.com/test): free 20-question CEFR test
+- [Sitemap](https://paneledu.com/sitemap.xml)
+
+## Public JSON API (read-only, no key)
+- GET /api/public/programs/search?q=&country=&type=&field=&budget=&scholarship=1&eng=&sort=name|fee-asc|fee-desc|qs&page=1&per=24
+- GET /api/public/universities and /api/public/universities/<id>
+- GET /api/public/filter-options (countries, degree types, fields, totals)
+
+## Notes
+- Site language is Turkish by default with an English toggle (stored in localStorage key paneleduLang).
+- Program details are compiled from universities' official pages; confirm fees and dates on the official page before applying.

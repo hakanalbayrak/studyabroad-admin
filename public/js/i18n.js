@@ -17,6 +17,7 @@
       'nav.login':    'Giriş',
       /* ── Footer ── */
       'a11y.skip':  'İçeriğe geç',
+      'uni.more': 'Daha fazla göster',
       'p.showall': 'Tümünü göster',
       'p.showless': 'Daha az göster',
       'p.show.results': 'Sonuçları göster',
@@ -646,6 +647,7 @@
       'nav.login':    'Login',
       /* ── Footer ── */
       'a11y.skip':  'Skip to content',
+      'uni.more': 'Show more',
       'p.showall': 'Show all',
       'p.showless': 'Show less',
       'p.show.results': 'Show results',

@@ -43,7 +43,7 @@
     .fgroup:first-of-type { border-top: 0; }
     .fgroup > .lbl { display: block; font-size: .7rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
     .chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
-    .fchip { display: inline-flex; align-items: center; gap: 4px; min-height: 34px; padding: 5px 12px; border-radius: 999px; border: 1.5px solid var(--text); background: var(--surface); color: var(--text); font-size: .82rem; font-weight: 500; cursor: pointer; user-select: none; font-family: var(--f-body); }
+    .fchip { max-width: 100%; text-align: left; line-height: 1.25; display: inline-flex; align-items: center; gap: 4px; min-height: 34px; padding: 5px 12px; border-radius: 999px; border: 1.5px solid var(--text); background: var(--surface); color: var(--text); font-size: .82rem; font-weight: 500; cursor: pointer; user-select: none; font-family: var(--f-body); }
     .fchip:hover { background: var(--mist); }
     .fchip.sel { background: var(--sun); font-weight: 700; }
     .fchip.hide { display: none; }
@@ -67,7 +67,7 @@
     .prog-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); padding: 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; transition: transform .12s, box-shadow .12s; }
     .prog-card:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow); }
     .prog-name { font-family: var(--f-display); font-weight: 700; font-size: .95rem; letter-spacing: -.02em; line-height: 1.28; margin: 0; overflow-wrap: anywhere; }
-    .prog-name a { color: var(--text); text-decoration: none; }
+    .prog-card .prog-name a { color: var(--text); text-decoration: none; }
     .prog-name a:hover { color: var(--accent); }
     .prog-uni { font-size: .82rem; color: var(--muted); display: flex; align-items: center; gap: 6px; min-width: 0; }
     .prog-uni span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

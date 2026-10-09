@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const { brandHtml } = require('./emailBrand');
 
 let transport = null;
 
@@ -12,6 +13,9 @@ function getTransport() {
     secure: parseInt(SMTP_PORT) === 465,
     auth: { user: SMTP_USER, pass: SMTP_PASS || '' }
   });
+  // Every outgoing HTML email gets the shared brand styling and footer.
+  const send = transport.sendMail.bind(transport);
+  transport.sendMail = (opts, cb) => send(opts && opts.html ? { ...opts, html: brandHtml(opts.html) } : opts, cb);
   return transport;
 }
 

@@ -10,7 +10,20 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: '5mb' }));
 const { chromeMiddleware, injectChrome } = require('./utils/chrome');
+const blog = require('./utils/blog');
 app.use(chromeMiddleware);
+// Dynamic sitemap: static pages, blog posts and every active university page.
+app.get('/sitemap.xml', async (req, res) => {
+  try {
+    const base = 'https://paneledu.com';
+    const urls = [['/', 'daily', '1.0'], ['/match', 'weekly', '0.9'], ['/programs', 'daily', '0.9'], ['/test', 'monthly', '0.7'], ['/blog', 'weekly', '0.8'], ['/about', 'yearly', '0.4'], ['/apply', 'monthly', '0.6']];
+    blog.loadPosts().forEach(p => urls.push(['/blog/' + p.slug, 'monthly', '0.7', p.updated || p.date]));
+    const [rows] = await db.query("SELECT id FROM entities WHERE status != 'inactive' ORDER BY id");
+    rows.forEach(r => urls.push(['/university?id=' + r.id, 'weekly', '0.6']));
+    const x = urls.map(([u, f, p, d]) => `<url><loc>${base}${u.replace(/&/g, '&amp;')}</loc>${d ? `<lastmod>${String(d).slice(0, 10)}</lastmod>` : ''}<changefreq>${f}</changefreq><priority>${p}</priority></url>`).join('');
+    res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${x}</urlset>`);
+  } catch (e) { res.status(500).type('text/plain').send('sitemap error'); }
+});
 // Home and any directly requested .html page go through sendFile so they receive the shared chrome.
 app.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(__dirname, 'public/index.html')));
 app.get(/^\/[\w\/-]+\.html$/, (req, res, next) => {
@@ -86,10 +99,11 @@ app.get('/proposal', (req, res) => {
 });
 
 // Blog
-app.get('/blog', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/blog/index.html'));
-});
+app.get('/blog', (req, res) => res.type('html').set('Cache-Control', 'public, max-age=300').send(blog.renderIndex(req.query)));
+app.get('/blog/feed.xml', (req, res) => res.type('application/rss+xml').send(blog.renderFeed()));
 app.get('/blog/:slug', (req, res) => {
+  const html = blog.renderPost(req.params.slug);
+  if (html) return res.type('html').set('Cache-Control', 'public, max-age=300').send(html);
   res.sendFile(path.join(__dirname, `public/blog/${req.params.slug}.html`), err => {
     if (err) res.status(404).sendFile(path.join(__dirname, 'public/404.html'));
   });
