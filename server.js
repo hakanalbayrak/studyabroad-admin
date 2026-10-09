@@ -130,9 +130,7 @@ app.get('/test', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/test.html'));
 });
 
-app.get('/orbit-bg', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/orbit-bg.html'));
-});
+
 
 // Public portal pages
 app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'public/login.html')));
