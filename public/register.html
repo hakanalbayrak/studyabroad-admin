@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — PANELEDU</title>
+  <link href="/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/site.css?v=20261009" rel="stylesheet">
+  <link href="/css/icons.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <style>
+    .auth-main { min-height: calc(100vh - 160px); display: flex; align-items: center; justify-content: center; padding: clamp(24px, 6vw, 64px) var(--gutter); }
+    .auth-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); box-shadow: var(--shadow-lg); width: 100%; max-width: 440px; padding: clamp(24px, 5vw, 40px); }
+    .auth-card h1 { font-size: 1.35rem; margin: 6px 0 4px; }
+    .auth-card .text-muted { color: var(--muted) !important; }
+    .auth-card .alert-success { background: #dcf7e6; border-color: var(--ok); color: #0b5b2e; }
+    .btn-primary { min-height: 46px; }
+    .auth-card a { color: var(--accent); cursor: pointer; font-weight: 600; }
+    .code-input { letter-spacing: 8px; text-align: center; font-size: 1.4rem; font-weight: 600; }
+  </style>
+</head>
+<body class="pe-theme">
+<div class="auth-main">
+  <div class="auth-card">
+    <div class="text-center mb-4">
+      <i class="bi bi-person-plus" style="font-size:2.2rem;color:var(--accent)"></i>
+      <h1 class="fs-4 fw-bold mt-2 mb-0" data-i18n="reg.title">Create Account</h1>
+      <p class="text-muted small mt-1" data-i18n="reg.subtitle">Students, parents, and consultants</p>
+    </div>
+    <div id="errBox" class="alert alert-danger d-none small py-2 mb-3"></div>
+    <div class="mb-3">
+      <label class="form-label small fw-semibold text-muted" data-i18n="reg.name.lbl">Full Name</label>
+      <input type="text" id="name" class="form-control" data-i18n-ph="reg.name.ph" placeholder="Your full name">
+    </div>
+    <div class="mb-3">
+      <label class="form-label small fw-semibold text-muted" data-i18n="reg.email.lbl">Email</label>
+      <input type="email" id="email" class="form-control" data-i18n-ph="reg.email.ph" placeholder="you@example.com">
+    </div>
+    <div class="mb-3">
+      <label class="form-label small fw-semibold text-muted"><span data-i18n="reg.pw.lbl">Password</span> <span class="text-muted fw-normal" data-i18n="reg.pw.min">(min 8 chars)</span></label>
+      <input type="password" id="password" class="form-control" placeholder="••••••••">
+    </div>
+    <div class="mb-4">
+      <label class="form-label small fw-semibold text-muted" data-i18n="reg.confirm.lbl">Confirm Password</label>
+      <input type="password" id="confirm" class="form-control" placeholder="••••••••">
+    </div>
+    <button id="regBtn" class="btn btn-primary w-100 fw-semibold" onclick="doRegister()" data-i18n="reg.create.btn">Create Account</button>
+    <hr style="border-color:var(--line-soft);margin:20px 0">
+    <div class="text-center small text-muted">
+      <span data-i18n="reg.already">Already have an account?</span> <a href="/login" data-i18n="reg.signin">Sign in</a>
+    </div>
+  </div>
+  <script>
+    function T(k){ return window.t ? window.t(k) : k; }
+    document.getElementById('confirm').addEventListener('keydown', e => { if (e.key === 'Enter') doRegister(); });
+
+    async function doRegister() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const confirm = document.getElementById('confirm').value;
+      const err = document.getElementById('errBox');
+      err.classList.add('d-none');
+
+      if (!name || !email || !password) { err.textContent = T('reg.err.fields'); err.classList.remove('d-none'); return; }
+      if (password !== confirm) { err.textContent = T('reg.err.match'); err.classList.remove('d-none'); return; }
+      if (password.length < 8) { err.textContent = T('reg.err.len'); err.classList.remove('d-none'); return; }
+
+      const btn = document.getElementById('regBtn');
+      btn.disabled = true;
+      btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>' + T('reg.creating');
+      try {
+        const res = await fetch('/api/auth/register', {
+          method: 'POST', headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({ name, email, password })
+        });
+        const d = await res.json();
+        if (!res.ok) throw new Error(d.error || T('reg.err.failed'));
+        localStorage.setItem('sa_token', d.token);
+        localStorage.setItem('sa_role', d.role);
+        localStorage.setItem('sa_name', d.name);
+        location.href = '/portal';
+      } catch (e) {
+        err.textContent = e.message; err.classList.remove('d-none');
+        btn.disabled = false; btn.textContent = T('reg.create.btn');
+      }
+    }
+  </script>
+<script src="/js/chrome.js"></script>
+</body>
+</html>

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programları Keşfet | PANELEDU</title>
+  <meta name="description" content="Yurt dışındaki üniversitelerde 23.000'den fazla lisans ve yüksek lisans programını ülke, bölüm, ücret ve İngilizce şartına göre filtrele, karşılaştır ve başvur.">
+  <meta property="og:title" content="Programlar | PANELEDU">
+  <meta property="og:description" content="23.000'den fazla program: ülke, bölüm, ücret ve dil şartına göre filtrele.">
+  <meta property="og:url" content="https://paneledu.com/programs">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://paneledu.com/programs">
+  <link href="/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/site.css?v=20261009" rel="stylesheet">
+  <link href="/css/icons.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Programlar","url":"https://paneledu.com/programs","description":"Yurt dışı lisans ve yüksek lisans programları","isPartOf":{"@id":"https://paneledu.com/#site"}}</script>
+  <style>
+    .pg-head { padding: clamp(22px, 4vw, 40px) 0 clamp(16px, 3vw, 24px); }
+    .pg-head h1 { font-size: clamp(1.6rem, 4vw, 2.5rem); margin: 0 0 8px; }
+    .pg-head .lead { color: var(--muted); margin: 0 0 18px; max-width: 60ch; }
+    .pg-search { display: flex; background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); box-shadow: var(--shadow); overflow: hidden; max-width: 680px; }
+    .pg-search:focus-within { box-shadow: 6px 6px 0 var(--accent); }
+    .pg-search input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--text); padding: 14px 16px; font-size: 1rem; font-family: var(--f-body); }
+    .pg-search button { border: 0; border-left: var(--bw) solid var(--text); background: var(--sun); color: var(--text); font-weight: 700; padding: 0 20px; cursor: pointer; font-family: var(--f-body); min-width: 52px; }
+    .pg-meta { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; margin-top: 16px; font-size: .86rem; color: var(--muted); }
+    .pg-meta b { color: var(--text); font-family: var(--f-display); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+    .pg-meta .elig-open { margin-left: auto; }
+
+    /* Eligibility panel */
+    #eligPanel { background: var(--mist); border-block: var(--bw) solid var(--text); padding: 20px 0; }
+    .elig-input { font-size: .86rem; }
+    .btn-match { background: var(--sun); border: var(--bw) solid var(--text); color: var(--text); border-radius: var(--r-s); font-size: .86rem; font-weight: 700; padding: 9px 18px; cursor: pointer; min-height: 42px; font-family: var(--f-body); }
+    .btn-reset-elig { background: var(--surface); border: var(--bw) solid var(--text); color: var(--text); border-radius: var(--r-s); font-size: .84rem; padding: 8px 14px; cursor: pointer; min-height: 42px; font-family: var(--f-body); }
+
+    /* Layout: filters left, results right */
+    .pg-layout { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 24px; align-items: start; padding-bottom: 8px; }
+    #filterPanel { position: sticky; top: 76px; max-height: calc(100vh - 92px); overflow: auto; background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); padding: 16px; overscroll-behavior: contain; }
+    .fp-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }
+    .fp-head b { font-family: var(--f-display); font-size: .95rem; letter-spacing: -.02em; }
+    .fp-close { display: none; }
+    .fgroup { padding: 12px 0; border-top: 1px solid var(--line-soft); }
+    .fgroup:first-of-type { border-top: 0; }
+    .fgroup > .lbl { display: block; font-size: .7rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
+    .fchip { max-width: 100%; text-align: left; line-height: 1.25; display: inline-flex; align-items: center; gap: 4px; min-height: 34px; padding: 5px 12px; border-radius: 999px; border: 1.5px solid var(--text); background: var(--surface); color: var(--text); font-size: .82rem; font-weight: 500; cursor: pointer; user-select: none; font-family: var(--f-body); }
+    .fchip:hover { background: var(--mist); }
+    .fchip.sel { background: var(--sun); font-weight: 700; }
+    .fchip.hide { display: none; }
+    .more-btn { background: none; border: 0; color: var(--accent); font-weight: 700; font-size: .8rem; padding: 6px 2px; cursor: pointer; font-family: var(--f-body); }
+
+    /* Results */
+    .res-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 14px; }
+    #resultCount { font-size: .92rem; color: var(--muted); }
+    #resultCount b { color: var(--text); font-family: var(--f-display); letter-spacing: -.03em; }
+    .res-bar .grow { flex: 1; }
+    #sortSelect { max-width: 200px; min-height: 40px; font-size: .86rem; }
+    .mob-filter-btn { display: none; }
+    #pillsRow { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    #pillsRow:empty { display: none; }
+    .pill { display: inline-flex; align-items: center; gap: 6px; padding: 3px 6px 3px 12px; border-radius: 999px; background: var(--mist); border: 1.5px solid var(--text); font-size: .8rem; font-weight: 600; }
+    .pill-x { background: var(--text); color: #fff; width: 26px; height: 26px; font-size: 1rem; border-radius: 50%; border: 0; line-height: 1; cursor: pointer; font-size: .85rem; padding: 0; }
+    .btn-clear-all { min-height: 36px; padding: 4px 8px; background: none; border: 0; color: var(--accent); font-weight: 700; font-size: .8rem; cursor: pointer; padding: 4px; font-family: var(--f-body); }
+
+    /* Program cards */
+    #cardsContainer { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .prog-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); padding: 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; transition: transform .12s, box-shadow .12s; }
+    .prog-card:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow); }
+    .prog-name { font-family: var(--f-display); font-weight: 700; font-size: .95rem; letter-spacing: -.02em; line-height: 1.28; margin: 0; overflow-wrap: anywhere; }
+    .prog-card .prog-name a { color: var(--text); text-decoration: none; }
+    .prog-name a:hover { color: var(--accent); }
+    .prog-uni { font-size: .82rem; color: var(--muted); display: flex; align-items: center; gap: 6px; min-width: 0; }
+    .prog-uni span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .prog-uni img { width: 18px; height: 18px; object-fit: contain; flex-shrink: 0; }
+    .prog-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+    .meta-chip { font-size: .72rem; padding: 2px 9px; border-radius: 99px; font-weight: 600; border: 1.5px solid var(--text); background: var(--mist); }
+    .chip-scholar { background: var(--sun); }
+    .prog-fee { font-family: var(--f-display); font-weight: 800; font-size: 1.05rem; letter-spacing: -.03em; }
+    .prog-fee small { font-family: var(--f-body); font-weight: 500; font-size: .72rem; color: var(--muted); letter-spacing: 0; }
+    .prog-fee.req { font-family: var(--f-body); font-weight: 500; font-size: .8rem; color: var(--muted); letter-spacing: 0; }
+    .prog-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+    .prog-loc { font-size: .78rem; color: var(--muted); }
+    .prog-details { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .78rem; color: var(--muted); }
+    .prog-details span { display: inline-flex; align-items: center; gap: 4px; }
+    .prog-actions { display: flex; gap: 8px; margin-top: auto; padding-top: 12px; border-top: 1px solid var(--line-soft); }
+    .prog-actions .btn-grad { flex: 1; min-height: 40px; padding: 8px 12px; font-size: .86rem; }
+    .icon-btn { width: 40px; height: 40px; flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; border: var(--bw) solid var(--text); border-radius: var(--r-s); background: var(--surface); color: var(--text); text-decoration: none; cursor: pointer; font-size: 1rem; }
+    .icon-btn:hover { background: var(--mist); color: var(--text); }
+    .icon-btn.official { background: var(--mist); }
+    .skel { height: 212px; border: var(--bw) solid var(--line-soft); border-radius: var(--r); background: linear-gradient(90deg, #fff 25%, var(--surface-2) 50%, #fff 75%); background-size: 200% 100%; animation: sk 1.2s linear infinite; }
+    @keyframes sk { to { background-position: -200% 0; } }
+
+    #emptyMsg { text-align: center; color: var(--muted); padding: 48px 12px; }
+    .pager { display: flex; justify-content: center; align-items: center; gap: 6px; flex-wrap: wrap; margin: 22px 0 8px; }
+    .pager button { min-width: 40px; min-height: 40px; border: 1.5px solid var(--text); border-radius: 10px; background: var(--surface); font-weight: 600; cursor: pointer; font-family: var(--f-body); color: var(--text); }
+    .pager button.active { background: var(--sun); }
+    .pager button:disabled { opacity: .4; cursor: not-allowed; }
+    #capNote { font-size: .8rem; background: var(--sun); border: 1.5px solid var(--text); border-radius: var(--r-s); padding: 6px 12px; margin-bottom: 12px; }
+
+    /* Lead modal + proposal badge */
+    #leadModal input, #leadModal textarea { width: 100%; background: var(--surface); border: var(--bw) solid var(--text); color: var(--text); border-radius: var(--r-s); padding: 10px 12px; font-size: .92rem; font-family: var(--f-body); outline: none; }
+    #leadModal input:focus, #leadModal textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(43,68,255,.2); }
+    #proposalBadge { position: fixed; bottom: 24px; right: 24px; z-index: 500; display: none; }
+    #proposalBadge a { display: flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-size: .86rem; font-weight: 700; padding: 10px 18px; border-radius: var(--r-s); border: var(--bw) solid var(--text); box-shadow: var(--shadow-s); text-decoration: none; }
+
+    @media (max-width: 1100px) { #cardsContainer { grid-template-columns: minmax(0, 1fr); } }
+    @media (max-width: 900px) {
+      .pg-layout { grid-template-columns: minmax(0, 1fr); }
+      #filterPanel { display: none; position: fixed; inset: 0; z-index: 900; max-height: none; border-radius: 0; border-width: 0; padding: 16px var(--gutter) 96px; }
+      #filterPanel.open { display: block; }
+      .fp-close { display: inline-flex; }
+      .mob-filter-btn { display: inline-flex; }
+      .fp-apply { position: fixed; left: 0; right: 0; bottom: 0; background: var(--surface); border-top: var(--bw) solid var(--text); padding: 12px var(--gutter); }
+      .fp-apply .btn-grad { width: 100%; }
+      #cardsContainer { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (min-width: 901px) { .fp-apply { display: none; } }
+  </style>
+</head>
+<body class="pe-theme">
+<main id="main">
+
+<section class="pg-head">
+  <div class="pe-wrap">
+    <h1 data-i18n="p.title">Programları Keşfet</h1>
+    <p class="lead" data-i18n="p.hero.sub">Dünyada 300+ üniversitedeki lisans ve lisansüstü programları filtrele, karşılaştır, başvur.</p>
+    <form class="pg-search" role="search" onsubmit="event.preventDefault();onSearchSubmit()">
+      <input type="search" id="searchInput" data-i18n-ph="p.search.ph" placeholder="Program adı veya üniversite ara…" oninput="onSearchInput()" autocomplete="off" aria-label="Program veya üniversite ara">
+      <button type="submit" aria-label="Ara"><i class="bi bi-search"></i></button>
+    </form>
+    <div class="pg-meta">
+      <span><b id="stTotal">23.000+</b> <span data-i18n="p.stat.prog">program</span></span>
+      <span><b id="stUnis">300+</b> <span data-i18n="p.stat.uni">üniversite</span></span>
+      <span><b id="stCountries">17</b> <span data-i18n="p.stat.cnt">ülke</span></span>
+      <button class="btn-ghost elig-open" id="eligToggleBtn" type="button" onclick="toggleEligPanel()" style="min-height:40px;padding:6px 14px;font-size:.86rem"><i class="bi bi-sliders"></i><span data-i18n="p.elig.check">Uygunluğumu Kontrol Et</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ── Eligibility panel (collapsed by default) ────────────────────── -->
+<div id="eligPanel" style="display:none">
+  <div class="pe-wrap">
+    <div class="row g-3 align-items-end">
+      <div class="col-6 col-md-3">
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-mortarboard-fill me-1"></i><span data-i18n="p.elig.level.lbl">Tamamlanan en yüksek eğitim</span></label>
+        <select id="eligLevel" class="form-select form-select-sm elig-input">
+          <option value="none" data-i18n="p.elig.level.none">Yok / belirtilmedi</option>
+          <option value="highschool" data-i18n="p.elig.level.hs">Lise</option>
+          <option value="bachelor" data-i18n="p.elig.level.bach">Lisans</option>
+          <option value="master" data-i18n="p.elig.level.master">Yüksek Lisans</option>
+          <option value="phd" data-i18n="p.elig.level.phd">Doktora</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-3">
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-patch-check-fill me-1"></i><span data-i18n="p.elig.qual.lbl">Yeterlilik</span></label>
+        <div class="input-group input-group-sm">
+          <select id="eligQualType" class="form-select form-select-sm elig-input">
+            <option value="">—</option>
+            <option value="IB">IB</option>
+            <option value="A-Level">A-Level</option>
+            <option value="AP">AP</option>
+            <option value="National Diploma" data-i18n="p.elig.qual.natdip">Ulusal Diploma</option>
+            <option value="Foundation" data-i18n="p.elig.qual.foundation">Foundation</option>
+            <option value="Other" data-i18n="p.elig.qual.other">Diğer</option>
+          </select>
+          <input type="text" id="eligQualValue" class="form-control elig-input" placeholder='ör. "34" veya "AAB"' data-i18n-ph="p.elig.qual.ph">
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-bar-chart-fill me-1"></i><span data-i18n="p.elig.gpa.lbl">GPA'n</span></label>
+        <div class="input-group input-group-sm">
+          <input type="number" id="eligGpa" class="form-control elig-input" placeholder="ör. 3.2" data-i18n-ph="p.elig.gpa.ph" min="0" step="0.01">
+          <select id="eligGpaScale" class="form-select elig-input" style="max-width:80px">
+            <option value="4.0">/4.0</option>
+            <option value="4.3">/4.3</option>
+            <option value="5.0">/5.0</option>
+            <option value="10.0">/10.0</option>
+            <option value="20">/20</option>
+            <option value="100">/100</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-translate me-1"></i><span data-i18n="p.elig.eng.lbl">İngilizce sınavı</span></label>
+        <div class="input-group input-group-sm">
+          <select id="eligEngType" class="form-select form-select-sm elig-input">
+            <option value="">—</option>
+            <option value="IELTS">IELTS</option>
+            <option value="TOEFL">TOEFL</option>
+            <option value="Duolingo">Duolingo</option>
+            <option value="PTE">PTE</option>
+            <option value="Cambridge">Cambridge</option>
+          </select>
+          <input type="number" id="eligEngScore" class="form-control elig-input" placeholder="puan" data-i18n-ph="p.elig.score.ph" step="0.5" min="0">
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-clipboard-data-fill me-1"></i><span data-i18n="p.elig.std.lbl">Standart sınav (isteğe bağlı)</span></label>
+        <div class="input-group input-group-sm">
+          <select id="eligStdType" class="form-select form-select-sm elig-input">
+            <option value="">—</option>
+            <option value="GRE">GRE</option>
+            <option value="GMAT">GMAT</option>
+            <option value="SAT">SAT</option>
+          </select>
+          <input type="number" id="eligStdScore" class="form-control elig-input" placeholder="puan" data-i18n-ph="p.elig.score.ph" step="1" min="0">
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <label style="font-size:.72rem;color:var(--muted);display:block;margin-bottom:4px"><i class="bi bi-currency-dollar me-1"></i><span data-i18n="p.elig.fee.lbl">Maks. yıllık ücret bütçesi ($/yıl)</span></label>
+        <div class="input-group input-group-sm">
+          <span class="input-group-text" style="background:var(--surface-2);border-color:var(--line);color:var(--muted);font-size:.8rem">$</span>
+          <input type="number" id="eligFee" class="form-control elig-input" placeholder="ör. 15000" data-i18n-ph="p.elig.fee.ph" min="0" step="1000">
+        </div>
+      </div>
+      <div class="col-12 col-md-4 d-flex align-items-center gap-3">
+        <label class="d-flex align-items-center gap-2" style="font-size:.78rem;color:var(--text);cursor:pointer;margin:0">
+          <input type="checkbox" id="eligOnlyEligible" checked style="accent-color:#2b44ff;width:16px;height:16px">
+          <span data-i18n="p.elig.onlyeligible">Sadece uygun olduğum programları göster</span>
+        </label>
+      </div>
+      <div class="col-12 col-md-2 d-flex gap-2">
+        <button onclick="applyEligibility()" class="btn-match flex-grow-1"><i class="bi bi-magic me-1"></i><span data-i18n="p.elig.match.btn">Eşleştir</span></button>
+        <button onclick="clearEligibility()" class="btn-reset-elig" data-i18n="p.elig.reset.btn">Sıfırla</button>
+      </div>
+    </div>
+    <div id="eligResult" style="display:none;margin-top:14px;padding:10px 14px;border-radius:10px;background:rgba(43,68,255,.08);border:1px solid rgba(43,68,255,.2);font-size:.82rem;color:var(--muted)"></div>
+  </div>
+</div>
+
+<section class="pe-section-tight">
+  <div class="pe-wrap pg-layout">
+
+    <aside id="filterPanel" aria-label="Filtreler">
+      <div class="fp-head">
+        <b data-i18n="p.filters">Filtreler</b>
+        <button class="btn-ghost fp-close" type="button" onclick="toggleFilterPanel(false)" style="min-height:36px;padding:4px 12px;font-size:.84rem" data-i18n="p.filter.close">Kapat</button>
+      </div>
+      <div class="fgroup"><span class="lbl" data-i18n="p.degree.lbl">Derece</span><div class="chip-row" id="typeChips"></div></div>
+      <div class="fgroup" id="categoryGroup" hidden><span class="lbl" data-i18n="p.category.lbl">Kategori</span><div class="chip-row" id="categoryChips"></div></div>
+      <div class="fgroup"><span class="lbl" data-i18n="p.country.lbl">Ülke</span><div class="chip-row" id="countryChips"></div></div>
+      <div class="fgroup" id="fieldGroup" hidden><span class="lbl" data-i18n="p.field.lbl">Alan / Fakülte</span><div class="chip-row" id="fieldChips"></div><button class="more-btn" id="fieldMore" type="button" onclick="toggleMore('fieldChips','fieldMore')" hidden></button></div>
+      <div class="fgroup"><span class="lbl" data-i18n="p.fee.lbl">Yıllık Ücret</span>
+        <div class="chip-row" id="budgetChips">
+          <div class="fchip" role="button" tabindex="0" data-budget="free" data-i18n="p.free">Ücretsiz</div>
+          <div class="fchip" role="button" tabindex="0" data-budget="lt5">&lt;5k</div>
+          <div class="fchip" role="button" tabindex="0" data-budget="5-10">5k–10k</div>
+          <div class="fchip" role="button" tabindex="0" data-budget="10-15">10k–15k</div>
+          <div class="fchip" role="button" tabindex="0" data-budget="gt15">15k+</div>
+        </div>
+      </div>
+      <div class="fgroup"><span class="lbl" data-i18n="p.schol.lbl">Yalnızca Burslu</span>
+        <div class="chip-row"><div class="fchip" role="button" tabindex="0" id="scholarChip"><i class="bi bi-award-fill"></i><span data-i18n="p.schol.chip">Burslu Programlar</span></div></div>
+      </div>
+      <div class="fgroup"><span class="lbl" data-i18n="p.eng.lbl">İngilizce Şartı</span>
+        <div class="chip-row" id="engChips">
+          <div class="fchip" role="button" tabindex="0" data-eng="None" data-i18n="p.eng.none">Şart Yok</div>
+          <div class="fchip" role="button" tabindex="0" data-eng="IELTS">IELTS</div>
+          <div class="fchip" role="button" tabindex="0" data-eng="TOEFL">TOEFL</div>
+          <div class="fchip" role="button" tabindex="0" data-eng="Duolingo">Duolingo</div>
+          <div class="fchip" role="button" tabindex="0" data-eng="PTE">PTE</div>
+          <div class="fchip" role="button" tabindex="0" data-eng="Cambridge">Cambridge</div>
+        </div>
+      </div>
+      <div class="fp-apply"><button class="btn-grad" type="button" onclick="toggleFilterPanel(false)"><span id="applyLbl">Sonuçları göster</span></button></div>
+    </aside>
+
+    <section aria-label="Sonuçlar">
+      <div class="res-bar">
+        <button class="btn-ghost mob-filter-btn" type="button" onclick="toggleFilterPanel(true)" style="min-height:40px;padding:6px 14px;font-size:.88rem"><i class="bi bi-sliders2"></i><span data-i18n="p.filter.btn">Filtrele</span></button>
+        <span id="resultCount" aria-live="polite"></span>
+        <span class="grow"></span>
+        <label for="sortSelect" style="font-size:.8rem;color:var(--muted)"><span data-i18n="p.sort.lbl">Sırala</span></label>
+        <select id="sortSelect" class="form-select form-select-sm" onchange="onSortChange()">
+          <option value="default" data-i18n="p.sort.def">Varsayılan</option>
+          <option value="name" data-i18n="p.sort.az">A → Z</option>
+          <option value="fee-asc" data-i18n="p.sort.fasc2">Ücret (artan)</option>
+          <option value="fee-desc" data-i18n="p.sort.fdesc2">Ücret (azalan)</option>
+          <option value="qs" data-i18n="p.sort.qs2">QS Sıralaması</option>
+        </select>
+      </div>
+      <div id="pillsRow"></div>
+      <div id="capNote" hidden></div>
+      <div id="cardsContainer" aria-live="polite"></div>
+      <div id="emptyMsg" hidden>
+        <i class="bi bi-search" style="font-size:2.2rem;display:block;margin-bottom:12px"></i>
+        <div style="font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:6px" data-i18n="p.no.res">Sonuç bulunamadı</div>
+        <div style="margin-bottom:16px" data-i18n="p.no.res.sub">Filtreleri değiştirmeyi deneyin.</div>
+        <button class="btn-grad" type="button" onclick="clearAllFilters()" data-i18n="p.clear">Filtreleri Temizle</button>
+      </div>
+      <nav id="pagination" class="pager" aria-label="Sayfalar"></nav>
+    </section>
+  </div>
+</section>
+
+</main>
+
+<!-- ── Lead Modal ───────────────────────────────────────────────────── -->
+<div id="leadModal" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(20,20,43,.55);align-items:center;justify-content:center;padding:16px" onclick="if(event.target===this)closeLeadModal()">
+  <div style="background:var(--surface);border:2px solid var(--text);border-radius:14px;width:100%;max-width:480px;padding:28px 28px 24px;box-shadow:6px 6px 0 var(--text)">
+    <div class="d-flex justify-content-between align-items-start mb-3">
+      <div>
+        <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px" data-i18n="p.lead.title">Bilgi Talebi</div>
+        <div id="leadProgName" style="font-size:1rem;font-weight:700;color:var(--text);line-height:1.3"></div>
+        <div id="leadUniName" style="font-size:.82rem;color:var(--accent);margin-top:2px"></div>
+      </div>
+      <button onclick="closeLeadModal()" style="background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;padding:0 0 0 12px">&times;</button>
+    </div>
+    <div id="leadFormBody">
+      <div class="mb-3">
+        <input id="leadName" type="text" data-i18n-ph="p.lead.name.ph" placeholder="Adınız Soyadınız *"  onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'">
+      </div>
+      <div class="mb-3">
+        <input id="leadEmail" type="email" data-i18n-ph="p.lead.email.ph" placeholder="E-posta adresiniz *"  onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'">
+      </div>
+      <div class="mb-3">
+        <input id="leadPhone" type="tel" data-i18n-ph="p.lead.phone.ph" placeholder="Telefon / WhatsApp (opsiyonel)"  onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'">
+      </div>
+      <div class="mb-3">
+        <textarea id="leadMsg" rows="3" data-i18n-ph="p.lead.msg.ph" placeholder="Soru veya yorumlarınız (opsiyonel)"  onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'"></textarea>
+      </div>
+      <div id="leadError" style="color:#dc2626;font-size:.8rem;margin-bottom:8px"></div>
+      <div class="d-flex gap-2">
+        <button id="leadSubmitBtn" onclick="submitLead()" class="btn-grad" style="flex:1" data-i18n="p.lead.send">Gönder</button>
+        <button onclick="closeLeadModal()" style="background:var(--surface);border: var(--bw) solid var(--text);color:var(--muted);font-size:.88rem;padding:10px 16px;border-radius:8px;cursor:pointer" data-i18n="p.lead.cancel">İptal</button>
+      </div>
+    </div>
+    <div id="leadSuccess" class="d-none text-center" style="padding:16px 0">
+      <div style="font-size:2.5rem;margin-bottom:12px;color:var(--ok)"><i class="bi bi-check-circle-fill"></i></div>
+      <div style="font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:6px" data-i18n="p.lead.ok">Talebiniz alındı!</div>
+      <div style="font-size:.85rem;color:var(--muted);margin-bottom:20px" data-i18n="p.lead.ok.sub">En kısa sürede sizinle iletişime geçeceğiz.</div>
+      <button onclick="closeLeadModal()" style="background:var(--surface);border: var(--bw) solid var(--text);color:var(--muted);font-size:.88rem;padding:8px 20px;border-radius:8px;cursor:pointer" data-i18n="p.lead.close">Kapat</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Proposal floating badge (admin/advisor only) ──────────────── -->
+<div id="proposalBadge">
+  <a href="/proposal"><i class="bi bi-file-earmark-text-fill"></i> Teklif Sepeti (<span id="proposalCount">0</span>)</a>
+</div>
+
+<script src="/js/eligibility.js"></script>
+<script>
+// ── Helpers ───────────────────────────────────────────────────────────
+function _t(k, fb) { if (!window.t) return fb; const v = window.t(k); return v === k ? fb : v; }
+function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+const LANG = () => localStorage.getItem('paneleduLang') || 'tr';
+const TR_COUNTRY = {'United States':'ABD','United Kingdom':'İngiltere','Canada':'Kanada','Australia':'Avustralya','Germany':'Almanya','France':'Fransa','Spain':'İspanya','Netherlands':'Hollanda','Hungary':'Macaristan','Italy':'İtalya','Ireland':'İrlanda','Czech Republic':'Çekya','Finland':'Finlandiya','United Arab Emirates':'BAE','Cyprus':'Kıbrıs','Malta':'Malta','Turkey':'Türkiye','Austria':'Avusturya','Switzerland':'İsviçre','Belgium':'Belçika','Denmark':'Danimarka','Poland':'Polonya','Georgia':'Gürcistan'};
+function countryName(c) { return LANG() === 'tr' ? (TR_COUNTRY[c] || c) : c; }
+const CUR = { USD: '$', GBP: '£', EUR: '€', CAD: 'CA$', AUD: 'A$', TRY: '₺', CHF: 'CHF ' };
+function money(p) { return (CUR[p.tuition_currency] || (p.tuition_currency ? p.tuition_currency + ' ' : '$')) + Number(p.tuition_fee).toLocaleString(LANG() === 'en' ? 'en' : 'tr'); }
+
+function categoryLabel(c) {
+  const key = { undergraduate: 'p.cat.undergrad', postgraduate: 'p.cat.postgrad', preparation: 'p.cat.prep', other: 'p.cat.other' }[c];
+  return key ? _t(key, c) : c;
+}
+function typeBucketLabel(bucket) {
+  const key = {
+    "Bachelor's": 'p.typebucket.bachelor', "Master's": 'p.typebucket.master', 'MBA': 'p.typebucket.mba',
+    'PhD': 'p.typebucket.phd', 'Associate': 'p.typebucket.associate', 'Foundation': 'p.typebucket.foundation',
+    'Diploma / Certificate': 'p.typebucket.diplomacert', 'Pathway Programs': 'p.typebucket.pathway',
+    'Pre-Master Programs': 'p.typebucket.premaster', 'Other Credentials': 'p.typebucket.other'
+  }[bucket];
+  return key ? _t(key, bucket) : bucket;
+}
+function normalizeType(t) {
+  if (!t) return t;
+  const l = t.toLowerCase().trim();
+  if (l.startsWith('bachelor')) return "Bachelor's";
+  if (l.startsWith('master')) return "Master's";
+  if (l === 'mba') return 'MBA';
+  if (l.startsWith('phd') || l === 'doctorate' || l.startsWith('doctor')) return 'PhD';
+  if (l.startsWith('associate')) return 'Associate';
+  if (l.startsWith('foundation')) return 'Foundation';
+  if (l.startsWith('diploma') || l.startsWith('certificate')) return 'Diploma / Certificate';
+  return t.trim();
+}
+
+// ── State ─────────────────────────────────────────────────────────────
+const PER_PAGE = 24;
+const state = { q: '', types: new Set(), categories: new Set(), fields: new Set(), countries: new Set(),
+  budget: null, scholarship: false, engTypes: new Set(), sort: 'default', page: 1 };
+const BUDGET_LABEL = { free: 'Ücretsiz', lt5: '<5k', '5-10': '5k–10k', '10-15': '10k–15k', gt15: '15k+' };
+let bucketRaw = {};            // normalized bucket -> raw program_type names
+let allPrograms = [];          // rows currently held in memory (one page, or the eligibility set)
+let totalCount = 0;
+let eligActive = false, eligCriteria = {}, eligStudent = null, eligOnlyEligible = true;
+let eligRows = [];             // eligibility mode: rows that passed the client-side check
+let inflight = null, debounceTimer = null;
+
+const canPropose = (() => {
+  try {
+    const t = localStorage.getItem('sa_token');
+    if (!t) return false;
+    const p = JSON.parse(atob(t.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')));
+    if (p.exp && p.exp < Date.now() / 1000) return false;
+    return p.role === 'admin' || p.role === 'advisor';
+  } catch { return false; }
+})();
+
+// ── URL <-> state (shareable, crawlable links) ─────────────────────────
+function writeUrl() {
+  const p = new URLSearchParams();
+  if (state.q) p.set('q', state.q);
+  if (state.types.size) p.set('type', [...state.types].join(','));
+  if (state.categories.size) p.set('category', [...state.categories].join(','));
+  if (state.fields.size) p.set('field', [...state.fields].join(','));
+  if (state.countries.size) p.set('country', [...state.countries].join(','));
+  if (state.budget) p.set('budget', state.budget);
+  if (state.scholarship) p.set('scholarship', '1');
+  if (state.engTypes.size) p.set('eng', [...state.engTypes].join(','));
+  if (state.sort !== 'default') p.set('sort', state.sort);
+  if (state.page > 1) p.set('page', state.page);
+  const qs = p.toString();
+  history.replaceState(null, '', location.pathname + (qs ? '?' + qs : ''));
+}
+function readUrl() {
+  const p = new URLSearchParams(location.search), csv = k => (p.get(k) || '').split(',').map(s => s.trim()).filter(Boolean);
+  state.q = (p.get('q') || '').trim();
+  csv('type').forEach(v => state.types.add(v));
+  csv('category').forEach(v => state.categories.add(v));
+  csv('field').forEach(v => state.fields.add(v));
+  csv('country').forEach(v => state.countries.add(v));
+  if (BUDGET_LABEL[p.get('budget')]) state.budget = p.get('budget');
+  state.scholarship = p.get('scholarship') === '1';
+  csv('eng').forEach(v => state.engTypes.add(v));
+  if (['name','fee-asc','fee-desc','qs'].includes(p.get('sort'))) state.sort = p.get('sort');
+  state.page = Math.max(1, parseInt(p.get('page')) || 1);
+}
+
+// ── Init ──────────────────────────────────────────────────────────────
+async function init() {
+  readUrl();
+  document.getElementById('searchInput').value = state.q;
+  document.getElementById('sortSelect').value = state.sort;
+  document.getElementById('applyLbl').textContent = _t('p.show.results', 'Sonuçları göster');
+  try {
+    const o = await fetch('/api/public/filter-options').then(r => r.json());
+    buildFilterChips(o);
+    if (o.stats) {
+      const f = n => Number(n).toLocaleString(LANG() === 'en' ? 'en' : 'tr');
+      document.getElementById('stTotal').textContent = f(o.stats.total_programs);
+      document.getElementById('stUnis').textContent = f(o.stats.total_unis);
+      document.getElementById('stCountries').textContent = f(o.stats.total_countries);
+    }
+  } catch (e) { /* filters stay empty; results still load */ }
+  syncChips();
+  runSearch();
+}
+
+function buildFilterChips({ countries, types, fields, categories }) {
+  bucketRaw = {};
+  (types || []).forEach(raw => { const b = normalizeType(raw); (bucketRaw[b] = bucketRaw[b] || []).push(raw); });
+  document.getElementById('typeChips').innerHTML = Object.keys(bucketRaw).sort().map(t =>
+    `<div class="fchip" role="button" tabindex="0" data-type="${esc(t)}">${esc(typeBucketLabel(t))}</div>`).join('');
+  if (categories && categories.length) {
+    document.getElementById('categoryChips').innerHTML = categories.map(c =>
+      `<div class="fchip" role="button" tabindex="0" data-cat="${esc(c)}">${esc(categoryLabel(c))}</div>`).join('');
+    document.getElementById('categoryGroup').hidden = false;
+  }
+  if (fields && fields.length) {
+    document.getElementById('fieldChips').innerHTML = fields.map((f, i) =>
+      `<div class="fchip${i >= 12 ? ' hide extra' : ''}" role="button" tabindex="0" data-field="${esc(f)}">${esc(f)}</div>`).join('');
+    document.getElementById('fieldGroup').hidden = false;
+    const mb = document.getElementById('fieldMore');
+    if (fields.length > 12) { mb.hidden = false; mb.textContent = _t('p.showall', 'Tümünü göster') + ' (' + fields.length + ')'; }
+  }
+  document.getElementById('countryChips').innerHTML = countries.map(c =>
+    `<div class="fchip" role="button" tabindex="0" data-country="${esc(c)}">${esc(countryName(c))}</div>`).join('');
+}
+
+function toggleMore(rowId, btnId) {
+  const row = document.getElementById(rowId), btn = document.getElementById(btnId);
+  const open = !row.classList.contains('expanded');
+  row.classList.toggle('expanded', open);
+  row.querySelectorAll('.extra').forEach(el => el.classList.toggle('hide', !open));
+  btn.textContent = open ? _t('p.showless', 'Daha az göster') : _t('p.showall', 'Tümünü göster') + ' (' + row.querySelectorAll('.fchip').length + ')';
+}
+
+// One delegated handler for every chip (mouse and keyboard)
+function chipActivate(el) {
+  if (el.dataset.type !== undefined) toggleSet(state.types, el.dataset.type);
+  else if (el.dataset.cat !== undefined) toggleSet(state.categories, el.dataset.cat);
+  else if (el.dataset.field !== undefined) toggleSet(state.fields, el.dataset.field);
+  else if (el.dataset.country !== undefined) toggleSet(state.countries, el.dataset.country);
+  else if (el.dataset.budget !== undefined) state.budget = state.budget === el.dataset.budget ? null : el.dataset.budget;
+  else if (el.dataset.eng !== undefined) toggleSet(state.engTypes, el.dataset.eng);
+  else if (el.id === 'scholarChip') state.scholarship = !state.scholarship;
+  else return;
+  state.page = 1;
+  syncChips();
+  runSearch();
+}
+function toggleSet(set, v) { if (set.has(v)) set.delete(v); else set.add(v); }
+document.addEventListener('click', e => { const el = e.target.closest('.fchip'); if (el) chipActivate(el); });
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('fchip')) { e.preventDefault(); chipActivate(e.target); }
+  if (e.key === 'Escape') { closeLeadModal(); toggleFilterPanel(false); }
+});
+
+function syncChips() {
+  const mark = (sel, attr, has) => document.querySelectorAll(sel).forEach(el => el.classList.toggle('sel', has(el.dataset[attr])));
+  mark('#typeChips .fchip', 'type', v => state.types.has(v));
+  mark('#categoryChips .fchip', 'cat', v => state.categories.has(v));
+  mark('#fieldChips .fchip', 'field', v => state.fields.has(v));
+  mark('#countryChips .fchip', 'country', v => state.countries.has(v));
+  mark('#budgetChips .fchip', 'budget', v => state.budget === v);
+  mark('#engChips .fchip', 'eng', v => state.engTypes.has(v));
+  document.getElementById('scholarChip').classList.toggle('sel', state.scholarship);
+  // expand the field list when a hidden field is selected
+  if (state.fields.size && document.querySelector('#fieldChips .fchip.hide.sel')) toggleMore('fieldChips', 'fieldMore');
+  renderPills();
+}
+
+// ── Search ────────────────────────────────────────────────────────────
+function onSearchInput() {
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(() => { state.q = document.getElementById('searchInput').value.trim(); state.page = 1; runSearch(); }, 280);
+}
+function onSearchSubmit() { clearTimeout(debounceTimer); state.q = document.getElementById('searchInput').value.trim(); state.page = 1; runSearch(); }
+function onSortChange() { state.sort = document.getElementById('sortSelect').value; state.page = 1; runSearch(); }
+
+function buildParams(all) {
+  const p = new URLSearchParams();
+  if (state.q) p.set('q', state.q);
+  if (state.types.size) p.set('type', [...state.types].flatMap(b => bucketRaw[b] || [b]).join(','));
+  if (state.categories.size) p.set('category', [...state.categories].join(','));
+  if (state.fields.size) p.set('field', [...state.fields].join(','));
+  if (state.countries.size) p.set('country', [...state.countries].join(','));
+  if (state.budget) p.set('budget', state.budget);
+  if (state.scholarship) p.set('scholarship', '1');
+  if (state.engTypes.size) p.set('eng', [...state.engTypes].join(','));
+  if (state.sort !== 'default') p.set('sort', state.sort);
+  if (all) p.set('all', '1'); else { p.set('page', state.page); p.set('per', PER_PAGE); }
+  return p;
+}
+
+function showSkeleton() {
+  document.getElementById('cardsContainer').innerHTML = '<div class="skel"></div>'.repeat(6);
+  document.getElementById('emptyMsg').hidden = true;
+}
+
+async function runSearch() {
+  writeUrl();
+  renderPills();
+  if (inflight) inflight.abort();
+  inflight = new AbortController();
+  const signal = inflight.signal;
+  showSkeleton();
+  document.getElementById('capNote').hidden = true;
+  try {
+    const r = await fetch('/api/public/programs/search?' + buildParams(eligActive), { signal });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'load');
+    allPrograms = d.items.map(p => ({ ...p, type_name: normalizeType(p.type_name) }));
+    if (eligActive) {
+      eligRows = allPrograms.filter(meetsEligibility);
+      totalCount = eligRows.length;
+      const cap = document.getElementById('capNote');
+      cap.hidden = !d.capped;
+      if (d.capped) cap.textContent = _t('p.capped', 'İlk 2.500 program kontrol edildi. Daha doğru sonuç için ülke veya derece filtresi ekle.');
+    } else {
+      totalCount = d.total;
+    }
+    renderCards();
+  } catch (e) {
+    if (e.name === 'AbortError') return;
+    document.getElementById('cardsContainer').innerHTML = '';
+    const m = document.getElementById('emptyMsg');
+    m.hidden = false;
+    m.querySelector('[data-i18n="p.no.res"]').textContent = _t('p.err.load', 'Programlar yüklenemedi.');
+  }
+}
+
+// ── Pills ─────────────────────────────────────────────────────────────
+function renderPills() {
+  const pills = [];
+  state.types.forEach(t => pills.push({ label: typeBucketLabel(t), type: 'type', val: t }));
+  state.categories.forEach(c => pills.push({ label: categoryLabel(c), type: 'category', val: c }));
+  state.fields.forEach(f => pills.push({ label: f, type: 'field', val: f }));
+  state.countries.forEach(c => pills.push({ label: countryName(c), type: 'country', val: c }));
+  if (state.budget) pills.push({ label: BUDGET_LABEL[state.budget], type: 'budget', val: '' });
+  if (state.scholarship) pills.push({ label: _t('p.pills.schol', 'Burslu'), type: 'scholarship', val: '' });
+  state.engTypes.forEach(e => pills.push({ label: e === 'None' ? _t('p.eng.none', 'Şart Yok') : e, type: 'eng', val: e }));
+  const row = document.getElementById('pillsRow');
+  if (!pills.length) { row.innerHTML = ''; return; }
+  row.innerHTML = pills.map((p, i) =>
+    `<span class="pill">${esc(p.label)}<button class="pill-x" type="button" aria-label="Kaldır" data-pill="${i}">×</button></span>`).join('') +
+    `<button class="btn-clear-all" type="button" onclick="clearAllFilters()">${_t('p.pills.clear', 'Tümünü Temizle')}</button>`;
+  row.querySelectorAll('[data-pill]').forEach(b => b.addEventListener('click', () => removePill(pills[+b.dataset.pill])));
+}
+function removePill({ type, val }) {
+  if (type === 'type') state.types.delete(val);
+  else if (type === 'category') state.categories.delete(val);
+  else if (type === 'field') state.fields.delete(val);
+  else if (type === 'country') state.countries.delete(val);
+  else if (type === 'budget') state.budget = null;
+  else if (type === 'scholarship') state.scholarship = false;
+  else if (type === 'eng') state.engTypes.delete(val);
+  state.page = 1; syncChips(); runSearch();
+}
+function clearAllFilters() {
+  state.q = ''; state.types.clear(); state.categories.clear(); state.fields.clear(); state.countries.clear();
+  state.budget = null; state.scholarship = false; state.engTypes.clear(); state.page = 1;
+  document.getElementById('searchInput').value = '';
+  syncChips(); runSearch();
+}
+
+// ── Mobile filter sheet ───────────────────────────────────────────────
+function toggleFilterPanel(open) {
+  document.getElementById('filterPanel').classList.toggle('open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+
+// ── Cards ─────────────────────────────────────────────────────────────
+function renderCards() {
+  const container = document.getElementById('cardsContainer');
+  const empty = document.getElementById('emptyMsg');
+  const foundLbl = _t('p.found', 'program bulundu');
+  document.getElementById('resultCount').innerHTML = `<b>${Number(totalCount).toLocaleString(LANG() === 'en' ? 'en' : 'tr')}</b> ${foundLbl}`;
+  if (!totalCount) { container.innerHTML = ''; document.getElementById('pagination').innerHTML = ''; empty.hidden = false; return; }
+  empty.hidden = true;
+
+  let shown = allPrograms;
+  let totalPages = Math.max(1, Math.ceil(totalCount / PER_PAGE));
+  if (eligActive) {
+    state.page = Math.min(state.page, totalPages);
+    shown = eligRows.slice((state.page - 1) * PER_PAGE, state.page * PER_PAGE);
+  }
+  container.innerHTML = shown.map(cardHtml).join('');
+  renderPagination(totalPages);
+  if (window.i18n && window.i18n.apply) window.i18n.apply();
+}
+
+function cardHtml(p) {
+  const fee = p.tuition_fee
+    ? `<span class="prog-fee">${esc(money(p))}<small> ${_t('p.per.yr', '/yıl')}</small></span>`
+    : `<span class="prog-fee req">${_t('p.fee.req', 'Talep üzerine')}</span>`;
+  const engReq = p.english_req_type && p.english_req_type !== 'None'
+    ? `<span><i class="bi bi-translate"></i>${esc(p.english_req_type)}${p.english_req_score ? ' ' + esc(p.english_req_score) : ''}</span>` : '';
+  const gpa = p.gpa_requirement ? `<span><i class="bi bi-bar-chart-fill"></i>GPA ${esc(p.gpa_requirement)}</span>` : '';
+  const duration = p.duration ? `<span><i class="bi bi-calendar3"></i>${esc(p.duration)}</span>` : '';
+  const intake = p.intake_months ? `<span><i class="bi bi-calendar-event"></i>${esc(p.intake_months)}</span>` : '';
+  const rank = p.qs_rank ? `<span><i class="bi bi-trophy-fill"></i>QS #${p.qs_rank}</span>` : '';
+
+  let eligBlock = '';
+  if (eligActive) {
+    const m = eligMatch(p);
+    if (m && m.eligible) eligBlock = `<div><span class="meta-chip" style="background:#d6f5e3"><i class="bi bi-check-circle-fill"></i> ${_t('p.elig.badge.eligible', 'Uygun')}</span></div>`;
+    else if (m) {
+      const fails = m.results.filter(r => !r.pass).map(r => `<span class="meta-chip" style="background:#ffe5e6">${esc(r.label + (r.detail ? ': ' + r.detail : ''))}</span>`).join(' ');
+      eligBlock = `<div class="prog-meta"><span class="meta-chip chip-scholar"><i class="bi bi-exclamation-circle-fill"></i> ${_t('p.elig.badge.partial', 'Kısmen Uygun')}</span>${fails}</div>`;
+    }
+  }
+  const official = p.source_url || p.university_website_url;
+  return `<article class="prog-card">
+    <h2 class="prog-name"><a href="/university?id=${p.university_id}">${esc(p.name)}</a></h2>
+    <div class="prog-uni">${p.university_logo_url ? `<img src="${esc(p.university_logo_url)}" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">` : '<i class="bi bi-building"></i>'}<span>${esc(p.university_name)}</span></div>
+    <div class="prog-meta">
+      <span class="meta-chip">${esc(typeBucketLabel(p.type_name))}</span>
+      ${p.language_of_instruction ? `<span class="meta-chip">${esc(p.language_of_instruction)}</span>` : ''}
+      ${p.scholarship_available ? `<span class="meta-chip chip-scholar"><i class="bi bi-award-fill"></i> ${_t('p.schol.avail', 'Burs')}</span>` : ''}
+    </div>
+    <div class="prog-row">${fee}<span class="prog-loc"><i class="bi bi-geo-alt-fill"></i> ${esc([p.city, countryName(p.country)].filter(Boolean).join(', '))}</span></div>
+    ${(duration || intake || engReq || gpa || rank) ? `<div class="prog-details">${[duration, intake, engReq, gpa, rank].join('')}</div>` : ''}
+    ${eligBlock}
+    <div class="prog-actions">
+      <a class="btn-grad" href="/apply?uni=${p.university_id}&program=${p.id}"><i class="bi bi-send-fill"></i>${_t('p.apply', 'Başvur')}</a>
+      ${canPropose ? `<button class="icon-btn" type="button" title="Teklif'e Ekle" aria-label="Teklif'e Ekle" onclick="addToProposal(${p.id})"><i class="bi bi-file-earmark-plus-fill"></i></button>` : ''}
+      <button class="icon-btn" type="button" aria-label="${_t('p.lead.title', 'Bilgi Talebi')}" title="${_t('p.lead.title', 'Bilgi Talebi')}" onclick="openLeadModal(${p.id})"><i class="bi bi-envelope-fill"></i></button>
+      <a class="icon-btn" href="/orbit?uniId=${p.university_id}&back=/programs" aria-label="3D Orbit" title="3D Orbit"><i class="bi bi-camera-video-fill"></i></a>
+      ${official ? `<a class="icon-btn official" href="${esc(official)}" target="_blank" rel="noopener" aria-label="${_t('p.viewsite.title', 'Resmi sayfa')}" title="${_t('p.viewsite.title', 'Resmi sayfa')}"><i class="bi bi-box-arrow-up-right"></i></a>` : ''}
+    </div>
+  </article>`;
+}
+
+function renderPagination(totalPages) {
+  const nav = document.getElementById('pagination');
+  if (totalPages <= 1) { nav.innerHTML = ''; return; }
+  const cur = state.page, pages = [];
+  for (let p = 1; p <= totalPages; p++) {
+    if (p === 1 || p === totalPages || (p >= cur - 2 && p <= cur + 2)) pages.push(p);
+    else if (pages[pages.length - 1] !== '…') pages.push('…');
+  }
+  const b = (label, page, o = {}) => `<button type="button" class="${o.active ? 'active' : ''}" ${o.disabled ? 'disabled' : `onclick="goToPage(${page})"`} ${o.aria ? `aria-label="${o.aria}"` : ''}>${label}</button>`;
+  nav.innerHTML = b('<i class="bi bi-chevron-left"></i>', cur - 1, { disabled: cur === 1, aria: 'Önceki' }) +
+    pages.map(p => p === '…' ? '<span style="color:var(--muted)">…</span>' : b(p, p, { active: p === cur })).join('') +
+    b('<i class="bi bi-chevron-right"></i>', cur + 1, { disabled: cur === totalPages, aria: 'Sonraki' });
+}
+function goToPage(p) {
+  const totalPages = Math.max(1, Math.ceil(totalCount / PER_PAGE));
+  state.page = Math.min(Math.max(1, p), totalPages);
+  if (eligActive) { writeUrl(); renderCards(); } else runSearch();
+  document.getElementById('cardsContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ── Eligibility panel ─────────────────────────────────────────────────
+function toggleEligPanel() {
+  const panel = document.getElementById('eligPanel');
+  const btn = document.getElementById('eligToggleBtn');
+  const opening = panel.style.display === 'none';
+  panel.style.display = opening ? 'block' : 'none';
+  btn.innerHTML = opening
+    ? `<i class="bi bi-x-lg"></i><span>${_t('p.elig.close', 'Kapat')}</span>`
+    : `<i class="bi bi-sliders"></i><span>${_t('p.elig.check', 'Uygunluğumu Kontrol Et')}</span>`;
+}
+
+function eligMatch(p) {
+  if (!p || !p.requirements_json || !window.Eligibility) return null;
+  const reqs = Eligibility.parseReqs(p.requirements_json);
+  if (!reqs) return null;
+  return Eligibility.matchProgram(eligStudent || {}, reqs);
+}
+
+function legacyEligible(p) {
+  const c = eligCriteria;
+  if (c.gpaPct !== null) {
+    if (p.gpa_requirement) {
+      const req = parseFloat(p.gpa_requirement);
+      if (!isNaN(req) && c.gpaPct < req) return false;
+    }
+  }
+  if (c.engType) {
+    const progEng = p.english_req_type || 'None';
+    if (progEng !== 'None') {
+      if (progEng !== c.engType) return false;
+      if (c.engScore !== null && p.english_req_score !== null) {
+        if (parseFloat(p.english_req_score) > c.engScore) return false;
+      }
+    }
+  }
+  return true;
+}
+
+function meetsEligibility(p) {
+  if (!eligActive) return true;
+  if (eligCriteria.maxFee !== null && p.tuition_fee !== null && p.tuition_fee > eligCriteria.maxFee) return false;
+  const m = eligMatch(p);
+  const isEligible = m ? m.eligible : legacyEligible(p);
+  if (eligOnlyEligible) return isEligible;
+  return true;
+}
+
+function applyEligibility() {
+  const level = document.getElementById('eligLevel').value || 'none';
+  const qualType = document.getElementById('eligQualType').value || '';
+  const qualValue = document.getElementById('eligQualValue').value.trim();
+  const gpaRaw = document.getElementById('eligGpa').value;
+  const gpaScale = document.getElementById('eligGpaScale').value || '4.0';
+  const engType = document.getElementById('eligEngType').value || '';
+  const engScoreRaw = document.getElementById('eligEngScore').value;
+  const stdType = document.getElementById('eligStdType').value || '';
+  const stdScoreRaw = document.getElementById('eligStdScore').value;
+  const maxFee = parseFloat(document.getElementById('eligFee').value);
+  eligOnlyEligible = document.getElementById('eligOnlyEligible').checked;
+
+  eligStudent = {
+    level, gpa: gpaRaw, gpaScale,
+    qualType, qualValue,
+    english: engType ? [{ test: engType, score: engScoreRaw }] : [],
+    standardized: stdType ? [{ test: stdType, score: stdScoreRaw }] : [],
+    budget: isNaN(maxFee) ? null : maxFee
+  };
+
+  const engScore = parseFloat(engScoreRaw);
+  eligCriteria = {
+    gpaPct: gpaRaw !== '' && window.Eligibility ? Eligibility.normalizeGpa(gpaRaw, gpaScale) : null,
+    engType: engType || null,
+    engScore: isNaN(engScore) ? null : engScore,
+    maxFee: isNaN(maxFee) ? null : maxFee
+  };
+
+  eligActive = !!(level !== 'none' || qualType || gpaRaw !== '' || engType || stdType || eligCriteria.maxFee !== null);
+  state.page = 1;
+  runSearch().then(showEligSummary);
+}
+
+function showEligSummary() {
+  const level = document.getElementById('eligLevel').value || 'none';
+  const qualType = document.getElementById('eligQualType').value || '';
+  const qualValue = document.getElementById('eligQualValue').value.trim();
+  const gpaRaw = document.getElementById('eligGpa').value;
+  const gpaScale = document.getElementById('eligGpaScale').value || '4.0';
+  const engType = document.getElementById('eligEngType').value || '';
+  const engScoreRaw = document.getElementById('eligEngScore').value;
+  const stdType = document.getElementById('eligStdType').value || '';
+  const stdScoreRaw = document.getElementById('eligStdScore').value;
+  const el = document.getElementById('eligResult');
+  el.style.display = 'block';
+  if (!eligActive) {
+    el.innerHTML = '<i class="bi bi-info-circle me-1" style="color:var(--muted)"></i>' + (window.t ? window.t('p.elig.hint') : 'Profilini gir, Match\'e bas.');
+    return;
+  }
+  let eligibleCount = 0;
+  allPrograms.forEach(p => {
+    if (eligCriteria.maxFee !== null && p.tuition_fee !== null && p.tuition_fee > eligCriteria.maxFee) return;
+    const m = eligMatch(p);
+    if (m ? m.eligible : legacyEligible(p)) eligibleCount++;
+  });
+  const ELIG_LEVEL_KEY = { highschool: 'p.elig.level.hs', bachelor: 'p.elig.level.bach', master: 'p.elig.level.master', phd: 'p.elig.level.phd' };
+  const _t = (k, fb) => window.t ? window.t(k) : fb;
+  const criteria = [];
+  if (level !== 'none') criteria.push(esc(ELIG_LEVEL_KEY[level] ? _t(ELIG_LEVEL_KEY[level], level) : level));
+  if (qualType) criteria.push(esc(qualType) + (qualValue ? ' ' + esc(qualValue) : ''));
+  if (gpaRaw !== '') criteria.push('GPA ' + esc(gpaRaw) + '/' + esc(gpaScale));
+  if (engType) criteria.push(esc(engType) + (engScoreRaw ? ' ' + esc(engScoreRaw) : ''));
+  if (stdType) criteria.push(esc(stdType) + (stdScoreRaw ? ' ' + esc(stdScoreRaw) : ''));
+  if (eligCriteria.maxFee !== null) criteria.push(_t('p.elig.budget', 'bütçe $') + eligCriteria.maxFee.toLocaleString());
+  el.innerHTML = `<i class="bi bi-check-circle-fill me-1" style="color:#059669"></i>
+    ${_t('p.elig.matchcount', 'Profiline uyan')} <b style="color:var(--text)">${eligibleCount} ${_t('p.elig.programword', 'program')}</b>
+    ${criteria.length ? `<span style="color:var(--muted)"> · ${criteria.join(', ')}</span>` : ''}.
+    <button onclick="clearEligibility()" style="background:none;border:none;color:var(--accent);font-size:.78rem;cursor:pointer;margin-left:8px;text-decoration:underline">${_t('p.elig.reset.btn', 'Sıfırla')}</button>`;
+}
+
+function clearEligibility() {
+  ['eligLevel','eligQualType','eligQualValue','eligGpa','eligEngType','eligEngScore','eligStdType','eligStdScore','eligFee'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el.tagName === 'SELECT') el.value = el.options[0].value; else el.value = '';
+  });
+  document.getElementById('eligGpaScale').value = '4.0';
+  document.getElementById('eligOnlyEligible').checked = true;
+  document.getElementById('eligResult').style.display = 'none';
+  eligActive = false; eligCriteria = {}; eligStudent = null; eligOnlyEligible = true;
+  state.page = 1;
+  runSearch();
+}
+
+// ── Lead modal ──────────────────────────────────────────────────────────
+let leadCtx = {};
+
+function openLeadModal(programId) {
+  const p = allPrograms.find(x => x.id === programId);
+  if (!p) return;
+  leadCtx = { programId, programName: p.name, universityId: p.university_id, universityName: p.university_name, country: p.country };
+  document.getElementById('leadProgName').textContent = leadCtx.programName;
+  document.getElementById('leadUniName').textContent = leadCtx.universityName;
+  ['leadName','leadEmail','leadPhone','leadMsg'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('leadError').textContent = '';
+  document.getElementById('leadSuccess').classList.add('d-none');
+  document.getElementById('leadFormBody').classList.remove('d-none');
+  document.getElementById('leadModal').style.display = 'flex';
+}
+
+function closeLeadModal() { document.getElementById('leadModal').style.display = 'none'; }
+
+async function submitLead() {
+  const btn = document.getElementById('leadSubmitBtn');
+  const errEl = document.getElementById('leadError');
+  errEl.textContent = '';
+  const name = document.getElementById('leadName').value.trim();
+  const email = document.getElementById('leadEmail').value.trim();
+  const phone = document.getElementById('leadPhone').value.trim();
+  const message = document.getElementById('leadMsg').value.trim();
+  if (!name || !email) { errEl.textContent = window.t ? window.t('p.lead.req') : 'Ad ve e-posta zorunludur.'; return; }
+  btn.disabled = true; btn.textContent = window.t ? window.t('p.lead.sending') : 'Gönderiliyor…';
+  try {
+    const r = await fetch('/api/public/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        student_name: name, email, phone, message,
+        program_id: leadCtx.programId, program_name: leadCtx.programName,
+        university_id: leadCtx.universityId, university_name: leadCtx.universityName,
+        country: leadCtx.country
+      })
+    });
+    const d = await r.json();
+    if (!r.ok) { errEl.textContent = d.error || (window.t ? window.t('p.lead.err') : 'Bir hata oluştu.'); return; }
+    document.getElementById('leadFormBody').classList.add('d-none');
+    document.getElementById('leadSuccess').classList.remove('d-none');
+  } catch (e) {
+    errEl.textContent = window.t ? window.t('p.lead.net.err') : 'Ağ hatası — lütfen tekrar deneyin.';
+  } finally {
+    btn.disabled = false; btn.textContent = window.t ? window.t('p.lead.send') : 'Gönder';
+  }
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLeadModal(); });
+
+// ── Proposal basket ──────────────────────────────────────────────────────
+function addToProposal(programId) {
+  const p = allPrograms.find(x => x.id === programId);
+  if (!p) return;
+  const basket = JSON.parse(localStorage.getItem('pe_proposal') || '[]');
+  if (basket.some(item => item.id === p.id)) {
+    showProposalToast('Bu program zaten teklif sepetinde.');
+    return;
+  }
+  basket.push({
+    id: p.id, name: p.name, university_name: p.university_name,
+    type_name: p.type_name, tuition_fee: p.tuition_fee, tuition_currency: p.tuition_currency,
+    duration: p.duration, english_req_type: p.english_req_type, english_req_score: p.english_req_score,
+    gpa_requirement: p.gpa_requirement, intake_months: p.intake_months,
+    language_of_instruction: p.language_of_instruction,
+    city: p.city, country: p.country, scholarship_available: p.scholarship_available,
+    placement_year: p.placement_year, internship_available: p.internship_available,
+    international_eligible: p.international_eligible, internship_paid: p.internship_paid,
+    employer_partnerships: p.employer_partnerships, live_industry_projects: p.live_industry_projects,
+    professional_accreditation: p.professional_accreditation,
+    graduate_outcome_source: p.graduate_outcome_source, graduate_outcome_date: p.graduate_outcome_date,
+    scholarship_amount: p.scholarship_amount, scholarship_conditions: p.scholarship_conditions,
+    application_deadline: p.application_deadline, deposit_deadline: p.deposit_deadline,
+    scholarship_deadline: p.scholarship_deadline
+  });
+  localStorage.setItem('pe_proposal', JSON.stringify(basket));
+  updateProposalBadge();
+  showProposalToast('Teklif sepetine eklendi');
+}
+
+function updateProposalBadge() {
+  const badge = document.getElementById('proposalBadge');
+  const count = document.getElementById('proposalCount');
+  if (!badge || !canPropose) return;
+  const basket = JSON.parse(localStorage.getItem('pe_proposal') || '[]');
+  badge.style.display = basket.length ? 'block' : 'none';
+  if (count) count.textContent = basket.length;
+}
+
+function showProposalToast(msg) {
+  let toast = document.getElementById('proposalToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'proposalToast';
+    toast.style.cssText = 'position:fixed;bottom:80px;right:24px;z-index:600;background:#1f2937;color:#fff;font-size:.8rem;font-weight:500;padding:9px 16px;border-radius:8px;transition:opacity .3s;opacity:0;pointer-events:none;box-shadow:0 4px 12px rgba(0,0,0,.25)';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = msg;
+  toast.style.opacity = '1';
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => { toast.style.opacity = '0'; }, 2200);
+}
+
+if (canPropose) document.addEventListener('DOMContentLoaded', updateProposalBadge);
+
+init();
+</script>
+<script src="/js/chrome.js"></script>
+</body>
+</html>
