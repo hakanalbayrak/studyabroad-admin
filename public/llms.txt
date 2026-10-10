@@ -12,6 +12,7 @@
 
 ## Public JSON API (read-only, no key)
 - GET /api/public/programs/search?q=&country=&type=&field=&budget=&scholarship=1&eng=&sort=name|fee-asc|fee-desc|qs&page=1&per=24
+- GET|POST /api/public/match : school matching. Send a student profile (degree, fields, english, budget, region, apib) and get ranked schools with reasons. Schema: GET /api/public/match/schema
 - GET /api/public/universities and /api/public/universities/<id>
 - GET /api/public/filter-options (countries, degree types, fields, totals)
 

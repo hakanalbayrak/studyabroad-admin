@@ -669,6 +669,54 @@ app.get('/api/public/universities/:id', async (req, res) => {
 });
 
 // Paginated, server-filtered program search used by /programs.
+// ── School matching (shared by /match and AI agents) ────────────────────────
+// GET  /api/public/match/schema : machine-readable profile description + taxonomy
+// GET|POST /api/public/match    : profile -> ranked schools with reasons
+const matcher = require('./utils/matcher');
+let _fieldMap = { at: 0, map: null };
+async function fieldsByGroup() {
+  if (_fieldMap.map && Date.now() - _fieldMap.at < 3600e3) return _fieldMap.map;
+  const [rows] = await db.query('SELECT DISTINCT field FROM programs WHERE field IS NOT NULL AND status = "active"');
+  const map = {};
+  rows.forEach(r => { const g = matcher.macroField(r.field); if (g) (map[g] = map[g] || []).push(r.field); });
+  _fieldMap = { at: Date.now(), map };
+  return map;
+}
+app.get('/api/public/match/schema', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=3600');
+  res.json({ profile: matcher.PROFILE_SCHEMA, fields: matcher.FIELD_GROUPS, regions: matcher.REGIONS,
+    usage: 'GET /api/public/match?degree=master&fields=Engineering,AI%20%26%20Technology&english=B1-B2&budget=5-10k&region=Europe  or POST the same keys as JSON.',
+    reasons: { english_ok: 'meets English requirement', english_close: 'within 1 IELTS band', english_short: 'below requirement', no_english_req: 'no English test required',
+      top_ranked: 'QS/THE top 200', in_budget: 'fee inside budget', fee_unknown: 'fee not published', scholarship: 'scholarship available', bridge_route: 'foundation/pre-master/pathway route' } });
+});
+async function runMatch(req, res) {
+  try {
+    const raw = req.method === 'POST' ? (req.body || {}) : req.query;
+    const profile = matcher.normalizeProfile(raw);
+    const scope = matcher.sqlScope(profile);
+    const where = ['p.status = "active"', 'e.status != "inactive"', 'pt.name IN (' + scope.types.map(() => '?').join(',') + ')'];
+    const vals = [...scope.types];
+    if (scope.countries.length) { where.push('el.country IN (' + scope.countries.map(() => '?').join(',') + ')'); vals.push(...scope.countries); }
+    if (scope.groups.length) {
+      const map = await fieldsByGroup();
+      const fine = [].concat(...scope.groups.map(g => map[g] || []));
+      if (!fine.length) return res.json({ profile, total: 0, schools: [] });
+      where.push('p.field IN (' + fine.map(() => '?').join(',') + ')'); vals.push(...fine);
+    }
+    const [rows] = await db.query(
+      `SELECT p.id, p.name, p.field, p.duration, p.tuition_fee, p.tuition_currency, p.english_req_type, p.english_req_score,
+              p.requirements_json, p.scholarship_available, p.international_eligible, p.source_url,
+              pt.name AS type_name, e.id AS university_id, e.name AS university_name, e.qs_rank, e.the_rank, el.city, el.country
+       FROM programs p JOIN program_types pt ON pt.id = p.program_type_id
+       JOIN entity_locations el ON el.id = p.entity_location_id JOIN entities e ON e.id = el.entity_id
+       WHERE ${where.join(' AND ')}`, vals);
+    res.set('Cache-Control', 'no-store');
+    res.json(matcher.matchProfile(raw, rows));
+  } catch (e) { res.status(500).json({ error: e.message }); }
+}
+app.get('/api/public/match', runMatch);
+app.post('/api/public/match', runMatch);
+
 // GET /api/public/programs/search?q=&type=a,b&category=a,b&field=a,b&country=a,b
 //   &budget=free|lt5|5-10|10-15|gt15&scholarship=1&eng=IELTS,None&sort=&page=1&per=24
 // "all=1" returns up to ALL_CAP rows in one response (used for the eligibility check).

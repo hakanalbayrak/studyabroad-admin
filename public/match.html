@@ -103,6 +103,8 @@
       <button class="chip" data-val="Medicine & Health"><i class="bi bi-heart-pulse"></i><span data-i18n="m.field.medicine">Tıp &amp; Sağlık</span></button>
       <button class="chip" data-val="AI & Technology"><i class="bi bi-cpu"></i><span data-i18n="m.field.ai">Yapay Zeka &amp; Teknoloji</span></button>
       <button class="chip" data-val="Social Sciences"><i class="bi bi-people"></i><span data-i18n="m.field.social">Sosyal Bilimler</span></button>
+      <button class="chip" data-val="Arts & Design"><i class="bi bi-pencil"></i><span data-i18n="m.field.arts">Sanat &amp; Tasarım</span></button>
+      <button class="chip" data-val="Natural Sciences"><i class="bi bi-stars"></i><span data-i18n="m.field.science">Fen Bilimleri</span></button>
     </div>
   </div>
 
@@ -132,6 +134,7 @@
       <button class="chip" data-val="USA/Canada"><i class="bi bi-globe-americas"></i><span data-i18n="m.region.usca">Amerika / Kanada</span></button>
       <button class="chip" data-val="UK"><i class="bi bi-globe"></i><span data-i18n="m.region.uk">İngiltere</span></button>
       <button class="chip" data-val="Australia"><i class="bi bi-globe-asia-australia"></i><span data-i18n="m.region.australia">Avustralya</span></button>
+      <button class="chip" data-val="Middle East"><i class="bi bi-globe"></i><span data-i18n="m.region.me">Dubai / BAE</span></button>
     </div>
   </div>
 
@@ -161,11 +164,10 @@
   <div id="schoolList"></div>
 </div>
 
-<script src="/js/eligibility.js"></script>
-<script src="/js/match.js"></script>
 <script>
   var sel = { edu:null, degree:null, fields:[], english:null, budget:null, region:null, apib:null };
   var degreeTouched = false;
+  var OPTIONAL = ['budget', 'region', 'apib', 'english'];
 
   // Programmatically select a single-choice chip in a group
   function pickChip(group, val) {
@@ -189,6 +191,8 @@
           var arr = sel[group];
           var idx = arr.indexOf(val);
           if (idx > -1) arr.splice(idx, 1); else arr.push(val);
+        } else if (btn.classList.contains('on') && OPTIONAL.indexOf(group) > -1) {
+          btn.classList.remove('on'); sel[group] = null;
         } else {
           grp.querySelectorAll('.chip').forEach(function (b) { b.classList.remove('on'); });
           btn.classList.add('on');
@@ -209,26 +213,19 @@
     return (window.i18n && window.i18n.typeLabel) ? window.i18n.typeLabel(name) : name;
   }
 
-  var allPrograms = null;
   async function runSearch() {
     var btn = document.getElementById('goBtn');
     btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>' + (window.t ? window.t('m.searching') : 'Aranıyor…');
     try {
-      if (!allPrograms) {
-        var r = await fetch('/api/public/programs?limit=10000');
-        allPrograms = await r.json();
-      }
-      var student = {
-        educationStatus: sel.edu || 'highschool',
-        degreeTarget: sel.degree || (sel.edu === 'bachelor' ? 'master' : 'bachelor'),
-        fields: sel.fields,
-        englishLevel: sel.english || 'C1-C2',
-        budget: sel.budget || '15k+',
-        region: sel.region || null,
-        apib: sel.apib === 'yes'
+      var body = {
+        education: sel.edu || 'highschool',
+        degree: sel.degree || (sel.edu === 'bachelor' ? 'master' : 'bachelor'),
+        fields: sel.fields, english: sel.english, budget: sel.budget, region: sel.region, apib: sel.apib === 'yes'
       };
-      var schools = Match.rankSchools(student, allPrograms);
-      renderSchools(schools);
+      var r = await fetch('/api/public/match', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      if (!r.ok) throw new Error('match ' + r.status);
+      var data = await r.json();
+      renderSchools(data.schools, data.total);
       document.getElementById('wizard').style.display = 'none';
       document.getElementById('ctaBar').style.display = 'none';
       document.getElementById('results').style.display = 'block';
@@ -247,20 +244,27 @@
     return '<span class="badge-soft acc-low"><i class="bi bi-info-circle me-1"></i>' + _t('m.medchance') + '</span>';
   }
 
-  function feeText(p) {
-    if (p.fee == null) return window.t ? window.t('m.onreq') : 'Talep üzerine';
-    return '€' + Math.round(p.fee).toLocaleString('tr-TR') + (window.t ? window.t('p.per.yr') : '/yıl');
+  var WHY_SHOW = ['english_ok', 'no_english_req', 'english_close', 'scholarship', 'bridge_route', 'in_budget'];
+  function whyBadges(reasons) {
+    return (reasons || []).filter(function (r) { return WHY_SHOW.indexOf(r) > -1; }).slice(0, 3).map(function (r) {
+      return '<span class="badge-soft">' + esc(window.t ? window.t('m.why.' + r) : r) + '</span>';
+    }).join('');
   }
 
-  function renderSchools(schools) {
-    document.getElementById('resCount').textContent = schools.length;
+  function feeText(p) {
+    if (p.fee_eur == null) return window.t ? window.t('m.onreq') : 'Talep üzerine';
+    return '€' + Math.round(p.fee_eur).toLocaleString('tr-TR') + (window.t ? window.t('p.per.yr') : '/yıl');
+  }
+
+  function renderSchools(schools, total) {
+    document.getElementById('resCount').textContent = total != null ? total : schools.length;
     var wrap = document.getElementById('schoolList');
     if (!schools.length) {
       var noResMsg = (window.t ? window.t('m.no.res') : 'Seçimlerine uygun okul bulunamadı.\nBütçeni veya bölgeyi genişletmeyi dene.').replace('\n', '<br>');
       wrap.innerHTML = '<div class="empty"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i>' + noResMsg + '</div>';
       return;
     }
-    var costText = function (s) { return s.avgFee != null ? '€' + s.avgFee.toLocaleString('tr-TR') + (window.t ? window.t('p.per.yr') : '/yıl') : (window.t ? window.t('m.onreq') : 'Talep üzerine'); };
+    var costText = function (s) { return s.avg_fee_eur != null ? '€' + s.avg_fee_eur.toLocaleString('tr-TR') + (window.t ? window.t('p.per.yr') : '/yıl') : (window.t ? window.t('m.onreq') : 'Talep üzerine'); };
     wrap.innerHTML = '<div class="school-grid">' + schools.map(function (s) {
       var rank = parseInt(s.qs_rank) || null;
       var rankBadge = rank ? '<span class="badge-soft rank-badge">QS #' + rank + '</span>' : '';
@@ -273,11 +277,11 @@
         '<div style="flex:1">' +
           '<a class="school-name" href="' + uniUrl + '">' + esc(s.university_name) + '</a>' +
           '<div class="school-loc"><i class="bi bi-geo-alt-fill me-1" style="color:var(--muted)"></i>' + esc([s.city, s.country].filter(Boolean).join(', ')) + '</div>' +
-          '<div class="d-flex gap-2 flex-wrap mt-2">' + accLabel(s.ease) + rankBadge + '</div>' +
+          '<div class="d-flex gap-2 flex-wrap mt-2">' + accLabel(s.ease) + rankBadge + whyBadges(s.reasons) + '</div>' +
           '<div class="fact-row">' +
             '<div class="fact"><span class="fact-label">' + (window.t ? window.t('m.fee') : 'Ort. yıllık ücret') + '</span><span class="fact-val cost">' + costText(s) + '</span></div>' +
             '<div class="fact"><span class="fact-label">' + (window.t ? window.t('m.duration') : 'Süre') + '</span><span class="fact-val">' + esc(s.duration || '—') + '</span></div>' +
-            '<div class="fact"><span class="fact-label">' + (window.t ? window.t('m.depts') : 'Uygun bölüm') + '</span><span class="fact-val">' + s.programs.length + '</span></div>' +
+            '<div class="fact"><span class="fact-label">' + (window.t ? window.t('m.depts') : 'Uygun bölüm') + '</span><span class="fact-val">' + s.program_count + '</span></div>' +
           '</div>' +
           '<details class="depts"><summary><span class="chev">▸</span> ' + (window.t ? window.t('m.viewdepts') : 'Bölümleri gör') + '</summary>' + depts + '</details>' +
         '</div>' +
