@@ -1536,3 +1536,7 @@ data sources, run cadence/trigger, and where the agent itself runs.
 
 ### Additional account types
 - Add new `role` values (e.g. `counselor`, `agent`) — no schema change needed.
+
+## 2026-10-10: Match engine (agent groundwork)
+- `/match` was returning nothing for any field choice (5 broad chips vs 90 fine `programs.field` values) and loaded only 10,000 of 23,120 programs. Matching is now server-side: `utils/matcher.js` (field/region/degree taxonomy, scoring, reasons), `GET|POST /api/public/match`, `GET /api/public/match/schema`. Listed in `llms.txt`.
+- Agent plan: the AI data agent should call this endpoint as its "find schools" tool; extend `PROFILE_SCHEMA` rather than adding new parameters elsewhere. Possible next inputs: GPA, intake month, scholarship preference.
