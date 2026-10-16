@@ -87,6 +87,12 @@
           <div class="score-row" id="resScore">20 sorudan 11 doğru</div>
           <div class="level-desc" id="resDesc"></div>
 
+          <div style="margin:18px 0 22px">
+            <a href="/match" id="findProgramsBtn" class="btn-grad w-100" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none">
+              <i class="bi bi-mortarboard-fill"></i><span data-i18n="t.find.lvl">Seviyene uygun programları bul</span>
+            </a>
+          </div>
+
           <div style="text-align:left">
             <p style="font-weight:700;font-size:.95rem;color:var(--text);margin-bottom:10px"><i class="bi bi-graph-up-arrow me-1" style="color:var(--accent)"></i><span data-i18n="t.improve">Seviyenizi geliştirin</span></p>
             <div class="upsell-cards">
@@ -108,12 +114,6 @@
             </div>
           </div>
 
-          <div style="margin-top:24px;padding-top:18px;border-top:1px solid var(--line-soft)">
-            <p style="color:var(--muted);font-size:.9rem;margin-bottom:14px" data-i18n="t.find">Yurt dışı eğitim programı bulmak ister misiniz?</p>
-            <a href="/match" class="btn-grad" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none">
-              <i class="bi bi-mortarboard-fill"></i><span data-i18n="t.find.btn">Okul Bul</span>
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -348,6 +348,7 @@
     document.getElementById('resScore').textContent = (window.t ? window.t('t.score.of20') : '20 sorudan {n} doğru').replace('{n}', score);
     document.getElementById('resDesc').textContent = info.desc;
     document.getElementById('resultCard').style.display = 'block';
+    document.getElementById('findProgramsBtn').href = '/match?eng=' + encodeURIComponent(({A1:'A1-A2',A2:'A1-A2',B1:'B1-B2',B2:'B1-B2',C1:'C1-C2',C2:'C1-C2'})[level] || 'B1-B2') + '&lvl=' + encodeURIComponent(level) + '&from=test';
   }
 
   function escHTML(s) {

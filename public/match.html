@@ -108,6 +108,7 @@
 
   <div class="step">
     <div class="step-label" data-i18n="m.s4">4. İngilizce seviyen</div>
+    <div class="step-hint" id="engFromTest" hidden></div>
     <div class="chips cols3" data-group="english" data-multi="0">
       <button class="chip" data-val="A1-A2"><i class="bi bi-1-circle"></i>A1–A2<span class="sub" data-i18n="m.eng.a1.sub">Başlangıç</span></button>
       <button class="chip" data-val="B1-B2"><i class="bi bi-2-circle"></i>B1–B2<span class="sub" data-i18n="m.eng.b1.sub">Orta</span></button>
@@ -205,6 +206,19 @@
       });
     });
   });
+
+  // Arriving from the English test: preselect the level and say so.
+  (function () {
+    var q = new URLSearchParams(location.search), eng = q.get('eng');
+    if (['A1-A2', 'B1-B2', 'C1-C2'].indexOf(eng) < 0) return;
+    pickChip('english', eng);
+    if (q.get('from') === 'test') {
+      var lvl = (q.get('lvl') || '').replace(/[^A-C0-9]/g, '').slice(0, 2);
+      var n = document.getElementById('engFromTest');
+      n.hidden = false;
+      n.textContent = (window.t ? window.t('m.eng.fromtest') : 'Bu seçenek bugün çözdüğün İngilizce testinin sonucuna göre seçildi') + (lvl ? ' (' + lvl + ')' : '') + '.';
+    }
+  })();
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
