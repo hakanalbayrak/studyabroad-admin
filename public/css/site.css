@@ -165,3 +165,13 @@ a.pe-card:hover, .pe-card.link:hover { transform: translate(-2px,-2px); box-shad
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* Action bar for multi-step flows (Continue / Show schools): inline under the last option on desktop,
+   pinned to the bottom of the screen on phones. Used by /apply and /match. */
+.cta-bar { margin-top: 24px; }
+.cta-bar .cta-inner, .cta-bar .inner { max-width: 680px; margin: 0 auto; display: flex; gap: 10px; }
+@media (max-width: 767.98px) {
+  .cta-bar { position: fixed; bottom: 0; left: 0; right: 0; margin: 0; background: var(--bg); border-top: var(--bw) solid var(--text);
+    padding: 12px var(--gutter, 16px) calc(12px + env(safe-area-inset-bottom)); z-index: 90; }
+  .has-cta { padding-bottom: 96px !important; }
+}

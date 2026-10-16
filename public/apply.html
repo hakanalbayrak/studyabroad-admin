@@ -113,8 +113,7 @@
     /* Funnel fills the viewport so footer doesn't float into view */
     #funnelMode { min-height: 0; padding-bottom: 24px; }
 
-    /* Funnel nav sits directly under the options (not fixed to the screen bottom) */
-    .cta-bar { margin-top: 22px; }
+    /* Funnel nav: .cta-bar rules live in site.css (inline on desktop, pinned on phones) */
     .cta-inner { max-width: 680px; margin: 0 auto; display: flex; gap: 10px; }
     .btn-back { background: var(--surface); border: var(--bw) solid var(--text); color: var(--muted); border-radius: 14px; font-size: .95rem; font-weight: 600; padding: 14px 20px; cursor: pointer; }
     .btn-next { flex: 1; background: var(--sun); border: var(--bw) solid var(--text); color: var(--text); border-radius: var(--r-s); font-size: 1rem; font-weight: 700; padding: 13px; min-height: 48px; box-shadow: var(--shadow-s); cursor: pointer; font-family: var(--f-body); }
@@ -354,7 +353,7 @@
   <!-- ══════════════════════════════════════════════════════════════
        FUNNEL MODE — cold start (no ?uni=)
        ══════════════════════════════════════════════════════════════ -->
-  <div id="funnelMode" style="display:none">
+  <div id="funnelMode" class="has-cta" style="display:none">
     <div class="prog-bar" id="progBar"></div>
     <div class="prog-label" id="progLabel"></div>
 
