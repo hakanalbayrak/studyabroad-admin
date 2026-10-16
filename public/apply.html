@@ -882,12 +882,12 @@ let curStep = 1;
 let allUnis = [], allCountryProgs = [], fPrograms = [];
 const fSel = { continent:null, country:null, progType:null, schoolId:null, schoolName:null,
                programId:null, programName:null, eduStatus:null, fEngLevel:null };
+const UK_GROUP = ['United Kingdom', 'UK', 'Ireland'];
 const CONTINENTS = [
   {val:'Europe',        get label() { return _t('apply.cont.eu', 'Avrupa'); }},
-  {val:'North America', get label() { return _t('apply.cont.na', 'Kuzey Amerika'); }},
+  {val:'North America', get label() { return _t('apply.cont.na', 'Kuzey Amerika (ABD ve Kanada)'); }},
   {val:'Australia',     get label() { return _t('apply.cont.au', 'Avustralya'); }},
-  {val:'Asia',          get label() { return _t('apply.cont.as', 'Asya'); }},
-  {val:'UK',            get label() { return _t('apply.cont.uk', 'Birleşik Krallık'); }},
+  {val:'UK',            get label() { return _t('apply.cont.uk', 'Birleşik Krallık (İngiltere, İskoçya, Galler, İrlanda)'); }},
 ];
 function stepLabels() {
   return _t('apply.steps', 'Kıta,Ülke,Program Türü,Okul,Program,İletişim & Profil,Kimlik Bilgileri').split(',');
@@ -913,14 +913,14 @@ function pickContinent(el) {
   fSel.country = null; fSel.progType = null; fSel.schoolId = null;
   const unis = allUnis.filter(u =>
     fSel.continent === 'UK'
-      ? (u.continent === 'UK' || u.country === 'United Kingdom' || u.country === 'UK')
-      : u.continent === fSel.continent
+      ? (u.continent === 'UK' || UK_GROUP.includes(u.country))
+      : (u.continent === fSel.continent && !UK_GROUP.includes(u.country))
   );
   const countries = [...new Set(unis.map(u => u.country).filter(Boolean))].sort();
   document.getElementById('countryChips').innerHTML = countries.length
     ? countries.map(c => `<div class="chip" data-f="country" data-v="${esc(c)}" onclick="pickCountry(this)">${esc(c)}</div>`).join('')
     : '<p style="color:var(--muted);font-size:.85rem">Bu kıtada kayıtlı üniversite bulunamadı.</p>';
-  document.getElementById('countryStepSub').textContent = fSel.continent + ' kıtasındaki ülkeler listeleniyor.';
+  document.getElementById('countryStepSub').textContent = el.textContent.trim() + ' için ülkeler listeleniyor.';
 }
 
 async function pickCountry(el) {
