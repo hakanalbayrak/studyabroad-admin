@@ -14,6 +14,7 @@ const GROUPS = [
   { id: 'kariyer', title: 'Diploma ve kariyer' },
   { id: 'okul', title: 'Okul ve bölümler' },
   { id: 'basvuru', title: 'Başvuru süreci' },
+  { id: 'ek', title: 'Ek sorular' },
 ];
 
 // order = display order. `intro` = the first question, rendered as H1 + lead paragraph.
@@ -89,6 +90,7 @@ const ENTITY_FACTS = [
   { key: 'apply_steps', label: 'Başvuru adımları', type: 'list', hint: 'Her satır bir adım' },
   { key: 'docs', label: 'Gerekli belgeler', type: 'list', hint: 'Her satır bir belge' },
   { key: 'deadline_note', label: 'Başvuru tarihleri notu', type: 'textarea' },
+  { key: 'meta_description', label: 'Google açıklaması (meta description)', type: 'textarea', hint: 'Boşsa otomatik üretilir. En fazla ~155 karakter ideal.' },
   { key: 'apply_url', label: 'Resmî başvuru bağlantısı', type: 'text' },
   { key: 'sources', label: 'Kaynak bağlantıları', type: 'list', hint: 'Her satır bir URL' },
   { key: 'verified_at', label: 'Son doğrulama tarihi', type: 'date' },

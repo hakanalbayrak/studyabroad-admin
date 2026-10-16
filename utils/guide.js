@@ -442,6 +442,11 @@ async function buildGuide(entityId, { preview = false } = {}) {
     if (!has(md)) continue;
     sections.push({ id: q.id, group: q.group, intro: !!q.intro, question: q.q(N), answer_md: md, answer_html: renderMarkdown(md).html, answer_text: plain(md), source });
   }
+  (Array.isArray(profile.data.custom) ? profile.data.custom : []).forEach((cu, i) => {
+    if (!cu || !has(cu.q) || !has(cu.a)) return;
+    const r = fill(cu.a, t); r.miss.forEach(m => unresolved.add(`custom${i + 1}:${m}`));
+    sections.push({ id: 'custom' + (i + 1), group: 'ek', intro: false, question: String(cu.q).trim(), answer_md: r.out, answer_html: renderMarkdown(r.out).html, answer_text: plain(r.out), source: 'custom' });
+  });
   const slug = profile.slug || slugify(e.name);
   const updated = [agg.updated, profile.updated_at ? new Date(profile.updated_at) : null, e.updated_at ? new Date(e.updated_at) : null].filter(Boolean).reduce((m, d) => d > m ? d : m, new Date(0));
   const intro = sections.find(s => s.intro);
@@ -450,7 +455,7 @@ async function buildGuide(entityId, { preview = false } = {}) {
     name: e.name, short_name: shortName, city: e.city, country: e.country, country_tr: COUNTRY_TR[e.country] || e.country,
     title: intro ? intro.question : `${N.N_abl} kabul alabilir miyim?`,
     meta_title: `${N.N_abl} Kabul Alabilir miyim? Şartlar, Ücret, Burs`,
-    meta_description: `${shortName} kabul şartları, yıllık ücret, burs, yurt, başvuru belgeleri ve vize bilgisi. ${t.tuition_range ? 'Ücret: ' + t.tuition_range + '. ' : ''}Türk ve AB dışı öğrenciler için rehber.`.slice(0, 300),
+    meta_description: facts.meta_description || `${shortName} kabul şartları, yıllık ücret, burs, yurt, başvuru belgeleri ve vize bilgisi. ${t.tuition_range ? 'Ücret: ' + t.tuition_range + '. ' : ''}Türk ve AB dışı öğrenciler için rehber.`.slice(0, 300),
     updated: updated.getTime() ? updated.toISOString() : null, verified_at: facts.verified_at || null, sources: Array.isArray(facts.sources) ? facts.sources : [],
     groups: GROUPS, sections, data: { tokens: t, programs: progs.length, unresolved: [...unresolved] },
   };

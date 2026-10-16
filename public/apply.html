@@ -111,10 +111,10 @@
     .step-h { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
     .step-sub { font-size: .82rem; color: var(--muted); margin-bottom: 20px; }
     /* Funnel fills the viewport so footer doesn't float into view */
-    #funnelMode { min-height: 0; padding-bottom: 96px; }
+    #funnelMode { min-height: 0; padding-bottom: 24px; }
 
-    /* Funnel sticky nav */
-    .cta-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg); border-top: var(--bw) solid var(--text); padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); z-index: 90; }
+    /* Funnel nav sits directly under the options (not fixed to the screen bottom) */
+    .cta-bar { margin-top: 22px; }
     .cta-inner { max-width: 680px; margin: 0 auto; display: flex; gap: 10px; }
     .btn-back { background: var(--surface); border: var(--bw) solid var(--text); color: var(--muted); border-radius: 14px; font-size: .95rem; font-weight: 600; padding: 14px 20px; cursor: pointer; }
     .btn-next { flex: 1; background: var(--sun); border: var(--bw) solid var(--text); color: var(--text); border-radius: var(--r-s); font-size: 1rem; font-weight: 700; padding: 13px; min-height: 48px; box-shadow: var(--shadow-s); cursor: pointer; font-family: var(--f-body); }
@@ -447,6 +447,13 @@
       <label class="lbl" data-i18n="apply.hs">Lise</label>
       <input type="text" class="fld" id="f_highschool" placeholder="Lise adı" data-i18n-ph="apply.hs.ph">
     </div>
+    <!-- Funnel nav: sits right under the options -->
+    <div class="cta-bar" id="ctaBar" style="display:none">
+      <div class="cta-inner">
+        <button class="btn-back" id="backBtn" onclick="prevStep()" style="display:none"><i class="bi bi-arrow-left"></i></button>
+        <button class="btn-next" id="nextBtn" onclick="nextStep()"><span data-i18n="apply.continue">Devam</span> <i class="bi bi-arrow-right" style="margin-left:6px"></i></button>
+      </div>
+    </div>
   </div>
 
   <!-- Loading -->
@@ -488,13 +495,6 @@
   </div>
 </div>
 
-<!-- Funnel sticky nav -->
-<div class="cta-bar" id="ctaBar" style="display:none">
-  <div class="cta-inner">
-    <button class="btn-back" id="backBtn" onclick="prevStep()" style="display:none"><i class="bi bi-arrow-left"></i></button>
-    <button class="btn-next" id="nextBtn" onclick="nextStep()"><span data-i18n="apply.continue">Devam</span> <i class="bi bi-arrow-right" style="margin-left:6px"></i></button>
-  </div>
-</div>
 
 <script>
 // ── Shared helpers ─────────────────────────────────────────────────────────
