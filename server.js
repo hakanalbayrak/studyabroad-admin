@@ -13,14 +13,19 @@ const { chromeMiddleware, injectChrome } = require('./utils/chrome');
 const blog = require('./utils/blog');
 app.use(chromeMiddleware);
 // Blog is rendered from content/blog/*.md; it must precede express.static (public/blog/ exists).
-app.get('/blog', (req, res) => res.type('html').set('Cache-Control', 'public, max-age=300').send(blog.renderIndex(req.query)));
-app.get('/blog/feed.xml', (req, res) => res.type('application/rss+xml').send(blog.renderFeed()));
-app.get('/blog/:slug', (req, res) => {
+const guide = require('./utils/guide');
+const guidePosts = async () => { try { return await guide.listPublished(); } catch (e) { console.error('guide list:', e.message); return []; } };
+app.get('/blog', async (req, res) => res.type('html').set('Cache-Control', 'public, max-age=300').send(blog.renderIndex(req.query, await guidePosts())));
+app.get('/blog/feed.xml', async (req, res) => res.type('application/rss+xml').send(blog.renderFeed(await guidePosts())));
+app.get('/blog/:slug', async (req, res) => {
   const html = blog.renderPost(req.params.slug);
   if (html) return res.type('html').set('Cache-Control', 'public, max-age=300').send(html);
-  res.sendFile(path.join(__dirname, `public/blog/${req.params.slug}.html`), err => {
-    if (err) res.status(404).sendFile(path.join(__dirname, 'public/404.html'));
-  });
+  try {
+    const id = await guide.entityIdForSlug(req.params.slug);
+    const g = id && await guide.buildGuide(id);
+    if (g) return res.type('html').set('Cache-Control', 'public, max-age=300').send(guide.renderGuidePage(g));
+  } catch (e) { console.error('guide page:', e.message); }
+  res.status(404).sendFile(path.join(__dirname, 'public/404.html'));
 });
 
 // Dynamic sitemap: static pages, blog posts and every active university page.
@@ -29,6 +34,7 @@ app.get('/sitemap.xml', async (req, res) => {
     const base = 'https://paneledu.com';
     const urls = [['/', 'daily', '1.0'], ['/match', 'weekly', '0.9'], ['/programs', 'daily', '0.9'], ['/test', 'monthly', '0.7'], ['/blog', 'weekly', '0.8'], ['/about', 'yearly', '0.4'], ['/apply', 'monthly', '0.6']];
     blog.loadPosts().forEach(p => urls.push(['/blog/' + p.slug, 'monthly', '0.7', p.updated || p.date]));
+    (await guidePosts()).forEach(p => urls.push(['/blog/' + p.slug, 'weekly', '0.7', p.date]));
     const [rows] = await db.query("SELECT id FROM entities WHERE status != 'inactive' ORDER BY id");
     rows.forEach(r => urls.push(['/university?id=' + r.id, 'weekly', '0.6']));
     const x = urls.map(([u, f, p, d]) => `<url><loc>${base}${u.replace(/&/g, '&amp;')}</loc>${d ? `<lastmod>${String(d).slice(0, 10)}</lastmod>` : ''}<changefreq>${f}</changefreq><priority>${p}</priority></url>`).join('');
@@ -95,7 +101,11 @@ app.get('/university', async (req, res) => {
       `<meta name="twitter:title" content="${htmlEsc(title)}">`,
       `<meta name="twitter:description" content="${htmlEsc(desc)}">`,
     ].filter(Boolean).join('\n  ');
-    const html = universityHtmlCache.replace('<title>University — PANELEDU</title>', meta);
+    let html = universityHtmlCache.replace('<title>University — PANELEDU</title>', meta);
+    try {
+      const g = await guide.buildGuide(id);
+      if (g) html = html.replace('</main>', guide.renderUniversitySection(g) + '</main>').replace('</head>', '<link href="/css/guide.css?v=20261016" rel="stylesheet"></head>');
+    } catch (e) { console.error('guide on university page:', e.message); }
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.send(injectChrome(html));
   } catch (e) {
@@ -669,6 +679,58 @@ app.get('/api/public/universities/:id', async (req, res) => {
 });
 
 // Paginated, server-filtered program search used by /programs.
+// ── University guides (public JSON for agents; admin editing) ───────────────
+app.get('/api/public/universities/:id/guide', async (req, res) => {
+  try {
+    const g = await guide.buildGuide(parseInt(req.params.id));
+    if (!g) return res.status(404).json({ error: 'No published guide for this university.' });
+    res.set('Cache-Control', 'public, max-age=300');
+    res.json({ ...g, sections: g.sections.map(({ answer_html, ...s }) => s) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+app.get('/api/public/guides', async (req, res) => {
+  try { res.set('Cache-Control', 'public, max-age=300'); res.json(await guidePosts()); } catch (e) { res.status(500).json({ error: e.message }); }
+});
+const adminGuide = express.Router();
+adminGuide.get('/spec', (req, res) => res.json({ questions: guide.QUESTIONS.map(q => ({ id: q.id, group: q.group, intro: !!q.intro })), groups: guide.GROUPS,
+  entity_facts: guide.ENTITY_FACTS, country_facts: guide.COUNTRY_FACTS, country_tr: guide.COUNTRY_TR }));
+adminGuide.get('/list', async (req, res) => {
+  try {
+    await guide.getProfile('entity', 0); // makes sure the table exists
+    const [rows] = await db.query(
+      `SELECT e.id, e.name, el.country, el.city,
+              (SELECT COUNT(*) FROM programs p JOIN entity_locations l ON l.id = p.entity_location_id WHERE l.entity_id = e.id AND p.status = 'active') AS programs
+       FROM entities e LEFT JOIN entity_locations el ON el.id = (SELECT MIN(id) FROM entity_locations WHERE entity_id = e.id)
+       WHERE e.status != 'inactive' ORDER BY el.country, e.name`);
+    const [gp] = await db.query("SELECT ref, status, slug, updated_at FROM guide_profiles WHERE scope = 'entity'");
+    const by = {}; gp.forEach(g => { by[g.ref] = g; });
+    res.json(rows.map(r => ({ ...r, status: (by[r.id] || {}).status || null, slug: (by[r.id] || {}).slug || null, guide_updated: (by[r.id] || {}).updated_at || null })));
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.get('/entity/:id', async (req, res) => {
+  try {
+    const id = parseInt(req.params.id); const p = await guide.getProfile('entity', id);
+    const g = await guide.buildGuide(id, { preview: true });
+    if (!g) return res.status(404).json({ error: 'Entity not found' });
+    res.json({ profile: { status: p.status, slug: p.slug || g.slug, data: p.data, updated_at: p.updated_at }, guide: g });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.put('/entity/:id', async (req, res) => {
+  try {
+    const id = parseInt(req.params.id); const { status, slug, data } = req.body || {};
+    await guide.saveProfile('entity', id, { status, slug, data });
+    res.json({ ok: true });
+  } catch (e) { res.status(e.code === 'ER_DUP_ENTRY' ? 409 : 500).json({ error: e.code === 'ER_DUP_ENTRY' ? 'Bu bağlantı adresi başka bir okulda kullanılıyor.' : e.message }); }
+});
+adminGuide.get('/country/:name', async (req, res) => {
+  try { const p = await guide.getProfile('country', req.params.name); res.json({ data: p.data, updated_at: p.updated_at }); } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.put('/country/:name', async (req, res) => {
+  try { await guide.saveProfile('country', req.params.name, { status: 'published', slug: null, data: req.body && req.body.data }); res.json({ ok: true }); }
+  catch (e) { res.status(500).json({ error: e.message }); }
+});
+app.use('/api/admin/guide', requireRole('admin'), adminGuide);
+
 // ── School matching (shared by /match and AI agents) ────────────────────────
 // GET  /api/public/match/schema : machine-readable profile description + taxonomy
 // GET|POST /api/public/match    : profile -> ranked schools with reasons

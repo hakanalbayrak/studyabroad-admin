@@ -94,6 +94,9 @@
       <a href="#" class="nav-link" data-sec="afflinks" onclick="showSection('afflinks');return false;">
         <i class="bi bi-link-45deg"></i>Affiliate Links
       </a>
+      <a href="#" class="nav-link" data-sec="guides" onclick="showSection('guides');return false;">
+        <i class="bi bi-file-earmark-text"></i>University Guides
+      </a>
       <a href="#" class="nav-link" data-sec="contributions" onclick="showSection('contributions');return false;">
         <i class="bi bi-inbox-fill"></i>Contributions
       </a>
@@ -862,6 +865,16 @@
       <div id="afflinksTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
     </div><!-- /afflinksSection -->
 
+    <!-- ── University Guides (SEO Q&A) ───────────────────────────────────────── -->
+    <div id="guidesSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h4 class="fw-bold mb-0"><i class="bi bi-file-earmark-text me-2 text-primary"></i>University Guides</h4>
+        <button class="btn btn-outline-secondary btn-sm" onclick="loadGuides()" aria-label="Yenile"><i class="bi bi-arrow-clockwise"></i></button>
+      </div>
+      <p class="text-muted small mb-3">Her okul için "Kabul alabilir miyim?" rehberi. Ücret, İngilizce, burs ve dönemler programlardan otomatik gelir; yayınlanınca blogda ve üniversite sayfasında görünür.</p>
+      <div id="guidesBody"></div>
+    </div><!-- /guidesSection -->
+
     <!-- ── Contribution Review Queue ────────────────────────────────────────── -->
     <div id="contributionsSection" class="section-content">
       <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
@@ -1203,6 +1216,7 @@
 </button>
 
 <script src="/vendor/bootstrap.bundle.min.js"></script>
+<script src="/admin/guides.js?v=20261016"></script>
 <script>
 let token = localStorage.getItem('sa_token');
 let editingId = null;
@@ -1396,6 +1410,7 @@ function showSection(name) {
   if (name === 'tiers') loadTiers();
   if (name === 'afflinks') loadAffLinks();
   if (name === 'contributions') loadContributions();
+  if (name === 'guides') loadGuides();
 }
 
 async function loadStats() {

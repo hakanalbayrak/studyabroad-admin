@@ -139,7 +139,7 @@ function loadPosts() {
     const { html, toc } = renderMarkdown(body);
     const words = body.split(/\s+/).filter(Boolean).length;
     return { ...meta, slug, html, toc, readingTime: Math.max(1, Math.round(words / 200)),
-      title: meta.title || slug, summary: meta.summary || '', category: meta.category || 'Rehber', tags: meta.tags || [],
+      title: meta.title || slug, summary: meta.summary || '', category: meta.category || 'Rehber', country: meta.country || '', tags: meta.tags || [],
       date: meta.date || new Date(fs.statSync(path.join(DIR, f)).mtimeMs).toISOString().slice(0, 10), author: meta.author || 'PANELEDU Editör' };
   }).filter(p => !p.draft);
   cache = { sig, posts: [...posts, ...LEGACY].sort((a, b) => String(b.date).localeCompare(String(a.date))) };
@@ -164,23 +164,26 @@ function head({ title, description, url, type = 'website', extra = '' }) {
 
 function card(p, big) {
   return `<a class="post-card${big ? ' post-card-big' : ''}" href="/blog/${esc(p.slug)}">
-  <span class="post-cat">${esc(p.category)}</span>
+  <span class="post-cat">${esc(p.country ? p.country + ' · ' + p.category : p.category)}</span>
   <h${big ? 2 : 3} class="post-title">${esc(p.title)}</h${big ? 2 : 3}>
   <p class="post-excerpt">${esc(p.summary)}</p>
   <span class="post-meta"><span>${fmtDate(p.date)}</span><span>${p.readingTime} dk okuma</span></span>
 </a>`;
 }
 
-function renderIndex(query = {}) {
-  const all = loadPosts();
+function renderIndex(query = {}, extra = []) {
+  const all = [...loadPosts(), ...extra].sort((a, b) => String(b.date).localeCompare(String(a.date)));
   const cats = [...new Set(all.map(p => p.category))].sort();
+  const countries = [...new Set(all.map(p => p.country).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'tr'));
   const cat = cats.includes(query.cat) ? query.cat : '';
-  const list = cat ? all.filter(p => p.category === cat) : all;
+  const country = countries.includes(query.country) ? query.country : '';
+  const list = all.filter(p => (!cat || p.category === cat) && (!country || p.country === country));
+  const qs = (o) => { const e = Object.entries({ country, cat, ...o }).filter(([, v]) => v); return e.length ? '?' + e.map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join('&') : ''; };
   const pages = Math.max(1, Math.ceil(list.length / PER_PAGE));
   const page = Math.min(Math.max(parseInt(query.page) || 1, 1), pages);
   const slice = list.slice((page - 1) * PER_PAGE, page * PER_PAGE);
   const [first, ...rest] = page === 1 ? slice : [null, ...slice];
-  const url = `${SITE}/blog${cat ? '?cat=' + encodeURIComponent(cat) : ''}`;
+  const url = `${SITE}/blog${qs({})}`;
   const ld = { '@context': 'https://schema.org', '@type': 'Blog', name: 'PANELEDU Blog', url: SITE + '/blog', inLanguage: 'tr',
     blogPost: all.slice(0, 20).map(p => ({ '@type': 'BlogPosting', headline: p.title, url: `${SITE}/blog/${p.slug}`, datePublished: p.date })) };
   const html = head({ title: 'Blog ve Rehberler | PANELEDU', description: 'Yurt dışında eğitim kararını kolaylaştıran ülke karşılaştırmaları, burs rehberleri, sınav ve başvuru yazıları.', url,
@@ -190,12 +193,13 @@ function renderIndex(query = {}) {
   <span class="pe-eyebrow">Blog</span>
   <h1>Rehberler ve karşılaştırmalar</h1>
   <p class="lead">Yurt dışında eğitim kararını kolaylaştıran ülke rehberleri, burs ve başvuru yazıları.</p>
-  ${cats.length > 1 ? `<nav class="cat-row" aria-label="Kategoriler"><a class="fchip${cat ? '' : ' sel'}" href="/blog">Tümü (${all.length})</a>${cats.map(c => `<a class="fchip${c === cat ? ' sel' : ''}" href="/blog?cat=${encodeURIComponent(c)}">${esc(c)} (${all.filter(p => p.category === c).length})</a>`).join('')}</nav>` : ''}
+  ${countries.length ? `<nav class="cat-row" aria-label="Ülkeler"><span class="cat-lbl">Ülke</span><a class="fchip${country ? '' : ' sel'}" href="/blog${qs({ country: '' })}">Tümü</a>${countries.map(c => `<a class="fchip${c === country ? ' sel' : ''}" href="/blog${qs({ country: c })}">${esc(c)} (${all.filter(p => p.country === c && (!cat || p.category === cat)).length})</a>`).join('')}</nav>` : ''}
+  ${cats.length > 1 ? `<nav class="cat-row" aria-label="Kategoriler"><span class="cat-lbl">Tür</span><a class="fchip${cat ? '' : ' sel'}" href="/blog${qs({ cat: '' })}">Tümü</a>${cats.map(c => `<a class="fchip${c === cat ? ' sel' : ''}" href="/blog${qs({ cat: c })}">${esc(c)} (${all.filter(p => p.category === c && (!country || p.country === country)).length})</a>`).join('')}</nav>` : ''}
 </div></section>
 <section class="pe-section-tight"><div class="pe-wrap">
   ${first ? card(first, true) : '<p class="blog-empty">İlk rehberler hazırlanıyor. Bu arada programları ve üniversiteleri inceleyebilirsin.</p>'}
   ${rest.length ? `<div class="post-grid">${rest.map(p => card(p)).join('')}</div>` : ''}
-  ${pages > 1 ? `<nav class="pager" aria-label="Sayfalar">${Array.from({ length: pages }, (_, i) => `<a class="${i + 1 === page ? 'active' : ''}" href="/blog?${cat ? 'cat=' + encodeURIComponent(cat) + '&' : ''}page=${i + 1}">${i + 1}</a>`).join('')}</nav>` : ''}
+  ${pages > 1 ? `<nav class="pager" aria-label="Sayfalar">${Array.from({ length: pages }, (_, i) => `<a class="${i + 1 === page ? 'active' : ''}" href="/blog${qs({ page: i + 1 })}">${i + 1}</a>`).join('')}</nav>` : ''}
 </div></section>
 <section class="pe-section-tight"><div class="pe-wrap"><div class="blog-cta">
   <div><h2>Sana uygun programı bul</h2><p>Birkaç soruyla bütçene, dereceye ve bölgene uygun okul listeni oluştur.</p></div>
@@ -233,7 +237,7 @@ function renderPost(slug) {
 <body class="pe-theme"><main id="main">
 <article class="post">
   <header class="post-head"><div class="pe-wrap">
-    <nav class="crumbs" aria-label="Sayfa yolu"><a href="/">Ana Sayfa</a> / <a href="/blog">Blog</a> / <a href="/blog?cat=${encodeURIComponent(post.category)}">${esc(post.category)}</a></nav>
+    <nav class="crumbs" aria-label="Sayfa yolu"><a href="/">Ana Sayfa</a> / <a href="/blog">Blog</a> / ${post.country ? `<a href="/blog?country=${encodeURIComponent(post.country)}">${esc(post.country)}</a> / ` : ''}<a href="/blog?cat=${encodeURIComponent(post.category)}">${esc(post.category)}</a></nav>
     <h1>${esc(post.title)}</h1>
     ${post.summary ? `<p class="dek">${esc(post.summary)}</p>` : ''}
     <div class="byline"><span>${esc(post.author)}</span><time datetime="${esc(post.date)}">${fmtDate(post.date)}</time>${post.updated ? `<span>Güncelleme: ${fmtDate(post.updated)}</span>` : ''}<span>${post.readingTime} dk okuma</span></div>
@@ -255,9 +259,9 @@ ${related.length ? `<section class="pe-section-tight"><div class="pe-wrap"><h2 c
   return injectChrome(html);
 }
 
-function renderFeed() {
-  const items = loadPosts().slice(0, 30).map(p => `<item><title>${esc(p.title)}</title><link>${SITE}/blog/${p.slug}</link><guid>${SITE}/blog/${p.slug}</guid><pubDate>${new Date(p.date).toUTCString()}</pubDate><category>${esc(p.category)}</category><description>${esc(p.summary)}</description></item>`).join('');
+function renderFeed(extra = []) {
+  const items = [...loadPosts(), ...extra].sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 30).map(p => `<item><title>${esc(p.title)}</title><link>${SITE}/blog/${p.slug}</link><guid>${SITE}/blog/${p.slug}</guid><pubDate>${new Date(p.date).toUTCString()}</pubDate><category>${esc(p.category)}</category><description>${esc(p.summary)}</description></item>`).join('');
   return `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>PANELEDU Blog</title><link>${SITE}/blog</link><description>Yurt dışında eğitim rehberleri</description><language>tr</language>${items}</channel></rss>`;
 }
 
-module.exports = { loadPosts, renderIndex, renderPost, renderFeed, parseFrontMatter, renderMarkdown, SITE };
+module.exports = { loadPosts, renderIndex, renderPost, renderFeed, parseFrontMatter, renderMarkdown, head, esc, fmtDate, inline, SITE };

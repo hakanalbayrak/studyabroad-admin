@@ -213,10 +213,11 @@
     <!-- GPA -->
     <label class="lbl" data-i18n="apply.gpa.lbl">GPA (100 üzerinden)</label>
     <div class="chip-grid">
-      <div class="chip" data-f="gpa" data-v="96-100" onclick="scChip('gpa',this)">96–100</div>
-      <div class="chip" data-f="gpa" data-v="81-95"  onclick="scChip('gpa',this)">81–95</div>
-      <div class="chip" data-f="gpa" data-v="70-80"  onclick="scChip('gpa',this)">70–80</div>
-      <div class="chip" data-f="gpa" data-v="60-69"  onclick="scChip('gpa',this)">60–69</div>
+      <div class="chip" data-f="gpa" data-v="0-59" onclick="scChip('gpa',this)">&lt;60</div>
+      <div class="chip" data-f="gpa" data-v="60-69" onclick="scChip('gpa',this)">60–69</div>
+      <div class="chip" data-f="gpa" data-v="70-79" onclick="scChip('gpa',this)">70–79</div>
+      <div class="chip" data-f="gpa" data-v="80-89" onclick="scChip('gpa',this)">80–89</div>
+      <div class="chip" data-f="gpa" data-v="90-100" onclick="scChip('gpa',this)">90–100</div>
     </div>
 
     <!-- English level -->
@@ -330,16 +331,8 @@
 
     <!-- Identity -->
     <div class="sec-div"><span data-i18n="apply.idinfo.opt">Kimlik Bilgileri — isteğe bağlı</span></div>
-    <div class="grid2">
-      <div>
-        <label class="lbl" data-i18n="apply.dob">Doğum tarihi</label>
-        <input type="date" class="fld" id="scDob">
-      </div>
-      <div>
-        <label class="lbl" data-i18n="apply.pob">Doğum yeri</label>
-        <input type="text" class="fld" id="scPob" placeholder="Şehir, ülke" data-i18n-ph="apply.pob.ph">
-      </div>
-    </div>
+    <label class="lbl" data-i18n="apply.dob">Doğum tarihi</label>
+    <input type="date" class="fld" id="scDob">
     <div class="grid2">
       <div>
         <label class="lbl" data-i18n="apply.nat">Uyruk</label>
@@ -350,8 +343,6 @@
         <input type="text" class="fld" id="scResidence" placeholder="Örn. Türkiye" data-i18n-ph="apply.nat.ph">
       </div>
     </div>
-    <label class="lbl" data-i18n="apply.addr">Adres</label>
-    <input type="text" class="fld" id="scAddress" placeholder="Açık adres" data-i18n-ph="apply.addr.ph">
     <label class="lbl" data-i18n="apply.hs">Lise</label>
     <input type="text" class="fld" id="scHighSchool" placeholder="Lise adı" data-i18n-ph="apply.hs.ph">
 
@@ -441,16 +432,8 @@
     <div class="wiz-step" data-step="7" style="display:none">
       <div class="step-h" data-i18n="apply.idinfo">Kimlik Bilgileri</div>
       <div class="step-sub" data-i18n="apply.idpass.s">İsteğe bağlı — daha sonra da tamamlayabilirsin.</div>
-      <div class="grid2">
-        <div>
-          <label class="lbl" data-i18n="apply.dob">Doğum tarihi</label>
-          <input type="date" class="fld" id="f_dob">
-        </div>
-        <div>
-          <label class="lbl" data-i18n="apply.pob">Doğum yeri</label>
-          <input type="text" class="fld" id="f_pob" placeholder="Şehir, ülke" data-i18n-ph="apply.pob.ph">
-        </div>
-      </div>
+      <label class="lbl" data-i18n="apply.dob">Doğum tarihi</label>
+      <input type="date" class="fld" id="f_dob">
       <div class="grid2">
         <div>
           <label class="lbl" data-i18n="apply.nat">Uyruk</label>
@@ -461,8 +444,6 @@
           <input type="text" class="fld" id="f_residence" placeholder="Örn. Türkiye" data-i18n-ph="apply.nat.ph">
         </div>
       </div>
-      <label class="lbl" data-i18n="apply.addr">Adres</label>
-      <input type="text" class="fld" id="f_address" placeholder="Açık adres" data-i18n-ph="apply.addr.ph">
       <label class="lbl" data-i18n="apply.hs">Lise</label>
       <input type="text" class="fld" id="f_highschool" placeholder="Lise adı" data-i18n-ph="apply.hs.ph">
     </div>
@@ -866,10 +847,8 @@ async function scSubmit() {
     desired_intake:  intake || '',
     notes:           noteParts.join(' | '),
     date_of_birth:        document.getElementById('scDob').value || '',
-    place_of_birth:       (document.getElementById('scPob').value || '').trim(),
     nationality:          (document.getElementById('scNationality').value || '').trim(),
     residence_country:    (document.getElementById('scResidence').value || '').trim(),
-    address:              (document.getElementById('scAddress').value || '').trim(),
     high_school:          (document.getElementById('scHighSchool').value || '').trim()
   };
 
@@ -1060,10 +1039,8 @@ async function funnelSubmit() {
     country: fSel.country||'', program_id: fSel.programId, program_name: fSel.programName||'',
     desired_intake: document.getElementById('intakeSelect').value||'', notes,
     date_of_birth:        document.getElementById('f_dob').value || '',
-    place_of_birth:       (document.getElementById('f_pob').value || '').trim(),
     nationality:          (document.getElementById('f_nationality').value || '').trim(),
     residence_country:    (document.getElementById('f_residence').value || '').trim(),
-    address:              (document.getElementById('f_address').value || '').trim(),
     high_school:          (document.getElementById('f_highschool').value || '').trim()
   };
   document.getElementById('funnelMode').style.display = 'none';
