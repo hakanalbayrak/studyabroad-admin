@@ -17,3 +17,5 @@
 .guide-acc[open] summary::after { content: '\2212'; }
 .guide-acc .prose { padding: 0 14px 12px; }
 @media (max-width: 600px) { .guide-lead { font-size: 1rem; padding: 14px; } .guide-q h2 { font-size: 1.08rem; } }
+.post-main, .guide-q, .guide-lead, .guide-acc .prose { min-width: 0; overflow-wrap: anywhere; }
+.guide-src a { overflow-wrap: anywhere; }
