@@ -14,6 +14,8 @@
 const db = require('../db');
 const { GROUPS, QUESTIONS, ENTITY_FACTS, COUNTRY_FACTS, COUNTRY_TR } = require('../content/guide/spec');
 const blog = require('./blog');
+const { macroField } = require('./matcher');
+const GROUP_TR = { 'Business & Economics': 'İşletme ve Ekonomi', Engineering: 'Mühendislik', 'Medicine & Health': 'Tıp ve Sağlık', 'AI & Technology': 'Yapay Zeka ve Teknoloji', 'Social Sciences': 'Sosyal Bilimler', 'Arts & Design': 'Sanat ve Tasarım', 'Natural Sciences': 'Fen Bilimleri' };
 const { esc, renderMarkdown, SITE } = blog;
 
 // ── Storage ────────────────────────────────────────────────────────────────
@@ -97,6 +99,7 @@ const MONTH_TR = { january: 'Ocak', february: 'Şubat', march: 'Mart', april: 'N
 const trMonth = s => String(s).replace(/[A-Za-z]+/g, w => MONTH_TR[w.toLowerCase()] || w);
 const uniq = a => [...new Set(a.filter(x => x != null && x !== ''))];
 const listTr = a => a.length <= 1 ? a.join('') : a.slice(0, -1).join(', ') + ' ve ' + a[a.length - 1];
+const durTr = d => { const x = String(d || '').trim(); if (!x) return ''; if (/^\d+(\.\d+)?$/.test(x)) return x.replace('.', ',') + ' yıl'; return x.replace(/years?/i, 'yıl').replace(/months?/i, 'ay').replace(/semesters?/i, 'yarıyıl'); };
 const numOr = (v, d = null) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
 
 // ── Live context from the database ─────────────────────────────────────────
@@ -175,7 +178,7 @@ const DEFAULTS = {
   admit(c) {
     const { e, t, agg, f } = c;
     const parts = [];
-    parts.push(`${t.short}, ${t.country_tr ? t.country_tr + ' ülkesinin ' : ''}${t.city ? t.city + ' şehrinde bulunan ' : ''}${f.type_of_institution ? String(f.type_of_institution).toLocaleLowerCase('tr') + ' ' : ''}bir eğitim kurumudur.`);
+    parts.push(`${t.short}, ${t.country_tr ? t.country_tr + ' ülkesinin ' : ''}${t.city ? t.city + ' şehrinde bulunan ' : ''}bir üniversitedir.${f.type_of_institution ? ' Kurum türü: ' + f.type_of_institution + '.' : ''}`);
     if (agg.count) parts.push(`PANELEDU’da ${t.short} için ${agg.count} aktif program listeleniyor ve bunların ${agg.intl} tanesi uluslararası öğrenci başvurusuna açık işaretli. Türkiye’den başvuran öğrenciler de bu programlara başvurabilir.`);
     const facts = [];
     if (t.tuition_range) facts.push(`**Yıllık ücret:** ${t.tuition_range}`);
@@ -205,7 +208,7 @@ const DEFAULTS = {
     const base = f.exam_required === 'none' ? `Evet. ${t.short} için ayrı bir giriş sınavı yok; değerlendirme dosyana (notlar, motivasyon yazısı, İngilizce belgesi) göre yapılıyor.`
       : f.exam_required === 'optional' ? `Çoğu başvuruda evet; sınav sonucu isteğe bağlı olduğu için sınava girmeden de başvurabilirsin.`
       : `Diplomana bağlı. Lise diplomanın doğrudan giriş hakkı vermediği durumlarda sınav ya da hazırlık yılı gerekebilir; aksi halde sınavsız başvuru mümkün.`;
-    return base + (f.exam_note ? '\n\n' + f.exam_note : '');
+    return base + ' Ayrıntılar için bir önceki soruya bak.';
   },
 
   gpa(c) {
@@ -342,7 +345,7 @@ const DEFAULTS = {
   masters(c) {
     const { agg, t } = c; const m = agg.byType['Master Programs'];
     if (!m || !m.length) return null;
-    return `Evet. ${t.short} için ${m.length} yüksek lisans programı listeleniyor${agg.feeByType['Master Programs'] ? ', yıllık ücret ' + feeRange(agg.feeByType['Master Programs'], agg.currency) : ''}.\n\n${bullets(m.slice(0, 10).map(p => `${p.name}${p.duration ? ' (' + p.duration + ' yıl)' : ''}`))}`;
+    return `Evet. ${t.short} için ${m.length} yüksek lisans programı listeleniyor${agg.feeByType['Master Programs'] ? ', yıllık ücret ' + feeRange(agg.feeByType['Master Programs'], agg.currency) : ''}.\n\n${bullets(m.slice(0, 10).map(p => `${p.name}${p.duration ? ' (' + durTr(p.duration) + ')' : ''}`))}`;
   },
 
   ranking(c) {
@@ -365,7 +368,8 @@ const DEFAULTS = {
 
   whichmajor(c) {
     const { agg, t } = c; if (!agg.topFields.length) return null;
-    const top = agg.topFields.slice(0, 6).map(k => `${k} (${agg.fields[k]} program)`);
+    const grp = {}; agg.topFields.forEach(k => { const g = GROUP_TR[macroField(k)] || 'Diğer'; grp[g] = (grp[g] || 0) + agg.fields[k]; });
+    const top = Object.keys(grp).sort((a, b) => grp[b] - grp[a]).slice(0, 7).map(k => `${k} (${grp[k]} program)`);
     return `Bölüm seçerken önce kariyer hedefini, sonra ülkedeki iş piyasasını ve bütçeni düşün. ${t.short} en çok şu alanlarda program sunuyor:\n\n${bullets(top)}\n\n[Kısa sihirbazımızla](/match) hedefine, bütçene ve İngilizce seviyene uygun programları sıralayabilirsin.`;
   },
 
