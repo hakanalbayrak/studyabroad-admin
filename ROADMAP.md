@@ -1547,3 +1547,17 @@ data sources, run cadence/trigger, and where the agent itself runs.
 - Example done: Constructor University (id 47). Next: roll out to the other 21 German schools (facts per school from official pages), then other countries. Add a school = fill facts in admin, set Published.
 - Open question: Constructor tuition in DB (EUR 14,737 to 21,053) vs official EUR 20,000/year (2026-27); DB IELTS 6 vs official 6.5.
 - Google Trends has no official API; use Search Console queries once the site is verified to pick extra questions.
+
+## 2026-10-16: Change log (what to verify by hand)
+| Area | Page | Change | Check |
+|---|---|---|---|
+| Apply | /apply | GPA chips ascending (<60, 60-69, 70-79, 80-89, 90-100); birthplace and address removed (both modes) | chips order; submit a test application, no pob/address asked |
+| Apply funnel | /apply | Continent options: Europe, North America (USA, Canada), Australia, UK (England, Scotland, Wales, Ireland); Asia removed; Ireland moved under UK; UAE no longer reachable here | each option lists the right countries |
+| Apply funnel | /apply | Country names in Turkish; program types "Lisans (Bachelor Programs)" style | steps 2 and 3 labels |
+| Step-flow buttons | /apply, /match | Action bar inline under last option on desktop, pinned on phones (rule in site.css `.cta-bar`) | desktop: button under options; phone: always visible |
+| English test | /test | Email required before start, lead created at start (message updated with result); no email box at the end | start without email blocked; lead appears in Admin > Leads once, updated with level |
+| Test to wizard | /test -> /match | "Find programs for your level" button; wizard opens with English level preselected plus a note | button after result; chip preselected; note shown |
+| Guides | /blog/constructor-university-bremen, /university?id=47#rehber, /api/public/universities/47/guide | University Q&A guides from live DB values + facts; blog country filter | read the text, fix wrong facts in admin; tuition and IELTS conflict with official site |
+| Admin | /admin > University Guides, Entities > Edit blog | Editable answers (prefilled), custom Q&A, country facts, draft/published | edit one answer, save, see it on the page |
+| Match engine (10-10) | /match, /api/public/match | Server-side matching | run wizard with fields selected |
+Open: Constructor tuition (DB 14,737 to 21,053 EUR vs official 20,000/yr), DB IELTS 6 vs official 6.5; UAE schools not reachable from the apply funnel; roll out guides to the other 21 German schools.
