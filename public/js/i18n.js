@@ -228,6 +228,7 @@
       /* ── English Test ── */
       't.title':      'İngilizce Seviye Testi',
       't.intro':      '20 soruluk bu test yaklaşık 5 dakika sürer ve CEFR seviyenizi belirler. Sonuçlar e-posta ile gönderilir.',
+      't.email.start':     'Teste başlamak için e-posta adresin',
       't.start':      'Teste Başla',
       't.back':       'Geri',
       't.next':       'İleri',
@@ -870,6 +871,7 @@
       /* ── English Test ── */
       't.title':      'English Level Test',
       't.intro':      'This 20-question test takes about 5 minutes and determines your CEFR level. Results are sent by email.',
+      't.email.start': 'Your email address to start the test',
       't.start':      'Start Test',
       't.back':       'Back',
       't.next':       'Next',

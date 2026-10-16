@@ -216,13 +216,20 @@ app.patch('/api/admin/affiliate-links/:id', requireRole('admin'), async (req, re
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
-// English level test
+// English level test: the e-mail is required BEFORE the test starts and becomes a lead right away.
+const EMAIL_RE_T = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+app.post('/api/public/english-test/start', async (req, res) => {
+  try {
+    const email = String((req.body || {}).email || '').toLowerCase().trim();
+    if (!EMAIL_RE_T.test(email) || email.length > 200) return res.status(400).json({ error: 'Valid email required.' });
+    const [r] = await db.query("INSERT INTO leads (student_name, email, message) VALUES ('', ?, ?)", [email, 'İngilizce testine başladı (henüz bitirmedi)']);
+    res.json({ ok: true, lead_id: r.insertId });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
 app.post('/api/public/english-test', async (req, res) => {
   try {
-    const { email, level, score, answers } = req.body || {};
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      return res.status(400).json({ error: 'Valid email required.' });
-    }
+    const { email, level, score, answers, lead_id } = req.body || {};
+    if (!email || !EMAIL_RE_T.test(email)) return res.status(400).json({ error: 'Valid email required.' });
     if (!level || !score && score !== 0) return res.status(400).json({ error: 'Missing result data.' });
     const cleanEmail = email.toLowerCase().trim();
     await db.query(
@@ -230,13 +237,11 @@ app.post('/api/public/english-test', async (req, res) => {
       [cleanEmail, level, parseInt(score) || 0, JSON.stringify(answers || [])]
     );
     try {
-      await db.query(
-        `INSERT INTO leads (student_name, email, message)
-         VALUES ('', ?, ?)`,
-        [cleanEmail, `İngilizce testi sonucu: ${level} (${parseInt(score) || 0}/20 doğru)`]
-      );
+      const msg = `İngilizce testi sonucu: ${level} (${parseInt(score) || 0}/20 doğru)`;
+      const [u] = lead_id ? await db.query('UPDATE leads SET message = ? WHERE id = ? AND email = ?', [msg, parseInt(lead_id) || 0, cleanEmail]) : [{ affectedRows: 0 }];
+      if (!u.affectedRows) await db.query("INSERT INTO leads (student_name, email, message) VALUES ('', ?, ?)", [cleanEmail, msg]);
     } catch (e) {
-      console.error('[english-test] lead insert failed:', e.message);
+      console.error('[english-test] lead save failed:', e.message);
     }
     res.json({ ok: true });
     const { sendEnglishTestResult } = require('./utils/mailer');

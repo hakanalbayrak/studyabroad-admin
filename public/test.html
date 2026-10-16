@@ -61,7 +61,10 @@
         <span class="level-chip" data-i18n="t.cefr.c1.label">C1 — İleri</span>
         <span class="level-chip" data-i18n="t.cefr.c2.label">C2 — Üst</span>
       </div>
-      <button class="btn-grad w-100 mt-2" onclick="startTest()">
+      <label for="startEmail" class="fw-bold mb-1" style="font-size:.95rem" data-i18n="t.email.start">Teste başlamak için e-posta adresin</label>
+      <input type="email" id="startEmail" class="email-input" autocomplete="email" inputmode="email" data-i18n-ph="t.email.ph" placeholder="ornek@email.com" style="margin-bottom:8px">
+      <div id="startError" role="alert" style="color:#ef4444;font-size:.85rem;margin-bottom:8px;display:none"></div>
+      <button class="btn-grad w-100 mt-1" id="startBtn" onclick="startTest()">
         <i class="bi bi-play-fill me-1"></i><span data-i18n="t.start">Teste Başla</span>
       </button>
     </div>
@@ -78,17 +81,6 @@
 
     <!-- Email gate / results screen -->
     <div id="resultScreen" style="display:none">
-      <div class="email-gate" id="emailGate">
-        <div style="font-size:2rem;margin-bottom:8px;color:var(--ok)"><i class="bi bi-check-circle-fill"></i></div>
-        <h2 data-i18n="t.done">Test tamamlandı!</h2>
-        <p style="color:var(--muted);margin-bottom:16px" data-i18n="t.email.lbl">Seviyenizi görmek için e-posta adresinizi girin. Sonuçlarınız hemen gönderilir.</p>
-        <input type="email" id="resultEmail" class="email-input" data-i18n-ph="t.email.ph" placeholder="ornek@email.com" style="margin-bottom:12px">
-        <div id="emailError" style="color:#ef4444;font-size:.85rem;margin-bottom:8px;display:none"></div>
-        <button class="btn-grad w-100" id="submitBtn" onclick="submitResult()">
-          <i class="bi bi-envelope me-1"></i><span data-i18n="t.send">Sonucu Gönder</span>
-        </button>
-      </div>
-
       <div id="resultCard" style="display:none">
         <div class="email-gate">
           <div class="level-badge" id="resLevel">B1</div>
@@ -240,7 +232,24 @@
   let selected = [];
   let answered = false;
 
-  function startTest() {
+  let testEmail = '', leadId = null;
+  async function startTest() {
+    const email = document.getElementById('startEmail').value.trim();
+    const err = document.getElementById('startError');
+    err.style.display = 'none';
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      err.textContent = window.t ? window.t('t.email.err') : 'Geçerli bir e-posta adresi girin.';
+      err.style.display = 'block';
+      document.getElementById('startEmail').focus();
+      return;
+    }
+    const btn = document.getElementById('startBtn'); btn.disabled = true;
+    testEmail = email;
+    try {
+      const r = await fetch('/api/public/english-test/start', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email }) });
+      if (r.ok) leadId = (await r.json()).lead_id || null;
+    } catch (_) {}
+    btn.disabled = false;
     QUESTIONS = buildTest();
     selected = new Array(QUESTIONS.length).fill(-1);
     current = 0;
@@ -317,34 +326,23 @@
   function showResult() {
     document.getElementById('testScreen').style.display = 'none';
     document.getElementById('resultScreen').style.display = 'block';
+    submitResult();
   }
 
   async function submitResult() {
-    const email = document.getElementById('resultEmail').value.trim();
-    const errEl = document.getElementById('emailError');
-    errEl.style.display = 'none';
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      errEl.textContent = window.t ? window.t('t.email.err') : 'Geçerli bir e-posta adresi girin.';
-      errEl.style.display = 'block';
-      return;
-    }
     const score = selected.filter((ans, i) => ans === QUESTIONS[i].answer).length;
     const level = calcLevel(score);
-    const btn = document.getElementById('submitBtn');
-    btn.disabled = true;
-    btn.innerHTML = `<span class="spinner-border spinner-border-sm me-1"></span>${window.t ? window.t('t.sending') : 'Gönderiliyor…'}`;
+    showResultCard(level, score);
     try {
       await fetch('/api/public/english-test', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, level, score, answers: selected })
+        body: JSON.stringify({ email: testEmail, level, score, answers: selected, lead_id: leadId })
       });
     } catch (_) {}
-    showResultCard(level, score);
   }
 
   function showResultCard(level, score) {
-    document.getElementById('emailGate').style.display = 'none';
     const info = cefrInfo(level);
     document.getElementById('resLevel').textContent = info.label;
     document.getElementById('resScore').textContent = (window.t ? window.t('t.score.of20') : '20 sorudan {n} doğru').replace('{n}', score);
