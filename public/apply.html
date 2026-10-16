@@ -884,6 +884,8 @@ const fSel = { continent:null, country:null, progType:null, schoolId:null, schoo
                programId:null, programName:null, eduStatus:null, fEngLevel:null };
 const TR_COUNTRY = {'United States':'ABD','United Kingdom':'Birleşik Krallık','Canada':'Kanada','Australia':'Avustralya','Germany':'Almanya','France':'Fransa','Spain':'İspanya','Netherlands':'Hollanda','Hungary':'Macaristan','Italy':'İtalya','Ireland':'İrlanda','Czech Republic':'Çekya','Finland':'Finlandiya','United Arab Emirates':'Birleşik Arap Emirlikleri','Cyprus':'Kıbrıs','Malta':'Malta','Turkey':'Türkiye','Austria':'Avusturya','Switzerland':'İsviçre','Belgium':'Belçika','Denmark':'Danimarka','Poland':'Polonya','Georgia':'Gürcistan','Sweden':'İsveç','Norway':'Norveç','Portugal':'Portekiz','Greece':'Yunanistan','Luxembourg':'Lüksemburg','New Zealand':'Yeni Zelanda','Japan':'Japonya','South Korea':'Güney Kore','Singapore':'Singapur','Malaysia':'Malezya','Hong Kong':'Hong Kong','China':'Çin'};
 const countryName = c => (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'en') ? c : (TR_COUNTRY[c] || c);
+const TYPE_TR = {'Bachelor Programs':'Lisans','Master Programs':'Yüksek Lisans','Foundation Programs':'Hazırlık','Pathway Programs':'Köprü Programı','Pre-Master Programs':'Yüksek Lisans Hazırlık','Diploma Programs':'Diploma','Certificate Programs':'Sertifika','Other Credentials':'Diğer'};
+const typeLabelTr = t => (window.i18n && window.i18n.getLang && window.i18n.getLang() === 'en') || !TYPE_TR[t] ? t : TYPE_TR[t] + ' (' + t + ')';
 const UK_GROUP = ['United Kingdom', 'UK', 'Ireland'];
 const CONTINENTS = [
   {val:'Europe',        get label() { return _t('apply.cont.eu', 'Avrupa'); }},
@@ -939,7 +941,7 @@ async function pickCountry(el) {
   } catch(_) {}
   const types = [...new Set(allCountryProgs.map(p => p.type_name).filter(Boolean))].sort();
   document.getElementById('typeChips').innerHTML =
-    types.map(t => `<div class="chip" data-f="progType" data-v="${esc(t)}" onclick="pickType(this)">${esc(t)}</div>`).join('') +
+    types.map(t => `<div class="chip" data-f="progType" data-v="${esc(t)}" onclick="pickType(this)">${esc(typeLabelTr(t))}</div>`).join('') +
     `<div class="chip" data-f="progType" data-v="" onclick="pickType(this)" style="opacity:.7">Farketmez</div>`;
   document.getElementById('typeStepSub').textContent = countryName(fSel.country) + ' için program türünü seç.';
 }
@@ -958,7 +960,7 @@ function pickType(el) {
     '<option value="">Üniversite seçin…</option>' +
     sorted.map(([id, name]) => `<option value="${id}">${esc(name)}</option>`).join('');
   document.getElementById('schoolStepSub').textContent =
-    (fSel.progType || 'Tüm') + ' programları olan ' + countryName(fSel.country) + ' üniversiteleri.';
+    (fSel.progType ? typeLabelTr(fSel.progType) : 'Tüm') + ' programları olan ' + countryName(fSel.country) + ' üniversiteleri.';
 }
 
 function onSchoolChange() {
