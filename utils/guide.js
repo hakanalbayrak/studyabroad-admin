@@ -476,7 +476,7 @@ async function listPublished() {
     const g = await buildGuide(parseInt(r.ref)); if (!g) continue;
     const intro = g.sections.length;
     out.push({ slug: g.slug, title: g.short_name, summary: `${g.title} Şartlar, ücret, burs ve başvuru rehberi.`, category: 'Üniversite Rehberi', country: g.country_tr,
-      tags: [g.country_tr, g.city].filter(Boolean), date: String(g.updated || r.updated_at || '').slice(0, 10) || '2026-10-16', readingTime: Math.max(3, Math.round(intro * 0.6)), entity_id: g.entity_id, guide: true });
+      tags: [g.country_tr, g.city].filter(Boolean), date: String(g.updated || r.updated_at || '').slice(0, 10) || '2026-10-16', readingTime: Math.max(3, Math.round(g.sections.reduce((n, x) => n + x.answer_text.split(/\s+/).length, 0) / 200)), entity_id: g.entity_id, guide: true });
   }
   return out;
 }

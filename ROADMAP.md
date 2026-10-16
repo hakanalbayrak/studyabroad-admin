@@ -1540,3 +1540,10 @@ data sources, run cadence/trigger, and where the agent itself runs.
 ## 2026-10-10: Match engine (agent groundwork)
 - `/match` was returning nothing for any field choice (5 broad chips vs 90 fine `programs.field` values) and loaded only 10,000 of 23,120 programs. Matching is now server-side: `utils/matcher.js` (field/region/degree taxonomy, scoring, reasons), `GET|POST /api/public/match`, `GET /api/public/match/schema`. Listed in `llms.txt`.
 - Agent plan: the AI data agent should call this endpoint as its "find schools" tool; extend `PROFILE_SCHEMA` rather than adding new parameters elsewhere. Possible next inputs: GPA, intake month, scholarship preference.
+
+## 2026-10-16: University guides (SEO Q&A)
+- `/blog/<slug>` guide per university + FAQ section on `/university?id=` + JSON at `/api/public/universities/<id>/guide`. Built by `utils/guide.js` from live program data (tuition, English, intakes, scholarships, rankings, location) + admin facts + country facts (`guide_profiles` table, created automatically). Spec of questions and admin fields: `content/guide/spec.js`.
+- Admin: "University Guides" section (facts, per-question overrides, country facts, draft/published). Seeds: `content/guide/seed/` (Germany, Constructor University).
+- Example done: Constructor University (id 47). Next: roll out to the other 21 German schools (facts per school from official pages), then other countries. Add a school = fill facts in admin, set Published.
+- Open question: Constructor tuition in DB (EUR 14,737 to 21,053) vs official EUR 20,000/year (2026-27); DB IELTS 6 vs official 6.5.
+- Google Trends has no official API; use Search Console queries once the site is verified to pick extra questions.
