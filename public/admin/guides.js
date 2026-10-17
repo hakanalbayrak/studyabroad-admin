@@ -15,27 +15,49 @@
     } catch (e) { wrap.innerHTML = '<div class="alert alert-danger">' + E(e.message) + '</div>'; }
   };
 
+  var kind = 'uni', fcState = '', qState = '';
+  var KINDS = [['uni', 'Üniversiteler'], ['country', 'Ülkeler'], ['exam', 'Sınavlar'], ['other', 'Diğer içerikler']];
+
   function renderList() {
     var countries = Array.from(new Set(list.map(function (r) { return r.country; }).filter(Boolean))).sort();
-    var fc = ($('guideCountry') || {}).value || '', q = (($('guideQ') || {}).value || '').toLowerCase();
-    var rows = list.filter(function (r) { return (!fc || r.country === fc) && (!q || r.name.toLowerCase().indexOf(q) > -1); });
-    var pub = list.filter(function (r) { return r.status === 'published'; }).length;
-    $('guidesBody').innerHTML =
-      '<div class="d-flex flex-wrap gap-2 align-items-center mb-3">' +
-      '<select id="guideCountry" class="form-select form-select-sm" style="max-width:220px" onchange="guideFilter()" aria-label="Ülke"><option value="">Tüm ülkeler</option>' +
-      countries.map(function (c) { return '<option' + (c === fc ? ' selected' : '') + '>' + E(c) + '</option>'; }).join('') + '</select>' +
-      '<input id="guideQ" class="form-control form-control-sm" style="max-width:260px" placeholder="Okul ara" value="' + E(q) + '" oninput="guideFilter()" aria-label="Okul ara">' +
-      '<span class="text-muted small ms-auto">' + pub + ' yayında / ' + list.length + ' okul</span>' +
-      '</div><div class="d-flex flex-wrap gap-2 mb-3"><span class="small text-muted align-self-center">Ülke bilgileri:</span>' +
-      countries.map(function (c) { return '<button class="btn btn-outline-primary btn-sm" onclick="guideCountryEdit(\'' + E(c) + '\')"><i class="bi bi-globe-europe-africa me-1"></i>' + E(c) + '</button>'; }).join('') + '</div>' +
-      '<div class="table-responsive"><table class="table table-sm align-middle"><thead><tr><th>Okul</th><th>Ülke</th><th class="text-end">Program</th><th>Rehber</th><th></th></tr></thead><tbody>' +
+    var head = '<div class="d-flex flex-wrap gap-2 align-items-center mb-3"><select id="guideKind" class="form-select form-select-sm" style="max-width:220px;font-weight:600" onchange="guideKind(this.value)" aria-label="İçerik türü">' +
+      KINDS.map(function (k) { return '<option value="' + k[0] + '"' + (k[0] === kind ? ' selected' : '') + '>' + k[1] + '</option>'; }).join('') + '</select>';
+    var body = '';
+    if (kind === 'country') {
+      body = head + '</div><div class="table-responsive"><table class="table table-sm align-middle"><thead><tr><th>Ülke</th><th class="text-end">Okul</th><th class="text-end">Yayında rehber</th><th></th></tr></thead><tbody>' +
+        countries.map(function (c) {
+          var rows = list.filter(function (r) { return r.country === c; });
+          return '<tr><td>' + E(c) + (spec.country_tr[c] ? ' <span class="text-muted small">(' + E(spec.country_tr[c]) + ')</span>' : '') + '</td><td class="text-end">' + rows.length + '</td><td class="text-end">' +
+            rows.filter(function (r) { return r.status === 'published'; }).length + '</td><td class="text-end"><button class="btn btn-sm btn-outline-primary" onclick="guideCountryEdit(\'' + E(c) + '\')">Düzenle</button></td></tr>';
+        }).join('') + '</tbody></table></div>';
+    } else if (kind === 'exam' || kind === 'other') {
+      body = head + '</div><div class="text-center text-muted py-5">Bu bölüm için henüz içerik yok.</div>';
+    } else {
+      var rows = list.filter(function (r) { return (!fcState || r.country === fcState) && (!qState || r.name.toLowerCase().indexOf(qState.toLowerCase()) > -1); });
+      var pub = list.filter(function (r) { return r.status === 'published'; }).length;
+      body = head + '<input id="guideQ" class="form-control form-control-sm" style="max-width:260px" placeholder="Okul ara" value="' + E(qState) + '" oninput="guideSearch(this.value)" aria-label="Okul ara">' +
+        '<span class="text-muted small ms-auto">' + pub + ' yayında / ' + list.length + ' okul</span></div>' +
+        '<div class="d-flex flex-wrap gap-2 mb-3"><button class="btn btn-sm ' + (!fcState ? 'btn-primary' : 'btn-outline-primary') + '" onclick="guideCountryFilter(\'\')">Tümü</button>' +
+        countries.map(function (c) { return '<button class="btn btn-sm ' + (c === fcState ? 'btn-primary' : 'btn-outline-primary') + '" onclick="guideCountryFilter(\'' + E(c) + '\')">' + E(c) + '</button>'; }).join('') + '</div>' +
+        '<div id="guideRows">' + uniTable(rows) + '</div>';
+    }
+    $('guidesBody').innerHTML = body;
+  }
+  function uniTable(rows) {
+    return '<div class="table-responsive"><table class="table table-sm align-middle"><thead><tr><th>Okul</th><th>Ülke</th><th class="text-end">Program</th><th>Rehber</th><th></th></tr></thead><tbody>' +
       rows.map(function (r) {
         var b = r.status === 'published' ? '<span class="badge text-bg-success">Yayında</span>' : r.status === 'draft' ? '<span class="badge text-bg-warning">Taslak</span>' : '<span class="badge text-bg-light border">Yok</span>';
         return '<tr><td>' + E(r.name) + '</td><td>' + E(r.country || '') + '</td><td class="text-end">' + r.programs + '</td><td>' + b + '</td><td class="text-end">' +
           '<button class="btn btn-sm btn-outline-primary" onclick="guideEdit(' + r.id + ')">Düzenle</button></td></tr>';
       }).join('') + '</tbody></table></div>';
   }
-  window.guideFilter = function () { var a = $('guideCountry').value, b = $('guideQ').value; renderList(); $('guideCountry').value = a; var q = $('guideQ'); q.value = b; q.focus(); q.setSelectionRange(b.length, b.length); };
+  window.guideKind = function (k) { kind = k; renderList(); };
+  window.guideCountryFilter = function (c) { fcState = c; renderList(); };
+  window.guideSearch = function (v) {
+    qState = v;
+    var rows = list.filter(function (r) { return (!fcState || r.country === fcState) && (!qState || r.name.toLowerCase().indexOf(qState.toLowerCase()) > -1); });
+    $('guideRows').innerHTML = uniTable(rows);
+  };
 
   function factField(f, val, idp) {
     var id = idp + f.key, v = val == null ? '' : val, hint = f.hint ? '<div class="form-text">' + E(f.hint) + '</div>' : '';
