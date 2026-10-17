@@ -1561,3 +1561,6 @@ data sources, run cadence/trigger, and where the agent itself runs.
 | Admin | /admin > University Guides, Entities > Edit blog | Editable answers (prefilled), custom Q&A, country facts, draft/published | edit one answer, save, see it on the page |
 | Match engine (10-10) | /match, /api/public/match | Server-side matching | run wizard with fields selected |
 Open: Constructor tuition (DB 14,737 to 21,053 EUR vs official 20,000/yr), DB IELTS 6 vs official 6.5; UAE schools not reachable from the apply funnel; roll out guides to the other 21 German schools.
+
+### To do after the 2026-10-16 checks (owner request, 2026-10-17)
+- Merge Pathway, Foundation and Preparation (and Pre-Master / language preparatory) program types into ONE category/filter ("Hazırlık / Pathway") across /apply funnel, /programs filter, /match bridge routes and the guides. Do this after the manual checks are finished.
