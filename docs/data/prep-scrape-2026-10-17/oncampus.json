@@ -1,0 +1,360 @@
+{
+ "provider": "ONCAMPUS",
+ "scraped_at": "2026-10-17",
+ "centres": [
+  {
+   "name": "OnCampus Aston",
+   "partner_university": "Aston University",
+   "city": "Birmingham",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Undergraduate Foundation Programme (UFP)",
+     "type": "Foundation",
+     "duration": "1 year (9 months; 2 or 3 semesters)",
+     "tuition_fee": 19030,
+     "tuition_currency": "GBP",
+     "intakes": "June, September, January",
+     "english_req": "IELTS 4.5 or equivalent (2 semester); IELTS 4.0 (3 semester)",
+     "progression": "Guaranteed placement on undergraduate study at Aston University",
+     "field": "Business & Humanities; Engineering & Life Sciences",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-aston/oncampus-aston-ufp"
+    },
+    {
+     "name": "International Year One (IY1)",
+     "type": "Pathway",
+     "duration": "1 year (9 months; 2 or 3 semesters)",
+     "tuition_fee": 19960,
+     "tuition_currency": "GBP",
+     "intakes": "June, September, January",
+     "english_req": "IELTS 5.5 or equivalent (2 semester); IELTS 5.0 (3 semester)",
+     "progression": "Year 2 of BSc/LLB degrees at Aston University",
+     "field": "Accounting & Finance, Business, Marketing, Law, Computer Science, Cybersecurity",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-aston/oncampus-aston-iy1"
+    },
+    {
+     "name": "Pre-Master's Programme (PMP)",
+     "type": "Pre-Master",
+     "duration": "1 year (2 semesters)",
+     "tuition_fee": 19570,
+     "tuition_currency": "GBP",
+     "intakes": "June, September, January",
+     "english_req": null,
+     "progression": "Guaranteed progression to postgraduate study at Aston University",
+     "field": "Postgraduate (various)",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-aston/oncampus-aston-pmp"
+    }
+   ]
+  },
+  {
+   "name": "OnCampus Hull",
+   "partner_university": "University of Hull",
+   "city": "Hull",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Undergraduate Foundation Programme (UFP)",
+     "type": "Foundation",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 16980,
+     "tuition_currency": "GBP",
+     "intakes": "September, January",
+     "english_req": null,
+     "progression": "Guaranteed placement on undergraduate study at University of Hull",
+     "field": "Business, Law & Politics; Life Sciences; Engineering & Physical Sciences",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-hull/oncampus-hull-ufp"
+    },
+    {
+     "name": "International Year One (IY1)",
+     "type": "Pathway",
+     "duration": "1 year (9 months; 2 or 3 semesters)",
+     "tuition_fee": 16980,
+     "tuition_currency": "GBP",
+     "intakes": "September, January",
+     "english_req": null,
+     "progression": "Year 2 of Business and Engineering degrees at University of Hull",
+     "field": "Business; Engineering",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-hull/oncampus-hull-iy1"
+    },
+    {
+     "name": "Pre-Master's Programme (PMP)",
+     "type": "Pre-Master",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 16980,
+     "tuition_currency": "GBP",
+     "intakes": "September, January",
+     "english_req": null,
+     "progression": "Guaranteed progression to postgraduate study at University of Hull",
+     "field": "Postgraduate (various)",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-hull/oncampus-hull-pmp"
+    }
+   ]
+  },
+  {
+   "name": "OnCampus London",
+   "partner_university": "Multiple UK universities (e.g. Birkbeck, Royal Holloway, Brunel, Westminster, Queen Mary, Southampton, Sheffield)",
+   "city": "London",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Undergraduate Foundation Programme (UFP)",
+     "type": "Foundation",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 23130,
+     "tuition_currency": "GBP",
+     "intakes": "September, January, June, November",
+     "english_req": "IELTS 4.0 (3 semester); IELTS 4.5 for University of London partner",
+     "progression": "Year 1 of a wide range of UK undergraduate degrees",
+     "field": "Business; Humanities & Social Sciences; Engineering & Physical Sciences; Life Sciences",
+     "source_url": "https://www.oncampus.global/oncampus-london-ufp"
+    },
+    {
+     "name": "University of London International Foundation Programme (IFP)",
+     "type": "Foundation",
+     "duration": "2 semesters",
+     "tuition_fee": 23670,
+     "tuition_currency": "GBP",
+     "intakes": "September",
+     "english_req": null,
+     "progression": "University of London partners incl. Queen Mary (LLB Law), King's College London",
+     "field": "Mathematics, Economics, International Relations, Sociology, Law",
+     "source_url": "https://www.oncampus.global/study/programmes/oncampus-london-ifp"
+    },
+    {
+     "name": "International Year One (IY1)",
+     "type": "Pathway",
+     "duration": "1 year (2, 2.5 or 3 semesters)",
+     "tuition_fee": 23130,
+     "tuition_currency": "GBP",
+     "intakes": "June, September, November, January",
+     "english_req": null,
+     "progression": "Year 2 at Birkbeck, Royal Holloway, Brunel, Westminster",
+     "field": "Business; Computer Science",
+     "source_url": "https://www.oncampus.global/oncampus-london-iy1"
+    },
+    {
+     "name": "Pre-Master's Programme (PMP)",
+     "type": "Pre-Master",
+     "duration": "1 year (2 semesters)",
+     "tuition_fee": 23130,
+     "tuition_currency": "GBP",
+     "intakes": "September, January",
+     "english_req": "IELTS 5.0 or equivalent (no element below 5.0)",
+     "progression": "Master's degrees incl. UCL, Queen Mary, City St George's, Loughborough",
+     "field": "Postgraduate (various)",
+     "source_url": "https://www.oncampus.global/oncampus-london-pmp"
+    }
+   ]
+  },
+  {
+   "name": "OnCampus London South Bank",
+   "partner_university": "London South Bank University",
+   "city": "London",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Undergraduate Foundation Programme (UFP)",
+     "type": "Foundation",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 17460,
+     "tuition_currency": "GBP",
+     "intakes": "September, January",
+     "english_req": null,
+     "progression": "Guaranteed progression to London South Bank University",
+     "field": "Business, Humanities & Social Sciences; Engineering & Physical Sciences",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-london-south-bank/oncampus-london-south-bank-ufp"
+    },
+    {
+     "name": "International Year One (IY1)",
+     "type": "Pathway",
+     "duration": "1 year (9 months; 2 or 3 semesters)",
+     "tuition_fee": 17460,
+     "tuition_currency": "GBP",
+     "intakes": "September, January",
+     "english_req": "IELTS 4.5 (2 semester); IELTS 4.0 (3 semester)",
+     "progression": "Year 2 of Business/Computer Science degrees at LSBU",
+     "field": "Business; Computer Science",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-london-south-bank/oncampus-london-south-bank-iy1"
+    }
+   ]
+  },
+  {
+   "name": "OnCampus Loughborough",
+   "partner_university": "Loughborough University",
+   "city": "Loughborough",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Undergraduate Foundation Programme (UFP)",
+     "type": "Foundation",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 23970,
+     "tuition_currency": "GBP",
+     "intakes": "September, October, February",
+     "english_req": null,
+     "progression": "Guaranteed progression to Loughborough University",
+     "field": "Business, Humanities, Art & Design; Life Sciences, Computing, Engineering & Physical Sciences",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-loughborough/oncampus-loughborough-ufp"
+    },
+    {
+     "name": "Pre-Master's Programme (PMP)",
+     "type": "Pre-Master",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 27990,
+     "tuition_currency": "GBP",
+     "intakes": "September, October, February",
+     "english_req": null,
+     "progression": "Guaranteed progression to Loughborough University",
+     "field": "Postgraduate (various)",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-loughborough/oncampus-loughborough-pmp"
+    }
+   ]
+  },
+  {
+   "name": "OnCampus Southampton",
+   "partner_university": "University of Southampton",
+   "city": "Southampton",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Undergraduate Foundation Programme (UFP)",
+     "type": "Foundation",
+     "duration": "1 year (2, 2.5 or 3 semesters)",
+     "tuition_fee": 24585,
+     "tuition_currency": "GBP",
+     "intakes": "June, September, November, January",
+     "english_req": null,
+     "progression": "Guaranteed progression to University of Southampton",
+     "field": "Art & Design; Business; Humanities; Engineering; Life Sciences; Medicine",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-southampton/oncampus-southampton-ufp"
+    },
+    {
+     "name": "Pre-Master's Programme (PMP)",
+     "type": "Pre-Master",
+     "duration": "1 year (2 semesters; 1-3 semester options)",
+     "tuition_fee": 30525,
+     "tuition_currency": "GBP",
+     "intakes": "June, September, November, January, May",
+     "english_req": null,
+     "progression": "Guaranteed progression to University of Southampton",
+     "field": "Postgraduate (various)",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-southampton/oncampus-southampton-pmp"
+    },
+    {
+     "name": "Master's Access Programme (MAP)",
+     "type": "Pre-Master",
+     "duration": "1 year (2, 2.5 or 3 semesters)",
+     "tuition_fee": 30525,
+     "tuition_currency": "GBP",
+     "intakes": "September, November, January",
+     "english_req": null,
+     "progression": "Southampton Business School Master's degrees",
+     "field": "Business",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-southampton/oncampus-southampton-map"
+    }
+   ]
+  },
+  {
+   "name": "OnCampus Sunderland",
+   "partner_university": "University of Sunderland",
+   "city": "Sunderland",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Undergraduate Foundation Programme (UFP)",
+     "type": "Foundation",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 15420,
+     "tuition_currency": "GBP",
+     "intakes": "September, January",
+     "english_req": "IELTS 4.5 (2 semester); IELTS 4.0 (3 semester)",
+     "progression": "Guaranteed progression to University of Sunderland",
+     "field": "Business, Humanities & Social Sciences; Engineering & Physical Sciences; Life Sciences",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-sunderland/oncampus-sunderland-ufp"
+    },
+    {
+     "name": "International Year One (IY1)",
+     "type": "Pathway",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 15420,
+     "tuition_currency": "GBP",
+     "intakes": "September, January",
+     "english_req": "IELTS 5.0 (2 semester) / 4.5 (3 semester); iCAS requires 5.5",
+     "progression": "Year 2 of five BA business/accounting degrees at Sunderland",
+     "field": "Business; Accounting & Finance",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-sunderland/oncampus-sunderland-iy1"
+    },
+    {
+     "name": "Pre-Master's Programme (PMP)",
+     "type": "Pre-Master",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 15420,
+     "tuition_currency": "GBP",
+     "intakes": "September, January",
+     "english_req": "IELTS 4.5 (2 semester); IELTS 4.0 (3 semester)",
+     "progression": "Guaranteed progression to University of Sunderland",
+     "field": "Postgraduate (various)",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-sunderland/oncampus-sunderland-pmp"
+    }
+   ]
+  },
+  {
+   "name": "OnCampus UK North",
+   "partner_university": "University of Lancashire (formerly UCLan)",
+   "city": "Preston",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Undergraduate Foundation Programme (UFP)",
+     "type": "Foundation",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 17490,
+     "tuition_currency": "GBP",
+     "intakes": "September, January",
+     "english_req": "IELTS 4.5 (2 semester); IELTS 4.0 (3 semester)",
+     "progression": "Guaranteed progression to University of Lancashire",
+     "field": "Business, Humanities & Social Sciences; Engineering & Physical Sciences; Life Sciences",
+     "source_url": "https://www.oncampus.global/oncampus-uk-north-ufp"
+    },
+    {
+     "name": "Medicine Undergraduate Foundation Programme (MUFP)",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": null,
+     "tuition_currency": null,
+     "intakes": null,
+     "english_req": null,
+     "progression": "Medicine and Health Sciences degrees (partners incl. RCSI, St George's, Nicosia)",
+     "field": "Medicine & Health Sciences",
+     "source_url": "https://www.oncampus.global/our-study-centres/oncampus-uk-north"
+    },
+    {
+     "name": "International Year One (IY1)",
+     "type": "Pathway",
+     "duration": "1 year (2 or 3 semesters)",
+     "tuition_fee": 17490,
+     "tuition_currency": "GBP",
+     "intakes": "January, September",
+     "english_req": "IELTS 4.5 (2 semester); IELTS 5.0 (3 semester)",
+     "progression": "Year 2 of business degrees at University of Lancashire",
+     "field": "Business and Management",
+     "source_url": "https://www.oncampus.global/oncampus-uk-north-iy1"
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "Canada: no ONCAMPUS centre appears anywhere on oncampus.global (centres are UK, Ireland, Amsterdam, Paris only). No Canadian data recorded.",
+  "Operator: Cambridge Education Group Limited (OnCampus is a trading name of CEG group companies).",
+  "Tuition: figures are the lowest listed 2-semester fee (Business/Humanities track, first listed intake) in GBP; pages list ranges by subject track, 3-semester/2.5-semester options and intake year (2027 intakes often higher). Registration fee GBP 450 extra on all. Fee ranges not captured in JSON.",
+  "Duration text: most pages say 'one academic year (nine months)' while course length is 2-3 semesters; recorded as stated.",
+  "English requirement null where page gives none; many pages say only that English is compulsory below progression level.",
+  "OnCampus Reading is mentioned in a comparison table only as a Destination Centre; no centre page, partner or programmes found.",
+  "OnCampus UK North: Medicine UFP (MUFP) detail page and Pre-Master's page not fetched; fee/intake/English null. Pre-Master's at UK North only appears in navigation.",
+  "OnCampus UK North city 'Preston' inferred from University of Lancashire; page names no city. Aston city 'Birmingham' and Loughborough/Hull/etc. cities inferred from the university location.",
+  "Loughborough and Southampton: no IY1 offered per centre pages. Aston/Hull/Sunderland/LSB/London/UK North IY1 read from centre IY1 pages.",
+  "Intakes are summarised by month from listed start dates; June/November/October starts exist only at some centres.",
+  "Centre-level UFP/PMP/MAP detail URLs followed a consistent pattern (\u2026-ufp, -pmp, -map); London South Bank and Southampton IY1 and Loughborough programme-specific subject lists not exhaustively captured. Medicine foundation, English-only and pre-sessional courses excluded as per scope.",
+  "Aston IY1 fee shown is Business & Humanities 2-semester (19,960); Engineering/CS 22,840."
+ ]
+}

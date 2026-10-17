@@ -1572,3 +1572,16 @@ Open: Constructor tuition (DB 14,737 to 21,053 EUR vs official 20,000/yr), DB IE
 - Repeat English-test takers with an existing lead email get a dated student message on that lead (no second lead row).
 - Done 2026-10-17: Foundation, Pathway, Pre-Master and Language Preparatory are one filter ("Hazırlık / Pathway") on /programs and the /apply funnel.
 - Pending: Constructor update (tuition, scholarship, loans); verify exam facts and add fees/dates before publishing.
+
+## 2026-10-17: Preparation provider import (INTO, Navitas, Kaplan, Study Group, ONCAMPUS)
+Scope: UK, Canada, and Navitas Germany. Scraped from the providers' own pages by agents; 350 programs and 46 new centres were imported (prep programs 495 -> 845). Raw scrape files with source URLs and per-provider `gaps` notes: `docs/data/prep-scrape-2026-10-17/*.json`.
+Blank fields to complete by hand (admin > Entities > centre > programs):
+| Provider | Centres | Programs | No fee | No duration | No English req | No intakes |
+|---|---|---|---|---|---|---|
+| INTO | 9 | 31 | 31 | 16 | 28 | 11 |
+| Kaplan | 14 | 95 | 4 | 92 | 94 | 1 |
+| Navitas | 19 | 215 | 66 | 89 | 213 | 203 |
+| ONCAMPUS | 8 | 23 | 1 | 1 | 13 | 1 |
+| Study Group | 14 | 133 | 2 | 41 | 4 | 5 |
+Known gaps: INTO has no fees (published as ranges by term) and no Manchester programs; Navitas Swansea/Brunel/Toronto/ULethbridge/Laurier fees missing, SRH Munich foundation names not published; Kaplan five fees disputed between its pages, durations mostly missing; Study Group Leeds and Royal Holloway fees came from preview mirrors, verify on live pages; ONCAMPUS fee is the lowest 2-semester figure plus a registration fee. Centres already in the catalogue (Plymouth, Portsmouth, Hertfordshire, Keele, etc.) were only topped up with programs missing by name; check for duplicates with different spellings. No Canadian centre exists for INTO, Study Group or ONCAMPUS. Coordinates for the new centres are looked up automatically; check the map pin of each.
+Centres were created as separate entities (e.g. "University of Brighton International College (Kaplan)") rather than attached to the partner university.
