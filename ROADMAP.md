@@ -1564,3 +1564,4 @@ Open: Constructor tuition (DB 14,737 to 21,053 EUR vs official 20,000/yr), DB IE
 
 ### To do after the 2026-10-16 checks (owner request, 2026-10-17)
 - Merge Pathway, Foundation and Preparation (and Pre-Master / language preparatory) program types into ONE category/filter ("Hazırlık / Pathway") across /apply funnel, /programs filter, /match bridge routes and the guides. Do this after the manual checks are finished.
+- Constructor University guide: kept as is for now (owner, 2026-10-17). Waiting for updated tuition, scholarship and loan info from the school; then update program fees and the guide facts in admin. Insider note (not published): IELTS 6.0 can be accepted after an interview, official minimum is 6.5.
