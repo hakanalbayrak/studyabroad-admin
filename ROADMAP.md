@@ -1565,3 +1565,9 @@ Open: Constructor tuition (DB 14,737 to 21,053 EUR vs official 20,000/yr), DB IE
 ### To do after the 2026-10-16 checks (owner request, 2026-10-17)
 - Merge Pathway, Foundation and Preparation (and Pre-Master / language preparatory) program types into ONE category/filter ("Hazırlık / Pathway") across /apply funnel, /programs filter, /match bridge routes and the guides. Do this after the manual checks are finished.
 - Constructor University guide: kept as is for now (owner, 2026-10-17). Waiting for updated tuition, scholarship and loan info from the school; then update program fees and the guide facts in admin. Insider note (not published): IELTS 6.0 can be accepted after an interview, official minimum is 6.5.
+
+## 2026-10-17: Guides admin restructure + exam guides
+- Admin > University Guides has a content-type dropdown: Universities (country filter chips), Countries (list + edit), Exams, Other (empty).
+- Exam guides (draft until published): IELTS, TOEFL iBT, Duolingo, PTE Academic, Cambridge, Oxford Placement Test (assumed "OMPT"), SAT, ACT, AP, IB, GRE, GMAT. Content in `content/guide/exams.js`; fees/dates/centres are admin facts (blank until filled). English tests show live requirement stats from programs. Public at /blog/<slug> (category "Sınav Rehberi"), JSON at /api/public/exams/<key>/guide.
+- Repeat English-test takers with an existing lead email get a dated student message on that lead (no second lead row).
+- Pending: merge Pathway/Foundation/Preparation into one filter; Constructor update (tuition, scholarship, loans); verify exam facts and add fees/dates before publishing.
