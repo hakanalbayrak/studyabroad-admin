@@ -475,17 +475,20 @@ async function buildGuide(entityId, { preview = false } = {}) {
 let examAggCache = { at: 0, data: null };
 async function englishTestStats() {
   if (examAggCache.data && Date.now() - examAggCache.at < 300e3) return examAggCache.data;
-  const [rows] = await db.query(
-    `SELECT p.english_req_type AS test, COUNT(*) AS programs, COUNT(DISTINCT e.id) AS unis,
-            MIN(CAST(p.english_req_score AS DECIMAL(6,1))) AS lo, MAX(CAST(p.english_req_score AS DECIMAL(6,1))) AS hi,
-            AVG(CAST(p.english_req_score AS DECIMAL(6,1))) AS avg
-     FROM programs p JOIN entity_locations el ON el.id = p.entity_location_id JOIN entities e ON e.id = el.entity_id
-     WHERE p.status = 'active' AND e.status != 'inactive' AND p.english_req_type IS NOT NULL AND p.english_req_type != 'None'
-       AND p.english_req_score REGEXP '^[0-9]+([.][0-9]+)?$'
-     GROUP BY p.english_req_type`);
+  // Only plausible scores per test (the imported data contains some junk values).
+  const valid = `((p.english_req_type = 'IELTS' AND s BETWEEN 4 AND 9) OR (p.english_req_type = 'TOEFL' AND s BETWEEN 40 AND 120)
+    OR (p.english_req_type = 'Duolingo' AND s BETWEEN 60 AND 160) OR (p.english_req_type = 'PTE' AND s BETWEEN 30 AND 90)
+    OR (p.english_req_type = 'Cambridge' AND s BETWEEN 140 AND 230))`;
+  const base = `FROM (SELECT p.english_req_type, CAST(p.english_req_score AS DECIMAL(6,1)) AS s, e.id AS eid FROM programs p
+      JOIN entity_locations el ON el.id = p.entity_location_id JOIN entities e ON e.id = el.entity_id
+      WHERE p.status = 'active' AND e.status != 'inactive' AND p.english_req_type IS NOT NULL AND p.english_req_type != 'None'
+        AND p.english_req_score REGEXP '^[0-9]+([.][0-9]+)?$') p WHERE ${valid}`;
+  const [rows] = await db.query(`SELECT p.english_req_type AS test, COUNT(*) AS programs, COUNT(DISTINCT eid) AS unis, MIN(s) AS lo, MAX(s) AS hi, AVG(s) AS avg ${base} GROUP BY p.english_req_type`);
+  const [freq] = await db.query(`SELECT p.english_req_type AS test, s, COUNT(*) AS n ${base} GROUP BY p.english_req_type, s`);
   const [[tot]] = await db.query("SELECT COUNT(*) AS n FROM programs p JOIN entity_locations el ON el.id = p.entity_location_id JOIN entities e ON e.id = el.entity_id WHERE p.status = 'active' AND e.status != 'inactive'");
   const data = { byTest: {}, total: tot.n };
-  rows.forEach(r => { data.byTest[r.test] = { programs: Number(r.programs), unis: Number(r.unis), lo: Number(r.lo), hi: Number(r.hi), avg: Number(r.avg) }; });
+  rows.forEach(r => { data.byTest[r.test] = { programs: Number(r.programs), unis: Number(r.unis), lo: Number(r.lo), hi: Number(r.hi), avg: Number(r.avg), typical: null, typicalN: 0 }; });
+  freq.forEach(f => { const d = data.byTest[f.test]; if (d && Number(f.n) > d.typicalN) { d.typical = Number(f.s); d.typicalN = Number(f.n); } });
   examAggCache = { at: Date.now(), data };
   return data;
 }
@@ -502,7 +505,7 @@ async function buildExamGuide(key, { preview = false } = {}) {
   const N = { N: name };
   const stats = ex.test ? await englishTestStats() : null;
   const st = stats && stats.byTest[ex.test];
-  const t = { name, exam: ex.name, programs_requiring: st ? st.programs : '', universities_requiring: st ? st.unis : '', score_min: st ? st.lo : '', score_max: st ? st.hi : '', score_avg: st ? st.avg.toFixed(1).replace('.', ',') : '', total_programs: stats ? stats.total : '' };
+  const t = { name, exam: ex.name, programs_requiring: st ? st.programs : '', universities_requiring: st ? st.unis : '', score_min: st ? st.lo : '', score_max: st ? st.hi : '', score_typical: st ? st.typical : '', total_programs: stats ? stats.total : '' };
   Object.keys(facts).forEach(k => { if (!Array.isArray(facts[k])) t[k] = facts[k]; });
   const defaults = {
     intro: () => [facts.what, ex.kind === 'english' ? `${name} sonucunu kabul eden okulları [programlar sayfasında](/programs) ve seviyene uygun okulları [Okul Bul sihirbazında](/match) görebilirsin.` : ''].filter(has).join('\n\n'),
@@ -511,7 +514,7 @@ async function buildExamGuide(key, { preview = false } = {}) {
     scale: () => facts.scale || null,
     minscore: () => {
       const out = [];
-      if (st) out.push(`PANELEDU'da ${st.programs} program (${st.unis} okul) ${ex.test} sonucunu İngilizce şartı olarak listeliyor. İstenen minimum puanlar **${st.lo.toLocaleString('tr-TR')} ile ${st.hi.toLocaleString('tr-TR')}** arasında değişiyor (ortalama ${st.avg.toFixed(1).replace('.', ',')}).`);
+      if (st) out.push(`PANELEDU'da ${st.programs} program (${st.unis} okul) ${ex.test} sonucunu İngilizce şartı olarak listeliyor. İstenen minimum puanlar **${st.lo.toLocaleString('tr-TR')} ile ${st.hi.toLocaleString('tr-TR')}** arasında değişiyor; en sık istenen puan **${st.typical.toLocaleString('tr-TR')}** (${st.typicalN} program).`);
       if (facts.minscore_note) out.push(facts.minscore_note);
       if (!out.length) return ex.kind === 'placement' ? null : 'Gerekli puan okula ve programa göre değişir. En güvenilir bilgi, başvurduğun programın resmî başvuru sayfasındaki şarttır; ihtiyacın olan puanı programdan öğrenip buna göre hedef belirle.';
       return out.join('\n\n');
