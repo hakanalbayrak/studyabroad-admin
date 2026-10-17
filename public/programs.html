@@ -357,7 +357,7 @@ function categoryLabel(c) {
 function typeBucketLabel(bucket) {
   const key = {
     "Bachelor's": 'p.typebucket.bachelor', "Master's": 'p.typebucket.master', 'MBA': 'p.typebucket.mba',
-    'PhD': 'p.typebucket.phd', 'Associate': 'p.typebucket.associate', 'Foundation': 'p.typebucket.foundation',
+    'PhD': 'p.typebucket.phd', 'Associate': 'p.typebucket.associate', 'Foundation': 'p.typebucket.foundation', 'Preparation': 'p.typebucket.prep',
     'Diploma / Certificate': 'p.typebucket.diplomacert', 'Pathway Programs': 'p.typebucket.pathway',
     'Pre-Master Programs': 'p.typebucket.premaster', 'Other Credentials': 'p.typebucket.other'
   }[bucket];
@@ -371,7 +371,7 @@ function normalizeType(t) {
   if (l === 'mba') return 'MBA';
   if (l.startsWith('phd') || l === 'doctorate' || l.startsWith('doctor')) return 'PhD';
   if (l.startsWith('associate')) return 'Associate';
-  if (l.startsWith('foundation')) return 'Foundation';
+  if (l.startsWith('foundation') || l.includes('pathway') || l.startsWith('pre-master') || l.startsWith('pre master') || l.includes('preparat')) return 'Preparation';
   if (l.startsWith('diploma') || l.startsWith('certificate')) return 'Diploma / Certificate';
   return t.trim();
 }
@@ -417,7 +417,7 @@ function writeUrl() {
 function readUrl() {
   const p = new URLSearchParams(location.search), csv = k => (p.get(k) || '').split(',').map(s => s.trim()).filter(Boolean);
   state.q = (p.get('q') || '').trim();
-  csv('type').forEach(v => state.types.add(v));
+  csv('type').forEach(v => state.types.add(normalizeType(v)));
   csv('category').forEach(v => state.categories.add(v));
   csv('field').forEach(v => state.fields.add(v));
   csv('country').forEach(v => state.countries.add(v));
