@@ -13,6 +13,7 @@
 
 const db = require('../db');
 const { GROUPS, QUESTIONS, ENTITY_FACTS, COUNTRY_FACTS, COUNTRY_TR } = require('../content/guide/spec');
+const { EXAMS, EXAM_ORDER, EXAM_FACTS, EXAM_QUESTIONS } = require('../content/guide/exams');
 const blog = require('./blog');
 const { macroField } = require('./matcher');
 const GROUP_TR = { 'Business & Economics': 'İşletme ve Ekonomi', Engineering: 'Mühendislik', 'Medicine & Health': 'Tıp ve Sağlık', 'AI & Technology': 'Yapay Zeka ve Teknoloji', 'Social Sciences': 'Sosyal Bilimler', 'Arts & Design': 'Sanat ve Tasarım', 'Natural Sciences': 'Fen Bilimleri' };
@@ -31,7 +32,8 @@ function ensureTable() {
       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
       PRIMARY KEY (scope, ref),
       UNIQUE KEY uq_guide_slug (slug)
-    )`).catch(e => { tableReady = null; throw e; });
+    )`).then(() => db.query("ALTER TABLE guide_profiles MODIFY COLUMN scope ENUM('entity','country','exam') NOT NULL").catch(() => {}))
+      .catch(e => { tableReady = null; throw e; });
   }
   return tableReady;
 }
@@ -468,6 +470,115 @@ async function buildGuide(entityId, { preview = false } = {}) {
   return guide;
 }
 
+
+// ── Exam guides ────────────────────────────────────────────────────────────
+let examAggCache = { at: 0, data: null };
+async function englishTestStats() {
+  if (examAggCache.data && Date.now() - examAggCache.at < 300e3) return examAggCache.data;
+  const [rows] = await db.query(
+    `SELECT p.english_req_type AS test, COUNT(*) AS programs, COUNT(DISTINCT e.id) AS unis,
+            MIN(CAST(p.english_req_score AS DECIMAL(6,1))) AS lo, MAX(CAST(p.english_req_score AS DECIMAL(6,1))) AS hi,
+            AVG(CAST(p.english_req_score AS DECIMAL(6,1))) AS avg
+     FROM programs p JOIN entity_locations el ON el.id = p.entity_location_id JOIN entities e ON e.id = el.entity_id
+     WHERE p.status = 'active' AND e.status != 'inactive' AND p.english_req_type IS NOT NULL AND p.english_req_type != 'None'
+       AND p.english_req_score REGEXP '^[0-9]+([.][0-9]+)?$'
+     GROUP BY p.english_req_type`);
+  const [[tot]] = await db.query("SELECT COUNT(*) AS n FROM programs p JOIN entity_locations el ON el.id = p.entity_location_id JOIN entities e ON e.id = el.entity_id WHERE p.status = 'active' AND e.status != 'inactive'");
+  const data = { byTest: {}, total: tot.n };
+  rows.forEach(r => { data.byTest[r.test] = { programs: Number(r.programs), unis: Number(r.unis), lo: Number(r.lo), hi: Number(r.hi), avg: Number(r.avg) }; });
+  examAggCache = { at: Date.now(), data };
+  return data;
+}
+
+async function buildExamGuide(key, { preview = false } = {}) {
+  const ex = EXAMS[key]; if (!ex) return null;
+  const ck = 'exam:' + key + (preview ? ':p' : '');
+  const hit = cache.get(ck); if (hit && Date.now() - hit.at < 60e3) return hit.guide;
+  const profile = await getProfile('exam', key);
+  if (!preview && profile.status !== 'published') return null;
+  const facts = { ...Object.fromEntries(['what', 'who', 'format', 'scale', 'cefr', 'validity', 'register', 'prep', 'alternatives'].filter(k => ex[k]).map(k => [k, ex[k]])), ...(profile.data.facts || {}) };
+  Object.keys(facts).forEach(k => { if (facts[k] === '' || facts[k] == null) delete facts[k]; });
+  const name = facts.short_name || ex.title;
+  const N = { N: name };
+  const stats = ex.test ? await englishTestStats() : null;
+  const st = stats && stats.byTest[ex.test];
+  const t = { name, exam: ex.name, programs_requiring: st ? st.programs : '', universities_requiring: st ? st.unis : '', score_min: st ? st.lo : '', score_max: st ? st.hi : '', score_avg: st ? st.avg.toFixed(1).replace('.', ',') : '', total_programs: stats ? stats.total : '' };
+  Object.keys(facts).forEach(k => { if (!Array.isArray(facts[k])) t[k] = facts[k]; });
+  const defaults = {
+    intro: () => [facts.what, ex.kind === 'english' ? `${name} sonucunu kabul eden okulları [programlar sayfasında](/programs) ve seviyene uygun okulları [Okul Bul sihirbazında](/match) görebilirsin.` : ''].filter(has).join('\n\n'),
+    who: () => facts.who || null,
+    format: () => facts.format || null,
+    scale: () => facts.scale || null,
+    minscore: () => {
+      const out = [];
+      if (st) out.push(`PANELEDU'da ${st.programs} program (${st.unis} okul) ${ex.test} sonucunu İngilizce şartı olarak listeliyor. İstenen minimum puanlar **${st.lo.toLocaleString('tr-TR')} ile ${st.hi.toLocaleString('tr-TR')}** arasında değişiyor (ortalama ${st.avg.toFixed(1).replace('.', ',')}).`);
+      if (facts.minscore_note) out.push(facts.minscore_note);
+      if (!out.length) return ex.kind === 'placement' ? null : 'Gerekli puan okula ve programa göre değişir. En güvenilir bilgi, başvurduğun programın resmî başvuru sayfasındaki şarttır; ihtiyacın olan puanı programdan öğrenip buna göre hedef belirle.';
+      return out.join('\n\n');
+    },
+    cefr: () => facts.cefr || null,
+    validity: () => facts.validity || null,
+    register: () => facts.register || (ex.register || null),
+    fee: () => facts.fee || null,
+    prep: () => facts.prep || null,
+    tips: () => facts.tips || null,
+    alternatives: () => facts.alternatives || null,
+  };
+  const answers = profile.data.answers || {}, hidden = new Set(profile.data.hidden || []);
+  const sections = [];
+  for (const q of EXAM_QUESTIONS) {
+    if (hidden.has(q.id)) continue;
+    let md = null, source = 'auto';
+    if (has(answers[q.id])) { md = fill(answers[q.id], t).out; source = 'override'; }
+    else { try { md = defaults[q.id](); } catch { md = null; } }
+    if (!has(md)) continue;
+    sections.push({ id: q.id, group: 'sinav', intro: !!q.intro, question: q.q(N), answer_md: md, answer_html: renderMarkdown(md).html, answer_text: plain(md), source });
+  }
+  (Array.isArray(profile.data.custom) ? profile.data.custom : []).forEach((cu, i) => {
+    if (!cu || !has(cu.q) || !has(cu.a)) return;
+    const r = fill(cu.a, t);
+    sections.push({ id: 'custom' + (i + 1), group: 'sinav', intro: false, question: String(cu.q).trim(), answer_md: r.out, answer_html: renderMarkdown(r.out).html, answer_text: plain(r.out), source: 'custom' });
+  });
+  const slug = profile.slug || ex.slug;
+  const intro = sections.find(s => s.intro);
+  const guide = {
+    kind: 'exam', exam_key: key, slug, status: profile.status, url: `${SITE}/blog/${slug}`, name: ex.name, short_name: name, country: null, country_tr: null,
+    title: intro ? intro.question : `${name} nedir?`, meta_title: `${name} Sınavı Rehberi: Puanlama, Süre, Geçerlilik`,
+    meta_description: (facts.meta_description || `${name} nedir, kaç puan gerekir, sınav nasıl yapılır, kaç yıl geçerli? Türk öğrenciler için ${name} rehberi.`).slice(0, 300),
+    updated: (profile.updated_at ? new Date(profile.updated_at) : new Date()).toISOString(), verified_at: facts.verified_at || null,
+    sources: Array.isArray(facts.sources) ? facts.sources : [], groups: [{ id: 'sinav', title: 'Sınav rehberi' }], sections,
+    data: { tokens: t, unresolved: [] },
+  };
+  if (preview) {
+    guide.auto = {}; EXAM_QUESTIONS.forEach(q => { try { const md = defaults[q.id](); if (has(md)) guide.auto[q.id] = md; } catch { /* none */ } });
+    guide.token_names = Object.keys(t).filter(k => t[k] !== '' && t[k] != null);
+  }
+  cache.set(ck, { at: Date.now(), guide });
+  return guide;
+}
+
+async function examKeyForSlug(slug) {
+  await ensureTable();
+  const [[r]] = await db.query("SELECT ref FROM guide_profiles WHERE scope = 'exam' AND slug = ? AND status = 'published'", [slug]);
+  if (r) return r.ref;
+  const k = EXAM_ORDER.find(k => EXAMS[k].slug === slug);
+  if (!k) return null;
+  const p = await getProfile('exam', k);
+  return p.status === 'published' ? k : null;
+}
+
+async function listPublishedExams() {
+  await ensureTable();
+  const [rows] = await db.query("SELECT ref FROM guide_profiles WHERE scope = 'exam' AND status = 'published'");
+  const out = [];
+  for (const r of rows) {
+    const g = await buildExamGuide(r.ref); if (!g) continue;
+    out.push({ slug: g.slug, title: g.short_name, summary: `${g.title} Puanlama, süre, geçerlilik ve hazırlık rehberi.`, category: 'Sınav Rehberi', country: '', tags: [g.name],
+      date: String(g.updated || '').slice(0, 10), readingTime: Math.max(2, Math.round(g.sections.reduce((n, x) => n + x.answer_text.split(/\s+/).length, 0) / 200)), exam_key: r.ref, guide: true });
+  }
+  return out;
+}
+
 async function entityIdForSlug(slug) {
   await ensureTable();
   const [[r]] = await db.query("SELECT ref FROM guide_profiles WHERE scope = 'entity' AND slug = ? AND status = 'published'", [slug]);
@@ -503,13 +614,14 @@ function renderGuidePage(g) {
   const intro = g.sections.find(s => s.intro);
   const url = g.url;
   const toc = g.sections.filter(s => !s.intro).map(s => ({ id: s.id, text: s.question }));
+  const isExam = g.kind === 'exam';
   const ld = [
     { '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.meta_description, inLanguage: 'tr', mainEntityOfPage: url, url,
       datePublished: (g.updated || '').slice(0, 10), dateModified: (g.updated || '').slice(0, 10), author: { '@type': 'Organization', name: 'PANELEDU' },
-      publisher: { '@type': 'Organization', name: 'PANELEDU', logo: { '@type': 'ImageObject', url: SITE + '/img/mark.svg' } }, about: { '@type': 'CollegeOrUniversity', name: g.name, url: g.university_url } },
+      publisher: { '@type': 'Organization', name: 'PANELEDU', logo: { '@type': 'ImageObject', url: SITE + '/img/mark.svg' } }, about: isExam ? { '@type': 'Thing', name: g.name } : { '@type': 'CollegeOrUniversity', name: g.name, url: g.university_url } },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: SITE + '/' }, { '@type': 'ListItem', position: 2, name: 'Blog', item: SITE + '/blog' },
-      { '@type': 'ListItem', position: 3, name: g.country_tr, item: `${SITE}/blog?country=${encodeURIComponent(g.country_tr)}` }, { '@type': 'ListItem', position: 4, name: g.short_name, item: url }] },
+      { '@type': 'ListItem', position: 3, name: isExam ? 'Sınav Rehberi' : g.country_tr, item: isExam ? `${SITE}/blog?cat=${encodeURIComponent('Sınav Rehberi')}` : `${SITE}/blog?country=${encodeURIComponent(g.country_tr)}` }, { '@type': 'ListItem', position: 4, name: g.short_name, item: url }] },
     ...jsonLd(g),
   ];
   const head = blog.head({ title: `${g.meta_title} | PANELEDU`, description: g.meta_description, url, type: 'article',
@@ -519,8 +631,8 @@ function renderGuidePage(g) {
 <body class="pe-theme"><main id="main">
 <article class="post">
   <header class="post-head"><div class="pe-wrap">
-    <nav class="crumbs" aria-label="Sayfa yolu"><a href="/">Ana Sayfa</a> / <a href="/blog">Blog</a> / <a href="/blog?country=${encodeURIComponent(g.country_tr)}">${esc(g.country_tr)}</a> / <span>${esc(g.short_name)}</span></nav>
-    <p class="guide-uni"><span class="post-cat">${esc(g.country_tr)}</span> <span class="guide-uni-n">${esc(g.name)}</span></p>
+    <nav class="crumbs" aria-label="Sayfa yolu"><a href="/">Ana Sayfa</a> / <a href="/blog">Blog</a> / ${isExam ? `<a href="/blog?cat=${encodeURIComponent('Sınav Rehberi')}">Sınav Rehberi</a>` : `<a href="/blog?country=${encodeURIComponent(g.country_tr)}">${esc(g.country_tr)}</a>`} / <span>${esc(g.short_name)}</span></nav>
+    <p class="guide-uni"><span class="post-cat">${isExam ? 'Sınav Rehberi' : esc(g.country_tr)}</span> <span class="guide-uni-n">${esc(g.name)}</span></p>
     <h1>${esc(g.title)}</h1>
     <div class="byline"><span>PANELEDU Editör</span>${upd ? `<span>Güncelleme: ${upd}</span>` : ''}${g.verified_at ? `<span>Resmî kaynakla doğrulama: ${blog.fmtDate(g.verified_at)}</span>` : ''}</div>
   </div></header>
@@ -530,7 +642,8 @@ function renderGuidePage(g) {
       ${toc.length > 2 ? `<details class="toc-m"><summary>İçindekiler</summary><ol>${toc.map(t => `<li class="l2"><a href="#${t.id}">${esc(t.text)}</a></li>`).join('')}</ol></details>` : ''}
       ${renderSectionsHtml(g)}
       ${g.sources.length ? `<section class="guide-src"><h2>Kaynaklar</h2><ul>${g.sources.map(s => `<li><a href="${esc(s)}" rel="noopener nofollow" target="_blank">${esc(s.replace(/^https?:\/\//, ''))}</a></li>`).join('')}</ul></section>` : ''}
-      <div class="blog-cta"><div><h2>${esc(g.short_name)} için başvuru talebi bırak</h2><p>Programları, ücretleri ve şartları gör; danışmanımız dosyanı birlikte hazırlasın.</p></div><a class="btn-grad" href="/university?id=${g.entity_id}">Programlara Bak</a></div>
+      ${isExam ? '<div class="blog-cta"><div><h2>İngilizce seviyeni öğren</h2><p>20 soruluk ücretsiz testle seviyeni gör, sana uygun programları bul.</p></div><a class="btn-grad" href="/test">Testi Başlat</a></div>'
+        : `<div class="blog-cta"><div><h2>${esc(g.short_name)} için başvuru talebi bırak</h2><p>Programları, ücretleri ve şartları gör; danışmanımız dosyanı birlikte hazırlasın.</p></div><a class="btn-grad" href="/university?id=${g.entity_id}">Programlara Bak</a></div>`}
     </div>
     ${toc.length > 2 ? `<aside class="toc-d" aria-label="İçindekiler"><strong>İçindekiler</strong><ol>${toc.map(t => `<li class="l2"><a href="#${t.id}">${esc(t.text)}</a></li>`).join('')}</ol></aside>` : ''}
   </div>
@@ -549,5 +662,5 @@ function renderUniversitySection(g) {
 </div><script type="application/ld+json">${JSON.stringify(jsonLd(g)[0])}</script></section>`;
 }
 
-module.exports = { buildGuide, entityIdForSlug, listPublished, getProfile, saveProfile, clearCache, renderGuidePage, renderUniversitySection,
+module.exports = { buildExamGuide, examKeyForSlug, listPublishedExams, EXAMS, EXAM_ORDER, EXAM_FACTS, EXAM_QUESTIONS, buildGuide, entityIdForSlug, listPublished, getProfile, saveProfile, clearCache, renderGuidePage, renderUniversitySection,
   slugify, suffix, withSuffix, QUESTIONS, GROUPS, ENTITY_FACTS, COUNTRY_FACTS, COUNTRY_TR, DEFAULTS };

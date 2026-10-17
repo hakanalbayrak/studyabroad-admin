@@ -14,7 +14,7 @@ const blog = require('./utils/blog');
 app.use(chromeMiddleware);
 // Blog is rendered from content/blog/*.md; it must precede express.static (public/blog/ exists).
 const guide = require('./utils/guide');
-const guidePosts = async () => { try { return await guide.listPublished(); } catch (e) { console.error('guide list:', e.message); return []; } };
+const guidePosts = async () => { try { return [...await guide.listPublished(), ...await guide.listPublishedExams()]; } catch (e) { console.error('guide list:', e.message); return []; } };
 app.get('/blog', async (req, res) => res.type('html').set('Cache-Control', 'public, max-age=300').send(blog.renderIndex(req.query, await guidePosts())));
 app.get('/blog/feed.xml', async (req, res) => res.type('application/rss+xml').send(blog.renderFeed(await guidePosts())));
 app.get('/blog/:slug', async (req, res) => {
@@ -24,6 +24,9 @@ app.get('/blog/:slug', async (req, res) => {
     const id = await guide.entityIdForSlug(req.params.slug);
     const g = id && await guide.buildGuide(id);
     if (g) return res.type('html').set('Cache-Control', 'public, max-age=300').send(guide.renderGuidePage(g));
+    const ek = await guide.examKeyForSlug(req.params.slug);
+    const eg = ek && await guide.buildExamGuide(ek);
+    if (eg) return res.type('html').set('Cache-Control', 'public, max-age=300').send(guide.renderGuidePage(eg));
   } catch (e) { console.error('guide page:', e.message); }
   res.status(404).sendFile(path.join(__dirname, 'public/404.html'));
 });
@@ -717,6 +720,14 @@ app.get('/api/public/universities/:id/guide', async (req, res) => {
     res.json({ ...g, sections: g.sections.map(({ answer_html, ...s }) => s) });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
+app.get('/api/public/exams/:key/guide', async (req, res) => {
+  try {
+    const g = await guide.buildExamGuide(req.params.key);
+    if (!g) return res.status(404).json({ error: 'No published guide for this exam.' });
+    res.set('Cache-Control', 'public, max-age=300');
+    res.json({ ...g, sections: g.sections.map(({ answer_html, ...s }) => s) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
 app.get('/api/public/guides', async (req, res) => {
   try { res.set('Cache-Control', 'public, max-age=300'); res.json(await guidePosts()); } catch (e) { res.status(500).json({ error: e.message }); }
 });
@@ -750,6 +761,26 @@ adminGuide.put('/entity/:id', async (req, res) => {
     await guide.saveProfile('entity', id, { status, slug, data });
     res.json({ ok: true });
   } catch (e) { res.status(e.code === 'ER_DUP_ENTRY' ? 409 : 500).json({ error: e.code === 'ER_DUP_ENTRY' ? 'Bu bağlantı adresi başka bir okulda kullanılıyor.' : e.message }); }
+});
+adminGuide.get('/exams', async (req, res) => {
+  try {
+    await guide.getProfile('exam', 'x');
+    const [gp] = await db.query("SELECT ref, status, slug, updated_at FROM guide_profiles WHERE scope = 'exam'");
+    const by = {}; gp.forEach(g => { by[g.ref] = g; });
+    res.json(guide.EXAM_ORDER.map(k => ({ key: k, name: guide.EXAMS[k].name, kind: guide.EXAMS[k].kind, status: (by[k] || {}).status || 'draft', slug: (by[k] || {}).slug || guide.EXAMS[k].slug })));
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.get('/exam/:key', async (req, res) => {
+  try {
+    const key = req.params.key; const p = await guide.getProfile('exam', key);
+    const g = await guide.buildExamGuide(key, { preview: true });
+    if (!g) return res.status(404).json({ error: 'Unknown exam' });
+    res.json({ profile: { status: p.status, slug: p.slug || g.slug, data: p.data, updated_at: p.updated_at }, guide: g, facts_spec: guide.EXAM_FACTS, questions: guide.EXAM_QUESTIONS.map(q => ({ id: q.id, group: 'sinav', intro: !!q.intro })) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.put('/exam/:key', async (req, res) => {
+  try { const { status, slug, data } = req.body || {}; await guide.saveProfile('exam', req.params.key, { status, slug, data }); res.json({ ok: true }); }
+  catch (e) { res.status(e.code === 'ER_DUP_ENTRY' ? 409 : 500).json({ error: e.code === 'ER_DUP_ENTRY' ? 'Bu bağlantı adresi kullanılıyor.' : e.message }); }
 });
 adminGuide.get('/country/:name', async (req, res) => {
   try { const p = await guide.getProfile('country', req.params.name); res.json({ data: p.data, updated_at: p.updated_at }); } catch (e) { res.status(500).json({ error: e.message }); }
