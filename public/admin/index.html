@@ -2669,6 +2669,17 @@ async function openLeadDetail(id) {
   document.getElementById('leadReplies').innerHTML = '<div class="text-muted small">Loading…</div>';
   leadModal.show();
   loadReplies(id);
+  loadLeadMessages(id);
+}
+
+async function loadLeadMessages(id) {
+  try {
+    const r = await api('GET', `/api/admin/leads/${id}/messages`);
+    const msgs = r.ok ? await r.json() : [];
+    if (!msgs.length || currentLeadId !== id) return;
+    document.getElementById('leadDetailBody').insertAdjacentHTML('beforeend', msgs.map(m => `
+      <div class="mt-2 p-3 rounded" style="background:rgba(255,255,255,.05)"><div class="small text-muted mb-1">Student's message · ${new Date(m.created_at).toLocaleString()}</div>${esc2(m.body).replace(/\n/g,'<br>')}</div>`).join(''));
+  } catch { /* messages are optional */ }
 }
 
 async function loadReplies(id) {

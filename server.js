@@ -217,18 +217,30 @@ app.patch('/api/admin/affiliate-links/:id', requireRole('admin'), async (req, re
 });
 
 // English level test: the e-mail is required BEFORE the test starts and becomes a lead right away.
+// If a lead with the same e-mail already exists, no second row is created: the event is added to that
+// lead as a dated "student message" (lead_messages) instead.
 const EMAIL_RE_T = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let leadMsgReady = null;
+const ensureLeadMessages = () => leadMsgReady || (leadMsgReady = db.query(`CREATE TABLE IF NOT EXISTS lead_messages (
+  id INT AUTO_INCREMENT PRIMARY KEY, lead_id INT NOT NULL, body TEXT NOT NULL, kind VARCHAR(30) DEFAULT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, INDEX idx_lead (lead_id))`).catch(e => { leadMsgReady = null; throw e; }));
 app.post('/api/public/english-test/start', async (req, res) => {
   try {
     const email = String((req.body || {}).email || '').toLowerCase().trim();
     if (!EMAIL_RE_T.test(email) || email.length > 200) return res.status(400).json({ error: 'Valid email required.' });
+    await ensureLeadMessages();
+    const [[ex]] = await db.query('SELECT id FROM leads WHERE email = ? ORDER BY id ASC LIMIT 1', [email]);
+    if (ex) {
+      const [m] = await db.query("INSERT INTO lead_messages (lead_id, body, kind) VALUES (?, ?, 'english_test')", [ex.id, 'İngilizce testini çözmeye başladı (henüz bitirmedi)']);
+      return res.json({ ok: true, lead_id: ex.id, msg_id: m.insertId });
+    }
     const [r] = await db.query("INSERT INTO leads (student_name, email, message) VALUES ('', ?, ?)", [email, 'İngilizce testine başladı (henüz bitirmedi)']);
-    res.json({ ok: true, lead_id: r.insertId });
+    res.json({ ok: true, lead_id: r.insertId, msg_id: null });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 app.post('/api/public/english-test', async (req, res) => {
   try {
-    const { email, level, score, answers, lead_id } = req.body || {};
+    const { email, level, score, answers, lead_id, msg_id } = req.body || {};
     if (!email || !EMAIL_RE_T.test(email)) return res.status(400).json({ error: 'Valid email required.' });
     if (!level || !score && score !== 0) return res.status(400).json({ error: 'Missing result data.' });
     const cleanEmail = email.toLowerCase().trim();
@@ -237,9 +249,21 @@ app.post('/api/public/english-test', async (req, res) => {
       [cleanEmail, level, parseInt(score) || 0, JSON.stringify(answers || [])]
     );
     try {
+      await ensureLeadMessages();
       const msg = `İngilizce testi sonucu: ${level} (${parseInt(score) || 0}/20 doğru)`;
-      const [u] = lead_id ? await db.query('UPDATE leads SET message = ? WHERE id = ? AND email = ?', [msg, parseInt(lead_id) || 0, cleanEmail]) : [{ affectedRows: 0 }];
-      if (!u.affectedRows) await db.query("INSERT INTO leads (student_name, email, message) VALUES ('', ?, ?)", [cleanEmail, msg]);
+      let done = false;
+      if (msg_id && lead_id) {
+        const [u] = await db.query("UPDATE lead_messages m JOIN leads l ON l.id = m.lead_id SET m.body = ? WHERE m.id = ? AND m.lead_id = ? AND l.email = ?", [msg, parseInt(msg_id) || 0, parseInt(lead_id) || 0, cleanEmail]);
+        done = u.affectedRows > 0;
+      } else if (lead_id) {
+        const [u] = await db.query('UPDATE leads SET message = ? WHERE id = ? AND email = ?', [msg, parseInt(lead_id) || 0, cleanEmail]);
+        done = u.affectedRows > 0;
+      }
+      if (!done) {
+        const [[ex]] = await db.query('SELECT id FROM leads WHERE email = ? ORDER BY id ASC LIMIT 1', [cleanEmail]);
+        if (ex) await db.query("INSERT INTO lead_messages (lead_id, body, kind) VALUES (?, ?, 'english_test')", [ex.id, msg]);
+        else await db.query("INSERT INTO leads (student_name, email, message) VALUES ('', ?, ?)", [cleanEmail, msg]);
+      }
     } catch (e) {
       console.error('[english-test] lead save failed:', e.message);
     }
@@ -1002,6 +1026,13 @@ app.patch('/api/admin/leads/:id', requireRole('admin'), async (req, res) => {
 });
 
 // Admin: list replies for a lead
+app.get('/api/admin/leads/:id/messages', requireRole('admin'), async (req, res) => {
+  try {
+    await ensureLeadMessages();
+    const [rows] = await db.query('SELECT id, body, kind, created_at FROM lead_messages WHERE lead_id = ? ORDER BY created_at ASC', [req.params.id]);
+    res.json(rows);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
 app.get('/api/admin/leads/:id/replies', requireRole('admin'), async (req, res) => {
   try {
     const [rows] = await db.query(

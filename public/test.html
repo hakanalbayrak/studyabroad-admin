@@ -232,7 +232,7 @@
   let selected = [];
   let answered = false;
 
-  let testEmail = '', leadId = null;
+  let testEmail = '', leadId = null, msgId = null;
   async function startTest() {
     const email = document.getElementById('startEmail').value.trim();
     const err = document.getElementById('startError');
@@ -247,7 +247,7 @@
     testEmail = email;
     try {
       const r = await fetch('/api/public/english-test/start', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email }) });
-      if (r.ok) leadId = (await r.json()).lead_id || null;
+      if (r.ok) { const j = await r.json(); leadId = j.lead_id || null; msgId = j.msg_id || null; }
     } catch (_) {}
     btn.disabled = false;
     QUESTIONS = buildTest();
@@ -337,7 +337,7 @@
       await fetch('/api/public/english-test', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: testEmail, level, score, answers: selected, lead_id: leadId })
+        body: JSON.stringify({ email: testEmail, level, score, answers: selected, lead_id: leadId, msg_id: msgId })
       });
     } catch (_) {}
   }
