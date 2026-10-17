@@ -57,15 +57,16 @@ const EXAMS = {
     prep: 'Sınav sertifika odaklıdır; akademik İngilizce yazı ve dinleme becerilerine hazırlanman gerekir. Resmî hazırlık kitapları ve örnek testlerle çalış.',
     alternatives: 'IELTS, TOEFL iBT ve PTE Academic birçok okulda eşdeğer kabul edilir.' },
 
-  oxford: { name: 'Oxford Placement Test (OOPT)', title: 'Oxford Placement Test', slug: 'oxford-placement-test-rehberi', kind: 'placement', pron: 'oksfırd',
-    what: 'Oxford Online Placement Test (OOPT), Oxford University Press tarafından hazırlanan, İngilizce seviyeni CEFR ölçeğinde (A1-C2) belirleyen online bir seviye tespit sınavıdır.',
-    who: 'Genellikle dil okulları, hazırlık programları ve bazı kurumlar tarafından seviye belirleme için kullanılır. Çoğu üniversite başvurusunda resmî İngilizce belgesi olarak kabul edilmez; okulun şartını sor.',
-    format: 'Online ve uyarlanabilir yapıdadır (Dil Bilgisi ve Kelime, Dinleme bölümleri); sınav kısa sürer. Güncel bölüm ve süre bilgisi için Oxford\'un sayfasına bak.',
-    scale: 'Sonuç, 0-120 puan ve karşılık gelen CEFR seviyesi (A1-C2) olarak verilir.',
-    cefr: 'Sonuç doğrudan CEFR seviyesi olarak raporlanır.',
-    validity: 'Seviye tespit amaçlı olduğu için "geçerlilik süresi" kurum kurum değişir; okulun kendi politikasına bak.',
-    prep: 'Seviye sınavı olduğu için özel hazırlık gerekmez; ama sonucu doğru yansıtması için sessiz bir ortamda ve dikkatli gir.',
-    alternatives: 'Üniversite başvurusu için IELTS, TOEFL iBT, PTE Academic, Duolingo veya Cambridge sertifikası gerekir. Önce kendi seviyeni görmek için ücretsiz [İngilizce testimizi](/test) kullanabilirsin.' },
+  ompt: { name: 'OMPT (Online Mathematics Placement Test)', title: 'OMPT', slug: 'ompt-matematik-yeterlilik-testi-rehberi', kind: 'admission', pron: 'o em pi ti',
+    what: 'OMPT (Online Mathematics Placement Test), Hollanda\'daki üniversitelerin uluslararası adayların matematik yeterliliğini ölçmek için kullandığı online, gözetimli bir matematik testidir. Test altyapısı Sowiso tarafından sağlanır.',
+    who: 'Özellikle matematiği gerektiren programlara (ekonomi, işletme, mühendislik, bilgisayar bilimleri, yapay zeka gibi) başvuran ve diploması Hollanda sistemiyle doğrudan denk sayılmayan adaylardan istenir. Hangi programın OMPT istediğini ve hangi sürümünü kabul ettiğini mutlaka programın başvuru sayfasından kontrol et.',
+    format: 'Test online, webcam ve internet bağlantısıyla, istediğin yerden ve zamanda girilir ancak sınav boyunca gözetim (proctoring) altındasın. Sınavın sonunda üniversitenin çevrim içi doğrulayabileceği dijital bir sertifika alırsın.',
+    scale: 'Sonuç yüzde (%) olarak verilir. İki ana sürüm vardır: OMPT-A (temel cebir ve uygulamalı analiz, sosyal bilimler ve ekonomi programları için) ve OMPT-B (cebir, trigonometri ve analiz, mühendislik ve fen programları için). Sürüm sayısı ve içerikleri değişebilir; güncel bilgi için omptest.org sayfasına bak.',
+    minscore_note: 'Gerekli yüzde üniversiteye, programa ve yıla göre değişir. Örneğin VU Amsterdam\'ın 2024-2025 listesinde Economics and Business Economics için OMPT-A\'dan %65 veya OMPT-B\'den %60, Artificial Intelligence için iki sürümden birinde %70 isteniyordu. Sana lazım olan puanı programın resmî sayfasından öğren; bu örnek tarihlidir.',
+    validity: 'Geçerlilik süresi ve tekrar hakkı üniversiteye göre değişir (örneğin VU bir kabul döneminde en fazla iki deneme hakkı tanıyor). Başvurduğun okulun kuralına bak.',
+    register: 'Kayıt omptest.org üzerinden yapılır. Hangi sürümü almanı program belirler; yanlış sürümü almamak için başvuru sayfasındaki yönergeyi izle.',
+    prep: 'Sınav lise düzeyi matematiğe dayanır (cebir, fonksiyonlar, trigonometri, temel analiz). Resmî örnek sorularla ve geçmiş konu başlıklarıyla çalış; hesap makinesi izni gibi kuralları sınav öncesi oku.',
+    alternatives: 'Bazı okullar OMPT yerine kendi matematik testlerini, SAT Math puanını veya IB/AP matematik sonuçlarını kabul edebilir. Alternatif olup olmadığını programın başvuru sayfasından kontrol et.' },
 
   sat: { name: 'SAT', title: 'SAT', slug: 'sat-sinavi-rehberi', kind: 'admission', pron: 'es ey ti',
     what: 'SAT, College Board tarafından yürütülen ve ABD üniversite başvurularında kullanılan standart bir lise bitirme sonrası sınavıdır. Birçok okul "test-optional" olsa da güçlü bir SAT puanı başvuruyu destekler.',
@@ -128,7 +129,7 @@ const EXAMS = {
     alternatives: 'GRE, birçok işletme programında GMAT yerine kabul edilir.' },
 };
 
-const EXAM_ORDER = ['ielts', 'toefl', 'duolingo', 'pte', 'cambridge', 'oxford', 'sat', 'act', 'ap', 'ib', 'gre', 'gmat'];
+const EXAM_ORDER = ['ielts', 'toefl', 'duolingo', 'pte', 'cambridge', 'ompt', 'sat', 'act', 'ap', 'ib', 'gre', 'gmat'];
 
 const EXAM_FACTS = [
   { key: 'short_name', label: 'Kısa ad', type: 'text' },

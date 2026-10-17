@@ -499,7 +499,7 @@ async function buildExamGuide(key, { preview = false } = {}) {
   const hit = cache.get(ck); if (hit && Date.now() - hit.at < 60e3) return hit.guide;
   const profile = await getProfile('exam', key);
   if (!preview && profile.status !== 'published') return null;
-  const facts = { ...Object.fromEntries(['what', 'who', 'format', 'scale', 'cefr', 'validity', 'register', 'prep', 'alternatives'].filter(k => ex[k]).map(k => [k, ex[k]])), ...(profile.data.facts || {}) };
+  const facts = { ...Object.fromEntries(['what', 'who', 'format', 'scale', 'cefr', 'validity', 'register', 'prep', 'alternatives', 'minscore_note'].filter(k => ex[k]).map(k => [k, ex[k]])), ...(profile.data.facts || {}) };
   Object.keys(facts).forEach(k => { if (facts[k] === '' || facts[k] == null) delete facts[k]; });
   const name = facts.short_name || ex.title;
   const N = { N: name };
