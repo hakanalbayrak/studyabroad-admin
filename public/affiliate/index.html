@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affiliate Portal | PANELEDU</title>
+  <meta name="robots" content="noindex">
+  <link href="/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/site.css?v=20261009" rel="stylesheet">
+  <link href="/css/icons.css" rel="stylesheet">
+  <style>
+    .aff-head { padding: clamp(22px, 4vw, 40px) 0 12px; }
+    .aff-head h1 { font-size: clamp(1.5rem, 3.6vw, 2.3rem); margin: 0 0 6px; }
+    .aff-head p { color: var(--muted); margin: 0; }
+    .stat-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); box-shadow: var(--shadow-s); padding: 18px 20px; }
+    .stat-card .fs-3 { font-family: var(--f-display); letter-spacing: -.04em; }
+    .stat-card:nth-child(1) { background: var(--mist); }
+    .ref-box { background: var(--sun); border: var(--bw) solid var(--text); border-radius: var(--r-s); padding: 12px 16px; font-family: ui-monospace, Menlo, monospace; font-size: .92rem; color: var(--text); word-break: break-all; min-width: 0; flex: 1; }
+    .aff-table { background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); overflow: hidden; }
+    .aff-table table { margin: 0; --bs-table-bg: transparent; color: var(--text); }
+    .aff-table thead th { background: var(--text); color: #fff; font-family: var(--f-display); font-size: .74rem; white-space: nowrap; }
+    .badge { border: 1.5px solid var(--text); border-radius: 99px; color: var(--text); font-weight: 700; }
+    .badge-new { background: #ffe5e6; } .badge-contacted { background: var(--sun); } .badge-converted { background: #d6f5e3; } .badge-closed { background: #e9e9ef; }
+  </style>
+</head>
+<body class="pe-theme">
+<main id="main">
+<section class="aff-head"><div class="pe-wrap" style="max-width:940px"><h1>Affiliate Dashboard</h1><p>Track your referrals and commissions</p><span id="userName" hidden></span></div></section>
+<div class="pe-wrap pe-section-tight" style="max-width:940px">
+
+    <!-- Referral link -->
+    <div class="mb-4">
+      <div class="small fw-semibold mb-2"><i class="bi bi-link-45deg me-1"></i>Your Referral Link</div>
+      <div class="d-flex align-items-center gap-2">
+        <div class="ref-box" id="refLink">Loading…</div>
+        <button class="btn-ghost flex-shrink-0" type="button" onclick="copyRef()"><i class="bi bi-clipboard me-1"></i>Copy</button>
+      </div>
+      <div class="small text-muted mt-1">Share this link. Leads from visitors who use it will be attributed to you.</div>
+    </div>
+
+    <!-- Stats -->
+    <div class="row g-3 mb-4">
+      <div class="col-6 col-md-3"><div class="stat-card text-center"><div class="fw-bold fs-3" id="sTotal">—</div><div class="small text-muted">Total Leads</div></div></div>
+      <div class="col-6 col-md-3"><div class="stat-card text-center"><div class="fw-bold fs-3" id="sNew">—</div><div class="small text-muted">New</div></div></div>
+      <div class="col-6 col-md-3"><div class="stat-card text-center"><div class="fw-bold fs-3" id="sContacted">—</div><div class="small text-muted">Contacted</div></div></div>
+      <div class="col-6 col-md-3"><div class="stat-card text-center"><div class="fw-bold fs-3" id="sConverted">—</div><div class="small text-muted">Converted</div></div></div>
+    </div>
+
+    <!-- Leads table -->
+    <h2 class="fs-5 mb-3">Recent Leads</h2>
+    <div id="leadsWrap"><div class="text-muted text-center py-5">Loading…</div></div>
+  </div>
+
+</main>
+  <script>
+    const token = localStorage.getItem('sa_token');
+    const role = localStorage.getItem('sa_role');
+    if (!token || (role !== 'affiliate' && role !== 'admin')) {
+      location.href = '/login?next=/affiliate';
+    }
+    document.getElementById('userName').textContent = localStorage.getItem('sa_name') || '';
+
+    function logout() {
+      ['sa_token','sa_role','sa_name'].forEach(k => localStorage.removeItem(k));
+      location.href = '/login';
+    }
+
+    function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+    async function load() {
+      const res = await fetch('/api/affiliate/dashboard', {
+        headers: { 'Authorization': 'Bearer ' + token }
+      });
+      if (res.status === 401) { logout(); return; }
+      const d = await res.json();
+
+      const base = location.origin + '/?ref=' + (d.user.affiliate_code || '');
+      document.getElementById('refLink').textContent = base;
+
+      const s = d.stats;
+      document.getElementById('sTotal').textContent = s.total || 0;
+      document.getElementById('sNew').textContent = s.new_count || 0;
+      document.getElementById('sContacted').textContent = s.contacted || 0;
+      document.getElementById('sConverted').textContent = s.converted || 0;
+
+      if (!d.leads.length) {
+        document.getElementById('leadsWrap').innerHTML = '<div class="text-center text-muted py-5">No leads yet. Share your referral link to get started.</div>';
+        return;
+      }
+      document.getElementById('leadsWrap').innerHTML = `<div class="table-responsive aff-table">
+        <table class="table table-hover table-sm" style="font-size:.85rem">
+          <thead><tr><th>Date</th><th>Name</th><th>Email</th><th>Program</th><th>University</th><th>Status</th></tr></thead>
+          <tbody>${d.leads.map(l => `<tr>
+            <td class="text-muted">${new Date(l.created_at).toLocaleDateString()}</td>
+            <td>${esc(l.student_name)}</td>
+            <td><a href="mailto:${esc(l.email)}" >${esc(l.email)}</a></td>
+            <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(l.program_name||'—')}</td>
+            <td>${esc(l.university_name||'—')}</td>
+            <td><span class="badge badge-${l.status}">${l.status}</span></td>
+          </tr>`).join('')}</tbody>
+        </table></div>`;
+    }
+
+    function copyRef() {
+      const text = document.getElementById('refLink').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = event.target.closest('button');
+        btn.innerHTML = '<i class="bi bi-check2 me-1"></i>Copied!';
+        setTimeout(() => { btn.innerHTML = '<i class="bi bi-clipboard me-1"></i>Copy'; }, 2000);
+      });
+    }
+
+    load();
+  </script>
+<script src="/js/chrome.js"></script>
+</body>
+</html>
