@@ -14,7 +14,7 @@ const blog = require('./utils/blog');
 app.use(chromeMiddleware);
 // Blog is rendered from content/blog/*.md; it must precede express.static (public/blog/ exists).
 const guide = require('./utils/guide');
-const guidePosts = async () => { try { return [...await guide.listPublished(), ...await guide.listPublishedExams()]; } catch (e) { console.error('guide list:', e.message); return []; } };
+const guidePosts = async () => { try { return [...await guide.listPublished(), ...await guide.listPublishedExams(), ...await guide.listPublishedRoutes()]; } catch (e) { console.error('guide list:', e.message); return []; } };
 app.get('/blog', async (req, res) => res.type('html').set('Cache-Control', 'public, max-age=300').send(blog.renderIndex(req.query, await guidePosts())));
 app.get('/blog/feed.xml', async (req, res) => res.type('application/rss+xml').send(blog.renderFeed(await guidePosts())));
 app.get('/blog/:slug', async (req, res) => {
@@ -24,6 +24,10 @@ app.get('/blog/:slug', async (req, res) => {
     const id = await guide.entityIdForSlug(req.params.slug);
     const g = id && await guide.buildGuide(id);
     if (g) return res.type('html').set('Cache-Control', 'public, max-age=300').send(guide.renderGuidePage(g));
+    if (await guide.routeSlugExists(req.params.slug)) {
+      const rg = await guide.buildRouteGuide(req.params.slug);
+      if (rg) return res.type('html').set('Cache-Control', 'public, max-age=300').send(guide.renderGuidePage(rg));
+    }
     const ek = await guide.examKeyForSlug(req.params.slug);
     const eg = ek && await guide.buildExamGuide(ek);
     if (eg) return res.type('html').set('Cache-Control', 'public, max-age=300').send(guide.renderGuidePage(eg));
@@ -781,6 +785,24 @@ adminGuide.get('/exam/:key', async (req, res) => {
 adminGuide.put('/exam/:key', async (req, res) => {
   try { const { status, slug, data } = req.body || {}; await guide.saveProfile('exam', req.params.key, { status, slug, data }); res.json({ ok: true }); }
   catch (e) { res.status(e.code === 'ER_DUP_ENTRY' ? 409 : 500).json({ error: e.code === 'ER_DUP_ENTRY' ? 'Bu bağlantı adresi kullanılıyor.' : e.message }); }
+});
+adminGuide.get('/routes', async (req, res) => {
+  try {
+    const rows = await guide.routeEntries();
+    res.json(rows.map(r => { const f = (r.data && r.data.facts) || {}; return { slug: r.ref, status: r.status, centre: f.centre || '', partner: f.partner || '', degree: f.degree || '', level: f.level || '', via: f.via || '' }; })
+      .sort((a, b) => (a.centre + a.partner + a.degree).localeCompare(b.centre + b.partner + b.degree)));
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.get('/route/:slug', async (req, res) => {
+  try {
+    const slug = req.params.slug; const p = await guide.getProfile('route', slug);
+    const g = await guide.buildRouteGuide(slug, { preview: true });
+    res.json({ profile: { status: p.status, slug, data: p.data, updated_at: p.updated_at }, guide: g || { sections: [], data: { unresolved: [] }, name: slug, slug, token_names: [] }, facts_spec: guide.ROUTE_FACTS, questions: guide.ROUTE_QUESTIONS.map(q => ({ id: q.id, group: 'gecis', intro: !!q.intro })) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.put('/route/:slug', async (req, res) => {
+  try { const { status, data } = req.body || {}; await guide.saveProfile('route', req.params.slug, { status, slug: req.params.slug, data }); res.json({ ok: true }); }
+  catch (e) { res.status(500).json({ error: e.message }); }
 });
 adminGuide.get('/country/:name', async (req, res) => {
   try { const p = await guide.getProfile('country', req.params.name); res.json({ data: p.data, updated_at: p.updated_at }); } catch (e) { res.status(500).json({ error: e.message }); }

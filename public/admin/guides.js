@@ -12,12 +12,13 @@
       if (!spec) spec = await jget('/api/admin/guide/spec');
       list = await jget('/api/admin/guide/list');
       exams = await jget('/api/admin/guide/exams');
+      routes = await jget('/api/admin/guide/routes');
       renderList();
     } catch (e) { wrap.innerHTML = '<div class="alert alert-danger">' + E(e.message) + '</div>'; }
   };
 
-  var kind = 'uni', fcState = '', qState = '', exams = [];
-  var KINDS = [['uni', 'Üniversiteler'], ['country', 'Ülkeler'], ['exam', 'Sınavlar'], ['other', 'Diğer içerikler']];
+  var kind = 'uni', fcState = '', qState = '', exams = [], routes = [], rcState = '';
+  var KINDS = [['uni', 'Üniversiteler'], ['country', 'Ülkeler'], ['exam', 'Sınavlar'], ['route', 'Pathway geçiş yolları'], ['other', 'Diğer içerikler']];
 
   function renderList() {
     var countries = Array.from(new Set(list.map(function (r) { return r.country; }).filter(Boolean))).sort();
@@ -37,6 +38,18 @@
           var b = x.status === 'published' ? '<span class="badge text-bg-success">Yayında</span>' : '<span class="badge text-bg-warning">Taslak</span>';
           var t = { english: 'İngilizce yeterlilik', admission: 'Kabul sınavı', placement: 'Seviye tespit' }[x.kind] || x.kind;
           return '<tr><td>' + E(x.name) + '</td><td class="text-muted small">' + t + '</td><td>' + b + '</td><td class="text-end"><button class="btn btn-sm btn-outline-primary" onclick="guideEditExam(\'' + x.key + '\')">Düzenle</button></td></tr>';
+        }).join('') + '</tbody></table></div>';
+    } else if (kind === 'route') {
+      var centres = Array.from(new Set(routes.map(function (r) { return r.centre; }))).sort();
+      var rrows = routes.filter(function (r) { return !rcState || r.centre === rcState; });
+      body = head + '<span class="text-muted small ms-auto">' + routes.filter(function (r) { return r.status === 'published'; }).length + ' yayında / ' + routes.length + ' yol</span></div>' +
+        '<div class="d-flex flex-wrap gap-2 mb-3"><button class="btn btn-sm ' + (!rcState ? 'btn-primary' : 'btn-outline-primary') + '" onclick="guideRouteCentre(\'\')">Tümü</button>' +
+        centres.map(function (c) { return '<button class="btn btn-sm ' + (c === rcState ? 'btn-primary' : 'btn-outline-primary') + '" onclick="guideRouteCentre(\'' + E(c) + '\')">' + E(c) + '</button>'; }).join('') + '</div>' +
+        (routes.length ? '' : '<div class="text-center text-muted py-4">Henüz geçiş yolu yok.</div>') +
+        '<div class="table-responsive"><table class="table table-sm align-middle"><thead><tr><th>Merkez</th><th>Üniversite</th><th>Bölüm</th><th>Seviye</th><th>Durum</th><th></th></tr></thead><tbody>' +
+        rrows.map(function (r) {
+          var b = r.status === 'published' ? '<span class="badge text-bg-success">Yayında</span>' : '<span class="badge text-bg-warning">Taslak</span>';
+          return '<tr><td>' + E(r.centre) + '</td><td>' + E(r.partner) + '</td><td>' + E(r.degree) + '</td><td>' + E(r.level) + '</td><td>' + b + '</td><td class="text-end"><button class="btn btn-sm btn-outline-primary" onclick="guideEditRoute(\'' + E(r.slug) + '\')">Düzenle</button></td></tr>';
         }).join('') + '</tbody></table></div>';
     } else if (kind === 'other') {
       body = head + '</div><div class="text-center text-muted py-5">Bu bölüm için henüz içerik yok.</div>';
@@ -92,6 +105,12 @@
     try { var r = await jget('/api/admin/guide/exam/' + key); cur = r; cur.id = key; cur.scope = 'exam'; cur.factsSpec = r.facts_spec; cur.questions = r.questions; cur.groups = [{ id: 'sinav', title: 'Sınav' }]; tab = 'facts'; renderEditor(); }
     catch (e) { toast(e.message, 'error'); renderList(); }
   };
+  window.guideRouteCentre = function (c) { rcState = c; renderList(); };
+  window.guideEditRoute = async function (slug) {
+    $('guidesBody').innerHTML = '<div class="text-center text-muted py-5">Yükleniyor…</div>';
+    try { var r = await jget('/api/admin/guide/route/' + encodeURIComponent(slug)); cur = r; cur.id = slug; cur.scope = 'route'; cur.factsSpec = r.facts_spec; cur.questions = r.questions; cur.groups = [{ id: 'gecis', title: 'Geçiş' }]; tab = 'facts'; renderEditor(); }
+    catch (e) { toast(e.message, 'error'); renderList(); }
+  };
   window.guideEdit = async function (id) {
     $('guidesBody').innerHTML = '<div class="text-center text-muted py-5">Yükleniyor…</div>';
     try { cur = await jget('/api/admin/guide/entity/' + id); cur.id = id; cur.scope = 'entity'; cur.factsSpec = spec.entity_facts; cur.questions = spec.questions; cur.groups = spec.groups; tab = 'facts'; renderEditor(); }
@@ -129,7 +148,7 @@
       '<select id="gStatus" class="form-select form-select-sm" style="width:auto" aria-label="Durum"><option value="draft"' + (p.status !== 'published' ? ' selected' : '') + '>Taslak</option><option value="published"' + (p.status === 'published' ? ' selected' : '') + '>Yayında</option></select>' +
       '<button class="btn btn-primary btn-sm" onclick="guideSave()"><i class="bi bi-check2"></i> Kaydet</button></div></div>' +
       '<div class="row g-2 mb-3"><div class="col-md-6"><label class="form-label small fw-semibold" for="gSlug">Bağlantı adresi</label><div class="input-group input-group-sm"><span class="input-group-text">/blog/</span><input id="gSlug" class="form-control" value="' + E(p.slug || g.slug) + '"></div></div>' +
-      '<div class="col-md-6 small text-muted align-self-end">' + (p.status === 'published' ? '<a href="/blog/' + E(p.slug || g.slug) + '" target="_blank" rel="noopener">Yayındaki sayfa</a>' + (cur.scope === 'exam' ? ' · <a href="/api/public/exams/' + cur.id + '/guide" target="_blank" rel="noopener">JSON</a>' : ' · <a href="/university?id=' + g.entity_id + '#rehber" target="_blank" rel="noopener">Üniversite sayfası</a> · <a href="/api/public/universities/' + g.entity_id + '/guide" target="_blank" rel="noopener">JSON</a>') : 'Yayına almak için durumu "Yayında" yap ve kaydet.') + '</div></div>' +
+      '<div class="col-md-6 small text-muted align-self-end">' + (p.status === 'published' ? '<a href="/blog/' + E(p.slug || g.slug) + '" target="_blank" rel="noopener">Yayındaki sayfa</a>' + (cur.scope === 'route' ? '' : cur.scope === 'exam' ? ' · <a href="/api/public/exams/' + cur.id + '/guide" target="_blank" rel="noopener">JSON</a>' : ' · <a href="/university?id=' + g.entity_id + '#rehber" target="_blank" rel="noopener">Üniversite sayfası</a> · <a href="/api/public/universities/' + g.entity_id + '/guide" target="_blank" rel="noopener">JSON</a>') : 'Yayına almak için durumu "Yayında" yap ve kaydet.') + '</div></div>' +
       '<ul class="nav nav-tabs mb-3">' + tabs.map(function (t) { return '<li class="nav-item"><button class="nav-link' + (tab === t[0] ? ' active' : '') + '" onclick="guideTab(\'' + t[0] + '\')">' + t[1] + '</button></li>'; }).join('') + '</ul>';
     if (g.data.unresolved.length) h += '<div class="alert alert-warning py-2 small">Boş kalan alanlar: ' + g.data.unresolved.map(E).join(', ') + '</div>';
     if (tab === 'facts') {
@@ -174,10 +193,10 @@
   window.guideBack = function () { cur = null; loadGuides(); };
   window.guideSave = async function () {
     collect();
-    var r = await api('PUT', '/api/admin/guide/' + cur.scope + '/' + cur.id, { status: cur.profile.status, slug: cur.profile.slug, data: cur.profile.data });
+    var r = await api('PUT', '/api/admin/guide/' + cur.scope + '/' + encodeURIComponent(cur.id), { status: cur.profile.status, slug: cur.profile.slug, data: cur.profile.data });
     var j = await r.json().catch(function () { return {}; });
     if (!r.ok) return toast(j.error || 'Kaydedilemedi', 'error');
-    toast('Kaydedildi'); await (cur.scope === 'exam' ? window.guideEditExam(cur.id) : window.guideEdit(cur.id));
+    toast('Kaydedildi'); await (cur.scope === 'exam' ? window.guideEditExam(cur.id) : cur.scope === 'route' ? window.guideEditRoute(cur.id) : window.guideEdit(cur.id));
   };
 
   // Country facts
