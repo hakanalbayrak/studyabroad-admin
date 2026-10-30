@@ -612,7 +612,8 @@ async function buildRouteGuide(slug, { preview = false } = {}) {
   const showList = (arr, n) => `${arr.slice(0, n).join('; ')}${arr.length > n ? ` ve ${arr.length - n} bölüm daha` : ''}`;
   const defaults = {
     intro: () => {
-      const bits = [`${f.partner}${f.location ? ', ' + f.location + ' şehrinde' : ''}${countryTr ? ' (' + countryTr + ')' : ''} eğitim veren bir üniversitedir. Türkiye'den ve diğer ülkelerden gelen öğrenciler hem doğrudan başvurabilir hem de not ortalaması veya İngilizce şartını karşılamayanlar için destekli giriş yollarından yararlanabilir.`];
+      const where = f.location ? `${f.location} şehrinde` : (countryTr ? withSuffix(countryTr, 'loc') : '');
+      const bits = [`${f.partner}${where ? ', ' + where : ''} eğitim veren bir üniversitedir. Türkiye'den ve diğer ülkelerden gelen öğrenciler hem doğrudan başvurabilir hem de not ortalaması veya İngilizce şartını karşılamayanlar için destekli giriş yollarından yararlanabilir.`];
       if (bd.length || md.length) bits.push(`Platformumuzda ${bd.length ? bd.length + ' lisans' : ''}${bd.length && md.length ? ' ve ' : ''}${md.length ? md.length + ' yüksek lisans' : ''} bölümü için giriş bilgisi bulunuyor.`);
       bits.push('Aşağıda kabul şartlarını, bölümleri ve başvuru adımlarını adım adım bulabilirsin.');
       return bits.join(' ');
