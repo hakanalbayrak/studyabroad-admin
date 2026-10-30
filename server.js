@@ -14,7 +14,7 @@ const blog = require('./utils/blog');
 app.use(chromeMiddleware);
 // Blog is rendered from content/blog/*.md; it must precede express.static (public/blog/ exists).
 const guide = require('./utils/guide');
-const guidePosts = async () => { try { return [...await guide.listPublished(), ...await guide.listPublishedExams(), ...await guide.listPublishedRoutes()]; } catch (e) { console.error('guide list:', e.message); return []; } };
+const guidePosts = async () => { try { return [...await guide.listPublished(), ...await guide.listPublishedExams(), ...await guide.listPublishedRoutes(), ...await guide.listPublishedPathways()]; } catch (e) { console.error('guide list:', e.message); return []; } };
 app.get('/blog', async (req, res) => res.type('html').set('Cache-Control', 'public, max-age=300').send(blog.renderIndex(req.query, await guidePosts())));
 app.get('/blog/feed.xml', async (req, res) => res.type('application/rss+xml').send(blog.renderFeed(await guidePosts())));
 app.get('/blog/:slug', async (req, res) => {
@@ -24,6 +24,10 @@ app.get('/blog/:slug', async (req, res) => {
     const id = await guide.entityIdForSlug(req.params.slug);
     const g = id && await guide.buildGuide(id);
     if (g) return res.type('html').set('Cache-Control', 'public, max-age=300').send(guide.renderGuidePage(g));
+    if (await guide.pathwaySlugExists(req.params.slug)) {
+      const pg = await guide.buildPathwayGuide(req.params.slug);
+      if (pg) return res.type('html').set('Cache-Control', 'public, max-age=300').send(guide.renderGuidePage(pg));
+    }
     if (await guide.routeSlugExists(req.params.slug)) {
       const rg = await guide.buildRouteGuide(req.params.slug);
       if (rg) return res.type('html').set('Cache-Control', 'public, max-age=300').send(guide.renderGuidePage(rg));
@@ -795,6 +799,27 @@ adminGuide.get('/routes', async (req, res) => {
 });
 adminGuide.delete('/route/:slug', async (req, res) => {
   try { await guide.deleteRoute(req.params.slug); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.get('/pathways', async (req, res) => {
+  try {
+    const rows = await guide.pathwayEntries();
+    res.json(rows.map(r => { const f = (r.data && r.data.facts) || {}; return { slug: r.ref, status: r.status, centre: f.centre || '', partner: f.partner || '', degree: f.degree || '', level: f.level || '' }; })
+      .sort((a, b) => (a.centre + a.partner + a.degree).localeCompare(b.centre + b.partner + b.degree)));
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.get('/pathway/:slug', async (req, res) => {
+  try {
+    const slug = req.params.slug; const p = await guide.getProfile('pathway', slug);
+    const g = await guide.buildPathwayGuide(slug, { preview: true });
+    res.json({ profile: { status: p.status, slug, data: p.data, updated_at: p.updated_at }, guide: g || { sections: [], data: { unresolved: [] }, name: slug, slug, token_names: [] }, facts_spec: guide.PATHWAY_FACTS, questions: guide.PATHWAY_QUESTIONS.map(q => ({ id: q.id, group: 'gecis', intro: !!q.intro })) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.put('/pathway/:slug', async (req, res) => {
+  try { const { status, data } = req.body || {}; await guide.saveProfile('pathway', req.params.slug, { status, slug: req.params.slug, data }); res.json({ ok: true }); }
+  catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.delete('/pathway/:slug', async (req, res) => {
+  try { await guide.deletePathway(req.params.slug); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
 });
 adminGuide.get('/route/:slug', async (req, res) => {
   try {
