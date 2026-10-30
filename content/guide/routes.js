@@ -20,6 +20,7 @@ const ROUTE_FACTS = [
   { key: 'duration', label: 'Derece süresi', type: 'text' },
   { key: 'guarantee', label: 'Geçiş garantisi ifadesi', type: 'textarea' },
   { key: 'degree_tuition_note', label: 'Derecenin okul ücreti notu', type: 'textarea', hint: 'Pathway ücreti programdan otomatik gelir; derecenin yıllık ücretini buraya yaz.' },
+  { key: 'pathway_name', label: 'Pathway programının resmî adı', type: 'text', hint: 'Doluysa metinlerde programdan gelen ad yerine bu kullanılır.' },
   { key: 'pathway_duration_note', label: 'Pathway süresi (resmî)', type: 'text', hint: 'Doluysa programdan gelen süreyi geçersiz kılar.' },
   { key: 'pathway_fee_note', label: 'Pathway ücreti (resmî)', type: 'text' },
   { key: 'pathway_intakes_note', label: 'Pathway başlangıç tarihleri (resmî)', type: 'textarea' },

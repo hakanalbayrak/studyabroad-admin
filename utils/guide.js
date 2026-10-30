@@ -625,7 +625,7 @@ async function buildRouteGuide(slug, { preview = false } = {}) {
   const cf = cfProfile.data.facts || {};
   const cur = prog ? (prog.tuition_currency || 'EUR') : 'EUR';
   const t = { partner: f.partner, degree: D, centre: C, level: f.level === 'Master' ? 'yüksek lisans' : 'lisans', country_tr: countryTr || '',
-    pathway_name: prog ? prog.name : '', pathway_fee: f.pathway_fee_note || (prog && prog.tuition_fee ? money(parseFloat(prog.tuition_fee), cur) : ''), pathway_duration: f.pathway_duration_note || (prog ? durTr(prog.duration) : ''),
+    pathway_name: f.pathway_name || (prog ? prog.name : ''), pathway_fee: f.pathway_fee_note || (prog && prog.tuition_fee ? money(parseFloat(prog.tuition_fee), cur) : ''), pathway_duration: f.pathway_duration_note || (prog ? durTr(prog.duration) : ''),
     pathway_intakes: f.pathway_intakes_note || (prog && prog.intake_months ? listTr(String(prog.intake_months).split(/[,;]/).map(x => trMonth(x.trim()))) : '') };
   Object.keys(f).forEach(k => { if (!Array.isArray(f[k])) t[k] = f[k]; });
   const lvlTr = f.level === 'Master' ? 'yüksek lisans' : 'lisans';
@@ -633,13 +633,13 @@ async function buildRouteGuide(slug, { preview = false } = {}) {
   const defaults = {
     intro: () => {
       const bits = [`${f.partner}${f.location ? ' (' + f.location + ')' : ''} kapsamındaki **${D}** ${lvlTr} programını, doğrudan başvuru yerine **${C}** pathway programı üzerinden okuyabilirsin.`];
-      if (f.via || prog) bits.push(`Yol: ${prog ? prog.name : f.via}${t.pathway_duration ? ', süre ' + t.pathway_duration : ''}${t.pathway_fee ? ', ücret ' + t.pathway_fee : ''}.`);
+      if (f.via || prog) bits.push(`Yol: ${t.pathway_name || f.via}${t.pathway_duration ? ', süre ' + t.pathway_duration : ''}${t.pathway_fee ? ', ücret ' + t.pathway_fee : ''}.`);
       if (f.guarantee) bits.push(f.guarantee);
       bits.push('Aşağıda kabul, şartlar, geçiş adımları ve maliyeti bulabilirsin.');
       return bits.join(' ');
     },
     transition: () => {
-      const steps = [`${C} üzerinde ${prog ? prog.name : (f.via || 'uygun pathway programına')} başvur ve kabul al.`, `Programı başarıyla tamamla${f.academic_entry ? ' (geçiş için ' + f.academic_entry + ')' : ''}.`,
+      const steps = [`${C} üzerinde ${t.pathway_name || f.via || 'uygun pathway programına'} başvur ve kabul al.`, `Programı başarıyla tamamla${f.academic_entry ? ' (geçiş için ' + f.academic_entry + ')' : ''}.`,
         `${f.partner} için ${D} programına geçiş başvurusu yap; ${f.english_entry ? 'İngilizce şartı: ' + f.english_entry + '.' : 'İngilizce şartını sağladığını belgele.'}`, 'Kabul sonrası vize ve konaklamayı planla.'];
       return `Geçiş genellikle şu sırayla ilerler:\n\n${steps.map((x, i) => `${i + 1}. ${x}`).join('\n')}\n\n${f.guarantee || 'Geçiş, şartları karşılamaya bağlıdır.'}`;
     },
@@ -653,7 +653,7 @@ async function buildRouteGuide(slug, { preview = false } = {}) {
       if (prog && (prog.english_req_type && prog.english_req_type !== 'None')) a.push(`**${C} programı için İngilizce:** ${prog.english_req_type} ${prog.english_req_score || ''}`.trim());
       return a.length ? bullets(a) : null;
     },
-    pathway: () => prog ? `Bu ${lvlTr} yolu için **${prog.name}** programını okumalısın. ${t.pathway_duration ? 'Süre: ' + t.pathway_duration + '. ' : ''}${t.pathway_fee ? 'Ücret: ' + t.pathway_fee + '. ' : ''}${t.pathway_intakes ? 'Başlangıç: ' + t.pathway_intakes + '. ' : ''}[${C} sayfasından programı incele](/university?id=${ent.id}).` : (f.via ? `Bu yol için ${C} merkezindeki **${f.via}** programını okumalısın.` : null),
+    pathway: () => (t.pathway_name || prog) ? `Bu ${lvlTr} yolu için **${t.pathway_name}** programını okumalısın. ${t.pathway_duration ? 'Süre: ' + t.pathway_duration + '. ' : ''}${t.pathway_fee ? 'Ücret: ' + t.pathway_fee + '. ' : ''}${t.pathway_intakes ? 'Başlangıç: ' + t.pathway_intakes + '. ' : ''}${ent ? `[${C} sayfasından programı incele](/university?id=${ent.id}).` : ''}` : (f.via ? `Bu yol için ${C} merkezindeki **${f.via}** programını okumalısın.` : null),
     guarantee: () => f.guarantee || null,
     maths: () => f.other_note && /math|maths|mathematic|ompt|matematik/i.test(f.other_note) ? `${f.other_note}\n\nOMPT hakkında ayrıntılı bilgi için [OMPT rehberine](/blog/ompt-matematik-yeterlilik-testi-rehberi) bak.` : null,
     cost: () => {
