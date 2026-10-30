@@ -621,12 +621,8 @@ async function buildRouteGuide(slug, { preview = false } = {}) {
       return bits.join(' ');
     },
     admit: () => {
-      const out = [];
-      if (f.bachelor_academic || f.master_academic) out.push(`${P} için kabul, akademik geçmişine ve İngilizce seviyene göre değerlendirilir. Aşağıdaki başarı ölçütleri, ortaklık programları üzerinden destekli girişte aranan ölçütlerdir; doğrudan başvuruda şartlar farklı olabilir.`);
-      if (f.bachelor_academic) out.push(`**Lisans için:** ${f.bachelor_academic}`);
-      if (f.master_academic) out.push(`**Yüksek lisans için:** ${f.master_academic}`);
+      const out = [`${P} için kabul, akademik geçmişine ve İngilizce seviyene göre değerlendirilir. Transkriptini, İngilizce belgeni ve motivasyon yazını hazırla; [başvuru talebi bırakırsan](/apply) danışmanımız dosyanı birlikte gözden geçirir.`];
       if (f.admit_note) out.push(f.admit_note);
-      out.push('Güçlü bir dosya için transkriptini, İngilizce belgeni ve motivasyon yazını eksiksiz hazırla; [başvuru talebi bırakırsan](/apply) danışmanımız dosyanı birlikte gözden geçirir.');
       return out.join('\n\n');
     },
     requirements: () => {
@@ -634,7 +630,7 @@ async function buildRouteGuide(slug, { preview = false } = {}) {
       if (f.bachelor_academic) a.push(`**Lisans, akademik:** ${f.bachelor_academic}`); if (f.bachelor_english) a.push(`**Lisans, İngilizce:** ${f.bachelor_english}`);
       if (f.master_academic) a.push(`**Yüksek lisans, akademik:** ${f.master_academic}`); if (f.master_english) a.push(`**Yüksek lisans, İngilizce:** ${f.master_english}`);
       if (f.other_note) a.push(`**Diğer:** ${f.other_note}`);
-      return a.length ? bullets(a) + '\n\nBu şartlar ortaklık programları üzerinden destekli giriş içindir ve bölüme ile yıla göre değişebilir. Doğrudan başvuru şartları ayrıdır; başvuru öncesinde güncel durumu danışmanımızdan teyit et.' : null;
+      return a.length ? bullets(a) + (f.req_basis === 'progression' ? '\n\nBu ölçütler hazırlık programından geçiş içindir; doğrudan başvuru şartları ayrıdır ve bölüme ile yıla göre değişir. Güncel durumu danışmanımızdan teyit et.' : '\n\nŞartlar bölüme ve yıla göre değişebilir; başvuru öncesinde güncel durumu danışmanımızdan teyit et.') : null;
     },
     english: () => {
       const a = []; if (f.bachelor_english) a.push(`Lisans: ${f.bachelor_english}`); if (f.master_english) a.push(`Yüksek lisans: ${f.master_english}`);
@@ -651,8 +647,8 @@ async function buildRouteGuide(slug, { preview = false } = {}) {
     whichmajor: () => (bd.length || md.length) ? `Bölüm seçerken önce kariyer hedefini, sonra ülkedeki iş piyasasını ve bütçeni düşün. ${P} geniş bir bölüm yelpazesi sunuyor; hangi bölümün hedefine ve şartlarına uyduğunu [Okul Bul sihirbazıyla](/match) veya danışmanımızla birlikte belirleyebilirsin.` : null,
     notmeet: () => {
       if (f.alt_note) return f.alt_note;
-      const lines = [`Şartlara uymuyorsan hazırlık (foundation yılı) veya pathway programını deneyebilirsin: ${P} için not ortalaması ya da İngilizce şartını karşılamayanlar, hazırlık yılı, International Year One veya pre-master gibi programlarla destekli giriş yapabilir. Hangi yolun sana uygun olduğunu notlarına, İngilizce seviyene ve hedef bölümüne göre PANELEDU danışmanı belirler.`];
-      if (pathLinks.length) lines.push(`${P} için hazırladığımız hazırlık ve pathway sayfaları:\n\n${bullets(pathLinks.slice(0, 16).map(r => `[${r.data.facts.degree} için hazırlık ve geçiş yolu](/blog/${r.ref})`))}${pathLinks.length > 16 ? `\n\nve ${pathLinks.length - 16} sayfa daha.` : ''}`);
+      const lines = [`Bu şartları karşılayamıyorsanız korkmayın. Bilimsel hazırlık programlarına (hazırlık yılı, International Year One, pre-master) katılarak hayalini kurduğunuz üniversite ve bölümde okuyabilirsiniz. Size uygun programı danışmanımız belirler.`];
+      if (pathLinks.length) lines.push(`${P} için hazırlık sayfalarımız:\n\n${bullets(pathLinks.slice(0, 16).map(r => `[${r.data.facts.degree}](/blog/${r.ref})`))}${pathLinks.length > 16 ? `\n\nve ${pathLinks.length - 16} sayfa daha.` : ''}`);
       lines.push('[Başvuru talebi bırak](/apply), uygun yolu birlikte planlayalım.');
       return lines.join('\n\n');
     },
