@@ -584,7 +584,7 @@ async function listPublishedExams() {
 }
 
 
-// ── Pathway progression route guides ───────────────────────────────────────
+// ── Partner university guides (one page per university; scope 'route') ──────
 async function routeEntries() {
   await ensureTable();
   const [rows] = await db.query("SELECT ref, slug, status, data, updated_at FROM guide_profiles WHERE scope = 'route'");
@@ -598,72 +598,58 @@ async function buildRouteGuide(slug, { preview = false } = {}) {
   if (!profile.data || !profile.data.facts) return null;
   if (!preview && profile.status !== 'published') return null;
   const f = profile.data.facts;
-  if (!f.partner || !f.degree || !f.centre) return null;
-  const P = f.partner_short || f.partner, D = f.degree, C = f.centre;
-  const c = { P, D, C };
-  // live data from the centre's pathway programs
+  if (!f.partner) return null;
+  const P = f.partner_short || f.partner, pron = f.pron || P;
+  const c = { P, P_dat: withSuffix(P, 'dat', pron), P_loc: withSuffix(P, 'loc', pron), P_gen: withSuffix(P, 'gen', pron) };
   const [[ent]] = await db.query(
-    `SELECT e.id, e.name, el.city, el.country FROM entities e LEFT JOIN entity_locations el ON el.id = (SELECT MIN(id) FROM entity_locations WHERE entity_id = e.id)
-     WHERE LOWER(e.name) = LOWER(?) LIMIT 1`, [C]);
-  let progs = [];
-  if (ent) {
-    const [rows] = await db.query(
-      `SELECT p.*, pt.name AS type_name FROM programs p JOIN program_types pt ON pt.id = p.program_type_id
-       JOIN entity_locations el ON el.id = p.entity_location_id WHERE el.entity_id = ? AND p.status = 'active'
-       AND pt.name IN ('Foundation Programs','Pathway Programs','Pre-Master Programs')`, [ent.id]);
-    progs = rows;
-  }
-  const wantMaster = f.level === 'Master';
-  const via = String(f.via || '').toLowerCase();
-  let cand = progs.filter(p => wantMaster ? p.type_name === 'Pre-Master Programs' : p.type_name !== 'Pre-Master Programs');
-  const hitVia = via && cand.filter(p => p.name.toLowerCase().includes(via) || (via === 'upp' && /university pathway/i.test(p.name)) || (via === 'mqp' && /master.?s qualifying/i.test(p.name)));
-  if (hitVia && hitVia.length) cand = hitVia;
-  const prog = cand[0] || null;
-  const country = ent ? ent.country : (f.country || null);
-  const countryTr = COUNTRY_TR[country] || country;
+    `SELECT e.id FROM entities e WHERE e.status != 'inactive' AND LOWER(REPLACE(e.name, ' (Turkish Students Only)', '')) = LOWER(?) LIMIT 1`, [f.partner]);
+  const country = f.country || null, countryTr = COUNTRY_TR[country] || ({ Grenada: 'Grenada' }[country]) || country;
   const cfProfile = country ? await getProfile('country', country) : { data: {} };
   const cf = cfProfile.data.facts || {};
-  const cur = prog ? (prog.tuition_currency || 'EUR') : 'EUR';
-  const t = { partner: f.partner, degree: D, centre: C, level: f.level === 'Master' ? 'yüksek lisans' : 'lisans', country_tr: countryTr || '',
-    pathway_name: f.pathway_name || (prog ? prog.name : ''), pathway_fee: f.pathway_fee_note || (prog && prog.tuition_fee ? money(parseFloat(prog.tuition_fee), cur) : ''), pathway_duration: f.pathway_duration_note || (prog ? durTr(prog.duration) : ''),
-    pathway_intakes: f.pathway_intakes_note || (prog && prog.intake_months ? listTr(String(prog.intake_months).split(/[,;]/).map(x => trMonth(x.trim()))) : '') };
+  const bd = Array.isArray(f.bachelor_degrees) ? f.bachelor_degrees : [], md = Array.isArray(f.master_degrees) ? f.master_degrees : [];
+  const t = { partner: f.partner, country_tr: countryTr || '', bachelor_count: bd.length, master_count: md.length, degree_count: bd.length + md.length };
   Object.keys(f).forEach(k => { if (!Array.isArray(f[k])) t[k] = f[k]; });
-  const lvlTr = f.level === 'Master' ? 'yüksek lisans' : 'lisans';
-  const siblings = (await routeEntries()).filter(r => r.slug !== slug && r.data.facts && r.data.facts.partner === f.partner && r.data.facts.centre === C && (preview || r.status === 'published')).slice(0, 12);
+  const showList = (arr, n) => `${arr.slice(0, n).join('; ')}${arr.length > n ? ` ve ${arr.length - n} bölüm daha` : ''}`;
   const defaults = {
     intro: () => {
-      const bits = [`${f.partner}${f.location ? ' (' + f.location + ')' : ''} kapsamındaki **${D}** ${lvlTr} programını, doğrudan başvuru yerine **${C}** pathway programı üzerinden okuyabilirsin.`];
-      if (f.via || prog) bits.push(`Yol: ${t.pathway_name || f.via}${t.pathway_duration ? ', süre ' + t.pathway_duration : ''}${t.pathway_fee ? ', ücret ' + t.pathway_fee : ''}.`);
-      if (f.guarantee) bits.push(f.guarantee);
-      bits.push('Aşağıda kabul, şartlar, geçiş adımları ve maliyeti bulabilirsin.');
+      const bits = [`${f.partner}${f.location ? ', ' + f.location + ' şehrinde' : ''}${countryTr ? ' (' + countryTr + ')' : ''} eğitim veren bir üniversitedir. Türkiye'den ve diğer ülkelerden gelen öğrenciler hem doğrudan başvurabilir hem de not ortalaması veya İngilizce şartını karşılamayanlar için destekli giriş yollarından yararlanabilir.`];
+      if (bd.length || md.length) bits.push(`Platformumuzda ${bd.length ? bd.length + ' lisans' : ''}${bd.length && md.length ? ' ve ' : ''}${md.length ? md.length + ' yüksek lisans' : ''} bölümü için giriş bilgisi bulunuyor.`);
+      bits.push('Aşağıda kabul şartlarını, bölümleri ve başvuru adımlarını adım adım bulabilirsin.');
       return bits.join(' ');
     },
-    transition: () => {
-      const steps = [`${C} üzerinde ${t.pathway_name || f.via || 'uygun pathway programına'} başvur ve kabul al.`, `Programı başarıyla tamamla${f.academic_entry ? ' (geçiş için ' + f.academic_entry + ')' : ''}.`,
-        `${f.partner} için ${D} programına geçiş başvurusu yap; ${f.english_entry ? 'İngilizce şartı: ' + f.english_entry + '.' : 'İngilizce şartını sağladığını belgele.'}`, 'Kabul sonrası vize ve konaklamayı planla.'];
-      return `Geçiş genellikle şu sırayla ilerler:\n\n${steps.map((x, i) => `${i + 1}. ${x}`).join('\n')}\n\n${f.guarantee || 'Geçiş, şartları karşılamaya bağlıdır.'}`;
-    },
     admit: () => {
-      const tips = []; if (f.academic_entry) tips.push(`Akademik şart: ${f.academic_entry}`); if (f.english_entry) tips.push(`İngilizce: ${f.english_entry}`); if (f.other_note) tips.push(f.other_note);
-      if (f.admit_note) tips.push(f.admit_note);
-      return tips.length ? `${f.partner} ${D} için kabul almanın yolu, ${C} programını gerekli başarıyla bitirmektir:\n\n${bullets(tips)}` : null;
+      const out = [];
+      if (f.bachelor_academic || f.master_academic) out.push(`${P} için kabul, akademik geçmişine ve İngilizce seviyene göre değerlendirilir. Aşağıdaki başarı ölçütleri, ortaklık programları üzerinden destekli girişte aranan ölçütlerdir; doğrudan başvuruda şartlar farklı olabilir.`);
+      if (f.bachelor_academic) out.push(`**Lisans için:** ${f.bachelor_academic}`);
+      if (f.master_academic) out.push(`**Yüksek lisans için:** ${f.master_academic}`);
+      if (f.admit_note) out.push(f.admit_note);
+      out.push('Güçlü bir dosya için transkriptini, İngilizce belgeni ve motivasyon yazını eksiksiz hazırla; [başvuru talebi bırakırsan](/apply) danışmanımız dosyanı birlikte gözden geçirir.');
+      return out.join('\n\n');
     },
     requirements: () => {
-      const a = []; if (f.academic_entry) a.push(`**Akademik:** ${f.academic_entry}`); if (f.english_entry) a.push(`**İngilizce:** ${f.english_entry}`); if (f.other_note) a.push(`**Diğer:** ${f.other_note}`);
-      if (prog && (prog.english_req_type && prog.english_req_type !== 'None')) a.push(`**${C} programı için İngilizce:** ${prog.english_req_type} ${prog.english_req_score || ''}`.trim());
-      return a.length ? bullets(a) : null;
+      const a = [];
+      if (f.bachelor_academic) a.push(`**Lisans, akademik:** ${f.bachelor_academic}`); if (f.bachelor_english) a.push(`**Lisans, İngilizce:** ${f.bachelor_english}`);
+      if (f.master_academic) a.push(`**Yüksek lisans, akademik:** ${f.master_academic}`); if (f.master_english) a.push(`**Yüksek lisans, İngilizce:** ${f.master_english}`);
+      if (f.other_note) a.push(`**Diğer:** ${f.other_note}`);
+      return a.length ? bullets(a) + '\n\nBu şartlar ortaklık programları üzerinden destekli giriş içindir ve bölüme ile yıla göre değişebilir. Doğrudan başvuru şartları ayrıdır; başvuru öncesinde güncel durumu danışmanımızdan teyit et.' : null;
     },
-    pathway: () => (t.pathway_name || prog) ? `Bu ${lvlTr} yolu için **${t.pathway_name}** programını okumalısın. ${t.pathway_duration ? 'Süre: ' + t.pathway_duration + '. ' : ''}${t.pathway_fee ? 'Ücret: ' + t.pathway_fee + '. ' : ''}${t.pathway_intakes ? 'Başlangıç: ' + t.pathway_intakes + '. ' : ''}${ent ? `[${C} sayfasından programı incele](/university?id=${ent.id}).` : ''}` : (f.via ? `Bu yol için ${C} merkezindeki **${f.via}** programını okumalısın.` : null),
-    guarantee: () => f.guarantee || null,
-    maths: () => f.other_note && /math|maths|mathematic|ompt|matematik/i.test(f.other_note) ? `${f.other_note}\n\nOMPT hakkında ayrıntılı bilgi için [OMPT rehberine](/blog/ompt-matematik-yeterlilik-testi-rehberi) bak.` : null,
-    cost: () => {
-      const out = []; if (t.pathway_fee) out.push(`${C} pathway programı: **${t.pathway_fee}**${t.pathway_duration ? ' (' + t.pathway_duration + ')' : ''}.`);
-      if (f.degree_tuition_note) out.push(f.degree_tuition_note);
-      if (!out.length) return null;
-      return out.join('\n\n') + '\n\nÜcretler her yıl değişebilir; başvurmadan önce resmî sayfalardan doğrula.';
+    english: () => {
+      const a = []; if (f.bachelor_english) a.push(`Lisans: ${f.bachelor_english}`); if (f.master_english) a.push(`Yüksek lisans: ${f.master_english}`);
+      return a.length ? bullets(a) + '\n\nBelgen yoksa [ücretsiz İngilizce seviye testimizi](/test) çözebilirsin. [IELTS rehberimizi](/blog/ielts-sinavi-rehberi) de inceleyebilirsin.' : null;
     },
-    steps: () => `1. [Okul Bul sihirbazıyla](/match) veya ${C} sayfasından programı seç.\n2. Belgelerini hazırla (diploma, transkript, İngilizce belgesi).\n3. [Başvuru talebi bırak](/apply); danışmanın dosyayı birlikte hazırlasın.\n4. Pathway programına kabul al ve bitir.\n5. ${f.partner} geçiş başvurusunu yap.`,
-    alternatives: () => siblings.length ? `${f.partner} için ${C} üzerinden şu geçiş yolları da listeleniyor:\n\n${bullets(siblings.map(r => `[${r.data.facts.degree}](/blog/${r.slug})`))}` : null,
+    programs: () => {
+      if (!bd.length && !md.length) return null;
+      const out = [`${P} için listelediğimiz bölümlerden bazıları:`];
+      if (bd.length) out.push(`**Lisans (${bd.length}):** ${showList(bd, 25)}`);
+      if (md.length) out.push(`**Yüksek lisans (${md.length}):** ${showList(md, 25)}`);
+      out.push(`Tam liste ve güncel kontenjanlar için ${ent ? `[${P} sayfasına](/university?id=${ent.id})` : 'danışmanımıza'} bak veya [Okul Bul sihirbazını](/match) kullan.`);
+      return out.join('\n\n');
+    },
+    whichmajor: () => (bd.length || md.length) ? `Bölüm seçerken önce kariyer hedefini, sonra ülkedeki iş piyasasını ve bütçeni düşün. ${P} geniş bir bölüm yelpazesi sunuyor; hangi bölümün hedefine ve şartlarına uyduğunu [Okul Bul sihirbazıyla](/match) veya danışmanımızla birlikte belirleyebilirsin.` : null,
+    notmeet: () => f.alt_note || `Doğrudan giriş şartlarını (not ortalaması veya İngilizce) karşılamıyorsan hâlâ seçeneklerin var: ${P} ile çalışan ortaklık programları üzerinden ek destekli giriş yapılabilen durumlar da bulunuyor. Hangi yolun sana uygun olduğunu notlarına, İngilizce seviyene ve hedef bölümüne göre PANELEDU danışmanı belirler. [Başvuru talebi bırak](/apply), uygun yolu birlikte planlayalım.`,
+    maths: () => f.other_note && /math|maths|mathematic|matematik|ompt/i.test(f.other_note) ? `${f.other_note}\n\nMatematik testi hakkında [OMPT rehberimize](/blog/ompt-matematik-yeterlilik-testi-rehberi) bak.` : null,
+    cost: () => f.degree_tuition_note || null,
+    steps: () => `1. [Okul Bul sihirbazıyla](/match) veya ${ent ? `[${P} sayfasından](/university?id=${ent.id})` : 'danışmanımızla'} bölümünü seç.\n2. Belgelerini hazırla (diploma, transkript, İngilizce belgesi).\n3. [Başvuru talebi bırak](/apply); danışmanın dosyayı birlikte hazırlasın.\n4. Kabulü bekle, vize ve konaklamayı planla.`,
   };
   const answers = profile.data.answers || {}, hidden = new Set(profile.data.hidden || []);
   const sections = [];
@@ -682,12 +668,12 @@ async function buildRouteGuide(slug, { preview = false } = {}) {
   });
   const intro = sections.find(s => s.intro);
   const guide = {
-    kind: 'route', route_slug: slug, slug, status: profile.status, url: `${SITE}/blog/${slug}`, name: `${f.partner} ${D}`, short_name: `${P} ${D}`, entity_id: ent ? ent.id : null,
-    country: country || null, country_tr: countryTr || 'Pathway', title: intro ? intro.question : `${P} ${D} nasıl okuyabilirim?`,
-    meta_title: `${P} ${D}: ${C} ile Geçiş ve Kabul Rehberi`,
-    meta_description: (f.meta_description || `${P} ${D} programını ${C} pathway yoluyla nasıl okursun? Kabul şartları, geçiş adımları, süre ve maliyet.`).slice(0, 300),
+    kind: 'route', route_slug: slug, slug, status: profile.status, url: `${SITE}/blog/${slug}`, name: f.partner, short_name: P, entity_id: ent ? ent.id : null,
+    country: country || null, country_tr: countryTr || '', title: intro ? intro.question : `${P} nasıl okuyabilirim?`,
+    meta_title: `${P} Kabul Rehberi: Şartlar, Bölümler, Başvuru`,
+    meta_description: (f.meta_description || `${f.partner} kabul şartları, bölümleri, İngilizce şartı ve başvuru adımları. Türk öğrenciler için ${P} rehberi.`).slice(0, 300),
     updated: (profile.updated_at ? new Date(profile.updated_at) : new Date()).toISOString(), verified_at: f.verified_at || null,
-    sources: [].concat(Array.isArray(f.sources) ? f.sources : [], f.source_url ? [f.source_url] : []), groups: [{ id: 'gecis', title: 'Geçiş rehberi' }], sections, data: { tokens: t, unresolved: [] },
+    sources: [], groups: [{ id: 'gecis', title: 'Üniversite rehberi' }], sections, data: { tokens: t, unresolved: [] },
   };
   if (preview) {
     guide.auto = {}; ROUTE_QUESTIONS.forEach(q => { try { const md = defaults[q.id](); if (has(md)) guide.auto[q.id] = md; } catch { /* none */ } });
@@ -703,12 +689,14 @@ async function routeSlugExists(slug) {
   return !!r;
 }
 
+async function deleteRoute(slug) { await ensureTable(); await db.query("DELETE FROM guide_profiles WHERE scope = 'route' AND ref = ?", [slug]); clearCache(); }
+
 async function listPublishedRoutes() {
   const out = [];
   for (const r of await routeEntries()) {
     if (r.status !== 'published') continue;
     const g = await buildRouteGuide(r.ref); if (!g) continue;
-    out.push({ slug: r.ref, title: g.short_name, summary: `${g.title} Kabul, geçiş adımları, şartlar ve maliyet.`, category: 'Pathway Geçiş Rehberi', country: g.country_tr === 'Pathway' ? '' : g.country_tr,
+    out.push({ slug: r.ref, title: g.short_name, summary: `${g.title} Kabul şartları, bölümler ve başvuru adımları.`, category: 'Üniversite Rehberi', country: g.country_tr,
       tags: [g.name], date: String(g.updated || '').slice(0, 10), readingTime: Math.max(2, Math.round(g.sections.reduce((n, x) => n + x.answer_text.split(/\s+/).length, 0) / 200)), guide: true });
   }
   return out;
@@ -750,11 +738,11 @@ function renderGuidePage(g) {
   const url = g.url;
   const toc = g.sections.filter(s => !s.intro).map(s => ({ id: s.id, text: s.question }));
   const isExam = g.kind === 'exam', isRoute = g.kind === 'route';
-  const catName = isExam ? 'Sınav Rehberi' : isRoute ? 'Pathway Geçiş Rehberi' : null;
+  const catName = isExam ? 'Sınav Rehberi' : null;
   const ld = [
     { '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.meta_description, inLanguage: 'tr', mainEntityOfPage: url, url,
       datePublished: (g.updated || '').slice(0, 10), dateModified: (g.updated || '').slice(0, 10), author: { '@type': 'Organization', name: 'PANELEDU' },
-      publisher: { '@type': 'Organization', name: 'PANELEDU', logo: { '@type': 'ImageObject', url: SITE + '/img/mark.svg' } }, about: (isExam || isRoute) ? { '@type': 'Thing', name: g.name } : { '@type': 'CollegeOrUniversity', name: g.name, url: g.university_url } },
+      publisher: { '@type': 'Organization', name: 'PANELEDU', logo: { '@type': 'ImageObject', url: SITE + '/img/mark.svg' } }, about: isExam ? { '@type': 'Thing', name: g.name } : isRoute ? { '@type': 'CollegeOrUniversity', name: g.name } : { '@type': 'CollegeOrUniversity', name: g.name, url: g.university_url } },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: SITE + '/' }, { '@type': 'ListItem', position: 2, name: 'Blog', item: SITE + '/blog' },
       { '@type': 'ListItem', position: 3, name: catName || g.country_tr, item: catName ? `${SITE}/blog?cat=${encodeURIComponent(catName)}` : `${SITE}/blog?country=${encodeURIComponent(g.country_tr)}` }, { '@type': 'ListItem', position: 4, name: g.short_name, item: url }] },
@@ -778,7 +766,7 @@ function renderGuidePage(g) {
       ${toc.length > 2 ? `<details class="toc-m"><summary>İçindekiler</summary><ol>${toc.map(t => `<li class="l2"><a href="#${t.id}">${esc(t.text)}</a></li>`).join('')}</ol></details>` : ''}
       ${renderSectionsHtml(g)}
       ${g.sources.length ? `<section class="guide-src"><h2>Kaynaklar</h2><ul>${g.sources.map(s => `<li><a href="${esc(s)}" rel="noopener nofollow" target="_blank">${esc(s.replace(/^https?:\/\//, ''))}</a></li>`).join('')}</ul></section>` : ''}
-      ${isRoute ? `<div class="blog-cta"><div><h2>${esc(g.short_name)} için başvuru talebi bırak</h2><p>Pathway programını ve geçiş yolunu birlikte planlayalım.</p></div><a class="btn-grad" href="${g.entity_id ? '/university?id=' + g.entity_id : '/apply'}">Pathway Programları</a></div>` : isExam ? '<div class="blog-cta"><div><h2>İngilizce seviyeni öğren</h2><p>20 soruluk ücretsiz testle seviyeni gör, sana uygun programları bul.</p></div><a class="btn-grad" href="/test">Testi Başlat</a></div>'
+      ${isRoute ? `<div class="blog-cta"><div><h2>${esc(g.short_name)} için başvuru talebi bırak</h2><p>Dosyanı birlikte hazırlayalım, uygun giriş yolunu belirleyelim.</p></div><a class="btn-grad" href="/apply">Başvuru Talebi</a></div>` : isExam ? '<div class="blog-cta"><div><h2>İngilizce seviyeni öğren</h2><p>20 soruluk ücretsiz testle seviyeni gör, sana uygun programları bul.</p></div><a class="btn-grad" href="/test">Testi Başlat</a></div>'
         : `<div class="blog-cta"><div><h2>${esc(g.short_name)} için başvuru talebi bırak</h2><p>Programları, ücretleri ve şartları gör; danışmanımız dosyanı birlikte hazırlasın.</p></div><a class="btn-grad" href="/university?id=${g.entity_id}">Programlara Bak</a></div>`}
     </div>
     ${toc.length > 2 ? `<aside class="toc-d" aria-label="İçindekiler"><strong>İçindekiler</strong><ol>${toc.map(t => `<li class="l2"><a href="#${t.id}">${esc(t.text)}</a></li>`).join('')}</ol></aside>` : ''}
@@ -798,5 +786,5 @@ function renderUniversitySection(g) {
 </div><script type="application/ld+json">${JSON.stringify(jsonLd(g)[0])}</script></section>`;
 }
 
-module.exports = { buildRouteGuide, routeSlugExists, listPublishedRoutes, routeEntries, ROUTE_FACTS, ROUTE_QUESTIONS, buildExamGuide, examKeyForSlug, listPublishedExams, EXAMS, EXAM_ORDER, EXAM_FACTS, EXAM_QUESTIONS, buildGuide, entityIdForSlug, listPublished, getProfile, saveProfile, clearCache, renderGuidePage, renderUniversitySection,
+module.exports = { buildRouteGuide, deleteRoute, routeSlugExists, listPublishedRoutes, routeEntries, ROUTE_FACTS, ROUTE_QUESTIONS, buildExamGuide, examKeyForSlug, listPublishedExams, EXAMS, EXAM_ORDER, EXAM_FACTS, EXAM_QUESTIONS, buildGuide, entityIdForSlug, listPublished, getProfile, saveProfile, clearCache, renderGuidePage, renderUniversitySection,
   slugify, suffix, withSuffix, QUESTIONS, GROUPS, ENTITY_FACTS, COUNTRY_FACTS, COUNTRY_TR, DEFAULTS };

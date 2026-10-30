@@ -1,47 +1,42 @@
 /*
- * Pathway progression route guides: "<University> <Degree>: how can I study it, get accepted, transfer?"
- * One route = one pathway centre (e.g. ONCAMPUS Amsterdam) + one partner university + one degree.
- * Base facts come from the provider pages (stored as facts on the route); pathway fee, duration and
- * intakes are read live from the centre's programs in the database.
+ * Partner university guides ("<University> nasıl okuyabilirim / kabul alabilirim"): one page per university.
+ * The degree list and entry requirements come from the partner programme data (admin editable); the text never
+ * names the pathway provider and only hints at supported entry routes for students who miss the direct requirements.
  */
 'use strict';
 
 const ROUTE_FACTS = [
-  { key: 'centre', label: 'Pathway merkezi (katalogdaki ad)', type: 'text', hint: 'Örn. ONCampus Amsterdam. Merkezin canlı program bilgileri buradan okunur.' },
-  { key: 'partner', label: 'Geçiş yapılan üniversite', type: 'text' },
-  { key: 'partner_short', label: 'Üniversite kısa adı', type: 'text', hint: 'Boşsa tam ad kullanılır.' },
-  { key: 'degree', label: 'Bölüm / derece adı', type: 'text' },
-  { key: 'level', label: 'Seviye', type: 'select', options: ['Bachelor', 'Master'] },
-  { key: 'via', label: 'Pathway programı (UPP, MQP, Foundation, International Year One, Pre-Master)', type: 'text' },
-  { key: 'academic_entry', label: 'Akademik şart', type: 'textarea' },
-  { key: 'english_entry', label: 'İngilizce şartı', type: 'textarea' },
+  { key: 'partner', label: 'Üniversite adı', type: 'text' },
+  { key: 'partner_short', label: 'Kısa ad (sorularda kullanılır)', type: 'text', hint: 'Boşsa tam ad kullanılır.' },
+  { key: 'pron', label: 'Okunuşu (Türkçe ek için)', type: 'text', hint: 'Ekler (-e, -de) yanlış çıkarsa doldur.' },
+  { key: 'country', label: 'Ülke (İngilizce ad)', type: 'text', hint: 'Örn. United Kingdom, France, Netherlands, Ireland.' },
+  { key: 'location', label: 'Şehir', type: 'text' },
+  { key: 'bachelor_academic', label: 'Lisans akademik şart', type: 'textarea' },
+  { key: 'bachelor_english', label: 'Lisans İngilizce şartı', type: 'textarea' },
+  { key: 'master_academic', label: 'Yüksek lisans akademik şart', type: 'textarea' },
+  { key: 'master_english', label: 'Yüksek lisans İngilizce şartı', type: 'textarea' },
   { key: 'other_note', label: 'Matematik testi / diğer şartlar', type: 'textarea' },
-  { key: 'language', label: 'Eğitim dili', type: 'text' },
-  { key: 'duration', label: 'Derece süresi', type: 'text' },
-  { key: 'guarantee', label: 'Geçiş garantisi ifadesi', type: 'textarea' },
-  { key: 'degree_tuition_note', label: 'Derecenin okul ücreti notu', type: 'textarea', hint: 'Pathway ücreti programdan otomatik gelir; derecenin yıllık ücretini buraya yaz.' },
-  { key: 'pathway_name', label: 'Pathway programının resmî adı', type: 'text', hint: 'Doluysa metinlerde programdan gelen ad yerine bu kullanılır.' },
-  { key: 'pathway_duration_note', label: 'Pathway süresi (resmî)', type: 'text', hint: 'Doluysa programdan gelen süreyi geçersiz kılar.' },
-  { key: 'pathway_fee_note', label: 'Pathway ücreti (resmî)', type: 'text' },
-  { key: 'pathway_intakes_note', label: 'Pathway başlangıç tarihleri (resmî)', type: 'textarea' },
-  { key: 'location', label: 'Şehir / kampüs', type: 'text' },
+  { key: 'bachelor_degrees', label: 'Lisans bölümleri', type: 'list', hint: 'Her satır bir bölüm' },
+  { key: 'master_degrees', label: 'Yüksek lisans bölümleri', type: 'list', hint: 'Her satır bir bölüm' },
+  { key: 'alt_note', label: 'Şartları karşılamayanlar için yol (açıklama)', type: 'textarea', hint: 'Boşsa varsayılan metin kullanılır.' },
+  { key: 'degree_tuition_note', label: 'Okul ücreti notu', type: 'textarea' },
   { key: 'admit_note', label: 'Kabul için ek notlar', type: 'textarea' },
-  { key: 'source_url', label: 'Sağlayıcı sayfası', type: 'text' },
-  { key: 'sources', label: 'Kaynak bağlantıları', type: 'list' },
+  { key: 'meta_description', label: 'Google açıklaması', type: 'textarea' },
+  { key: 'sources', label: 'Kaynak bağlantıları (dahili)', type: 'list' },
   { key: 'verified_at', label: 'Son doğrulama tarihi', type: 'date' },
 ];
 
 const ROUTE_QUESTIONS = [
-  { id: 'intro', intro: true, q: c => `${c.P} ${c.D} nasıl okuyabilirim?` },
-  { id: 'transition', q: c => `${c.C} üzerinden ${c.P} ${c.D} programına nasıl geçiş yapabilirim?` },
-  { id: 'admit', q: c => `${c.P} ${c.D} için nasıl kabul alabilirim?` },
-  { id: 'requirements', q: c => `${c.P} ${c.D} için gerekli şartlar nelerdir?` },
-  { id: 'pathway', q: c => `${c.D} için hangi ${c.C} programını okumalıyım?` },
-  { id: 'guarantee', q: c => `${c.C} sonrası ${c.P} geçişi garantili mi?` },
-  { id: 'maths', q: c => `${c.P} ${c.D} için matematik testi (OMPT) gerekir mi?` },
-  { id: 'cost', q: c => `${c.P} ${c.D} yolu toplam ne kadara mal olur?` },
-  { id: 'steps', q: c => `${c.P} ${c.D} için başvuru adımları nelerdir?` },
-  { id: 'alternatives', q: c => `${c.P} ${c.D} yerine hangi programlara geçiş yapabilirim?` },
+  { id: 'intro', intro: true, q: c => `${c.P} nasıl okuyabilirim? Türk öğrenciler için rehber` },
+  { id: 'admit', q: c => `${c.P_dat} nasıl kabul alabilirim?` },
+  { id: 'requirements', q: c => `${c.P_gen} kabul şartları nelerdir?` },
+  { id: 'english', q: c => `${c.P_dat} başvururken İngilizce şartı nedir?` },
+  { id: 'programs', q: c => `${c.P_loc} hangi bölümler var?` },
+  { id: 'whichmajor', q: c => `${c.P_loc} hangi bölümü okumalıyım?` },
+  { id: 'notmeet', q: c => `${c.P_gen} şartlarını karşılamıyorsam ne yapabilirim?` },
+  { id: 'maths', q: c => `${c.P_dat} başvururken matematik testi gerekir mi?` },
+  { id: 'cost', q: c => `${c.P_loc} okumanın maliyeti nedir?` },
+  { id: 'steps', q: c => `${c.P_dat} başvuru adımları nelerdir?` },
 ];
 
 module.exports = { ROUTE_FACTS, ROUTE_QUESTIONS };

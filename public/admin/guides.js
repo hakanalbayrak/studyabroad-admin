@@ -18,7 +18,7 @@
   };
 
   var kind = 'uni', fcState = '', qState = '', exams = [], routes = [], rcState = '';
-  var KINDS = [['uni', 'Üniversiteler'], ['country', 'Ülkeler'], ['exam', 'Sınavlar'], ['route', 'Pathway geçiş yolları'], ['other', 'Diğer içerikler']];
+  var KINDS = [['uni', 'Üniversiteler'], ['country', 'Ülkeler'], ['exam', 'Sınavlar'], ['route', 'Ortak üniversite rehberleri'], ['other', 'Diğer içerikler']];
 
   function renderList() {
     var countries = Array.from(new Set(list.map(function (r) { return r.country; }).filter(Boolean))).sort();
@@ -40,16 +40,16 @@
           return '<tr><td>' + E(x.name) + '</td><td class="text-muted small">' + t + '</td><td>' + b + '</td><td class="text-end"><button class="btn btn-sm btn-outline-primary" onclick="guideEditExam(\'' + x.key + '\')">Düzenle</button></td></tr>';
         }).join('') + '</tbody></table></div>';
     } else if (kind === 'route') {
-      var centres = Array.from(new Set(routes.map(function (r) { return r.centre; }))).sort();
-      var rrows = routes.filter(function (r) { return !rcState || r.centre === rcState; });
-      body = head + '<span class="text-muted small ms-auto">' + routes.filter(function (r) { return r.status === 'published'; }).length + ' yayında / ' + routes.length + ' yol</span></div>' +
+      var rcountries = Array.from(new Set(routes.map(function (r) { return r.country; }))).sort();
+      var rrows = routes.filter(function (r) { return !rcState || r.country === rcState; });
+      body = head + '<span class="text-muted small ms-auto">' + routes.filter(function (r) { return r.status === 'published'; }).length + ' yayında / ' + routes.length + ' üniversite</span></div>' +
         '<div class="d-flex flex-wrap gap-2 mb-3"><button class="btn btn-sm ' + (!rcState ? 'btn-primary' : 'btn-outline-primary') + '" onclick="guideRouteCentre(\'\')">Tümü</button>' +
-        centres.map(function (c) { return '<button class="btn btn-sm ' + (c === rcState ? 'btn-primary' : 'btn-outline-primary') + '" onclick="guideRouteCentre(\'' + E(c) + '\')">' + E(c) + '</button>'; }).join('') + '</div>' +
-        (routes.length ? '' : '<div class="text-center text-muted py-4">Henüz geçiş yolu yok.</div>') +
-        '<div class="table-responsive"><table class="table table-sm align-middle"><thead><tr><th>Merkez</th><th>Üniversite</th><th>Bölüm</th><th>Seviye</th><th>Durum</th><th></th></tr></thead><tbody>' +
+        rcountries.map(function (c) { return '<button class="btn btn-sm ' + (c === rcState ? 'btn-primary' : 'btn-outline-primary') + '" onclick="guideRouteCentre(\'' + E(c) + '\')">' + E(c || '(ülke yok)') + '</button>'; }).join('') + '</div>' +
+        (routes.length ? '' : '<div class="text-center text-muted py-4">Henüz üniversite yok.</div>') +
+        '<div class="table-responsive"><table class="table table-sm align-middle"><thead><tr><th>Üniversite</th><th>Ülke</th><th class="text-end">Lisans</th><th class="text-end">Y. lisans</th><th>Durum</th><th></th></tr></thead><tbody>' +
         rrows.map(function (r) {
           var b = r.status === 'published' ? '<span class="badge text-bg-success">Yayında</span>' : '<span class="badge text-bg-warning">Taslak</span>';
-          return '<tr><td>' + E(r.centre) + '</td><td>' + E(r.partner) + '</td><td>' + E(r.degree) + '</td><td>' + E(r.level) + '</td><td>' + b + '</td><td class="text-end"><button class="btn btn-sm btn-outline-primary" onclick="guideEditRoute(\'' + E(r.slug) + '\')">Düzenle</button></td></tr>';
+          return '<tr><td>' + E(r.partner) + '</td><td>' + E(r.country) + '</td><td class="text-end">' + r.bachelors + '</td><td class="text-end">' + r.masters + '</td><td>' + b + '</td><td class="text-end"><button class="btn btn-sm btn-outline-primary" onclick="guideEditRoute(\'' + E(r.slug) + '\')">Düzenle</button></td></tr>';
         }).join('') + '</tbody></table></div>';
     } else if (kind === 'other') {
       body = head + '</div><div class="text-center text-muted py-5">Bu bölüm için henüz içerik yok.</div>';

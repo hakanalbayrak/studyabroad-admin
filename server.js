@@ -789,9 +789,12 @@ adminGuide.put('/exam/:key', async (req, res) => {
 adminGuide.get('/routes', async (req, res) => {
   try {
     const rows = await guide.routeEntries();
-    res.json(rows.map(r => { const f = (r.data && r.data.facts) || {}; return { slug: r.ref, status: r.status, centre: f.centre || '', partner: f.partner || '', degree: f.degree || '', level: f.level || '', via: f.via || '' }; })
-      .sort((a, b) => (a.centre + a.partner + a.degree).localeCompare(b.centre + b.partner + b.degree)));
+    res.json(rows.map(r => { const f = (r.data && r.data.facts) || {}; return { slug: r.ref, status: r.status, partner: f.partner || '', country: f.country || '',
+      bachelors: (f.bachelor_degrees || []).length, masters: (f.master_degrees || []).length }; }).sort((a, b) => (a.country + a.partner).localeCompare(b.country + b.partner)));
   } catch (e) { res.status(500).json({ error: e.message }); }
+});
+adminGuide.delete('/route/:slug', async (req, res) => {
+  try { await guide.deleteRoute(req.params.slug); res.json({ ok: true }); } catch (e) { res.status(500).json({ error: e.message }); }
 });
 adminGuide.get('/route/:slug', async (req, res) => {
   try {
