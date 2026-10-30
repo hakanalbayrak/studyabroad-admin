@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University — PANELEDU</title>
+  <link href="/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/site.css?v=20261009" rel="stylesheet">
+  <link href="/css/icons.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <style>
+    .u-hero { padding: clamp(22px, 4vw, 44px) 0 clamp(18px, 3vw, 28px); }
+    .u-crumbs { font-size: .82rem; color: var(--muted); margin-bottom: 12px; }
+    .u-crumbs a { color: var(--muted); }
+    .u-top { display: flex; gap: 16px; align-items: flex-start; }
+    .u-logo { width: 64px; height: 64px; object-fit: contain; border: var(--bw) solid var(--text); border-radius: var(--r); background: var(--surface); padding: 6px; flex-shrink: 0; }
+    .uni-name { font-size: clamp(1.5rem, 3.6vw, 2.5rem); margin: 0 0 6px; overflow-wrap: anywhere; }
+    .uni-loc { color: var(--muted); font-size: .98rem; margin-bottom: 12px; }
+    .u-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .rank-pill, .info-chip { display: inline-flex; align-items: center; gap: 6px; font-size: .8rem; font-weight: 600; padding: 4px 12px; border-radius: 99px; border: 1.5px solid var(--text); background: var(--surface); }
+    .rqs { background: var(--mist); } .rthe { background: #d6f5e3; } .rsh { background: var(--sun); } .rlei { background: #d9f2fb; }
+    .desc { color: var(--muted); font-size: .95rem; line-height: 1.65; max-width: 70ch; margin: 6px 0 0; }
+    .u-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .orbit-btn.disabled { opacity: .5; pointer-events: none; }
+    #orbitNote { font-size: .76rem; color: var(--muted); align-self: center; }
+
+    .u-tools { position: sticky; top: 64px; z-index: 50; background: var(--bg); border-block: var(--bw) solid var(--text); padding: 12px 0; }
+    .u-tools .row > * { margin-block: 3px; }
+    .u-tools input, .u-tools select { min-height: 40px; font-size: .88rem; }
+    #resultCount { font-size: .86rem; color: var(--muted); }
+    .type-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 14px; }
+    .type-tab { background: var(--surface); border: 1.5px solid var(--text); color: var(--text); border-radius: 99px; padding: 6px 14px; min-height: 36px; font-size: .84rem; font-weight: 600; cursor: pointer; font-family: var(--f-body); }
+    .type-tab:hover { background: var(--mist); }
+    .type-tab.active { background: var(--sun); font-weight: 700; }
+
+    #progList { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    @media (max-width: 860px) { .u-tools { position: static; } #progList { grid-template-columns: minmax(0, 1fr); } .u-top { flex-direction: column; } .u-tools { top: 58px; } }
+    .prog-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); padding: 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; transition: transform .12s, box-shadow .12s; }
+    .prog-card:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow); }
+    .prog-name { font-family: var(--f-display); font-weight: 700; font-size: .95rem; letter-spacing: -.02em; line-height: 1.28; margin: 0; overflow-wrap: anywhere; }
+    .prog-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+    .meta-chip { font-size: .72rem; padding: 2px 9px; border-radius: 99px; font-weight: 600; border: 1.5px solid var(--text); background: var(--mist); }
+    .chip-scholar { background: var(--sun); }
+    .prog-fee { font-family: var(--f-display); font-weight: 800; font-size: 1.05rem; letter-spacing: -.03em; }
+    .prog-fee small { font-family: var(--f-body); font-weight: 500; font-size: .72rem; color: var(--muted); letter-spacing: 0; }
+    .prog-fee.req { font-family: var(--f-body); font-weight: 500; font-size: .8rem; color: var(--muted); letter-spacing: 0; }
+    .prog-details { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .78rem; color: var(--muted); }
+    .prog-details span { display: inline-flex; align-items: center; gap: 4px; }
+    .prog-actions { display: flex; gap: 8px; margin-top: auto; padding-top: 12px; border-top: 1px solid var(--line-soft); }
+    .prog-actions .btn-grad { flex: 1; min-height: 40px; padding: 8px 12px; font-size: .86rem; }
+    .icon-btn { width: 40px; height: 40px; flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; border: var(--bw) solid var(--text); border-radius: var(--r-s); background: var(--surface); color: var(--text); text-decoration: none; cursor: pointer; }
+    .icon-btn:hover { background: var(--mist); color: var(--text); }
+    .icon-btn.official { background: var(--mist); }
+    .no-results { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 40px 0; }
+    #moreWrap { text-align: center; margin: 22px 0 6px; }
+    #leadModal input, #leadModal textarea { width: 100%; background: var(--surface); border: var(--bw) solid var(--text); color: var(--text); border-radius: var(--r-s); padding: 10px 12px; font-size: .92rem; font-family: var(--f-body); outline: none; }
+    #leadModal input:focus, #leadModal textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(43,68,255,.2); }
+  </style>
+</head>
+<body class="pe-theme">
+<main id="main">
+
+<span id="navName" hidden></span>
+
+<section class="u-hero" id="hero">
+  <div class="pe-wrap">
+    <div id="heroSkeleton" style="color:var(--muted)" data-i18n="h.loading">Yükleniyor…</div>
+    <div id="heroContent" class="d-none">
+      <div class="u-crumbs"><a href="/programs" data-i18n="nav.programs">Programlar</a> / <span id="crumbName"></span></div>
+      <div class="u-top">
+        <img class="u-logo d-none" id="uLogo" alt="">
+        <div style="min-width:0">
+          <h1 class="uni-name" id="uName"></h1>
+          <div class="uni-loc"><i class="bi bi-geo-alt-fill"></i> <span id="uLoc"></span></div>
+          <div class="u-chips" id="uRanks"></div>
+          <div class="u-chips" id="uInfo"></div>
+          <p class="desc d-none" id="uDesc"></p>
+          <div class="u-actions">
+            <button class="btn-grad orbit-btn disabled" id="orbitBtn" type="button" onclick="openOrbit()"><i class="bi bi-camera-video-fill"></i><span data-i18n="uni.3d">3D Campus View</span></button>
+            <a id="websiteLink" href="#" target="_blank" rel="noopener" class="btn-ghost d-none"><i class="bi bi-box-arrow-up-right"></i><span data-i18n="uni.website">Official website</span></a>
+            <span id="orbitNote"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="u-tools">
+  <div class="pe-wrap">
+    <div class="row g-2 align-items-center">
+      <div class="col-12 col-md-4"><input type="search" class="form-control" id="progSearch" data-i18n-ph="uni.search.ph" placeholder="Search programs…" oninput="applyFilters()" aria-label="Program ara"></div>
+      <div class="col-6 col-md-2">
+        <select class="form-select" id="langFilter" onchange="applyFilters()" aria-label="Dil">
+          <option value="" data-i18n="uni.lang.any">Any language</option>
+          <option>English</option><option>German</option><option>French</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-2">
+        <select class="form-select" id="engFilter" onchange="applyFilters()" aria-label="İngilizce şartı">
+          <option value="" data-i18n="uni.eng.any">Any English req.</option>
+          <option>None</option><option>IELTS</option><option>TOEFL</option><option>Duolingo</option><option>PTE</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-2"><input type="number" class="form-control" id="maxFee" data-i18n-ph="uni.fee.ph" placeholder="Max fee" oninput="applyFilters()" aria-label="Maksimum ücret"></div>
+      <div class="col-6 col-md-2 text-md-end"><span id="resultCount" aria-live="polite"></span></div>
+    </div>
+  </div>
+</div>
+
+<section class="pe-section-tight">
+  <div class="pe-wrap">
+    <div class="type-tabs" id="typeTabs" role="tablist"></div>
+    <div id="progList"></div>
+    <div id="moreWrap" hidden><button class="btn-ghost" type="button" onclick="showMore()"><i class="bi bi-chevron-down"></i><span id="moreLbl"></span></button></div>
+  </div>
+</section>
+
+</main>
+
+<script>
+const params = new URLSearchParams(location.search);
+const uniId = params.get('id');
+let university = null;
+let allPrograms = [];
+let activeType = '';
+let filtered = [];
+let shownCount = 0;
+const STEP = 24;
+
+function T(k){ return window.t ? window.t(k) : k; }
+function _t(k, fb) { if (!window.t) return fb; const v = window.t(k); return v === k ? fb : v; }
+const LANG = () => localStorage.getItem('paneleduLang') || 'tr';
+const CUR = { USD: '$', GBP: '£', EUR: '€', CAD: 'CA$', AUD: 'A$', TRY: '₺' };
+function money(p) { return (CUR[p.tuition_currency] || (p.tuition_currency ? p.tuition_currency + ' ' : '$')) + Number(p.tuition_fee).toLocaleString(LANG() === 'en' ? 'en' : 'tr'); }
+
+if (!uniId) { location.href = '/'; }
+
+async function load() {
+  try {
+    const res = await fetch(`/api/public/universities/${uniId}`);
+    if (!res.ok) { location.href = '/'; return; }
+    university = await res.json();
+    allPrograms = university.programs || [];
+    renderHero();
+    renderTypeTabs();
+    applyFilters();
+    document.getElementById('heroSkeleton').style.display = 'none';
+    document.getElementById('heroContent').classList.remove('d-none');
+    document.title = university.name + ' | PANELEDU';
+    document.getElementById('navName').textContent = university.name;
+  } catch(e) {
+    document.getElementById('heroSkeleton').textContent = T('uni.err.load');
+  }
+}
+
+function renderHero() {
+  const u = university;
+  document.getElementById('uName').textContent = u.name;
+  document.getElementById('crumbName').textContent = u.name;
+  if (u.logo_url) { const l = document.getElementById('uLogo'); l.src = u.logo_url; l.classList.remove('d-none'); l.onerror = () => l.remove(); }
+  document.getElementById('uLoc').textContent = [u.city, u.country].filter(Boolean).join(', ');
+  const ranks = [];
+  if (u.qs_rank)       ranks.push(`<span class="rank-pill rqs"><i class="bi bi-trophy-fill"></i>QS #${u.qs_rank}${u.qs_rank_year ? ' <small>('+u.qs_rank_year+')</small>' : ''}</span>`);
+  if (u.the_rank)      ranks.push(`<span class="rank-pill rthe"><i class="bi bi-trophy-fill"></i>THE #${u.the_rank}${u.the_rank_year ? ' <small>('+u.the_rank_year+')</small>' : ''}</span>`);
+  if (u.shanghai_rank) ranks.push(`<span class="rank-pill rsh"><i class="bi bi-trophy-fill"></i>Shanghai #${u.shanghai_rank}${u.shanghai_rank_year ? ' <small>('+u.shanghai_rank_year+')</small>' : ''}</span>`);
+  if (u.leiden_rank)   ranks.push(`<span class="rank-pill rlei"><i class="bi bi-trophy-fill"></i>Leiden #${u.leiden_rank}${u.leiden_rank_year ? ' <small>('+u.leiden_rank_year+')</small>' : ''}</span>`);
+  document.getElementById('uRanks').innerHTML = ranks.join('');
+  const chips = [];
+  if (u.continent)  chips.push(`<span class="info-chip"><i class="bi bi-globe2"></i>${esc(u.continent)}</span>`);
+  if (u.closest_airport_code) chips.push(`<span class="info-chip"><i class="bi bi-airplane"></i>${T('uni.airport')}: ${esc(u.closest_airport_code)}</span>`);
+  if (u.flight_duration_from_ist_min) chips.push(`<span class="info-chip"><i class="bi bi-clock"></i>${T('uni.istanbul')}: ~${Math.round(u.flight_duration_from_ist_min/60*10)/10} h</span>`);
+  chips.push(`<span class="info-chip"><i class="bi bi-mortarboard"></i>${allPrograms.length} ${T('uni.programs')}</span>`);
+  document.getElementById('uInfo').innerHTML = chips.join('');
+  if (u.description_en) { const d = document.getElementById('uDesc'); d.textContent = u.description_en; d.classList.remove('d-none'); }
+  const btn = document.getElementById('orbitBtn');
+  if (u.latitude && u.longitude) btn.classList.remove('disabled');
+  else document.getElementById('orbitNote').textContent = T('uni.no.3d');
+  if (u.website_url) { const a = document.getElementById('websiteLink'); a.href = u.website_url; a.classList.remove('d-none'); }
+  // Structured data for search engines and agents
+  const ld = { '@context': 'https://schema.org', '@type': 'CollegeOrUniversity', name: u.name, url: 'https://paneledu.com/university?id=' + u.id,
+    address: { '@type': 'PostalAddress', addressLocality: u.city || undefined, addressCountry: u.country || undefined } };
+  if (u.website_url) ld.sameAs = u.website_url;
+  if (u.logo_url) ld.logo = u.logo_url;
+  const s = document.createElement('script'); s.type = 'application/ld+json'; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
+}
+
+function renderTypeTabs() {
+  const types = [...new Set(allPrograms.map(p => p.type_name).filter(Boolean))].sort();
+  const tabs = document.getElementById('typeTabs');
+  tabs.innerHTML = `<button class="type-tab active" type="button" data-type="">${T('uni.all')} (${allPrograms.length})</button>` +
+    types.map(t => {
+      const count = allPrograms.filter(p => p.type_name === t).length;
+      const label = window.i18n && window.i18n.typeLabel ? window.i18n.typeLabel(t) : t;
+      return `<button class="type-tab" type="button" data-type="${esc(t)}">${esc(label)} (${count})</button>`;
+    }).join('');
+  tabs.querySelectorAll('.type-tab').forEach(el => el.addEventListener('click', () => setType(el.dataset.type)));
+}
+function setType(t) {
+  activeType = t;
+  document.querySelectorAll('.type-tab').forEach(el => el.classList.toggle('active', el.dataset.type === t));
+  applyFilters();
+}
+
+function applyFilters() {
+  const q = document.getElementById('progSearch').value.toLowerCase();
+  const lang = document.getElementById('langFilter').value;
+  const eng = document.getElementById('engFilter').value;
+  const maxFee = parseFloat(document.getElementById('maxFee').value) || null;
+  filtered = allPrograms.filter(p => {
+    if (activeType && p.type_name !== activeType) return false;
+    if (q && !p.name.toLowerCase().includes(q) && !(p.description_en||'').toLowerCase().includes(q)) return false;
+    if (lang && !(p.language_of_instruction||'').toLowerCase().includes(lang.toLowerCase())) return false;
+    if (eng && (p.english_req_type || 'None') !== eng) return false;
+    if (maxFee && p.tuition_fee && p.tuition_fee > maxFee) return false;
+    return true;
+  });
+  document.getElementById('resultCount').textContent = filtered.length + ' ' + (filtered.length !== 1 ? T('uni.results.p') : T('uni.results'));
+  shownCount = 0;
+  document.getElementById('progList').innerHTML = '';
+  showMore();
+}
+
+function showMore() {
+  const list = document.getElementById('progList');
+  if (!filtered.length) {
+    list.innerHTML = `<div class="no-results"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:10px"></i>${T('uni.no.match')}</div>`;
+    document.getElementById('moreWrap').hidden = true;
+    return;
+  }
+  const next = filtered.slice(shownCount, shownCount + STEP);
+  list.insertAdjacentHTML('beforeend', next.map(cardHtml).join(''));
+  shownCount += next.length;
+  const left = filtered.length - shownCount;
+  document.getElementById('moreWrap').hidden = left <= 0;
+  document.getElementById('moreLbl').textContent = _t('uni.more', 'Daha fazla göster') + ' (' + left + ')';
+}
+
+function cardHtml(p) {
+  const fee = p.tuition_fee
+    ? `<span class="prog-fee">${esc(money(p))}<small> ${_t('p.per.yr', '/yıl')}</small></span>`
+    : `<span class="prog-fee req">${T('uni.contact.free')}</span>`;
+  const eng = p.english_req_type && p.english_req_type !== 'None'
+    ? `<span><i class="bi bi-translate"></i>${esc(p.english_req_type)}${p.english_req_score ? ' ' + esc(p.english_req_score) : ''}</span>` : '';
+  const gpa = p.gpa_requirement ? `<span><i class="bi bi-bar-chart-fill"></i>GPA ${esc(p.gpa_requirement)}</span>` : '';
+  const dur = p.duration ? `<span><i class="bi bi-calendar3"></i>${esc(p.duration)}</span>` : '';
+  const intake = p.intake_months ? `<span><i class="bi bi-calendar-event"></i>${esc(p.intake_months)}</span>` : '';
+  const official = p.source_url || university.website_url;
+  const typeLbl = window.i18n && window.i18n.typeLabel ? window.i18n.typeLabel(p.type_name) : p.type_name;
+  return `<article class="prog-card">
+    <h2 class="prog-name">${esc(p.name)}</h2>
+    <div class="prog-meta">
+      <span class="meta-chip">${esc(typeLbl)}</span>
+      <span class="meta-chip">${esc(p.language_of_instruction || 'English')}</span>
+      ${p.scholarship_available ? `<span class="meta-chip chip-scholar"><i class="bi bi-award-fill"></i> ${T('uni.scholarship')}</span>` : ''}
+    </div>
+    <div>${fee}</div>
+    ${(dur || intake || eng || gpa) ? `<div class="prog-details">${[dur, intake, eng, gpa].join('')}</div>` : ''}
+    <div class="prog-actions">
+      <a class="btn-grad" href="/apply?uni=${university.id}&program=${p.id}"><i class="bi bi-send-fill"></i>${_t('p.apply', 'Başvur')}</a>
+      <button class="icon-btn" type="button" title="${T('uni.req.info')}" aria-label="${T('uni.req.info')}" onclick="openLeadModal(${p.id})"><i class="bi bi-envelope-fill"></i></button>
+      ${official ? `<a class="icon-btn official" href="${esc(official)}" target="_blank" rel="noopener" title="${T('p.viewsite.title')}" aria-label="${T('p.viewsite.title')}"><i class="bi bi-box-arrow-up-right"></i></a>` : ''}
+    </div>
+  </article>`;
+}
+
+function openOrbit() {
+  const u = university;
+  if (!u.latitude && !u.longitude) return;
+  const lat   = u.orbit_center_lat  ?? u.latitude;
+  const lng   = u.orbit_center_lng  ?? u.longitude;
+  const alt   = u.orbit_altitude    ?? 400;
+  const pitch = u.orbit_pitch       ?? -45;
+  const head  = u.orbit_initial_heading ?? 0;
+  const range = u.orbit_range       ?? 400;
+  const speed = u.orbit_rotation_speed ?? 0.12;
+  const rot   = u.orbit_rotation_type  ?? '360';
+  const p = new URLSearchParams({ name: u.name, uniId: u.id, lat, lng, alt, pitch, heading: head, range, speed, rot });
+  if (u.scan_target_lat && u.scan_target_lng) {
+    p.set('scanLat', u.scan_target_lat);
+    p.set('scanLng', u.scan_target_lng);
+    p.set('scan', u.scan_effect_enabled ? '1' : '0');
+  }
+  window.open('/orbit?' + p.toString(), '_blank');
+}
+
+function esc(s) { return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// ── Lead modal ────────────────────────────────────────────────────────────────
+let leadCtx = {};
+
+function openLeadModal(programId) {
+  const p = university.programs.find(x => x.id === programId);
+  if (!p) return;
+  leadCtx = { programId, programName: p.name, universityId: university.id, universityName: university.name, country: university.country };
+  document.getElementById('leadProgName').textContent = leadCtx.programName;
+  document.getElementById('leadUniName').textContent = leadCtx.universityName;
+  document.getElementById('leadName').value = '';
+  document.getElementById('leadEmail').value = '';
+  document.getElementById('leadPhone').value = '';
+  document.getElementById('leadMsg').value = '';
+  document.getElementById('leadError').textContent = '';
+  document.getElementById('leadSuccess').classList.add('d-none');
+  document.getElementById('leadFormBody').classList.remove('d-none');
+  document.getElementById('leadModal').style.display = 'flex';
+}
+
+function closeLeadModal() {
+  document.getElementById('leadModal').style.display = 'none';
+}
+
+async function submitLead() {
+  const btn = document.getElementById('leadSubmitBtn');
+  const errEl = document.getElementById('leadError');
+  errEl.textContent = '';
+  const name = document.getElementById('leadName').value.trim();
+  const email = document.getElementById('leadEmail').value.trim();
+  const phone = document.getElementById('leadPhone').value.trim();
+  const message = document.getElementById('leadMsg').value.trim();
+  if (!name || !email) { errEl.textContent = T('uni.err.reqd'); return; }
+  btn.disabled = true; btn.textContent = T('uni.sending');
+  try {
+    const r = await fetch('/api/public/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        student_name: name, email, phone, message,
+        program_id: leadCtx.programId, program_name: leadCtx.programName,
+        university_id: leadCtx.universityId, university_name: leadCtx.universityName,
+        country: leadCtx.country
+      })
+    });
+    const d = await r.json();
+    if (!r.ok) { errEl.textContent = d.error || T('uni.err.generic'); return; }
+    document.getElementById('leadFormBody').classList.add('d-none');
+    document.getElementById('leadSuccess').classList.remove('d-none');
+  } catch (e) {
+    errEl.textContent = T('uni.err.net');
+  } finally {
+    btn.disabled = false; btn.textContent = T('uni.send');
+  }
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLeadModal(); });
+
+load();
+</script>
+
+<!-- Lead Modal -->
+<div id="leadModal" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(20,20,43,.55);align-items:center;justify-content:center;padding:16px" onclick="if(event.target===this)closeLeadModal()">
+  <div style="background:var(--surface);border:2px solid var(--text);border-radius:14px;width:100%;max-width:480px;padding:28px 28px 24px;box-shadow:6px 6px 0 var(--text)">
+    <div class="d-flex justify-content-between align-items-start mb-3">
+      <div>
+        <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px" data-i18n="uni.req.modal">Request Information</div>
+        <div id="leadProgName" style="font-size:1rem;font-weight:700;color:var(--text);line-height:1.3"></div>
+        <div id="leadUniName" style="font-size:.82rem;color:var(--accent);margin-top:2px"></div>
+      </div>
+      <button onclick="closeLeadModal()" style="background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;padding:0 0 0 12px">&times;</button>
+    </div>
+    <div id="leadFormBody">
+      <div class="mb-3">
+        <input id="leadName" type="text" data-i18n-ph="uni.name.ph" placeholder="Your full name *"  onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'">
+      </div>
+      <div class="mb-3">
+        <input id="leadEmail" type="email" data-i18n-ph="uni.email.ph" placeholder="Email address *"  onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'">
+      </div>
+      <div class="mb-3">
+        <input id="leadPhone" type="tel" data-i18n-ph="uni.phone.ph" placeholder="Phone / WhatsApp (optional)"  onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'">
+      </div>
+      <div class="mb-3">
+        <textarea id="leadMsg" rows="3" data-i18n-ph="uni.msg.ph" placeholder="Any questions or comments (optional)"  onfocus="this.style.borderColor='#2b44ff'" onblur="this.style.borderColor='var(--line)'"></textarea>
+      </div>
+      <div id="leadError" style="color:#dc2626;font-size:.8rem;margin-bottom:8px"></div>
+      <div class="d-flex gap-2">
+        <button id="leadSubmitBtn" onclick="submitLead()" class="btn-grad" style="flex:1" data-i18n="uni.send">Send Request</button>
+        <button onclick="closeLeadModal()" style="background:var(--surface);border: var(--bw) solid var(--text);color:var(--muted);font-size:.88rem;padding:10px 16px;border-radius:8px;cursor:pointer" data-i18n="uni.cancel">Cancel</button>
+      </div>
+    </div>
+    <div id="leadSuccess" class="d-none text-center" style="padding:16px 0">
+      <div style="font-size:2.5rem;margin-bottom:12px;color:var(--ok)"><i class="bi bi-check-circle-fill"></i></div>
+      <div style="font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:6px" data-i18n="uni.success.h">Request sent!</div>
+      <div style="font-size:.85rem;color:var(--muted);margin-bottom:20px" data-i18n="uni.success.p">We'll be in touch soon.</div>
+      <button onclick="closeLeadModal()" style="background:var(--surface);border: var(--bw) solid var(--text);color:var(--muted);font-size:.88rem;padding:8px 20px;border-radius:8px;cursor:pointer" data-i18n="uni.close">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/chrome.js"></script>
+</body>
+</html>
