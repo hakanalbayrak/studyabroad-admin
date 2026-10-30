@@ -625,8 +625,8 @@ async function buildRouteGuide(slug, { preview = false } = {}) {
   const cf = cfProfile.data.facts || {};
   const cur = prog ? (prog.tuition_currency || 'EUR') : 'EUR';
   const t = { partner: f.partner, degree: D, centre: C, level: f.level === 'Master' ? 'yüksek lisans' : 'lisans', country_tr: countryTr || '',
-    pathway_name: prog ? prog.name : '', pathway_fee: prog && prog.tuition_fee ? money(parseFloat(prog.tuition_fee), cur) : '', pathway_duration: prog ? durTr(prog.duration) : '',
-    pathway_intakes: prog && prog.intake_months ? listTr(String(prog.intake_months).split(/[,;]/).map(x => trMonth(x.trim()))) : '' };
+    pathway_name: prog ? prog.name : '', pathway_fee: f.pathway_fee_note || (prog && prog.tuition_fee ? money(parseFloat(prog.tuition_fee), cur) : ''), pathway_duration: f.pathway_duration_note || (prog ? durTr(prog.duration) : ''),
+    pathway_intakes: f.pathway_intakes_note || (prog && prog.intake_months ? listTr(String(prog.intake_months).split(/[,;]/).map(x => trMonth(x.trim()))) : '') };
   Object.keys(f).forEach(k => { if (!Array.isArray(f[k])) t[k] = f[k]; });
   const lvlTr = f.level === 'Master' ? 'yüksek lisans' : 'lisans';
   const siblings = (await routeEntries()).filter(r => r.slug !== slug && r.data.facts && r.data.facts.partner === f.partner && r.data.facts.centre === C && (preview || r.status === 'published')).slice(0, 12);
