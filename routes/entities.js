@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const db = require('../db');
 const { autoGeoLookup } = require('../utils/geoLookup');
+const providers = require('../utils/providers');
 
 // Entity list with location preview and program count
 router.get('/', async (req, res) => {
@@ -24,7 +25,9 @@ router.get('/', async (req, res) => {
       ) pc ON pc.entity_id = e.id
       ORDER BY e.name
     `);
-    res.json(rows);
+    let map = {};
+    try { map = await providers.getMap(); } catch (e) { /* providers are optional */ }
+    res.json(rows.map(r => ({ ...r, providers: map[r.id] || [] })));
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 

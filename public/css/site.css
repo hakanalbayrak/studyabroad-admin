@@ -175,3 +175,6 @@ a.pe-card:hover, .pe-card.link:hover { transform: translate(-2px,-2px); box-shad
     padding: 12px var(--gutter, 16px) calc(12px + env(safe-area-inset-bottom)); z-index: 90; }
   .has-cta { padding-bottom: 96px !important; }
 }
+
+/* staff-only provider tag */
+.staff-prov { display: inline-block; margin-left: 8px; padding: 1px 8px; border: 1.5px solid var(--text); border-radius: 99px; background: var(--sun); color: var(--text); font-size: .7rem; font-weight: 700; vertical-align: middle; white-space: nowrap; }

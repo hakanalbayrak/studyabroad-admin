@@ -228,6 +228,7 @@
                 <th>Name</th>
                 <th>Type</th>
                 <th>Location</th>
+                <th>Provider</th>
                 <th class="text-center" style="width:100px">Programs</th>
                 <th style="width:100px">Status</th>
                 <th class="text-end pe-3" style="width:100px">Actions</th>
@@ -310,6 +311,10 @@
                 <option value="active">Active</option>
                 <option value="inactive">Inactive</option>
               </select>
+            </div>
+            <div class="col-12" id="providerRow">
+              <label class="form-label fw-semibold small">Provider <span class="text-muted fw-normal">(staff only, saved when you tick)</span></label>
+              <div class="d-flex flex-wrap gap-3" id="fProviders"></div>
             </div>
             <div class="col-md-4 d-flex align-items-end pb-1">
               <div class="form-check form-switch">
@@ -1519,7 +1524,7 @@ function filterEntities() {
 function renderEntitiesTable(list) {
   const tbody = document.getElementById('entitiesTableBody');
   if (!list.length) {
-    tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted py-5">
+    tbody.innerHTML = `<tr><td colspan="8" class="text-center text-muted py-5">
       ${allEntitiesList.length ? 'No matches found.' : 'No entities yet. <a href="#" onclick="openEntityForm(null);return false;">Add the first one</a>'}</td></tr>`;
     return;
   }
@@ -1532,6 +1537,7 @@ function renderEntitiesTable(list) {
       </td>
       <td><span class="badge bg-light text-dark border small">${typeLabel(e.type)}</span></td>
       <td class="text-muted small">${e.city ? `${esc(e.city)}, ${esc(e.country)}` : '—'}</td>
+      <td>${(e.providers || []).map(p => `<span class="badge text-bg-light border me-1">${esc(p)}</span>`).join('') || '<span class="text-muted small">—</span>'}</td>
       <td class="text-center"><span class="badge bg-primary bg-opacity-15 text-primary">${e.programs_count}</span></td>
       <td><span class="badge badge-${e.status}">${cap(e.status)}</span></td>
       <td class="text-end pe-3">
@@ -1580,7 +1586,22 @@ async function openEntityForm(entityId) {
   }
   document.getElementById('entityListView').classList.add('d-none');
   document.getElementById('entityFormView').classList.remove('d-none');
+  renderProviderBoxes(entityId);
   window.scrollTo(0, 0);
+}
+
+const PROVIDER_LIST = ['INTO', 'Navitas', 'Kaplan', 'Study Group', 'ONCAMPUS', 'Shorelight'];
+function renderProviderBoxes(entityId) {
+  const row = document.getElementById('providerRow'), box = document.getElementById('fProviders');
+  if (!entityId) { row.classList.add('d-none'); return; }
+  row.classList.remove('d-none');
+  const cur = (allEntitiesList.find(e => e.id === entityId) || {}).providers || [];
+  box.innerHTML = PROVIDER_LIST.map(p => `<div class="form-check"><input class="form-check-input" type="checkbox" id="prov_${p.replace(/\s/g, '')}" value="${p}" ${cur.includes(p) ? 'checked' : ''}><label class="form-check-label small" for="prov_${p.replace(/\s/g, '')}">${p}</label></div>`).join('');
+  box.querySelectorAll('input').forEach(i => i.addEventListener('change', async () => {
+    const list = [...box.querySelectorAll('input:checked')].map(x => x.value);
+    const r = await api('PUT', `/api/admin/providers/${entityId}`, { providers: list });
+    if (r.ok) { const e = allEntitiesList.find(x => x.id === entityId); if (e) e.providers = list; toast('Provider saved.'); } else toast('Could not save provider.', 'error');
+  }));
 }
 
 function closeEntityForm() {

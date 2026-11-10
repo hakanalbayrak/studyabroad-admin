@@ -48,3 +48,34 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+/* Staff-only provider tags (admin + advisor): shows which provider a school belongs to on school links.
+   The mapping endpoint rejects anyone else, so visitors never see it. */
+(function () {
+  try {
+    var role = localStorage.getItem('sa_role'), token = localStorage.getItem('sa_token');
+    if (!token || (role !== 'admin' && role !== 'advisor')) return;
+    fetch('/api/staff/providers', { headers: { Authorization: 'Bearer ' + token } }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      if (!d || !d.map) return;
+      var map = d.map;
+      function tag(list) { var s = document.createElement('span'); s.className = 'staff-prov'; s.title = 'Provider (staff only)'; s.textContent = list.join(' · '); return s; }
+      function paint() {
+        document.querySelectorAll('a[href*="/university?id="]:not(.prog-name a)').forEach(function (a) {
+          if (a.dataset.provDone) return;
+          var m = a.getAttribute('href').match(/id=(\d+)/); var list = m && map[m[1]];
+          a.dataset.provDone = '1'; if (list && list.length) a.insertAdjacentElement('afterend', tag(list));
+        });
+        document.querySelectorAll('[data-uid]').forEach(function (el) {
+          if (el.dataset.provDone) return; el.dataset.provDone = '1';
+          var l = map[el.getAttribute('data-uid')]; if (l && l.length) el.insertAdjacentElement('afterend', tag(l));
+        });
+        var h = document.getElementById('uName');
+        if (h && !h.dataset.provDone) {
+          var m2 = location.search.match(/id=(\d+)/); var l2 = m2 && map[m2[1]];
+          h.dataset.provDone = '1'; if (l2 && l2.length) h.insertAdjacentElement('afterend', tag(l2));
+        }
+      }
+      paint(); new MutationObserver(paint).observe(document.body, { childList: true, subtree: true });
+    }).catch(function () { /* optional */ });
+  } catch (e) { /* storage unavailable */ }
+})();

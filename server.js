@@ -1174,6 +1174,16 @@ app.get('/api/admin/leads/export', requireRole('admin'), async (req, res) => {
 app.use('/api/proposals', requireRole('admin', 'advisor'), require('./routes/proposals'));
 
 // Protected API routes
+const providersUtil = require('./utils/providers');
+// Staff only (admin + advisor): which provider each school belongs to. Never exposed publicly.
+app.get('/api/staff/providers', requireRole('admin', 'advisor'), async (req, res) => {
+  try { res.set('Cache-Control', 'private, max-age=60'); res.json({ providers: providersUtil.PROVIDERS, map: await providersUtil.getMap() }); }
+  catch (e) { res.status(500).json({ error: e.message }); }
+});
+app.put('/api/admin/providers/:entityId', requireRole('admin'), async (req, res) => {
+  try { res.json({ ok: true, providers: await providersUtil.setProviders(parseInt(req.params.entityId), (req.body || {}).providers) }); }
+  catch (e) { res.status(500).json({ error: e.message }); }
+});
 app.use('/api/entities', requireRole('admin'), require('./routes/entities'));
 app.use('/api/locations', requireRole('admin'), require('./routes/locations'));
 app.use('/api/programs', requireRole('admin'), require('./routes/programs'));
