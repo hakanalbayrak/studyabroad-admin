@@ -1644,3 +1644,4 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 ## 2026-11-11 — Istituto Marangoni split
 - Umbrella entity "Istituto Marangoni" (id 545, 64 programs) removed; programs moved to campus entities by first listed campus (Milano, Firenze, London, Paris; no suffix → Paris). Multi-campus programs live under the first campus only. Dubai campus entity and its programs deleted (not served); ", Dubai" stripped from names.
 - London programs have no fee (GBP not researched).
+- Marangoni London: 12 of 14 programs got GBP fees (Sep 2027 intake, 2027/28; master fees may be total for 15-month programs – flagged in notes). Not found: Fashion Styling & Visual Merchandising, Responsible Fashion.
