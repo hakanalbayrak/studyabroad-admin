@@ -1,0 +1,1814 @@
+{
+ "institutions": [
+  {
+   "name": "Vlerick Business School",
+   "city": "Ghent / Brussels",
+   "country": "Belgium",
+   "website": "https://www.vlerick.com",
+   "entity_note": "Full-time English-taught Master's programmes (1 year) and a full-time MBA. Non-EU applicants must apply by 30 April 2027 (Masters) or 31 May 2027 (MBA) to allow for the Belgian D student visa; admission is by test + interview, with no country-specific rules for Turkey.",
+   "programs": [
+    {
+     "name": "Master in General Management",
+     "level": "master",
+     "duration": "1 year (10 months)",
+     "field": "Business",
+     "fee_non_eu": 21500,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "30 April 2027",
+     "english": [],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Belgian applicants need a recognised Master's or a 3-4 year Bachelor's degree (additional requirements may apply); admission = online test (Vlerick test, GMAT min 555 or GRE 157V/158Q) plus a ~30 min online interview. No IELTS/TOEFL score or minimum grade is published (English is assessed via the test/interview); no Turkey-specific rules published, general non-EU rules apply (Belgian D student visa, apply by the non-EU deadline). Location: Ghent.",
+     "source_url": "https://www.vlerick.com/en/programmes/masters-programmes/masters-in-general-management/"
+    },
+    {
+     "name": "Master in Marketing Strategy",
+     "level": "master",
+     "duration": "1 year (10 months)",
+     "field": "Marketing",
+     "fee_non_eu": 21500,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "30 April 2027",
+     "english": [],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Belgian applicants need a recognised Master's or a 3-4 year Bachelor's degree (additional requirements may apply); admission = online test (Vlerick test, GMAT min 555 or GRE 157V/158Q) plus a ~30 min online interview. No IELTS/TOEFL score or minimum grade is published (English is assessed via the test/interview); no Turkey-specific rules published, general non-EU rules apply (Belgian D student visa, apply by the non-EU deadline). Location: Ghent.",
+     "source_url": "https://www.vlerick.com/en/programmes/masters-programmes/masters-in-marketing-strategy/"
+    },
+    {
+     "name": "Master in Innovation and Entrepreneurship",
+     "level": "master",
+     "duration": "1 year (10 months)",
+     "field": "Business",
+     "fee_non_eu": 21500,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "30 April 2027",
+     "english": [],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Belgian applicants need a recognised Master's or a 3-4 year Bachelor's degree (additional requirements may apply); admission = online test (Vlerick test, GMAT min 555 or GRE 157V/158Q) plus a ~30 min online interview. No IELTS/TOEFL score or minimum grade is published (English is assessed via the test/interview); no Turkey-specific rules published, general non-EU rules apply (Belgian D student visa, apply by the non-EU deadline). Location: Ghent.",
+     "source_url": "https://www.vlerick.com/en/programmes/masters-programmes/masters-in-innovation-and-entrepreneurship/"
+    },
+    {
+     "name": "Master in Business Analytics & AI",
+     "level": "master",
+     "duration": "1 year (10 months)",
+     "field": "Business Analytics",
+     "fee_non_eu": 21500,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "30 April 2027",
+     "english": [],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Belgian applicants need a recognised Master's or a 3-4 year Bachelor's degree (additional requirements may apply); admission = online test (Vlerick test, GMAT min 555 or GRE 157V/158Q) plus a ~30 min online interview. No IELTS/TOEFL score or minimum grade is published (English is assessed via the test/interview); no Turkey-specific rules published, general non-EU rules apply (Belgian D student visa, apply by the non-EU deadline). Location: Brussels.",
+     "source_url": "https://www.vlerick.com/en/programmes/masters-programmes/masters-in-business-analytics-and-ai/"
+    },
+    {
+     "name": "Master in International Management and Strategy",
+     "level": "master",
+     "duration": "1 year (10 months)",
+     "field": "Business",
+     "fee_non_eu": 23500,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "30 April 2027",
+     "english": [],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Belgian applicants need a recognised Master's or a 3-4 year Bachelor's degree (additional requirements may apply); admission = online test (Vlerick test, GMAT min 555 or GRE 157V/158Q) plus a ~30 min online interview. No IELTS/TOEFL score or minimum grade is published (English is assessed via the test/interview); no Turkey-specific rules published, general non-EU rules apply (Belgian D student visa, apply by the non-EU deadline). Location: Brussels. Fee includes a 4-week Global Immersion tour; flights/visa extra.",
+     "source_url": "https://www.vlerick.com/en/programmes/masters-programmes/masters-in-international-management-and-strategy/"
+    },
+    {
+     "name": "Master in Financial Management",
+     "level": "master",
+     "duration": "1 year (10 months)",
+     "field": "Finance",
+     "fee_non_eu": 23500,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "30 April 2027",
+     "english": [],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Belgian applicants need a recognised Master's or a 3-4 year Bachelor's degree (additional requirements may apply); admission = online test (Vlerick test, GMAT min 555 or GRE 157V/158Q) plus a ~30 min online interview. No IELTS/TOEFL score or minimum grade is published (English is assessed via the test/interview); no Turkey-specific rules published, general non-EU rules apply (Belgian D student visa, apply by the non-EU deadline). Location: Brussels (GMAT/GRE can be replaced by a numerical reasoning test or CFA).",
+     "source_url": "https://www.vlerick.com/en/programmes/masters-programmes/masters-in-financial-management/"
+    },
+    {
+     "name": "Full-time MBA",
+     "level": "master",
+     "duration": "1 year (10 months)",
+     "field": "Business (MBA)",
+     "fee_non_eu": 44000,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 May 2027 (applicants needing a Belgian student visa); 31 July 2027 (no visa needed)",
+     "english": [],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a degree from an accredited university, at least 3 years of post-degree full-time work experience, an admissions test (Vlerick VBAT, GMAT min 600 or GRE 157V/158Q) and a ~30 min online interview; English at professional business level, no IELTS/TOEFL score published. Location: Brussels. International study course (EUR 2,000-3,000) not included in tuition. No Turkey-specific rules published; general non-EU rules apply.",
+     "source_url": "https://www.vlerick.com/en/programmes/mba-programmes/full-time-mba-programme/"
+    }
+   ]
+  },
+  {
+   "name": "Antwerp Management School",
+   "city": "Antwerp",
+   "country": "Belgium",
+   "website": "https://www.antwerpmanagementschool.be",
+   "entity_note": "Full-time one-year English-taught MSc programmes (VAT-exempt fees). Non-EU/EEA applicants needing a visa apply by 31 May 2027 with a diploma recognised as master's or 3-4 year bachelor's; English B2-level proof (IELTS 6.5 etc.) unless exempt; no Turkey-specific rules published.",
+   "programs": [
+    {
+     "name": "Master of Science in Management",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Management",
+     "fee_non_eu": 20600,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 56
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU/EEA applicants who need a Belgian visa must apply by 31 May 2027 (rolling admission; EUR 50 non-refundable application fee, EUR 3,000 acceptance deposit). Requires a master's degree or a 3- or 4-year bachelor's degree from a recognised institution; admission = general ability assessment + online interview. No minimum grade or Turkey-specific rules published (general non-EU rules apply; eligibility can be pre-checked by emailing CV and transcripts to fulltime.masters@ams.ac.be). TOEFL iBT is published as a 79-93 range (79 used here).",
+     "source_url": "https://www.antwerpmanagementschool.be/en/program/master-management"
+    },
+    {
+     "name": "Master of Science in Global Management",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Management",
+     "fee_non_eu": 21600,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 56
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU/EEA applicants who need a Belgian visa must apply by 31 May 2027 (rolling admission; EUR 50 non-refundable application fee, EUR 3,000 acceptance deposit). Requires a master's degree or a 3- or 4-year bachelor's degree from a recognised institution; admission = general ability assessment + online interview. No minimum grade or Turkey-specific rules published (general non-EU rules apply; eligibility can be pre-checked by emailing CV and transcripts to fulltime.masters@ams.ac.be). TOEFL iBT is published as a 79-93 range (79 used here).",
+     "source_url": "https://www.antwerpmanagementschool.be/en/program/master-global-management"
+    },
+    {
+     "name": "Master of Science in Finance & Investments",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Finance",
+     "fee_non_eu": 20600,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 56
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU/EEA applicants who need a Belgian visa must apply by 31 May 2027 (rolling admission; EUR 50 non-refundable application fee, EUR 3,000 acceptance deposit). Requires a master's degree or a 3- or 4-year bachelor's degree from a recognised institution; admission = general ability assessment + online interview. No minimum grade or Turkey-specific rules published (general non-EU rules apply; eligibility can be pre-checked by emailing CV and transcripts to fulltime.masters@ams.ac.be). TOEFL iBT is published as a 79-93 range (79 used here). An economics background and strong statistics foundation are required.",
+     "source_url": "https://www.antwerpmanagementschool.be/en/program/master-finance-investments"
+    },
+    {
+     "name": "Master of Science in People & Change Management",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Management",
+     "fee_non_eu": 20600,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 56
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU/EEA applicants who need a Belgian visa must apply by 31 May 2027 (rolling admission; EUR 50 non-refundable application fee, EUR 3,000 acceptance deposit). Requires a master's degree or a 3- or 4-year bachelor's degree from a recognised institution; admission = general ability assessment + online interview. No minimum grade or Turkey-specific rules published (general non-EU rules apply; eligibility can be pre-checked by emailing CV and transcripts to fulltime.masters@ams.ac.be). TOEFL iBT is published as a 79-93 range (79 used here).",
+     "source_url": "https://www.antwerpmanagementschool.be/en/program/master-people-change-management"
+    },
+    {
+     "name": "Master of Science in Management - Sustainable Innovation & Entrepreneurship",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Management",
+     "fee_non_eu": 20600,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 56
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU/EEA applicants who need a Belgian visa must apply by 31 May 2027 (rolling admission; EUR 50 non-refundable application fee, EUR 3,000 acceptance deposit). Requires a master's degree or a 3- or 4-year bachelor's degree from a recognised institution; admission = general ability assessment + online interview. No minimum grade or Turkey-specific rules published (general non-EU rules apply; eligibility can be pre-checked by emailing CV and transcripts to fulltime.masters@ams.ac.be). TOEFL iBT is published as a 79-93 range (79 used here).",
+     "source_url": "https://www.antwerpmanagementschool.be/en/program/master-sustainable-innovation-entrepreneurship"
+    },
+    {
+     "name": "Master in Global Management - Supply Chain Management (MSc)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Supply Chain Management",
+     "fee_non_eu": 20600,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 56
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU/EEA applicants who need a Belgian visa must apply by 31 May 2027 (rolling admission; EUR 50 non-refundable application fee, EUR 3,000 acceptance deposit). Requires a master's degree or a 3- or 4-year bachelor's degree from a recognised institution; admission = general ability assessment + online interview. No minimum grade or Turkey-specific rules published (general non-EU rules apply; eligibility can be pre-checked by emailing CV and transcripts to fulltime.masters@ams.ac.be). TOEFL iBT is published as a 79-93 range (79 used here).",
+     "source_url": "https://www.antwerpmanagementschool.be/en/program/master-global-supply-chain-management"
+    },
+    {
+     "name": "Master of Science in Maritime and Air Transport Management - Maritime Transport",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Transport & Logistics",
+     "fee_non_eu": 20600,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 56
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU/EEA applicants who need a Belgian visa must apply by 31 May 2027 (rolling admission; EUR 50 non-refundable application fee, EUR 3,000 acceptance deposit). Requires a master's degree or a 3- or 4-year bachelor's degree from a recognised institution; admission = general ability assessment + online interview. No minimum grade or Turkey-specific rules published (general non-EU rules apply; eligibility can be pre-checked by emailing CV and transcripts to fulltime.masters@ams.ac.be). TOEFL iBT is published as a 79-93 range (79 used here). Non-EU/EEA candidates need a master's or a four-year bachelor's degree (a 3-year bachelor is not sufficient).",
+     "source_url": "https://www.antwerpmanagementschool.be/en/program/master-maritime-transport-management"
+    },
+    {
+     "name": "Master of Science in Maritime and Air Transport Management - Air Transport",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Transport & Logistics",
+     "fee_non_eu": 20600,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 56
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU/EEA applicants who need a Belgian visa must apply by 31 May 2027 (rolling admission; EUR 50 non-refundable application fee, EUR 3,000 acceptance deposit). Requires a master's degree or a 3- or 4-year bachelor's degree from a recognised institution; admission = general ability assessment + online interview. No minimum grade or Turkey-specific rules published (general non-EU rules apply; eligibility can be pre-checked by emailing CV and transcripts to fulltime.masters@ams.ac.be). TOEFL iBT is published as a 79-93 range (79 used here). Non-EU/EEA candidates need a master's or a four-year bachelor's degree (a 3-year bachelor is not sufficient).",
+     "source_url": "https://www.antwerpmanagementschool.be/en/program/master-air-transport-management"
+    }
+   ]
+  },
+  {
+   "name": "Howest University of Applied Sciences",
+   "city": "Kortrijk / Bruges",
+   "country": "Belgium",
+   "website": "https://www.howest.be",
+   "entity_note": "English-taught bachelor programmes charge non-EEA students EUR 2,000 + EUR 100/ECTS (EUR 8,000/year in 2026/27). Non-EEA applicants need a secondary diploma, B2 English, and must follow a visa route with deposit and blocked account; no Turkey-specific rules published.",
+   "programs": [
+    {
+     "name": "Bachelor Creative Technologies and Artificial Intelligence",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Computer Science / AI",
+     "fee_non_eu": 8000,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 June 2026 for non-EEA needing a visa; 1 May 2026 for Afghanistan, Cameroon, Ghana, Nigeria, Pakistan)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a secondary diploma giving access to university in the issuing country (sworn translation if not NL/FR/DE/EN; diplomas verified online), a motivation letter, and CEFR B2 English. Non-EEA visa route: EUR 50 application fee, EUR 2,000 first instalment, blocked account (EUR 13,200 in 2026/27), then visa; extra maths test/interview possible for countries with PISA below 450. No Turkey-specific rules published; general non-EEA rules apply. Study costs (e.g. EUR 123 flat rate) are extra. Campus: Kortrijk.",
+     "source_url": "https://www.howest.be/en/programmes/bachelor/creative-technologies-and-artificial-intelligence"
+    },
+    {
+     "name": "Bachelor Cybersecurity",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Computer Science / Cybersecurity",
+     "fee_non_eu": 8000,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 June 2026 for non-EEA needing a visa; 1 May 2026 for Afghanistan, Cameroon, Ghana, Nigeria, Pakistan)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a secondary diploma giving access to university in the issuing country (sworn translation if not NL/FR/DE/EN; diplomas verified online), a motivation letter, and CEFR B2 English. Non-EEA visa route: EUR 50 application fee, EUR 2,000 first instalment, blocked account (EUR 13,200 in 2026/27), then visa; extra maths test/interview possible for countries with PISA below 450. No Turkey-specific rules published; general non-EEA rules apply. Study costs (e.g. EUR 123 flat rate) are extra. Campus: Bruges. About 4 hours/week of secondary-school maths expected.",
+     "source_url": "https://www.howest.be/en/programmes/bachelor/cybersecurity"
+    },
+    {
+     "name": "Bachelor Digital Arts and Entertainment",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Game Development / Digital Arts",
+     "fee_non_eu": 8000,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 June 2026 for non-EEA needing a visa; 1 May 2026 for Afghanistan, Cameroon, Ghana, Nigeria, Pakistan)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a secondary diploma giving access to university in the issuing country (sworn translation if not NL/FR/DE/EN; diplomas verified online), a motivation letter, and CEFR B2 English. Non-EEA visa route: EUR 50 application fee, EUR 2,000 first instalment, blocked account (EUR 13,200 in 2026/27), then visa; extra maths test/interview possible for countries with PISA below 450. No Turkey-specific rules published; general non-EEA rules apply. Study costs (e.g. EUR 123 flat rate) are extra. Campus: Kortrijk; majors include Game Development, Game Graphics, 3D Animation, VFX, Independent Game Production, Game Sound.",
+     "source_url": "https://www.howest.be/en/programmes/bachelor/digital-arts-and-entertainment"
+    },
+    {
+     "name": "Bachelor Digital Design and Development",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Computer Science / Web & App Development",
+     "fee_non_eu": 8000,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 June 2026 for non-EEA needing a visa; 1 May 2026 for Afghanistan, Cameroon, Ghana, Nigeria, Pakistan)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a secondary diploma giving access to university in the issuing country (sworn translation if not NL/FR/DE/EN; diplomas verified online), a motivation letter, and CEFR B2 English. Non-EEA visa route: EUR 50 application fee, EUR 2,000 first instalment, blocked account (EUR 13,200 in 2026/27), then visa; extra maths test/interview possible for countries with PISA below 450. No Turkey-specific rules published; general non-EEA rules apply. Study costs (e.g. EUR 123 flat rate) are extra. Campus: Kortrijk (English-taught international class).",
+     "source_url": "https://www.howest.be/en/programmes/bachelor/digital-design-and-development"
+    },
+    {
+     "name": "Bachelor Industrial Product Design",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Design",
+     "fee_non_eu": 8000,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 June 2026 for non-EEA needing a visa; 1 May 2026 for Afghanistan, Cameroon, Ghana, Nigeria, Pakistan)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a secondary diploma giving access to university in the issuing country (sworn translation if not NL/FR/DE/EN; diplomas verified online), a motivation letter, and CEFR B2 English. Non-EEA visa route: EUR 50 application fee, EUR 2,000 first instalment, blocked account (EUR 13,200 in 2026/27), then visa; extra maths test/interview possible for countries with PISA below 450. No Turkey-specific rules published; general non-EEA rules apply. Study costs (e.g. EUR 123 flat rate) are extra. Campus: Kortrijk; the whole programme can be completed in English.",
+     "source_url": "https://www.howest.be/en/programmes/bachelor/industrial-product-design"
+    },
+    {
+     "name": "Advanced Bachelor of Bioinformatics (daytime, Bruges)",
+     "level": "bachelor",
+     "duration": "1 year",
+     "field": "Bioinformatics",
+     "fee_non_eu": 8000,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 June 2026 for non-EEA needing a visa; 1 May 2026 for Afghanistan, Cameroon, Ghana, Nigeria, Pakistan)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Post-bachelor (advanced bachelor) degree: requires prior molecular-biology knowledge at bachelor level (a bachelor's, master's or PhD that covered it). Fee assumed at the standard English-taught bachelor rate of EUR 8,000 for 60 ECTS (the ECTS total is not stated on the programme page). Otherwise CEFR B2 English and the Howest non-EEA visa route apply; no Turkey-specific rules published.",
+     "source_url": "https://www.howest.be/en/programmes/advanced-bachelor-programme/bioinformatics"
+    }
+   ]
+  },
+  {
+   "name": "Thomas More University of Applied Sciences",
+   "city": "Mechelen",
+   "country": "Belgium",
+   "website": "https://thomasmore.be",
+   "entity_note": "19 English-taught 3-year professional bachelor programmes (campuses Mechelen, Geel, Sint-Katelijne-Waver); no English-taught master's (only postgraduate certificates, excluded). Non-EEA students pay EUR 4,800 fixed + EUR 75/credit (EUR 9,300/year), need a B2 English certificate and a student visa, and must apply by 24 May 2027 for the September 2027 intake. Short (1-year) bachelor tracks for prior degree holders are not listed.",
+   "programs": [
+    {
+     "name": "Bachelor of Application Development",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Computer Science",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Geel.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/applied-computer-science/application-development/geel/full-programme"
+    },
+    {
+     "name": "Bachelor of Applied Artificial Intelligence",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Electronics & ICT / AI",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Sint-Katelijne-Waver.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/electronics-ict/applied-artificial-intelligence/sint-katelijne-waver/full-programme"
+    },
+    {
+     "name": "Bachelor of Artificial Intelligence",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Computer Science / AI",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Geel.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/applied-computer-science/artificial-intelligence/geel/full-programme"
+    },
+    {
+     "name": "Bachelor of Automotive Technology",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Engineering Technology",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Sint-Katelijne-Waver.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/automotive-technology/automotive-technology/sint-katelijne-waver/full-programme"
+    },
+    {
+     "name": "Bachelor of Branding and Activation",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Communication & Media",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Mechelen.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/international-communication-and-media/branding-and-activation/mechelen/full-programme"
+    },
+    {
+     "name": "Bachelor of Content Strategy & Engagement",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Communication & Media",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Mechelen.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/international-communication-and-media/content-strategy-and-engagement/mechelen/full-programme"
+    },
+    {
+     "name": "Bachelor of Digital Innovation",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Computer Science",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Geel.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/applied-computer-science/digital-innovation/geel/full-programme"
+    },
+    {
+     "name": "Bachelor of Embedded Hardware",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Electronics & ICT",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Sint-Katelijne-Waver.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/electronics-ict/embedded-hardware/sint-katelijne-waver/full-programme"
+    },
+    {
+     "name": "Bachelor of Embedded Software",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Electronics & ICT",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Sint-Katelijne-Waver.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/electronics-ict/embedded-software/sint-katelijne-waver/full-programme"
+    },
+    {
+     "name": "Bachelor of Global Supply Chain Management",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Mechelen.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/international-business-management/global-supply-chain-management/mechelen/full-programme"
+    },
+    {
+     "name": "Bachelor of Infrastructure & Cyber Security",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Electronics & ICT / Cybersecurity",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Sint-Katelijne-Waver.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/electronics-ict/infrastructure-and-cyber-security/sint-katelijne-waver/full-programme"
+    },
+    {
+     "name": "Bachelor of International Applied Data Intelligence",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business / Data",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Mechelen.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/international-business-management/international-applied-data-intelligence/mechelen/full-programme"
+    },
+    {
+     "name": "Bachelor of International Business and Trade",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Mechelen.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/international-business-management/international-business-and-trade/mechelen/full-programme"
+    },
+    {
+     "name": "Bachelor of International Digital Experience Design",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Digital Design",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Mechelen.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/information-management-and-multimedia/international-digital-experience-design/mechelen/full-programme"
+    },
+    {
+     "name": "Bachelor of International Journalism",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Journalism & Media",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Mechelen.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/international-journalism/international-journalism/mechelen/full-programme"
+    },
+    {
+     "name": "Bachelor of International Media and Entertainment Business",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Media Business",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Mechelen.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/international-media-and-entertainment-business/international-media-and-entertainment-business/mechelen/full-programme"
+    },
+    {
+     "name": "Bachelor of International Tourism and Leisure",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Tourism",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Mechelen.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/international-tourism-and-leisure/international-tourism-and-leisure/mechelen/full-programme"
+    },
+    {
+     "name": "Bachelor of Public and Corporate Affairs",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Communication & Media",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Mechelen.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/international-communication-and-media/public-and-corporate-affairs/mechelen/full-programme"
+    },
+    {
+     "name": "Bachelor of Software Architecture & Development",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Electronics & ICT / Software",
+     "fee_non_eu": 9300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "24 May 2027 (applications open 25 January 2027; payment by 8 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 110
+      },
+      {
+       "test": "Cambridge",
+       "min": 169
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Requires a secondary diploma giving access to higher education in the issuing country (non-EEA diplomas may face extra requirements; diplomas not on the exemplary list are assessed individually), an English B2 certificate not older than 2 years, and a passport. Non-EEA students need a student visa D: no application fee, but tuition and a blocked account (EUR 12,994 for fall 2026 intake) must be paid by the payment deadline (8 June 2027). Tuition fee waiver can reduce the per-credit cost to EUR 45 with sufficient study efficiency. No Turkey-specific rules published; general non-EEA rules apply. Campus: Sint-Katelijne-Waver.",
+     "source_url": "https://thomasmore.be/en/educations/degree-students/electronics-ict/software-architecture-and-development/sint-katelijne-waver/full-programme"
+    }
+   ]
+  },
+  {
+   "name": "Karel de Grote University of Applied Sciences (KdG)",
+   "city": "Antwerp",
+   "country": "Belgium",
+   "website": "https://www.kdg.be/en",
+   "entity_note": "English-taught professional bachelors plus a Master of Visual Arts; non-EEA tuition EUR 9,020 (2026/27, EUR 2,600 + EUR 107/credit). KdG has a Turkish-student page: Turkish Lise diploma + B2 English, no entrance exam, Type D visa, no scholarships; bachelor applicants apply by 12 May 2027.",
+   "programs": [
+    {
+     "name": "Professional Bachelor of Applied Computer Science",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Computer Science",
+     "fee_non_eu": 9020.2,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "12 May 2027 (complete file; tuition payment by 2 June 2027; visa application by 12 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 78
+      },
+      {
+       "test": "Duolingo",
+       "min": 115
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a secondary diploma giving access to comparable higher education in the issuing country (certified copies; e.g. Turkish Lise Diplomasi, KdG's Turkey page states no entrance exam) and CEFR B2 English (tests not older than 2 years). EUR 139.40 non-refundable application fee (deducted from tuition if accepted); non-EEA students need a Type D student visa and must pay tuition before the visa deadline. KdG offers no scholarships. Campus: Antwerp.",
+     "source_url": "https://www.kdg.be/en/applied-computer-science"
+    },
+    {
+     "name": "Professional Bachelor of International Business Management (Global Business / Global Supply Chain Management / International Entrepreneurship)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business",
+     "fee_non_eu": 9020.2,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "12 May 2027 (complete file; tuition payment by 2 June 2027; visa application by 12 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 78
+      },
+      {
+       "test": "Duolingo",
+       "min": 115
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a secondary diploma giving access to comparable higher education in the issuing country (certified copies; e.g. Turkish Lise Diplomasi, KdG's Turkey page states no entrance exam) and CEFR B2 English (tests not older than 2 years). EUR 139.40 non-refundable application fee (deducted from tuition if accepted); non-EEA students need a Type D student visa and must pay tuition before the visa deadline. KdG offers no scholarships. Campus: Antwerp; specialisation chosen at application.",
+     "source_url": "https://www.kdg.be/en/international-business-management"
+    },
+    {
+     "name": "Professional Bachelor of Nursing (English-taught variant)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Health / Nursing",
+     "fee_non_eu": 9020.2,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "12 May 2027 (complete file; tuition payment by 2 June 2027; visa application by 12 June 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 78
+      },
+      {
+       "test": "Duolingo",
+       "min": 115
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a secondary diploma giving access to comparable higher education in the issuing country (certified copies; e.g. Turkish Lise Diplomasi, KdG's Turkey page states no entrance exam) and CEFR B2 English (tests not older than 2 years). EUR 139.40 non-refundable application fee (deducted from tuition if accepted); non-EEA students need a Type D student visa and must pay tuition before the visa deadline. KdG offers no scholarships. Nursing additionally requires CEFR C1 for speaking (IELTS 7.0 speaking, TOEFL 25 speaking, Duolingo 130) and pre-internship health checks; Dutch classes included. Campus: Antwerp.",
+     "source_url": "https://www.kdg.be/en/nursing"
+    },
+    {
+     "name": "Professional Bachelor of Multimedia & Creative Technologies",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Multimedia / Creative Technologies",
+     "fee_non_eu": 9020.2,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "Closed to new applicants for 2026/27; 2027/28 availability and deadline not confirmed (other KdG bachelors: 12 May 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 78
+      },
+      {
+       "test": "Duolingo",
+       "min": 115
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a secondary diploma giving access to comparable higher education in the issuing country (certified copies; e.g. Turkish Lise Diplomasi, KdG's Turkey page states no entrance exam) and CEFR B2 English (tests not older than 2 years). EUR 139.40 non-refundable application fee (deducted from tuition if accepted); non-EEA students need a Type D student visa and must pay tuition before the visa deadline. KdG offers no scholarships. KdG states joining this programme was no longer possible for 2026/27, so check availability before applying. Campus: Antwerp (Hoboken/Zuid).",
+     "source_url": "https://www.kdg.be/en/bachelor-multimedia-creative-technologies"
+    },
+    {
+     "name": "Master of Visual Arts",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Visual Arts",
+     "fee_non_eu": 9020,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "Single non-EEA intake in March; 2026/27: registration by 27 February 2026 (2027/28 date not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 78
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs an academic bachelor's degree in visual arts (or a premaster year for other/professional backgrounds), an artistic portfolio and online interview, and CEFR B2 English (IELTS 6.0 with 5.5 subscores, TOEFL 78 with 18 subscores). EUR 139.40 application fee; non-EEA students need a student visa (apply right after passing the artistic entrance exam). Offered with Sint Lucas Antwerpen; 60 credits, tuition EUR 2,600 fixed + EUR 107/credit.",
+     "source_url": "https://kdg.be/en/programmes/apply-english-taught-master-programme"
+    }
+   ]
+  },
+  {
+   "name": "Erasmushogeschool Brussel (Erasmus Brussels University of Applied Sciences and Arts)",
+   "city": "Brussels",
+   "country": "Belgium",
+   "website": "https://www.erasmushogeschool.be/en",
+   "entity_note": "EhB states 'We do not offer full degrees in English': all degree programmes are Dutch-taught and English-taught courses are only for exchange/traineeship students, so no programmes are listed. (For reference, non-EEA students pay an increased fee of EUR 17,501.40 for 60 credits in artistic programmes in 2026/27.)",
+   "programs": []
+  },
+  {
+   "name": "LUCA School of Arts",
+   "city": "Brussels",
+   "country": "Belgium",
+   "website": "https://www.luca-arts.be/en",
+   "entity_note": "LUCA's website blocks automated access, so details come from search-result excerpts of its official pages and are partly unverified. Non-EEA students enrolling from 2026/27 pay an increased fee (EUR 2,376.72 fixed + EUR 118.62/credit + EUR 330 study costs for 60 credits); non-EEA applicants are advised to apply early (by 1 March). Other English-taught LUCA masters (Audiovisual Arts, music, Erasmus Mundus joint degrees) could not be verified.",
+   "programs": [
+    {
+     "name": "Master in Visual Arts (Fine Arts / Graphic Design / Photography)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Visual Arts",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a relevant bachelor's degree, motivation letter, CV, master project and portfolio; EUR 50 flat application fee from 2026. Fee = EUR 2,376.72 fixed + 60 x EUR 118.62 (additional study costs of EUR 330 come on top; total EUR 9,823.92). English test minimum not found for this programme; no Turkey-specific rules found; general non-EEA rules and student visa apply. Details come from search excerpts as the LUCA site blocked direct access.",
+     "source_url": "https://luca-school-of-arts.dreamapply.com/courses/course/3-master-fine-arts"
+    }
+   ]
+  },
+  {
+   "name": "Odisee University of Applied Sciences",
+   "city": "Brussels",
+   "country": "Belgium",
+   "website": "https://www.odisee.be/en",
+   "entity_note": "Odisee offers an English-taught Bachelor of Business Management (Marketing) in Brussels; the Odisee site returned 403 to automated access so data come from search excerpts of official pages. Non-EEA applicants need a diploma giving access to higher education, B2+ English (IELTS 6.5) and a student visa; no Turkey-specific rules found.",
+   "programs": [
+    {
+     "name": "Bachelor of Business Management (Marketing)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business / Marketing",
+     "fee_non_eu": 4230,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Professional bachelor (180 ECTS, Brussels) taught in English; IELTS Academic 6.5 with no subscore below 6.0 (TOEFL threshold changed 21 Jan 2026, check current value); all students also sit an on-campus English test in October. Fee: EUR 1,050 fixed + EUR 53/credit = EUR 4,230 per 60 credits for non-EEA students needing a visa (from search excerpt, unverified on page). Deadlines/Turkey rules not found; general non-EEA rules apply.",
+     "source_url": "https://odisee.be/en/programmes/bachelor-business-management-major-marketing"
+    }
+   ]
+  },
+  {
+   "name": "UCLL University of Applied Sciences",
+   "city": "Leuven",
+   "country": "Belgium",
+   "website": "https://www.ucll.be/en",
+   "entity_note": "Two English-taught professional bachelors at Campus Connect (Heverlee, Leuven); the 'across Europe' IBM track and 1-year continuing-education programmes are excluded. Non-EEA tuition EUR 8,600 (2026/27). Turkey-specific rule published: Lise diploma + YKS minimum scores (TYT 350, AYT 300) or SAT.",
+   "programs": [
+    {
+     "name": "Professional Bachelor of Applied Computer Science",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Computer Science",
+     "fee_non_eu": 8600,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April (grace period until 1 May); 2027/28 dates not yet published",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 180
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants needing a visa apply by 1 April (grace period to 1 May; 2026/27 cycle, 2027/28 to be confirmed) and pay tuition by 15 May. Turkey: Lise Diplomasi plus YKS (TYT min 350 and AYT min 300) or SAT above the college-readiness benchmark; English test (IELTS 6.5, no section below 5.5) unless exempt. Diplomas are checked via the Lisbon Recognition Convention/UK ENIC; an application fee proof is required (amount not published).",
+     "source_url": "https://www.ucll.be/en/bachelor-degree/programme/applied-computer-science"
+    },
+    {
+     "name": "Professional Bachelor of International Business Management - Marketing (track in Belgium)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business / Marketing",
+     "fee_non_eu": 8600,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April (grace period until 1 May); 2027/28 dates not yet published",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 180
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants needing a visa apply by 1 April (grace period to 1 May; 2026/27 cycle, 2027/28 to be confirmed) and pay tuition by 15 May. Turkey: Lise Diplomasi plus YKS (TYT min 350 and AYT min 300) or SAT above the college-readiness benchmark; English test (IELTS 6.5, no section below 5.5) unless exempt. Diplomas are checked via the Lisbon Recognition Convention/UK ENIC; an application fee proof is required (amount not published).",
+     "source_url": "https://www.ucll.be/en/programmes/degree-programmes/bachelor/international-business-management-marketing"
+    }
+   ]
+  },
+  {
+   "name": "Artevelde University of Applied Sciences",
+   "city": "Ghent",
+   "country": "Belgium",
+   "website": "https://www.arteveldehogeschool.be/en",
+   "entity_note": "Five English-taught 3-year bachelors in Ghent; non-EEA students on a student visa pay EUR 7,760 (EUR 1,940 + EUR 97/ECTS) in 2026/27 and apply in the September intake only. No Turkey-specific rules published; B2 English and a diploma giving university access are required.",
+   "programs": [
+    {
+     "name": "Bachelor in International Business Management",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business",
+     "fee_non_eu": 7760,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 May 2026 for non-EEA with student visa)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 115
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 168
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA students needing a student visa apply online in the September intake only (EUR 75 application fee; payment by 30 June in 2026/27); the February intake is closed to visa applicants. Requires a diploma giving access to university in the issuing country (authenticity certified, translated if not EN/FR/NL/DE) and B2 English (IELTS 6.5, TOEFL 79 for tests before 21 Jan 2026, Duolingo 115, PTE 59, Cambridge 168). No Turkey-specific rules published; general non-EEA rules apply. Campus: Ghent (Stropkaai).",
+     "source_url": "https://www.arteveldehogeschool.be/en/programmes/bachelor/international-business-management"
+    },
+    {
+     "name": "Bachelor in International Organisation and Management",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business / Management",
+     "fee_non_eu": 7760,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 May 2026 for non-EEA with student visa)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 115
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 168
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA students needing a student visa apply online in the September intake only (EUR 75 application fee; payment by 30 June in 2026/27); the February intake is closed to visa applicants. Requires a diploma giving access to university in the issuing country (authenticity certified, translated if not EN/FR/NL/DE) and B2 English (IELTS 6.5, TOEFL 79 for tests before 21 Jan 2026, Duolingo 115, PTE 59, Cambridge 168). No Turkey-specific rules published; general non-EEA rules apply. Campus: Ghent (Stropkaai).",
+     "source_url": "https://www.arteveldehogeschool.be/en/programmes/bachelor/international-organisation-and-management"
+    },
+    {
+     "name": "Bachelor in International Communication Management",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Communication",
+     "fee_non_eu": 7760,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 May 2026 for non-EEA with student visa)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 115
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 168
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA students needing a student visa apply online in the September intake only (EUR 75 application fee; payment by 30 June in 2026/27); the February intake is closed to visa applicants. Requires a diploma giving access to university in the issuing country (authenticity certified, translated if not EN/FR/NL/DE) and B2 English (IELTS 6.5, TOEFL 79 for tests before 21 Jan 2026, Duolingo 115, PTE 59, Cambridge 168). No Turkey-specific rules published; general non-EEA rules apply. Campus: Ghent (Leeuwstraat).",
+     "source_url": "https://www.arteveldehogeschool.be/en/programmes/bachelor/international-communication-management"
+    },
+    {
+     "name": "Bachelor International Graphic and Digital Media",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Graphic & Digital Media",
+     "fee_non_eu": 7760,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 May 2026 for non-EEA with student visa)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 115
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 168
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA students needing a student visa apply online in the September intake only (EUR 75 application fee; payment by 30 June in 2026/27); the February intake is closed to visa applicants. Requires a diploma giving access to university in the issuing country (authenticity certified, translated if not EN/FR/NL/DE) and B2 English (IELTS 6.5, TOEFL 79 for tests before 21 Jan 2026, Duolingo 115, PTE 59, Cambridge 168). No Turkey-specific rules published; general non-EEA rules apply. Campus: Ghent (Leeuwstraat).",
+     "source_url": "https://www.arteveldehogeschool.be/en/programmes/bachelor/international-graphic-and-digital-media"
+    },
+    {
+     "name": "Bachelor International Journalism",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Journalism",
+     "fee_non_eu": 7760,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "2027/28 date not yet published (2026/27 cycle: 1 May 2026 for non-EEA with student visa)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 115
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 168
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA students needing a student visa apply online in the September intake only (EUR 75 application fee; payment by 30 June in 2026/27); the February intake is closed to visa applicants. Requires a diploma giving access to university in the issuing country (authenticity certified, translated if not EN/FR/NL/DE) and B2 English (IELTS 6.5, TOEFL 79 for tests before 21 Jan 2026, Duolingo 115, PTE 59, Cambridge 168). No Turkey-specific rules published; general non-EEA rules apply. Campus: Ghent (Kantienberg/Leeuwstraat).",
+     "source_url": "https://www.arteveldehogeschool.be/en/programmes/bachelor/international-journalism"
+    }
+   ]
+  },
+  {
+   "name": "PXL University of Applied Sciences and Arts",
+   "city": "Hasselt",
+   "country": "Belgium",
+   "website": "https://www.pxl.be/international",
+   "entity_note": "Only two fully English-taught degrees found: the new Bachelor in Applied Computer Science (from 2026/27) and the Master of Arts in Visual Arts (PXL-MAD). The International Communication Management bachelor is Dutch for years 1-2 (English only in year 3) and is excluded. Non-EU students pay EUR 7,940.10 (ACS) or EUR 9,400 (arts) in 2026/27 and need a visa; no Turkey-specific rules published.",
+   "programs": [
+    {
+     "name": "Professional Bachelor in Applied Computer Science",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Computer Science / AI",
+     "fee_non_eu": 7940.1,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 May (non-EU without visa; 2026/27 cycle: 31 May 2026, 2027/28 date not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 72
+      },
+      {
+       "test": "Duolingo",
+       "min": 105
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a legalised secondary diploma plus a statement that it gives access to university study in the home country, certified translation (EN/NL/FR/DE), passport copy, and B2 English (IELTS 6 / TOEFL iBT 72 / Duolingo 105) or one year of English-language secondary/60 credits of English-taught higher education. Non-EU applicants without a visa apply by 31 May; enrolment only after approval by the study progress office (studievoortgang@pxl.be). No Turkey-specific rules published; general non-EU rules apply. AI is the only graduation track; campus Hasselt/Diepenbeek.",
+     "source_url": "https://www.pxl.be/departementen/pxl-digital/applied-computer-science/"
+    },
+    {
+     "name": "Master of Arts in Visual Arts",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Visual Arts",
+     "fee_non_eu": 9400,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 May (non-EU without visa; 2026/27 cycle: 31 May 2026, 2027/28 date not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 72
+      },
+      {
+       "test": "Duolingo",
+       "min": 105
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Needs a legalised secondary diploma plus a statement that it gives access to university study in the home country, certified translation (EN/NL/FR/DE), passport copy, and B2 English (IELTS 6 / TOEFL iBT 72 / Duolingo 105) or one year of English-language secondary/60 credits of English-taught higher education. Non-EU applicants without a visa apply by 31 May; enrolment only after approval by the study progress office (studievoortgang@pxl.be). No Turkey-specific rules published; general non-EU rules apply. Requires a relevant bachelor's degree and portfolio (PXL-MAD; studios: jewellery, graphic design, fine arts); 60 ECTS. English scores taken from the general PXL degree-application page.",
+     "source_url": "https://www.pxl.be/international/international-students/programmes/degree-programmes/"
+    }
+   ]
+  }
+ ]
+}
