@@ -1654,3 +1654,8 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 ## 2026-11-11 — Netherlands tuition fees
 - Filled non-EU EUR fees for Twente (10, 2026/27), UvA (10, 2027/28 rates), THUAS (6), Tilburg (up to 21, from Regulations Appendix I; 3 mapped to similar CROHO names), Wittenborg (4, year unstated). Data: docs/data/nl-fees/.
 - Left empty: UvA MSc Data Science and Business Analytics; Tilburg AI for Psychological Research, Children's Literature/Media & Cultural Entrepreneurship, Economics and Management, Management Analytics.
+
+## 2026-11-11 — Netherlands: 9 more universities
+- Added Saxion (+11), Hanze, Rotterdam UAS, Groningen (incl. Campus Fryslân), Maastricht, Utrecht, Erasmus, TU Delft, VU Amsterdam: ~536 English full-time Bachelor/Master programs (data: docs/data/nl-import/). Degree prefixes (MSc/MA/LLM) partly inferred (esp. Utrecht, Erasmus, VU) – verify.
+- Fees only set for Saxion bachelors (9,360, 2026/27) and Hanze (9,302, 2025/26); all others empty (universities publish per-programme or ranged non-EU fees, e.g. Utrecht ~21-25k).
+- Not done: guide pages, logos/descriptions for the new entities; Saxion master ICT Software Engineering (not confirmed English full-time); some Saxion programs may exist twice under slightly different names.
