@@ -1650,3 +1650,7 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 - 55 of 57 empty Germany programs filled (SRH 49 – per-year = 2x per-semester non-EU fee, note has EU fee + EUR 1,000 enrolment; Lancaster Leipzig 6 BSc at EUR 18,500). Data in docs/data/de-fees/.
 - Left empty: SRH B.Mus. Classical Music (page 404), Lancaster Leipzig MSc Business Analytics (not on fee page).
 - Low confidence: SRH Law, Economics & Governance (11,000) and Water Technology (13,000). Several SRH programs listed as Heidelberg are on other campuses (Berlin/Dresden/Leipzig) – check entity/city assignment.
+
+## 2026-11-11 — Netherlands tuition fees
+- Filled non-EU EUR fees for Twente (10, 2026/27), UvA (10, 2027/28 rates), THUAS (6), Tilburg (up to 21, from Regulations Appendix I; 3 mapped to similar CROHO names), Wittenborg (4, year unstated). Data: docs/data/nl-fees/.
+- Left empty: UvA MSc Data Science and Business Analytics; Tilburg AI for Psychological Research, Children's Literature/Media & Cultural Entrepreneurship, Economics and Management, Management Analytics.
