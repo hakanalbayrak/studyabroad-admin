@@ -1635,3 +1635,8 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 - 1,987 more UK programs got GBP fees (total ~3,860). Source data: docs/data/uk-fees/ (pass2_* = this pass).
 - Several bands are 2027/28 (Manchester, Lancaster, Southampton, York, Surrey, Liverpool, Brunel, Exeter, Plymouth) – flagged in each program's description note.
 - Still empty (official pages 403/range-only): Birmingham, Essex PG, Westminster PG, Nottingham Trent, Newcastle, Cardiff, Portsmouth, Birkbeck, Sheffield, Lancashire, Leeds, Durham, Manchester Met, Hull, Aston, Swansea, LSBU, Kingston PG, Brighton, QMUL. Owner to fill manually.
+
+## 2026-11-11 — France tuition fees
+- 82 of 156 empty France programs got EUR fees (Istituto Marangoni 45, Omnes 10, Excelia 10, LISAA 11, KEDGE 3, Rennes 1, Strate 2); data in docs/data/fr-fees/. Marangoni figures are 2027/28; LISAA 2025/26.
+- Still empty: AIM Paris, Aivancity, Atelier Chardon Savard, ESGCI, IESA, Institut Culinaire de France, MJM, Schiller, École de Management Appliqué, PSB, most Omnes MSc (brand unclear), Rennes MSc (combined M1+M2 price only), KEDGE MSc.
+- Data issue: Istituto Marangoni (non-Paris entity) holds London/Dubai/Milan programs under country France – review/split. Marangoni 49546 (Fashion Design & Innovation) skipped (yearly vs total unclear).
