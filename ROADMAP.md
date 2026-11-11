@@ -1659,3 +1659,8 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 - Added Saxion (+11), Hanze, Rotterdam UAS, Groningen (incl. Campus Fryslân), Maastricht, Utrecht, Erasmus, TU Delft, VU Amsterdam: ~536 English full-time Bachelor/Master programs (data: docs/data/nl-import/). Degree prefixes (MSc/MA/LLM) partly inferred (esp. Utrecht, Erasmus, VU) – verify.
 - Fees only set for Saxion bachelors (9,360, 2026/27) and Hanze (9,302, 2025/26); all others empty (universities publish per-programme or ranged non-EU fees, e.g. Utrecht ~21-25k).
 - Not done: guide pages, logos/descriptions for the new entities; Saxion master ICT Software Engineering (not confirmed English full-time); some Saxion programs may exist twice under slightly different names.
+
+## 2026-11-11 — Netherlands per-programme fees (9 new universities)
+- ~560 programs filled with non-EU EUR fees from official fee tables/PDFs (data: docs/data/nl-fees2/). Years: 2026/27 for all except VU (2027/28 table; stated in notes). Utrecht notes also carry 2027/28 figures.
+- Many are faculty/level rate mappings, not page-by-page (Groningen 114, Erasmus several, VU a few) – the rule is in each program note; spot-check.
+- Left empty: UCR, MSc Global Challenges for Sustainability (Utrecht); Erasmus Mundus/joint programs and double bachelors (Erasmus, Groningen); VU joint Creative Technology/Mechanical Eng; Maastricht Advanced Master IP Law (LLM, MSc).
