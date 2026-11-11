@@ -1,0 +1,628 @@
+{
+ "year": "2026/27",
+ "universities": {
+  "ASU London": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "All undergraduate",
+      "amount": 23600,
+      "subjects": "Business, Management, Computer Science, Engineering, Data Science, Psychology, Design, Media, Sciences"
+     }
+    ],
+    "notes": "ASU London site states international fee GBP 23,600 per year, same for Business and Management, Computer Science and engineering degrees. Single flat rate; a 20% (GBP 4,750) scholarship exists but is not netted off."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "No postgraduate taught international fees found; ASU London appears to offer undergraduate programmes only."
+   },
+   "source_urls": [
+    "https://asu-london.ac.uk/financial-support/",
+    "https://www.kaplanpathways.com/where-to-study/uk-universities/asu-london/fees-and-dates/"
+   ]
+  },
+  "Bournemouth University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [],
+    "notes": "Official page (bournemouth.ac.uk, returns 403 to fetch; read via search snippet) gives only a range: GBP 19,635 to 24,150 for BA/BSc/BEng 2026/27 incl. Foundation Years. No subject-level breakdown could be verified, so no bands. Placement year GBP 1,900."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Business, accounting, management, hospitality MSc",
+      "amount": 19950,
+      "subjects": "Accounting, Finance, Management, International Management, Hospitality, Tourism, Marketing, Business"
+     }
+    ],
+    "notes": "GBP 19,950 verified on course pages (MSc International Accounting and Finance, International Management, International Hospitality and Tourism Management) via search snippets. Fees page range for taught masters GBP 18,900-23,000 (Jan 2027) and 17,750-20,500 (Sept 2027). MSc Clinical Psychology GBP 19,688. Other subjects not verified."
+   },
+   "source_urls": [
+    "https://www.bournemouth.ac.uk/study/undergraduate/fees-funding",
+    "https://www.bournemouth.ac.uk/study/postgraduate/fees-funding/fees",
+    "https://www.bournemouth.ac.uk/study/courses/msc-international-accounting-finance"
+   ]
+  },
+  "Cranfield University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [],
+    "notes": "Cranfield is postgraduate only; no undergraduate degrees."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "MBA",
+      "amount": 49500,
+      "subjects": "MBA, Business Administration"
+     },
+     {
+      "name": "Defence engineering",
+      "amount": 42700,
+      "subjects": "Explosives Ordnance Engineering, Guided Weapons, Military Electronic Systems, Defence"
+     },
+     {
+      "name": "Management",
+      "amount": 35950,
+      "subjects": "Management"
+     },
+     {
+      "name": "Aerospace and space engineering",
+      "amount": 33045,
+      "subjects": "Aerospace Vehicle Design, Astronautics, Space Engineering, Autonomous Vehicle Dynamics, Thermal Power, Propulsion"
+     },
+     {
+      "name": "Logistics and supply chain",
+      "amount": 32000,
+      "subjects": "Logistics, Supply Chain Management, Procurement"
+     },
+     {
+      "name": "Finance, economics, analytics, marketing",
+      "amount": 29650,
+      "subjects": "Banking, Economics, Finance, Business Data Analytics, Strategic Marketing"
+     },
+     {
+      "name": "Engineering, computing and aviation (standard)",
+      "amount": 29025,
+      "subjects": "Mechanical Engineering, Automotive, Motorsport, Robotics, Applied Artificial Intelligence, Computational Fluid Dynamics, Materials, Composite Structures, Aerospace Manufacturing, Air Transport Management, Airport Planning, Aviation Safety"
+     },
+     {
+      "name": "Environmental and energy engineering",
+      "amount": 26995,
+      "subjects": "Environmental Engineering, Renewable Energy"
+     },
+     {
+      "name": "Cyber and defence information",
+      "amount": 26865,
+      "subjects": "Cyber Defence, Cyberspace Operations, Defence Simulation, Information Capability"
+     },
+     {
+      "name": "Sustainability and environment",
+      "amount": 18720,
+      "subjects": "Sustainability, Environmental Management, Future Food, Water and Wastewater, Data Science for Sustainability"
+     }
+    ],
+    "notes": "Official Cranfield taught tuition fees 2026-27 schedule (overseas, full-time MSc). Welding Engineering GBP 29,610 sits in the 29,025 area."
+   },
+   "source_urls": [
+    "https://www.cranfield.ac.uk/study/taught-degrees/fees-and-funding/taught-tuition-fees-2026"
+   ]
+  },
+  "Lancaster University": {
+   "year": "2027/28 (latest published; 2026/27 page not available)",
+   "ug": {
+    "bands": [
+     {
+      "name": "Arts, humanities, law, social sciences",
+      "amount": 26300,
+      "subjects": "History, Law, English, Politics, Sociology, Languages, Philosophy, Linguistics, Social Sciences"
+     },
+     {
+      "name": "Accounting and Finance",
+      "amount": 27100,
+      "subjects": "Accounting, Finance, Business, Management, Economics"
+     },
+     {
+      "name": "Science, computing, engineering, psychology",
+      "amount": 31700,
+      "subjects": "Computer Science, Computing, Engineering, Mechanical Engineering, Psychology, Physics, Mathematics, Science"
+     }
+    ],
+    "notes": "Per-course fees from Lancaster course pages (Law, History 26,300; Accounting and Finance 27,100; Computer Science, Mechanical Engineering, Psychology 31,700). All pages state 2027/28; 2026/27 table not accessible (portal needs login). Business, Mathematics, Biomedical Science pages did not display fees; subject placement of those is inferred."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Finance, management, data and computing",
+      "amount": 30900,
+      "subjects": "Finance, Management, Data Science, Computing, Business, Marketing, Accounting, Economics"
+     },
+     {
+      "name": "Humanities and law",
+      "amount": 26100,
+      "subjects": "English Literature, Law, LLM, History, Linguistics, Languages, Social Sciences"
+     }
+    ],
+    "notes": "Course pages (MSc Finance, Management, Data Science 30,900; MA English Literature, LLM Law 26,100), entry year 2027. MBA fee not displayed."
+   },
+   "source_urls": [
+    "https://www.lancaster.ac.uk/study/undergraduate/courses/law-llb-hons-m100/",
+    "https://www.lancaster.ac.uk/study/undergraduate/courses/computer-science-bsc-hons-g400/",
+    "https://www.lancaster.ac.uk/study/postgraduate/postgraduate-courses/finance-msc/"
+   ]
+  },
+  "Manchester Metropolitan University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [],
+    "notes": "MMU publishes only a range: GBP 20,000-21,500 for international undergraduates (page labelled 2027-28; international guide ties the same range to 2026/27). No subject-level breakdown verified."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "Range GBP 21,000-22,500 for taught postgraduate (2026-27 Jan 2027 intake and 2027-28). No subject-level breakdown verified."
+   },
+   "source_urls": [
+    "https://www.mmu.ac.uk/study/international/before-you-apply/fees-and-funding/tuition-fees"
+   ]
+  },
+  "Robert Gordon University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Law",
+      "amount": 17570,
+      "subjects": "Law, LLB"
+     },
+     {
+      "name": "Nursing and health",
+      "amount": 17080,
+      "subjects": "Nursing, Adult Nursing, Health"
+     },
+     {
+      "name": "International business",
+      "amount": 18940,
+      "subjects": "International Business Management, Business, Management, Marketing"
+     }
+    ],
+    "notes": "Only a few course pages verified via search snippets (Law LLB 17,570; Adult Nursing 17,080; International Business Management BA 18,940). Engineering, computing, science, art and design fees not verified. Excludes the GBP 2,000 international student discount."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Marketing and fashion business",
+      "amount": 17250,
+      "subjects": "International Marketing, Fashion Business, Marketing"
+     },
+     {
+      "name": "Tourism and hospitality",
+      "amount": 18030,
+      "subjects": "Tourism, Hospitality"
+     },
+     {
+      "name": "Business management",
+      "amount": 18760,
+      "subjects": "International Business Management, Management, Business"
+     },
+     {
+      "name": "Computing and cyber",
+      "amount": 19630,
+      "subjects": "Cyber Security, Computing, Data Science, Computer Science"
+     },
+     {
+      "name": "Energy and engineering",
+      "amount": 20210,
+      "subjects": "Drilling and Well Engineering, Petroleum, Engineering, Energy"
+     }
+    ],
+    "notes": "Per-course 2026/27 international full-time fees from RGU course pages (via search snippets): Intl Marketing 17,250, Intl Fashion Business 17,250, Intl Tourism and Hospitality 18,030, Intl Business Management 18,760, Cyber Security 19,630, Drilling and Well Engineering 20,210. Before the international student discount."
+   },
+   "source_urls": [
+    "https://www.rgu.ac.uk/study/courses/pgcert-pgdip-msc-cyber-security",
+    "https://www.rgu.ac.uk/study/courses/llb-hons-law",
+    "https://www.rgu.ac.uk/study/courses/ba-hons-international-business-management"
+   ]
+  },
+  "University of Aberdeen": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Arts, social sciences, law, education, divinity",
+      "amount": 20800,
+      "subjects": "Accountancy, Business Management, Economics, History, English, Languages, Law, Politics, Sociology, Education, Theology, Anthropology, Geography (arts)"
+     },
+     {
+      "name": "Sciences and engineering",
+      "amount": 24800,
+      "subjects": "Engineering, Physics, Chemistry, Biology, Geology, Mathematics, Computing Science, Psychology (BSc), Biomedical Science, Sports Science, Environmental Science"
+     }
+    ],
+    "notes": "Official Aberdeen UG full-time tuition fees 2026/27 PDF, international column (same as EU). Dentistry GBP 50,100 and Medicine excluded."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Humanities, social sciences, law",
+      "amount": 23000,
+      "subjects": "International Relations, Politics, Law, LLM, Sociology, Anthropology, English, Linguistics, Education, TESOL, Human Rights, Museum Studies, Nutrition"
+     },
+     {
+      "name": "Business, engineering, computing, sciences",
+      "amount": 26250,
+      "subjects": "Accounting, Finance, MBA, Business, Marketing, Engineering, Artificial Intelligence, Data Science, Cybersecurity, Information Technology, Psychology, Microbiology, Biodiversity, Real Estate"
+     },
+     {
+      "name": "Environment and heritage sciences",
+      "amount": 22000,
+      "subjects": "Archaeology, Planetary Sciences, Cultural Heritage, Sustainability, Water Management"
+     },
+     {
+      "name": "Petroleum geoscience",
+      "amount": 28800,
+      "subjects": "Petroleum Geoscience, Sustainable Energy Geoscience"
+     }
+    ],
+    "notes": "Official Aberdeen taught postgraduate tuition fees 2026/27 PDF (EU/International column), grouped by programme. Self-funded discounts (up to GBP 8,000 Global Scholarship) and alumni discounts not netted off. Chemistry for Sustainable Energy GBP 20,000, Counselling GBP 20,860 not banded."
+   },
+   "source_urls": [
+    "https://www.abdn.ac.uk/media/site/students/documents/UG--Full-time-Tuition-Fees-2026-27.pdf",
+    "https://www.abdn.ac.uk/media/site/students/documents/PGTaught-tuition-fees-2026-27.pdf"
+   ]
+  },
+  "University of East Anglia": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Humanities, social sciences, business, law, maths",
+      "amount": 23100,
+      "subjects": "Business, Accounting, Economics, Law, History, English, Politics, International Relations, Psychology, Education, Media, Film, Drama, Mathematics, Actuarial Science, Nursing, Geography (BA), Sociology, Philosophy"
+     },
+     {
+      "name": "Science, computing, engineering",
+      "amount": 29300,
+      "subjects": "Computing Science, Artificial Intelligence, Engineering, Biology, Biochemistry, Chemistry, Physics, Geology, Environmental Sciences, Pharmacy, Biomedical Science, Geography (BSc)"
+     }
+    ],
+    "notes": "Official UEA 2026/27 entry fees by course PDF (Overseas Fee). Final-year-entry and foundation variants differ; medicine excluded."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Standard taught masters (humanities, social science, economics, law)",
+      "amount": 23850,
+      "subjects": "Economics, Law, LLM, Development, Education, Literature, Politics, Media, Health, Social Science"
+     },
+     {
+      "name": "Business, computing and data",
+      "amount": 25700,
+      "subjects": "Accounting, Finance, Business, Management, Marketing, Computing, Artificial Intelligence, Data Science, Cyber Security, Project Management, Sustainability, Environmental Science"
+     },
+     {
+      "name": "Biological sciences",
+      "amount": 28250,
+      "subjects": "Biology, Microbiology, Ecology, Genomics, Molecular Medicine, Biotechnology"
+     },
+     {
+      "name": "Chemistry and pharmacy",
+      "amount": 30650,
+      "subjects": "Organic Chemistry, Drug Discovery, Pharmaceutical Sciences"
+     },
+     {
+      "name": "MBA",
+      "amount": 28300,
+      "subjects": "MBA, Business Administration"
+     }
+    ],
+    "notes": "Official UEA 2026/27 entry fees by course PDF, Postgraduate Taught section (Overseas Fee). Engineering/physics MSc bands not separately identified."
+   },
+   "source_urls": [
+    "https://a.storyblok.com/f/185167/x/0e1dacc572/new-entrants-fees-by-course-2026-27.pdf"
+   ]
+  },
+  "University of Huddersfield": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Standard undergraduate",
+      "amount": 17600,
+      "subjects": "All subjects: Business, Computing, Engineering, Science, Law, Music, Arts, Humanities, Social Sciences, Design"
+     },
+     {
+      "name": "Allied health and education",
+      "amount": 18700,
+      "subjects": "Physiotherapy, Occupational Therapy, Podiatry, Midwifery, Operating Department Practice, Primary Education"
+     },
+     {
+      "name": "Nursing",
+      "amount": 19800,
+      "subjects": "Nursing"
+     }
+    ],
+    "notes": "Official Huddersfield international tuition fees page 2026/27 (BA, BSc, BEng, BMus, LLB at 17,600; placement year 3,300 extra). Some third-party sources quote 19,690 for engineering; not confirmed officially."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Standard MA/MSc",
+      "amount": 18700,
+      "subjects": "All taught MA and MSc: Computing, Engineering, Science, Business, Law, Humanities, Social Sciences, Arts, Design"
+     },
+     {
+      "name": "Business with professional practice, TESOL, PGCE, Nursing",
+      "amount": 19800,
+      "subjects": "Business Master's with Professional Practice, TESOL, Teacher Training, PGCE, Nursing"
+     },
+     {
+      "name": "MBA",
+      "amount": 19690,
+      "subjects": "MBA"
+     },
+     {
+      "name": "Pharmacy",
+      "amount": 21000,
+      "subjects": "Pharmacy"
+     }
+    ],
+    "notes": "Official Huddersfield international tuition fees page 2026/27. Podiatry/Optometry 18,590."
+   },
+   "source_urls": [
+    "https://www.hud.ac.uk/international/tuition-fees/"
+   ]
+  },
+  "University of Manchester": {
+   "year": "2027/28 (latest published; 2026/27 course pages replaced by 2027 entry)",
+   "ug": {
+    "bands": [
+     {
+      "name": "Humanities and arts",
+      "amount": 29200,
+      "subjects": "Classics, History, English, Languages, Philosophy, Music, Arts, Humanities, Education"
+     },
+     {
+      "name": "Law",
+      "amount": 29800,
+      "subjects": "Law, LLB"
+     },
+     {
+      "name": "Business and accounting",
+      "amount": 34800,
+      "subjects": "Accounting, Business, Management, International Management, Finance, Economics"
+     },
+     {
+      "name": "Engineering",
+      "amount": 37500,
+      "subjects": "Aerospace Engineering, Engineering, Mechanical, Civil, Electrical"
+     },
+     {
+      "name": "Biological sciences",
+      "amount": 38000,
+      "subjects": "Biology, Biochemistry, Biomedical Science, Life Sciences"
+     },
+     {
+      "name": "Computer Science",
+      "amount": 39700,
+      "subjects": "Computer Science, Computing, Artificial Intelligence, Software Engineering"
+     }
+    ],
+    "notes": "Per-course 2027/28 fees from Manchester course pages (Classics 29,200; Law 29,800; Accounting 34,800; BEng Aerospace 37,500; Biology 38,000; Computer Science 39,700). Fees for 2026 entry appeared only in search snippets (e.g. Accounting 33,100, Biology 36,200, Classics 27,800), not re-verified. Mathematics, social science fees not verified; placement of those inferred."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Education and humanities",
+      "amount": 30900,
+      "subjects": "Education, International Education, Humanities, Social Sciences"
+     },
+     {
+      "name": "Law",
+      "amount": 32600,
+      "subjects": "LLM, Law"
+     },
+     {
+      "name": "Management",
+      "amount": 34800,
+      "subjects": "Management, International Business and Management"
+     },
+     {
+      "name": "Finance",
+      "amount": 39700,
+      "subjects": "Finance, Accounting, Economics"
+     },
+     {
+      "name": "Engineering",
+      "amount": 40300,
+      "subjects": "Engineering, Advanced Control, Manufacturing"
+     },
+     {
+      "name": "Computer Science and AI",
+      "amount": 41400,
+      "subjects": "Computer Science, Advanced Computer Science, Artificial Intelligence, Software Engineering, Data Science"
+     }
+    ],
+    "notes": "Per-course fees for September 2027 entry from Manchester master's course pages (via pages/search snippets). 2026 entry equivalent examples: MSc International Business and Management 33,100; MSc Advanced Computer Science 39,400. Science and MBA bands not verified."
+   },
+   "source_urls": [
+    "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00560/bsc-computer-science/",
+    "https://www.manchester.ac.uk/study/undergraduate/courses/2026/00524/bsc-biology/",
+    "https://www.manchester.ac.uk/study/masters/courses/list/21573/msc-advanced-computer-science/",
+    "https://www.manchester.ac.uk/study/masters/courses/list/01383/msc-finance/",
+    "https://www.manchester.ac.uk/study/masters/courses/list/12805/msc-international-business-and-management/"
+   ]
+  },
+  "University of Southampton": {
+   "year": "2027/28 (latest published; 2026/27 not available on site)",
+   "ug": {
+    "bands": [
+     {
+      "name": "Nursing and occupational therapy",
+      "amount": 26800,
+      "subjects": "Nursing, Occupational Therapy, Midwifery"
+     },
+     {
+      "name": "English and languages",
+      "amount": 27500,
+      "subjects": "English, Modern Languages, Liberal Arts, Language"
+     },
+     {
+      "name": "Business, humanities and social sciences",
+      "amount": 28300,
+      "subjects": "Accounting, Finance, Business Management, History, Politics, Philosophy, Fine Art, Economics, Sociology, Archaeology"
+     },
+     {
+      "name": "Law",
+      "amount": 28400,
+      "subjects": "Law, LLB"
+     },
+     {
+      "name": "Film and education",
+      "amount": 29100,
+      "subjects": "Film, Education, Music"
+     },
+     {
+      "name": "Mathematics",
+      "amount": 29800,
+      "subjects": "Mathematics, Statistics"
+     },
+     {
+      "name": "Computing and engineering",
+      "amount": 33000,
+      "subjects": "Computer Science, Artificial Intelligence, Software Engineering, Business Analytics, Data Science"
+     },
+     {
+      "name": "Engineering",
+      "amount": 33500,
+      "subjects": "Civil Engineering, Mechanical Engineering, Electrical Engineering, Aerospace, Chemical Engineering, Engineering"
+     },
+     {
+      "name": "Life and environmental sciences, psychology",
+      "amount": 33900,
+      "subjects": "Biology, Psychology, Geography, Neuroscience, Biomedical Sciences, Oceanography, Marine Biology"
+     },
+     {
+      "name": "Physical sciences",
+      "amount": 34100,
+      "subjects": "Chemistry, Physics, Audiology"
+     }
+    ],
+    "notes": "Official Southampton undergraduate tuition fees page states 2027/28 and does not label columns; the second figure per row is taken as international. Medicine (35,900+) excluded. 2026/27 not located. Rounded: film/education band 29,000-29,200 taken as 29,100 is an approximation; individual figures were 29,000 Film and 29,200 Education."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Education and humanities",
+      "amount": 28800,
+      "subjects": "Archaeology, History, English Literature, Linguistics, Education, Gerontology, Humanities"
+     },
+     {
+      "name": "Politics and statistics",
+      "amount": 30100,
+      "subjects": "Politics, Statistics, Actuarial Science"
+     },
+     {
+      "name": "Law",
+      "amount": 30200,
+      "subjects": "Law, LLM"
+     },
+     {
+      "name": "Arts",
+      "amount": 32000,
+      "subjects": "Fine Art, Music, Film Studies"
+     },
+     {
+      "name": "Economics, psychology, public health",
+      "amount": 34100,
+      "subjects": "Economics, Psychology, Public Health"
+     },
+     {
+      "name": "Engineering and chemistry",
+      "amount": 36600,
+      "subjects": "Civil Engineering, Electronic Engineering, Chemistry, Engineering, Science"
+     },
+     {
+      "name": "Computing",
+      "amount": 36800,
+      "subjects": "Computer Science, Artificial Intelligence, Data Science"
+     },
+     {
+      "name": "Management and project management",
+      "amount": 37000,
+      "subjects": "Management, Project Management"
+     },
+     {
+      "name": "MBA",
+      "amount": 37400,
+      "subjects": "MBA, Business Administration"
+     },
+     {
+      "name": "Accounting and Finance",
+      "amount": 38100,
+      "subjects": "Accounting, Finance"
+     }
+    ],
+    "notes": "Official Southampton postgraduate fees page, 2027 entry, selected subjects (full table not seen). Years differ from 2026/27."
+   },
+   "source_urls": [
+    "https://www.southampton.ac.uk/courses/fees/undergraduate/tuition-fees.page",
+    "https://www.southampton.ac.uk/courses/fees/postgraduate.page"
+   ]
+  },
+  "University of Sussex": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Non-lab subjects (lower level)",
+      "amount": 23500,
+      "subjects": "Economics, Business, Management, Humanities, Social Sciences, Law, Politics, English, History, Media"
+     },
+     {
+      "name": "Computer Science",
+      "amount": 28100,
+      "subjects": "Computer Science, Computing, Informatics"
+     }
+    ],
+    "notes": "Sussex fee-status page: 2026/27 lower level 23,500, higher level 27,300 (subjects not listed; higher is for lab-based courses, not confirmed per subject). Economics BSc page 23,500; Computer Science BSc page 28,100 is for September 2027 entry. Lab-science band therefore omitted."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Data Science",
+      "amount": 23500,
+      "subjects": "Data Science"
+     },
+     {
+      "name": "Electronic and electrical engineering, international business economics",
+      "amount": 24995,
+      "subjects": "Electronic Engineering, Electrical Engineering, International Business Economics, Economics"
+     },
+     {
+      "name": "International business and development",
+      "amount": 25700,
+      "subjects": "International Business, Development, Global Studies"
+     },
+     {
+      "name": "AI, robotics, innovation, finance",
+      "amount": 26995,
+      "subjects": "Artificial Intelligence, Robotics, Mobile Communications, Science Policy, Strategic Innovation Management, Sustainable Finance, Accounting, Energy and Climate Policy"
+     },
+     {
+      "name": "Physics and neuroscience",
+      "amount": 27300,
+      "subjects": "Cosmology, Physics, Astronomy, Neuroscience"
+     }
+    ],
+    "notes": "Per-course masters fees from Sussex fee-status page and course pages. Mixed entry years: Data Science course page shows 24,200 for Sept 2026 while fee-status page shows 23,500; Cosmology 27,300 and International Business and Development 25,700 are for September 2027 entry; Neuroscience quoted 28,100 for an unclear year (not used). Treat as indicative."
+   },
+   "source_urls": [
+    "https://www.sussex.ac.uk/study/fees-funding/tuition-fees/fee-status",
+    "https://www.sussex.ac.uk/study/masters/courses/data-science-msc",
+    "https://www.sussex.ac.uk/study/masters/courses/cosmology-msc"
+   ]
+  }
+ },
+ "gaps": "Southampton, Lancaster, Manchester bands are 2027/28 (latest published; 2026/27 pages no longer shown). MMU (UG and PG) and Bournemouth UG only have ranges, no verified subject bands. RGU, Sussex, Bournemouth PG, Manchester based on selected course pages, partial subject coverage. ASU London has no PG. Cranfield has no UG. Bournemouth and some other official pages returned 403, relying on search snippets."
+}

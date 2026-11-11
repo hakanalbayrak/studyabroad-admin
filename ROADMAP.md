@@ -1630,3 +1630,8 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 - 1,874 UK Bachelor/Master programs across 28 universities got GBP fees (only where a subject-mapped fee band matched; note appended to description_en).
 - Not filled: ~1,354 programs with no band match, plus universities with only per-course samples/ranges/unverified sources (e.g. Southampton, Manchester, York, Birmingham, Royal Holloway, QUB, Keele, Newcastle, Cardiff, Sheffield, Sussex...). Fill manually or in a second research pass.
 - Caveat: some figures are 2027/28; verify before relying on them.
+
+## 2026-11-11 — UK tuition fees (second pass)
+- 1,987 more UK programs got GBP fees (total ~3,860). Source data: docs/data/uk-fees/ (pass2_* = this pass).
+- Several bands are 2027/28 (Manchester, Lancaster, Southampton, York, Surrey, Liverpool, Brunel, Exeter, Plymouth) – flagged in each program's description note.
+- Still empty (official pages 403/range-only): Birmingham, Essex PG, Westminster PG, Nottingham Trent, Newcastle, Cardiff, Portsmouth, Birkbeck, Sheffield, Lancashire, Leeds, Durham, Manchester Met, Hull, Aston, Swansea, LSBU, Kingston PG, Brighton, QMUL. Owner to fill manually.

@@ -1,0 +1,297 @@
+{
+"year": "2026/27",
+"universities": {
+"University of Huddersfield": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "Undergraduate programmes (BA, BSc, BEng, BMus, LLB) and one-year top-up", "amount": 17600, "subjects": "Standard fee for all undergraduate programmes (no subject bands)"},
+{"name": "Nursing (includes NHS placement fee)", "amount": 19800, "subjects": "Nursing"},
+{"name": "Allied Health / Primary Education Studies", "amount": 18700, "subjects": "Midwifery, Physiotherapy, Podiatry, Occupational Therapy, Operating Department Practice (includes NHS placement fee); Primary Education Studies (non-QTS accelerated degree)"},
+{"name": "Work Placement Year", "amount": 3300, "subjects": "Placement year fee"}
+], "notes": "University lists a fee per programme type rather than classroom/lab bands. Page states fees apply for the full duration of the course."},
+"pg": {"bands": [
+{"name": "MA/MSc programmes", "amount": 18700, "subjects": "Standard taught master's"},
+{"name": "Business Master's with Professional Practice / TESOL (with placement) / PGCE / Nursing", "amount": 19800, "subjects": "As named"},
+{"name": "MBA", "amount": 19690, "subjects": "Master of Business Administration"},
+{"name": "Pharmacy with placement", "amount": 21000, "subjects": "Pharmacy with placement"},
+{"name": "Podiatry/Optometry", "amount": 18590, "subjects": "Podiatry, Optometry"}
+], "notes": "No classroom/lab bands; fee per programme. Distance learning fees vary by course page."},
+"source_urls": ["https://www.hud.ac.uk/international/fees-and-funding/"]
+},
+"University of Hull": {
+"year": "2026/27",
+"ug": {"bands": [], "notes": "No official 2026/27 international UG fee table found. Hull's UG international guide (Sept 2025 entry, so not 2026/27) quotes about 17500 arts and 20000 science; not recorded as a band because it is a different year and was seen only via a search summary. Hull says fees vary by subject, with lab/clinical/specialist courses higher than classroom-based. 2000 GBP per year fee waiver for selected nationalities for 2026/27 (scholarships ignored)."},
+"pg": {"bands": [
+{"name": "London campus: MSc Healthcare Leadership (example)", "amount": 17000, "subjects": "Course-level example, London campus; academic year not stated on page"},
+{"name": "London campus: MSc Artificial Intelligence and Data Science (example)", "amount": 18000, "subjects": "Course-level example, London campus; academic year not stated on page"}
+], "notes": "Hull PGT guide says most programmes fall into a small number of fee bands but gives no amounts; per-course pages needed. Online MSc total fees 9500-11000 (not full-time on-campus, not recorded as a band). Main-campus PGT figures not found."},
+"source_urls": ["https://www.hull.ac.uk/study/international-students/fees-and-funding/postgraduate-taught", "https://www.hull.ac.uk/study/international-students/fees-and-funding/undergraduate", "https://london.hull.ac.uk/courses/msc-healthcare-leadership/", "https://london.hull.ac.uk/courses/msc-artificial-intelligence-and-data-science/"]
+},
+"University of Lancashire": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "Standard bachelor's / foundation year", "amount": null, "subjects": "Range 17750 to 19500 depending on course; exact fee on each course page (e.g. International Business BA 18750)"},
+{"name": "Bioveterinary Sciences BSc", "amount": 28000, "subjects": "Bioveterinary Sciences"},
+{"name": "Dental Therapy BSc", "amount": 44000, "subjects": "Dental Therapy"},
+{"name": "Placement year / study abroad period", "amount": 2755, "subjects": "Placement year"}
+], "notes": "Medicine & Surgery MBBS and Veterinary Medicine & Surgery BVMS listed as 'to be confirmed' on the fee page (a search summary quoted 49950 and 39500 and BDS international route 44500, not confirmed on the fee page itself). No explicit subject bands within the 17750-19500 range."},
+"pg": {"bands": [
+{"name": "Taught full-time (standard)", "amount": null, "subjects": "Range 18750 to 19500 depending on course (e.g. International Business & Management MSc 19250; Aerospace Engineering MSc 19000)"},
+{"name": "Placement year", "amount": 2775, "subjects": "PG placement year"}
+], "notes": "Part-time online taught: 1100-1220 per 20 credits. Research full-time 19250 (not requested)."},
+"source_urls": ["https://www.lancashire.ac.uk/study/fees-and-finance/eu-and-international-students"]
+},
+"University of Leeds": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "English and Film Studies BA (course example)", "amount": 27300, "subjects": "Humanities example"},
+{"name": "International Business and Finance BSc (course example)", "amount": 29000, "subjects": "Business example"},
+{"name": "Mathematics BSc (course example)", "amount": 30400, "subjects": "Science example"},
+{"name": "Medical Engineering MEng/BEng (course example)", "amount": 33700, "subjects": "Engineering example"},
+{"name": "Medicine and Surgery MBChB (course example)", "amount": 50500, "subjects": "Clinical example"}
+], "notes": "Leeds publishes international fees per course only (no bands). Leeds pages returned 403 to the fetch tool, so figures come from search-result extracts of official courses.leeds.ac.uk pages; those pages do not clearly state the entry year, so treat as indicative and verify. Incoming study abroad 2026/27: 21200 per year."},
+"pg": {"bands": [
+{"name": "Inequalities and Social Science MSc (2026 entry)", "amount": 26500, "subjects": "Social science example"},
+{"name": "International Health MSc", "amount": 30100, "subjects": "Health example; total for 12-month course; entry year not confirmed"},
+{"name": "Economics MSc", "amount": 31200, "subjects": "Economics example; total; entry year not confirmed"},
+{"name": "Management Consulting MSc (2026 entry)", "amount": 33000, "subjects": "Business example"},
+{"name": "Computer Science MSc", "amount": 34600, "subjects": "Computing example; entry year not confirmed"},
+{"name": "Finance and Investment MSc / Quantitative Finance MSc (2027 entry)", "amount": 36600, "subjects": "Finance examples; 2027 entry"}
+], "notes": "Per-course fees only; entry years mixed (2026 and 2027) on the pages. Fees shown are totals for full-time 12-month MScs."},
+"source_urls": ["https://courses.leeds.ac.uk/3440/mathematics-bsc", "https://courses.leeds.ac.uk/g558/english-and-film-studies-ba", "https://courses.leeds.ac.uk/f447/medical-engineering-meng-beng", "https://courses.leeds.ac.uk/5580/medicine-and-surgery-mbchb", "https://courses.leeds.ac.uk/g962/management-consulting-msc", "https://courses.leeds.ac.uk/i229/inequalities-and-social-science-msc", "https://courses.leeds.ac.uk/f408/international-health-msc", "https://courses.leeds.ac.uk/f922/economics-msc", "https://courses.leeds.ac.uk/k299/computer-science-msc", "https://courses.leeds.ac.uk/f840/finance-and-investment-msc"]
+},
+"University of Liverpool": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "Economics BSc / Accounting and Finance BSc (course examples)", "amount": 27000, "subjects": "Business/economics examples, 2026/27; year in industry fee 1955"},
+{"name": "Biological Sciences with Foundation Year BSc (course example)", "amount": 29100, "subjects": "Science example, 2026/27 (another page for the same course says 33000 for 2027/28)"}
+], "notes": "Liverpool publishes fees per course only (no bands). 2026/27 fees rise 3.4% for continuing international students. Fee pages from search extracts; main fee landing page has no amounts."},
+"pg": {"bands": [
+{"name": "Physiotherapy (Pre-registration) MSc (2026/27)", "amount": 32000, "subjects": "Clinical/health example"},
+{"name": "International Business MSc (2027/28)", "amount": 31000, "subjects": "Business example; 2027/28 figure"},
+{"name": "Computer Science MSc / Cyber Security MSc (2027/28)", "amount": 34000, "subjects": "Computing examples; 2027/28 figure; 2026/27 figure said to be updated shortly"}
+], "notes": "Per-course fees only. On-campus 2026/27 figures for most MScs not found; the 2027/28 figures shown are the latest. Online Management/IS Management MSc 17947 (online, not recorded as full-time). 2000 deposit for 2026/27 PGT."},
+"source_urls": ["https://www.liverpool.ac.uk/courses/accounting-and-finance-bsc-hons/2026", "https://www.liverpool.ac.uk/courses/redirect/economics-bsc-hons/fees-finance", "https://www.liverpool.ac.uk/courses/redirect/biological-sciences-with-a-foundation-year-leading-to-bsc-hons/fees-finance", "https://www.liverpool.ac.uk/courses/physiotherapy-pre-registration-msc", "https://www.liverpool.ac.uk/courses/computer-science-msc", "https://www.liverpool.ac.uk/courses/international-business-msc", "https://news.liverpool.ac.uk/2026/07/01/your-tuition-fees-supporting-your-education/"]
+},
+"University of Manchester": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "BSc Education (course example)", "amount": 30500, "subjects": "Education"},
+{"name": "BSc International Business, Finance and Economics (course example)", "amount": 33100, "subjects": "Business/economics"},
+{"name": "BSc Biology (course example)", "amount": 36200, "subjects": "Biological sciences"},
+{"name": "BSc Mathematics with Placement Year (course example)", "amount": 36300, "subjects": "Mathematics"},
+{"name": "BSc Chemistry (course example)", "amount": 37800, "subjects": "Chemistry"}
+], "notes": "Manchester publishes fees per course only (no bands). Placement/study abroad year charged at 20% of the standard international fee. University may raise fees up to 7% a year in later years. 2027 entry example: International Business, Finance and Economics 34800."},
+"pg": {"bands": [
+{"name": "MA International Relations (Standard)", "amount": 29400, "subjects": "Social science example"},
+{"name": "MSc Economics and Data Science", "amount": 33600, "subjects": "Economics/data example"},
+{"name": "MSc Data Science (Social Analytics)", "amount": 35200, "subjects": "Data science example"},
+{"name": "MSc Health Data Science / MSc Business Analytics and AI", "amount": 35700, "subjects": "Examples"},
+{"name": "MSc Structural Engineering", "amount": 38400, "subjects": "Engineering example"}
+], "notes": "Per-course fees only; year labels on course pages not fully certain for each (International Relations and Structural Engineering from search extract, 2026/27). Master's fees landing page gives no amounts. 2500 deposit for self-funded international applicants."},
+"source_urls": ["https://www.manchester.ac.uk/study/undergraduate/courses/2026/00544/bsc-chemistry/", "https://www.manchester.ac.uk/study/undergraduate/courses/2026/00524/bsc-biology/", "https://www.manchester.ac.uk/study/undergraduate/courses/2026/09224/bsc-international-business-finance-and-economics/", "https://www.manchester.ac.uk/study/undergraduate/courses/2026/12384/bsc-education/", "https://www.manchester.ac.uk/study/masters/courses/list/10872/ma-international-relations-standard/all-content/POLI72000", "https://www.manchester.ac.uk/study/masters/courses/list/04410/msc-structural-engineering/course-details/CIVL60000", "https://www.manchester.ac.uk/study/masters/fees-and-funding/international-student-fees/"]
+},
+"University of Nottingham": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "Science with Foundation Year", "amount": 20000, "subjects": "Science foundation year (CGF0 BSc, CFG0 MSci)"},
+{"name": "Arts, humanities, social science, business, maths", "amount": 24700, "subjects": "Classics, Ancient History, English, History, Philosophy, Politics, Criminology, Sociology, Social Work, Film and Screen Studies, Business and Management, Finance, Accounting and Management, Industrial Economics, Mathematics, Statistics, Financial Mathematics, Liberal Arts, International Security Studies"},
+{"name": "Engineering and Physical Sciences Foundation (MEng H100)", "amount": 25400, "subjects": "Engineering foundation"},
+{"name": "Accountancy, Economics, Law, Archaeology, PPE", "amount": 26800, "subjects": "Accountancy (N410), Economics, Law (M100), Archaeology (V400), Archaeology and History, Ancient History and Archaeology, Philosophy Politics and Economics"},
+{"name": "Geography", "amount": 29000, "subjects": "Geography (L700, F800), Geography with Business, Archaeology and Geography"},
+{"name": "Engineering, sciences and most remaining courses", "amount": 33000, "subjects": "Aerospace, chemical, civil, electrical, environmental, manufacturing, mechanical engineering, product design, architecture (BArch), biology, chemistry, physics, computer science, natural sciences, psychology, sport and exercise science, midwifery, nursing, pharmacy, vet Gateway year"},
+{"name": "Physiotherapy / Sport Rehabilitation", "amount": 34000, "subjects": "Physiotherapy (B160), Sport Rehabilitation (C630)"},
+{"name": "Veterinary Medicine and Surgery", "amount": 41800, "subjects": "D100, D190"},
+{"name": "Medicine / Graduate Entry Medicine", "amount": 47000, "subjects": "A100, A101"}
+], "notes": "BSc Accountancy: full fee year 1, 85% in years 2-4. Vet Gateway (D104) year 1 charged 33000, later years at D100 rate. Arts/humanities and Medicine foundation years not open to international students."},
+"pg": {"bands": [
+{"name": "Global Environmental Sustainability MSc (2027 entry example)", "amount": 26900, "subjects": "Environment example"},
+{"name": "Education MSc (2027 entry example)", "amount": 28700, "subjects": "Education example"},
+{"name": "Secondary PGCE (2027 entry)", "amount": 26900, "subjects": "Teacher training"},
+{"name": "Advanced Materials MSc / Mechanical Engineering MSc (2027 entry examples)", "amount": 34000, "subjects": "Engineering"},
+{"name": "Business and Management MSc / International Business MSc / Data Science MSc / Nutritional Sciences MSc (2027 entry examples)", "amount": 34800, "subjects": "Business, data science, nutrition"}
+], "notes": "Nottingham publishes PGT fees on each course page only; the figures found are 2027 entry (2026/27 pages were not retrievable). Education MSc page says it can still be applied for 2026-27. CAS deposit at least 4500 for PGT from August 2026."},
+"source_urls": ["https://www.nottingham.ac.uk/fees/tuitionfees/202627/undergraduate.aspx", "https://www.nottingham.ac.uk/pgstudy/fees/postgraduate-fees.aspx", "https://www.nottingham.ac.uk/pgstudy/course/taught/business-and-management-msc", "https://www.nottingham.ac.uk/pgstudy/course/taught/mechanical-engineering-msc", "https://www.nottingham.ac.uk/pgstudy/course/taught/education-msc", "https://www.nottingham.ac.uk/pgstudy/course/taught/global-environmental-sustainability-msc"]
+},
+"University of Plymouth": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "BSc International Relations / BA International Finance (course examples)", "amount": 18150, "subjects": "Social science / business"},
+{"name": "BSc Biological Sciences with Foundation Year (course example)", "amount": 19200, "subjects": "Science"}
+], "notes": "Plymouth lists fees per course only (no bands). 2027-28 examples: International Relations 18700; Biological Sciences BSc 19800. Optional placement year 1955 (UK) or 1465 (entirely outside UK). Possible 6% government levy may raise fees. Welcome scholarship ignored."},
+"pg": {"bands": [
+{"name": "MSc International Business (course example)", "amount": 19500, "subjects": "Business"},
+{"name": "MSc Occupational Therapy (Pre-Registration) (course example)", "amount": 20150, "subjects": "Health"}
+], "notes": "Per-course only. MSc International Business 2027-28: 20100."},
+"source_urls": ["https://www.plymouth.ac.uk/courses/undergraduate/bsc-international-relations", "https://www.plymouth.ac.uk/courses/undergraduate/ba-international-finance", "https://www.plymouth.ac.uk/courses/undergraduate/bsc-biological-sciences-with-foundation-year", "https://www.plymouth.ac.uk/courses/postgraduate/msc-international-business", "https://www.plymouth.ac.uk/courses/postgraduate/msc-occupational-therapy-pre-registration", "https://www.plymouth.ac.uk/study/fees/placement-years"]
+},
+"University of Portsmouth": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "Standard range, UG and PGT combined", "amount": null, "subjects": "17900 to 20000 per year for most courses; depends on classroom-based, lab-based or both"}
+], "notes": "Portsmouth publishes one range for 2026/27 (17900-20000; placement year 2990-20000). 2027/28 range 17750-20950. Course examples (September 2027 start): BSc Geology 20950; BA History and Politics 18800. Fees may rise up to 5% per year. Placement year charged at a nominal fee."},
+"pg": {"bands": [
+{"name": "MSc International Criminal Justice and Intelligence / MSc Sport Management (course examples)", "amount": 17900, "subjects": "Social science, sport"},
+{"name": "MSc International Business and Management / Project Management / Intl Hospitality and Tourism Mgmt with Professional Experience (course examples)", "amount": 18600, "subjects": "Business, tourism (the last has a separate 3000 placement fee)"},
+{"name": "MSc Computer Science (course example)", "amount": 19200, "subjects": "Computing, September 2026 entry"}
+], "notes": "Per-course only; page range for 2026/27 is 17900-20000. Some January 2027 starts. 20% alumni discount ignored."},
+"source_urls": ["https://www.port.ac.uk/study/international-students/tuition-fees", "https://www.port.ac.uk/study/courses/postgraduate-taught/msc-computer-science", "https://www.port.ac.uk/study/courses/postgraduate-taught/msc-sport-management", "https://www.port.ac.uk/study/courses/postgraduate-taught/msc-project-management", "https://www.port.ac.uk/study/courses/undergraduate/bsc-hons-geology"]
+},
+"University of Sheffield": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "Standard overseas UG range (all courses except Medicine and Dentistry)", "amount": null, "subjects": "25000 to 32100 per year; page does not say which courses fall at which point; use fees look-up tool"},
+{"name": "Medicine", "amount": 47575, "subjects": "Five-year course, per year"},
+{"name": "Dentistry", "amount": 50925, "subjects": "Five-year course, per year"}
+], "notes": "Year abroad charged at 15% of full-time rate; industrial placement 13.33% (20% for CHMU07 Chemistry and MBB MBiol level 4 placement). First-year fee fixed for the course."},
+"pg": {"bands": [], "notes": "Sheffield publishes PGT overseas fees only via an interactive look-up tool (tools.sheffield.ac.uk/fees/pgt), not retrievable here; no amounts recorded. Deposit 2000 (5000 for DClinDent)."},
+"source_urls": ["https://sheffield.ac.uk/new-students/tuition-fees/undergraduate-overseas", "https://sheffield.ac.uk/new-students/tuition-fees/postgraduate-taught-overseas"]
+},
+"University of Southampton": {
+"year": "2027/28",
+"ug": {"bands": [
+{"name": "Lowest listed (e.g. Midwifery, Nursing)", "amount": 26800, "subjects": "Midwifery, Nursing"},
+{"name": "BSc Computer Science (course example)", "amount": 33000, "subjects": "Computing; table year not confirmed"},
+{"name": "BEng/MEng Computer Engineering (course example)", "amount": 33500, "subjects": "Engineering; table year not confirmed"},
+{"name": "Highest listed (e.g. Physics, Chemistry)", "amount": 34100, "subjects": "Physics, Chemistry"}
+], "notes": "Southampton's current UG fee table is headed 2027/28 (column labels not shown; second column appears to be overseas, range 26800-34100). Medicine BM5 listed 35900 with clinical years 64900. 2026 entry overseas UG figures were not found (the UG fees page links only a 2024-25 table). Fees rise each year for starts from 1 Aug 2026."},
+"pg": {"bands": [
+{"name": "Education, Archaeology, History MA, Politics, Gerontology", "amount": 28600, "subjects": "Range 28600-29900 (Education 28600, Archaeology 28800, History MA 28800, Politics 29900)"},
+{"name": "Applied Linguistics, English Literature, TESOL, Statistics, Actuarial Science", "amount": 29100, "subjects": "Range 29100-30300 (Statistics and Actuarial 30100)"},
+{"name": "Fine Art, Film Studies, Music, Clinical Psychology, Human Factors", "amount": 32000, "subjects": "Range 32000-34100"},
+{"name": "Public/Global Health, Civil Eng, Biomedical Eng", "amount": 34700, "subjects": "Range 34700-36200"},
+{"name": "Chemistry, Computer Science, Data Science, Cyber Security", "amount": 36600, "subjects": "Range 36600-36800"},
+{"name": "Management, Digital Marketing, MBA, Accounting and Finance, Finance", "amount": 37000, "subjects": "Range 37000-38100 (MBA 37400; Accounting/Finance 38100)"}
+], "notes": "2027 entry full-time overseas PGT fees (groupings are the fetched summary's, not labelled bands on the page). 2026 entry PGT figures not available. Global Executive MBA part-time 18700. 2000 deposit."},
+"source_urls": ["https://southampton.ac.uk/courses/fees/postgraduate.page", "https://www.southampton.ac.uk/courses/fees/undergraduate/tuition-fees.page", "https://www.southampton.ac.uk/courses/fees/international.page"]
+},
+"University of Stirling": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "Mathematics, Economics, Management, Psychology of Sport, Education (Secondary, most combinations)", "amount": 19500, "subjects": "Course-level fee; 2027/28 20000"},
+{"name": "Psychology, Software Engineering, Biology, Ecology and Conservation, Education with Biology/Env. Geography", "amount": 23700, "subjects": "Course-level fee"},
+{"name": "LLB Law Accelerated Graduate", "amount": 18100, "subjects": "Law (2027/28 19900)"}
+], "notes": "Stirling's fee table lists a fee per course (no formal bands); groupings above are the observed levels from search extract of the official fees table. Study abroad 2026/27: 19500 per year. Scholarships ignored."},
+"pg": {"bands": [
+{"name": "Journalism and Communication / Global Environmental Sustainability", "amount": 21800, "subjects": "2027/28 22500"},
+{"name": "Most full-time taught MSc (International Business, Mathematics and Data Science, HRM, AI, FinTech, Podiatry 24 months)", "amount": 24300, "subjects": "Standard MSc rate across many courses"}
+], "notes": "Fees per course; main PGT fee page gave no table. MSc Applied Professional Studies shows 22500 (year unclear)."},
+"source_urls": ["https://www.stir.ac.uk/courses/fees/", "https://www.stir.ac.uk/courses/pg-taught/international-journalism/", "https://www.stir.ac.uk/courses/ug/law-accelerated-graduate/", "https://www.stir.ac.uk/study/fees-funding/postgraduate-tuition-fees/"]
+},
+"University of Strathclyde": {
+"year": "2027/28",
+"ug": {"bands": [
+{"name": "BA Business / BA Accounting (course examples)", "amount": 23200, "subjects": "Business, accounting"},
+{"name": "BA Psychology & Social Policy (course example)", "amount": 24100, "subjects": "Social science; year not confirmed"},
+{"name": "BBA Business Administration (course example)", "amount": 25800, "subjects": "Business; year not confirmed"},
+{"name": "MEng Civil Engineering (course example)", "amount": 31100, "subjects": "Engineering, 2027/28"}
+], "notes": "Strathclyde publishes fees per course only (no bands). Pages checked state 2027/28 (Sept 2027 start); 2026/27 fees were not found. Annual increases capped at 10%. 15% Faculty of Engineering international scholarship for Sept 2026 UG noted but ignored. No central UG/PGT fee table found."},
+"pg": {"bands": [
+{"name": "MSc International Management (course example)", "amount": 29350, "subjects": "Business, 2027/28"},
+{"name": "Software Development / Information Management MSc (course examples)", "amount": 32100, "subjects": "Computing/information; year not confirmed"},
+{"name": "Machine Learning & Deep Learning MSc; Systems Engineering Management", "amount": 32800, "subjects": "Computing/engineering; year not confirmed"},
+{"name": "Advanced Computer Science MSc", "amount": 33800, "subjects": "Computing; year not confirmed"}
+], "notes": "Per-course only. Some figures come from search extracts without a stated year; January 2027 starts pay 2026/27 fees, September 2027 starts pay 2027/28."},
+"source_urls": ["https://www.strath.ac.uk/courses/undergraduate/business/", "https://www.strath.ac.uk/courses/undergraduate/civilengineeringmeng/", "https://www.strath.ac.uk/courses/postgraduatetaught/internationalmanagement/", "https://www.strath.ac.uk/courses/postgraduatetaught/advancedcomputerscience/", "https://www.strath.ac.uk/courses/postgraduatetaught/softwaredevelopment/"]
+},
+"University of Sunderland": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "Standard international full-time", "amount": 17500, "subjects": "Many Business, Computing, Engineering, Creative Arts, Education, Health and Psychology courses"},
+{"name": "MPharm Pharmacy", "amount": 20000, "subjects": "Pharmacy"},
+{"name": "Occupational Therapy Accelerated", "amount": 24000, "subjects": "Occupational Therapy"},
+{"name": "Placement year", "amount": 1200, "subjects": "Undergraduate placement year"}
+], "notes": "LLB Law Canadian Route and Professional Policing accelerated degrees 17500. Integrated Foundation Year 5760/9790 (applicability to international students not stated). Fees may rise with RPI."},
+"pg": {"bands": [
+{"name": "Applied Master's, MBA (Professional Practice), MA Marketing (Professional Practice)", "amount": 19000, "subjects": "MSc Applied Computing, Cybersecurity, Data Science, Project Management; MA Marketing PP; MBA PP and MBA with PgCert"},
+{"name": "MBA (main programme and specialisms)", "amount": 20000, "subjects": "Sports Management, Marketing, Finance, HRM, Supply Chain Management"},
+{"name": "Nursing", "amount": 17900, "subjects": "MSc Nursing 17900; MNurse (Adult) 18000; MSc OSPAP 18000"},
+{"name": "MA/MSc Extended Award", "amount": 18335, "subjects": "Extended award programmes"},
+{"name": "PGCE (listed courses)", "amount": 17500, "subjects": "Listed PGCE routes"},
+{"name": "MA Social Work / MBA Top-Up", "amount": 10000, "subjects": "As named"}
+], "notes": "Fee per programme, no bands. PgCerts 5666. Distance learning programmes charge same for Home and International."},
+"source_urls": ["https://www.sunderland.ac.uk/undergraduate-fees", "https://www.sunderland.ac.uk/postgraduate-fees"]
+},
+"University of Surrey": {
+"year": "2027/28",
+"ug": {"bands": [
+{"name": "International Airline and Airport Management", "amount": 15200, "subjects": "Single course"},
+{"name": "Games Art", "amount": 18000, "subjects": "Single course"},
+{"name": "Nursing, Paramedic Science, Pharmaceutical Sciences, Midwifery", "amount": 19500, "subjects": "Health; also Chemistry and Chemical Engineering foundation year"},
+{"name": "Law (JD Pathway), Law with Business", "amount": 21500, "subjects": "Law"},
+{"name": "Economics, Mathematics, Financial Maths, Business Economics and Data Analytics", "amount": 22700, "subjects": "As named"},
+{"name": "Law, Criminology, Politics, Sociology, Media and Communication, International Relations, Games Design", "amount": 23800, "subjects": "Social sciences, media"},
+{"name": "Accounting and Finance, Business Management, Music, Film Production", "amount": 24600, "subjects": "Business, music, film"},
+{"name": "Most engineering, physics, chemistry, biology, psychology, sport science and nutrition", "amount": 28100, "subjects": "STEM"},
+{"name": "Veterinary Medicine and Science", "amount": 44900, "subjects": "BVMSci"},
+{"name": "Medicine (Graduate Entry)", "amount": 50300, "subjects": "BMBS"}
+], "notes": "2027 entry table (selection, not every course); 2026 entry overseas UG figures were not found. Professional training year fee 2010. Fees rise 4% for each subsequent year of study."},
+"pg": {"bands": [
+{"name": "Human Nutrition MSc / Public Health MSc", "amount": 19300, "subjects": "Health"},
+{"name": "LLM Professional Legal Practice / Film MA", "amount": 21500, "subjects": "Law, creative"},
+{"name": "Mathematics MSc / Creative Writing MA / Economics MSc", "amount": 22200, "subjects": "22200 / 22700 / 22800"},
+{"name": "Business Psychology MSc / Acting MA", "amount": 23600, "subjects": "23600 / 24800"},
+{"name": "Accounting and Finance MSc / Data Science MSc", "amount": 25800, "subjects": "25800 / 26900"},
+{"name": "MBA", "amount": 29000, "subjects": "Master of Business Administration"},
+{"name": "Artificial Intelligence MSc", "amount": 29100, "subjects": "AI"}
+], "notes": "September 2027 entry, per-course; bands are groupings of representative courses, not labelled on the page. Some courses TBC. Placement fee year 2: 1850."},
+"source_urls": ["https://www.surrey.ac.uk/fees-and-funding/tuition-fees/undergraduate-2027-entry", "https://www.surrey.ac.uk/fees-and-funding/tuition-fees/postgraduate-taught-course-fees-2027-entry"]
+},
+"University of Sussex": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "Lower tuition fee", "amount": 23500, "subjects": "Subjects not stated on the fee page; integrated foundation year starts at lower rate; check course page"},
+{"name": "Higher tuition fee", "amount": 27300, "subjects": "Subjects not stated on the fee page; check course page"}
+], "notes": "September 2026 entry; rises 3% a year. Course pages for 2027 entry show e.g. International Business with placement 24200, Music BA 28100."},
+"pg": {"bands": [
+{"name": "Data Science MSc", "amount": 24200, "subjects": "Computing/data"},
+{"name": "International Business Economics MSc / Financial Mathematics MSc", "amount": 24995, "subjects": "Economics, mathematics"},
+{"name": "Nanomaterials and Energy MSc", "amount": 27300, "subjects": "Science (lab-type)"}
+], "notes": "Per-course; fee page says masters fees depend on course (examples with placement year 23500-26995). Tuition fee deposit 5000. Geopolitics and International Affairs MA 24200 (year not confirmed)."},
+"source_urls": ["https://www.sussex.ac.uk/study/fees-funding/tuition-fees/fee-status", "https://www.sussex.ac.uk/study/fees-funding/tuition-fees", "https://www.sussex.ac.uk/study/masters/courses/data-science-msc", "https://www.sussex.ac.uk/study/masters/courses/financial-mathematics-msc", "https://www.sussex.ac.uk/study/masters/courses/nanomaterials-and-energy-msc"]
+},
+"University of Westminster": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "Standard international fee (most UG courses incl. foundation year)", "amount": 17600, "subjects": "Business, Creative Computing, AI, Computer Games Development, foundation year"},
+{"name": "Business Computing with Foundation (2026-27 page)", "amount": 19000, "subjects": "Single course; inconsistent with other 2026-27 pages"}
+], "notes": "Fees do not rise during study once enrolled. 2027-28 entry: Computer Science BSc 19000. Westminster fees landing page itself gives only the 17600 foundation figure; course pages used for the rest."},
+"pg": {"bands": [
+{"name": "MSc International Business and Management / International Finance and Banking (course examples)", "amount": 18000, "subjects": "Business, finance"},
+{"name": "MBA", "amount": 20000, "subjects": "Page may be out of date"},
+{"name": "Transport Planning PG Diploma", "amount": 10670, "subjects": "PGDip"}
+], "notes": "Per-course only."},
+"source_urls": ["https://www.westminster.ac.uk/study/fees-and-funding/fees", "https://www.westminster.ac.uk/business-and-management-courses/2026-27/september/full-time/international-business-ba-honours", "https://www.westminster.ac.uk/business-and-management-courses/2026-27/january/full-time/international-business-and-management-msc", "https://www.westminster.ac.uk/business-and-management-courses/2026-27/january/full-time/master-of-business-administration-mba"]
+},
+"University of York": {
+"year": "2026/27",
+"ug": {"bands": [
+{"name": "BA Social and Political Sciences (course example)", "amount": 26900, "subjects": "Social science, September 2026"},
+{"name": "LLB International Human Rights Law (course example)", "amount": 27500, "subjects": "Law, 2026/27 entry"},
+{"name": "MEng Computer Science with Artificial Intelligence (course example)", "amount": 32350, "subjects": "Computing, September 2026"}
+], "notes": "York publishes fees per course only (no bands). Year abroad charged at 15%, year in industry 20%. Fees may rise with CPI (max 10%). Visiting students 23000 per two semesters (UG)."},
+"pg": {"bands": [
+{"name": "MSc Public Policy and Management (course example)", "amount": 26900, "subjects": "Social science"},
+{"name": "MSc Economics (course example)", "amount": 27250, "subjects": "Economics"},
+{"name": "MSc Human Resource Management (course example)", "amount": 31900, "subjects": "Business"},
+{"name": "MSc Statistics and Computational Finance (course example)", "amount": 32900, "subjects": "Maths/finance"},
+{"name": "MSc Finance / Financial Economics (course examples)", "amount": 34500, "subjects": "Finance"}
+], "notes": "One-year full-time, per course. Visiting taught postgraduate 23800 per two semesters. Deposit 3000 (12000 for some countries)."},
+"source_urls": ["https://www.york.ac.uk/study/undergraduate/fees-funding/international/", "https://www.york.ac.uk/study/undergraduate/courses-2026/llb-ihrl/", "https://www.york.ac.uk/study/undergraduate/courses-2026/meng-computer-science-artificial-intelligence/", "https://www.york.ac.uk/study/undergraduate/courses-2026/ba-social-political-sciences/", "https://www.york.ac.uk/study/postgraduate-taught/courses-2026/msc-finance/", "https://www.york.ac.uk/study/postgraduate-taught/courses/msc-economics/", "https://www.york.ac.uk/study/postgraduate-taught/courses/msc-public-policy-management/", "https://www.york.ac.uk/study/postgraduate-taught/courses/msc-human-resource-management/"]
+}
+},
+"gaps": [
+"Hull: no official 2026/27 international UG figures found (course pages show UK fee only); main-campus PGT fees not found; only London-campus examples.",
+"Leeds: courses.leeds.ac.uk and students.leeds.ac.uk returned 403; figures are from search extracts only, entry years unclear/mixed. Not bypassed.",
+"Sheffield: no PGT amounts (interactive look-up tool only); UG range 25000-32100 without subject mapping.",
+"Southampton: 2026 entry fees not found; recorded 2027/28 UG table (column labels uncertain) and 2027 entry PGT table.",
+"Strathclyde: only 2027/28 course fees found; no central fee table; some PGT figures lack a stated year.",
+"Surrey: 2026 entry fees not found; recorded 2027 entry UG and PGT tables.",
+"Nottingham PGT: only 2027 entry course fees found.",
+"Liverpool: no UG/PGT band table; on-campus 2026/27 MSc fees mostly unpublished (2027/28 shown).",
+"Lancashire: exact fees within 17750-19500 (UG) and 18750-19500 (PGT) are per course; Medicine/Vet fees TBC on fee page.",
+"Portsmouth and Sheffield UG: only ranges, no per-subject mapping.",
+"Sussex: fee page does not say which subjects are lower vs higher band.",
+"Many per-course figures come from search-result extracts of official pages rather than full page fetches; verify before publishing."
+]
+}
