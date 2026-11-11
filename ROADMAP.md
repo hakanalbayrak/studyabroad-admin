@@ -1640,3 +1640,7 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 - 82 of 156 empty France programs got EUR fees (Istituto Marangoni 45, Omnes 10, Excelia 10, LISAA 11, KEDGE 3, Rennes 1, Strate 2); data in docs/data/fr-fees/. Marangoni figures are 2027/28; LISAA 2025/26.
 - Still empty: AIM Paris, Aivancity, Atelier Chardon Savard, ESGCI, IESA, Institut Culinaire de France, MJM, Schiller, École de Management Appliqué, PSB, most Omnes MSc (brand unclear), Rennes MSc (combined M1+M2 price only), KEDGE MSc.
 - Data issue: Istituto Marangoni (non-Paris entity) holds London/Dubai/Milan programs under country France – review/split. Marangoni 49546 (Fashion Design & Innovation) skipped (yearly vs total unclear).
+
+## 2026-11-11 — Istituto Marangoni split
+- Umbrella entity "Istituto Marangoni" (id 545, 64 programs) removed; programs moved to campus entities by first listed campus (Milano, Firenze, London, Paris; no suffix → Paris). Multi-campus programs live under the first campus only. Dubai campus entity and its programs deleted (not served); ", Dubai" stripped from names.
+- London programs have no fee (GBP not researched).
