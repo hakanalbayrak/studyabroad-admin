@@ -1669,3 +1669,6 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 - 19 institutions, 338 English full-time Bachelor/Master programs (KU Leuven 94, UGent 66, VUB 27, UAntwerp 27, UCLouvain 33, ULB 13, ULiège 13, UHasselt 6, UNamur 3, Vlerick 7, AMS 8, Howest 6, Thomas More 19, KdG 5, Artevelde 5, PXL 2, UCLL 2, Odisee 1, LUCA 1). Data: docs/data/be-import/.
 - Per program: non-EU fee (2026/27; Vlerick/AMS/VUB 2027/28), non-EU deadline, English test minimums (requirements_json), and an "Admission (non-EU / Turkish applicants)" note in description_en. Turkey-specific rules only published by KU Leuven (bachelors: Lise + YKS), KdG, UCLL; others use general non-EU rules.
 - Gaps: Erasmushogeschool Brussel has no English degrees (skipped); LUCA/Odisee data from search snippets; Erasmus Mundus/joint programs often without fee/English score; UGent 14 programs of 2026-27 not in 2027-28; many deadlines are 2026/27 dates. No logos/descriptions/guide pages for the new entities.
+
+## 2026-11-12 — Switzerland fees
+- Swiss Hotel Management School: BA International Hospitality Management set to CHF 65,300 (Year 1, 2026/27; programme total ~130,700). BSc Hospitality Business Management (only unofficial 22,000 CHF/yr found) and ONCAMPUS International Year One (no fee published) left empty – fill manually.
