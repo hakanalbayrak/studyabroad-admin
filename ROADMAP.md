@@ -1678,5 +1678,5 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 - Open items overview and UK fee gap list were published as artifacts (see chat).
 
 ## 2026-11-12 — Logos
-- Auto-collected 43 of 53 website-bearing entities' logos (apple-touch-icon / site icon, Google favicon fallback) into public/img/logos/ and set logo_url. Quality is icon-size (up to ~180px). Not found: Maastricht, Thomas More, ULiège, ULB, UAntwerp, UEA, Univ. of Szeged, Charles University, ASU, ACU, Ajman, ARU College, Twente International College.
+- Auto-collected 40 of 53 website-bearing entities' logos (apple-touch-icon / site icon, Google favicon fallback) into public/img/logos/ and set logo_url. Quality is icon-size (up to ~180px). Not found: Maastricht, Thomas More, ULiège, ULB, UAntwerp, UEA, Univ. of Szeged, Charles University, ASU, ACU, Ajman, ARU College, Twente International College.
 - No other entity has a website_url or logo yet (522 of 575 entities): add website URLs first, then re-run the collector (logos.py approach).
