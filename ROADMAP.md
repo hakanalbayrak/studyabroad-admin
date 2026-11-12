@@ -1672,3 +1672,7 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 
 ## 2026-11-12 — Switzerland fees
 - Swiss Hotel Management School: BA International Hospitality Management set to CHF 65,300 (Year 1, 2026/27; programme total ~130,700). BSc Hospitality Business Management (only unofficial 22,000 CHF/yr found) and ONCAMPUS International Year One (no fee published) left empty – fill manually.
+
+## 2026-11-12 — NL/BE entity descriptions + pages
+- 29 new Dutch/Belgian entities got description + website (logos still missing). 28 draft kabul-rehberi pages created for them (guide scope route). Stale provider mapping for deleted entity 545 cleared.
+- Open items overview and UK fee gap list were published as artifacts (see chat).
