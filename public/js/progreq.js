@@ -5,10 +5,10 @@
   var MARK = 'Maths/IB/AP requirements (international applicants):';
   var ADM = 'Admission (non-EU / Turkish applicants):';
   var LABELS = { 'Admission': 'Kabul', 'IB': 'IB', 'AP': 'AP', 'A-level': 'A-Level', 'Maths test': 'Matematik testi',
-    'Maths prerequisite': 'Matematik ön koşulu', 'Turkish Lise diploma': 'Türk Lise diploması', 'Note': 'Not' };
+    'Maths prerequisite': 'Matematik ön koşulu', 'Turkish Lise diploma': 'Türk Lise diploması', 'Note': 'Not', 'Typical offer': 'Tipik giriş şartı', 'Tests': 'Sınavlar' };
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function split(block) {
-    var re = /(?:^|\s)(Admission|IB|AP|A-level|Maths test|Maths prerequisite|Turkish Lise diploma|Note):\s/g, m, hits = [];
+    var re = /(?:^|\s)(Admission|Typical offer|IB|AP|A-level|Tests|Maths test|Maths prerequisite|Turkish Lise diploma|Note):\s/g, m, hits = [];
     while ((m = re.exec(block))) hits.push({ label: m[1], at: m.index + m[0].length, start: m.index });
     return hits.map(function (h, i) { return { label: h.label, text: block.slice(h.at, i + 1 < hits.length ? hits[i + 1].start : block.length).trim() }; });
   }
