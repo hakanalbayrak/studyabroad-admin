@@ -1684,3 +1684,7 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 ## 2026-11-13 — Websites + logos for all entities
 - Website URLs added to 501 entities (found by agents; many well-known domains from memory, spot-checked for reachability; 404 pages replaced by site root). 21 left empty: Shorelight "International Accelerator" entries (523-532), TOP Tech College, MUDT, DIFC, UCD ISC, European School of Economics Milan/Florence/Rome, Ascencia Malta/Valencia, Austria Foundation Center ECFY, Centre of Entertainment Arts.
 - Logos auto-collected for 396 of 554 entities with a website (icons up to ~180px; pathway colleges of a provider/group share the group logo, e.g. Kaplan, ONCAMPUS, SRH, Northeastern). About 158 have no logo (blocked sites, no usable icon): re-run later or upload by hand.
+
+## 2026-11-13 — Duplicate entities merged
+- Merged 17 duplicate pairs (programs moved to the keeper; duplicates by normalized name dropped, missing fees filled from the dropped copy; provider tags unioned; stale provider rows cleared): Brighton, Brunel, Geneva Business School, NABA, UMass Amherst/Boston, Nevada Reno, Wisconsin River Falls/Superior/Whitewater, Illinois Chicago, Buffalo, Pacific, UWE Bristol, Wilfrid Laurier, Aivancity, Ecole de Management Applique.
+- Kept separate on purpose: "Turkish Students Only" variants (Manchester, Tilburg, Sheffield...), campus records (Schiller, Marangoni, IED, EU Business School, LIU Brooklyn), pathway colleges beside their university. UCLL duplicate (UC Leuven-Limburg vs UCLL) still open.
