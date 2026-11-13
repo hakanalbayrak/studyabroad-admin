@@ -8,6 +8,7 @@
   <link href="/css/site.css?v=20261009" rel="stylesheet">
   <link href="/css/icons.css" rel="stylesheet">
   <script src="/js/i18n.js"></script>
+  <script src="/js/progreq.js"></script>
   <style>
     .u-hero { padding: clamp(22px, 4vw, 44px) 0 clamp(18px, 3vw, 28px); }
     .u-crumbs { font-size: .82rem; color: var(--muted); margin-bottom: 12px; }
@@ -256,6 +257,7 @@ function cardHtml(p) {
     </div>
     <div>${fee}</div>
     ${(dur || intake || eng || gpa) ? `<div class="prog-details">${[dur, intake, eng, gpa].join('')}</div>` : ''}
+    ${window.ProgReq ? ProgReq.html(p) : ''}
     <div class="prog-actions">
       <a class="btn-grad" href="/apply?uni=${university.id}&program=${p.id}"><i class="bi bi-send-fill"></i>${_t('p.apply', 'Başvur')}</a>
       <button class="icon-btn" type="button" title="${T('uni.req.info')}" aria-label="${T('uni.req.info')}" onclick="openLeadModal(${p.id})"><i class="bi bi-envelope-fill"></i></button>
