@@ -1,0 +1,1487 @@
+{
+ "23926": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and Physics, Chemistry, Further Maths or Computer Science; IB 32 points with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics and one of Computer Science, Physics or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "AAB to include A-level Mathematics and Physics or Chemistry or Further Maths or Computer Science; three A-levels; General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics; IB HL Mathematics",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/aerospace-engineering-courses/aerospace-engineering-beng",
+  "confidence": "high"
+ },
+ "23927": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths A; IB 32 points with HL 7,6,6 incl. Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics 6; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "A*AA to include A-level Mathematics grade A; General Studies and Critical Thinking not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics grade A; IB HL Mathematics 6",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/computer-science-courses/artificial-intelligence-ai-computer-science-bsc",
+  "confidence": "high"
+ },
+ "23928": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "53569": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and Physics, Chemistry, Further Maths or Computer Science; IB 32 points with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics and one of Computer Science, Physics or Chemistry",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "AAB to include A-level Mathematics and Physics or Chemistry or Further Maths or Computer Science; three A-levels; General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics; IB HL Mathematics",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/aerospace-engineering-courses/aerospace-engineering-beng",
+  "confidence": "medium"
+ },
+ "53574": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Chemistry or Physics; IB 32 points with HL 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,6 incl. Mathematics and Chemistry or Physics (SL Maths 7 considered)",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Chemistry or Physics; General Studies, Critical Thinking, Use of Maths not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics; IB HL Maths 6 or SL Maths 7",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/chemical-engineering-courses/chemical-engineering-beng",
+  "confidence": "medium"
+ },
+ "53572": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; three A-levels",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/civil-engineering-courses/civil-engineering-beng",
+  "confidence": "medium"
+ },
+ "53571": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; General Studies not normally accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/electronic-electrical-and-systems-engineering-courses/electronic-electrical-engineering-beng",
+  "confidence": "medium"
+ },
+ "53573": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "53575": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "53576": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths plus one of Further Maths, CS, Biology, Physics, Chemistry or DT; IB 32 points with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics and one of Computer Science, Biology, Physics, Chemistry or Design Technology",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB incl. Mathematics plus one of Further Maths, Computer Science, Biology, Physics, Chemistry, Design Technology; General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics; IB HL Mathematics",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/materials-science-and-engineering-courses/materials-science-and-engineering-beng",
+  "confidence": "medium"
+ },
+ "53578": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB including A-level Mathematics; Further Maths and Physics advantageous",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/mechanical-engineering-courses/mechanical-engineering-beng",
+  "confidence": "medium"
+ },
+ "53577": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB including A-level Mathematics; Further Maths and Physics advantageous",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/mechanical-engineering-courses/mechanical-engineering-automotive-beng",
+  "confidence": "medium"
+ },
+ "53579": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; General Studies not normally accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/electronic-electrical-and-systems-engineering-courses/mechatronic-robotic-engineering-beng",
+  "confidence": "medium"
+ },
+ "24004": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "53584": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths A; IB 32 points with HL 7,6,6 incl. Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics 6; SL English 5",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "A*AA to include A-level Mathematics grade A; General Studies and Critical Thinking not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics grade A; IB HL Mathematics 6",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/computer-science-courses/artificial-intelligence-ai-computer-science-bsc",
+  "confidence": "medium"
+ },
+ "53610": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "53611": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths A; IB 32 points with HL 7,6,6 incl. Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics 6; SL English 5",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "A*AA to include A-level Mathematics grade A; General Studies and Critical Thinking not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics grade A; IB HL Mathematics 6",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/computer-science-courses/computer-science-bsc",
+  "confidence": "medium"
+ },
+ "53615": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. one required science (Maths counts); IB 32 points with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,5,5 incl. HL in one required science",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "ABB including one required science (Maths and Further Maths accepted); three A-levels",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "No specific maths grade stated; Maths counts as a required science",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/geology-and-earth-sciences-courses/environmental-and-engineering-geoscience-bsc",
+  "confidence": "medium"
+ },
+ "53616": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. one required science (Maths counts); IB 32 points with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,5,5",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "ABB including one required science (Maths and Further Maths accepted); General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "No specific maths grade stated; Maths counts as a required science",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/geography-urban-planning-and-environmental-sciences-courses/environmental-science-bsc",
+  "confidence": "medium"
+ },
+ "53618": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. one required science (Maths counts); IB 32 points with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,5,5",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "ABB including one required science (Maths and Further Maths accepted); General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "No specific maths grade stated; Maths counts as a required science",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/geography-urban-planning-and-environmental-sciences-courses/environmental-science-bsc",
+  "confidence": "low"
+ },
+ "53632": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths or Further Maths A; IB 32 points with HL 7,6,6 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "TMUA / STEP / MAT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May reduce the offer by one grade; A in Maths or Further Maths still required"
+  },
+  "a_level": "A*AA to include grade A in Mathematics or Further Mathematics",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A in A-level Maths or Further Maths; TMUA/STEP/MAT results may lower the offer by one grade",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/mathematics-courses/mathematics-computer-science-bsc",
+  "confidence": "medium"
+ },
+ "53635": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "53647": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics (Physics A*A); IB 32 points with HL 7,6,6 incl. Maths 7, Physics 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics 7 and Physics 6",
+   "note": "Institution-wide rules applied to this programme"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "A*AA (or AAAA) including Mathematics and Physics; General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (A*) and Physics",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/physics-and-astronomy-courses/physics-data-science-bsc",
+  "confidence": "medium"
+ },
+ "24023": {
+  "stem": false
+ },
+ "24053": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Chemistry or Physics; IB 32 points with HL 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,6 incl. Mathematics and Chemistry or Physics (SL Maths 7 considered)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Chemistry or Physics; General Studies, Critical Thinking, Use of Maths not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics; IB HL Maths 6 or SL Maths 7",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/chemical-engineering-courses/chemical-engineering-beng",
+  "confidence": "high"
+ },
+ "24059": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; three A-levels",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/civil-engineering-courses/civil-engineering-beng",
+  "confidence": "low"
+ },
+ "24060": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; three A-levels",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/civil-engineering-courses/civil-engineering-beng",
+  "confidence": "high"
+ },
+ "24061": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "24062": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths A; IB 32 points with HL 7,6,6 incl. Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics 6; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "A*AA to include A-level Mathematics grade A; General Studies and Critical Thinking not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics grade A; IB HL Mathematics 6",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/computer-science-courses/computer-science-bsc",
+  "confidence": "high"
+ },
+ "24063": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "24024": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "24064": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; General Studies not normally accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/electronic-electrical-and-systems-engineering-courses/electronic-electrical-engineering-beng",
+  "confidence": "low"
+ },
+ "24065": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; General Studies not normally accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/electronic-electrical-and-systems-engineering-courses/electronic-electrical-engineering-beng",
+  "confidence": "low"
+ },
+ "24066": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; General Studies not normally accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/electronic-electrical-and-systems-engineering-courses/electronic-electrical-engineering-beng",
+  "confidence": "high"
+ },
+ "24030": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. one required science (Maths counts); IB 32 points with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,5,5 incl. HL in one required science",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "ABB including one required science (Maths and Further Maths accepted); three A-levels",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "No specific maths grade stated; Maths counts as a required science",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/geology-and-earth-sciences-courses/environmental-and-engineering-geoscience-bsc",
+  "confidence": "high"
+ },
+ "24031": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. one required science (Maths counts); IB 32 points with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,5,5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "ABB including one required science (Maths and Further Maths accepted); General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "No specific maths grade stated; Maths counts as a required science",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/geography-urban-planning-and-environmental-sciences-courses/environmental-science-bsc",
+  "confidence": "high"
+ },
+ "24032": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. one required science (Maths counts); IB 32 points with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,5,5",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "ABB including one required science (Maths and Further Maths accepted); General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "No specific maths grade stated; Maths counts as a required science",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/geography-urban-planning-and-environmental-sciences-courses/environmental-science-bsc",
+  "confidence": "low"
+ },
+ "24072": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths plus one of Further Maths, CS, Biology, Physics, Chemistry or DT; IB 32 points with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics and one of Computer Science, Biology, Physics, Chemistry or Design Technology",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB incl. Mathematics plus one of Further Maths, Computer Science, Biology, Physics, Chemistry, Design Technology; General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics; IB HL Mathematics",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/materials-science-and-engineering-courses/materials-science-and-engineering-beng",
+  "confidence": "high"
+ },
+ "24073": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths or Further Maths A; IB 32 points with HL 7,6,6 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "TMUA / STEP / MAT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May reduce the offer by one grade; A in Maths or Further Maths still required"
+  },
+  "a_level": "A*AA to include grade A in Mathematics or Further Mathematics",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A in A-level Maths or Further Maths; TMUA/STEP/MAT results may lower the offer by one grade",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/mathematics-courses/mathematics-computer-science-bsc",
+  "confidence": "high"
+ },
+ "24076": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB including A-level Mathematics; Further Maths and Physics advantageous",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/mechanical-engineering-courses/mechanical-engineering-beng",
+  "confidence": "high"
+ },
+ "24077": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB including A-level Mathematics; Further Maths and Physics advantageous",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/mechanical-engineering-courses/mechanical-engineering-beng",
+  "confidence": "high"
+ },
+ "24078": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "24079": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; General Studies not normally accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/electronic-electrical-and-systems-engineering-courses/mechatronic-robotic-engineering-beng",
+  "confidence": "high"
+ },
+ "53661": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and Physics, Chemistry, Further Maths or Computer Science; IB 32 points with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics and one of Computer Science, Physics or Chemistry",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "AAB to include A-level Mathematics and Physics or Chemistry or Further Maths or Computer Science; three A-levels; General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics; IB HL Mathematics",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/aerospace-engineering-courses/aerospace-engineering-beng",
+  "confidence": "low"
+ },
+ "53663": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Chemistry or Physics; IB 32 points with HL 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,6 incl. Mathematics and Chemistry or Physics (SL Maths 7 considered)",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Chemistry or Physics; General Studies, Critical Thinking, Use of Maths not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics; IB HL Maths 6 or SL Maths 7",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/chemical-engineering-courses/chemical-engineering-beng",
+  "confidence": "low"
+ },
+ "53664": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Chemistry or Physics; IB 32 points with HL 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,6 incl. Mathematics and Chemistry or Physics (SL Maths 7 considered)",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Chemistry or Physics; General Studies, Critical Thinking, Use of Maths not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics; IB HL Maths 6 or SL Maths 7",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/chemical-engineering-courses/chemical-engineering-beng",
+  "confidence": "low"
+ },
+ "53662": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; three A-levels",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/civil-engineering-courses/civil-engineering-beng",
+  "confidence": "low"
+ },
+ "53666": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; three A-levels",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/civil-engineering-courses/civil-engineering-beng",
+  "confidence": "low"
+ },
+ "53665": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths A; IB 32 points with HL 7,6,6 incl. Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics 6; SL English 5",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "A*AA to include A-level Mathematics grade A; General Studies and Critical Thinking not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics grade A; IB HL Mathematics 6",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/computer-science-courses/computer-science-bsc",
+  "confidence": "low"
+ },
+ "53667": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; General Studies not normally accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/electronic-electrical-and-systems-engineering-courses/electronic-electrical-engineering-beng",
+  "confidence": "low"
+ },
+ "53670": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "53668": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "53669": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths plus one of Further Maths, CS, Biology, Physics, Chemistry or DT; IB 32 points with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics and one of Computer Science, Biology, Physics, Chemistry or Design Technology",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB incl. Mathematics plus one of Further Maths, Computer Science, Biology, Physics, Chemistry, Design Technology; General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics; IB HL Mathematics",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/materials-science-and-engineering-courses/materials-science-and-engineering-beng",
+  "confidence": "low"
+ },
+ "53671": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB including A-level Mathematics; Further Maths and Physics advantageous",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/mechanical-engineering-courses/mechanical-engineering-beng",
+  "confidence": "low"
+ },
+ "53672": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB including A-level Mathematics; Further Maths and Physics advantageous",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/mechanical-engineering-courses/mechanical-engineering-beng",
+  "confidence": "low"
+ },
+ "53673": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 32 points with HL 6,6,5 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,6,5 incl. Mathematics",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "Mathematics Aptitude test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May be set by admissions tutor for applicants with alternative maths qualifications"
+  },
+  "a_level": "AAB to include A-level Mathematics; General Studies not normally accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (Mathematics Aptitude test possible for alternative qualifications)",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/electronic-electrical-and-systems-engineering-courses/mechatronic-robotic-engineering-beng",
+  "confidence": "low"
+ },
+ "53687": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths A; IB 32 points with HL 7,6,6 incl. Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics 6; SL English 5",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "A*AA to include A-level Mathematics grade A; General Studies and Critical Thinking not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics grade A; IB HL Mathematics 6",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/computer-science-courses/computer-science-bsc",
+  "confidence": "low"
+ },
+ "53686": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. one required science (Maths counts); IB 32 points with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 6,5,5",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "ABB including one required science (Maths and Further Maths accepted); General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "No specific maths grade stated; Maths counts as a required science",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/geography-urban-planning-and-environmental-sciences-courses/environmental-science-bsc",
+  "confidence": "low"
+ },
+ "53696": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths or Further Maths A; IB 32 points with HL 7,6,6 incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": {
+   "name": "TMUA / STEP / MAT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "May reduce the offer by one grade; A in Maths or Further Maths still required"
+  },
+  "a_level": "A*AA to include grade A in Mathematics or Further Mathematics",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A in A-level Maths or Further Maths; TMUA/STEP/MAT results may lower the offer by one grade",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/mathematics-courses/mathematics-computer-science-bsc",
+  "confidence": "low"
+ },
+ "53704": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics (Physics A*A); IB 32 points with HL 7,6,6 incl. Maths 7, Physics 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics 7 and Physics 6",
+   "note": "Offer taken from the matching BEng/BSc programme; integrated master or variant may differ"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "A*AA (or AAAA) including Mathematics and Physics; General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (A*) and Physics",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/physics-and-astronomy-courses/physics-data-science-bsc",
+  "confidence": "low"
+ },
+ "24080": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted institution-wide; programme-specific grades not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": null,
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate",
+  "confidence": "low"
+ },
+ "24083": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics (Physics A*A); IB 32 points with HL 7,6,6 incl. Maths 7, Physics 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 7,6,6 incl. Mathematics 7 and Physics 6",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; English test required (IELTS 6.0 overall, 5.5 per band)",
+  "math_test": null,
+  "a_level": "A*AA (or AAAA) including Mathematics and Physics; General Studies not accepted",
+  "turkish_route": "Turkish Lise Diplomas\u0131 is not listed as a direct-entry qualification; international foundation pathway or first year of university study typically required",
+  "prerequisite_maths": "A-level Mathematics (A*) and Physics",
+  "source_url": "https://www.birmingham.ac.uk/study/undergraduate/subjects/physics-and-astronomy-courses/physics-data-science-bsc",
+  "confidence": "high"
+ },
+ "23991": {
+  "stem": false
+ },
+ "24049": {
+  "stem": false
+ },
+ "24086": {
+  "stem": false
+ },
+ "24008": {
+  "stem": false
+ },
+ "24050": {
+  "stem": false
+ }
+}

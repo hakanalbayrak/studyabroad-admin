@@ -1,0 +1,587 @@
+{
+ "37298": {
+  "stem": true,
+  "typical_offer": "HND or Foundation Degree in a computing-relevant subject",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Entry is via HND or foundation degree in computing; Turkish Lise alone not sufficient for this top-up",
+  "prerequisite_maths": "IELTS 6.0 (min 6.0 Writing and Speaking, 5.5 Reading and Listening)",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-applied-computing-top",
+  "confidence": "medium"
+ },
+ "35792": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths and Physics at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics and Physics (or Electronics)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees; Maths and Physics required at Level 3",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/beng-hons-aeronautical-engineering",
+  "confidence": "low"
+ },
+ "35793": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths and Physics at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics and Physics (or Electronics)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees; Maths and Physics required at Level 3",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/beng-hons-biomedical-engineering",
+  "confidence": "low"
+ },
+ "35795": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths and Physics at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics and Physics (or Electronics)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees; Maths and Physics required at Level 3",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/beng-hons-electrical-electronic-engineering",
+  "confidence": "low"
+ },
+ "35796": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths and Physics at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics and Physics (or Electronics)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees; Maths and Physics required at Level 3",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/beng-hons-general-engineering",
+  "confidence": "medium"
+ },
+ "35797": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "15 points at HL; Maths and Physics at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics and Physics (or Electronics)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees; Maths and Physics required at Level 3",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/beng-hons-mechanical-engineering",
+  "confidence": "medium"
+ },
+ "35798": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths and Physics at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics and Physics (or Electronics)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees; Maths and Physics required at Level 3",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/beng-hons-mechatronics-computer-systems-engineering",
+  "confidence": "low"
+ },
+ "35799": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths and Physics at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics and Physics (or Electronics)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees; Maths and Physics required at Level 3",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/beng-hons-product-design-engineering",
+  "confidence": "low"
+ },
+ "35800": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths and Physics at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics and Physics (or Electronics)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees; Maths and Physics required at Level 3",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/beng-hons-railway-engineering",
+  "confidence": "low"
+ },
+ "35801": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths and Physics at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics and Physics (or Electronics)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees; Maths and Physics required at Level 3",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/beng-electrical-electronic-engineering",
+  "confidence": "low"
+ },
+ "35794": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths and Physics at HL, 5 in HL Maths",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics (grade C)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/beng-hons-civil-engineering",
+  "confidence": "medium"
+ },
+ "37293": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths and Physics at HL, 5 in HL Maths",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics (grade C)",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-civil-engineering",
+  "confidence": "medium"
+ },
+ "35813": {
+  "stem": false
+ },
+ "35824": {
+  "stem": false
+ },
+ "35833": {
+  "stem": false
+ },
+ "35834": {
+  "stem": false
+ },
+ "35814": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics or Computer Science",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-cloud-computing",
+  "confidence": "medium"
+ },
+ "35815": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics or Computer Science",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "35816": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics or Computer Science",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-computer-science-web-mobile-technologies",
+  "confidence": "medium"
+ },
+ "35817": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics or Computer Science",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-computer-science-education-qualified-teacher-status",
+  "confidence": "medium"
+ },
+ "35818": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics or Computer Science",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-computing-business",
+  "confidence": "medium"
+ },
+ "35821": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL; Maths at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics or Computer Science",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-cyber-security-networks",
+  "confidence": "medium"
+ },
+ "35822": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (96 contextual; 64 for foundation-year version)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "15 points at HL",
+   "note": "Institution-wide: IB Diploma also accepted for direct entry (about 24-25 points with 15 at HL per UEL regional guidance). Points listed on UEL course pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels in at least two subjects incl. Mathematics or Computer Science",
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-data-science-artificial-intelligence",
+  "confidence": "medium"
+ },
+ "35819": {
+  "stem": false
+ },
+ "35836": {
+  "stem": false
+ },
+ "37294": {
+  "stem": true,
+  "typical_offer": "72 UCAS points (64 contextual)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish high school diploma (Devlet Lise / Lise Bitirme) accepted with GPA 4.0 or grade 70+ for undergraduate entry; foundation-year versions available for those below standard",
+  "prerequisite_maths": "GCSE English and Maths grade 4/C (or Level 2 Functional Skills); IELTS 5.5 overall for most degrees",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/fdsc-civil-engineering-construction-management",
+  "confidence": "medium"
+ },
+ "37297": {
+  "stem": true,
+  "typical_offer": "HND or Foundation Degree in a computing-relevant subject",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Entry is via HND or foundation degree in computing; Turkish Lise alone not sufficient for this top-up",
+  "prerequisite_maths": "IELTS 6.0 (min 6.0 Writing and Speaking, 5.5 Reading and Listening)",
+  "source_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-applied-computing-top",
+  "confidence": "low"
+ }
+}

@@ -1,0 +1,1037 @@
+{
+ "50644": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and a science; IB 34 with 17 at HL incl. HL Maths 5 (AA) / 6 (AI)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths 5 (Analysis and Approaches) or 6 (Applications and Interpretation) plus 5 at HL in another science",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including Maths and another accepted science subject (Biology, Chemistry, Physics, Further Maths etc.); with EPQ ABB plus A in EPQ",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50646": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 36 with 18 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50647": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 with 17 at HL, incl. HL Maths (Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6 at HL Maths (Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50648": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 18 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50649": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Chemistry; IB 36 with 18 at HL, incl. HL Maths and Chemistry (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths and Chemistry (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths and Chemistry",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Chemistry; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/courses/chemical-engineering-degree-beng",
+  "confidence": "high"
+ },
+ "50650": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 18 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50651": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 with 17 at HL, incl. HL Maths (Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6 at HL Maths (Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50653": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 18 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50652": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 18 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50654": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 with 17 at HL, incl. HL Maths (Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6 at HL Maths (Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50655": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 36 with 18 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/courses/mechanical-engineering-degree-beng",
+  "confidence": "high"
+ },
+ "50656": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 36 with 18 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50657": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 with 17 at HL, incl. HL Maths (Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6 at HL Maths (Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50677": {
+  "stem": false
+ },
+ "50678": {
+  "stem": false
+ },
+ "50682": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 with 17 at HL, incl. HL Maths (Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6 at HL Maths (Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including Maths at A; with EPQ ABB incl. Maths (min A) plus A in EPQ",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/courses/computer-science-degree-bsc",
+  "confidence": "high"
+ },
+ "50683": {
+  "stem": true,
+  "typical_offer": "A-level BBC; IB 28 (14 HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "No specific subjects",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC, no specific subjects; portfolio typically required",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "GCSE Maths grade 4 or equivalent",
+  "source_url": "https://www.southampton.ac.uk/courses/creative-computing-degree-bsc",
+  "confidence": "high"
+ },
+ "50691": {
+  "stem": false
+ },
+ "50710": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 18 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50711": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 18 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50740": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50744": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths; IB 38 with 19 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50745": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 18 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50746": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 18 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50747": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 18 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50748": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50749": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50751": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50750": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50752": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50753": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50755": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50754": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50756": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50757": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50758": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50760": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50759": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50761": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 18 at HL, incl. HL Maths (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "6 at HL in Maths (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Maths",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ },
+ "50768": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/courses/physics-with-artificial-intelligence-masters-mphys",
+  "confidence": "high"
+ },
+ "50770": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 38 with 19 at HL, incl. HL Maths and Physics (Maths: Analysis and Approaches preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "6 at HL in Maths and Physics (Maths: Analysis and Approaches preferred)",
+   "note": "Institution-wide IB range for undergraduate entry is generally 28-38 points depending on course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted. For A-level-grade offers: AAA = three AP tests at 5, or two at 5 plus SAT 1350/ACT 29; AAB = 5,5,4 or two 5s plus SAT 1300-1350/ACT 27-29; ABB = 5,4,4; A*AA = three 5s or two 5s plus SAT 1350/ACT 31. Required subjects (e.g. Maths, Physics) must be met with that subject at AP level or IB HL; SAT/ACT cannot satisfy subject requirements. No separate rule for Calculus AB vs BC published.",
+   "note": "Course pages do not list AP; rules from the University's US entry equivalencies"
+  },
+  "tests": "SAT/ACT not required; can count towards grade equivalence for US applicants (replaces one AP/Honors course) but cannot meet subject requirements",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA including A in Maths and Physics",
+  "turkish_route": "Lise Diplomas\u0131 alone is not clearly enough for direct entry; direct entry needs A-level-equivalent grades (e.g. recognised foundation programme, at least one year of university in Turkey, or IB/A-level). Engineering/Physics/Maths Foundation Year: Lise Diplomas\u0131 with at least 80% overall and at least 80% in maths and physics.",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths grade 4; Engineering/Physics/Maths Foundation Year for applicants without the required subjects",
+  "source_url": "https://www.southampton.ac.uk/international/entry-qualification-equivalencies/united-states",
+  "confidence": "medium"
+ }
+}

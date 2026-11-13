@@ -1,0 +1,758 @@
+{
+ "51114": {
+  "stem": true,
+  "typical_offer": "A-level ABB-BBC incl. B in Maths; IB 32-30 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics 5 (range 32-30 points)",
+   "note": "Offer range also stated as HL points (e.g. 655-554)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BBC including grade B in Maths; A in EPQ lowers offer by one grade; T Levels not accepted",
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": "A-level/IB Mathematics required (B / HL 5)",
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/course/civil-engineering-beng",
+  "confidence": "medium"
+ },
+ "51115": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Maths at A-level expected; grades follow Cardiff civil engineering range",
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": "Mathematics at A-level/IB HL expected",
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/course/civil-engineering-beng",
+  "confidence": "low"
+ },
+ "51113": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": null,
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/course/civil-engineering-beng",
+  "confidence": "low"
+ },
+ "51116": {
+  "stem": true,
+  "typical_offer": "A-level ABB-BBC incl. B in Maths; IB 32-30 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics 5 (range 32-30 points)",
+   "note": "Offer range also stated as HL points (e.g. 655-554)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BBC including grade B in Maths; A in EPQ lowers offer by one grade; T Levels not accepted; science practical must be passed where part of A-level",
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": "A-level/IB Mathematics required (B / HL 5)",
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/course/electrical-and-electronic-engineering-beng",
+  "confidence": "medium"
+ },
+ "51117": {
+  "stem": true,
+  "typical_offer": "A-level AAB-BBB incl. B in Maths; IB 34-31 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Mathematics 5 (range 34-31 points, or 665-555 in 3 HL)",
+   "note": "Offer range also stated as HL points (e.g. 655-554)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB-BBB including grade B in Maths",
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": "A-level/IB Mathematics required (B / HL 5)",
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/course/mechanical-engineering-beng",
+  "confidence": "medium"
+ },
+ "51118": {
+  "stem": true,
+  "typical_offer": "A-level AAB-BBB incl. B in Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB-BBB including grade B in Maths; science practical must be passed where part of A-level",
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": "A-level Mathematics grade B required",
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/course/mechanical-electrical-engineering-beng",
+  "confidence": "medium"
+ },
+ "51119": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": null,
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/course/electrical-and-electronic-engineering-beng",
+  "confidence": "low"
+ },
+ "51123": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": "GCSE Maths grade B/6 or equivalent (not needed with A-level Maths)",
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/2026/applied-software-engineering-bsc",
+  "confidence": "low"
+ },
+ "51140": {
+  "stem": true,
+  "typical_offer": "A-level ABB-BBC; IB 32-30 or 655-554 in 3 HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "32-30 overall or 655-554 in 3 HL",
+   "note": "Offer range also stated as HL points (e.g. 655-554)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BBC; A in EPQ lowers offer by one grade",
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": "GCSE Maths grade B/6 or equivalent (not needed with A-level Maths)",
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/course/computer-science-bsc",
+  "confidence": "medium"
+ },
+ "51141": {
+  "stem": true,
+  "typical_offer": "IB 32-30 or 665-655 in 3 HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "32-30 overall or 665-655 in 3 HL",
+   "note": "Offer range also stated as HL points (e.g. 655-554)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": "GCSE Maths grade B/6 or equivalent (not needed with A-level Maths)",
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/2026/computer-science-with-cyber-security-bsc",
+  "confidence": "medium"
+ },
+ "51142": {
+  "stem": true,
+  "typical_offer": "A-level ABB-BBC; IB 32-30 or 655-554 in 3 HL (as Computer Science); year in industry needs 50% year-one average",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "32-30 overall or 655-554 in 3 HL",
+   "note": "Offer range also stated as HL points (e.g. 655-554)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted for US applicants: three AP exams with scores from 5,4,4 to 4,4,3 (AP Calculus AB/BC variant not specified); high school diploma with minimum GPA 3.0; subject-specific grade requirements must still be evidenced",
+   "note": "Institution-wide US entry rule applied to this programme"
+  },
+  "tests": "SAT/ACT not required; English: IELTS 6.5 overall, min 5.5 each subskill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BBC",
+  "turkish_route": "Turkish Devlet Lise Diplomas\u0131 considered for direct entry; converted to A-level equivalents (e.g. 85% = AAA, 80% = AAB, 75% = ABB, 65% = BCC); recognised International Foundation or 1+ year at a recognised Turkish university also accepted; Cardiff International Foundation needs 55-65% overall",
+  "prerequisite_maths": "GCSE Maths grade B/6 or equivalent (not needed with A-level Maths)",
+  "source_url": "https://www.cardiff.ac.uk/study/undergraduate/courses/course/computer-science-bsc",
+  "confidence": "low"
+ },
+ "41322": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 30 with HL Maths 5 (or SL Maths 7 plus HL science 5)",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL Maths 5 or SL Maths 7 with HL Physics/Biology/Chemistry 5; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics (120 UCAS points)",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A-level/IB Mathematics required; GCSE Maths and English grade 4",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/mechanical-and-design-engineering",
+  "confidence": "high"
+ },
+ "52999": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 30 with HL Maths 5 (or SL Maths 7 plus HL science 5)",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL Maths 5 or SL Maths 7 with HL Physics/Biology/Chemistry 5; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics (120 UCAS points)",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A-level/IB Mathematics required; GCSE Maths and English grade 4",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/electrical-and-electronic-engineering",
+  "confidence": "medium"
+ },
+ "41275": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 30 with HL Maths 5 (or SL Maths 7 plus HL science 5) (typical for City engineering BEngs)",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL Maths 5 or SL Maths 7 with HL science 5; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A-level/IB Mathematics expected",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/mechanical-and-design-engineering",
+  "confidence": "low"
+ },
+ "41278": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 30 with HL Maths 5 (or SL Maths 7 plus HL science 5) (typical for City engineering BEngs)",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL Maths 5 or SL Maths 7 with HL science 5; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A-level/IB Mathematics expected",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/mechanical-and-design-engineering",
+  "confidence": "low"
+ },
+ "41286": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 30 with HL Maths 5 (or SL Maths 7 plus HL science 5) (typical for City engineering BEngs)",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL Maths 5 or SL Maths 7 with HL science 5; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A-level/IB Mathematics expected",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/mechanical-and-design-engineering",
+  "confidence": "low"
+ },
+ "41297": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 30 with HL Maths 5 (or SL Maths 7 plus HL science 5) (typical for City engineering BEngs)",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL Maths 5 or SL Maths 7 with HL science 5; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A-level/IB Mathematics expected",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/mechanical-and-design-engineering",
+  "confidence": "low"
+ },
+ "41298": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 30 with HL Maths 5 (or SL Maths 7 plus HL science 5) (typical for City engineering BEngs)",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL Maths 5 or SL Maths 7 with HL science 5; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A-level/IB Mathematics expected",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/mechanical-and-design-engineering",
+  "confidence": "low"
+ },
+ "41299": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 30 with HL Maths 5 (or SL Maths 7 plus HL science 5) (typical for City engineering BEngs)",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL Maths 5 or SL Maths 7 with HL science 5; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A-level/IB Mathematics expected",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/engineering-with-business",
+  "confidence": "low"
+ },
+ "41290": {
+  "stem": true,
+  "typical_offer": "A-level ABB (Computer Science, Maths or other science preferred); IB 31 with Maths 5 (HL or SL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 31,
+   "subjects": "31 points incl. Maths 5 (HL or SL) and SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB; Computer Science, Maths or another science preferred; General Studies and Critical Thinking not accepted",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "GCSE Maths grade 6 and English grade 4; Maths at A-level/IB preferred",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/computer-science",
+  "confidence": "high"
+ },
+ "41276": {
+  "stem": true,
+  "typical_offer": "A-level ABB (Computer Science, Maths or other science preferred); IB 31 with Maths 5 (HL or SL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 31,
+   "subjects": "31 points incl. Maths 5 (HL or SL) and SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB; Computer Science, Maths or another science preferred; General Studies and Critical Thinking not accepted",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "GCSE Maths grade 6 and English grade 4; Maths at A-level/IB preferred",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/artificial-intelligence",
+  "confidence": "high"
+ },
+ "41289": {
+  "stem": true,
+  "typical_offer": "A-level ABB (Computer Science, Maths or other science preferred); IB 31 with Maths 5 (HL or SL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 31,
+   "subjects": "31 points incl. Maths 5 (HL or SL) and SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB; Computer Science, Maths or another science preferred; General Studies and Critical Thinking not accepted",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "GCSE Maths grade 6 and English grade 4; Maths at A-level/IB preferred",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/computer-science-with-games-technology",
+  "confidence": "medium"
+ },
+ "41288": {
+  "stem": true,
+  "typical_offer": "A-level ABB (Computer Science, Maths or other science preferred); IB 31 with Maths 5 (HL or SL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 31,
+   "subjects": "31 points incl. Maths 5 (HL or SL) and SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB; Computer Science, Maths or another science preferred; General Studies and Critical Thinking not accepted",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "GCSE Maths grade 6 and English grade 4; Maths at A-level/IB preferred",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/computer-science-msci",
+  "confidence": "medium"
+ },
+ "41294": {
+  "stem": true,
+  "typical_offer": "A-level ABB (Computer Science, Maths or other science preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB; Computer Science, Maths or another science preferred",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "Mathematics preferred",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/data-science",
+  "confidence": "low"
+ },
+ "41318": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. A in Maths or Further Maths; IB 33 with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL Mathematics 6; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB with grade A in Mathematics or Further Mathematics (136 points); BTEC DD plus A in A-level Maths",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A in A-level Maths; GCSE Maths grade 4-5 and English 4",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/mathematics-with-data-science",
+  "confidence": "medium"
+ },
+ "53015": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. A in Maths or Further Maths; IB 33 with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL Mathematics 6; SL English 5",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 overall (6.0 writing) for most courses; applicants need equivalent of 3 A-levels with at least one mathematical/scientific/technical subject",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB with grade A in Mathematics or Further Mathematics (136 points); BTEC DD plus A in A-level Maths",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A in A-level Maths; GCSE Maths grade 4-5 and English 4",
+  "source_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/mathematics-with-data-science",
+  "confidence": "medium"
+ },
+ "41293": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. A in Maths (or A Maths AA); IB 35 with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL Maths 6; English 4 HL or 5 SL",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US route: GPA 3.4 plus AP Calculus BC 5 and 5 in one other AP exam; Calculus AB and BC cannot both count; SAT not accepted for actuarial science",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT not accepted for actuarial science",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Mathematics (current page: A in Maths plus AA)",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A-level/IB HL Mathematics required; GCSE English 4",
+  "source_url": "https://www.bayes.citystgeorges.ac.uk/study/undergraduate/courses/actuarial-science",
+  "confidence": "low"
+ },
+ "53008": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. A in Maths (or A Maths AA); IB 35 with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL Maths 6; English 4 HL or 5 SL",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US route: GPA 3.4 plus AP Calculus BC 5 and 5 in one other AP exam; Calculus AB and BC cannot both count; SAT not accepted for actuarial science",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT not accepted for actuarial science",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA including A in Mathematics (current page: A in Maths plus AA)",
+  "turkish_route": "Varies by school: most Turkish applicants are directed to an International Foundation Programme; direct entry only for some schools with about 65% or higher; Bayes (actuarial) lists 85% overall with 85% in grade 12 Maths",
+  "prerequisite_maths": "A-level/IB HL Mathematics required; GCSE English 4",
+  "source_url": "https://www.bayes.citystgeorges.ac.uk/study/undergraduate/courses/actuarial-science",
+  "confidence": "low"
+ }
+}

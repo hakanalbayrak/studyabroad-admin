@@ -1,0 +1,852 @@
+{
+ "25856": {
+  "stem": true,
+  "typical_offer": "UCAS 112; A-level BBC incl Maths + one of Physics/Chemistry/DT/Biology/Further Maths/Electronics/Engineering; IB pass with 14 pts from 3 HL incl HL Maths 4+",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Overall diploma pass; at least 14 points from three HL subjects, one must be Maths with at least 4",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl Mathematics and one of Physics, Chemistry, Design Technology, Biology, Further Maths, Electronics, Engineering; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics required at A-level / IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/aerospace-technology-beng-hons/",
+  "confidence": "high"
+ },
+ "25859": {
+  "stem": true,
+  "typical_offer": "UCAS 112; A-level BBC incl Maths; IB 29 incl HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "HL Mathematics required",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl Mathematics (MEng ABB); General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics required at A-level / IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/architectural-engineering-beng/",
+  "confidence": "high"
+ },
+ "25864": {
+  "stem": true,
+  "typical_offer": "BEng UCAS 120: A-level BBB incl Maths + one science/technology subject; IB pass with 15 pts from 3 HL incl HL Maths 5 (MEng ABB, 16 pts)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Overall pass; at least 15 points from three HL subjects (MEng 16), one must be Maths with at least 5",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng BBB, MEng ABB, both incl Mathematics and one of Physics, Chemistry, DT, Biology, Further Maths, Electronics, Engineering",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics required at A-level / IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/automotive-engineering-mengbeng-hons/",
+  "confidence": "high"
+ },
+ "25878": {
+  "stem": true,
+  "typical_offer": "UCAS 112; A-level BBC incl Maths; IB 29 incl HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "HL Mathematics required",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl Mathematics; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics required at A-level / IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/civil-and-environmental-engineering-beng/",
+  "confidence": "high"
+ },
+ "25879": {
+  "stem": true,
+  "typical_offer": "BEng UCAS 112: BBC incl Maths, IB 27 incl HL Maths; MEng UCAS 128: ABB incl Maths, IB 30",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "HL Mathematics required (MEng IB 30)",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng BBC, MEng ABB, both incl Mathematics",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics required at A-level / IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/civil-engineering-mengbeng/",
+  "confidence": "high"
+ },
+ "25881": {
+  "stem": true,
+  "typical_offer": "BSc UCAS 120: A-level BBB incl one of Maths/Physics/Chemistry/Further Maths/Computer Science/Computing/DT; IB 29 (MSci ABB, IB 31)",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "One HL subject from Mathematics, Physics, Chemistry, Design Technology or IT (MSci IB 31)",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BSc BBB, MSci ABB, incl one of Mathematics, Physics, Chemistry, Further Maths, Computer Science, Computing, DT; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "One of Mathematics/Physics/Chemistry/Further Maths/Computer Science/Design Technology at A-level or IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/computer-science-mscibsc-hons/",
+  "confidence": "high"
+ },
+ "25882": {
+  "stem": true,
+  "typical_offer": "BSc UCAS 120: A-level BBB incl one of Maths/Physics/Chemistry/Further Maths/Computer Science/Computing/DT; IB 29 (MSci ABB, IB 31)",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "One HL subject from Mathematics, Physics, Chemistry, Design Technology or IT (MSci IB 31)",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BSc BBB, MSci ABB, incl one of Mathematics, Physics, Chemistry, Further Maths, Computer Science, Computing, DT; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "One of Mathematics/Physics/Chemistry/Further Maths/Computer Science/Design Technology at A-level or IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/computer-science-with-artificial-intelligence-msci-bsc-hons/",
+  "confidence": "high"
+ },
+ "25883": {
+  "stem": true,
+  "typical_offer": "BEng UCAS 112: BBC incl Maths; IB 27 incl HL Maths + one of Physics/Chemistry/DT/IT (MEng BBB, IB 29)",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "HL Mathematics plus one of Physics, Chemistry, Design Technology or IT (MEng IB 29)",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng BBC, MEng BBB, both incl Mathematics; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics required at A-level / IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/computer-systems-engineering-mengbeng/",
+  "confidence": "high"
+ },
+ "25889": {
+  "stem": true,
+  "typical_offer": "BSc UCAS 120: A-level BBB incl Maths at B; IB 29 incl HL Maths 5 (MSci ABB, IB 31)",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "HL Mathematics with at least 5 points (MSci IB 31)",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BSc BBB, MSci ABB, incl Mathematics at grade B or above; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics at grade B (A-level) or IB HL 5",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/data-science-mscibsc/",
+  "confidence": "high"
+ },
+ "25895": {
+  "stem": true,
+  "typical_offer": "BEng UCAS 112: BBC incl Maths; IB 27 incl HL Maths + one of Physics/Chemistry/DT/IT (MEng BBB, IB 29)",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "HL Mathematics plus one of Physics, Chemistry, Design Technology or IT (MEng IB 29)",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng BBC, MEng BBB, both incl Mathematics; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics required at A-level / IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/electrical-and-electronic-engineering-beng/",
+  "confidence": "high"
+ },
+ "25896": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Institution-wide: IB 30 minimum for Turkey; other countries check course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.coventry.ac.uk/international-students-hub/entry-requirements/",
+  "confidence": "low"
+ },
+ "25902": {
+  "stem": true,
+  "typical_offer": "BSc UCAS 120: A-level BBB incl one of Maths/Physics/Chemistry/Further Maths/Computer Science/Computing/DT; IB 29 (MSci ABB, IB 31)",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "One HL subject from Mathematics, Physics, Chemistry, Design Technology or IT (MSci IB 31)",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BSc BBB, MSci ABB, incl one of Mathematics, Physics, Chemistry, Further Maths, Computer Science, Computing, DT; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "One of Mathematics/Physics/Chemistry/Further Maths/Computer Science/Design Technology at A-level or IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/ethical-hacking-and-cybersecurity-bsc/",
+  "confidence": "high"
+ },
+ "25925": {
+  "stem": true,
+  "typical_offer": "UCAS 112: A-level BBC incl one of Maths/Physics/Chemistry/Further Maths/Computer Science/Computing/DT; IB 29",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "One HL subject from Mathematics, Physics, Chemistry, Design Technology or IT",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl one of Mathematics, Physics, Chemistry, Further Maths, Computer Science, Computing, DT; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "One of Mathematics/Physics/Chemistry/Further Maths/Computer Science/Design Technology at A-level or IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/information-technology-management-bsc/",
+  "confidence": "high"
+ },
+ "25926": {
+  "stem": true,
+  "typical_offer": "UCAS 112: A-level BBC incl one of Maths/Physics/Chemistry/Further Maths/Computer Science/Computing/DT; IB 29",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "One HL subject from Mathematics, Physics, Chemistry, Design Technology or IT",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl one of Mathematics, Physics, Chemistry, Further Maths, Computer Science, Computing, DT; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "One of Mathematics/Physics/Chemistry/Further Maths/Computer Science/Design Technology at A-level or IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/interactive-media-and-web-technologies-bsc-hons/",
+  "confidence": "high"
+ },
+ "25935": {
+  "stem": true,
+  "typical_offer": "BEng UCAS 112: BBC incl Maths; IB pass with 14 pts from 3 HL incl HL Maths 4+ (MEng BBB, 15 pts)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Overall pass; at least 14 points from three HL subjects (MEng 15), Maths at least 4",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng BBC, MEng BBB, both incl Mathematics; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics required at A-level / IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/manufacturing-engineering-mengbeng-hons/",
+  "confidence": "high"
+ },
+ "25939": {
+  "stem": true,
+  "typical_offer": "BEng UCAS 112: BBC incl Maths + Physics/Chemistry/DT/Biology/Further Maths/Electronics/Engineering; IB pass with 15 pts from 3 HL incl HL Maths 5 (MEng BBB, 16 pts)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Overall pass; at least 15 points from three HL subjects (MEng 16), one must be Maths with at least 5",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng BBC, MEng BBB, incl Mathematics and one of Physics, Chemistry, DT, Biology, Further Maths, Electronics, Engineering",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics required at A-level / IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/mechanical-engineering-mengbeng-hons/",
+  "confidence": "high"
+ },
+ "25943": {
+  "stem": true,
+  "typical_offer": "BEng UCAS 120: BBB incl Maths + one science/technology subject; IB pass with 15 pts from 3 HL incl HL Maths 5 (MEng ABB, 16 pts)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Overall pass; at least 15 points from three HL subjects (MEng 16), one must be Maths with at least 5",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng BBB, MEng ABB, incl Mathematics and one of Physics, Chemistry, DT, Biology, Further Maths, Electronics, Engineering",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "Mathematics required at A-level / IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/motorsport-engineering-mengbeng-hons/",
+  "confidence": "high"
+ },
+ "25965": {
+  "stem": true,
+  "typical_offer": "UCAS 112: A-level BBC incl one of Maths/Physics/Chemistry/Further Maths/Computer Science/Computing/DT; IB 29",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "One HL subject from Mathematics, Physics, Chemistry, Design Technology or IT",
+   "note": "Institution-wide IB rules apply for other countries; course page states the points."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted: 2 AP subjects with minimum score 3 for US applicants; Calculus AB/BC variants and course-specific AP subjects not specified.",
+   "note": "Institution-wide US rule; applies to all Coventry programmes."
+  },
+  "tests": "US applicants: high-school GPA 3.0 plus SAT 550 in each band or ACT 25 in each band, or 2 AP subjects at 3+ (per international entry requirements). English: IELTS 6.0 (min 5.5 per component) or TOEFL iBT 79.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl one of Mathematics, Physics, Chemistry, Further Maths, Computer Science, Computing, DT; General Studies excluded",
+  "turkish_route": "Turkey High School Diploma with average 4.0/5.0 CGPA accepted (institution-wide rule); IB 30 or 3 A-levels at C also accepted; recognised UK foundation programme is an alternative route. Integrated foundation year available on many courses.",
+  "prerequisite_maths": "One of Mathematics/Physics/Chemistry/Further Maths/Computer Science/Design Technology at A-level or IB HL",
+  "source_url": "https://www.coventry.ac.uk/course-structure/ug/eec/software-engineering-bsc/",
+  "confidence": "high"
+ },
+ "25912": {
+  "stem": false,
+  "source_url": "https://www.coventry.ac.uk/international-students-hub/entry-requirements/"
+ },
+ "25957": {
+  "stem": false,
+  "source_url": "https://www.coventry.ac.uk/international-students-hub/entry-requirements/"
+ },
+ "25966": {
+  "stem": false,
+  "source_url": "https://www.coventry.ac.uk/international-students-hub/entry-requirements/"
+ },
+ "28750": {
+  "stem": true,
+  "typical_offer": "UCAS 112 (BEng); A-level BBC with Maths or Physics at C+; IB 26 with HL Maths or Physics (MEng 120 points, BBB, IB 30)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "HL Maths or Physics",
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (BEng) / BBB (MEng), with one A-level at C or above in Mathematics or Physics",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible. Engineering Year Zero foundation available.",
+  "prerequisite_maths": "Maths or Physics at A-level grade C or above / IB HL",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/aeronautical-engineering-beng-meng-degree/aeronautical-engineering-beng-meng-degree.aspx",
+  "confidence": "high"
+ },
+ "37232": {
+  "stem": true,
+  "typical_offer": "UCAS 112 (BEng); A-level BBC with Maths or Physics at C+; IB 26 with HL Maths or Physics (MEng 120 points, BBB, IB 30)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "HL Maths or Physics",
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (BEng) / BBB (MEng), with one A-level at C or above in Mathematics or Physics",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible. Engineering Year Zero foundation available.",
+  "prerequisite_maths": "Maths or Physics at A-level grade C or above / IB HL",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/automotive-engineering/automotive-engineering.aspx",
+  "confidence": "high"
+ },
+ "28793": {
+  "stem": true,
+  "typical_offer": "UCAS 112 (BEng); A-level BBC with Maths or Physics at C+; IB 26 with HL Maths or Physics (MEng 120 points, BBB, IB 30)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "HL Maths or Physics",
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (BEng) / BBB (MEng), with one A-level at C or above in Mathematics or Physics",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible. Engineering Year Zero foundation available.",
+  "prerequisite_maths": "Maths or Physics at A-level grade C or above / IB HL",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/electrical-and-electronic-engineering/electrical-electronic-engineering.aspx",
+  "confidence": "high"
+ },
+ "28845": {
+  "stem": true,
+  "typical_offer": "UCAS 112 (BEng); A-level BBC with Maths or Physics at C+; IB 26 with HL Maths or Physics (MEng 120 points, BBB, IB 30)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "HL Maths or Physics",
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (BEng) / BBB (MEng), with one A-level at C or above in Mathematics or Physics",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible. Engineering Year Zero foundation available.",
+  "prerequisite_maths": "Maths or Physics at A-level grade C or above / IB HL",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/mechanical-engineering-beng-degree/mechanical-engineering-beng-degree.aspx",
+  "confidence": "high"
+ },
+ "28796": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible. Engineering Year Zero foundation available.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.dmu.ac.uk/international/en/entry-requirements.aspx",
+  "confidence": "low"
+ },
+ "28753": {
+  "stem": true,
+  "typical_offer": "UCAS 112; A-level BBC; IB 26; five GCSEs at 4/C incl English and Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible.",
+  "prerequisite_maths": "Five GCSEs at grade 4/C incl English and Maths; no specific A-level subject listed",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/applied-computing-bsc/applied-computing-bsc.aspx",
+  "confidence": "high"
+ },
+ "28758": {
+  "stem": true,
+  "typical_offer": "UCAS 112; A-level BBC; IB 26; five GCSEs at 4/C incl English and Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible.",
+  "prerequisite_maths": "Five GCSEs at grade 4/C incl English and Maths; no specific A-level subject listed",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/artificial-intelligence-bsc-degree/artificial-intelligence-bsc-hons.aspx",
+  "confidence": "high"
+ },
+ "28767": {
+  "stem": true,
+  "typical_offer": "UCAS 112; A-level BBC; IB 26; five GCSEs at 4/C incl English and Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible.",
+  "prerequisite_maths": "Five GCSEs at grade 4/C incl English and Maths; no specific A-level subject listed",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-games-programming-bsc-degree/computer-games-programming-bsc-degree.aspx",
+  "confidence": "high"
+ },
+ "28768": {
+  "stem": true,
+  "typical_offer": "UCAS 112; A-level BBC; IB 26; five GCSEs at 4/C incl English and Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible.",
+  "prerequisite_maths": "Five GCSEs at grade 4/C incl English and Maths; no specific A-level subject listed",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-networks-and-security/computer-networks-security-bsc.aspx",
+  "confidence": "high"
+ },
+ "28769": {
+  "stem": true,
+  "typical_offer": "UCAS 112; A-level BBC; IB 26; five GCSEs at 4/C incl English and Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible.",
+  "prerequisite_maths": "Five GCSEs at grade 4/C incl English and Maths; no specific A-level subject listed",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/computer-science-bsc-degree/computer-science-bsc-degree.aspx",
+  "confidence": "high"
+ },
+ "28779": {
+  "stem": true,
+  "typical_offer": "UCAS 112; A-level BBC; IB 26; five GCSEs at 4/C incl English and Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible.",
+  "prerequisite_maths": "Five GCSEs at grade 4/C incl English and Maths; no specific A-level subject listed",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/cyber-security-bsc-degree/cyber-security-bsc-hons.aspx",
+  "confidence": "high"
+ },
+ "28867": {
+  "stem": true,
+  "typical_offer": "UCAS 112; A-level BBC; IB 26; five GCSEs at 4/C incl English and Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "International pages list IB 24 to 32 depending on country and course"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 2 AP subjects from group A or B at grade 3 or above; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide US rule; applies to all DMU programmes."
+  },
+  "tests": "SAT/ACT not listed; US applicants need high-school diploma with GPA 3.0 or 2 AP subjects at 3+. English: IELTS 6.0 (5.5 per band).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": "Devlet Lise Diplomasi with overall 70% or 4/5 accepted (institution-wide); alternatively 55% in an accepted UK foundation programme (no module below 50%); year 2 or 3 entry may be possible.",
+  "prerequisite_maths": "Five GCSEs at grade 4/C incl English and Maths; no specific A-level subject listed",
+  "source_url": "https://www.dmu.ac.uk/study/courses/undergraduate-courses/software-engineering-bsc-degree/software-engineering-bsc-degree.aspx",
+  "confidence": "high"
+ },
+ "28763": {
+  "stem": false,
+  "source_url": "https://www.dmu.ac.uk/international/en/entry-requirements.aspx"
+ },
+ "28861": {
+  "stem": false,
+  "source_url": "https://www.dmu.ac.uk/international/en/entry-requirements.aspx"
+ },
+ "28862": {
+  "stem": false,
+  "source_url": "https://www.dmu.ac.uk/international/en/entry-requirements.aspx"
+ },
+ "28863": {
+  "stem": false,
+  "source_url": "https://www.dmu.ac.uk/international/en/entry-requirements.aspx"
+ },
+ "28864": {
+  "stem": false,
+  "source_url": "https://www.dmu.ac.uk/international/en/entry-requirements.aspx"
+ },
+ "28865": {
+  "stem": false,
+  "source_url": "https://www.dmu.ac.uk/international/en/entry-requirements.aspx"
+ },
+ "28869": {
+  "stem": false,
+  "source_url": "https://www.dmu.ac.uk/international/en/entry-requirements.aspx"
+ }
+}

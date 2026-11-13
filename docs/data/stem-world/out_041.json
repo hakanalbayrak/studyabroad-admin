@@ -1,0 +1,914 @@
+{
+ "51978": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "51976": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "51979": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "51977": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "51981": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "51989": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. Maths or two Sciences; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; Mathematics or two Sciences at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC with Mathematics or two Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics or two Science subjects",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "51991": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. Maths or two Sciences; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; Mathematics or two Sciences at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC with Mathematics or two Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics or two Science subjects",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "51993": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. two Maths/Science subjects; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; two Mathematics/Science subjects at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC including two Mathematics/Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Two Mathematics/Science subjects",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "33051": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/517/H810/chemical-engineering/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "5-year MEng"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33034": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/521/H255/civil-and-environmental-engineering-5-years/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "5-year MEng"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33035": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/522/H225/civil-and-structural-engineering-5-years/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "5-year MEng"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33036": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/523/H205/civil-engineering-5-years/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "5-year MEng"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33045": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/525/G402/computing/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. Maths or two Sciences; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; Mathematics or two Sciences at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC with Mathematics or two Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics or two Science subjects"
+ },
+ "33018": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/526/IW13/computing-and-music/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. Maths or two Sciences; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; Mathematics or two Sciences at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC with Mathematics or two Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics or two Science subjects"
+ },
+ "33046": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/527/G400/computing-science/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. Maths or two Sciences; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; Mathematics or two Sciences at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC with Mathematics or two Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics or two Science subjects"
+ },
+ "33057": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/2062/I105/computing-science-artificial-intelligence/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB (Maths and one Science at BB); IB 34 with 6,6,5 at HL, 6 in Maths and one Science; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,5 at HL with 6 in Mathematics and one Science; SL/HL English",
+   "note": "MEng"
+  },
+  "a_level": "BBB with Mathematics and one Science subject at BB; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics and one Science subject"
+ },
+ "33020": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/2063/I108/computing-science-cybersecurity/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. Maths or two Sciences; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; Mathematics or two Sciences at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC with Mathematics or two Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics or two Science subjects"
+ },
+ "33047": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/529/GGK1/computing-science-and-mathematics/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. Maths or two Sciences; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; Mathematics or two Sciences at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC with Mathematics or two Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics or two Science subjects"
+ },
+ "33048": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/530/IF13/computing-science-and-physics/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. Maths and Physics; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL with Mathematics and Physics; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC with Mathematics and Physics; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics and Physics"
+ },
+ "33049": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/1999/G403/data-science/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. Maths or two Sciences; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; Mathematics or two Sciences at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC with Mathematics or two Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics or two Science subjects"
+ },
+ "33026": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/567/H605/electrical-and-electronic-engineering-5-years/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "5-year MEng"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33027": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/902/H6H6/electrical-and-electronic-engineering-with-renewable-energy/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "MEng-level offer assumed from sister engineering programmes; BEng route BBC / IB 30 also exists"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33028": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/1935/H6H7/electrical-and-electronic-engineering-with-robotics/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "MEng-level offer assumed from sister engineering programmes; BEng route BBC / IB 30 also exists"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33029": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/569/H104/engineering-5-years/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "5-year MEng"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33023": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/570/H220/engineering-civil-and-environmental/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33037": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/571/H221/engineering-civil-and-structural/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33038": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/572/H200/engineering-civil/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33030": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/573/H620/engineering-electrical-and-electronic/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33011": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/904/H6H4/engineering-electronic-and-software/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33014": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/574/HH36/engineering-mechanical-and-electrical/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33024": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/575/H3H8/engineering-mechanical-with-oil-and-gas-studies/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33015": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/576/H300/engineering-mechanical/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33012": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/903/H6H3/engineering-in-electronic-and-software-engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 30 with 5,4,4 at HL incl. Maths and Physics; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "Engineering BEng-level offer"
+  },
+  "a_level": "BBC with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "32922": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/600/F900/environmental-science/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. two Maths/Science subjects; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; two Mathematics/Science subjects at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC including two Mathematics/Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Two Mathematics/Science subjects"
+ },
+ "32828": {
+  "stem": false
+ },
+ "52019": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBC incl. Maths or two Sciences; IB 30 with 5,4,4 at HL; Highers BBBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "5,4,4 at HL; Mathematics or two Sciences at HL; SL/HL English and Mathematics",
+   "note": ""
+  },
+  "a_level": "BBC with Mathematics or two Science subjects; widening access CCC; GCSE C/4 in English, Maths and a Science",
+  "prerequisite_maths": "Mathematics or two Science subjects",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "33016": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/792/H305/mechanical-engineering/",
+  "confidence": "high",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "5-year MEng"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33055": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "MEng-level offer assumed from sister engineering programmes; BEng route BBC / IB 30 also exists"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "33053": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/793/H3N2/mechanical-engineering-with-business-management/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "MEng-level offer assumed from sister engineering programmes; BEng route BBC / IB 30 also exists"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "33017": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/568/H100/engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "MEng-level offer assumed from sister engineering programmes; BEng route BBC / IB 30 also exists"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering",
+  "note": "Institution-wide Aberdeen requirements applied."
+ },
+ "33052": {
+  "stem": true,
+  "source_url": "https://www.abdn.ac.uk/study/undergraduate/degree-programmes/811/H851/petroleum-engineering/",
+  "confidence": "medium",
+  "ap": {
+   "accepted": true,
+   "details": "Science/engineering: 3.0 unweighted GPA plus SAT 1250+ or ACT 26+, plus one AP exam in a relevant subject at 3+ (or 3 relevant AP exams at 3+). Specific AP subjects (e.g. Calculus AB vs BC) are not specified.",
+   "note": "Institution-wide US rules applied."
+  },
+  "tests": "US applicants: SAT 1250+ or ACT composite 26+ (essay/writing optional), with 3.0 unweighted GPA; no test needed for A-level/IB/Highers routes.",
+  "math_test": null,
+  "turkish_route": "Direct entry from the Turkish Lise Diplomas\u0131 is not accepted; applicants from Turkey must complete a Foundation Year (University of Aberdeen International Study Centre) before an undergraduate degree.",
+  "typical_offer": "A-level BBB incl. good Maths plus one of Physics/D&T/Engineering/Chemistry; IB 34 with 6,6,6 at HL incl. Maths and Physics; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "6,6,6 at HL including Mathematics and Physics; SL English (Chemistry also for Chemical/Petroleum Engineering)",
+   "note": "MEng-level offer assumed from sister engineering programmes; BEng route BBC / IB 30 also exists"
+  },
+  "a_level": "BBB with good performance in Mathematics and at least one of Physics, Design & Technology, Engineering or Chemistry; A-level Chemistry for Chemical/Petroleum Engineering; GCSE English C/4",
+  "prerequisite_maths": "Mathematics and Physics (or Engineering Science) required; Chemistry for Chemical/Petroleum Engineering"
+ },
+ "32933": {
+  "stem": false
+ },
+ "32934": {
+  "stem": false
+ },
+ "32935": {
+  "stem": false
+ },
+ "32936": {
+  "stem": false
+ },
+ "32937": {
+  "stem": false
+ },
+ "32938": {
+  "stem": false
+ }
+}

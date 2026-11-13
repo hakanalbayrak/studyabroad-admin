@@ -1,0 +1,971 @@
+{
+ "36154": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "36164": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28102": {
+  "stem": false
+ },
+ "10685": {
+  "stem": false
+ },
+ "28104": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "36165": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28108": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28111": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28112": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28113": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28114": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28115": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28116": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28117": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28118": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "36152": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28123": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28134": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28135": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28156": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28157": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "36168": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28164": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "28177": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points minimum (3 HL at 5, 3 SL at 4); offers set per course",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "3 Higher Level subjects at grade 5 and 3 Standard Level at grade 4; English requirement applies",
+   "note": "Institution-wide rule applied to all TU Dublin programmes; course-specific subjects may apply"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP test accepted alongside SAT/ACT for US applicants with 3.0/4 GPA; AP Calculus AB/BC variants not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US applicants with 3.0/4 GPA need SAT 1090 (Math 530, EBRW 560) or ACT 21; alternatively 2.4 GPA plus recognised foundation year",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted with GCSE evidence; grades set per course",
+  "turkish_route": "Direct entry considered with Lise CGPA 3.5/5; CGPA 3/5 plus a recognised foundation year at 60-65%; or first year of Lisans with 2.5/4 CGPA",
+  "prerequisite_maths": "Where maths required minimum 75%; for engineering, computing or science programmes 80%; lab science 80% where required",
+  "source_url": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/undergraduate-entry-requirements/europe/",
+  "confidence": "medium"
+ },
+ "19997": {
+  "stem": true,
+  "typical_offer": "A-levels A*A*A to ABB depending on course incl. C in Maths; IB about 32 points with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "3 HL at 5 and 3 SL at 4 incl. English, maths and another language; HL Maths 5 for Engineering/Computer Science (indicative 32 points)",
+   "note": "Institution-wide rule; HL maths at 4+ earns 25 bonus points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP not a listed entry requirement; strong AP results may be considered",
+   "note": ""
+  },
+  "tests": "SAT/ACT optional: SAT 1250 across two sections (none below 500) or ACT 27; US diploma needs unweighted GPA 3.2",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Best 3 A-levels plus 4th subject scored; grade C in A-level Maths required; 25 bonus points for Maths grade E or above; vocational/general studies not accepted",
+  "turkish_route": null,
+  "prerequisite_maths": "Maths required; US diploma applicants need maths for Engineering",
+  "source_url": "https://www.tcd.ie/study/apply/admission-requirements/undergraduate/",
+  "confidence": "medium"
+ },
+ "19996": {
+  "stem": true,
+  "typical_offer": "A-levels A*A*A to ABB depending on course incl. C in Maths; IB about 32 points with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "3 HL at 5 and 3 SL at 4 incl. English, maths and another language; HL Maths 5 for Engineering/Computer Science (indicative 32 points)",
+   "note": "Institution-wide rule; HL maths at 4+ earns 25 bonus points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP not a listed entry requirement; strong AP results may be considered",
+   "note": ""
+  },
+  "tests": "SAT/ACT optional: SAT 1250 across two sections (none below 500) or ACT 27; US diploma needs unweighted GPA 3.2",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Best 3 A-levels plus 4th subject scored; grade C in A-level Maths required; 25 bonus points for Maths grade E or above; vocational/general studies not accepted",
+  "turkish_route": null,
+  "prerequisite_maths": "Maths required; US diploma applicants need maths for Engineering",
+  "source_url": "https://www.tcd.ie/study/apply/admission-requirements/undergraduate/",
+  "confidence": "medium"
+ },
+ "19998": {
+  "stem": true,
+  "typical_offer": "A-levels A*A*A to ABB depending on course incl. C in Maths; IB about 32 points with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "3 HL at 5 and 3 SL at 4 incl. English, maths and another language; HL Maths 5 for Engineering/Computer Science (indicative 32 points)",
+   "note": "Institution-wide rule; HL maths at 4+ earns 25 bonus points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP not a listed entry requirement; strong AP results may be considered",
+   "note": ""
+  },
+  "tests": "SAT/ACT optional: SAT 1250 across two sections (none below 500) or ACT 27; US diploma needs unweighted GPA 3.2",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Best 3 A-levels plus 4th subject scored; grade C in A-level Maths required; 25 bonus points for Maths grade E or above; vocational/general studies not accepted",
+  "turkish_route": null,
+  "prerequisite_maths": "Maths required; US diploma applicants need maths for Engineering",
+  "source_url": "https://www.tcd.ie/study/apply/admission-requirements/undergraduate/",
+  "confidence": "medium"
+ },
+ "19993": {
+  "stem": false
+ },
+ "30850": {
+  "stem": false
+ },
+ "30876": {
+  "stem": false
+ },
+ "30877": {
+  "stem": false
+ },
+ "30875": {
+  "stem": false
+ },
+ "30849": {
+  "stem": true,
+  "typical_offer": "A-level AAC / ABBC / ABB + E AS with C in Maths and D in lab science; IB 33 with HL Maths 5 and HL lab science 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL Maths 5; HL lab science 4 (or SL 7)",
+   "note": "Either IB maths course accepted; Analysis and Approaches recommended"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: unweighted GPA 3.2/4 with AP and IB subject exams also considered; AP Calculus AB/BC variants not specified",
+   "note": ""
+  },
+  "tests": "SAT/ACT considered for US applicants; Turkish Lise applicants may use SAT 1220 for some programmes",
+  "math_test": {
+   "name": "Ecctis OMPT-D (pilot)",
+   "role": "alternative to prerequisite",
+   "min_score": "55%",
+   "details": "Pilot alternative for the maths requirement"
+  },
+  "a_level": "2027 guideline AAC / ABBC / ABB + E AS Level, C in Maths, D in lab science",
+  "turkish_route": "Lise accepted with programme-specific percentage thresholds (e.g. 71% Lise with 3.0/4 first-year degree, or 83% Lise with SAT 1220 for some programmes)",
+  "prerequisite_maths": "Maths and a lab science required",
+  "source_url": "https://www.ucd.ie/courses/cssa",
+  "confidence": "low"
+ },
+ "30846": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Either IB maths course accepted; Analysis and Approaches recommended"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: unweighted GPA 3.2/4 with AP and IB subject exams also considered; AP Calculus AB/BC variants not specified",
+   "note": ""
+  },
+  "tests": "SAT/ACT considered for US applicants; Turkish Lise applicants may use SAT 1220 for some programmes",
+  "math_test": {
+   "name": "Ecctis OMPT-D (pilot)",
+   "role": "alternative to prerequisite",
+   "min_score": "55%",
+   "details": "Pilot alternative for the maths requirement"
+  },
+  "a_level": null,
+  "turkish_route": "Lise accepted with programme-specific percentage thresholds (e.g. 71% Lise with 3.0/4 first-year degree, or 83% Lise with SAT 1220 for some programmes)",
+  "prerequisite_maths": "Maths required",
+  "source_url": "https://www.ucd.ie/courses/cssa",
+  "confidence": "low"
+ },
+ "30848": {
+  "stem": false
+ },
+ "51964": {
+  "stem": true,
+  "typical_offer": "A-level AAC / ABBC / ABB + E AS with C in Maths and D in lab science; IB 33 with HL Maths 5 and HL lab science 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL Maths 5; HL lab science 4 (or SL 7)",
+   "note": "Either IB maths course accepted; Analysis and Approaches recommended"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: unweighted GPA 3.2/4 with AP and IB subject exams also considered; AP Calculus AB/BC variants not specified",
+   "note": ""
+  },
+  "tests": "SAT/ACT considered for US applicants; Turkish Lise applicants may use SAT 1220 for some programmes",
+  "math_test": {
+   "name": "Ecctis OMPT-D (pilot)",
+   "role": "alternative to prerequisite",
+   "min_score": "55%",
+   "details": "Pilot alternative for the maths requirement"
+  },
+  "a_level": "2027 guideline AAC / ABBC / ABB + E AS Level, C in Maths, D in lab science",
+  "turkish_route": "Lise accepted with programme-specific percentage thresholds (e.g. 71% Lise with 3.0/4 first-year degree, or 83% Lise with SAT 1220 for some programmes)",
+  "prerequisite_maths": "Maths and a lab science required",
+  "source_url": "https://www.ucd.ie/courses/cssa",
+  "confidence": "low"
+ },
+ "51965": {
+  "stem": true,
+  "typical_offer": "A-level AAC / ABBC / ABB + E AS with C in Maths and D in lab science; IB 33 with HL Maths 5 and HL lab science 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL Maths 5; HL lab science 4 (or SL 7)",
+   "note": "Either IB maths course accepted; Analysis and Approaches recommended"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: unweighted GPA 3.2/4 with AP and IB subject exams also considered; AP Calculus AB/BC variants not specified",
+   "note": ""
+  },
+  "tests": "SAT/ACT considered for US applicants; Turkish Lise applicants may use SAT 1220 for some programmes",
+  "math_test": {
+   "name": "Ecctis OMPT-D (pilot)",
+   "role": "alternative to prerequisite",
+   "min_score": "55%",
+   "details": "Pilot alternative for the maths requirement"
+  },
+  "a_level": "2027 guideline AAC / ABBC / ABB + E AS Level, C in Maths, D in lab science",
+  "turkish_route": "Lise accepted with programme-specific percentage thresholds (e.g. 71% Lise with 3.0/4 first-year degree, or 83% Lise with SAT 1220 for some programmes)",
+  "prerequisite_maths": "Maths and a lab science required",
+  "source_url": "https://www.ucd.ie/courses/cssa",
+  "confidence": "low"
+ },
+ "51952": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Either IB maths course accepted; Analysis and Approaches recommended"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: unweighted GPA 3.2/4 with AP and IB subject exams also considered; AP Calculus AB/BC variants not specified",
+   "note": ""
+  },
+  "tests": "SAT/ACT considered for US applicants; Turkish Lise applicants may use SAT 1220 for some programmes",
+  "math_test": {
+   "name": "Ecctis OMPT-D (pilot)",
+   "role": "alternative to prerequisite",
+   "min_score": "55%",
+   "details": "Pilot alternative for the maths requirement"
+  },
+  "a_level": null,
+  "turkish_route": "Lise accepted with programme-specific percentage thresholds (e.g. 71% Lise with 3.0/4 first-year degree, or 83% Lise with SAT 1220 for some programmes)",
+  "prerequisite_maths": "Maths required",
+  "source_url": "https://www.ucd.ie/courses/cssa",
+  "confidence": "low"
+ },
+ "51962": {
+  "stem": true,
+  "typical_offer": "A-level AAC / ABBC / ABB + E AS with C in Maths and D in lab science; IB 33 with HL Maths 5 and HL lab science 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL Maths 5; HL lab science 4 (or SL 7)",
+   "note": "Either IB maths course accepted; Analysis and Approaches recommended"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: unweighted GPA 3.2/4 with AP and IB subject exams also considered; AP Calculus AB/BC variants not specified",
+   "note": ""
+  },
+  "tests": "SAT/ACT considered for US applicants; Turkish Lise applicants may use SAT 1220 for some programmes",
+  "math_test": {
+   "name": "Ecctis OMPT-D (pilot)",
+   "role": "alternative to prerequisite",
+   "min_score": "55%",
+   "details": "Pilot alternative for the maths requirement"
+  },
+  "a_level": "2027 guideline AAC / ABBC / ABB + E AS Level, C in Maths, D in lab science",
+  "turkish_route": "Lise accepted with programme-specific percentage thresholds (e.g. 71% Lise with 3.0/4 first-year degree, or 83% Lise with SAT 1220 for some programmes)",
+  "prerequisite_maths": "Maths and a lab science required",
+  "source_url": "https://www.ucd.ie/courses/cssa",
+  "confidence": "low"
+ },
+ "51967": {
+  "stem": true,
+  "typical_offer": "A-level AAC / ABBC / ABB + E AS with C in Maths and D in lab science; IB 33 with HL Maths 5 and HL lab science 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL Maths 5; HL lab science 4 (or SL 7)",
+   "note": "Either IB maths course accepted; Analysis and Approaches recommended"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: unweighted GPA 3.2/4 with AP and IB subject exams also considered; AP Calculus AB/BC variants not specified",
+   "note": ""
+  },
+  "tests": "SAT/ACT considered for US applicants; Turkish Lise applicants may use SAT 1220 for some programmes",
+  "math_test": {
+   "name": "Ecctis OMPT-D (pilot)",
+   "role": "alternative to prerequisite",
+   "min_score": "55%",
+   "details": "Pilot alternative for the maths requirement"
+  },
+  "a_level": "2027 guideline AAC / ABBC / ABB + E AS Level, C in Maths, D in lab science",
+  "turkish_route": "Lise accepted with programme-specific percentage thresholds (e.g. 71% Lise with 3.0/4 first-year degree, or 83% Lise with SAT 1220 for some programmes)",
+  "prerequisite_maths": "Maths and a lab science required",
+  "source_url": "https://www.ucd.ie/courses/cssa",
+  "confidence": "low"
+ },
+ "51968": {
+  "stem": true,
+  "typical_offer": "A-level AAC / ABBC / ABB + E AS with C in Maths and D in lab science; IB 33 with HL Maths 5 and HL lab science 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL Maths 5; HL lab science 4 (or SL 7)",
+   "note": "Either IB maths course accepted; Analysis and Approaches recommended"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: unweighted GPA 3.2/4 with AP and IB subject exams also considered; AP Calculus AB/BC variants not specified",
+   "note": ""
+  },
+  "tests": "SAT/ACT considered for US applicants; Turkish Lise applicants may use SAT 1220 for some programmes",
+  "math_test": {
+   "name": "Ecctis OMPT-D (pilot)",
+   "role": "alternative to prerequisite",
+   "min_score": "55%",
+   "details": "Pilot alternative for the maths requirement"
+  },
+  "a_level": "2027 guideline AAC / ABBC / ABB + E AS Level, C in Maths, D in lab science",
+  "turkish_route": "Lise accepted with programme-specific percentage thresholds (e.g. 71% Lise with 3.0/4 first-year degree, or 83% Lise with SAT 1220 for some programmes)",
+  "prerequisite_maths": "Maths and a lab science required",
+  "source_url": "https://www.ucd.ie/courses/cssa",
+  "confidence": "low"
+ },
+ "51970": {
+  "stem": true,
+  "typical_offer": "A-level AAC / ABBC / ABB + E AS with C in Maths and D in lab science; IB 33 with HL Maths 5 and HL lab science 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL Maths 5; HL lab science 4 (or SL 7)",
+   "note": "Either IB maths course accepted; Analysis and Approaches recommended"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: unweighted GPA 3.2/4 with AP and IB subject exams also considered; AP Calculus AB/BC variants not specified",
+   "note": ""
+  },
+  "tests": "SAT/ACT considered for US applicants; Turkish Lise applicants may use SAT 1220 for some programmes",
+  "math_test": {
+   "name": "Ecctis OMPT-D (pilot)",
+   "role": "alternative to prerequisite",
+   "min_score": "55%",
+   "details": "Pilot alternative for the maths requirement"
+  },
+  "a_level": "2027 guideline AAC / ABBC / ABB + E AS Level, C in Maths, D in lab science",
+  "turkish_route": "Lise accepted with programme-specific percentage thresholds (e.g. 71% Lise with 3.0/4 first-year degree, or 83% Lise with SAT 1220 for some programmes)",
+  "prerequisite_maths": "Maths and a lab science required",
+  "source_url": "https://www.ucd.ie/courses/cssa",
+  "confidence": "low"
+ },
+ "51974": {
+  "stem": true,
+  "typical_offer": "A-level AAC / ABBC / ABB + E AS with C in Maths and D in lab science; IB 33 with HL Maths 5 and HL lab science 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL Maths 5; HL lab science 4 (or SL 7)",
+   "note": "Either IB maths course accepted; Analysis and Approaches recommended"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: unweighted GPA 3.2/4 with AP and IB subject exams also considered; AP Calculus AB/BC variants not specified",
+   "note": ""
+  },
+  "tests": "SAT/ACT considered for US applicants; Turkish Lise applicants may use SAT 1220 for some programmes",
+  "math_test": {
+   "name": "Ecctis OMPT-D (pilot)",
+   "role": "alternative to prerequisite",
+   "min_score": "55%",
+   "details": "Pilot alternative for the maths requirement"
+  },
+  "a_level": "2027 guideline AAC / ABBC / ABB + E AS Level, C in Maths, D in lab science",
+  "turkish_route": "Lise accepted with programme-specific percentage thresholds (e.g. 71% Lise with 3.0/4 first-year degree, or 83% Lise with SAT 1220 for some programmes)",
+  "prerequisite_maths": "Maths and a lab science required",
+  "source_url": "https://www.ucd.ie/courses/cssa",
+  "confidence": "low"
+ }
+}

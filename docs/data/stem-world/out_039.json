@@ -1,0 +1,1180 @@
+{
+ "38592": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl Maths and Physics; IB 37 with 7,6,6 HL incl Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 7,6,6 incl Mathematics (Analysis & Approaches or Applications & Interpretation) and Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC and Physics 2 or Physics C Mechanics, plus one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.1+.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA in any order incl Maths, Physics and one other; Physics may be waived with Further Maths. Contextual AAA.",
+  "turkish_route": "Approved private school: Lise 87% overall (grades 11-12) with 87% Grade 12 Maths and 85% Physics; or any school: Lise 87% plus AP 5,5,5 (Calculus BC, Physics, one other). Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths and Physics required (Physics waivable with Further Maths); IB HL Maths and Physics. GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03826/meng-aerospace-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38593": {
+  "stem": true,
+  "typical_offer": "A-level BBB (3 relevant subjects), ABB (2) or AAB (1); IB 33 with 6,5,5 HL incl Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL 6,5,5 incl Mathematics (either type) or Physics; otherwise SL Maths 6+",
+   "note": ""
+  },
+  "ap": {
+   "accepted": false,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB with 3 relevant subjects, ABB with 2, AAB with 1 (Maths, Further Maths, Physics, Chemistry, Computer Science, Electronics, Statistics, DT, Engineering).",
+  "turkish_route": "Route for Lise holders not on the approved school list or below direct-entry grades; see country requirements. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "GCSE/IGCSE Maths grade 6/B if Maths not taken at A-level.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12948/beng-meng-aerospace-engineering-with-an-integrated-foundation-year/",
+  "confidence": "low",
+  "note": "Integrated foundation year; values shown are for the Mechanical Engineering foundation-year entry route and similar pages; confirm per programme."
+ },
+ "38594": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl Maths and Physics; IB 37 with 7,6,6 HL incl Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 7,6,6 incl Mathematics (Analysis & Approaches or Applications & Interpretation) and Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC and Physics 2 or Physics C Mechanics, plus one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.1+.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA in any order incl Maths, Physics and one other; Physics may be waived with Further Maths. Contextual AAA.",
+  "turkish_route": "Approved private school: Lise 87% overall (grades 11-12) with 87% Grade 12 Maths and 85% Physics; or any school: Lise 87% plus AP 5,5,5 (Calculus BC, Physics, one other). Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths and Physics required (Physics waivable with Further Maths); IB HL Maths and Physics. GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03826/meng-aerospace-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38632": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl Maths and Chemistry or Physics; IB 36 with 6,6,6 HL incl Maths (Analysis & Approaches) and Chemistry or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6 incl Mathematics Analysis & Approaches only, plus Chemistry or Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC, Physics or Chemistry, and one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.0+ (3.1+ for MEng with Industrial Experience).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl Maths and Chemistry or Physics. Contextual AAB.",
+  "turkish_route": "Approved private school: Lise 85% overall (87% for MEng with IE) with 85% Grade 12 Maths and Physics or Chemistry; or Lise plus AP 5,5,5. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths grade A and Chemistry or Physics; IB HL Maths Analysis & Approaches. GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03340/beng-chemical-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38633": {
+  "stem": true,
+  "typical_offer": "A-level BBB (3 relevant subjects), ABB (2) or AAB (1); IB 33 with 6,5,5 HL incl Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL 6,5,5 incl Mathematics (either type) or Physics; otherwise SL Maths 6+",
+   "note": ""
+  },
+  "ap": {
+   "accepted": false,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB with 3 relevant subjects, ABB with 2, AAB with 1 (Maths, Further Maths, Physics, Chemistry, Computer Science, Electronics, Statistics, DT, Engineering).",
+  "turkish_route": "Route for Lise holders not on the approved school list or below direct-entry grades; see country requirements. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "GCSE/IGCSE Maths grade 6/B if Maths not taken at A-level.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12951/beng-meng-chemical-engineering-with-an-integrated-foundation-year/",
+  "confidence": "low",
+  "note": "Integrated foundation year; values shown are for the Mechanical Engineering foundation-year entry route and similar pages; confirm per programme."
+ },
+ "38634": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl Maths and Chemistry or Physics; IB 36 with 6,6,6 HL incl Maths (Analysis & Approaches) and Chemistry or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6 incl Mathematics Analysis & Approaches only, plus Chemistry or Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC, Physics or Chemistry, and one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.0+ (3.1+ for MEng with Industrial Experience).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl Maths and Chemistry or Physics. Contextual AAB.",
+  "turkish_route": "Approved private school: Lise 85% overall (87% for MEng with IE) with 85% Grade 12 Maths and Physics or Chemistry; or Lise plus AP 5,5,5. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths grade A and Chemistry or Physics; IB HL Maths Analysis & Approaches. GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03340/beng-chemical-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38635": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl Maths and Chemistry or Physics; IB 36 with 6,6,6 HL incl Maths (Analysis & Approaches) and Chemistry or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6 incl Mathematics Analysis & Approaches only, plus Chemistry or Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC, Physics or Chemistry, and one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.0+ (3.1+ for MEng with Industrial Experience).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl Maths and Chemistry or Physics. Contextual AAB.",
+  "turkish_route": "Approved private school: Lise 85% overall (87% for MEng with IE) with 85% Grade 12 Maths and Physics or Chemistry; or Lise plus AP 5,5,5. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths grade A and Chemistry or Physics; IB HL Maths Analysis & Approaches. GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03340/beng-chemical-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38636": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl Maths and Chemistry or Physics; IB 36 with 6,6,6 HL incl Maths (Analysis & Approaches) and Chemistry or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6 incl Mathematics Analysis & Approaches only, plus Chemistry or Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC, Physics or Chemistry, and one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.0+ (3.1+ for MEng with Industrial Experience).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl Maths and Chemistry or Physics. Contextual AAB.",
+  "turkish_route": "Approved private school: Lise 85% overall (87% for MEng with IE) with 85% Grade 12 Maths and Physics or Chemistry; or Lise plus AP 5,5,5. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths grade A and Chemistry or Physics; IB HL Maths Analysis & Approaches. GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03340/beng-chemical-engineering/",
+  "confidence": "medium",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38648": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl Maths and Physics (plus one other); IB 36 with 6,6,6 HL incl Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6 incl Mathematics (Analysis & Approaches or Applications & Interpretation) and Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC and Physics 2 or Physics C Mechanics, plus one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.0+.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl Maths, Physics and one other; Physics may be replaced by Further Maths. Contextual AAB.",
+  "turkish_route": "Approved private school: Lise 85% overall with 85% Grade 12 Maths and Physics; or Lise plus three AP exams. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths and Physics (or Further Maths in place of Physics). GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03343/beng-civil-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38649": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl Maths and Physics (plus one other); IB 36 with 6,6,6 HL incl Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6 incl Mathematics (Analysis & Approaches or Applications & Interpretation) and Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC and Physics 2 or Physics C Mechanics, plus one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.0+.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl Maths, Physics and one other; Physics may be replaced by Further Maths. Contextual AAB.",
+  "turkish_route": "Approved private school: Lise 85% overall with 85% Grade 12 Maths and Physics; or Lise plus three AP exams. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths and Physics (or Further Maths in place of Physics). GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03343/beng-civil-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38650": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl Maths and Physics (plus one other); IB 36 with 6,6,6 HL incl Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6 incl Mathematics (Analysis & Approaches or Applications & Interpretation) and Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC and Physics 2 or Physics C Mechanics, plus one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.0+.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl Maths, Physics and one other; Physics may be replaced by Further Maths. Contextual AAB.",
+  "turkish_route": "Approved private school: Lise 85% overall with 85% Grade 12 Maths and Physics; or Lise plus three AP exams. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths and Physics (or Further Maths in place of Physics). GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03343/beng-civil-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38651": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl Maths and Physics (plus one other); IB 36 with 6,6,6 HL incl Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6 incl Mathematics (Analysis & Approaches or Applications & Interpretation) and Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC and Physics 2 or Physics C Mechanics, plus one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.0+.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl Maths, Physics and one other; Physics may be replaced by Further Maths. Contextual AAB.",
+  "turkish_route": "Approved private school: Lise 85% overall with 85% Grade 12 Maths and Physics; or Lise plus three AP exams. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths and Physics (or Further Maths in place of Physics). GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03343/beng-civil-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38652": {
+  "stem": true,
+  "typical_offer": "A-level BBB (3 relevant subjects), ABB (2) or AAB (1); IB 33 with 6,5,5 HL incl Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL 6,5,5 incl Mathematics (either type) or Physics; otherwise SL Maths 6+",
+   "note": ""
+  },
+  "ap": {
+   "accepted": false,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB with 3 relevant subjects, ABB with 2, AAB with 1 (Maths, Further Maths, Physics, Chemistry, Computer Science, Electronics, Statistics, DT, Engineering).",
+  "turkish_route": "Route for Lise holders not on the approved school list or below direct-entry grades; see country requirements. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "GCSE/IGCSE Maths grade 6/B if Maths not taken at A-level.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12949/beng-meng-civil-engineering-with-an-integrated-foundation-year/",
+  "confidence": "low",
+  "note": "Integrated foundation year; values shown are for the Mechanical Engineering foundation-year entry route and similar pages; confirm per programme."
+ },
+ "38653": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl Maths and Physics (plus one other); IB 36 with 6,6,6 HL incl Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6 incl Mathematics (Analysis & Approaches or Applications & Interpretation) and Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC and Physics 2 or Physics C Mechanics, plus one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.0+.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl Maths, Physics and one other; Physics may be replaced by Further Maths. Contextual AAB.",
+  "turkish_route": "Approved private school: Lise 85% overall with 85% Grade 12 Maths and Physics; or Lise plus three AP exams. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths and Physics (or Further Maths in place of Physics). GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03343/beng-civil-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38656": {
+  "stem": false
+ },
+ "38658": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl A* Maths (with pure element) and one of Computer Science, Further Maths, Biology, Chemistry or Physics; IB 37 with 7,6,6 HL incl 7 HL Maths Analysis & Approaches",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 7,6,6 incl 7 in Mathematics Analysis & Approaches only, plus one HL science (Computer Science, Physics, Chemistry or Biology)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: USA diploma GPA 3.2+ with AP 5 in Calculus BC or AB (subscore not accepted), 5 in AP Physics or Computer Science, and a 5 in a third AP (or an A in an Honors class).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl A* Maths (not Use of Maths/Core Maths) and one science subject from Computer Science, Further Maths, Biology, Chemistry, Physics. Contextual AAA.",
+  "turkish_route": "Approved private school only: Lise 87% overall incl 87% Grade 12 Maths and 85% in Physics, Chemistry or Biology; other schools: Integrated Foundation Year unless AP 5,5,5 taken (Calculus BC or AB, Physics or CS, plus one other). Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths A* with significant pure element; GCSE Maths grade 6/B.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00560/bsc-computer-science/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38659": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl A* Maths (with pure element) and one of Computer Science, Further Maths, Biology, Chemistry or Physics; IB 37 with 7,6,6 HL incl 7 HL Maths Analysis & Approaches",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 7,6,6 incl 7 in Mathematics Analysis & Approaches only, plus one HL science (Computer Science, Physics, Chemistry or Biology)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: USA diploma GPA 3.2+ with AP 5 in Calculus BC or AB (subscore not accepted), 5 in AP Physics or Computer Science, and a 5 in a third AP (or an A in an Honors class).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl A* Maths (not Use of Maths/Core Maths) and one science subject from Computer Science, Further Maths, Biology, Chemistry, Physics. Contextual AAA.",
+  "turkish_route": "Turkish diploma is not accepted for Mathematics courses at Manchester; check eligibility for this joint degree. Approved private school only: Lise 87% overall incl 87% Grade 12 Maths and 85% in Physics, Chemistry or Biology; other schools: Integrated Foundation Year unless AP 5,5,5 taken (Calculus BC or AB, Physics or CS, plus one other). Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths A* with significant pure element; GCSE Maths grade 6/B.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00560/bsc-computer-science/",
+  "confidence": "medium",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38660": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl A* Maths (with pure element) and one of Computer Science, Further Maths, Biology, Chemistry or Physics; IB 37 with 7,6,6 HL incl 7 HL Maths Analysis & Approaches",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 7,6,6 incl 7 in Mathematics Analysis & Approaches only, plus one HL science (Computer Science, Physics, Chemistry or Biology)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: USA diploma GPA 3.2+ with AP 5 in Calculus BC or AB (subscore not accepted), 5 in AP Physics or Computer Science, and a 5 in a third AP (or an A in an Honors class).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl A* Maths (not Use of Maths/Core Maths) and one science subject from Computer Science, Further Maths, Biology, Chemistry, Physics. Contextual AAA.",
+  "turkish_route": "Approved private school only: Lise 87% overall incl 87% Grade 12 Maths and 85% in Physics, Chemistry or Biology; other schools: Integrated Foundation Year unless AP 5,5,5 taken (Calculus BC or AB, Physics or CS, plus one other). Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths A* with significant pure element; GCSE Maths grade 6/B.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00560/bsc-computer-science/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38661": {
+  "stem": true,
+  "typical_offer": "A-level BBB (3 relevant subjects), ABB (2) or AAB (1); IB 33 with 6,5,5 HL incl Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL 6,5,5 incl Mathematics (either type) or Physics; otherwise SL Maths 6+",
+   "note": ""
+  },
+  "ap": {
+   "accepted": false,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB with 3 relevant subjects, ABB with 2, AAB with 1 (Maths, Further Maths, Physics, Chemistry, Computer Science, Electronics, Statistics, DT, Engineering).",
+  "turkish_route": "Route for Lise holders not on the approved school list or below direct-entry grades; see country requirements. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "GCSE/IGCSE Maths grade 6/B if Maths not taken at A-level.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12952/bsc-computer-science-with-an-integrated-foundation-year/",
+  "confidence": "medium",
+  "note": "Integrated foundation year; values shown are for the Mechanical Engineering foundation-year entry route and similar pages; confirm per programme."
+ },
+ "38662": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl A* Maths (with pure element) and one of Computer Science, Further Maths, Biology, Chemistry or Physics; IB 37 with 7,6,6 HL incl 7 HL Maths Analysis & Approaches",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 7,6,6 incl 7 in Mathematics Analysis & Approaches only, plus one HL science (Computer Science, Physics, Chemistry or Biology)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: USA diploma GPA 3.2+ with AP 5 in Calculus BC or AB (subscore not accepted), 5 in AP Physics or Computer Science, and a 5 in a third AP (or an A in an Honors class).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl A* Maths (not Use of Maths/Core Maths) and one science subject from Computer Science, Further Maths, Biology, Chemistry, Physics. Contextual AAA.",
+  "turkish_route": "Approved private school only: Lise 87% overall incl 87% Grade 12 Maths and 85% in Physics, Chemistry or Biology; other schools: Integrated Foundation Year unless AP 5,5,5 taken (Calculus BC or AB, Physics or CS, plus one other). Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths A* with significant pure element; GCSE Maths grade 6/B.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00560/bsc-computer-science/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38664": {
+  "stem": false
+ },
+ "38667": {
+  "stem": false
+ },
+ "38690": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl A* Maths and A in Physics, Electronics, Further Maths, Chemistry or Computer Science; IB 37 with 7,6,6 HL incl 7 HL Maths and 6 HL Physics or Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 7,6,6 incl 7 in Mathematics (Analysis & Approaches or Applications & Interpretation) and 6 in Physics or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: Calculus AB (no subscore) with Physics C and one further AP, or Calculus BC (no subscore) with Physics C, Physics 1, Physics 2 or Chemistry and one further AP; all at 5,5,5. USA diploma GPA 3.2+; third AP may be replaced by an A in an Honors class.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl A* Maths and A in Physics, Electronics, Further Maths, Chemistry or Computer Science. Contextual AAA.",
+  "turkish_route": "Approved private school: Lise 87% overall with 87% Grade 12 Maths and 85% Physics or Chemistry; other schools: Integrated Foundation Year only unless AP 5,5,5 taken. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths A* plus a science/electronics subject; IB HL Maths 7. GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03363/beng-electrical-and-electronic-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38691": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl A* Maths and A in Physics, Electronics, Further Maths, Chemistry or Computer Science; IB 37 with 7,6,6 HL incl 7 HL Maths and 6 HL Physics or Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 7,6,6 incl 7 in Mathematics (Analysis & Approaches or Applications & Interpretation) and 6 in Physics or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: Calculus AB (no subscore) with Physics C and one further AP, or Calculus BC (no subscore) with Physics C, Physics 1, Physics 2 or Chemistry and one further AP; all at 5,5,5. USA diploma GPA 3.2+; third AP may be replaced by an A in an Honors class.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl A* Maths and A in Physics, Electronics, Further Maths, Chemistry or Computer Science. Contextual AAA.",
+  "turkish_route": "Approved private school: Lise 87% overall with 87% Grade 12 Maths and 85% Physics or Chemistry; other schools: Integrated Foundation Year only unless AP 5,5,5 taken. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths A* plus a science/electronics subject; IB HL Maths 7. GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03363/beng-electrical-and-electronic-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38689": {
+  "stem": true,
+  "typical_offer": "A-level BBB (3 relevant subjects), ABB (2) or AAB (1); IB 33 with 6,5,5 HL incl Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL 6,5,5 incl Mathematics (either type) or Physics; otherwise SL Maths 6+",
+   "note": ""
+  },
+  "ap": {
+   "accepted": false,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB with 3 relevant subjects, ABB with 2, AAB with 1 (Maths, Further Maths, Physics, Chemistry, Computer Science, Electronics, Statistics, DT, Engineering).",
+  "turkish_route": "Route for Lise holders not on the approved school list or below direct-entry grades; see country requirements. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "GCSE/IGCSE Maths grade 6/B if Maths not taken at A-level.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12950/beng-meng-electrical-electronic-and-mechatronic-engineering-with-an-integrated-foundation-year/",
+  "confidence": "low",
+  "note": "Integrated foundation year; values shown are for the Mechanical Engineering foundation-year entry route and similar pages; confirm per programme."
+ },
+ "38704": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl at least one science or maths subject; IB 34 with 6,5,5 HL incl a science or maths subject",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl one of Biology, Chemistry, Environmental Systems & Societies, Geography, Physics or Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three APs at 5,5,4 incl at least one science subject (USA diploma GPA 3.0+).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl at least one science or maths subject (Biology, Chemistry, Environmental Science, Geography, Geology, Marine Science, Physics, Maths, Further Maths, Statistics). Contextual BBB/ABC.",
+  "turkish_route": "Approved private school: Lise 80% overall plus 85% in one Grade 12 science, or A-levels AB in two subjects, or APs 5,4 incl a science; other schools: 80% plus AAB A-levels or APs 5,5,4, otherwise Integrated Foundation Year only. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "Science or maths subject at A-level/IB HL; GCSE Maths grade 6/B.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12124/bsc-environmental-science/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38705": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl at least one science or maths subject; IB 34 with 6,5,5 HL incl a science or maths subject",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl one of Biology, Chemistry, Environmental Systems & Societies, Geography, Physics or Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three APs at 5,5,4 incl at least one science subject (USA diploma GPA 3.0+).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl at least one science or maths subject (Biology, Chemistry, Environmental Science, Geography, Geology, Marine Science, Physics, Maths, Further Maths, Statistics). Contextual BBB/ABC.",
+  "turkish_route": "Approved private school: Lise 80% overall plus 85% in one Grade 12 science, or A-levels AB in two subjects, or APs 5,4 incl a science; other schools: 80% plus AAB A-levels or APs 5,5,4, otherwise Integrated Foundation Year only. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "Science or maths subject at A-level/IB HL; GCSE Maths grade 6/B.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12124/bsc-environmental-science/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38706": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl at least one science or maths subject; IB 34 with 6,5,5 HL incl a science or maths subject",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl one of Biology, Chemistry, Environmental Systems & Societies, Geography, Physics or Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three APs at 5,5,4 incl at least one science subject (USA diploma GPA 3.0+).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl at least one science or maths subject (Biology, Chemistry, Environmental Science, Geography, Geology, Marine Science, Physics, Maths, Further Maths, Statistics). Contextual BBB/ABC.",
+  "turkish_route": "Approved private school: Lise 80% overall plus 85% in one Grade 12 science, or A-levels AB in two subjects, or APs 5,4 incl a science; other schools: 80% plus AAB A-levels or APs 5,5,4, otherwise Integrated Foundation Year only. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "Science or maths subject at A-level/IB HL; GCSE Maths grade 6/B.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12124/bsc-environmental-science/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38707": {
+  "stem": true,
+  "typical_offer": "A-level BBB (3 relevant subjects), ABB (2) or AAB (1); IB 33 with 6,5,5 HL incl Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL 6,5,5 incl Mathematics (either type) or Physics; otherwise SL Maths 6+",
+   "note": ""
+  },
+  "ap": {
+   "accepted": false,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB with 3 relevant subjects, ABB with 2, AAB with 1 (Maths, Further Maths, Physics, Chemistry, Computer Science, Electronics, Statistics, DT, Engineering).",
+  "turkish_route": "Route for Lise holders not on the approved school list or below direct-entry grades; see country requirements. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "GCSE/IGCSE Maths grade 6/B if Maths not taken at A-level.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12958/bsc-menvsci-environmental-science-with-an-integrated-foundation-year/",
+  "confidence": "low",
+  "note": "Integrated foundation year; values shown are for the Mechanical Engineering foundation-year entry route and similar pages; confirm per programme."
+ },
+ "38708": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl at least one science or maths subject; IB 34 with 6,5,5 HL incl a science or maths subject",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl one of Biology, Chemistry, Environmental Systems & Societies, Geography, Physics or Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three APs at 5,5,4 incl at least one science subject (USA diploma GPA 3.0+).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl at least one science or maths subject (Biology, Chemistry, Environmental Science, Geography, Geology, Marine Science, Physics, Maths, Further Maths, Statistics). Contextual BBB/ABC.",
+  "turkish_route": "Approved private school: Lise 80% overall plus 85% in one Grade 12 science, or A-levels AB in two subjects, or APs 5,4 incl a science; other schools: 80% plus AAB A-levels or APs 5,5,4, otherwise Integrated Foundation Year only. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "Science or maths subject at A-level/IB HL; GCSE Maths grade 6/B.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12124/bsc-environmental-science/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38709": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl at least one science or maths subject; IB 34 with 6,5,5 HL incl a science or maths subject",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl one of Biology, Chemistry, Environmental Systems & Societies, Geography, Physics or Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three APs at 5,5,4 incl at least one science subject (USA diploma GPA 3.0+).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl at least one science or maths subject (Biology, Chemistry, Environmental Science, Geography, Geology, Marine Science, Physics, Maths, Further Maths, Statistics). Contextual BBB/ABC.",
+  "turkish_route": "Approved private school: Lise 80% overall plus 85% in one Grade 12 science, or A-levels AB in two subjects, or APs 5,4 incl a science; other schools: 80% plus AAB A-levels or APs 5,5,4, otherwise Integrated Foundation Year only. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "Science or maths subject at A-level/IB HL; GCSE Maths grade 6/B.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12124/bsc-environmental-science/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38759": {
+  "stem": false
+ },
+ "38760": {
+  "stem": false
+ },
+ "38812": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl two of Maths, Physics, Chemistry; IB 35 with 6,6,5 HL incl two of Maths, Physics, Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl two of Mathematics (Analysis & Approaches only), Physics, Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: BSc three APs at 5,5,4 (MEng 5,5,5) incl two of Calculus BC, Physics (not Physics 1) or Chemistry; three different subject areas; Calculus BC and AB not combined. USA diploma GPA 3.1+ (BSc) or 3.2+ (MEng).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl two from Maths, Physics, Chemistry. Contextual ABB.",
+  "turkish_route": "Approved private school: Lise 80% overall (BSc; 85% for MEng) with two of Maths, Physics, Chemistry at 85% and one further academic subject at 80%; schools not on the list: Integrated Foundation Year unless AP alternative met. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level two of Maths, Physics, Chemistry (GCSE Maths grade 7/A if no A-level Maths); IB HL Maths Analysis & Approaches only.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38813": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl two of Maths, Physics, Chemistry; IB 35 with 6,6,5 HL incl two of Maths, Physics, Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl two of Mathematics (Analysis & Approaches only), Physics, Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: BSc three APs at 5,5,4 (MEng 5,5,5) incl two of Calculus BC, Physics (not Physics 1) or Chemistry; three different subject areas; Calculus BC and AB not combined. USA diploma GPA 3.1+ (BSc) or 3.2+ (MEng).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl two from Maths, Physics, Chemistry. Contextual ABB.",
+  "turkish_route": "Approved private school: Lise 80% overall (BSc; 85% for MEng) with two of Maths, Physics, Chemistry at 85% and one further academic subject at 80%; schools not on the list: Integrated Foundation Year unless AP alternative met. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level two of Maths, Physics, Chemistry (GCSE Maths grade 7/A if no A-level Maths); IB HL Maths Analysis & Approaches only.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38814": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl two of Maths, Physics, Chemistry; IB 35 with 6,6,5 HL incl two of Maths, Physics, Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl two of Mathematics (Analysis & Approaches only), Physics, Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: BSc three APs at 5,5,4 (MEng 5,5,5) incl two of Calculus BC, Physics (not Physics 1) or Chemistry; three different subject areas; Calculus BC and AB not combined. USA diploma GPA 3.1+ (BSc) or 3.2+ (MEng).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl two from Maths, Physics, Chemistry. Contextual ABB.",
+  "turkish_route": "Approved private school: Lise 80% overall (BSc; 85% for MEng) with two of Maths, Physics, Chemistry at 85% and one further academic subject at 80%; schools not on the list: Integrated Foundation Year unless AP alternative met. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level two of Maths, Physics, Chemistry (GCSE Maths grade 7/A if no A-level Maths); IB HL Maths Analysis & Approaches only.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "medium",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38815": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl two of Maths, Physics, Chemistry; IB 35 with 6,6,5 HL incl two of Maths, Physics, Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl two of Mathematics (Analysis & Approaches only), Physics, Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: BSc three APs at 5,5,4 (MEng 5,5,5) incl two of Calculus BC, Physics (not Physics 1) or Chemistry; three different subject areas; Calculus BC and AB not combined. USA diploma GPA 3.1+ (BSc) or 3.2+ (MEng).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl two from Maths, Physics, Chemistry. Contextual ABB.",
+  "turkish_route": "Approved private school: Lise 80% overall (BSc; 85% for MEng) with two of Maths, Physics, Chemistry at 85% and one further academic subject at 80%; schools not on the list: Integrated Foundation Year unless AP alternative met. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level two of Maths, Physics, Chemistry (GCSE Maths grade 7/A if no A-level Maths); IB HL Maths Analysis & Approaches only.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "medium",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38816": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl two of Maths, Physics, Chemistry; IB 35 with 6,6,5 HL incl two of Maths, Physics, Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl two of Mathematics (Analysis & Approaches only), Physics, Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: BSc three APs at 5,5,4 (MEng 5,5,5) incl two of Calculus BC, Physics (not Physics 1) or Chemistry; three different subject areas; Calculus BC and AB not combined. USA diploma GPA 3.1+ (BSc) or 3.2+ (MEng).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl two from Maths, Physics, Chemistry. Contextual ABB.",
+  "turkish_route": "Approved private school: Lise 80% overall (BSc; 85% for MEng) with two of Maths, Physics, Chemistry at 85% and one further academic subject at 80%; schools not on the list: Integrated Foundation Year unless AP alternative met. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level two of Maths, Physics, Chemistry (GCSE Maths grade 7/A if no A-level Maths); IB HL Maths Analysis & Approaches only.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "medium",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38817": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl two of Maths, Physics, Chemistry; IB 35 with 6,6,5 HL incl two of Maths, Physics, Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl two of Mathematics (Analysis & Approaches only), Physics, Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: BSc three APs at 5,5,4 (MEng 5,5,5) incl two of Calculus BC, Physics (not Physics 1) or Chemistry; three different subject areas; Calculus BC and AB not combined. USA diploma GPA 3.1+ (BSc) or 3.2+ (MEng).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl two from Maths, Physics, Chemistry. Contextual ABB.",
+  "turkish_route": "Approved private school: Lise 80% overall (BSc; 85% for MEng) with two of Maths, Physics, Chemistry at 85% and one further academic subject at 80%; schools not on the list: Integrated Foundation Year unless AP alternative met. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level two of Maths, Physics, Chemistry (GCSE Maths grade 7/A if no A-level Maths); IB HL Maths Analysis & Approaches only.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "medium",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38818": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl two of Maths, Physics, Chemistry; IB 35 with 6,6,5 HL incl two of Maths, Physics, Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl two of Mathematics (Analysis & Approaches only), Physics, Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: BSc three APs at 5,5,4 (MEng 5,5,5) incl two of Calculus BC, Physics (not Physics 1) or Chemistry; three different subject areas; Calculus BC and AB not combined. USA diploma GPA 3.1+ (BSc) or 3.2+ (MEng).",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl two from Maths, Physics, Chemistry. Contextual ABB.",
+  "turkish_route": "Approved private school: Lise 80% overall (BSc; 85% for MEng) with two of Maths, Physics, Chemistry at 85% and one further academic subject at 80%; schools not on the list: Integrated Foundation Year unless AP alternative met. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level two of Maths, Physics, Chemistry (GCSE Maths grade 7/A if no A-level Maths); IB HL Maths Analysis & Approaches only.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "medium",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38819": {
+  "stem": true,
+  "typical_offer": "A-level BBB (3 relevant subjects), ABB (2) or AAB (1); IB 33 with 6,5,5 HL incl Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL 6,5,5 incl Mathematics (either type) or Physics; otherwise SL Maths 6+",
+   "note": ""
+  },
+  "ap": {
+   "accepted": false,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB with 3 relevant subjects, ABB with 2, AAB with 1 (Maths, Further Maths, Physics, Chemistry, Computer Science, Electronics, Statistics, DT, Engineering).",
+  "turkish_route": "Route for Lise holders not on the approved school list or below direct-entry grades; see country requirements. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "GCSE/IGCSE Maths grade 6/B if Maths not taken at A-level.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12959/bsc-meng-materials-science-with-an-integrated-foundation-year/",
+  "confidence": "low",
+  "note": "Integrated foundation year; values shown are for the Mechanical Engineering foundation-year entry route and similar pages; confirm per programme."
+ },
+ "38827": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A in Maths, Physics and one other; IB 38 with 7,7,6 HL incl Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "HL 7,7,6 incl Mathematics (Analysis & Approaches or Applications & Interpretation) and Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC and Physics, plus one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.2+; USA diploma without AP requires a foundation year.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl Maths, Physics and one other (Physics may be waived with Further Maths). Contextual A*AA.",
+  "turkish_route": "Approved private school: Lise 90% overall with 87% Grade 12 Maths and Physics; any school: Lise 90% plus AP 5,5,5. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths and Physics; GCSE Maths and a science.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03389/beng-mechanical-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38828": {
+  "stem": true,
+  "typical_offer": "A-level BBB (3 relevant subjects), ABB (2) or AAB (1); IB 33 with 6,5,5 HL incl Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL 6,5,5 incl Mathematics (either type) or Physics; otherwise SL Maths 6+",
+   "note": ""
+  },
+  "ap": {
+   "accepted": false,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB with 3 relevant subjects, ABB with 2, AAB with 1 (Maths, Further Maths, Physics, Chemistry, Computer Science, Electronics, Statistics, DT, Engineering).",
+  "turkish_route": "Route for Lise holders not on the approved school list or below direct-entry grades; see country requirements. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "GCSE/IGCSE Maths grade 6/B if Maths not taken at A-level.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12947/beng-meng-mechanical-engineering-with-an-integrated-foundation-year/",
+  "confidence": "low",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38829": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A in Maths, Physics and one other; IB 38 with 7,7,6 HL incl Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "HL 7,7,6 incl Mathematics (Analysis & Approaches or Applications & Interpretation) and Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: three AP exams at 5,5,5 incl Calculus BC and Physics, plus one other AP subject; Calculus AB and Physics 1 excluded. USA diploma GPA 3.2+; USA diploma without AP requires a foundation year.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl Maths, Physics and one other (Physics may be waived with Further Maths). Contextual A*AA.",
+  "turkish_route": "Approved private school: Lise 90% overall with 87% Grade 12 Maths and Physics; any school: Lise 90% plus AP 5,5,5. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths and Physics; GCSE Maths and a science.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03389/beng-mechanical-engineering/",
+  "confidence": "high",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38830": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl A* Maths and A in Physics, Electronics, Further Maths, Chemistry or Computer Science; IB 37 with 7,6,6 HL incl 7 HL Maths and 6 HL Physics or Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 7,6,6 incl 7 in Mathematics (Analysis & Approaches or Applications & Interpretation) and 6 in Physics or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: Calculus AB (no subscore) with Physics C and one further AP, or Calculus BC (no subscore) with Physics C, Physics 1, Physics 2 or Chemistry and one further AP; all at 5,5,5. USA diploma GPA 3.2+; third AP may be replaced by an A in an Honors class.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl A* Maths and A in Physics, Electronics, Further Maths, Chemistry or Computer Science. Contextual AAA.",
+  "turkish_route": "Approved private school: Lise 87% overall with 87% Grade 12 Maths and 85% Physics or Chemistry; other schools: Integrated Foundation Year only unless AP 5,5,5 taken. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths A* plus a science/electronics subject; IB HL Maths 7. GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03394/beng-mechatronic-engineering/entry-requirements/",
+  "confidence": "medium",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38831": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl A* Maths and A in Physics, Electronics, Further Maths, Chemistry or Computer Science; IB 37 with 7,6,6 HL incl 7 HL Maths and 6 HL Physics or Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 7,6,6 incl 7 in Mathematics (Analysis & Approaches or Applications & Interpretation) and 6 in Physics or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted via Turkey/USA route: Calculus AB (no subscore) with Physics C and one further AP, or Calculus BC (no subscore) with Physics C, Physics 1, Physics 2 or Chemistry and one further AP; all at 5,5,5. USA diploma GPA 3.2+; third AP may be replaced by an A in an Honors class.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl A* Maths and A in Physics, Electronics, Further Maths, Chemistry or Computer Science. Contextual AAA.",
+  "turkish_route": "Approved private school: Lise 87% overall with 87% Grade 12 Maths and 85% Physics or Chemistry; other schools: Integrated Foundation Year only unless AP 5,5,5 taken. Most Lise Diplomasi (MEB) holders must take a foundation year; direct entry only from a private high school on Manchester's approved list. Grade equivalents: 87%=A*, 85%=A, 80%=B. Schools not on the list: Integrated Foundation Year only unless AP exams are taken. Foundation (INTO) considered from 65%.",
+  "prerequisite_maths": "A-level Maths A* plus a science/electronics subject; IB HL Maths 7. GCSE/IGCSE English Language grade 4/C and Mathematics grade 4/C minimum.",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03394/beng-mechatronic-engineering/entry-requirements/",
+  "confidence": "medium",
+  "note": "Offers shown are from the sibling programme pages and institution/department country pages; variants (MEng, industrial experience, study abroad) may carry higher grades."
+ },
+ "38892": {
+  "stem": false
+ },
+ "38907": {
+  "stem": false
+ },
+ "38908": {
+  "stem": false
+ },
+ "38920": {
+  "stem": false
+ },
+ "38927": {
+  "stem": false
+ }
+}

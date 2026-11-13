@@ -1,0 +1,1367 @@
+{
+ "32688": {
+  "stem": true,
+  "typical_offer": "96-112 UCAS points (or equivalent); Foundation Year 64-80 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as an equivalent to the UCAS tariff; no points published. Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "No specific A-level subjects published",
+  "turkish_route": "Lise Diploması with GPA 3.5 or 70%+ average considered for direct entry (assessed individually), IELTS 6.0 (5.5 each section); International Foundation Pathway also available (Lise with IELTS 4.5)",
+  "prerequisite_maths": "GCSE English and Maths 4/C",
+  "source_url": "https://www.roehampton.ac.uk/study/undergraduate-courses/architectural-engineering/",
+  "confidence": "medium",
+  "note": "Institution-wide: Roehampton states entry as UCAS points (or equivalent); IB conversion and A-level grades not published per course."
+ },
+ "33031": {
+  "stem": true,
+  "typical_offer": "BEng 96-112 UCAS points (MEng 112-120); Foundation Year 64-80 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as an equivalent to the UCAS tariff; no points published. Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level (or equivalent) Maths at grade C",
+  "turkish_route": "Lise Diploması with GPA 3.5 or 70%+ average considered for direct entry (assessed individually), IELTS 6.0 (5.5 each section); International Foundation Pathway also available (Lise with IELTS 4.5)",
+  "prerequisite_maths": "A-level Maths grade C; GCSE Maths and English 4/C",
+  "source_url": "https://www.roehampton.ac.uk/study/undergraduate-courses/civil-engineering/",
+  "confidence": "medium",
+  "note": "Institution-wide: Roehampton states entry as UCAS points (or equivalent); IB conversion and A-level grades not published per course."
+ },
+ "33008": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (or equivalent)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as an equivalent to the UCAS tariff; no points published. Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise Diploması with GPA 3.5 or 70%+ average considered for direct entry (assessed individually), IELTS 6.0 (5.5 each section); International Foundation Pathway also available (Lise with IELTS 4.5)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.roehampton.ac.uk/study/undergraduate-courses/computer-games-programming/",
+  "confidence": "low",
+  "note": "Institution-wide: Roehampton states entry as UCAS points (or equivalent); IB conversion and A-level grades not published per course."
+ },
+ "33039": {
+  "stem": true,
+  "typical_offer": "96-112 UCAS points (or equivalent); Foundation Year 64-80 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as an equivalent to the UCAS tariff; no points published. Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Maths, Computer Science or another science/technology subject normally required at A-level or equivalent",
+  "turkish_route": "Lise Diploması with GPA 3.5 or 70%+ average considered for direct entry (assessed individually), IELTS 6.0 (5.5 each section); International Foundation Pathway also available (Lise with IELTS 4.5)",
+  "prerequisite_maths": "Maths, Computer Science or other science/technology subject",
+  "source_url": "https://www.roehampton.ac.uk/study/undergraduate-courses/computer-science/",
+  "confidence": "medium",
+  "note": "Institution-wide: Roehampton states entry as UCAS points (or equivalent); IB conversion and A-level grades not published per course."
+ },
+ "33040": {
+  "stem": true,
+  "typical_offer": "96-112 UCAS points (or equivalent); Foundation Year 64-80 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as an equivalent to the UCAS tariff; no points published. Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "No required subjects published",
+  "turkish_route": "Lise Diploması with GPA 3.5 or 70%+ average considered for direct entry (assessed individually), IELTS 6.0 (5.5 each section); International Foundation Pathway also available (Lise with IELTS 4.5)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.roehampton.ac.uk/study/undergraduate-courses/business-and-computing/",
+  "confidence": "medium",
+  "note": "Institution-wide: Roehampton states entry as UCAS points (or equivalent); IB conversion and A-level grades not published per course."
+ },
+ "33041": {
+  "stem": true,
+  "typical_offer": "96-112 UCAS points (or equivalent); Foundation Year 64-80 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as an equivalent to the UCAS tariff; no points published. Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "No specific subjects published",
+  "turkish_route": "Lise Diploması with GPA 3.5 or 70%+ average considered for direct entry (assessed individually), IELTS 6.0 (5.5 each section); International Foundation Pathway also available (Lise with IELTS 4.5)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.roehampton.ac.uk/study/undergraduate-courses/computing-and-digital-technologies/",
+  "confidence": "medium",
+  "note": "Institution-wide: Roehampton states entry as UCAS points (or equivalent); IB conversion and A-level grades not published per course."
+ },
+ "33032": {
+  "stem": true,
+  "typical_offer": "96-112 UCAS points (or equivalent); Foundation Year 64-80 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as an equivalent to the UCAS tariff; no points published. Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "No A-level subjects required",
+  "turkish_route": "Lise Diploması with GPA 3.5 or 70%+ average considered for direct entry (assessed individually), IELTS 6.0 (5.5 each section); International Foundation Pathway also available (Lise with IELTS 4.5)",
+  "prerequisite_maths": "GCSE Maths and English 4/C",
+  "source_url": "https://www.roehampton.ac.uk/study/undergraduate-courses/construction-management/",
+  "confidence": "medium",
+  "note": "Institution-wide: Roehampton states entry as UCAS points (or equivalent); IB conversion and A-level grades not published per course."
+ },
+ "33019": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as an equivalent to the UCAS tariff; no points published. Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise Diploması with GPA 3.5 or 70%+ average considered for direct entry (assessed individually), IELTS 6.0 (5.5 each section); International Foundation Pathway also available (Lise with IELTS 4.5)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.roehampton.ac.uk/study/undergraduate-courses/cyber-security/",
+  "confidence": "low",
+  "note": "Institution-wide: Roehampton states entry as UCAS points (or equivalent); IB conversion and A-level grades not published per course."
+ },
+ "32925": {
+  "stem": false
+ },
+ "32926": {
+  "stem": false
+ },
+ "32927": {
+  "stem": false
+ },
+ "32928": {
+  "stem": false
+ },
+ "32929": {
+  "stem": false
+ },
+ "32930": {
+  "stem": false
+ },
+ "32931": {
+  "stem": false
+ },
+ "33009": {
+  "stem": true,
+  "typical_offer": "96-112 UCAS points (or equivalent); Foundation Year 64-80 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as an equivalent to the UCAS tariff; no points published. Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "No specific subjects published",
+  "turkish_route": "Lise Diploması with GPA 3.5 or 70%+ average considered for direct entry (assessed individually), IELTS 6.0 (5.5 each section); International Foundation Pathway also available (Lise with IELTS 4.5)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.roehampton.ac.uk/study/undergraduate-courses/software-engineering/",
+  "confidence": "medium",
+  "note": "Institution-wide: Roehampton states entry as UCAS points (or equivalent); IB conversion and A-level grades not published per course."
+ },
+ "33042": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as an equivalent to the UCAS tariff; no points published. Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise Diploması with GPA 3.5 or 70%+ average considered for direct entry (assessed individually), IELTS 6.0 (5.5 each section); International Foundation Pathway also available (Lise with IELTS 4.5)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.roehampton.ac.uk/study/undergraduate-courses/web-design-and-development/",
+  "confidence": "low",
+  "note": "Institution-wide: Roehampton states entry as UCAS points (or equivalent); IB conversion and A-level grades not published per course."
+ },
+ "39659": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and a science; IB 38 with 6 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "HL Maths and a science at 6",
+   "note": "Access Sheffield contextual offer: 34 points with 6,5 in HL Maths and a science"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. Maths and a science (Biology, Chemistry, Further Maths, Physics or Statistics); AAA with fourth Level 3 qualification plus A in AS or B in A-level Further Maths",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/aerospace-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39660": {
+  "stem": true,
+  "typical_offer": "A-level BBB (BBC incl. Maths and a science); IB 32 points (31 with Maths and a science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "No HL subjects for 32 points; 31 points needs Maths and a science at HL 5 or SL 7",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB any subjects; or BBC incl. Maths and one of Physics, Chemistry or Biology",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College. Foundation-year degree entry at BBB-level (72-80% band).",
+  "prerequisite_maths": "GCSE Maths 7/A and GCSE Science 6/B unless A-level Maths and a science taken",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/aerospace-engineering-foundation-year-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39661": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": null,
+  "source_url": "https://sheffield.ac.uk/undergraduate/apply/requirements",
+  "confidence": "low",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50548": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and a science; IB 38 with 6 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "HL Maths and a science at 6",
+   "note": "Access Sheffield contextual offer: 34 points with 6,5 in HL Maths and a science"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. Maths and a science (Biology, Chemistry, Further Maths, Physics or Statistics); AAA with fourth Level 3 qualification plus A in AS or B in A-level Further Maths",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/aerospace-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50549": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and a science; IB 34 with 6,5 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths and a science (6 and 5 in either order)",
+   "note": "Alternative: 33 points with 5 in HL Maths and a science plus B in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. Maths and a science (Chemistry, Physics, Biology, Electronics, Engineering, Technology, Environmental Science, Computer Science, Further Maths or Statistics); ABB with fourth Level 3 qualification (B in EPQ or AS/Further Maths)",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/biomedical-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50550": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and a science or technology subject; IB 36 with 6 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths and a science at 6",
+   "note": "Alternative: 34 points with 6,6,5 in HL Maths and a science plus A in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths and a science/technology subject; AAB plus A in EPQ with fourth Level 3 qualification",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/chemical-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50551": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 6 in HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths at 6",
+   "note": "Alternative: 34 points with 6 in HL Maths plus A in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths (Maths, Maths with Mechanics, Further Maths or Applied Maths; Statistics not accepted); GCSE Physics/Combined Science 6/B",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required; GCSE Physics 6/B",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/civil-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50552": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and a science; IB 34 with 6,5 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths and a science (6 and 5 in either order)",
+   "note": "Alternative: 33 points with 5 in HL Maths and a science plus B in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. Maths and a science (Biology, Chemistry, Computer Science, Electronics, Engineering, Further Maths, Physics, Technology); ABB with fourth Level 3 qualification",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/computer-systems-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50553": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics or Further Maths; IB 38 with 6 in HL Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "HL Maths and Physics at 6",
+   "note": "Alternative: 36 points with 6 in HL Maths and Physics plus A in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. Maths and at least one of Physics or Further Maths",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/general-engineering-beng-hons",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50554": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and one of Physics, Chemistry or Biology; IB 38 with 6 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "HL Maths at 6 and one of Physics, Chemistry or Biology",
+   "note": "Alternative: 36 points with 6 in HL Maths and a science plus A in science-based Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. Maths and Physics, Chemistry or Biology; or AAA plus A in AS or B in A-level Further Maths",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/mechanical-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39666": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and a science; IB 34 with 6,5 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths and a science (6 and 5 in either order)",
+   "note": "Alternative: 33 points with 5 in HL Maths and a science plus B in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. Maths and a science (Chemistry, Physics, Biology, Electronics, Engineering, Technology, Environmental Science, Computer Science, Further Maths or Statistics); ABB with fourth Level 3 qualification (B in EPQ or AS/Further Maths)",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/biomedical-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39667": {
+  "stem": true,
+  "typical_offer": "A-level BBB (BBC incl. Maths and a science); IB 32 points (31 with Maths and a science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "No HL subjects for 32 points; 31 points needs Maths and a science at HL 5 or SL 7",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB any subjects; or BBC incl. Maths and one of Physics, Chemistry or Biology",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College. Foundation-year degree entry at BBB-level (72-80% band).",
+  "prerequisite_maths": "GCSE Maths 7/A and GCSE Science 6/B unless A-level Maths and a science taken",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/biomedical-engineering-foundation-year-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50559": {
+  "stem": true,
+  "typical_offer": "A-level AAA or AAB incl. Maths (AAB needs A in Maths and B in Computer Science); IB 36 with 6 in HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths at 6",
+   "note": "Alternatives: 34 with 6 HL Maths plus A in Extended Essay; 34 with 6 HL Maths and 5 HL Computer Science"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths; or AAB incl. A in Maths and B in Computer Science",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/computer-science-bsc",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50560": {
+  "stem": true,
+  "typical_offer": "A-level AAB; IB 34 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "No specific HL subjects listed",
+   "note": "Alternative: 33 points with A in a science-based Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB (ABB plus A in relevant EPQ with fourth Level 3 qualification)",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "GCSE Maths 6/B",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/data-science-bsc",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50564": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. a science subject; IB 33 with 5 in an HL science",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL science at 5 (Geography, Biology, Chemistry, Environmental Science, Further Maths, Geology, Maths, Physics or Statistics)",
+   "note": "Alternative: 32 points with 5 in HL science plus B in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. a science subject; BBB plus B in EPQ or Core Maths",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "GCSE Maths 4/C",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/environmental-science-bsc",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39672": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and a science or technology subject; IB 36 with 6 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths and a science at 6",
+   "note": "Alternative: 34 points with 6,6,5 in HL Maths and a science plus A in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths and a science/technology subject; AAB plus A in EPQ with fourth Level 3 qualification",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/chemical-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39673": {
+  "stem": true,
+  "typical_offer": "A-level BBB (BBC incl. Maths and a science); IB 32 points (31 with Maths and a science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "No HL subjects for 32 points; 31 points needs Maths and a science at HL 5 or SL 7",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB any subjects; or BBC incl. Maths and one of Physics, Chemistry or Biology",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College. Foundation-year degree entry at BBB-level (72-80% band).",
+  "prerequisite_maths": "GCSE Maths 7/A and GCSE Science 6/B unless A-level Maths and a science taken",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/chemical-engineering-foundation-year-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39676": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": null,
+  "source_url": "https://sheffield.ac.uk/undergraduate/apply/requirements",
+  "confidence": "low",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39677": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 36 with 6 in HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths at 6",
+   "note": "Alternative: 34 points with 6 in HL Maths plus A in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths (Maths, Maths with Mechanics, Further Maths or Applied Maths; Statistics not accepted); GCSE Physics/Combined Science 6/B",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required; GCSE Physics 6/B",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/civil-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39678": {
+  "stem": true,
+  "typical_offer": "A-level AAA or AAB incl. Maths (AAB needs A in Maths and B in Computer Science); IB 36 with 6 in HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths at 6",
+   "note": "Alternatives: 34 with 6 HL Maths plus A in Extended Essay; 34 with 6 HL Maths and 5 HL Computer Science"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths; or AAB incl. A in Maths and B in Computer Science",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/computer-science-bsc",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39679": {
+  "stem": true,
+  "typical_offer": "A-level AAA or AAB incl. Maths (AAB needs A in Maths and B in Computer Science); IB 36 with 6 in HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths at 6",
+   "note": "Alternatives: 34 with 6 HL Maths plus A in Extended Essay; 34 with 6 HL Maths and 5 HL Computer Science"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths; or AAB incl. A in Maths and B in Computer Science",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/computer-science-artificial-intelligence-bsc",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39680": {
+  "stem": true,
+  "typical_offer": "A-level AAA or AAB incl. Maths (AAB needs A in Maths and B in Computer Science); IB 36 with 6 in HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths at 6",
+   "note": "Alternatives: 34 with 6 HL Maths plus A in Extended Essay; 34 with 6 HL Maths and 5 HL Computer Science"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths; or AAB incl. A in Maths and B in Computer Science",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/computer-science-software-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39681": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and a science; IB 34 with 6,5 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths and a science (6 and 5 in either order)",
+   "note": "Alternative: 33 points with 5 in HL Maths and a science plus B in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. Maths and a science (Biology, Chemistry, Computer Science, Electronics, Engineering, Further Maths, Physics, Technology); ABB with fourth Level 3 qualification",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/computer-systems-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39683": {
+  "stem": true,
+  "typical_offer": "A-level AAB; IB 34 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "No specific HL subjects listed",
+   "note": "Alternative: 33 points with A in a science-based Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB (ABB plus A in relevant EPQ with fourth Level 3 qualification)",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "GCSE Maths 6/B",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/data-science-bsc",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39690": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and a science; IB 34 with 6,5 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths and a science (6 and 5 in either order)",
+   "note": "Alternative: 33 points with 5 in HL Maths and a science plus B in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. Maths and a science (Biology, Chemistry, Computer Science, Electronics, Engineering, Further Maths, Physics, Technology)",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/electrical-and-electronic-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39691": {
+  "stem": true,
+  "typical_offer": "A-level BBB (BBC incl. Maths and a science); IB 32 points (31 with Maths and a science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "No HL subjects for 32 points; 31 points needs Maths and a science at HL 5 or SL 7",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB any subjects; or BBC incl. Maths and one of Physics, Chemistry or Biology",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College. Foundation-year degree entry at BBB-level (72-80% band).",
+  "prerequisite_maths": "GCSE Maths 7/A and GCSE Science 6/B unless A-level Maths and a science taken",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/electrical-and-electronic-engineering-foundation-year-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39699": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. a science subject; IB 33 with 5 in an HL science",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL science at 5 (Geography, Biology, Chemistry, Environmental Science, Further Maths, Geology, Maths, Physics or Statistics)",
+   "note": "Alternative: 32 points with 5 in HL science plus B in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. a science subject; BBB plus B in EPQ or Core Maths",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "GCSE Maths 4/C",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/environmental-science-bsc",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39701": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics or Further Maths; IB 38 with 6 in HL Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "HL Maths and Physics at 6",
+   "note": "Alternative: 36 points with 6 in HL Maths and Physics plus A in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. Maths and at least one of Physics or Further Maths",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/general-engineering-beng-hons",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39700": {
+  "stem": true,
+  "typical_offer": "A-level BBB (BBC incl. Maths and a science); IB 32 points (31 with Maths and a science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "No HL subjects for 32 points; 31 points needs Maths and a science at HL 5 or SL 7",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB any subjects; or BBC incl. Maths and one of Physics, Chemistry or Biology",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College. Foundation-year degree entry at BBB-level (72-80% band).",
+  "prerequisite_maths": "GCSE Maths 7/A and GCSE Science 6/B unless A-level Maths and a science taken",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/general-engineering-foundation-year-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39716": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. two of Maths, Physics or Chemistry; IB 34 with 6,5 in two of HL Maths, Physics, Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Two of HL Maths, Physics, Chemistry (6 and 5)",
+   "note": "Alternative: 33 points with 5 in two of those HL subjects plus A in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. two of Maths, Physics, Chemistry; ABB plus A in EPQ with fourth Level 3 qualification",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "GCSE Maths 6/B; A-level Maths not strictly required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/materials-science-and-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39715": {
+  "stem": true,
+  "typical_offer": "A-level BBB (BBC incl. Maths and a science); IB 32 points (31 with Maths and a science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "No HL subjects for 32 points; 31 points needs Maths and a science at HL 5 or SL 7",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB any subjects; or BBC incl. Maths and one of Physics, Chemistry or Biology",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College. Foundation-year degree entry at BBB-level (72-80% band).",
+  "prerequisite_maths": "GCSE Maths 7/A and GCSE Science 6/B unless A-level Maths and a science taken",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/materials-science-and-engineering-foundation-year-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50579": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": null,
+  "source_url": "https://sheffield.ac.uk/undergraduate/apply/requirements",
+  "confidence": "low",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39718": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and one of Physics, Chemistry or Biology; IB 38 with 6 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "HL Maths at 6 and one of Physics, Chemistry or Biology",
+   "note": "Alternative: 36 points with 6 in HL Maths and a science plus A in science-based Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. Maths and Physics, Chemistry or Biology; or AAA plus A in AS or B in A-level Further Maths",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/mechanical-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39719": {
+  "stem": true,
+  "typical_offer": "A-level BBB (BBC incl. Maths and a science); IB 32 points (31 with Maths and a science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "No HL subjects for 32 points; 31 points needs Maths and a science at HL 5 or SL 7",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB any subjects; or BBC incl. Maths and one of Physics, Chemistry or Biology",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College. Foundation-year degree entry at BBB-level (72-80% band).",
+  "prerequisite_maths": "GCSE Maths 7/A and GCSE Science 6/B unless A-level Maths and a science taken",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/mechanical-engineering-foundation-year-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39721": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and a science; IB 34 with 6,5 in HL Maths and a science",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths and a science (6 and 5 in either order)",
+   "note": "Alternative: 33 points with 5 in HL Maths and a science plus B in Extended Essay"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. Maths and a science (Biology, Chemistry, Computer Science, Electronics, Engineering, Further Maths, Physics, Technology)",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": "A-level/HL Maths required",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/mechatronic-and-robotic-engineering-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39720": {
+  "stem": true,
+  "typical_offer": "A-level BBB (BBC incl. Maths and a science); IB 32 points (31 with Maths and a science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "No HL subjects for 32 points; 31 points needs Maths and a science at HL 5 or SL 7",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB any subjects; or BBC incl. Maths and one of Physics, Chemistry or Biology",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College. Foundation-year degree entry at BBB-level (72-80% band).",
+  "prerequisite_maths": "GCSE Maths 7/A and GCSE Science 6/B unless A-level Maths and a science taken",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/mechatronic-and-robotic-engineering-foundation-year-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "50580": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College.",
+  "prerequisite_maths": null,
+  "source_url": "https://sheffield.ac.uk/undergraduate/apply/requirements",
+  "confidence": "low",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ },
+ "39736": {
+  "stem": true,
+  "typical_offer": "A-level BBB (BBC incl. Maths and a science); IB 32 points (31 with Maths and a science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "No HL subjects for 32 points; 31 points needs Maths and a science at HL 5 or SL 7",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams in relevant subjects with US high school diploma and GPA 3.0+; 5=A, 4=B, 3=C (e.g. 555 = A*AA band, 444 = BBB band). AP Seminar and AP Research not accepted. Calculus AB/BC not specified.",
+   "note": "Institution-wide rule for US applicants; applies to all programmes."
+  },
+  "tests": "No SAT/ACT requirement published; US applicants use high school diploma (GPA 3.0+) with AP exams.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB any subjects; or BBC incl. Maths and one of Physics, Chemistry or Biology",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise etc., MEB e-Okul verified) accepted for direct entry via UCAS with final-year (Grade 12) average: 88% = A*AA, 85% = AAA, 80% = AAB, 75% = ABB, 72% = BBB. Alternatively International Foundation Year in Science and Engineering at Sheffield International College. Foundation-year degree entry at BBB-level (72-80% band).",
+  "prerequisite_maths": "GCSE Maths 7/A and GCSE Science 6/B unless A-level Maths and a science taken",
+  "source_url": "https://sheffield.ac.uk/undergraduate/courses/2027/software-engineering-foundation-year-beng",
+  "confidence": "high",
+  "note": "Standard offer shown; Access Sheffield contextual offers are lower. Institution-wide AP and Turkey rules apply to all programmes."
+ }
+}

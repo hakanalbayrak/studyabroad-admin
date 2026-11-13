@@ -1,0 +1,1189 @@
+{
+ "28875": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/beng-hons-aerospace-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28876": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/meng-aerospace-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53181": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/beng-hons-aerospace-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53182": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade D",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/beng-hons-biomedical-engineering",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53184": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/architecture-design-and-the-built-environment/ug/beng-hons-civil-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53183": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/beng-hons-electronic-electrical-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53185": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/beng-hons-mechanical-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53186": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.ntu.ac.uk/study-and-courses/undergraduate/applying-to-ntu/entry-requirements-and-offers",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28892": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade D",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/beng-hons-biomedical-engineering",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28893": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade D",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/meng-hons-biomedical-engineering",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53197": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", at least two at A-level equivalent",
+  "source_url": "https://www.ntu.ac.uk/course/architecture-design-and-the-built-environment/ug/bsc-hons-civil-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53198": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", two at A-level equivalentIT, Maths or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-computer-science",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53199": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", two at A-level equivalentIT, Maths or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-computer-science-artificial-intelligence",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53200": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", two at A-level equivalentIT, Maths or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-computer-science-games-technology",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53201": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-computer-science-and-mathematics",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53203": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent IT or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent IT or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent IT or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-computing",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53204": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.ntu.ac.uk/study-and-courses/undergraduate/applying-to-ntu/entry-requirements-and-offers",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53205": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, including A-level equivalent IT, Maths or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, including A-level equivalent IT, Maths or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent IT, Maths or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-data-science",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53210": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.ntu.ac.uk/study-and-courses/undergraduate/applying-to-ntu/entry-requirements-and-offers",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53232": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.ntu.ac.uk/study-and-courses/undergraduate/applying-to-ntu/entry-requirements-and-offers",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53234": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.ntu.ac.uk/study-and-courses/undergraduate/applying-to-ntu/entry-requirements-and-offers",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28899": {
+  "stem": false
+ },
+ "28912": {
+  "stem": false
+ },
+ "28913": {
+  "stem": false
+ },
+ "28915": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/architecture-design-and-the-built-environment/ug/beng-hons-civil-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28916": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", at least two at A-level equivalent",
+  "source_url": "https://www.ntu.ac.uk/course/architecture-design-and-the-built-environment/ug/bsc-hons-civil-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28917": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/architecture-design-and-the-built-environment/ug/meng-hons-civil-engineering-design-and-construction",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28928": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", two at A-level equivalentIT, Maths or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-computer-science-artificial-intelligence",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28929": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", two at A-level equivalentIT, Maths or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-computer-science-games-technology",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28930": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-computer-science-and-mathematics",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28931": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", two at A-level equivalentIT, Maths or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-computer-science",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28932": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, two at A-level equivalent including IT, Maths or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", two at A-level equivalentIT, Maths or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/mcomp-hons-computer-science",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28934": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent IT or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent IT or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent IT or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-computing",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28936": {
+  "stem": false
+ },
+ "28945": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-cyber-security",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28947": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, including A-level equivalent IT, Maths or Science grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, including A-level equivalent IT, Maths or Science grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent IT, Maths or Science grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/bsc-hons-data-science",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28967": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/beng-hons-electronic-electrical-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28968": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/meng-hons-electronic-electrical-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "28980": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.ntu.ac.uk/course/animal-rural-and-environmental-sciences/ug/bsc-hons-environmental-science",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "29098": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/beng-hons-mechanical-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "29099": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 14 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS Tariff points from up to four qualifications, including A-level equivalent Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": "A-level equivalent Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/science-and-technology/ug/meng-hons-mechanical-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "53248": {
+  "stem": true,
+  "typical_offer": "120 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass including at least 15 points from three Higher Level subjects",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120 UCAS Tariff points from up to four qualifications, at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C; international A-levels treated as UK equivalents",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": ", at least two at A-level equivalent, with Maths, Use of Maths or Further Maths grade C",
+  "source_url": "https://www.ntu.ac.uk/course/architecture-design-and-the-built-environment/ug/meng-hons-civil-engineering-design-and-construction",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "29139": {
+  "stem": false
+ },
+ "29142": {
+  "stem": false
+ },
+ "29143": {
+  "stem": false
+ },
+ "29144": {
+  "stem": false
+ },
+ "29145": {
+  "stem": false
+ },
+ "29147": {
+  "stem": false
+ },
+ "29148": {
+  "stem": false
+ },
+ "29149": {
+  "stem": false
+ },
+ "29152": {
+  "stem": false
+ },
+ "29161": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.ntu.ac.uk/study-and-courses/undergraduate/applying-to-ntu/entry-requirements-and-offers",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "29163": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.ntu.ac.uk/study-and-courses/undergraduate/applying-to-ntu/entry-requirements-and-offers",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ },
+ "29164": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma pass plus minimum points from three Higher Level subjects (12 points at 96 Tariff up to 16 points at 128 Tariff)",
+   "note": "Where a grade is specified, A-level C equals HL 4; applicants from Turkey typically need 28-34 total IB points depending on course"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International A-levels treated as UK equivalents; points per course",
+  "turkish_route": "Lise Diplomas\u0131 with results above 70% accepted for Year One entry; below 70% considered for foundation or International Year One at Nottingham Trent International College (International Year One offered in Business and Computing)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.ntu.ac.uk/study-and-courses/undergraduate/applying-to-ntu/entry-requirements-and-offers",
+  "confidence": "low",
+  "note": "Institution-wide NTU rules for IB, A-level equivalence and Turkey applied; course-specific points from NTU course pages where listed"
+ }
+}

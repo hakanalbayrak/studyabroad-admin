@@ -1,0 +1,854 @@
+{
+ "52960": {
+  "stem": true,
+  "typical_offer": "About 112-120 UCAS points (BBC-BBB) or equivalent; IB 31 points with 5/5/4 at Higher Level; GCSE Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 31,
+   "subjects": "5/5/4 at Higher Level",
+   "note": "Applies to all ASU London courses"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma route: GPA 3.0 plus one of six options, including at least two AP exams each scored 4 or above, or one AP exam (4+) with one IB HL exam (5). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US diploma applicants: SAT combined 1150+ is one of six alternative options (ACT also listed); IELTS Academic 6.0 with no less than 5.5 in any skill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "About 112-120 UCAS points (BBC-BBB) or equivalent for all courses; GCSE Maths 4/C or Level 2 equivalent",
+  "turkish_route": "Lise Diplomas\u0131 (general, technical or vocational) accepted with minimum 70% (4.0/5.0 or 7/10); otherwise Kaplan foundation certificate",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent Level 2; no specific A-level subject listed",
+  "source_url": "https://asu-london.ac.uk/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "52961": {
+  "stem": true,
+  "typical_offer": "About 112-120 UCAS points (BBC-BBB) or equivalent; IB 31 points with 5/5/4 at Higher Level; GCSE Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 31,
+   "subjects": "5/5/4 at Higher Level",
+   "note": "Applies to all ASU London courses"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma route: GPA 3.0 plus one of six options, including at least two AP exams each scored 4 or above, or one AP exam (4+) with one IB HL exam (5). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US diploma applicants: SAT combined 1150+ is one of six alternative options (ACT also listed); IELTS Academic 6.0 with no less than 5.5 in any skill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "About 112-120 UCAS points (BBC-BBB) or equivalent for all courses; GCSE Maths 4/C or Level 2 equivalent",
+  "turkish_route": "Lise Diplomas\u0131 (general, technical or vocational) accepted with minimum 70% (4.0/5.0 or 7/10); otherwise Kaplan foundation certificate",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent Level 2; no specific A-level subject listed",
+  "source_url": "https://asu-london.ac.uk/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "52962": {
+  "stem": true,
+  "typical_offer": "About 112-120 UCAS points (BBC-BBB) or equivalent; IB 31 points with 5/5/4 at Higher Level; GCSE Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 31,
+   "subjects": "5/5/4 at Higher Level",
+   "note": "Applies to all ASU London courses"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma route: GPA 3.0 plus one of six options, including at least two AP exams each scored 4 or above, or one AP exam (4+) with one IB HL exam (5). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US diploma applicants: SAT combined 1150+ is one of six alternative options (ACT also listed); IELTS Academic 6.0 with no less than 5.5 in any skill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "About 112-120 UCAS points (BBC-BBB) or equivalent for all courses; GCSE Maths 4/C or Level 2 equivalent",
+  "turkish_route": "Lise Diplomas\u0131 (general, technical or vocational) accepted with minimum 70% (4.0/5.0 or 7/10); otherwise Kaplan foundation certificate",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent Level 2; no specific A-level subject listed",
+  "source_url": "https://asu-london.ac.uk/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "52963": {
+  "stem": true,
+  "typical_offer": "About 112-120 UCAS points (BBC-BBB) or equivalent; IB 31 points with 5/5/4 at Higher Level; GCSE Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 31,
+   "subjects": "5/5/4 at Higher Level",
+   "note": "Applies to all ASU London courses"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma route: GPA 3.0 plus one of six options, including at least two AP exams each scored 4 or above, or one AP exam (4+) with one IB HL exam (5). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US diploma applicants: SAT combined 1150+ is one of six alternative options (ACT also listed); IELTS Academic 6.0 with no less than 5.5 in any skill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "About 112-120 UCAS points (BBC-BBB) or equivalent for all courses; GCSE Maths 4/C or Level 2 equivalent",
+  "turkish_route": "Lise Diplomas\u0131 (general, technical or vocational) accepted with minimum 70% (4.0/5.0 or 7/10); otherwise Kaplan foundation certificate",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent Level 2; no specific A-level subject listed",
+  "source_url": "https://asu-london.ac.uk/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "52965": {
+  "stem": true,
+  "typical_offer": "About 112-120 UCAS points (BBC-BBB) or equivalent; IB 31 points with 5/5/4 at Higher Level; GCSE Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 31,
+   "subjects": "5/5/4 at Higher Level",
+   "note": "Applies to all ASU London courses"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma route: GPA 3.0 plus one of six options, including at least two AP exams each scored 4 or above, or one AP exam (4+) with one IB HL exam (5). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US diploma applicants: SAT combined 1150+ is one of six alternative options (ACT also listed); IELTS Academic 6.0 with no less than 5.5 in any skill",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "About 112-120 UCAS points (BBC-BBB) or equivalent for all courses; GCSE Maths 4/C or Level 2 equivalent",
+  "turkish_route": "Lise Diplomas\u0131 (general, technical or vocational) accepted with minimum 70% (4.0/5.0 or 7/10); otherwise Kaplan foundation certificate",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent Level 2; no specific A-level subject listed",
+  "source_url": "https://asu-london.ac.uk/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "21972": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "55504": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "55505": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "55508": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "55507": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "55528": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21965": {
+  "stem": false
+ },
+ "21932": {
+  "stem": false
+ },
+ "21966": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21967": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21973": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21974": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21968": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21976": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21930": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21977": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21978": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21979": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21991": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "22000": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21984": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21980": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "22005": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "22006": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "22007": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "22008": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "22036": {
+  "stem": false
+ },
+ "22037": {
+  "stem": false
+ },
+ "22038": {
+  "stem": false
+ },
+ "21981": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ },
+ "21982": {
+  "stem": true,
+  "typical_offer": "Tariff points set per course (roughly 80-112 UCAS points); IB minimum 24 points for international entry; GCSEs incl. English and Maths grade 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Institution-wide minimum for international undergraduate entry; course-level subject requirements not published"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS Academic 6.0 with no less than 5.5 in any skill (IB English grade 5 also accepted); no SAT/ACT requirement published",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels from a recognised UK board accepted on the UCAS tariff; AS-levels alone not accepted; at least two A-levels plus three GCSEs",
+  "turkish_route": "Lise Diplomas\u0131 accepted for year 1 with 3.8/5 or 70%; alternatives: recognised foundation programme, or first year of a bachelor's degree with CGPA 2.2/4.0 (specified universities) or 2.5/4.0 (others)",
+  "prerequisite_maths": "GCSE Maths grade 4/C (some engineering courses ask grade B/6)",
+  "source_url": "https://www.aru.ac.uk/international/entry-requirements",
+  "confidence": "medium"
+ }
+}
