@@ -23,6 +23,19 @@ router.get('/:id', async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+
+// requirements_json and field are stored by a second statement so the main column lists above stay untouched.
+async function saveExtra(id, body) {
+  const sets = [], vals = [];
+  if (body.requirements_json !== undefined && body.requirements_json !== null) {
+    sets.push('requirements_json = ?');
+    vals.push(typeof body.requirements_json === 'string' ? body.requirements_json : JSON.stringify(body.requirements_json));
+  }
+  if (typeof body.field === 'string' && body.field.trim()) { sets.push('field = ?'); vals.push(body.field.trim().slice(0, 60)); }
+  if (!sets.length) return;
+  await db.query(`UPDATE programs SET ${sets.join(', ')} WHERE id = ?`, [...vals, id]);
+}
+
 router.post('/', async (req, res) => {
   const { entity_location_id, program_type_id, name, language_of_instruction, duration,
           tuition_fee, tuition_currency, intake_months, english_req_type, english_req_score,
@@ -66,6 +79,7 @@ router.post('/', async (req, res) => {
        deposit_deadline || null,
        scholarship_deadline || null]
     );
+    await saveExtra(result.insertId, req.body);
     res.status(201).json({ id: result.insertId });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
@@ -110,6 +124,7 @@ router.put('/:id', async (req, res) => {
        scholarship_deadline || null,
        req.params.id]
     );
+    await saveExtra(req.params.id, req.body);
     res.json({ success: true });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
