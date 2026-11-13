@@ -1680,3 +1680,7 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 ## 2026-11-12 — Logos
 - Auto-collected 40 of 53 website-bearing entities' logos (apple-touch-icon / site icon, Google favicon fallback) into public/img/logos/ and set logo_url. Quality is icon-size (up to ~180px). Not found: Maastricht, Thomas More, ULiège, ULB, UAntwerp, UEA, Univ. of Szeged, Charles University, ASU, ACU, Ajman, ARU College, Twente International College.
 - No other entity has a website_url or logo yet (522 of 575 entities): add website URLs first, then re-run the collector (logos.py approach).
+
+## 2026-11-13 — Websites + logos for all entities
+- Website URLs added to 501 entities (found by agents; many well-known domains from memory, spot-checked for reachability; 404 pages replaced by site root). 21 left empty: Shorelight "International Accelerator" entries (523-532), TOP Tech College, MUDT, DIFC, UCD ISC, European School of Economics Milan/Florence/Rome, Ascencia Malta/Valencia, Austria Foundation Center ECFY, Centre of Entertainment Arts.
+- Logos auto-collected for 396 of 554 entities with a website (icons up to ~180px; pathway colleges of a provider/group share the group logo, e.g. Kaplan, ONCAMPUS, SRH, Northeastern). About 158 have no logo (blocked sites, no usable icon): re-run later or upload by hand.
