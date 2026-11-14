@@ -1,0 +1,590 @@
+{
+ "55640": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 incl. HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "HL Mathematics grade 5",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. A-level Maths at grade C or above",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "Maths A-level/IB HL Maths (civil); GCSE evidence not required",
+  "source_url": "https://www.bcu.ac.uk/courses/civil-engineering-beng-2026-27",
+  "confidence": "medium"
+ },
+ "55641": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 incl. HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "HL Mathematics grade 5",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. a STEM subject at grade C+ (GCSE Maths 4+ alternative); Maths, Physics or Chemistry for engineering",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "Maths A-level/IB HL Maths (civil); GCSE evidence not required",
+  "source_url": "https://www.bcu.ac.uk/courses/electrical-and-electronic-engineering-beng-2027-28",
+  "confidence": "medium"
+ },
+ "55642": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 incl. HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "HL Mathematics grade 5",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. a STEM subject at grade C+ (GCSE Maths 4+ alternative); Maths, Physics or Chemistry for engineering",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "Maths A-level/IB HL Maths (civil); GCSE evidence not required",
+  "source_url": "https://www.bcu.ac.uk/courses/mechanical-engineering-beng-2026-27",
+  "confidence": "medium"
+ },
+ "55647": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 with HL Computer Science, Chemistry, Design Technology or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "One of Computer Science, Chemistry, Design Technology or Physics at HL",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. one subject from Technology, Science, Mathematics or Computing; max four subjects counted",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "No GCSE evidence required; one Technology/Science/Maths/Computing subject in A-levels",
+  "source_url": "https://www.bcu.ac.uk/courses/business-information-technology-bsc-hons-2027-28",
+  "confidence": "low"
+ },
+ "55648": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 with HL Computer Science, Chemistry, Design Technology or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "One of Computer Science, Chemistry, Design Technology or Physics at HL",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. one subject from Technology, Science, Mathematics or Computing; max four subjects counted",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "No GCSE evidence required; one Technology/Science/Maths/Computing subject in A-levels",
+  "source_url": "https://www.bcu.ac.uk/courses/computer-networks-and-security-bsc-hons-2027-28",
+  "confidence": "medium"
+ },
+ "55649": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 with HL Computer Science, Chemistry, Design Technology or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "One of Computer Science, Chemistry, Design Technology or Physics at HL",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. one subject from Technology, Science, Mathematics or Computing; max four subjects counted",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "No GCSE evidence required; one Technology/Science/Maths/Computing subject in A-levels",
+  "source_url": "https://www.bcu.ac.uk/courses/computer-science-bsc-hons-2026-27",
+  "confidence": "medium"
+ },
+ "55650": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 with HL Computer Science, Chemistry, Design Technology or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "One of Computer Science, Chemistry, Design Technology or Physics at HL",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. one subject from Technology, Science, Mathematics or Computing; max four subjects counted",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "No GCSE evidence required; one Technology/Science/Maths/Computing subject in A-levels",
+  "source_url": "https://www.bcu.ac.uk/courses/computer-science-with-artificial-intelligence-bsc-hons-2026-27",
+  "confidence": "medium"
+ },
+ "55651": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 with HL Computer Science, Chemistry, Design Technology or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "One of Computer Science, Chemistry, Design Technology or Physics at HL",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. one subject from Technology, Science, Mathematics or Computing; max four subjects counted",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "No GCSE evidence required; one Technology/Science/Maths/Computing subject in A-levels",
+  "source_url": "https://www.bcu.ac.uk/courses/computing-information-technology-bsc-hons-2027-28",
+  "confidence": "medium"
+ },
+ "55653": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 with HL Computer Science, Chemistry, Design Technology or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "One of Computer Science, Chemistry, Design Technology or Physics at HL",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. one subject from Technology, Science, Mathematics or Computing; max four subjects counted",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "No GCSE evidence required; one Technology/Science/Maths/Computing subject in A-levels",
+  "source_url": "https://www.bcu.ac.uk/courses/cyber-security-bsc-hons-2027-28",
+  "confidence": "medium"
+ },
+ "55666": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 with HL Computer Science, Chemistry, Design Technology or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "One of Computer Science, Chemistry, Design Technology or Physics at HL",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. one subject from Technology, Science, Mathematics or Computing; max four subjects counted",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "No GCSE evidence required; one Technology/Science/Maths/Computing subject in A-levels",
+  "source_url": "https://www.bcu.ac.uk/courses/software-engineering-bsc-hons-2027-28",
+  "confidence": "medium"
+ },
+ "55667": {
+  "stem": true,
+  "typical_offer": "UCAS 112-72 points (A-level BBC-CDE); IB 28-24 with HL Computer Science, Chemistry, Design Technology or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "One of Computer Science, Chemistry, Design Technology or Physics at HL",
+   "note": "Range reflects individual offers"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT requirement stated; offers based on UCAS Tariff points, predicted grades and individual circumstances",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level 112-72 UCAS points (BBC-CDE) incl. one subject from Technology, Science, Mathematics or Computing; max four subjects counted",
+  "turkish_route": "Devlet Lise Diplomasi (4-year) at 70% considered from BCU-approved partner schools; other applicants advised to take foundation course at BCU International College. Maths required for Computing and Engineering degrees",
+  "prerequisite_maths": "No GCSE evidence required; one Technology/Science/Maths/Computing subject in A-levels",
+  "source_url": "https://www.bcu.ac.uk/courses/sound-engineering-bsc-hons-2027-28",
+  "confidence": "medium"
+ },
+ "20788": {
+  "stem": true,
+  "typical_offer": "UCAS 112-128 points (A-level BBC-ABB), min 2 A-levels; IB 28-31; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "IB points must be met in offer; UCAS tariff not accepted as equivalent. HL certificates route: 112-128 points from two HL certificates"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP tests required only on courses listing required/relevant subjects: 2 or 3 tests, scores 3-5 depending on course; Calculus AB/BC variant not specified",
+   "note": "Applicants unable to sit AP contact international admissions"
+  },
+  "tests": "US high school diploma: GPA 3.0+/4.0 plus SAT 1200-1300 or ACT 24-26 (varies by course)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points (BBC-ABB) from at least two A-levels",
+  "turkish_route": "Direct entry possible with Devlet Lise Diplomasi 3.5/5 or 70% (course pages); Turkey entry-requirements guide says Lise holders normally take Foundation Certificate (BU International College, IELTS 5.0) unless from specific schools with average 4/5",
+  "prerequisite_maths": "GCSE Maths grade 4",
+  "source_url": "https://www.bournemouth.ac.uk/study/courses/bsc-hons-computing",
+  "confidence": "medium"
+ },
+ "20790": {
+  "stem": true,
+  "typical_offer": "UCAS 112-128 points (A-level BBC-ABB), min 2 A-levels; IB 28-31; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "IB points must be met in offer; UCAS tariff not accepted as equivalent. HL certificates route: 112-128 points from two HL certificates"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP tests required only on courses listing required/relevant subjects: 2 or 3 tests, scores 3-5 depending on course; Calculus AB/BC variant not specified",
+   "note": "Applicants unable to sit AP contact international admissions"
+  },
+  "tests": "US high school diploma: GPA 3.0+/4.0 plus SAT 1200-1300 or ACT 24-26 (varies by course)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points (BBC-ABB) from at least two A-levels",
+  "turkish_route": "Direct entry possible with Devlet Lise Diplomasi 3.5/5 or 70% (course pages); Turkey entry-requirements guide says Lise holders normally take Foundation Certificate (BU International College, IELTS 5.0) unless from specific schools with average 4/5",
+  "prerequisite_maths": "GCSE Maths grade 4",
+  "source_url": "https://www.bournemouth.ac.uk/study/courses/bsc-hons-software-engineering",
+  "confidence": "medium"
+ },
+ "20793": {
+  "stem": true,
+  "typical_offer": "UCAS 112-128 points (A-level BBC-ABB), min 2 A-levels; IB 28-31; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "IB points must be met in offer; UCAS tariff not accepted as equivalent. HL certificates route: 112-128 points from two HL certificates"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP tests required only on courses listing required/relevant subjects: 2 or 3 tests, scores 3-5 depending on course; Calculus AB/BC variant not specified",
+   "note": "Applicants unable to sit AP contact international admissions"
+  },
+  "tests": "US high school diploma: GPA 3.0+/4.0 plus SAT 1200-1300 or ACT 24-26 (varies by course)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points (BBC-ABB) from at least two A-levels",
+  "turkish_route": "Direct entry possible with Devlet Lise Diplomasi 3.5/5 or 70% (course pages); Turkey entry-requirements guide says Lise holders normally take Foundation Certificate (BU International College, IELTS 5.0) unless from specific schools with average 4/5",
+  "prerequisite_maths": "GCSE Maths grade 4",
+  "source_url": "https://www.bournemouth.ac.uk/study/courses/bsc-hons-design-engineering-0",
+  "confidence": "medium"
+ },
+ "20789": {
+  "stem": true,
+  "typical_offer": "UCAS 112-128 points (A-level BBC-ABB), min 2 A-levels; IB 28-31; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "IB points must be met in offer; UCAS tariff not accepted as equivalent. HL certificates route: 112-128 points from two HL certificates"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP tests required only on courses listing required/relevant subjects: 2 or 3 tests, scores 3-5 depending on course; Calculus AB/BC variant not specified",
+   "note": "Applicants unable to sit AP contact international admissions"
+  },
+  "tests": "US high school diploma: GPA 3.0+/4.0 plus SAT 1200-1300 or ACT 24-26 (varies by course)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points (BBC-ABB) from at least two A-levels",
+  "turkish_route": "Direct entry possible with Devlet Lise Diplomasi 3.5/5 or 70% (course pages); Turkey entry-requirements guide says Lise holders normally take Foundation Certificate (BU International College, IELTS 5.0) unless from specific schools with average 4/5",
+  "prerequisite_maths": "GCSE Maths grade 4",
+  "source_url": "https://www.bournemouth.ac.uk/study/courses/bsc-hons-cyber-security-management-1",
+  "confidence": "medium"
+ },
+ "52980": {
+  "stem": true,
+  "typical_offer": "UCAS 112-128 points (A-level BBC-ABB), min 2 A-levels; IB 28-31; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "IB points must be met in offer; UCAS tariff not accepted as equivalent. HL certificates route: 112-128 points from two HL certificates"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP tests required only on courses listing required/relevant subjects: 2 or 3 tests, scores 3-5 depending on course; Calculus AB/BC variant not specified",
+   "note": "Applicants unable to sit AP contact international admissions"
+  },
+  "tests": "US high school diploma: GPA 3.0+/4.0 plus SAT 1200-1300 or ACT 24-26 (varies by course)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points (BBC-ABB) from at least two A-levels",
+  "turkish_route": "Direct entry possible with Devlet Lise Diplomasi 3.5/5 or 70% (course pages); Turkey entry-requirements guide says Lise holders normally take Foundation Certificate (BU International College, IELTS 5.0) unless from specific schools with average 4/5",
+  "prerequisite_maths": "GCSE Maths grade 4",
+  "source_url": "https://www.bournemouth.ac.uk/study/courses/bsc-hons-business-computing-analytics-0",
+  "confidence": "medium"
+ },
+ "20787": {
+  "stem": true,
+  "typical_offer": "UCAS 112-128 points (A-level BBC-ABB), min 2 A-levels; IB 28-31; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "IB points must be met in offer; UCAS tariff not accepted as equivalent. HL certificates route: 112-128 points from two HL certificates"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP tests required only on courses listing required/relevant subjects: 2 or 3 tests, scores 3-5 depending on course; Calculus AB/BC variant not specified",
+   "note": "Applicants unable to sit AP contact international admissions"
+  },
+  "tests": "US high school diploma: GPA 3.0+/4.0 plus SAT 1200-1300 or ACT 24-26 (varies by course)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points (BBC-ABB) from at least two A-levels",
+  "turkish_route": "Direct entry possible with Devlet Lise Diplomasi 3.5/5 or 70% (course pages); Turkey entry-requirements guide says Lise holders normally take Foundation Certificate (BU International College, IELTS 5.0) unless from specific schools with average 4/5",
+  "prerequisite_maths": "GCSE Maths grade 4",
+  "source_url": "https://www.bournemouth.ac.uk/study/courses/bsc-hons-games-software-engineering",
+  "confidence": "low"
+ },
+ "52981": {
+  "stem": true,
+  "typical_offer": "UCAS 112-128 points (A-level BBC-ABB), min 2 A-levels; IB 28-31; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "IB points must be met in offer; UCAS tariff not accepted as equivalent. HL certificates route: 112-128 points from two HL certificates"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP tests required only on courses listing required/relevant subjects: 2 or 3 tests, scores 3-5 depending on course; Calculus AB/BC variant not specified",
+   "note": "Applicants unable to sit AP contact international admissions"
+  },
+  "tests": "US high school diploma: GPA 3.0+/4.0 plus SAT 1200-1300 or ACT 24-26 (varies by course)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points (BBC-ABB) from at least two A-levels",
+  "turkish_route": "Direct entry possible with Devlet Lise Diplomasi 3.5/5 or 70% (course pages); Turkey entry-requirements guide says Lise holders normally take Foundation Certificate (BU International College, IELTS 5.0) unless from specific schools with average 4/5",
+  "prerequisite_maths": "GCSE Maths grade 4",
+  "source_url": "https://www.bournemouth.ac.uk/study/courses/bsc-hons-cyber-security-digital-forensics",
+  "confidence": "low"
+ },
+ "52987": {
+  "stem": true,
+  "typical_offer": "UCAS 112-128 points (A-level BBC-ABB), min 2 A-levels; IB 28-31; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "IB points must be met in offer; UCAS tariff not accepted as equivalent. HL certificates route: 112-128 points from two HL certificates"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP tests required only on courses listing required/relevant subjects: 2 or 3 tests, scores 3-5 depending on course; Calculus AB/BC variant not specified",
+   "note": "Applicants unable to sit AP contact international admissions"
+  },
+  "tests": "US high school diploma: GPA 3.0+/4.0 plus SAT 1200-1300 or ACT 24-26 (varies by course)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points (BBC-ABB) from at least two A-levels",
+  "turkish_route": "Direct entry possible with Devlet Lise Diplomasi 3.5/5 or 70% (course pages); Turkey entry-requirements guide says Lise holders normally take Foundation Certificate (BU International College, IELTS 5.0) unless from specific schools with average 4/5",
+  "prerequisite_maths": "GCSE Maths grade 4",
+  "source_url": "https://www.bournemouth.ac.uk/study/courses/bsc-hons-networks-cyber-security",
+  "confidence": "low"
+ },
+ "52982": {
+  "stem": true,
+  "typical_offer": "UCAS 104-120 points (A-level BCC-BBB); GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB points must be met in offer; UCAS tariff not accepted as equivalent. HL certificates route: 112-128 points from two HL certificates"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP tests required only on courses listing required/relevant subjects: 2 or 3 tests, scores 3-5 depending on course; Calculus AB/BC variant not specified",
+   "note": "Applicants unable to sit AP contact international admissions"
+  },
+  "tests": "US high school diploma: GPA 3.0+/4.0 plus SAT 1200-1300 or ACT 24-26 (varies by course)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-120 UCAS points (BCC-BBB)",
+  "turkish_route": "Direct entry possible with Devlet Lise Diplomasi 3.5/5 or 70% (course pages); Turkey entry-requirements guide says Lise holders normally take Foundation Certificate (BU International College, IELTS 5.0) unless from specific schools with average 4/5",
+  "prerequisite_maths": "GCSE Maths grade 4",
+  "source_url": "https://www.bournemouth.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "20792": {
+  "stem": true,
+  "typical_offer": "UCAS 120-128 points (A-level BBB-ABB) incl. Maths (or Physics) and a science/technology subject; IB 29-30",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "Maths and a science/technology subject at HL",
+   "note": "IB points must be met in offer; UCAS tariff not accepted as equivalent. HL certificates route: 112-128 points from two HL certificates"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP tests required only on courses listing required/relevant subjects: 2 or 3 tests, scores 3-5 depending on course; Calculus AB/BC variant not specified",
+   "note": "Applicants unable to sit AP contact international admissions"
+  },
+  "tests": "US high school diploma: GPA 3.0+/4.0 plus SAT 1200-1300 or ACT 24-26 (varies by course)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120-128 UCAS points (BBB-ABB) incl. 2 A-levels in Maths (or Physics) and a Science/Technology subject",
+  "turkish_route": "Direct entry possible with Devlet Lise Diplomasi 3.5/5 or 70% (course pages); Turkey entry-requirements guide says Lise holders normally take Foundation Certificate (BU International College, IELTS 5.0) unless from specific schools with average 4/5",
+  "prerequisite_maths": "Maths or Physics A-level; GCSE English and Maths grade 4",
+  "source_url": "https://www.bournemouth.ac.uk/study/courses/beng-hons-mechanical-engineering-2",
+  "confidence": "medium"
+ },
+ "37255": {
+  "stem": false
+ },
+ "20783": {
+  "stem": false
+ },
+ "20784": {
+  "stem": false
+ },
+ "20812": {
+  "stem": false
+ },
+ "20813": {
+  "stem": false
+ },
+ "20814": {
+  "stem": false
+ },
+ "20815": {
+  "stem": false
+ }
+}

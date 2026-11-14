@@ -1,0 +1,803 @@
+{
+ "29461": {
+  "stem": false
+ },
+ "29462": {
+  "stem": false
+ },
+ "29463": {
+  "stem": false
+ },
+ "36067": {
+  "stem": false
+ },
+ "20023": {
+  "stem": false
+ },
+ "20029": {
+  "stem": false
+ },
+ "29347": {
+  "stem": true,
+  "typical_offer": "IB band system: 26-29 (Band I) to 36+ (Band V) points depending on course; Cambridge A-level bands CCC to AAA (ABB=III, AAB=IV, AAA=V)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Bands: I 26-29, II 30-31, III 32-33, IV 34-35, V 36+; course band applies. Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A-level bands: I CCC, II BBB, III ABB, IV AAB, V AAA; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": "Lise Diplomas\u0131 accepted for direct entry by average grade: Band I 70%, II 75%, III 80%, IV 85%, V by referral; also first year of Turkish university degree (CGPA 2.5/5 to 3.5/4 by band) or associate degree",
+  "prerequisite_maths": null,
+  "source_url": "https://universityofgalway.ie/global-galway/studyinireland/yourcountry/internationalbaccalaureate/",
+  "confidence": "low"
+ },
+ "29326": {
+  "stem": true,
+  "typical_offer": "IB band system: 26-29 (Band I) to 36+ (Band V) points depending on course; Cambridge A-level bands CCC to AAA (ABB=III, AAB=IV, AAA=V)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Bands: I 26-29, II 30-31, III 32-33, IV 34-35, V 36+; course band applies. Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": "Engineering Maths Qualifying Exam (University of Galway)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Alternative to H4 Leaving Cert Higher Maths for engineering entry"
+  },
+  "a_level": "Cambridge A-level bands: I CCC, II BBB, III ABB, IV AAB, V AAA; engineering requires at least grade C in A-level Mathematics; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": "Lise Diplomas\u0131 accepted for direct entry by average grade: Band I 70%, II 75%, III 80%, IV 85%, V by referral; also first year of Turkish university degree (CGPA 2.5/5 to 3.5/4 by band) or associate degree",
+  "prerequisite_maths": "Higher Level Leaving Cert Maths H4 or equivalent, or Engineering Maths Qualifying Exam; A-level Maths grade C",
+  "source_url": "https://universityofgalway.ie/global-galway/studyinireland/yourcountry/internationalbaccalaureate/",
+  "confidence": "low"
+ },
+ "29339": {
+  "stem": true,
+  "typical_offer": "IB band system: 26-29 (Band I) to 36+ (Band V) points depending on course; Cambridge A-level bands CCC to AAA (ABB=III, AAB=IV, AAA=V)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Bands: I 26-29, II 30-31, III 32-33, IV 34-35, V 36+; course band applies. Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": "Engineering Maths Qualifying Exam (University of Galway)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Alternative to H4 Leaving Cert Higher Maths for engineering entry"
+  },
+  "a_level": "Cambridge A-level bands: I CCC, II BBB, III ABB, IV AAB, V AAA; engineering requires at least grade C in A-level Mathematics; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": "Lise Diplomas\u0131 accepted for direct entry by average grade: Band I 70%, II 75%, III 80%, IV 85%, V by referral; also first year of Turkish university degree (CGPA 2.5/5 to 3.5/4 by band) or associate degree",
+  "prerequisite_maths": "Higher Level Leaving Cert Maths H4 or equivalent, or Engineering Maths Qualifying Exam; A-level Maths grade C",
+  "source_url": "https://universityofgalway.ie/global-galway/studyinireland/yourcountry/internationalbaccalaureate/",
+  "confidence": "low"
+ },
+ "29337": {
+  "stem": true,
+  "typical_offer": "IB band system: 26-29 (Band I) to 36+ (Band V) points depending on course; Cambridge A-level bands CCC to AAA (ABB=III, AAB=IV, AAA=V)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Bands: I 26-29, II 30-31, III 32-33, IV 34-35, V 36+; course band applies. Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A-level bands: I CCC, II BBB, III ABB, IV AAB, V AAA; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": "Lise Diplomas\u0131 accepted for direct entry by average grade: Band I 70%, II 75%, III 80%, IV 85%, V by referral; also first year of Turkish university degree (CGPA 2.5/5 to 3.5/4 by band) or associate degree",
+  "prerequisite_maths": null,
+  "source_url": "https://universityofgalway.ie/global-galway/studyinireland/yourcountry/internationalbaccalaureate/",
+  "confidence": "low"
+ },
+ "29354": {
+  "stem": true,
+  "typical_offer": "IB band system: 26-29 (Band I) to 36+ (Band V) points depending on course; Cambridge A-level bands CCC to AAA (ABB=III, AAB=IV, AAA=V)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Bands: I 26-29, II 30-31, III 32-33, IV 34-35, V 36+; course band applies. Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": "Engineering Maths Qualifying Exam (University of Galway)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Alternative to H4 Leaving Cert Higher Maths for engineering entry"
+  },
+  "a_level": "Cambridge A-level bands: I CCC, II BBB, III ABB, IV AAB, V AAA; engineering requires at least grade C in A-level Mathematics; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": "Lise Diplomas\u0131 accepted for direct entry by average grade: Band I 70%, II 75%, III 80%, IV 85%, V by referral; also first year of Turkish university degree (CGPA 2.5/5 to 3.5/4 by band) or associate degree",
+  "prerequisite_maths": "Higher Level Leaving Cert Maths H4 or equivalent, or Engineering Maths Qualifying Exam; A-level Maths grade C",
+  "source_url": "https://universityofgalway.ie/global-galway/studyinireland/yourcountry/internationalbaccalaureate/",
+  "confidence": "low"
+ },
+ "29356": {
+  "stem": true,
+  "typical_offer": "IB band system: 26-29 (Band I) to 36+ (Band V) points depending on course; Cambridge A-level bands CCC to AAA (ABB=III, AAB=IV, AAA=V)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Bands: I 26-29, II 30-31, III 32-33, IV 34-35, V 36+; course band applies. Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": "Engineering Maths Qualifying Exam (University of Galway)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Alternative to H4 Leaving Cert Higher Maths for engineering entry"
+  },
+  "a_level": "Cambridge A-level bands: I CCC, II BBB, III ABB, IV AAB, V AAA; engineering requires at least grade C in A-level Mathematics; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": "Lise Diplomas\u0131 accepted for direct entry by average grade: Band I 70%, II 75%, III 80%, IV 85%, V by referral; also first year of Turkish university degree (CGPA 2.5/5 to 3.5/4 by band) or associate degree",
+  "prerequisite_maths": "Higher Level Leaving Cert Maths H4 or equivalent, or Engineering Maths Qualifying Exam; A-level Maths grade C",
+  "source_url": "https://universityofgalway.ie/global-galway/studyinireland/yourcountry/internationalbaccalaureate/",
+  "confidence": "low"
+ },
+ "29456": {
+  "stem": true,
+  "typical_offer": "IB band system: 26-29 (Band I) to 36+ (Band V) points depending on course; Cambridge A-level bands CCC to AAA (ABB=III, AAB=IV, AAA=V)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Bands: I 26-29, II 30-31, III 32-33, IV 34-35, V 36+; course band applies. Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": "Engineering Maths Qualifying Exam (University of Galway)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Alternative to H4 Leaving Cert Higher Maths for engineering entry"
+  },
+  "a_level": "Cambridge A-level bands: I CCC, II BBB, III ABB, IV AAB, V AAA; engineering requires at least grade C in A-level Mathematics; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": "Lise Diplomas\u0131 accepted for direct entry by average grade: Band I 70%, II 75%, III 80%, IV 85%, V by referral; also first year of Turkish university degree (CGPA 2.5/5 to 3.5/4 by band) or associate degree",
+  "prerequisite_maths": "Higher Level Leaving Cert Maths H4 or equivalent, or Engineering Maths Qualifying Exam; A-level Maths grade C",
+  "source_url": "https://universityofgalway.ie/global-galway/studyinireland/yourcountry/internationalbaccalaureate/",
+  "confidence": "low"
+ },
+ "29472": {
+  "stem": true,
+  "typical_offer": "IB band system: 26-29 (Band I) to 36+ (Band V) points depending on course; Cambridge A-level bands CCC to AAA (ABB=III, AAB=IV, AAA=V)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Bands: I 26-29, II 30-31, III 32-33, IV 34-35, V 36+; course band applies. Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A-level bands: I CCC, II BBB, III ABB, IV AAB, V AAA; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": "Lise Diplomas\u0131 accepted for direct entry by average grade: Band I 70%, II 75%, III 80%, IV 85%, V by referral; also first year of Turkish university degree (CGPA 2.5/5 to 3.5/4 by band) or associate degree",
+  "prerequisite_maths": null,
+  "source_url": "https://universityofgalway.ie/global-galway/studyinireland/yourcountry/internationalbaccalaureate/",
+  "confidence": "low"
+ },
+ "29358": {
+  "stem": true,
+  "typical_offer": "IB band system: 26-29 (Band I) to 36+ (Band V) points depending on course; Cambridge A-level bands CCC to AAA (ABB=III, AAB=IV, AAA=V)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Bands: I 26-29, II 30-31, III 32-33, IV 34-35, V 36+; course band applies. Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": "Engineering Maths Qualifying Exam (University of Galway)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Alternative to H4 Leaving Cert Higher Maths for engineering entry"
+  },
+  "a_level": "Cambridge A-level bands: I CCC, II BBB, III ABB, IV AAB, V AAA; engineering requires at least grade C in A-level Mathematics; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": "Lise Diplomas\u0131 accepted for direct entry by average grade: Band I 70%, II 75%, III 80%, IV 85%, V by referral; also first year of Turkish university degree (CGPA 2.5/5 to 3.5/4 by band) or associate degree",
+  "prerequisite_maths": "Higher Level Leaving Cert Maths H4 or equivalent, or Engineering Maths Qualifying Exam; A-level Maths grade C",
+  "source_url": "https://universityofgalway.ie/global-galway/studyinireland/yourcountry/internationalbaccalaureate/",
+  "confidence": "low"
+ },
+ "29445": {
+  "stem": true,
+  "typical_offer": "IB band system: 26-29 (Band I) to 36+ (Band V) points depending on course; Cambridge A-level bands CCC to AAA (ABB=III, AAB=IV, AAA=V)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Bands: I 26-29, II 30-31, III 32-33, IV 34-35, V 36+; course band applies. Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": "Engineering Maths Qualifying Exam (University of Galway)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Alternative to H4 Leaving Cert Higher Maths for engineering entry"
+  },
+  "a_level": "Cambridge A-level bands: I CCC, II BBB, III ABB, IV AAB, V AAA; engineering requires at least grade C in A-level Mathematics; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": "Lise Diplomas\u0131 accepted for direct entry by average grade: Band I 70%, II 75%, III 80%, IV 85%, V by referral; also first year of Turkish university degree (CGPA 2.5/5 to 3.5/4 by band) or associate degree",
+  "prerequisite_maths": "Higher Level Leaving Cert Maths H4 or equivalent, or Engineering Maths Qualifying Exam; A-level Maths grade C",
+  "source_url": "https://universityofgalway.ie/global-galway/studyinireland/yourcountry/internationalbaccalaureate/",
+  "confidence": "low"
+ },
+ "20039": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "36099": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "36100": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "36093": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "20031": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "20041": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "20038": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "36098": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "20042": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "36095": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "36090": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent; engineering programmes may require Higher Level Maths",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "20037": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "36092": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "36102": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "36101": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "36103": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "20043": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "20032": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ },
+ "20034": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Non-EU IB and A-level requirements by course set by UL international admissions; institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT or ACT with US high school diploma is a direct-entry route for some countries",
+  "math_test": {
+   "name": "UL Special Mathematics Examination",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "For applicants without O2/H6 Maths"
+  },
+  "a_level": "Equivalent of Leaving Cert or UK A-level with GCSE/O-level English and Maths grade C; IELTS 6.5 (no band below 6.0)",
+  "turkish_route": null,
+  "prerequisite_maths": "Leaving Cert Maths O2/H6 or equivalent",
+  "source_url": "https://www.ul.ie/study/undergraduate/computer-science-common-entry/entry-requirements",
+  "confidence": "low"
+ }
+}

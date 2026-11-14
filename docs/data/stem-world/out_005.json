@@ -1,0 +1,563 @@
+{
+ "19962": {
+  "stem": false
+ },
+ "19968": {
+  "stem": true,
+  "typical_offer": "Leaving Certificate 2 H5 + 4 O6/H7 incl. Maths and English or another language; overseas qualifications compared via NARIC",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Institution-wide rule: overseas qualifications assessed against Irish framework"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 (B2+) or DBS English assessment; certificate within 2 years",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Compared with Irish framework equivalent via NARIC; no published grades",
+  "turkish_route": "Overseas qualifications assessed via NARIC; no Turkey-specific rule published",
+  "prerequisite_maths": "Minimum Leaving Cert H7/O5 Maths",
+  "source_url": "https://www.dbs.ie/entry-requirements",
+  "confidence": "low"
+ },
+ "19969": {
+  "stem": true,
+  "typical_offer": "Leaving Certificate 2 H5 + 4 O6/H7 incl. Maths and English or another language; overseas qualifications compared via NARIC",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Institution-wide rule: overseas qualifications assessed against Irish framework"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 (B2+) or DBS English assessment; certificate within 2 years",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Compared with Irish framework equivalent via NARIC; no published grades",
+  "turkish_route": "Overseas qualifications assessed via NARIC; no Turkey-specific rule published",
+  "prerequisite_maths": "Minimum Leaving Cert H7/O5 Maths",
+  "source_url": "https://www.dbs.ie/entry-requirements",
+  "confidence": "low"
+ },
+ "19970": {
+  "stem": true,
+  "typical_offer": "Leaving Certificate 2 H5 + 4 O6/H7 incl. Maths and English or another language; overseas qualifications compared via NARIC",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Institution-wide rule: overseas qualifications assessed against Irish framework"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 (B2+) or DBS English assessment; certificate within 2 years",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Compared with Irish framework equivalent via NARIC; no published grades",
+  "turkish_route": "Overseas qualifications assessed via NARIC; no Turkey-specific rule published",
+  "prerequisite_maths": "Minimum Leaving Cert H7/O5 Maths",
+  "source_url": "https://www.dbs.ie/entry-requirements",
+  "confidence": "low"
+ },
+ "19964": {
+  "stem": false
+ },
+ "27998": {
+  "stem": false
+ },
+ "28001": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28008": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28011": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28013": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28014": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28015": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28021": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28020": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28032": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28033": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28034": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28048": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "28051": {
+  "stem": false
+ },
+ "28050": {
+  "stem": false
+ },
+ "28052": {
+  "stem": true,
+  "typical_offer": "IB minimum 24 points with 2 HL subjects at grade 5 and 4 SL subjects at grade 4, including maths and English; programme minimums vary (24 to 42 points); A-level: 2 A-levels at grade C plus lower-level subjects incl. Maths and English, meeting programme points",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "2 HL at 5 and 4 SL at 4 or above incl. maths and English; programme-specific maths grades (e.g. HL Maths 5-6) may apply",
+   "note": "Institution-wide rule; programme minimum may be higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "AP courses desirable for US applicants, minimum score 4 in relevant subjects; Calculus AB/BC not specified",
+   "note": "US applicants also need minimum 3.0/4.0 GPA; some programmes require higher"
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "2 A-levels at grade C plus 4 GCSE/O-level at C (or 2 A + 2 AS + 2 O, or 2 A + 1 AS + 3 O), including Mathematics and English, plus programme A-level points; Maths at A-level D / AS C / GCSE 6 for some programmes",
+  "turkish_route": "Lise Diplomas\u0131 alone: International Foundation Programme. Lise plus YKS can give direct entry: 75% overall and YKS completion (300-400 CAO points band), YKS raw 350+ (401-500), 80% and YKS raw 400+ (501-625); also 80% in programme-specific Year 12 subject. Alternative: 75% Lise plus BB (GPA 3.0) in year 1 at a recognised Turkish university",
+  "prerequisite_maths": "Maths required (Leaving Cert O4/H6 or equivalent; programme-specific higher grades)",
+  "source_url": "https://www.dcu.ie/registry/international-undergraduate-admissions",
+  "confidence": "medium"
+ },
+ "35428": {
+  "stem": false
+ },
+ "19936": {
+  "stem": true,
+  "typical_offer": "Leaving Cert 2 H5 + 4 O6/H7 incl. Maths and a language; typical CAO points 220-245 (Level 8)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS, TOEFL or Duolingo English Test accepted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Maths at Leaving Cert O6/H7 or equivalent",
+  "source_url": "https://www.griffith.ie/faculties/computing/courses/bsc-hons-computing-science",
+  "confidence": "low"
+ },
+ "31181": {
+  "stem": false
+ },
+ "49835": {
+  "stem": true,
+  "typical_offer": "Leaving Cert/CAO-equivalent entry; International Foundation Year if requirements not met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL English grade 5 (or SL 4 if taken in English)",
+   "note": "Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level applicants apply via CAO; points counted after minimum entry requirements are met",
+  "turkish_route": "One-year International Foundation Year offered where requirements not met; no Turkey-specific rule published",
+  "prerequisite_maths": null,
+  "source_url": "https://www.maynoothuniversity.ie/study-maynooth/how-apply/international-applicants",
+  "confidence": "low"
+ },
+ "49843": {
+  "stem": true,
+  "typical_offer": "Leaving Cert/CAO-equivalent entry; International Foundation Year if requirements not met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL English grade 5 (or SL 4 if taken in English)",
+   "note": "Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level applicants apply via CAO; points counted after minimum entry requirements are met",
+  "turkish_route": "One-year International Foundation Year offered where requirements not met; no Turkey-specific rule published",
+  "prerequisite_maths": null,
+  "source_url": "https://www.maynoothuniversity.ie/study-maynooth/how-apply/international-applicants",
+  "confidence": "low"
+ },
+ "49855": {
+  "stem": true,
+  "typical_offer": "Leaving Cert/CAO-equivalent entry; International Foundation Year if requirements not met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL English grade 5 (or SL 4 if taken in English)",
+   "note": "Institution-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level applicants apply via CAO; points counted after minimum entry requirements are met",
+  "turkish_route": "One-year International Foundation Year offered where requirements not met; no Turkey-specific rule published",
+  "prerequisite_maths": null,
+  "source_url": "https://www.maynoothuniversity.ie/study-maynooth/how-apply/international-applicants",
+  "confidence": "low"
+ }
+}

@@ -1,0 +1,154 @@
+{
+  "year": "2026/27",
+  "universities": {
+    "Birmingham City University": {
+      "year": "2026/27",
+      "ug": {"bands": [], "notes": "BCU publishes fees only on individual course pages. The only 2026/27 UG figure found was GBP 18,570 for BA International Business (Top-Up) (third-party range 18,570-20,865, unverified). Too thin to build subject bands."},
+      "pg": {"bands": [
+        {"name": "MSc (12-month full-time, Jan 2027 intake)", "amount": 18970, "subjects": "Computer Science, Management and International Business"}
+      ], "notes": "PARTIAL. Official course pages: Computer Science MSc and Management and International Business MSc (Jan 2027 start, 2026/27 entry) are GBP 18,970 (18-month placement version 20,865). Other 2026/27 MSc pages found (Marketing, International Professional Accounting ACCA) only show 2027/28 fees (19,630 for ACCA; 19,220 for BA International Business). Do not extrapolate to all subjects; BCU International College page says masters 17,710 but is stale."},
+      "source_urls": ["https://www.bcu.ac.uk/courses/computer-science-msc-2026-27", "https://www.bcu.ac.uk/courses/management-and-international-business-msc-2026-27", "https://www.bcu.ac.uk/international/fees-costs-and-scholarships/international-fees"]
+    },
+    "City St George's, University of London": {
+      "year": "2026/27",
+      "ug": {"bands": [], "notes": "Official course page for Computer Science MSci shows International GBP 22,900 (2026/27) but no other official UG course verified (aggregators conflict: 22,340-23,850). Not enough for bands. City site returns 403 to fetch tools."},
+      "pg": {"bands": [
+        {"name": "Economics / quantitative", "amount": 25190, "subjects": "Economics"},
+        {"name": "Allied health (physiotherapy)", "amount": 20710, "subjects": "Physiotherapy, Allied Health"},
+        {"name": "Maritime / shipping", "amount": 19950, "subjects": "Maritime Safety, Maritime Security, Shipping"},
+        {"name": "Health management", "amount": 18870, "subjects": "Health Management, Healthcare Management"}
+      ], "notes": "PARTIAL, course-specific only (search snippets of official 2026/27 course pages). International Business MSc is GBP 31,000 but for Sept 2027 entry (not used). No band for computing, law, business, arts verified."},
+      "source_urls": ["https://www.citystgeorges.ac.uk/prospective-students/courses/postgraduate/economics/2026", "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/computer-science-msci", "https://www.citystgeorges.ac.uk/prospective-students/courses/postgraduate/health-management"]
+    },
+    "Kingston University London": {
+      "year": "2026/27",
+      "ug": {"bands": [
+        {"name": "Art & Design", "amount": 21400, "subjects": "Art, Design, Fine Art, Fashion, Graphic Design, Illustration, Photography, Architecture, Animation"},
+        {"name": "Pharmacy", "amount": 19900, "subjects": "Pharmacy, Pharmaceutical Science, Nursing, Health"},
+        {"name": "Aerospace Engineering", "amount": 19600, "subjects": "Aerospace Engineering"},
+        {"name": "Studio based and Social Sciences, Economics & Law", "amount": 19200, "subjects": "Computer Science, Artificial Intelligence, Law, Economics, Sociology, Politics, Criminology, Psychology, Music, Drama, Film, Media"},
+        {"name": "Other classroom based", "amount": 18500, "subjects": "Business, Management, Accounting, Finance, Marketing, International Business, English, History, Mathematics, Education, Geography"}
+      ], "notes": "From Kingston official 'Money Matters International 2026/27' guide (Year 1 2026/27 entry; fees rise annually). Subject keywords are a mapping of Kingston's course types to typical subjects; course examples confirmed: Accounting & Finance 18,500, Computer Science & AI 19,200, Law 19,200, Children's Nursing 19,900, Fine Art 21,400 (course pages)."},
+      "pg": {"bands": [], "notes": "Kingston publishes price points A-J (A 28,000; B 25,000; C 23,700; D 22,600; E 21,500; F 20,000; G 19,400; H 18,700; I 18,300; J 17,600) without a public subject mapping, and course/fee pages return 403. Only verified course: International Business Management MSc 19,700 (2026/27, older page). Research degrees 18,000."},
+      "source_urls": ["https://assets.kingston.ac.uk/m/4db88b135e33cf01/original/Money-Matters_International-2025-26.pdf", "https://www.kingston.ac.uk/study/postgraduate/international-business-management-msc"]
+    },
+    "Loughborough University": {
+      "year": "2026/27",
+      "ug": {"bands": [
+        {"name": "Sport and Exercise Science", "amount": 33000, "subjects": "Sport and Exercise Science"},
+        {"name": "Engineering, Sciences, Computing, Design, Architecture", "amount": 30700, "subjects": "Engineering, Aeronautical, Automotive, Civil, Chemical, Mechanical, Electronic, Computer Science, Artificial Intelligence, Chemistry, Physics, Biological Sciences, Geography, Psychology, Architecture, Design, Industrial Design, Natural Sciences, Sport Science, Sport Management"},
+        {"name": "Computing management, Media, Planning", "amount": 27300, "subjects": "Computing and Management, IT Management, Media and Communication, Urban Planning"},
+        {"name": "Business, Finance, Economics", "amount": 25950, "subjects": "Accounting, Finance, Business Analytics, Economics, International Business, Management, Marketing, Business"},
+        {"name": "Humanities, Social Science, Law, Maths, Arts", "amount": 24700, "subjects": "English, History, Politics, International Relations, Law, Sociology, Criminology, Mathematics, Financial Mathematics, Fine Art, Graphic Design, Textile Design, Fashion Design, Humanities"}
+      ], "notes": "Official 2026-27 international UG table (page updated 09/10/2025), course by course, grouped by amount."},
+      "pg": {"bands": [
+        {"name": "Social science, public policy, writing", "amount": 25000, "subjects": "Criminology, Public Health, Public Policy, Social Science Research, Creative Writing, Contemporary Literature, Physical Activity and Nutrition"},
+        {"name": "Business, media, civil engineering, environment", "amount": 26300, "subjects": "Accounting, Business Analytics, Management, Marketing, Digital Marketing, International Business, Project Management, Media and Communication, Civil Engineering, Construction, Climate Change, Sustainable Development, International Security, Work and Organisational Psychology, Water Engineering"},
+        {"name": "Finance, supply chain, leadership", "amount": 30400, "subjects": "Finance, Finance and Management, Supply Chain Management, Strategic Leadership, Global Trading"},
+        {"name": "Engineering, computing, sciences, law, design", "amount": 30900, "subjects": "Computer Science, Artificial Intelligence, Data Science, Cyber Security, Electrical Engineering, Engineering Management, Chemical Engineering, Biomedical Engineering, Materials Science, Physics, Chemistry, Analytical Chemistry, Financial Mathematics, Law, Entrepreneurship, Human Resource Management, Graphic Design, Ergonomics, Sports Engineering, Systems Engineering"},
+        {"name": "Automotive, design, sport science", "amount": 31900, "subjects": "Automotive Engineering, Design, Industrial Design, User Experience Design, Digital Creative Media, Sport Management, Sport and Exercise Psychology, Sport Biomechanics, Strength and Conditioning, Exercise Rehabilitation, Physiology and Nutrition"},
+        {"name": "Sport business and analytics", "amount": 32800, "subjects": "Sport Business, Sport Marketing, Sport Analytics, Clinical Exercise Physiology, Sustainable Sport Business"},
+        {"name": "MBA", "amount": 33000, "subjects": "Business Administration, MBA"}
+      ], "notes": "Official 2026-27 international PGT table (v2 updated 08-06-26). London campus courses appear in same bands (a GBP 5,000 London scholarship reduction is shown on London course pages)."},
+      "source_urls": ["https://lboro.ac.uk/study/undergraduate/fees-funding/fees/international-fees-2026-27/", "https://lboro.ac.uk/study/postgraduate/fees-funding/tuition-fees/international-fees-2026-27/"]
+    },
+    "Queen's University Belfast": {
+      "year": "2026/27",
+      "ug": {"bands": [
+        {"name": "Classroom-based (Fee rate 1)", "amount": 22400, "subjects": "Law, Business, Management, Accounting, Economics, English, History, Politics, Sociology, Languages, Education, Social Work, Psychology, Music, Architecture, Mathematics, Computer Science"},
+        {"name": "Laboratory-based (Fee rate 2)", "amount": 26600, "subjects": "Engineering, Chemical Engineering, Mechanical Engineering, Civil Engineering, Electrical Engineering, Physics, Chemistry, Biological Sciences, Biomedical Science, Pharmacy, Food Science, Geography, Environmental Science, Veterinary Biosciences"}
+      ], "notes": "Amounts verified from QUB's official 2026/27 international fee page/schedule (via search results; direct fetch 403). Course-to-band assignment is set per course by QUB and was NOT verified subject by subject (only engineering and physical sciences confirmed as laboratory rate); keyword lists are indicative, and computer science/psychology/pharmacy placement is uncertain. Pre-clinical medicine 39,200 and clinical 47,000 excluded."},
+      "pg": {"bands": [
+        {"name": "Classroom-based", "amount": 23000, "subjects": "Law, Business, Management, Marketing, Economics, English, History, Politics, International Relations, Education, Social Work, Humanities, Arts, Computer Science, Data Analytics"},
+        {"name": "Accounting and Finance (exception)", "amount": 26500, "subjects": "Accounting and Finance, Finance, Accounting"},
+        {"name": "Laboratory-based", "amount": 27600, "subjects": "Engineering, Physics, Chemistry, Biological Sciences, Pharmacy, Biomedical Science, Food Science, Environmental Science, Veterinary"}
+      ], "notes": "Amounts from QUB's official 2026/27 PGT rates (classroom 23,000, laboratory 27,600; MSc Accounting and Finance 26,500 cited as exception). Subject keyword placement not verified per course; indicative only."},
+      "source_urls": ["https://www.qub.ac.uk/Study/international-students/tuition-fees/fees-26-27/", "https://www.qub.ac.uk/home/Study/Feesandfinance/FileStore/Tuition Fee and Related Charges Schedule 2026-27.pdf", "https://www.qub.ac.uk/Study/postgraduate/tuition-fees/"]
+    },
+    "UWE Bristol": {
+      "year": "2026/27",
+      "ug": {"bands": [
+        {"name": "Standard international UG (sampled courses)", "amount": 17000, "subjects": "Accounting, Finance, Accounting and Finance, Product Design"}
+      ], "notes": "PARTIAL. Official course listings for 2026/27: BA Accounting and Finance, Accounting and Finance (Top Up), BSc Product Design Technology (foundation) are all GBP 17,000. A third-party listing suggests a flat 17,000 for all UG, but this was not verified on an official UWE fee table, so subject keywords were left to the verified sample."},
+      "pg": {"bands": [], "notes": "No official 2026/27 PGT international fee found (coursefees.uwe.ac.uk results were old cohorts; tuition fee policy PDF has no amounts). Third-party claim of 17,750 unverified. PhD 17,915."},
+      "source_urls": ["https://courses.uwe.ac.uk/N40P/2026/accounting-and-finance", "https://courses.uwe.ac.uk/N30H", "https://www.uwe.ac.uk/courses/fees"]
+    },
+    "University of Bristol": {
+      "year": "2026/27",
+      "ug": {"bands": [
+        {"name": "Arts, humanities, social sciences, law", "amount": 25500, "subjects": "Law, Philosophy, Sociology, Politics, International Relations, Social Policy, Criminology, Education Studies, Anthropology, Archaeology, Modern Languages, French, German, Spanish, Italian, Liberal Arts, Childhood Studies"},
+        {"name": "Business, economics, history, English", "amount": 28200, "subjects": "Business, Management, Marketing, Accounting, Finance, Economics, International Business, Business Analytics, English, History, Classics, Theology, Religion, History of Art, Comparative Literature"},
+        {"name": "Performing arts, sciences, engineering, maths", "amount": 31300, "subjects": "Film, Television, Theatre, Music, Biology, Zoology, Chemistry, Physics, Mathematics, Geography, Geology, Earth Sciences, Data Science, Civil Engineering, Mechanical Engineering, Electrical Engineering, Design Engineering, Engineering, Anatomy, Bioethics, Global Health, Dental Hygiene"},
+        {"name": "Life sciences, psychology, computing, aerospace", "amount": 33400, "subjects": "Computer Science, Artificial Intelligence, Aerospace Engineering, Engineering Mathematics, Psychology, Neuroscience, Biochemistry, Biomedical Sciences, Pharmacology, Physiology, Microbiology, Immunology"}
+      ], "notes": "From Bristol's official 2026/27 starters overseas UG fee page (grouped by amount). Medicine 45,800, Dentistry 49,700, Veterinary Science 41,900 excluded. Innovation variants are in the 31,300 band."},
+      "pg": {"bands": [
+        {"name": "Humanities MA", "amount": 29300, "subjects": "English, History, Creative Writing, Cultural Heritage, Environmental Humanities, Games Design, Social Science Research Methods, International Security, Conflict Resolution"},
+        {"name": "Law, philosophy, economics MSc", "amount": 29400, "subjects": "Law, LLM, Philosophy, Economics, Commercial Law, Human Rights Law, International Law, Music"},
+        {"name": "Education", "amount": 28200, "subjects": "Education, TESOL, Teaching English"},
+        {"name": "Social policy and international relations", "amount": 30400, "subjects": "International Relations, Sociology, Social and Cultural Theory, International Development, Development"},
+        {"name": "Public policy, health policy, geography and environment", "amount": 32700, "subjects": "Public Policy, Global Health Policy, Nutrition, Geography, Environmental Policy, Climate Change, Human Geography, Social Policy"},
+        {"name": "Public health and biomedical", "amount": 31200, "subjects": "Public Health, Epidemiology, Medical Statistics, Health Sciences, Biomedical Sciences, Bioinformatics, Neuropsychology, Psychology Conversion, Molecular Neuroscience"},
+        {"name": "Management, marketing, business", "amount": 33900, "subjects": "Management, Marketing, Business Analytics, International Business, Human Resource Management, Supply Chain, Data Science for Business, Accounting, Operations, MBA"},
+        {"name": "Finance and banking", "amount": 39000, "subjects": "Finance, Banking, Accounting and Finance, Financial Technology, Investment"},
+        {"name": "Innovation and entrepreneurship", "amount": 36300, "subjects": "Innovation, Entrepreneurship, Digital Business Innovation, User Experience Design, Digital Media"},
+        {"name": "Engineering and sciences", "amount": 33400, "subjects": "Sustainable Engineering, Civil Engineering, Composites, Water Engineering, Environmental Science, Mathematical Sciences, Palaeobiology, Chemistry"},
+        {"name": "Aerospace, structural, nuclear engineering", "amount": 34900, "subjects": "Aerospace Engineering, Structural Engineering, Nuclear Engineering, Engineering Mathematics, Artificial Intelligence, Engineering with Artificial Intelligence"},
+        {"name": "Computing, data, robotics, electronics, engineering with management", "amount": 36600, "subjects": "Computer Science, Data Science, Cyber Security, Robotics, Electronic Engineering, Electrical Engineering, Communications, Engineering with Management, Scientific Computing, Financial Technology with Data Science"}
+      ], "notes": "From Bristol's official 2026/27 overseas PGT fee table for 2026 starters (about 250 programmes), grouped by approximate amount; individual programmes vary by a few hundred pounds within a band (use the nearest band). Clinical/dental programmes (e.g. Periodontology 59,400) excluded."},
+      "source_urls": ["https://www.bristol.ac.uk/students/support/finances/tuition-fees/ug/overseas/26-27/2026-starters/", "https://www.bristol.ac.uk/students/support/finances/tuition-fees/pgt/overseas/26-27/2026-starters/"]
+    },
+    "University of Hertfordshire": {
+      "year": "2026/27",
+      "ug": {"bands": [
+        {"name": "Standard international UG", "amount": 17450, "subjects": "Business, Management, Computer Science, Engineering, Law, Psychology, Humanities, Social Science, Media, Arts, Science, Health, Accounting, Finance, Economics"}
+      ], "notes": "Search extracts of the official Herts 2026-27 international fee table give a standard UG fee of GBP 17,450 (GBP 1,000 prepayment discount); third-party sources say BSc/BA/BEng/LLB are one flat rate. The herts.ac.uk pages returned 403 so the table could not be opened directly; clinical/non-standard courses (e.g. nursing, pharmacy) may differ."},
+      "pg": {"bands": [], "notes": "Official table gives a standard PGT range of GBP 17,950-22,950 (non-standard 19,950-23,450) with no subject mapping available. Course data points conflict (MSc International Business 19,950 on course page vs 21,450 in International Guide). Not enough verified to build bands."},
+      "source_urls": ["https://www.herts.ac.uk/international/scholarships-and-fees/fees", "https://www.herts.ac.uk/__data/assets/pdf_file/0010/446824/Fees-and-finance-policy-26-27.pdf", "https://www.herts.ac.uk/courses/postgraduate-masters/msc-international-business"]
+    },
+    "University of Liverpool": {
+      "year": "2027/28",
+      "ug": {"bands": [
+        {"name": "Humanities, law, economics", "amount": 28000, "subjects": "English, Law, Economics, Law with Business, Business, History, Politics, Sociology"},
+        {"name": "Science, engineering, computing, psychology, architecture", "amount": 33000, "subjects": "Computer Science, Mechanical Engineering, Engineering, Chemistry, Psychology, Architecture, Physics, Biology"}
+      ], "notes": "LATEST PUBLISHED IS 2027/28: Liverpool course pages (2026 URLs) now show 2027/28 fees; 2026/27 UG figures were not retrievable (internal fee rise is CPI-linked, so 2026/27 would be somewhat lower). Sample of 9 official course pages: English 28,000; Law 28,000; Law with Business 28,000; Economics 28,000; Computer Science 33,000; Mechanical Engineering 33,000; Chemistry 33,000; Psychology 33,000; Architecture 33,000. Only 'Business' and 'History' etc. keywords are extrapolated from humanities/social-science pattern."},
+      "pg": {"bands": [
+        {"name": "Computer Science", "amount": 34000, "subjects": "Computer Science"},
+        {"name": "Data Science and AI", "amount": 32000, "subjects": "Data Science, Artificial Intelligence, Data Analytics"},
+        {"name": "Finance", "amount": 31000, "subjects": "Finance, Banking, Accounting"}
+      ], "notes": "PARTIAL. Computer Science MSc 34,000 (2027/28) and Finance MSc 31,000 (2027/28); Data Science and AI MSc 32,000 is the official 2026/27 figure (page awaiting 2027/28 update). No other PGT subjects verified (law, management, engineering, health pages 404 or missing)."},
+      "source_urls": ["https://www.liverpool.ac.uk/courses/computer-science-bsc-hons/2026", "https://www.liverpool.ac.uk/courses/law-llb-hons/2026", "https://www.liverpool.ac.uk/courses/computer-science-msc/2026", "https://www.liverpool.ac.uk/courses/data-science-and-artificial-intelligence-msc/2026", "https://www.liverpool.ac.uk/courses/finance-msc/2026"]
+    },
+    "University of Sheffield": {
+      "year": "2026/27",
+      "ug": {"bands": [], "notes": "Official page states 2026/27 new international UG fees range GBP 25,000-32,100 (Medicine 47,575, Dentistry 50,925, excluded) but gives no subject mapping; course-level lookup tool (tools.sheffield.ac.uk/fees/ug/) not accessible. No bands built."},
+      "pg": {"bands": [], "notes": "PGT fee lookup tool returned 503; no official PGT figures found (third-party 31,190-35,840 unverified)."},
+      "source_urls": ["https://www.sheffield.ac.uk/registration/tuitionfees/undergraduate_overseas_students", "https://sheffield.ac.uk/international/fees-and-funding/tuition-fees"]
+    },
+    "University of Surrey": {
+      "year": "2027/28",
+      "ug": {"bands": [
+        {"name": "Aviation, games art", "amount": 15200, "subjects": "Airline and Airport Management, Games Art"},
+        {"name": "Nursing, midwifery, pharmaceutical sciences, chemistry (foundation)", "amount": 19500, "subjects": "Nursing, Midwifery, Paramedic Science, Pharmaceutical Sciences, Chemistry, Chemical Engineering foundation"},
+        {"name": "Law (pathway)", "amount": 21500, "subjects": "Law with Business, Law JD Pathway"},
+        {"name": "Economics and mathematics", "amount": 22700, "subjects": "Economics, Mathematics, Financial Mathematics, Business Economics, Data Analytics"},
+        {"name": "Social science, law, media, hospitality", "amount": 23800, "subjects": "Law, Criminology, English Literature, Sociology, Politics, International Relations, Media and Communication, Games Design, Hospitality, Tourism, Event Management"},
+        {"name": "Business, accounting, music, film", "amount": 24600, "subjects": "Business Management, Accounting and Finance, International Business, Music, Film Production, Creative Music Technology, Theatre"},
+        {"name": "Performing arts", "amount": 25300, "subjects": "Acting, Theatre Production, Applied Theatre, Musical Theatre"},
+        {"name": "Engineering, science, computing, psychology", "amount": 28100, "subjects": "Engineering, Aerospace, Civil, Mechanical, Electronic, Chemical Engineering, Computer Science, Artificial Intelligence, Cyber Security, Biochemistry, Biological Sciences, Biomedical Science, Chemistry, Physics, Psychology, Nutrition, Sport and Exercise Science, Food Science"}
+      ], "notes": "LATEST PUBLISHED IS 2027 ENTRY (2027/28): Surrey's official page labelled for 2026 now shows only 2027-entry overseas fees; 2026-entry fees were not accessible (they are likely ~4% lower). Veterinary Medicine 44,900 and Medicine (GEM) 50,300 excluded."},
+      "pg": {"bands": [
+        {"name": "Life sciences, food, public health", "amount": 19300, "subjects": "Biotechnology, Food Science, Human Nutrition, Pharmaceutical Sciences, Applied Analytical Chemistry, Public Health"},
+        {"name": "Hospitality, tourism, events, air transport, business", "amount": 21500, "subjects": "Hospitality, Tourism, Events Management, Air Transport Management, International Business Management, Professional Legal Practice, Film, Animation, Law"},
+        {"name": "Economics, maths, energy", "amount": 22800, "subjects": "Economics, Mathematics, Financial Data Science, Sustainable Energy, Creative Writing, English Literature"},
+        {"name": "Social science, languages, arts, operations", "amount": 23600, "subjects": "International Relations, Public Affairs, Criminology, Translation, Interpreting, Music, Business Psychology, Operations and Supply Chain Management, International Human Resource Management"},
+        {"name": "Performing arts", "amount": 24800, "subjects": "Acting, Stage Management, Musical Theatre"},
+        {"name": "Accounting and banking", "amount": 25800, "subjects": "Accounting and Finance, Banking and Finance"},
+        {"name": "Engineering, computing, business, psychology", "amount": 26900, "subjects": "Engineering, Civil Engineering, Structural Engineering, Cyber Security, Data Science, Computer Science, Electronic Engineering, Physics, Medical Physics, Business Analytics, Marketing, Finance, Investment Management, Human Resources, Entrepreneurship, Psychology, Sustainable Development, Management"},
+        {"name": "MBA", "amount": 29000, "subjects": "MBA, Master of Business Administration"},
+        {"name": "Artificial Intelligence", "amount": 29100, "subjects": "Artificial Intelligence"}
+      ], "notes": "2027 entry (2027/28) full-time Sept fees from Surrey's official PGT table; placement/February variants differ by 600-1,300. Fees rise 4% per further year of study."},
+      "source_urls": ["https://www.surrey.ac.uk/fees-and-funding/tuition-fees/undergraduate-2027-entry", "https://www.surrey.ac.uk/postgraduate/pgt-fees", "https://www.surrey.ac.uk/fees-and-funding/tuition-fees/postgraduate-taught-course-fees-2026-entry"]
+    }
+  },
+  "gaps": "No usable bands: Sheffield (UG range only, PGT tool 503), UWE PG, Hertfordshire PG, Kingston PG (price points A-J without subject map), BCU UG, City UG. Partial/limited: BCU PG, City PG, UWE UG, Hertfordshire UG (flat rate from search extracts, herts site 403). Year caveat: Liverpool and Surrey published values are 2027/28 (2026/27 not retrievable). QUB amounts are official but subject-to-band keyword mapping is indicative. Many university sites (QUB, Kingston, Herts, City) returned 403 to direct fetch, so figures came from search extracts of official pages."
+}

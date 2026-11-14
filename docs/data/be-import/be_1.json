@@ -1,0 +1,2277 @@
+{
+ "institutions": [
+  {
+   "name": "KU Leuven",
+   "city": "Leuven",
+   "country": "Belgium",
+   "website": "https://www.kuleuven.be/english/",
+   "entity_note": "Non-EEA applicants (including Turkish students) must apply online through the KU Leuven Admissions Office by programme deadlines (mostly 1 March or 1 May for master's, 15 January to 1 April for bachelor's), with verified prior degrees and an English test (general minimum IELTS 6.5 / TOEFL 79, most programmes higher). For Turkey, KU Leuven's bachelor eligibility list requires the Lise Diploması plus YKS results; no Turkey-specific master's rules are published and the 2026/27 non-EEA tuition is mostly EUR 9,493.92 for 60 credits (reduced for some programmes).",
+   "programs": [
+    {
+     "name": "Erasmus Mundus Joint Master of Fine Arts in Design and Health Care (Response-Able Futures)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Arts and Humanities",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Admission requirements are administered by the programme consortium/partner institution; see the programme page.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58427206/toelatingsvoorwaarden",
+     "city": "Genk"
+    },
+    {
+     "name": "Erasmus Mundus MSc Imaging and Light in Extended Reality (IMLEX)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering and Computer Science",
+     "fee_non_eu": 8000.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58429986/toelatingsvoorwaarden",
+     "city": "Ghent"
+    },
+    {
+     "name": "Erasmus Mundus Joint Master in Documentary Film Making (DocNomadsPlus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Arts and Humanities",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Admission requirements are administered by the programme consortium/partner institution; see the programme page.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58941772/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "Joint International Bachelor in Film (Pathfinder)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Film and Media",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Flemish secondary diploma holders apply online via the KU Leuven Admissions Office. For Turkey, KU Leuven requires the High School Diploma (Lise Diploması) plus national university entrance exam (YKS) results; some programmes may require a specific YKS score, communicated with the admission decision. Admission requirements are administered by the programme consortium/partner institution; see the programme page.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58544016/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "Joint Master in Documentary Film Making (DocNomadsPlus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Arts and Humanities",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Admission requirements are administered by the programme consortium/partner institution; see the programme page.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58427497/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "Erasmus Mundus Joint Master in European Film Heritage, History and Cultures (FilmMemory)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Arts and Humanities",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Admission requirements are administered by the programme consortium/partner institution; see the programme page.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57849158/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "MSc Energy Engineering Technology (in collaboration with UHasselt)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Engineering",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57673152/toelatingsvoorwaarden",
+     "city": "Diepenbeek"
+    },
+    {
+     "name": "Erasmus Mundus Joint MA Sports Ethics and Integrity (MAiSI)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Sport Sciences",
+     "fee_non_eu": 6000.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: The Erasmus Mundus MA in Sports Ethics and Integrity (MAiSI) requires successful applicants to hold a Bachelor’s degree. Due to the inter-disciplinary nature of the course we will consider applications from any degree discipline....",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54023324/toelatingsvoorwaarden"
+    },
+    {
+     "name": "Erasmus Mundus Joint Master in Animation (RE:ANIMA)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Animation and Media Arts",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Admission requirements are administered by the programme consortium/partner institution; see the programme page.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_55643872/toelatingsvoorwaarden",
+     "city": "Genk"
+    },
+    {
+     "name": "Erasmus Mundus Master in Game Design (REPLAY)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Arts and Humanities",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Admission requirements are administered by the programme consortium/partner institution; see the programme page.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58044744/toelatingsvoorwaarden",
+     "city": "Genk"
+    },
+    {
+     "name": "MSc Molecular Biology (joint with VUB)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences and Environment",
+     "fee_non_eu": 2500.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54610982/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Bioscience Engineering: Sustainable Urban Bioscience Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7800.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57349398/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Communication Sciences: Digital Media and Society",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Languages and Communication",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 June 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: On the basis of the following degrees obtained outside the Flemish Community : A bachelor’s or master’s degree in the field of communication sciences A bachelor’s or master’s degree in social sciences (e.g. political science,...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54752960/toelatingsvoorwaarden"
+    },
+    {
+     "name": "Master of Business Administration",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business and Economics",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Equivalence to a relevant Flemish degree will be based on assessment of the undergraduate degree, primarily with respect to the following Students need a solid background in economics Students need a solid background in research... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54542934/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "MSc Psychology: Theory and Research",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Psychology",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: To be eligible and to ensure an optimal match with the programme, the following selection criteria apply: holder of a Bachelor or Master's degree in the field of Humanities (e.g. Psychology) or in the field of Science and...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58410013/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Chemistry",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Chemistry",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor of Chemistry Bachelor of Biochemistry and Biotechnology, Minor Subject Chemistry",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54544224/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc International Business",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business and Economics",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: An academic bachelor's/master's degree in a field different from business economics and/or management. GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54550446/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "MSc Medical Physics (joint with UCLouvain)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Physics and Health Sciences",
+     "fee_non_eu": 5369.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Degrees obtained outside the Flemish community will be admitted on individual basis.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_56121027/toelatingsvoorwaarden"
+    },
+    {
+     "name": "BSc Business Administration",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business and Economics",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Flemish secondary diploma holders apply online via the KU Leuven Admissions Office. For Turkey, KU Leuven requires the High School Diploma (Lise Diploması) plus national university entrance exam (YKS) results; some programmes may require a specific YKS score, communicated with the admission decision.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53266472/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "MSc Physics",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Mathematics, Statistics and Physics",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor of Physics, bachelor degrees with a minor Physics, Astronomy, obtained outside the Flemish Community or other degrees will be admitted on individual basis.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53281871/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Biophysics, Biochemistry and Biotechnology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences and Environment",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Specialisation Biochemistry and Biotechnology Students with a bachelor in the domains of Chemistry, Biochemistry, Biotechnology, Biology, Biophysics, Biomedical, Bio-engineering or other bio-related programmes can submit an...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_50994750/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc International Politics",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Political Science",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: FOR CANDIDATES WITH A DEGREE OBTAINED WITHIN THE EUROPEAN ECONOMIC AREA (EEA) Applicants who are holder of the following university degrees obtained outside the Flemish Community can be admitted to the Master of Science in... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54298557/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MA Theology and Religious Studies",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Theology and Religious Studies",
+     "fee_non_eu": 3093.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Students with a bachelor in theology and religious studies or students who completed a programme of formation leading to ordination as a minister of a recognized Christian faith are encouraged to apply. The Faculty of Theology...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53250485/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Bioinformatics",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Bioinformatics and Life Sciences",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51016883/toelatingsvoorwaarden"
+    },
+    {
+     "name": "Master of Business Administration",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business and Economics",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Equivalence to a relevant Flemish degree will be based on assessment of the undergraduate degree, primarily with respect to the following Students need a solid background in economics Students need a solid background in research... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54533410/toelatingsvoorwaarden",
+     "city": "Antwerp"
+    },
+    {
+     "name": "MA English Linguistics and Literature",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Languages and Communication",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 8.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 110
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: A detailed survey of previous studies, which shows that the candidate has a substantial academic background in the fields of theoretical linguistics and literature. Previous academic study of both these disciplines is essential....",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51017026/toelatingsvoorwaarden"
+    },
+    {
+     "name": "BSc Engineering Technology",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "15 January 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 85
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Flemish secondary diploma holders apply online via the KU Leuven Admissions Office. For Turkey, KU Leuven requires the High School Diploma (Lise Diploması) plus national university entrance exam (YKS) results; some programmes may require a specific YKS score, communicated with the admission decision.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_55554488/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Water Resources Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: - Bachelor of Engineering - Bachelor of Bioscience Engineering - Bachelor of Environmental Engineering - Bachelor of Geography - Bachelor of Geology - Bachelor of Biology - Bachelor of Sciences",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51016980/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Educational Studies",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Education",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor’s degree in Educational Sciences (if the content of the previous programme is sufficiently in line with the master’s Programme). Attention, a Teacher’s Degree is not equivalent to a Bachelor’s degree in Educational...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58415753/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MA Research Master of Philosophy",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Philosophy",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Students with excellent results in a Bachelor (of Arts) in Philosophy from a recognised higher education institution may be admitted by the Board of Admissions upon consideration of their complete application file . The diploma...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53702579/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MA Multilingual Communication: Cross-Cultural Communication Management",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Languages and Communication",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: The programme is open to students holding one of a broad range of academic Bachelor’s degrees in the fields of languages, communication, economics and business. Depending on your degree, you can enjoy direct access, or will need...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_56372902/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "BA Theology and Religious Studies",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Theology and Religious Studies",
+     "fee_non_eu": 3093.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Flemish secondary diploma holders apply online via the KU Leuven Admissions Office. For Turkey, KU Leuven requires the High School Diploma (Lise Diploması) plus national university entrance exam (YKS) results; some programmes may require a specific YKS score, communicated with the admission decision.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51016745/toelatingsvoorwaarden"
+    },
+    {
+     "name": "Erasmus Mundus MSc Theoretical Chemistry and Computational Modelling (TCCM)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Chemistry",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor (of Science) in Chemistry, Physics, or any equivalent level if authorized by the legislation of the corresponding European Country. Other scientific bachelors can be accepted, provided the student takes complementary...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51186236/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MA Society, Law and Religion",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Law and Criminology",
+     "fee_non_eu": 3093.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: - Academic bachelor or master - Certificate for completion of training for the priesthood (major seminary)",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51016781/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Mathematics",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Mathematics, Statistics and Physics",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Degrees obtained outside the Flemish community will be admitted on individual basis.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51958514/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MA Cultural Studies",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Arts and Humanities",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 102
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Candidates should hold an academic Bachelor degree in one of the following fields: Arts, Literature, Cultural Studies or History. Admission decisions will be based on the applicant's undergraduate diploma and on the other...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51217577/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MA Research Master of Advanced Studies in Theology and Religion",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Theology and Religious Studies",
+     "fee_non_eu": 3093.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53246269/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Astronomy and Astrophysics",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Physics and Astronomy",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: After admission procedure After assessment of the study curriculum and with a possibility of a preparatory programme (individual preparatory programme) - Bachelor of Engineering Science - Bachelor of Bio-Engineering Science -...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51017025/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Rehabilitation Sciences and Physiotherapy",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Health Sciences",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 October (mandatory preparatory programme must be applied for first; year not specified on the page)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Students with a bachelor's degree in physiotherapy will first have to complete a preparatory programme. To be admitted to the Master of Rehabilitation Sciences and Physiotherapy students need to pass at least 4 of the 6 courses...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53644021/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Geology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences and Environment",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor of Geology obtained outside the Flemish community or other degrees will be admitted on individual basis.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57425065/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Biology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences and Environment",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor of Biology, Bachelor of Biochemistry, Bachelor degrees with minor Biology, Life sciences, or other degrees,obtained outside the Flemish Community, will be admitted on individual basis.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53589946/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Biomedical Sciences",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Health Sciences",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: To qualify for admission to the Master of Biomedical Sciences at the KU Leuven, you must: - Have a relevant bachelor's degree (for example Biomedical Sciences, Bio-Pharmaceutical Sciences, Life Sciences.) This implies a...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58388559/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Social and Cultural Anthropology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Social Sciences",
+     "fee_non_eu": 3093.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: EEA diplomas We welcome candidates with diplomas broadly compatible with the criteria set for Flemish diplomas. This will be further assessed in the admissions process. Non-EEA diplomas We welcome excellent candidates with a...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51017028/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MA Western Literature",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Arts and Humanities",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 102
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Applicants for this programme are expected to hold an academic bachelor’s and/or master’s degree, providing them with a sufficient background in literary studies (with a focus on at least one national literature).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51017027/toelatingsvoorwaarden"
+    },
+    {
+     "name": "BA European Studies (BAES, joint programme)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Social Sciences",
+     "fee_non_eu": 8500.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Flemish secondary diploma holders apply online via the KU Leuven Admissions Office. For Turkey, KU Leuven requires the High School Diploma (Lise Diploması) plus national university entrance exam (YKS) results; some programmes may require a specific YKS score, communicated with the admission decision.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58880980/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MA European Studies: Transnational and Global Perspectives",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Social Sciences",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: The Master of European Studies programme admits holders of the following university degrees: • Bachelor of Political and Social Sciences, History, Arts, Law, Economics, Anthropology, Communication Studies, Theology, Education,...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57948914/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Geography",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Geography",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: The master programme supposes a broad basic knowledge of the natural and social sciences, as well as a broad introduction in geography. A complete introduction to geography is not required. The starting conditions are expressed...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_56208770/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Sustainable Development",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences and Environment",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: This Master’s programme is intended for students who are prepared to integrate ecological, spatial and societal perspectives on sustainability challenges, and who have the disciplinary background required for one of its two...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53903372/toelatingsvoorwaarden"
+    },
+    {
+     "name": "BA Philosophy",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Philosophy",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Flemish secondary diploma holders apply online via the KU Leuven Admissions Office. For Turkey, KU Leuven requires the High School Diploma (Lise Diploması) plus national university entrance exam (YKS) results; some programmes may require a specific YKS score, communicated with the admission decision.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_55540651/toelatingsvoorwaarden"
+    },
+    {
+     "name": "LLB Laws (trilingual Dutch/French/English, joint with UCLouvain Saint-Louis Bruxelles)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Law and Criminology",
+     "fee_non_eu": 5369.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "Start of the academic year (22 September 2027)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Flemish secondary diploma holders apply online via the KU Leuven Admissions Office. For Turkey, KU Leuven requires the High School Diploma (Lise Diploması) plus national university entrance exam (YKS) results; some programmes may require a specific YKS score, communicated with the admission decision.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57662723/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "MA Philosophy",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Philosophy",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Students with a Bachelor (of Arts) in Philosophy from a recognised university or the equivalent (bachelor in a related discipline and a sufficient academic background in philosophy) may be admitted by the Board of Admissions upon...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51016821/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Food Technology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences and Environment",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Applicants who have not obtained a degree in the Flemish Community must have obtained an academic Bachelor of Science degree (in countries in the South typically a 4-year programme) in a discipline related to the content of the...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51016882/toelatingsvoorwaarden"
+    },
+    {
+     "name": "Erasmus Mundus MSc Public Sector Innovation and eGovernance (PIONEER)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Political Science",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 June 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Applicants should hold a Bachelor’s degree in social sciences, political sciences, public administration, information systems, information science, informatics, engineering, business, law or an equivalent degree mentioned in the...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57363196/toelatingsvoorwaarden"
+    },
+    {
+     "name": "European MSc Radiation and its Effects on Microelectronics and Photonics Technologies (RADMEP)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9000.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_59061272/toelatingsvoorwaarden",
+     "city": "Geel"
+    },
+    {
+     "name": "MSc Criminology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Law and Criminology",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor of Criminology",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51016794/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Sociology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Social Sciences",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: For the Specialisation \" Quantitative Analysis and Social data Science - QASS\" : Applicants are expected to be (future) holders of one of the following degrees, or similar degrees, obtained outside the Flemish Community: · Any...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_55283576/toelatingsvoorwaarden"
+    },
+    {
+     "name": "BSc Joint Bachelor in Sustainability (UNA Europa)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Sustainability",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Flemish secondary diploma holders apply online via the KU Leuven Admissions Office. For Turkey, KU Leuven requires the High School Diploma (Lise Diploması) plus national university entrance exam (YKS) results; some programmes may require a specific YKS score, communicated with the admission decision.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58365132/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "MA Music",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Music and Arts",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Admission requirements are administered by the programme consortium/partner institution; see the programme page.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_55601846/toelatingsvoorwaarden"
+    },
+    {
+     "name": "Erasmus Mundus MSc Nanoscience and Nanotechnology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Science and Technology",
+     "fee_non_eu": 9000.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 January 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Students who hold a bachelor’s degree in physics, chemistry, biochemistry, electrical engineering, material science or a related discipline, with a proven background in mathematics and physics or chemistry, are eligible for... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54299343/toelatingsvoorwaarden"
+    },
+    {
+     "name": "BSc Business Engineering (joint with UCLouvain Saint-Louis Bruxelles)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Engineering and Business",
+     "fee_non_eu": 5369.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-Flemish secondary diploma holders apply online via the KU Leuven Admissions Office. For Turkey, KU Leuven requires the High School Diploma (Lise Diploması) plus national university entrance exam (YKS) results; some programmes may require a specific YKS score, communicated with the admission decision.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54764298/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "MSc Economics",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business and Economics",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Applicants should hold a university Bachelor's degree in Economics or Business Economics comparable to a Bachelor's degree in Economics, Business Economics or Business Engineering from the Faculty of Economics and Business at KU... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51007574/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Business Economics",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business and Economics",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Applicants should hold a university Bachelor's degree in Economics or Business Economics comparable to a Bachelor's degree in Economics, Business Economics or Business Engineering from the Faculty of Economics and Business at KU... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51017073/toelatingsvoorwaarden"
+    },
+    {
+     "name": "LLM Law (double degree with University of Zurich)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Law and Criminology",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Applicants should be (future) holders of a Bachelor of Laws degree",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_52898748/toelatingsvoorwaarden"
+    },
+    {
+     "name": "Erasmus Mundus Joint MSc Insects as Solutions for a Sustainable Future (ISSF)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences and Environment",
+     "fee_non_eu": 9000.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "10 February 2027",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Applicants must hold a Bachelor of Science degree (or any nationally recognized first cycle degree equivalent to 180 ECTS). Bachelor's degrees providing access to the programme include: life sciences, biology, biochemistry,...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58830715/toelatingsvoorwaarden",
+     "city": "Geel"
+    },
+    {
+     "name": "MSc Architecture",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Architecture",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Candidates should hold a bachelor's degree or a master’s degree in architecture or a related field of study",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57449899/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "MSc Actuarial and Financial Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business and Economics",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Students are expected to have good analytical skills (i.e. solid mathematical background) and this oﬀers a reasonable foundation for the course work. For more information regarding the Prerequisites see here . GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54295020/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Information Management",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business and Information Systems",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: The programme is accessible to applicants with a Bachelor's or Master's degree awarded by a university. Eligibility is evaluated by the faculty on the basis of the required documents provided by the applicant through the official... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51017076/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Nanoscience, Nanotechnology and Nanoengineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Science and Technology",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: - Bachelor of Engineering - Bachelor of Physics - Bachelor of Chemistry - Bachelor of Biochemistry - Bachelor of Electrical Engineering - Bachelor of Materials Science - Bachelor of Bioscience Engineering GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58449463/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Business Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering and Business",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: The Master of Business Engineering programme is intended for holders of: - an academic Bachelor's degree with a strong quantitative (and technological) focus and with sufficient knowledge of economics and management science; or -... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53419709/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Management Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering and Business",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Equivalence with the Flemish degree will be based on assessment of the undergraduate degree, with respect to evidence of the applicant’s acquired competences in primarily the following domains: quantitative methods, technology... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57412432/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "European MSc Sustainable Food Systems Engineering, Technology and Business",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_55521971/toelatingsvoorwaarden",
+     "city": "Ghent"
+    },
+    {
+     "name": "MSc Bioscience Engineering: Agro- and Ecosystems Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: This programme is open to any applicant holding an academic bachelor's degree in engineering (bioscience engineering, agricultural engineering, environmental engineering, or any equivalent engineering degree), and to applicants...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58889436/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Engineering: Computer Science",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Since this master programme is designed specifically for international students, the actual access policy will necessarily be based on previous programme content, rather than specific degrees. Degrees mentioned below are degrees... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_52364422/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Mobility and Supply Chain Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: · 3-year Bachelor of Engineering from a European University · 4-year Bachelor of Engineering · 4-year Bachelor of Engineering Technology · Master of Engineering GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53840435/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Statistics and Data Science",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Mathematics, Statistics and Physics",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: To apply for the Master of Science in Statistics, candidates should (have) successfully obtain(ed) an academic bachelor’s degree with at least two courses in introductory statistics. GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58938898/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Architecture",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Architecture",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Candidates should hold a bachelor's degree, or equivalent, in the same field of study.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57450987/toelatingsvoorwaarden",
+     "city": "Ghent"
+    },
+    {
+     "name": "MA History",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Arts and Humanities",
+     "fee_non_eu": 5613.12,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Applicants are required to have obtained (or to obtain) a bachelor degree in History, or a closely related degree that includes History as a major or minor. Other degrees that are closely related to history can in exceptional...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54301052/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Electronics and ICT Engineering Technology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 85
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: To be eligible and to ensure an optimal match with the programme, the following admission criteria apply: - being a holder of an honours bachelor’s degree (B.Sc., B.Tech., B.Eng., etc.) or master's degree in a related/cognate... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57366340/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Biomedical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor (or Master) of Engineering: Biomedical Engineering GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_55911729/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Chemical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor of Engineering: Chemical Engineering (or equivalent diploma) GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51370066/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Business and Information Systems Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering and Business",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: The Master of Business and Information Systems Engineering programme is intended for holders of · an academic Bachelor’s degree in business economics with a substantial quantitative, technological and IT component, or · an... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53845474/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Biochemical Engineering Technology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 85
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: To be eligible and to ensure an optimal match with the programme, the following admission criteria apply: - being a holder of an honours bachelor’s degree (B.Sc., B.Tech., B.Eng., etc.) or a master's degree in a related/cognate... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57366335/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Civil Engineering Technology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: To be eligible and to ensure an optimal match with the programme, the following admission criteria apply: - being holder of an honours bachelor’s degree (B.Sc., B.Tech., B.Eng., etc.) or master's degree in a related/cognate... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57372281/toelatingsvoorwaarden",
+     "city": "Ghent"
+    },
+    {
+     "name": "MSc Chemical Engineering Technology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 85
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: To be eligible and to ensure an optimal match with the programme, the following admission criteria apply: - being a holder of an honours bachelor’s degree (B.Sc., B.Tech., B.Eng., etc.) or master's degree in a related/cognate... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57366334/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Electrical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: - Bachelor of science programme of minimum 3 years (180 ECTS credit points) in electrical engineering - Bachelor of science programme of minimum 3 years (180 ECTS credit points) in a related field (e.g., physics, computer... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58923895/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Engineering: Energy",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Applicants must have completed a Bachelor's degree in electrical or mechanical engineering or a highly related field, encompassing a minimum of 180 ECTS credits or equivalent academic qualifications from an internationally... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_51384442/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Civil Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Candidates can be admitted on the basis of a diploma that is equivalent to the Bachelor of Science in Engineering: Civil Engineering at KU Leuven. GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_55799916/toelatingsvoorwaarden"
+    },
+    {
+     "name": "EIT-KIC MSc Energy",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 8000.0,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 92
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: The criteria for previous studies include: - Candidates must have obtained a BSc diploma (or equivalent) of substantial quality and level corresponding to at least 3 years studies at University, equivalent to 180 ECTS. -... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_52906325/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Electromechanical Engineering Technology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 85
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: To be eligible and to ensure an optimal match with the programme, the following admission criteria apply: - being a holder of an honours bachelor’s degree (B.Sc., B.Tech., B.Eng., etc.) or master's degree in a related/cognate... GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_57366342/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MA Visual Arts",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Arts",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Admission requirements are administered by the programme consortium/partner institution; see the programme page.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54621588/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "MA Audiovisual Arts",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Arts and Media",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Admission requirements are administered by the programme consortium/partner institution; see the programme page.",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54154990/toelatingsvoorwaarden",
+     "city": "Brussels"
+    },
+    {
+     "name": "MSc Materials Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor of Engineering (or equivalent diploma) GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_52927450/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Bioscience Engineering: Human Health Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: The programme welcomes applications from holders of an academic bachelor's degree in engineering (bioscience engineering, biomedical engineering, civil engineering, electrical engineering, or any equivalent engineering degree),...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_52839824/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Bioscience Engineering: Cellular and Genetic Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: The programme welcomes applications from holders of an academic bachelor's degree in engineering (bioscience engineering, biomedical engineering, civil engineering, electrical engineering, or any equivalent engineering degree),...",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54763403/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Mechanical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Bachelor of Engineering: Mechanical Engineering GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_52354240/toelatingsvoorwaarden"
+    },
+    {
+     "name": "MSc Mathematical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 9493.92,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA/non-Flemish applicants apply online via the KU Leuven Admissions Office (diploma and transcripts with translation if not EN/NL/FR/DE, passport, CV, motivation letter, English test) and the degree is verified before enrolment. No Turkey-specific master's rules are published, so Turkish bachelor's graduates follow the general non-EEA procedure. Programme criteria: Since this Master programme is designed specifically for international students, the admission policy is based on the content of a candidate’s prior education, rather than on specific degrees. GMAT/GRE result required (exemptions apply).",
+     "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_52357132/toelatingsvoorwaarden"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,955 @@
+{
+ "25394": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Full IB diploma accepted with high school transcripts"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Bachelor programmes: minimum five academic subjects at grade B, or three A-levels with C plus further subjects; prerequisite subjects at A-level grade C",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.algonquincollege.com/international/admission-requirements/",
+  "confidence": "low",
+  "note": "Institution-wide Algonquin international rules applied."
+ },
+ "36538": {
+  "stem": true,
+  "typical_offer": "Ontario college diploma graduates in electrical engineering technician; guideline courses English, Physics, Calculus",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Full IB diploma accepted with high school transcripts"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Bachelor programmes: minimum five academic subjects at grade B, or three A-levels with C plus further subjects; prerequisite subjects at A-level grade C",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.algonquincollege.com/international/admission-requirements/",
+  "confidence": "low",
+  "note": "Institution-wide Algonquin international rules applied."
+ },
+ "36539": {
+  "stem": true,
+  "typical_offer": "Electrical engineering technology advanced diploma plus bridging courses Linear Algebra, Advanced Programming and Physics I-III at 63% minimum",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Full IB diploma accepted with high school transcripts"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Bachelor programmes: minimum five academic subjects at grade B, or three A-levels with C plus further subjects; prerequisite subjects at A-level grade C",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.algonquincollege.com/international/admission-requirements/",
+  "confidence": "low",
+  "note": "Institution-wide Algonquin international rules applied."
+ },
+ "36540": {
+  "stem": true,
+  "typical_offer": "Ontario college diploma in electro-mechanical engineering, GPA 2.7 (70%)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Full IB diploma accepted with high school transcripts"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Bachelor programmes: minimum five academic subjects at grade B, or three A-levels with C plus further subjects; prerequisite subjects at A-level grade C",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.algonquincollege.com/international/admission-requirements/",
+  "confidence": "low",
+  "note": "Institution-wide Algonquin international rules applied."
+ },
+ "36541": {
+  "stem": true,
+  "typical_offer": "Electrical engineering technology advanced diploma plus bridging courses Linear Algebra, Advanced Programming and Physics I-III at 63% minimum",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Full IB diploma accepted with high school transcripts"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Bachelor programmes: minimum five academic subjects at grade B, or three A-levels with C plus further subjects; prerequisite subjects at A-level grade C",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.algonquincollege.com/international/admission-requirements/",
+  "confidence": "low",
+  "note": "Institution-wide Algonquin international rules applied."
+ },
+ "7499": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Full IB diploma accepted with high school transcripts"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Bachelor programmes: minimum five academic subjects at grade B, or three A-levels with C plus further subjects; prerequisite subjects at A-level grade C",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.algonquincollege.com/international/admission-requirements/",
+  "confidence": "low",
+  "note": "Institution-wide Algonquin international rules applied."
+ },
+ "8080": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths Analysis & Approaches SL/HL or Applications & Interpretations HL for Pre-Calculus 12; Physics and Chemistry SL/HL",
+   "note": "IB grade 5 = 86%, 4 = 73%"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB or BC for Pre-Calculus 12; Physics 1, 2, C Mechanics or C E&M for Physics 12; Chemistry for Chemistry 12. Grades 4-5 = 86%, 3 = 73%",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Edexcel IAS/IAL or UK GCE AS/A Maths, Physics, Chemistry accepted; A = 86%, B = 73%, C = 67%",
+  "turkish_route": "Not listed individually; transcript showing 12 years of schooling and required Grade 11/12 courses assessed",
+  "prerequisite_maths": "Pre-Calculus 12, Physics 12 and Chemistry 11 or 12 at program-set minimums; English Studies 12",
+  "source_url": "https://www.bcit.ca/admission/entrance-requirements/equivalencies/international-high-school/",
+  "confidence": "low",
+  "note": "Institution-wide BCIT equivalency rules applied; programme-specific minimums vary."
+ },
+ "2702": {
+  "stem": true,
+  "typical_offer": "Competitive entry ranked on grades in required courses; typical minimum 73% in Pre-Calculus 12 and Physics 12",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths Analysis & Approaches SL/HL or Applications & Interpretations HL for Pre-Calculus 12; Physics and Chemistry SL/HL",
+   "note": "IB grade 5 = 86%, 4 = 73%"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB or BC for Pre-Calculus 12; Physics 1, 2, C Mechanics or C E&M for Physics 12; Chemistry for Chemistry 12. Grades 4-5 = 86%, 3 = 73%",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Edexcel IAS/IAL or UK GCE AS/A Maths, Physics, Chemistry accepted; A = 86%, B = 73%, C = 67%",
+  "turkish_route": "Not listed individually; transcript showing 12 years of schooling and required Grade 11/12 courses assessed",
+  "prerequisite_maths": "Pre-Calculus 12 (73%), Physics 12 (73%), Chemistry 11 (73%), English Studies 12 (73%), one other approved Grade 12 academic course (73%)",
+  "source_url": "https://www.bcit.ca/admission/entrance-requirements/equivalencies/international-high-school/",
+  "confidence": "medium",
+  "note": "Institution-wide BCIT equivalency rules applied; programme-specific minimums vary."
+ },
+ "2704": {
+  "stem": true,
+  "typical_offer": "Competitive entry ranked on grades in required courses; typical minimum 73% in Pre-Calculus 12 and Physics 12",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths Analysis & Approaches SL/HL or Applications & Interpretations HL for Pre-Calculus 12; Physics and Chemistry SL/HL",
+   "note": "IB grade 5 = 86%, 4 = 73%"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB or BC for Pre-Calculus 12; Physics 1, 2, C Mechanics or C E&M for Physics 12; Chemistry for Chemistry 12. Grades 4-5 = 86%, 3 = 73%",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Edexcel IAS/IAL or UK GCE AS/A Maths, Physics, Chemistry accepted; A = 86%, B = 73%, C = 67%",
+  "turkish_route": "Not listed individually; transcript showing 12 years of schooling and required Grade 11/12 courses assessed",
+  "prerequisite_maths": "Pre-Calculus 12, Physics 12 and Chemistry 11 or 12 at program-set minimums; English Studies 12",
+  "source_url": "https://www.bcit.ca/admission/entrance-requirements/equivalencies/international-high-school/",
+  "confidence": "medium",
+  "note": "Institution-wide BCIT equivalency rules applied; programme-specific minimums vary."
+ },
+ "8118": {
+  "stem": true,
+  "typical_offer": "Competitive entry ranked on grades in required courses; typical minimum 73% in Pre-Calculus 12 and Physics 12",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths Analysis & Approaches SL/HL or Applications & Interpretations HL for Pre-Calculus 12; Physics and Chemistry SL/HL",
+   "note": "IB grade 5 = 86%, 4 = 73%"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB or BC for Pre-Calculus 12; Physics 1, 2, C Mechanics or C E&M for Physics 12; Chemistry for Chemistry 12. Grades 4-5 = 86%, 3 = 73%",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Edexcel IAS/IAL or UK GCE AS/A Maths, Physics, Chemistry accepted; A = 86%, B = 73%, C = 67%",
+  "turkish_route": "Not listed individually; transcript showing 12 years of schooling and required Grade 11/12 courses assessed",
+  "prerequisite_maths": "Pre-Calculus 12, Physics 12 and Chemistry 11 or 12 at program-set minimums; English Studies 12",
+  "source_url": "https://www.bcit.ca/admission/entrance-requirements/equivalencies/international-high-school/",
+  "confidence": "medium",
+  "note": "Institution-wide BCIT equivalency rules applied; programme-specific minimums vary."
+ },
+ "8119": {
+  "stem": true,
+  "typical_offer": "Competitive entry ranked on grades in required courses; typical minimum 73% in Pre-Calculus 12 and Physics 12",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths Analysis & Approaches SL/HL or Applications & Interpretations HL for Pre-Calculus 12; Physics and Chemistry SL/HL",
+   "note": "IB grade 5 = 86%, 4 = 73%"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB or BC for Pre-Calculus 12; Physics 1, 2, C Mechanics or C E&M for Physics 12; Chemistry for Chemistry 12. Grades 4-5 = 86%, 3 = 73%",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Edexcel IAS/IAL or UK GCE AS/A Maths, Physics, Chemistry accepted; A = 86%, B = 73%, C = 67%",
+  "turkish_route": "Not listed individually; transcript showing 12 years of schooling and required Grade 11/12 courses assessed",
+  "prerequisite_maths": "Pre-Calculus 12, Physics 12 and Chemistry 11 or 12 at program-set minimums; English Studies 12",
+  "source_url": "https://www.bcit.ca/admission/entrance-requirements/equivalencies/international-high-school/",
+  "confidence": "medium",
+  "note": "Institution-wide BCIT equivalency rules applied; programme-specific minimums vary."
+ },
+ "20751": {
+  "stem": true,
+  "typical_offer": "Secondary school average of about B (70-75%) with Grade 12 prerequisites",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Appropriate prerequisite subjects; admission based on converted subject grades, not total",
+   "note": "Up to 3.0 transfer credits for HL grade 5 or higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Two A-level subjects plus three GCSE/IGCSE, or four AS-levels plus one O-level; prerequisites at AS/A-level",
+  "turkish_route": null,
+  "prerequisite_maths": "Senior English and Grade 12 mathematics",
+  "source_url": "https://brocku.ca/admissions/admission-criteria/",
+  "confidence": "medium",
+  "note": "Institution-wide Brock rules applied."
+ },
+ "20755": {
+  "stem": true,
+  "typical_offer": "Secondary school average of about B (70-75%) with Grade 12 prerequisites",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Appropriate prerequisite subjects; admission based on converted subject grades, not total",
+   "note": "Up to 3.0 transfer credits for HL grade 5 or higher"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Two A-level subjects plus three GCSE/IGCSE, or four AS-levels plus one O-level; prerequisites at AS/A-level",
+  "turkish_route": null,
+  "prerequisite_maths": "Senior English plus two of Functions, Calculus, Data Management with minimum B in maths",
+  "source_url": "https://brocku.ca/admissions/admission-criteria/",
+  "confidence": "medium",
+  "note": "Institution-wide Brock rules applied."
+ },
+ "20748": {
+  "stem": false
+ },
+ "28587": {
+  "stem": false
+ },
+ "1184": {
+  "stem": true,
+  "typical_offer": "OSSD or equivalent with six Grade 12 courses averaging 65%; Grade 12 English 65%",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": "Centennial Engineering Math Skills Assessment",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "One Grade 12 maths (Advanced Functions, Calculus and Vectors or Data Management) at 60%, or Centennial Engineering Math Skills Assessment",
+  "source_url": "https://www.centennialcollege.ca/programs-courses/full-time/bachelor-of-information-technology",
+  "confidence": "medium"
+ },
+ "25263": {
+  "stem": true,
+  "typical_offer": "Minimum six Grade 12 courses with 65% average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS 6.5 (no band below 6.0), TOEFL iBT 88 or CAEL 70 for English",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Graduation certificate and transcripts with course-by-course credential evaluation",
+  "prerequisite_maths": "Grade 12 English, Chemistry, Physics, Calculus and Vectors",
+  "source_url": "https://www.conestogac.on.ca/international/apply-to-conestoga/admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide Conestoga rules applied."
+ },
+ "25260": {
+  "stem": true,
+  "typical_offer": "Minimum six Grade 12 courses with 65% average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS 6.5 (no band below 6.0), TOEFL iBT 88 or CAEL 70 for English",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Graduation certificate and transcripts with course-by-course credential evaluation",
+  "prerequisite_maths": "Grade 12 English and mathematics",
+  "source_url": "https://www.conestogac.on.ca/international/apply-to-conestoga/admission-requirements",
+  "confidence": "low",
+  "note": "Institution-wide Conestoga rules applied."
+ },
+ "25264": {
+  "stem": true,
+  "typical_offer": "Minimum six Grade 12 courses with 65% average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS 6.5 (no band below 6.0), TOEFL iBT 88 or CAEL 70 for English",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Graduation certificate and transcripts with course-by-course credential evaluation",
+  "prerequisite_maths": "Grade 12 English, Chemistry, Physics, Calculus and Vectors",
+  "source_url": "https://www.conestogac.on.ca/international/apply-to-conestoga/admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide Conestoga rules applied."
+ },
+ "25265": {
+  "stem": true,
+  "typical_offer": "Minimum six Grade 12 courses with 65% average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS 6.5 (no band below 6.0), TOEFL iBT 88 or CAEL 70 for English",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Graduation certificate and transcripts with course-by-course credential evaluation",
+  "prerequisite_maths": "Grade 12 English, Chemistry, Physics, Calculus and Vectors",
+  "source_url": "https://www.conestogac.on.ca/international/apply-to-conestoga/admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide Conestoga rules applied."
+ },
+ "25266": {
+  "stem": true,
+  "typical_offer": "Minimum six Grade 12 courses with 65% average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS 6.5 (no band below 6.0), TOEFL iBT 88 or CAEL 70 for English",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Graduation certificate and transcripts with course-by-course credential evaluation",
+  "prerequisite_maths": "Grade 12 English, Chemistry, Physics, Calculus and Vectors",
+  "source_url": "https://www.conestogac.on.ca/international/apply-to-conestoga/admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide Conestoga rules applied."
+ },
+ "25267": {
+  "stem": true,
+  "typical_offer": "Minimum six Grade 12 courses with 65% average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS 6.5 (no band below 6.0), TOEFL iBT 88 or CAEL 70 for English",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Graduation certificate and transcripts with course-by-course credential evaluation",
+  "prerequisite_maths": "Grade 12 English, Chemistry, Physics, Calculus and Vectors",
+  "source_url": "https://www.conestogac.on.ca/international/apply-to-conestoga/admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide Conestoga rules applied."
+ },
+ "19795": {
+  "stem": false
+ },
+ "53106": {
+  "stem": false
+ },
+ "19707": {
+  "stem": false
+ },
+ "31250": {
+  "stem": false
+ },
+ "19837": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and one science; A-level B in Maths and C in one science",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus one science (Biology, Chemistry or Physics)",
+   "note": "SFU computing streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in one science subject",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; one science",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19843": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and two sciences (Physics, Chemistry or Biology); A-level B in Maths plus two C grades in sciences",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus two of Physics, Chemistry, Biology",
+   "note": "SFU engineering streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted. Full diploma with at least 3 HL for SFU."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in two science subjects (Physics, Chemistry, Biology)",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; Physics and Chemistry for engineering streams",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19844": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and two sciences (Physics, Chemistry or Biology); A-level B in Maths plus two C grades in sciences",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus two of Physics, Chemistry, Biology",
+   "note": "SFU engineering streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted. Full diploma with at least 3 HL for SFU."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in two science subjects (Physics, Chemistry, Biology)",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; Physics and Chemistry for engineering streams",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19838": {
+  "stem": false
+ },
+ "19839": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and one science; A-level B in Maths and C in one science",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus one science (Biology, Chemistry or Physics)",
+   "note": "SFU computing streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in one science subject",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; one science",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19862": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and one science; A-level B in Maths and C in one science",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus one science (Biology, Chemistry or Physics)",
+   "note": "SFU computing streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in one science subject",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; one science",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19845": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and two sciences (Physics, Chemistry or Biology); A-level B in Maths plus two C grades in sciences",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus two of Physics, Chemistry, Biology",
+   "note": "SFU engineering streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted. Full diploma with at least 3 HL for SFU."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in two science subjects (Physics, Chemistry, Biology)",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; Physics and Chemistry for engineering streams",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19846": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and two sciences (Physics, Chemistry or Biology); A-level B in Maths plus two C grades in sciences",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus two of Physics, Chemistry, Biology",
+   "note": "SFU engineering streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted. Full diploma with at least 3 HL for SFU."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in two science subjects (Physics, Chemistry, Biology)",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; Physics and Chemistry for engineering streams",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19840": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and one science; A-level B in Maths and C in one science",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus one science (Biology, Chemistry or Physics)",
+   "note": "SFU computing streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in one science subject",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; one science",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19848": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and two sciences (Physics, Chemistry or Biology); A-level B in Maths plus two C grades in sciences",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus two of Physics, Chemistry, Biology",
+   "note": "SFU engineering streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted. Full diploma with at least 3 HL for SFU."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in two science subjects (Physics, Chemistry, Biology)",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; Physics and Chemistry for engineering streams",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19841": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and one science; A-level B in Maths and C in one science",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus one science (Biology, Chemistry or Physics)",
+   "note": "SFU computing streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in one science subject",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; one science",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19825": {
+  "stem": false
+ },
+ "19827": {
+  "stem": false
+ },
+ "19849": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and two sciences (Physics, Chemistry or Biology); A-level B in Maths plus two C grades in sciences",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus two of Physics, Chemistry, Biology",
+   "note": "SFU engineering streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted. Full diploma with at least 3 HL for SFU."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in two science subjects (Physics, Chemistry, Biology)",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; Physics and Chemistry for engineering streams",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19847": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and two sciences (Physics, Chemistry or Biology); A-level B in Maths plus two C grades in sciences",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus two of Physics, Chemistry, Biology",
+   "note": "SFU engineering streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted. Full diploma with at least 3 HL for SFU."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in two science subjects (Physics, Chemistry, Biology)",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; Physics and Chemistry for engineering streams",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19842": {
+  "stem": true,
+  "typical_offer": "IB 24 incl. HL Maths level 4 and one science; A-level B in Maths and C in one science",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths (HL) level 4 plus one science (Biology, Chemistry or Physics)",
+   "note": "SFU computing streams: IB Maths Analysis & Approaches (SL/HL) or Applications & Interpretations HL; Applications SL not accepted."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide FIC pathway rules apply (FIC Year One then SFU)."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "B in Maths and C in one science subject",
+  "turkish_route": null,
+  "prerequisite_maths": "Secondary school mathematics at an acceptable level; one science",
+  "source_url": "https://www.fraseric.ca/admissions/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide FIC entry rules applied to all FIC programmes."
+ },
+ "19544": {
+  "stem": false
+ }
+}

@@ -1,0 +1,899 @@
+{
+ "41603": {
+  "stem": true,
+  "typical_offer": "Test-optional; secondary transcript; TOEFL iBT 65 for unconditional admission",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT/ACT optional",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.fisher.edu/fs/pages/2144",
+  "confidence": "medium"
+ },
+ "41604": {
+  "stem": true,
+  "typical_offer": "Test-optional; secondary transcript; TOEFL iBT 65 for unconditional admission",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT/ACT optional",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.fisher.edu/fs/pages/2144",
+  "confidence": "medium"
+ },
+ "41605": {
+  "stem": true,
+  "typical_offer": "Test-optional; secondary transcript; TOEFL iBT 65 for unconditional admission",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT/ACT optional",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.fisher.edu/fs/pages/2144",
+  "confidence": "medium"
+ },
+ "41606": {
+  "stem": true,
+  "typical_offer": "Test-optional; secondary transcript; TOEFL iBT 65 for unconditional admission",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT/ACT optional",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.fisher.edu/fs/pages/2144",
+  "confidence": "medium"
+ },
+ "41607": {
+  "stem": true,
+  "typical_offer": "Test-optional; secondary transcript; TOEFL iBT 65 for unconditional admission",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT/ACT optional",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.fisher.edu/fs/pages/2144",
+  "confidence": "medium"
+ },
+ "26637": {
+  "stem": true,
+  "typical_offer": "Min. B (3.0) equivalent GPA in 18 academic units; middle 50% admitted: GPA 3.66-4.29, SAT 1090-1270 / ACT 22-28; SAT/ACT/CLT required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB math strongly encouraged for science majors",
+   "note": "IB courses get extra weight in admissions GPA; up to 45 credit hours via AICE/AP/IB/CLEP"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in admissions GPA; AP Calculus recommended for Engineering/CS; up to 45 credit hours via exam credit (scores to be sent by College Board)",
+   "note": "AB vs BC credit rules not published in sources"
+  },
+  "tests": "SAT, ACT or CLT required (Florida Board of Governors rule); valid 5 years; SAT school code 5229, ACT 0729",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level results must be included in a NACES course-by-course evaluation; no grade thresholds published",
+  "turkish_route": "Devlet Lise Diplomas\u0131 accepted directly: minimum about 70/100 (4.25/5, equivalent to B/3.0); submit diploma and final transcripts with NACES evaluation",
+  "prerequisite_maths": "4 units math (Algebra 1 or above); Engineering/CS strongly recommend Algebra 1, Geometry, Algebra 2, Precalculus/Trigonometry and Calculus 1 or AP Calculus; separate math GPA in evaluation",
+  "source_url": "https://www.fau.edu/admissions/international/how-to-apply/academic-credentials/",
+  "confidence": "medium"
+ },
+ "26601": {
+  "stem": true,
+  "typical_offer": "Min. B (3.0) equivalent GPA in 18 academic units; middle 50% admitted: GPA 3.66-4.29, SAT 1090-1270 / ACT 22-28; SAT/ACT/CLT required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB math strongly encouraged for science majors",
+   "note": "IB courses get extra weight in admissions GPA; up to 45 credit hours via AICE/AP/IB/CLEP"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in admissions GPA; AP Calculus recommended for Engineering/CS; up to 45 credit hours via exam credit (scores to be sent by College Board)",
+   "note": "AB vs BC credit rules not published in sources"
+  },
+  "tests": "SAT, ACT or CLT required (Florida Board of Governors rule); valid 5 years; SAT school code 5229, ACT 0729",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level results must be included in a NACES course-by-course evaluation; no grade thresholds published",
+  "turkish_route": "Devlet Lise Diplomas\u0131 accepted directly: minimum about 70/100 (4.25/5, equivalent to B/3.0); submit diploma and final transcripts with NACES evaluation",
+  "prerequisite_maths": "4 units math (Algebra 1 or above); Engineering/CS strongly recommend Algebra 1, Geometry, Algebra 2, Precalculus/Trigonometry and Calculus 1 or AP Calculus; separate math GPA in evaluation",
+  "source_url": "https://www.fau.edu/admissions/international/how-to-apply/academic-credentials/",
+  "confidence": "medium"
+ },
+ "26600": {
+  "stem": true,
+  "typical_offer": "Min. B (3.0) equivalent GPA in 18 academic units; middle 50% admitted: GPA 3.66-4.29, SAT 1090-1270 / ACT 22-28; SAT/ACT/CLT required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB math strongly encouraged for science majors",
+   "note": "IB courses get extra weight in admissions GPA; up to 45 credit hours via AICE/AP/IB/CLEP"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in admissions GPA; AP Calculus recommended for Engineering/CS; up to 45 credit hours via exam credit (scores to be sent by College Board)",
+   "note": "AB vs BC credit rules not published in sources"
+  },
+  "tests": "SAT, ACT or CLT required (Florida Board of Governors rule); valid 5 years; SAT school code 5229, ACT 0729",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level results must be included in a NACES course-by-course evaluation; no grade thresholds published",
+  "turkish_route": "Devlet Lise Diplomas\u0131 accepted directly: minimum about 70/100 (4.25/5, equivalent to B/3.0); submit diploma and final transcripts with NACES evaluation",
+  "prerequisite_maths": "4 units math (Algebra 1 or above); Engineering/CS strongly recommend Algebra 1, Geometry, Algebra 2, Precalculus/Trigonometry and Calculus 1 or AP Calculus; separate math GPA in evaluation",
+  "source_url": "https://www.fau.edu/admissions/international/how-to-apply/academic-credentials/",
+  "confidence": "medium"
+ },
+ "26602": {
+  "stem": true,
+  "typical_offer": "Min. B (3.0) equivalent GPA in 18 academic units; middle 50% admitted: GPA 3.66-4.29, SAT 1090-1270 / ACT 22-28; SAT/ACT/CLT required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB math strongly encouraged for science majors",
+   "note": "IB courses get extra weight in admissions GPA; up to 45 credit hours via AICE/AP/IB/CLEP"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in admissions GPA; AP Calculus recommended for Engineering/CS; up to 45 credit hours via exam credit (scores to be sent by College Board)",
+   "note": "AB vs BC credit rules not published in sources"
+  },
+  "tests": "SAT, ACT or CLT required (Florida Board of Governors rule); valid 5 years; SAT school code 5229, ACT 0729",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level results must be included in a NACES course-by-course evaluation; no grade thresholds published",
+  "turkish_route": "Devlet Lise Diplomas\u0131 accepted directly: minimum about 70/100 (4.25/5, equivalent to B/3.0); submit diploma and final transcripts with NACES evaluation",
+  "prerequisite_maths": "4 units math (Algebra 1 or above); Engineering/CS strongly recommend Algebra 1, Geometry, Algebra 2, Precalculus/Trigonometry and Calculus 1 or AP Calculus; separate math GPA in evaluation",
+  "source_url": "https://www.fau.edu/admissions/international/how-to-apply/academic-credentials/",
+  "confidence": "medium"
+ },
+ "26635": {
+  "stem": true,
+  "typical_offer": "Min. B (3.0) equivalent GPA in 18 academic units; middle 50% admitted: GPA 3.66-4.29, SAT 1090-1270 / ACT 22-28; SAT/ACT/CLT required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB math strongly encouraged for science majors",
+   "note": "IB courses get extra weight in admissions GPA; up to 45 credit hours via AICE/AP/IB/CLEP"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in admissions GPA; AP Calculus recommended for Engineering/CS; up to 45 credit hours via exam credit (scores to be sent by College Board)",
+   "note": "AB vs BC credit rules not published in sources"
+  },
+  "tests": "SAT, ACT or CLT required (Florida Board of Governors rule); valid 5 years; SAT school code 5229, ACT 0729",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level results must be included in a NACES course-by-course evaluation; no grade thresholds published",
+  "turkish_route": "Devlet Lise Diplomas\u0131 accepted directly: minimum about 70/100 (4.25/5, equivalent to B/3.0); submit diploma and final transcripts with NACES evaluation",
+  "prerequisite_maths": "4 units math (Algebra 1 or above); Engineering/CS strongly recommend Algebra 1, Geometry, Algebra 2, Precalculus/Trigonometry and Calculus 1 or AP Calculus; separate math GPA in evaluation",
+  "source_url": "https://www.fau.edu/admissions/international/how-to-apply/academic-credentials/",
+  "confidence": "medium"
+ },
+ "26636": {
+  "stem": true,
+  "typical_offer": "Min. B (3.0) equivalent GPA in 18 academic units; middle 50% admitted: GPA 3.66-4.29, SAT 1090-1270 / ACT 22-28; SAT/ACT/CLT required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB math strongly encouraged for science majors",
+   "note": "IB courses get extra weight in admissions GPA; up to 45 credit hours via AICE/AP/IB/CLEP"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in admissions GPA; AP Calculus recommended for Engineering/CS; up to 45 credit hours via exam credit (scores to be sent by College Board)",
+   "note": "AB vs BC credit rules not published in sources"
+  },
+  "tests": "SAT, ACT or CLT required (Florida Board of Governors rule); valid 5 years; SAT school code 5229, ACT 0729",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level results must be included in a NACES course-by-course evaluation; no grade thresholds published",
+  "turkish_route": "Devlet Lise Diplomas\u0131 accepted directly: minimum about 70/100 (4.25/5, equivalent to B/3.0); submit diploma and final transcripts with NACES evaluation",
+  "prerequisite_maths": "4 units math (Algebra 1 or above); Engineering/CS strongly recommend Algebra 1, Geometry, Algebra 2, Precalculus/Trigonometry and Calculus 1 or AP Calculus; separate math GPA in evaluation",
+  "source_url": "https://www.fau.edu/admissions/international/how-to-apply/academic-credentials/",
+  "confidence": "medium"
+ },
+ "26638": {
+  "stem": true,
+  "typical_offer": "Min. B (3.0) equivalent GPA in 18 academic units; middle 50% admitted: GPA 3.66-4.29, SAT 1090-1270 / ACT 22-28; SAT/ACT/CLT required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB math strongly encouraged for science majors",
+   "note": "IB courses get extra weight in admissions GPA; up to 45 credit hours via AICE/AP/IB/CLEP"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in admissions GPA; AP Calculus recommended for Engineering/CS; up to 45 credit hours via exam credit (scores to be sent by College Board)",
+   "note": "AB vs BC credit rules not published in sources"
+  },
+  "tests": "SAT, ACT or CLT required (Florida Board of Governors rule); valid 5 years; SAT school code 5229, ACT 0729",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level results must be included in a NACES course-by-course evaluation; no grade thresholds published",
+  "turkish_route": "Devlet Lise Diplomas\u0131 accepted directly: minimum about 70/100 (4.25/5, equivalent to B/3.0); submit diploma and final transcripts with NACES evaluation",
+  "prerequisite_maths": "4 units math (Algebra 1 or above); Engineering/CS strongly recommend Algebra 1, Geometry, Algebra 2, Precalculus/Trigonometry and Calculus 1 or AP Calculus; separate math GPA in evaluation",
+  "source_url": "https://www.fau.edu/admissions/international/how-to-apply/academic-credentials/",
+  "confidence": "medium"
+ },
+ "26639": {
+  "stem": true,
+  "typical_offer": "Min. B (3.0) equivalent GPA in 18 academic units; middle 50% admitted: GPA 3.66-4.29, SAT 1090-1270 / ACT 22-28; SAT/ACT/CLT required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB math strongly encouraged for science majors",
+   "note": "IB courses get extra weight in admissions GPA; up to 45 credit hours via AICE/AP/IB/CLEP"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in admissions GPA; AP Calculus recommended for Engineering/CS; up to 45 credit hours via exam credit (scores to be sent by College Board)",
+   "note": "AB vs BC credit rules not published in sources"
+  },
+  "tests": "SAT, ACT or CLT required (Florida Board of Governors rule); valid 5 years; SAT school code 5229, ACT 0729",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level results must be included in a NACES course-by-course evaluation; no grade thresholds published",
+  "turkish_route": "Devlet Lise Diplomas\u0131 accepted directly: minimum about 70/100 (4.25/5, equivalent to B/3.0); submit diploma and final transcripts with NACES evaluation",
+  "prerequisite_maths": "4 units math (Algebra 1 or above); Engineering/CS strongly recommend Algebra 1, Geometry, Algebra 2, Precalculus/Trigonometry and Calculus 1 or AP Calculus; separate math GPA in evaluation",
+  "source_url": "https://www.fau.edu/admissions/international/how-to-apply/academic-credentials/",
+  "confidence": "medium"
+ },
+ "26658": {
+  "stem": false
+ },
+ "51396": {
+  "stem": true,
+  "typical_offer": "Min. B (3.0) equivalent GPA in 18 academic units; middle 50% admitted: GPA 3.66-4.29, SAT 1090-1270 / ACT 22-28; SAT/ACT/CLT required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB math strongly encouraged for science majors",
+   "note": "IB courses get extra weight in admissions GPA; up to 45 credit hours via AICE/AP/IB/CLEP"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in admissions GPA; AP Calculus recommended for Engineering/CS; up to 45 credit hours via exam credit (scores to be sent by College Board)",
+   "note": "AB vs BC credit rules not published in sources"
+  },
+  "tests": "SAT, ACT or CLT required (Florida Board of Governors rule); valid 5 years; SAT school code 5229, ACT 0729",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level results must be included in a NACES course-by-course evaluation; no grade thresholds published",
+  "turkish_route": "Devlet Lise Diplomas\u0131 accepted directly: minimum about 70/100 (4.25/5, equivalent to B/3.0); submit diploma and final transcripts with NACES evaluation",
+  "prerequisite_maths": "4 units math (Algebra 1 or above); Engineering/CS strongly recommend Algebra 1, Geometry, Algebra 2, Precalculus/Trigonometry and Calculus 1 or AP Calculus; separate math GPA in evaluation",
+  "source_url": "https://www.fau.edu/admissions/international/how-to-apply/academic-credentials/",
+  "confidence": "medium"
+ },
+ "25402": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "45694": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "45696": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "25404": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "45697": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "25405": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "45703": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "25406": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "25408": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "45700": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "45701": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "25411": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "45704": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "25412": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "25413": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "45708": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "25414": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "45711": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "25418": {
+  "stem": true,
+  "typical_offer": "Admission based on recalculated weighted GPA plus SAT/ACT/CLT; 18 academic units incl. 4 math; no published cutoff",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB courses weighted in admissions GPA; exam scores sent by testing agency"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP courses weighted in GPA; AP exam credit requires score 3 or higher (variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT, ACT or CLT required for all freshmen incl. international (no test-optional); ACT Science not counted",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "4 high-school math credits (Algebra I or above); 3 natural science (2 with lab)",
+  "source_url": "https://admissions.fiu.edu/international/incoming-freshmen/",
+  "confidence": "medium"
+ },
+ "25453": {
+  "stem": false
+ }
+}

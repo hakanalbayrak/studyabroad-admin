@@ -1,0 +1,1061 @@
+{
+ "34915": {
+  "stem": true,
+  "typical_offer": "IB 26; A-level score 8; AP score 8; SAT 1130 or ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 8 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1130 or ACT 22 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 8 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": null,
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-computer-science/int/",
+  "confidence": "medium"
+ },
+ "34918": {
+  "stem": true,
+  "typical_offer": "IB 26; A-level score 8; AP score 8; SAT 1130 or ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 8 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1130 or ACT 22 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 8 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": null,
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-computer-science/int/",
+  "confidence": "high"
+ },
+ "34919": {
+  "stem": true,
+  "typical_offer": "IB 26; A-level score 8; AP score 8; SAT 1130 or ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Advanced degrees have higher selection thresholds than the standard degree shown"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 8 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1130 or ACT 22 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 8 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": null,
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-computer-science/int/",
+  "confidence": "low"
+ },
+ "34920": {
+  "stem": true,
+  "typical_offer": "IB 26; A-level score 8; AP score 8; SAT 1130 or ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 8 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1130 or ACT 22 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 8 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": null,
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-computer-science/int/",
+  "confidence": "medium"
+ },
+ "34862": {
+  "stem": false
+ },
+ "34863": {
+  "stem": false
+ },
+ "34928": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering Pathway program is not available to international students"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "low"
+ },
+ "34864": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34925": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "high"
+ },
+ "34902": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34842": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34929": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied; combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34903": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34910": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "high"
+ },
+ "34843": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34930": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied; combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34900": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34837": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34931": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied; combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34899": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "high"
+ },
+ "34844": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34932": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied; combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34933": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34922": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34923": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34924": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34911": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34926": {
+  "stem": true,
+  "typical_offer": "IB 28; A-level score 9; AP score 9; SAT 1170 or ACT 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Engineering-degree scores applied to this variant/combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 9 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1170 or ACT 24 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 9 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-engineering-civil-honours/",
+  "confidence": "medium"
+ },
+ "34845": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Combined degree; scores not confirmed"
+  },
+  "ap": {
+   "accepted": true,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Best three A-levels scored A=5, B=4, C=3, D=2, E=1 (minimum varies by degree)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent)",
+  "source_url": "https://www.adelaide.edu.au/degree-finder/bfbbm_bfbbmd1.html",
+  "confidence": "low"
+ },
+ "34916": {
+  "stem": true,
+  "typical_offer": "IB 25; A-level score 7; AP score 7; SAT 1100 or ACT 21",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 7 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1100 or ACT 21 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 7 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": null,
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-information-technology/",
+  "confidence": "high"
+ },
+ "34912": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths: Analysis and Approaches SL or Applications and Interpretations HL (equivalent of SACE Mathematical Methods)",
+   "note": "Guaranteed entry ATAR 75"
+  },
+  "ap": {
+   "accepted": true,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Best three A-levels scored A=5, B=4, C=3, D=2, E=1 (minimum varies by degree)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": "SACE Stage 2 Mathematical Methods (or equivalent); IB Mathematics Applications and Interpretations HL or Analysis and Approaches SL accepted",
+  "source_url": "https://www.adelaide.edu.au/degree-finder/bscms_bscm&cs.html",
+  "confidence": "medium"
+ },
+ "34896": {
+  "stem": true,
+  "typical_offer": "IB 26; A-level score 8; AP score 8; SAT 1130 or ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": null,
+   "note": "Media/computer science double degree; Computer Science scores shown, not confirmed for the combined degree"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 8 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1130 or ACT 22 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 8 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": null,
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-computer-science/int/",
+  "confidence": "low"
+ },
+ "34917": {
+  "stem": true,
+  "typical_offer": "IB 25; A-level score 7; AP score 7; SAT 1100 or ACT 21",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP minimum score 7 (scale as published by the university; Calculus AB/BC variants not specified)",
+   "note": ""
+  },
+  "tests": "SAT 1100 or ACT 21 accepted for US applicants; English: IELTS 6.5 overall, 6 in each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level score 7 (best three A-levels, A=5, B=4, C=3, D=2, E=1; AS counts half)",
+  "turkish_route": "Turkish Lise Diploması is not listed in the university's country table; direct entry unconfirmed. Foundation Studies or recognised pathway (e.g. Kaplan International College Adelaide), or 6 months of university study, are accepted routes",
+  "prerequisite_maths": null,
+  "source_url": "https://adelaide.edu.au/study/degrees/bachelor-of-science/int/",
+  "confidence": "medium"
+ },
+ "35566": {
+  "stem": true,
+  "typical_offer": "Year 12 equivalent (IB Diploma 24 minimum; A-level score 7 from 2-3 H2 subjects; US diploma 2.60 GPA with SAT 960 or ACT 18) plus course prerequisites",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "IB Diploma treated as equivalent to Australian Year 12"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US applicants: SAT 960 or ACT 18 with high school diploma and 2.60 GPA; English: IELTS 6.0 (no band below 5.5)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-levels: minimum score 7 from best 2-3 H2-level subjects (Singapore-style scale)",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematics Methods (or equivalent) and Physical Sciences (Chemistry or Physics, or equivalent); confirm by course",
+  "source_url": "https://www.utas.edu.au/study/apply/admission-requirements/entry-requirements-by-country",
+  "confidence": "low"
+ },
+ "35573": {
+  "stem": true,
+  "typical_offer": "Year 12 equivalent (IB Diploma 24 minimum; A-level score 7 from 2-3 H2 subjects; US diploma 2.60 GPA with SAT 960 or ACT 18) plus course prerequisites",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "IB Diploma treated as equivalent to Australian Year 12"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US applicants: SAT 960 or ACT 18 with high school diploma and 2.60 GPA; English: IELTS 6.0 (no band below 5.5)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-levels: minimum score 7 from best 2-3 H2-level subjects (Singapore-style scale)",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematics Methods (or equivalent) and Physical Sciences (Chemistry or Physics, or equivalent); confirm by course",
+  "source_url": "https://www.utas.edu.au/study/apply/admission-requirements/entry-requirements-by-country",
+  "confidence": "low"
+ },
+ "35585": {
+  "stem": true,
+  "typical_offer": "Year 12 equivalent (IB Diploma 24 minimum; A-level score 7 from 2-3 H2 subjects; US diploma 2.60 GPA with SAT 960 or ACT 18) plus course prerequisites",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "IB Diploma treated as equivalent to Australian Year 12"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US applicants: SAT 960 or ACT 18 with high school diploma and 2.60 GPA; English: IELTS 6.0 (no band below 5.5)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-levels: minimum score 7 from best 2-3 H2-level subjects (Singapore-style scale)",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.utas.edu.au/study/apply/admission-requirements/entry-requirements-by-country",
+  "confidence": "medium"
+ },
+ "35586": {
+  "stem": true,
+  "typical_offer": "Year 12 equivalent (IB Diploma 24 minimum; A-level score 7 from 2-3 H2 subjects; US diploma 2.60 GPA with SAT 960 or ACT 18) plus course prerequisites",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "IB Diploma treated as equivalent to Australian Year 12"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US applicants: SAT 960 or ACT 18 with high school diploma and 2.60 GPA; English: IELTS 6.0 (no band below 5.5)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-levels: minimum score 7 from best 2-3 H2-level subjects (Singapore-style scale)",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.utas.edu.au/study/apply/admission-requirements/entry-requirements-by-country",
+  "confidence": "medium"
+ },
+ "35591": {
+  "stem": true,
+  "typical_offer": "Year 12 equivalent (IB Diploma 24 minimum; A-level score 7 from 2-3 H2 subjects; US diploma 2.60 GPA with SAT 960 or ACT 18) plus course prerequisites",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "IB Diploma treated as equivalent to Australian Year 12"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US applicants: SAT 960 or ACT 18 with high school diploma and 2.60 GPA; English: IELTS 6.0 (no band below 5.5)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-levels: minimum score 7 from best 2-3 H2-level subjects (Singapore-style scale)",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematics Methods (or equivalent) and Physical Sciences (Chemistry or Physics, or equivalent)",
+  "source_url": "https://www.utas.edu.au/courses/sci-eng/courses/24v1-bachelor-of-maritime-engineering-specialisation-honours",
+  "confidence": "low"
+ },
+ "35592": {
+  "stem": true,
+  "typical_offer": "Admission governed by partner-university agreements after completing Years 1-2 at the partner",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Entry via Years 1-2 at AUT, ECU or Flinders under cooperative agreements"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US applicants: SAT 960 or ACT 18 with high school diploma and 2.60 GPA; English: IELTS 6.0 (no band below 5.5)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-levels: minimum score 7 from best 2-3 H2-level subjects (Singapore-style scale)",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematics Methods (or equivalent) and Physical Sciences (Chemistry or Physics, or equivalent)",
+  "source_url": "https://www.utas.edu.au/courses/sci-eng/courses/24v1-bachelor-of-maritime-engineering-specialisation-honours",
+  "confidence": "low"
+ },
+ "35593": {
+  "stem": true,
+  "typical_offer": "Admission governed by partner-university agreements after completing Years 1-2 at the partner",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Entry via Years 1-2 at AUT, ECU or Flinders under cooperative agreements"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US applicants: SAT 960 or ACT 18 with high school diploma and 2.60 GPA; English: IELTS 6.0 (no band below 5.5)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-levels: minimum score 7 from best 2-3 H2-level subjects (Singapore-style scale)",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematics Methods (or equivalent) and Physical Sciences (Chemistry or Physics, or equivalent)",
+  "source_url": "https://www.utas.edu.au/courses/sci-eng/courses/24v1-bachelor-of-maritime-engineering-specialisation-honours",
+  "confidence": "low"
+ },
+ "35594": {
+  "stem": true,
+  "typical_offer": "Admission governed by partner-university agreements after completing Years 1-2 at the partner",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Entry via Years 1-2 at AUT, ECU or Flinders under cooperative agreements"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US applicants: SAT 960 or ACT 18 with high school diploma and 2.60 GPA; English: IELTS 6.0 (no band below 5.5)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-levels: minimum score 7 from best 2-3 H2-level subjects (Singapore-style scale)",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematics Methods (or equivalent) and Physical Sciences (Chemistry or Physics, or equivalent)",
+  "source_url": "https://www.utas.edu.au/courses/sci-eng/courses/24v1-bachelor-of-maritime-engineering-specialisation-honours",
+  "confidence": "low"
+ }
+}

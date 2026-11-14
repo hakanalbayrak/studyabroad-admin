@@ -1,0 +1,758 @@
+{
+ "50306": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A* Maths and A Physics; IB 36 with 7,7,6 HL incl 7 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course) 7 and Physics 6 in HL 7,7,6; SL Physics only in exceptional cases (needs 7 SL plus 7,6,6 HL)",
+   "note": "Contextual offer: 36 with 6,6,6 or 7,6,5 HL incl 6 Physics and 6 HL Maths. "
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Physics 1 (or Calculus BC plus two of Physics 2, Physics C: E&M, Physics C: Mechanics). Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A* Maths and A Physics; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Physics and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A* Maths and A Physics; IB HL Maths; AP Calculus BC (not AB) plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/mechanical-engineering/beng-aerospace-engineering/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "52044": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A* Maths and A Physics; IB 36 with 7,7,6 HL incl 7 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course) 7 and Physics 6 in HL 7,7,6; SL Physics only in exceptional cases (needs 7 SL plus 7,6,6 HL)",
+   "note": "Contextual offer: 36 with 6,6,6 or 7,6,5 HL incl 6 Physics and 6 HL Maths. "
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Physics 1 (or Calculus BC plus two of Physics 2, Physics C: E&M, Physics C: Mechanics). Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A* Maths and A Physics; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Physics and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A* Maths and A Physics; IB HL Maths; AP Calculus BC (not AB) plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/mechanical-engineering/beng-aerospace-engineering/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50307": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A* Maths and A Physics; IB 36 with 7,7,6 HL incl 7 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course) 7 and Physics 6 in HL 7,7,6; SL Physics only in exceptional cases (needs 7 SL plus 7,6,6 HL)",
+   "note": "Contextual offer: 36 with 6,6,6 or 7,6,5 HL incl 6 Physics and 6 HL Maths. Course group shares entry requirements with Aerospace/Mechanical. "
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Physics 1 (or Calculus BC plus two of Physics 2, Physics C: E&M, Physics C: Mechanics). Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A* Maths and A Physics; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Physics and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A* Maths and A Physics; IB HL Maths; AP Calculus BC (not AB) plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/mechanical-engineering/beng-mechanical-with-automotive-engineering/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50316": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A* Maths and A Physics; IB 36 with 7,7,6 HL incl 7 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course) 7 and Physics 6 in HL 7,7,6; SL Physics only in exceptional cases (needs 7 SL plus 7,6,6 HL)",
+   "note": "Contextual offer: 36 with 6,6,6 or 7,6,5 HL incl 6 Physics and 6 HL Maths. Course group shares entry requirements with Aerospace/Mechanical. "
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Physics 1 (or Calculus BC plus two of Physics 2, Physics C: E&M, Physics C: Mechanics). Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A* Maths and A Physics; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Physics and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A* Maths and A Physics; IB HL Maths; AP Calculus BC (not AB) plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/mechanical-engineering/beng-mechanical-with-automotive-engineering/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "52049": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A* Maths and A Physics; IB 36 with 7,7,6 HL incl 7 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course) 7 and Physics 6 in HL 7,7,6; SL Physics only in exceptional cases (needs 7 SL plus 7,6,6 HL)",
+   "note": "Contextual offer: 36 with 6,6,6 or 7,6,5 HL incl 6 Physics and 6 HL Maths. Course group shares entry requirements with Aerospace/Mechanical. "
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Physics 1 (or Calculus BC plus two of Physics 2, Physics C: E&M, Physics C: Mechanics). Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A* Maths and A Physics; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Physics and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A* Maths and A Physics; IB HL Maths; AP Calculus BC (not AB) plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/mechanical-engineering/beng-mechanical-with-automotive-engineering/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50313": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A* Maths and A Physics; IB 36 with 7,7,6 HL incl 7 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course) 7 and Physics 6 in HL 7,7,6; SL Physics only in exceptional cases (needs 7 SL plus 7,6,6 HL)",
+   "note": "Contextual offer: 36 with 6,6,6 or 7,6,5 HL incl 6 Physics and 6 HL Maths. "
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Physics 1 (or Calculus BC plus two of Physics 2, Physics C: E&M, Physics C: Mechanics). Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A* Maths and A Physics; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Physics and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A* Maths and A Physics; IB HL Maths; AP Calculus BC (not AB) plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/mechanical-engineering/beng-mechanical-engineering/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "52048": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A* Maths and A Physics; IB 36 with 7,7,6 HL incl 7 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course) 7 and Physics 6 in HL 7,7,6; SL Physics only in exceptional cases (needs 7 SL plus 7,6,6 HL)",
+   "note": "Contextual offer: 36 with 6,6,6 or 7,6,5 HL incl 6 Physics and 6 HL Maths. "
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Physics 1 (or Calculus BC plus two of Physics 2, Physics C: E&M, Physics C: Mechanics). Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A* Maths and A Physics; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Physics and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A* Maths and A Physics; IB HL Maths; AP Calculus BC (not AB) plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/mechanical-engineering/beng-mechanical-engineering/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50314": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A* Maths and A Physics; IB 36 with 7,7,6 HL incl 7 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course) 7 and Physics 6 in HL 7,7,6; SL Physics only in exceptional cases (needs 7 SL plus 7,6,6 HL)",
+   "note": "Contextual offer: 36 with 6,6,6 or 7,6,5 HL incl 6 Physics and 6 HL Maths. Same Mechanical group requirements. "
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Physics 1 (or Calculus BC plus two of Physics 2, Physics C: E&M, Physics C: Mechanics). Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A* Maths and A Physics; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Physics and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A* Maths and A Physics; IB HL Maths; AP Calculus BC (not AB) plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/mechanical-engineering/beng-mechanical-engineering-with-manufacturing-and-management/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50308": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl Chemistry and Maths; IB 36 with 7,6,6 HL incl Chemistry and HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Chemistry and HL Maths (either course) within HL 7,6,6; SL only in exceptional cases; Maths Applications & Interpretations SL not accepted",
+   "note": "Contextual: 36 with 6,6,5 HL incl 6 Chemistry and 6 HL Maths."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Chemistry. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl Chemistry and Maths; contextual AAB; alternative AAA/A*AB plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Chemistry and in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level Chemistry and Maths; IB HL Chemistry and HL Maths; AP Calculus BC (not AB) plus Chemistry",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/chemical-engineering/beng-chemical-engineering/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "52046": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl Chemistry and Maths; IB 36 with 7,6,6 HL incl Chemistry and HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Chemistry and HL Maths (either course) within HL 7,6,6; SL only in exceptional cases; Maths Applications & Interpretations SL not accepted",
+   "note": "Contextual: 36 with 6,6,5 HL incl 6 Chemistry and 6 HL Maths."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Chemistry. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl Chemistry and Maths; contextual AAB; alternative AAA/A*AB plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Chemistry and in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level Chemistry and Maths; IB HL Chemistry and HL Maths; AP Calculus BC (not AB) plus Chemistry",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/chemical-engineering/beng-chemical-engineering/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50309": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl Chemistry and Maths; IB 36 with 7,6,6 HL incl Chemistry and HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Chemistry and HL Maths (either course) within HL 7,6,6; SL only in exceptional cases; Maths Applications & Interpretations SL not accepted",
+   "note": "Contextual: 36 with 6,6,5 HL incl 6 Chemistry and 6 HL Maths. Environmental variant assumed to share Chemical Engineering group requirements."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and Chemistry. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl Chemistry and Maths; contextual AAB; alternative AAA/A*AB plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Chemistry and in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level Chemistry and Maths; IB HL Chemistry and HL Maths; AP Calculus BC (not AB) plus Chemistry",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/chemical-engineering/beng-chemical-engineering/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50311": {
+  "stem": true,
+  "typical_offer": "A-level AAA or A*AB incl A Maths and A in a second science/technology subject; IB 36 with 6,6,6 or 7,6,5 HL incl 6 HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths 6 within HL 6,6,6 or 7,6,5; SL science/technology only in exceptional cases",
+   "note": "Contextual: 36 with 6,5,5 HL incl 6 HL Maths."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and one other science or technology subject. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA or A*AB incl A Maths and A in second science/technology subject (Physics a listed option); contextual ABB; alternative AAB plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 80% and 85% in Calculus or Mathematics plus one other science/technology subject in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "Strong Maths required; A-level A Maths plus second science/technology subject (no separate Physics requirement); IB HL Maths; AP Calculus BC (not AB)",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/electronic-and-electrical-engineering/beng-electrical-and-electronic-engineering/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50310": {
+  "stem": true,
+  "typical_offer": "A-level AAA or A*AB incl A Maths and A in a second science/technology subject; IB 36 with 6,6,6 or 7,6,5 HL incl 6 HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths 6 within HL 6,6,6 or 7,6,5; SL science/technology only in exceptional cases",
+   "note": "Contextual: 36 with 6,5,5 HL incl 6 HL Maths."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and one other science or technology subject. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA or A*AB incl A Maths and A in second science/technology subject (Physics a listed option); contextual ABB; alternative AAB plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 80% and 85% in Calculus or Mathematics plus one other science/technology subject in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "Strong Maths required; A-level A Maths plus second science/technology subject (no separate Physics requirement); IB HL Maths; AP Calculus BC (not AB)",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/electronic-and-electrical-engineering/beng-computer-systems-engineering/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50312": {
+  "stem": true,
+  "typical_offer": "A-level AAA or A*AB incl A Maths and A in a second science/technology subject; IB 36 with 6,6,6 or 7,6,5 HL incl 6 HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths 6 within HL 6,6,6 or 7,6,5; SL science/technology only in exceptional cases",
+   "note": "Contextual: 36 with 6,5,5 HL incl 6 HL Maths. Course group requirements for Electronic and Electrical Engineering applied."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and one other science or technology subject. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA or A*AB incl A Maths and A in second science/technology subject (Physics a listed option); contextual ABB; alternative AAB plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 80% and 85% in Calculus or Mathematics plus one other science/technology subject in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "Strong Maths required; A-level A Maths plus second science/technology subject (no separate Physics requirement); IB HL Maths; AP Calculus BC (not AB)",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/electronic-and-electrical-engineering/meng-electronic-engineering-with-space-science-and-technology-with-professional-placement/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50317": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl Maths; IB 36 with 7,6,6 HL incl HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course) within HL 7,6,6; SL Maths not accepted",
+   "note": "Contextual: 36 with 6,6,5 HL incl 6 HL Maths."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl Maths; contextual AAB incl A Maths; alternative AAA/A*AB plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "Strong Maths required; Physics not required; A-level Maths; IB HL Maths; AP Calculus BC (not AB)",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/civil-engineering/beng-civil-engineering/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50318": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl Maths; IB 36 with 7,6,6 HL incl HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course) within HL 7,6,6; SL Maths not accepted",
+   "note": "Contextual: 36 with 6,6,5 HL incl 6 HL Maths."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl Maths; contextual AAB incl A Maths; alternative AAA/A*AB plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "Strong Maths required; Physics not required; A-level Maths; IB HL Maths; AP Calculus BC (not AB)",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/civil-engineering/beng-structural-and-architectural-engineering/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50315": {
+  "stem": true,
+  "typical_offer": "A-level AAA or A*AB incl A Maths and A Physics; IB 36 with 6,6,6 or 7,6,5 HL incl 6 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths 6 and Physics 6 within HL 6,6,6 or 7,6,5; SL Physics only in exceptional cases",
+   "note": "Contextual: 36 with 6,5,5 HL incl 6 HL Maths and 5 Physics."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and at least one Physics AP. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA or A*AB incl A Maths and A Physics; contextual ABB; alternative AAB plus EPQ or Further Maths",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 80% and 85% in Physics and in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A Maths and A Physics; IB HL Maths and Physics; AP Calculus BC (not AB) plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/robotics-engineering/beng-robotics-engineering/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "52050": {
+  "stem": true,
+  "typical_offer": "A-level AAA or A*AB incl A Maths and A Physics; IB 36 with 6,6,6 or 7,6,5 HL incl 6 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths 6 and Physics 6 within HL 6,6,6 or 7,6,5; SL Physics only in exceptional cases",
+   "note": "Contextual: 36 with 6,5,5 HL incl 6 HL Maths and 5 Physics."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and at least one Physics AP. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA or A*AB incl A Maths and A Physics; contextual ABB; alternative AAB plus EPQ or Further Maths",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 80% and 85% in Physics and in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A Maths and A Physics; IB HL Maths and Physics; AP Calculus BC (not AB) plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/robotics-engineering/beng-robotics-engineering/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50358": {
+  "stem": true,
+  "typical_offer": "A-level AAA or A*AB incl A Maths and A Physics; IB 36 with 6,6,6 or 7,6,5 HL incl 6 HL Maths and 6 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths 6 and Physics 6 within HL 6,6,6 or 7,6,5; SL Physics only in exceptional cases (36 with 6,6,5 HL plus 7 SL Physics)",
+   "note": "Contextual: 36 with 6,5,5 HL incl 6 HL Maths and 5 Physics."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and at least one Physics AP. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test).",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA or A*AB incl A Maths and A Physics; contextual ABB; alternative AAB plus EPQ",
+  "turkish_route": "Turkish High School diplomas considered for direct entry with CGPA between 75% and 85% depending on course; International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level Maths and Physics; IB HL Maths; AP Calculus BC plus Physics",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2026/integrated-mechanical-and-electrical-engineering/beng-integrated-mechanical-and-electrical-engineering/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50357": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and A-levels accepted; course-specific grades not confirmed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bath typical AP offers range from 5,4,4 to 5,5,5,5 depending on degree.",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish High School diplomas considered for direct entry with CGPA between 75% and 85% depending on course. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bath.ac.uk/corporate-information/entry-requirements-for-international-students/",
+  "confidence": "low",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "52045": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and A-levels accepted; course-specific grades not confirmed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bath typical AP offers range from 5,4,4 to 5,5,5,5 depending on degree.",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Turkish High School diplomas considered for direct entry with CGPA between 75% and 85% depending on course. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bath.ac.uk/corporate-information/entry-requirements-for-international-students/",
+  "confidence": "low",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50328": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A Maths; IB 36 with 7,7,6 HL incl 6 HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths 6 within HL 7,7,6; SL Analysis & Approaches may be considered; Applications & Interpretations not accepted",
+   "note": "Contextual: 36 with 6,6,6 or 7,6,5 HL incl 6 HL Maths."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test). Associate degree: 3.5 GPA incl sufficient Maths credit.",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A Maths; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level Maths required; IB HL Maths (SL Analysis & Approaches may be considered with 7); AP Calculus BC (not AB)",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/computer-science/bsc-computer-science/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "52059": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A Maths; IB 36 with 7,7,6 HL incl 6 HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths 6 within HL 7,7,6; SL Analysis & Approaches may be considered; Applications & Interpretations not accepted",
+   "note": "Contextual: 36 with 6,6,6 or 7,6,5 HL incl 6 HL Maths."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC. Calculus AB, AP Seminar and AP Research do not count. Honours/dual-enrolment classes may be considered if AP tests unavailable (about one per AP test). Associate degree: 3.5 GPA incl sufficient Maths credit.",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A Maths; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level Maths required; IB HL Maths (SL Analysis & Approaches may be considered with 7); AP Calculus BC (not AB)",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/computer-science/bsc-computer-science/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50329": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A Maths; IB 36 with 7,7,6 HL incl 6 HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths 6 within HL 7,7,6; SL Analysis & Approaches with 7 may be considered; Applications & Interpretations not accepted",
+   "note": "Contextual: 36 with 6,6,6 or 7,6,5 HL incl 6 HL Maths."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC (as for Bath Computer Science). Calculus AB not accepted.",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A Maths; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level Maths required; IB HL Maths (SL Analysis & Approaches may be considered with 7); AP Calculus BC (not AB)",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/computer-science/bsc-computer-science-and-artificial-intelligence/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "50356": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl A Maths; IB 36 with 7,7,6 HL incl 6 HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths 6 within HL 7,7,6; SL Analysis & Approaches may be considered; Applications & Interpretations not accepted",
+   "note": "Contextual: 36 with 6,6,6 or 7,6,5 HL."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC (as for Bath Computer Science). Calculus AB not accepted.",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl A Maths; contextual AAA/A*AB; alternative A*AA/A*A*B plus EPQ or similar",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 85% in Calculus or Mathematics in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level Maths required; IB HL Maths (SL Analysis & Approaches may be considered with 7); AP Calculus BC (not AB)",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2026/computer-science/mcomp-computer-science/",
+  "confidence": "medium",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "52058": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A*A in Maths and Further Maths; IB 36 with HL Maths Analysis & Approaches",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths Analysis & Approaches required; Applications & Interpretations not accepted",
+   "note": "Contextual: 36 with 6 in HL Maths Analysis & Approaches."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP requirements under review by Bath."
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A*A in Maths and Further Maths; contextual A*AB; alternative A*AA/A*A*B plus EPQ",
+  "turkish_route": "Turkish High School diplomas alone not sufficient; additional recognised Maths study needed (or apply to Maths, Statistics and Data Science or other Computer Science degrees, which accept them directly). International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level Maths and Further Maths (or equivalent); IB HL Maths Analysis & Approaches",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/computer-science/bsc-computer-science-and-mathematics/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ },
+ "52068": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl A* Maths and A in a second quantitative subject; IB 36 with 7,7,6 HL incl 6 HL Maths Analysis & Approaches",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths Analysis & Approaches required (7,7,6 or 7,6,6/7,7,5 with 7 in Maths); Applications & Interpretations not accepted",
+   "note": "Contextual: 36 with 7,6,5 HL incl 6 Maths A&A. IB CP not typically suitable."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "5,5,5 in three AP tests incl Calculus BC and a second quantitative subject. Calculus AB, AP Seminar, AP Research not accepted.",
+   "note": ""
+  },
+  "tests": "No minimum SAT/ACT score; considered as supporting evidence if taken. SAT Subject Tests not accepted for direct entry.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl A* Maths and A in second quantitative subject; Further Maths route A*AA/A*A*B incl A* Maths and B Further Maths",
+  "turkish_route": "Turkish High School diplomas accepted for direct entry with CGPA 85% and 90% in Calculus or Mathematics and 85% in a second quantitative subject in final year. International Foundation Year at Bath's International Study Centre available for those not meeting entry requirements.",
+  "prerequisite_maths": "A-level A* Maths plus second quantitative subject (Physics, Chemistry, Computer Science, Economics, Statistics); STEP/TMUA/MAT not considered",
+  "source_url": "https://www.bath.ac.uk/courses/undergraduate-2027/mathematical-sciences/bsc-mathematics-statistics-and-data-science/",
+  "confidence": "high",
+  "note": "Applies Bath institution-wide international rules; institution-wide: Turkish diplomas CGPA range 75-85% by course; AP typical offers 5,4,4 to 5,5,5,5; English IELTS 6.5 (6.0 each component)."
+ }
+}

@@ -1,0 +1,881 @@
+{
+ "27068": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths plus another STEM subject; IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus one of Computer Science, Computing, DT (Systems and Control), Electronics, Further Mathematics or Physics; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths plus another STEM subject; General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/electrical-and-electronic-engineering",
+  "confidence": "medium"
+ },
+ "27070": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths plus another STEM subject; IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus one of Computer Science, Computing, DT (Systems and Control), Electronics, Further Mathematics or Physics; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths plus another STEM subject; General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/electronic-engineering",
+  "confidence": "medium"
+ },
+ "9534": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths plus another STEM subject; IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus one of Computer Science, Computing, DT (Systems and Control), Electronics, Further Mathematics or Physics; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths plus another STEM subject; General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/electronic-engineering",
+  "confidence": "medium"
+ },
+ "9533": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths plus another STEM subject; IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus one of Computer Science, Computing, DT (Systems and Control), Electronics, Further Mathematics or Physics; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths plus another STEM subject; General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/electronic-engineering",
+  "confidence": "medium"
+ },
+ "9535": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths plus another STEM subject; IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus one of Computer Science, Computing, DT (Systems and Control), Electronics, Further Mathematics or Physics; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths plus another STEM subject; General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/electronic-engineering",
+  "confidence": "medium"
+ },
+ "9536": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths plus another STEM subject; IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus one of Computer Science, Computing, DT (Systems and Control), Electronics, Further Mathematics or Physics; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths plus another STEM subject; General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/electronic-engineering",
+  "confidence": "medium"
+ },
+ "27071": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths plus another STEM subject; IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus one of Computer Science, Computing, DT (Systems and Control), Electronics, Further Mathematics or Physics; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths plus another STEM subject; General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/electronic-engineering",
+  "confidence": "medium"
+ },
+ "9542": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths plus another STEM subject; IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus one of Computer Science, Computing, DT (Systems and Control), Electronics, Further Mathematics or Physics; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths plus another STEM subject; General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/electronic-engineering",
+  "confidence": "medium"
+ },
+ "9541": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths plus another STEM subject; IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus one of Computer Science, Computing, DT (Systems and Control), Electronics, Further Mathematics or Physics; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths plus another STEM subject; General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/electronic-engineering",
+  "confidence": "medium"
+ },
+ "27113": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths at A plus Further Maths or Physics (or two physical sciences); IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus Physics HL5/SL6; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths at A plus Further Maths or Physics, or Maths at A and two physical sciences (e.g. Chemistry, Computer Science); General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/mechanical-engineering",
+  "confidence": "medium"
+ },
+ "27112": {
+  "stem": true,
+  "typical_offer": "MEng: A-level AAA incl. Maths at A plus Further Maths or Physics (or two physical sciences); IB 35 points with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Mathematics HL6/SL7 plus Physics HL5/SL6; English A HL4/SL4 or English B HL5/SL6",
+   "note": "BEng route requires 33 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA for MEng: Maths at A plus Further Maths or Physics, or Maths at A and two physical sciences (e.g. Chemistry, Computer Science); General Studies and Critical Thinking not accepted; EPQ grade A can lower offer by one grade (not required subjects); GCSE English grade 4; BEng with foundation year CCC",
+  "turkish_route": "Direct entry considered via Turkish Lise diploma: A-level offer AAA maps to about 80% final-year (80% for A-grade subjects, 70% for B); Lise maths grade 3 or 55% in Grade 10+ required; otherwise International Foundation Year at Surrey International Study Centre",
+  "prerequisite_maths": "A-level Maths (IB Maths HL6/SL7); Turkish Lise maths grade 3 or 55% in Grade 10+",
+  "source_url": "https://www.surrey.ac.uk/undergraduate/mechanical-engineering",
+  "confidence": "medium"
+ },
+ "52665": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/mechanical-engineering-beng-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5 (Analysis and Approaches or Applications and Interpretation)",
+   "note": ""
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points) incl. Mathematics grade B; broad GCSEs 9-4; contextual BBC-BCC incl. Maths B",
+  "prerequisite_maths": "A-level Maths B / IB HL Maths 5; high-level maths ability essential for international applicants"
+ },
+ "52667": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/mechanical-engineering-beng-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5 (Analysis and Approaches or Applications and Interpretation)",
+   "note": ""
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points) incl. Mathematics grade B; broad GCSEs 9-4; contextual BBC-BCC incl. Maths B",
+  "prerequisite_maths": "A-level Maths B / IB HL Maths 5; high-level maths ability essential for international applicants"
+ },
+ "52666": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/mechanical-engineering-beng-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5 (Analysis and Approaches or Applications and Interpretation)",
+   "note": ""
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points) incl. Mathematics grade B; broad GCSEs 9-4; contextual BBC-BCC incl. Maths B",
+  "prerequisite_maths": "A-level Maths B / IB HL Maths 5; high-level maths ability essential for international applicants"
+ },
+ "52671": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/mechanical-engineering-beng-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5 (Analysis and Approaches or Applications and Interpretation)",
+   "note": ""
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points) incl. Mathematics grade B; broad GCSEs 9-4; contextual BBC-BCC incl. Maths B",
+  "prerequisite_maths": "A-level Maths B / IB HL Maths 5; high-level maths ability essential for international applicants"
+ },
+ "52668": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/mechanical-engineering-beng-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5 (Analysis and Approaches or Applications and Interpretation)",
+   "note": ""
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points) incl. Mathematics grade B; broad GCSEs 9-4; contextual BBC-BCC incl. Maths B",
+  "prerequisite_maths": "A-level Maths B / IB HL Maths 5; high-level maths ability essential for international applicants"
+ },
+ "52669": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/sustainable-automotive-engineering-beng-hons",
+  "confidence": "medium",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5",
+   "note": "Same engineering requirements as other Sussex BEng courses"
+  },
+  "a_level": "ABB-BBB incl. Mathematics grade B",
+  "prerequisite_maths": "Mathematics essential; A-level Maths B / IB HL Maths 5"
+ },
+ "52678": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/computer-science-bsc-hons",
+  "confidence": "medium",
+  "typical_offer": "A-level ABB-BBB with GCSE Maths 6; IB 32 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "No HL subject requirement"
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points); GCSE Maths grade 6 (grade 5 if taking A-level Computer Science, Chemistry, Maths or Physics); contextual BBC-BCC",
+  "prerequisite_maths": "GCSE Maths 6 or equivalent; good level of maths for international applicants; no programming experience needed"
+ },
+ "52679": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/computer-science-bsc-hons",
+  "confidence": "medium",
+  "typical_offer": "A-level ABB-BBB with GCSE Maths 6; IB 32 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "No HL subject requirement"
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points); GCSE Maths grade 6 (grade 5 if taking A-level Computer Science, Chemistry, Maths or Physics); contextual BBC-BCC",
+  "prerequisite_maths": "GCSE Maths 6 or equivalent; good level of maths for international applicants; no programming experience needed"
+ },
+ "52681": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/computer-science-bsc-hons",
+  "confidence": "medium",
+  "typical_offer": "A-level ABB-BBB with GCSE Maths 6; IB 32 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "No HL subject requirement"
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points); GCSE Maths grade 6 (grade 5 if taking A-level Computer Science, Chemistry, Maths or Physics); contextual BBC-BCC",
+  "prerequisite_maths": "GCSE Maths 6 or equivalent; good level of maths for international applicants; no programming experience needed"
+ },
+ "52686": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/computer-science-bsc-hons",
+  "confidence": "medium",
+  "typical_offer": "A-level ABB-BBB with GCSE Maths 6; IB 32 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "No HL subject requirement"
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points); GCSE Maths grade 6 (grade 5 if taking A-level Computer Science, Chemistry, Maths or Physics); contextual BBC-BCC",
+  "prerequisite_maths": "GCSE Maths 6 or equivalent; good level of maths for international applicants; no programming experience needed"
+ },
+ "28262": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/computer-science-and-artificial-intelligence-bsc-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB with GCSE Maths 6; IB 32 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "No HL subject requirement"
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points); GCSE Maths grade 6 (grade 5 if taking A-level Computer Science, Chemistry, Maths or Physics); contextual BBC-BCC",
+  "prerequisite_maths": "GCSE Maths 6 or equivalent; good level of maths for international applicants; no programming experience needed"
+ },
+ "28263": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/computer-science-bsc-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB with GCSE Maths 6; IB 32 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "No HL subject requirement"
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points); GCSE Maths grade 6 (grade 5 if taking A-level Computer Science, Chemistry, Maths or Physics); contextual BBC-BCC",
+  "prerequisite_maths": "GCSE Maths 6 or equivalent; good level of maths for international applicants; no programming experience needed"
+ },
+ "28264": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/computing-for-business-and-management-bsc-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB with GCSE Maths 6; IB 32 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "No HL subject requirement"
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points); GCSE Maths grade 6 (grade 5 if taking A-level Computer Science, Chemistry, Maths or Physics); contextual BBC-BCC",
+  "prerequisite_maths": "GCSE Maths 6 or equivalent; good level of maths for international applicants; no programming experience needed"
+ },
+ "28265": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/computing-for-digital-media-and-games-bsc-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB with GCSE Maths 6; IB 32 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "No HL subject requirement"
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points); GCSE Maths grade 6 (grade 5 if taking A-level Computer Science, Chemistry, Maths or Physics); contextual BBC-BCC",
+  "prerequisite_maths": "GCSE Maths 6 or equivalent; good level of maths for international applicants; no programming experience needed"
+ },
+ "28297": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/electrical-and-electronic-engineering-beng-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5 (Analysis and Approaches or Applications and Interpretation)",
+   "note": ""
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points) incl. Mathematics grade B; broad GCSEs 9-4; contextual BBC-BCC incl. Maths B",
+  "prerequisite_maths": "A-level Maths B / IB HL Maths 5; high-level maths ability essential for international applicants"
+ },
+ "28395": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/mathematics-with-data-science-bsc-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB incl. Maths A; IB 32 with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 6",
+   "note": ""
+  },
+  "a_level": "ABB incl. Mathematics grade A; contextual BBB-BCC incl. Maths B",
+  "prerequisite_maths": "A-level Maths A / IB HL Maths 6; AP in Mathematics normally required"
+ },
+ "28401": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/mechanical-engineering-beng-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5 (Analysis and Approaches or Applications and Interpretation)",
+   "note": ""
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points) incl. Mathematics grade B; broad GCSEs 9-4; contextual BBC-BCC incl. Maths B",
+  "prerequisite_maths": "A-level Maths B / IB HL Maths 5; high-level maths ability essential for international applicants"
+ },
+ "28403": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/mechanical-engineering-with-robotics-beng-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5 (Analysis and Approaches or Applications and Interpretation)",
+   "note": ""
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points) incl. Mathematics grade B; broad GCSEs 9-4; contextual BBC-BCC incl. Maths B",
+  "prerequisite_maths": "A-level Maths B / IB HL Maths 5; high-level maths ability essential for international applicants"
+ },
+ "28434": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/physics-with-data-science-bsc-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB incl. Maths B (Physics desirable); IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5",
+   "note": ""
+  },
+  "a_level": "ABB incl. Mathematics grade B; Physics desirable",
+  "prerequisite_maths": "A-level Maths B / IB HL Maths 5; Physics desirable"
+ },
+ "28446": {
+  "stem": false
+ },
+ "28447": {
+  "stem": false
+ },
+ "28448": {
+  "stem": false
+ },
+ "28449": {
+  "stem": false
+ },
+ "28450": {
+  "stem": false
+ },
+ "28452": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/robotic-and-mechatronic-engineering-beng-hons",
+  "confidence": "high",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5 (Analysis and Approaches or Applications and Interpretation)",
+   "note": ""
+  },
+  "a_level": "ABB-BBB (128-120 UCAS points) incl. Mathematics grade B; broad GCSEs 9-4; contextual BBC-BCC incl. Maths B",
+  "prerequisite_maths": "A-level Maths B / IB HL Maths 5; high-level maths ability essential for international applicants"
+ },
+ "28468": {
+  "stem": true,
+  "ap": {
+   "accepted": true,
+   "details": "Ideally three good AP scores (AAA=555, AAB=554, ABB=544, BBB=444 equivalents) plus SAT 1300 or ACT 26; an SAT Subject Test score of 600 can replace one AP test; where A-level Maths/Physics/Chemistry/Biology is required an AP test in that subject is normally needed (specific Calculus AB/BC variant not stated); 3-credit college courses considered case by case",
+   "note": "US High School Diploma with only SAT/ACT is eligible for Foundation Year"
+  },
+  "tests": "SAT 1300 or ACT 26 as part of AP/US profile; IELTS/English per university",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "turkish_route": "Lise Bitirme Diplomasi with 70% in final year considered for direct entry to Year 1; otherwise Foundation Year (incl. International Foundation Year)",
+  "source_url": "https://www.sussex.ac.uk/study/undergraduate/courses/sustainable-automotive-engineering-beng-hons",
+  "confidence": "medium",
+  "typical_offer": "A-level ABB-BBB incl. Maths B; IB 32 with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Mathematics grade 5",
+   "note": "Same engineering requirements as other Sussex BEng courses"
+  },
+  "a_level": "ABB-BBB incl. Mathematics grade B",
+  "prerequisite_maths": "Mathematics essential; A-level Maths B / IB HL Maths 5"
+ }
+}

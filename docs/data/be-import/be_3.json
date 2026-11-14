@@ -1,0 +1,2240 @@
+{
+ "institutions": [
+  {
+   "name": "Vrije Universiteit Brussel (VUB)",
+   "city": "Brussels",
+   "country": "Belgium",
+   "website": "https://www.vub.be/en",
+   "entity_note": "Non-EEA applicants apply online by 31 March (31 March 2027 for 2027-28; applications open 15 Nov 2026), VUB verifies diplomas, English B2 proof is mandatory (IELTS 6.5/TOEFL 79/Cambridge 170) and a student visa is needed. VUB publishes no Turkey-specific rules: Turkish lise diploma plus the university entrance exam certificate where required for bachelors, a Turkish bachelor's degree for masters. Fees listed are the 2027/28 non-EEA tariff (2026/27 was lower, e.g. 5,720 for BSc Business Economics); BRUFACE engineering masters are registered via ULB (see ULB).",
+   "programs": [
+    {
+     "name": "BSc Business Economics",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business",
+     "fee_non_eu": 6060,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a foreign secondary diploma giving access to university in the home country; for Turkey this means the lise diploma plus the university entrance exam (YKS) certificate when it is required to enter university in Turkey, plus English B2 proof (IELTS 6.5 / TOEFL 79 / Cambridge 170). No Turkey-specific rules or minimum grade are published; must enrol for 54+ ECTS/year for a visa.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/bachelor-business-economics"
+    },
+    {
+     "name": "BSc Social Sciences",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Social Sciences",
+     "fee_non_eu": 6060,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a foreign secondary diploma giving access to university in the home country; for Turkey this means the lise diploma plus the university entrance exam (YKS) certificate when it is required to enter university in Turkey, plus English B2 proof (IELTS 6.5 / TOEFL 79 / Cambridge 170). No Turkey-specific rules or minimum grade are published; must enrol for 54+ ECTS/year for a visa.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/bachelor-social-sciences"
+    },
+    {
+     "name": "BA Linguistics and Literary Studies",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Languages and Literature",
+     "fee_non_eu": 5340,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a foreign secondary diploma giving access to university in the home country; for Turkey this means the lise diploma plus the university entrance exam (YKS) certificate when it is required to enter university in Turkey, plus English B2 proof (IELTS 6.5 / TOEFL 79 / Cambridge 170). No Turkey-specific rules or minimum grade are published; must enrol for 54+ ECTS/year for a visa.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MSc Management",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": 3.0,
+     "gpa_scale": 4,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. A minimum GPA of 3.0/4.0 or 70% average is generally required. Applicants must have no prior academic business/economics/management degree; evening programme; GMAT-type test not stated.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-management/master-management-admission-enrolment"
+    },
+    {
+     "name": "MSc Business Engineering: Business and Technology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": 3.0,
+     "gpa_scale": 4,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. A minimum GPA of 3.0/4.0 or 70% average is generally required. Direct admission with a Handelsingenieur/Business Economics (B&T) bachelor, others screened on ECTS in law, economics, management, quantitative methods and natural sciences.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-business-engineering-business-technology/master-business-engineering-business-technology-admission-enrolment"
+    },
+    {
+     "name": "MSc International Business",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Aimed at holders of a bachelor in business economics, business administration or management.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-international-business"
+    },
+    {
+     "name": "MSc Political Science: European and International Governance",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Social Sciences",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-political-science-european-and-international-governance"
+    },
+    {
+     "name": "MSc Communication Studies: Digital Media in Europe",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Communication",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree.",
+     "source_url": "https://www.vub.be/en/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-communication-studies-digital-media-in-europe"
+    },
+    {
+     "name": "MSc Communication Studies: Journalism and Media in Europe",
+     "level": "master",
+     "duration": null,
+     "field": "Communication",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-communication-studies-journalism-media-in-europe"
+    },
+    {
+     "name": "MSc Biomedical Research",
+     "level": "master",
+     "duration": null,
+     "field": "Biomedical Sciences",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "Pre-admission by 7 February 2027; full application 31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Two-step process: pre-admission (CV, transcripts, motivation, 2 references) then invited full application; limited places.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-biomedical-research/master-biomedical-research-admission-enrolment"
+    },
+    {
+     "name": "Research MSc Gerontological Sciences",
+     "level": "master",
+     "duration": null,
+     "field": "Health Sciences",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MSc Applied Informatics: Artificial Intelligence and Data Science",
+     "level": "master",
+     "duration": null,
+     "field": "Computer Science",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MSc Applied Sciences and Engineering: Computer Science",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. 120 ECTS with specialisations AI, Data Management and Analytics, Multimedia, Software Systems.",
+     "source_url": "https://www.vub.be/en/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-applied-sciences-and-engineering-computer-science/master-computer-science-engineering-programme"
+    },
+    {
+     "name": "MSc Applied Sciences and Engineering: Applied Computer Science",
+     "level": "master",
+     "duration": null,
+     "field": "Engineering",
+     "fee_non_eu": 5340,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MSc Marine and Lacustrine Science and Management",
+     "level": "master",
+     "duration": null,
+     "field": "Environmental Science",
+     "fee_non_eu": 5320,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Interuniversity programme; tariff row carries a footnote giving the EEA rate to students from certain OECD/DAC countries or scholarship holders.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MSc Chemistry",
+     "level": "master",
+     "duration": null,
+     "field": "Natural Sciences",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Transitional footnote: students starting 2026/27 keep the 2026/27 rate.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MSc Physics and Astronomy",
+     "level": "master",
+     "duration": null,
+     "field": "Natural Sciences",
+     "fee_non_eu": 6300,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Transitional footnote: students starting 2026/27 keep the 2026/27 rate.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MSc Biology",
+     "level": "master",
+     "duration": null,
+     "field": "Natural Sciences",
+     "fee_non_eu": 5340,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MSc Molecular Biology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5340,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Interuniversity programme, 120 ECTS.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-molecular-biology/program/master/master-in-molecular-biology"
+    },
+    {
+     "name": "MSc Geography",
+     "level": "master",
+     "duration": null,
+     "field": "Natural Sciences",
+     "fee_non_eu": 5613.1,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Interuniversity (VUB/ULB).",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MSc Educational Sciences",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Education",
+     "fee_non_eu": 5340,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-educational-sciences/program/master/master-educational-sciences"
+    },
+    {
+     "name": "MA Linguistics and Literary Studies",
+     "level": "master",
+     "duration": null,
+     "field": "Languages and Literature",
+     "fee_non_eu": 5340,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Needs at least 60 ECTS in linguistics/literary studies/language proficiency per language specialisation; September start only; preparatory programmes possible.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-in-linguistics-and-literary-studies/admission-master-linguistics-literary-studies"
+    },
+    {
+     "name": "Research MA Philosophy",
+     "level": "master",
+     "duration": null,
+     "field": "Humanities",
+     "fee_non_eu": 5340,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Interuniversity research master.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MSc Biomedical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5320,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Tariff footnote: EEA rate applies to students from certain OECD/DAC countries or scholarship holders.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-biomedical-engineering/program/master/master-biomedical-engineering-default-track"
+    },
+    {
+     "name": "MSc Photonics Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5320,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Interuniversity (VUB/UGent); tariff footnote as for Biomedical Engineering.",
+     "source_url": "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-photonics-engineering/master-photonics-engineering-programme"
+    },
+    {
+     "name": "MSc Sustainable Land Management",
+     "level": "master",
+     "duration": null,
+     "field": "Environmental Science",
+     "fee_non_eu": 5320,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree. Tariff footnote as for Biomedical Engineering.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    },
+    {
+     "name": "MaL Law, specialisation Dual Master in Comparative Corporate and Financial Law",
+     "level": "master",
+     "duration": null,
+     "field": "Law",
+     "fee_non_eu": 5340,
+     "fee_year": "2027/28",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need a bachelor's degree (or equivalent) verified against transcripts, proof of English (IELTS 6.5 with min 6.0 per component, TOEFL iBT 79 with min 18 per component, or Cambridge B2 First 170; TOEFL scale changed 21 Jan 2026) and a student visa; must enrol for at least 54 ECTS/year. VUB publishes no Turkey-specific rules; a Turkish bachelor's degree with transcripts is assessed like any other foreign degree.",
+     "source_url": "https://www.vub.be/sites/default/files/2026-10/2026_Studiegeld_tarieven_NEER_2728_ENG.pdf"
+    }
+   ]
+  },
+  {
+   "name": "Hasselt University (UHasselt)",
+   "city": "Hasselt",
+   "country": "Belgium",
+   "website": "https://www.uhasselt.be/en",
+   "entity_note": "UHasselt offers no English-taught bachelors; English masters need a verified academic bachelor's, English proof (IELTS 6.5 / TOEFL 89 old scale) and have early non-EEA deadlines (1 March to 1 May) because of visa processing. No Turkey-specific rules are published; Chinese applicants alone need APS.",
+   "programs": [
+    {
+     "name": "Master of Biomedical Sciences",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Biomedical Sciences",
+     "fee_non_eu": 3900,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March (2027-28 entry; year not printed on page)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 89
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need an academic bachelor's degree (verified diplomas/transcripts sent to verification@uhasselt.be within one week after the deadline), CV, motivation letter, English proficiency and a student visa (own responsibility; UHasselt issues an admission letter). The page has no Turkey-specific rules, so the general non-EEA rules apply; non-EEA deadlines are earlier because of visa processing. Mandatory basic knowledge test; specialisations Bioelectronics and Nanotechnology, Environmental Health Sciences, Molecular Mechanisms in Health and Disease.",
+     "source_url": "https://www.uhasselt.be/en/study/programmes/master-of-biomedical-sciences"
+    },
+    {
+     "name": "Master of Management",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business",
+     "fee_non_eu": 3900,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April (2027-28 entry; year not printed on page)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 89
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need an academic bachelor's degree (verified diplomas/transcripts sent to verification@uhasselt.be within one week after the deadline), CV, motivation letter, English proficiency and a student visa (own responsibility; UHasselt issues an admission letter). The page has no Turkey-specific rules, so the general non-EEA rules apply; non-EEA deadlines are earlier because of visa processing. GMAT Focus 515 or GRE 310 (150 quant) required unless exempt; only academic IELTS/TOEFL accepted.",
+     "source_url": "https://www.uhasselt.be/en/study/programmes/master-of-management"
+    },
+    {
+     "name": "Master of Interior Architecture",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Architecture and Design",
+     "fee_non_eu": 3900,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "15 March (2027-28 entry; year not printed on page)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 89
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need an academic bachelor's degree (verified diplomas/transcripts sent to verification@uhasselt.be within one week after the deadline), CV, motivation letter, English proficiency and a student visa (own responsibility; UHasselt issues an admission letter). The page has no Turkey-specific rules, so the general non-EEA rules apply; non-EEA deadlines are earlier because of visa processing. Requires a bachelor's/master's in architecture or interior architecture (portfolio may be requested).",
+     "source_url": "https://www.uhasselt.be/admission"
+    },
+    {
+     "name": "Master of Transportation Sciences",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering and Transport",
+     "fee_non_eu": 3900,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 May (on campus; 2027-28 entry, year not printed on page)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 89
+      },
+      {
+       "test": "Duolingo",
+       "min": 120
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need an academic bachelor's degree (verified diplomas/transcripts sent to verification@uhasselt.be within one week after the deadline), CV, motivation letter, English proficiency and a student visa (own responsibility; UHasselt issues an admission letter). The page has no Turkey-specific rules, so the general non-EEA rules apply; non-EEA deadlines are earlier because of visa processing.",
+     "source_url": "https://www.uhasselt.be/admission"
+    },
+    {
+     "name": "Master of Statistics and Data Science",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Statistics and Data Science",
+     "fee_non_eu": 3900,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April (on campus; 2027-28 entry, year not printed on page)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 89
+      },
+      {
+       "test": "Duolingo",
+       "min": 120
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need an academic bachelor's degree (verified diplomas/transcripts sent to verification@uhasselt.be within one week after the deadline), CV, motivation letter, English proficiency and a student visa (own responsibility; UHasselt issues an admission letter). The page has no Turkey-specific rules, so the general non-EEA rules apply; non-EEA deadlines are earlier because of visa processing. GRE General Test strongly recommended for international degrees (no minimum).",
+     "source_url": "https://www.uhasselt.be/admission"
+    },
+    {
+     "name": "Master of Energy Engineering Technology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Engineering",
+     "fee_non_eu": 9493.9,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April (2027-28 entry; year not printed on page)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Duolingo",
+       "min": 120
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants need an academic bachelor's degree (verified diplomas/transcripts sent to verification@uhasselt.be within one week after the deadline), CV, motivation letter, English proficiency and a student visa (own responsibility; UHasselt issues an admission letter). The page has no Turkey-specific rules, so the general non-EEA rules apply; non-EEA deadlines are earlier because of visa processing. Requires an honours bachelor's/master's with a broad energy focus; fee is the highest tier (tier 3).",
+     "source_url": "https://www.uhasselt.be/en/study/application-and-admission/application-process"
+    }
+   ]
+  },
+  {
+   "name": "UCLouvain",
+   "city": "Louvain-la-Neuve",
+   "country": "Belgium",
+   "website": "https://uclouvain.be/en",
+   "entity_note": "Non-EU applicants apply by 31 March (visa cases), pay a EUR 200 application fee and, for 2026/27, EUR 1,194 + 4,175 non-EU contribution (EUR 5,369). Bachelors need FWB diploma equivalence and 13/20; masters need a recognised first-cycle degree; no Turkey-specific rules are published.",
+   "programs": [
+    {
+     "name": "Bachelor of Science in Business Engineering (joint KU Leuven / UCLouvain Saint-Louis Bruxelles)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "highschool",
+     "gpa_min": 13,
+     "gpa_scale": 20,
+     "requirements_note": "Applications go through the KU Leuven admission platform. Non-EU candidates need a secondary diploma obtained within the last 3 academic years, an overall average of at least 13/20 (non-EU diploma) and the definitive diploma equivalence issued by the Wallonia-Brussels Federation (equivalences.cfwb.be); no Turkey-specific rules published. Fee not verified for this joint route (UCLouvain schedule is EUR 5,369 for non-exempt non-EU nationals).",
+     "source_url": "https://uclouvain.be/en-prog-2025-ingb1ba-cond_adm"
+    },
+    {
+     "name": "Master in Economics: General (120)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Economics",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-econ2m"
+    },
+    {
+     "name": "Master in Economics: Econometrics (120)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Economics",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-etri2m"
+    },
+    {
+     "name": "Master in Economics: General (60)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Economics",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-econ2m1"
+    },
+    {
+     "name": "Master in European Studies",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Social Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-euro2m"
+    },
+    {
+     "name": "Master in EU Studies",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Social Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-euab2m"
+    },
+    {
+     "name": "Master in Management (Louvain-la-Neuve)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 89
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). Master in management sciences/engineering requires GMAT or TageMage (exempt for CEMS/dual-degree partners) and IELTS/TOEFL if prior studies were not in English.",
+     "source_url": "https://uclouvain.be/en-prog-2026-gest2m"
+    },
+    {
+     "name": "Master in Management (with work-linked training)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 89
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). Master in management sciences/engineering requires GMAT or TageMage (exempt for CEMS/dual-degree partners) and IELTS/TOEFL if prior studies were not in English.",
+     "source_url": "https://uclouvain.be/en-prog-2026-gesa2m"
+    },
+    {
+     "name": "Master in Business Engineering (Louvain-la-Neuve)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 89
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). Master in management sciences/engineering requires GMAT or TageMage (exempt for CEMS/dual-degree partners) and IELTS/TOEFL if prior studies were not in English.",
+     "source_url": "https://uclouvain.be/en-prog-2026-inge2m"
+    },
+    {
+     "name": "Master in Biomedical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-gbio2m"
+    },
+    {
+     "name": "Master in Chemical and Materials Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-kima2m"
+    },
+    {
+     "name": "Master in Mathematical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-map2m"
+    },
+    {
+     "name": "Master in Electrical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-elec2m"
+    },
+    {
+     "name": "Master in Electro-mechanical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-elme2m"
+    },
+    {
+     "name": "Master in Mechanical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-meca2m"
+    },
+    {
+     "name": "Master in Computer Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-info2m"
+    },
+    {
+     "name": "Master in Physical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-fyap2m"
+    },
+    {
+     "name": "Master in Civil Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-gce2m"
+    },
+    {
+     "name": "Master in Data Science Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-date2m"
+    },
+    {
+     "name": "Master in Energy Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-nrgy2m"
+    },
+    {
+     "name": "Master in Data Science: Information Technologies",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Computer Science",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-dati2m"
+    },
+    {
+     "name": "Master in Computer Sciences (120)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Computer Science",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-sinf2m"
+    },
+    {
+     "name": "Master in Computer Sciences (60)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Computer Science",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194). EPL faculty: at least 4 years of post-secondary study required (professional bachelors/DUT not eligible), proof of maths level (e.g. GRE Subject Maths), no fixed GPA but averages below 12/20 overall or 14/20 in the final year typically lead to rejection; interview possible.",
+     "source_url": "https://uclouvain.be/en-prog-2026-sinf2m1"
+    },
+    {
+     "name": "Master in Linguistics",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Languages and Literature",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-ling2m"
+    },
+    {
+     "name": "Master in Agriculture and Bio-industries (professional focus: Agricultural, Food and Environmental Policy Analysis)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Agriculture",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-saiv2m"
+    },
+    {
+     "name": "Master in Physics (120)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-phys2m"
+    },
+    {
+     "name": "Master in Physics (60)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-phys2m1"
+    },
+    {
+     "name": "Master in Medical Physics",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-phmd2m"
+    },
+    {
+     "name": "Master in Biology (60)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-biol2m1"
+    },
+    {
+     "name": "Master in Biochemistry and Molecular and Cell Biology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-bbmc2m"
+    },
+    {
+     "name": "Master in Chemistry (120)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-chim2m"
+    },
+    {
+     "name": "Master in Chemistry (60)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-chim2m1"
+    },
+    {
+     "name": "Master in European Public Governance (Circle U.)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Social Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026/27 cycle: 31 March 2026; 2027/28 date to be announced in August 2026-27)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants outside Belgium needing a visa apply by 31 March and pay a EUR 200 application fee (deducted from fees if admitted); copies of diplomas and transcripts, CV and motivation letter are required, and French proof is not needed for fully English programmes. UCLouvain publishes no Turkey-specific rules; a Turkish bachelor's degree is assessed by the faculty (general non-EU rule). Fee shown is the EUR 1,194 base + EUR 4,175 non-EU contribution (provisional pending FWB approval; exempt-country nationals pay 1,194).",
+     "source_url": "https://uclouvain.be/en-prog-2026-eucb2m"
+    }
+   ]
+  },
+  {
+   "name": "Universite libre de Bruxelles (ULB)",
+   "city": "Brussels",
+   "country": "Belgium",
+   "website": "https://www.ulb.be/en",
+   "entity_note": "Non-EU applicants apply 16 Feb to 31 March with a EUR 200 fee and pay EUR 5,369 (1,194 + 4,175) from 2026/27 unless their nationality is exempt; bachelors need FWB diploma equivalence, masters a degree recognised by the jury. No Turkey-specific rules published; English-taught offer is mostly Solvay and Faculty of Sciences masters plus Bruface engineering.",
+   "programs": [
+    {
+     "name": "Bachelor in Economics: General (English option)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Economics",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU window 16 Feb to 31 March; year not printed on page)",
+     "english": null,
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Bachelor access: secondary diploma with equivalence decision from the Wallonia-Brussels Federation equivalence service; non-EU applicants are subject to Central Admissions Committee criteria. Taught in English since September 2024 (Solvay).",
+     "source_url": "https://www.ulb.be/en/programme/ba-econe"
+    },
+    {
+     "name": "Bachelor in Business Engineering (English option)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU window 16 Feb to 31 March; year not printed on page)",
+     "english": null,
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Bachelor access: secondary diploma with equivalence decision from the Wallonia-Brussels Federation equivalence service; non-EU applicants are subject to Central Admissions Committee criteria. Taught in English since September 2024 (Solvay).",
+     "source_url": "https://www.ulb.be/en/programme/ba-ingee"
+    },
+    {
+     "name": "Master in Economics: General",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Economics",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU window 16 Feb to 31 March; year not printed on page)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Master access: academic jury assesses comparability of the foreign degree (at least 180 credits recognised, no equivalence needed).",
+     "source_url": "https://www.ulb.be/en/programme/ma-econ"
+    },
+    {
+     "name": "Master in Management Science",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU window 16 Feb to 31 March; year not printed on page)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Master access: academic jury assesses comparability of the foreign degree (at least 180 credits recognised, no equivalence needed).",
+     "source_url": "https://www.ulb.be/en/programme/2025-ma-gest"
+    },
+    {
+     "name": "Master in Research in Economics",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Economics",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU window 16 Feb to 31 March; year not printed on page)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Master access: academic jury assesses comparability of the foreign degree (at least 180 credits recognised, no equivalence needed).",
+     "source_url": "https://www.ulb.be/en/programme/2025-ma-ecoe"
+    },
+    {
+     "name": "Master in Business Economics",
+     "level": "master",
+     "duration": null,
+     "field": "Economics",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU window 16 Feb to 31 March; year not printed on page)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Master access: academic jury assesses comparability of the foreign degree (at least 180 credits recognised, no equivalence needed).",
+     "source_url": "https://sbsem.ulb.be/studies/masters"
+    },
+    {
+     "name": "Master in Economic Governance and Public Policy in Europe",
+     "level": "master",
+     "duration": null,
+     "field": "Economics",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU window 16 Feb to 31 March; year not printed on page)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Master access: academic jury assesses comparability of the foreign degree (at least 180 credits recognised, no equivalence needed).",
+     "source_url": "https://sbsem.ulb.be/studies/masters"
+    },
+    {
+     "name": "Master in Computer Science",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Computer Science",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU window 16 Feb to 31 March; year not printed on page)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Master access: academic jury assesses comparability of the foreign degree (at least 180 credits recognised, no equivalence needed).",
+     "source_url": "https://www.ulb.be/en/programme/ma-info"
+    },
+    {
+     "name": "Master in Architectural Engineering - BRUFACE",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March 2026 (2026-27 intake; 2027-28 date not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": 3.33,
+     "gpa_scale": 4,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Bruface (joint ULB-VUB, entirely English, 31 March non-EEA deadline): needs a 3-year/180 ECTS engineering-sciences bachelor or equivalent; minimum GPA on US scale as stated; registration fees paid to ULB only; no Turkey-specific rules (a GPA converter is linked). Also 30 ECTS architectural design studio and 10 ECTS architecture history/theory; maths at least 3.2/4.",
+     "source_url": "https://bruface.research.vub.be/how-to-apply/how-to-apply"
+    },
+    {
+     "name": "Master in Civil Engineering - BRUFACE",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March 2026 (2026-27 intake; 2027-28 date not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": 3.33,
+     "gpa_scale": 4,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Bruface (joint ULB-VUB, entirely English, 31 March non-EEA deadline): needs a 3-year/180 ECTS engineering-sciences bachelor or equivalent; minimum GPA on US scale as stated; registration fees paid to ULB only; no Turkey-specific rules (a GPA converter is linked). Maths at least 3.2/4.",
+     "source_url": "https://bruface.research.vub.be/how-to-apply/how-to-apply"
+    },
+    {
+     "name": "Master in Electrical Engineering - BRUFACE",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March 2026 (2026-27 intake; 2027-28 date not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": 3.0,
+     "gpa_scale": 4,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Bruface (joint ULB-VUB, entirely English, 31 March non-EEA deadline): needs a 3-year/180 ECTS engineering-sciences bachelor or equivalent; minimum GPA on US scale as stated; registration fees paid to ULB only; no Turkey-specific rules (a GPA converter is linked). Maths at least 3.0/4.",
+     "source_url": "https://bruface.research.vub.be/how-to-apply/how-to-apply"
+    },
+    {
+     "name": "Master in Electromechanical Engineering - BRUFACE",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March 2026 (2026-27 intake; 2027-28 date not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": 3.0,
+     "gpa_scale": 4,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Bruface (joint ULB-VUB, entirely English, 31 March non-EEA deadline): needs a 3-year/180 ECTS engineering-sciences bachelor or equivalent; minimum GPA on US scale as stated; registration fees paid to ULB only; no Turkey-specific rules (a GPA converter is linked). Maths at least 3.0/4.",
+     "source_url": "https://bruface.research.vub.be/how-to-apply/how-to-apply"
+    },
+    {
+     "name": "Master in Chemical and Materials Engineering - BRUFACE",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March 2026 (2026-27 intake; 2027-28 date not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      },
+      {
+       "test": "Cambridge",
+       "min": 170
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": 3.0,
+     "gpa_scale": 4,
+     "requirements_note": "Non-EU applicants apply between 16 Feb and 31 March and pay a EUR 200 administrative fee by 31 March (non-refundable); fee EUR 1,194 + 4,175 additional contribution = EUR 5,369 from 2026/27 (EUR 1,194 for nationals of countries exempted in the ARES circular annexes). ULB publishes no Turkey-specific rules. Bruface (joint ULB-VUB, entirely English, 31 March non-EEA deadline): needs a 3-year/180 ECTS engineering-sciences bachelor or equivalent; minimum GPA on US scale as stated; registration fees paid to ULB only; no Turkey-specific rules (a GPA converter is linked). Maths and chemistry at least 3.0/4.",
+     "source_url": "https://bruface.research.vub.be/how-to-apply/how-to-apply"
+    }
+   ]
+  },
+  {
+   "name": "Universite de Liege (ULiege)",
+   "city": "Liege",
+   "country": "Belgium",
+   "website": "https://www.uliege.be/cms/c_8699436/en/portail-uliege",
+   "entity_note": "Non-EU applicants apply online 18 Feb to 31 March, pay a EUR 200 deposit, prove EUR 10,000 financing and pay EUR 5,369 (1,194 + 4,175) from 2026/27 unless exempt; masters need a first-cycle degree with 12/20 average. No Turkey-specific rules are published.",
+   "programs": [
+    {
+     "name": "Master in Economics",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Economics",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 83
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department. HEC Liege additionally requires GMAT 550 or GRE 318 (exempt via partnership/selection programme); IELTS 6 / TOEFL 83 (or 4.5 new scale) / FCE 173.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master in Management Sciences",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 83
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department. HEC Liege additionally requires GMAT 550 or GRE 318 (exempt via partnership/selection programme); IELTS 6 / TOEFL 83 (or 4.5 new scale) / FCE 173.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master in Business Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 83
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department. HEC Liege additionally requires GMAT 550 or GRE 318 (exempt via partnership/selection programme); IELTS 6 / TOEFL 83 (or 4.5 new scale) / FCE 173.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master in Computer Science",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Computer Science",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master in Physical Engineering, Research Focus",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master in Electrical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master in Energy Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master in Civil Aerospace Engineering, specialising in Aerospace Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master in Mechanical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master of Civil Engineering in Computer Science",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master in Data Science",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Computer Science",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master of Civil Engineering in Data Science",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    },
+    {
+     "name": "Master in Biomedical Civil Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (2026 window 18 Feb to 31 March; 2027 dates not yet published)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": 12,
+     "gpa_scale": 20,
+     "requirements_note": "Non-EU applicants apply personally online (no intermediaries) within the 18 Feb to 31 March window, pay a EUR 200 deposit and must show a financing plan of EUR 10,000 plus registration fees; need a first-cycle degree with at least 12/20 overall and 75% of credits in each prior year; B2 English (IELTS 5.5-6.5 / TOEFL iBT 72-95 depending on faculty). ULiege publishes no Turkey-specific rules or grade conversion; contact the admissions department.",
+     "source_url": "https://www.enseignement.uliege.be/cms/c_9537020/en/programmes-in-foreign-languages"
+    }
+   ]
+  },
+  {
+   "name": "Universite de Namur (UNamur)",
+   "city": "Namur",
+   "country": "Belgium",
+   "website": "https://www.unamur.be/en",
+   "entity_note": "Non-EU masters applicants needing a visa apply by 31 March with a EUR 200 fee; 2026/27 fee EUR 5,369 for non-exempt nationalities (1,194 for ARES annex countries). No fully English bachelors; no Turkey-specific rules published.",
+   "programs": [
+    {
+     "name": "Master in Chemistry (60 credits)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU, visa required)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants needing a visa submit the admissions request form by 31 March (30 Sept for EU) and pay a EUR 200 review fee; no equivalence of the non-Belgian degree is required for master access; specific conditions vary per programme. Fee EUR 5,369 for nationals of countries outside the ARES annexes (EUR 1,194 for annex countries), subject to the progressive tuition decree. UNamur publishes no Turkey-specific rules. Taught in English (can also be taken in French); direct access with a chemistry bachelor, others by application.",
+     "source_url": "https://www.unamur.be/en/master-chemistry-2026-2027-1"
+    },
+    {
+     "name": "Master in Biomedical Sciences (120 credits, clinical research focus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Biomedical Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU, visa required)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants needing a visa submit the admissions request form by 31 March (30 Sept for EU) and pay a EUR 200 review fee; no equivalence of the non-Belgian degree is required for master access; specific conditions vary per programme. Fee EUR 5,369 for nationals of countries outside the ARES annexes (EUR 1,194 for annex countries), subject to the progressive tuition decree. UNamur publishes no Turkey-specific rules. Taught in English with courses at UNamur and ULiege; non-Belgian degrees must check with admissions.",
+     "source_url": "https://www.unamur.be/en/master-biomedical-sciences-2026-2027"
+    },
+    {
+     "name": "Master in Molecular Microbiology, Research Focus (120 credits)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5369,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March (non-EU)",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EU applicants needing a visa submit the admissions request form by 31 March (30 Sept for EU) and pay a EUR 200 review fee; no equivalence of the non-Belgian degree is required for master access; specific conditions vary per programme. Fee EUR 5,369 for nationals of countries outside the ARES annexes (EUR 1,194 for annex countries), subject to the progressive tuition decree. UNamur publishes no Turkey-specific rules. Entirely English; minimum B2 shown by official certificate or online interview; page found is the 2025-26 version.",
+     "source_url": "https://www.unamur.be/en/master-molecular-microbiology-research-focus-2025-2026"
+    }
+   ]
+  }
+ ]
+}

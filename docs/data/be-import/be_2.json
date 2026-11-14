@@ -1,0 +1,2440 @@
+{
+ "institutions": [
+  {
+   "name": "Ghent University (UGent)",
+   "city": "Ghent",
+   "country": "Belgium",
+   "website": "https://www.ugent.be/en",
+   "entity_note": "Non-EEA (incl. Turkish) applicants need a recognised foreign bachelor (min. 3 years) for master's programmes, verified through Qualification Check, with English B2 proof; apply online before 1 April (visa needed). No Turkey-specific rules are published; the non-EEA tariff B is EUR 7,079.40 per 60 credits (Turkey is not on the waiver list) and Arts/Law/Psychology programmes pay tariff A EUR 2,297.40.",
+   "programs": [
+    {
+     "name": "MA African Studies",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Humanities and Area Studies",
+     "fee_non_eu": 2297.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First). Fee shown is tariff A (Arts and Philosophy).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-arts-in-african-studies-en"
+    },
+    {
+     "name": "MSc Aquaculture",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Agriculture and Aquaculture",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 86
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. ITC/VLIR-UOS-linked programme with its own application procedure and deadlines (programme page). English per UGent specific requirements 2026-27 (TOEFL iBT 86, IELTS 6.5 with min 6 in each part).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-aquaculture-en"
+    },
+    {
+     "name": "MSc Bioscience Engineering: Cell and Gene Biotechnology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Bioscience Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 86
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. ITC/VLIR-UOS-linked programme with its own application procedure and deadlines (programme page). English per UGent specific requirements 2026-27 (TOEFL iBT 86, IELTS 6.5 with min 6 in each part).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-bioscience-engineering-cell-and-gene-biotechnology-IMCEGB-en"
+    },
+    {
+     "name": "MSc Biochemistry and Biotechnology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for non-EEA degree holders for this programme. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-biochemistry-and-biotechnology-en"
+    },
+    {
+     "name": "MSc Bioinformatics (Systems Biology)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Bioinformatics",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for non-EEA degree holders for this programme. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-bioinformatics-systems-biology-en"
+    },
+    {
+     "name": "MSc Bioinformatics (Engineering)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Bioinformatics",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for non-EEA degree holders for this programme. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-bioinformatics-engineering-en"
+    },
+    {
+     "name": "MSc Bioinformatics (Bioscience Engineering)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Bioscience Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for non-EEA degree holders for this programme. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-bioinformatics-bioscience-engineering-en"
+    },
+    {
+     "name": "MSc Biology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for non-EEA degree holders for this programme. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-biology-en"
+    },
+    {
+     "name": "MSc Biomedical Sciences",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Health and Biomedical Sciences",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-in-biomedical-sciences-en"
+    },
+    {
+     "name": "MSc Business Economics (Accountancy)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-business-economics-accountancy-en"
+    },
+    {
+     "name": "MSc Business Economics (Corporate Finance)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-business-economics-corporate-finance-en"
+    },
+    {
+     "name": "MSc Business Economics (Marketing)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-business-economics-marketing-en"
+    },
+    {
+     "name": "MSc Business Engineering (Double Degree) (Data Analytics)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). Double-degree track with a partner university (Porto, Liege or Tartu) within the 2-year programme. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-business-engineering-double-degree-data-analytics-en"
+    },
+    {
+     "name": "MSc Business Engineering (Data Analytics)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-business-engineering-data-analytics-en"
+    },
+    {
+     "name": "MSc Business Engineering (Double Degree) (Finance)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). Double-degree track with a partner university (Porto, Liege or Tartu) within the 2-year programme. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-business-engineering-double-degree-finance-en"
+    },
+    {
+     "name": "MSc Business Engineering (Finance)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-business-engineering-finance-en"
+    },
+    {
+     "name": "MSc Business Engineering (Double Degree) (Operations Management)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). Double-degree track with a partner university (Porto, Liege or Tartu) within the 2-year programme. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-business-engineering-double-degree-operations-management-en"
+    },
+    {
+     "name": "MSc Business Engineering (Operations Management)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-business-engineering-operations-management-en"
+    },
+    {
+     "name": "MSc Chemistry (Analytical and Environmental Chemistry)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-chemistry-analytical-and-environmental-chemistry-en"
+    },
+    {
+     "name": "MSc Chemistry ((Bio)Organic and Polymer Chemistry)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-chemistry-bio-organic-and-polymer-chemistry-en"
+    },
+    {
+     "name": "MSc Chemistry (Materials and Nano Chemistry)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-chemistry-materials-and-nano-chemistry-en"
+    },
+    {
+     "name": "MSc Clinical Linguistics (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Linguistics and Health",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 100
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/european-master-of-science-in-clinical-linguistics-en"
+    },
+    {
+     "name": "MSc Conflict and Development Studies",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Social Sciences",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First). Tariff B applies to new non-EEA students; Turkey is not on the 100% higher-fee waiver list valid only for this faculty.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-conflict-and-development-KMCODT-en"
+    },
+    {
+     "name": "MSc Advanced Research in Criminology: Border Crossing, Security and Social Justice (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Law and Criminology",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/international-master-of-science-in-advanced-research-in-criminology-border-crossing-security-and-social-justice-BMIMAR-en"
+    },
+    {
+     "name": "MSc Economics",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Economics",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-economics-FMEECO-en"
+    },
+    {
+     "name": "MSc Economics of Globalisation and European Integration (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Economics",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GMAT or GRE is required for all applicants with a non-EEA degree (e.g. GMAT 600 total with 49 quantitative; GMAT Focus 565 with 81 quant). Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-economics-of-globalisation-and-european-integration-en"
+    },
+    {
+     "name": "MSc Mechanical and Electrical Systems Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-mechanical-and-electrical-systems-engineering-en"
+    },
+    {
+     "name": "MSc Engineering: Ships and Marine Technology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-engineering-ships-and-marine-technology-en"
+    },
+    {
+     "name": "MSc Environmental Science and Technology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Environmental Science",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 86
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. ITC/VLIR-UOS-linked programme with its own application procedure and deadlines (programme page). English per UGent specific requirements 2026-27 (TOEFL iBT 86, IELTS 6.5 with min 6 in each part).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-environmental-science-and-technology-en"
+    },
+    {
+     "name": "MSc Environmental Technology and Engineering (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Environmental Science",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/international-master-of-science-in-environmental-technology-and-engineering-IMETEB-en"
+    },
+    {
+     "name": "MSc Food Technology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Food Science",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. IUPFOOD programme (UGent-KU Leuven) with enrolment at KU Leuven and its own admission criteria (iupfood.be); UGent does not publish a fee.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-food-technology-en"
+    },
+    {
+     "name": "MSc Physics and Astronomy",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-physics-and-astronomy-CMPHYS-en"
+    },
+    {
+     "name": "MSc Geology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 9492.7,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. UGent-KU Leuven programme; non-EEA fee EUR 9,492.70 per 60 credits (includes extra tuition fee).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-geology-en"
+    },
+    {
+     "name": "MA Global Studies (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Social Sciences",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": "15 March 2027 (Erasmus Mundus scholarship applicants); 31 May 2027 (self-paying)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27. Tariff B applies to new non-EEA students; Turkey is not on the 100% higher-fee waiver list valid only for this faculty.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-arts-in-global-studies-KMGSJD-en"
+    },
+    {
+     "name": "MSc Operations Research Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. 2026-27 note: the Sustainable Mobility Analytics double-degree main subject has a separate fee (EUR 16,000/yr for non-EEA, UGent fee included) and its own English requirement (IELTS 6.5 / TOEFL iBT 92). Programme page shows 2027-28 as subject to approval. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-operations-research-engineering-EMOREN-en"
+    },
+    {
+     "name": "MSc Biomedical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5321.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 92
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-biomedical-engineering-en"
+    },
+    {
+     "name": "MSc Chemical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-chemical-engineering-en"
+    },
+    {
+     "name": "MSc Civil Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-civil-engineering-en"
+    },
+    {
+     "name": "MSc Computer Science Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-computer-science-engineering-en"
+    },
+    {
+     "name": "MSc Electrical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-electrical-engineering-EMELEN-en"
+    },
+    {
+     "name": "MSc Engineering Physics",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-engineering-physics-en"
+    },
+    {
+     "name": "MSc Fire Safety Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-fire-safety-engineering-en"
+    },
+    {
+     "name": "MSc Fire Safety Engineering (IMFSE Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/international-master-of-science-in-fire-safety-engineering-EMFISA-en"
+    },
+    {
+     "name": "MSc Nuclear Fusion and Engineering Physics (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 94
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/european-master-of-science-in-nuclear-fusion-and-engineering-physics-EMFUSI-en"
+    },
+    {
+     "name": "MSc Photonics Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 5321.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. International (UGent-VUB) master with specific application procedure; fee from UGent interuniversity fee list (see also studyphotonics.com/fees-funding).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-photonics-engineering-EMPHOE-en"
+    },
+    {
+     "name": "MSc Sustainable Materials Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-sustainable-materials-engineering-en"
+    },
+    {
+     "name": "MSc Textile Engineering (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": "31 January 2027 (visa and/or EMJMD grant); 31 May 2027 (no visa/no grant)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 86
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/international-master-of-science-in-textile-engineering-en"
+    },
+    {
+     "name": "MSc Marine and Lacustrine Science and Management",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 5321.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Interuniversity (VUB/UGent/UA) programme, applications and enrolment at VUB (oceansandlakes.be); fee from UGent interuniversity list. Deadline 31 March for non-EEA. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-marine-and-lacustrine-science-and-management-en"
+    },
+    {
+     "name": "MSc Marine Biological Resources (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": "15 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 87
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/international-master-of-science-in-marine-biological-resources-en"
+    },
+    {
+     "name": "MSc Nutrition and Food Systems",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Food and Nutrition",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 86
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. ITC/VLIR-UOS-linked programme with its own application procedure and deadlines (programme page). English per UGent specific requirements 2026-27 (TOEFL iBT 86, IELTS 6.5 with min 6 in each part).",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-nutrition-and-food-systems-en"
+    },
+    {
+     "name": "MSc Pharmaceutical Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Pharmaceutical Sciences",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 92
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-pharmaceutical-engineering-en"
+    },
+    {
+     "name": "MSc Radiation and its Effects on Microelectronics and Photonics Technologies (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      },
+      {
+       "test": "PTE",
+       "min": 62
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/european-master-of-science-in-radiation-and-its-effects-on-microelectronics-and-photonics-technologies-en"
+    },
+    {
+     "name": "MSc Rural Development (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Agriculture and Development",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/international-master-of-science-in-rural-development-IMRDVC-en"
+    },
+    {
+     "name": "MSc Advanced Design of Sustainable Ships and Offshore Structures (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": "1 February 2027 (scholarship); 1 April 2027 (self-funded, visa needed)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 92
+      },
+      {
+       "test": "PTE",
+       "min": 62
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. GRE (general) is required for all non-EEA applicants (by diploma origin) to Engineering and Architecture masters. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/international-master-in-advanced-design-of-sustainable-ships-and-offshore-structures-en"
+    },
+    {
+     "name": "MSc Sociology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Social Sciences",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First). Tariff B applies to new non-EEA students; Turkey is not on the 100% higher-fee waiver list valid only for this faculty.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-sociology-KMSOCY-en"
+    },
+    {
+     "name": "MSc Soils and Global Change (Soil Ecosystem Services and Global Change) (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Environmental Science",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/international-master-of-science-in-soils-and-global-change-soil-ecosystem-services-and-global-change-en"
+    },
+    {
+     "name": "MSc Soils and Global Change (Soil-Plant System Processes and Global Change) (Joint/Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Environmental Science",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Joint/Erasmus Mundus-type programme with its own consortium application procedure, scholarships and fees (not set by UGent tariffs); English requirements follow the consortium rules listed in UGent specific language requirements 2026-27.",
+     "source_url": "https://studiekiezer.ugent.be/2027/international-master-of-science-in-soils-and-global-change-soil-plant-system-processes-and-global-change-en"
+    },
+    {
+     "name": "MSc Sustainable Land Management (Urban Land Engineering)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Environmental Science",
+     "fee_non_eu": 5321.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-sustainable-land-management-urban-land-engineering-en"
+    },
+    {
+     "name": "MSc Sustainable Land Management (Land and Groundwater Management)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Environmental Science",
+     "fee_non_eu": 5321.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-sustainable-land-management-land-and-groundwater-management-en"
+    },
+    {
+     "name": "MSc Bioscience Engineering: Sustainable Urban Bioscience Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Bioscience Engineering",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Enrolment at University of Antwerp (see sube.be: non-EEA deadline 28 February, listed as 1 March in UGent guide); requires academic engineering bachelor with at least 'second class upper' result.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-science-in-bioscience-engineering-sustainable-urban-bioscience-engineering-en"
+    },
+    {
+     "name": "MA Philosophy (Research Master)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Humanities",
+     "fee_non_eu": 4397.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "15 February 2027 (students needing a visa)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA applicants (incl. Turkish) need a recognised foreign university bachelor of at least 3 years, assessed by the faculty for relatedness (a preparatory/linking programme of 45-90 ECTS may be required); upload a diploma verified via Qualification Check plus transcripts/diploma supplement, sworn translation if not in NL/FR/DE/EN, CV and passport. No Turkey-specific rules or minimum GPA are published; decision takes ~3 months. Pre-selection by programme coordinator via RM.Phil@ugent.be before enrolment; UGent/UA/VUB research master. English: B2 (IELTS 6.0 / PTE 59; TOEFL iBT new 1-6 scale 4-4.5; Cambridge B2 First).",
+     "source_url": "https://studiekiezer.ugent.be/2027/research-master-of-arts-in-philosophy-en"
+    },
+    {
+     "name": "LLM International and European Law (Comparative Law and Transnational Dispute Resolution)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Law",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "PTE",
+       "min": 76
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Classified by UGent as a Subsequent (advanced) Master's programme but offered as a full-time LLM degree; five specialisations: Comparative Law and Transnational Dispute Resolution, International Business Law, International and Human Rights Law, International and National Legal Orders, European Union Law. Non-EEA applicants (incl. Turkish) apply via Oasis, with a verified law degree (Qualification Check); English level C1 required (UGent specific language requirements); no Turkey-specific rules or minimum GPA published.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-laws-in-international-and-european-law-comparative-law-and-transnational-dispute-resolution-en"
+    },
+    {
+     "name": "LLM International and European Law (International Business Law)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Law",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "PTE",
+       "min": 76
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Classified by UGent as a Subsequent (advanced) Master's programme but offered as a full-time LLM degree; five specialisations: Comparative Law and Transnational Dispute Resolution, International Business Law, International and Human Rights Law, International and National Legal Orders, European Union Law. Non-EEA applicants (incl. Turkish) apply via Oasis, with a verified law degree (Qualification Check); English level C1 required (UGent specific language requirements); no Turkey-specific rules or minimum GPA published.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-laws-in-international-and-european-law-international-business-law-en"
+    },
+    {
+     "name": "LLM International and European Law (International and Human Rights Law)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Law",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "PTE",
+       "min": 76
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Classified by UGent as a Subsequent (advanced) Master's programme but offered as a full-time LLM degree; five specialisations: Comparative Law and Transnational Dispute Resolution, International Business Law, International and Human Rights Law, International and National Legal Orders, European Union Law. Non-EEA applicants (incl. Turkish) apply via Oasis, with a verified law degree (Qualification Check); English level C1 required (UGent specific language requirements); no Turkey-specific rules or minimum GPA published.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-laws-in-international-and-european-law-international-and-human-rights-law-en"
+    },
+    {
+     "name": "LLM International and European Law (International and National Legal Orders)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Law",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "PTE",
+       "min": 76
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Classified by UGent as a Subsequent (advanced) Master's programme but offered as a full-time LLM degree; five specialisations: Comparative Law and Transnational Dispute Resolution, International Business Law, International and Human Rights Law, International and National Legal Orders, European Union Law. Non-EEA applicants (incl. Turkish) apply via Oasis, with a verified law degree (Qualification Check); English level C1 required (UGent specific language requirements); no Turkey-specific rules or minimum GPA published.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-laws-in-international-and-european-law-international-and-national-legal-orders-en"
+    },
+    {
+     "name": "LLM International and European Law (European Union Law)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Law",
+     "fee_non_eu": 7079.4,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "PTE",
+       "min": 76
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Classified by UGent as a Subsequent (advanced) Master's programme but offered as a full-time LLM degree; five specialisations: Comparative Law and Transnational Dispute Resolution, International Business Law, International and Human Rights Law, International and National Legal Orders, European Union Law. Non-EEA applicants (incl. Turkish) apply via Oasis, with a verified law degree (Qualification Check); English level C1 required (UGent specific language requirements); no Turkey-specific rules or minimum GPA published.",
+     "source_url": "https://studiekiezer.ugent.be/2027/master-of-laws-in-international-and-european-law-european-union-law-en"
+    }
+   ]
+  },
+  {
+   "name": "University of Antwerp (UAntwerp)",
+   "city": "Antwerp",
+   "country": "Belgium",
+   "website": "https://www.uantwerpen.be/en/",
+   "entity_note": "Non-EEA (incl. Turkish) applicants must apply via Mobility Online for screening of their degree (deadline 28 February 2027 for 2027-28; legalised documents by 31 May) and prove English with test-centre IELTS 6.5 (6.0 per part), TOEFL iBT 80, PTE 59 or Cambridge 176. No Turkey-specific rules are published; the non-EEA fee is EUR 7,800 per 60 credits for masters (EUR 4,300 for bachelors).",
+   "programs": [
+    {
+     "name": "MSc Applied Ecohydrology (Erasmus Mundus)",
+     "level": "master",
+     "duration": null,
+     "field": "Environmental Science",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Erasmus Mundus joint master with its own admission procedure and fees (maeh-mundus.eu); do not apply via UAntwerp Mobility Online.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/applied-ecohydrology/"
+    },
+    {
+     "name": "MSc Applied Economic Sciences: Economic Policy",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Economics",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Academic bachelor in economics/business needed (preparatory programme possible). Unless exempted, GMAT (600 total, 48 quantitative) or GRE (162 quant, 152 verbal) is required.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/economic-policy/"
+    },
+    {
+     "name": "MSc Bioscience Engineering: Sustainable Urban Bioscience Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Bioscience Engineering",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Interuniversity (UAntwerp, UGent, KU Leuven), enrolment at UAntwerp; requires an academic engineering/science bachelor with at least a 'second class upper' result (sube.be).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/sustainable-urban-bioscience-engineering/"
+    },
+    {
+     "name": "MSc Biology: Biodiversity, Conservation and Restoration",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/biology-biodiversity-conservation-restoration/"
+    },
+    {
+     "name": "MSc Biology: Global Change Biology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Life Sciences",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/global-change-biology/"
+    },
+    {
+     "name": "MSc Biomedical Sciences: Infectious and Tropical Diseases",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Health and Biomedical Sciences",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/master-infectious-diseases-research/"
+    },
+    {
+     "name": "MSc Biomedical Sciences: Neurosciences",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Health and Biomedical Sciences",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/master-neurosciences-research/"
+    },
+    {
+     "name": "MSc Business Economics",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Academic bachelor in economics/business needed (preparatory programme possible). Unless exempted, GMAT (600 total, 48 quantitative) or GRE (162 quant, 152 verbal) is required.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/business-economics/"
+    },
+    {
+     "name": "MSc Business Engineering: Financial Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 85
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Academic bachelor (180 ECTS) with research methods, maths, economics and information science background; GMAT or GRE may be required for international students.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/business-engineering-financial-engineering/"
+    },
+    {
+     "name": "MSc Chemistry",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Faculty of Science admission board screens bachelor degrees with a strong chemistry focus; programme page lists non-EEA deadline 1 March (central page: 28 February 2027).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/master-chemistry/"
+    },
+    {
+     "name": "MSc Computer Science: Computer Networks",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Computer Science",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Bachelor comparable to UAntwerp BSc Computer Science (prescreening form on software engineering, maths, theoretical CS).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/master-computer-networks/"
+    },
+    {
+     "name": "MSc Computer Science: Data Science and Artificial Intelligence",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Computer Science",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Bachelor comparable to UAntwerp BSc Computer Science (prescreening form on software engineering, maths, theoretical CS).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/master-data-science/"
+    },
+    {
+     "name": "MSc Computer Science: Software Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Computer Science",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Bachelor comparable to UAntwerp BSc Computer Science (prescreening form on software engineering, maths, theoretical CS).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/master-software-engineering/"
+    },
+    {
+     "name": "MSc Digital Business Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Business",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 85
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Academic bachelor (180 ECTS) with research methods, maths, economics and information science background; GMAT or GRE may be required for international students.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/digital-business-engineering/"
+    },
+    {
+     "name": "MA Digital Text Analysis",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Humanities and Digital Humanities",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). English proficiency at C1 level via TOEFL/IELTS/ITACE (no minimum scores published on the page) or 60 ECTS of English-language study in language/literature; relevant humanities/social-science bachelor or faculty permission.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/digital-text-analysis/"
+    },
+    {
+     "name": "MSc Electronics and ICT Engineering Technology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Engineering",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Duration/credits from programme page (60 ECTS); check programme page for details of required prior degree.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/master-electronics-and-ict-technology/"
+    },
+    {
+     "name": "MSc Epidemiology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Health and Biomedical Sciences",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Academic (not professional) bachelor with life sciences, statistics and epidemiology background; full-time 120 ECTS (student-visa holders must take min. 54 credits per year).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/epidemiology/"
+    },
+    {
+     "name": "LLM Laws (Master of Laws)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Law",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Requires a Bachelor of Laws (min. 180 ECTS) or equivalent; TOEFL iBT 90 (before 21 Jan 2026 scale) or 4.5 on the new scale.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/master-of-laws/"
+    },
+    {
+     "name": "MSc Leading International Vaccinology Education (Erasmus Mundus)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Health and Biomedical Sciences",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Erasmus Mundus joint master (live.univ-lyon1.fr) with its own admission procedure and fees.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/leading-international-vaccinology-education/"
+    },
+    {
+     "name": "MA Linguistics and Literary Studies: English",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Linguistics and Literature",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 110
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Requires academic bachelor in Linguistics and Literature: English (preparatory programme otherwise); English C1 required (TOEFL iBT 110-120, IELTS 7.0 in each part, ITACE C1).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/english-linguistics-literary-studies/"
+    },
+    {
+     "name": "MSc Marine and Lacustrine Science and Management (Oceans & Lakes)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Interuniversity (VUB/UAntwerp/UGent) programme; applications and enrolment at VUB, so UAntwerp publishes no separate fee or deadline.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/marine-lacustrine-science-management/"
+    },
+    {
+     "name": "MSc Molecular Biology",
+     "level": "master",
+     "duration": null,
+     "field": "Life Sciences",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": null,
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Interuniversity (VUB coordinating, UAntwerp, KU Leuven) programme; applications at VUB, so UAntwerp publishes no separate fee, duration or deadline.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/master-of-molecular-biology/"
+    },
+    {
+     "name": "MSc Physics",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Natural Sciences",
+     "fee_non_eu": 7800,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Two-year nanophysics-oriented master (120 ECTS); Faculty of Science admission board screens degree.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/master-of-physics/"
+    },
+    {
+     "name": "MA Philosophy (Research Master)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Humanities",
+     "fee_non_eu": 4400,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Interuniversity research master (UAntwerp/UGent/VUB), taught in English or Dutch; permission from the steering committee is needed before starting the Mobility Online application. Fee EUR 4,400 per 60 credits.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/research-master-philosophy/"
+    },
+    {
+     "name": "MSc Rehabilitation Sciences and Physiotherapy",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Health and Biomedical Sciences",
+     "fee_non_eu": 5700,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "bachelor",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need an accredited academic bachelor (min. 180 ECTS) from a recognised institution; the programme's admission board screens content/level via Mobility Online (opens 4 Nov 2026; upload by 28 Feb 2027), then legalised/verified copies of diploma and transcripts must reach the registrar by 31 May 2027. Turkey-specific rules are not published (only China/APS); NARIC recognition can replace screening only if level-equivalent; no minimum GPA published. English proof required (test-centre IELTS/TOEFL/PTE, certificates no older than 2 years). Students with a prior degree outside Belgium must first complete a mandatory 45-ECTS part-time English-language bridging programme before the 120-ECTS master; fee EUR 5,700 per 60 credits.",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/rehabilitation-sciences-and-physiotherapy/"
+    },
+    {
+     "name": "BSc Social-Economic Sciences",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Economics and Social Sciences",
+     "fee_non_eu": 4300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": "28 February 2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need a secondary school diploma that gives access to a comparable university programme in the issuing country (for Turkey: lise diploma, with the national university entrance exam result taken into account where applicable); apply via Mobility Online (opens 4 Nov 2026, upload by 28 Feb 2027), then legalised/verified documents by 31 May 2027. No Turkey-specific rules or minimum grade published. English proof required (test-centre IELTS 6.5/TOEFL iBT 80/PTE 59/Cambridge 176). Fee shown is the non-EEA bachelor rate (EUR 1,000 + 55 per credit = 4,300 per 60 credits).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/social-economic-sciences/"
+    },
+    {
+     "name": "BSc Urban Sustainability Studies (YUFE)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Urban Studies and Sustainability",
+     "fee_non_eu": 4300,
+     "fee_year": "2026/27",
+     "intake_months": "September",
+     "application_deadline": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      },
+      {
+       "test": "PTE",
+       "min": 59
+      },
+      {
+       "test": "Cambridge",
+       "min": 176
+      }
+     ],
+     "education_level": "highschool",
+     "gpa_min": null,
+     "gpa_scale": null,
+     "requirements_note": "Non-EEA (incl. Turkish) applicants need a secondary school diploma that gives access to a comparable university programme in the issuing country (for Turkey: lise diploma, with the national university entrance exam result taken into account where applicable); apply via Mobility Online (opens 4 Nov 2026, upload by 28 Feb 2027), then legalised/verified documents by 31 May 2027. No Turkey-specific rules or minimum grade published. English proof required (test-centre IELTS 6.5/TOEFL iBT 80/PTE 59/Cambridge 176). YUFE programme with its own admission procedure (contact the admission officer); do not use the standard Mobility Online link. Fee shown is the non-EEA bachelor rate (EUR 4,300 per 60 credits).",
+     "source_url": "https://www.uantwerpen.be/en/study/programmes/all-programmes/urban-sustainability-studies/"
+    }
+   ]
+  }
+ ]
+}

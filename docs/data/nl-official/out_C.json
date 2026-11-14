@@ -1,0 +1,1121 @@
+{
+ "37072": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full IB Diploma (not CP) with min 24 points and at least 3 HL subjects; Mathematics A&A HL, A&A SL or A&I HL accepted (A&I SL holders must submit a separate mathematics certificate before enrolment).",
+   "note": "AI has its own PDF: lower threshold (24) than other Radboud science BScs (27)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "HS Diploma plus 4 AP certificates with min grade 3/5; AP Calculus AB or BC with min grade 3.",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF. AI-specific PDF."
+  },
+  "math_test": {
+   "name": "Maths certificate: OMPT-E/OMPT-D, SAT Math, CCVX, Boswell-Beta",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT (E or D) >= 55%; SAT Maths >= 600/800; CCVX Maths A or B >= 6.0/10; Boswell-Beta Maths A or B >= 5.5/10",
+   "details": "Used to supplement a maths deficiency in the diploma; not required if diploma maths requirement is met. Not accepted for colloquium doctum route."
+  },
+  "a_level": "UK: GCSE in 6 subjects (A*-C/9-4) + 3 academically relevant A-levels (A*-C); Mathematics at GCE A-level with min grade B.",
+  "turkish_route": "Lise Diploması (4 years) with GPA >= 80%; if one of the 4 years is < 80%, TYT + AYT each >= 180 points also needed. Mathematics grade in years 10, 11, 12 each >= 85/100.",
+  "prerequisite_maths": "Dutch Mathematics A or B (or equivalent via diploma-specific requirement)",
+  "source_url": "https://www.ru.nl/en/education/bachelors/artificial-intelligence/admission-and-application",
+  "confidence": "high"
+ },
+ "37076": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Mathematics A&A HL required (A&A SL and A&I HL/SL not accepted); no other subjects. All grades >= 4 (CAS/EE/ToK points excluded from the 27).",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "HS Diploma with 4+ AP certificates (College Board, academic subjects, all >=3/5), HS GPA >= 3.5/4.0 (4.375/5.0); AP Calculus (AB or BC) required.",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF."
+  },
+  "math_test": {
+   "name": "OMPT",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D >= 55% (also Boswell-Beta/CCVX Maths B >= 6.0/10)",
+   "details": "Only to repair a Maths B deficiency; accepted if diploma maths level insufficient."
+  },
+  "a_level": "UK: GCSE 6 + AS 3 + A-level 3 (6 different subjects); (Advanced) Mathematics must be a GCE A-level; all grades B or higher (A*-F) / 6+ (1-9).",
+  "turkish_route": "Lise Diplomasi (4 yrs general secondary): directly considered (no extra year) if GPA yrs 10-12 >= 85/100 and relevant-subject grades >= 85 (Mathematics at least 6 h/week in yrs 11-12); if yr 10 or 11 GPA/grades are 80-85, TYT + AYT entry exams (each >= 180 points) are also needed. AP not required. Subject needed: Mathematics (>= 6 h/week yrs 11-12).",
+  "prerequisite_maths": "Dutch Mathematics B (IB: Mathematics A&A HL)",
+  "source_url": "https://www.ru.nl/en/education/bachelors/computing-science/admission-and-application",
+  "confidence": "high"
+ },
+ "37075": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Required relevant subjects Physics, Chemistry, Mathematics: at least two on HL, third HL or SL; Mathematics only A&A (HL or SL) accepted (A&I not accepted); Group 6 (Arts) not counted. All grades >= 4; min 27 points excl. CAS/EE/ToK.",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "HS Diploma with 4+ AP certificates (all >=3/5, academic subjects), HS GPA >= 3.5/4.0 (4.375/5.0), relevant grade-12 subjects >= 3.5; required APs: Calculus (AB or BC), Chemistry, Physics (Physics 2 + Physics 1, or Physics 2 + Physics C Mechanics).",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF."
+  },
+  "math_test": {
+   "name": "OMPT",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D >= 55% (or Boswell-Beta / CCVX Maths B >= 6.0/10)",
+   "details": "Only to repair a Maths B deficiency."
+  },
+  "a_level": "UK: (I)GCSE 6 + AS 3 + A-level 3 (6+ different subjects); at least 2 of 3 relevant subjects (Physics, Chemistry, Mathematics) as GCE A-level, third at least AS; all grades B or higher (6+ numerical).",
+  "turkish_route": "Lise Diplomasi (4 yrs general secondary): directly considered (no extra year) if GPA yrs 10-12 >= 85/100 and relevant-subject grades >= 85 (Mathematics at least 6 h/week in yrs 11-12); if yr 10 or 11 GPA/grades are 80-85, TYT + AYT entry exams (each >= 180 points) are also needed. AP not required. Subjects: Mathematics (>= 6 h/wk), Chemistry (>= 4), Physics (>= 4) in yrs 11-12.",
+  "prerequisite_maths": "Dutch Mathematics B (plus Physics and Chemistry); IB: Mathematics A&A",
+  "source_url": "https://www.ru.nl/en/education/bachelors/chemistry/admission-and-application",
+  "confidence": "high"
+ },
+ "37081": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Required relevant subjects Physics, Chemistry, Mathematics: at least two on HL, third HL or SL; Mathematics only A&A (HL or SL) accepted (A&I not accepted); Group 6 (Arts) not counted. All grades >= 4; min 27 points excl. CAS/EE/ToK.",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "HS Diploma with 4+ AP certificates (all >=3/5, academic subjects), HS GPA >= 3.5/4.0 (4.375/5.0), relevant grade-12 subjects >= 3.5; required APs: Calculus (AB or BC), Chemistry, Physics (Physics 2 + Physics 1, or Physics 2 + Physics C Mechanics).",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF."
+  },
+  "math_test": {
+   "name": "OMPT",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D >= 55% (or Boswell-Beta / CCVX Maths B >= 6.0/10)",
+   "details": "Only to repair a Maths B deficiency."
+  },
+  "a_level": "UK: (I)GCSE 6 + AS 3 + A-level 3 (6+ different subjects); at least 2 of 3 relevant subjects (Physics, Chemistry, Mathematics) as GCE A-level, third at least AS; all grades B or higher (6+ numerical).",
+  "turkish_route": "Lise Diplomasi (4 yrs general secondary): directly considered (no extra year) if GPA yrs 10-12 >= 85/100 and relevant-subject grades >= 85 (Mathematics at least 6 h/week in yrs 11-12); if yr 10 or 11 GPA/grades are 80-85, TYT + AYT entry exams (each >= 180 points) are also needed. AP not required. Subjects: Mathematics (>= 6 h/wk), Chemistry (>= 4), Physics (>= 4) in yrs 11-12.",
+  "prerequisite_maths": "Dutch Mathematics B (plus Physics and Chemistry); IB: Mathematics A&A",
+  "source_url": "https://www.ru.nl/en/education/bachelors/molecular-life-sciences/admission-and-application",
+  "confidence": "high"
+ },
+ "58233": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Required relevant subjects Physics, Chemistry, Mathematics: at least two on HL, third HL or SL; Mathematics only A&A (HL or SL) accepted (A&I not accepted); Group 6 (Arts) not counted. All grades >= 4; min 27 points excl. CAS/EE/ToK.",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "HS Diploma with 4+ AP certificates (all >=3/5, academic subjects), HS GPA >= 3.5/4.0 (4.375/5.0), relevant grade-12 subjects >= 3.5; required APs: Calculus (AB or BC), Chemistry, Physics (Physics 2 + Physics 1, or Physics 2 + Physics C Mechanics).",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF."
+  },
+  "math_test": {
+   "name": "OMPT",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D >= 55% (or Boswell-Beta / CCVX Maths B >= 6.0/10)",
+   "details": "Only to repair a Maths B deficiency."
+  },
+  "a_level": "UK: (I)GCSE 6 + AS 3 + A-level 3 (6+ different subjects); at least 2 of 3 relevant subjects (Physics, Chemistry, Mathematics) as GCE A-level, third at least AS; all grades B or higher (6+ numerical).",
+  "turkish_route": "Lise Diplomasi (4 yrs general secondary): directly considered (no extra year) if GPA yrs 10-12 >= 85/100 and relevant-subject grades >= 85 (Mathematics at least 6 h/week in yrs 11-12); if yr 10 or 11 GPA/grades are 80-85, TYT + AYT entry exams (each >= 180 points) are also needed. AP not required. Subjects: Mathematics (>= 6 h/wk), Chemistry (>= 4), Physics (>= 4) in yrs 11-12.",
+  "prerequisite_maths": "Dutch Mathematics B (plus Physics and Chemistry); IB: Mathematics A&A",
+  "source_url": "https://www.ru.nl/en/education/bachelors/natural-sciences/admission-and-application",
+  "confidence": "high"
+ },
+ "37074": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Required subjects Biology, Chemistry, Mathematics, Physics: Biology and Chemistry on HL; Mathematics A&A (HL or SL) or A&I HL (A&I SL not accepted); Physics at least studied in the curriculum leading up to the IBDP (MYP/IGCSE) with sufficient grades; Group 6 Arts not counted. All grades >= 4; min 27 points excl. CAS/EE/ToK.",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "HS Diploma with 4+ AP certificates (>=3/5), GPA >= 3.5; required APs Biology and Chemistry; Physics and Mathematics must be taken in grade 12 if not AP (if AP Physics: Physics 2, or Physics 1 + Calculus AB/BC).",
+   "note": "Radboud diploma-specific admission requirements PDF (study year 2027-2028) applied; not an institution-wide table - each programme has its own PDF."
+  },
+  "math_test": {
+   "name": "OMPT",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-A >= 60% or OMPT-D >= 55% (non-Dutch diploma); Boswell-Beta/CCVX Maths A or B >= 6.0/10",
+   "details": "Only to repair a Maths A/B deficiency."
+  },
+  "a_level": "UK: Biology and Chemistry must be GCE A-levels (3rd non-specific); Mathematics at least GCE AS; Physics at least (I)GCSE; B or higher.",
+  "turkish_route": "Lise Diplomasi (4 yrs general secondary): directly considered (no extra year) if GPA yrs 10-12 >= 85/100 and relevant-subject grades >= 85 (Mathematics at least 6 h/week in yrs 11-12); if yr 10 or 11 GPA/grades are 80-85, TYT + AYT entry exams (each >= 180 points) are also needed. AP not required. Subjects: Mathematics (>= 6 h/wk), Biology, Chemistry, Physics (>= 4 h/wk each).",
+  "prerequisite_maths": "Dutch Mathematics A or B, plus Biology, Chemistry, Physics",
+  "source_url": "https://www.ru.nl/en/education/bachelors/biology/admission-and-application",
+  "confidence": "high"
+ },
+ "37073": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "Arts and Culture Studies: humanities programme."
+ },
+ "37082": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "Philosophy, Politics and Society: social science/humanities."
+ },
+ "37083": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "Psychology: social/behavioural science, not a maths-heavy STEM programme."
+ },
+ "56984": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics Analysis and Approaches HL (A&I not accepted). IB Diploma with at least 3 HL.",
+   "note": "UM-wide: IB Diploma with at least 3 HL subjects counts as VWO-equivalent (no minimum point total published); additional subject requirements per programme from the UM 'Additional subject requirements 2027-2028' table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma with 4 AP exams scored >=3, or 3 AP exams scored >=4 (College Board); US diploma without APs needs 1 year of university credits. Programme-required APs: Calculus.",
+   "note": "UM-wide AP rule applied; AP list from UM additional subject requirements 2027-2028."
+  },
+  "math_test": {
+   "name": "OMPT-D / Boswell-Beta / UM entrance exam",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D >= 60% (max 2 attempts); Boswell-Beta Maths B (UM advises >= 7 to cope with year 1); CCVX Maths B; on-site UM DACS entrance exam (June)",
+   "details": "For applicants whose diploma lacks Mathematics B level (e.g. IB A&I, AP without Calculus)."
+  },
+  "a_level": "GCE A-Level Mathematics required (A-level; 3 A-levels A-C + 3 GCSE).",
+  "turkish_route": "Lise Diplomasi from a Genel Lise is only VWO-equivalent together with successful completion of all year-1 credits of a bachelor's programme at a university (UM foreign diploma list 2025-2026; Turkey row for 2027-28 not verified).",
+  "prerequisite_maths": "Dutch Mathematics B at VWO level (written exam + 5 h/wk in final two years) or equivalent (IB AA HL)",
+  "source_url": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/computer-science/admission-requirements",
+  "confidence": "high"
+ },
+ "56985": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics Analysis and Approaches HL (A&I not accepted). IB Diploma with at least 3 HL.",
+   "note": "UM-wide: IB Diploma with at least 3 HL subjects counts as VWO-equivalent (no minimum point total published); additional subject requirements per programme from the UM 'Additional subject requirements 2027-2028' table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma with 4 AP exams scored >=3, or 3 AP exams scored >=4 (College Board); US diploma without APs needs 1 year of university credits. Programme-required APs: Calculus.",
+   "note": "UM-wide AP rule applied; AP list from UM additional subject requirements 2027-2028."
+  },
+  "math_test": {
+   "name": "OMPT-D / Boswell-Beta / UM entrance exam",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D >= 60% (max 2 attempts); Boswell-Beta Maths B (UM advises >= 7); CCVX Maths B; on-site UM DACS entrance exam",
+   "details": "Same options as BSc Computer Science (both run by DACS)."
+  },
+  "a_level": "GCE A-Level Mathematics required.",
+  "turkish_route": "Lise Diplomasi from a Genel Lise is only VWO-equivalent together with successful completion of all year-1 credits of a bachelor's programme at a university (UM foreign diploma list 2025-2026; Turkey row for 2027-28 not verified).",
+  "prerequisite_maths": "Dutch Mathematics B (written exam + 5 h/wk in final two years) or equivalent",
+  "source_url": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/data-science-and-artificial-intelligence/admission-requirements",
+  "confidence": "high"
+ },
+ "56982": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics Analysis and Approaches SL/HL or Applications and Interpretation HL. IB Diploma with at least 3 HL.",
+   "note": "UM-wide: IB Diploma with at least 3 HL subjects counts as VWO-equivalent (no minimum point total published); additional subject requirements per programme from the UM 'Additional subject requirements 2027-2028' table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma with 4 AP exams scored >=3, or 3 AP exams scored >=4 (College Board); US diploma without APs needs 1 year of university credits. Programme-required APs: Calculus.",
+   "note": "UM-wide AP rule applied; AP list from UM additional subject requirements 2027-2028."
+  },
+  "math_test": {
+   "name": "UM online preparatory maths course + online maths exam (SBE)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Applicants lacking the required maths level clear the deficiency via the UM online maths exam (course optional); passing score not stated on the page retrieved. Details are behind linked pages."
+  },
+  "a_level": "GCE A-Level Mathematics required.",
+  "turkish_route": "Lise Diplomasi from a Genel Lise is only VWO-equivalent together with successful completion of all year-1 credits of a bachelor's programme at a university (UM foreign diploma list 2025-2026; Turkey row for 2027-28 not verified).",
+  "prerequisite_maths": "Dutch Mathematics B at VWO level or equivalent",
+  "source_url": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/business-engineering/admission-requirements",
+  "confidence": "high"
+ },
+ "56987": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics Analysis and Approaches SL/HL or Applications and Interpretation HL. IB Diploma with at least 3 HL.",
+   "note": "UM-wide: IB Diploma with at least 3 HL subjects counts as VWO-equivalent (no minimum point total published); additional subject requirements per programme from the UM 'Additional subject requirements 2027-2028' table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma with 4 AP exams scored >=3, or 3 AP exams scored >=4 (College Board); US diploma without APs needs 1 year of university credits. Programme-required APs: Calculus.",
+   "note": "UM-wide AP rule applied; AP list from UM additional subject requirements 2027-2028."
+  },
+  "math_test": {
+   "name": "UM online preparatory maths course + online maths exam (SBE)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Applicants lacking the required maths level clear the deficiency via the UM online maths exam (course optional); passing score not stated on the page retrieved. Details are behind linked pages."
+  },
+  "a_level": "GCE A-Level Mathematics required.",
+  "turkish_route": "Lise Diplomasi from a Genel Lise is only VWO-equivalent together with successful completion of all year-1 credits of a bachelor's programme at a university (UM foreign diploma list 2025-2026; Turkey row for 2027-28 not verified).",
+  "prerequisite_maths": "Dutch Mathematics B at VWO level or equivalent",
+  "source_url": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/econometrics-operations-research/admission-requirements",
+  "confidence": "high"
+ },
+ "56983": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Physics SL and Mathematics Analysis and Approaches SL/HL. IB Diploma with at least 3 HL.",
+   "note": "UM-wide: IB Diploma with at least 3 HL subjects counts as VWO-equivalent (no minimum point total published); additional subject requirements per programme from the UM 'Additional subject requirements 2027-2028' table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma with 4 AP exams scored >=3, or 3 AP exams scored >=4 (College Board); US diploma without APs needs 1 year of university credits. Programme-required APs: Physics 1+2 or Physics 1 + C: Mechanics or Physics 2 + C: Mechanics, and Calculus.",
+   "note": "UM-wide AP rule applied; AP list from UM additional subject requirements 2027-2028."
+  },
+  "math_test": {
+   "name": "OMPT / Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-B >= 70% or OMPT-D >= 60%; Boswell-Beta Maths B; CCVX Maths B",
+   "details": "Deficiency routes listed for Mathematics (and separately Boswell-Beta/CCVX for Physics)."
+  },
+  "a_level": "GCE A-Level Physics and Mathematics required.",
+  "turkish_route": "Lise Diplomasi from a Genel Lise is only VWO-equivalent together with successful completion of all year-1 credits of a bachelor's programme at a university (UM foreign diploma list 2025-2026; Turkey row for 2027-28 not verified).",
+  "prerequisite_maths": "Dutch Mathematics B and Physics at VWO level",
+  "source_url": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/circular-engineering/admission-requirements",
+  "confidence": "high"
+ },
+ "56997": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Biology HL, Chemistry SL, Mathematics Analysis and Approaches SL/HL. IB Diploma with at least 3 HL.",
+   "note": "UM-wide: IB Diploma with at least 3 HL subjects counts as VWO-equivalent (no minimum point total published); additional subject requirements per programme from the UM 'Additional subject requirements 2027-2028' table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma with 4 AP exams scored >=3, or 3 AP exams scored >=4 (College Board); US diploma without APs needs 1 year of university credits. Programme-required APs: Biology, Chemistry, Calculus.",
+   "note": "UM-wide AP rule applied; AP list from UM additional subject requirements 2027-2028."
+  },
+  "math_test": {
+   "name": "OMPT / Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-B >= 70% or OMPT-D >= 60%; Boswell-Beta Maths B; CCVX Maths B",
+   "details": "Also Boswell-Beta/CCVX for Biology or Chemistry deficiencies. Matching procedure mandatory."
+  },
+  "a_level": "GCE A-Level Biology, Chemistry and Mathematics required.",
+  "turkish_route": "Lise Diplomasi from a Genel Lise is only VWO-equivalent together with successful completion of all year-1 credits of a bachelor's programme at a university (UM foreign diploma list 2025-2026; Turkey row for 2027-28 not verified).",
+  "prerequisite_maths": "Dutch Mathematics B (Calculus), Biology and Chemistry at VWO level",
+  "source_url": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/sustainable-bioscience/admission-requirements",
+  "confidence": "high"
+ },
+ "56979": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Biology HL, Physics SL, Chemistry SL, Mathematics Analysis and Approaches SL/HL or Applications and Interpretation HL. IB Diploma with at least 3 HL.",
+   "note": "UM-wide: IB Diploma with at least 3 HL subjects counts as VWO-equivalent (no minimum point total published); additional subject requirements per programme from the UM 'Additional subject requirements 2027-2028' table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma with 4 AP exams scored >=3, or 3 AP exams scored >=4 (College Board); US diploma without APs needs 1 year of university credits. Programme-required APs: Biology, Chemistry, Physics (1+2 / 1+C Mech / 2+C Mech), Statistics or Calculus.",
+   "note": "UM-wide AP rule applied; AP list from UM additional subject requirements 2027-2028."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX Mathematics",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Maths deficiency (Maths A or B) lifted with Boswell-Beta or CCVX exam; no OMPT mentioned on the page. UM FHML offers no colloquium doctum."
+  },
+  "a_level": "GCE A-Level Biology, Chemistry; Physics A or AS; Mathematics A or AS.",
+  "turkish_route": "Lise Diplomasi from a Genel Lise is only VWO-equivalent together with successful completion of all year-1 credits of a bachelor's programme at a university (UM foreign diploma list 2025-2026; Turkey row for 2027-28 not verified).",
+  "prerequisite_maths": "Dutch Mathematics A or B, Physics, Chemistry, Biology (profile N&G with physics or N&T with biology)",
+  "source_url": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/biomedical-sciences/admission-requirements",
+  "confidence": "high"
+ },
+ "56980": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Biology HL, Physics SL, Chemistry SL, Mathematics Analysis and Approaches SL/HL or Applications and Interpretation HL. IB Diploma with at least 3 HL.",
+   "note": "Numerus fixus (250 places 2027-28) with online selection exam in addition to diploma requirements. UM-wide: IB Diploma with at least 3 HL subjects counts as VWO-equivalent (no minimum point total published); additional subject requirements per programme from the UM 'Additional subject requirements 2027-2028' table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma with 4 AP exams scored >=3, or 3 AP exams scored >=4 (College Board); US diploma without APs needs 1 year of university credits. Programme-required APs: Biology, Chemistry, Physics (1+2 / 1+C Mech / 2+C Mech), Statistics or Calculus.",
+   "note": "UM-wide AP rule applied; AP list from UM additional subject requirements 2027-2028."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX Mathematics",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Deficiencies in Maths (A or B) lifted via CCVX or Boswell-Beta (online possible); no OMPT mentioned."
+  },
+  "a_level": "GCE A-Level Biology, Chemistry; Physics A or AS; Mathematics A or AS.",
+  "turkish_route": "Lise Diplomasi from a Genel Lise is only VWO-equivalent together with successful completion of all year-1 credits of a bachelor's programme at a university (UM foreign diploma list 2025-2026; Turkey row for 2027-28 not verified).",
+  "prerequisite_maths": "Dutch Mathematics A or B, Physics, Chemistry, Biology",
+  "source_url": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/brain-science/admission-requirements",
+  "confidence": "high"
+ },
+ "56996": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Biology HL, Physics SL, Chemistry SL, Mathematics Analysis and Approaches SL/HL (A&I not accepted). IB Diploma with at least 3 HL.",
+   "note": "UM-wide: IB Diploma with at least 3 HL subjects counts as VWO-equivalent (no minimum point total published); additional subject requirements per programme from the UM 'Additional subject requirements 2027-2028' table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma with 4 AP exams scored >=3, or 3 AP exams scored >=4 (College Board); US diploma without APs needs 1 year of university credits. Programme-required APs: Biology, Chemistry, Physics (1+2 / 1+C Mech / 2+C Mech), Calculus.",
+   "note": "UM-wide AP rule applied; AP list from UM additional subject requirements 2027-2028."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX Mathematics B",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Maths B deficiency lifted via Boswell-Beta or CCVX; 'sufficiency check' via syllabus possible for some applicants; no OMPT mentioned."
+  },
+  "a_level": "GCE A-Level Biology, Chemistry, Mathematics; Physics A or AS.",
+  "turkish_route": "Lise Diplomasi from a Genel Lise is only VWO-equivalent together with successful completion of all year-1 credits of a bachelor's programme at a university (UM foreign diploma list 2025-2026; Turkey row for 2027-28 not verified).",
+  "prerequisite_maths": "Dutch Mathematics B, Physics, Chemistry, Biology",
+  "source_url": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/regenerative-medicine-and-technology/admission-requirements",
+  "confidence": "high"
+ },
+ "56994": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "No programme-specific subject requirement: selection (motivation letter, interview, previous education/science courses). IB Diploma with at least 3 HL counts as VWO-equivalent. Mathematics incl. calculus (differentiation/integration, ~Dutch Maths B) highly recommended."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma with 4 AP exams scored >=3, or 3 AP exams scored >=4 (College Board); US diploma without APs needs 1 year of university credits. No specific AP subjects required; calculus highly recommended.",
+   "note": "UM-wide AP rule."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test; selection procedure (motivation + interview)."
+  },
+  "a_level": null,
+  "turkish_route": "Lise Diplomasi from a Genel Lise is only VWO-equivalent together with successful completion of all year-1 credits of a bachelor's programme at a university (UM foreign diploma list 2025-2026; Turkey row for 2027-28 not verified).",
+  "prerequisite_maths": "None formal; Mathematics B-level calculus 'highly recommended'",
+  "source_url": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/maastricht-science-programme/admission-requirements",
+  "confidence": "medium"
+ },
+ "57000": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "Urban Sustainability Studies: social-science/sustainability programme, no maths requirement."
+ },
+ "57107": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL (pre-2019: Mathematics HL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics A-level (min 3 academic A2-levels A*-C)",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B (IB AA HL)",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57115": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL (pre-2019: Mathematics HL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics A-level (min 3 academic A2-levels A*-C)",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B (IB AA HL)",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57118": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL (pre-2019: Mathematics HL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics A-level (min 3 academic A2-levels A*-C)",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B (IB AA HL)",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57116": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL (pre-2019: Mathematics HL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics A-level (min 3 academic A2-levels A*-C)",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B (IB AA HL)",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57109": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches SL/HL or Applications and Interpretation HL",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D: min 60% (min 55% per category), max 2 attempts",
+   "details": "AI/Pharmacy deficiency list: OMPT-D, CCVX/Boswell-Beta Maths A or B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A SL/HL or A&I HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics A-level (min 3 academic A2-levels A*-C)",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics A or B",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57108": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL plus Physics HL (pre-2019: Mathematics HL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC and AP Physics 2 (AP Physics C judged insufficient)",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics A-level and Physics A-level",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B and Physics",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57110": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL plus Physics HL (pre-2019: Mathematics HL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC and AP Physics 2 (AP Physics C judged insufficient)",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics A-level and Physics A-level",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B and Physics",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57119": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL plus Physics HL (pre-2019: Mathematics HL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC and AP Physics 2 (AP Physics C judged insufficient)",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics A-level and Physics A-level",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B and Physics",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57112": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL; Physics and Chemistry (at least one of the two at HL, the other SL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC, AP Physics 2, AP Chemistry",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics, Physics and Chemistry A-levels",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B, Physics, Chemistry",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57113": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL; Physics and Chemistry (at least one of the two at HL, the other SL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC, AP Physics 2, AP Chemistry",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics, Physics and Chemistry A-levels",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B, Physics, Chemistry",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57114": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL; Physics and Chemistry (at least one of the two at HL, the other SL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC, AP Physics 2, AP Chemistry",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics, Physics and Chemistry A-levels",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B, Physics, Chemistry",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57117": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL; Physics and Chemistry (at least one of the two at HL, the other SL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC, AP Physics 2, AP Chemistry",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D (SOWISO, omptest.org): min 60% with min 55% per category, max 2 attempts",
+   "details": "Deficiency routes for FSE (non-Biology/AI): OMPT-D, CCVX/Boswell-Beta Maths B (5.5), AP Calculus 3-5, A-level Maths A2, IB certificate A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics, Physics and Chemistry A-levels",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B, Physics, Chemistry",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57111": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Biology HL; Physics and Chemistry (at least one of the required courses at HL); Mathematics A&A SL/HL or A&I HL",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Biology, AP Calculus AB or BC, AP Physics 2, AP Chemistry",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D: min 65% (min 55% per category), max 2 attempts",
+   "details": "BSc Biology deficiency list: OMPT-D, CCVX/Boswell-Beta Maths A or B (5.5), AP Calculus 3-5, A-level Maths AS/A2, IB certificate A&A SL/HL or A&I HL grade >= 4."
+  },
+  "a_level": "UK: Biology, Physics, Chemistry A-levels plus Mathematics AS-level",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics A or B (plus Biology, Chemistry, Physics)",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "high"
+ },
+ "57104": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis and Approaches HL (pre-2019: Mathematics HL)",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Calculus AB or BC (grade 3-5)",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-B",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-B >= 60% (non-Dutch applicants only, max 2 attempts/yr)",
+   "details": "FEB deficiency routes for EOR: OMPT-B, CCVX/Boswell-Beta Maths B (5.5), AP Calculus AB/BC 3-5, A-level Maths A2, IB A&A HL grade >= 4."
+  },
+  "a_level": "UK: Mathematics A-level",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics B",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/procedures/application-informatie/with-non-dutch-diploma/bachelor/bachelor-entry-requirements/accepted-certificates-to-lift-a-deficiency",
+  "confidence": "high"
+ },
+ "57127": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Data Science & Society (Campus Fryslan) is not listed in the RUG IB subject table; maths level assumed Mathematics (A&A or A&I SL/HL, grade >= 4) per the deficiency-certificate list - unconfirmed. RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: AP Statistics, AP Calculus AB or AP Calculus BC (grade 3-5)",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "OMPT-A",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-A >= 60% (no 0% subsection, max 2 attempts)",
+   "details": "Campus Fryslan Data Science and Society: maths A/B certificate routes: CCVX/Boswell-Beta Maths A or B, AP Stat/Calculus 3-5, A-level Maths, IB certificate Maths SL/HL (grade >= 4), OMPT-A."
+  },
+  "a_level": "Mathematics or Further Mathematics A-level accepted to lift maths deficiency (A-level page lists no programme row for DSS)",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics A or B",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/procedures/application-informatie/with-non-dutch-diploma/bachelor/bachelor-entry-requirements/accepted-certificates-to-lift-a-deficiency",
+  "confidence": "medium"
+ },
+ "57101": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics equivalent to Dutch VWO Mathematics A or B (course descriptions assessed by Admissions Board). The table lists this for 'Information Science (Dutch-taught)'; the English-taught programme is not separately listed.",
+   "note": "RUG tables: IB, AP, A-level, Turkey pages per faculty (valid 2027/28); deficiency certificates page for maths tests. Only a generic 'IB diploma' is required (no minimum points published; all applications assessed individually)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA/Turkish route: 4+ content-based AP exams grade 3-5; required: none specified (Mathematics equivalent to VWO A or B; AP course descriptions assessed)",
+   "note": "US diploma needs 4 APs; ACT/SAT not considered."
+  },
+  "math_test": {
+   "name": "CCVX / Boswell-Beta Maths A or B",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "If Admissions Board deems maths insufficient, a VWO Maths A or B certificate from CCVX or Boswell-Beta can be obtained."
+  },
+  "a_level": "Mathematics equivalent to VWO A or B (assessed individually)",
+  "turkish_route": "Lise Diploması qualifies as VWO-equivalent only with at least 4 content-based AP courses externally examined by the College Board (grades 3-5); then programme-specific AP requirement (see 'ap') applies.",
+  "prerequisite_maths": "Dutch Mathematics A or B",
+  "source_url": "https://www.rug.nl/education/application-enrolment-tuition-fees/admission/non-dutch-qualification/bachelor/bachelor-entry-requirements/bachelorlinksinternational/international-baccalaureate-diploma",
+  "confidence": "low"
+ },
+ "57097": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "Communication and Information Studies: humanities/communication; maths only equivalent to VWO A/B assessed."
+ },
+ "57126": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "University College Groningen Liberal Arts and Sciences: broad liberal arts, no subject requirements."
+ },
+ "57128": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "Global Politics and Sustainability: social science."
+ },
+ "57120": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "Human Geography and Planning: social-science/human geography, no subject requirements."
+ },
+ "58500": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "International Economics and Sustainable Development: economics/business programme, not maths-intensive STEM."
+ },
+ "57970": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Mathematics: Analysis & Approaches HL, min grade 5. A&A SL with min grade 6 may take the mathematics entrance exam instead. Applications & Interpretation: too little maths background (not accepted).",
+   "note": "Min 30 points excl. TOK/EE/CAS. All applicants go through a competitive selection procedure (first-attempt scores count; no resits). Same requirements as ESE page for IBEOR."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US HS diploma, GPA >= 3.0 (grades 11-12), at least 4 independent AP courses incl. Calculus AB or BC (mandatory); AP Calculus score >= 4, other APs >= 3; AP courses concluded with College Board exam; max 1 language AP. If Calculus requirement not met: mathematics proficiency certificate. SAT/ACT not accepted.",
+   "note": ""
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT type D > 75% (only type D accepted; also Boswell-Beta Maths B, CCVX Maths B, VWO deelcertificaat Maths B)",
+   "details": "Required for diplomas flagged 'mandatory mathematics deficiency exam' (e.g. Turkey Lise); also for IB A&A SL (6+) via entrance exam. Result needed before 1 May; no resits, first attempt counts."
+  },
+  "a_level": "UK: at least 3 (I)GCSEs + 3 (I)GCE A-levels (6 different subjects) A*-C in accepted subjects; Mathematics required as one of the A-level subjects (Maths + Further Maths count as 1).",
+  "turkish_route": "Lise Diplomasi (4 years): listed with mandatory English language test AND mandatory mathematics deficiency exam (OMPT-D > 75% or Maths B certificate). IB/AP/A-level route available for those following those curricula.",
+  "prerequisite_maths": "Dutch Mathematics B (final exam subject); IB A&A HL (5+); AP Calculus",
+  "source_url": "https://www.eur.nl/en/bachelor/international-bachelor-econometrics-and-operations-research/admission",
+  "confidence": "high"
+ },
+ "56863": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Mathematics: Analysis & Approaches HL, min grade 5. A&A SL with min grade 6 may take the mathematics entrance exam instead. Applications & Interpretation: too little maths background (not accepted).",
+   "note": "Min 30 points excl. TOK/EE/CAS. All applicants go through a competitive selection procedure (first-attempt scores count; no resits). Same requirements as ESE page for IBEOR. BSc2 double bachelor page repeats the IBEOR requirements."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US HS diploma, GPA >= 3.0 (grades 11-12), at least 4 independent AP courses incl. Calculus AB or BC (mandatory); AP Calculus score >= 4, other APs >= 3; AP courses concluded with College Board exam; max 1 language AP. If Calculus requirement not met: mathematics proficiency certificate. SAT/ACT not accepted.",
+   "note": ""
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT type D > 75% (only type D accepted; also Boswell-Beta Maths B, CCVX Maths B, VWO deelcertificaat Maths B)",
+   "details": "Required for diplomas flagged 'mandatory mathematics deficiency exam' (e.g. Turkey Lise); also for IB A&A SL (6+) via entrance exam. Result needed before 1 May; no resits, first attempt counts."
+  },
+  "a_level": "UK: at least 3 (I)GCSEs + 3 (I)GCE A-levels (6 different subjects) A*-C in accepted subjects; Mathematics required as one of the A-level subjects (Maths + Further Maths count as 1).",
+  "turkish_route": "Lise Diplomasi (4 years): listed with mandatory English language test AND mandatory mathematics deficiency exam (OMPT-D > 75% or Maths B certificate). IB/AP/A-level route available for those following those curricula.",
+  "prerequisite_maths": "Dutch Mathematics B (final exam subject); IB A&A HL (5+); AP Calculus",
+  "source_url": "https://www.eur.nl/en/bachelor/double-bachelor-bsc2-econometrics-and-economics/admission",
+  "confidence": "high"
+ },
+ "56864": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Mathematics: Analysis & Approaches HL, min grade 5. A&A SL with min grade 6 may take the mathematics entrance exam instead. Applications & Interpretation: too little maths background (not accepted).",
+   "note": "No separate requirements: you apply to International Bachelor Econometrics and Operations Research (IBEOR) and add Philosophy after passing year 1. Min 30 points excl. TOK/EE/CAS. All applicants go through a competitive selection procedure (first-attempt scores count; no resits). Same requirements as ESE page for IBEOR."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US HS diploma, GPA >= 3.0 (grades 11-12), at least 4 independent AP courses incl. Calculus AB or BC (mandatory); AP Calculus score >= 4, other APs >= 3; AP courses concluded with College Board exam; max 1 language AP. If Calculus requirement not met: mathematics proficiency certificate. SAT/ACT not accepted.",
+   "note": ""
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT type D > 75% (only type D accepted; also Boswell-Beta Maths B, CCVX Maths B, VWO deelcertificaat Maths B)",
+   "details": "Required for diplomas flagged 'mandatory mathematics deficiency exam' (e.g. Turkey Lise); also for IB A&A SL (6+) via entrance exam. Result needed before 1 May; no resits, first attempt counts."
+  },
+  "a_level": "UK: at least 3 (I)GCSEs + 3 (I)GCE A-levels (6 different subjects) A*-C in accepted subjects; Mathematics required as one of the A-level subjects (Maths + Further Maths count as 1).",
+  "turkish_route": "Lise Diplomasi (4 years): listed with mandatory English language test AND mandatory mathematics deficiency exam (OMPT-D > 75% or Maths B certificate). IB/AP/A-level route available for those following those curricula.",
+  "prerequisite_maths": "Dutch Mathematics B (final exam subject); IB A&A HL (5+); AP Calculus",
+  "source_url": "https://www.eur.nl/en/bachelor/double-bachelor-econometrics-and-philosophy-econometrics/admission",
+  "confidence": "high"
+ },
+ "56862": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Dutch-taught Econometrie en Operationele Research; page 'only available in Dutch'. International-diploma rules would follow the IBEOR page (IB A&A HL 5+, min 30 points) but are not stated for this track."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Not stated for the Dutch-taught track; see IBEOR (AP Calculus AB/BC >= 4 + 4 APs)."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": null,
+   "min_score": "> 75%",
+   "details": "Per IBEOR/ESE: OMPT-D, Boswell-Beta, CCVX Maths B accepted; not confirmed for Dutch-taught track."
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Dutch Mathematics B",
+  "source_url": "https://www.eur.nl/en/bachelor/econometrie-en-operationele-research/admission",
+  "confidence": "low"
+ },
+ "57963": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "Rotterdam Arts & Science Lab (RASL) dual degree: liberal arts/humanities orientation, no STEM maths prerequisite."
+ },
+ "56870": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "Erasmus University College Liberal Arts and Sciences: broad liberal arts programme."
+ },
+ "40314": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Mathematics: Analysis and Approaches HL (per Tilburg mathematics-requirements table, read via search excerpt; page itself returned HTTP 403).",
+   "note": "Tilburg only accepts the full IB Diploma (no individual certificates): min 24 points and at least 3 HL subjects. Tilburg site blocks automated access; details not verified on page."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US HS diploma with 4 relevant AP subjects scoring >= 3; AP Calculus AB or BC min 3 (per Tilburg mathematics table); AP Capstone/Research/Seminar/Studio Art not accepted.",
+   "note": "From search excerpts of official pages; not verified directly."
+  },
+  "math_test": {
+   "name": "OMPT-D",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D >= 70% (EER TiSEM 2026-27 art. 2.3, non-Dutch education only); also Boswell-Beta Maths B, CCVX",
+   "details": "Per official EER: used to remedy a Maths B deficiency."
+  },
+  "a_level": "GCE A-level Mathematics grade C or better (general academic A-levels A-C) - from search excerpt, unverified.",
+  "turkish_route": null,
+  "prerequisite_maths": "Dutch Mathematics B (EER 2026-27 Appendix 2); IB A&A HL",
+  "source_url": "https://www.tilburguniversity.edu/sites/default/files/download/EER_TiSEM_2026-2027_v4.pdf",
+  "confidence": "medium"
+ },
+ "40319": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Maths level: Mathematics (A&A or A&I; HL/SL level not confirmed). Equivalent to Dutch Maths A or B.",
+   "note": "Tilburg only accepts the full IB Diploma (no individual certificates): min 24 points and at least 3 HL subjects. Details from search excerpts; Tilburg site blocks automated access."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US HS diploma with 4 relevant AP subjects scoring >= 3 (from 2019 Tilburg presentation); programme AP subject requirement not verified.",
+   "note": "Unverified."
+  },
+  "math_test": {
+   "name": "OMPT-A",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-A >= 70% (non-Dutch education), or Boswell-Beta/CCVX Maths A or B",
+   "details": "Per official TSHD EER 2024-25 art. 2.3(f)."
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Dutch Mathematics A or B (Culture & Society profile only; EER TSHD Appendix II)",
+  "source_url": "https://www.tilburguniversity.edu/sites/default/files/download/EER%20DEF%20Bachelor's%20and%20Master's%20programs%20TSHD%202024-2025.pdf",
+  "confidence": "low"
+ },
+ "40316": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL (former Mathematics HL)",
+   "note": "Joint Tilburg-TU/e (JADS) bachelor: you apply via TU/e only; TU/e requirements copied. Tilburg itself accepts only full IB Diploma >= 24 points with >= 3 HL. Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores). Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "Copied from TU/e (application is via TU/e)."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B (VWO level or equivalent, e.g. IB AA HL)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "40321": {
+  "stem": false,
+  "ib": null,
+  "ap": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high",
+  "note": "University College Tilburg Liberal Arts and Sciences: liberal arts programme."
+ }
+}

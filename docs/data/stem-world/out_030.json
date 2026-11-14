@@ -1,0 +1,761 @@
+{
+ "49649": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and Physics; IB 35 points (HL 6,6,5 incl. Maths and Physics at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl. Maths and Physics at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAB incl. Maths and Physics. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/aeronautical-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49650": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths plus one of Further Maths, Physics, Chemistry, Biology, Design & Technology; IB 34 points (HL 6,5,5 incl. Maths HL plus one HL of Further Maths/Physics/Chemistry/Biology/Design Technology)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Maths HL plus one HL of Further Maths/Physics/Chemistry/Biology/Design Technology",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. Maths plus one of Further Maths, Physics, Chemistry, Biology, Design & Technology. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/aerospace-materials-beng/",
+  "confidence": "medium"
+ },
+ "49651": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 34 points (HL 6,5,5 incl. Maths HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Maths HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. Maths. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/architectural-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49652": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and Physics; IB 35 points (HL 6,6,5 incl. Maths and Physics at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl. Maths and Physics at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAB incl. Maths and Physics. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/automotive-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49653": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. two of Maths, Further Maths, Physics, Chemistry, Biology, Design & Technology; IB 34 points (HL 6,5,5 incl. two of Maths/Further Maths/Physics/Chemistry/Biology/Design Technology at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. two of Maths/Further Maths/Physics/Chemistry/Biology/Design Technology at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. two of Maths, Further Maths, Physics, Chemistry, Biology, Design & Technology. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/automotive-materials-beng/",
+  "confidence": "medium"
+ },
+ "49654": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. two of Maths, Further Maths, Physics, Chemistry, Biology, Design & Technology; IB 34 points (HL 6,5,5 incl. two of Maths/Further Maths/Physics/Chemistry/Biology/Design Technology at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. two of Maths/Further Maths/Physics/Chemistry/Biology/Design Technology at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. two of Maths, Further Maths, Physics, Chemistry, Biology, Design & Technology. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/biomaterials-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49655": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths plus one of Chemistry, Biology, Physics; IB 35 points (HL 6,6,5 incl. Maths HL plus one HL of Biology/Chemistry/Physics)",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl. Maths HL plus one HL of Biology/Chemistry/Physics",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAB incl. Maths plus one of Chemistry, Biology, Physics. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/biomedical-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49656": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and at least one of Chemistry or Physics; IB 35 points (HL 6,6,5 incl. Maths and Chemistry or Physics at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl. Maths and Chemistry or Physics at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAB incl. Maths and at least one of Chemistry or Physics. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/chemical-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49657": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 34 points (HL 6,5,5 incl. Maths HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Maths HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. Maths. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/civil-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49658": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 34 points (HL 6,5,5 incl. Maths HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Maths HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. Maths. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/computer-and-electronic-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49659": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 34 points (HL 6,5,5 incl. Maths HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Maths HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. Maths. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/electrical-and-electronic-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49660": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 34 points (HL 6,5,5 incl. Maths HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Maths HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. Maths. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/energy-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49661": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths or Physics; IB 34 points (HL 6,5,5 incl. Maths or Physics at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Maths or Physics at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. Maths or Physics. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/engineering-management/",
+  "confidence": "medium"
+ },
+ "49662": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. two of Maths, Further Maths, Physics, Chemistry, Biology, Design & Technology; IB 34 points (HL 6,5,5 incl. any two of those subjects at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. any two of those subjects at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. two of Maths, Further Maths, Physics, Chemistry, Biology, Design & Technology. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/materials-science-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49663": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and Physics; IB 35 points (HL 6,6,5 incl. Maths and Physics at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl. Maths and Physics at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAB incl. Maths and Physics. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/mechanical-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49664": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths and either Physics or Design & Technology; IB 34 points (HL 6,5,5 incl. Maths HL and Physics or Design Technology HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Maths HL and Physics or Design Technology HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. Maths and either Physics or Design & Technology. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/product-design-engineering-beng/",
+  "confidence": "medium"
+ },
+ "49671": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Chemistry; a second science or Maths preferred; IB 34 points (HL 6,5,5 incl. Chemistry HL; second science or Maths at HL preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Chemistry HL; second science or Maths at HL preferred",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "ABB incl. Chemistry; a second science or Maths preferred. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/chemistry-with-computing-bsc/",
+  "confidence": "medium"
+ },
+ "49673": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths, or AAB incl. Maths and Computer Science; IB 37 points (37 with HL 6,6,6 incl. Maths HL; or 35 with HL 6,6,5 incl. Maths HL and Computer Science HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "37 with HL 6,6,6 incl. Maths HL; or 35 with HL 6,6,5 incl. Maths HL and Computer Science HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAA incl. Maths, or AAB incl. Maths and Computer Science. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/computer-science-bsc/",
+  "confidence": "medium"
+ },
+ "49674": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths, or AAB incl. Maths and Computer Science; IB 37 points (37 with HL 6,6,6 incl. Maths HL; or 35 with HL 6,6,5 incl. Maths HL and Computer Science HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "37 with HL 6,6,6 incl. Maths HL; or 35 with HL 6,6,5 incl. Maths HL and Computer Science HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAA incl. Maths, or AAB incl. Maths and Computer Science. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/computer-science-and-artificial-intelligence-bsc/",
+  "confidence": "medium"
+ },
+ "49675": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths, or AAB incl. Maths and Computer Science; IB 37 points (37 with HL 6,6,6 incl. Maths HL; or 35 with HL 6,6,5 incl. Maths HL and Computer Science HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "37 with HL 6,6,6 incl. Maths HL; or 35 with HL 6,6,5 incl. Maths HL and Computer Science HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAA incl. Maths, or AAB incl. Maths and Computer Science. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/computer-science-and-cyber-security-bsc/",
+  "confidence": "medium"
+ },
+ "49676": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths, or AAB incl. grade A in Maths and at least B in Computer Science; IB 37 points (37 with HL 6,6,6 incl. Maths HL; or 35 with HL 6,6,5 incl. HL Maths 6 and HL Computer Science 5)",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "37 with HL 6,6,6 incl. Maths HL; or 35 with HL 6,6,5 incl. HL Maths 6 and HL Computer Science 5",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAA incl. Maths, or AAB incl. grade A in Maths and at least B in Computer Science. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/computer-science-and-mathematics-bsc/",
+  "confidence": "medium"
+ },
+ "49677": {
+  "stem": true,
+  "typical_offer": "A-level AAB; IB 35 points (HL 6,6,5; no specific HL subjects listed)",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5; no specific HL subjects listed",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAB. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": null,
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/computing-and-management-bsc/",
+  "confidence": "medium"
+ },
+ "49678": {
+  "stem": true,
+  "typical_offer": "A-level BBB or ABC; IB 32 points (HL 5,5,5; no specific HL subjects listed)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL 5,5,5; no specific HL subjects listed",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "BBB or ABC. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": null,
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/construction-engineering-management/",
+  "confidence": "medium"
+ },
+ "49684": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and Physics; IB 35 points (HL 6,6,5 incl. Maths and Physics at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl. Maths and Physics at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAB incl. Maths and Physics. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/engineering-physics-bsc/",
+  "confidence": "medium"
+ },
+ "49691": {
+  "stem": false
+ },
+ "49705": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths and Physics; IB 35 points (HL 6,6,5 incl. Maths and Physics at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl. Maths and Physics at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAB incl. Maths and Physics. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/physics-with-computing-bsc/",
+  "confidence": "medium"
+ },
+ "49720": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Chemistry; a second science or Maths preferred; IB 35 points (HL 6,6,5 incl. Chemistry HL; second science or Maths at HL preferred)",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL 6,6,5 incl. Chemistry HL; second science or Maths at HL preferred",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAB incl. Chemistry; a second science or Maths preferred. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/chemistry-with-computing-mchem/",
+  "confidence": "medium"
+ },
+ "49723": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 37 points (HL 6,6,6 incl. Maths and Physics at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 6,6,6 incl. Maths and Physics at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAA incl. Maths and Physics. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/engineering-physics-mphys/",
+  "confidence": "medium"
+ },
+ "49726": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 37 points (HL 6,6,6 incl. Maths and Physics at HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL 6,6,6 incl. Maths and Physics at HL",
+   "note": "IB holders considered for direct entry; offers listed are UK typical offers"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3.2/4.0 high school GPA plus any three of AP exams, IB HL, college credit (one semester, 3 credits) or Honors classes. AP 5 = A*/A, 4 = B, 3 = C at A-level. Where an A-level subject is required it must be met via the relevant AP exam or IB HL; for A-level Maths, AP Calculus BC is required (Calculus AB not accepted for this).",
+   "note": "Institution-wide USA rules apply to every programme"
+  },
+  "tests": "SAT/ACT not otherwise required; where GCSE Maths is required: SAT I Math 570+ or ACT 27 overall and 26 in each component",
+  "math_test": {
+   "name": "SAT I Math / ACT",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 570 or ACT 27 overall (26 each component)",
+   "details": "Applies to GCSE Maths requirement for US applicants"
+  },
+  "a_level": "AAA incl. Maths and Physics. GCSE Maths and English Language (grade 4/C or higher) also required",
+  "turkish_route": "Anadolu Lisesi or Fen Lisesi diploma accepted, typically with a pass mark above 80%; Lise Bitirme Diplomasi considered for first-year entry case by case; A-level or IB holders considered for direct entry; SAT/AP follow the USA rules; ONCAMPUS foundation year available",
+  "prerequisite_maths": "Maths required at A-level/IB HL (see offer)",
+  "source_url": "https://www.lboro.ac.uk/study/undergraduate/courses/physics-with-computing-mphys/",
+  "confidence": "medium"
+ }
+}
