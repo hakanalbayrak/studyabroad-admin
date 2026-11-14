@@ -4,7 +4,8 @@
 (function () {
   var MARK = 'Maths/IB/AP requirements (international applicants):';
   var ADM = 'Admission (non-EU / Turkish applicants):';
-  var LABELS = { 'Admission': 'Kabul', 'IB': 'IB', 'AP': 'AP', 'A-level': 'A-Level', 'Maths test': 'Matematik testi',
+  var VER = 'Official entry requirements (verified on school website):';
+  var LABELS = { 'English': 'İngilizce', 'Academic': 'Akademik şart', 'Application fee': 'Başvuru ücreti', 'Turkey': 'Türkiye başvuruları', 'Programme note': 'Program notu', 'Source': 'Resmi kaynak', 'Admission': 'Kabul', 'IB': 'IB', 'AP': 'AP', 'A-level': 'A-Level', 'Maths test': 'Matematik testi',
     'Maths prerequisite': 'Matematik ön koşulu', 'Turkish Lise diploma': 'Türk Lise diploması', 'Note': 'Not', 'Typical offer': 'Tipik giriş şartı', 'Tests': 'Sınavlar' };
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function split(block) {
@@ -14,6 +15,13 @@
   }
   function rows(desc) {
     desc = desc || '';
+    var ver = [], vi = desc.indexOf(VER);
+    if (vi >= 0) {
+      var vb = desc.slice(vi + VER.length); desc = desc.slice(0, vi);
+      var vre = /(?:^|\s)(English|Academic|Application fee|Turkey|Programme note|Source):\s/g, vm, vh = [];
+      while ((vm = vre.exec(vb))) vh.push({ label: vm[1], at: vm.index + vm[0].length, start: vm.index });
+      ver = vh.map(function (h, i) { return { label: h.label, text: vb.slice(h.at, i + 1 < vh.length ? vh[i + 1].start : vb.length).trim() }; });
+    }
     var out = [], i = desc.indexOf(MARK), pre = i >= 0 ? desc.slice(0, i) : desc;
     var a = pre.indexOf(ADM);
     if (a >= 0) {
@@ -22,7 +30,7 @@
       if (t) out.push({ label: 'Admission', text: t });
     }
     if (i >= 0) out = out.concat(split(desc.slice(i + MARK.length)));
-    return out.filter(function (r) { return r.text; });
+    return out.concat(ver).filter(function (r) { return r.text; });
   }
   function html(p) {
     var r = rows(p && p.description_en);
