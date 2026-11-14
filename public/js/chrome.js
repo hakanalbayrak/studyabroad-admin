@@ -79,3 +79,37 @@
     }).catch(function () { /* optional */ });
   } catch (e) { /* storage unavailable */ }
 })();
+
+
+/* Staff-only agency notes on program cards (admin + advisor). The endpoint rejects anyone else. */
+(function () {
+  try {
+    var role = localStorage.getItem('sa_role'), token = localStorage.getItem('sa_token');
+    if (!token || (role !== 'admin' && role !== 'advisor')) return;
+    var st = document.createElement('style');
+    st.textContent = '.staff-note{margin-top:10px;padding:8px 10px;border:1.5px dashed var(--muted,#667085);border-radius:8px;font-size:.82rem;line-height:1.45;overflow-wrap:anywhere}.staff-note b{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted,#667085);margin-bottom:2px}';
+    document.head.appendChild(st);
+    var cache = {}, pending = {};
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    function apply() {
+      var cards = document.querySelectorAll('.prog-card:not([data-note-done])'), ids = [];
+      cards.forEach(function (card) {
+        var a = card.querySelector('a[href*="program="]'); var m = a && a.getAttribute('href').match(/program=(\d+)/);
+        card.dataset.noteDone = '1'; if (!m) return; card.dataset.pid = m[1]; if (!(m[1] in cache)) ids.push(m[1]);
+      });
+      function paint() {
+        document.querySelectorAll('.prog-card[data-pid]:not([data-note-painted])').forEach(function (card) {
+          var n = cache[card.dataset.pid]; if (n === undefined) return; card.dataset.notePainted = '1';
+          if (!n) return; var d = document.createElement('div'); d.className = 'staff-note';
+          d.innerHTML = '<b>Ajans notu (sadece personel)</b>' + esc(n.note);
+          var actions = card.querySelector('.prog-actions'); if (actions) actions.insertAdjacentElement('beforebegin', d); else card.appendChild(d);
+        });
+      }
+      if (!ids.length) { paint(); return; }
+      fetch('/api/staff/program-notes?ids=' + ids.join(','), { headers: { Authorization: 'Bearer ' + token } }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+        ids.forEach(function (i) { cache[i] = (d && d.map && d.map[i]) || null; }); paint();
+      }).catch(function () { /* optional */ });
+    }
+    apply(); var t; new MutationObserver(function () { clearTimeout(t); t = setTimeout(apply, 150); }).observe(document.body, { childList: true, subtree: true });
+  } catch (e) { /* storage unavailable */ }
+})();

@@ -1184,6 +1184,16 @@ app.put('/api/admin/providers/:entityId', requireRole('admin'), async (req, res)
   try { res.json({ ok: true, providers: await providersUtil.setProviders(parseInt(req.params.entityId), (req.body || {}).providers) }); }
   catch (e) { res.status(500).json({ error: e.message }); }
 });
+// Staff only (admin + advisor): internal agency notes per program (minimum requirements). Never exposed publicly.
+const agencyNotes = require('./utils/agencyNotes');
+app.get('/api/staff/program-notes', requireRole('admin', 'advisor'), async (req, res) => {
+  try { res.set('Cache-Control', 'private, max-age=60'); res.json({ map: await agencyNotes.getMany(String(req.query.ids || '').split(',')) }); }
+  catch (e) { res.status(500).json({ error: e.message }); }
+});
+app.put('/api/admin/program-notes', requireRole('admin'), async (req, res) => {
+  try { res.json({ ok: true, saved: await agencyNotes.setMany((req.body || {}).items, (req.body || {}).source) }); }
+  catch (e) { res.status(500).json({ error: e.message }); }
+});
 app.use('/api/entities', requireRole('admin'), require('./routes/entities'));
 app.use('/api/locations', requireRole('admin'), require('./routes/locations'));
 app.use('/api/programs', requireRole('admin'), require('./routes/programs'));
