@@ -1705,3 +1705,9 @@ Check: (1) The catalogue's existing INTO Manchester / London fees are 1.5-2x INT
 - Cards show the block via public/js/progreq.js ("Kabul şartları" panel; labels incl. Typical offer and Tests).
 - Known weak spots (see the "STEM Data Gaps" artifact): sites blocking automated access (Cardiff, City, Kingston, Leeds, Hull, NTU, QUB, ACU/CQU/CSU...), 37 small US institutions with only test policy, German private institutions (Constructor, Macromedia, MUDT, MDH, XU, Fresenius), Turkish Lise rule missing for ~35% of programmes. AP Calculus AB vs BC: stated only where the source states it.
 - Duplicates risk: Bath/Royal Holloway/Loughborough/Surrey list AP Calculus BC specifically; many UK universities state no variant.
+
+## 2026-11-14 — Agency notes (Excel "Minimum Requirements")
+- Source: owner's UniversitiesToList.xlsx (20,865 rows; Excel itself is NOT in the repo). 20,429 programs matched by school + program name; 535 Excel rows unmatched (docs/data/agency/excel_unmatched_rows.json).
+- Stored staff-only in table program_agency_notes (utils/agencyNotes.js; auto-created). GET /api/staff/program-notes (admin+advisor) and PUT /api/admin/program-notes (admin). public/js/chrome.js shows the note as a dashed "Ajans notu (sadece personel)" box on program cards for admin/advisor logins; visitors get 401 and nothing in public API responses.
+- Note text = Minimum Requirements + Notes + application fee + deadline from the Excel. Not copied into public description/gpa fields on purpose.
+- Gap-list (STEM Data Gaps artifact): 56 institutions prefilled with Excel agency data in the note boxes; 51 have no Excel data.
