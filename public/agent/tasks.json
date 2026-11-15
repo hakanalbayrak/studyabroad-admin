@@ -1,0 +1,530 @@
+{
+ "instructions": "# Task: collect official entry requirements (browser agent)\n\nFor every item in openclaw_tasks.json (school + level: bachelor/master), open the school's OFFICIAL website in a real browser\n(admissions / international entry requirements / English language requirements / application fees pages; programme pages if the\ngeneral pages show nothing) and record what the page says for INTERNATIONAL applicants.\n\nRules\n- Official institution domains only. No aggregators, agents, forums.\n- Copy only what the page states. If a value is not published, use null. Never guess, never infer from another school.\n- Record the exact URL of the page each value came from.\n- Note programme-specific higher requirements (medicine, law, MBA, arts) in programme_variance.\n- Report TOEFL on the scale the page uses (old 0-120 or new 1-6 scale from Jan 2026) and say which.\n\nOutput: a JSON list, one object per input item, same order:\n{\"school\",\"level\",\n \"english\": {\"IELTS\":null,\"TOEFL\":null,\"PTE\":null,\"Duolingo\":null},\n \"english_note\": \"\",\n \"academic\": \"one factual sentence on the general academic entry requirement for international applicants\",\n \"turkish\": \"country-specific requirement for Turkey (Lise diploma %, minimum GPA) if published, else null\",\n \"application_fee\": \"amount with currency, 'none' if explicitly free, else null\",\n \"programme_variance\": null,\n \"source_url\": \"main official page used\",\n \"page_status\": \"read | blocked | not_found | js_empty\",\n \"confidence\": \"high | medium | low\"}\n\nSubmit results: POST https://paneledu.com/api/agent/results with header X-Agent-Token: <token you were given>, Content-Type: application/json, body = a JSON list of result objects (send each school as soon as it is done, 1-10 objects per request). The server answers {\"ok\":true,\"saved\":N}.\n",
+ "tasks": [
+  {
+   "school": "Central Queensland University",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 28,
+   "tried_url": "https://www.cqu.edu.au/study/international/entry-requirements/english-requirements"
+  },
+  {
+   "school": "Central Queensland University",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 16,
+   "tried_url": "https://www.cqu.edu.au/study/international/entry-requirements/english-requirements"
+  },
+  {
+   "school": "Charles Sturt University",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 28,
+   "tried_url": "https://study.csu.edu.au/international/how-to-apply/course-entry-requirements"
+  },
+  {
+   "school": "Charles Sturt University",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 11,
+   "tried_url": "https://study.csu.edu.au/international/how-to-apply/course-entry-requirements"
+  },
+  {
+   "school": "JCU Brisbane",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 4,
+   "tried_url": "https://www.jcu.edu.au/applying-to-jcu/entry-requirements/academic-and-english-language-entry-requirements"
+  },
+  {
+   "school": "JCU Brisbane",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 10,
+   "tried_url": "https://www.jcu.edu.au/applying-to-jcu/entry-requirements/academic-and-english-language-entry-requirements"
+  },
+  {
+   "school": "National Academy of Professional Studies",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 2,
+   "tried_url": "https://naps.edu.au/rfilemanager/NAPS%20Application%20Form_2024Nov.pdf"
+  },
+  {
+   "school": "The University of Notre Dame Australia",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 55,
+   "tried_url": "https://www.notredame.edu.au/study/applications-and-admissions/admission-requirements/english-language-proficiency-requirements"
+  },
+  {
+   "school": "The University of Western Australia",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 174,
+   "tried_url": "https://www.uwa.edu.au/study/how-to-apply/english-language-requirements"
+  },
+  {
+   "school": "The University of Western Australia",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 41,
+   "tried_url": "https://www.uwa.edu.au/study/how-to-apply/english-language-requirements"
+  },
+  {
+   "school": "University of Wollongong",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 77,
+   "tried_url": "https://www.uow.edu.au/study/international/requirements/english/"
+  },
+  {
+   "school": "Brock University",
+   "level": "master",
+   "country": "Canada",
+   "programmes": 2,
+   "tried_url": "https://brocku.ca/admissions/english-proficiency/"
+  },
+  {
+   "school": "Fraser International College (SFU)",
+   "level": "bachelor",
+   "country": "Canada",
+   "programmes": 55,
+   "tried_url": "https://www.fraseric.ca/admissions/english-requirements/"
+  },
+  {
+   "school": "St. Clair College Windsor",
+   "level": "bachelor",
+   "country": "Canada",
+   "programmes": 2,
+   "tried_url": "https://www.stclaircollege.ca/international/how-to-apply"
+  },
+  {
+   "school": "University of Victoria",
+   "level": "master",
+   "country": "Canada",
+   "programmes": 10,
+   "tried_url": "https://www.uvic.ca/graduate/"
+  },
+  {
+   "school": "University of Nicosia",
+   "level": "master",
+   "country": "Cyprus",
+   "programmes": 10,
+   "tried_url": "https://www.unic.ac.cy/study-at-unic/admission-requirements"
+  },
+  {
+   "school": "Aivancity School for Technology, Business & Society",
+   "level": "bachelor",
+   "country": "France",
+   "programmes": 1,
+   "tried_url": "https://aivancity.ai/en/program/programme-grande-ecole/financements"
+  },
+  {
+   "school": "Aivancity School for Technology, Business & Society",
+   "level": "master",
+   "country": "France",
+   "programmes": 3,
+   "tried_url": "https://aivancity.ai/en/program/msc-data-management/admissions"
+  },
+  {
+   "school": "ECEMA BUSINESS SCHOOL",
+   "level": "master",
+   "country": "France",
+   "programmes": 1,
+   "tried_url": "https://ecema.fr/formations/masteres/mastere-developpement-commerce-international/"
+  },
+  {
+   "school": "Ecole de Management Applique, Paris",
+   "level": "bachelor",
+   "country": "France",
+   "programmes": 3,
+   "tried_url": null
+  },
+  {
+   "school": "Ecole de Management Applique, Paris",
+   "level": "master",
+   "country": "France",
+   "programmes": 4,
+   "tried_url": null
+  },
+  {
+   "school": "ISC Paris",
+   "level": "bachelor",
+   "country": "France",
+   "programmes": 4,
+   "tried_url": "https://www.iscparis.com/en/program/bachelor-of-business-administration-bba/"
+  },
+  {
+   "school": "Rennes School of Business",
+   "level": "master",
+   "country": "France",
+   "programmes": 11,
+   "tried_url": "https://www.rennes-sb.com/programmes/master-of-science/master-in-management/"
+  },
+  {
+   "school": "Sup de Luxe Paris",
+   "level": "bachelor",
+   "country": "France",
+   "programmes": 1,
+   "tried_url": "https://supdeluxe.com/en/admissions-supdeluxe"
+  },
+  {
+   "school": "Sup de Luxe Paris",
+   "level": "master",
+   "country": "France",
+   "programmes": 3,
+   "tried_url": "https://supdeluxe.com/en/admissions-supdeluxe"
+  },
+  {
+   "school": "TOP Tech College",
+   "level": "master",
+   "country": "France",
+   "programmes": 8,
+   "tried_url": null
+  },
+  {
+   "school": "GISMA University Berlin",
+   "level": "master",
+   "country": "Germany",
+   "programmes": 3,
+   "tried_url": "https://web.gisma.com/study-bachelors-in-germany"
+  },
+  {
+   "school": "Macromedia University",
+   "level": "master",
+   "country": "Germany",
+   "programmes": 10,
+   "tried_url": "https://www.macromedia-fachhochschule.de/en/en/admission"
+  },
+  {
+   "school": "Whitecliffe University of Applied Sciences",
+   "level": "bachelor",
+   "country": "Germany",
+   "programmes": 5,
+   "tried_url": "https://whitecliffe.de/en/admissions/international/"
+  },
+  {
+   "school": "Whitecliffe University of Applied Sciences",
+   "level": "master",
+   "country": "Germany",
+   "programmes": 6,
+   "tried_url": "https://whitecliffe.de/en/admissions/international/"
+  },
+  {
+   "school": "XU Exponential University",
+   "level": "bachelor",
+   "country": "Germany",
+   "programmes": 5,
+   "tried_url": "https://xu-university.com/"
+  },
+  {
+   "school": "University of Szeged",
+   "level": "bachelor",
+   "country": "Hungary",
+   "programmes": 18,
+   "tried_url": "https://arts.u-szeged.hu/english/education/application-procedure/application-procedure"
+  },
+  {
+   "school": "University College Dublin",
+   "level": "bachelor",
+   "country": "Ireland",
+   "programmes": 44,
+   "tried_url": null
+  },
+  {
+   "school": "University College Dublin",
+   "level": "master",
+   "country": "Ireland",
+   "programmes": 194,
+   "tried_url": null
+  },
+  {
+   "school": "University of Galway (aka. NUI Galway)",
+   "level": "bachelor",
+   "country": "Ireland",
+   "programmes": 57,
+   "tried_url": "https://www.universityofgalway.ie/global-galway/studyinireland/entryrequirements/"
+  },
+  {
+   "school": "University of Galway (aka. NUI Galway)",
+   "level": "master",
+   "country": "Ireland",
+   "programmes": 105,
+   "tried_url": "https://www.universityofgalway.ie/global-galway/studyinireland/entryrequirements/"
+  },
+  {
+   "school": "GBS Malta",
+   "level": "bachelor",
+   "country": "Malta",
+   "programmes": 1,
+   "tried_url": null
+  },
+  {
+   "school": "GBS Malta",
+   "level": "master",
+   "country": "Malta",
+   "programmes": 7,
+   "tried_url": null
+  },
+  {
+   "school": "South Europe College",
+   "level": "master",
+   "country": "Malta",
+   "programmes": 7,
+   "tried_url": null
+  },
+  {
+   "school": "Fontys University of Applied Science",
+   "level": "bachelor",
+   "country": "Netherlands",
+   "programmes": 24,
+   "tried_url": null
+  },
+  {
+   "school": "Fontys University of Applied Science",
+   "level": "master",
+   "country": "Netherlands",
+   "programmes": 10,
+   "tried_url": null
+  },
+  {
+   "school": "Haarlem Campus (SRH University diploma)",
+   "level": "bachelor",
+   "country": "Netherlands",
+   "programmes": 3,
+   "tried_url": null
+  },
+  {
+   "school": "Haarlem Campus (SRH University diploma)",
+   "level": "master",
+   "country": "Netherlands",
+   "programmes": 1,
+   "tried_url": null
+  },
+  {
+   "school": "Radboud University",
+   "level": "master",
+   "country": "Netherlands",
+   "programmes": 86,
+   "tried_url": null
+  },
+  {
+   "school": "EAE Business School (Madrid and Barcelona)",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 1,
+   "tried_url": null
+  },
+  {
+   "school": "EAE Business School (Madrid and Barcelona)",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 12,
+   "tried_url": "https://www.eae.es/en/full-time/master-international-business/admission-process-and-degree"
+  },
+  {
+   "school": "ESEI Business School",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 9,
+   "tried_url": null
+  },
+  {
+   "school": "European School of Economics - Madrid",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 6,
+   "tried_url": null
+  },
+  {
+   "school": "European School of Economics - Madrid",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 5,
+   "tried_url": null
+  },
+  {
+   "school": "Toulouse Business School (TBS) Barcelona",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 1,
+   "tried_url": null
+  },
+  {
+   "school": "Toulouse Business School (TBS) Barcelona",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 12,
+   "tried_url": null
+  },
+  {
+   "school": "UCAM (Murcia)",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 8,
+   "tried_url": null
+  },
+  {
+   "school": "UCAM (Murcia)",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 10,
+   "tried_url": null
+  },
+  {
+   "school": "UDIT (University of Design and Technology) Madrid",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 4,
+   "tried_url": null
+  },
+  {
+   "school": "UDIT (University of Design and Technology) Madrid",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 1,
+   "tried_url": null
+  },
+  {
+   "school": "Universidad Europea de Madrid",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 32,
+   "tried_url": null
+  },
+  {
+   "school": "Universidad Europea de Madrid",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 22,
+   "tried_url": null
+  },
+  {
+   "school": "Ajman University",
+   "level": "master",
+   "country": "United Arab Emirates",
+   "programmes": 11,
+   "tried_url": "https://www.ajman.ac.ae/en/admissions/undergraduate/international-students"
+  },
+  {
+   "school": "Hult Business School London",
+   "level": "master",
+   "country": "United Kingdom",
+   "programmes": 5,
+   "tried_url": "https://www.hult.edu/masters/"
+  },
+  {
+   "school": "London Metropolitan University",
+   "level": "bachelor",
+   "country": "United Kingdom",
+   "programmes": 93,
+   "tried_url": "https://www.londonmet.ac.uk/international/applying/countries/students-from-turkiye/"
+  },
+  {
+   "school": "University of Liverpool (EB UK)",
+   "level": "bachelor",
+   "country": "United Kingdom",
+   "programmes": 131,
+   "tried_url": "https://www.liverpool.ac.uk/international/english-language-requirements/"
+  },
+  {
+   "school": "University of Liverpool (EB UK)",
+   "level": "master",
+   "country": "United Kingdom",
+   "programmes": 117,
+   "tried_url": "https://www.liverpool.ac.uk/international/english-language-requirements/"
+  },
+  {
+   "school": "University of Surrey (EB UK)",
+   "level": "bachelor",
+   "country": "United Kingdom",
+   "programmes": 177,
+   "tried_url": "https://www.surrey.ac.uk/apply/international/english-language-requirements"
+  },
+  {
+   "school": "University of Surrey (EB UK)",
+   "level": "master",
+   "country": "United Kingdom",
+   "programmes": 79,
+   "tried_url": "https://www.surrey.ac.uk/apply/international/english-language-requirements"
+  },
+  {
+   "school": "Auburn University",
+   "level": "master",
+   "country": "United States",
+   "programmes": 22,
+   "tried_url": "https://graduate.auburn.edu/admissions/international-instructions.php"
+  },
+  {
+   "school": "Cleveland State University",
+   "level": "master",
+   "country": "United States",
+   "programmes": 15,
+   "tried_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements"
+  },
+  {
+   "school": "Florida Atlantic University",
+   "level": "master",
+   "country": "United States",
+   "programmes": 16,
+   "tried_url": "https://www.fau.edu/admissions/international/how-to-apply/english-proficiency-tests/"
+  },
+  {
+   "school": "Gonzaga University",
+   "level": "master",
+   "country": "United States",
+   "programmes": 4,
+   "tried_url": "https://www.gonzaga.edu/admission/international-admission/international-student-applications/international-first-year-application-checklist"
+  },
+  {
+   "school": "Palm Beach Atlantic University",
+   "level": "bachelor",
+   "country": "United States",
+   "programmes": 60,
+   "tried_url": "https://www.pba.edu/admissions/undergraduate/international/"
+  },
+  {
+   "school": "Pepperdine Graziadio Business School",
+   "level": "master",
+   "country": "United States",
+   "programmes": 7,
+   "tried_url": "https://bschool.pepperdine.edu/admission/international-students/"
+  },
+  {
+   "school": "Queens College at CUNY",
+   "level": "master",
+   "country": "United States",
+   "programmes": 16,
+   "tried_url": "https://www.qc.cuny.edu/admissions/international-admissions/"
+  },
+  {
+   "school": "St. George's University (SGU)",
+   "level": "bachelor",
+   "country": "United States",
+   "programmes": 10,
+   "tried_url": "https://www.sgu.edu/international-students/"
+  },
+  {
+   "school": "St. George's University (SGU)",
+   "level": "master",
+   "country": "United States",
+   "programmes": 6,
+   "tried_url": "https://www.sgu.edu/international-students/"
+  },
+  {
+   "school": "University of Wisconsin-River Falls",
+   "level": "bachelor",
+   "country": "United States",
+   "programmes": 55,
+   "tried_url": "https://www.uwrf.edu/admissions/international"
+  },
+  {
+   "school": "WashU Law",
+   "level": "master",
+   "country": "United States",
+   "programmes": 6,
+   "tried_url": "https://law.washu.edu/academics/llm-mls-jsd-programs-overview/llm-for-international-lawyers-apply/"
+  }
+ ]
+}

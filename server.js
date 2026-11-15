@@ -1194,6 +1194,10 @@ app.put('/api/admin/program-notes', requireRole('admin'), async (req, res) => {
   try { res.json({ ok: true, saved: await agencyNotes.setMany((req.body || {}).items, (req.body || {}).source) }); }
   catch (e) { res.status(500).json({ error: e.message }); }
 });
+const agentHandoff = require('./routes/agent');
+app.use('/api/agent', agentHandoff.pub);
+app.post('/api/admin/agent-token', requireRole('admin'), agentHandoff.createToken);
+app.get('/api/admin/agent-results', requireRole('admin'), agentHandoff.listResults);
 app.use('/api/entities', requireRole('admin'), require('./routes/entities'));
 app.use('/api/locations', requireRole('admin'), require('./routes/locations'));
 app.use('/api/programs', requireRole('admin'), require('./routes/programs'));
