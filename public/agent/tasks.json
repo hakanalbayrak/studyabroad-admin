@@ -1,305 +1,6 @@
 {
- "instructions": "# Task: collect official entry requirements (browser agent) - round 2\n\nFor every item in openclaw_tasks.json (school + level: bachelor/master), open the school's OFFICIAL website in a real browser\n(admissions / international entry requirements / English language requirements / application fees pages; programme pages if the\ngeneral pages show nothing) and record what the page says for INTERNATIONAL applicants.\n\nRules\n- Official institution domains only. No aggregators, agents, forums.\n- Copy only what the page states. If a value is not published, use null. Never guess, never infer from another school.\n- Record the exact URL of the page each value came from.\n- Note programme-specific higher requirements (medicine, law, MBA, arts) in programme_variance.\n- Report TOEFL on the scale the page uses (old 0-120 or new 1-6 scale from Jan 2026) and say which.\n\nOutput: a JSON list, one object per input item, same order:\n{\"school\",\"level\",\n \"english\": {\"IELTS\":null,\"TOEFL\":null,\"PTE\":null,\"Duolingo\":null},\n \"english_note\": \"\",\n \"academic\": \"one factual sentence on the general academic entry requirement for international applicants\",\n \"turkish\": \"country-specific requirement for Turkey (Lise diploma %, minimum GPA) if published, else null\",\n \"application_fee\": \"amount with currency, 'none' if explicitly free, else null\",\n \"programme_variance\": null,\n \"source_url\": \"main official page used\",\n \"page_status\": \"read | blocked | not_found | js_empty\",\n \"confidence\": \"high | medium | low\"}\n\nRound 2 guidance\n- tasks = phase 1 (priority): items where earlier attempts found nothing or only low-confidence data. last_attempt / last_note say what happened before.\n- Many pages hide tables inside accordions, tabs or \"show more\" buttons: expand them in the browser and read the full DOM text (including hidden panels), and also open linked PDFs (policy / fee PDFs).\n- If the English table is not on the general page, look at the programme pages, \"international students\", \"how to apply\", \"fees\", and country-specific pages (Turkey).\n- If a site shows a CAPTCHA or blocks the browser, do not try to bypass it: report page_status \"blocked\" and move on.\n- If the school's official domain is unknown, find it via a normal web search, then verify the page footer or about page; do not use agent/aggregator sites.\n- Keep a polite pace (a few seconds between page loads).\n- tasks_phase2 (only after phase 1 is finished): the English scores are already known; only find the official application_fee (amount + currency, 'none' if explicitly free) plus source_url. Return the same JSON shape with english fields null.\n",
+ "instructions": "# Task (round 3): find the official APPLICATION FEE for international applicants\n\nFor every item in \"tasks\" (school + level bachelor/master) find the application fee (the fee paid when submitting the application; not tuition, deposit, registration or visa fee) on the school's OFFICIAL website.\n\nWhere to look\n- Dedicated \"Tuition & fees\", \"Fees and costs\", \"Cost of attendance\", \"How to apply\", \"Apply\" and \"International admissions\" pages. Application fees are often listed there, not on the entry-requirements page.\n- Fee pages with selectors (country / programme / level): choose Turkey (or \"international / non-EU\") and the matching level; if fees differ by programme, record the typical one and describe the variation in application_fee_note.\n- Fee schedules published as PDF or spreadsheet on the school's own site (\"fee schedule\", \"fees list\", \"tuition and fees 20xx-xx\"): download and read them. Search the school's site with: site:<school-domain> application fee.\n- Accordions, tabs and \"show more\" blocks: expand them and read hidden panels too.\n- Official domains only; no agent or aggregator sites. If a site shows a CAPTCHA or blocks the browser, do not bypass it: page_status \"blocked\" and move on.\n- If the school explicitly says there is no application fee, write \"none\". If the fee is waived for some applicants, give the standard fee and say so in the note.\n\nOutput: JSON list, one object per item, same order, no extra text:\n{\"school\",\"level\",\"application_fee\":\"amount with currency e.g. 'USD 75', or 'none', or null if not found\",\n \"application_fee_note\":\"short factual note on variations (programme, country, early-bird, waiver) or null\",\n \"source_url\":\"exact page or PDF where you read it\",\"page_status\":\"read | blocked | not_found | js_empty\",\"confidence\":\"high | medium | low\",\n \"english\":{\"IELTS\":null,\"TOEFL\":null,\"PTE\":null,\"Duolingo\":null}}\nNever guess. If you do not see the fee on an official page, application_fee is null.\n\nSubmit: POST https://paneledu.com/api/agent/results with header X-Agent-Token: <token you were given>, Content-Type: application/json, body = JSON list of result objects (1-10 per request, send each batch as soon as it is done). Expected answer: {\"ok\":true,\"saved\":N}.\n",
  "tasks": [
-  {
-   "school": "University of Wollongong",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 77,
-   "last_url": "https://www.uow.edu.au/study/international/requirements/english/",
-   "last_attempt": "read",
-   "last_note": "Accepted: Cambridge C1/C2, Duolingo (coursework only), IELTS Academic, LanguageCert, OET (health), PTE Academic, TOEFL iBT. Not accepted: IELTS Indicator/Online, TOEFL Home Edition. Page gives equival"
-  },
-  {
-   "school": "Brock University",
-   "level": "master",
-   "country": "Canada",
-   "programmes": 2,
-   "last_url": "https://brocku.ca/admissions/english-proficiency/",
-   "last_attempt": "read",
-   "last_note": "The page supplied covers undergraduate English requirements only (IELTS 6.5, no band below 6.0; TOEFL iBT 88; Duolingo 110; PTE 58 for general undergraduate). Graduate requirements are not on this pag"
-  },
-  {
-   "school": "Aivancity School for Technology, Business & Society",
-   "level": "master",
-   "country": "France",
-   "programmes": 3,
-   "last_url": "https://aivancity.ai/en/program/msc-data-management/admissions",
-   "last_attempt": "js_empty",
-   "last_note": "Admissions details are not present in the loaded page text (only navigation and programme list)."
-  },
-  {
-   "school": "ECEMA BUSINESS SCHOOL",
-   "level": "master",
-   "country": "France",
-   "programmes": 1,
-   "last_url": "https://ecema.fr/formations/masteres/mastere-developpement-commerce-international/",
-   "last_attempt": "blocked",
-   "last_note": "Site did not load: TLS certificate error (ERR_CERT_COMMON_NAME_INVALID: certificate is for a different address). Not bypassed."
-  },
-  {
-   "school": "ISC Paris",
-   "level": "bachelor",
-   "country": "France",
-   "programmes": 4,
-   "last_url": "https://www.iscparis.com/en/program/bachelor-of-business-administration-bba/",
-   "last_attempt": "read",
-   "last_note": "No English score or fee figures found on the programme page."
-  },
-  {
-   "school": "Rennes School of Business",
-   "level": "master",
-   "country": "France",
-   "programmes": 11,
-   "last_url": "https://www.rennes-sb.com/programmes/master-of-science/master-in-management/",
-   "last_attempt": "read",
-   "last_note": "No English score figures on this programme page. (Rennes bachelor page lists TOEFL >80, TOEIC >750, IELTS >6.0 or a free placement test, but that is the bachelor programme.)"
-  },
-  {
-   "school": "Sup de Luxe Paris",
-   "level": "bachelor",
-   "country": "France",
-   "programmes": 1,
-   "last_url": "https://supdeluxe.com/en/admissions-supdeluxe",
-   "last_attempt": "read",
-   "last_note": "Admission steps include written tests on general knowledge and English (depending on programme) and a motivational interview; no minimum test scores or fee published."
-  },
-  {
-   "school": "Sup de Luxe Paris",
-   "level": "master",
-   "country": "France",
-   "programmes": 3,
-   "last_url": "https://supdeluxe.com/en/admissions-supdeluxe",
-   "last_attempt": "read",
-   "last_note": "Admission steps include written tests on general knowledge and English (depending on programme) and a motivational interview; no minimum test scores or fee published."
-  },
-  {
-   "school": "TOP Tech College",
-   "level": "master",
-   "country": "France",
-   "programmes": 8,
-   "last_url": null,
-   "last_attempt": "not_found",
-   "last_note": "No official TOP Tech College website or admissions page could be located (only agency/aggregator listings)."
-  },
-  {
-   "school": "GISMA University Berlin",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 3,
-   "last_url": "https://web.gisma.com/study-bachelors-in-germany",
-   "last_attempt": "read",
-   "last_note": "Page supplied is the bachelor's page (IELTS 6.0 overall, no component below 5.5 for the bachelor programme); no master's English requirement on this page."
-  },
-  {
-   "school": "GBS Malta",
-   "level": "bachelor",
-   "country": "Malta",
-   "programmes": 1,
-   "last_url": null,
-   "last_attempt": "read",
-   "last_note": "English test scores/entry requirements are not published on the application, course listing or test-your-English pages read (a free 'Test Your English' page exists)."
-  },
-  {
-   "school": "GBS Malta",
-   "level": "master",
-   "country": "Malta",
-   "programmes": 7,
-   "last_url": null,
-   "last_attempt": "read",
-   "last_note": "English test scores/entry requirements are not published on the application, course listing or test-your-English pages read (a free 'Test Your English' page exists)."
-  },
-  {
-   "school": "South Europe College",
-   "level": "master",
-   "country": "Malta",
-   "programmes": 7,
-   "last_url": null,
-   "last_attempt": "not_found",
-   "last_note": "No official South Europe College website could be located; only aggregator listings were found."
-  },
-  {
-   "school": "EAE Business School (Madrid and Barcelona)",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 1,
-   "last_url": null,
-   "last_attempt": "not_found",
-   "last_note": "No bachelor admission page with English or entry requirements could be located on eae.es (crawl found master/MBA pages only)."
-  },
-  {
-   "school": "EAE Business School (Madrid and Barcelona)",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 12,
-   "last_url": "https://www.eae.es/en/full-time/master-international-business/admission-process-and-degree",
-   "last_attempt": "read",
-   "last_note": "Page states 'a minimum English level of C1 is required to maximize the program's benefits'; no test scores published."
-  },
-  {
-   "school": "European School of Economics - Madrid",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 6,
-   "last_url": null,
-   "last_attempt": "not_found",
-   "last_note": "No official European School of Economics Madrid admissions page could be located."
-  },
-  {
-   "school": "European School of Economics - Madrid",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 5,
-   "last_url": null,
-   "last_attempt": "not_found",
-   "last_note": "No official European School of Economics Madrid admissions page could be located."
-  },
-  {
-   "school": "Toulouse Business School (TBS) Barcelona",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 1,
-   "last_url": null,
-   "last_attempt": "blocked",
-   "last_note": "Admission page returned an almost empty page (about 330 characters) to the browser; content not accessible."
-  },
-  {
-   "school": "Toulouse Business School (TBS) Barcelona",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 12,
-   "last_url": null,
-   "last_attempt": "blocked",
-   "last_note": "Admission page returned an almost empty page (about 330 characters) to the browser; content not accessible."
-  },
-  {
-   "school": "UCAM (Murcia)",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 8,
-   "last_url": null,
-   "last_attempt": "read",
-   "last_note": "No English test scores or admission figures found on the pages reached."
-  },
-  {
-   "school": "UCAM (Murcia)",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 10,
-   "last_url": null,
-   "last_attempt": "read",
-   "last_note": "No English test scores or admission figures found on the pages reached."
-  },
-  {
-   "school": "UDIT (University of Design and Technology) Madrid",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 4,
-   "last_url": null,
-   "last_attempt": "read",
-   "last_note": "English language certificate with a minimum B2 level (no test score specified)."
-  },
-  {
-   "school": "UDIT (University of Design and Technology) Madrid",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 1,
-   "last_url": null,
-   "last_attempt": "read",
-   "last_note": "Master's tab content not captured in text; the bachelor tab lists a B2 English certificate."
-  },
-  {
-   "school": "Universidad Europea de Madrid",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 32,
-   "last_url": null,
-   "last_attempt": "read",
-   "last_note": "No English scores or admission figures found on the admissions process page."
-  },
-  {
-   "school": "Universidad Europea de Madrid",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 22,
-   "last_url": null,
-   "last_attempt": "read",
-   "last_note": "No English scores or admission figures found on the admissions process page."
-  },
-  {
-   "school": "Ajman University",
-   "level": "master",
-   "country": "United Arab Emirates",
-   "programmes": 11,
-   "last_url": "https://www.ajman.ac.ae/en/admissions/undergraduate/international-students",
-   "last_attempt": "read",
-   "last_note": "Page supplied is the undergraduate page (English: Grade 12 English 80% or 5.0 IELTS Academic / TOEFL ITP 500 / iBT 61; Doctor of Medicine IELTS 6.0, TOEFL ITP 550, iBT 79). No master's requirement on "
-  },
-  {
-   "school": "University of Liverpool (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 131,
-   "last_url": "https://www.liverpool.ac.uk/international/english-language-requirements/",
-   "last_attempt": "read",
-   "last_note": "Requirements vary by course and level; the page directs applicants to the course page and does not list scores. Online tests accepted for UG and PGT except Duolingo. (The URL supplied returned 404; th"
-  },
-  {
-   "school": "University of Liverpool (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 117,
-   "last_url": "https://www.liverpool.ac.uk/international/english-language-requirements/",
-   "last_attempt": "read",
-   "last_note": "Requirements vary by course and level; the page directs applicants to the course page and does not list scores. Online tests accepted for UG and PGT except Duolingo. (The URL supplied returned 404; th"
-  },
-  {
-   "school": "University of Surrey (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 177,
-   "last_url": "https://www.surrey.ac.uk/apply/international/english-language-requirements",
-   "last_attempt": "read",
-   "last_note": "Score varies by course; the page links to undergraduate, postgraduate taught and research course pages for specific scores. Page lists country-specific qualification equivalents for programmes requiri"
-  },
-  {
-   "school": "University of Surrey (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 79,
-   "last_url": "https://www.surrey.ac.uk/apply/international/english-language-requirements",
-   "last_attempt": "read",
-   "last_note": "Score varies by course; the page links to undergraduate, postgraduate taught and research course pages for specific scores. Page lists country-specific qualification equivalents for programmes requiri"
-  },
-  {
-   "school": "Cleveland State University",
-   "level": "master",
-   "country": "United States",
-   "programmes": 15,
-   "last_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
-   "last_attempt": "read",
-   "last_note": "Page supplied is the undergraduate page (TOEFL iBT 78 with no section below 17 before 21 Jan 2026, 4.0 overall after; IELTS 6.0 with no band below 5.0; Duolingo 105; iTEP 3.8). No graduate requirement"
-  },
-  {
-   "school": "Gonzaga University",
-   "level": "master",
-   "country": "United States",
-   "programmes": 4,
-   "last_url": "https://www.gonzaga.edu/admission/international-admission/international-student-applications/international-first-year-application-checklist",
-   "last_attempt": "read",
-   "last_note": "Page supplied is the international first-year (undergraduate) checklist: IELTS Academic 6.5+, TOEFL iBT 80+ (before 21 Jan 2026) / 4 (B2) after, PTE 56+, Duolingo 120+, TOEIC 695, iTEP 4.5+. No gradua"
-  },
-  {
-   "school": "Queens College at CUNY",
-   "level": "master",
-   "country": "United States",
-   "programmes": 16,
-   "last_url": "https://www.qc.cuny.edu/admissions/international-admissions/",
-   "last_attempt": "read",
-   "last_note": "Page gives English requirement for undergraduates (minimum TOEFL 500) and links to separate graduate admissions requirements; no graduate score on this page."
-  }
- ],
- "tasks_phase2": [
   {
    "school": "Australian Catholic University",
    "level": "bachelor",
@@ -406,20 +107,6 @@
    "known_source": "https://www.kbs.edu.au/admissions/entry-requirements/english-entry-requirements"
   },
   {
-   "school": "King's Own Institute",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 3,
-   "known_source": "https://koi.edu.au/international-applicants-entry-requirement/"
-  },
-  {
-   "school": "King's Own Institute",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 6,
-   "known_source": "https://koi.edu.au/international-applicants-entry-requirement/"
-  },
-  {
    "school": "Southern Cross University",
    "level": "bachelor",
    "country": "Australia",
@@ -511,6 +198,13 @@
    "known_source": "https://www.uow.edu.au/study/international/requirements/english/"
   },
   {
+   "school": "University of Wollongong",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 77,
+   "known_source": "https://www.uow.edu.au/study/international/requirements/english/"
+  },
+  {
    "school": "Western Sydney University",
    "level": "bachelor",
    "country": "Australia",
@@ -532,18 +226,18 @@
    "known_source": "https://www.ucll.be/en/admissions"
   },
   {
+   "school": "Brock University",
+   "level": "master",
+   "country": "Canada",
+   "programmes": 2,
+   "known_source": "https://brocku.ca/admissions/english-proficiency/"
+  },
+  {
    "school": "Fraser International College (SFU)",
    "level": "bachelor",
    "country": "Canada",
    "programmes": 55,
    "known_source": "https://www.fraseric.ca/admissions/english-requirements/"
-  },
-  {
-   "school": "Georgian College",
-   "level": "bachelor",
-   "country": "Canada",
-   "programmes": 6,
-   "known_source": "https://www.georgiancollege.ca/international/admissions/"
   },
   {
    "school": "International Business University(IBU) - Toronto",
@@ -630,6 +324,13 @@
    "known_source": "https://www.unic.ac.cy/study-at-unic/admission-requirements"
   },
   {
+   "school": "ECEMA BUSINESS SCHOOL",
+   "level": "master",
+   "country": "France",
+   "programmes": 1,
+   "known_source": "https://ecema.fr/formations/masteres/mastere-developpement-commerce-international/"
+  },
+  {
    "school": "EDC Paris Business School",
    "level": "bachelor",
    "country": "France",
@@ -680,10 +381,10 @@
   },
   {
    "school": "Rennes School of Business",
-   "level": "bachelor",
+   "level": "master",
    "country": "France",
-   "programmes": 1,
-   "known_source": "https://www.rennes-sb.com/programmes/bachelors/bachelor-in-management-in-english/"
+   "programmes": 11,
+   "known_source": "https://www.rennes-sb.com/programmes/master-of-science/master-in-management/"
   },
   {
    "school": "Schiller International University - Paris",
@@ -698,6 +399,27 @@
    "country": "France",
    "programmes": 6,
    "known_source": "https://www.schiller.edu/admissions/requirements/"
+  },
+  {
+   "school": "Sup de Luxe Paris",
+   "level": "bachelor",
+   "country": "France",
+   "programmes": 1,
+   "known_source": "https://supdeluxe.com/en/admissions-supdeluxe"
+  },
+  {
+   "school": "Sup de Luxe Paris",
+   "level": "master",
+   "country": "France",
+   "programmes": 3,
+   "known_source": "https://supdeluxe.com/en/admissions-supdeluxe"
+  },
+  {
+   "school": "TOP Tech College",
+   "level": "master",
+   "country": "France",
+   "programmes": 8,
+   "known_source": null
   },
   {
    "school": "VATEL HOTEL & TOURISM BUSINESS SCHOOL",
@@ -768,6 +490,13 @@
    "country": "Germany",
    "programmes": 8,
    "known_source": "https://web.gisma.com/study-bachelors-in-germany"
+  },
+  {
+   "school": "GISMA University Berlin",
+   "level": "master",
+   "country": "Germany",
+   "programmes": 3,
+   "known_source": "https://web.gisma.com/study-masters-in-germany"
   },
   {
    "school": "Lancaster University Leipzig",
@@ -1043,6 +772,27 @@
    "known_source": "https://www.ul.ie/study/postgraduate/applying/entry-requirements/english-language-requirements"
   },
   {
+   "school": "GBS Malta",
+   "level": "bachelor",
+   "country": "Malta",
+   "programmes": 1,
+   "known_source": "https://www.global-business-school.org/admissions/application-guidelines-bachelor"
+  },
+  {
+   "school": "GBS Malta",
+   "level": "master",
+   "country": "Malta",
+   "programmes": 7,
+   "known_source": "https://www.global-business-school.org/admissions/master-admission-requirements"
+  },
+  {
+   "school": "South Europe College",
+   "level": "master",
+   "country": "Malta",
+   "programmes": 7,
+   "known_source": null
+  },
+  {
    "school": "Fontys University of Applied Science",
    "level": "bachelor",
    "country": "Netherlands",
@@ -1069,13 +819,6 @@
    "country": "Netherlands",
    "programmes": 1,
    "known_source": "https://www.srh-haarlem-campus.com/meta/apply-now/"
-  },
-  {
-   "school": "Radboud University",
-   "level": "bachelor",
-   "country": "Netherlands",
-   "programmes": 14,
-   "known_source": "https://www.ru.nl/en/education/application-and-admission/language-requirements/english-language-requirements/minimum-test-scores-bachelors"
   },
   {
    "school": "Saxion University of Applied Sciences",
@@ -1155,11 +898,39 @@
    "known_source": "https://barcelonaflightschool.com/pilot-training/integrated-airline-transport-pilot-atpl-fast-track-course/"
   },
   {
+   "school": "EAE Business School (Madrid and Barcelona)",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 1,
+   "known_source": null
+  },
+  {
+   "school": "EAE Business School (Madrid and Barcelona)",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 12,
+   "known_source": "https://www.eae.es/en/full-time/master-international-business/admission-process-and-degree"
+  },
+  {
    "school": "ESEI Business School",
    "level": "master",
    "country": "Spain",
    "programmes": 9,
    "known_source": "https://www.eseibusinessschool.com/admission-steps-requirements/"
+  },
+  {
+   "school": "European School of Economics - Madrid",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 6,
+   "known_source": "https://www.ese.ac.uk/admission"
+  },
+  {
+   "school": "European School of Economics - Madrid",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 5,
+   "known_source": "https://www.ese.ac.uk/admission"
   },
   {
    "school": "Geneva Business School",
@@ -1218,11 +989,74 @@
    "known_source": "https://www.schiller.edu/admissions/requirements/"
   },
   {
+   "school": "Toulouse Business School (TBS) Barcelona",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 1,
+   "known_source": null
+  },
+  {
+   "school": "Toulouse Business School (TBS) Barcelona",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 12,
+   "known_source": null
+  },
+  {
+   "school": "UCAM (Murcia)",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 8,
+   "known_source": null
+  },
+  {
+   "school": "UCAM (Murcia)",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 10,
+   "known_source": null
+  },
+  {
+   "school": "UDIT (University of Design and Technology) Madrid",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 4,
+   "known_source": null
+  },
+  {
+   "school": "UDIT (University of Design and Technology) Madrid",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 1,
+   "known_source": null
+  },
+  {
+   "school": "Universidad Europea de Madrid",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 32,
+   "known_source": null
+  },
+  {
+   "school": "Universidad Europea de Madrid",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 22,
+   "known_source": null
+  },
+  {
    "school": "Ajman University",
    "level": "bachelor",
    "country": "United Arab Emirates",
    "programmes": 26,
    "known_source": "https://www.ajman.ac.ae/en/admissions/undergraduate/international-students"
+  },
+  {
+   "school": "Ajman University",
+   "level": "master",
+   "country": "United Arab Emirates",
+   "programmes": 11,
+   "known_source": "https://www.ajman.ac.ae/en/admissions/graduate/admissions-requirements"
   },
   {
    "school": "Rochester Institute of Technology of Dubai (RIT Dubai)",
@@ -1687,6 +1521,20 @@
    "known_source": "https://www.law.ac.uk/study/postgraduate/entry-requirements/"
   },
   {
+   "school": "University of Liverpool (EB UK)",
+   "level": "bachelor",
+   "country": "United Kingdom",
+   "programmes": 131,
+   "known_source": "https://www.liverpool.ac.uk/international/english-language-requirements/"
+  },
+  {
+   "school": "University of Liverpool (EB UK)",
+   "level": "master",
+   "country": "United Kingdom",
+   "programmes": 117,
+   "known_source": "https://www.liverpool.ac.uk/international/english-language-requirements/"
+  },
+  {
    "school": "University of Manchester",
    "level": "bachelor",
    "country": "United Kingdom",
@@ -1734,6 +1582,20 @@
    "country": "United Kingdom",
    "programmes": 98,
    "known_source": "https://www.sheffield.ac.uk/international/english-language-requirements"
+  },
+  {
+   "school": "University of Surrey (EB UK)",
+   "level": "bachelor",
+   "country": "United Kingdom",
+   "programmes": 177,
+   "known_source": "https://www.surrey.ac.uk/apply/international/english-language-requirements"
+  },
+  {
+   "school": "University of Surrey (EB UK)",
+   "level": "master",
+   "country": "United Kingdom",
+   "programmes": 79,
+   "known_source": "https://www.surrey.ac.uk/apply/international/english-language-requirements"
   },
   {
    "school": "University of Sussex",
@@ -1827,6 +1689,13 @@
    "known_source": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements"
   },
   {
+   "school": "Cleveland State University",
+   "level": "master",
+   "country": "United States",
+   "programmes": 15,
+   "known_source": "https://catalog.csuohio.edu/content.php?catoid=47&navoid=4052"
+  },
+  {
    "school": "Florida Atlantic University",
    "level": "bachelor",
    "country": "United States",
@@ -1890,13 +1759,6 @@
    "known_source": "https://www2.lehigh.edu/admissions/english-proficiency-requirement-for-graduate-studies"
   },
   {
-   "school": "Louisiana State University",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 105,
-   "known_source": "https://www.lsu.edu/admissions/apply/international.php"
-  },
-  {
    "school": "Lynn University",
    "level": "bachelor",
    "country": "United States",
@@ -1937,13 +1799,6 @@
    "country": "United States",
    "programmes": 8,
    "known_source": "https://catalog.unr.edu/content.php?catoid=58&navoid=119810"
-  },
-  {
-   "school": "University of Texas at San Antonio",
-   "level": "master",
-   "country": "United States",
-   "programmes": 34,
-   "known_source": "https://future.utsa.edu/international/"
   },
   {
    "school": "University of Wisconsin-Whitewater",
