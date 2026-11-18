@@ -1,1832 +1,1421 @@
 {
- "instructions": "# Task (round 3): find the official APPLICATION FEE for international applicants\n\nFor every item in \"tasks\" (school + level bachelor/master) find the application fee (the fee paid when submitting the application; not tuition, deposit, registration or visa fee) on the school's OFFICIAL website.\n\nWhere to look\n- Dedicated \"Tuition & fees\", \"Fees and costs\", \"Cost of attendance\", \"How to apply\", \"Apply\" and \"International admissions\" pages. Application fees are often listed there, not on the entry-requirements page.\n- Fee pages with selectors (country / programme / level): choose Turkey (or \"international / non-EU\") and the matching level; if fees differ by programme, record the typical one and describe the variation in application_fee_note.\n- Fee schedules published as PDF or spreadsheet on the school's own site (\"fee schedule\", \"fees list\", \"tuition and fees 20xx-xx\"): download and read them. Search the school's site with: site:<school-domain> application fee.\n- Accordions, tabs and \"show more\" blocks: expand them and read hidden panels too.\n- Official domains only; no agent or aggregator sites. If a site shows a CAPTCHA or blocks the browser, do not bypass it: page_status \"blocked\" and move on.\n- If the school explicitly says there is no application fee, write \"none\". If the fee is waived for some applicants, give the standard fee and say so in the note.\n\nOutput: JSON list, one object per item, same order, no extra text:\n{\"school\",\"level\",\"application_fee\":\"amount with currency e.g. 'USD 75', or 'none', or null if not found\",\n \"application_fee_note\":\"short factual note on variations (programme, country, early-bird, waiver) or null\",\n \"source_url\":\"exact page or PDF where you read it\",\"page_status\":\"read | blocked | not_found | js_empty\",\"confidence\":\"high | medium | low\",\n \"english\":{\"IELTS\":null,\"TOEFL\":null,\"PTE\":null,\"Duolingo\":null}}\nNever guess. If you do not see the fee on an official page, application_fee is null.\n\nSubmit: POST https://paneledu.com/api/agent/results with header X-Agent-Token: <token you were given>, Content-Type: application/json, body = JSON list of result objects (1-10 per request, send each batch as soon as it is done). Expected answer: {\"ok\":true,\"saved\":N}.\n",
+ "instructions": "# Task (round 4): official APPLICATION FEE for the remaining schools\n\nGoal: for each item in \"tasks\" (school + level bachelor/master) find the official application fee for international applicants, using the school's OFFICIAL website only.\nlast_url / last_status show what happened in the previous round (blocked, not_found, js_empty, read).\n\nMethod\n- Browse like a person: real browser, normal pace (a few seconds between page loads), one page at a time.\n- Wait for pages and automatic browser checks to finish loading; expand accordions, tabs and \"show more\" panels; read hidden text.\n- Look in: \"Tuition & fees\", \"Fees and costs\", \"Cost of attendance\", \"How to apply\", \"Apply\", \"International admissions\", \"Admissions FAQ\", fee schedules as PDF/spreadsheet on the school's own site, programme pages, and country selectors (choose Turkey or \"international / non-EU\", then the right level).\n- Search the school's own site: site:<school-domain> \"application fee\".\n- Official domains only. No agent, aggregator or forum sites.\n- If a page asks you to solve a CAPTCHA or otherwise blocks automated access, do not try to get around it. Set page_status \"blocked\", put the exact URL in manual_check_url so a person can open it, and continue with other official pages of that school.\n- Also record the admissions office contact email or contact-form URL from the official site in contact (so a person can ask about the fee).\n- An application fee is the fee paid when submitting the application. Not tuition, deposit, registration, enrolment, test or visa fees. Write \"none\" only if an official page explicitly says there is no application fee (quote it in application_fee_note). Otherwise null. Never guess or infer.\n- For UK undergraduate applications through UCAS, report any fee the university itself charges (usually none) and mention in the note that UCAS charges its own fee.\n\nOutput: JSON list, one object per item, same order, no extra text:\n{\"school\",\"level\",\n \"application_fee\": \"amount with currency e.g. 'USD 75', or 'none', or null\",\n \"application_fee_note\": \"exact short quote or paraphrase from the page, plus variations (programme, country, waiver)\",\n \"source_url\": \"exact page or PDF where you read it\",\n \"manual_check_url\": \"URL a person should open when blocked, else null\",\n \"contact\": \"admissions email or contact form URL, else null\",\n \"page_status\": \"read | blocked | not_found | js_empty\",\n \"confidence\": \"high | medium | low\",\n \"english\": {\"IELTS\":null,\"TOEFL\":null,\"PTE\":null,\"Duolingo\":null}}\n\nSubmit: POST https://paneledu.com/api/agent/results with header X-Agent-Token: <token you were given>, Content-Type: application/json, body = JSON list (1-10 objects per request; send each batch as soon as it is done). Expected answer: {\"ok\":true,\"saved\":N}.\n",
  "tasks": [
   {
    "school": "Australian Catholic University",
    "level": "bachelor",
    "country": "Australia",
    "programmes": 85,
-   "known_source": "https://www.acu.edu.au/international-students/applying-to-acu/english-language-requirements"
+   "last_url": "https://www.acu.edu.au/study-at-acu/how-to-apply/international-students/international-undergraduate-students",
+   "last_status": "blocked"
   },
   {
    "school": "Australian Catholic University",
    "level": "master",
    "country": "Australia",
    "programmes": 22,
-   "known_source": "https://www.acu.edu.au/international-students/applying-to-acu/english-language-requirements"
+   "last_url": "https://www.acu.edu.au/study-at-acu/how-to-apply/international-students/international-postgraduate-students",
+   "last_status": "blocked"
   },
   {
    "school": "Central Queensland University",
    "level": "bachelor",
    "country": "Australia",
    "programmes": 28,
-   "known_source": "https://www.cqu.edu.au/study/international/entry-requirements/english-requirements"
+   "last_url": "https://www.cqu.edu.au/study/international/fees",
+   "last_status": "blocked"
   },
   {
    "school": "Central Queensland University",
    "level": "master",
    "country": "Australia",
    "programmes": 16,
-   "known_source": "https://www.cqu.edu.au/study/international/entry-requirements/english-requirements"
-  },
-  {
-   "school": "Charles Darwin University",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 59,
-   "known_source": "https://www.cdu.edu.au/international/how-apply/entry-requirements"
-  },
-  {
-   "school": "Charles Darwin University",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 31,
-   "known_source": "https://www.cdu.edu.au/international/how-apply/entry-requirements"
+   "last_url": "https://www.cqu.edu.au/study/international/fees",
+   "last_status": "blocked"
   },
   {
    "school": "Charles Sturt University",
    "level": "bachelor",
    "country": "Australia",
    "programmes": 28,
-   "known_source": "https://study.csu.edu.au/international/how-to-apply/course-entry-requirements"
+   "last_url": "https://study.csu.edu.au/international/fees-and-costs/how-to-pay-your-fees",
+   "last_status": "blocked"
   },
   {
    "school": "Charles Sturt University",
    "level": "master",
    "country": "Australia",
    "programmes": 11,
-   "known_source": "https://study.csu.edu.au/international/how-to-apply/course-entry-requirements"
+   "last_url": "https://study.csu.edu.au/international/fees-and-costs/how-to-pay-your-fees",
+   "last_status": "blocked"
   },
   {
    "school": "Edith Cowan University",
    "level": "master",
    "country": "Australia",
    "programmes": 37,
-   "known_source": "https://www.ecu.edu.au/future-students/course-entry/english-competency"
+   "last_url": "https://www.ecu.edu.au/future-students/fees-and-scholarships",
+   "last_status": "blocked"
   },
   {
    "school": "Griffith University",
    "level": "bachelor",
    "country": "Australia",
    "programmes": 145,
-   "known_source": "https://www.griffith.edu.au/apply/international/understanding-entry-requirements"
+   "last_url": "https://www.griffith.edu.au/apply/international/fees",
+   "last_status": "blocked"
   },
   {
    "school": "Griffith University",
    "level": "master",
    "country": "Australia",
    "programmes": 63,
-   "known_source": "https://www.griffith.edu.au/apply/international/understanding-entry-requirements"
-  },
-  {
-   "school": "JCU Brisbane",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 4,
-   "known_source": "https://www.jcu.edu.au/policy/academic-governance/student-experience/admissions-policy-schedule-ii"
-  },
-  {
-   "school": "JCU Brisbane",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 10,
-   "known_source": "https://www.jcu.edu.au/policy/academic-governance/student-experience/admissions-policy-schedule-ii"
+   "last_url": "https://www.griffith.edu.au/apply/international/fees",
+   "last_status": "blocked"
   },
   {
    "school": "Kaplan Business School",
    "level": "bachelor",
    "country": "Australia",
    "programmes": 6,
-   "known_source": "https://www.kbs.edu.au/admissions/entry-requirements/international-entry-requirements"
+   "last_url": "https://www.kbs.edu.au/admissions/fees/international-fees",
+   "last_status": "read"
   },
   {
    "school": "Kaplan Business School",
    "level": "master",
    "country": "Australia",
    "programmes": 13,
-   "known_source": "https://www.kbs.edu.au/admissions/entry-requirements/english-entry-requirements"
+   "last_url": "https://www.kbs.edu.au/admissions/fees/international-fees",
+   "last_status": "read"
   },
   {
    "school": "Southern Cross University",
    "level": "bachelor",
    "country": "Australia",
    "programmes": 29,
-   "known_source": "https://www.scu.edu.au/study/international-study/how-to-apply-international-future-students/english-language-requirements/"
+   "last_url": "https://www.scu.edu.au/study/help-and-contact/frequently-asked-questions-faqs/",
+   "last_status": "read"
   },
   {
    "school": "Southern Cross University",
    "level": "master",
    "country": "Australia",
    "programmes": 9,
-   "known_source": "https://www.scu.edu.au/study/international-study/how-to-apply-international-future-students/english-language-requirements/"
-  },
-  {
-   "school": "The University of Newcastle, Australia",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 46,
-   "known_source": "https://policies.newcastle.edu.au/document/view-current.php?id=166"
-  },
-  {
-   "school": "The University of Newcastle, Australia",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 40,
-   "known_source": "https://policies.newcastle.edu.au/document/view-current.php?id=166"
+   "last_url": "https://www.scu.edu.au/study/help-and-contact/frequently-asked-questions-faqs/",
+   "last_status": "read"
   },
   {
    "school": "The University of Notre Dame Australia",
    "level": "bachelor",
    "country": "Australia",
    "programmes": 55,
-   "known_source": "https://www.notredame.edu.au/study/applications-and-admissions/admission-requirements/english-language-proficiency-requirements"
-  },
-  {
-   "school": "The University of Western Australia",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 174,
-   "known_source": "https://www.uwa.edu.au/study/how-to-apply/english-language-requirements"
-  },
-  {
-   "school": "The University of Western Australia",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 41,
-   "known_source": "https://www.uwa.edu.au/study/how-to-apply/english-language-requirements"
+   "last_url": "https://www.notredame.edu.au/study/applications-and-admissions/how-to-apply/international-applicants",
+   "last_status": "blocked"
   },
   {
    "school": "Torrens University Australia",
    "level": "bachelor",
    "country": "Australia",
    "programmes": 27,
-   "known_source": "https://www.torrens.edu.au/en/how-to-apply/admissions-criteria"
+   "last_url": "https://www.torrens.edu.au/studying-with-us/faqs",
+   "last_status": "blocked"
   },
   {
    "school": "Torrens University Australia",
    "level": "master",
    "country": "Australia",
    "programmes": 32,
-   "known_source": "https://www.torrens.edu.au/en/how-to-apply/admissions-criteria"
-  },
-  {
-   "school": "University of Adelaide",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 101,
-   "known_source": "https://adelaide.edu.au/about/policies/admissions-policy/english-language-proficiency-requirements-procedure/"
-  },
-  {
-   "school": "University of Adelaide",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 53,
-   "known_source": "https://adelaide.edu.au/about/policies/admissions-policy/english-language-proficiency-requirements-procedure/"
+   "last_url": "https://www.torrens.edu.au/studying-with-us/faqs",
+   "last_status": "blocked"
   },
   {
    "school": "University of Tasmania (UTAS)",
    "level": "bachelor",
    "country": "Australia",
    "programmes": 38,
-   "known_source": "https://www.utas.edu.au/study/apply/admission-requirements/english-language-requirements"
-  },
-  {
-   "school": "University of Wollongong",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 146,
-   "known_source": "https://www.uow.edu.au/study/international/requirements/english/"
-  },
-  {
-   "school": "University of Wollongong",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 77,
-   "known_source": "https://www.uow.edu.au/study/international/requirements/english/"
+   "last_url": "https://www.utas.edu.au/study/apply/international-students",
+   "last_status": "blocked"
   },
   {
    "school": "Western Sydney University",
    "level": "bachelor",
    "country": "Australia",
    "programmes": 40,
-   "known_source": "https://www.westernsydney.edu.au/international/studying/entry-requirements"
+   "last_url": "https://www.westernsydney.edu.au/future/study/how-to-apply",
+   "last_status": "read"
   },
   {
    "school": "Western Sydney University",
    "level": "master",
    "country": "Australia",
    "programmes": 21,
-   "known_source": "https://www.westernsydney.edu.au/international/studying/entry-requirements"
+   "last_url": "https://www.westernsydney.edu.au/future/study/how-to-apply",
+   "last_status": "read"
   },
   {
    "school": "UC Leuven-Limburg University of Applied Sciences (UCLL)",
    "level": "bachelor",
    "country": "Belgium",
    "programmes": 3,
-   "known_source": "https://www.ucll.be/en/admissions"
+   "last_url": "https://www.ucll.be/en/degree-application",
+   "last_status": "read"
   },
   {
    "school": "Brock University",
    "level": "master",
    "country": "Canada",
    "programmes": 2,
-   "known_source": "https://brocku.ca/admissions/english-proficiency/"
-  },
-  {
-   "school": "Fraser International College (SFU)",
-   "level": "bachelor",
-   "country": "Canada",
-   "programmes": 55,
-   "known_source": "https://www.fraseric.ca/admissions/english-requirements/"
-  },
-  {
-   "school": "International Business University(IBU) - Toronto",
-   "level": "master",
-   "country": "Canada",
-   "programmes": 1,
-   "known_source": "https://ibu.ca/english-proficiency/"
-  },
-  {
-   "school": "Lakehead University",
-   "level": "bachelor",
-   "country": "Canada",
-   "programmes": 70,
-   "known_source": "https://www.lakeheadu.ca/studentcentral/applying/english-language-proficiency-requirements"
-  },
-  {
-   "school": "Lakehead University",
-   "level": "master",
-   "country": "Canada",
-   "programmes": 18,
-   "known_source": "https://www.lakeheadu.ca/programs/graduate/Graduate-english-requirements"
-  },
-  {
-   "school": "Northeastern University Canada",
-   "level": "master",
-   "country": "Canada",
-   "programmes": 40,
-   "known_source": "https://cps.northeastern.edu/admissions-aid/international-admissions/applications/english-language-requirements/"
-  },
-  {
-   "school": "Ontario Tech University",
-   "level": "master",
-   "country": "Canada",
-   "programmes": 16,
-   "known_source": "https://gradstudies.ontariotechu.ca/future_students/application_process_and_requirement/step%203/english-language-proficiency.php"
+   "last_url": "https://brocku.ca/graduate-studies/future-students/faq/",
+   "last_status": "blocked"
   },
   {
    "school": "Trent University",
    "level": "bachelor",
    "country": "Canada",
    "programmes": 86,
-   "known_source": "https://www.trentu.ca/futurestudents/admissions/admission-requirements/international-students/english-proficiency"
-  },
-  {
-   "school": "Trent University",
-   "level": "master",
-   "country": "Canada",
-   "programmes": 19,
-   "known_source": "https://www.trentu.ca/graduatestudies/future-students/how-apply-international"
-  },
-  {
-   "school": "University Canada West",
-   "level": "master",
-   "country": "Canada",
-   "programmes": 1,
-   "known_source": "https://www.ucanwest.ca/admissions/graduate"
-  },
-  {
-   "school": "University of Victoria",
-   "level": "master",
-   "country": "Canada",
-   "programmes": 10,
-   "known_source": "https://www.uvic.ca/graduate/admissions/language-proficiency/index.php"
+   "last_url": "https://www.trentu.ca/futurestudents/apply/international-student-received-offer",
+   "last_status": "read"
   },
   {
    "school": "University of Windsor",
    "level": "bachelor",
    "country": "Canada",
    "programmes": 128,
-   "known_source": "https://www.uwindsor.ca/registrar/498/undergraduate-admission-requirements"
-  },
-  {
-   "school": "University of Nicosia",
-   "level": "bachelor",
-   "country": "Cyprus",
-   "programmes": 32,
-   "known_source": "https://www.unic.ac.cy/study-at-unic/admission-requirements"
-  },
-  {
-   "school": "University of Nicosia",
-   "level": "master",
-   "country": "Cyprus",
-   "programmes": 10,
-   "known_source": "https://www.unic.ac.cy/study-at-unic/admission-requirements"
+   "last_url": "https://www.uwindsor.ca/registrar/sites/uwindsor.ca.registrar/files/registrarial_fees_2022-2023_-_2023-2024.pdf",
+   "last_status": "read"
   },
   {
    "school": "ECEMA BUSINESS SCHOOL",
    "level": "master",
    "country": "France",
    "programmes": 1,
-   "known_source": "https://ecema.fr/formations/masteres/mastere-developpement-commerce-international/"
+   "last_url": "https://www.ecema.fr/formations/tarifs/",
+   "last_status": "read"
   },
   {
    "school": "EDC Paris Business School",
    "level": "bachelor",
    "country": "France",
    "programmes": 1,
-   "known_source": "https://www.edcparis.edu/en/international/etudiants-internationaux-en-echange-edc"
+   "last_url": "https://www.edcparis.edu/fr/admissions-bachelor",
+   "last_status": "read"
   },
   {
    "school": "EDC Paris Business School",
    "level": "master",
    "country": "France",
    "programmes": 9,
-   "known_source": "https://www.edcparis.edu/en/international/etudiants-internationaux-en-echange-edc"
-  },
-  {
-   "school": "ESIGELEC",
-   "level": "master",
-   "country": "France",
-   "programmes": 2,
-   "known_source": "https://en.esigelec.fr/master-program/"
+   "last_url": "https://www.edcparis.edu/en/programs/grande-ecole-program/international-business",
+   "last_status": "read"
   },
   {
    "school": "Ecole de Management Applique, Paris",
    "level": "bachelor",
    "country": "France",
    "programmes": 3,
-   "known_source": "https://ema.education/en/bachelor-admission-procedure/"
+   "last_url": "https://ema.education/media/kwkm3pa5/ema-admissions-policy-v12-nov24-final.pdf",
+   "last_status": "read"
   },
   {
    "school": "Ecole de Management Applique, Paris",
    "level": "master",
    "country": "France",
    "programmes": 4,
-   "known_source": "https://ema.education/en/admission"
+   "last_url": "https://ema.education/media/kwkm3pa5/ema-admissions-policy-v12-nov24-final.pdf",
+   "last_status": "read"
   },
   {
    "school": "Istituto Marangoni Paris",
    "level": "bachelor",
    "country": "France",
    "programmes": 6,
-   "known_source": "https://www.istitutomarangoni.com/en/admission/entry-requirements-paris"
+   "last_url": "https://www.istitutomarangoni.com/en/admission",
+   "last_status": "read"
   },
   {
    "school": "Istituto Marangoni Paris",
    "level": "master",
    "country": "France",
    "programmes": 8,
-   "known_source": "https://www.istitutomarangoni.com/en/admission/entry-requirements-paris"
+   "last_url": "https://www.istitutomarangoni.com/en/admission",
+   "last_status": "read"
   },
   {
    "school": "Rennes School of Business",
    "level": "master",
    "country": "France",
    "programmes": 11,
-   "known_source": "https://www.rennes-sb.com/programmes/master-of-science/master-in-management/"
+   "last_url": "https://www.rennes-sb.com/fees-and-scholarships/",
+   "last_status": "read"
   },
   {
    "school": "Schiller International University - Paris",
    "level": "bachelor",
    "country": "France",
    "programmes": 7,
-   "known_source": "https://www.schiller.edu/admissions/requirements/"
+   "last_url": "https://www.schiller.edu/admissions/requirements/",
+   "last_status": "read"
   },
   {
    "school": "Schiller International University - Paris",
    "level": "master",
    "country": "France",
    "programmes": 6,
-   "known_source": "https://www.schiller.edu/admissions/requirements/"
+   "last_url": "https://www.schiller.edu/admissions/requirements/",
+   "last_status": "read"
   },
   {
    "school": "Sup de Luxe Paris",
    "level": "bachelor",
    "country": "France",
    "programmes": 1,
-   "known_source": "https://supdeluxe.com/en/admissions-supdeluxe"
+   "last_url": "https://www.supdeluxe.com/en/admissions-supdeluxe",
+   "last_status": "read"
   },
   {
    "school": "Sup de Luxe Paris",
    "level": "master",
    "country": "France",
    "programmes": 3,
-   "known_source": "https://supdeluxe.com/en/admissions-supdeluxe"
+   "last_url": "https://www.supdeluxe.com/en/admissions-supdeluxe",
+   "last_status": "read"
   },
   {
    "school": "TOP Tech College",
    "level": "master",
    "country": "France",
    "programmes": 8,
-   "known_source": null
+   "last_url": "https://toptechcollege.com/",
+   "last_status": "read"
   },
   {
    "school": "VATEL HOTEL & TOURISM BUSINESS SCHOOL",
    "level": "bachelor",
    "country": "France",
    "programmes": 1,
-   "known_source": "https://www.vatel.fr/en/programs/management/bachelor"
+   "last_url": "https://www.vatel.fr/en/faq",
+   "last_status": "read"
   },
   {
    "school": "VATEL HOTEL & TOURISM BUSINESS SCHOOL",
    "level": "master",
    "country": "France",
    "programmes": 1,
-   "known_source": "https://www.vatel.fr/en/programs/management/mba"
+   "last_url": "https://www.vatel.fr/en/faq",
+   "last_status": "read"
   },
   {
    "school": "Berlin International University of Applied Science",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 5,
-   "known_source": "https://whitecliffe.de/en/admissions/international/"
+   "last_url": "https://www.berlin-international.de/en/admission/international-admission/",
+   "last_status": "read"
   },
   {
    "school": "Berlin International University of Applied Science",
    "level": "master",
    "country": "Germany",
    "programmes": 6,
-   "known_source": "https://whitecliffe.de/en/admissions/international/"
+   "last_url": "https://www.berlin-international.de/en/admission/international-admission/",
+   "last_status": "read"
   },
   {
    "school": "Berlin School of Business and Innovation(BSBI)",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 12,
-   "known_source": "https://www.berlinsbi.com/admissions/undergraduate-application"
+   "last_url": "https://www.berlinsbi.com/studying-at-bsbi/frequently-asked-questions",
+   "last_status": "read"
   },
   {
    "school": "Berlin School of Business and Innovation(BSBI)",
    "level": "master",
    "country": "Germany",
    "programmes": 45,
-   "known_source": "https://www.berlinsbi.com/admissions/postgraduate-application"
+   "last_url": "https://www.berlinsbi.com/studying-at-bsbi/frequently-asked-questions",
+   "last_status": "read"
   },
   {
    "school": "Cologne Business School",
    "level": "master",
    "country": "Germany",
    "programmes": 13,
-   "known_source": "https://www.cbs.de/en/admissions/admission-requirements"
+   "last_url": "https://cbs.de/en/advice-admission/tuition-fees",
+   "last_status": "read"
   },
   {
    "school": "Fresenius University of Applied Sciences",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 8,
-   "known_source": "https://www.hs-fresenius.com/admission-requirements/"
+   "last_url": "https://www.hs-fresenius.de/kosten/",
+   "last_status": "read"
   },
   {
    "school": "Fresenius University of Applied Sciences",
    "level": "master",
    "country": "Germany",
    "programmes": 17,
-   "known_source": "https://www.hs-fresenius.com/admission-requirements/"
+   "last_url": "https://www.hs-fresenius.de/kosten/",
+   "last_status": "read"
   },
   {
    "school": "GISMA University Berlin",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 8,
-   "known_source": "https://web.gisma.com/study-bachelors-in-germany"
+   "last_url": "https://www.gisma.com/life-at-gisma/tuition-fees-and-funding",
+   "last_status": "read"
   },
   {
    "school": "GISMA University Berlin",
    "level": "master",
    "country": "Germany",
    "programmes": 3,
-   "known_source": "https://web.gisma.com/study-masters-in-germany"
+   "last_url": "https://www.gisma.com/life-at-gisma/tuition-fees-and-funding",
+   "last_status": "read"
   },
   {
    "school": "Lancaster University Leipzig",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 7,
-   "known_source": "https://www.lancasterleipzig.de/admission/undergraduate-requirements/"
+   "last_url": "https://www.lancasterleipzig.de/study/undergraduate/fees/",
+   "last_status": "read"
   },
   {
    "school": "Lancaster University Leipzig",
    "level": "master",
    "country": "Germany",
    "programmes": 4,
-   "known_source": "https://www.lancasterleipzig.de/study/postgraduate/requirements/"
+   "last_url": "https://www.lancasterleipzig.de/study/undergraduate/fees/",
+   "last_status": "read"
   },
   {
    "school": "MDH University of Applied Sciences",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 14,
-   "known_source": "https://www.mediadesign.de/en/mdh-international"
+   "last_url": "https://www.mediadesign.de/en/bachelor/it-web-applications-and-software-development",
+   "last_status": "read"
   },
   {
    "school": "MDH University of Applied Sciences",
    "level": "master",
    "country": "Germany",
    "programmes": 7,
-   "known_source": "https://www.mediadesign.de/en/mdh-international"
+   "last_url": "https://www.mediadesign.de/en/bachelor/it-web-applications-and-software-development",
+   "last_status": "read"
   },
   {
    "school": "Macromedia University",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 17,
-   "known_source": "https://www.macromedia-fachhochschule.de/en/en/admission"
+   "last_url": "https://www.macromedia-university.com/en/",
+   "last_status": "read"
   },
   {
    "school": "Macromedia University",
    "level": "master",
    "country": "Germany",
    "programmes": 10,
-   "known_source": "https://www.macromedia-fachhochschule.de/en/en/admission"
-  },
-  {
-   "school": "Munich University of Digital Technologies (MUDT)",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 4,
-   "known_source": "https://www.uni-munich.de/admissions"
-  },
-  {
-   "school": "Munich University of Digital Technologies (MUDT)",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 1,
-   "known_source": "https://www.uni-munich.de/admissions"
+   "last_url": "https://www.macromedia-university.com/en/",
+   "last_status": "read"
   },
   {
    "school": "SRH University - Berlin Campus",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 26,
-   "known_source": "https://www.srh-university.de/en/bachelor/international-business-administration/international-business-administration-admission-requirements-in-detail"
+   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
+   "last_status": "read"
   },
   {
    "school": "SRH University - Berlin Campus",
    "level": "master",
    "country": "Germany",
    "programmes": 26,
-   "known_source": "https://www.srh-university.de/en/master/international-management/international-management-admission-requirements-in-detail/"
+   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
+   "last_status": "read"
   },
   {
    "school": "SRH University - Dresden Campus",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 2,
-   "known_source": "https://www.srh-university.de/en/bachelor/international-business-administration/international-business-administration-admission-requirements-in-detail"
+   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
+   "last_status": "read"
   },
   {
    "school": "SRH University - Dresden Campus",
    "level": "master",
    "country": "Germany",
    "programmes": 6,
-   "known_source": "https://www.srh-university.de/en/master/international-management/international-management-admission-requirements-in-detail/"
+   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
+   "last_status": "read"
   },
   {
    "school": "SRH University - Heidelberg Campus",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 6,
-   "known_source": "https://www.srh-university.de/en/bachelor/international-business-administration/international-business-administration-admission-requirements-in-detail"
+   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
+   "last_status": "read"
   },
   {
    "school": "SRH University - Heidelberg Campus",
    "level": "master",
    "country": "Germany",
    "programmes": 15,
-   "known_source": "https://www.srh-university.de/en/master/international-management/international-management-admission-requirements-in-detail/"
+   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
+   "last_status": "read"
   },
   {
    "school": "SRH University - Leipzig Campus",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 4,
-   "known_source": "https://www.srh-university.de/en/bachelor/international-business-administration/international-business-administration-admission-requirements-in-detail"
+   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
+   "last_status": "read"
   },
   {
    "school": "SRH University - Leipzig Campus",
    "level": "master",
    "country": "Germany",
    "programmes": 2,
-   "known_source": "https://www.srh-university.de/en/master/international-management/international-management-admission-requirements-in-detail/"
+   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
+   "last_status": "read"
   },
   {
    "school": "Schiller International University - Heidelberg",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 7,
-   "known_source": "https://www.schiller.edu/admissions/requirements/"
+   "last_url": "https://www.schiller.edu/admissions/requirements/",
+   "last_status": "read"
   },
   {
    "school": "Schiller International University - Heidelberg",
    "level": "master",
    "country": "Germany",
    "programmes": 7,
-   "known_source": "https://www.schiller.edu/admissions/requirements/"
+   "last_url": "https://www.schiller.edu/admissions/requirements/",
+   "last_status": "read"
   },
   {
    "school": "University of Europe for Applied Sciences (UE Germany)",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 17,
-   "known_source": "https://www.ue-germany.com/admission-requirements"
+   "last_url": "https://www.ue-germany.com/study-with-us/how-to-apply/bachelor",
+   "last_status": "read"
   },
   {
    "school": "University of Europe for Applied Sciences (UE Germany)",
    "level": "master",
    "country": "Germany",
    "programmes": 35,
-   "known_source": "https://www.ue-germany.com/admission-requirements"
-  },
-  {
-   "school": "Whitecliffe University of Applied Sciences",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 5,
-   "known_source": "https://whitecliffe.de/en/admissions/domestic/"
-  },
-  {
-   "school": "Whitecliffe University of Applied Sciences",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 6,
-   "known_source": "https://whitecliffe.de/en/admissions/domestic/"
+   "last_url": "https://www.ue-germany.com/study-with-us/how-to-apply/bachelor",
+   "last_status": "read"
   },
   {
    "school": "XU Exponential University",
    "level": "bachelor",
    "country": "Germany",
    "programmes": 5,
-   "known_source": "https://xu-university.com/academic-requirements"
+   "last_url": "https://xu-university.com/",
+   "last_status": "read"
   },
   {
    "school": "XU Exponential University",
    "level": "master",
    "country": "Germany",
    "programmes": 1,
-   "known_source": "https://xu-university.com/wp-content/uploads/2025/09/XU-Exponential-University-Master-Admissions-Requirements-EN.pdf"
+   "last_url": "https://xu-university.com/",
+   "last_status": "read"
   },
   {
    "school": "McDaniel College Budapest",
    "level": "bachelor",
    "country": "Hungary",
    "programmes": 5,
-   "known_source": "https://mcdaniel.hu/entrance-requirements/"
+   "last_url": "https://old.mcdaniel.hu/m_2_1_0_0_0.php",
+   "last_status": "read"
   },
   {
    "school": "Dublin Business School",
    "level": "bachelor",
    "country": "Ireland",
    "programmes": 15,
-   "known_source": "https://www.dbs.ie/international-students/english-language-requirements"
+   "last_url": "https://www.dbs.ie/ftug-application-procedures",
+   "last_status": "read"
   },
   {
    "school": "Dublin Business School",
    "level": "master",
    "country": "Ireland",
    "programmes": 16,
-   "known_source": "https://www.dbs.ie/international-students/english-language-requirements"
-  },
-  {
-   "school": "Dublin City University",
-   "level": "bachelor",
-   "country": "Ireland",
-   "programmes": 83,
-   "known_source": "https://www.dcu.ie/registry/english-language-requirements-non-native-speakers-english-registry"
-  },
-  {
-   "school": "Dublin City University",
-   "level": "master",
-   "country": "Ireland",
-   "programmes": 39,
-   "known_source": "https://www.dcu.ie/registry/english-language-requirements-non-native-speakers-english-registry"
+   "last_url": "https://www.dbs.ie/ftug-application-procedures",
+   "last_status": "read"
   },
   {
    "school": "Griffith College Dublin",
    "level": "bachelor",
    "country": "Ireland",
    "programmes": 19,
-   "known_source": "https://www.griffith.ie/sites/default/files/2022-12/english-language-scores-for-academic-programmes-dec-2022.pdf"
+   "last_url": "https://www.griffith.ie/offices/admissions/services/how-apply",
+   "last_status": "read"
   },
   {
    "school": "Griffith College Dublin",
    "level": "master",
    "country": "Ireland",
    "programmes": 22,
-   "known_source": "https://www.griffith.ie/sites/default/files/2022-12/english-language-scores-for-academic-programmes-dec-2022.pdf"
+   "last_url": "https://www.griffith.ie/offices/admissions/services/how-apply",
+   "last_status": "read"
   },
   {
    "school": "Technological University (TU) Dublin",
    "level": "bachelor",
    "country": "Ireland",
    "programmes": 119,
-   "known_source": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/english-language-requirements/"
-  },
-  {
-   "school": "Technological University (TU) Dublin",
-   "level": "master",
-   "country": "Ireland",
-   "programmes": 45,
-   "known_source": "https://www.tudublin.ie/study/international/how-to-apply/entry-requirements/english-language-requirements/"
-  },
-  {
-   "school": "Trinity College Dublin",
-   "level": "bachelor",
-   "country": "Ireland",
-   "programmes": 10,
-   "known_source": "https://www.tcd.ie/media/tcd/about/policies/pdfs/academic/english-language-policy.pdf"
-  },
-  {
-   "school": "Trinity College Dublin",
-   "level": "master",
-   "country": "Ireland",
-   "programmes": 20,
-   "known_source": "https://www.tcd.ie/media/tcd/about/policies/pdfs/academic/english-language-policy.pdf"
+   "last_url": "https://www.tudublin.ie/study/international/how-to-apply/postgraduate-courses/",
+   "last_status": "read"
   },
   {
    "school": "University College Dublin",
    "level": "bachelor",
    "country": "Ireland",
    "programmes": 44,
-   "known_source": "https://www.ucd.ie/registry/prospectivestudents/admissions/policiesandgeneralregulations/generalrequirements/minimumenglishlanguagerequirements/"
+   "last_url": "https://www.ucd.ie/graduateadmissions/admissions/howtoapply/",
+   "last_status": "blocked"
   },
   {
    "school": "University College Dublin",
    "level": "master",
    "country": "Ireland",
    "programmes": 194,
-   "known_source": "https://www.ucd.ie/graduateadmissions/admissions/entryrequirements"
-  },
-  {
-   "school": "University of Limerick",
-   "level": "bachelor",
-   "country": "Ireland",
-   "programmes": 70,
-   "known_source": "https://www.ul.ie/study/undergraduate/international-students/english-language-requirements"
-  },
-  {
-   "school": "University of Limerick",
-   "level": "master",
-   "country": "Ireland",
-   "programmes": 77,
-   "known_source": "https://www.ul.ie/study/postgraduate/applying/entry-requirements/english-language-requirements"
-  },
-  {
-   "school": "GBS Malta",
-   "level": "bachelor",
-   "country": "Malta",
-   "programmes": 1,
-   "known_source": "https://www.global-business-school.org/admissions/application-guidelines-bachelor"
-  },
-  {
-   "school": "GBS Malta",
-   "level": "master",
-   "country": "Malta",
-   "programmes": 7,
-   "known_source": "https://www.global-business-school.org/admissions/master-admission-requirements"
+   "last_url": "https://www.ucd.ie/graduateadmissions/admissions/howtoapply/",
+   "last_status": "blocked"
   },
   {
    "school": "South Europe College",
    "level": "master",
    "country": "Malta",
    "programmes": 7,
-   "known_source": null
+   "last_url": "https://southeurope.edu.mt/programs-tuition-fees/",
+   "last_status": "read"
   },
   {
    "school": "Fontys University of Applied Science",
    "level": "bachelor",
    "country": "Netherlands",
    "programmes": 24,
-   "known_source": "https://www.fontys.nl/en/Study-at-Fontys/Practical-information/Enrolment/English-language-requirements/Accepted-English-tests-and-minimum-scores.htm"
+   "last_url": "https://www.fontys.nl/en/Study-at-Fontys/Practical-information/Application-and-enrolment.htm",
+   "last_status": "read"
   },
   {
    "school": "Fontys University of Applied Science",
    "level": "master",
    "country": "Netherlands",
    "programmes": 10,
-   "known_source": "https://www.fontys.nl/en/Study-at-Fontys/Practical-information/Enrolment/English-language-requirements/Accepted-English-tests-and-minimum-scores.htm"
+   "last_url": "https://www.fontys.nl/en/Study-at-Fontys/Practical-information/Application-and-enrolment.htm",
+   "last_status": "read"
   },
   {
    "school": "Haarlem Campus (SRH University diploma)",
    "level": "bachelor",
    "country": "Netherlands",
    "programmes": 3,
-   "known_source": "https://www.srh-haarlem-campus.com/meta/apply-now/"
+   "last_url": "https://www.srh-haarlem-campus.com/about-us/frequently-asked-questions/",
+   "last_status": "read"
   },
   {
    "school": "Haarlem Campus (SRH University diploma)",
    "level": "master",
    "country": "Netherlands",
    "programmes": 1,
-   "known_source": "https://www.srh-haarlem-campus.com/meta/apply-now/"
+   "last_url": "https://www.srh-haarlem-campus.com/about-us/frequently-asked-questions/",
+   "last_status": "read"
   },
   {
    "school": "Saxion University of Applied Sciences",
    "level": "bachelor",
    "country": "Netherlands",
    "programmes": 12,
-   "known_source": "https://www.saxion.edu/studying-in-the-netherlands/application/admission-and-entry-requirements"
+   "last_url": "https://www.saxion.edu/studying-in-the-netherlands/practical-matters/fee-structure",
+   "last_status": "read"
   },
   {
    "school": "Saxion University of Applied Sciences",
    "level": "master",
    "country": "Netherlands",
    "programmes": 6,
-   "known_source": "https://www.saxion.edu/studying-in-the-netherlands/application/admission-and-entry-requirements"
+   "last_url": "https://www.saxion.edu/studying-in-the-netherlands/practical-matters/fee-structure",
+   "last_status": "read"
   },
   {
    "school": "The Hague University of Applied sciences",
    "level": "bachelor",
    "country": "Netherlands",
    "programmes": 18,
-   "known_source": "https://www.thuas.com/study-choice/applications-finances-and-moving-here/entry-requirements"
+   "last_url": "https://thehagueuniversity.com/study-choice/applications-finances-and-moving-here/applying/how-to-apply",
+   "last_status": "read"
   },
   {
    "school": "The Hague University of Applied sciences",
    "level": "master",
    "country": "Netherlands",
    "programmes": 8,
-   "known_source": "https://www.thuas.com/study-choice/applications-finances-and-moving-here/entry-requirements"
+   "last_url": "https://thehagueuniversity.com/study-choice/applications-finances-and-moving-here/applying/how-to-apply",
+   "last_status": "read"
   },
   {
    "school": "University of Europe Amsterdam (UE Amsterdam)",
    "level": "bachelor",
    "country": "Netherlands",
    "programmes": 1,
-   "known_source": "https://www.ue-amsterdam.com/admissions/entry-requirements"
+   "last_url": "https://www.ue-germany.com/study-with-us/fees-and-finance",
+   "last_status": "not_found"
   },
   {
    "school": "University of Europe Amsterdam (UE Amsterdam)",
    "level": "master",
    "country": "Netherlands",
    "programmes": 1,
-   "known_source": "https://www.ue-amsterdam.com/admissions/entry-requirements"
-  },
-  {
-   "school": "University of Twente",
-   "level": "bachelor",
-   "country": "Netherlands",
-   "programmes": 16,
-   "known_source": "https://www.utwente.nl/en/education/bachelor/application-admission/admission/language-requirements/"
-  },
-  {
-   "school": "University of Twente",
-   "level": "master",
-   "country": "Netherlands",
-   "programmes": 89,
-   "known_source": "https://www.utwente.nl/en/education/master/admission-requirements/language-requirement/"
+   "last_url": "https://www.ue-germany.com/study-with-us/fees-and-finance",
+   "last_status": "not_found"
   },
   {
    "school": "Wittenborg University of Applied Sciences",
    "level": "bachelor",
    "country": "Netherlands",
    "programmes": 4,
-   "known_source": "https://www.wittenborg.eu/entrance-criteria-bachelor-and-master-degree-programmes.htm"
+   "last_url": "https://www.wittenborg.eu/paying-programmes.htm",
+   "last_status": "read"
   },
   {
    "school": "Wittenborg University of Applied Sciences",
    "level": "master",
    "country": "Netherlands",
    "programmes": 37,
-   "known_source": "https://www.wittenborg.eu/entrance-criteria-bachelor-and-master-degree-programmes.htm"
+   "last_url": "https://www.wittenborg.eu/paying-programmes.htm",
+   "last_status": "read"
   },
   {
    "school": "Barcelona Flight School",
    "level": "bachelor",
    "country": "Spain",
    "programmes": 1,
-   "known_source": "https://barcelonaflightschool.com/pilot-training/integrated-airline-transport-pilot-atpl-fast-track-course/"
+   "last_url": "https://academy.barcelonaflightschool.com/",
+   "last_status": "read"
   },
   {
    "school": "EAE Business School (Madrid and Barcelona)",
    "level": "bachelor",
    "country": "Spain",
    "programmes": 1,
-   "known_source": null
+   "last_url": "https://www.eae.es/en/about-eae/fees-eae",
+   "last_status": "not_found"
   },
   {
    "school": "EAE Business School (Madrid and Barcelona)",
    "level": "master",
    "country": "Spain",
    "programmes": 12,
-   "known_source": "https://www.eae.es/en/full-time/master-international-business/admission-process-and-degree"
+   "last_url": "https://www.eae.es/en/full-time/master-international-business/admission-process-and-degree",
+   "last_status": "not_found"
   },
   {
    "school": "ESEI Business School",
    "level": "master",
    "country": "Spain",
    "programmes": 9,
-   "known_source": "https://www.eseibusinessschool.com/admission-steps-requirements/"
-  },
-  {
-   "school": "European School of Economics - Madrid",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 6,
-   "known_source": "https://www.ese.ac.uk/admission"
-  },
-  {
-   "school": "European School of Economics - Madrid",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 5,
-   "known_source": "https://www.ese.ac.uk/admission"
+   "last_url": "https://www.eseibusinessschool.com/admission-steps-requirements/",
+   "last_status": "not_found"
   },
   {
    "school": "Geneva Business School",
    "level": "bachelor",
    "country": "Spain",
    "programmes": 2,
-   "known_source": "https://gbsge.com/admissions-faqs/"
+   "last_url": "https://gbsge.com/programs/bachelor-of-international-management/fees/",
+   "last_status": "blocked"
   },
   {
    "school": "Geneva Business School",
    "level": "master",
    "country": "Spain",
    "programmes": 2,
-   "known_source": "https://gbsge.com/programs/master-of-international-management/entry-requirements/"
+   "last_url": "https://gbsge.com/programs/master-of-international-management/fees/",
+   "last_status": "blocked"
   },
   {
    "school": "Istituto Europeo di Design (Barcelona)",
    "level": "bachelor",
    "country": "Spain",
    "programmes": 11,
-   "known_source": "https://www.ied.edu/study-in-spain/bachelor-of-arts-honours-and-IED-diplomas"
+   "last_url": "https://www.ied.es/other-pdf/Spain/Barcelona/Prueba_Acceso/Admission_Test_Information_IED_Barcelona.pdf",
+   "last_status": "read"
   },
   {
    "school": "Istituto Europeo di Design (Barcelona)",
    "level": "master",
    "country": "Spain",
    "programmes": 9,
-   "known_source": "https://www.ied.edu/other-pdf/admissions/ied-eng-admission-registration-process-master.pdf"
+   "last_url": "https://www.ied.es/other-pdf/Spain/Barcelona/Tarifas/Fees_Master_IED_Barcelona_ENG.pdf",
+   "last_status": "not_found"
   },
   {
    "school": "Istituto Europeo di Design (Madrid)",
    "level": "bachelor",
    "country": "Spain",
    "programmes": 1,
-   "known_source": "https://www.ied.edu/study-in-spain/bachelor-of-arts-honours-and-IED-diplomas"
+   "last_url": "https://www.ied.es/other-pdf/Spain/Madrid/IED_Undergraduate_PRICELIST_MADRID_ENG.pdf",
+   "last_status": "not_found"
   },
   {
    "school": "Istituto Europeo di Design (Madrid)",
    "level": "master",
    "country": "Spain",
    "programmes": 4,
-   "known_source": "https://www.ied.edu/other-pdf/admissions/ied-eng-admission-registration-process-master.pdf"
+   "last_url": "https://www.ied.es",
+   "last_status": "not_found"
   },
   {
    "school": "Schiller International University - Madrid",
    "level": "bachelor",
    "country": "Spain",
    "programmes": 7,
-   "known_source": "https://www.schiller.edu/admissions/requirements/"
+   "last_url": "https://www.schiller.edu/admissions/requirements/",
+   "last_status": "not_found"
   },
   {
    "school": "Schiller International University - Madrid",
    "level": "master",
    "country": "Spain",
    "programmes": 6,
-   "known_source": "https://www.schiller.edu/admissions/requirements/"
+   "last_url": "https://www.schiller.edu/admissions/requirements/",
+   "last_status": "not_found"
   },
   {
    "school": "Toulouse Business School (TBS) Barcelona",
    "level": "bachelor",
    "country": "Spain",
    "programmes": 1,
-   "known_source": null
+   "last_url": "https://barcelona.tbs-education.com/program/bachelor-management-degree/admissions",
+   "last_status": "blocked"
   },
   {
    "school": "Toulouse Business School (TBS) Barcelona",
    "level": "master",
    "country": "Spain",
    "programmes": 12,
-   "known_source": null
-  },
-  {
-   "school": "UCAM (Murcia)",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 8,
-   "known_source": null
-  },
-  {
-   "school": "UCAM (Murcia)",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 10,
-   "known_source": null
+   "last_url": "https://www.tbs-education.com/programs/master-of-science-programs/faq/",
+   "last_status": "blocked"
   },
   {
    "school": "UDIT (University of Design and Technology) Madrid",
    "level": "bachelor",
    "country": "Spain",
    "programmes": 4,
-   "known_source": null
+   "last_url": "https://www.udit.es/en/admission-international-students/",
+   "last_status": "read"
   },
   {
    "school": "UDIT (University of Design and Technology) Madrid",
    "level": "master",
    "country": "Spain",
    "programmes": 1,
-   "known_source": null
+   "last_url": "https://www.udit.es/en/admission-international-students/",
+   "last_status": "read"
   },
   {
    "school": "Universidad Europea de Madrid",
    "level": "bachelor",
    "country": "Spain",
    "programmes": 32,
-   "known_source": null
+   "last_url": "https://universidadeuropea.com/en/admission-finance/admissions-process/campus-degree-international-education-systems/",
+   "last_status": "read"
   },
   {
    "school": "Universidad Europea de Madrid",
    "level": "master",
    "country": "Spain",
    "programmes": 22,
-   "known_source": null
+   "last_url": "https://universidadeuropea.com/en/admission-finance/admissions-process/online-masters-approved-foreign-university-degree/",
+   "last_status": "read"
   },
   {
    "school": "Ajman University",
    "level": "bachelor",
    "country": "United Arab Emirates",
    "programmes": 26,
-   "known_source": "https://www.ajman.ac.ae/en/admissions/undergraduate/international-students"
+   "last_url": "https://www.ajman.ac.ae/upload/files/financial_documents/2025-26/booklets/Payment_Terms_English_and_Arabic_-_revised_v1.pdf",
+   "last_status": "read"
   },
   {
    "school": "Ajman University",
    "level": "master",
    "country": "United Arab Emirates",
    "programmes": 11,
-   "known_source": "https://www.ajman.ac.ae/en/admissions/graduate/admissions-requirements"
+   "last_url": "https://www.ajman.ac.ae/upload/files/financial_documents/2025-26/booklets/Payment_Terms_English_and_Arabic_-_revised_v1.pdf",
+   "last_status": "read"
   },
   {
    "school": "Rochester Institute of Technology of Dubai (RIT Dubai)",
    "level": "bachelor",
    "country": "United Arab Emirates",
    "programmes": 9,
-   "known_source": "https://www.rit.edu/dubai/undergraduate-admissions"
+   "last_url": "https://www.rit.edu/dubai/undergraduate-admissions",
+   "last_status": "not_found"
   },
   {
    "school": "Rochester Institute of Technology of Dubai (RIT Dubai)",
    "level": "master",
    "country": "United Arab Emirates",
    "programmes": 8,
-   "known_source": "https://www.rit.edu/dubai/graduate-admissions"
+   "last_url": "https://www.rit.edu/dubai/graduate-admissions",
+   "last_status": "not_found"
   },
   {
    "school": "University of Europe for Applied Sciences (UE) Dubai",
    "level": "bachelor",
    "country": "United Arab Emirates",
    "programmes": 5,
-   "known_source": "https://www.ue-germany.com/admission-requirements"
+   "last_url": "https://www.ue-germany.com/en-ae/apply/fees-and-funding",
+   "last_status": "not_found"
   },
   {
    "school": "University of Europe for Applied Sciences (UE) Dubai",
    "level": "master",
    "country": "United Arab Emirates",
    "programmes": 13,
-   "known_source": "https://www.ue-germany.com/admission-requirements"
-  },
-  {
-   "school": "Anglia Ruskin University",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 94,
-   "known_source": "https://www.aru.ac.uk/international/entry-requirements"
-  },
-  {
-   "school": "Anglia Ruskin University",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 53,
-   "known_source": "https://www.aru.ac.uk/international/entry-requirements"
-  },
-  {
-   "school": "Bangor University (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 160,
-   "known_source": "https://www.bangor.ac.uk/international/future/englishlanguage"
-  },
-  {
-   "school": "Bangor University (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 96,
-   "known_source": "https://www.bangor.ac.uk/international/countries/turkey"
+   "last_url": "https://www.ue-germany.com/en-ae/apply/fees-and-funding",
+   "last_status": "not_found"
   },
   {
    "school": "Bournemouth University (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 85,
-   "known_source": "https://www.bournemouth.ac.uk/study/international/international-entry-requirements/english-language-requirements"
+   "last_url": "https://www.bournemouth.ac.uk/study/undergraduate/undergraduate-fees-funding",
+   "last_status": "blocked"
   },
   {
    "school": "Bournemouth University (EB UK)",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 72,
-   "known_source": "https://www.bournemouth.ac.uk/study/international/bu-your-country/turkey/entry-requirements-turkish-students"
+   "last_url": "https://www.bournemouth.ac.uk/study/postgraduate/fees-funding/fees",
+   "last_status": "blocked"
   },
   {
    "school": "Brunel University London (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 107,
-   "known_source": "https://www.brunel.ac.uk/international/english-language-requirements"
+   "last_url": "https://www.brunel.ac.uk/international/applicants/how-to-apply-international-students/how-to-apply-for-an-undergraduate-course",
+   "last_status": "read"
   },
   {
    "school": "Brunel University London (EB UK)",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 107,
-   "known_source": "https://www.brunel.ac.uk/international/english-language-requirements"
-  },
-  {
-   "school": "Coventry University",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 121,
-   "known_source": "https://www.coventry.ac.uk/international-students-hub/entry-requirements/"
-  },
-  {
-   "school": "Coventry University",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 86,
-   "known_source": "https://www.coventry.ac.uk/study-at-coventry/apply-now/postgraduate-application-requirements/"
+   "last_url": "https://www.brunel.ac.uk/scholarships/the-international-bursary-pg-terms-and-conditions",
+   "last_status": "not_found"
   },
   {
    "school": "De Montfort University (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 93,
-   "known_source": "https://www.dmu.ac.uk/international/en/entry-requirements.aspx"
+   "last_url": "https://www.dmu.ac.uk/study/applying/undergraduate.aspx",
+   "last_status": "not_found"
   },
   {
    "school": "De Montfort University (EB UK)",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 60,
-   "known_source": "https://www.dmu.ac.uk/international/en/entry-requirements.aspx"
+   "last_url": "https://www.dmu.ac.uk/study/applying/undergraduate.aspx",
+   "last_status": "not_found"
   },
   {
    "school": "Goldsmiths University of London (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 69,
-   "known_source": "https://www.gold.ac.uk/international/regions/turkey/"
+   "last_url": "https://www.gold.ac.uk/pg/apply/",
+   "last_status": "not_found"
   },
   {
    "school": "Goldsmiths University of London (EB UK)",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 119,
-   "known_source": "https://www.gold.ac.uk/apply/english-language-requirements/"
+   "last_url": "https://www.gold.ac.uk/pg/apply/",
+   "last_status": "not_found"
   },
   {
    "school": "Istituto Marangoni London",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 14,
-   "known_source": "https://www.istitutomarangoni.com/en/admission/entry-requirements-london"
+   "last_url": "https://www.istitutomarangoni.com/en/fashion-courses/bachelor-degrees/fashion-design/fashion-design",
+   "last_status": "js_empty"
   },
   {
    "school": "Istituto Marangoni London",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 6,
-   "known_source": "https://www.istitutomarangoni.com/en/admission/entry-requirements-london"
+   "last_url": "https://www.istitutomarangoni.com/en/fashion-courses/postgraduate/masters-degrees-o-masters-courses/fashion-luxury-brand-management",
+   "last_status": "not_found"
   },
   {
    "school": "King's College",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 110,
-   "known_source": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements"
+   "last_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/important-information-for-applying",
+   "last_status": "read"
   },
   {
    "school": "London Metropolitan University",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 93,
-   "known_source": "https://www.londonmet.ac.uk/international/applying/countries/students-from-turkiye/"
+   "last_url": "https://www.londonmet.ac.uk/international/applying/international-faqs/",
+   "last_status": "not_found"
   },
   {
    "school": "London Metropolitan University",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 80,
-   "known_source": "https://www.londonmet.ac.uk/international/applying/countries/students-from-turkiye/"
+   "last_url": "https://www.londonmet.ac.uk/international/applying/international-faqs/",
+   "last_status": "not_found"
   },
   {
    "school": "London South Bank University (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 81,
-   "known_source": "https://www.lsbu.ac.uk/study/undergraduate/entry-requirements"
+   "last_url": "https://www.lsbu.ac.uk/international/international-offer-holder-hub",
+   "last_status": "blocked"
   },
   {
    "school": "London South Bank University (EB UK)",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 53,
-   "known_source": "https://www.lsbu.ac.uk/study/undergraduate/entry-requirements"
+   "last_url": "https://www.lsbu.ac.uk/study/course-finder/international-business-management-msc",
+   "last_status": "blocked"
   },
   {
    "school": "Manchester Metropolitan University",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 137,
-   "known_source": "https://www.mmu.ac.uk/study/international/before-you-apply/english-language-requirements"
+   "last_url": "https://www.mmu.ac.uk/study/international/how-to-apply/international-undergraduate-degrees",
+   "last_status": "not_found"
   },
   {
    "school": "Manchester Metropolitan University",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 91,
-   "known_source": "https://www.mmu.ac.uk/study/international/before-you-apply/english-language-requirements"
+   "last_url": "https://www.mmu.ac.uk/study/international/how-to-apply/postgraduate-taught",
+   "last_status": "not_found"
   },
   {
    "school": "Middlesex University (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 70,
-   "known_source": "https://www.mdx.ac.uk/international/support-in-your-countries-and-regions/turkey/"
-  },
-  {
-   "school": "Middlesex University (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 55,
-   "known_source": "https://www.mdx.ac.uk/international/entry-requirements-for-international-students/english-language-requirements-for-international-students/"
+   "last_url": "https://www.mdx.ac.uk/international/how-to-apply-as-a-international-student/",
+   "last_status": "read"
   },
   {
    "school": "Northeastern University London",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 12,
-   "known_source": "https://www.nulondon.ac.uk/admissions/entry-requirements/"
+   "last_url": "https://www.nulondon.ac.uk/admissions/masters-admissions/post-graduate-tuition-fees/",
+   "last_status": "not_found"
   },
   {
    "school": "Northeastern University London",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 7,
-   "known_source": "https://www.nulondon.ac.uk/admissions/entry-requirements/"
+   "last_url": "https://www.nulondon.ac.uk/admissions/masters-admissions/post-graduate-tuition-fees/",
+   "last_status": "not_found"
   },
   {
    "school": "Nottingham Trent University (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 193,
-   "known_source": "https://www.ntu.ac.uk/international/countries/europe/turkey"
+   "last_url": "https://www.ntu.ac.uk/international/frequently-asked-questions",
+   "last_status": "blocked"
   },
   {
    "school": "Nottingham Trent University (EB UK)",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 121,
-   "known_source": "https://www.ntu.ac.uk/international/your-application/entry-requirements/english-language-requirements"
+   "last_url": "https://www.ntu.ac.uk/study-and-courses/frequently-asked-questions/postgraduate-faqs",
+   "last_status": "blocked"
   },
   {
    "school": "Oxford Brookes University (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 99,
-   "known_source": "https://www.brookes.ac.uk/study/international-students/your-country/turkey/entry-requirements"
+   "last_url": "https://www.brookes.ac.uk/study/international-students/applying-to-arriving/how-to-apply",
+   "last_status": "not_found"
   },
   {
    "school": "Oxford Brookes University (EB UK)",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 59,
-   "known_source": "https://www.brookes.ac.uk/study/international-students/applying-to-arriving/how-to-apply/english-language-requirements"
+   "last_url": "https://www.brookes.ac.uk/study/international-students/applying-to-arriving/how-to-apply",
+   "last_status": "not_found"
   },
   {
    "school": "Queen Mary University of London",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 156,
-   "known_source": "https://www.qmul.ac.uk/international-students/englishlanguagerequirements/undergraduate-and-postgraduate-programmes/"
+   "last_url": "https://www.qmul.ac.uk/postgraduate/research/applying-for-a-research-degree/",
+   "last_status": "read"
   },
   {
    "school": "Regent's University London (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 42,
-   "known_source": "https://www.regents.ac.uk/study/international/international-students/turkey"
+   "last_url": "https://www.regents.ac.uk/undergraduate/business/ba-hons-international-business-new-model",
+   "last_status": "blocked"
   },
   {
    "school": "Royal Holloway University of London",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 155,
-   "known_source": "https://www.royalholloway.ac.uk/studying-here/international-students/find-your-country/turkey/"
+   "last_url": "https://www.royalholloway.ac.uk/studying-here/applying/",
+   "last_status": "read"
   },
   {
    "school": "Royal Holloway University of London",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 71,
-   "known_source": "https://www.royalholloway.ac.uk/studying-here/international-students/find-your-country/turkey/"
-  },
-  {
-   "school": "Swansea University",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 117,
-   "known_source": "https://www.swansea.ac.uk/admissions/english-language-requirements/"
+   "last_url": "https://www.royalholloway.ac.uk/pg-prospectus/",
+   "last_status": "read"
   },
   {
    "school": "Swansea University",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 112,
-   "known_source": "https://www.swansea.ac.uk/admissions/english-language-requirements/"
+   "last_url": "https://www.swansea.ac.uk/international-students/international-student-courses/how-to-apply/",
+   "last_status": "not_found"
   },
   {
    "school": "The University of Edinburgh",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 312,
-   "known_source": "https://www.ed.ac.uk/studying/international/country/middle-east/turkey"
-  },
-  {
-   "school": "The University of Edinburgh",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 112,
-   "known_source": "https://study.ed.ac.uk/programmes/regions/turkey"
+   "last_url": "https://study.ed.ac.uk/undergraduate/fees-funding/fees-costs/international-eu-eea",
+   "last_status": "not_found"
   },
   {
    "school": "The University of Manchester",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 343,
-   "known_source": "http://www.manchester.ac.uk/study/international/country-specific-information/turkiye/"
-  },
-  {
-   "school": "The University of Manchester",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 242,
-   "known_source": "https://www.manchester.ac.uk/study/international/country-specific-information/turkiye/"
+   "last_url": "https://www.manchester.ac.uk/study/international/admissions/undergraduate-application-process/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Aberdeen",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 293,
-   "known_source": "https://www.abdn.ac.uk/study/international/country-territory/turkey/entry/"
+   "last_url": "https://www.abdn.ac.uk/mumbai/admissions/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Aberdeen",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 140,
-   "known_source": "https://www.abdn.ac.uk/study/international/english/postgraduate-degrees---english-requirements/"
+   "last_url": "https://studyonline.abdn.ac.uk/msc-management-and-finance/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Birmingham",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 165,
-   "known_source": "https://www.birmingham.ac.uk/study/undergraduate/apply/entry-requirements/international-entry-requirements"
-  },
-  {
-   "school": "University of Birmingham",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 210,
-   "known_source": "https://www.birmingham.ac.uk/study/postgraduate/taught/apply/international-entry-requirements"
+   "last_url": "https://www.birmingham.ac.uk/study/postgraduate/taught/apply",
+   "last_status": "not_found"
   },
   {
    "school": "University of Brighton",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 142,
-   "known_source": "https://www.brighton.ac.uk/international/applying-here/how-to-apply/english-language-requirements/index.aspx"
+   "last_url": "https://www.brighton.ac.uk/international/help-and-advice/frequently-asked-questions/index.aspx",
+   "last_status": "read"
   },
   {
    "school": "University of Brighton",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 56,
-   "known_source": "https://www.brighton.ac.uk/international/applying-here/how-to-apply/english-language-requirements/index.aspx"
+   "last_url": "https://www.brighton.ac.uk/international/help-and-advice/frequently-asked-questions/index.aspx",
+   "last_status": "read"
   },
   {
    "school": "University of Bristol",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 153,
-   "known_source": "https://www.bristol.ac.uk/study/language-requirements/profile-b/"
-  },
-  {
-   "school": "University of Bristol",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 125,
-   "known_source": "https://www.bristol.ac.uk/study/language-requirements/profile-b/"
+   "last_url": "https://www.bristol.ac.uk/media-library/sites/study/documents/policies/2025%20Application%20Fee%20Policy.pdf",
+   "last_status": "read"
   },
   {
    "school": "University of East London",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 95,
-   "known_source": "https://www.uel.ac.uk/international/regions/english-language-requirements"
+   "last_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-business-management",
+   "last_status": "not_found"
   },
   {
    "school": "University of East London",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 79,
-   "known_source": "https://www.uel.ac.uk/international/regions/english-language-requirements"
+   "last_url": "https://www.uel.ac.uk/postgraduate/courses/msc-civil-engineering",
+   "last_status": "not_found"
   },
   {
    "school": "University of Essex (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 204,
-   "known_source": "https://www.essex.ac.uk/-/media/documents/study/english-international.pdf"
+   "last_url": "https://www.essex.ac.uk/courses/UG01275/1",
+   "last_status": "not_found"
   },
   {
    "school": "University of Essex (EB UK)",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 142,
-   "known_source": "https://www.essex.ac.uk/-/media/documents/study/english_language_requirements.pdf"
+   "last_url": "https://www.essex.ac.uk/courses/pg01647/1/msc-international-tourism-management",
+   "last_status": "not_found"
   },
   {
    "school": "University of Exeter",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 179,
-   "known_source": "https://www.exeter.ac.uk/study/englishlanguagerequirements/profile-a/"
-  },
-  {
-   "school": "University of Exeter",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 161,
-   "known_source": "https://www.exeter.ac.uk/study/englishlanguagerequirements/profile-b1/"
+   "last_url": "https://www.exeter.ac.uk/online-courses/masters/",
+   "last_status": "read"
   },
   {
    "school": "University of Greenwich",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 112,
-   "known_source": "https://www.gre.ac.uk/international/support-and-help/courses"
+   "last_url": "https://www.gre.ac.uk/postgraduate-courses/bus/intbus",
+   "last_status": "not_found"
   },
   {
    "school": "University of Greenwich",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 103,
-   "known_source": "https://www.gre.ac.uk/international/support-and-help/courses"
+   "last_url": "https://www.gre.ac.uk/postgraduate-courses/bus/intbus",
+   "last_status": "not_found"
   },
   {
    "school": "University of Hull",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 118,
-   "known_source": "https://www.hull.ac.uk/study/international-students/how-to-apply/english-language-requirements"
-  },
-  {
-   "school": "University of Kent",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 71,
-   "known_source": "https://www.kent.ac.uk/courses/undergraduate/apply/english-language-requirements"
-  },
-  {
-   "school": "University of Kent",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 61,
-   "known_source": "https://www.kent.ac.uk/courses/postgraduate/apply/english-language-requirements"
+   "last_url": "https://www.hull.ac.uk/help-centre/international-students/what-do-i-need-to-apply-for-a-student-visa",
+   "last_status": "read"
   },
   {
    "school": "University of Law (ULaw)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 38,
-   "known_source": "https://www.law.ac.uk/study/undergraduate/entry-requirements/"
+   "last_url": "https://www.law.ac.uk/study/undergraduate/course-fees-and-funding/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Law (ULaw)",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 117,
-   "known_source": "https://www.law.ac.uk/study/postgraduate/entry-requirements/"
+   "last_url": "https://www.law.ac.uk/study/postgraduate/law/ma-law/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Liverpool (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 131,
-   "known_source": "https://www.liverpool.ac.uk/international/english-language-requirements/"
+   "last_url": "https://www.liverpool.ac.uk/international/scholarships-and-fees/tuition-fees/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Liverpool (EB UK)",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 117,
-   "known_source": "https://www.liverpool.ac.uk/international/english-language-requirements/"
+   "last_url": "https://www.liverpool.ac.uk/courses/international-business-msc",
+   "last_status": "not_found"
   },
   {
    "school": "University of Manchester",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 1,
-   "known_source": "https://www.manchester.ac.uk/study/international/admissions/undergraduate-application-process/undergraduate-entry-requirements/"
+   "last_url": "https://www.manchester.ac.uk/study/international/admissions/undergraduate-application-process/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Reading (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 132,
-   "known_source": "https://www.reading.ac.uk/ready-to-study/international-and-eu/english-language-requirements"
-  },
-  {
-   "school": "University of Reading (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 80,
-   "known_source": "https://www.reading.ac.uk/ready-to-study/study/how-to-apply/entry-requirements-pg"
+   "last_url": "https://www.reading.ac.uk/ready-to-study/study/how-to-apply/masters-how-to-apply",
+   "last_status": "read"
   },
   {
    "school": "University of Roehampton",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 80,
-   "known_source": "https://www.roehampton.ac.uk/student-support/international-students/entry-requirements/"
+   "last_url": "https://www.roehampton.ac.uk/study/postgraduate-taught-courses/artificial-intelligence/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Roehampton",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 48,
-   "known_source": "https://www.roehampton.ac.uk/student-support/international-students/entry-requirements/"
+   "last_url": "https://www.roehampton.ac.uk/study/postgraduate-taught-courses/artificial-intelligence/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Sheffield",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 67,
-   "known_source": "https://www.sheffield.ac.uk/international/english-language-requirements"
-  },
-  {
-   "school": "University of Sheffield",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 98,
-   "known_source": "https://www.sheffield.ac.uk/international/english-language-requirements"
+   "last_url": "https://sheffield.ac.uk/international/applying/postgraduate-taught",
+   "last_status": "not_found"
   },
   {
    "school": "University of Surrey (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 177,
-   "known_source": "https://www.surrey.ac.uk/apply/international/english-language-requirements"
-  },
-  {
-   "school": "University of Surrey (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 79,
-   "known_source": "https://www.surrey.ac.uk/apply/international/english-language-requirements"
+   "last_url": "https://www.surrey.ac.uk/apply/postgraduate/research-frequently-asked-questions",
+   "last_status": "not_found"
   },
   {
    "school": "University of Sussex",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 117,
-   "known_source": "https://www.sussex.ac.uk/study/undergraduate/apply/international-qualifications/english-language-requirements"
+   "last_url": "https://www.sussex.ac.uk/study/masters/courses/data-science-msc",
+   "last_status": "not_found"
   },
   {
    "school": "University of Sussex",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 132,
-   "known_source": "https://www.sussex.ac.uk/study/undergraduate/apply/international-qualifications/english-language-requirements"
+   "last_url": "https://www.sussex.ac.uk/study/masters/courses/data-science-msc",
+   "last_status": "not_found"
   },
   {
    "school": "University of Warwick",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 156,
-   "known_source": "https://warwick.ac.uk/study/undergraduate/apply/english-language-requirements/"
-  },
-  {
-   "school": "University of Warwick",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 48,
-   "known_source": "https://warwick.ac.uk/study/postgraduate/apply/english/"
+   "last_url": "https://warwick.ac.uk/fac/sci/wmg/study/masters-degrees/international-trade/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Westminster",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 109,
-   "known_source": "https://www.westminster.ac.uk/study/english-language-requirements"
+   "last_url": "https://www.westminster.ac.uk/study/undergraduate/how-to-apply",
+   "last_status": "not_found"
   },
   {
    "school": "University of Westminster",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 85,
-   "known_source": "https://www.westminster.ac.uk/study/english-language-requirements"
+   "last_url": "https://www.westminster.ac.uk/study/postgraduate/how-to-apply",
+   "last_status": "not_found"
   },
   {
    "school": "University of Winchester",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 80,
-   "known_source": "https://winchester.ac.uk/international/english-language-requirements/"
+   "last_url": "https://www.winchester.ac.uk/study/Postgraduate/Courses/MSc-Criminal-Justice-and-Investigation/",
+   "last_status": "not_found"
   },
   {
    "school": "University of Winchester",
    "level": "master",
    "country": "United Kingdom",
    "programmes": 27,
-   "known_source": "https://www.winchester.ac.uk/international/International-Entry-Requirements/"
-  },
-  {
-   "school": "Adelphi University",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 45,
-   "known_source": "https://www.adelphi.edu/admissions/international/english-proficiency-requirements/"
-  },
-  {
-   "school": "Adelphi University",
-   "level": "master",
-   "country": "United States",
-   "programmes": 19,
-   "known_source": "https://www.adelphi.edu/admissions/international/english-proficiency-requirements/"
-  },
-  {
-   "school": "Augustana College",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 78,
-   "known_source": "https://augustana.edu/admissions/apply/international/procedure/english"
+   "last_url": "https://www.winchester.ac.uk/study/Postgraduate/Courses/MSc-Criminal-Justice-and-Investigation/",
+   "last_status": "not_found"
   },
   {
    "school": "Catholic University",
    "level": "master",
    "country": "United States",
    "programmes": 59,
-   "known_source": "https://www.catholic.edu/admission-aid/international-admission/english-proficiency"
-  },
-  {
-   "school": "Cleveland State University",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 68,
-   "known_source": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements"
-  },
-  {
-   "school": "Cleveland State University",
-   "level": "master",
-   "country": "United States",
-   "programmes": 15,
-   "known_source": "https://catalog.csuohio.edu/content.php?catoid=47&navoid=4052"
-  },
-  {
-   "school": "Florida Atlantic University",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 109,
-   "known_source": "https://www.fau.edu/admissions/international/how-to-apply/english-proficiency-tests/"
-  },
-  {
-   "school": "Florida Atlantic University",
-   "level": "master",
-   "country": "United States",
-   "programmes": 16,
-   "known_source": "https://www.fau.edu/admissions/international/how-to-apply/english-proficiency-tests/"
-  },
-  {
-   "school": "George Mason University",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 100,
-   "known_source": "https://www.gmu.edu/international/english-language-requirements"
-  },
-  {
-   "school": "George Mason University",
-   "level": "master",
-   "country": "United States",
-   "programmes": 1,
-   "known_source": "https://www.gmu.edu/international/english-language-requirements"
-  },
-  {
-   "school": "Hofstra University",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 148,
-   "known_source": "https://www.hofstra.edu/admission/english-proficiency.html"
+   "last_url": "https://www.catholic.edu/admission-aid/international-admission/graduate-international-admission",
+   "last_status": "blocked"
   },
   {
    "school": "Hofstra University",
    "level": "master",
    "country": "United States",
    "programmes": 16,
-   "known_source": "https://www.hofstra.edu/graduate/international-students.html"
-  },
-  {
-   "school": "Illinois State University",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 180,
-   "known_source": "https://illinoisstate.edu/admissions/international/requirements/"
+   "last_url": "https://ebill.hofstra.edu/C20848_ustores/web/store_cat.jsp?STOREID=25&CATID=378",
+   "last_status": "js_empty"
   },
   {
    "school": "Johns Hopkins University",
    "level": "master",
    "country": "United States",
    "programmes": 29,
-   "known_source": "https://engineering.jhu.edu/admissions/graduate-admissions/full-time-programs/how-to-apply/international-students/english-proficiency-policy-test-waiver-eligibility/"
-  },
-  {
-   "school": "Lehigh University",
-   "level": "master",
-   "country": "United States",
-   "programmes": 5,
-   "known_source": "https://www2.lehigh.edu/admissions/english-proficiency-requirement-for-graduate-studies"
-  },
-  {
-   "school": "Lynn University",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 27,
-   "known_source": "https://www.lynn.edu/admission/apply-to-lynn/international-students/international-undergraduate"
-  },
-  {
-   "school": "Lynn University",
-   "level": "master",
-   "country": "United States",
-   "programmes": 25,
-   "known_source": "https://www.lynn.edu/admission/international-students/international-graduate-admission"
-  },
-  {
-   "school": "Oregon State University",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 130,
-   "known_source": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman"
-  },
-  {
-   "school": "Queens College at CUNY",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 90,
-   "known_source": "https://www.qc.cuny.edu/admissions/freshman/"
-  },
-  {
-   "school": "University of Massachusetts Boston",
-   "level": "master",
-   "country": "United States",
-   "programmes": 18,
-   "known_source": "https://www.umb.edu/admissions/graduate-students/apply/international-graduate-applicants/"
-  },
-  {
-   "school": "University of Nevada, Reno",
-   "level": "master",
-   "country": "United States",
-   "programmes": 8,
-   "known_source": "https://catalog.unr.edu/content.php?catoid=58&navoid=119810"
-  },
-  {
-   "school": "University of Wisconsin-Whitewater",
-   "level": "master",
-   "country": "United States",
-   "programmes": 2,
-   "known_source": "https://www.uww.edu/graduate-studies/graduate-admissions"
-  },
-  {
-   "school": "University of Wyoming",
-   "level": "master",
-   "country": "United States",
-   "programmes": 16,
-   "known_source": "https://international.uwyo.edu/graduate-admissions/"
-  },
-  {
-   "school": "Washington University of Science and Technology",
-   "level": "bachelor",
-   "country": "United States",
-   "programmes": 7,
-   "known_source": "https://www.wust.edu/international-admission"
-  },
-  {
-   "school": "Washington University of Science and Technology",
-   "level": "master",
-   "country": "United States",
-   "programmes": 3,
-   "known_source": "https://www.wust.edu/international-admission"
+   "last_url": "https://education.jhu.edu/admissions/how-to-apply/admissions-faqs/",
+   "last_status": "blocked"
   }
  ]
 }
