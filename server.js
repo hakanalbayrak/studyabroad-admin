@@ -1198,6 +1198,7 @@ const agentHandoff = require('./routes/agent');
 app.use('/api/agent', agentHandoff.pub);
 app.post('/api/admin/agent-token', requireRole('admin'), agentHandoff.createToken);
 app.get('/api/admin/agent-results', requireRole('admin'), agentHandoff.listResults);
+app.delete('/api/admin/agent-token', requireRole('admin'), agentHandoff.revokeTokens);
 app.use('/api/entities', requireRole('admin'), require('./routes/entities'));
 app.use('/api/locations', requireRole('admin'), require('./routes/locations'));
 app.use('/api/programs', requireRole('admin'), require('./routes/programs'));

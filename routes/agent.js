@@ -61,4 +61,12 @@ async function listResults(req, res) {
     res.json({ results: rows.map(r => ({ id: r.id, created_at: r.created_at, ...JSON.parse(r.payload) })) });
   } catch (e) { res.status(500).json({ error: e.message }); }
 }
-module.exports = { pub, createToken, listResults };
+async function revokeTokens(req, res) {
+  try {
+    await ensure();
+    const id = req.query.id ? parseInt(req.query.id, 10) : null;
+    const [r] = id ? await db.query('DELETE FROM agent_tokens WHERE id = ?', [id]) : await db.query('DELETE FROM agent_tokens');
+    res.json({ ok: true, revoked: r.affectedRows });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+}
+module.exports = { pub, createToken, listResults, revokeTokens };
