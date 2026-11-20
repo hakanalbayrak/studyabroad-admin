@@ -1,0 +1,1352 @@
+{
+ "45600": {
+  "stem": true,
+  "typical_offer": "Minimum high school GPA 2.5/4.0 (conditional Early Start admission for 2.25-2.49, fall entry only); international students meet the same GPA standard",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit only with a score of 4 or better on each IB Diploma exam; individual course credit possible without the full diploma",
+   "note": "Institution-wide rule"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by AP exam granted; exact score thresholds and Calculus AB vs BC equivalents not published in the sources used",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional for admission; ACT/SAT used for English and maths placement. English proficiency: TOEFL iBT 74, IELTS 6.0 or PTE 50 (or ACT 17 / SAT 930)",
+  "math_test": {
+   "name": "ACT/SAT",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Used for English and maths course placement"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 13 college-prep units incl. 3 years maths and 2 years lab science",
+  "source_url": "https://www.eureka.edu/file/2416/2024-25%20Catalog.pdf",
+  "confidence": "medium"
+ },
+ "45605": {
+  "stem": true,
+  "typical_offer": "Minimum high school GPA 2.5/4.0 (conditional Early Start admission for 2.25-2.49, fall entry only); international students meet the same GPA standard",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit only with a score of 4 or better on each IB Diploma exam; individual course credit possible without the full diploma",
+   "note": "Institution-wide rule"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by AP exam granted; exact score thresholds and Calculus AB vs BC equivalents not published in the sources used",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional for admission; ACT/SAT used for English and maths placement. English proficiency: TOEFL iBT 74, IELTS 6.0 or PTE 50 (or ACT 17 / SAT 930)",
+  "math_test": {
+   "name": "ACT/SAT",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Used for English and maths course placement"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 13 college-prep units incl. 3 years maths and 2 years lab science",
+  "source_url": "https://www.eureka.edu/file/2416/2024-25%20Catalog.pdf",
+  "confidence": "medium"
+ },
+ "45626": {
+  "stem": true,
+  "typical_offer": "No minimum freshman GPA published; international applicants submit English-translated transcripts, personal statement and passport copy",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Chart minimum score 3 for all exams (catalog text says 4 or 5 earns advanced standing). Calculus AB 3 = MATH-262 (4 credits); Calculus BC 3 = MATH-262 and MATH-263 (4 credits listed). Total credit from exams and transfer capped at 90.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT not required for undergraduate admission (required only for Nursing and Honors); submit if available. English: TOEFL 70, IELTS 6.0, Duolingo 100 or PTE 50",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.felician.edu/admissions/international-students/",
+  "confidence": "medium"
+ },
+ "45666": {
+  "stem": true,
+  "typical_offer": "No minimum freshman GPA published; international applicants submit English-translated transcripts, personal statement and passport copy",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Chart minimum score 3 for all exams (catalog text says 4 or 5 earns advanced standing). Calculus AB 3 = MATH-262 (4 credits); Calculus BC 3 = MATH-262 and MATH-263 (4 credits listed). Total credit from exams and transfer capped at 90.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT not required for undergraduate admission (required only for Nursing and Honors); submit if available. English: TOEFL 70, IELTS 6.0, Duolingo 100 or PTE 50",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.felician.edu/admissions/international-students/",
+  "confidence": "medium"
+ },
+ "22477": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41633": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41646": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41650": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41652": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41657": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41659": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41664": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41676": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41681": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41690": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "41711": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22491": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22492": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22495": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22496": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22498": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22504": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22506": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22512": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22515": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22529": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22533": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22544": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22568": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "22573": {
+  "stem": true,
+  "typical_offer": "Test-optional for international applicants; Computer Science/Engineering applicants without SAT/ACT should have four years of high school maths (one course above Algebra II by senior year, all with B or higher)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics: 4 = MATH 110 + MATH 123; 5, 6 or 7 = MATH 110 + MATH 113",
+   "note": "Institution-wide rule; official IB transcript to Admissions"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB: 4 or 5 = MATH 113 (4 credits); 3 = MATH 123 (3 credits). Calculus BC: 4 or 5 = MATH 113 + MATH 114 (8 credits); 3 = MATH 123. BC below 4 with AB subscore 4-5 gives MATH 113 only.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional for international applicants (score-optional route); SAT/ACT may be needed for merit scholarships. English: SAT Reading/Writing 500 or ACT English/Reading 20, or other approved English tests",
+  "math_test": {
+   "name": "Mason Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Skipped with AP Calculus BC 4 or 5"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Four years of high school maths for CS/Engineering score-optional applicants, including a course above Algebra II",
+  "source_url": "https://www.gmu.edu/freshman/requirements/international",
+  "confidence": "medium"
+ },
+ "45721": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "45724": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "25238": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "45725": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "25239": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "45727": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "25240": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "45726": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "25193": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "45728": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "45732": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "25241": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "45734": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "25242": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "45740": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "25243": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "25244": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "25245": {
+  "stem": true,
+  "typical_offer": "Engineering is competitive direct admission (name engineering on the Common App); applicants needing more maths/science preparation may be offered Pre-Engineering",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Entering Fall 2025+: Calculus AB subscore 4+ = MATH 157 (4 credits); Calculus BC 4 = MATH 157; BC 5 with AB 4 or 5 = MATH 157 + MATH 258 (max 8 credits); AB 4 and BC 4 = MATH 157 + a lower-division maths elective (8 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "Test optional; international applicants show English proficiency by TOEFL, IELTS, Duolingo, iTEP, SAT or ACT",
+  "math_test": {
+   "name": "Gonzaga maths placement",
+   "role": "placement only",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A/AS-level exams considered for credit",
+  "turkish_route": null,
+  "prerequisite_maths": "Recommended 3-4 years maths (algebra I, geometry, algebra II/trigonometry) and 3-4 years lab science; readiness for college calculus preferred for engineering",
+  "source_url": "https://www.gonzaga.edu/undergraduate-admission/apply/how-to-apply/first-year-students/advanced-placement",
+  "confidence": "medium"
+ },
+ "45813": {
+  "stem": true,
+  "typical_offer": "No minimum GPA published; international applicants submit official secondary records and exam results, passport copy and financial documents; no application fee",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit (3 per subject) for HL and SL subjects with grade 4+; HL Mathematics = MATH-121, SL Mathematics = MATH-120; Physics/Biology credit at HL only",
+   "note": "Institution-wide rule"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 3+ earns credit, max 30 credits. Calculus AB 3+ = MATH-121 (4 credits); Calculus BC 3+ = MATH-121 + MATH-235 (7 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional (required for homeschooled applicants); English: TOEFL 80, IELTS 6.0, PTE 50, Duolingo 100 or SAT Reading/Writing 400",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Each passing A-level exam earns up to 6 credits, AS-level up to 3; max 30 credits",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://hartwick.smartcatalogiq.com/en/current/college-catalog/academic-policies-and-procedures/academic-credit-policies/international-baccalaureate-ib",
+  "confidence": "medium"
+ },
+ "45815": {
+  "stem": true,
+  "typical_offer": "No minimum GPA published; international applicants submit official secondary records and exam results, passport copy and financial documents; no application fee",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit (3 per subject) for HL and SL subjects with grade 4+; HL Mathematics = MATH-121, SL Mathematics = MATH-120; Physics/Biology credit at HL only",
+   "note": "Institution-wide rule"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 3+ earns credit, max 30 credits. Calculus AB 3+ = MATH-121 (4 credits); Calculus BC 3+ = MATH-121 + MATH-235 (7 credits)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT optional (required for homeschooled applicants); English: TOEFL 80, IELTS 6.0, PTE 50, Duolingo 100 or SAT Reading/Writing 400",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Each passing A-level exam earns up to 6 credits, AS-level up to 3; max 30 credits",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://hartwick.smartcatalogiq.com/en/current/college-catalog/academic-policies-and-procedures/academic-credit-policies/international-baccalaureate-ib",
+  "confidence": "medium"
+ }
+}

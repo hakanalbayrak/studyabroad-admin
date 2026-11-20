@@ -1,0 +1,652 @@
+{
+ "57532": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Howest university college; no IB/AP/A-level/Turkey info on programme page (only Cybersecurity page fetched; others not fetched). Contact admissions@howest.be. Likely 'any secondary diploma' but NOT confirmed by official page."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.howest.be/en/programmes/advanced-bachelor-programme/bioinformatics",
+  "confidence": "low"
+ },
+ "57527": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Howest university college; no IB/AP/A-level/Turkey info on programme page (only Cybersecurity page fetched; others not fetched). Contact admissions@howest.be. Likely 'any secondary diploma' but NOT confirmed by official page."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.howest.be/en/programmes/bachelor/creative-technologies-and-artificial-intelligence",
+  "confidence": "low"
+ },
+ "57528": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Howest university college; no IB/AP/A-level/Turkey info on programme page (only Cybersecurity page fetched; others not fetched). Contact admissions@howest.be. Likely 'any secondary diploma' but NOT confirmed by official page."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "At least 4 hours maths/week in secondary school expected (stated on Cybersecurity page only; not verified on this programme page); else entry-level maths courses recommended",
+  "source_url": "https://www.howest.be/en/programmes/bachelor/cybersecurity",
+  "confidence": "low"
+ },
+ "57529": {
+  "stem": false,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Howest university college; no IB/AP/A-level/Turkey info on programme page (only Cybersecurity page fetched; others not fetched). Contact admissions@howest.be. Likely 'any secondary diploma' but NOT confirmed by official page."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.howest.be/en/programmes/bachelor/digital-arts-and-entertainment",
+  "confidence": "low"
+ },
+ "57530": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Howest university college; no IB/AP/A-level/Turkey info on programme page (only Cybersecurity page fetched; others not fetched). Contact admissions@howest.be. Likely 'any secondary diploma' but NOT confirmed by official page."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.howest.be/en/programmes/bachelor/digital-design-and-development",
+  "confidence": "low"
+ },
+ "57531": {
+  "stem": false,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Howest university college; no IB/AP/A-level/Turkey info on programme page (only Cybersecurity page fetched; others not fetched). Contact admissions@howest.be. Likely 'any secondary diploma' but NOT confirmed by official page."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.howest.be/en/programmes/bachelor/industrial-product-design",
+  "confidence": "low"
+ },
+ "57533": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "KdG page: needs secondary education certificate that grants access to comparable higher education in the issuing country; good English; no interview or additional entrance tests. IB/AP/A-level/maths/Turkey not mentioned."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No additional entrance tests (KdG page)"
+  },
+  "a_level": null,
+  "turkish_route": "Not stated; general rule: secondary certificate granting access to comparable higher education in country of issue (Lise Diploması generally implies this; YKS not mentioned)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.kdg.be/en/applied-computer-science",
+  "confidence": "medium"
+ },
+ "57536": {
+  "stem": false,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Page not fetched"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.kdg.be/en/bachelor-multimedia-creative-technologies",
+  "confidence": "low"
+ },
+ "57563": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "No subject/level or points threshold stated on page",
+   "note": "IB diploma holders admitted if they meet maths requirement and English requirement (English proof waived if at least half of IB courses taught in English)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on the page; no AP caps/exclusions found. SAT/ACT accepted as maths evidence for 2026-27."
+  },
+  "math_test": {
+   "name": "OMPT-G (KU Leuven engineering technology maths test)",
+   "role": "required",
+   "min_score": "OMPT-G at least 60% for 2027-2028 intake; for 2026-2027: SAT, ACT, or OMPT-D (60%) accepted",
+   "details": "Some applicants (incl. IB, EB, GCE holders from EU countries) may skip if they take the July on-campus starting/positioning test instead; faculty can deny admission if neither option is met. Non-Flemish-qualification applicants may be invited to online assessment STIS (mandatory once invited, result not binding). SAT minimum score not captured."
+  },
+  "a_level": "Three A-level subjects, must include mathematics and at least one relevant science course; grade B each (C may be considered after favourable Admissions Committee decision)",
+  "turkish_route": "Not on page fetched (KU Leuven Turkey diploma page returned 503). Third-party only: NARIC-Flanders equivalence; UAntwerp-type YKS rules not verified for KU Leuven",
+  "prerequisite_maths": "Proof of mathematics proficiency (see test); A-levels must include maths",
+  "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_55554488/toelatingsvoorwaarden",
+  "confidence": "medium"
+ },
+ "57596": {
+  "stem": false,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Page returned HTTP 503 twice; not verified. General KU Leuven rule (from Engineering Technology page): IB admitted subject to English and maths requirements."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_54764298/toelatingsvoorwaarden",
+  "confidence": "low"
+ },
+ "57593": {
+  "stem": false,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Page returned HTTP 503 twice; not verified. General KU Leuven rule (from Engineering Technology page): IB admitted subject to English and maths requirements."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_58365132/toelatingsvoorwaarden",
+  "confidence": "low"
+ },
+ "57636": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Thomas More page (checked for AI Geel; applied to all Thomas More by assumption of same template): only lists 'Diploma and language requirements' link, no IB/AP/A-level/maths/Turkey detail; contact admissions@thomasmore.be"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://thomasmore.be/en/educations/degree-students/applied-computer-science/application-development/geel/full-programme",
+  "confidence": "low"
+ },
+ "57637": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Thomas More page (checked for AI Geel; applied to all Thomas More by assumption of same template): only lists 'Diploma and language requirements' link, no IB/AP/A-level/maths/Turkey detail; contact admissions@thomasmore.be"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://thomasmore.be/en/educations/degree-students/electronics-ict/applied-artificial-intelligence/sint-katelijne-waver/full-programme",
+  "confidence": "low"
+ },
+ "57638": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Thomas More page (checked for AI Geel; applied to all Thomas More by assumption of same template): only lists 'Diploma and language requirements' link, no IB/AP/A-level/maths/Turkey detail; contact admissions@thomasmore.be"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://thomasmore.be/en/educations/degree-students/applied-computer-science/artificial-intelligence/geel/full-programme",
+  "confidence": "low"
+ },
+ "57639": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Thomas More page (checked for AI Geel; applied to all Thomas More by assumption of same template): only lists 'Diploma and language requirements' link, no IB/AP/A-level/maths/Turkey detail; contact admissions@thomasmore.be"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://thomasmore.be/en/educations/degree-students/automotive-technology/automotive-technology/sint-katelijne-waver/full-programme",
+  "confidence": "low"
+ },
+ "57642": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Thomas More page (checked for AI Geel; applied to all Thomas More by assumption of same template): only lists 'Diploma and language requirements' link, no IB/AP/A-level/maths/Turkey detail; contact admissions@thomasmore.be"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://thomasmore.be/en/educations/degree-students/applied-computer-science/digital-innovation/geel/full-programme",
+  "confidence": "low"
+ },
+ "57643": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Thomas More page (checked for AI Geel; applied to all Thomas More by assumption of same template): only lists 'Diploma and language requirements' link, no IB/AP/A-level/maths/Turkey detail; contact admissions@thomasmore.be"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://thomasmore.be/en/educations/degree-students/electronics-ict/embedded-hardware/sint-katelijne-waver/full-programme",
+  "confidence": "low"
+ },
+ "57644": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Thomas More page (checked for AI Geel; applied to all Thomas More by assumption of same template): only lists 'Diploma and language requirements' link, no IB/AP/A-level/maths/Turkey detail; contact admissions@thomasmore.be"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://thomasmore.be/en/educations/degree-students/electronics-ict/embedded-software/sint-katelijne-waver/full-programme",
+  "confidence": "low"
+ },
+ "57646": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Thomas More page (checked for AI Geel; applied to all Thomas More by assumption of same template): only lists 'Diploma and language requirements' link, no IB/AP/A-level/maths/Turkey detail; contact admissions@thomasmore.be"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://thomasmore.be/en/educations/degree-students/electronics-ict/infrastructure-and-cyber-security/sint-katelijne-waver/full-programme",
+  "confidence": "low"
+ },
+ "57647": {
+  "stem": false,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Thomas More page (checked for AI Geel; applied to all Thomas More by assumption of same template): only lists 'Diploma and language requirements' link, no IB/AP/A-level/maths/Turkey detail; contact admissions@thomasmore.be"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://thomasmore.be/en/educations/degree-students/international-business-management/international-applied-data-intelligence/mechelen/full-programme",
+  "confidence": "low"
+ },
+ "57654": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Thomas More page (checked for AI Geel; applied to all Thomas More by assumption of same template): only lists 'Diploma and language requirements' link, no IB/AP/A-level/maths/Turkey detail; contact admissions@thomasmore.be"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://thomasmore.be/en/educations/degree-students/electronics-ict/software-architecture-and-development/sint-katelijne-waver/full-programme",
+  "confidence": "low"
+ },
+ "57634": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "PXL page: secondary education diploma + English B2 or higher; IB/AP/A-level/Turkey not mentioned"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Not stated (any secondary education diploma)",
+  "prerequisite_maths": "Page states 'No prior knowledge required and no math!' (no maths admission requirement published)",
+  "source_url": "https://www.pxl.be/departementen/pxl-digital/applied-computer-science/",
+  "confidence": "medium"
+ },
+ "36064": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "No source_url given; UCLL not researched"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "57657": {
+  "stem": false,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma (Geneva) automatically deemed equivalent to CESS. Non-EU with average below 13/20 may need a year of study in Belgium (e.g. special maths/sciences). Entrance exam certificates from higher-education institutions also accepted. No specific maths exam required on page."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP and A-level not mentioned on page"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Foreign diplomas qualify if deemed equivalent; non-EU diplomas need equivalence from the Wallonia-Brussels Federation (must be included in application). YKS not mentioned.",
+  "prerequisite_maths": null,
+  "source_url": "https://uclouvain.be/en-prog-2025-ingb1ba-cond_adm",
+  "confidence": "medium"
+ },
+ "57707": {
+  "stem": false,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Programme page 'Access conditions' empty; ULB enrolment page only links to non-EU admission page (not read)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.ulb.be/en/programme/ba-ingee",
+  "confidence": "low"
+ },
+ "57744": {
+  "stem": false,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "UAntwerp accepts IB diploma from recognised IB school, verifiable at ibis.ibo.org; no score thresholds seen"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on pages fetched"
+  },
+  "math_test": {
+   "name": "UAntwerp mathematics proficiency test",
+   "role": "required",
+   "min_score": null,
+   "details": "Non-EEA applicants must take a compulsory proficiency test in mathematics (per search snippet; programme page itself refers to non-EEA additional requirement)"
+  },
+  "a_level": "3 GCE A levels (+3 GCSEs), minimum C in academic courses (UAntwerp general list)",
+  "turkish_route": "Lise Diploması plus national university entrance exams TYT and YKS (minimum 180 points) per UAntwerp list",
+  "prerequisite_maths": null,
+  "source_url": "https://www.uantwerpen.be/en/study/admission-and-enrolment/admission/academic-bachelor/admission-requirements/",
+  "confidence": "medium"
+ }
+}

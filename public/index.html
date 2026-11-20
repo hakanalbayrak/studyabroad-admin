@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PANELEDU | Yurt Dışında Üniversite ve Program Bul</title>
+  <meta name="description" content="Yurt dışında okumak için 23.000'den fazla programı filtrele, karşılaştır, 3D kampüs turu yap ve başvur. İngiltere, Hollanda, Almanya, İspanya ve daha fazlası.">
+  <meta property="og:title" content="PANELEDU | Yurt Dışında Üniversite ve Program Bul">
+  <meta property="og:description" content="23.000'den fazla program, 300'den fazla üniversite. Filtrele, karşılaştır, başvur.">
+  <meta property="og:url" content="https://paneledu.com/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://paneledu.com/">
+  <link href="/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/site.css?v=20261009" rel="stylesheet">
+  <link href="/css/icons.css" rel="stylesheet">
+  <script src="/js/i18n.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://paneledu.com/#org","name":"PANELEDU","url":"https://paneledu.com/","logo":"https://paneledu.com/img/mark.svg"},{"@type":"WebSite","@id":"https://paneledu.com/#site","url":"https://paneledu.com/","name":"PANELEDU","inLanguage":["tr","en"],"publisher":{"@id":"https://paneledu.com/#org"},"potentialAction":{"@type":"SearchAction","target":"https://paneledu.com/programs?q={search_term_string}","query-input":"required name=search_term_string"}}]}</script>
+  <style>
+    /* Hero */
+    .hero { background: var(--bg); padding: clamp(28px, 5vw, 56px) 0 clamp(24px, 4vw, 40px); }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 48px); align-items: center; }
+    .hero .pe-eyebrow { background: var(--sun); color: var(--text); border: var(--bw) solid var(--text); border-radius: 99px; padding: 5px 14px; margin-bottom: 18px; letter-spacing: .04em; text-transform: none; font-size: .8rem; }
+    .hero h1 { font-size: clamp(2rem, 5.2vw, 3.7rem); margin: 0 0 16px; color: var(--text); }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero .lead { color: var(--muted); font-size: 1.05rem; max-width: 52ch; margin: 0 0 24px; }
+    .search-bar { display: flex; background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); max-width: 640px; }
+    .search-bar:focus-within { box-shadow: 6px 6px 0 var(--accent); }
+    .search-bar input { flex: 1; min-width: 0; border: none; outline: none; background: transparent; color: var(--text); padding: 16px 18px; font-size: 1rem; font-family: var(--f-body); }
+    .search-bar input::placeholder { color: var(--muted); }
+    .search-bar button { background: var(--accent); border: none; border-left: var(--bw) solid var(--text); color: #fff; padding: 0 24px; font-weight: 700; font-size: .95rem; cursor: pointer; min-width: 88px; font-family: var(--f-body); }
+    .search-bar button:hover { background: #1f33d6; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .quick { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; align-items: center; }
+    .quick .lbl { font-size: .78rem; font-weight: 700; color: var(--muted); margin-right: 2px; }
+    .quick a { text-decoration: none; color: var(--text); background: var(--surface); border: 1.5px solid var(--text); border-radius: 99px; padding: 5px 13px; font-size: .84rem; font-weight: 600; min-height: 32px; display: inline-flex; align-items: center; }
+    .quick a:hover { background: var(--sun); }
+    .hero-stats { display: grid; gap: 12px; }
+    .stat-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); box-shadow: var(--shadow); padding: 16px 20px; display: flex; align-items: baseline; gap: 14px; }
+    .stat-card:nth-child(1) { background: var(--sun); transform: rotate(-1.2deg); }
+    .stat-card:nth-child(2) { background: var(--mist); transform: rotate(.8deg); margin-left: 18px; }
+    .stat-card:nth-child(3) { transform: rotate(-.6deg); }
+    .stat-num { font-family: var(--f-display); font-weight: 800; font-size: clamp(1.6rem, 3.4vw, 2.3rem); letter-spacing: -.04em; line-height: 1; font-variant-numeric: tabular-nums; }
+    .stat-lbl { font-size: .86rem; font-weight: 600; color: var(--text); }
+    @media (max-width: 860px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-stats { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .stat-card { flex-direction: column; gap: 4px; padding: 12px 10px; align-items: flex-start; box-shadow: var(--shadow-s); transform: none !important; margin: 0 !important; }
+      .stat-num { font-size: 1.25rem; }
+      .stat-lbl { font-size: .72rem; }
+    }
+    @media (max-width: 520px) { .search-bar button span { display: none; } .search-bar button { min-width: 56px; padding: 0 16px; } }
+
+    /* Section heads */
+    .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+    .sec-head h2 { font-size: clamp(1.35rem, 3vw, 1.9rem); margin: 0; }
+    .sec-head a { font-weight: 700; font-size: .9rem; color: var(--accent); text-decoration: none; }
+    .sec-head a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Steps */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .step { border: var(--bw) solid var(--text); border-radius: var(--r); padding: 22px 22px 20px; display: flex; flex-direction: column; gap: 8px; background: var(--surface); box-shadow: var(--shadow); }
+    .step:nth-child(1) { background: var(--sun); }
+    .step:nth-child(2) { background: var(--mist); }
+    .step .n { font-family: var(--f-display); font-weight: 800; font-size: 2.4rem; line-height: 1; letter-spacing: -.05em; }
+    .step h3 { font-size: 1.1rem; margin: 4px 0 0; }
+    .step p { margin: 0; font-size: .92rem; color: var(--text); opacity: .86; flex: 1; }
+    .step .btn-ghost { align-self: flex-start; margin-top: 8px; min-height: 40px; padding: 8px 16px; font-size: .88rem; }
+    @media (max-width: 860px) { .steps { grid-template-columns: 1fr; gap: 14px; } .step { flex-direction: row; flex-wrap: wrap; align-items: center; } .step p { flex-basis: 100%; } }
+
+    /* University cards */
+    .uni-card { background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r); overflow: hidden; transition: transform .12s, box-shadow .12s; cursor: pointer; display: flex; flex-direction: column; height: 100%; }
+    .uni-card:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow); }
+    .card-top { padding: 16px 16px 12px; flex: 1; }
+    .card-name { font-family: var(--f-display); font-size: .95rem; font-weight: 700; letter-spacing: -.02em; color: var(--text); margin-bottom: 4px; line-height: 1.3; }
+    .card-location { font-size: .8rem; color: var(--muted); margin-bottom: 8px; }
+    .card-ranks { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
+    .rank-badge { font-size: .68rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; border: 1.5px solid var(--text); background: var(--mist); }
+    .rank-the { background: #d6f5e3; } .rank-sh { background: var(--sun); }
+    .card-desc { font-size: .8rem; color: var(--muted); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .card-footer-strip { background: var(--surface-2); padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; gap: 8px; border-top: var(--bw) solid var(--text); }
+    .featured-star { font-size: .66rem; background: var(--sun); color: var(--text); border: 1.5px solid var(--text); border-radius: 20px; padding: 1px 8px; font-weight: 700; white-space: nowrap; }
+    .cmp-btn { background: var(--surface); border: 1.5px solid var(--text); color: var(--text); font-size: .74rem; font-weight: 600; border-radius: 8px; padding: 5px 11px; min-height: 32px; cursor: pointer; font-family: var(--f-body); }
+    .cmp-btn:hover { background: var(--mist); }
+    .cmp-btn.selected { background: var(--sun); }
+    .card-footer-strip .orb { font-size: .76rem; color: var(--accent); font-weight: 700; }
+
+    /* Destinations */
+    .dest { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+    .dest a { background: var(--surface); border: var(--bw) solid var(--text); border-radius: var(--r-s); padding: 14px 16px; text-decoration: none; color: var(--text); display: flex; flex-direction: column; gap: 2px; transition: transform .12s, box-shadow .12s, background-color .12s; min-height: 64px; }
+    .dest a:hover { background: var(--sun); transform: translate(-2px,-2px); box-shadow: var(--shadow-s); }
+    .dest b { font-family: var(--f-display); font-size: .92rem; letter-spacing: -.02em; }
+    .dest span { font-size: .78rem; color: var(--muted); }
+
+    /* Test CTA */
+    .test-cta { background: var(--accent); border: var(--bw) solid var(--text); border-radius: var(--r); box-shadow: var(--shadow-lg); padding: clamp(20px, 4vw, 32px); color: #fff; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .test-cta h3 { font-size: clamp(1.15rem, 2.6vw, 1.5rem); margin: 0 0 6px; color: #fff; }
+    .test-cta p { font-size: .95rem; margin: 0; color: #e7ebff; max-width: 56ch; }
+
+    /* Why */
+    .why { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .why > div { border-top: var(--bw) solid var(--text); padding-top: 12px; }
+    .why b { font-family: var(--f-display); font-size: .95rem; display: block; margin-bottom: 4px; letter-spacing: -.02em; }
+    .why span { font-size: .88rem; color: var(--muted); }
+    @media (max-width: 860px) { .why { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .why { grid-template-columns: 1fr; } }
+
+    /* Pagination, compare, states */
+    #paginationWrap { display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; padding: 24px 0 8px; }
+    .pg-btn { background: var(--surface); border: 1.5px solid var(--text); color: var(--text); border-radius: 10px; padding: 6px 13px; font-size: .86rem; cursor: pointer; min-width: 40px; min-height: 40px; font-family: var(--f-body); }
+    .pg-btn:hover:not(:disabled) { background: var(--mist); }
+    .pg-btn.active { background: var(--sun); font-weight: 700; }
+    .pg-btn:disabled { opacity: .4; cursor: default; }
+    #perPageSel { background: var(--surface); border: 1.5px solid var(--text); color: var(--text); border-radius: 8px; padding: 6px 10px; font-size: .84rem; }
+    #emptyMsg { text-align: center; color: var(--muted); padding: 40px 0; }
+    #loadingSpinner { text-align: center; color: var(--muted); padding: 40px 0; }
+    .spinner-ring { width: 34px; height: 34px; border: 3px solid var(--mist); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 12px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #compareTray { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1040; background: var(--surface); border-top: var(--bw) solid var(--text); padding: 12px var(--gutter); display: none; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .cmp-chip { background: var(--mist); border: 1.5px solid var(--text); color: var(--text); border-radius: 20px; padding: 3px 8px 3px 12px; font-size: .8rem; display: inline-flex; align-items: center; gap: 6px; }
+    .cmp-chip button { background: none; border: none; color: var(--text); padding: 0; line-height: 1; cursor: pointer; font-size: .9rem; }
+    .cmp-table { width: 100%; border-collapse: collapse; }
+    .cmp-table th, .cmp-table td { padding: 11px 14px; }
+    .cmp-table thead tr { border-bottom: var(--bw) solid var(--text); }
+    .cmp-table tbody tr { border-bottom: 1px solid var(--line-soft); }
+    .cmp-table tbody tr:nth-child(even) { background: var(--surface-2); }
+    .cmp-row-label { font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  </style>
+</head>
+<body class="pe-theme">
+<main id="main">
+
+<section class="hero" id="heroSection">
+  <div class="pe-wrap hero-grid">
+    <div>
+      <span class="pe-eyebrow" id="heroBadge"><i class="bi bi-globe-americas"></i> <span data-i18n="h.badge">Türkiye'nin Yurt Dışı Eğitim Platformu</span></span>
+      <h1 data-i18n-html="h.title">Hayalindeki Üniversiteyi<br>Yurt Dışında Bul</h1>
+      <p class="lead" data-i18n="h.sub">Yurt dışında okumak istiyorsun ama nereden başlayacağını bilmiyor musun? Biz yardımcı olalım.</p>
+      <form class="search-bar" role="search" onsubmit="event.preventDefault();onSearch()">
+        <input type="search" id="searchInput" data-i18n-ph="h.search.ph" placeholder="Okumak istediğin bölümü veya üniversite adını yaz…" autocomplete="off" aria-label="Üniversite veya bölüm ara" oninput="onSearch()">
+        <button type="submit" aria-label="Ara"><i class="bi bi-search"></i> <span data-i18n="h.search.btn">Ara</span></button>
+      </form>
+      <div class="hero-actions">
+        <a href="/match" class="btn-grad"><i class="bi bi-magic"></i><span data-i18n="h.m.primary">Profil Sihirbazı</span></a>
+        <a href="/programs" class="btn-ghost"><i class="bi bi-mortarboard-fill"></i><span data-i18n="h.m.secondary">Programları Keşfet</span></a>
+      </div>
+    </div>
+    <div class="hero-stats" aria-label="PANELEDU rakamlar">
+      <div class="stat-card"><span class="stat-num" id="stPrograms">23.000+</span><span class="stat-lbl" data-i18n="h.st.programs">program</span></div>
+      <div class="stat-card"><span class="stat-num" id="stUnis">300+</span><span class="stat-lbl" data-i18n="h.st.unis">üniversite</span></div>
+      <div class="stat-card"><span class="stat-num" id="stCountries">17</span><span class="stat-lbl" data-i18n="h.st.countries">ülke</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="pe-section-tight">
+  <div class="pe-wrap">
+    <div id="loadingSpinner"><div class="spinner-ring"></div><span data-i18n="h.loading">Yükleniyor…</span></div>
+
+    <div id="searchSection" class="d-none">
+      <div class="sec-head">
+        <h2><span data-i18n="h.results">Arama Sonuçları</span></h2>
+        <div class="d-flex align-items-center gap-2">
+          <span style="font-size:.82rem;color:var(--muted)" id="searchResultInfo"></span>
+          <select id="perPageSel" onchange="goPage(1)" aria-label="Sayfa başına">
+            <option value="10" data-n="10">10 / sayfa</option>
+            <option value="25" selected data-n="25">25 / sayfa</option>
+            <option value="50" data-n="50">50 / sayfa</option>
+          </select>
+        </div>
+      </div>
+      <div id="emptyMsg" class="d-none"><i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:12px"></i><span data-i18n="h.empty">Aramanızla eşleşen üniversite bulunamadı.</span></div>
+      <div class="row g-3" id="searchGrid"></div>
+      <div id="searchPagination"></div>
+    </div>
+
+    <div id="featuredSection" class="d-none">
+      <div class="sec-head"><h2><span data-i18n="h.featured">Öne Çıkan Üniversiteler</span></h2><a href="/programs" data-i18n="h.allprograms">Tüm programlar →</a></div>
+      <div class="row g-3" id="featuredGrid"></div>
+    </div>
+  </div>
+</section>
+
+<section class="pe-section-tight" id="destSection" hidden>
+  <div class="pe-wrap">
+    <div class="sec-head"><h2 data-i18n="h.dest">Popüler Ülkeler</h2></div>
+    <nav class="dest" id="destGrid" aria-label="Ülkeler"></nav>
+  </div>
+</section>
+
+<section class="pe-section">
+  <div class="pe-wrap">
+    <div class="sec-head"><h2 data-i18n="h.how.title">Yurt Dışı Eğitime 3 Adımda Başla</h2></div>
+    <ol class="steps" style="list-style:none;padding:0;margin:0">
+      <li class="step">
+        <span class="n" aria-hidden="true">1</span>
+        <h3 data-i18n="h.s1.title">Profilini Oluştur</h3>
+        <p data-i18n="h.s1.desc">Eğitim seviyeni, ilgi alanlarını, bütçeni ve hedef bölgeni belirle. Profil sihirbazımız sana özel okul listesi oluşturur.</p>
+        <a href="/match" class="btn-ghost"><i class="bi bi-magic"></i><span data-i18n="h.s1.btn">Sihirbazı Başlat</span></a>
+      </li>
+      <li class="step">
+        <span class="n" aria-hidden="true">2</span>
+        <h3 data-i18n="h.s2.title">Keşfet &amp; Karşılaştır</h3>
+        <p data-i18n="h.s2.desc">3D kampüs turu yap, QS / THE / Shanghai sıralamalarını karşılaştır, program gereksinimlerini gör.</p>
+        <a href="/programs" class="btn-ghost"><i class="bi bi-mortarboard-fill"></i><span data-i18n="h.s2.btn">Programlara Bak</span></a>
+      </li>
+      <li class="step">
+        <span class="n" aria-hidden="true">3</span>
+        <h3 data-i18n="h.s3.title">Başvur</h3>
+        <p data-i18n="h.s3.desc">Belgelerini yükle, online başvurunu tamamla. Ön kabul alarak sürecini hızlandır.</p>
+        <a href="/apply" class="btn-ghost"><i class="bi bi-send-fill"></i><span data-i18n="h.s3.btn">Başvuru Yap</span></a>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="pe-section-tight">
+  <div class="pe-wrap">
+    <div class="test-cta">
+      <div>
+        <h3><span data-i18n="h.test.title">İngilizce Seviyeni Öğren</span></h3>
+        <p data-i18n="h.test.desc">20 soruluk CEFR testini ücretsiz yap. Sonuçlarını e-postayla al, hangi programlara uygun olduğunu gör.</p>
+      </div>
+      <a href="/test" class="btn-grad flex-shrink-0"><i class="bi bi-play-fill"></i><span data-i18n="h.test.btn">Testi Başlat</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="pe-section">
+  <div class="pe-wrap why">
+    <div><b data-i18n="h.why1.t">Resmi kaynaklar</b><span data-i18n="h.why1.d">Program bilgileri üniversitelerin kendi sayfalarından derlenir.</span></div>
+    <div><b data-i18n="h.why2.t">3D kampüs turu</b><span data-i18n="h.why2.d">Kampüsü başvurmadan önce Orbit görünümüyle gez.</span></div>
+    <div><b data-i18n="h.why3.t">Tek yerde karşılaştır</b><span data-i18n="h.why3.d">Ücret, süre, dil şartı ve sıralamaları yan yana gör.</span></div>
+    <div><b data-i18n="h.why4.t">Ücretsiz başvuru</b><span data-i18n="h.why4.d">Profilini oluştur, belgelerini yükle, ön kabul iste.</span></div>
+  </div>
+</section>
+
+</main>
+
+<div id="compareTray">
+  <span style="font-size:.84rem;color:var(--text);font-weight:600;white-space:nowrap">
+    <i class="bi bi-bar-chart-fill me-1" style="color:var(--accent)"></i><span data-i18n="h.compare">Karşılaştır</span> <span id="cmpCount">0</span>/3
+  </span>
+  <div id="cmpItems" class="d-flex gap-2 flex-wrap" style="flex:1"></div>
+  <button onclick="showComparison()" id="cmpNowBtn" class="btn btn-primary btn-sm px-4" style="white-space:nowrap" data-i18n="h.compare">Karşılaştır</button>
+  <button onclick="clearCompare()" class="btn btn-outline-secondary btn-sm" style="white-space:nowrap" data-i18n="h.clear">Temizle</button>
+</div>
+
+<div class="modal fade" id="compareModal" tabindex="-1" aria-labelledby="cmpTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cmpTitle"><span data-i18n="h.cmp.title">Üniversite Karşılaştırması</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+      </div>
+      <div class="modal-body p-0" id="compareModalBody" style="overflow-x:auto"></div>
+    </div>
+  </div>
+</div>
+
+<script src="/vendor/bootstrap.bundle.min.js" defer></script>
+<script>
+let allUniversities = [];
+let filteredUniversities = [];
+let currentPage = 1;
+let isSearching = false;
+let compareSet = new Set();
+let compareModal;
+
+async function load() {
+  document.querySelectorAll('#perPageSel option').forEach(o => {
+    o.textContent = o.dataset.n + ' ' + (window.t ? window.t('h.per.page') : '/ sayfa');
+  });
+  try {
+    allUniversities = await fetch('/api/public/universities').then(r => r.json());
+    document.getElementById('loadingSpinner').style.display = 'none';
+    updateStats();
+    showFeatured();
+  } catch (e) {
+    document.getElementById('loadingSpinner').innerHTML = '<i class="bi bi-exclamation-circle" style="font-size:2rem;display:block;margin-bottom:12px;color:#ef4444"></i>' + (window.t ? window.t('h.err.load') : 'Üniversiteler yüklenemedi.');
+  }
+}
+
+const TR_COUNTRY = {'United States':'ABD','United Kingdom':'İngiltere','Canada':'Kanada','Australia':'Avustralya','Germany':'Almanya','France':'Fransa','Spain':'İspanya','Netherlands':'Hollanda','Hungary':'Macaristan','Italy':'İtalya','Ireland':'İrlanda','Czech Republic':'Çekya','Finland':'Finlandiya','United Arab Emirates':'BAE','Cyprus':'Kıbrıs','Malta':'Malta','Turkey':'Türkiye','Austria':'Avusturya','Switzerland':'İsviçre','Belgium':'Belçika','Denmark':'Danimarka','Poland':'Polonya','Georgia':'Gürcistan'};
+function countryName(c) { return (localStorage.getItem('paneleduLang') || 'tr') === 'tr' ? (TR_COUNTRY[c] || c) : c; }
+function updateStats() {
+  const counts = {};
+  allUniversities.forEach(u => { if (u.country) counts[u.country] = (counts[u.country] || 0) + 1; });
+  const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 10);
+  if (top.length) {
+    document.getElementById('destGrid').innerHTML = top.map(([c, n]) =>
+      '<a href="/programs?country=' + encodeURIComponent(c) + '"><b>' + esc(countryName(c)) + '</b><span>' + n + ' ' + (window.t ? window.t('h.unis.lbl') : 'üniversite') + '</span></a>').join('');
+    document.getElementById('destSection').hidden = false;
+  }
+  fetch('/api/public/filter-options').then(r => r.json()).then(o => {
+    const s = o.stats || {}, f = n => Number(n).toLocaleString(document.documentElement.lang === 'en' ? 'en' : 'tr');
+    if (s.total_programs) document.getElementById('stPrograms').textContent = f(s.total_programs);
+    if (s.total_unis) document.getElementById('stUnis').textContent = f(s.total_unis);
+    if (s.total_countries) document.getElementById('stCountries').textContent = f(s.total_countries);
+  }).catch(() => {});
+}
+
+
+function hasOrbit(u) { return !!(u.latitude && u.longitude); }
+
+function showFeatured() {
+  isSearching = false;
+  document.getElementById('featuredSection').classList.remove('d-none');
+  document.getElementById('searchSection').classList.add('d-none');
+  const featured = allUniversities.filter(u => u.featured);
+  document.getElementById('featuredGrid').innerHTML = featured.length
+    ? featured.map(u => cardHtml(u)).join('')
+    : '<div class="col-12"><p class="text-muted small">' + (window.t ? window.t('h.nofeatured') : 'Henüz öne çıkan üniversite yok — admin panelinden işaretleyebilirsiniz.') + '</p></div>';
+}
+
+function onSearch() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  if (!q) { showFeatured(); return; }
+  isSearching = true;
+  document.getElementById('featuredSection').classList.add('d-none');
+  document.getElementById('searchSection').classList.remove('d-none');
+  filteredUniversities = allUniversities.filter(u => {
+    return u.name.toLowerCase().includes(q)
+      || (u.city||'').toLowerCase().includes(q)
+      || (u.country||'').toLowerCase().includes(q)
+      || (u.description_en||'').toLowerCase().includes(q);
+  });
+  currentPage = 1;
+  renderSearchResults();
+}
+
+function renderSearchResults() {
+  const perPage = parseInt(document.getElementById('perPageSel').value) || 25;
+  const total = filteredUniversities.length;
+  const totalPages = Math.max(1, Math.ceil(total / perPage));
+  currentPage = Math.min(currentPage, totalPages);
+  const start = (currentPage - 1) * perPage;
+  const slice = filteredUniversities.slice(start, start + perPage);
+  document.getElementById('emptyMsg').classList.toggle('d-none', total > 0);
+  document.getElementById('searchGrid').innerHTML = slice.map(u => cardHtml(u)).join('');
+  document.getElementById('searchResultInfo').textContent = total + ' ' + (window.t ? window.t('h.result.lbl') : 'sonuç');
+  renderPagination(totalPages, perPage, total, start);
+}
+
+function goPage(p) {
+  currentPage = p;
+  renderSearchResults();
+  window.scrollTo({ top: document.getElementById('searchSection').offsetTop - 20, behavior: 'smooth' });
+}
+
+function renderPagination(totalPages, perPage, total, start) {
+  const wrap = document.getElementById('searchPagination');
+  if (totalPages <= 1) { wrap.innerHTML = ''; return; }
+  const showing = Math.min(start + perPage, total);
+  const prevLbl = window.t ? window.t('h.prev') : '‹ Önceki';
+  const nextLbl = window.t ? window.t('h.next') : 'Sonraki ›';
+  let html = `<div id="paginationWrap">
+    <button class="pg-btn" onclick="goPage(${currentPage-1})" ${currentPage===1?'disabled':''}>${prevLbl}</button>`;
+  pageRange(currentPage, totalPages).forEach(p => {
+    if (p === '...') html += `<span class="pg-btn" style="cursor:default">…</span>`;
+    else html += `<button class="pg-btn ${p===currentPage?'active':''}" onclick="goPage(${p})">${p}</button>`;
+  });
+  html += `<button class="pg-btn" onclick="goPage(${currentPage+1})" ${currentPage===totalPages?'disabled':''}>${nextLbl}</button>`;
+  html += `<span style="font-size:.75rem;color:var(--muted);margin-left:4px">${start+1}–${showing} / ${total}</span></div>`;
+  wrap.innerHTML = html;
+}
+
+function pageRange(cur, total) {
+  if (total <= 7) return Array.from({length: total}, (_,i) => i+1);
+  const pages = new Set([1, total, cur]);
+  if (cur > 1) pages.add(cur-1);
+  if (cur < total) pages.add(cur+1);
+  const sorted = [...pages].sort((a,b) => a-b);
+  const result = []; let prev = 0;
+  for (const p of sorted) { if (p - prev > 1) result.push('...'); result.push(p); prev = p; }
+  return result;
+}
+
+function cardHtml(u) {
+  const orbit = hasOrbit(u);
+  const sel = compareSet.has(u.id);
+  const ranks = [];
+  if (u.qs_rank)       ranks.push(`<span class="rank-badge rank-qs">QS #${u.qs_rank}</span>`);
+  if (u.the_rank)      ranks.push(`<span class="rank-badge rank-the">THE #${u.the_rank}</span>`);
+  if (u.shanghai_rank) ranks.push(`<span class="rank-badge rank-sh">SH #${u.shanghai_rank}</span>`);
+  return `<div class="col-12 col-sm-6 col-lg-4">
+    <div class="uni-card" onclick="goToDetail(${u.id})">
+      <div class="card-top">
+        <div class="d-flex align-items-start justify-content-between gap-1 mb-1">
+          <div class="card-name d-flex align-items-center gap-2">
+            ${u.logo_url ? `<img src="${esc(u.logo_url)}" alt="" style="width:28px;height:28px;object-fit:contain;border-radius:5px;border: var(--bw) solid var(--text);background:var(--surface);padding:2px;flex-shrink:0" onerror="this.style.display='none'">` : ''}
+            ${esc(u.name)}
+          </div>
+          ${u.featured ? `<span class="featured-star flex-shrink-0">${window.t ? window.t('h.feat.star') : 'Öne Çıkan'}</span>` : ''}
+        </div>
+        <div class="card-location"><i class="bi bi-geo-alt-fill me-1"></i>${[u.city, u.country].filter(Boolean).join(', ')}</div>
+        ${ranks.length ? `<div class="card-ranks">${ranks.join('')}</div>` : ''}
+        ${u.description_en ? `<div class="card-desc">${esc(u.description_en)}</div>` : ''}
+      </div>
+      <div class="card-footer-strip">
+        <button class="cmp-btn${sel ? ' selected' : ''}" data-id="${u.id}" onclick="event.stopPropagation();toggleCompare(${u.id})" title="${sel ? (window.t ? window.t('h.remove') : 'Karşılaştırmadan çıkar') : (window.t ? window.t('h.compare') : 'Karşılaştır')}">
+          <i class="bi bi-${sel ? 'check2' : 'plus-lg'} me-1"></i>${sel ? (window.t ? window.t('h.added') : 'Eklendi') : (window.t ? window.t('h.compare') : 'Karşılaştır')}
+        </button>
+        ${orbit ? `<span class="orb"><i class="bi bi-camera-video-fill me-1"></i>3D Orbit</span>` : ''}
+      </div>
+    </div>
+  </div>`;
+}
+
+function goToDetail(id) {
+  const u = allUniversities.find(x => x.id === id);
+  if (u && (u.latitude || u.orbit_center_lat)) {
+    const lat = u.orbit_center_lat ?? u.latitude, lng = u.orbit_center_lng ?? u.longitude;
+    const params = new URLSearchParams({ name: u.name, uniId: u.id, lat, lng,
+      alt: u.orbit_altitude ?? 400, pitch: u.orbit_pitch ?? -45,
+      heading: u.orbit_initial_heading ?? 0, range: u.orbit_range ?? 400,
+      speed: u.orbit_rotation_speed ?? 0.12, rot: u.orbit_rotation_type ?? '360' });
+    if (u.scan_target_lat && u.scan_target_lng) {
+      params.set('scanLat', u.scan_target_lat); params.set('scanLng', u.scan_target_lng);
+      params.set('scan', u.scan_effect_enabled ? '1' : '0');
+    }
+    window.location.href = '/orbit?' + params.toString();
+  } else {
+    window.location.href = '/university?id=' + id;
+  }
+}
+
+
+function esc(s) { return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// Compare
+function toggleCompare(id) {
+  if (compareSet.has(id)) { compareSet.delete(id); }
+  else {
+    if (compareSet.size >= 3) {
+      const btn = document.querySelector(`.cmp-btn[data-id="${id}"]`);
+      if (btn) { btn.textContent = window.t ? window.t('h.max3') : 'Maks 3!'; setTimeout(() => { btn.innerHTML = `<i class="bi bi-plus-lg me-1"></i>${window.t ? window.t('h.compare') : 'Karşılaştır'}`; }, 1200); }
+      return;
+    }
+    compareSet.add(id);
+  }
+  document.querySelectorAll(`.cmp-btn[data-id="${id}"]`).forEach(btn => {
+    const s = compareSet.has(id);
+    btn.classList.toggle('selected', s);
+    btn.innerHTML = `<i class="bi bi-${s ? 'check2' : 'plus-lg'} me-1"></i>${s ? (window.t ? window.t('h.added') : 'Eklendi') : (window.t ? window.t('h.compare') : 'Karşılaştır')}`;
+  });
+  updateCompareTray();
+}
+
+function updateCompareTray() {
+  const tray = document.getElementById('compareTray');
+  if (compareSet.size === 0) { tray.style.display = 'none'; return; }
+  tray.style.display = 'flex';
+  document.getElementById('cmpCount').textContent = compareSet.size;
+  document.getElementById('cmpNowBtn').disabled = compareSet.size < 2;
+  const unis = [...compareSet].map(id => allUniversities.find(u => u.id === id)).filter(Boolean);
+  document.getElementById('cmpItems').innerHTML = unis.map(u =>
+    `<span class="cmp-chip">${esc(u.name.length > 28 ? u.name.slice(0,28) + '…' : u.name)}<button onclick="toggleCompare(${u.id})" title="Çıkar"><i class="bi bi-x"></i></button></span>`
+  ).join('');
+}
+
+function clearCompare() {
+  compareSet.clear();
+  document.querySelectorAll('.cmp-btn.selected').forEach(btn => {
+    btn.classList.remove('selected');
+    btn.innerHTML = `<i class="bi bi-plus-lg me-1"></i>${window.t ? window.t('h.compare') : 'Karşılaştır'}`;
+  });
+  updateCompareTray();
+}
+
+function showComparison() {
+  if (compareSet.size < 2) return;
+  const unis = [...compareSet].map(id => allUniversities.find(u => u.id === id)).filter(Boolean);
+  const _t = key => window.t ? window.t(key) : key;
+  const rows = [
+    [_t('h.cmp.country'), u => esc(u.country || '—')],
+    [_t('h.cmp.city'),    u => esc(u.city || '—')],
+    [_t('h.cmp.cont'),    u => esc(u.continent || '—')],
+    [_t('h.cmp.qs'),      u => u.qs_rank       ? `<span style="background:rgba(43,68,255,.14);color:#2b44ff;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.qs_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.the'),     u => u.the_rank      ? `<span style="background:rgba(16,185,129,.14);color:#059669;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.the_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.sh'),      u => u.shanghai_rank ? `<span style="background:rgba(245,158,11,.16);color:#b45309;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.shanghai_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.leiden'),  u => u.leiden_rank   ? `<span style="background:rgba(139,92,246,.14);color:#2b44ff;border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700">#${u.leiden_rank}</span>` : '<span style="color:var(--muted)">—</span>'],
+    [_t('h.cmp.orbit'),   u => (u.latitude && u.longitude) ? `<span style="color:#059669"><i class="bi bi-check-circle-fill me-1"></i>${_t('h.cmp.avail')}</span>` : '<span style="color:var(--muted)">—</span>'],
+  ];
+  const colPct = Math.floor(80 / unis.length);
+  let html = `<table class="cmp-table"><thead><tr>
+    <th style="width:18%;color:var(--muted);font-size:.75rem"></th>
+    ${unis.map(u => `<th style="width:${colPct}%">
+      <div style="font-size:.93rem;font-weight:700;color:var(--text);margin-bottom:4px">${esc(u.name)}</div>
+      <div style="font-size:.74rem;color:var(--muted);margin-bottom:8px">${esc([u.city, u.country].filter(Boolean).join(', '))}</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        <a href="/university?id=${u.id}" style="font-size:.71rem;color:var(--accent);text-decoration:none;background:rgba(43,68,255,.1);border:1px solid rgba(43,68,255,.3);border-radius:6px;padding:2px 9px"><i class="bi bi-arrow-right-circle me-1"></i>${_t('h.cmp.detail')}</a>
+        ${(u.latitude && u.longitude) ? `<button onclick="openOrbit(${u.id})" style="font-size:.71rem;color:var(--accent);background:rgba(43,68,255,.1);border:1px solid rgba(43,68,255,.3);border-radius:6px;padding:2px 9px;cursor:pointer"><i class="bi bi-camera-video-fill me-1"></i>3D</button>` : ''}
+      </div>
+    </th>`).join('')}
+  </tr></thead><tbody>
+    ${rows.map(row => `<tr><td class="cmp-row-label">${row[0]}</td>${unis.map(u => `<td style="font-size:.87rem">${row[1](u)}</td>`).join('')}</tr>`).join('')}
+  </tbody></table>`;
+  document.getElementById('compareModalBody').innerHTML = html;
+  if (!compareModal) compareModal = new bootstrap.Modal(document.getElementById('compareModal'));
+  compareModal.show();
+}
+
+load();
+const ref = new URLSearchParams(location.search).get('ref');
+if (ref) localStorage.setItem('sa_referral', ref);
+
+</script>
+<script src="/js/chrome.js"></script>
+</body>
+</html>

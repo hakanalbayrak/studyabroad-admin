@@ -1,0 +1,637 @@
+{
+ "58033": {
+  "stem": false
+ },
+ "58060": {
+  "stem": false
+ },
+ "57785": {
+  "stem": false
+ },
+ "58593": {
+  "stem": false
+ },
+ "57781": {
+  "stem": false
+ },
+ "57788": {
+  "stem": false
+ },
+ "58747": {
+  "stem": false
+ },
+ "58590": {
+  "stem": false
+ },
+ "58591": {
+  "stem": false
+ },
+ "58063": {
+  "stem": false
+ },
+ "58007": {
+  "stem": false
+ },
+ "58594": {
+  "stem": false
+ },
+ "58199": {
+  "stem": false
+ },
+ "58190": {
+  "stem": false
+ },
+ "58198": {
+  "stem": false
+ },
+ "58196": {
+  "stem": false
+ },
+ "58744": {
+  "stem": false
+ },
+ "58743": {
+  "stem": false
+ },
+ "58201": {
+  "stem": false
+ },
+ "58741": {
+  "stem": false
+ },
+ "58036": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "HZ does not publish an IB table; IB/other diplomas are assessed individually (diploma must be equivalent to havo/vwo/mbo-4). Institution-wide rule from https://hz.nl/en/admission-requirements."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on HZ pages; unlisted foreign diplomas are assessed individually with Nuffic."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published. Online introductory maths course offered to applicants lacking maths (alternative to prerequisite) "
+  },
+  "a_level": null,
+  "turkish_route": "Not published. Turkish diploma not named; HZ uses a 'recognised foreign diplomas list' (not reproduced on page) and assesses unlisted diplomas individually with Nuffic.",
+  "prerequisite_maths": "Mathematics (and chemistry) as exam subject in secondary school (admission page footnote); applicants without maths can follow HZ's online introductory maths course and still be admitted",
+  "source_url": "https://hz.nl/en/study-programmes/chemistry ; https://hz.nl/en/admission-requirements",
+  "confidence": "medium"
+ },
+ "58034": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "HZ does not publish an IB table; IB/other diplomas are assessed individually (diploma must be equivalent to havo/vwo/mbo-4). Institution-wide rule from https://hz.nl/en/admission-requirements."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on HZ pages; unlisted foreign diplomas are assessed individually with Nuffic."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published. Online introductory maths course offered to applicants lacking maths (alternative to prerequisite) "
+  },
+  "a_level": null,
+  "turkish_route": "Not published. Turkish diploma not named; HZ uses a 'recognised foreign diplomas list' (not reproduced on page) and assesses unlisted diplomas individually with Nuffic.",
+  "prerequisite_maths": "Good level of mathematics and physics; maths (with physics) as exam subject in secondary school; online introductory maths course if no maths",
+  "source_url": "https://hz.nl/en/study-programmes/civil-engineering ; https://hz.nl/en/admission-requirements",
+  "confidence": "medium"
+ },
+ "58037": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "HZ does not publish an IB table; IB/other diplomas are assessed individually (diploma must be equivalent to havo/vwo/mbo-4). Institution-wide rule from https://hz.nl/en/admission-requirements."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on HZ pages; unlisted foreign diplomas are assessed individually with Nuffic."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published. Online introductory maths course offered to applicants lacking maths (alternative to prerequisite) "
+  },
+  "a_level": null,
+  "turkish_route": "Not published. Turkish diploma not named; HZ uses a 'recognised foreign diplomas list' (not reproduced on page) and assesses unlisted diplomas individually with Nuffic.",
+  "prerequisite_maths": "Mathematics as exam subject in secondary school (page: 'High school graduated in mathematics'); online introductory maths course if no maths",
+  "source_url": "https://hz.nl/en/study-programmes/engineering ; https://hz.nl/en/admission-requirements",
+  "confidence": "medium"
+ },
+ "58028": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "HZ does not publish an IB table; IB/other diplomas are assessed individually (diploma must be equivalent to havo/vwo/mbo-4). Institution-wide rule from https://hz.nl/en/admission-requirements."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on HZ pages; unlisted foreign diplomas are assessed individually with Nuffic."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published. Online introductory maths course offered to applicants lacking maths (alternative to prerequisite) "
+  },
+  "a_level": null,
+  "turkish_route": "Not published. Turkish diploma not named; HZ uses a 'recognised foreign diplomas list' (not reproduced on page) and assesses unlisted diplomas individually with Nuffic.",
+  "prerequisite_maths": "Good knowledge of mathematics (economics/physics an advantage); maths as exam subject; online maths course (~80 study hours, EUR 200, EUR 100 refunded on starting) if needed",
+  "source_url": "https://hz.nl/en/study-programmes/industrial-engineering-and-management ; https://hz.nl/en/admission-requirements",
+  "confidence": "medium"
+ },
+ "58029": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "HZ does not publish an IB table; IB/other diplomas are assessed individually (diploma must be equivalent to havo/vwo/mbo-4). Institution-wide rule from https://hz.nl/en/admission-requirements."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on HZ pages; unlisted foreign diplomas are assessed individually with Nuffic."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published. Online introductory maths course offered to applicants lacking maths (alternative to prerequisite) "
+  },
+  "a_level": null,
+  "turkish_route": "Not published. Turkish diploma not named; HZ uses a 'recognised foreign diplomas list' (not reproduced on page) and assesses unlisted diplomas individually with Nuffic.",
+  "prerequisite_maths": "Maths as exam subject per admission page; programme page: online maths course (~60 hours, EUR 200, EUR 100 refunded) if no maths; economics/physics an advantage",
+  "source_url": "https://hz.nl/en/study-programmes/logistics-engineering ; https://hz.nl/en/admission-requirements",
+  "confidence": "medium"
+ },
+ "58035": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "HZ does not publish an IB table; IB/other diplomas are assessed individually (diploma must be equivalent to havo/vwo/mbo-4). Institution-wide rule from https://hz.nl/en/admission-requirements."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on HZ pages; unlisted foreign diplomas are assessed individually with Nuffic."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published."
+  },
+  "a_level": null,
+  "turkish_route": "Not published. Turkish diploma not named; HZ uses a 'recognised foreign diplomas list' (not reproduced on page) and assesses unlisted diplomas individually with Nuffic.",
+  "prerequisite_maths": "No maths requirement listed on programme page (not among programmes with additional subject requirements on admission page)",
+  "source_url": "https://hz.nl/en/study-programmes/it ; https://hz.nl/en/admission-requirements",
+  "confidence": "low"
+ },
+ "58031": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "HZ does not publish an IB table; IB/other diplomas are assessed individually (diploma must be equivalent to havo/vwo/mbo-4). Institution-wide rule from https://hz.nl/en/admission-requirements."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on HZ pages; unlisted foreign diplomas are assessed individually with Nuffic."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published."
+  },
+  "a_level": null,
+  "turkish_route": "Not published. Turkish diploma not named; HZ uses a 'recognised foreign diplomas list' (not reproduced on page) and assesses unlisted diplomas individually with Nuffic.",
+  "prerequisite_maths": "Maths only preferred (one or more of biology, chemistry, mathematics or economics preferred); not a hard requirement",
+  "source_url": "https://hz.nl/en/study-programmes/watermanagement ; https://hz.nl/en/admission-requirements",
+  "confidence": "medium"
+ },
+ "58041": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hanze publishes no IB/AP table. Entry = secondary diploma comparable to Dutch HAVO (unfamiliar diplomas verified by NUFFIC/ECCTIS); Hanze points to NUFFIC, the Enrolment Advisor or STAD for IB/AP/Turkish questions."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned."
+  },
+  "math_test": {
+   "name": "Bosswell-Beta",
+   "role": "alternative to prerequisite",
+   "min_score": "HAVO-level maths pass (no numeric score published)",
+   "details": "Only under the 21+ rule (applicants 21+ without qualifying diploma must have passed HAVO-level maths exam; international students take Bosswell-Beta) plus admission test/interview. Not a route for regular applicants."
+  },
+  "a_level": null,
+  "turkish_route": "Not published (Turkish diploma not named; check NUFFIC / contact STAD)",
+  "prerequisite_maths": "'Mathematics is required for entry' (level not specified; diploma comparable to HAVO)",
+  "source_url": "https://www.hanze.nl/en/programmes/full-time/bachelor/applied-computer-science",
+  "confidence": "medium"
+ },
+ "58040": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hanze publishes no IB/AP table. Entry = secondary diploma comparable to Dutch HAVO (unfamiliar diplomas verified by NUFFIC/ECCTIS); Hanze points to NUFFIC, the Enrolment Advisor or STAD for IB/AP/Turkish questions."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned."
+  },
+  "math_test": {
+   "name": "Bosswell-Beta",
+   "role": "alternative to prerequisite",
+   "min_score": "HAVO-level maths pass (no numeric score published)",
+   "details": "Only under the 21+ rule (applicants 21+ without qualifying diploma must have passed HAVO-level maths exam; international students take Bosswell-Beta) plus admission test/interview. Not a route for regular applicants."
+  },
+  "a_level": null,
+  "turkish_route": "Not published (Turkish diploma not named; check NUFFIC / contact STAD)",
+  "prerequisite_maths": "'Mathematics is required for entry' (level not specified; diploma comparable to HAVO)",
+  "source_url": "https://www.hanze.nl/en/programmes/full-time/bachelor/electrical-and-electronic-engineering",
+  "confidence": "medium"
+ },
+ "56949": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hanze publishes no IB/AP table. Entry = secondary diploma comparable to Dutch HAVO (unfamiliar diplomas verified by NUFFIC/ECCTIS); Hanze points to NUFFIC, the Enrolment Advisor or STAD for IB/AP/Turkish questions."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned."
+  },
+  "math_test": {
+   "name": "Bosswell-Beta",
+   "role": "alternative to prerequisite",
+   "min_score": "HAVO-level maths pass (no numeric score published)",
+   "details": "Only under the 21+ rule (applicants 21+ without qualifying diploma must have passed HAVO-level maths exam; international students take Bosswell-Beta) plus admission test/interview. Not a route for regular applicants."
+  },
+  "a_level": null,
+  "turkish_route": "Not published (Turkish diploma not named; check NUFFIC / contact STAD)",
+  "prerequisite_maths": "'Mathematics is required for entry' (level not specified; diploma comparable to HAVO)",
+  "source_url": "https://www.hanze.nl/electronics",
+  "confidence": "medium"
+ },
+ "56951": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hanze publishes no IB/AP table. Entry = secondary diploma comparable to Dutch HAVO (unfamiliar diplomas verified by NUFFIC/ECCTIS); Hanze points to NUFFIC, the Enrolment Advisor or STAD for IB/AP/Turkish questions."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned."
+  },
+  "math_test": {
+   "name": "Bosswell-Beta",
+   "role": "alternative to prerequisite",
+   "min_score": "HAVO-level maths pass (no numeric score published)",
+   "details": "Only under the 21+ rule (applicants 21+ without qualifying diploma must have passed HAVO-level maths exam; international students take Bosswell-Beta) plus admission test/interview. Not a route for regular applicants."
+  },
+  "a_level": null,
+  "turkish_route": "Not published (Turkish diploma not named; check NUFFIC / contact STAD)",
+  "prerequisite_maths": "'Mathematics is required for entry' (level not specified; diploma comparable to HAVO)",
+  "source_url": "https://www.hanze.nl/mechatronics",
+  "confidence": "medium"
+ },
+ "58039": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hanze publishes no IB/AP table. Entry = secondary diploma comparable to Dutch HAVO (unfamiliar diplomas verified by NUFFIC/ECCTIS); Hanze points to NUFFIC, the Enrolment Advisor or STAD for IB/AP/Turkish questions."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned."
+  },
+  "math_test": {
+   "name": "Bosswell-Beta",
+   "role": "alternative to prerequisite",
+   "min_score": "HAVO-level maths pass (no numeric score published)",
+   "details": "Only under the 21+ rule (applicants 21+ without qualifying diploma must have passed HAVO-level maths exam; international students take Bosswell-Beta) plus admission test/interview. Not a route for regular applicants."
+  },
+  "a_level": null,
+  "turkish_route": "Not published (Turkish diploma not named; check NUFFIC / contact STAD)",
+  "prerequisite_maths": "'Mathematics is required for entry' (level not specified; diploma comparable to HAVO)",
+  "source_url": "https://www.hanze.nl/sensortechnology",
+  "confidence": "medium"
+ },
+ "56950": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hanze publishes no IB/AP table. Entry = secondary diploma comparable to Dutch HAVO (unfamiliar diplomas verified by NUFFIC/ECCTIS); Hanze points to NUFFIC, the Enrolment Advisor or STAD for IB/AP/Turkish questions."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned."
+  },
+  "math_test": {
+   "name": "Bosswell-Beta",
+   "role": "alternative to prerequisite",
+   "min_score": "HAVO-level maths pass (no numeric score published)",
+   "details": "Only under the 21+ rule (applicants 21+ without qualifying diploma must have passed HAVO-level maths exam; international students take Bosswell-Beta) plus admission test/interview. Not a route for regular applicants."
+  },
+  "a_level": null,
+  "turkish_route": "Not published (Turkish diploma not named; check NUFFIC / contact STAD)",
+  "prerequisite_maths": "Foreign diploma equivalent to Dutch VWO including mathematics and physics at advanced level (Dutch N&T profile direct; other profiles need physics); HAVO/mbo-4 also listed as routes; propedeuse in related engineering also accepted",
+  "source_url": "http://www.hanze.nl/mechanicalengineering",
+  "confidence": "medium"
+ },
+ "56957": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hanze publishes no IB/AP table. Entry = secondary diploma comparable to Dutch HAVO (unfamiliar diplomas verified by NUFFIC/ECCTIS); Hanze points to NUFFIC, the Enrolment Advisor or STAD for IB/AP/Turkish questions."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned."
+  },
+  "math_test": {
+   "name": "OMPT-A",
+   "role": "alternative to prerequisite",
+   "min_score": "55% (5.5)",
+   "details": "If maths is not on the diploma/passing grade not met, applicants can take OMPT-A (extra cost). Also all applicants complete an online 'MPT Survey' (no preparation). 21+ without diploma: colloquium doctum with study advisor."
+  },
+  "a_level": null,
+  "turkish_route": "Not published (Turkish diploma not named; check NUFFIC / contact STAD)",
+  "prerequisite_maths": "Mathematics mandatory with a passing grade on final transcript",
+  "source_url": "https://hanze.nl/cmgt",
+  "confidence": "medium"
+ },
+ "58065": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB listed as an example qualification that may lead to admission; no minimum points or subjects published. Every international diploma is formally evaluated by Inholland Admissions."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on Inholland pages; diplomas not listed are evaluated individually (admissions@inholland.nl)."
+  },
+  "math_test": {
+   "name": "Inholland entrance exam",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Entrance exam only for applicants aged 21+ without formal qualifications (Aeronautical Engineering: Mathematics B and Physics, per Inholland exam conditions). Not for IB/AP holders."
+  },
+  "a_level": null,
+  "turkish_route": "Not published; Turkish diploma not named. 'All internationally obtained diplomas need to be evaluated by our Admissions department.'",
+  "prerequisite_maths": "'Extra requirement: Maths & Physics' (no level specified on page); 21+ entrance exam subjects are Mathematics B and Physics",
+  "source_url": "https://www.inholland.nl/inhollandcom/bachelors-degrees/aeronautical-engineering-en-fulltime/entry-requirements/",
+  "confidence": "medium"
+ },
+ "58064": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB listed as an example qualification that may lead to admission; no minimum points or subjects published. Every international diploma is formally evaluated by Inholland Admissions."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on Inholland pages; diplomas not listed are evaluated individually (admissions@inholland.nl)."
+  },
+  "math_test": {
+   "name": "Inholland entrance exam",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Entrance exam only for 21+ applicants without formal qualifications (Mathematics B)."
+  },
+  "a_level": null,
+  "turkish_route": "Not published; Turkish diploma not named. 'All internationally obtained diplomas need to be evaluated by our Admissions department.'",
+  "prerequisite_maths": "International entry page states no maths requirement; Dutch havo/vwo maths requirements listed for Dutch students; 21+ entrance exam subject is Mathematics B (per exam terms, from search result)",
+  "source_url": "https://www.inholland.nl/inhollandcom/degree-programmes/applied-mathematics-data-science-eng-full-time/entry-requirements/",
+  "confidence": "low"
+ },
+ "58062": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB listed as an example qualification that may lead to admission; no minimum points or subjects published. Every international diploma is formally evaluated by Inholland Admissions."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on Inholland pages; diplomas not listed are evaluated individually (admissions@inholland.nl)."
+  },
+  "math_test": {
+   "name": "Inholland entrance exam",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only 21+ applicants without formal qualifications."
+  },
+  "a_level": null,
+  "turkish_route": "Not published; Turkish diploma not named. 'All internationally obtained diplomas need to be evaluated by our Admissions department.'",
+  "prerequisite_maths": "No maths requirement published for international applicants",
+  "source_url": "https://www.inholland.nl/opleidingen/information-technology-en-fulltime/entry-requirements/",
+  "confidence": "low"
+ },
+ "58200": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics at Standard Level (IB) is sufficient (maths taken in all years with sufficient score)",
+   "note": "IB Diploma and IB Career-related certificate are on NHL Stenden's list of recognised qualifications (EQF level 4 minimum); every application assessed individually. Institution-wide; from search-result excerpts as nhlstenden.com returned 403 to fetch."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not found in NHL Stenden published text."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCSE/GCE: maths at AS-level or A-level required (grade ranges in source appear garbled: 'AS A-C, A-level D-E'; confirm)",
+  "turkish_route": "Not found in published text (Turkish diploma not named; unlisted qualifications evaluated via Nuffic)",
+  "prerequisite_maths": "Mathematics in all years of curriculum with a sufficient score and/or as exam subject; IB Maths SL sufficient. Applicants lacking maths are pointed to BSc Information Technology",
+  "source_url": "https://www.nhlstenden.com/en/courses/computer-science/fees-and-admissions",
+  "confidence": "medium"
+ },
+ "58193": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and IB Career-related certificate are on NHL Stenden's list of recognised qualifications (EQF level 4 minimum); every application assessed individually. Institution-wide; from search-result excerpts as nhlstenden.com returned 403 to fetch."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not found in NHL Stenden published text."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Not found in published text (Turkish diploma not named; unlisted qualifications evaluated via Nuffic)",
+  "prerequisite_maths": "Maths not a mandatory subject (per NHL Stenden CS page which recommends IT to applicants lacking maths); EQF level 4 diploma",
+  "source_url": "https://www.nhlstenden.com/en/courses/information-technology/fees-and-admissions",
+  "confidence": "low"
+ },
+ "58184": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics and Chemistry at Standard Level sufficient",
+   "note": "IB Diploma and IB Career-related certificate are on NHL Stenden's list of recognised qualifications (EQF level 4 minimum); every application assessed individually. Institution-wide; from search-result excerpts as nhlstenden.com returned 403 to fetch. Green Chemistry is a 3-year fast-track needing VWO-equivalent diploma."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not found in NHL Stenden published text."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Not found in published text (Turkish diploma not named; unlisted qualifications evaluated via Nuffic)",
+  "prerequisite_maths": "Mathematics and chemistry in curriculum (all years) and/or exam subjects on final grade list; IB SL sufficient; VWO-equivalent diploma for 3-year fast track",
+  "source_url": "https://www.nhlstenden.com/en/courses/green-chemistry/fees-and-admissions",
+  "confidence": "medium"
+ },
+ "58592": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB not detailed; IB holders with English A Language and Literature are exempt from the English test only."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Not published; diploma comparable to havo (NLQF/EQF 4), check via Nuffic",
+  "prerequisite_maths": "Maths and chemistry recommended, not mandatory; first-year maths/chemistry courses for all students",
+  "source_url": "https://www.vhluas.com/programmes/bachelor/food-technology/",
+  "confidence": "medium"
+ },
+ "57823": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB not mentioned on programme page; see Avans diplomas/admission pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Not published (check Avans diploma pages/Nuffic)",
+  "prerequisite_maths": "4-year: havo-equivalent diploma with Mathematics and English (science subjects helpful, not required); 3-year fast track: diploma incl. Mathematics, Chemistry and English; adequate Chemistry firm requirement. Mandatory intake for non-European students",
+  "source_url": "https://www.avans.nl/en/int/studying/programmes/bachelor/environmental-science-for-sustainability-ecosystems-and-technology-fulltime",
+  "confidence": "medium"
+ },
+ "58749": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma listed on Zuyd general admission page as accepted for bachelor admission; whether a specific IB maths level meets the maths rule not published. Zuyd pages returned 403, info via search excerpts."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not found."
+  },
+  "math_test": {
+   "name": "OMPT",
+   "role": "alternative to prerequisite",
+   "min_score": "Level C",
+   "details": "Applicants whose EQF-4 diploma does not include mathematics through the final year must pass OMPT level C."
+  },
+  "a_level": null,
+  "turkish_route": "Not published",
+  "prerequisite_maths": "EQF level 4 diploma including mathematics up to final year, otherwise OMPT level C",
+  "source_url": "https://www.zuyd.nl/en/programmes/applied-data-science-and-artificial-intelligence",
+  "confidence": "low"
+ }
+}

@@ -1,0 +1,1595 @@
+{
+ "54772": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. A in Maths and Physics or Further Maths; IB 34 with HL6 Maths and HL6/SL7 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Maths (AA or AI) or SL7 Maths AA; plus HL6 or SL7 Physics (not both Maths and Physics at SL)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Maths and A in Physics or Further Maths (or any two of Chemistry, Biology, Design, Electronics); GCSE English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Maths and Physics required; Engineering and Physical Sciences foundation year if subjects missing",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Aerospace-Engineering-BEng-Hons.html",
+  "confidence": "high"
+ },
+ "54773": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. A in Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "665 in 3 HL alternative; HL5 Maths (AA or AI) or SL6 Maths AA",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. Maths; GCSE Maths 4, Physics 4 (or combined science 44), English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Maths required; foundation year if subjects missing",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Architectural-Environment-Engineering-BEng-Hons.html",
+  "confidence": "high"
+ },
+ "54774": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. A in Maths and Chemistry or Physics; IB 34 with HL6 Maths and HL6 Physics/Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Maths (AA or AI) or SL7 Maths AA; plus HL6 Physics or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Maths and A in Chemistry or Physics; GCSE English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Maths and Chemistry or Physics required; foundation year if subjects missing",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Chemical-Engineering-BEng-Hons.html",
+  "confidence": "high"
+ },
+ "54775": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. A in Maths and Chemistry or Physics; IB 34 with HL6 Maths and HL6 Physics/Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Maths (AA or AI) or SL7 Maths AA; plus HL6 Physics or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Maths and A in Chemistry or Physics; GCSE English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Maths and Chemistry or Physics required; foundation year if subjects missing",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Chemical-Engineering-BEng-Hons.html",
+  "confidence": "high"
+ },
+ "54776": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. A in Maths; IB 32 with HL6 Maths and HL5 second subject",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL6 Maths (AA or AI) or SL7 Maths AA; plus HL5 in physics, chemistry, biology, D&T, geography, geology, computing, further maths, economics or similar",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. A in Maths plus one of physics, chemistry, biology, geography, computing, further maths etc.; GCSE English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Maths required; foundation year if subjects missing",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Civil-Engineering-BEng-Hons.html",
+  "confidence": "high"
+ },
+ "54777": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. A in Maths and Physics or Further Maths (check course); IB 34 with maths and physics at HL/SL",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Maths or SL7 Maths AA plus HL6/SL7 Physics (as for Nottingham engineering BEng)",
+   "note": "Subject detail inferred from Nottingham engineering pattern"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths and a physical science (Electrical Engineering page not directly confirmed)",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Maths and physics required",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Electrical-Engineering-BEng-Hons.html",
+  "confidence": "medium"
+ },
+ "54778": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths plus Electronics/Computer Science/Physics/Chemistry/Biology/Further Maths/D&T; IB 32 with HL5 Maths and HL5 science/computing",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "655 in 3 HL alternative; HL5 Maths (AA or AI) or SL6 Maths AA; plus HL5 in biology, chemistry, physics or computer science",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. Maths and one of electronics, computer science, physics, chemistry, biology, further maths, D&T; GCSE English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Maths required",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Electronic-and-Computer-Engineering-BEng-Hons.html",
+  "confidence": "high"
+ },
+ "54779": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. A in Maths and Chemistry or Physics; IB 34 with HL6 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Maths (AA or AI) or SL7 Maths AA plus HL6 Physics or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Maths and A in Chemistry or Physics; GCSE English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Maths and Chemistry or Physics required; foundation year if subjects missing",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Environmental-Engineering-BEng-Hons.html",
+  "confidence": "high"
+ },
+ "54780": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. A in Maths and Physics or Further Maths; IB 34 with HL6 Maths and HL6/SL7 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Maths (AA or AI) or SL7 Maths AA; plus HL6 or SL7 Physics (Maths AI not accepted at SL)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Maths and Physics or Further Maths (or any two of Chemistry, Biology, Design, Electronics); GCSE English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Maths and Physics required; Engineering and Physical Sciences foundation year if subjects missing",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/2027/Mechanical-Engineering-BEng-Hons.html",
+  "confidence": "high"
+ },
+ "54781": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. A in Maths and Physics or Further Maths; IB 34 with HL6 Maths and HL6/SL7 Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Maths (AA or AI) or SL7 Maths AA; plus HL6 or SL7 Physics (Maths AI not accepted at SL)",
+   "note": "Same requirements as BEng Mechanical Engineering"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Maths and Physics or Further Maths (or any two of Chemistry, Biology, Design, Electronics); GCSE English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Maths and Physics required; Engineering and Physical Sciences foundation year if subjects missing",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/2027/Mechanical-Engineering-BEng-Hons.html",
+  "confidence": "high"
+ },
+ "54791": {
+  "stem": true,
+  "typical_offer": "A-level AAA (AAB if one A is in Computer Science); IB 34 (32 incl. HL6 Computer Science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Computer Science alternative: 32 points or 665 in 3 HL; GCSE Maths 5 (IB Maths 4 HL/5 SL accepted as substitute)",
+   "note": "Same entry as BSc Computer Science (variant courses follow institution page)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA; AAB if one A is in Computer Science (A-level ICT/IT excluded); GCSE Maths 5 and English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "No specific A-level maths required beyond GCSE Maths 5; Engineering and Physical Sciences foundation year available",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Computer-Science-BSc-Hons.html",
+  "confidence": "medium"
+ },
+ "54792": {
+  "stem": true,
+  "typical_offer": "A-level AAA (AAB if one A is in Computer Science); IB 34 (32 incl. HL6 Computer Science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Computer Science alternative: 32 points or 665 in 3 HL; GCSE Maths 5 (IB Maths 4 HL/5 SL accepted as substitute)",
+   "note": "Same entry as BSc Computer Science (variant courses follow institution page)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA; AAB if one A is in Computer Science (A-level ICT/IT excluded); GCSE Maths 5 and English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "No specific A-level maths required beyond GCSE Maths 5; Engineering and Physical Sciences foundation year available",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Computer-Science-BSc-Hons.html",
+  "confidence": "medium"
+ },
+ "54793": {
+  "stem": true,
+  "typical_offer": "A-level AAA (AAB if one A is in Computer Science); IB 34 (32 incl. HL6 Computer Science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Computer Science alternative: 32 points or 665 in 3 HL; GCSE Maths 5 (IB Maths 4 HL/5 SL accepted as substitute)",
+   "note": "Same entry as BSc Computer Science (variant courses follow institution page)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA; AAB if one A is in Computer Science (A-level ICT/IT excluded); GCSE Maths 5 and English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "No specific A-level maths required beyond GCSE Maths 5; Engineering and Physical Sciences foundation year available",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Computer-Science-BSc-Hons.html",
+  "confidence": "medium"
+ },
+ "54794": {
+  "stem": true,
+  "typical_offer": "A-level AAA (AAB if one A is in Computer Science); IB 34 (32 incl. HL6 Computer Science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Computer Science alternative: 32 points or 665 in 3 HL; GCSE Maths 5 (IB Maths 4 HL/5 SL accepted as substitute)",
+   "note": "Same entry as BSc Computer Science (variant courses follow institution page)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA; AAB if one A is in Computer Science (A-level ICT/IT excluded); GCSE Maths 5 and English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "No specific A-level maths required beyond GCSE Maths 5; Engineering and Physical Sciences foundation year available",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Computer-Science-BSc-Hons.html",
+  "confidence": "medium"
+ },
+ "54837": {
+  "stem": true,
+  "typical_offer": "A-level AAA (AAB if one A is in Computer Science); IB 34 (32 incl. HL6 Computer Science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Computer Science alternative: 32 points or 665 in 3 HL; GCSE Maths 5 (IB Maths 4 HL/5 SL accepted as substitute)",
+   "note": "Same entry as BSc Computer Science (variant courses follow institution page)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA; AAB if one A is in Computer Science (A-level ICT/IT excluded); GCSE Maths 5 and English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "No specific A-level maths required beyond GCSE Maths 5; Engineering and Physical Sciences foundation year available",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Computer-Science-BSc-Hons.html",
+  "confidence": "medium"
+ },
+ "54838": {
+  "stem": true,
+  "typical_offer": "A-level AAA (AAB if one A is in Computer Science); IB 34 (32 incl. HL6 Computer Science)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL6 Computer Science alternative: 32 points or 665 in 3 HL; GCSE Maths 5 (IB Maths 4 HL/5 SL accepted as substitute)",
+   "note": "Same entry as BSc Computer Science (variant courses follow institution page)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA; AAB if one A is in Computer Science (A-level ICT/IT excluded); GCSE Maths 5 and English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "No specific A-level maths required beyond GCSE Maths 5; Engineering and Physical Sciences foundation year available",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Computer-Science-BSc-Hons.html",
+  "confidence": "medium"
+ },
+ "54799": {
+  "stem": true,
+  "typical_offer": "A-level ABB/AAC/A*BC; IB 28 incl. HL4 Biology",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL4 Biology (alt 555/654/744 HL incl. Biology); or HL4 in chemistry, physics, maths, geography, ESS, psychology",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB, AAC or A*BC incl. one of biology, chemistry, physics, geography, geology, maths, environmental science, psychology; GCSE Maths and English 4",
+  "turkish_route": "Lise Diplomas\u0131 generally not accepted for direct entry; most Turkish applicants take a foundation course (University of Nottingham International College). Direct entry only from certain schools with a final-year average of 75% or above.",
+  "prerequisite_maths": "Science foundation year available",
+  "source_url": "https://www.nottingham.ac.uk/studywithus/ugstudy/courses/UG/Environmental-Science-BSc-Hons.html",
+  "confidence": "high"
+ },
+ "56469": {
+  "stem": true,
+  "typical_offer": "112 UCAS points incl. C in Maths; IB 28 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL5 Maths and HL3 in a second relevant subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points incl. C in A-level Maths and E in a second relevant subject (physics, chemistry, computing, further maths, etc.); GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "A-level/IB Maths required; foundation year entry option (32 points)",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/beng-civil-engineering",
+  "confidence": "high"
+ },
+ "56470": {
+  "stem": true,
+  "typical_offer": "112 UCAS points incl. C in Maths; IB 28 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL5 Maths and HL3 in a second relevant subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points incl. C in A-level Maths and E in a second relevant subject (physics, chemistry, computing, further maths, etc.); GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "A-level/IB Maths required; foundation year entry option (32 points)",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/beng-civil-engineering",
+  "confidence": "high"
+ },
+ "56471": {
+  "stem": true,
+  "typical_offer": "112 UCAS points incl. C in Maths; IB 28 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL5 Maths and HL3 in a second relevant subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points incl. C in A-level Maths and E in a second relevant subject (physics, chemistry, computing, further maths, etc.); GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "A-level/IB Maths required; foundation year entry option (32 points)",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/beng-electrical-and-electronic-engineering",
+  "confidence": "high"
+ },
+ "56472": {
+  "stem": true,
+  "typical_offer": "112 UCAS points incl. C in Maths; IB 28 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL5 Maths and HL3 in a second relevant subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points incl. C in A-level Maths and E in a second relevant subject (physics, chemistry, computing, further maths, etc.); GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "A-level/IB Maths required; foundation year entry option (32 points)",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/beng-marine-engineering-with-naval-architecture",
+  "confidence": "high"
+ },
+ "56473": {
+  "stem": true,
+  "typical_offer": "112 UCAS points incl. C in Maths; IB 28 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL5 Maths and HL3 in a second relevant subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points incl. C in A-level Maths and E in a second relevant subject (physics, chemistry, computing, further maths, etc.); GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "A-level/IB Maths required; foundation year entry option (32 points)",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/beng-mechanical-engineering",
+  "confidence": "high"
+ },
+ "56475": {
+  "stem": true,
+  "typical_offer": "104 UCAS points from 2 A-levels; IB 26",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "No specific HL subjects listed",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104 UCAS points from minimum 2 A-levels; no subjects listed",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "No specific maths prerequisite listed; Foundation in Architecture & Design via UPIC",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/bsc-architectural-engineering",
+  "confidence": "high"
+ },
+ "56486": {
+  "stem": true,
+  "typical_offer": "104 UCAS points from 2 A-levels; IB 26-30",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "No specific HL subjects listed; GCSE Maths and English C/4",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104 UCAS points from minimum 2 A-levels; no subjects specified; GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "GCSE Maths C/4; Computer Science with Foundation Year available (32 points)",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/bsc-computer-science",
+  "confidence": "high"
+ },
+ "56487": {
+  "stem": true,
+  "typical_offer": "104 UCAS points from 2 A-levels; IB 26-30",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "No specific HL subjects listed; GCSE Maths and English C/4",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104 UCAS points from minimum 2 A-levels; no subjects specified; GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "GCSE Maths C/4; Computer Science with Foundation Year available (32 points)",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/bsc-computer-science-artificial-intelligence",
+  "confidence": "medium"
+ },
+ "56488": {
+  "stem": true,
+  "typical_offer": "104 UCAS points from 2 A-levels; IB 26-30",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "No specific HL subjects listed; GCSE Maths and English C/4",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104 UCAS points from minimum 2 A-levels; no subjects specified; GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "GCSE Maths C/4; Computer Science with Foundation Year available (32 points)",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/bsc-computer-science-cyber-security",
+  "confidence": "medium"
+ },
+ "56489": {
+  "stem": true,
+  "typical_offer": "104 UCAS points from 2 A-levels; IB 26-30",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "No specific HL subjects listed; GCSE Maths and English C/4",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104 UCAS points from minimum 2 A-levels; no subjects specified; GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "GCSE Maths C/4; Computer Science with Foundation Year available (32 points)",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/bsc-computer-science-games-development",
+  "confidence": "high"
+ },
+ "56490": {
+  "stem": true,
+  "typical_offer": "104 UCAS points from 2 A-levels; IB 26-30",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "No specific HL subjects listed; GCSE Maths and English C/4",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104 UCAS points from minimum 2 A-levels; no subjects specified; GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "GCSE Maths C/4; Computer Science with Foundation Year available (32 points)",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/bsc-computer-science-software-engineering",
+  "confidence": "medium"
+ },
+ "56506": {
+  "stem": true,
+  "typical_offer": "112 UCAS points incl. B in Maths or Further Maths; IB 28 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL5 Mathematics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from 2+ A-levels incl. B in Maths or Further Maths; GCSE Maths and English C/4",
+  "turkish_route": "Turkish Devlet Lise or Lise Bitirme Diplomas\u0131 alone not enough for direct entry; International Foundation Year (University of Plymouth International College) or equivalent required.",
+  "prerequisite_maths": "A-level/IB Maths required",
+  "source_url": "https://www.plymouth.ac.uk/courses/undergraduate/bsc-mathematics-with-computer-science",
+  "confidence": "high"
+ },
+ "56636": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "high"
+ },
+ "56637": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "56635": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "56643": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "56672": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "56633": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "56634": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "56632": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "56644": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "56581": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-computer-science",
+  "confidence": "medium"
+ },
+ "56617": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/beng-hons-civil-engineering",
+  "confidence": "high"
+ },
+ "56620": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/beng-hons-mechanical-engineering",
+  "confidence": "high"
+ },
+ "56621": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/beng-hons-mechanical-engineering",
+  "confidence": "medium"
+ },
+ "56618": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/beng-hons-mechanical-engineering",
+  "confidence": "medium"
+ },
+ "56622": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/beng-hons-mechanical-engineering",
+  "confidence": "medium"
+ },
+ "56623": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 UCAS points) incl. at least 2 A-levels, one in a relevant subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Some courses need specific subjects or GCSEs; foundation year available",
+  "source_url": "https://www.port.ac.uk/study/courses/beng-hons-mechanical-engineering",
+  "confidence": "medium"
+ },
+ "56619": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 points) incl. relevant subject: Maths, Further Maths, Statistics, Physics or Electronics",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "A-level in Maths, Further Maths, Statistics, Physics or Electronics",
+  "source_url": "https://www.port.ac.uk/study/courses/beng-hons-electronic-engineering",
+  "confidence": "high"
+ },
+ "56651": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 points) incl. a science: biology, chemistry, environmental science, geography, geology, maths or physics",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "One science A-level required; Science with Foundation Year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-environmental-science",
+  "confidence": "medium"
+ },
+ "56655": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 points) incl. a science: biology, chemistry, environmental science, geography, geology, maths or physics",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "One science A-level required; Science with Foundation Year available",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-environmental-science",
+  "confidence": "medium"
+ },
+ "56649": {
+  "stem": true,
+  "typical_offer": "104-120 UCAS points (A-level BBB-BCC); IB 24",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Via US applicants page: three AP tests in separate subjects can meet A-level requirements (555=AAA, 444=BBB, 433=BCC, 333=CCC) with US high school diploma and GPA about 3.0+; Calculus AB/BC variants not specified.",
+   "note": "Institution-wide guidance for US applicants"
+  },
+  "tests": "ACT composite 25-29 / SAT equivalents listed for tariff 96-144; SAT/ACT used as AP alternative",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BCC (104-120 points) incl. a science subject",
+  "turkish_route": "Turkish Devlet Lise/Lise Bitirme Diplomas\u0131 with at least 70% (4/5) and relevant subjects may be considered for undergraduate entry; below this a foundation year is usually required; one year of university study also considered.",
+  "prerequisite_maths": "Science subject required",
+  "source_url": "https://www.port.ac.uk/study/courses/bsc-hons-environmental-science",
+  "confidence": "medium"
+ },
+ "21167": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. B in Maths; IB 30 incl. HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL5 Mathematics",
+   "note": "Offer will specify the required overall score"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. B in A-level Maths",
+  "turkish_route": "Lise Diplomasi with 77-80% average for direct entry; 62% average for International Foundation Programme.",
+  "prerequisite_maths": "Maths required; integrated foundation year (IB 24) available",
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/subject-area/architectural-engineering-ug/beng-architectural-engineering",
+  "confidence": "high"
+ },
+ "21181": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. B in Maths or Physics (or BBB with a second science); IB 32 with HL5 Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 Maths or Physics (alt 30 points with HL5 in Maths/Physics and another science)",
+   "note": "Offer will specify the required overall score"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. B in Maths or Physics, or BBB incl. B in Maths or Physics plus second science",
+  "turkish_route": "Lise Diplomasi with 77-80% average for direct entry; 62% average for International Foundation Programme.",
+  "prerequisite_maths": "Maths or Physics required",
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/subject-area/biomedical-engineering-ug/beng-biomedical-engineering",
+  "confidence": "high"
+ },
+ "21207": {
+  "stem": true,
+  "typical_offer": "A-level ABB; IB 32; GCSE Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "No specific HL subjects listed; GCSE Maths 6",
+   "note": "Offer will specify the required overall score"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB, no specific subjects; GCSE Maths 6 (B)",
+  "turkish_route": "Lise Diplomasi with 77-80% average for direct entry; 62% average for International Foundation Programme.",
+  "prerequisite_maths": "GCSE Maths grade 6",
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/subject-area/computer-science-ug/bsc-computer-science",
+  "confidence": "high"
+ },
+ "21208": {
+  "stem": true,
+  "typical_offer": "A-level ABC incl. A in Maths/Further Maths; IB 30 incl. HL6 Maths (28 with HL5 for firm choice, placement variant)",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL Maths (HL6; 5 for 28 points)",
+   "note": "Offer will specify the required overall score"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABC incl. A in Maths, Further Maths or Pure Maths (ACC with B in EPQ)",
+  "turkish_route": "Lise Diplomasi with 77-80% average for direct entry; 62% average for International Foundation Programme.",
+  "prerequisite_maths": "A-level/IB HL Maths required",
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/subject-area/mathematics-ug/bsc-mathematics-with-computer-science",
+  "confidence": "medium"
+ },
+ "21245": {
+  "stem": true,
+  "typical_offer": "A-level BBB; IB 30 with HL5 in maths or a science/geography",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "HL5 in Maths, Physics, Chemistry, Biology, Geography, Environmental Science or Geology",
+   "note": "Offer will specify the required overall score"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB",
+  "turkish_route": "Lise Diplomasi with 77-80% average for direct entry; 62% average for International Foundation Programme.",
+  "prerequisite_maths": "One science/maths/geography subject at HL5",
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/subject-area/environment-ug/bsc-environmental-science",
+  "confidence": "high"
+ },
+ "21280": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/how-to-apply/entry-requirements-ug",
+  "confidence": "medium"
+ },
+ "21190": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/how-to-apply/entry-requirements-ug",
+  "confidence": "medium"
+ },
+ "21283": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/how-to-apply/entry-requirements-ug",
+  "confidence": "medium"
+ },
+ "21272": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/how-to-apply/entry-requirements-ug",
+  "confidence": "medium"
+ },
+ "21265": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.reading.ac.uk/ready-to-study/study/how-to-apply/entry-requirements-ug",
+  "confidence": "medium"
+ }
+}

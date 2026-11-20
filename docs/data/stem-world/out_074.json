@@ -1,0 +1,1238 @@
+{
+ "22659": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43001": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43004": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43011": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43010": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43026": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "42981": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43008": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43009": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43015": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43019": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43021": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43022": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43023": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43032": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science; Forest Engineering programmes listed as exempt from the calculus-ready requirement on the admissions calculus page",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "low"
+ },
+ "43033": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science; Forest Engineering programmes listed as exempt from the calculus-ready requirement on the admissions calculus page",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "low"
+ },
+ "43048": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43047": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43063": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43059": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43060": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43062": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43061": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43069": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "43084": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22676": {
+  "stem": false
+ },
+ "22677": {
+  "stem": false
+ },
+ "22678": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22679": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22682": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22683": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22685": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22686": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22687": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22688": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22695": {
+  "stem": false
+ },
+ "22696": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22701": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22703": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22706": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22707": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22713": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science; Forest Engineering programmes listed as exempt from the calculus-ready requirement on the admissions calculus page",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "low"
+ },
+ "22714": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science; Forest Engineering programmes listed as exempt from the calculus-ready requirement on the admissions calculus page",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "low"
+ },
+ "22716": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22727": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22734": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22740": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22746": {
+  "stem": true,
+  "typical_offer": "High school GPA 3.0 or IB Diploma 26 points for direct entry; engineering majors need pre-calculus or calculus completed (C- or better)",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "IB Language A HL 5 can satisfy English requirement",
+   "note": "Credit for IB exams scoring 4+ (HL or SL); full diploma 30+ gives sophomore standing and a $3,000 renewable scholarship; 24 points qualifies for pathway program"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit by score: Calculus AB 3 = MTH 251 (4 credits), 4-5 = MTH 251+252 (8 credits); Calculus BC 3 = MTH 251+252 (8 credits), 4-5 = MTH 251-253 (12 credits); AP English Language 3+ satisfies English requirement",
+   "note": "Credit table is for Fall 2024 entry"
+  },
+  "tests": "Test-optional; SAT/ACT not required and only supplemental. SAT EBRW 560 or ACT English 21 can waive English test",
+  "math_test": {
+   "name": "Schoolhouse.world pre-calculus certification",
+   "role": "alternative to prerequisite",
+   "min_score": "90%",
+   "details": "Alternative to high school pre-calculus for direct admission to Engineering; ALEKS placement does not affect admission"
+  },
+  "a_level": "IGCSE O or A-level English grade C or better accepted for English requirement; IGCSE route needs 5 subjects (incl. maths, English, science) averaging 3.0 on NCAA scale",
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-calculus or calculus with C- or better for direct entry to engineering (otherwise admitted to Exploratory Studies and guaranteed engineering after MTH 112Z with C or better); 3 years high school maths, 3 years science",
+  "source_url": "https://admissions.oregonstate.edu/international/programs/undergraduate-degree-programs/first-year-freshman",
+  "confidence": "medium"
+ },
+ "22757": {
+  "stem": false
+ },
+ "22758": {
+  "stem": false
+ },
+ "22759": {
+  "stem": false
+ },
+ "22760": {
+  "stem": false
+ }
+}

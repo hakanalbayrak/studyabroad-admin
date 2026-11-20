@@ -1,0 +1,1460 @@
+{
+ "23634": {
+  "stem": true,
+  "typical_offer": "UCAS 72 with maths and physics at A/AS-level, otherwise 104 (A-level DDD with maths and physics; BCC without); IB 24 with two HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Two subjects at Higher level",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Mechanical FY: A-level DDD with maths and physics, or BCC without; UCAS 72 with maths and physics at A/AS-level, otherwise 104; IB 24 points with two Higher level subjects",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths and physics at A or AS-level for the lower tariff",
+  "source_url": "https://www.brighton.ac.uk/courses/study/mechanical-engineering-beng-hons-with-integrated-foundation-year.aspx",
+  "confidence": "high"
+ },
+ "23545": {
+  "stem": true,
+  "typical_offer": "A-level CCD-DDD, UCAS 72-88; IB 24 with two HL and at least SL maths 4 (civil FY page); institution-wide foundation-year pattern",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Two Higher level subjects; at least Standard level maths grade 4",
+   "note": "Figures from civil engineering foundation-year page, applied to integrated foundation year engineering courses. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "CCD-DDD with maths at A or AS-level (civil FY page; same pattern applied to integrated foundation year engineering courses)",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths at A/AS-level or equivalent normally required",
+  "source_url": "https://www.brighton.ac.uk/courses/study/automotive-engineering-beng-hons-with-integrated-foundation-year.aspx",
+  "confidence": "medium"
+ },
+ "23564": {
+  "stem": true,
+  "typical_offer": "A-level CCD-DDD, UCAS 72-88; IB 24 with two HL and at least SL maths 4 (civil FY page); institution-wide foundation-year pattern",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Two Higher level subjects; at least Standard level maths grade 4",
+   "note": "Figures from civil engineering foundation-year page, applied to integrated foundation year engineering courses. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "CCD-DDD with maths at A or AS-level (civil FY page; same pattern applied to integrated foundation year engineering courses)",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths at A/AS-level or equivalent normally required",
+  "source_url": "https://www.brighton.ac.uk/courses/study/civil-engineering-beng-hons-with-integrated-foundation-year.aspx",
+  "confidence": "medium"
+ },
+ "23579": {
+  "stem": true,
+  "typical_offer": "A-level CCD-DDD, UCAS 72-88; IB 24 with two HL and at least SL maths 4 (civil FY page); institution-wide foundation-year pattern",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Two Higher level subjects; at least Standard level maths grade 4",
+   "note": "Figures from civil engineering foundation-year page, applied to integrated foundation year engineering courses. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "CCD-DDD with maths at A or AS-level (civil FY page; same pattern applied to integrated foundation year engineering courses)",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths at A/AS-level or equivalent normally required",
+  "source_url": "https://www.brighton.ac.uk/courses/study/design-engineering-beng-hons-with-integrated-foundation-year.aspx",
+  "confidence": "medium"
+ },
+ "23587": {
+  "stem": true,
+  "typical_offer": "A-level CCD-DDD, UCAS 72-88; IB 24 with two HL and at least SL maths 4 (civil FY page); institution-wide foundation-year pattern",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Two Higher level subjects; at least Standard level maths grade 4",
+   "note": "Figures from civil engineering foundation-year page, applied to integrated foundation year engineering courses. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "CCD-DDD with maths at A or AS-level (civil FY page; same pattern applied to integrated foundation year engineering courses)",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths at A/AS-level or equivalent normally required",
+  "source_url": "https://www.brighton.ac.uk/courses/study/electrical-and-electronic-engineering-beng-hons-with-integrated-foundation-year.aspx",
+  "confidence": "medium"
+ },
+ "23588": {
+  "stem": true,
+  "typical_offer": "A-level CCD-DDD, UCAS 72-88; IB 24 with two HL and at least SL maths 4 (civil FY page); institution-wide foundation-year pattern",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Two Higher level subjects; at least Standard level maths grade 4",
+   "note": "Figures from civil engineering foundation-year page, applied to integrated foundation year engineering courses. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "CCD-DDD with maths at A or AS-level (civil FY page; same pattern applied to integrated foundation year engineering courses)",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths at A/AS-level or equivalent normally required",
+  "source_url": "https://www.brighton.ac.uk/courses/study/electronic-and-communication-engineering-beng-hons-with-integrated-foundation-year.aspx",
+  "confidence": "medium"
+ },
+ "53803": {
+  "stem": true,
+  "typical_offer": "ABB-BCC incl. maths and a physical science; IB 27 with three HL incl. maths and physics at 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three HL subjects incl. maths and physics at grade 5",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; must include maths and a physical science",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths and a physical science (physics for IB)",
+  "source_url": "https://www.brighton.ac.uk/courses/study/aerospace-engineering-beng-hons.aspx",
+  "confidence": "high"
+ },
+ "53804": {
+  "stem": true,
+  "typical_offer": "ABB-BCC incl. maths and a physical science; IB 27 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three HL subjects",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; must include maths and a physical science",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths and a physical science",
+  "source_url": "https://www.brighton.ac.uk/courses/study/mechanical-engineering-beng-hons.aspx",
+  "confidence": "medium"
+ },
+ "53811": {
+  "stem": true,
+  "typical_offer": "ABB-BCC incl. maths and a physical science; IB 27 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three HL subjects",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; must include maths and a physical science",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths and a physical science",
+  "source_url": "https://www.brighton.ac.uk/courses/study/mechanical-engineering-beng-hons.aspx",
+  "confidence": "high"
+ },
+ "53805": {
+  "stem": true,
+  "typical_offer": "ABB-BCC (UCAS 104-128); maths normally required; IB 27 with three HL incl. HL maths 5+",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three HL subjects; maths at HL grade 5 or above",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; maths or equivalent normally required",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths normally required; integrated foundation year available if requirements not met",
+  "source_url": "https://www.brighton.ac.uk/courses/study/civil-engineering-beng-hons.aspx",
+  "confidence": "high"
+ },
+ "53806": {
+  "stem": true,
+  "typical_offer": "ABB-BCC (UCAS 104-128); maths normally required; IB 27 with three HL incl. HL maths 5+",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three HL subjects; maths at HL grade 5 or above",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; maths or equivalent normally required",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths normally required",
+  "source_url": "https://www.brighton.ac.uk/courses/study/civil-engineering-beng-hons.aspx",
+  "confidence": "medium"
+ },
+ "53807": {
+  "stem": true,
+  "typical_offer": "ABB-BCC (UCAS 104-128); maths normally required; IB 27 with three HL incl. HL maths 5+",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three HL subjects; maths at HL grade 5 or above",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; maths or equivalent normally required",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths normally required",
+  "source_url": "https://www.brighton.ac.uk/courses/study/civil-engineering-beng-hons.aspx",
+  "confidence": "medium"
+ },
+ "53808": {
+  "stem": true,
+  "typical_offer": "ABB-BCC incl. maths; IB 26 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "Three HL subjects",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; must include maths",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "A-level maths",
+  "source_url": "https://www.brighton.ac.uk/courses/study/design-engineering-beng-hons.aspx",
+  "confidence": "medium"
+ },
+ "53809": {
+  "stem": true,
+  "typical_offer": "ABB-BCC incl. maths (C) and a physical science; IB 27 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three HL subjects",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; must include maths at grade C and a physical science",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths and a physical science",
+  "source_url": "https://www.brighton.ac.uk/courses/study/electrical-and-electronic-engineering-beng-hons.aspx",
+  "confidence": "high"
+ },
+ "53810": {
+  "stem": true,
+  "typical_offer": "ABB-BCC incl. maths (C) and a physical science; IB 27 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three HL subjects",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; must include maths at grade C and a physical science",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths and a physical science",
+  "source_url": "https://www.brighton.ac.uk/courses/study/electrical-and-electronic-engineering-beng-hons.aspx",
+  "confidence": "medium"
+ },
+ "23589": {
+  "stem": true,
+  "typical_offer": "ABB-BCC incl. maths and a physical science; IB 27 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three HL subjects",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC incl. maths and a physical science",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths and a physical science",
+  "source_url": "https://www.brighton.ac.uk/courses/study/electrical-and-electronic-engineering-beng-hons.aspx",
+  "confidence": "low"
+ },
+ "53812": {
+  "stem": true,
+  "typical_offer": "ABB-BCC incl. maths (C) and a physical science; IB 27 with HL maths and physics at 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three HL subjects incl. maths and physics at grade 5",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; must include maths at grade C and a physical science",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": "Maths and a physical science (physics for IB)",
+  "source_url": "https://www.brighton.ac.uk/courses/study/robotics-and-mechatronics-engineering-beng-hons.aspx",
+  "confidence": "high"
+ },
+ "53826": {
+  "stem": true,
+  "typical_offer": "ABB-BCC (UCAS 104-128); IB 27 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three subjects at Higher level",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; no specific subjects listed",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.brighton.ac.uk/courses/study/computer-science-bsc-hons.aspx",
+  "confidence": "medium"
+ },
+ "53827": {
+  "stem": true,
+  "typical_offer": "ABB-BCC (UCAS 104-128); IB 27 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three subjects at Higher level",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; no specific subjects listed",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.brighton.ac.uk/courses/study/computer-science-bsc-hons.aspx",
+  "confidence": "low"
+ },
+ "53828": {
+  "stem": true,
+  "typical_offer": "ABB-BCC (UCAS 104-128); IB 27 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three subjects at Higher level",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; no specific subjects listed",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.brighton.ac.uk/courses/study/computer-science-bsc-hons.aspx",
+  "confidence": "low"
+ },
+ "53829": {
+  "stem": true,
+  "typical_offer": "ABB-BCC (UCAS 104-128); IB 27 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three subjects at Higher level",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; no specific subjects listed",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.brighton.ac.uk/courses/study/computer-science-bsc-hons.aspx",
+  "confidence": "low"
+ },
+ "53847": {
+  "stem": true,
+  "typical_offer": "ABB-BCC (UCAS 104-128); IB 27 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Three subjects at Higher level",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; no specific subjects listed",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.brighton.ac.uk/courses/study/computer-science-bsc-hons.aspx",
+  "confidence": "low"
+ },
+ "53831": {
+  "stem": true,
+  "typical_offer": "ABB-BCC (UCAS 104-128); IB 26 with three HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "Three subjects at Higher level",
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BCC; no specific subjects listed",
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.brighton.ac.uk/courses/study/data-science-bsc-hons.aspx",
+  "confidence": "medium"
+ },
+ "23659": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Institution-wide: IB accepted. English: IELTS 6.0 overall with 5.5 in each element"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Brighton: no AP policy listed."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Brighton: Lise accepted for entry to Year 1 with minimum 70% (or 4.0/5.0) overall (Devlet Lise, Lise Bitirme, Anadolu, Teknik etc.); courses with professional accreditation may have extra requirements. International College pathway courses exist for applicants below the requirement. Turkish English qualifications do not meet the English requirement.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.brighton.ac.uk/courses/study/psychology-with-counselling-studies-bschons.aspx",
+  "confidence": "low"
+ },
+ "27738": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A* in Maths; IB 38 with 18 HL incl. HL maths 7",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL incl. 7 in HL maths (AA or AI); contextual 34 with HL maths 6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": "University of Bristol mathematics test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only for BTEC Engineering applicants, in place of A-level Maths"
+  },
+  "a_level": "Standard A*AA incl. A* Maths; contextual AAB incl. A Maths",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths at A*/A or HL 7/6",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/computer-science/bsc-computer-science/",
+  "confidence": "high"
+ },
+ "53946": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A* in Maths; IB 38 with 18 HL incl. HL maths 7",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL incl. 7 in HL maths (AA or AI); contextual 34 with HL maths 6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": "University of Bristol mathematics test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only for BTEC Engineering applicants, in place of A-level Maths"
+  },
+  "a_level": "Standard A*AA incl. A* Maths; contextual AAB incl. A Maths",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths at A*/A or HL 7/6",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/computer-science/bsc-computer-science/",
+  "confidence": "high"
+ },
+ "27711": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A*A in Maths plus one of Further Maths, Physics, Chemistry, Biology, Computer Science; IB 38 incl. HL maths 7,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL incl. HL maths 7,6 and HL Physics/Chemistry/Biology/Computer Science",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": "University of Bristol mathematics test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only for BTEC Engineering applicants, in place of A-level Maths"
+  },
+  "a_level": "Standard A*AA incl. A*A in Maths plus another listed science subject; contextual AAB",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths and a science subject",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/aerospace/beng-aerospace-engineering/",
+  "confidence": "high"
+ },
+ "53931": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A*A in Maths plus one of Further Maths, Physics, Chemistry, Biology, Computer Science; IB 38 incl. HL maths 7,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL incl. HL maths 7,6 and HL Physics/Chemistry/Biology/Computer Science",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": "University of Bristol mathematics test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only for BTEC Engineering applicants, in place of A-level Maths"
+  },
+  "a_level": "Standard A*AA incl. A*A in Maths plus another listed science subject; contextual AAB",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths and a science subject",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/aerospace/beng-aerospace-engineering/",
+  "confidence": "high"
+ },
+ "27727": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A*A in Maths and a science-related subject; IB 38 incl. HL maths and science 7,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL; HL maths and a science-related HL subject 7,6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Standard A*AA; contextual AAB; Maths plus science-related subject",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths and a science-related subject",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/civil-engineering/beng-civil-engineering/",
+  "confidence": "high"
+ },
+ "53933": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A*A in Maths and a science-related subject; IB 38 incl. HL maths and science 7,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL; HL maths and a science-related HL subject 7,6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Standard A*AA; contextual AAB; Maths plus science-related subject",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths and a science-related subject",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/civil-engineering/beng-civil-engineering/",
+  "confidence": "high"
+ },
+ "27752": {
+  "stem": true,
+  "typical_offer": "AAA incl. Maths and one of Physics, Chemistry, Further Maths, Computer Science, Electronics; IB 36 incl. HL maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "18 at HL incl. HL maths 6 and HL Physics/Chemistry/Computer Science",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": "University of Bristol mathematics test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only for BTEC Engineering applicants, in place of A-level Maths"
+  },
+  "a_level": "Standard AAA incl. Maths plus a science subject; contextual AAC incl. AA in Maths",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths plus Physics/Chemistry/Computer Science/Further Maths/Electronics",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/electrical-electronic-engineering/beng-electrical-and-electronic-engineering/",
+  "confidence": "high"
+ },
+ "27753": {
+  "stem": true,
+  "typical_offer": "AAA incl. Maths or A*AB incl. A in Maths; IB 36 incl. HL maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "18 at HL incl. HL maths 6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths or A*AB incl. A in Maths; contextual ABB",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths required",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/electrical-electronic-engineering/beng-mechanical-and-electrical-engineering/",
+  "confidence": "high"
+ },
+ "27822": {
+  "stem": true,
+  "typical_offer": "AAA incl. Maths or A*AB incl. A in Maths; IB 36 incl. HL maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "18 at HL incl. HL maths 6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths or A*AB incl. A in Maths; contextual ABB",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths required",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/mechanical-engineering/beng-mechanical-engineering/",
+  "confidence": "high"
+ },
+ "53936": {
+  "stem": true,
+  "typical_offer": "AAA incl. Maths or A*AB incl. A in Maths; IB 36 incl. HL maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "18 at HL incl. HL maths 6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths or A*AB incl. A in Maths; contextual ABB",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths required",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/mechanical-engineering/beng-mechanical-engineering/",
+  "confidence": "high"
+ },
+ "27755": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A*A in Maths and Further Maths or another maths-related subject; IB 38 incl. HL maths 7",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL incl. HL maths 7; contextual 34 with maths 6,6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A* in Maths plus A in another maths-related subject (Physics, Chemistry, Biology, CS, Economics) or A*A in Maths and Further Maths",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths plus maths-related subject",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/engineering-maths/beng-engineering-mathematics/",
+  "confidence": "medium"
+ },
+ "53935": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A*A in Maths and Further Maths or another maths-related subject; IB 38 incl. HL maths 7",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL incl. HL maths 7; contextual 34 with maths 6,6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A* in Maths plus A in another maths-related subject (Physics, Chemistry, Biology, CS, Economics) or A*A in Maths and Further Maths",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths plus maths-related subject",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/engineering-maths/beng-engineering-mathematics/",
+  "confidence": "medium"
+ },
+ "27725": {
+  "stem": true,
+  "typical_offer": "AAA incl. Chemistry and Maths; IB 36 incl. HL Chemistry 6 and maths HL 6 or SL 7",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "18 at HL incl. HL Chemistry 6; maths HL 6 or SL 7 (AA)",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Standard AAA incl. Chemistry and Maths; contextual ABB",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Chemistry and Maths",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/chemistry-with-computing/bsc-chemistry-with-computing/",
+  "confidence": "high"
+ },
+ "53945": {
+  "stem": true,
+  "typical_offer": "AAA incl. Chemistry and Maths; IB 36 incl. HL Chemistry 6 and maths HL 6 or SL 7",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "18 at HL incl. HL Chemistry 6; maths HL 6 or SL 7 (AA)",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Standard AAA incl. Chemistry and Maths; contextual ABB",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Chemistry and Maths",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/chemistry-with-computing/bsc-chemistry-with-computing/",
+  "confidence": "high"
+ },
+ "27815": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A* in Maths and A in another maths-related subject, or A*A in Maths and Further Maths; IB 38 incl. HL maths 7",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL incl. HL maths 7; contextual 34 with maths 6,6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "See typical offer; contextual AAB",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths plus maths-related subject",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/maths/bsc-data-science/",
+  "confidence": "high"
+ },
+ "27740": {
+  "stem": true,
+  "typical_offer": "A*A*A incl. A* in Maths and A in another maths-related subject, or A*AA incl. A*A in Maths and Further Maths; IB 40 incl. HL maths 7 and another maths-related HL 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 40,
+   "subjects": "18 at HL incl. HL maths 7 and a maths-related HL subject 6; contextual 36 with 18 HL",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "See typical offer; STEP may form part of an alternative offer",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths plus maths-related subject or Further Maths",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/computer-science/bsc-mathematics-and-computer-science/",
+  "confidence": "high"
+ },
+ "27839": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A*A in Maths and Physics; IB 38 incl. HL maths and physics 7,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL incl. HL maths and physics 7,6; contextual 34 with 6,6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Standard A*AA incl. Maths and Physics; contextual AAB",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths and Physics",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/physics-computing/bsc-physics-with-computing/",
+  "confidence": "high"
+ },
+ "53970": {
+  "stem": true,
+  "typical_offer": "A*AA incl. A*A in Maths and Physics; IB 38 incl. HL maths and physics 7,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "18 at HL incl. HL maths and physics 7,6; contextual 34 with 6,6",
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Standard A*AA incl. Maths and Physics; contextual AAB",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "Maths and Physics",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/physics-computing/bsc-physics-with-computing/",
+  "confidence": "high"
+ },
+ "53948": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/computer-science/bsc-computer-science/",
+  "confidence": "low"
+ },
+ "53932": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/computer-science/bsc-computer-science/",
+  "confidence": "low"
+ },
+ "27739": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/computer-science/bsc-computer-science/",
+  "confidence": "low"
+ },
+ "53987": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/computer-science/bsc-computer-science/",
+  "confidence": "low"
+ },
+ "53988": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/computer-science/bsc-computer-science/",
+  "confidence": "low"
+ },
+ "53989": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/mechanical-engineering/beng-mechanical-engineering/",
+  "confidence": "low"
+ },
+ "53934": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/mechanical-engineering/beng-mechanical-engineering/",
+  "confidence": "low"
+ },
+ "27754": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/mechanical-engineering/beng-mechanical-engineering/",
+  "confidence": "low"
+ },
+ "53951": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/maths/bsc-data-science/",
+  "confidence": "low"
+ },
+ "27750": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/psychology/bsc-psychology/",
+  "confidence": "low"
+ },
+ "27848": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "Bristol: AP accepted from US applicants: 3 further qualifications beyond diploma, AP scores of 4-5 (5 expected); any course requiring maths needs AP Calculus BC grade 5. Where a course requires specific subjects they must be met by AP tests.",
+   "note": "Institution-wide US guidance: GPA min 3.2 (3.4 for competitive courses)"
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/psychology/bsc-psychology/",
+  "confidence": "low"
+ },
+ "10367": {
+  "stem": true,
+  "typical_offer": "GPA/year 12 high school completion, or 3 A-levels grade C or 5 GCSEs grade B; GCSE B in Maths and a science",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Contextual offers lower; English: IELTS 6.5 overall with 6.0 in all skills"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT/ACT may count as one of the additional qualifications for US applicants",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "3 A-levels at C, or 5 GCSEs at B",
+  "turkish_route": "Bristol: Turkish High School Diploma (Anadolu/Fen Lisesi) considered for direct entry with a minimum percentage of about 60-65% (guidance varies by year), plus course subject requirements; alternatives are IB, A-levels, 3 AP tests, or the Bristol International Foundation Programme / accredited foundation.",
+  "prerequisite_maths": "GCSE grade B or equivalent in Maths and a science subject",
+  "source_url": "https://www.bristol.ac.uk/study/undergraduate/2027/international-foundation-programme/international-foundation-programme-science-technology-engineering-and-mathematics/",
+  "confidence": "medium"
+ }
+}

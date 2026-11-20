@@ -1,0 +1,1349 @@
+{
+ "19583": {
+  "stem": true,
+  "typical_offer": "Ontario Grade 12 or equivalent with 65% overall; IB 24 minimum (28+ recommended)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects at SL/HL including required programme subjects (Maths, Physics, English)",
+   "note": "Institution-wide rules applied to this programme. 28 or higher recommended."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Grade 12 English, Physics (SPH4U), Calculus and Vectors (MCV4U) or equivalents; 65% overall",
+  "source_url": "https://humber.ca/international/admissions-financial-aid/how-apply/admissions-road-map/ib-requirements",
+  "confidence": "low"
+ },
+ "19584": {
+  "stem": true,
+  "typical_offer": "Ontario Grade 12 or equivalent with 65% overall; IB 24 minimum (28+ recommended)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects at SL/HL including required programme subjects (Maths, Physics, English)",
+   "note": "Institution-wide rules applied to this programme. 28 or higher recommended."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Grade 12 English, Physics (SPH4U), Calculus and Vectors (MCV4U) or equivalents; 65% overall",
+  "source_url": "https://humber.ca/international/admissions-financial-aid/how-apply/admissions-road-map/ib-requirements",
+  "confidence": "low"
+ },
+ "36322": {
+  "stem": true,
+  "typical_offer": "Ontario Grade 12 or equivalent with 65% overall; IB 24 minimum (28+ recommended)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects at SL/HL including required programme subjects (Maths, Physics, English)",
+   "note": "Institution-wide rules applied to this programme. 28 or higher recommended."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Grade 12 English, Physics (SPH4U), Calculus and Vectors (MCV4U) or equivalents; 65% overall",
+  "source_url": "https://humber.ca/international/admissions-financial-aid/how-apply/admissions-road-map/ib-requirements",
+  "confidence": "low"
+ },
+ "19878": {
+  "stem": false
+ },
+ "19898": {
+  "stem": true,
+  "typical_offer": "High school graduation with English proficiency; limited intake",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": "KPU Math Placement Test",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Accepted in place of Pre-Calculus 11 / Foundations 11"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Pre-Calculus 11 (C) or Foundations of Mathematics 11 (C+), or equivalent KPU maths placement result (Math Alternatives level E1)",
+  "source_url": "https://calendar.kpu.ca/programs-az/business/information-technology/information-technology-bt/",
+  "confidence": "medium"
+ },
+ "19875": {
+  "stem": false
+ },
+ "25612": {
+  "stem": true,
+  "typical_offer": "70% overall final average (Canadian equivalent); IB 24 with three HL; A-levels min C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full Diploma with three HL subjects; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL; prerequisites at SL or HL",
+   "note": "Institution-wide rules applied to this programme. Some programmes require more than 24; HL grade 5+ may earn advanced standing."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP exams scored 4 or higher may qualify for advanced standing; US diploma needs 70% average in four senior academic courses. Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "ACT/SAT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five subjects incl. two A-levels (rest GCSE); applied A-levels not accepted; AS-level Pure Maths 1 and 2 for MHF4U equivalence; Engineering: A-level Maths, Physics, Chemistry (preferred; AS accepted), GCSE English",
+  "turkish_route": null,
+  "prerequisite_maths": "Programme prerequisites in English and Maths (60%+ Canadian equivalent)",
+  "source_url": "https://lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+  "confidence": "medium"
+ },
+ "25613": {
+  "stem": true,
+  "typical_offer": "70% overall final average (Canadian equivalent); IB 24 with three HL; A-levels min C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full Diploma with three HL subjects; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL; prerequisites at SL or HL",
+   "note": "Institution-wide rules applied to this programme. Some programmes require more than 24; HL grade 5+ may earn advanced standing."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP exams scored 4 or higher may qualify for advanced standing; US diploma needs 70% average in four senior academic courses. Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "ACT/SAT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five subjects incl. two A-levels (rest GCSE); applied A-levels not accepted; AS-level Pure Maths 1 and 2 for MHF4U equivalence; Engineering: A-level Maths, Physics, Chemistry (preferred; AS accepted), GCSE English",
+  "turkish_route": null,
+  "prerequisite_maths": "Programme prerequisites in English and Maths (60%+ Canadian equivalent)",
+  "source_url": "https://lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+  "confidence": "medium"
+ },
+ "25619": {
+  "stem": true,
+  "typical_offer": "70% overall final average (Canadian equivalent); IB 24 with three HL; A-levels min C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full Diploma with three HL subjects; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL; prerequisites at SL or HL",
+   "note": "Institution-wide rules applied to this programme. Some programmes require more than 24; HL grade 5+ may earn advanced standing."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP exams scored 4 or higher may qualify for advanced standing; US diploma needs 70% average in four senior academic courses. Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "ACT/SAT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five subjects incl. two A-levels (rest GCSE); applied A-levels not accepted; AS-level Pure Maths 1 and 2 for MHF4U equivalence; Engineering: A-level Maths, Physics, Chemistry (preferred; AS accepted), GCSE English",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level-level Maths, Physics and Chemistry equivalents (Chemistry preferred); English",
+  "source_url": "https://lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+  "confidence": "medium"
+ },
+ "25620": {
+  "stem": true,
+  "typical_offer": "70% overall final average (Canadian equivalent); IB 24 with three HL; A-levels min C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full Diploma with three HL subjects; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL; prerequisites at SL or HL",
+   "note": "Institution-wide rules applied to this programme. Some programmes require more than 24; HL grade 5+ may earn advanced standing."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP exams scored 4 or higher may qualify for advanced standing; US diploma needs 70% average in four senior academic courses. Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "ACT/SAT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five subjects incl. two A-levels (rest GCSE); applied A-levels not accepted; AS-level Pure Maths 1 and 2 for MHF4U equivalence; Engineering: A-level Maths, Physics, Chemistry (preferred; AS accepted), GCSE English",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level-level Maths, Physics and Chemistry equivalents (Chemistry preferred); English",
+  "source_url": "https://lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+  "confidence": "medium"
+ },
+ "25621": {
+  "stem": true,
+  "typical_offer": "70% overall final average (Canadian equivalent); IB 24 with three HL; A-levels min C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full Diploma with three HL subjects; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL; prerequisites at SL or HL",
+   "note": "Institution-wide rules applied to this programme. Some programmes require more than 24; HL grade 5+ may earn advanced standing."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP exams scored 4 or higher may qualify for advanced standing; US diploma needs 70% average in four senior academic courses. Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "ACT/SAT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five subjects incl. two A-levels (rest GCSE); applied A-levels not accepted; AS-level Pure Maths 1 and 2 for MHF4U equivalence; Engineering: A-level Maths, Physics, Chemistry (preferred; AS accepted), GCSE English",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level-level Maths, Physics and Chemistry equivalents (Chemistry preferred); English",
+  "source_url": "https://lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+  "confidence": "medium"
+ },
+ "25622": {
+  "stem": true,
+  "typical_offer": "70% overall final average (Canadian equivalent); IB 24 with three HL; A-levels min C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full Diploma with three HL subjects; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL; prerequisites at SL or HL",
+   "note": "Institution-wide rules applied to this programme. Some programmes require more than 24; HL grade 5+ may earn advanced standing."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP exams scored 4 or higher may qualify for advanced standing; US diploma needs 70% average in four senior academic courses. Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "ACT/SAT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five subjects incl. two A-levels (rest GCSE); applied A-levels not accepted; AS-level Pure Maths 1 and 2 for MHF4U equivalence; Engineering: A-level Maths, Physics, Chemistry (preferred; AS accepted), GCSE English",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level-level Maths, Physics and Chemistry equivalents (Chemistry preferred); English",
+  "source_url": "https://lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+  "confidence": "medium"
+ },
+ "25623": {
+  "stem": true,
+  "typical_offer": "70% overall final average (Canadian equivalent); IB 24 with three HL; A-levels min C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full Diploma with three HL subjects; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL; prerequisites at SL or HL",
+   "note": "Institution-wide rules applied to this programme. Some programmes require more than 24; HL grade 5+ may earn advanced standing."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP exams scored 4 or higher may qualify for advanced standing; US diploma needs 70% average in four senior academic courses. Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "ACT/SAT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five subjects incl. two A-levels (rest GCSE); applied A-levels not accepted; AS-level Pure Maths 1 and 2 for MHF4U equivalence; Engineering: A-level Maths, Physics, Chemistry (preferred; AS accepted), GCSE English",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level-level Maths, Physics and Chemistry equivalents (Chemistry preferred); English",
+  "source_url": "https://lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+  "confidence": "medium"
+ },
+ "25624": {
+  "stem": true,
+  "typical_offer": "70% overall final average (Canadian equivalent); IB 24 with three HL; A-levels min C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full Diploma with three HL subjects; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL; prerequisites at SL or HL",
+   "note": "Institution-wide rules applied to this programme. Some programmes require more than 24; HL grade 5+ may earn advanced standing."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP exams scored 4 or higher may qualify for advanced standing; US diploma needs 70% average in four senior academic courses. Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "ACT/SAT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five subjects incl. two A-levels (rest GCSE); applied A-levels not accepted; AS-level Pure Maths 1 and 2 for MHF4U equivalence; Engineering: A-level Maths, Physics, Chemistry (preferred; AS accepted), GCSE English",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level-level Maths, Physics and Chemistry equivalents (Chemistry preferred); English",
+  "source_url": "https://lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+  "confidence": "medium"
+ },
+ "25625": {
+  "stem": true,
+  "typical_offer": "70% overall final average (Canadian equivalent); IB 24 with three HL; A-levels min C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full Diploma with three HL subjects; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL; prerequisites at SL or HL",
+   "note": "Institution-wide rules applied to this programme. Some programmes require more than 24; HL grade 5+ may earn advanced standing."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP exams scored 4 or higher may qualify for advanced standing; US diploma needs 70% average in four senior academic courses. Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "ACT/SAT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five subjects incl. two A-levels (rest GCSE); applied A-levels not accepted; AS-level Pure Maths 1 and 2 for MHF4U equivalence; Engineering: A-level Maths, Physics, Chemistry (preferred; AS accepted), GCSE English",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level-level Maths, Physics and Chemistry equivalents (Chemistry preferred); English",
+  "source_url": "https://lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+  "confidence": "medium"
+ },
+ "25626": {
+  "stem": true,
+  "typical_offer": "70% overall final average (Canadian equivalent); IB 24 with three HL; A-levels min C",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full Diploma with three HL subjects; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL; prerequisites at SL or HL",
+   "note": "Institution-wide rules applied to this programme. Some programmes require more than 24; HL grade 5+ may earn advanced standing."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP exams scored 4 or higher may qualify for advanced standing; US diploma needs 70% average in four senior academic courses. Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "ACT/SAT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five subjects incl. two A-levels (rest GCSE); applied A-levels not accepted; AS-level Pure Maths 1 and 2 for MHF4U equivalence; Engineering: A-level Maths, Physics, Chemistry (preferred; AS accepted), GCSE English",
+  "turkish_route": null,
+  "prerequisite_maths": "English, Maths (60%+), Physics, and one of Biology/Chemistry/Computer Science",
+  "source_url": "https://lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+  "confidence": "medium"
+ },
+ "25653": {
+  "stem": false
+ },
+ "20675": {
+  "stem": false
+ },
+ "20682": {
+  "stem": false
+ },
+ "34190": {
+  "stem": false
+ },
+ "34208": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34209": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34210": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34211": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34212": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34213": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34214": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34215": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34216": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34217": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34218": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34219": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34220": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34221": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34222": {
+  "stem": true,
+  "typical_offer": "A-level Maths plus Physics or Chemistry (both recommended); IB 24 minimum with Maths AA/AI HL; competitive cut-off mid-70s%",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects (C) plus A-level Maths and either Physics or Chemistry; the other may be at GCSE/AS",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions, Calculus and Vectors, Physics, Chemistry (or equivalents); combined 70% in maths/science, none below 60%",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34228": {
+  "stem": true,
+  "typical_offer": "IB 24 minimum with Maths AA SL/HL or AI HL; admitting scores vary",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects and at least two A-levels, minimum grade C; English at O-Level",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions plus one of Calculus and Vectors, Physics or Computer Science (ENG4U); equivalents accepted",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34229": {
+  "stem": true,
+  "typical_offer": "IB 24 minimum with Maths AA SL/HL or AI HL; admitting scores vary",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects and at least two A-levels, minimum grade C; English at O-Level",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions plus one of Calculus and Vectors, Physics or Computer Science (ENG4U); equivalents accepted",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34230": {
+  "stem": true,
+  "typical_offer": "IB 24 minimum with Maths AA SL/HL or AI HL; admitting scores vary",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects and at least two A-levels, minimum grade C; English at O-Level",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions plus one of Calculus and Vectors, Physics or Computer Science (ENG4U); equivalents accepted",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "low"
+ },
+ "34251": {
+  "stem": true,
+  "typical_offer": "IB 24 minimum with Maths AA SL/HL or AI HL; admitting scores vary",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects and at least two A-levels, minimum grade C; English at O-Level",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions plus one of Calculus and Vectors, Physics or Computer Science (ENG4U); equivalents accepted",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34252": {
+  "stem": true,
+  "typical_offer": "IB 24 minimum with Maths AA SL/HL or AI HL; admitting scores vary",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects and at least two A-levels, minimum grade C; English at O-Level",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions plus one of Calculus and Vectors, Physics or Computer Science (ENG4U); equivalents accepted",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34253": {
+  "stem": true,
+  "typical_offer": "IB 24 minimum with Maths AA SL/HL or AI HL; admitting scores vary",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects and at least two A-levels, minimum grade C; English at O-Level",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions plus one of Calculus and Vectors, Physics or Computer Science (ENG4U); equivalents accepted",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34254": {
+  "stem": true,
+  "typical_offer": "IB 24 minimum with Maths AA SL/HL or AI HL; admitting scores vary",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects and at least two A-levels, minimum grade C; English at O-Level",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions plus one of Calculus and Vectors, Physics or Computer Science (ENG4U); equivalents accepted",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34255": {
+  "stem": true,
+  "typical_offer": "IB 24 minimum with Maths AA SL/HL or AI HL; admitting scores vary",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects and at least two A-levels, minimum grade C; English at O-Level",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions plus one of Calculus and Vectors, Physics or Computer Science (ENG4U); equivalents accepted",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34258": {
+  "stem": true,
+  "typical_offer": "IB 24 minimum with Maths AA SL/HL or AI HL; admitting scores vary",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects and at least two A-levels, minimum grade C; English at O-Level",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions plus one of Calculus and Vectors, Physics or Computer Science (ENG4U); equivalents accepted",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34259": {
+  "stem": true,
+  "typical_offer": "IB 24 minimum with Maths AA SL/HL or AI HL; admitting scores vary",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Six subjects, three at HL, no score below 4; Maths: Analysis & Approaches SL/HL or Applications & Interpretation HL",
+   "note": "Institution-wide rules applied to this programme. Admitting scores vary by programme; IB credit is not awarded in Engineering."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted under US-patterned education; transfer credit for AP score 4+ (not awarded for Engineering). Calculus AB/BC variant not specified",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT to be submitted if taken; not stated as required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Five GCSE/O-Level subjects and at least two A-levels, minimum grade C; English at O-Level",
+  "turkish_route": "Lise Diplomasi with transcript accepted; no minimum grade published",
+  "prerequisite_maths": "Advanced Functions plus one of Calculus and Vectors, Physics or Computer Science (ENG4U); equivalents accepted",
+  "source_url": "https://admissions.ontariotechu.ca/applicant-information/international-admission-requirements.php",
+  "confidence": "medium"
+ },
+ "34269": {
+  "stem": false
+ },
+ "36302": {
+  "stem": true,
+  "typical_offer": "Six senior-level university-prep courses with 65% overall average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Programme prerequisites in English and Maths at Ontario-equivalent level",
+  "source_url": "https://senecapolytechnic.ca/international/apply/how-to-apply/admission-requirements/academic-requirements.html",
+  "confidence": "low"
+ },
+ "19449": {
+  "stem": true,
+  "typical_offer": "Six senior-level university-prep courses with 65% overall average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Programme prerequisites in English and Maths at Ontario-equivalent level",
+  "source_url": "https://senecapolytechnic.ca/international/apply/how-to-apply/admission-requirements/academic-requirements.html",
+  "confidence": "low"
+ },
+ "19478": {
+  "stem": false
+ },
+ "19488": {
+  "stem": true,
+  "typical_offer": "Six senior-level university-prep courses with 65% overall average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Programme prerequisites in English and Maths at Ontario-equivalent level",
+  "source_url": "https://senecapolytechnic.ca/international/apply/how-to-apply/admission-requirements/academic-requirements.html",
+  "confidence": "low"
+ },
+ "36308": {
+  "stem": true,
+  "typical_offer": "Six senior-level university-prep courses with 65% overall average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Programme prerequisites in English and Maths at Ontario-equivalent level",
+  "source_url": "https://senecapolytechnic.ca/international/apply/how-to-apply/admission-requirements/academic-requirements.html",
+  "confidence": "low"
+ },
+ "19491": {
+  "stem": true,
+  "typical_offer": "Six senior-level university-prep courses with 65% overall average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Programme prerequisites in English and Maths at Ontario-equivalent level",
+  "source_url": "https://senecapolytechnic.ca/international/apply/how-to-apply/admission-requirements/academic-requirements.html",
+  "confidence": "low"
+ },
+ "909": {
+  "stem": true,
+  "typical_offer": "Six senior-level university-prep courses with 65% overall average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Programme prerequisites in English and Maths at Ontario-equivalent level",
+  "source_url": "https://senecapolytechnic.ca/international/apply/how-to-apply/admission-requirements/academic-requirements.html",
+  "confidence": "low"
+ },
+ "19494": {
+  "stem": true,
+  "typical_offer": "Six senior-level university-prep courses with 65% overall average",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Grade 12 English (ENG4U) and any Grade 12 U maths, each 65%",
+  "source_url": "https://senecapolytechnic.ca/international/apply/how-to-apply/admission-requirements/academic-requirements.html",
+  "confidence": "medium"
+ },
+ "28564": {
+  "stem": true,
+  "typical_offer": "65% overall average in top six Grade 12 U/M courses; competitive selection",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Grade 12 English (ENG4U) and Advanced Functions (MHF4U) or Calculus and Vectors (MCV4U) or equivalent; four other Grade 12 U/M courses; any Grade 12 science and Computer Science recommended",
+  "source_url": "https://www.sheridancollege.ca/programs/bachelor-computer-science",
+  "confidence": "medium"
+ },
+ "56179": {
+  "stem": true,
+  "typical_offer": "Competitive average above minimum; IB minimum 26 points with 3 HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "Full IB Diploma with at least 3 HL; programme requirements may be met at HL or SL; full diploma earns 30 units transfer credit",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Equivalent AP courses may be used in place of required Grade 12 courses; specific variants (Calculus AB/BC) not listed",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Average calculated on three A-levels (or two A-levels plus two AS); minimum D in Pure Maths or Maths; Computing Science and some programmes require A/AS-level Maths",
+  "turkish_route": "Lise Diplomasi accepted for direct entry; senior-level Maths at least 3 on 5-point scale; Maths plus one of Biology, Chemistry or Physics required; Fraser International College pathway otherwise",
+  "prerequisite_maths": "Pre-Calculus 12 or Calculus 12 plus one of Biology/Chemistry/Physics 12 (or equivalents)",
+  "source_url": "https://www.sfu.ca/students/admission/programs/a-z/c/computing-science/requirements.html",
+  "confidence": "medium"
+ },
+ "56180": {
+  "stem": true,
+  "typical_offer": "Competitive average above minimum; IB minimum 26 points with 3 HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 26,
+   "subjects": "Full IB Diploma with at least 3 HL; programme requirements may be met at HL or SL; full diploma earns 30 units transfer credit",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Equivalent AP courses may be used in place of required Grade 12 courses; specific variants (Calculus AB/BC) not listed",
+   "note": "Institution-wide rules applied to this programme."
+  },
+  "tests": "SAT/ACT not required",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Average calculated on three A-levels (or two A-levels plus two AS); minimum D in Pure Maths or Maths; Computing Science and some programmes require A/AS-level Maths",
+  "turkish_route": "Lise Diplomasi accepted for direct entry; senior-level Maths at least 3 on 5-point scale; Maths, Chemistry and Physics required; Fraser International College pathway otherwise",
+  "prerequisite_maths": "Pre-Calculus 12 or Calculus 12, Chemistry 12 and Physics 12 (or equivalents)",
+  "source_url": "https://www.sfu.ca/students/admission/programs/a-z/e/engineering-science/requirements.html",
+  "confidence": "medium"
+ }
+}

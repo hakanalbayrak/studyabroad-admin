@@ -1,0 +1,487 @@
+{
+ "year": "2026/27",
+ "universities": {
+  "Aston University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [],
+    "notes": "No official aston.ac.uk 2026/27 fee table could be fetched (course URLs 404). Only third-party aggregator figures (about 22,575-26,300) which conflict; not used."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "Only third-party figures (about 24,800-25,500 MSc, 31,500 MBA) and conflicting; the only official figure found is an online programme at 22,005. Not used."
+   },
+   "source_urls": [
+    "https://www.aston.ac.uk",
+    "https://online.aston.ac.uk/fees-and-funding-v2"
+   ]
+  },
+  "Brunel, University of London": {
+   "year": "2027/28",
+   "ug": {
+    "bands": [
+     {
+      "name": "Humanities, Law and Computing",
+      "amount": 17920,
+      "subjects": "English, Law, Computer Science, Creative Writing, Politics, History"
+     },
+     {
+      "name": "Business, Economics and Psychology",
+      "amount": 19895,
+      "subjects": "Business and Management, Economics, Psychology, Accounting, Finance, Marketing"
+     },
+     {
+      "name": "Engineering and Biomedical",
+      "amount": 22445,
+      "subjects": "Mechanical Engineering, Engineering, Biomedical Sciences, Biosciences, Health Sciences"
+     }
+    ],
+    "notes": "Brunel only publishes per-course fees and course pages now show 2027/28 (latest published; 2026/27 not shown). Bands built from 8 course pages (CS, Law, English, Business and Management, Psychology, Economics, Mechanical Engineering, Biomedical Sciences). Brunel's economics page showed 17,400 for 2026/27 via search snippet, so 2026/27 values are lower than these."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Business, Data and Engineering",
+      "amount": 25535,
+      "subjects": "International Business, Data Science, Analytics, Mechanical Engineering, Engineering, Management"
+     }
+    ],
+    "notes": "Only 3 PG course pages could be opened (Data Science and Analytics, International Business, Advanced Mechanical Engineering; all 2027/28 at 25,535). Humanities/law/psychology/finance PG pages not retrievable, so no other bands."
+   },
+   "source_urls": [
+    "https://www.brunel.ac.uk/study/undergraduate/economics-bsc",
+    "https://www.brunel.ac.uk/study/undergraduate/computer-science-bsc",
+    "https://www.brunel.ac.uk/study/undergraduate/mechanical-engineering-beng",
+    "https://www.brunel.ac.uk/study/postgraduate/international-business-msc",
+    "https://www.brunel.ac.uk/study/postgraduate/advanced-mechanical-engineering-msc"
+   ]
+  },
+  "Goldsmiths University of London": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Humanities and Social Sciences",
+      "amount": 22000,
+      "subjects": "Anthropology, Sociology, History, Politics, International Relations, English, Education, Social Work, Law, Economics, Marketing, Management, Criminology, Computing, Community Development"
+     },
+     {
+      "name": "Arts, Media, Psychology and Computer Science",
+      "amount": 23000,
+      "subjects": "Psychology, Computer Science, Business Management, Media and Communications, Journalism, Drama, Theatre, Music, Photography, Games Development, Creative Computing, Politics Philosophy Economics, History of Art, Curating"
+     },
+     {
+      "name": "Design",
+      "amount": 27000,
+      "subjects": "Design"
+     },
+     {
+      "name": "Fine Art",
+      "amount": 30500,
+      "subjects": "Fine Art, History of Art with Fine Art"
+     }
+    ],
+    "notes": "Official Goldsmiths Undergraduate Fees 2026-27 PDF (Overseas column). BSc Computing, Computer Science and Management and Management with ... programmes are 22,000; Business Management and CS are 23,000."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Standard Humanities and Computing",
+      "amount": 21000,
+      "subjects": "English, Literature, History, Creative Writing, Linguistics, Games, Virtual Reality, Data Science, Artificial Intelligence, Computational Linguistics, Digital Journalism, Cognitive Behavioural Therapy, Forensic Psychology"
+     },
+     {
+      "name": "Arts, Music and Computing",
+      "amount": 22000,
+      "subjects": "Anthropology, Music, Computational Arts, Applied AI, User Experience, Games Programming, Education Policy, Contemporary Art Theory, Theatre"
+     },
+     {
+      "name": "Media, Politics and Social Science",
+      "amount": 23000,
+      "subjects": "Media, Communications, Politics, Sociology, Film Studies, Human Rights, Law, LLM, Business Management, Management, Psychology, Gender, Digital Media, Social Research, Public Relations"
+     },
+     {
+      "name": "Management, Marketing and Practice",
+      "amount": 25500,
+      "subjects": "Marketing, Management of Innovation, Events Management, Luxury Brand Management, Arts Administration, Photography, Social Work, Psychotherapy, Occupational Psychology, Scriptwriting"
+     },
+     {
+      "name": "Journalism and Entrepreneurship",
+      "amount": 27500,
+      "subjects": "Journalism, Creative and Cultural Entrepreneurship, Curating, Photography Practice, Visual Anthropology"
+     },
+     {
+      "name": "Design and Art",
+      "amount": 29500,
+      "subjects": "Design, Art and Ecology"
+     },
+     {
+      "name": "Film and Fine Art",
+      "amount": 32000,
+      "subjects": "Filmmaking, Fine Art, Experimental Film"
+     }
+    ],
+    "notes": "Official Goldsmiths Postgraduate Fees 2026-27 PDF (International Full Time). Fees are per programme; MSc Psychology (Conversion) is 20,160."
+   },
+   "source_urls": [
+    "https://www.gold.ac.uk/students/fee-support/tuition-fees/",
+    "https://www.gold.ac.uk/media/docs/students/ug-fees-2026-27.pdf",
+    "https://www.gold.ac.uk/media/docs/students/pg-fees-2026-27.pdf"
+   ]
+  },
+  "Liverpool John Moores University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Classroom-based",
+      "amount": 17750,
+      "subjects": "Business, Law, Humanities, Social Science, Journalism, Education, Media, Politics, Psychology classroom, Computer Science, Economics"
+     },
+     {
+      "name": "Laboratory-based",
+      "amount": 18250,
+      "subjects": "Engineering, Science, Biology, Chemistry, Pharmacy, Sport Science, Built Environment, Computing laboratory"
+     }
+    ],
+    "notes": "From LJMU official international fee statement (classroom 17,750 vs laboratory 18,250 for 2026/27) as reported in search results; LJMU pages themselves (tuition-fees) only point to course pages, so the subject-to-band mapping is generic and not verified per course. Unclear if both bands apply to PG; treated as UG."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "LLM Law",
+      "amount": 17250,
+      "subjects": "Law, LLM"
+     }
+    ],
+    "notes": "Only the LLM figure (17,250, LJMU International Prospectus 2026-27) was found; other PG bands not verified."
+   },
+   "source_urls": [
+    "https://ljmu.ac.uk/International/Thinking of applying/Tuition fees",
+    "https://issuu.com/ljmu/docs/ljmu_international_prospectus_2026-27_"
+   ]
+  },
+  "Nottingham Trent University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [],
+    "notes": "NTU international fee page returned 403; only third-party figure (17,950) found, unverified."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "Only third-party range (18,300-21,150) found; unverified."
+   },
+   "source_urls": [
+    "https://www.ntu.ac.uk/international/tuition-fees"
+   ]
+  },
+  "Royal Veterinary College, University of London": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Veterinary Nursing",
+      "amount": 18870,
+      "subjects": "Veterinary Nursing, Veterinary Science"
+     }
+    ],
+    "notes": "BSc Veterinary Nursing 2026-27 international fee from RVC course fee sheet (via search). BVetMed (47,960) excluded as clinical. BSc Bioveterinary Sciences (27,510 per aggregator) not verified, so omitted. RVC fee pages returned 403."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Veterinary Epidemiology",
+      "amount": 33010,
+      "subjects": "Veterinary Epidemiology, Public Health, Epidemiology"
+     },
+     {
+      "name": "Wild Animal Biology",
+      "amount": 33650,
+      "subjects": "Wild Animal Biology, Wildlife, Conservation, Biology"
+     }
+    ],
+    "notes": "RVC 2026-27 fee table figures as reported via search snippet (MSc Vet Epi 33,010 also confirmed by LSHTM; Wild Animal Biology 33,650 single source). Only two PG courses verified."
+   },
+   "source_urls": [
+    "https://www.rvc.ac.uk/study/fees-and-funding/fees-2",
+    "https://www.rvc.ac.uk/Media/Default/study/Undergraduate/documents/BSc%20Veterinary%20Nursing%20(4%20years)%202026.pdf"
+   ]
+  },
+  "University of Birmingham": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [],
+    "notes": "Official pages give no international figures (course pages say fee confirmed in offer letter). Only aggregator figures (classroom 26,730 / lab 30,120) which are unverified; not used."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "Official course page shows no international fee (country dropdown not rendered); aggregator figures conflict (31,410-34,740). Not used."
+   },
+   "source_urls": [
+    "https://www.birmingham.ac.uk/study/undergraduate/fees-funding/tuition"
+   ]
+  },
+  "University of Exeter": {
+   "year": "2027/28",
+   "ug": {
+    "bands": [
+     {
+      "name": "Arts, Humanities, Social Sciences, Law and Business",
+      "amount": 25700,
+      "subjects": "Arts, Humanities, Social Sciences, Law, History, English, Politics, Accounting, Finance, Business, Management, Economics, Marketing"
+     },
+     {
+      "name": "Sciences, Engineering and Computing",
+      "amount": 31500,
+      "subjects": "Computer Science, Earth Sciences, Environmental Science, Ecology, Conservation, Engineering, Geology, Geography, Mathematics, Statistics, Mining, Medical Imaging, Natural Sciences, Neuroscience, Nursing, Physics, Sport and Health Sciences"
+     },
+     {
+      "name": "Biosciences and Psychology",
+      "amount": 32150,
+      "subjects": "Biosciences, Biomedical Sciences, Psychology, Biology"
+     }
+    ],
+    "notes": "Official Exeter UG fees page now lists only autumn 2027 entry (latest published); 2026/27 not shown. Medicine excluded."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "Exeter PG page says fees are listed on each programme page and course pages did not render fees; only unverified aggregator numbers (MSc Finance 30,700). Not used."
+   },
+   "source_urls": [
+    "https://www.exeter.ac.uk/study/undergraduate/fees/",
+    "https://www.exeter.ac.uk/study/postgraduate/fees/"
+   ]
+  },
+  "University of Lancashire": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [],
+    "notes": "No official fee table found (course URL 404); only an unsourced aggregator range (17,325-18,000)."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "Only unsourced aggregator figure (17,900)."
+   },
+   "source_urls": [
+    "https://www.lancashire.ac.uk/assets/student-contracts/2026-27/tuition-fees-policy-2627.pdf"
+   ]
+  },
+  "University of Plymouth": {
+   "year": "2027/28",
+   "ug": {
+    "bands": [
+     {
+      "name": "Humanities, Law and Business",
+      "amount": 18700,
+      "subjects": "English, Law, Humanities, Social Sciences, History, Business"
+     },
+     {
+      "name": "Science, Engineering, Computing and Psychology",
+      "amount": 19800,
+      "subjects": "Computer Science, Psychology, Mechanical Engineering, Engineering, Marine Biology, Biology, Environmental Science"
+     }
+    ],
+    "notes": "Per-course fees from 6 Plymouth course pages (English 18,700, Law 18,700, CS 19,800, Psychology 19,800, Mech Eng 19,800, Marine Biology 19,800); pages show 2027-28 only (latest published). Business page 404 so Business grouping is an inference; treat as indicative."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "No PG course pages retrievable; aggregator range 19,500-20,150 unverified."
+   },
+   "source_urls": [
+    "https://www.plymouth.ac.uk/courses/undergraduate/ba-english",
+    "https://www.plymouth.ac.uk/courses/undergraduate/bsc-psychology",
+    "https://www.plymouth.ac.uk/courses/undergraduate/beng-mechanical-engineering"
+   ]
+  },
+  "University of Strathclyde": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Education",
+      "amount": 20950,
+      "subjects": "Education and Curricular Studies, Teaching"
+     },
+     {
+      "name": "Humanities, Social Sciences, Business, Maths and Statistics",
+      "amount": 22750,
+      "subjects": "Humanities, Social Sciences, Psychology, Sociology, Politics, History, English, Business, Management, Accounting, Finance, Marketing, Economics, Mathematics, Statistics"
+     },
+     {
+      "name": "Law, Sport and Health",
+      "amount": 25150,
+      "subjects": "Law, LLB"
+     },
+     {
+      "name": "BBA, Sport and Speech Therapy",
+      "amount": 26000,
+      "subjects": "Business Administration BBA, Sport and Physical Activity, Speech and Language Pathology"
+     },
+     {
+      "name": "Architecture",
+      "amount": 26900,
+      "subjects": "Architecture"
+     },
+     {
+      "name": "Computer and Information Sciences",
+      "amount": 28600,
+      "subjects": "Computer Science, Information Sciences, Software Engineering, Cyber Security"
+     },
+     {
+      "name": "Science",
+      "amount": 29350,
+      "subjects": "Physics, Chemistry, Biology, Biochemistry, Forensic Science, Natural Sciences"
+     },
+     {
+      "name": "Engineering",
+      "amount": 30950,
+      "subjects": "Engineering, Mechanical, Civil, Electrical, Chemical, Naval Architecture, Aerospace, Product Design"
+     },
+     {
+      "name": "Biomedical Engineering and Pharmacy",
+      "amount": 31900,
+      "subjects": "Biomedical Engineering, Pharmacy, MPharm"
+     }
+    ],
+    "notes": "Official Strathclyde UG Fees Guide 2026-27 (international). MPharm is 31,850, Biomedical Engineering 31,900."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Humanities and Social Sciences",
+      "amount": 23550,
+      "subjects": "Humanities, Social Sciences, Education, Social Policy, Politics, Sociology"
+     },
+     {
+      "name": "Law and HSS exceptions",
+      "amount": 26000,
+      "subjects": "Law, LLM, Mediation, Criminal Justice, Secondary Education"
+     },
+     {
+      "name": "Maths, Statistics and Health Psychology",
+      "amount": 26900,
+      "subjects": "Mathematics, Statistics, Clinical Health Psychology, Sports Data Analytics"
+     },
+     {
+      "name": "Architecture",
+      "amount": 27700,
+      "subjects": "Architecture"
+     },
+     {
+      "name": "Applied Economics",
+      "amount": 29350,
+      "subjects": "Applied Economics, Energy Economics"
+     },
+     {
+      "name": "Computing, Physics and Chemistry",
+      "amount": 30300,
+      "subjects": "Computer Science, Information Science, Physics, Photonics"
+     },
+     {
+      "name": "Chemistry and HR",
+      "amount": 30800,
+      "subjects": "Chemistry, Human Resource Management, Occupational Psychology"
+     },
+     {
+      "name": "Civil and Marine Engineering",
+      "amount": 31900,
+      "subjects": "Civil Engineering, Environmental Engineering, Naval Architecture, Marine Engineering"
+     },
+     {
+      "name": "Business, Finance and Engineering",
+      "amount": 32800,
+      "subjects": "Business, Management, Finance, Marketing, Data Analytics, Entrepreneurship, International Management, Mechanical Engineering, Aerospace, Electrical Engineering, Chemical Engineering, Biomedical Engineering, Manufacturing"
+     },
+     {
+      "name": "Pharmacy and Biomedical Sciences",
+      "amount": 32900,
+      "subjects": "Pharmacy, Biomedical Sciences"
+     },
+     {
+      "name": "MBA",
+      "amount": 38650,
+      "subjects": "MBA, Business Administration"
+     }
+    ],
+    "notes": "Official Strathclyde PG Fees Guide 2026-27 v.12 (international, full-time taught). HR and Occupational Psychology are 30,950 in Business School; Chemistry is 30,800."
+   },
+   "source_urls": [
+    "https://www.strath.ac.uk/media/1newwebsite/documents/tuitionfees/UG_Fees_2026-2027_Entry_v0.8.pdf",
+    "https://www.strath.ac.uk/media/1newwebsite/documents/tuitionfees/16092026_PG_Fees_2026-2027_Entry_v.12.pdf"
+   ]
+  },
+  "University of York": {
+   "year": "2027/28",
+   "ug": {
+    "bands": [
+     {
+      "name": "Humanities",
+      "amount": 27800,
+      "subjects": "English, History, Languages, Philosophy, Politics, Archaeology"
+     },
+     {
+      "name": "Social Science, Law, Maths and Psychology",
+      "amount": 28600,
+      "subjects": "Economics, Law, Mathematics, Psychology, Sociology, Social Policy"
+     },
+     {
+      "name": "Sciences, Engineering and Computing",
+      "amount": 33500,
+      "subjects": "Computer Science, Biology, Electronic Engineering, Engineering, Physics, Chemistry"
+     }
+    ],
+    "notes": "Per-course fees from York UG course pages (English, History 27,800; Economics, Law, Maths, Psychology 28,600; CS, Biology, Electronic Eng 33,500), showing 2027/28 starts (latest published; 2026/27 not shown). Other subjects inferred by similarity."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Public Administration",
+      "amount": 22600,
+      "subjects": "Public Administration, Public Policy"
+     },
+     {
+      "name": "Arts, Humanities and Social Sciences",
+      "amount": 27840,
+      "subjects": "Arts, Humanities, Social Sciences, English, History, Politics, Education, Languages, Sociology, Social Policy"
+     },
+     {
+      "name": "Archaeology, Economics and Sciences",
+      "amount": 28200,
+      "subjects": "Archaeology, Heritage, Economics, Biology, Chemistry, Environment, Physics"
+     },
+     {
+      "name": "Digital and AI Media",
+      "amount": 29600,
+      "subjects": "Digital Media, Social Media, Artificial Intelligence"
+     },
+     {
+      "name": "Maths and Public Health",
+      "amount": 30950,
+      "subjects": "Mathematical Sciences, Mathematics, Statistics, Public Health"
+     },
+     {
+      "name": "Business, Film and Sustainability",
+      "amount": 32900,
+      "subjects": "Business, Management, Film and Television, Sustainability, Marketing"
+     },
+     {
+      "name": "Computing, Engineering and Biomedical",
+      "amount": 33900,
+      "subjects": "Computer Science, Data Science, Engineering, Biomedical Sciences, Electronics"
+     },
+     {
+      "name": "Finance and Accounting",
+      "amount": 34500,
+      "subjects": "Finance, Accounting"
+     }
+    ],
+    "notes": "York PGT international fees page lists 2027/28 entry bands (latest published; 2026/27 not shown). Subject keywords follow the page's own band descriptions."
+   },
+   "source_urls": [
+    "https://www.york.ac.uk/study/postgraduate/fees-funding/taught/international-fees/",
+    "https://www.york.ac.uk/study/undergraduate/fees-funding/international/"
+   ]
+  }
+ },
+ "gaps": "No usable bands: Aston, Nottingham Trent, University of Birmingham, University of Lancashire (official pages 404/403 or no fees; only unverified aggregators), plus PG for Exeter and Plymouth. Several universities (Brunel, Exeter UG, Plymouth UG, York) now only publish 2027/28 fees, used as latest published. LJMU and RVC are partial."
+}

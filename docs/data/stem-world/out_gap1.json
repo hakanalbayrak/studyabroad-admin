@@ -1,0 +1,1374 @@
+{
+ "20205": {
+  "stem": true,
+  "typical_offer": "Admission by curriculum criteria set by the university, rolling admission; SAT/ACT not required if curriculum criteria are met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Accepted as secondary qualification; German recognition rules apply (min 24 points, Maths and natural science)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Evaluated against DAAD criteria; SAT/ACT can compensate if curriculum does not meet criteria",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for evaluation; may be needed for enrolment if the diploma does not give direct access to a German university; SAT subject tests usually not required except IB Math Studies applicants without HL natural science",
+  "math_test": {
+   "name": "SAT/ACT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only if curriculum criteria are not met"
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://constructor.university/admission-aid/application-information-undergraduate/sat-act-requirement-check",
+  "confidence": "low",
+  "note": ""
+ },
+ "20203": {
+  "stem": true,
+  "typical_offer": "Admission by curriculum criteria set by the university, rolling admission; SAT/ACT not required if curriculum criteria are met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Accepted as secondary qualification; German recognition rules apply (min 24 points, Maths and natural science)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Evaluated against DAAD criteria; SAT/ACT can compensate if curriculum does not meet criteria",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for evaluation; may be needed for enrolment if the diploma does not give direct access to a German university; SAT subject tests usually not required except IB Math Studies applicants without HL natural science",
+  "math_test": {
+   "name": "SAT/ACT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only if curriculum criteria are not met"
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://constructor.university/admission-aid/application-information-undergraduate/sat-act-requirement-check",
+  "confidence": "low",
+  "note": ""
+ },
+ "19268": {
+  "stem": true,
+  "typical_offer": "Admission by curriculum criteria set by the university, rolling admission; SAT/ACT not required if curriculum criteria are met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Accepted as secondary qualification; German recognition rules apply (min 24 points, Maths and natural science)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Evaluated against DAAD criteria; SAT/ACT can compensate if curriculum does not meet criteria",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for evaluation; may be needed for enrolment if the diploma does not give direct access to a German university; SAT subject tests usually not required except IB Math Studies applicants without HL natural science",
+  "math_test": {
+   "name": "SAT/ACT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only if curriculum criteria are not met"
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://constructor.university/admission-aid/application-information-undergraduate/sat-act-requirement-check",
+  "confidence": "low",
+  "note": ""
+ },
+ "20209": {
+  "stem": true,
+  "typical_offer": "Admission by curriculum criteria set by the university, rolling admission; SAT/ACT not required if curriculum criteria are met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Accepted as secondary qualification; German recognition rules apply (min 24 points, Maths and natural science)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Evaluated against DAAD criteria; SAT/ACT can compensate if curriculum does not meet criteria",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for evaluation; may be needed for enrolment if the diploma does not give direct access to a German university; SAT subject tests usually not required except IB Math Studies applicants without HL natural science",
+  "math_test": {
+   "name": "SAT/ACT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only if curriculum criteria are not met"
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://constructor.university/admission-aid/application-information-undergraduate/sat-act-requirement-check",
+  "confidence": "low",
+  "note": ""
+ },
+ "20212": {
+  "stem": true,
+  "typical_offer": "Admission by curriculum criteria set by the university, rolling admission; SAT/ACT not required if curriculum criteria are met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Accepted as secondary qualification; German recognition rules apply (min 24 points, Maths and natural science)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Evaluated against DAAD criteria; SAT/ACT can compensate if curriculum does not meet criteria",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for evaluation; may be needed for enrolment if the diploma does not give direct access to a German university; SAT subject tests usually not required except IB Math Studies applicants without HL natural science",
+  "math_test": {
+   "name": "SAT/ACT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only if curriculum criteria are not met"
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://constructor.university/admission-aid/application-information-undergraduate/sat-act-requirement-check",
+  "confidence": "low",
+  "note": ""
+ },
+ "20200": {
+  "stem": true,
+  "typical_offer": "Admission by curriculum criteria set by the university, rolling admission; SAT/ACT not required if curriculum criteria are met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Accepted as secondary qualification; German recognition rules apply (min 24 points, Maths and natural science)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Evaluated against DAAD criteria; SAT/ACT can compensate if curriculum does not meet criteria",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for evaluation; may be needed for enrolment if the diploma does not give direct access to a German university; SAT subject tests usually not required except IB Math Studies applicants without HL natural science",
+  "math_test": {
+   "name": "SAT/ACT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only if curriculum criteria are not met"
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://constructor.university/admission-aid/application-information-undergraduate/sat-act-requirement-check",
+  "confidence": "low",
+  "note": ""
+ },
+ "20202": {
+  "stem": true,
+  "typical_offer": "Admission by curriculum criteria set by the university, rolling admission; SAT/ACT not required if curriculum criteria are met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Accepted as secondary qualification; German recognition rules apply (min 24 points, Maths and natural science)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Evaluated against DAAD criteria; SAT/ACT can compensate if curriculum does not meet criteria",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for evaluation; may be needed for enrolment if the diploma does not give direct access to a German university; SAT subject tests usually not required except IB Math Studies applicants without HL natural science",
+  "math_test": {
+   "name": "SAT/ACT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only if curriculum criteria are not met"
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://constructor.university/admission-aid/application-information-undergraduate/sat-act-requirement-check",
+  "confidence": "low",
+  "note": ""
+ },
+ "20204": {
+  "stem": true,
+  "typical_offer": "Admission by curriculum criteria set by the university, rolling admission; SAT/ACT not required if curriculum criteria are met",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Accepted as secondary qualification; German recognition rules apply (min 24 points, Maths and natural science)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Evaluated against DAAD criteria; SAT/ACT can compensate if curriculum does not meet criteria",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for evaluation; may be needed for enrolment if the diploma does not give direct access to a German university; SAT subject tests usually not required except IB Math Studies applicants without HL natural science",
+  "math_test": {
+   "name": "SAT/ACT",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Only if curriculum criteria are not met"
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://constructor.university/admission-aid/application-information-undergraduate/sat-act-requirement-check",
+  "confidence": "low",
+  "note": ""
+ },
+ "20233": {
+  "stem": true,
+  "typical_offer": "A-level BBB (120 UCAS points); IB 30 points incl. 15 from 3 HL, with 4 in HL Maths or 5 in SL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "15 points from 3 HL subjects; HL Maths 4 or SL Maths 5 (AA or AI)",
+   "note": "Foundation entry: IB Diploma 26 points, or Certificate with three HL at grade 4"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma 3.2+ GPA with 3 AP subjects at grade 4, or Associate Degree 2.9+ GPA; plus one of: A in high school Maths, 3 in AP Calculus AB or BC, or SAT Maths 580",
+   "note": "Foundation entry: Year 11 with 3.0 GPA or Year 12 diploma 2.75 GPA incl. C in Maths or AP Calculus 3"
+  },
+  "tests": "SAT Maths 580 is one route to meet the Maths requirement; English IELTS 6.0 (min 5.5 each), TOEFL iBT 78, PTE 50",
+  "math_test": {
+   "name": "SAT Maths",
+   "role": "alternative to prerequisite",
+   "min_score": 580,
+   "details": "Alternative to Grade A in high school Maths or AP Calculus AB/BC 3"
+  },
+  "a_level": "BBB in three A-levels (120 UCAS points); no subject requirement listed; GCSE Maths B where required",
+  "turkish_route": "Direct entry: Turkish High School Diploma with 80% CGPA and 75% in Maths where required; Foundation entry: vocational Lise 65% (Maths included) or Devlet Lisesi 50% with 60% in Maths",
+  "prerequisite_maths": "Maths required: HL Maths 4 or SL Maths 5 (IB); Grade A high school Maths or AP Calculus 3 or SAT Maths 580 (US); Turkish Maths 75%",
+  "source_url": "https://www.lancasterleipzig.de/study/undergraduate/entry-requirements/",
+  "confidence": "high",
+  "note": "Institution-wide entry rules apply to all Lancaster University Leipzig courses"
+ },
+ "20234": {
+  "stem": true,
+  "typical_offer": "A-level BBB (120 UCAS points); IB 30 points incl. 15 from 3 HL, with 4 in HL Maths or 5 in SL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "15 points from 3 HL subjects; HL Maths 4 or SL Maths 5 (AA or AI)",
+   "note": "Foundation entry: IB Diploma 26 points, or Certificate with three HL at grade 4"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma 3.2+ GPA with 3 AP subjects at grade 4, or Associate Degree 2.9+ GPA; plus one of: A in high school Maths, 3 in AP Calculus AB or BC, or SAT Maths 580",
+   "note": "Foundation entry: Year 11 with 3.0 GPA or Year 12 diploma 2.75 GPA incl. C in Maths or AP Calculus 3"
+  },
+  "tests": "SAT Maths 580 is one route to meet the Maths requirement; English IELTS 6.0 (min 5.5 each), TOEFL iBT 78, PTE 50",
+  "math_test": {
+   "name": "SAT Maths",
+   "role": "alternative to prerequisite",
+   "min_score": 580,
+   "details": "Alternative to Grade A in high school Maths or AP Calculus AB/BC 3"
+  },
+  "a_level": "BBB in three A-levels (120 UCAS points); no subject requirement listed; GCSE Maths B where required",
+  "turkish_route": "Direct entry: Turkish High School Diploma with 80% CGPA and 75% in Maths where required; Foundation entry: vocational Lise 65% (Maths included) or Devlet Lisesi 50% with 60% in Maths",
+  "prerequisite_maths": "Maths required: HL Maths 4 or SL Maths 5 (IB); Grade A high school Maths or AP Calculus 3 or SAT Maths 580 (US); Turkish Maths 75%",
+  "source_url": "https://www.lancasterleipzig.de/study/undergraduate/entry-requirements/",
+  "confidence": "high",
+  "note": "Institution-wide entry rules apply to all Lancaster University Leipzig courses"
+ },
+ "55955": {
+  "stem": true,
+  "typical_offer": "A-level BBB (120 UCAS points); IB 30 points incl. 15 from 3 HL, with 4 in HL Maths or 5 in SL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "15 points from 3 HL subjects; HL Maths 4 or SL Maths 5 (AA or AI)",
+   "note": "Foundation entry: IB Diploma 26 points, or Certificate with three HL at grade 4"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma 3.2+ GPA with 3 AP subjects at grade 4, or Associate Degree 2.9+ GPA; plus one of: A in high school Maths, 3 in AP Calculus AB or BC, or SAT Maths 580",
+   "note": "Foundation entry: Year 11 with 3.0 GPA or Year 12 diploma 2.75 GPA incl. C in Maths or AP Calculus 3"
+  },
+  "tests": "SAT Maths 580 is one route to meet the Maths requirement; English IELTS 6.0 (min 5.5 each), TOEFL iBT 78, PTE 50",
+  "math_test": {
+   "name": "SAT Maths",
+   "role": "alternative to prerequisite",
+   "min_score": 580,
+   "details": "Alternative to Grade A in high school Maths or AP Calculus AB/BC 3"
+  },
+  "a_level": "BBB in three A-levels (120 UCAS points); no subject requirement listed; GCSE Maths B where required",
+  "turkish_route": "Direct entry: Turkish High School Diploma with 80% CGPA and 75% in Maths where required; Foundation entry: vocational Lise 65% (Maths included) or Devlet Lisesi 50% with 60% in Maths",
+  "prerequisite_maths": "Maths required: HL Maths 4 or SL Maths 5 (IB); Grade A high school Maths or AP Calculus 3 or SAT Maths 580 (US); Turkish Maths 75%",
+  "source_url": "https://www.lancasterleipzig.de/study/undergraduate/entry-requirements/",
+  "confidence": "high",
+  "note": "Institution-wide entry rules apply to all Lancaster University Leipzig courses"
+ },
+ "55956": {
+  "stem": true,
+  "typical_offer": "A-level BBB (120 UCAS points); IB 30 points incl. 15 from 3 HL, with 4 in HL Maths or 5 in SL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "15 points from 3 HL subjects; HL Maths 4 or SL Maths 5 (AA or AI)",
+   "note": "Foundation entry: IB Diploma 26 points, or Certificate with three HL at grade 4"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma 3.2+ GPA with 3 AP subjects at grade 4, or Associate Degree 2.9+ GPA; plus one of: A in high school Maths, 3 in AP Calculus AB or BC, or SAT Maths 580",
+   "note": "Foundation entry: Year 11 with 3.0 GPA or Year 12 diploma 2.75 GPA incl. C in Maths or AP Calculus 3"
+  },
+  "tests": "SAT Maths 580 is one route to meet the Maths requirement; English IELTS 6.0 (min 5.5 each), TOEFL iBT 78, PTE 50",
+  "math_test": {
+   "name": "SAT Maths",
+   "role": "alternative to prerequisite",
+   "min_score": 580,
+   "details": "Alternative to Grade A in high school Maths or AP Calculus AB/BC 3"
+  },
+  "a_level": "BBB in three A-levels (120 UCAS points); no subject requirement listed; GCSE Maths B where required",
+  "turkish_route": "Direct entry: Turkish High School Diploma with 80% CGPA and 75% in Maths where required; Foundation entry: vocational Lise 65% (Maths included) or Devlet Lisesi 50% with 60% in Maths",
+  "prerequisite_maths": "Maths required: HL Maths 4 or SL Maths 5 (IB); Grade A high school Maths or AP Calculus 3 or SAT Maths 580 (US); Turkish Maths 75%",
+  "source_url": "https://www.lancasterleipzig.de/study/undergraduate/entry-requirements/",
+  "confidence": "high",
+  "note": "Institution-wide entry rules apply to all Lancaster University Leipzig courses"
+ },
+ "24305": {
+  "stem": true,
+  "typical_offer": "Recognised university entrance qualification (Abitur or equivalent); no numerus clausus; open start at any time",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted as equivalent qualification subject to German recognition (24+ points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "No entrance test published; English B2 (TOEFL iBT 72 or IELTS 6.0)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.macromedia-fachhochschule.de/en/advisory/admission-application/",
+  "confidence": "low",
+  "note": "Institution-wide rule applies to all Macromedia programmes"
+ },
+ "37271": {
+  "stem": true,
+  "typical_offer": "Recognised university entrance qualification (Abitur or equivalent); no numerus clausus; open start at any time",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted as equivalent qualification subject to German recognition (24+ points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "No entrance test published; English B2 (TOEFL iBT 72 or IELTS 6.0)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.macromedia-fachhochschule.de/en/advisory/admission-application/",
+  "confidence": "low",
+  "note": "Institution-wide rule applies to all Macromedia programmes"
+ },
+ "17459": {
+  "stem": true,
+  "typical_offer": "Recognised university entrance qualification (Abitur or equivalent); no numerus clausus; open start at any time",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted as equivalent qualification subject to German recognition (24+ points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "No entrance test published; English B2 (TOEFL iBT 72 or IELTS 6.0)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.macromedia-fachhochschule.de/en/advisory/admission-application/",
+  "confidence": "low",
+  "note": "Institution-wide rule applies to all Macromedia programmes"
+ },
+ "24306": {
+  "stem": true,
+  "typical_offer": "Recognised university entrance qualification (Abitur or equivalent); no numerus clausus; open start at any time",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted as equivalent qualification subject to German recognition (24+ points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "No entrance test published; English B2 (TOEFL iBT 72 or IELTS 6.0)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Turkish Lise Diploması alone is classed by German authorities as needing Studienkolleg/Feststellungsprüfung; eligibility depends on diploma type (11 vs 12 years) plus YKS placement and possibly one year of university study; final decision by the institution (DAAD admission database, uni-assist Turkey page)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.macromedia-fachhochschule.de/en/advisory/admission-application/",
+  "confidence": "low",
+  "note": "Institution-wide rule applies to all Macromedia programmes"
+ },
+ "37522": {
+  "stem": true,
+  "typical_offer": "Abitur or equivalent diploma; IB and A-levels accepted; no numerus clausus; English B2",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as higher education entrance qualification"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "English B2 (IELTS, TOEFL, PTE, Duolingo) or MOI letter",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted as entrance qualification",
+  "turkish_route": "Applicants whose diploma does not qualify must complete the mdh preparatory programme; Turkish Lise handled by German recognition rules (Studienkolleg route)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.mediadesign.de/en/bachelor/it-web-applications-and-software-development",
+  "confidence": "medium",
+  "note": "Institution-wide rules apply to all mdh IT programmes; also entry possible via subject-specific qualification under Section 11 Berlin Higher Education Act"
+ },
+ "37521": {
+  "stem": true,
+  "typical_offer": "Abitur or equivalent diploma; IB and A-levels accepted; no numerus clausus; English B2",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as higher education entrance qualification"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "English B2 (IELTS, TOEFL, PTE, Duolingo) or MOI letter",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted as entrance qualification",
+  "turkish_route": "Applicants whose diploma does not qualify must complete the mdh preparatory programme; Turkish Lise handled by German recognition rules (Studienkolleg route)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.mediadesign.de/en/bachelor/it-web-applications-and-software-development",
+  "confidence": "medium",
+  "note": "Institution-wide rules apply to all mdh IT programmes; also entry possible via subject-specific qualification under Section 11 Berlin Higher Education Act"
+ },
+ "37523": {
+  "stem": true,
+  "typical_offer": "Abitur or equivalent diploma; IB and A-levels accepted; no numerus clausus; English B2",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted as higher education entrance qualification"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "English B2 (IELTS, TOEFL, PTE, Duolingo) or MOI letter",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted as entrance qualification",
+  "turkish_route": "Applicants whose diploma does not qualify must complete the mdh preparatory programme; Turkish Lise handled by German recognition rules (Studienkolleg route)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.mediadesign.de/en/bachelor/it-web-applications-and-software-development",
+  "confidence": "medium",
+  "note": "Institution-wide rules apply to all mdh IT programmes; also entry possible via subject-specific qualification under Section 11 Berlin Higher Education Act"
+ },
+ "36200": {
+  "stem": true,
+  "typical_offer": "Secondary diploma equivalent to Abitur (e.g. IB Diploma or A-levels); online interview; English B2",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted as Abitur equivalent"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "English: IELTS 5.5, TOEFL iBT 72, Duolingo 100; 30-40 minute online interview with professors",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted as Abitur equivalent",
+  "turkish_route": "Some international certificates do not give direct admission; check DAAD/anabin; Turkish Lise generally needs Studienkolleg or additional preparation",
+  "prerequisite_maths": null,
+  "source_url": "https://uni-munich.de/admissions/",
+  "confidence": "medium",
+  "note": "Institution-wide admission rules apply to all MUDT programmes"
+ },
+ "36203": {
+  "stem": true,
+  "typical_offer": "Secondary diploma equivalent to Abitur (e.g. IB Diploma or A-levels); online interview; English B2",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted as Abitur equivalent"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "English: IELTS 5.5, TOEFL iBT 72, Duolingo 100; 30-40 minute online interview with professors",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted as Abitur equivalent",
+  "turkish_route": "Some international certificates do not give direct admission; check DAAD/anabin; Turkish Lise generally needs Studienkolleg or additional preparation",
+  "prerequisite_maths": null,
+  "source_url": "https://uni-munich.de/admissions/",
+  "confidence": "medium",
+  "note": "Institution-wide admission rules apply to all MUDT programmes"
+ },
+ "36202": {
+  "stem": true,
+  "typical_offer": "Secondary diploma equivalent to Abitur (e.g. IB Diploma or A-levels); online interview; English B2",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted as Abitur equivalent"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "English: IELTS 5.5, TOEFL iBT 72, Duolingo 100; 30-40 minute online interview with professors",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted as Abitur equivalent",
+  "turkish_route": "Some international certificates do not give direct admission; check DAAD/anabin; Turkish Lise generally needs Studienkolleg or additional preparation",
+  "prerequisite_maths": null,
+  "source_url": "https://uni-munich.de/admissions/",
+  "confidence": "medium",
+  "note": "Institution-wide admission rules apply to all MUDT programmes"
+ },
+ "36201": {
+  "stem": true,
+  "typical_offer": "Secondary diploma equivalent to Abitur (e.g. IB Diploma or A-levels); online interview; English B2",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted as Abitur equivalent"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "English: IELTS 5.5, TOEFL iBT 72, Duolingo 100; 30-40 minute online interview with professors",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels accepted as Abitur equivalent",
+  "turkish_route": "Some international certificates do not give direct admission; check DAAD/anabin; Turkish Lise generally needs Studienkolleg or additional preparation",
+  "prerequisite_maths": null,
+  "source_url": "https://uni-munich.de/admissions/",
+  "confidence": "medium",
+  "note": "Institution-wide admission rules apply to all MUDT programmes"
+ },
+ "25463": {
+  "stem": true,
+  "typical_offer": "Fachabitur-equivalent technical secondary certificate or secondary high school diploma with transcripts; XU entrance exam and TestAS; English B2",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Not specifically listed; recognised equivalent secondary diploma accepted"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "XU University Entrance Exam and TestAS required; English B2",
+  "math_test": {
+   "name": "TestAS",
+   "role": "required",
+   "min_score": null,
+   "details": "Plus XU entrance exam"
+  },
+  "a_level": null,
+  "turkish_route": "Secondary diploma plus transcripts accepted if recognised as equivalent; XU entrance exam and TestAS",
+  "prerequisite_maths": null,
+  "source_url": "https://xu-university.com/en/bachelor/",
+  "confidence": "low",
+  "note": "Institution-wide rule"
+ },
+ "25465": {
+  "stem": true,
+  "typical_offer": "Fachabitur-equivalent technical secondary certificate or secondary high school diploma with transcripts; XU entrance exam and TestAS; English B2",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Not specifically listed; recognised equivalent secondary diploma accepted"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "XU University Entrance Exam and TestAS required; English B2",
+  "math_test": {
+   "name": "TestAS",
+   "role": "required",
+   "min_score": null,
+   "details": "Plus XU entrance exam"
+  },
+  "a_level": null,
+  "turkish_route": "Secondary diploma plus transcripts accepted if recognised as equivalent; XU entrance exam and TestAS",
+  "prerequisite_maths": null,
+  "source_url": "https://xu-university.com/en/bachelor/",
+  "confidence": "low",
+  "note": "Institution-wide rule"
+ },
+ "40279": {
+  "stem": true,
+  "typical_offer": "Recognised German university entrance qualification, or pass Fresenius entrance exam (120-minute written online + 30-minute oral); English B2 (TOEFL iBT 70 / IELTS 6.0)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB handled under German recognition rules (24+ points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "Fresenius entrance exam can be waived with satisfactory TestAS, SAT, ACT, ITB or Gaokao",
+  "math_test": {
+   "name": "SAT/ACT/TestAS",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Satisfactory result exempts from entrance exam"
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "If Lise qualifies in Turkey but not for Germany: Fresenius entrance exam or Feststellungsprüfung/Studienkolleg NRW",
+  "prerequisite_maths": null,
+  "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide rule"
+ },
+ "40282": {
+  "stem": true,
+  "typical_offer": "Recognised German university entrance qualification, or pass Fresenius entrance exam (120-minute written online + 30-minute oral); English B2 (TOEFL iBT 70 / IELTS 6.0)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB handled under German recognition rules (24+ points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "Fresenius entrance exam can be waived with satisfactory TestAS, SAT, ACT, ITB or Gaokao",
+  "math_test": {
+   "name": "SAT/ACT/TestAS",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Satisfactory result exempts from entrance exam"
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "If Lise qualifies in Turkey but not for Germany: Fresenius entrance exam or Feststellungsprüfung/Studienkolleg NRW",
+  "prerequisite_maths": null,
+  "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+  "confidence": "medium",
+  "note": "Institution-wide rule"
+ },
+ "40209": {
+  "stem": true,
+  "typical_offer": "Abitur, Fachabitur or equivalent international qualification; English B2",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted if equivalent to Abitur under German recognition (24+ points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": "DAAD: AP can give subject-restricted direct admission to maths/technology/science if at least 3 in calculus, one natural science, one language and one further subject, taken before graduation; results must come from College Board; US high school diploma alone not sufficient (Studienkolleg)",
+   "note": ""
+  },
+  "tests": "English B2 required; no German needed",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "DAAD: A-levels give subject-restricted direct admission with three A-levels at grade C or better, at least two from a defined list (languages, maths, sciences, etc.)",
+  "turkish_route": "Diploma must meet German recognition rules (Abitur equivalent); Turkish Lise generally needs Studienkolleg/Feststellungsprüfung or one year of university",
+  "prerequisite_maths": null,
+  "source_url": "https://whitecliffe.de/en/programs/ba-business-administration-data-science-business/",
+  "confidence": "low",
+  "note": "Applicants eligible but below English B2 can attend the English Preparatory School; institution-wide rule"
+ },
+ "36920": {
+  "stem": true,
+  "typical_offer": "High school diploma and transcripts or equivalent; IELTS 6.0 / TOEFL 79",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS 6.0, TOEFL iBT 79, PTE 51, CAE 169",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.euruni.edu/en/Bachelor-s/Artificial-Intelligence-for-Business-Munich-Bachelor.html",
+  "confidence": "low",
+  "note": "Institution-wide rule; recognised equivalent of German entrance qualification not stated"
+ },
+ "36913": {
+  "stem": false,
+  "typical_offer": "High school diploma and transcripts or equivalent; IELTS 6.0 / TOEFL 79",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS 6.0, TOEFL iBT 79, PTE 51, CAE 169",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.euruni.edu/en/BA-Hons-in-Business/Information-Systems.html",
+  "confidence": "low",
+  "note": "Institution-wide rule; recognised equivalent of German entrance qualification not stated"
+ },
+ "49133": {
+  "stem": true,
+  "typical_offer": "Baccalauréat (général/technologique) or international diploma recognised as equivalent by the school; selection by own entrance exam and interview",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Own entrance tests: logic and numerical reasoning MCQ (1 h), English MCQ (45 min), general and digital culture MCQ, 30-min motivation interview; remote interview for non-residents; no SAT/ACT",
+  "math_test": {
+   "name": "Aivancity logic and numerical reasoning MCQ",
+   "role": "required",
+   "min_score": null,
+   "details": "1-hour test, coefficient 3"
+  },
+  "a_level": null,
+  "turkish_route": "Any international diploma admitted as equivalent by the head of the school; Terminale or Bac+1 entry",
+  "prerequisite_maths": null,
+  "source_url": "https://www.aivancity.ai/program/bachelor-of-science-intelligence-artificielle-appliquee/admissions",
+  "confidence": "low",
+  "note": "Institution-wide rule; teaching in French (Bachelor of Science in Applied AI, Nice)"
+ },
+ "35715": {
+  "stem": true,
+  "typical_offer": "Baccalauréat (général/technologique) or international diploma recognised as equivalent by the school; selection by own entrance exam and interview",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Own entrance tests: logic and numerical reasoning MCQ (1 h), English MCQ (45 min), general and digital culture MCQ, 30-min motivation interview; remote interview for non-residents; no SAT/ACT",
+  "math_test": {
+   "name": "Aivancity logic and numerical reasoning MCQ",
+   "role": "required",
+   "min_score": null,
+   "details": "1-hour test, coefficient 3"
+  },
+  "a_level": null,
+  "turkish_route": "Any international diploma admitted as equivalent by the head of the school; Terminale or Bac+1 entry",
+  "prerequisite_maths": null,
+  "source_url": "https://www.aivancity.ai/program/bachelor-of-science-intelligence-artificielle-appliquee/admissions",
+  "confidence": "low",
+  "note": "Institution-wide rule; teaching in French (Bachelor of Science in Applied AI, Nice)"
+ },
+ "49896": {
+  "stem": true,
+  "typical_offer": "Baccalauréat or high school diploma for year 1; entry to year 2/3 with 60/120 ECTS; motivation interview",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: TOEFL iBT 79 minimum (or equivalent); French: TCF/TEF B2-C1, DALF C1 or DELF B2 if French-taught",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.omnes-international.com/en/admission/",
+  "confidence": "low",
+  "note": "Institution-wide rule"
+ },
+ "34515": {
+  "stem": true,
+  "typical_offer": "Completion of 12 years of schooling with a selection rank equivalent to ATAR; IB Diploma converted to ATAR-scale rank",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "ACU assigns selection rank from completed IB Diploma on ATAR scale"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-levels accepted on a minimum aggregate score basis",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise or private Lise Bitirme) accepted for bachelor entry with minimum grade average; pathway diploma available if not met",
+  "prerequisite_maths": null,
+  "source_url": "https://www.acu.edu.au/study-at-acu/how-to-apply/undergraduate-students/undergraduate-entry-requirements",
+  "confidence": "low",
+  "note": "Institution-wide rules; course-specific maths prerequisite not confirmed"
+ },
+ "34487": {
+  "stem": true,
+  "typical_offer": "Completion of 12 years of schooling with a selection rank equivalent to ATAR; IB Diploma converted to ATAR-scale rank",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "ACU assigns selection rank from completed IB Diploma on ATAR scale"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-levels accepted on a minimum aggregate score basis",
+  "turkish_route": "Turkish Lise Diploması (Devlet Lise or private Lise Bitirme) accepted for bachelor entry with minimum grade average; pathway diploma available if not met",
+  "prerequisite_maths": null,
+  "source_url": "https://www.acu.edu.au/study-at-acu/how-to-apply/undergraduate-students/undergraduate-entry-requirements",
+  "confidence": "low",
+  "note": "Institution-wide rules; course-specific maths prerequisite not confirmed"
+ },
+ "30046": {
+  "stem": true,
+  "typical_offer": "ATAR/SR 69 (Australian Year 12); Unit 3&4 Maths Grade C (General, Methods or Specialist) and English",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Unit 3 & 4 Maths (General Mathematics, Mathematical Methods or Specialist Mathematics) Grade C or higher; Mathematical Methods and Physics recommended",
+  "source_url": "https://cqu.edu.au/courses/bachelor-of-engineering-honours?show=international",
+  "confidence": "low",
+  "note": "Entry for overseas qualifications assessed for equivalence by CQUniversity"
+ },
+ "30042": {
+  "stem": true,
+  "typical_offer": "ATAR/SR 69 (Australian Year 12); Unit 3&4 Maths Grade C (General, Methods or Specialist) and English",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Unit 3 & 4 Maths (General Mathematics, Mathematical Methods or Specialist Mathematics) Grade C or higher; Mathematical Methods and Physics recommended",
+  "source_url": "https://cqu.edu.au/courses/bachelor-of-engineering-honours?show=international",
+  "confidence": "low",
+  "note": "Entry for overseas qualifications assessed for equivalence by CQUniversity"
+ },
+ "30045": {
+  "stem": true,
+  "typical_offer": "ATAR/SR equivalent; Year 12 English and Maths",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cqu.edu.au/courses/cg21/bachelor-of-engineering-technology",
+  "confidence": "low",
+  "note": "Maths prerequisite likely as for Engineering courses; not confirmed"
+ },
+ "30041": {
+  "stem": true,
+  "typical_offer": "ATAR/SR equivalent; Year 12 English",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cqu.edu.au/courses/cg99/bachelor-of-information-technology-coop",
+  "confidence": "low",
+  "note": ""
+ },
+ "30227": {
+  "stem": true,
+  "typical_offer": "Entry assessed case by case by country and qualification (International Admissions Matrix 2026)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise Diplomasi plus first year of diploma or bachelor's degree at a recognised institution is listed for direct undergraduate entry",
+  "prerequisite_maths": null,
+  "source_url": "https://study.csu.edu.au/international/how-to-apply/course-entry-requirements",
+  "confidence": "low",
+  "note": "Institution-wide rule"
+ },
+ "30223": {
+  "stem": true,
+  "typical_offer": "Entry assessed case by case by country and qualification (International Admissions Matrix 2026)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise Diplomasi plus first year of diploma or bachelor's degree at a recognised institution is listed for direct undergraduate entry",
+  "prerequisite_maths": null,
+  "source_url": "https://study.csu.edu.au/international/how-to-apply/course-entry-requirements",
+  "confidence": "low",
+  "note": "Institution-wide rule"
+ },
+ "30236": {
+  "stem": true,
+  "typical_offer": "Entry assessed case by case by country and qualification (International Admissions Matrix 2026)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise Diplomasi plus first year of diploma or bachelor's degree at a recognised institution is listed for direct undergraduate entry",
+  "prerequisite_maths": null,
+  "source_url": "https://study.csu.edu.au/international/how-to-apply/course-entry-requirements",
+  "confidence": "low",
+  "note": "Institution-wide rule"
+ },
+ "30330": {
+  "stem": true,
+  "typical_offer": "Bachelor: IB Diploma min 24; A-levels 5 points (two A-levels or one A-level plus one AS; A*=6 ... E=1, AS half value); Year 12 or equivalent",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Diploma pathway min 20"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Bachelor: 5 points from two A-levels or one A-level plus one AS-level (A*=6, A=5, B=4, C=3, D=2, E=1; AS counts half); Diploma level 4 points",
+  "turkish_route": "Lise Diplomasi accepted for both Diploma and Bachelor entry",
+  "prerequisite_maths": null,
+  "source_url": "https://www.kbs.edu.au/admissions/entry-requirements/international-entry-requirements",
+  "confidence": "medium",
+  "note": "No specific maths requirement listed; students must be 18 at start"
+ },
+ "14094": {
+  "stem": true,
+  "typical_offer": "No entrance exam; must meet reasoning requirements via standardised tests plus English proficiency",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Mathematics (analysis and approaches or applications and interpretation) score 6 or higher; total score not considered",
+   "note": "Send IB scores directly (code 000147)"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus AB score 5, or AP Calculus BC score 4 or 5",
+   "note": ""
+  },
+  "tests": "SAT total 1250 with Math at least 720; ACT composite 26 with Math at least 32; English: TOEFL iBT 85, IELTS 6.5, Duolingo 110, PTE 66, IB English 6, or exempt after two years English-medium schooling in UK/USA/etc.",
+  "math_test": {
+   "name": "SAT Math / ACT Math / AP Calculus / IB HL Maths / A-level Maths",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Any one of the listed qualifications meets the reasoning requirement; results no older than 3 years"
+  },
+  "a_level": "A, A, B including an A in Mathematics (General Studies, Critical Thinking, Key Skills excluded)",
+  "turkish_route": "Not specifically listed; Turkish secondary certificate must be assessed (free faculty assessment, or Prague City Hall nostrification about CZK 1,000); reasoning requirement met through SAT/ACT/AP/IB/A-level or comparable national results on request",
+  "prerequisite_maths": "Strong maths shown via reasoning requirement",
+  "source_url": "https://www.mff.cuni.cz/en/admissions/admission-requirements-for-bachelor-s-programmes-in-english/2026-2027",
+  "confidence": "high",
+  "note": ""
+ },
+ "14092": {
+  "stem": true,
+  "typical_offer": "Written entrance exams in Chemistry and Mathematics (cannot be waived); recognised secondary education",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Entrance exam: Chemistry and Mathematics",
+  "math_test": {
+   "name": "UPOL entrance exam (Mathematics and Chemistry)",
+   "role": "required",
+   "min_score": null,
+   "details": "Written exam; sample tests published"
+  },
+  "a_level": null,
+  "turkish_route": "Foreign secondary education must be proven and assessed by the university for a fee; Turkey not specially listed",
+  "prerequisite_maths": "Mathematics and Chemistry at entrance exam level",
+  "source_url": "https://petroleum.upol.cz/petroleum-engineering/admission/",
+  "confidence": "medium",
+  "note": ""
+ },
+ "14207": {
+  "stem": true,
+  "typical_offer": "Recognised secondary education; online General Academic Prerequisites (GAP) test; English proficiency",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Online GAP test (general aptitude)",
+  "math_test": {
+   "name": "GAP online test",
+   "role": "required",
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Assessment of previous education required; Turkey not specially listed",
+  "prerequisite_maths": null,
+  "source_url": "https://fis.vse.cz/english/about/bachelors-degree-programs/economic-data-science/",
+  "confidence": "medium",
+  "note": ""
+ },
+ "14164": {
+  "stem": true,
+  "typical_offer": "Recognised secondary education (Czech Act 49/2009); entrance exam; fluent English with certificate",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Entrance exam; English certificate",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Foreign secondary education must be recognised by the regional authority (CZK 1,000) before acceptance",
+  "prerequisite_maths": null,
+  "source_url": "https://www.tul.cz/en/admissions/study-programmes/detailed-information-for-english-programmes/undergraduate-programmes/bachelor-textile-technologies-materials-and-nanomaterials/",
+  "confidence": "low",
+  "note": "Programme not opening in 2026/27"
+ },
+ "37272": {
+  "stem": true,
+  "typical_offer": "High school diploma and transcript; B2 English; admission test (maths plus essay for BSc); pre-course option",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Admission test for BSc: maths part plus essay (mainly non-EU applicants); English IELTS 5.5 or equivalent (B2)",
+  "math_test": {
+   "name": "UE admission test (maths + essay)",
+   "role": "required",
+   "min_score": null,
+   "details": "Mainly for non-EU applicants depending on school curriculum"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.ue-germany.com/admission-requirements",
+  "confidence": "low",
+  "note": "Dubai campus offers a pre-course route"
+ },
+ "4115": {
+  "stem": true,
+  "typical_offer": "Secondary qualification after 12 years of schooling; written test (15 MCQs maths/physics/logic, 9/15 to proceed) and English oral interview; English B2",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Later windows accept AP: score 3 or above on at least 3 AP exams in science or maths (or one year of college/UCBM Foundation Course)",
+   "note": ""
+  },
+  "tests": "Own written test: 5 maths, 5 physics, 5 logical-scientific questions in English; 9/15 minimum for oral interview; oral interview in English scored /30",
+  "math_test": {
+   "name": "UCBM written test and oral interview",
+   "role": "required",
+   "min_score": 9,
+   "details": "Out of 15; oral interview in maths, physics, reasoning"
+  },
+  "a_level": null,
+  "turkish_route": "Valid with 12 years of schooling plus Declaration of Value or CIMEA certificate; 10-11 year systems need 1-2 years of university",
+  "prerequisite_maths": "Maths and physics tested",
+  "source_url": "https://www.unicampus.it/2.0/wp-content/uploads/2026/01/ENG_BIOMEDICAL_ENGINEERING_2026-27_call_for_admission-1.pdf",
+  "confidence": "medium",
+  "note": ""
+ }
+}

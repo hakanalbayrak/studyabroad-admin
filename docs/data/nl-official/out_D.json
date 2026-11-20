@@ -1,0 +1,1172 @@
+{
+ "57836": {
+  "stem": false
+ },
+ "57843": {
+  "stem": false
+ },
+ "57846": {
+  "stem": false
+ },
+ "57842": {
+  "stem": false
+ },
+ "57835": {
+  "stem": false
+ },
+ "57834": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "BUas lists the IB diploma (and IB CP certificate) only as an exemption from the English test; it does not publish IB subject/score thresholds. General rule: non-Dutch applicants need an equivalent of Dutch havo or vwo (assessed against a comparison list, Nuffic if in doubt). Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on BUas admission pages; a US High School diploma is listed as English-test exemption only."
+  },
+  "math_test": {
+   "name": "BUas Applied Data Science & AI mathematics test",
+   "role": "recommended",
+   "min_score": null,
+   "details": "Online maths test at HAVO level, no time limit; result helps judge whether you can cope with the required maths level but 'is not decisive'. Selection also via portfolio assignment and interview (max 125 students)."
+  },
+  "a_level": "GCE A(S) levels exempt from the English test; no published subject/grade requirement for admission (equivalent of havo/vwo needed).",
+  "turkish_route": "Not published on BUas pages; diploma is compared with a list of non-Dutch diplomas (Nuffic evaluation if in doubt). Applicants with unlisted diplomas are advised to apply.",
+  "prerequisite_maths": "No specific maths subject published; basic HAVO-level maths tested.",
+  "source_url": "https://www.buas.nl/en/programmes/applied-data-science-artificial-intelligence",
+  "confidence": "medium"
+ },
+ "57849": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "BUas lists the IB diploma (and IB CP certificate) only as an exemption from the English test; it does not publish IB subject/score thresholds. General rule: non-Dutch applicants need an equivalent of Dutch havo or vwo (assessed against a comparison list, Nuffic if in doubt). Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on BUas admission pages; a US High School diploma is listed as English-test exemption only."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A(S) levels exempt from the English test; no published subject/grade requirement for admission (equivalent of havo/vwo needed).",
+  "turkish_route": "Not published on BUas pages; diploma is compared with a list of non-Dutch diplomas (Nuffic evaluation if in doubt). Applicants with unlisted diplomas are advised to apply.",
+  "prerequisite_maths": "Not published on BUas international page (Dutch page not checked).",
+  "source_url": "https://www.buas.nl/en/international-students/admission-and-application/admission-requirements",
+  "confidence": "medium"
+ },
+ "57838": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "BUas lists the IB diploma (and IB CP certificate) only as an exemption from the English test; it does not publish IB subject/score thresholds. General rule: non-Dutch applicants need an equivalent of Dutch havo or vwo (assessed against a comparison list, Nuffic if in doubt). Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on BUas admission pages; a US High School diploma is listed as English-test exemption only."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A(S) levels exempt from the English test; no published subject/grade requirement for admission (equivalent of havo/vwo needed).",
+  "turkish_route": "Not published on BUas pages; diploma is compared with a list of non-Dutch diplomas (Nuffic evaluation if in doubt). Applicants with unlisted diplomas are advised to apply.",
+  "prerequisite_maths": "Not published (programme page only mentions vwo-comparable diploma for the 3-year track).",
+  "source_url": "https://www.buas.nl/en/international-students/admission-and-application/admission-requirements",
+  "confidence": "medium"
+ },
+ "57844": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "BUas lists the IB diploma (and IB CP certificate) only as an exemption from the English test; it does not publish IB subject/score thresholds. General rule: non-Dutch applicants need an equivalent of Dutch havo or vwo (assessed against a comparison list, Nuffic if in doubt). Applies institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on BUas admission pages; a US High School diploma is listed as English-test exemption only."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A(S) levels exempt from the English test; no published subject/grade requirement for admission (equivalent of havo/vwo needed).",
+  "turkish_route": "Not published on BUas pages; diploma is compared with a list of non-Dutch diplomas (Nuffic evaluation if in doubt). Applicants with unlisted diplomas are advised to apply.",
+  "prerequisite_maths": "Not published on BUas international page.",
+  "source_url": "https://www.buas.nl/en/international-students/admission-and-application/admission-requirements",
+  "confidence": "medium"
+ },
+ "36182": {
+  "stem": false
+ },
+ "36184": {
+  "stem": false
+ },
+ "36185": {
+  "stem": false
+ },
+ "36178": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Applied-MathematicsData-Science-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "36179": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Applied-Physics-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "36180": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Applied-Science-Chemistry-Chemical-Engineering-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "20258": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Automotive-Engineering-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "57974": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Study-at-Fontys/Programmes/Mechatronics-3.htm",
+  "confidence": "low"
+ },
+ "20254": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Electrical-Electronic-Engineering-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "20266": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Information-Communication-Technology-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "20257": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Study-at-Fontys/Practical-information/Application-and-enrolment.htm",
+  "confidence": "low"
+ },
+ "20260": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Industrial-Design-Engineering-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "36187": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Industrial-Engineering-and-Management-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "2123": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Information-Communication-Technology-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "36177": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Information-Technology-Venlo-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "20262": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Logistics-Engineering-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "22067": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Mechanical-Engineering-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "20261": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Fontys programme pages state only 'diploma of higher secondary education equivalent to Dutch standards'; no IB thresholds found. Fontys teaching regulations (oer.fontys.nl): a foreign diploma that gives access to higher education in its country can qualify, but the programme's subject-cluster requirements still apply; missing knowledge can be shown via a deficiency assessment. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned in any Fontys page found."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX (external certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Fontys application page: options to make up missing mandatory subjects with a non-Dutch diploma are limited; Boswell or CCVX certificates are accepted but mostly only obtainable by exams in the Netherlands. Fontys also has its own admission test for havo/vwo holders missing subjects (described in Dutch) and a 21+ test."
+  },
+  "a_level": "No A-level specifics published on programme pages; general foreign-diploma/subject-cluster rule applies.",
+  "turkish_route": "Not published; diploma validation by Fontys (up to 3 weeks), subject cluster must still be met.",
+  "prerequisite_maths": "Programme subject cluster (programme-specific, e.g. Mathematics B-type for engineering/maths) not retrievable from the pages accessible (rendered via JavaScript); see programme 'All admission requirements' page.",
+  "source_url": "https://www.fontys.nl/en/Programmes/Mechatronics-bachelor-full-time.htm",
+  "confidence": "low"
+ },
+ "57998": {
+  "stem": false
+ },
+ "57991": {
+  "stem": false
+ },
+ "57997": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Satisfactory grades in English, Physics and Mathematics on certificate (no levels published)",
+   "note": "HAN lists 'International Baccalaureate (DP & CP)' as an accepted secondary certificate; HAN can verify scores on the IBO site (institute code 035674). No minimum points or subject levels published; certificate must show 'satisfactory grades' in the required subjects (no numeric minimum). IB holders also exempt from English test."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; unlisted certificates are decided by the HAN admissions office."
+  },
+  "math_test": {
+   "name": "HAN online maths check",
+   "role": "recommended",
+   "min_score": null,
+   "details": "Optional self-assessment ('It makes sense to do this check!'), not a formal entry test; questions to matching.automotive@han.nl"
+  },
+  "a_level": "Accepted ('General Certificate of Secondary Education (GCSE-A level)'); certificate must show satisfactory grades in required subjects; no numeric minimum.",
+  "turkish_route": "Not listed; unlisted certificates are assessed by the admissions office (credential valuation by Nuffic). Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Satisfactory grades in Mathematics and Physics (first-year topics: calculus, derivatives, logarithms, trigonometry)",
+  "source_url": "https://www.hanuniversity.com/en/programs/bachelor/automotive-engineering/fulltime/admission-finances/",
+  "confidence": "medium"
+ },
+ "57995": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Satisfactory grades in English, Physics and Mathematics",
+   "note": "HAN lists 'International Baccalaureate (DP & CP)' as an accepted secondary certificate; HAN can verify scores on the IBO site (institute code 035674). No minimum points or subject levels published; certificate must show 'satisfactory grades' in the required subjects (no numeric minimum). IB holders also exempt from English test."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; unlisted certificates are decided by the HAN admissions office."
+  },
+  "math_test": {
+   "name": "HAN online maths check",
+   "role": "recommended",
+   "min_score": null,
+   "details": "Optional self-assessment ('It makes sense to do this check!'), not a formal entry test; questions to HAN EEE matching contact"
+  },
+  "a_level": "Accepted ('General Certificate of Secondary Education (GCSE-A level)'); certificate must show satisfactory grades in required subjects; no numeric minimum.",
+  "turkish_route": "Not listed; unlisted certificates are assessed by the admissions office (credential valuation by Nuffic). Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Satisfactory Mathematics and Physics; first-year maths reviews HAVO material then complex numbers, vectors, integration, differential equations",
+  "source_url": "https://www.hanuniversity.com/en/programs/bachelor/electrical-and-electronic-engineering/fulltime/admission-finances/",
+  "confidence": "medium"
+ },
+ "58000": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Satisfactory grades in English, Physics and Mathematics",
+   "note": "HAN lists 'International Baccalaureate (DP & CP)' as an accepted secondary certificate; HAN can verify scores on the IBO site (institute code 035674). No minimum points or subject levels published; certificate must show 'satisfactory grades' in the required subjects (no numeric minimum). IB holders also exempt from English test."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; unlisted certificates are decided by the HAN admissions office."
+  },
+  "math_test": {
+   "name": "HAN online maths check",
+   "role": "recommended",
+   "min_score": null,
+   "details": "Optional self-assessment ('It makes sense to do this check!'), not a formal entry test; questions to Matching.ese-engels@han.nl"
+  },
+  "a_level": "Accepted ('General Certificate of Secondary Education (GCSE-A level)'); certificate must show satisfactory grades in required subjects; no numeric minimum.",
+  "turkish_route": "Not listed; unlisted certificates are assessed by the admissions office (credential valuation by Nuffic). Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Satisfactory Mathematics and Physics on certificate",
+  "source_url": "https://www.hanuniversity.com/en/programs/bachelor/embedded-systems-engineering/fulltime/admission-finances/",
+  "confidence": "medium"
+ },
+ "57990": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Satisfactory grades in English, Physics and Mathematics",
+   "note": "HAN lists 'International Baccalaureate (DP & CP)' as an accepted secondary certificate; HAN can verify scores on the IBO site (institute code 035674). No minimum points or subject levels published; certificate must show 'satisfactory grades' in the required subjects (no numeric minimum). IB holders also exempt from English test."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; unlisted certificates are decided by the HAN admissions office."
+  },
+  "math_test": {
+   "name": "HAN online maths check",
+   "role": "recommended",
+   "min_score": null,
+   "details": "Optional self-assessment ('It makes sense to do this check!'), not a formal entry test; questions to HAN mechanical engineering matching contact"
+  },
+  "a_level": "Accepted ('General Certificate of Secondary Education (GCSE-A level)'); certificate must show satisfactory grades in required subjects; no numeric minimum.",
+  "turkish_route": "Not listed; unlisted certificates are assessed by the admissions office (credential valuation by Nuffic). Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Satisfactory Mathematics and Physics on certificate (page content for this programme taken from HAN mechanical-engineering admission page)",
+  "source_url": "https://www.hanuniversity.com/en/programs/bachelor/mechanical-engineering/fulltime/admission-finances/",
+  "confidence": "medium"
+ },
+ "58001": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Chemistry and Mathematics must be on the secondary certificate (Biology recommended); no levels/grades published",
+   "note": "HAN lists 'International Baccalaureate (DP & CP)' as an accepted secondary certificate; HAN can verify scores on the IBO site (institute code 035674). No minimum points or subject levels published; certificate must show 'satisfactory grades' in the required subjects (no numeric minimum). IB holders also exempt from English test."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; unlisted certificates are decided by the HAN admissions office."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test; a Matching procedure (questionnaire/interview) applies. Page lists maths topics to have mastered (fractions, powers, linear and quadratic functions)."
+  },
+  "a_level": "Accepted ('General Certificate of Secondary Education (GCSE-A level)'); certificate must show satisfactory grades in required subjects; no numeric minimum.",
+  "turkish_route": "Not listed; unlisted certificates are assessed by the admissions office (credential valuation by Nuffic). Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Mathematics (basic: fractions, powers, linear/quadratic equations) and Chemistry on certificate",
+  "source_url": "https://www.hanuniversity.com/en/programs/bachelor/chemistry/fulltime/admission-finances/",
+  "confidence": "medium"
+ },
+ "58002": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Chemistry and Mathematics must be on the secondary certificate (Biology recommended)",
+   "note": "HAN lists 'International Baccalaureate (DP & CP)' as an accepted secondary certificate; HAN can verify scores on the IBO site (institute code 035674). No minimum points or subject levels published; certificate must show 'satisfactory grades' in the required subjects (no numeric minimum). IB holders also exempt from English test."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; unlisted certificates are decided by the HAN admissions office."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test; a Matching procedure (questionnaire/interview) applies. Page lists maths topics to have mastered (fractions, powers, linear and quadratic functions)."
+  },
+  "a_level": "Accepted ('General Certificate of Secondary Education (GCSE-A level)'); certificate must show satisfactory grades in required subjects; no numeric minimum.",
+  "turkish_route": "Not listed; unlisted certificates are assessed by the admissions office (credential valuation by Nuffic). Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Mathematics (basic) and Chemistry on certificate",
+  "source_url": "https://www.hanuniversity.com/en/programs/bachelor/life-sciences/fulltime/admission-finances/",
+  "confidence": "medium"
+ },
+ "58003": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Chemistry and Mathematics must be on the secondary certificate (Biology recommended)",
+   "note": "HAN lists 'International Baccalaureate (DP & CP)' as an accepted secondary certificate; HAN can verify scores on the IBO site (institute code 035674). No minimum points or subject levels published; certificate must show 'satisfactory grades' in the required subjects (no numeric minimum). IB holders also exempt from English test."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; unlisted certificates are decided by the HAN admissions office."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test; a Matching procedure (questionnaire/interview) applies. Page lists maths topics to have mastered (fractions, powers, linear and quadratic functions)."
+  },
+  "a_level": "Accepted ('General Certificate of Secondary Education (GCSE-A level)'); certificate must show satisfactory grades in required subjects; no numeric minimum.",
+  "turkish_route": "Not listed; unlisted certificates are assessed by the admissions office (credential valuation by Nuffic). Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Mathematics (basic) and Chemistry on certificate",
+  "source_url": "https://www.hanuniversity.com/en/programs/bachelor/molecular-biosciences/fulltime/admission-finances/",
+  "confidence": "medium"
+ },
+ "57087": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published; some programmes use an intake interview and/or a mandatory additional test as part of selection."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Recommended (not required): secondary school diploma including mathematics and physics; no grades/levels published.",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/mechanical-engineering/requirements",
+  "confidence": "medium"
+ },
+ "37337": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published; some programmes use an intake interview and/or a mandatory additional test as part of selection."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Recommended (not required): secondary school diploma including mathematics and physics; no grades/levels published.",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/mechanical-engineering/requirements",
+  "confidence": "medium"
+ },
+ "57083": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "Admission is not diploma-only: communicative/self-reflective abilities and motivation assessed; 'a (mandatory) additional test and/or an admission interview can be part of the selection procedure'."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Recommended (not required): secondary school diploma including mathematics and physics; no grades/levels published.",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/mechatronics-english-programme/requirements",
+  "confidence": "medium"
+ },
+ "37338": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "Admission is not diploma-only: communicative/self-reflective abilities and motivation assessed; 'a (mandatory) additional test and/or an admission interview can be part of the selection procedure'."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Recommended (not required): secondary school diploma including mathematics and physics; no grades/levels published.",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/mechatronics-english-programme/requirements",
+  "confidence": "medium"
+ },
+ "37329": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "Intake interview is part of admission; 35 international places."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "No maths/physics prerequisite listed on requirements page.",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/civil-engineering/requirements",
+  "confidence": "medium"
+ },
+ "37328": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published; some programmes use an intake interview and/or a mandatory additional test as part of selection."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Not retrieved (programme requirements page not accessible); institution-wide rules only.",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/applied-computer-science",
+  "confidence": "low"
+ },
+ "37331": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published; some programmes use an intake interview and/or a mandatory additional test as part of selection."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Programme page not fetched; institution-wide rules only (maths/physics likely recommended).",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/electrical-and-electronic-engineering",
+  "confidence": "low"
+ },
+ "37330": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published; some programmes use an intake interview and/or a mandatory additional test as part of selection."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Not retrieved; institution-wide rules only.",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/creative-media-and-game-technologies/requirements",
+  "confidence": "low"
+ },
+ "58257": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published; some programmes use an intake interview and/or a mandatory additional test as part of selection."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Not retrieved; institution-wide rules only.",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/software-engineering-information-and-communication-technology/requirements",
+  "confidence": "low"
+ },
+ "57089": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published; some programmes use an intake interview and/or a mandatory additional test as part of selection."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Not retrieved; institution-wide rules only.",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/software-engineering-information-and-communication-technology/requirements",
+  "confidence": "low"
+ },
+ "37334": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Saxion lists the IB Diploma / IB CP certificate only as an English-test exemption (English must be on the final transcript); no IB points/subject thresholds published. General rule: diploma at least equivalent to Dutch HAVO, VWO or MBO-4 per Nuffic chart; Student Registration decides. Institution-wide."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned; only an English-taught US High School diploma (regionally accredited) is listed, as English-test exemption."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published; some programmes use an intake interview and/or a mandatory additional test as part of selection."
+  },
+  "a_level": "Not an admission route listed; English-taught GCE AS/A level certificates (AQA, Pearson, Edexcel, OCR, Cambridge) exempt from English test only.",
+  "turkish_route": "Not mentioned; check Nuffic country chart; Student Registration may send diploma to Nuffic. Not published whether Lise Diplomasi qualifies.",
+  "prerequisite_maths": "Not retrieved; institution-wide rules only.",
+  "source_url": "https://www.saxion.edu/programmes/bachelor/software-engineering-information-and-communication-technology/requirements",
+  "confidence": "low"
+ },
+ "37332": {
+  "stem": false
+ },
+ "37335": {
+  "stem": false
+ },
+ "40219": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full IB Diploma with at least 6 academic courses, minimum 3 at HL (each HL > 12 points per leaflet wording) and 3 at SL, TOK completed successfully; total at least 24 points. Gives access to 4-year and 3-year programmes. Subject requirements of the individual programme (maths/chemistry) still apply; English HL exempts from language test.",
+   "note": "Institution-wide leaflet 'International admissions 2027-2028'. Exact IB maths level (AA/AI, HL/SL) per programme not published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned. US High School Diplomas are evaluated individually (subjects, level, GPA) and may give access to 4-year, 3-year or no programmes."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Entry-requirements page: missing physics/maths/chemistry/biology at HAVO/VWO level can be made up via Boswell Beta or CCVX. Whether Maths A or B is needed depends on the programme. No THUAS maths placement test for international applicants."
+  },
+  "a_level": "UK rule of thumb (leaflet): 4-year programmes: GCSE in 6 subjects (4 at A*-C/9-4) and 2 AS-levels A*-C or 2 A-levels D-E, preferably incl. Maths and English; 3-year programmes: 3 relevant academic A-levels (A*-C) plus 3 GCSEs A*-C/9-4, total 6 subjects including compulsory Maths and English.",
+  "turkish_route": "Access to 4-year programmes only (Teknik/Lise/Anadolu Lisesi Diplomasi); programme page states non-Dutch diploma must be comparable to VWO, so check whether 3-year track applies (leaflet says no for Turkish Lise).",
+  "prerequisite_maths": "Dutch vwo profile any of the four; maths level not specified on page. Non-Dutch diploma must be comparable to vwo and 'passed your mathematics exam' not stated here; Nuffic assessment.",
+  "source_url": "https://www.thuas.com/programmes/bachelors/applied-computer-science",
+  "confidence": "medium"
+ },
+ "58262": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full IB Diploma with at least 6 academic courses, minimum 3 at HL (each HL > 12 points per leaflet wording) and 3 at SL, TOK completed successfully; total at least 24 points. Gives access to 4-year and 3-year programmes. Subject requirements of the individual programme (maths/chemistry) still apply; English HL exempts from language test.",
+   "note": "Institution-wide leaflet 'International admissions 2027-2028'. Exact IB maths level (AA/AI, HL/SL) per programme not published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned. US High School Diplomas are evaluated individually (subjects, level, GPA) and may give access to 4-year, 3-year or no programmes."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Entry-requirements page: missing physics/maths/chemistry/biology at HAVO/VWO level can be made up via Boswell Beta or CCVX. Whether Maths A or B is needed depends on the programme. No THUAS maths placement test for international applicants."
+  },
+  "a_level": "UK rule of thumb (leaflet): 4-year programmes: GCSE in 6 subjects (4 at A*-C/9-4) and 2 AS-levels A*-C or 2 A-levels D-E, preferably incl. Maths and English; 3-year programmes: 3 relevant academic A-levels (A*-C) plus 3 GCSEs A*-C/9-4, total 6 subjects including compulsory Maths and English.",
+  "turkish_route": "Access to 4-year programmes only (Teknik/Lise/Anadolu Lisesi Diplomasi); programme page states non-Dutch diploma must be comparable to VWO, so check whether 3-year track applies (leaflet says no for Turkish Lise).",
+  "prerequisite_maths": "Dutch vwo profile any of the four; maths level not specified on page. Non-Dutch diploma must be comparable to vwo and 'passed your mathematics exam' not stated here; Nuffic assessment.",
+  "source_url": "https://www.thuas.com/programmes/bachelors/applied-computer-science",
+  "confidence": "medium"
+ },
+ "40220": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full IB Diploma with at least 6 academic courses, minimum 3 at HL (each HL > 12 points per leaflet wording) and 3 at SL, TOK completed successfully; total at least 24 points. Gives access to 4-year and 3-year programmes. Subject requirements of the individual programme (maths/chemistry) still apply; English HL exempts from language test.",
+   "note": "Institution-wide leaflet 'International admissions 2027-2028'. Exact IB maths level (AA/AI, HL/SL) per programme not published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned. US High School Diplomas are evaluated individually (subjects, level, GPA) and may give access to 4-year, 3-year or no programmes."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Entry-requirements page: missing physics/maths/chemistry/biology at HAVO/VWO level can be made up via Boswell Beta or CCVX. Whether Maths A or B is needed depends on the programme. No THUAS maths placement test for international applicants."
+  },
+  "a_level": "UK rule of thumb (leaflet): 4-year programmes: GCSE in 6 subjects (4 at A*-C/9-4) and 2 AS-levels A*-C or 2 A-levels D-E, preferably incl. Maths and English; 3-year programmes: 3 relevant academic A-levels (A*-C) plus 3 GCSEs A*-C/9-4, total 6 subjects including compulsory Maths and English.",
+  "turkish_route": "Leaflet: Lise diplomas give access to 4-year programmes only; this programme page lists vwo (or comparable foreign diploma) only as entry, so a Turkish Lise may not qualify (3-year-type entry); confirm with Enrolment Office.",
+  "prerequisite_maths": "vwo; Culture & Society profile needs Mathematics A or B; havo/mbo do not qualify; 'expected to enter with a solid foundation in calculus'. Non-Dutch diploma: qualifies for hbo plus good English.",
+  "source_url": "https://www.thuas.com/programmes/bachelors/electrical-and-electronic-engineering",
+  "confidence": "medium"
+ },
+ "40223": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full IB Diploma with at least 6 academic courses, minimum 3 at HL (each HL > 12 points per leaflet wording) and 3 at SL, TOK completed successfully; total at least 24 points. Gives access to 4-year and 3-year programmes. Subject requirements of the individual programme (maths/chemistry) still apply; English HL exempts from language test.",
+   "note": "Institution-wide leaflet 'International admissions 2027-2028'. Exact IB maths level (AA/AI, HL/SL) per programme not published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned. US High School Diplomas are evaluated individually (subjects, level, GPA) and may give access to 4-year, 3-year or no programmes."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Entry-requirements page: missing physics/maths/chemistry/biology at HAVO/VWO level can be made up via Boswell Beta or CCVX. Whether Maths A or B is needed depends on the programme. No THUAS maths placement test for international applicants."
+  },
+  "a_level": "UK rule of thumb (leaflet): 4-year programmes: GCSE in 6 subjects (4 at A*-C/9-4) and 2 AS-levels A*-C or 2 A-levels D-E, preferably incl. Maths and English; 3-year programmes: 3 relevant academic A-levels (A*-C) plus 3 GCSEs A*-C/9-4, total 6 subjects including compulsory Maths and English.",
+  "turkish_route": "Leaflet: Turkish Lise diplomas give access to 4-year programmes only; this programme requires a vwo-comparable diploma, so a Turkish Lise may not qualify; confirm with Enrolment Office.",
+  "prerequisite_maths": "vwo (Culture & Society needs Mathematics A or B); non-Dutch diploma comparable to VWO and passed mathematics exam; havo/mbo do not qualify.",
+  "source_url": "https://www.thuas.com/programmes/bachelors/industrial-design-engineering",
+  "confidence": "medium"
+ },
+ "40235": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full IB Diploma with at least 6 academic courses, minimum 3 at HL (each HL > 12 points per leaflet wording) and 3 at SL, TOK completed successfully; total at least 24 points. Gives access to 4-year and 3-year programmes. Subject requirements of the individual programme (maths/chemistry) still apply; English HL exempts from language test.",
+   "note": "Institution-wide leaflet 'International admissions 2027-2028'. Exact IB maths level (AA/AI, HL/SL) per programme not published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned. US High School Diplomas are evaluated individually (subjects, level, GPA) and may give access to 4-year, 3-year or no programmes."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Entry-requirements page: missing physics/maths/chemistry/biology at HAVO/VWO level can be made up via Boswell Beta or CCVX. Whether Maths A or B is needed depends on the programme. No THUAS maths placement test for international applicants."
+  },
+  "a_level": "UK rule of thumb (leaflet): 4-year programmes: GCSE in 6 subjects (4 at A*-C/9-4) and 2 AS-levels A*-C or 2 A-levels D-E, preferably incl. Maths and English; 3-year programmes: 3 relevant academic A-levels (A*-C) plus 3 GCSEs A*-C/9-4, total 6 subjects including compulsory Maths and English.",
+  "turkish_route": "Leaflet: Turkish Lise gives access to 4-year programmes only; this programme requires a vwo-comparable diploma; confirm with Enrolment Office.",
+  "prerequisite_maths": "No maths level specified; vwo any of four profiles; non-Dutch diploma comparable to VWO.",
+  "source_url": "https://www.thuas.com/programmes/bachelors/user-experience-design",
+  "confidence": "low"
+ },
+ "40231": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full IB Diploma with at least 6 academic courses, minimum 3 at HL (each HL > 12 points per leaflet wording) and 3 at SL, TOK completed successfully; total at least 24 points. Gives access to 4-year and 3-year programmes. Subject requirements of the individual programme (maths/chemistry) still apply; English HL exempts from language test.",
+   "note": "Institution-wide leaflet 'International admissions 2027-2028'. Exact IB maths level (AA/AI, HL/SL) per programme not published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned. US High School Diplomas are evaluated individually (subjects, level, GPA) and may give access to 4-year, 3-year or no programmes."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Entry-requirements page: missing physics/maths/chemistry/biology at HAVO/VWO level can be made up via Boswell Beta or CCVX. Whether Maths A or B is needed depends on the programme. No THUAS maths placement test for international applicants."
+  },
+  "a_level": "UK rule of thumb (leaflet): 4-year programmes: GCSE in 6 subjects (4 at A*-C/9-4) and 2 AS-levels A*-C or 2 A-levels D-E, preferably incl. Maths and English; 3-year programmes: 3 relevant academic A-levels (A*-C) plus 3 GCSEs A*-C/9-4, total 6 subjects including compulsory Maths and English.",
+  "turkish_route": "Direct: leaflet says Turkish Lise/Anadolu/Teknik Lisesi Diplomasi give access to 4-year programmes (this 4-year track).",
+  "prerequisite_maths": "Havo/vwo: Culture & Society needs Chemistry and Mathematics A or B; Economics & Society needs Chemistry; Nature profiles none. Non-Dutch diploma: comparable to havo/vwo/mbo-4 with good English.",
+  "source_url": "https://www.thuas.com/programmes/bachelors/process-food-technology-4-years",
+  "confidence": "medium"
+ },
+ "40232": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full IB Diploma with at least 6 academic courses, minimum 3 at HL (each HL > 12 points per leaflet wording) and 3 at SL, TOK completed successfully; total at least 24 points. Gives access to 4-year and 3-year programmes. Subject requirements of the individual programme (maths/chemistry) still apply; English HL exempts from language test.",
+   "note": "Institution-wide leaflet 'International admissions 2027-2028'. Exact IB maths level (AA/AI, HL/SL) per programme not published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned. US High School Diplomas are evaluated individually (subjects, level, GPA) and may give access to 4-year, 3-year or no programmes."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Entry-requirements page: missing physics/maths/chemistry/biology at HAVO/VWO level can be made up via Boswell Beta or CCVX. Whether Maths A or B is needed depends on the programme. No THUAS maths placement test for international applicants."
+  },
+  "a_level": "UK rule of thumb (leaflet): 4-year programmes: GCSE in 6 subjects (4 at A*-C/9-4) and 2 AS-levels A*-C or 2 A-levels D-E, preferably incl. Maths and English; 3-year programmes: 3 relevant academic A-levels (A*-C) plus 3 GCSEs A*-C/9-4, total 6 subjects including compulsory Maths and English.",
+  "turkish_route": "Not accepted for this 3-year track via Lise diploma alone (leaflet: Turkish Lise diplomas give access to 4-year programmes only); may need first year of 4-year track or foundation (The Hague Pathway College).",
+  "prerequisite_maths": "Non-Dutch applicants must have passed exams in mathematics and chemistry; vwo-comparable diploma required (Culture & Society: Chemistry and Mathematics A or B).",
+  "source_url": "https://www.thuas.com/programmes/bachelors/process-food-technology-3-years",
+  "confidence": "medium"
+ },
+ "58266": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Full IB Diploma with at least 6 academic courses, minimum 3 at HL (each HL > 12 points per leaflet wording) and 3 at SL, TOK completed successfully; total at least 24 points. Gives access to 4-year and 3-year programmes. Subject requirements of the individual programme (maths/chemistry) still apply; English HL exempts from language test.",
+   "note": "Institution-wide leaflet 'International admissions 2027-2028'. Exact IB maths level (AA/AI, HL/SL) per programme not published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned. US High School Diplomas are evaluated individually (subjects, level, GPA) and may give access to 4-year, 3-year or no programmes."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Entry-requirements page: missing physics/maths/chemistry/biology at HAVO/VWO level can be made up via Boswell Beta or CCVX. Whether Maths A or B is needed depends on the programme. No THUAS maths placement test for international applicants."
+  },
+  "a_level": "UK rule of thumb (leaflet): 4-year programmes: GCSE in 6 subjects (4 at A*-C/9-4) and 2 AS-levels A*-C or 2 A-levels D-E, preferably incl. Maths and English; 3-year programmes: 3 relevant academic A-levels (A*-C) plus 3 GCSEs A*-C/9-4, total 6 subjects including compulsory Maths and English.",
+  "turkish_route": "Not accepted for this 3-year track via Lise diploma alone (leaflet: Turkish Lise diplomas give access to 4-year programmes only); may need first year of 4-year track or foundation (The Hague Pathway College).",
+  "prerequisite_maths": "Non-Dutch applicants must have passed exams in mathematics and chemistry; vwo-comparable diploma required (Culture & Society: Chemistry and Mathematics A or B).",
+  "source_url": "https://www.thuas.com/programmes/bachelors/process-food-technology-3-years",
+  "confidence": "medium"
+ },
+ "40221": {
+  "stem": false
+ },
+ "40222": {
+  "stem": false
+ },
+ "40224": {
+  "stem": false
+ }
+}

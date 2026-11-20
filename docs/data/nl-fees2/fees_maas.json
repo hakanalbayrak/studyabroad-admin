@@ -1,0 +1,667 @@
+{
+ "56978": {
+  "fee": 13200,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/arts-and-culture/tuition-fees"
+ },
+ "56986": {
+  "fee": 13200,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/digital-society/tuition-fees"
+ },
+ "56991": {
+  "fee": 13200,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/european-studies/tuition-fees"
+ },
+ "56998": {
+  "fee": 20109,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Includes BKKI small-scale/intensive surcharge (UM official bachelor BKKI rate EUR 20,109); matches UM tariff overview 2026-2027.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/university-college-maastricht/tuition-fees"
+ },
+ "56999": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/university-college-venlo/tuition-fees"
+ },
+ "56979": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/biomedical-sciences/tuition-fees"
+ },
+ "56980": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/brain-science/tuition-fees"
+ },
+ "56981": {
+  "fee": 13200,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/business-analytics/tuition-fees"
+ },
+ "56982": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/business-engineering/tuition-fees"
+ },
+ "56983": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/circular-engineering/tuition-fees"
+ },
+ "56984": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/computer-science/tuition-fees"
+ },
+ "56985": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/data-science-and-artificial-intelligence/tuition-fees"
+ },
+ "56987": {
+  "fee": 13200,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/econometrics-operations-research/tuition-fees"
+ },
+ "56988": {
+  "fee": 13200,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/economics-and-business-economics/tuition-fees"
+ },
+ "56990": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/european-public-health/tuition-fees"
+ },
+ "56992": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/global-studies/tuition-fees"
+ },
+ "56993": {
+  "fee": 13200,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/international-business/tuition-fees"
+ },
+ "56994": {
+  "fee": 20109,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Includes BKKI small-scale/intensive surcharge (UM official bachelor BKKI rate EUR 20,109); matches UM tariff overview 2026-2027.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/maastricht-science-programme/tuition-fees"
+ },
+ "56995": {
+  "fee": 13200,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/psychology/tuition-fees"
+ },
+ "56996": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/regenerative-medicine-and-technology/tuition-fees"
+ },
+ "56997": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/sustainable-bioscience/tuition-fees"
+ },
+ "57000": {
+  "fee": 18400,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/urban-sustainability-studies/tuition-fees"
+ },
+ "56989": {
+  "fee": 13200,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule bachelor: Low=13,200 / High=18,400 / Top(Medicine)=32,000; matches UM tariff overview 2026-2027. 2027/28 rate would be different.",
+  "source": "https://www.maastrichtuniversity.nl/education/bachelor/programmes/european-law-school/tuition-fees"
+ },
+ "57017": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/european-law-school-european-business-law/tuition-fees"
+ },
+ "57018": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/european-law-school-european-public-law/tuition-fees"
+ },
+ "57019": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/european-law-school-general-programme/tuition-fees"
+ },
+ "57020": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/european-law-school-law-ai/tuition-fees"
+ },
+ "57021": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/european-law-school-law-sustainable-europe/tuition-fees"
+ },
+ "57027": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/forensics-criminology-and-law/tuition-fees"
+ },
+ "57031": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/globalisation-and-law-corporate-and-commercial-law/tuition-fees"
+ },
+ "57032": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/globalisation-and-law-general-programme/tuition-fees"
+ },
+ "57033": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/globalisation-and-law-human-rights/tuition-fees"
+ },
+ "57034": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/globalisation-and-law-international-trade-and-investment-law/tuition-fees"
+ },
+ "57043": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-and-european-tax-law-customs-and-international-supply/tuition-fees"
+ },
+ "57044": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-and-european-tax-law-general-programme/tuition-fees"
+ },
+ "57045": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-and-european-tax-law-tax-and-technology/tuition-fees"
+ },
+ "57058": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-laws/tuition-fees"
+ },
+ "57003": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/arts-and-culture-arts-and-heritage-policy-management-and-education/tuition-fees"
+ },
+ "57004": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/arts-and-culture-contemporary-literature-and-arts-cultural/tuition-fees"
+ },
+ "57005": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/arts-and-culture-modern-political-culture-ideas-and-discourses-context/tuition-fees"
+ },
+ "57022": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/european-public-affairs/tuition-fees"
+ },
+ "57427": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/european-studies/tuition-fees"
+ },
+ "57024": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/european-studies-society-science-and-technology/tuition-fees"
+ },
+ "57030": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/globalisation-and-development-studies/tuition-fees"
+ },
+ "57060": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/media-studies-digital-cultures/tuition-fees"
+ },
+ "57002": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/artificial-intelligence/tuition-fees"
+ },
+ "57006": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/biobased-materials/tuition-fees"
+ },
+ "57425": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/biomedical-sciences/tuition-fees"
+ },
+ "57007": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/business-intelligence-and-smart-services/tuition-fees"
+ },
+ "57008": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Research master; official UM institutional tariff overview 2026-2027 (adjusted rate, full-time). Level rule: Low=21,500 / High=25,100 / Top=32,000 (master).",
+  "source": "https://www.maastrichtuniversity.nl/file/overzicht-instellingstarieven-bachelors-en-masters-2026-270pdf"
+ },
+ "57009": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/crop-biotechnology-and-engineering/tuition-fees"
+ },
+ "57010": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Research master; official UM institutional tariff overview 2026-2027 (adjusted rate, full-time). Level rule: Low=21,500 / High=25,100 / Top=32,000 (master).",
+  "source": "https://www.maastrichtuniversity.nl/file/overzicht-instellingstarieven-bachelors-en-masters-2026-270pdf"
+ },
+ "57011": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/data-science-decision-making/tuition-fees"
+ },
+ "57012": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/digital-business-and-economics/tuition-fees"
+ },
+ "57426": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/econometrics-operations-research/tuition-fees"
+ },
+ "57013": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Research master; official UM institutional tariff overview 2026-2027 (adjusted rate, full-time). Level rule: Low=21,500 / High=25,100 / Top=32,000 (master).",
+  "source": "https://www.maastrichtuniversity.nl/file/overzicht-instellingstarieven-bachelors-en-masters-2026-270pdf"
+ },
+ "57014": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/economics/tuition-fees"
+ },
+ "57015": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/economics-and-strategy-emerging-markets/tuition-fees"
+ },
+ "57016": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/epidemiology/tuition-fees"
+ },
+ "57023": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Research master; official UM institutional tariff overview 2026-2027 (adjusted rate, full-time). Level rule: Low=21,500 / High=25,100 / Top=32,000 (master).",
+  "source": "https://www.maastrichtuniversity.nl/file/overzicht-instellingstarieven-bachelors-en-masters-2026-270pdf"
+ },
+ "57025": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/financial-economics/tuition-fees"
+ },
+ "57026": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/forensic-psychology/tuition-fees"
+ },
+ "57028": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/global-health/tuition-fees"
+ },
+ "57029": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/global-supply-chain-management-and-change/tuition-fees"
+ },
+ "57035": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/governance-and-leadership-european-public-health/tuition-fees"
+ },
+ "57036": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/health-and-digital-transformation/tuition-fees"
+ },
+ "57037": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/health-food-innovation-management/tuition-fees"
+ },
+ "57038": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/health-promotion/tuition-fees"
+ },
+ "57039": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/healthcare-policy-innovation-and-management/tuition-fees"
+ },
+ "57040": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/human-decision-science/tuition-fees"
+ },
+ "57041": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/human-movement-sciences/tuition-fees"
+ },
+ "57042": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/imaging-engineering/tuition-fees"
+ },
+ "57046": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-accounting-and-financial-analysis/tuition-fees"
+ },
+ "57047": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-entrepreneurship-business-development/tuition-fees"
+ },
+ "57048": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-information-management-and-business-intelligence/tuition-fees"
+ },
+ "57049": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-managerial-decision-making-and-control/tuition-fees"
+ },
+ "57050": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-marketing-finance/tuition-fees"
+ },
+ "57051": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-organisation-management-change-and-consultancy/tuition-fees"
+ },
+ "57052": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-strategic-corporate-finance/tuition-fees"
+ },
+ "57053": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-strategic-marketing/tuition-fees"
+ },
+ "57054": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-strategy-and-innovation/tuition-fees"
+ },
+ "57055": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-supply-chain-management/tuition-fees"
+ },
+ "57056": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-business-sustainable-finance/tuition-fees"
+ },
+ "57057": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/international-joint-master-research-work-and-organizational-psychology/tuition-fees"
+ },
+ "57059": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/learning-and-development-organisations/tuition-fees"
+ },
+ "57061": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/psychology-cognitive-neuroscience/tuition-fees"
+ },
+ "57062": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/psychology-developmental-psychology/tuition-fees"
+ },
+ "57063": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/psychology-health-and-social-psychology/tuition-fees"
+ },
+ "57064": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/psychology-legal-psychology/tuition-fees"
+ },
+ "57065": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/psychology-neuropsychology/tuition-fees"
+ },
+ "57066": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/psychology-work-and-organisational-psychology/tuition-fees"
+ },
+ "57067": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/public-policy-and-human-development/tuition-fees"
+ },
+ "57068": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/responsible-data-science/tuition-fees"
+ },
+ "57069": {
+  "fee": 21500,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/sustainability-science-transforming-societies/tuition-fees"
+ },
+ "57070": {
+  "fee": 25100,
+  "currency": "EUR",
+  "year": "2026/27",
+  "note": "Programme page institutional fee 2026/27 (full-time). Level rule master: Low=21,500 / High=25,100 / Top=32,000; matches UM tariff overview 2026-2027 (adjusted rate; students enrolled in 2024/25 may qualify for lower non-adjusted transitional rate).",
+  "source": "https://www.maastrichtuniversity.nl/education/master/programmes/systems-biology-and-bioinformatics/tuition-fees"
+ }
+}

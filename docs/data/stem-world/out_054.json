@@ -1,0 +1,971 @@
+{
+ "44536": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. A* Maths + one science; IB 37 with HL 7,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL Maths Analysis & Approaches 7 (only this maths accepted) plus one HL science (CS/Physics/Chemistry/Biology)",
+   "note": "Only Analysis & Approaches HL counts for maths"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.2 plus grade 5 in AP Calculus BC or AB (subscore not accepted), grade 5 in AP Physics or Computer Science, and grade 5 in a third AP test (or A in one Honors class instead of the third AP).",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A* Mathematics (significant pure element) and one of Computer Science, Further Maths, Biology, Chemistry, Physics; science practicals must be passed",
+  "turkish_route": "Lise Diplomasi (MEB) from an approved private school: 87% average Grades 11-12, 87% Grade 12 Maths, 85% Grade 12 Physics/Chemistry/Biology. Other schools: 87% average plus AP route (5 in Calculus BC/AB, 5 in Physics/Computer Science, 5 in third AP), otherwise Integrated Foundation Year.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE Maths B/6, English C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00560/bsc-computer-science/entry-requirements/",
+  "confidence": "high",
+  "note": "Institution-wide Computer Science rules applied to industrial experience variant"
+ },
+ "44535": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. A* Maths + one science; IB 37 with HL 7,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL Maths Analysis & Approaches 7 (only this maths accepted) plus one HL science (CS/Physics/Chemistry/Biology)",
+   "note": "Only Analysis & Approaches HL counts for maths"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.2 plus grade 5 in AP Calculus BC or AB (subscore not accepted), grade 5 in AP Physics or Computer Science, and grade 5 in a third AP test (or A in one Honors class instead of the third AP).",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A* Mathematics (significant pure element) and one of Computer Science, Further Maths, Biology, Chemistry, Physics; science practicals must be passed",
+  "turkish_route": "Lise Diplomasi (MEB) from an approved private school: 87% average Grades 11-12, 87% Grade 12 Maths, 85% Grade 12 Physics/Chemistry/Biology. Other schools: 87% average plus AP route (5 in Calculus BC/AB, 5 in Physics/Computer Science, 5 in third AP), otherwise Integrated Foundation Year.",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE Maths B/6, English C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00560/bsc-computer-science/entry-requirements/",
+  "confidence": "high",
+  "note": "Institution-wide Computer Science rules applied to industrial experience variant"
+ },
+ "44534": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. A* Maths + one science; IB 37 with HL 7,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL Maths Analysis & Approaches 7 (only this maths accepted) plus one HL science (CS/Physics/Chemistry/Biology)",
+   "note": "Only Analysis & Approaches HL counts for maths"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.2 plus grade 5 in AP Calculus BC or AB (subscore not accepted), grade 5 in AP Physics or Computer Science, and grade 5 in a third AP test (or A in one Honors class instead of the third AP).",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A* Mathematics (significant pure element) and one of Computer Science, Further Maths, Biology, Chemistry, Physics; science practicals must be passed",
+  "turkish_route": "Turkish Diploma not accepted for Mathematics courses; Computer Science departmental route may apply for joint degree; otherwise Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE Maths B/6, English C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00558/bsc-computer-science-and-mathematics/entry-requirements/",
+  "confidence": "medium"
+ },
+ "44533": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. A* Maths + one science; IB 37 with HL 7,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL Maths Analysis & Approaches 7 (only this maths accepted) plus one HL science (CS/Physics/Chemistry/Biology)",
+   "note": "Only Analysis & Approaches HL counts for maths"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.2 plus grade 5 in AP Calculus BC or AB (subscore not accepted), grade 5 in AP Physics or Computer Science, and grade 5 in a third AP test (or A in one Honors class instead of the third AP).",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A* Mathematics (significant pure element) and one of Computer Science, Further Maths, Biology, Chemistry, Physics; science practicals must be passed",
+  "turkish_route": "Turkish Diploma not accepted for Mathematics courses; Computer Science departmental route may apply for joint degree; otherwise Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE Maths B/6, English C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00558/bsc-computer-science-and-mathematics/entry-requirements/",
+  "confidence": "medium"
+ },
+ "44485": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths, Physics + one other; IB 37 with HL 7,6,6 incl. Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL Maths (either Analysis & Approaches or Applications & Interpretation), HL Physics, one other HL",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.1+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. Mathematics, Physics and one other subject (Further Maths without Physics considered case by case); science practicals must be passed",
+  "turkish_route": "Approved private school: 87-90% average Grades 11-12 with 85-87% Grade 12 Maths and Physics, or the AP route; other schools need the AP route (5,5,5 Calculus BC, Physics, other) or Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03333/beng-aerospace-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "Institution/department rules; MEng with Industrial Experience may require higher grades"
+ },
+ "44484": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths, Physics + one other; IB 37 with HL 7,6,6 incl. Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL Maths (either Analysis & Approaches or Applications & Interpretation), HL Physics, one other HL",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.1+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. Mathematics, Physics and one other subject (Further Maths without Physics considered case by case); science practicals must be passed",
+  "turkish_route": "Approved private school: 87-90% average Grades 11-12 with 85-87% Grade 12 Maths and Physics, or the AP route; other schools need the AP route (5,5,5 Calculus BC, Physics, other) or Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03333/beng-aerospace-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "Institution/department rules; MEng with Industrial Experience may require higher grades"
+ },
+ "44516": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths + Chemistry or Physics; IB 36 with HL 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths Analysis & Approaches only, plus HL Chemistry or Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics or Chemistry (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.1+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Mathematics and Chemistry or Physics; science practicals must be passed",
+  "turkish_route": "Approved private school: 85-87% average Grades 11-12 with 85% Grade 12 Maths and Physics/Chemistry, or AP route; other schools need AP route plus 85% average, else Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Chemistry or Physics; GCSE English and Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03340/beng-chemical-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "MEng variants use same department rules; with Industrial Experience may need slightly higher averages (87%, GPA 3.1)"
+ },
+ "44513": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths + Chemistry or Physics; IB 36 with HL 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths Analysis & Approaches only, plus HL Chemistry or Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics or Chemistry (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.1+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Mathematics and Chemistry or Physics; science practicals must be passed",
+  "turkish_route": "Approved private school: 85-87% average Grades 11-12 with 85% Grade 12 Maths and Physics/Chemistry, or AP route; other schools need AP route plus 85% average, else Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Chemistry or Physics; GCSE English and Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03340/beng-chemical-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "MEng variants use same department rules; with Industrial Experience may need slightly higher averages (87%, GPA 3.1)"
+ },
+ "44514": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths + Chemistry or Physics; IB 36 with HL 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths Analysis & Approaches only, plus HL Chemistry or Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics or Chemistry (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.1+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Mathematics and Chemistry or Physics; science practicals must be passed",
+  "turkish_route": "Approved private school: 85-87% average Grades 11-12 with 85% Grade 12 Maths and Physics/Chemistry, or AP route; other schools need AP route plus 85% average, else Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Chemistry or Physics; GCSE English and Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03340/beng-chemical-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "MEng variants use same department rules; with Industrial Experience may need slightly higher averages (87%, GPA 3.1)"
+ },
+ "44515": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths + Chemistry or Physics; IB 36 with HL 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths Analysis & Approaches only, plus HL Chemistry or Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics or Chemistry (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.1+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Mathematics and Chemistry or Physics; science practicals must be passed",
+  "turkish_route": "Approved private school: 85-87% average Grades 11-12 with 85% Grade 12 Maths and Physics/Chemistry, or AP route; other schools need AP route plus 85% average, else Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Chemistry or Physics; GCSE English and Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03340/beng-chemical-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "MEng variants use same department rules; with Industrial Experience may need slightly higher averages (87%, GPA 3.1)"
+ },
+ "44529": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths, Physics + one other; IB 36 with HL 6,6,6 incl. Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course), HL Physics, one other HL",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.0+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Mathematics, Physics and one other (Further Maths without Physics considered case by case)",
+  "turkish_route": "Approved private school: 85% average Grades 11-12 with 85% Grade 12 Maths and Physics, or AP route; other schools need AP route plus 85% average, else Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03343/beng-civil-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "MEng variants use same department rules"
+ },
+ "44527": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths, Physics + one other; IB 36 with HL 6,6,6 incl. Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course), HL Physics, one other HL",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.0+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Mathematics, Physics and one other (Further Maths without Physics considered case by case)",
+  "turkish_route": "Approved private school: 85% average Grades 11-12 with 85% Grade 12 Maths and Physics, or AP route; other schools need AP route plus 85% average, else Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03343/beng-civil-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "MEng variants use same department rules"
+ },
+ "44526": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths, Physics + one other; IB 36 with HL 6,6,6 incl. Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course), HL Physics, one other HL",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.0+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Mathematics, Physics and one other (Further Maths without Physics considered case by case)",
+  "turkish_route": "Approved private school: 85% average Grades 11-12 with 85% Grade 12 Maths and Physics, or AP route; other schools need AP route plus 85% average, else Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03343/beng-civil-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "MEng variants use same department rules"
+ },
+ "44528": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths, Physics + one other; IB 36 with HL 6,6,6 incl. Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Maths (either course), HL Physics, one other HL",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.0+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Mathematics, Physics and one other (Further Maths without Physics considered case by case)",
+  "turkish_route": "Approved private school: 85% average Grades 11-12 with 85% Grade 12 Maths and Physics, or AP route; other schools need AP route plus 85% average, else Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English and Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03343/beng-civil-engineering/entry-requirements/",
+  "confidence": "high",
+  "note": "MEng variants use same department rules"
+ },
+ "44561": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. A* Maths + Physics/Electronics/Further Maths/Chemistry/CS; IB 37 with HL 7,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL Maths 7 (either course), HL Physics or Chemistry 6",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: grade 5 in AP Calculus BC (subscore not accepted), plus AP Physics C/Physics 1/Physics 2 or Chemistry, plus one further AP test; or HS diploma 3.2 GPA with 5s in Calculus and qualifying science from Grade 11 plus an A in one further AP class",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A* Mathematics and A in Physics, Electronics, Further Maths, Chemistry or Computer Science; science practicals must be passed",
+  "turkish_route": "Lise Diplomasi (MEB): 87% average Grades 11-12 with subject minimums at approved private schools; other schools need AP route or Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English B/6, Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03363/beng-electrical-and-electronic-engineering/entry-requirements/",
+  "confidence": "medium",
+  "note": "Same department entry rules applied to the Industrial Experience/Mechatronic variants; Mechatronic shares first-year with EEE"
+ },
+ "44560": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. A* Maths + Physics/Electronics/Further Maths/Chemistry/CS; IB 37 with HL 7,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL Maths 7 (either course), HL Physics or Chemistry 6",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: grade 5 in AP Calculus BC (subscore not accepted), plus AP Physics C/Physics 1/Physics 2 or Chemistry, plus one further AP test; or HS diploma 3.2 GPA with 5s in Calculus and qualifying science from Grade 11 plus an A in one further AP class",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A* Mathematics and A in Physics, Electronics, Further Maths, Chemistry or Computer Science; science practicals must be passed",
+  "turkish_route": "Lise Diplomasi (MEB): 87% average Grades 11-12 with subject minimums at approved private schools; other schools need AP route or Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English B/6, Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03363/beng-electrical-and-electronic-engineering/entry-requirements/",
+  "confidence": "medium",
+  "note": "Same department entry rules applied to the Industrial Experience/Mechatronic variants; Mechatronic shares first-year with EEE"
+ },
+ "44665": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. A* Maths + Physics/Electronics/Further Maths/Chemistry/CS; IB 37 with HL 7,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 37,
+   "subjects": "HL Maths 7 (either course), HL Physics or Chemistry 6",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: grade 5 in AP Calculus BC (subscore not accepted), plus AP Physics C/Physics 1/Physics 2 or Chemistry, plus one further AP test; or HS diploma 3.2 GPA with 5s in Calculus and qualifying science from Grade 11 plus an A in one further AP class",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A* Mathematics and A in Physics, Electronics, Further Maths, Chemistry or Computer Science; science practicals must be passed",
+  "turkish_route": "Lise Diplomasi (MEB): 87% average Grades 11-12 with subject minimums at approved private schools; other schools need AP route or Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths; GCSE English B/6, Maths C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03363/beng-electrical-and-electronic-engineering/entry-requirements/",
+  "confidence": "medium",
+  "note": "Same department entry rules applied to the Industrial Experience/Mechatronic variants; Mechatronic shares first-year with EEE"
+ },
+ "44664": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl. Maths and Physics; IB 38 with HL 7,7,6 incl. Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "HL Maths (either course) and HL Physics",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Grade 5 in three APs incl. Calculus BC and Physics (Physics 2 or Physics C Mechanics) plus one other AP (not Calculus AB or Physics 1); HS diploma GPA 3.2+. Diploma only: Foundation Year.",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl. Mathematics, Physics and one other; science practicals must be passed",
+  "turkish_route": "Approved private school: 90% average Grades 11-12 with 87% Grade 12 Maths and Physics, or 90% plus AP 5,5,5 (Calculus BC, Physics, other); other schools need the AP route, else Foundation Year",
+  "prerequisite_maths": "A-level/IB HL Maths and Physics; GCSE English C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03389/beng-mechanical-engineering/entry-requirements/",
+  "confidence": "high"
+ },
+ "44653": {
+  "stem": true,
+  "typical_offer": "A-level AAB with two of Maths, Physics, Chemistry; IB 35 with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL: two of Maths (Analysis & Approaches only), Physics, Chemistry",
+   "note": "Only HL Analysis & Approaches counts for maths"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.1 (MEng 3.2) plus grades 5,5,4 (MEng 5,5,5) in three APs from distinct subject areas, two of which are Calculus BC, Physics or Chemistry; Physics 1 and Calculus AB+BC together not accepted",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB with two of Mathematics, Physics, Chemistry",
+  "turkish_route": "Approved private school: 80% average Grades 11-12 (MEng 85%) with 85% in two Grade 12 subjects from Maths/Physics/Chemistry; other schools need AP route (80% plus 5,5,4) or Foundation Year",
+  "prerequisite_maths": "Two of Maths/Physics/Chemistry; GCSE English, Maths, Science C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "high"
+ },
+ "44654": {
+  "stem": true,
+  "typical_offer": "A-level AAB with two of Maths, Physics, Chemistry; IB 35 with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL: two of Maths (Analysis & Approaches only), Physics, Chemistry",
+   "note": "Only HL Analysis & Approaches counts for maths"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.1 (MEng 3.2) plus grades 5,5,4 (MEng 5,5,5) in three APs from distinct subject areas, two of which are Calculus BC, Physics or Chemistry; Physics 1 and Calculus AB+BC together not accepted",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB with two of Mathematics, Physics, Chemistry",
+  "turkish_route": "Approved private school: 80% average Grades 11-12 (MEng 85%) with 85% in two Grade 12 subjects from Maths/Physics/Chemistry; other schools need AP route (80% plus 5,5,4) or Foundation Year",
+  "prerequisite_maths": "Two of Maths/Physics/Chemistry; GCSE English, Maths, Science C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "high",
+  "note": "MEng variants: higher requirements (85% average, AP 5,5,5, GPA 3.2)"
+ },
+ "44650": {
+  "stem": true,
+  "typical_offer": "A-level AAB with two of Maths, Physics, Chemistry; IB 35 with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL: two of Maths (Analysis & Approaches only), Physics, Chemistry",
+   "note": "Only HL Analysis & Approaches counts for maths"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.1 (MEng 3.2) plus grades 5,5,4 (MEng 5,5,5) in three APs from distinct subject areas, two of which are Calculus BC, Physics or Chemistry; Physics 1 and Calculus AB+BC together not accepted",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB with two of Mathematics, Physics, Chemistry",
+  "turkish_route": "Approved private school: 80% average Grades 11-12 (MEng 85%) with 85% in two Grade 12 subjects from Maths/Physics/Chemistry; other schools need AP route (80% plus 5,5,4) or Foundation Year",
+  "prerequisite_maths": "Two of Maths/Physics/Chemistry; GCSE English, Maths, Science C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "high",
+  "note": "MEng variants: higher requirements (85% average, AP 5,5,5, GPA 3.2)"
+ },
+ "44651": {
+  "stem": true,
+  "typical_offer": "A-level AAB with two of Maths, Physics, Chemistry; IB 35 with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL: two of Maths (Analysis & Approaches only), Physics, Chemistry",
+   "note": "Only HL Analysis & Approaches counts for maths"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.1 (MEng 3.2) plus grades 5,5,4 (MEng 5,5,5) in three APs from distinct subject areas, two of which are Calculus BC, Physics or Chemistry; Physics 1 and Calculus AB+BC together not accepted",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB with two of Mathematics, Physics, Chemistry",
+  "turkish_route": "Approved private school: 80% average Grades 11-12 (MEng 85%) with 85% in two Grade 12 subjects from Maths/Physics/Chemistry; other schools need AP route (80% plus 5,5,4) or Foundation Year",
+  "prerequisite_maths": "Two of Maths/Physics/Chemistry; GCSE English, Maths, Science C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "high",
+  "note": "MEng variants: higher requirements (85% average, AP 5,5,5, GPA 3.2)"
+ },
+ "44652": {
+  "stem": true,
+  "typical_offer": "A-level AAB with two of Maths, Physics, Chemistry; IB 35 with HL 6,6,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "HL: two of Maths (Analysis & Approaches only), Physics, Chemistry",
+   "note": "Only HL Analysis & Approaches counts for maths"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.1 (MEng 3.2) plus grades 5,5,4 (MEng 5,5,5) in three APs from distinct subject areas, two of which are Calculus BC, Physics or Chemistry; Physics 1 and Calculus AB+BC together not accepted",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB with two of Mathematics, Physics, Chemistry",
+  "turkish_route": "Approved private school: 80% average Grades 11-12 (MEng 85%) with 85% in two Grade 12 subjects from Maths/Physics/Chemistry; other schools need AP route (80% plus 5,5,4) or Foundation Year",
+  "prerequisite_maths": "Two of Maths/Physics/Chemistry; GCSE English, Maths, Science C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/09894/bsc-materials-science-and-engineering/",
+  "confidence": "high",
+  "note": "MEng variants: higher requirements (85% average, AP 5,5,5, GPA 3.2)"
+ },
+ "44568": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. a science or maths subject; IB 34 with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Biology, Chemistry, ESS, Geography, Physics or Maths (Geography only: 6)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.0 plus grades 5,5,4 in three AP Tests incl. one science",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Biology, Chemistry, Environmental Science, Geography, Geology, Marine Science, Physics, Maths, Further Maths, Statistics",
+  "turkish_route": "Approved private school: 80% average Grades 11-12 plus 85% in a Grade 12 science, or AB in A-levels, or AP 5,4; other schools: 80% plus AP 5,5,4 or AAB A-levels; else Foundation Year",
+  "prerequisite_maths": "One science or maths subject",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12124/bsc-environmental-science/all-content/",
+  "confidence": "medium",
+  "note": "MEnvSci variants share department rules; offers may be higher"
+ },
+ "44569": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. a science or maths subject; IB 34 with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Biology, Chemistry, ESS, Geography, Physics or Maths (Geography only: 6)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.0 plus grades 5,5,4 in three AP Tests incl. one science",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Biology, Chemistry, Environmental Science, Geography, Geology, Marine Science, Physics, Maths, Further Maths, Statistics",
+  "turkish_route": "Approved private school: 80% average Grades 11-12 plus 85% in a Grade 12 science, or AB in A-levels, or AP 5,4; other schools: 80% plus AP 5,5,4 or AAB A-levels; else Foundation Year",
+  "prerequisite_maths": "One science or maths subject",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12124/bsc-environmental-science/all-content/",
+  "confidence": "medium",
+  "note": "MEnvSci variants share department rules; offers may be higher"
+ },
+ "44565": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. a science or maths subject; IB 34 with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Biology, Chemistry, ESS, Geography, Physics or Maths (Geography only: 6)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.0 plus grades 5,5,4 in three AP Tests incl. one science",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Biology, Chemistry, Environmental Science, Geography, Geology, Marine Science, Physics, Maths, Further Maths, Statistics",
+  "turkish_route": "Approved private school: 80% average Grades 11-12 plus 85% in a Grade 12 science, or AB in A-levels, or AP 5,4; other schools: 80% plus AP 5,5,4 or AAB A-levels; else Foundation Year",
+  "prerequisite_maths": "One science or maths subject",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12124/bsc-environmental-science/all-content/",
+  "confidence": "medium",
+  "note": "MEnvSci variants share department rules; offers may be higher"
+ },
+ "44566": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. a science or maths subject; IB 34 with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Biology, Chemistry, ESS, Geography, Physics or Maths (Geography only: 6)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.0 plus grades 5,5,4 in three AP Tests incl. one science",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Biology, Chemistry, Environmental Science, Geography, Geology, Marine Science, Physics, Maths, Further Maths, Statistics",
+  "turkish_route": "Approved private school: 80% average Grades 11-12 plus 85% in a Grade 12 science, or AB in A-levels, or AP 5,4; other schools: 80% plus AP 5,5,4 or AAB A-levels; else Foundation Year",
+  "prerequisite_maths": "One science or maths subject",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12124/bsc-environmental-science/all-content/",
+  "confidence": "medium",
+  "note": "MEnvSci variants share department rules; offers may be higher"
+ },
+ "44567": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. a science or maths subject; IB 34 with HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL 6,5,5 incl. Biology, Chemistry, ESS, Geography, Physics or Maths (Geography only: 6)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "USA: HS diploma GPA 3.0 plus grades 5,5,4 in three AP Tests incl. one science",
+   "note": "Applies via departmental USA/Turkey routes; US diploma alone needs a Foundation Year"
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Biology, Chemistry, Environmental Science, Geography, Geology, Marine Science, Physics, Maths, Further Maths, Statistics",
+  "turkish_route": "Approved private school: 80% average Grades 11-12 plus 85% in a Grade 12 science, or AB in A-levels, or AP 5,4; other schools: 80% plus AP 5,5,4 or AAB A-levels; else Foundation Year",
+  "prerequisite_maths": "One science or maths subject",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/12124/bsc-environmental-science/all-content/",
+  "confidence": "medium",
+  "note": "MEnvSci variants share department rules; offers may be higher"
+ },
+ "44604": {
+  "stem": true,
+  "typical_offer": "A-level AAA; IB 36 with HL 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6; no specific subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA with one accepted subject (Maths, Economics, sciences etc.); no mandatory Maths A-level",
+  "turkish_route": "Contact School; Turkish diploma not specified",
+  "prerequisite_maths": "GCSE Maths B/6, English C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/06246/bsc-information-technology-management-for-business/entry-requirements/",
+  "confidence": "medium"
+ },
+ "44603": {
+  "stem": true,
+  "typical_offer": "A-level AAA; IB 36 with HL 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6; no specific subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA with one accepted subject (Maths, Economics, sciences etc.); no mandatory Maths A-level",
+  "turkish_route": "Contact School; Turkish diploma not specified",
+  "prerequisite_maths": "GCSE Maths B/6, English C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/06246/bsc-information-technology-management-for-business/entry-requirements/",
+  "confidence": "medium"
+ },
+ "44541": {
+  "stem": true,
+  "typical_offer": "IB 36 with HL 6,6,6; A-level AAA incl. accepted subject",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL 6,6,6; no specific subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT required; AP or A-level/IB route used",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA with one accepted subject (Maths, Economics, sciences etc.); no mandatory Maths A-level",
+  "turkish_route": "Contact School; Turkish diploma not specified",
+  "prerequisite_maths": "GCSE Maths B/6, English C/4",
+  "source_url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/21873/baecon-data-science-and-economics/entry-requirements/",
+  "confidence": "medium"
+ },
+ "44537": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high"
+ },
+ "44710": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high"
+ },
+ "44727": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high"
+ },
+ "44733": {
+  "stem": false,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "high"
+ }
+}

@@ -1,0 +1,1938 @@
+{
+ "institutions": [
+  {
+   "name": "NHL Stenden University of Applied Sciences",
+   "city": "Leeuwarden",
+   "country": "Netherlands",
+   "website": "https://www.nhlstenden.com",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": null,
+    "master": null
+   },
+   "entity_note": "Campuses Leeuwarden, Emmen, Groningen, Meppel. nhlstenden.com is behind a Cloudflare challenge (HTTP 403) so the official overview count could not be read; list built from Study in NL (official portal) plus NHL Stenden page snippets. Possibly missing/unverified: BSc Electrical and Electronic Engineering (Leeuwarden, English unconfirmed), Entrepreneurship & Retail Management, Tourism Management 3-year track, Creative Business 3-year track, Master Learning & Innovation (special track ITE).",
+   "programs": [
+    {
+     "name": "BBA International Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Business",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": "1 Nov 2026 (February 2027 start); 1 Jun 2027 (September 2027 start)",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions. Offered in Leeuwarden and Emmen (two Study in NL records).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/international-business-2931-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "BSc Business Administration",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Business",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": "1 Nov 2026 (February 2027 start); 1 Jun 2027 (September 2027 start)",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/business-administration-2934-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "BBA Marketing Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Marketing",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/marketing-management-9424-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "BA International Human Resource Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Human resource management",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/international-human-resource-management-2962-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "BBA International Logistics Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Logistics",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/international-logistics-management-3006-nhl-stenden-university-of-applied-sciences",
+     "city": "Emmen"
+    },
+    {
+     "name": "BA European Studies",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "European studies / governance",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/european-studies-2956-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "Bachelor Creative Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Creative business / media",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": "1 Nov 2026 (February 2027 start); 1 Jun 2027 (September 2027 start)",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions. Degree title not verified (Study in NL shows generic 'Bachelor').",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/creative-business-3001-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "Bachelor Communication and Multimedia Design",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Communication / design",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions. Degree title not verified (Study in NL shows generic 'Bachelor').",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/communication-and-multimedia-design-2935-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "BBA International Hospitality Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Hospitality",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": "1 Nov 2026 (February 2027 start); 1 Jun 2027 (September 2027 start)",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/international-hospitality-management-2955-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "BBA International Hospitality Management (3-year track)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Hospitality",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions. 3-year route for applicants with VWO-level (pre-university) entry; stricter admission than the 4-year route.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/international-hospitality-management-3-year-track-10786-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "BBA Leisure and Events Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Leisure / events",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": "1 Nov 2026 (February 2027 start); 1 Jun 2027 (September 2027 start)",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/leisure-and-events-management-3005-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "BA Tourism Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Tourism",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": "31 May (older brochure; confirm on NHL page)",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions. Not in Study in NL sitemap; verified from NHL Stenden course/fees page via search only. A 3-year fast-track is listed separately by NHL Stenden (not included, details unverified).",
+     "source_url": "https://www.nhlstenden.com/en/courses/tourism-management",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "BSc Computer Science",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Computer science / AI",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions. Degree title assumed BSc (Study in NL shows none).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/computer-science-2959-nhl-stenden-university-of-applied-sciences",
+     "city": "Emmen"
+    },
+    {
+     "name": "BSc Information Technology",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Information technology",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions. Degree title assumed BSc (Study in NL shows none).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/information-technology-2960-nhl-stenden-university-of-applied-sciences",
+     "city": "Emmen"
+    },
+    {
+     "name": "BSc Green Chemistry",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Chemistry / sustainability",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions. Degree title assumed BSc (Study in NL shows none). Search results also mention a 3-year track (unverified).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/green-chemistry-2948-nhl-stenden-university-of-applied-sciences",
+     "city": "Emmen"
+    },
+    {
+     "name": "Bachelor International Teacher Education for Primary Schools (ITEPS)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Teacher education",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions. Teacher training; Dutch-language/placement components may apply (check programme). Degree title not shown on Study in NL.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/international-teacher-education-for-primary-schools-iteps-3000-nhl-stenden-university-of-applied-sciences",
+     "city": "Meppel"
+    },
+    {
+     "name": "Bachelor International Teacher Education for Secondary Schools (ITESS)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Teacher education",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma at least equivalent to Dutch NLQF 4/EQF 4 (HAVO/MBO4 level) for the 4-year bachelor; non-EU applicants must submit an English test (tests older than 2 years not accepted) and pay the institutional fee in one lump sum; IND proof of funds (EUR 14,000 deposit) applies. Turkish-specific rules (Lise Diploması/YKS) not found in accessible sources: diploma is evaluated against the NLQF/EQF level, verify with NHL Stenden admissions. Teacher training; location Groningen per NHL listing (Study in NL shows Meppel). Degree title not shown on Study in NL.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/international-teacher-education-for-secondary-schools-itess-3009-nhl-stenden-university-of-applied-sciences",
+     "city": "Groningen"
+    },
+    {
+     "name": "MA International Leisure, Tourism and Events Management",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Tourism / leisure / events",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027",
+     "fee_non_eu": 11995,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Relevant bachelor's degree at least equivalent to NLQF 6/EQF 6 and comparable to an admissible Dutch bachelor diploma; English test required for non-EU applicants; institutional fee paid in one lump sum. Turkish-specific rules not published in accessible sources: verify diploma recognition with NHL Stenden.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/master-in-international-leisure-tourism-and-events-management-3027-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "MA Content & Media Strategy",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Media / communication",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 11995,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Relevant bachelor's degree at least equivalent to NLQF 6/EQF 6 and comparable to an admissible Dutch bachelor diploma; English test required for non-EU applicants; institutional fee paid in one lump sum. Turkish-specific rules not published in accessible sources: verify diploma recognition with NHL Stenden.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/master-content-media-strategy-3024-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "MA Sustainable Innovation in Hospitality",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Hospitality",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 11995,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Relevant bachelor's degree at least equivalent to NLQF 6/EQF 6 and comparable to an admissible Dutch bachelor diploma; English test required for non-EU applicants; institutional fee paid in one lump sum. Turkish-specific rules not published in accessible sources: verify diploma recognition with NHL Stenden. Part-time variant is closed to non-EU applicants (not listed).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/master-sustainable-innovation-in-hospitality-11866-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    },
+    {
+     "name": "MSc Computer Vision & Data Science",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Data science / AI",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 10335,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Relevant bachelor's degree at least equivalent to NLQF 6/EQF 6 and comparable to an admissible Dutch bachelor diploma; English test required for non-EU applicants; institutional fee paid in one lump sum. Turkish-specific rules not published in accessible sources: verify diploma recognition with NHL Stenden.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/computer-vision-data-science-10892-nhl-stenden-university-of-applied-sciences",
+     "city": "Leeuwarden"
+    }
+   ]
+  },
+  {
+   "name": "Zuyd University of Applied Sciences",
+   "city": "Maastricht",
+   "country": "Netherlands",
+   "website": "https://www.zuyd.nl",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": null,
+    "master": null
+   },
+   "entity_note": "Campuses Maastricht, Heerlen, Sittard-Geleen. zuyd.nl blocked (403); built from Study in NL and Zuyd's official tuition calculator data. English Fine Arts / Design bachelors not confirmed and excluded.",
+   "programs": [
+    {
+     "name": "BBA International Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Business",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027 (September); 1 Dec 2026 (February)",
+     "fee_non_eu": 10210,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator (zuyd-collegegeld.nl). Non-EU applicants pay the institutional fee before the visa is arranged; foreign diploma evaluated (NLQF 4 / HAVO-level). Turkish-specific rules not found: verify Lise Diploması evaluation with Zuyd admissions (zuyd.nl was not accessible to the crawler).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/international-business-2128-zuyd-university-of-applied-sciences",
+     "city": "Maastricht"
+    },
+    {
+     "name": "BA European Studies",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "European studies",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 12280,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator (zuyd-collegegeld.nl). Non-EU applicants pay the institutional fee before the visa is arranged; foreign diploma evaluated (NLQF 4 / HAVO-level). Turkish-specific rules not found: verify Lise Diploması evaluation with Zuyd admissions (zuyd.nl was not accessible to the crawler).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/european-studies-2140-zuyd-university-of-applied-sciences",
+     "city": "Maastricht"
+    },
+    {
+     "name": "BA Hotel Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Hospitality",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (September 2027 or February 2028 start)",
+     "fee_non_eu": 13940,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator (zuyd-collegegeld.nl). Non-EU applicants pay the institutional fee before the visa is arranged; foreign diploma evaluated (NLQF 4 / HAVO-level). Turkish-specific rules not found: verify Lise Diploması evaluation with Zuyd admissions (zuyd.nl was not accessible to the crawler). Hotelschool Maastricht; higher tuition tier for hospitality. Selection includes motivation; apply in Studielink from 1 Oct 2026.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/hotel-management-2139-zuyd-university-of-applied-sciences",
+     "city": "Maastricht"
+    },
+    {
+     "name": "BSc Applied Data Science & Artificial Intelligence",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Data science / AI",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 12280,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator (zuyd-collegegeld.nl). Non-EU applicants pay the institutional fee before the visa is arranged; foreign diploma evaluated (NLQF 4 / HAVO-level). Turkish-specific rules not found: verify Lise Diploması evaluation with Zuyd admissions (zuyd.nl was not accessible to the crawler).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/applied-data-science-artificial-intelligence-14304-zuyd-university-of-applied-sciences",
+     "city": "Maastricht"
+    },
+    {
+     "name": "BA Interdisciplinary Arts",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Arts",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 12280,
+     "fee_year": "2026-2027",
+     "english": null,
+     "education_level": "highschool",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator (zuyd-collegegeld.nl). Non-EU applicants pay the institutional fee before the visa is arranged; foreign diploma evaluated (NLQF 4 / HAVO-level). Turkish-specific rules not found: verify Lise Diploması evaluation with Zuyd admissions (zuyd.nl was not accessible to the crawler). Admission includes portfolio/selection.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/interdisciplinary-arts-2130-zuyd-university-of-applied-sciences",
+     "city": "Maastricht"
+    },
+    {
+     "name": "BMus Music",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Music",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Mar 2027",
+     "fee_non_eu": 12280,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator (zuyd-collegegeld.nl). Non-EU applicants pay the institutional fee before the visa is arranged; foreign diploma evaluated (NLQF 4 / HAVO-level). Turkish-specific rules not found: verify Lise Diploması evaluation with Zuyd admissions (zuyd.nl was not accessible to the crawler). Entrance audition; IELTS 6.0 on each skill per Study in NL.",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/music-2161-zuyd-university-of-applied-sciences",
+     "city": "Maastricht"
+    },
+    {
+     "name": "Bachelor Business Process Analytics and Change (B-PAC)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Industrial engineering / business analytics",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027",
+     "fee_non_eu": 12280,
+     "fee_year": "2026-2027",
+     "english": null,
+     "education_level": "highschool",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator (zuyd-collegegeld.nl). Non-EU applicants pay the institutional fee before the visa is arranged; foreign diploma evaluated (NLQF 4 / HAVO-level). Turkish-specific rules not found: verify Lise Diploması evaluation with Zuyd admissions (zuyd.nl was not accessible to the crawler). English-language track of Industrial Engineering & Management (Zuyd lists it as its own programme).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/business-process-analytics-and-change-58602-zuyd-university-of-applied-sciences",
+     "city": "Heerlen"
+    },
+    {
+     "name": "Bachelor Circular Cities & Communities",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Built environment / circular construction",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 12280,
+     "fee_year": "2026-2027",
+     "english": null,
+     "education_level": "highschool",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator (zuyd-collegegeld.nl). Non-EU applicants pay the institutional fee before the visa is arranged; foreign diploma evaluated (NLQF 4 / HAVO-level). Turkish-specific rules not found: verify Lise Diploması evaluation with Zuyd admissions (zuyd.nl was not accessible to the crawler). English-language track of Built Environment (fee tier assumed to follow Built Environment; first intake listed 2027).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/circular-cities-communities-57611-zuyd-university-of-applied-sciences",
+     "city": "Heerlen"
+    },
+    {
+     "name": "MMus Music",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Music",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Mar 2027",
+     "fee_non_eu": 12280,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator. Relevant bachelor's degree plus programme selection (portfolio/audition/interview where applicable). Turkish-specific rules not found; verify with Zuyd (zuyd.nl was not accessible to the crawler). Audition-based selection. Duration not stated on Study in NL (2 years assumed typical; verify).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/music-2149-zuyd-university-of-applied-sciences",
+     "city": "Maastricht"
+    },
+    {
+     "name": "MA Theatre",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Theatre",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 12280,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator. Relevant bachelor's degree plus programme selection (portfolio/audition/interview where applicable). Turkish-specific rules not found; verify with Zuyd (zuyd.nl was not accessible to the crawler).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/theatre-2159-zuyd-university-of-applied-sciences",
+     "city": "Maastricht"
+    },
+    {
+     "name": "MA Interior Architecture",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Interior architecture",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 12280,
+     "fee_year": "2026-2027",
+     "english": null,
+     "education_level": "bachelor",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator. Relevant bachelor's degree plus programme selection (portfolio/audition/interview where applicable). Turkish-specific rules not found; verify with Zuyd (zuyd.nl was not accessible to the crawler). Selection: preselection on motivation letter, diploma, portfolio, then interview/assignment; pre-master available.",
+     "source_url": "https://www.zuyd.nl/en/programmes/master-interior-architecture",
+     "city": "Maastricht"
+    },
+    {
+     "name": "MA Scientific Illustration",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Illustration / science communication",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027",
+     "fee_non_eu": 13850,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator. Relevant bachelor's degree plus programme selection (portfolio/audition/interview where applicable). Turkish-specific rules not found; verify with Zuyd (zuyd.nl was not accessible to the crawler). Non-funded programme (same fee for all).",
+     "source_url": "https://www.studyinnl.org/dutch-education/studies/master-scientific-illustration-2165-zuyd-university-of-applied-sciences",
+     "city": "Maastricht"
+    },
+    {
+     "name": "MSc Facility and Real Estate Management (FREM)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Facility / real estate management",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 13320,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Fees from Zuyd's official 2026-2027 tuition calculator. Relevant bachelor's degree plus programme selection (portfolio/audition/interview where applicable). Turkish-specific rules not found; verify with Zuyd (zuyd.nl was not accessible to the crawler). Hotelschool Maastricht / Zuyd with Univ. of Greenwich (double MSc). Non-funded: EUR 12,950 in 2026-2027. Bachelor must be in facility/real estate/architecture/built environment/hospitality/economics/business.",
+     "source_url": "https://www.hotelschoolmaastricht.nl/en/master-FREM",
+     "city": "Maastricht"
+    }
+   ]
+  },
+  {
+   "name": "Van Hall Larenstein University of Applied Sciences",
+   "city": "Velp",
+   "country": "Netherlands",
+   "website": "https://www.vhluas.com",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 6,
+    "master": 1
+   },
+   "entity_note": "Campuses Velp, Leeuwarden, Wageningen; all English programmes are in Velp. Official overview: 6 bachelors and 1 master (River Delta Development, joint degree listed under HZ).",
+   "programs": [
+    {
+     "name": "BSc Animals, Society and Business (Animal Husbandry track)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Animal sciences / agribusiness",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 9950,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma equivalent to Dutch HAVO/VWO (foreign diploma evaluated, check Nuffic); selection/intake per programme; non-EU deadline 1 Jun (visa deadline 15 Jun; Afghanistan/Bangladesh/Ghana/Pakistan/Cameroon/Nigeria earlier). Non-EU institutional fee EUR 9,950 (2026-2027) per VHL fees page; IELTS Academic 6.0 with no sub-score below 5.0 (online tests not accepted). Turkish-specific rule not published: verify with VHL. Apply via Studielink as 'Animal Husbandry' (Velp); VHL lists this track as its own programme.",
+     "source_url": "https://www.vhluas.com/programmes/bachelor/animals-society-and-business/"
+    },
+    {
+     "name": "BSc Equine, Sports and Business (Animal Husbandry track)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Equine / business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 9950,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma equivalent to Dutch HAVO/VWO (foreign diploma evaluated, check Nuffic); selection/intake per programme; non-EU deadline 1 Jun (visa deadline 15 Jun; Afghanistan/Bangladesh/Ghana/Pakistan/Cameroon/Nigeria earlier). Non-EU institutional fee EUR 9,950 (2026-2027) per VHL fees page; IELTS Academic 6.0 with no sub-score below 5.0 (online tests not accepted). Turkish-specific rule not published: verify with VHL. Apply via Studielink as 'Animal Husbandry' (Velp); track listed separately by VHL.",
+     "source_url": "https://www.vhluas.com/programmes/bachelor/equine-sports-and-business/"
+    },
+    {
+     "name": "BSc Food Technology",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Food technology",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 9950,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma equivalent to Dutch HAVO/VWO (foreign diploma evaluated, check Nuffic); selection/intake per programme; non-EU deadline 1 Jun (visa deadline 15 Jun; Afghanistan/Bangladesh/Ghana/Pakistan/Cameroon/Nigeria earlier). Non-EU institutional fee EUR 9,950 (2026-2027) per VHL fees page; IELTS Academic 6.0 with no sub-score below 5.0 (online tests not accepted). Turkish-specific rule not published: verify with VHL.",
+     "source_url": "https://www.vhluas.com/programmes/bachelor/food-technology/"
+    },
+    {
+     "name": "BBA International Agribusiness and Trade",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Agribusiness / trade",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 8830,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma equivalent to Dutch HAVO/VWO (foreign diploma evaluated, check Nuffic); selection/intake per programme; non-EU deadline 1 Jun (visa deadline 15 Jun; Afghanistan/Bangladesh/Ghana/Pakistan/Cameroon/Nigeria earlier). Non-EU institutional fee EUR 9,950 (2026-2027) per VHL fees page; IELTS Academic 6.0 with no sub-score below 5.0 (online tests not accepted). Turkish-specific rule not published: verify with VHL. Reduced institutional fee EUR 8,830 for this programme.",
+     "source_url": "https://www.vhluas.com/programmes/bachelor/international-agribusiness-and-trade/"
+    },
+    {
+     "name": "BSc International Development Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Development / sustainability",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 9950,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma equivalent to Dutch HAVO/VWO (foreign diploma evaluated, check Nuffic); selection/intake per programme; non-EU deadline 1 Jun (visa deadline 15 Jun; Afghanistan/Bangladesh/Ghana/Pakistan/Cameroon/Nigeria earlier). Non-EU institutional fee EUR 9,950 (2026-2027) per VHL fees page; IELTS Academic 6.0 with no sub-score below 5.0 (online tests not accepted). Turkish-specific rule not published: verify with VHL.",
+     "source_url": "https://www.vhluas.com/programmes/bachelor/international-development-management/"
+    },
+    {
+     "name": "BSc International Nature Conservation",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Nature conservation",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 9950,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Diploma equivalent to Dutch HAVO/VWO (foreign diploma evaluated, check Nuffic); selection/intake per programme; non-EU deadline 1 Jun (visa deadline 15 Jun; Afghanistan/Bangladesh/Ghana/Pakistan/Cameroon/Nigeria earlier). Non-EU institutional fee EUR 9,950 (2026-2027) per VHL fees page; IELTS Academic 6.0 with no sub-score below 5.0 (online tests not accepted). Turkish-specific rule not published: verify with VHL. Degree title assumed BSc (not shown on the page).",
+     "source_url": "https://www.vhluas.com/programmes/bachelor/international-nature-conservation/"
+    }
+   ]
+  },
+  {
+   "name": "HAS green academy",
+   "city": "'s-Hertogenbosch",
+   "country": "Netherlands",
+   "website": "https://www.has.nl/en/",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 2,
+    "master": 0
+   },
+   "entity_note": "Campuses 's-Hertogenbosch and Venlo; English-taught degrees only in 's-Hertogenbosch (2 bachelors; exchange modules ignored). No English masters.",
+   "programs": [
+    {
+     "name": "BBA International Food & Agribusiness",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Agri-food business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027",
+     "fee_non_eu": 11000,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Secondary diploma equivalent to Dutch HAVO (final-year mathematics required; diploma and transcripts evaluated, Nuffic country module used); English test deadline 1 Jul; non-EU application deadline 1 May; pay institutional fee in one amount before 1 May. Fee EUR 11,000 for 2027-2028 (stated on HAS financial-matters page). Turkish-specific rule not published on pages seen: verify Lise Diploması with HAS.",
+     "source_url": "https://www.has.nl/en/bachelors-and-more/bba-international-food-agribusiness/"
+    },
+    {
+     "name": "BSc Horticulture & Business Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Horticulture",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027",
+     "fee_non_eu": 11000,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Secondary diploma equivalent to Dutch HAVO (final-year mathematics required; diploma and transcripts evaluated, Nuffic country module used); English test deadline 1 Jul; non-EU application deadline 1 May; pay institutional fee in one amount before 1 May. Fee EUR 11,000 for 2027-2028 (stated on HAS financial-matters page). Turkish-specific rule not published on pages seen: verify Lise Diploması with HAS. Final-year English, mathematics and chemistry required (deficiency tests possible); motivation form.",
+     "source_url": "https://www.has.nl/en/bachelors-and-more/bsc-horticulture-business-management/"
+    }
+   ]
+  },
+  {
+   "name": "HZ University of Applied Sciences",
+   "city": "Vlissingen",
+   "country": "Netherlands",
+   "website": "https://hz.nl/en",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 10,
+    "master": 1
+   },
+   "entity_note": "Campuses Vlissingen and Middelburg. HZ page lists 10 English bachelors; 1 English master (River Delta Development, joint with Van Hall Larenstein and Rotterdam UAS).",
+   "programs": [
+    {
+     "name": "BSc Chemistry",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Chemistry",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Foreign diploma equivalent to Dutch HAVO/VWO/MBO4 (check HZ admissible-diplomas list; otherwise evaluated); programme-specific subjects listed (see note). Non-EU institutional fee EUR 10,176 for 2027-2028; Housing guaranteed if applied before 1 May. Turkish-specific rule not published on HZ pages seen: verify Lise Diploması with HZ admissions. Requires chemistry and mathematics as exam subjects (biology an advantage).",
+     "source_url": "https://hz.nl/en/study-programmes/chemistry",
+     "city": "Middelburg"
+    },
+    {
+     "name": "BSc Civil Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Civil engineering",
+     "intake_months": [
+      "February",
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027 (September); 30 Nov 2026 (February)",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Foreign diploma equivalent to Dutch HAVO/VWO/MBO4 (check HZ admissible-diplomas list; otherwise evaluated); programme-specific subjects listed (see note). Non-EU institutional fee EUR 10,176 for 2027-2028; Housing guaranteed if applied before 1 May. Turkish-specific rule not published on HZ pages seen: verify Lise Diploması with HZ admissions. Requires physics and mathematics as exam subjects.",
+     "source_url": "https://hz.nl/en/study-programmes/civil-engineering",
+     "city": "Middelburg"
+    },
+    {
+     "name": "BSc Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Engineering",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Foreign diploma equivalent to Dutch HAVO/VWO/MBO4 (check HZ admissible-diplomas list; otherwise evaluated); programme-specific subjects listed (see note). Non-EU institutional fee EUR 10,176 for 2027-2028; Housing guaranteed if applied before 1 May. Turkish-specific rule not published on HZ pages seen: verify Lise Diploması with HZ admissions. Requires mathematics as exam subject.",
+     "source_url": "https://hz.nl/en/study-programmes/engineering",
+     "city": "Middelburg"
+    },
+    {
+     "name": "BBA Global Project and Change Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Project management",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Foreign diploma equivalent to Dutch HAVO/VWO/MBO4 (check HZ admissible-diplomas list; otherwise evaluated); programme-specific subjects listed (see note). Non-EU institutional fee EUR 10,176 for 2027-2028; Housing guaranteed if applied before 1 May. Turkish-specific rule not published on HZ pages seen: verify Lise Diploması with HZ admissions. No extra subject requirements.",
+     "source_url": "https://hz.nl/en/study-programmes/global-project-change-management",
+     "city": "Middelburg"
+    },
+    {
+     "name": "BSc Industrial Engineering and Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Industrial engineering",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Foreign diploma equivalent to Dutch HAVO/VWO/MBO4 (check HZ admissible-diplomas list; otherwise evaluated); programme-specific subjects listed (see note). Non-EU institutional fee EUR 10,176 for 2027-2028; Housing guaranteed if applied before 1 May. Turkish-specific rule not published on HZ pages seen: verify Lise Diploması with HZ admissions. Requires mathematics (economics or physics an advantage).",
+     "source_url": "https://hz.nl/en/study-programmes/industrial-engineering-and-management",
+     "city": "Middelburg"
+    },
+    {
+     "name": "BSc Information and Communication Technology",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "ICT",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Foreign diploma equivalent to Dutch HAVO/VWO/MBO4 (check HZ admissible-diplomas list; otherwise evaluated); programme-specific subjects listed (see note). Non-EU institutional fee EUR 10,176 for 2027-2028; Housing guaranteed if applied before 1 May. Turkish-specific rule not published on HZ pages seen: verify Lise Diploması with HZ admissions. No extra subject requirements.",
+     "source_url": "https://hz.nl/en/study-programmes/it",
+     "city": "Middelburg"
+    },
+    {
+     "name": "BBA International Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Foreign diploma equivalent to Dutch HAVO/VWO/MBO4 (check HZ admissible-diplomas list; otherwise evaluated); programme-specific subjects listed (see note). Non-EU institutional fee EUR 10,176 for 2027-2028; Housing guaranteed if applied before 1 May. Turkish-specific rule not published on HZ pages seen: verify Lise Diploması with HZ admissions. No extra subject requirements.",
+     "source_url": "https://hz.nl/en/study-programmes/international-business",
+     "city": "Vlissingen"
+    },
+    {
+     "name": "BSc Logistics Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Logistics / engineering",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Foreign diploma equivalent to Dutch HAVO/VWO/MBO4 (check HZ admissible-diplomas list; otherwise evaluated); programme-specific subjects listed (see note). Non-EU institutional fee EUR 10,176 for 2027-2028; Housing guaranteed if applied before 1 May. Turkish-specific rule not published on HZ pages seen: verify Lise Diploması with HZ admissions. Requires mathematics (economics or physics an advantage).",
+     "source_url": "https://hz.nl/en/study-programmes/logistics-engineering",
+     "city": "Middelburg"
+    },
+    {
+     "name": "BA Tourism Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Tourism",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Foreign diploma equivalent to Dutch HAVO/VWO/MBO4 (check HZ admissible-diplomas list; otherwise evaluated); programme-specific subjects listed (see note). Non-EU institutional fee EUR 10,176 for 2027-2028; Housing guaranteed if applied before 1 May. Turkish-specific rule not published on HZ pages seen: verify Lise Diploması with HZ admissions. No extra subject requirements.",
+     "source_url": "https://hz.nl/en/study-programmes/tourism-management",
+     "city": "Vlissingen"
+    },
+    {
+     "name": "BSc Water Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Water management",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Foreign diploma equivalent to Dutch HAVO/VWO/MBO4 (check HZ admissible-diplomas list; otherwise evaluated); programme-specific subjects listed (see note). Non-EU institutional fee EUR 10,176 for 2027-2028; Housing guaranteed if applied before 1 May. Turkish-specific rule not published on HZ pages seen: verify Lise Diploması with HZ admissions. Good knowledge of biology, chemistry, mathematics or economics.",
+     "source_url": "https://hz.nl/en/study-programmes/watermanagement",
+     "city": "Middelburg"
+    },
+    {
+     "name": "MSc River Delta Development",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Water / delta management",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10176,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Joint degree of HZ, Van Hall Larenstein (Velp) and Rotterdam UAS; semester 1 Middelburg, 2 Velp, 3 Rotterdam. Relevant bachelor's degree; entry requirements on programme page. Institutional fee EUR 10,176 (2027-2028) for non-EEA students. Turkish-specific rules not published: verify with HZ.",
+     "source_url": "https://hz.nl/en/study-programmes/river-delta-development",
+     "city": "Middelburg"
+    }
+   ]
+  },
+  {
+   "name": "Aeres University of Applied Sciences",
+   "city": "Dronten",
+   "country": "Netherlands",
+   "website": "https://www.aeresuas.com",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": null,
+    "master": null
+   },
+   "entity_note": "Faculties Almere, Dronten, Wageningen. programme lists on aeresuas.com are JavaScript-rendered, so counts not read; programme pages found via sitemap: 1 bachelor, 2 masters. Older aggregator listings (Aquatic Ecosystem Analysis, International Horticulture & Management, Livestock Production) not confirmed on official site.",
+   "programs": [
+    {
+     "name": "BBA International Food Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Food business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Apr 2027",
+     "fee_non_eu": 9237,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 79
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Dutch HAVO/VWO-equivalent diploma (foreign diploma assessed); non-EU applicants pay a EUR 100 handling fee before intake interview; non-EU deadline 1 April; EUR 23,000 must be paid before visa application per Aeres fees page (proof of funds). Non-EU tuition EUR 9,237 (2027-2028). Turkish-specific rule not published: verify with Aeres. Year 3 abroad (Italy, Canada or USA). TOEFL iBT 79 / paper 550.",
+     "source_url": "https://www.aeresuas.com/programmes/bachelor-programmes/international-food-business",
+     "city": "Dronten"
+    },
+    {
+     "name": "MSc Food Systems Innovation",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Food systems",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Apr 2027",
+     "fee_non_eu": 9237,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Bachelor's degree plus English (IELTS 6.5/TOEFL iBT 90/TOEFL paper 575/Cambridge CAE C); non-EU deadline 1 April; tuition EUR 9,237 (2027-2028 master non-EU). City Almere inferred from page links (verify). Turkish-specific rule not published.",
+     "source_url": "https://www.aeresuas.com/programmes/master-programmes/food-systems-innovation",
+     "city": "Almere"
+    },
+    {
+     "name": "MSc Agribusiness Development",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Agribusiness",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Apr 2027",
+     "fee_non_eu": 9237,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Bachelor's degree plus English (IELTS 6.5/TOEFL iBT 90/paper 575/Cambridge CAE C); 1-year full-time variant listed (2-year part-time variant exists, not listed); pre-master/minor route possible; non-EU deadline 1 April; tuition EUR 9,237. Turkish-specific rule not published.",
+     "source_url": "https://www.aeresuas.com/programmes/master-programmes/agribusiness-development",
+     "city": "Dronten"
+    }
+   ]
+  },
+  {
+   "name": "Tio University of Applied Sciences",
+   "city": "Utrecht",
+   "country": "Netherlands",
+   "website": "https://www.tio.nl/en/",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": null,
+    "master": null
+   },
+   "entity_note": "Private business school with campuses in Amsterdam, Utrecht, Rotterdam, Eindhoven, Groningen, Hengelo. English site also shows Dutch-taught specialisations; only the four 'International'-type bachelors and MBA verified as English. Not on the assigned list explicitly; included as 'other'.",
+   "programs": [
+    {
+     "name": "BBA International Business Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Business",
+     "intake_months": [
+      "January",
+      "September"
+     ],
+     "application_deadline": "15 Oct 2026 (Jan 2027); 15 Jun 2027 (Sep 2027)",
+     "fee_non_eu": 24950,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Private institution; tuition identical for all (EUR 24,950 for 2027-2028 per Tio fee page; non-EU students also pay a EUR 1,050 pre-arrival fee plus EUR 5,000 deposit credited to tuition for 2026-2027). Diploma equivalent to Dutch pre-university (VWO) level; IELTS Academic >= 6.0 (some national diplomas exempt); Foundation Programme available with IELTS 5.0. Non-EU deadlines: 15 Oct 2026 (January 2027 start), 15 Jun 2027 (September 2027 start). 3- or 4-year route. Offered at Amsterdam, Utrecht, Rotterdam, Eindhoven, Groningen, Hengelo. Turkish-specific rule not published: verify with Tio.",
+     "source_url": "https://www.tio.nl/en/international_business_management/"
+    },
+    {
+     "name": "BA International Tourism Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Tourism",
+     "intake_months": [
+      "January",
+      "September"
+     ],
+     "application_deadline": "15 Oct 2026 (Jan 2027); 15 Jun 2027 (Sep 2027)",
+     "fee_non_eu": 24950,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Private institution; tuition identical for all (EUR 24,950 for 2027-2028 per Tio fee page; non-EU students also pay a EUR 1,050 pre-arrival fee plus EUR 5,000 deposit credited to tuition for 2026-2027). Diploma equivalent to Dutch pre-university (VWO) level; IELTS Academic >= 6.0 (some national diplomas exempt); Foundation Programme available with IELTS 5.0. Non-EU deadlines: 15 Oct 2026 (January 2027 start), 15 Jun 2027 (September 2027 start). 3- or 4-year route. Offered at Amsterdam, Utrecht, Rotterdam, Eindhoven, Groningen, Hengelo. Turkish-specific rule not published: verify with Tio.",
+     "source_url": "https://www.tio.nl/en/international_tourism_management/"
+    },
+    {
+     "name": "BA Hotel and Event Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Hospitality / events",
+     "intake_months": [
+      "January",
+      "September"
+     ],
+     "application_deadline": "15 Oct 2026 (Jan 2027); 15 Jun 2027 (Sep 2027)",
+     "fee_non_eu": 24950,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Private institution; tuition identical for all (EUR 24,950 for 2027-2028 per Tio fee page; non-EU students also pay a EUR 1,050 pre-arrival fee plus EUR 5,000 deposit credited to tuition for 2026-2027). Diploma equivalent to Dutch pre-university (VWO) level; IELTS Academic >= 6.0 (some national diplomas exempt); Foundation Programme available with IELTS 5.0. Non-EU deadlines: 15 Oct 2026 (January 2027 start), 15 Jun 2027 (September 2027 start). 3- or 4-year route. Offered at Amsterdam, Utrecht, Rotterdam, Eindhoven, Groningen, Hengelo. Turkish-specific rule not published: verify with Tio.",
+     "source_url": "https://www.tio.nl/en/hotel_and_event_management/"
+    },
+    {
+     "name": "BSc Commerce Economics & Entrepreneurship",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Commerce / entrepreneurship",
+     "intake_months": [
+      "January",
+      "September"
+     ],
+     "application_deadline": "15 Oct 2026 (Jan 2027); 15 Jun 2027 (Sep 2027)",
+     "fee_non_eu": 24950,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Private institution; tuition identical for all (EUR 24,950 for 2027-2028 per Tio fee page; non-EU students also pay a EUR 1,050 pre-arrival fee plus EUR 5,000 deposit credited to tuition for 2026-2027). Diploma equivalent to Dutch pre-university (VWO) level; IELTS Academic >= 6.0 (some national diplomas exempt); Foundation Programme available with IELTS 5.0. Non-EU deadlines: 15 Oct 2026 (January 2027 start), 15 Jun 2027 (September 2027 start). 3- or 4-year route. Offered at Amsterdam, Utrecht, Rotterdam, Eindhoven, Groningen, Hengelo. Turkish-specific rule not published: verify with Tio.",
+     "source_url": "https://www.tio.nl/en/commerce-entrepreneurship-and-organisations/"
+    },
+    {
+     "name": "MBA Master of Business Administration",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business administration",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "15 Jun 2027 (per Study in NL)",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Full-time 1-year MBA at Tio campuses; Tio also lists specialisations (International Management, Commercial Management, Data & BI, Hospitality, Real Estate, Business Entrepreneurship) whose language of instruction was not verified. Non-EU master fee not found. Turkish-specific rule not published.",
+     "source_url": "https://www.tio.nl/en/master-business-administration/"
+    }
+   ]
+  },
+  {
+   "name": "HKU University of the Arts Utrecht",
+   "city": "Utrecht",
+   "country": "Netherlands",
+   "website": "https://www.hku.nl/en",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 6,
+    "master": 4
+   },
+   "entity_note": "HKU lists 41 programmes; 6 bachelors and 4 masters are English-taught (or English|Dutch) per language field on each programme page.",
+   "programs": [
+    {
+     "name": "BA Fine Art",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Fine art",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Apr 2027",
+     "fee_non_eu": 12258,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fee EUR 12,258 for 2026-2027 (HKU visa page; reduced by EUR 3,500 HKU Talent grant if no prior Dutch degree; HKU warns institutional fees may rise). Admission by portfolio/audition entrance exam; programme offered in English and Dutch. Foreign diploma assessed (HAVO/VWO equivalent); Turkish-specific rule not published: verify with HKU.",
+     "source_url": "https://www.hku.nl/en/study-at-hku/fine-art/fine-art",
+     "city": "Utrecht"
+    },
+    {
+     "name": "BMus Classical Music",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Music",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "15 Jan 2027 (guaranteed place); exams 30 Mar-9 Apr 2027",
+     "fee_non_eu": 12258,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fee EUR 12,258 for 2026-2027 (HKU visa page; reduced by EUR 3,500 HKU Talent grant if no prior Dutch degree; HKU warns institutional fees may rise). Admission by portfolio/audition entrance exam; programme offered in English and Dutch. Foreign diploma assessed (HAVO/VWO equivalent); Turkish-specific rule not published: verify with HKU. Conservatorium entrance exam (theory + live practical, 30 Mar - 9 Apr 2027); HKU states applications before 15 Jan 2027 are guaranteed a place in the admission procedure (non-EU-specific deadline not confirmed).",
+     "source_url": "https://www.hku.nl/en/study-at-hku/utrechts-conservatorium/classical-music",
+     "city": "Utrecht"
+    },
+    {
+     "name": "BMus Historical Performance Practice",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Music",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "15 Jan 2027 (guaranteed place); exams 30 Mar-9 Apr 2027",
+     "fee_non_eu": 12258,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fee EUR 12,258 for 2026-2027 (HKU visa page; reduced by EUR 3,500 HKU Talent grant if no prior Dutch degree; HKU warns institutional fees may rise). Admission by portfolio/audition entrance exam; programme offered in English and Dutch. Foreign diploma assessed (HAVO/VWO equivalent); Turkish-specific rule not published: verify with HKU. Conservatorium entrance exam (theory + live practical, 30 Mar - 9 Apr 2027); HKU states applications before 15 Jan 2027 are guaranteed a place in the admission procedure (non-EU-specific deadline not confirmed).",
+     "source_url": "https://www.hku.nl/en/study-at-hku/utrechts-conservatorium/historical-performance-practice",
+     "city": "Utrecht"
+    },
+    {
+     "name": "BMus Jazz & Pop",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Music",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "15 Jan 2027 (guaranteed place); exams 30 Mar-9 Apr 2027",
+     "fee_non_eu": 12258,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fee EUR 12,258 for 2026-2027 (HKU visa page; reduced by EUR 3,500 HKU Talent grant if no prior Dutch degree; HKU warns institutional fees may rise). Admission by portfolio/audition entrance exam; programme offered in English and Dutch. Foreign diploma assessed (HAVO/VWO equivalent); Turkish-specific rule not published: verify with HKU. Conservatorium entrance exam (theory + live practical, 30 Mar - 9 Apr 2027); HKU states applications before 15 Jan 2027 are guaranteed a place in the admission procedure (non-EU-specific deadline not confirmed).",
+     "source_url": "https://www.hku.nl/en/study-at-hku/utrechts-conservatorium/jazz-pop",
+     "city": "Utrecht"
+    },
+    {
+     "name": "BMus Musician 3.0",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Music",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "15 Jan 2027 (guaranteed place); exams 30 Mar-9 Apr 2027",
+     "fee_non_eu": 12258,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fee EUR 12,258 for 2026-2027 (HKU visa page; reduced by EUR 3,500 HKU Talent grant if no prior Dutch degree; HKU warns institutional fees may rise). Admission by portfolio/audition entrance exam; programme offered in English and Dutch. Foreign diploma assessed (HAVO/VWO equivalent); Turkish-specific rule not published: verify with HKU. Conservatorium entrance exam (theory + live practical, 30 Mar - 9 Apr 2027); HKU states applications before 15 Jan 2027 are guaranteed a place in the admission procedure (non-EU-specific deadline not confirmed).",
+     "source_url": "https://www.hku.nl/en/study-at-hku/utrechts-conservatorium/musician-3-0",
+     "city": "Utrecht"
+    },
+    {
+     "name": "BMus The Netherlands Carillon School",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Music (carillon)",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "15 Jan 2027 (guaranteed place); carillon exam June 2027",
+     "fee_non_eu": 12258,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fee EUR 12,258 for 2026-2027 (HKU visa page; reduced by EUR 3,500 HKU Talent grant if no prior Dutch degree; HKU warns institutional fees may rise). Admission by portfolio/audition entrance exam; programme offered in English and Dutch. Foreign diploma assessed (HAVO/VWO equivalent); Turkish-specific rule not published: verify with HKU. Conservatorium entrance exam (theory + live practical, 30 Mar - 9 Apr 2027); HKU states applications before 15 Jan 2027 are guaranteed a place in the admission procedure (non-EU-specific deadline not confirmed).",
+     "source_url": "https://www.hku.nl/en/study-at-hku/utrechts-conservatorium/the-netherlands-carillon-school",
+     "city": "Utrecht"
+    },
+    {
+     "name": "MA Fine Art",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Fine art",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027",
+     "fee_non_eu": 12258,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Fee EUR 12,258 for 2026-2027 (HKU visa page). Bachelor's degree or equivalent practice plus portfolio/audition. Turkish-specific rule not published: verify with HKU.",
+     "source_url": "https://www.hku.nl/en/study-at-hku/fine-art/master-of-fine-art",
+     "city": "Utrecht"
+    },
+    {
+     "name": "MA Scenography",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Scenography / theatre design",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 12258,
+     "fee_year": "2026-2027",
+     "english": null,
+     "education_level": "bachelor",
+     "requirements_note": "Fee EUR 12,258 for 2026-2027 (HKU visa page). Bachelor's degree or equivalent practice plus portfolio/audition. Turkish-specific rule not published: verify with HKU.",
+     "source_url": "https://www.hku.nl/en/study-at-hku/theatre/ma-programme-scenography",
+     "city": "Utrecht"
+    },
+    {
+     "name": "MMus Master of Music",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Music",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 12258,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 93
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Fee EUR 12,258 for 2026-2027 (HKU visa page). Bachelor's degree or equivalent practice plus portfolio/audition. Turkish-specific rule not published: verify with HKU. Conservatorium entrance exam; Study in NL: IELTS 6.5/TOEFL 93.",
+     "source_url": "https://www.hku.nl/en/study-at-hku/utrechts-conservatorium/master-of-music",
+     "city": "Utrecht"
+    },
+    {
+     "name": "MMus Master of Music pathway Music Design",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Music technology / design",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": null,
+     "fee_non_eu": 12258,
+     "fee_year": "2026-2027",
+     "english": null,
+     "education_level": "bachelor",
+     "requirements_note": "Fee EUR 12,258 for 2026-2027 (HKU visa page). Bachelor's degree or equivalent practice plus portfolio/audition. Turkish-specific rule not published: verify with HKU.",
+     "source_url": "https://www.hku.nl/en/study-at-hku/music-and-technology/master-of-music-pathway-music-design",
+     "city": "Utrecht"
+    }
+   ]
+  },
+  {
+   "name": "Amsterdam University of the Arts (AHK)",
+   "city": "Amsterdam",
+   "country": "Netherlands",
+   "website": "https://www.ahk.nl/en/",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": null,
+    "master": null
+   },
+   "entity_note": "INCOMPLETE: federation of 6 academies (Conservatorium van Amsterdam, Film Academy, Theatre & Dance, Breitner, Bouwkunst, Reinwardt) with many English programmes; only the one Study in NL record (Reinwardt master) captured. Needs a dedicated pass.",
+   "programs": [
+    {
+     "name": "MA Applied Museum and Heritage Studies",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Museum / heritage studies",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Mar 2027",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "english": null,
+     "education_level": "bachelor",
+     "requirements_note": "Reinwardt Academie; fee and language scores not retrieved. Study in NL lists non-EU deadline 1 Mar 2027.",
+     "source_url": "https://www.reinwardt.ahk.nl/en/master-applied-museum-and-heritage-studies/admission/",
+     "city": "Amsterdam"
+    }
+   ]
+  },
+  {
+   "name": "THIM University of Applied Sciences in Physiotherapy",
+   "city": "Nieuwegein",
+   "country": "Netherlands",
+   "website": "https://en.thim.nl",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 1,
+    "master": 0
+   },
+   "entity_note": "Private UAS; English-taught 'International Class' bachelor.",
+   "programs": [
+    {
+     "name": "BSc Physiotherapy (International Class)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Physiotherapy",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 Jun 2027",
+     "fee_non_eu": 10700,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Private institution; EUR 10,700/yr for students starting 2027 (EUR 250 registration fee). HAVO/MBO4-equivalent diploma (21+ test route); IELTS/TOEFL not older than 2 years; foreign diploma evaluated. Turkish-specific rule not published: verify with THIM.",
+     "source_url": "https://en.thim.nl/bachelor-of-science-in-physiotherapy-international-class/",
+     "city": "Nieuwegein"
+    }
+   ]
+  }
+ ]
+}

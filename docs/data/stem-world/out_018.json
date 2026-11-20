@@ -1,0 +1,1075 @@
+{
+ "34731": {
+  "stem": false
+ },
+ "34614": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34703": {
+  "stem": true,
+  "typical_offer": "Group 3 entry: IB Diploma 32; A-level aggregate 13 (best 3, A*=6 to E=1); SAT 1220 / ACT 30",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1220 or ACT 30 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 13 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium",
+  "note": "Law/Scholar degrees use Group 3 scores"
+ },
+ "34615": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34616": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34617": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34618": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "low"
+ },
+ "34619": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34719": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Mathematics Advanced equivalent required; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "low"
+ },
+ "34707": {
+  "stem": true,
+  "typical_offer": "Group 3 entry: IB Diploma 32; A-level aggregate 13 (best 3, A*=6 to E=1); SAT 1220 / ACT 30",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1220 or ACT 30 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 13 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "low",
+  "note": "Law/Scholar degrees use Group 3 scores"
+ },
+ "34657": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34658": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34659": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34660": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34661": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "low"
+ },
+ "34662": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34663": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34664": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34665": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34666": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34667": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34656": {
+  "stem": true,
+  "typical_offer": "Group 3 entry: IB Diploma 32; A-level aggregate 13 (best 3, A*=6 to E=1); SAT 1220 / ACT 30",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1220 or ACT 30 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 13 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium",
+  "note": "Law/Scholar degrees use Group 3 scores"
+ },
+ "34620": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34645": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "low"
+ },
+ "34621": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34708": {
+  "stem": true,
+  "typical_offer": "Group 3 entry: IB Diploma 32; A-level aggregate 13 (best 3, A*=6 to E=1); SAT 1220 / ACT 30",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1220 or ACT 30 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 13 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium",
+  "note": "Law/Scholar degrees use Group 3 scores"
+ },
+ "34622": {
+  "stem": true,
+  "typical_offer": "Group 3 entry: IB Diploma 32; A-level aggregate 13 (best 3, A*=6 to E=1); SAT 1220 / ACT 30",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1220 or ACT 30 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 13 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium",
+  "note": "Law/Scholar degrees use Group 3 scores"
+ },
+ "34623": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34624": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior high school subjects recommended; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "medium"
+ },
+ "34732": {
+  "stem": false
+ },
+ "34733": {
+  "stem": false
+ },
+ "34734": {
+  "stem": false
+ },
+ "34625": {
+  "stem": true,
+  "typical_offer": "Group 1 entry: IB Diploma 25; A-level aggregate 8 (best 3, A*=6 to E=1); SAT 1090 / ACT 22",
+  "ib": {
+   "accepted": true,
+   "min_total": 25,
+   "subjects": null,
+   "note": "Total includes up to 3 points for EE/TOK; UOW-wide rule"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "US High School Diploma plus SAT 1090 or ACT 22 (GED not accepted)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "International or UK A-levels: aggregate of best 3 subjects at least 8 (A*=6, A=5, B=4, C=3, D=2, E=1)",
+  "turkish_route": "Lise Diplomasi accepted for Foundation Studies (55% average), 3-session Diploma (60%) or 2-session Diploma (65%); no direct bachelor entry score listed",
+  "prerequisite_maths": "Relevant senior maths and science subjects expected; integrated pathway assumed knowledge is HSC Mathematics Advanced equivalent; IELTS 6.0 each band",
+  "source_url": "https://www.uow.edu.au/study/international/representatives/international-entry-requirements/",
+  "confidence": "low"
+ },
+ "34641": {
+  "stem": false
+ },
+ "30086": {
+  "stem": true,
+  "typical_offer": "IB Diploma minimum 24; A-level score 6 from 3 Advanced Level subjects (A*=6)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Western Sydney-wide minimum; some programmes higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: High School Diploma plus either SAT 980 (post-2016) or at least 2 AP scores of 2 or above (subjects/Calculus AB or BC not specified)",
+   "note": ""
+  },
+  "tests": "US applicants: SAT 980 (post-2016) or 2 AP scores of 2+; otherwise none. IELTS 6.5 overall, 6.0 each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Aggregate score 6 from 3 Advanced Level core subjects (A*=6 to E=1); AS levels not accepted",
+  "turkish_route": "Undergraduate entry via recognised foundation program, 1 year of university or AQF Cert IV equivalent; Lise Diplomasi accepted for Foundation/Diploma pathways (GPA 6/10 for 3-semester, 6.5/10 for 2-semester Diploma)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.westernsydney.edu.au/content/dam/digital/pdf/international/INTL0910_Entry_Qualifications_v07.pdf",
+  "confidence": "medium"
+ },
+ "30091": {
+  "stem": true,
+  "typical_offer": "IB Diploma minimum 24; A-level score 6 from 3 Advanced Level subjects (A*=6)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Western Sydney-wide minimum; some programmes higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: High School Diploma plus either SAT 980 (post-2016) or at least 2 AP scores of 2 or above (subjects/Calculus AB or BC not specified)",
+   "note": ""
+  },
+  "tests": "US applicants: SAT 980 (post-2016) or 2 AP scores of 2+; otherwise none. IELTS 6.5 overall, 6.0 each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Aggregate score 6 from 3 Advanced Level core subjects (A*=6 to E=1); AS levels not accepted",
+  "turkish_route": "Undergraduate entry via recognised foundation program, 1 year of university or AQF Cert IV equivalent; Lise Diplomasi accepted for Foundation/Diploma pathways (GPA 6/10 for 3-semester, 6.5/10 for 2-semester Diploma)",
+  "prerequisite_maths": "Assumed knowledge: HSC Mathematics or equivalent",
+  "source_url": "https://www.westernsydney.edu.au/content/dam/digital/pdf/international/INTL0910_Entry_Qualifications_v07.pdf",
+  "confidence": "medium"
+ },
+ "30130": {
+  "stem": true,
+  "typical_offer": "IB Diploma minimum 24; A-level score 6 from 3 Advanced Level subjects (A*=6)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Western Sydney-wide minimum; some programmes higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: High School Diploma plus either SAT 980 (post-2016) or at least 2 AP scores of 2 or above (subjects/Calculus AB or BC not specified)",
+   "note": ""
+  },
+  "tests": "US applicants: SAT 980 (post-2016) or 2 AP scores of 2+; otherwise none. IELTS 6.5 overall, 6.0 each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Aggregate score 6 from 3 Advanced Level core subjects (A*=6 to E=1); AS levels not accepted",
+  "turkish_route": "Undergraduate entry via recognised foundation program, 1 year of university or AQF Cert IV equivalent; Lise Diplomasi accepted for Foundation/Diploma pathways (GPA 6/10 for 3-semester, 6.5/10 for 2-semester Diploma)",
+  "prerequisite_maths": "Assumed knowledge: HSC Mathematics or equivalent",
+  "source_url": "https://www.westernsydney.edu.au/content/dam/digital/pdf/international/INTL0910_Entry_Qualifications_v07.pdf",
+  "confidence": "medium"
+ },
+ "30085": {
+  "stem": true,
+  "typical_offer": "IB Diploma minimum 24; A-level score 6 from 3 Advanced Level subjects (A*=6)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Western Sydney-wide minimum; some programmes higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: High School Diploma plus either SAT 980 (post-2016) or at least 2 AP scores of 2 or above (subjects/Calculus AB or BC not specified)",
+   "note": ""
+  },
+  "tests": "US applicants: SAT 980 (post-2016) or 2 AP scores of 2+; otherwise none. IELTS 6.5 overall, 6.0 each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Aggregate score 6 from 3 Advanced Level core subjects (A*=6 to E=1); AS levels not accepted",
+  "turkish_route": "Undergraduate entry via recognised foundation program, 1 year of university or AQF Cert IV equivalent; Lise Diplomasi accepted for Foundation/Diploma pathways (GPA 6/10 for 3-semester, 6.5/10 for 2-semester Diploma)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.westernsydney.edu.au/content/dam/digital/pdf/international/INTL0910_Entry_Qualifications_v07.pdf",
+  "confidence": "medium"
+ },
+ "30092": {
+  "stem": true,
+  "typical_offer": "IB Diploma minimum 24; A-level score 6 from 3 Advanced Level subjects (A*=6)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Western Sydney-wide minimum; some programmes higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: High School Diploma plus either SAT 980 (post-2016) or at least 2 AP scores of 2 or above (subjects/Calculus AB or BC not specified)",
+   "note": ""
+  },
+  "tests": "US applicants: SAT 980 (post-2016) or 2 AP scores of 2+; otherwise none. IELTS 6.5 overall, 6.0 each band",
+  "math_test": {
+   "name": "Maths readiness test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Allows direct entry to MATH 1016"
+  },
+  "a_level": "Aggregate score 6 from 3 Advanced Level core subjects (A*=6 to E=1); AS levels not accepted",
+  "turkish_route": "Undergraduate entry via recognised foundation program, 1 year of university or AQF Cert IV equivalent; Lise Diplomasi accepted for Foundation/Diploma pathways (GPA 6/10 for 3-semester, 6.5/10 for 2-semester Diploma)",
+  "prerequisite_maths": "Assumed knowledge: HSC Mathematics (not General) Band 4+ and two science subjects; all students start with MATH 1021 Mathematics for Engineers Preliminary unless a readiness test allows entry to MATH 1016; foundation pathway GPA 5.8",
+  "source_url": "https://www.westernsydney.edu.au/content/dam/digital/pdf/international/INTL0910_Entry_Qualifications_v07.pdf",
+  "confidence": "medium"
+ },
+ "30088": {
+  "stem": true,
+  "typical_offer": "IB Diploma minimum 24; A-level score 6 from 3 Advanced Level subjects (A*=6)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Western Sydney-wide minimum; some programmes higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: High School Diploma plus either SAT 980 (post-2016) or at least 2 AP scores of 2 or above (subjects/Calculus AB or BC not specified)",
+   "note": ""
+  },
+  "tests": "US applicants: SAT 980 (post-2016) or 2 AP scores of 2+; otherwise none. IELTS 6.5 overall, 6.0 each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Aggregate score 6 from 3 Advanced Level core subjects (A*=6 to E=1); AS levels not accepted",
+  "turkish_route": "Undergraduate entry via recognised foundation program, 1 year of university or AQF Cert IV equivalent; Lise Diplomasi accepted for Foundation/Diploma pathways (GPA 6/10 for 3-semester, 6.5/10 for 2-semester Diploma)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.westernsydney.edu.au/content/dam/digital/pdf/international/INTL0910_Entry_Qualifications_v07.pdf",
+  "confidence": "medium"
+ },
+ "30087": {
+  "stem": true,
+  "typical_offer": "IB Diploma minimum 24; A-level score 6 from 3 Advanced Level subjects (A*=6)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Western Sydney-wide minimum; some programmes higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: High School Diploma plus either SAT 980 (post-2016) or at least 2 AP scores of 2 or above (subjects/Calculus AB or BC not specified)",
+   "note": ""
+  },
+  "tests": "US applicants: SAT 980 (post-2016) or 2 AP scores of 2+; otherwise none. IELTS 6.5 overall, 6.0 each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Aggregate score 6 from 3 Advanced Level core subjects (A*=6 to E=1); AS levels not accepted",
+  "turkish_route": "Undergraduate entry via recognised foundation program, 1 year of university or AQF Cert IV equivalent; Lise Diplomasi accepted for Foundation/Diploma pathways (GPA 6/10 for 3-semester, 6.5/10 for 2-semester Diploma)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.westernsydney.edu.au/content/dam/digital/pdf/international/INTL0910_Entry_Qualifications_v07.pdf",
+  "confidence": "medium"
+ },
+ "30129": {
+  "stem": true,
+  "typical_offer": "IB Diploma minimum 24; A-level score 6 from 3 Advanced Level subjects (A*=6)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Western Sydney-wide minimum; some programmes higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: High School Diploma plus either SAT 980 (post-2016) or at least 2 AP scores of 2 or above (subjects/Calculus AB or BC not specified)",
+   "note": ""
+  },
+  "tests": "US applicants: SAT 980 (post-2016) or 2 AP scores of 2+; otherwise none. IELTS 6.5 overall, 6.0 each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Aggregate score 6 from 3 Advanced Level core subjects (A*=6 to E=1); AS levels not accepted",
+  "turkish_route": "Undergraduate entry via recognised foundation program, 1 year of university or AQF Cert IV equivalent; Lise Diplomasi accepted for Foundation/Diploma pathways (GPA 6/10 for 3-semester, 6.5/10 for 2-semester Diploma)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.westernsydney.edu.au/content/dam/digital/pdf/international/INTL0910_Entry_Qualifications_v07.pdf",
+  "confidence": "medium"
+ },
+ "30090": {
+  "stem": true,
+  "typical_offer": "IB Diploma minimum 24; A-level score 6 from 3 Advanced Level subjects (A*=6)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Western Sydney-wide minimum; some programmes higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: High School Diploma plus either SAT 980 (post-2016) or at least 2 AP scores of 2 or above (subjects/Calculus AB or BC not specified)",
+   "note": ""
+  },
+  "tests": "US applicants: SAT 980 (post-2016) or 2 AP scores of 2+; otherwise none. IELTS 6.5 overall, 6.0 each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Aggregate score 6 from 3 Advanced Level core subjects (A*=6 to E=1); AS levels not accepted",
+  "turkish_route": "Undergraduate entry via recognised foundation program, 1 year of university or AQF Cert IV equivalent; Lise Diplomasi accepted for Foundation/Diploma pathways (GPA 6/10 for 3-semester, 6.5/10 for 2-semester Diploma)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.westernsydney.edu.au/content/dam/digital/pdf/international/INTL0910_Entry_Qualifications_v07.pdf",
+  "confidence": "medium"
+ },
+ "30089": {
+  "stem": true,
+  "typical_offer": "IB Diploma minimum 24; A-level score 6 from 3 Advanced Level subjects (A*=6)",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": null,
+   "note": "Western Sydney-wide minimum; some programmes higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: High School Diploma plus either SAT 980 (post-2016) or at least 2 AP scores of 2 or above (subjects/Calculus AB or BC not specified)",
+   "note": ""
+  },
+  "tests": "US applicants: SAT 980 (post-2016) or 2 AP scores of 2+; otherwise none. IELTS 6.5 overall, 6.0 each band",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Aggregate score 6 from 3 Advanced Level core subjects (A*=6 to E=1); AS levels not accepted",
+  "turkish_route": "Undergraduate entry via recognised foundation program, 1 year of university or AQF Cert IV equivalent; Lise Diplomasi accepted for Foundation/Diploma pathways (GPA 6/10 for 3-semester, 6.5/10 for 2-semester Diploma)",
+  "prerequisite_maths": null,
+  "source_url": "https://www.westernsydney.edu.au/content/dam/digital/pdf/international/INTL0910_Entry_Qualifications_v07.pdf",
+  "confidence": "medium"
+ }
+}

@@ -1,0 +1,625 @@
+{
+ "57349": {
+  "fee": 17600,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Ancient Studies' (code 56704); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57348": {
+  "fee": 17600,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Archaeology' (code 56703); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57344": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Communication and Information Studies' (code 56826); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57345": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B History' (code 56034); same rate for full/part-time. English track of B History (applied via Studielink Geschiedenis).",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57346": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Literature and Society' (code 55823); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57347": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Media, Art, Design and Architecture' (code 55822); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57343": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Philosophy' (code 56081); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57342": {
+  "fee": 20330,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Philosophy, Politics and Economics' (code 54999); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57326": {
+  "fee": 20330,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Artificial Intelligence' (code 56945); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57327": {
+  "fee": 20330,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Business Analytics' (code 56856); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57337": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Communication Science' (code 56615); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57328": {
+  "fee": 20330,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Computer Science' (code 50426); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57338": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Cultural Anthropology and Development Sociology' (code 50035); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57330": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Econometrics and Operations Research' (code 56833); same rate for full/part-time. Mapped to B Econometrics and Operations Research (EDS specialisation).",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57331": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Econometrics and Operations Research' (code 56833); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57332": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Economics and Business Economics' (code 50950); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57333": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B International Business Administration' (code 50952); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57340": {
+  "fee": 21160,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Liberal Arts and Sciences (joint degree)' (code 55002); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57334": {
+  "fee": 20330,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Mathematics' (code 59322); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57339": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Political Science' (code 56606); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57336": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Psychology' (code 56604); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57341": {
+  "fee": 14800,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Bachelor 2027-2028, non-EEA column, row 'B Law in Society' (code 59334); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-bachelor-s-programmes"
+ },
+ "57386": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M International Business Law' (code 60072); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57389": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Law' (code 60084); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57388": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Law and Politics of International Security' (code 60685); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57433": {
+  "fee": 25900,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Archaeology' (code 60805); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57351": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Heritage Studies' (code 60808); same rate for full/part-time. Mapped to the former Heritage Studies row (60808); programme renamed ACL, same 1-year MA.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57352": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Arts & Culture' (code 60087); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57359": {
+  "fee": 25900,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Classics & Ancient Civilizations' (code 60821); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57360": {
+  "fee": 20400,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Classics & Ancient Civilizations (research)' (code 60039); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57436": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Communication & Information Studies' (code 66826); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57367": {
+  "fee": 18060,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Curating Art and Cultures' (code 60836); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57380": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M History' (code 66034); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57383": {
+  "fee": 18060,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Humanities (research)' (code 60958); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57390": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Linguistics' (code 60815); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57391": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Literary Studies' (code 60813); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57440": {
+  "fee": 18060,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Philosophy' (code 60823); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57406": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Theology & Religious Studies (60 EC)' (code 60824); same rate for full/part-time. Mapped to the 60 EC variant (1-year programme).",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57407": {
+  "fee": 18060,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Theology & Religious Studies (research) (120 EC)' (code 60827); same rate for full/part-time. Mapped to the 120 EC research variant.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57350": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Accounting and Control' (code 60047); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57434": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Artificial Intelligence' (code 66981); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57353": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Bioinformatics and Systems Biology (joint degree)' (code 65020); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57354": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Biomedical Sciences' (code 66990); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57355": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Biomedical Technology and Physics' (code 60800); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57356": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Biomolecular Sciences' (code 60616); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57357": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Business Administration' (code 60644); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57435": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Business Analytics' (code 66856); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57358": {
+  "fee": 26000,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Chemistry (joint degree)' (code 65012); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57361": {
+  "fee": 18060,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Clinical and Developmental Psychopathology (research)' (code 60513); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57362": {
+  "fee": 18060,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Cognitive Neuropsychology (research)' (code 60510); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57437": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Communication Science' (code 66615); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57363": {
+  "fee": 26000,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Computational Science (joint degree)' (code 65015); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57364": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Computer Science (joint degree)' (code 65014); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57365": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Computer Security' (code 60802); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57366": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Culture, Organization and Management' (code 60050); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57368": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Digital Business and Innovation' (code 60968); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57369": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Drug Discovery Sciences' (code 66989); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57370": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Earth Sciences' (code 66986); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57371": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Ecology and Evolution' (code 60365); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57438": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Econometrics and Operations Research' (code 66833); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57372": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Economics' (code 66401); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57374": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Entrepreneurship (joint degree)' (code 65006); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57375": {
+  "fee": 35330,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Environment and Resource Management' (code 60045); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57377": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Finance' (code 60046); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57378": {
+  "fee": 18060,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Genes in Behaviour and Health (research)' (code 69324); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57379": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Global Health (research)' (code 66903); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57381": {
+  "fee": 35330,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Human Movement Sciences: Sport, Exercise and Health (60 EC)' (code 66950); same rate for full/part-time. Mapped to 60 EC (1-year) variant; the research master is 120 EC with a lower rate.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57382": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Human Movement Sciences: Sport, Exercise and Health (research) (120 EC)' (code 60812); same rate for full/part-time. Mapped to 120 EC research variant.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57384": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Hydrology' (code 60807); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57385": {
+  "fee": 35330,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Information Sciences' (code 60255); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57387": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M International Crimes, Conflict and Criminology' (code 66724); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57392": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Management, Policy Analysis and Entrepreneurship in the Health and Life Sciences' (code 60803); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57393": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Marketing' (code 60048); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57439": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Mathematics' (code 66980); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57394": {
+  "fee": 35330,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Musculoskeletal Physiotherapy Sciences' (code 69317); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57395": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Neurosciences (research)' (code 60806); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57396": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Oncology' (code 60811); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57397": {
+  "fee": 26000,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Physics and Astronomy (joint degree)' (code 65016); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57398": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Political Science' (code 60203); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57441": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Psychology' (code 60260); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57399": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Public Administration' (code 66627); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57400": {
+  "fee": 21200,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Research Master Business Data Science (joint degree)' (code 65024); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57373": {
+  "fee": 21200,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Tinbergen Institute Research Master in Economics (joint degree)' (code 65027); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57401": {
+  "fee": 24970,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Science, Business and Innovation' (code 69320); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57402": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Social and Cultural Anthropology' (code 60049); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57403": {
+  "fee": 18060,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Social Psychology: Regulation of Social Behaviour (research)' (code 60053); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57404": {
+  "fee": 18060,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Social Sciences for a Digital Society (research)' (code 69333); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57405": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Spatial, Transport and Environmental Economics' (code 60444); same rate for full/part-time. Spatial and Applied Economics tracks sit in the SBE standard master rate (same rate as M Spatial, Transport and Environmental Economics); all standard SBE masters are EUR 25,370.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ },
+ "57408": {
+  "fee": 25370,
+  "currency": "EUR",
+  "year": "2027/28",
+  "note": "VU institutional fee overview Master 2027-2028, non-EEA column, row 'M Transport and Supply Chain Management' (code 60471); same rate for full/part-time.",
+  "source": "https://vu.nl/en/education/more-about/tuition-fee-rates-masters"
+ }
+}

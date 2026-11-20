@@ -1,0 +1,1034 @@
+{
+ "43120": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 33 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "Mathematics plus Physics (preferred), Biology or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/aerospace-engineering-beng-h400/",
+  "confidence": "high"
+ },
+ "43123": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 33 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "Mathematics plus Physics (preferred), Biology or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/aerospace-engineering-sandwich-beng-h404/",
+  "confidence": "high"
+ },
+ "43173": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 33 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "Mathematics plus Physics (preferred), Biology or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/electrical-electronic-engineering-beng-h600/",
+  "confidence": "high"
+ },
+ "43174": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 33 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "Mathematics plus Physics (preferred), Biology or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/electrical-electronic-engineering-beng-h600/",
+  "confidence": "high"
+ },
+ "43208": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 33 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "Mathematics plus Physics (preferred), Biology or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/mechanical-engineering-beng-h300/",
+  "confidence": "high"
+ },
+ "43207": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 33 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "Mathematics plus Physics (preferred), Biology or Chemistry",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/mechanical-engineering-sandwich-beng-h304/",
+  "confidence": "high"
+ },
+ "43133": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 33 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "Mathematics and a relevant science",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/audio-engineering-bsc-j930/",
+  "confidence": "high"
+ },
+ "43157": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 33 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "Mathematics and a relevant science (IB level from QUB equivalence table)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-engineering-beng-gh6p/",
+  "confidence": "medium"
+ },
+ "43151": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 33 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "Mathematics and a relevant science (IB level from QUB equivalence table)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-engineering-beng-gh6p/",
+  "confidence": "medium"
+ },
+ "43144": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 32 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Mathematics and a science (Chemistry preferred)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/chemical-engineering-beng-h800/",
+  "confidence": "high"
+ },
+ "43143": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 32 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Mathematics and a science (Chemistry preferred)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/chemical-engineering-beng-h800/",
+  "confidence": "high"
+ },
+ "43149": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. Maths; IB 32 points with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Mathematics and a science subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/civil-engineering-beng-h200/",
+  "confidence": "high"
+ },
+ "43148": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 points with 6,6,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Mathematics and a science subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/civil-engineering-meng-h202/",
+  "confidence": "high"
+ },
+ "43150": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 points with 6,6,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Mathematics and a science subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/civil-engineering-year-industry-meng-h205/",
+  "confidence": "high"
+ },
+ "43176": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 points with 6,6,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Mathematics and a science subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/environmental-civil-engineering-meng-h252/",
+  "confidence": "high"
+ },
+ "43175": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 points with 6,6,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Mathematics and a science subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/environmental-civil-engineering-year-industry-meng-h255/",
+  "confidence": "high"
+ },
+ "43249": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 points with 6,6,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Mathematics and a science subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/structural-engineering-architecture-meng-h2k1/",
+  "confidence": "high"
+ },
+ "43248": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths; IB 34 points with 6,6,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Mathematics and a science subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB including Mathematics and one science/technical subject (Physics preferred for most)",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required; Physics or science (GCSE Physics C/4 if not taken at A-level); GCSE English Language C/4",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/structural-engineering-architecture-year-industry-meng-h2kc/",
+  "confidence": "high"
+ },
+ "43160": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-science-professional-experience-bsc-g400/",
+  "confidence": "medium"
+ },
+ "43154": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-science-professional-experience-bsc-g400/",
+  "confidence": "medium"
+ },
+ "43155": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-science-artificial-intelligence-bsc/",
+  "confidence": "medium"
+ },
+ "43153": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-science-artificial-intelligence-bsc/",
+  "confidence": "medium"
+ },
+ "43158": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/software-engineering-cyber-security-beng/",
+  "confidence": "medium"
+ },
+ "43245": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/software-engineering-cyber-security-beng/",
+  "confidence": "medium"
+ },
+ "43244": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/software-engineering-cyber-security-beng/",
+  "confidence": "medium"
+ },
+ "43246": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/software-engineering-placement-beng-g604/",
+  "confidence": "medium"
+ },
+ "43161": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-science-professional-experience-bsc-g400/",
+  "confidence": "medium"
+ },
+ "43156": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-science-professional-experience-bsc-g400/",
+  "confidence": "medium"
+ },
+ "43159": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-science-professional-experience-bsc-g400/",
+  "confidence": "medium"
+ },
+ "43162": {
+  "stem": true,
+  "typical_offer": "A-level BBB (one preferred subject) or ABB; IB 32-33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "6,5,5 at HL incl. preferred/relevant subject (IB 33 for the ABB route)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. one preferred subject (Maths, Computing), or ABB incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computing-information-technology-incl-professional-experience-bsc-gg45/",
+  "confidence": "medium"
+ },
+ "43152": {
+  "stem": true,
+  "typical_offer": "A-level AAB (one preferred subject) or AAA; IB 34 with 6,6,5 at HL or 36 with 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Preferred/relevant HL subjects (e.g. Maths, Computing, Physics)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. one preferred subject, or AAA incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-science-incl-professional-experience-meng-g405/",
+  "confidence": "high"
+ },
+ "43247": {
+  "stem": true,
+  "typical_offer": "A-level AAB (one preferred subject) or AAA; IB 34 with 6,6,5 at HL or 36 with 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Preferred/relevant HL subjects (e.g. Maths, Computing, Physics)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. one preferred subject, or AAA incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/software-engineering-meng-g602/",
+  "confidence": "high"
+ },
+ "43243": {
+  "stem": true,
+  "typical_offer": "A-level AAB (one preferred subject) or AAA; IB 34 with 6,6,5 at HL or 36 with 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Preferred/relevant HL subjects (e.g. Maths, Computing, Physics)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. one preferred subject, or AAA incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/software-engineering-meng-g602/",
+  "confidence": "medium"
+ },
+ "43241": {
+  "stem": true,
+  "typical_offer": "A-level AAB (one preferred subject) or AAA; IB 34 with 6,6,5 at HL or 36 with 6,6,6",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "Preferred/relevant HL subjects (e.g. Maths, Computing, Physics)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. one preferred subject, or AAA incl. one relevant subject; GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4; A-level Maths or Computing preferred",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/software-engineering-meng-g602/",
+  "confidence": "medium"
+ },
+ "43165": {
+  "stem": true,
+  "typical_offer": "A-level AAB (A in Maths) or A*BB; IB 34 with 6 in HL Maths plus 6,5 incl. a science/computing HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Mathematics 6 plus 6,5 incl. one of Computer Science, Physics, Biology, Chemistry at HL",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A in Maths with AB, or A* in Maths with BB; one other from Computing, Physics, Biology, Chemistry, Further Maths etc.",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "A-level/HL Mathematics required",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/data-science-year-professional-experience-bsc-g420/",
+  "confidence": "high"
+ },
+ "43141": {
+  "stem": true,
+  "typical_offer": "A-level ABB plus GCSE Maths C/4; IB 33 with 6,5,5 at HL",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "6,5,5 at HL; SL Maths 4 if no HL Maths/GCSE Maths",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB plus GCSE Maths C/4",
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": "GCSE Maths C/4 (or IB SL Maths 4)",
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/business-information-technology-incl-professional-experience-bsc-gn51/",
+  "confidence": "medium"
+ },
+ "43201": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP exams at 4 or higher (AP 5 = A, 4 = B, 3 = C) or A/B grades in three Grade 12 honors/college-level classes, at the most advanced level offered; subject requirements (e.g. maths) must still be met. Calculus AB/BC distinction not specified.",
+   "note": "Institution-wide rules (US AP/honors, SAT/ACT, Turkey, English 6.5 IELTS) apply to every QUB programme."
+  },
+  "tests": "SAT/ACT not mandatory; US applicants are expected to have taken at least one of AP, SAT or ACT (e.g. SAT 1290 or ACT 27 can count as one of three results for a BBB offer)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise diploma with GPA 3.5 normally needs a Foundation programme first; GPA 4.0+ (out of 5) may be considered for direct first-year entry case by case; one year of relevant university study in Turkey also considered case by case",
+  "prerequisite_maths": null,
+  "source_url": "https://www.qub.ac.uk/courses/undergraduate/computer-science-meng-g402/",
+  "confidence": "low"
+ },
+ "20594": {
+  "stem": false
+ },
+ "20580": {
+  "stem": false
+ },
+ "37264": {
+  "stem": true,
+  "typical_offer": "A-level three subjects at grades A-C (CCC/96 UCAS points); IB 24 points; US High School Diploma GPA 2.5 plus AP/SAT/ACT",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "IB English SL grade 4 (A) or HL/SL English B grade 4-5",
+   "note": "Applies institution-wide"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Three AP tests averaging 3, or two averaging 4, with US High School Diploma GPA 2.5. Calculus AB/BC not specified.",
+   "note": "Applies institution-wide"
+  },
+  "tests": "SAT 1100 (550+ in both sections) or ACT composite 26 accepted as alternative to AP",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Three A-levels at grades A-C",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.regents.ac.uk/undergraduate/business/ba-hons-business-and-data-science",
+  "confidence": "medium"
+ }
+}
