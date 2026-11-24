@@ -94,6 +94,9 @@
       <a href="#" class="nav-link" data-sec="afflinks" onclick="showSection('afflinks');return false;">
         <i class="bi bi-link-45deg"></i>Affiliate Links
       </a>
+      <a href="#" class="nav-link" data-sec="feegaps" onclick="showSection('feegaps');return false;">
+        <i class="bi bi-cash-coin"></i>Fee Gaps
+      </a>
       <a href="#" class="nav-link" data-sec="guides" onclick="showSection('guides');return false;">
         <i class="bi bi-file-earmark-text"></i>University Guides
       </a>
@@ -871,6 +874,20 @@
       <div id="afflinksTableWrap"><div class="text-center text-muted py-5">Loading…</div></div>
     </div><!-- /afflinksSection -->
 
+    <!-- ── Fee Gaps ───────────────────────────────────────────────────────────── -->
+    <div id="feegapsSection" class="section-content">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h4 class="fw-bold mb-0"><i class="bi bi-cash-coin me-2 text-primary"></i>Fee Gaps</h4>
+        <button class="btn btn-outline-secondary btn-sm" onclick="loadFeeGaps()"><i class="bi bi-arrow-clockwise"></i></button>
+      </div>
+      <p class="text-muted small mb-3">Institutions whose Bachelor/Master programmes still have no tuition fee. "Fee pages" are the official pages or PDFs found by the research agents; open them, then expand the row and type the fee per programme. Saved fees leave this list.</p>
+      <div class="d-flex gap-2 mb-3 flex-wrap">
+        <input id="fgSearch" class="form-control form-control-sm" style="max-width:260px" placeholder="Search institution" oninput="renderFeeGaps()">
+        <select id="fgCountry" class="form-select form-select-sm" style="max-width:220px" onchange="renderFeeGaps()"><option value="">All countries</option></select>
+      </div>
+      <div id="feegapsWrap"><div class="text-center text-muted py-5">Loading…</div></div>
+    </div><!-- /feegapsSection -->
+
     <!-- ── University Guides (SEO Q&A) ───────────────────────────────────────── -->
     <div id="guidesSection" class="section-content">
       <div class="d-flex align-items-center justify-content-between mb-3">
@@ -1417,6 +1434,7 @@ function showSection(name) {
   if (name === 'afflinks') loadAffLinks();
   if (name === 'contributions') loadContributions();
   if (name === 'guides') loadGuides();
+  if (name === 'feegaps') loadFeeGaps();
 }
 
 async function loadStats() {
@@ -3506,6 +3524,62 @@ async function saveAffLink(id) {
     const l = allAffLinks.find(x => x.id === id);
     if (l) { l.label = label; l.url = url; }
     toast('Link updated.');
+  } catch (e) { toast(e.message, 'error'); }
+}
+
+// ── Fee Gaps ────────────────────────────────────────────────────────────────
+let feeGaps = [];
+async function loadFeeGaps() {
+  document.getElementById('feegapsWrap').innerHTML = '<div class="text-center text-muted py-5">Loading…</div>';
+  try {
+    const r = await api('GET', '/api/admin/fee-gaps');
+    feeGaps = await r.json();
+    const sel = document.getElementById('fgCountry'), cur = sel.value;
+    const cs = [...new Set(feeGaps.map(x => x.country).filter(Boolean))].sort();
+    sel.innerHTML = '<option value="">All countries</option>' + cs.map(c => `<option${c === cur ? ' selected' : ''}>${esc2(c)}</option>`).join('');
+    renderFeeGaps();
+  } catch (e) { document.getElementById('feegapsWrap').innerHTML = `<div class="text-danger small">${esc2(e.message)}</div>`; }
+}
+function renderFeeGaps() {
+  const q = (document.getElementById('fgSearch').value || '').toLowerCase(), c = document.getElementById('fgCountry').value;
+  const rows = feeGaps.filter(x => (!c || x.country === c) && (!q || x.name.toLowerCase().includes(q)));
+  const wrap = document.getElementById('feegapsWrap');
+  if (!rows.length) { wrap.innerHTML = '<div class="text-muted small text-center py-5">Nothing left here.</div>'; return; }
+  const link = (u, l) => `<a href="${esc2(u)}" target="_blank" rel="noopener" class="d-block text-truncate" style="max-width:340px">${esc2(l || u.replace(/^https?:\/\/(www\.)?/, ''))}</a>`;
+  wrap.innerHTML = `<div class="small text-muted mb-2">${rows.length} institutions, ${rows.reduce((s, x) => s + x.bachelor + x.master, 0)} programmes</div>
+  <div class="table-responsive"><table class="table table-hover align-middle" style="font-size:.85rem">
+    <thead><tr style="color:#94a3b8;font-size:.78rem;text-transform:uppercase"><th>Institution</th><th>Country</th><th>Bachelor</th><th>Master</th><th>Fee pages</th><th>Note</th><th></th></tr></thead>
+    <tbody>${rows.map(x => `<tr>
+      <td class="fw-semibold">${esc2(x.name)}${x.website_url ? `<div>${link(x.website_url, 'website')}</div>` : ''}</td>
+      <td>${esc2(x.country || '')}</td><td>${x.bachelor}</td><td>${x.master}</td>
+      <td>${(x.links || []).map(l => link(l.url, l.label)).join('') || '<span class="text-muted">not found yet</span>'}</td>
+      <td class="text-muted" style="max-width:260px">${esc2(x.note || '')}</td>
+      <td><button class="btn btn-outline-primary btn-sm py-0" onclick="toggleFeeGap(${x.id})">Enter fees</button></td></tr>
+      <tr id="fgRow_${x.id}" style="display:none"><td colspan="7" class="bg-light"><div id="fgBody_${x.id}">Loading…</div></td></tr>`).join('')}</tbody></table></div>`;
+}
+async function toggleFeeGap(id) {
+  const row = document.getElementById('fgRow_' + id); if (!row) return;
+  if (row.style.display !== 'none') { row.style.display = 'none'; return; }
+  row.style.display = '';
+  const body = document.getElementById('fgBody_' + id);
+  try {
+    const progs = await (await api('GET', `/api/admin/fee-gaps/${id}/programs`)).json();
+    body.innerHTML = progs.length ? `<table class="table table-sm mb-0" style="font-size:.82rem"><tbody>${progs.map(p => `<tr id="fgp_${p.id}">
+      <td style="width:60%">${esc2(p.name)} <span class="text-muted">${p.program_type_id === 1 ? 'Bachelor' : 'Master'}</span></td>
+      <td><input type="number" min="0" step="any" class="form-control form-control-sm" id="fgFee_${p.id}" placeholder="fee per year" style="max-width:130px"></td>
+      <td><input class="form-control form-control-sm" id="fgCur_${p.id}" value="${esc2(p.tuition_currency || '')}" maxlength="3" placeholder="CUR" style="max-width:70px;text-transform:uppercase"></td>
+      <td><button class="btn btn-primary btn-sm py-0" onclick="saveFeeGap(${p.id},${id})">Save</button></td></tr>`).join('')}</tbody></table>` : '<span class="text-muted">No programmes left.</span>';
+  } catch (e) { body.innerHTML = `<span class="text-danger">${esc2(e.message)}</span>`; }
+}
+async function saveFeeGap(pid, eid) {
+  const fee = document.getElementById('fgFee_' + pid).value, cur = document.getElementById('fgCur_' + pid).value.trim();
+  try {
+    const r = await api('PATCH', `/api/admin/fee-gaps/program/${pid}`, { tuition_fee: fee, tuition_currency: cur });
+    if (!r.ok) throw new Error((await r.json()).error || 'Save failed');
+    document.getElementById('fgp_' + pid).remove();
+    const x = feeGaps.find(g => g.id === eid);
+    if (x) { const lvl = null; x.bachelor = Math.max(0, x.bachelor); }
+    toast('Fee saved.');
   } catch (e) { toast(e.message, 'error'); }
 }
 
