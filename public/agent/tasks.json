@@ -1,5 +1,5 @@
 {
- "instructions": "# Task (round 4): official APPLICATION FEE for the remaining schools\n\nGoal: for each item in \"tasks\" (school + level bachelor/master) find the official application fee for international applicants, using the school's OFFICIAL website only.\nlast_url / last_status show what happened in the previous round (blocked, not_found, js_empty, read).\n\nMethod\n- Browse like a person: real browser, normal pace (a few seconds between page loads), one page at a time.\n- Wait for pages and automatic browser checks to finish loading; expand accordions, tabs and \"show more\" panels; read hidden text.\n- Look in: \"Tuition & fees\", \"Fees and costs\", \"Cost of attendance\", \"How to apply\", \"Apply\", \"International admissions\", \"Admissions FAQ\", fee schedules as PDF/spreadsheet on the school's own site, programme pages, and country selectors (choose Turkey or \"international / non-EU\", then the right level).\n- Search the school's own site: site:<school-domain> \"application fee\".\n- Official domains only. No agent, aggregator or forum sites.\n- If a page asks you to solve a CAPTCHA or otherwise blocks automated access, do not try to get around it. Set page_status \"blocked\", put the exact URL in manual_check_url so a person can open it, and continue with other official pages of that school.\n- Also record the admissions office contact email or contact-form URL from the official site in contact (so a person can ask about the fee).\n- An application fee is the fee paid when submitting the application. Not tuition, deposit, registration, enrolment, test or visa fees. Write \"none\" only if an official page explicitly says there is no application fee (quote it in application_fee_note). Otherwise null. Never guess or infer.\n- For UK undergraduate applications through UCAS, report any fee the university itself charges (usually none) and mention in the note that UCAS charges its own fee.\n\nOutput: JSON list, one object per item, same order, no extra text:\n{\"school\",\"level\",\n \"application_fee\": \"amount with currency e.g. 'USD 75', or 'none', or null\",\n \"application_fee_note\": \"exact short quote or paraphrase from the page, plus variations (programme, country, waiver)\",\n \"source_url\": \"exact page or PDF where you read it\",\n \"manual_check_url\": \"URL a person should open when blocked, else null\",\n \"contact\": \"admissions email or contact form URL, else null\",\n \"page_status\": \"read | blocked | not_found | js_empty\",\n \"confidence\": \"high | medium | low\",\n \"english\": {\"IELTS\":null,\"TOEFL\":null,\"PTE\":null,\"Duolingo\":null}}\n\nSubmit: POST https://paneledu.com/api/agent/results with header X-Agent-Token: <token you were given>, Content-Type: application/json, body = JSON list (1-10 objects per request; send each batch as soon as it is done). Expected answer: {\"ok\":true,\"saved\":N}.\n",
+ "instructions": "# Task (browser-only round): pages that automated text fetching could not read\n\nThese schools block simple page fetchers or load their fee tables with JavaScript. You have a real browser, so you are the one who can read them.\n\nPART A (\"tasks\"): official APPLICATION FEE per school and level (rules below).\nPART B (\"tasks_tuition\"): official annual INTERNATIONAL TUITION FEES per institution (see the Part B rules at the end).\n\n## Part A rules\n\nGoal: for each item in \"tasks\" (school + level bachelor/master) find the official application fee for international applicants, using the school's OFFICIAL website only.\nlast_url / last_status show what happened in the previous round (blocked, not_found, js_empty, read).\n\nMethod\n- Browse like a person: real browser, normal pace (a few seconds between page loads), one page at a time.\n- Wait for pages and automatic browser checks to finish loading; expand accordions, tabs and \"show more\" panels; read hidden text.\n- Look in: \"Tuition & fees\", \"Fees and costs\", \"Cost of attendance\", \"How to apply\", \"Apply\", \"International admissions\", \"Admissions FAQ\", fee schedules as PDF/spreadsheet on the school's own site, programme pages, and country selectors (choose Turkey or \"international / non-EU\", then the right level).\n- Search the school's own site: site:<school-domain> \"application fee\".\n- Official domains only. No agent, aggregator or forum sites.\n- If a page asks you to solve a CAPTCHA or otherwise blocks automated access, do not try to get around it. Set page_status \"blocked\", put the exact URL in manual_check_url so a person can open it, and continue with other official pages of that school.\n- Also record the admissions office contact email or contact-form URL from the official site in contact (so a person can ask about the fee).\n- An application fee is the fee paid when submitting the application. Not tuition, deposit, registration, enrolment, test or visa fees. Write \"none\" only if an official page explicitly says there is no application fee (quote it in application_fee_note). Otherwise null. Never guess or infer.\n- For UK undergraduate applications through UCAS, report any fee the university itself charges (usually none) and mention in the note that UCAS charges its own fee.\n\nOutput: JSON list, one object per item, same order, no extra text:\n{\"school\",\"level\",\n \"application_fee\": \"amount with currency e.g. 'USD 75', or 'none', or null\",\n \"application_fee_note\": \"exact short quote or paraphrase from the page, plus variations (programme, country, waiver)\",\n \"source_url\": \"exact page or PDF where you read it\",\n \"manual_check_url\": \"URL a person should open when blocked, else null\",\n \"contact\": \"admissions email or contact form URL, else null\",\n \"page_status\": \"read | blocked | not_found | js_empty\",\n \"confidence\": \"high | medium | low\",\n \"english\": {\"IELTS\":null,\"TOEFL\":null,\"PTE\":null,\"Duolingo\":null}}\n\nSubmit: POST https://paneledu.com/api/agent/results with header X-Agent-Token: <token you were given>, Content-Type: application/json, body = JSON list (1-10 objects per request; send each batch as soon as it is done). Expected answer: {\"ok\":true,\"saved\":N}.\n\n## Part B rules (tuition)\nFor every item in \"tasks_tuition\" (an institution; manual_url = page that could not be read before) find the official annual tuition fee for INTERNATIONAL (non-EU / non-home) students on the institution's own website: fee pages, fee tables, fee brochures/PDFs/spreadsheets, fee selectors (choose Turkey or \"international\"), course pages when the fee is only given per course. Latest published academic year; state it. Same rules as above (official domain only; no CAPTCHA bypass; never guess; human pace).\nResult object per institution:\n{\"school\":\"<same as entity>\",\"entity\":\"<same name>\",\"country\":\"...\",\"page_status\":\"read | blocked | not_found | js_empty\",\"confidence\":\"high | medium | low\",\"source_urls\":[\"pages or PDFs read\"],\"manual_check_url\":null,\n \"fees\":[{\"level\":\"bachelor | master\",\"applies_to\":\"who the fee covers: 'all undergraduate', a faculty/subject band, or an exact programme name\",\"amount_per_year\":0,\"currency\":\"GBP|USD|EUR|CAD|AUD|...\",\"academic_year\":\"2026/27\",\"period_note\":\"per year / per credit / total programme / per semester, as the school states it\"}],\n \"note\":\"short factual remark\"}\nSend Part A and Part B results in separate POST requests (1-10 objects each).\n",
  "tasks": [
   {
    "school": "Australian Catholic University",
@@ -74,38 +74,6 @@
    "last_status": "blocked"
   },
   {
-   "school": "Kaplan Business School",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 6,
-   "last_url": "https://www.kbs.edu.au/admissions/fees/international-fees",
-   "last_status": "read"
-  },
-  {
-   "school": "Kaplan Business School",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 13,
-   "last_url": "https://www.kbs.edu.au/admissions/fees/international-fees",
-   "last_status": "read"
-  },
-  {
-   "school": "Southern Cross University",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 29,
-   "last_url": "https://www.scu.edu.au/study/help-and-contact/frequently-asked-questions-faqs/",
-   "last_status": "read"
-  },
-  {
-   "school": "Southern Cross University",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 9,
-   "last_url": "https://www.scu.edu.au/study/help-and-contact/frequently-asked-questions-faqs/",
-   "last_status": "read"
-  },
-  {
    "school": "The University of Notre Dame Australia",
    "level": "bachelor",
    "country": "Australia",
@@ -138,452 +106,12 @@
    "last_status": "blocked"
   },
   {
-   "school": "Western Sydney University",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 40,
-   "last_url": "https://www.westernsydney.edu.au/future/study/how-to-apply",
-   "last_status": "read"
-  },
-  {
-   "school": "Western Sydney University",
-   "level": "master",
-   "country": "Australia",
-   "programmes": 21,
-   "last_url": "https://www.westernsydney.edu.au/future/study/how-to-apply",
-   "last_status": "read"
-  },
-  {
-   "school": "UC Leuven-Limburg University of Applied Sciences (UCLL)",
-   "level": "bachelor",
-   "country": "Belgium",
-   "programmes": 3,
-   "last_url": "https://www.ucll.be/en/degree-application",
-   "last_status": "read"
-  },
-  {
    "school": "Brock University",
    "level": "master",
    "country": "Canada",
    "programmes": 2,
    "last_url": "https://brocku.ca/graduate-studies/future-students/faq/",
    "last_status": "blocked"
-  },
-  {
-   "school": "Trent University",
-   "level": "bachelor",
-   "country": "Canada",
-   "programmes": 86,
-   "last_url": "https://www.trentu.ca/futurestudents/apply/international-student-received-offer",
-   "last_status": "read"
-  },
-  {
-   "school": "University of Windsor",
-   "level": "bachelor",
-   "country": "Canada",
-   "programmes": 128,
-   "last_url": "https://www.uwindsor.ca/registrar/sites/uwindsor.ca.registrar/files/registrarial_fees_2022-2023_-_2023-2024.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "ECEMA BUSINESS SCHOOL",
-   "level": "master",
-   "country": "France",
-   "programmes": 1,
-   "last_url": "https://www.ecema.fr/formations/tarifs/",
-   "last_status": "read"
-  },
-  {
-   "school": "EDC Paris Business School",
-   "level": "bachelor",
-   "country": "France",
-   "programmes": 1,
-   "last_url": "https://www.edcparis.edu/fr/admissions-bachelor",
-   "last_status": "read"
-  },
-  {
-   "school": "EDC Paris Business School",
-   "level": "master",
-   "country": "France",
-   "programmes": 9,
-   "last_url": "https://www.edcparis.edu/en/programs/grande-ecole-program/international-business",
-   "last_status": "read"
-  },
-  {
-   "school": "Ecole de Management Applique, Paris",
-   "level": "bachelor",
-   "country": "France",
-   "programmes": 3,
-   "last_url": "https://ema.education/media/kwkm3pa5/ema-admissions-policy-v12-nov24-final.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "Ecole de Management Applique, Paris",
-   "level": "master",
-   "country": "France",
-   "programmes": 4,
-   "last_url": "https://ema.education/media/kwkm3pa5/ema-admissions-policy-v12-nov24-final.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "Istituto Marangoni Paris",
-   "level": "bachelor",
-   "country": "France",
-   "programmes": 6,
-   "last_url": "https://www.istitutomarangoni.com/en/admission",
-   "last_status": "read"
-  },
-  {
-   "school": "Istituto Marangoni Paris",
-   "level": "master",
-   "country": "France",
-   "programmes": 8,
-   "last_url": "https://www.istitutomarangoni.com/en/admission",
-   "last_status": "read"
-  },
-  {
-   "school": "Rennes School of Business",
-   "level": "master",
-   "country": "France",
-   "programmes": 11,
-   "last_url": "https://www.rennes-sb.com/fees-and-scholarships/",
-   "last_status": "read"
-  },
-  {
-   "school": "Schiller International University - Paris",
-   "level": "bachelor",
-   "country": "France",
-   "programmes": 7,
-   "last_url": "https://www.schiller.edu/admissions/requirements/",
-   "last_status": "read"
-  },
-  {
-   "school": "Schiller International University - Paris",
-   "level": "master",
-   "country": "France",
-   "programmes": 6,
-   "last_url": "https://www.schiller.edu/admissions/requirements/",
-   "last_status": "read"
-  },
-  {
-   "school": "Sup de Luxe Paris",
-   "level": "bachelor",
-   "country": "France",
-   "programmes": 1,
-   "last_url": "https://www.supdeluxe.com/en/admissions-supdeluxe",
-   "last_status": "read"
-  },
-  {
-   "school": "Sup de Luxe Paris",
-   "level": "master",
-   "country": "France",
-   "programmes": 3,
-   "last_url": "https://www.supdeluxe.com/en/admissions-supdeluxe",
-   "last_status": "read"
-  },
-  {
-   "school": "TOP Tech College",
-   "level": "master",
-   "country": "France",
-   "programmes": 8,
-   "last_url": "https://toptechcollege.com/",
-   "last_status": "read"
-  },
-  {
-   "school": "VATEL HOTEL & TOURISM BUSINESS SCHOOL",
-   "level": "bachelor",
-   "country": "France",
-   "programmes": 1,
-   "last_url": "https://www.vatel.fr/en/faq",
-   "last_status": "read"
-  },
-  {
-   "school": "VATEL HOTEL & TOURISM BUSINESS SCHOOL",
-   "level": "master",
-   "country": "France",
-   "programmes": 1,
-   "last_url": "https://www.vatel.fr/en/faq",
-   "last_status": "read"
-  },
-  {
-   "school": "Berlin International University of Applied Science",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 5,
-   "last_url": "https://www.berlin-international.de/en/admission/international-admission/",
-   "last_status": "read"
-  },
-  {
-   "school": "Berlin International University of Applied Science",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 6,
-   "last_url": "https://www.berlin-international.de/en/admission/international-admission/",
-   "last_status": "read"
-  },
-  {
-   "school": "Berlin School of Business and Innovation(BSBI)",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 12,
-   "last_url": "https://www.berlinsbi.com/studying-at-bsbi/frequently-asked-questions",
-   "last_status": "read"
-  },
-  {
-   "school": "Berlin School of Business and Innovation(BSBI)",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 45,
-   "last_url": "https://www.berlinsbi.com/studying-at-bsbi/frequently-asked-questions",
-   "last_status": "read"
-  },
-  {
-   "school": "Cologne Business School",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 13,
-   "last_url": "https://cbs.de/en/advice-admission/tuition-fees",
-   "last_status": "read"
-  },
-  {
-   "school": "Fresenius University of Applied Sciences",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 8,
-   "last_url": "https://www.hs-fresenius.de/kosten/",
-   "last_status": "read"
-  },
-  {
-   "school": "Fresenius University of Applied Sciences",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 17,
-   "last_url": "https://www.hs-fresenius.de/kosten/",
-   "last_status": "read"
-  },
-  {
-   "school": "GISMA University Berlin",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 8,
-   "last_url": "https://www.gisma.com/life-at-gisma/tuition-fees-and-funding",
-   "last_status": "read"
-  },
-  {
-   "school": "GISMA University Berlin",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 3,
-   "last_url": "https://www.gisma.com/life-at-gisma/tuition-fees-and-funding",
-   "last_status": "read"
-  },
-  {
-   "school": "Lancaster University Leipzig",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 7,
-   "last_url": "https://www.lancasterleipzig.de/study/undergraduate/fees/",
-   "last_status": "read"
-  },
-  {
-   "school": "Lancaster University Leipzig",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 4,
-   "last_url": "https://www.lancasterleipzig.de/study/undergraduate/fees/",
-   "last_status": "read"
-  },
-  {
-   "school": "MDH University of Applied Sciences",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 14,
-   "last_url": "https://www.mediadesign.de/en/bachelor/it-web-applications-and-software-development",
-   "last_status": "read"
-  },
-  {
-   "school": "MDH University of Applied Sciences",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 7,
-   "last_url": "https://www.mediadesign.de/en/bachelor/it-web-applications-and-software-development",
-   "last_status": "read"
-  },
-  {
-   "school": "Macromedia University",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 17,
-   "last_url": "https://www.macromedia-university.com/en/",
-   "last_status": "read"
-  },
-  {
-   "school": "Macromedia University",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 10,
-   "last_url": "https://www.macromedia-university.com/en/",
-   "last_status": "read"
-  },
-  {
-   "school": "SRH University - Berlin Campus",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 26,
-   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "SRH University - Berlin Campus",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 26,
-   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "SRH University - Dresden Campus",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 2,
-   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "SRH University - Dresden Campus",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 6,
-   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "SRH University - Heidelberg Campus",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 6,
-   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "SRH University - Heidelberg Campus",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 15,
-   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "SRH University - Leipzig Campus",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 4,
-   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "SRH University - Leipzig Campus",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 2,
-   "last_url": "https://www.srh-university.de/fileadmin/1HE/PDF-Downloads/Marketing_Materials__ex_Berlin_website_/General/SRH_Berlin_Pricelist_NonEU.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "Schiller International University - Heidelberg",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 7,
-   "last_url": "https://www.schiller.edu/admissions/requirements/",
-   "last_status": "read"
-  },
-  {
-   "school": "Schiller International University - Heidelberg",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 7,
-   "last_url": "https://www.schiller.edu/admissions/requirements/",
-   "last_status": "read"
-  },
-  {
-   "school": "University of Europe for Applied Sciences (UE Germany)",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 17,
-   "last_url": "https://www.ue-germany.com/study-with-us/how-to-apply/bachelor",
-   "last_status": "read"
-  },
-  {
-   "school": "University of Europe for Applied Sciences (UE Germany)",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 35,
-   "last_url": "https://www.ue-germany.com/study-with-us/how-to-apply/bachelor",
-   "last_status": "read"
-  },
-  {
-   "school": "XU Exponential University",
-   "level": "bachelor",
-   "country": "Germany",
-   "programmes": 5,
-   "last_url": "https://xu-university.com/",
-   "last_status": "read"
-  },
-  {
-   "school": "XU Exponential University",
-   "level": "master",
-   "country": "Germany",
-   "programmes": 1,
-   "last_url": "https://xu-university.com/",
-   "last_status": "read"
-  },
-  {
-   "school": "McDaniel College Budapest",
-   "level": "bachelor",
-   "country": "Hungary",
-   "programmes": 5,
-   "last_url": "https://old.mcdaniel.hu/m_2_1_0_0_0.php",
-   "last_status": "read"
-  },
-  {
-   "school": "Dublin Business School",
-   "level": "bachelor",
-   "country": "Ireland",
-   "programmes": 15,
-   "last_url": "https://www.dbs.ie/ftug-application-procedures",
-   "last_status": "read"
-  },
-  {
-   "school": "Dublin Business School",
-   "level": "master",
-   "country": "Ireland",
-   "programmes": 16,
-   "last_url": "https://www.dbs.ie/ftug-application-procedures",
-   "last_status": "read"
-  },
-  {
-   "school": "Griffith College Dublin",
-   "level": "bachelor",
-   "country": "Ireland",
-   "programmes": 19,
-   "last_url": "https://www.griffith.ie/offices/admissions/services/how-apply",
-   "last_status": "read"
-  },
-  {
-   "school": "Griffith College Dublin",
-   "level": "master",
-   "country": "Ireland",
-   "programmes": 22,
-   "last_url": "https://www.griffith.ie/offices/admissions/services/how-apply",
-   "last_status": "read"
-  },
-  {
-   "school": "Technological University (TU) Dublin",
-   "level": "bachelor",
-   "country": "Ireland",
-   "programmes": 119,
-   "last_url": "https://www.tudublin.ie/study/international/how-to-apply/postgraduate-courses/",
-   "last_status": "read"
   },
   {
    "school": "University College Dublin",
@@ -602,142 +130,6 @@
    "last_status": "blocked"
   },
   {
-   "school": "South Europe College",
-   "level": "master",
-   "country": "Malta",
-   "programmes": 7,
-   "last_url": "https://southeurope.edu.mt/programs-tuition-fees/",
-   "last_status": "read"
-  },
-  {
-   "school": "Fontys University of Applied Science",
-   "level": "bachelor",
-   "country": "Netherlands",
-   "programmes": 24,
-   "last_url": "https://www.fontys.nl/en/Study-at-Fontys/Practical-information/Application-and-enrolment.htm",
-   "last_status": "read"
-  },
-  {
-   "school": "Fontys University of Applied Science",
-   "level": "master",
-   "country": "Netherlands",
-   "programmes": 10,
-   "last_url": "https://www.fontys.nl/en/Study-at-Fontys/Practical-information/Application-and-enrolment.htm",
-   "last_status": "read"
-  },
-  {
-   "school": "Haarlem Campus (SRH University diploma)",
-   "level": "bachelor",
-   "country": "Netherlands",
-   "programmes": 3,
-   "last_url": "https://www.srh-haarlem-campus.com/about-us/frequently-asked-questions/",
-   "last_status": "read"
-  },
-  {
-   "school": "Haarlem Campus (SRH University diploma)",
-   "level": "master",
-   "country": "Netherlands",
-   "programmes": 1,
-   "last_url": "https://www.srh-haarlem-campus.com/about-us/frequently-asked-questions/",
-   "last_status": "read"
-  },
-  {
-   "school": "Saxion University of Applied Sciences",
-   "level": "bachelor",
-   "country": "Netherlands",
-   "programmes": 12,
-   "last_url": "https://www.saxion.edu/studying-in-the-netherlands/practical-matters/fee-structure",
-   "last_status": "read"
-  },
-  {
-   "school": "Saxion University of Applied Sciences",
-   "level": "master",
-   "country": "Netherlands",
-   "programmes": 6,
-   "last_url": "https://www.saxion.edu/studying-in-the-netherlands/practical-matters/fee-structure",
-   "last_status": "read"
-  },
-  {
-   "school": "The Hague University of Applied sciences",
-   "level": "bachelor",
-   "country": "Netherlands",
-   "programmes": 18,
-   "last_url": "https://thehagueuniversity.com/study-choice/applications-finances-and-moving-here/applying/how-to-apply",
-   "last_status": "read"
-  },
-  {
-   "school": "The Hague University of Applied sciences",
-   "level": "master",
-   "country": "Netherlands",
-   "programmes": 8,
-   "last_url": "https://thehagueuniversity.com/study-choice/applications-finances-and-moving-here/applying/how-to-apply",
-   "last_status": "read"
-  },
-  {
-   "school": "University of Europe Amsterdam (UE Amsterdam)",
-   "level": "bachelor",
-   "country": "Netherlands",
-   "programmes": 1,
-   "last_url": "https://www.ue-germany.com/study-with-us/fees-and-finance",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Europe Amsterdam (UE Amsterdam)",
-   "level": "master",
-   "country": "Netherlands",
-   "programmes": 1,
-   "last_url": "https://www.ue-germany.com/study-with-us/fees-and-finance",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Wittenborg University of Applied Sciences",
-   "level": "bachelor",
-   "country": "Netherlands",
-   "programmes": 4,
-   "last_url": "https://www.wittenborg.eu/paying-programmes.htm",
-   "last_status": "read"
-  },
-  {
-   "school": "Wittenborg University of Applied Sciences",
-   "level": "master",
-   "country": "Netherlands",
-   "programmes": 37,
-   "last_url": "https://www.wittenborg.eu/paying-programmes.htm",
-   "last_status": "read"
-  },
-  {
-   "school": "Barcelona Flight School",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 1,
-   "last_url": "https://academy.barcelonaflightschool.com/",
-   "last_status": "read"
-  },
-  {
-   "school": "EAE Business School (Madrid and Barcelona)",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 1,
-   "last_url": "https://www.eae.es/en/about-eae/fees-eae",
-   "last_status": "not_found"
-  },
-  {
-   "school": "EAE Business School (Madrid and Barcelona)",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 12,
-   "last_url": "https://www.eae.es/en/full-time/master-international-business/admission-process-and-degree",
-   "last_status": "not_found"
-  },
-  {
-   "school": "ESEI Business School",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 9,
-   "last_url": "https://www.eseibusinessschool.com/admission-steps-requirements/",
-   "last_status": "not_found"
-  },
-  {
    "school": "Geneva Business School",
    "level": "bachelor",
    "country": "Spain",
@@ -752,54 +144,6 @@
    "programmes": 2,
    "last_url": "https://gbsge.com/programs/master-of-international-management/fees/",
    "last_status": "blocked"
-  },
-  {
-   "school": "Istituto Europeo di Design (Barcelona)",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 11,
-   "last_url": "https://www.ied.es/other-pdf/Spain/Barcelona/Prueba_Acceso/Admission_Test_Information_IED_Barcelona.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "Istituto Europeo di Design (Barcelona)",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 9,
-   "last_url": "https://www.ied.es/other-pdf/Spain/Barcelona/Tarifas/Fees_Master_IED_Barcelona_ENG.pdf",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Istituto Europeo di Design (Madrid)",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 1,
-   "last_url": "https://www.ied.es/other-pdf/Spain/Madrid/IED_Undergraduate_PRICELIST_MADRID_ENG.pdf",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Istituto Europeo di Design (Madrid)",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 4,
-   "last_url": "https://www.ied.es",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Schiller International University - Madrid",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 7,
-   "last_url": "https://www.schiller.edu/admissions/requirements/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Schiller International University - Madrid",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 6,
-   "last_url": "https://www.schiller.edu/admissions/requirements/",
-   "last_status": "not_found"
   },
   {
    "school": "Toulouse Business School (TBS) Barcelona",
@@ -818,86 +162,6 @@
    "last_status": "blocked"
   },
   {
-   "school": "UDIT (University of Design and Technology) Madrid",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 4,
-   "last_url": "https://www.udit.es/en/admission-international-students/",
-   "last_status": "read"
-  },
-  {
-   "school": "UDIT (University of Design and Technology) Madrid",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 1,
-   "last_url": "https://www.udit.es/en/admission-international-students/",
-   "last_status": "read"
-  },
-  {
-   "school": "Universidad Europea de Madrid",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 32,
-   "last_url": "https://universidadeuropea.com/en/admission-finance/admissions-process/campus-degree-international-education-systems/",
-   "last_status": "read"
-  },
-  {
-   "school": "Universidad Europea de Madrid",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 22,
-   "last_url": "https://universidadeuropea.com/en/admission-finance/admissions-process/online-masters-approved-foreign-university-degree/",
-   "last_status": "read"
-  },
-  {
-   "school": "Ajman University",
-   "level": "bachelor",
-   "country": "United Arab Emirates",
-   "programmes": 26,
-   "last_url": "https://www.ajman.ac.ae/upload/files/financial_documents/2025-26/booklets/Payment_Terms_English_and_Arabic_-_revised_v1.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "Ajman University",
-   "level": "master",
-   "country": "United Arab Emirates",
-   "programmes": 11,
-   "last_url": "https://www.ajman.ac.ae/upload/files/financial_documents/2025-26/booklets/Payment_Terms_English_and_Arabic_-_revised_v1.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "Rochester Institute of Technology of Dubai (RIT Dubai)",
-   "level": "bachelor",
-   "country": "United Arab Emirates",
-   "programmes": 9,
-   "last_url": "https://www.rit.edu/dubai/undergraduate-admissions",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Rochester Institute of Technology of Dubai (RIT Dubai)",
-   "level": "master",
-   "country": "United Arab Emirates",
-   "programmes": 8,
-   "last_url": "https://www.rit.edu/dubai/graduate-admissions",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Europe for Applied Sciences (UE) Dubai",
-   "level": "bachelor",
-   "country": "United Arab Emirates",
-   "programmes": 5,
-   "last_url": "https://www.ue-germany.com/en-ae/apply/fees-and-funding",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Europe for Applied Sciences (UE) Dubai",
-   "level": "master",
-   "country": "United Arab Emirates",
-   "programmes": 13,
-   "last_url": "https://www.ue-germany.com/en-ae/apply/fees-and-funding",
-   "last_status": "not_found"
-  },
-  {
    "school": "Bournemouth University (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
@@ -914,92 +178,12 @@
    "last_status": "blocked"
   },
   {
-   "school": "Brunel University London (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 107,
-   "last_url": "https://www.brunel.ac.uk/international/applicants/how-to-apply-international-students/how-to-apply-for-an-undergraduate-course",
-   "last_status": "read"
-  },
-  {
-   "school": "Brunel University London (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 107,
-   "last_url": "https://www.brunel.ac.uk/scholarships/the-international-bursary-pg-terms-and-conditions",
-   "last_status": "not_found"
-  },
-  {
-   "school": "De Montfort University (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 93,
-   "last_url": "https://www.dmu.ac.uk/study/applying/undergraduate.aspx",
-   "last_status": "not_found"
-  },
-  {
-   "school": "De Montfort University (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 60,
-   "last_url": "https://www.dmu.ac.uk/study/applying/undergraduate.aspx",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Goldsmiths University of London (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 69,
-   "last_url": "https://www.gold.ac.uk/pg/apply/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Goldsmiths University of London (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 119,
-   "last_url": "https://www.gold.ac.uk/pg/apply/",
-   "last_status": "not_found"
-  },
-  {
    "school": "Istituto Marangoni London",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 14,
    "last_url": "https://www.istitutomarangoni.com/en/fashion-courses/bachelor-degrees/fashion-design/fashion-design",
    "last_status": "js_empty"
-  },
-  {
-   "school": "Istituto Marangoni London",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 6,
-   "last_url": "https://www.istitutomarangoni.com/en/fashion-courses/postgraduate/masters-degrees-o-masters-courses/fashion-luxury-brand-management",
-   "last_status": "not_found"
-  },
-  {
-   "school": "King's College",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 110,
-   "last_url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/important-information-for-applying",
-   "last_status": "read"
-  },
-  {
-   "school": "London Metropolitan University",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 93,
-   "last_url": "https://www.londonmet.ac.uk/international/applying/international-faqs/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "London Metropolitan University",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 80,
-   "last_url": "https://www.londonmet.ac.uk/international/applying/international-faqs/",
-   "last_status": "not_found"
   },
   {
    "school": "London South Bank University (EB UK)",
@@ -1018,46 +202,6 @@
    "last_status": "blocked"
   },
   {
-   "school": "Manchester Metropolitan University",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 137,
-   "last_url": "https://www.mmu.ac.uk/study/international/how-to-apply/international-undergraduate-degrees",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Manchester Metropolitan University",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 91,
-   "last_url": "https://www.mmu.ac.uk/study/international/how-to-apply/postgraduate-taught",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Middlesex University (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 70,
-   "last_url": "https://www.mdx.ac.uk/international/how-to-apply-as-a-international-student/",
-   "last_status": "read"
-  },
-  {
-   "school": "Northeastern University London",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 12,
-   "last_url": "https://www.nulondon.ac.uk/admissions/masters-admissions/post-graduate-tuition-fees/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Northeastern University London",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 7,
-   "last_url": "https://www.nulondon.ac.uk/admissions/masters-admissions/post-graduate-tuition-fees/",
-   "last_status": "not_found"
-  },
-  {
    "school": "Nottingham Trent University (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
@@ -1074,324 +218,12 @@
    "last_status": "blocked"
   },
   {
-   "school": "Oxford Brookes University (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 99,
-   "last_url": "https://www.brookes.ac.uk/study/international-students/applying-to-arriving/how-to-apply",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Oxford Brookes University (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 59,
-   "last_url": "https://www.brookes.ac.uk/study/international-students/applying-to-arriving/how-to-apply",
-   "last_status": "not_found"
-  },
-  {
-   "school": "Queen Mary University of London",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 156,
-   "last_url": "https://www.qmul.ac.uk/postgraduate/research/applying-for-a-research-degree/",
-   "last_status": "read"
-  },
-  {
    "school": "Regent's University London (EB UK)",
    "level": "bachelor",
    "country": "United Kingdom",
    "programmes": 42,
    "last_url": "https://www.regents.ac.uk/undergraduate/business/ba-hons-international-business-new-model",
    "last_status": "blocked"
-  },
-  {
-   "school": "Royal Holloway University of London",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 155,
-   "last_url": "https://www.royalholloway.ac.uk/studying-here/applying/",
-   "last_status": "read"
-  },
-  {
-   "school": "Royal Holloway University of London",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 71,
-   "last_url": "https://www.royalholloway.ac.uk/pg-prospectus/",
-   "last_status": "read"
-  },
-  {
-   "school": "Swansea University",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 112,
-   "last_url": "https://www.swansea.ac.uk/international-students/international-student-courses/how-to-apply/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "The University of Edinburgh",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 312,
-   "last_url": "https://study.ed.ac.uk/undergraduate/fees-funding/fees-costs/international-eu-eea",
-   "last_status": "not_found"
-  },
-  {
-   "school": "The University of Manchester",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 343,
-   "last_url": "https://www.manchester.ac.uk/study/international/admissions/undergraduate-application-process/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Aberdeen",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 293,
-   "last_url": "https://www.abdn.ac.uk/mumbai/admissions/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Aberdeen",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 140,
-   "last_url": "https://studyonline.abdn.ac.uk/msc-management-and-finance/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Birmingham",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 165,
-   "last_url": "https://www.birmingham.ac.uk/study/postgraduate/taught/apply",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Brighton",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 142,
-   "last_url": "https://www.brighton.ac.uk/international/help-and-advice/frequently-asked-questions/index.aspx",
-   "last_status": "read"
-  },
-  {
-   "school": "University of Brighton",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 56,
-   "last_url": "https://www.brighton.ac.uk/international/help-and-advice/frequently-asked-questions/index.aspx",
-   "last_status": "read"
-  },
-  {
-   "school": "University of Bristol",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 153,
-   "last_url": "https://www.bristol.ac.uk/media-library/sites/study/documents/policies/2025%20Application%20Fee%20Policy.pdf",
-   "last_status": "read"
-  },
-  {
-   "school": "University of East London",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 95,
-   "last_url": "https://www.uel.ac.uk/undergraduate/courses/bsc-hons-business-management",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of East London",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 79,
-   "last_url": "https://www.uel.ac.uk/postgraduate/courses/msc-civil-engineering",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Essex (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 204,
-   "last_url": "https://www.essex.ac.uk/courses/UG01275/1",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Essex (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 142,
-   "last_url": "https://www.essex.ac.uk/courses/pg01647/1/msc-international-tourism-management",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Exeter",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 179,
-   "last_url": "https://www.exeter.ac.uk/online-courses/masters/",
-   "last_status": "read"
-  },
-  {
-   "school": "University of Greenwich",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 112,
-   "last_url": "https://www.gre.ac.uk/postgraduate-courses/bus/intbus",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Greenwich",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 103,
-   "last_url": "https://www.gre.ac.uk/postgraduate-courses/bus/intbus",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Hull",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 118,
-   "last_url": "https://www.hull.ac.uk/help-centre/international-students/what-do-i-need-to-apply-for-a-student-visa",
-   "last_status": "read"
-  },
-  {
-   "school": "University of Law (ULaw)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 38,
-   "last_url": "https://www.law.ac.uk/study/undergraduate/course-fees-and-funding/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Law (ULaw)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 117,
-   "last_url": "https://www.law.ac.uk/study/postgraduate/law/ma-law/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Liverpool (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 131,
-   "last_url": "https://www.liverpool.ac.uk/international/scholarships-and-fees/tuition-fees/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Liverpool (EB UK)",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 117,
-   "last_url": "https://www.liverpool.ac.uk/courses/international-business-msc",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Manchester",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 1,
-   "last_url": "https://www.manchester.ac.uk/study/international/admissions/undergraduate-application-process/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Reading (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 132,
-   "last_url": "https://www.reading.ac.uk/ready-to-study/study/how-to-apply/masters-how-to-apply",
-   "last_status": "read"
-  },
-  {
-   "school": "University of Roehampton",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 80,
-   "last_url": "https://www.roehampton.ac.uk/study/postgraduate-taught-courses/artificial-intelligence/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Roehampton",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 48,
-   "last_url": "https://www.roehampton.ac.uk/study/postgraduate-taught-courses/artificial-intelligence/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Sheffield",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 67,
-   "last_url": "https://sheffield.ac.uk/international/applying/postgraduate-taught",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Surrey (EB UK)",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 177,
-   "last_url": "https://www.surrey.ac.uk/apply/postgraduate/research-frequently-asked-questions",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Sussex",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 117,
-   "last_url": "https://www.sussex.ac.uk/study/masters/courses/data-science-msc",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Sussex",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 132,
-   "last_url": "https://www.sussex.ac.uk/study/masters/courses/data-science-msc",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Warwick",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 156,
-   "last_url": "https://warwick.ac.uk/fac/sci/wmg/study/masters-degrees/international-trade/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Westminster",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 109,
-   "last_url": "https://www.westminster.ac.uk/study/undergraduate/how-to-apply",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Westminster",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 85,
-   "last_url": "https://www.westminster.ac.uk/study/postgraduate/how-to-apply",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Winchester",
-   "level": "bachelor",
-   "country": "United Kingdom",
-   "programmes": 80,
-   "last_url": "https://www.winchester.ac.uk/study/Postgraduate/Courses/MSc-Criminal-Justice-and-Investigation/",
-   "last_status": "not_found"
-  },
-  {
-   "school": "University of Winchester",
-   "level": "master",
-   "country": "United Kingdom",
-   "programmes": 27,
-   "last_url": "https://www.winchester.ac.uk/study/Postgraduate/Courses/MSc-Criminal-Justice-and-Investigation/",
-   "last_status": "not_found"
   },
   {
    "school": "Catholic University",
@@ -1416,6 +248,233 @@
    "programmes": 29,
    "last_url": "https://education.jhu.edu/admissions/how-to-apply/admissions-faqs/",
    "last_status": "blocked"
+  }
+ ],
+ "tasks_tuition": [
+  {
+   "entity": "Tilburg University",
+   "country": "Netherlands",
+   "empty_programmes": 2,
+   "website": "https://www.tilburguniversity.edu/",
+   "sample": [
+    "Children's Literature, Media & Cultural Entrepreneurship",
+    "Economics and Management"
+   ],
+   "manual_url": "https://www.tilburguniversity.edu/students/administration/tuition-fees/rates"
+  },
+  {
+   "entity": "Long Island University - Brooklyn",
+   "country": "United States",
+   "empty_programmes": 81,
+   "website": "https://www.liu.edu/brooklyn",
+   "sample": [
+    "B.A. Communications",
+    "B.A. Global Studies",
+    "B.A. Journalism"
+   ],
+   "manual_url": "https://liu.edu/registration-and-financial-aid/tuition-fees"
+  },
+  {
+   "entity": "London South Bank University (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 28,
+   "website": "https://www.lsbu.ac.uk/",
+   "sample": [
+    "BA (Hons) Architecture",
+    "BA (Hons) Urban and Environmental Planning",
+    "BEng (Hons) Building Services Engineering"
+   ],
+   "manual_url": "https://www.lsbu.ac.uk/international/fees-and-funding"
+  },
+  {
+   "entity": "Fontys University of Applied Science",
+   "country": "Netherlands",
+   "empty_programmes": 5,
+   "website": "https://fontys.edu/",
+   "sample": [
+    "BSc Mechatronics",
+    "Bachelor Conservatory of Music",
+    "Master Artificial Intelligence Translator (joint degree)"
+   ],
+   "manual_url": "https://www.fontys.nl/en/Study-at-Fontys/Practical-information/Finance/Tuition-fees-indicator-2026-2027.htm"
+  },
+  {
+   "entity": "University of Hertfordshire",
+   "country": "United Kingdom",
+   "empty_programmes": 86,
+   "website": "https://www.herts.ac.uk/",
+   "sample": [
+    "BA (SW/YAB) International Business",
+    "BA (SW/YAB) International Business (3 or 4 year programme)",
+    "BA 2D Digital Animation"
+   ],
+   "manual_url": "https://www.herts.ac.uk/international/scholarships-and-fees/fees"
+  },
+  {
+   "entity": "University of Essex (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 191,
+   "website": "https://www.essex.ac.uk/",
+   "sample": [
+    "BA Childhood Studies",
+    "BA Continental Philosophy",
+    "BA Creative Writing"
+   ],
+   "manual_url": "https://www.essex.ac.uk/undergraduate/fees-and-funding/eu-and-international-fees"
+  },
+  {
+   "entity": "Queen's University Belfast",
+   "country": "United Kingdom",
+   "empty_programmes": 86,
+   "website": "https://www.qub.ac.uk",
+   "sample": [
+    "BA Anthropology",
+    "BA Anthropology and International Relations",
+    "BA Anthropology and Philosophy"
+   ],
+   "manual_url": "https://www.qub.ac.uk/Study/Feesandfinance/FileStore/Tuition%20Fee%20and%20Related%20Charges%20Schedule%202026-27.pdf"
+  },
+  {
+   "entity": "Long Island University",
+   "country": "United States",
+   "empty_programmes": 19,
+   "website": "https://www.liu.edu/",
+   "sample": [
+    "BA Applied Music",
+    "BFA Music Technology, Entrepreneurship & Production",
+    "BS Accountancy"
+   ],
+   "manual_url": "https://liu.edu/registration-and-financial-aid/tuition-fees"
+  },
+  {
+   "entity": "Long Island University - Post",
+   "country": "United States",
+   "empty_programmes": 88,
+   "website": "https://www.liu.edu/post",
+   "sample": [
+    "B.A. Chemistry",
+    "B.A. Criminal Justice",
+    "B.A. Political Science"
+   ],
+   "manual_url": "https://liu.edu/registration-and-financial-aid/tuition-fees"
+  },
+  {
+   "entity": "University College Dublin",
+   "country": "Ireland",
+   "empty_programmes": 36,
+   "website": "https://www.ucd.ie",
+   "sample": [
+    "Agricultural Science BAgrSc",
+    "Agricultural Systems Technology BAgrSc",
+    "Animal & Crop Production BAgrSc"
+   ],
+   "manual_url": "https://www.ucd.ie/students/fees/noneucoursefees/internationalnon-euundergraduatefees202627/"
+  },
+  {
+   "entity": "Nottingham Trent University (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 152,
+   "website": "https://www.ntu.ac.uk",
+   "sample": [
+    "BA Animation",
+    "BA Childhood and Psychology",
+    "BA Childhood and Society"
+   ],
+   "manual_url": "https://www.ntu.ac.uk/study-and-courses/international-students/fees-and-funding"
+  },
+  {
+   "entity": "Durham University",
+   "country": "United Kingdom",
+   "empty_programmes": 88,
+   "website": "https://www.durham.ac.uk",
+   "sample": [
+    "BA Ancient History",
+    "BA Ancient History and Archaeology",
+    "BA Ancient, Medieval and Modern History"
+   ],
+   "manual_url": "https://www.durham.ac.uk/study/international/fees-and-funding/"
+  },
+  {
+   "entity": "LISAA School of Design",
+   "country": "France",
+   "empty_programmes": 1,
+   "website": "https://www.lisaa.com/fr",
+   "sample": [
+    "Master Fashion Communication & Image"
+   ],
+   "manual_url": "https://www.lisaa.com/en/tuition-fees"
+  },
+  {
+   "entity": "Zuyd University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 10,
+   "website": "https://www.zuyd.nl/en",
+   "sample": [
+    "BA European Studies",
+    "BA Hotel Management",
+    "BA Interdisciplinary Arts"
+   ],
+   "manual_url": "https://www.zuyd.nl/sites/default/files/2026-01/Tuition%20fees%20and%20examination%20fees%202026-2027%20EN%203.0.pdf"
+  },
+  {
+   "entity": "Cardiff University",
+   "country": "United Kingdom",
+   "empty_programmes": 136,
+   "website": "https://www.cardiff.ac.uk/",
+   "sample": [
+    "BA Ancient History",
+    "BA Archaeology",
+    "BA Archaeology and Ancient History"
+   ],
+   "manual_url": "https://www.cardiff.ac.uk/study/international/tuition-fees"
+  },
+  {
+   "entity": "University of Sheffield",
+   "country": "United Kingdom",
+   "empty_programmes": 105,
+   "website": "https://sheffield.ac.uk/",
+   "sample": [
+    "BA Accounting & Financial Management with Economics",
+    "BA Architecture",
+    "BA Business Management with Economics"
+   ],
+   "manual_url": "https://tools.sheffield.ac.uk/fees/ug/"
+  },
+  {
+   "entity": "Emily Carr University of Art and Design",
+   "country": "Canada",
+   "empty_programmes": 7,
+   "website": "https://www.ecuad.ca/",
+   "sample": [
+    "BDes Communication Design",
+    "BDes Interaction Design",
+    "BFA Illustration"
+   ],
+   "manual_url": "https://www.ecuad.ca/about/administration/financial-services/tuition-fees/undergraduation-tuition-and-fees"
+  },
+  {
+   "entity": "City St George's, University of London",
+   "country": "United Kingdom",
+   "empty_programmes": 136,
+   "website": "https://www.citystgeorges.ac.uk/",
+   "sample": [
+    "BA Communication, PR and Advertising",
+    "BA English",
+    "BA English with Creative Writing"
+   ],
+   "manual_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/english"
+  },
+  {
+   "entity": "Bournemouth University (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 26,
+   "website": "https://www.bournemouth.ac.uk/",
+   "sample": [
+    "BA Business and Management (2-year Accelerated Degree)",
+    "BA Business and Management (Human Resource Management)",
+    "BA Communication and Media (2 year accelerated degree)"
+   ],
+   "manual_url": "https://www.bournemouth.ac.uk/study/undergraduate/fees-funding/undergraduate-tuition-fees"
   }
  ]
 }
