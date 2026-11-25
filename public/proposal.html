@@ -104,12 +104,18 @@
 
           <div id="pdfError" style="display:none;color:#dc2626;font-size:.8rem;margin-bottom:10px;padding:8px;background:rgba(220,38,38,.07);border-radius:6px"></div>
 
+          <button class="btn-clear" style="margin-bottom:8px" onclick="saveProposal()"><i class="bi bi-save me-1"></i><span id="saveLabel">Teklifi Kaydet</span></button>
+          <div id="saveMsg" style="display:none;font-size:.78rem;margin-bottom:8px"></div>
           <button id="downloadBtn" class="btn-pdf" onclick="downloadPDF()">
             <i class="bi bi-download"></i> PDF İndir
           </button>
           <button class="btn-clear" onclick="clearBasket()">
             <i class="bi bi-trash3 me-1"></i>Sepeti Temizle
           </button>
+        </div>
+        <div class="summary-card" style="margin-top:14px">
+          <h3><i class="bi bi-folder2-open me-2"></i>Kayıtlı Teklifler</h3>
+          <div id="savedList" style="font-size:.82rem;color:var(--muted)">Yükleniyor…</div>
         </div>
       </div>
 
@@ -133,6 +139,7 @@ if (!myRole || (myRole !== 'admin' && myRole !== 'advisor')) {
 } else {
   document.getElementById('mainContent').style.display = 'block';
   renderBasket();
+  loadSaved();
 }
 
 // ── Basket rendering ──────────────────────────────────────────────
@@ -204,6 +211,48 @@ function clearBasket() {
   if (!confirm('Teklif sepetini tamamen temizlemek istiyor musunuz?')) return;
   localStorage.removeItem('pe_proposal');
   renderBasket();
+}
+
+// ── Saved proposals (server side, staff only) ─────────────────────
+let currentId = null;
+try { currentId = parseInt(localStorage.getItem('pe_proposal_id') || '', 10) || null; } catch {}
+function api(method, url, body) {
+  return fetch(url, { method, headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + token }, body: body ? JSON.stringify(body) : undefined });
+}
+function say(msg, bad) { const m = document.getElementById('saveMsg'); m.textContent = msg; m.style.color = bad ? '#dc2626' : '#059669'; m.style.display = 'block'; }
+async function saveProposal() {
+  const basket = JSON.parse(localStorage.getItem('pe_proposal') || '[]');
+  if (!basket.length) { say('Önce sepete program ekleyin.', true); return; }
+  const r = await api('POST', '/api/proposals/save', { id: currentId, programIds: basket.map(p => p.id),
+    studentName: document.getElementById('studentName').value.trim(), advisorNote: document.getElementById('advisorNote').value.trim() });
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) { say(d.error || 'Kaydedilemedi.', true); return; }
+  currentId = d.id; localStorage.setItem('pe_proposal_id', String(d.id));
+  say('Kaydedildi.'); loadSaved();
+}
+async function loadSaved() {
+  const box = document.getElementById('savedList');
+  try {
+    const r = await api('GET', '/api/proposals'); const list = await r.json();
+    if (!Array.isArray(list)) throw new Error(list.error || 'hata');
+    box.innerHTML = list.length ? list.map(x => `<div style="padding:8px 0;border-top:1px solid rgba(0,0,0,.08)">
+      <b>${esc(x.student_name || 'İsimsiz teklif')}</b> <span>(${x.count} program)</span>
+      <div style="font-size:.74rem">${esc(x.owner || '')} · ${new Date(x.updated_at).toLocaleDateString('tr-TR')}${x.id === currentId ? ' · <b>açık</b>' : ''}</div>
+      <a href="#" onclick="openProposal(${x.id});return false">Aç</a> · <a href="#" onclick="deleteProposal(${x.id});return false" style="color:#dc2626">Sil</a></div>`).join('') : 'Henüz kayıtlı teklif yok.';
+  } catch (e) { box.textContent = 'Liste alınamadı: ' + e.message; }
+}
+async function openProposal(id) {
+  const r = await api('GET', '/api/proposals/' + id); const d = await r.json();
+  if (!r.ok) { say(d.error || 'Açılamadı.', true); return; }
+  localStorage.setItem('pe_proposal', JSON.stringify(d.programs)); localStorage.setItem('pe_proposal_id', String(d.id)); currentId = d.id;
+  document.getElementById('studentName').value = d.student_name || ''; document.getElementById('advisorNote').value = d.advisor_note || '';
+  renderBasket(); loadSaved(); say('Teklif açıldı (güncel ücretlerle).');
+}
+async function deleteProposal(id) {
+  if (!confirm('Bu kayıtlı teklif silinsin mi?')) return;
+  await api('DELETE', '/api/proposals/' + id);
+  if (id === currentId) { currentId = null; localStorage.removeItem('pe_proposal_id'); }
+  loadSaved();
 }
 
 // ── PDF download ──────────────────────────────────────────────────

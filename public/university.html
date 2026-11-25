@@ -9,6 +9,7 @@
   <link href="/css/icons.css" rel="stylesheet">
   <script src="/js/i18n.js"></script>
   <script src="/js/progreq.js"></script>
+  <script src="/js/proposal-basket.js"></script>
   <style>
     .u-hero { padding: clamp(22px, 4vw, 44px) 0 clamp(18px, 3vw, 28px); }
     .u-crumbs { font-size: .82rem; color: var(--muted); margin-bottom: 12px; }
@@ -261,9 +262,15 @@ function cardHtml(p) {
     <div class="prog-actions">
       <a class="btn-grad" href="/apply?uni=${university.id}&program=${p.id}"><i class="bi bi-send-fill"></i>${_t('p.apply', 'Başvur')}</a>
       <button class="icon-btn" type="button" title="${T('uni.req.info')}" aria-label="${T('uni.req.info')}" onclick="openLeadModal(${p.id})"><i class="bi bi-envelope-fill"></i></button>
+      ${window.ProposalBasket && ProposalBasket.can ? `<button class="icon-btn" type="button" title="Teklife ekle" aria-label="Teklife ekle" onclick="addToProposalFromUni(${p.id})"><i class="bi bi-file-earmark-plus-fill"></i></button>` : ''}
       ${official ? `<a class="icon-btn official" href="${esc(official)}" target="_blank" rel="noopener" title="${T('p.viewsite.title')}" aria-label="${T('p.viewsite.title')}"><i class="bi bi-box-arrow-up-right"></i></a>` : ''}
     </div>
   </article>`;
+}
+
+function addToProposalFromUni(id) {
+  const p = allPrograms.find(x => x.id === id);
+  if (p && window.ProposalBasket) ProposalBasket.add(p, { name: university.name, city: university.city, country: university.country });
 }
 
 function openOrbit() {

@@ -1,13 +1,106 @@
 const router = require('express').Router();
+const db = require('../db');
 const PDFDocument = require('pdfkit');
 const path = require('path');
 
 const FONT = path.join(__dirname, '../assets/fonts/LiberationSans-Regular.ttf');
 const FONT_BOLD = path.join(__dirname, '../assets/fonts/LiberationSans-Bold.ttf');
 
-router.post('/pdf', (req, res) => {
+
+// ── Saved proposals (staff only: mounted behind requireRole('admin','advisor')) ─────────────
+let ready = null;
+function ensure() {
+  if (!ready) {
+    ready = db.query(`CREATE TABLE IF NOT EXISTS staff_proposals (
+      id INT AUTO_INCREMENT PRIMARY KEY, user_id INT NOT NULL, owner_name VARCHAR(120) DEFAULT NULL,
+      student_name VARCHAR(160) DEFAULT NULL, advisor_note TEXT DEFAULT NULL, program_ids TEXT NOT NULL,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+      KEY (user_id))`).catch(e => { ready = null; throw e; });
+  }
+  return ready;
+}
+// Official info written by the verification work (description_en block) -> short lines for the PDF.
+function officialInfo(desc) {
+  const MARK = 'Official entry requirements (verified on school website):';
+  const i = String(desc || '').indexOf(MARK);
+  if (i < 0) return {};
+  const t = String(desc).slice(i + MARK.length);
+  const grab = (label, next) => { const m = t.match(new RegExp(label + ':\\s*([\\s\\S]*?)(?:\\s(?:' + next + '):|$)')); return m ? m[1].trim() : null; };
+  return {
+    english: grab('English', 'Academic|Application fee|Turkey|Programme note|Source'),
+    applicationFee: grab('Application fee', 'Turkey|Programme note|Source'),
+    source: grab('Source', '$^')
+  };
+}
+async function freshPrograms(ids) {
+  ids = (ids || []).map(n => parseInt(n, 10)).filter(n => n > 0).slice(0, 200);
+  if (!ids.length) return [];
+  const [rows] = await db.query(`
+    SELECT p.*, pt.name AS type_name, el.city, el.country, e.name AS university_name
+    FROM programs p JOIN entity_locations el ON p.entity_location_id = el.id
+    JOIN entities e ON el.entity_id = e.id JOIN program_types pt ON p.program_type_id = pt.id
+    WHERE p.id IN (${ids.map(() => '?').join(',')})`, ids);
+  const byId = new Map(rows.map(r => [r.id, r]));
+  return ids.map(id => byId.get(id)).filter(Boolean).map(r => ({ ...r, official: officialInfo(r.description_en), description_en: undefined, description_json: undefined, requirements_json: undefined }));
+}
+router.get('/', async (req, res) => {
   try {
-    const { programs = [], studentName = '', advisorNote = '' } = req.body;
+    await ensure();
+    const admin = req.user.role === 'admin';
+    const [rows] = await db.query(`SELECT id, user_id, owner_name, student_name, program_ids, updated_at FROM staff_proposals ${admin ? '' : 'WHERE user_id = ?'} ORDER BY updated_at DESC LIMIT 200`, admin ? [] : [req.user.id]);
+    res.json(rows.map(r => ({ id: r.id, owner: r.owner_name, student_name: r.student_name, count: (JSON.parse(r.program_ids) || []).length, updated_at: r.updated_at, mine: r.user_id === req.user.id })));
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+router.post('/save', async (req, res) => {
+  try {
+    await ensure();
+    const b = req.body || {};
+    const ids = (Array.isArray(b.programIds) ? b.programIds : []).map(n => parseInt(n, 10)).filter(n => n > 0).slice(0, 200);
+    if (!ids.length) return res.status(400).json({ error: 'En az bir program gerekli.' });
+    const student = String(b.studentName || '').trim().slice(0, 160), note = String(b.advisorNote || '').slice(0, 4000);
+    if (b.id) {
+      const [[cur]] = await db.query('SELECT user_id FROM staff_proposals WHERE id = ?', [b.id]);
+      if (!cur) return res.status(404).json({ error: 'Teklif bulunamadı.' });
+      if (cur.user_id !== req.user.id && req.user.role !== 'admin') return res.status(403).json({ error: 'Bu teklif size ait değil.' });
+      await db.query('UPDATE staff_proposals SET student_name=?, advisor_note=?, program_ids=? WHERE id=?', [student, note, JSON.stringify(ids), b.id]);
+      return res.json({ ok: true, id: Number(b.id) });
+    }
+    const [r] = await db.query('INSERT INTO staff_proposals (user_id, owner_name, student_name, advisor_note, program_ids) VALUES (?,?,?,?,?)',
+      [req.user.id, String(req.user.name || req.user.email || '').slice(0, 120), student, note, JSON.stringify(ids)]);
+    res.json({ ok: true, id: r.insertId });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+router.get('/:id', async (req, res, next) => {
+  if (!/^\d+$/.test(req.params.id)) return next();
+  try {
+    await ensure();
+    const [[r]] = await db.query('SELECT * FROM staff_proposals WHERE id = ?', [req.params.id]);
+    if (!r) return res.status(404).json({ error: 'Teklif bulunamadı.' });
+    if (r.user_id !== req.user.id && req.user.role !== 'admin') return res.status(403).json({ error: 'Bu teklif size ait değil.' });
+    res.json({ id: r.id, student_name: r.student_name, advisor_note: r.advisor_note, programs: await freshPrograms(JSON.parse(r.program_ids)) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+router.delete('/:id', async (req, res) => {
+  try {
+    await ensure();
+    const [[r]] = await db.query('SELECT user_id FROM staff_proposals WHERE id = ?', [req.params.id]);
+    if (!r) return res.json({ ok: true });
+    if (r.user_id !== req.user.id && req.user.role !== 'admin') return res.status(403).json({ error: 'Bu teklif size ait değil.' });
+    await db.query('DELETE FROM staff_proposals WHERE id = ?', [req.params.id]);
+    res.json({ ok: true });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+router.post('/pdf', async (req, res) => {
+  try {
+    const { programs: sent = [], studentName = '', advisorNote = '' } = req.body;
+    // Refresh fees and official info from the database; fall back to what the browser sent.
+    let programs = sent;
+    try {
+      const fresh = await freshPrograms(sent.map(p => p.id));
+      const map = new Map(fresh.map(p => [p.id, p]));
+      programs = sent.map(p => map.get(parseInt(p.id, 10)) || p);
+    } catch (e) { programs = sent; }
     if (!Array.isArray(programs) || !programs.length) {
       return res.status(400).json({ error: 'En az bir program gerekli.' });
     }
@@ -82,6 +175,7 @@ router.post('/pdf', (req, res) => {
       row('Yıllık Ücret:', fee);
 
       if (p.duration) row('Eğitim Süresi:', p.duration);
+      if (p.official && p.official.applicationFee) row('Başvuru Ücreti:', String(p.official.applicationFee).replace(/\.$/, ''));
 
       if (p.english_req_type && p.english_req_type !== 'None') {
         const engStr = p.english_req_score
@@ -90,6 +184,7 @@ router.post('/pdf', (req, res) => {
         row('İngilizce Şartı:', engStr);
       }
 
+      if (p.official && p.official.english) row('Resmi İngilizce Skorları:', String(p.official.english).slice(0, 220));
       if (p.gpa_requirement) row('GPA Şartı:', String(p.gpa_requirement));
       if (p.intake_months) row('Kabul Dönemleri:', p.intake_months);
 
