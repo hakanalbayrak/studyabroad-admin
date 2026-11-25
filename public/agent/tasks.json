@@ -1,5 +1,5 @@
 {
- "instructions": "# Task (browser-only round): pages that automated text fetching could not read\n\nThese schools block simple page fetchers or load their fee tables with JavaScript. You have a real browser, so you are the one who can read them.\n\nPART A (\"tasks\"): official APPLICATION FEE per school and level (rules below).\nPART B (\"tasks_tuition\"): official annual INTERNATIONAL TUITION FEES per institution (see the Part B rules at the end).\n\n## Part A rules\n\nGoal: for each item in \"tasks\" (school + level bachelor/master) find the official application fee for international applicants, using the school's OFFICIAL website only.\nlast_url / last_status show what happened in the previous round (blocked, not_found, js_empty, read).\n\nMethod\n- Browse like a person: real browser, normal pace (a few seconds between page loads), one page at a time.\n- Wait for pages and automatic browser checks to finish loading; expand accordions, tabs and \"show more\" panels; read hidden text.\n- Look in: \"Tuition & fees\", \"Fees and costs\", \"Cost of attendance\", \"How to apply\", \"Apply\", \"International admissions\", \"Admissions FAQ\", fee schedules as PDF/spreadsheet on the school's own site, programme pages, and country selectors (choose Turkey or \"international / non-EU\", then the right level).\n- Search the school's own site: site:<school-domain> \"application fee\".\n- Official domains only. No agent, aggregator or forum sites.\n- If a page asks you to solve a CAPTCHA or otherwise blocks automated access, do not try to get around it. Set page_status \"blocked\", put the exact URL in manual_check_url so a person can open it, and continue with other official pages of that school.\n- Also record the admissions office contact email or contact-form URL from the official site in contact (so a person can ask about the fee).\n- An application fee is the fee paid when submitting the application. Not tuition, deposit, registration, enrolment, test or visa fees. Write \"none\" only if an official page explicitly says there is no application fee (quote it in application_fee_note). Otherwise null. Never guess or infer.\n- For UK undergraduate applications through UCAS, report any fee the university itself charges (usually none) and mention in the note that UCAS charges its own fee.\n\nOutput: JSON list, one object per item, same order, no extra text:\n{\"school\",\"level\",\n \"application_fee\": \"amount with currency e.g. 'USD 75', or 'none', or null\",\n \"application_fee_note\": \"exact short quote or paraphrase from the page, plus variations (programme, country, waiver)\",\n \"source_url\": \"exact page or PDF where you read it\",\n \"manual_check_url\": \"URL a person should open when blocked, else null\",\n \"contact\": \"admissions email or contact form URL, else null\",\n \"page_status\": \"read | blocked | not_found | js_empty\",\n \"confidence\": \"high | medium | low\",\n \"english\": {\"IELTS\":null,\"TOEFL\":null,\"PTE\":null,\"Duolingo\":null}}\n\nSubmit: POST https://paneledu.com/api/agent/results with header X-Agent-Token: <token you were given>, Content-Type: application/json, body = JSON list (1-10 objects per request; send each batch as soon as it is done). Expected answer: {\"ok\":true,\"saved\":N}.\n\n## Part B rules (tuition)\nFor every item in \"tasks_tuition\" (an institution; manual_url = page that could not be read before) find the official annual tuition fee for INTERNATIONAL (non-EU / non-home) students on the institution's own website: fee pages, fee tables, fee brochures/PDFs/spreadsheets, fee selectors (choose Turkey or \"international\"), course pages when the fee is only given per course. Latest published academic year; state it. Same rules as above (official domain only; no CAPTCHA bypass; never guess; human pace).\nResult object per institution:\n{\"school\":\"<same as entity>\",\"entity\":\"<same name>\",\"country\":\"...\",\"page_status\":\"read | blocked | not_found | js_empty\",\"confidence\":\"high | medium | low\",\"source_urls\":[\"pages or PDFs read\"],\"manual_check_url\":null,\n \"fees\":[{\"level\":\"bachelor | master\",\"applies_to\":\"who the fee covers: 'all undergraduate', a faculty/subject band, or an exact programme name\",\"amount_per_year\":0,\"currency\":\"GBP|USD|EUR|CAD|AUD|...\",\"academic_year\":\"2026/27\",\"period_note\":\"per year / per credit / total programme / per semester, as the school states it\"}],\n \"note\":\"short factual remark\"}\nSend Part A and Part B results in separate POST requests (1-10 objects each).\n",
+ "instructions": "# Task (browser-only round, Mac session): pages that automated text fetching could not read\n\nThese schools block simple page fetchers or load their fee tables with JavaScript. You have a real browser, so you are the one who can read them.\n\nPART A (\"tasks\"): official APPLICATION FEE per school and level (rules below).\nPART B (\"tasks_tuition\"): official annual INTERNATIONAL TUITION FEES per institution (see the Part B rules at the end).\n\n## Part A rules\n\nGoal: for each item in \"tasks\" (school + level bachelor/master) find the official application fee for international applicants, using the school's OFFICIAL website only.\nlast_url / last_status show what happened in the previous round (blocked, not_found, js_empty, read).\n\nMethod\n- Browse like a person: real browser, normal pace (a few seconds between page loads), one page at a time.\n- Wait for pages and automatic browser checks to finish loading; expand accordions, tabs and \"show more\" panels; read hidden text.\n- Look in: \"Tuition & fees\", \"Fees and costs\", \"Cost of attendance\", \"How to apply\", \"Apply\", \"International admissions\", \"Admissions FAQ\", fee schedules as PDF/spreadsheet on the school's own site, programme pages, and country selectors (choose Turkey or \"international / non-EU\", then the right level).\n- Search the school's own site: site:<school-domain> \"application fee\".\n- Official domains only. No agent, aggregator or forum sites.\n- If a page asks you to solve a CAPTCHA or otherwise blocks automated access, do not try to get around it. Set page_status \"blocked\", put the exact URL in manual_check_url so a person can open it, and continue with other official pages of that school.\n- Also record the admissions office contact email or contact-form URL from the official site in contact (so a person can ask about the fee).\n- An application fee is the fee paid when submitting the application. Not tuition, deposit, registration, enrolment, test or visa fees. Write \"none\" only if an official page explicitly says there is no application fee (quote it in application_fee_note). Otherwise null. Never guess or infer.\n- For UK undergraduate applications through UCAS, report any fee the university itself charges (usually none) and mention in the note that UCAS charges its own fee.\n\nOutput: JSON list, one object per item, same order, no extra text:\n{\"school\",\"level\",\n \"application_fee\": \"amount with currency e.g. 'USD 75', or 'none', or null\",\n \"application_fee_note\": \"exact short quote or paraphrase from the page, plus variations (programme, country, waiver)\",\n \"source_url\": \"exact page or PDF where you read it\",\n \"manual_check_url\": \"URL a person should open when blocked, else null\",\n \"contact\": \"admissions email or contact form URL, else null\",\n \"page_status\": \"read | blocked | not_found | js_empty\",\n \"confidence\": \"high | medium | low\",\n \"english\": {\"IELTS\":null,\"TOEFL\":null,\"PTE\":null,\"Duolingo\":null}}\n\nSubmit: POST https://paneledu.com/api/agent/results with header X-Agent-Token: <token you were given>, Content-Type: application/json, body = JSON list (1-10 objects per request; send each batch as soon as it is done). Expected answer: {\"ok\":true,\"saved\":N}.\n\n## Part B rules (tuition)\nFor every item in \"tasks_tuition\" (an institution; manual_url = page that could not be read before) find the official annual tuition fee for INTERNATIONAL (non-EU / non-home) students on the institution's own website: fee pages, fee tables, fee brochures/PDFs/spreadsheets, fee selectors (choose Turkey or \"international\"), course pages when the fee is only given per course. Latest published academic year; state it. Same rules as above (official domain only; no CAPTCHA bypass; never guess; human pace).\nResult object per institution:\n{\"school\":\"<same as entity>\",\"entity\":\"<same name>\",\"country\":\"...\",\"page_status\":\"read | blocked | not_found | js_empty\",\"confidence\":\"high | medium | low\",\"source_urls\":[\"pages or PDFs read\"],\"manual_check_url\":null,\n \"fees\":[{\"level\":\"bachelor | master\",\"applies_to\":\"who the fee covers: 'all undergraduate', a faculty/subject band, or an exact programme name\",\"amount_per_year\":0,\"currency\":\"GBP|USD|EUR|CAD|AUD|...\",\"academic_year\":\"2026/27\",\"period_note\":\"per year / per credit / total programme / per semester, as the school states it\"}],\n \"note\":\"short factual remark\"}\nSend Part A and Part B results in separate POST requests (1-10 objects each).\n",
  "tasks": [
   {
    "school": "Australian Catholic University",
@@ -74,14 +74,6 @@
    "last_status": "blocked"
   },
   {
-   "school": "The University of Notre Dame Australia",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 55,
-   "last_url": "https://www.notredame.edu.au/study/applications-and-admissions/how-to-apply/international-applicants",
-   "last_status": "blocked"
-  },
-  {
    "school": "Torrens University Australia",
    "level": "bachelor",
    "country": "Australia",
@@ -95,14 +87,6 @@
    "country": "Australia",
    "programmes": 32,
    "last_url": "https://www.torrens.edu.au/studying-with-us/faqs",
-   "last_status": "blocked"
-  },
-  {
-   "school": "University of Tasmania (UTAS)",
-   "level": "bachelor",
-   "country": "Australia",
-   "programmes": 38,
-   "last_url": "https://www.utas.edu.au/study/apply/international-students",
    "last_status": "blocked"
   },
   {
@@ -127,22 +111,6 @@
    "country": "Ireland",
    "programmes": 194,
    "last_url": "https://www.ucd.ie/graduateadmissions/admissions/howtoapply/",
-   "last_status": "blocked"
-  },
-  {
-   "school": "Geneva Business School",
-   "level": "bachelor",
-   "country": "Spain",
-   "programmes": 2,
-   "last_url": "https://gbsge.com/programs/bachelor-of-international-management/fees/",
-   "last_status": "blocked"
-  },
-  {
-   "school": "Geneva Business School",
-   "level": "master",
-   "country": "Spain",
-   "programmes": 2,
-   "last_url": "https://gbsge.com/programs/master-of-international-management/fees/",
    "last_status": "blocked"
   },
   {
