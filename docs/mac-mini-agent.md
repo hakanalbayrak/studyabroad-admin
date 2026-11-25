@@ -12,7 +12,7 @@ Use this to let a Claude session on the Mac mini (home IP, real Chrome) read off
 Task: read official school pages that cloud fetchers cannot open, for paneledu.com.
 
 1. Fetch the task list and rules: https://paneledu.com/agent/tasks.json
-   Read the "instructions" field first. "tasks" = Part A (application fee per school and level). "tasks_tuition" = Part B (annual international tuition per institution; the same list also shows a manual_url for each).
+   Read the "instructions" field first. "tasks" = Part A (application fee per school and level). "tasks_tuition" = Part B (annual international tuition per institution; manual_url shown for each). "tasks_courses" = Part C (course-page fees for UK/US institutions; each item lists programme ids and names).
 2. Use Claude in Chrome (my real browser) for every page. Official school websites only. Browse at human pace (a few seconds between pages), one page at a time. Expand accordions, tabs and "show more" panels; open fee PDFs.
 3. If a page shows a CAPTCHA or asks me to log in, do NOT try to get around it: stop on that item, tell me which URL it is, and continue with the next one (I can solve it myself if I am at the Mac).
 4. Never guess. If an official page does not state a value, use null. Application fee = the fee paid when submitting the application; not tuition, deposit, registration, enrolment, test or visa fees.
