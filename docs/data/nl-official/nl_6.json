@@ -1,0 +1,1880 @@
+{
+ "institutions": [
+  {
+   "name": "Fontys University of Applied Sciences",
+   "city": "Eindhoven",
+   "country": "Netherlands",
+   "website": "https://www.fontys.nl/en",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 22,
+    "master": 14
+   },
+   "entity_note": "Multi-campus (Eindhoven main; Tilburg, Venlo, others). Fontys English filter shows 22 bachelors and 14 masters (plus 1 associate degree and courses, excluded). Listed 22 bachelors + 8 full-time masters; excluded 6 part-time-only masters (Architecture, Choreography, MBA, DTE part-time, System Design part-time, Urbanism which the page lists as 4-year part-time). Fontys pages mostly say only 'Bachelor/Master' without BSc/BEng titles; prefixes are conventional. Fees from Fontys Tuition Fees Regulations 2026-2027 (EUR 10,210 default full-time institutional; EUR 13,080 for engineering/ICT/natural-science/arts bachelors; masters in Music/Performing Public Space EUR 8,980); masters AI-Translator and Data Driven Business assumed default 10,210; Applied Quantum Technology fee equals Amsterdam UAS fee (null).",
+   "programs": [
+    {
+     "name": "BSc Applied Mathematics",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Applied mathematics / data science",
+     "intake_months": "September",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year). Good mathematics foundation recommended (not a formal requirement).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Applied-MathematicsData-Science-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "BSc Applied Physics",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Applied physics",
+     "intake_months": "September",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Applied-Physics-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "BSc Applied Science - Chemistry and Chemical Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Chemistry / chemical engineering",
+     "intake_months": "September (February for vwo-equivalent or relevant vocational background)",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year). 4 years (3.5 or 3 years possible with vwo-equivalent/vocational background).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Applied-Science-Chemistry-Chemical-Engineering-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "BEng Automotive Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Automotive engineering",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Automotive-Engineering-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "BA Circus and Performance Art",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Performing arts",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027 (audition/admission assessment required before admission)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year). Audition and admission assessment compulsory.",
+     "source_url": "https://www.fontys.nl/en/Programmes/Circus-and-Performance-Art-bachelor-full-time.htm",
+     "city": "Tilburg"
+    },
+    {
+     "name": "BA Communication - International Communication Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Communication",
+     "intake_months": "September",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps)",
+     "fee_non_eu": 10210,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Communication-International-Communication-Management-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "BA Dance - Dance Arts in Context",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Dance / performing arts",
+     "intake_months": "September",
+     "application_deadline": "1 March 2027 (audition required)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year). Audition and admission assessment compulsory.",
+     "source_url": "https://www.fontys.nl/en/Programmes/Dance-bachelor-full-time.htm",
+     "city": "Tilburg"
+    },
+    {
+     "name": "BEng Electrical and Electronic Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Electrical engineering",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Electrical-Electronic-Engineering-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "BBA Finance & Control",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Finance and accounting",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 10210,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Finance-Control.htm",
+     "city": "Venlo"
+    },
+    {
+     "name": "BSc Information & Communication Technology",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "ICT / software engineering",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Information-Communication-Technology-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "BSc Industrial Design Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Industrial design engineering",
+     "intake_months": "September",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Industrial-Design-Engineering-bachelor-full-time.htm",
+     "city": "Venlo"
+    },
+    {
+     "name": "BEng Industrial Engineering and Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Industrial engineering / management",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 10210,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Industrial-Engineering-and-Management-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "BSc Information Technology",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Information technology",
+     "intake_months": "September",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Information-Technology-Venlo-bachelor-full-time.htm",
+     "city": "Venlo"
+    },
+    {
+     "name": "BBA International Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "International business",
+     "intake_months": "September (Eindhoven, Venlo), February (Venlo only)",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 10210,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/International-Business-bachelor-full-time.htm",
+     "city": "Eindhoven, Venlo"
+    },
+    {
+     "name": "BEng Logistics Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Logistics engineering",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year). Fee note: regulation lists EUR 13,080 except first-year students (joint first year with Logistics Management).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Logistics-Engineering-bachelor-full-time.htm",
+     "city": "Venlo"
+    },
+    {
+     "name": "BSc Logistics Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Logistics and supply chain management",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 10210,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Logistics-Management-bachelor-full-time.htm",
+     "city": "Venlo"
+    },
+    {
+     "name": "BBA Marketing Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Marketing / business",
+     "intake_months": "September (Tilburg, Venlo), February (Venlo only)",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 10210,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Marketing-Management-bachelor-full-time.htm",
+     "city": "Tilburg, Venlo"
+    },
+    {
+     "name": "BEng Mechanical Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Mechanical engineering",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Mechanical-Engineering-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "BEng Mechatronics",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Mechatronics",
+     "intake_months": "September (Eindhoven, Venlo), February (Eindhoven only)",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps); February intake: 15 November (international students)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Mechatronics-bachelor-full-time.htm",
+     "city": "Eindhoven, Venlo"
+    },
+    {
+     "name": "BSc Medical Imaging and Radiation Therapy",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Health / medical imaging",
+     "intake_months": "September",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps)",
+     "fee_non_eu": 10210,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Medical-Imaging-and-Radiation-Therapy-MIRT-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "BMus Music - Conservatory of Music Tilburg",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Music",
+     "intake_months": "September",
+     "application_deadline": "30 March 2027 (non-EEA; EEA 10 May 2027); admission assessment/audition required",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year). Audition/admission assessment (musical skills, performance, theory) compulsory.",
+     "source_url": "https://www.fontys.nl/en/Programmes/Conservatory-of-Music-bachelor-full-time.htm",
+     "city": "Tilburg"
+    },
+    {
+     "name": "BSc Physiotherapy",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Health / physiotherapy",
+     "intake_months": "September",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (Fontys FAQ lists 15 June for non-EU/EEA September applicants; non-EEA students may need extra steps)",
+     "fee_non_eu": 10210,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: diploma of higher secondary education equivalent to Dutch (havo/vwo) standards, submitted with certified translation; Fontys validates the diploma (unrecognised diplomas can be assessed, Nuffic evaluation possible). English proof: IELTS 6.0 overall (no component below 5.5, max one at 5.5) or TOEFL iBT 80, certificate max 2 years old. No numerus fixus or selection mentioned. Turkish Lise Diploması/YKS and foundation-year rules are not published on Fontys pages; contact Fontys admissions. Non-EU students need a residence permit and proof of funds (EUR 13,620 first year).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Physiotherapy-bachelor-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "MSc Applied Quantum Technology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Quantum technology / engineering",
+     "intake_months": "September",
+     "application_deadline": "1 April 2027 (non-EU); 1 June for Dutch/EEA",
+     "fee_non_eu": null,
+     "fee_year": null,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree (diploma validation by Fontys, certified translations); English IELTS 6.0 (no component below 5.5) or TOEFL iBT 80. Turkish degrees are not specifically addressed on Fontys pages; contact Fontys admissions. Residence permit and proof of funds needed. Relevant bachelor (applied physics, electrical engineering, applied mathematics, computer science or comparable technical) with solid maths/physics/programming; selection procedure run by Amsterdam UAS (joint degree of four UAS, lead Amsterdam UAS). Tuition fee set equal to Amsterdam UAS institutional fee (amount not published by Fontys; fee left null). Fontys page gives no English scores (Fontys standard: IELTS 6.0/TOEFL 80).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Applied-Quantum-Technology-master-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "MSc AI-Translator",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Artificial intelligence / IT",
+     "intake_months": "September",
+     "application_deadline": "September intake: Studielink by 1 May 2027; (February intake is part-time only)",
+     "fee_non_eu": 10210,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree (diploma validation by Fontys, certified translations); English IELTS 6.0 (no component below 5.5) or TOEFL iBT 80. Turkish degrees are not specifically addressed on Fontys pages; contact Fontys admissions. Residence permit and proof of funds needed. Relevant bachelor's degree. Joint degree Fontys and Avans UAS; full-time option is 1 year. Fee 10,210 is the Fontys default full-time institutional fee (programme not among listed exceptions; inferred).",
+     "source_url": "https://www.fontys.nl/en/Programmes/AI-Translator-master-full-time-and-part-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "MSc Applied IT",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Information technology",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: Studielink by 1 May 2027 (portfolio by 8 April or 8 May); February intake: Studielink by 1 December (portfolio by 8 November or 8 December); non-EEA may need extra steps",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree (diploma validation by Fontys, certified translations); English IELTS 6.0 (no component below 5.5) or TOEFL iBT 80. Turkish degrees are not specifically addressed on Fontys pages; contact Fontys admissions. Residence permit and proof of funds needed. Relevant bachelor's degree; selection by portfolio and intake interview. 60 ECTS full-time (also part-time 1.5 years). Fee read from Fontys 2026-27 regulation table (Engineering/ICT masters group).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Applied-IT-master-full-time-and-part-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "MSc Data Driven Business",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Data science / business",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU); 31 August for EU/Dutch",
+     "fee_non_eu": 10210,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree (diploma validation by Fontys, certified translations); English IELTS 6.0 (no component below 5.5) or TOEFL iBT 80. Turkish degrees are not specifically addressed on Fontys pages; contact Fontys admissions. Residence permit and proof of funds needed. Relevant bachelor's degree. Fee 10,210 is the Fontys default full-time institutional fee (programme not among listed exceptions; inferred).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Data-Driven-Business-master-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "MSc Digital Technology Engineering",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Engineering / digital technology",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (Studielink; non-EEA may need extra steps)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree (diploma validation by Fontys, certified translations); English IELTS 6.0 (no component below 5.5) or TOEFL iBT 80. Turkish degrees are not specifically addressed on Fontys pages; contact Fontys admissions. Residence permit and proof of funds needed. Relevant bachelor's degree (engineering). EUR-ACE accredited MSc. Fee read from Fontys 2026-27 regulation table (Engineering/ICT masters group).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Master-Digital-Technology-Engineering-master-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "MSc System Design",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Systems engineering",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (Studielink; non-EEA may need extra steps)",
+     "fee_non_eu": 13080,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree (diploma validation by Fontys, certified translations); English IELTS 6.0 (no component below 5.5) or TOEFL iBT 80. Turkish degrees are not specifically addressed on Fontys pages; contact Fontys admissions. Residence permit and proof of funds needed. Relevant bachelor's degree (engineering bachelors can enter directly). Fee read from Fontys 2026-27 regulation table (Engineering/ICT masters group).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Master-System-Design-master-full-time.htm",
+     "city": "Eindhoven"
+    },
+    {
+     "name": "MMus Master of Music",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Music",
+     "intake_months": "September",
+     "application_deadline": null,
+     "fee_non_eu": 8980,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree (diploma validation by Fontys, certified translations); English IELTS 6.0 (no component below 5.5) or TOEFL iBT 80. Turkish degrees are not specifically addressed on Fontys pages; contact Fontys admissions. Residence permit and proof of funds needed. Fontys Academy of the Arts; audition/admission assessment applies. Programme page does not publish deadline or entry details in the extractable content (check Fontys Conservatory of Music admission page).",
+     "source_url": "https://www.fontys.nl/en/Programmes/Master-of-Music.htm",
+     "city": "Tilburg"
+    },
+    {
+     "name": "MA Performing Public Space",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Performing arts / public space",
+     "intake_months": "September",
+     "application_deadline": "31 March 2027 (early review 27 February 2027)",
+     "fee_non_eu": 8980,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree (diploma validation by Fontys, certified translations); English IELTS 6.0 (no component below 5.5) or TOEFL iBT 80. Turkish degrees are not specifically addressed on Fontys pages; contact Fontys admissions. Residence permit and proof of funds needed. Relevant bachelor's (theatre, dance, circus, music, fine arts, architecture, digital arts, graphic design etc.); motivation letter, project/research plan and portfolio; admission assessment compulsory. Hybrid format with intensive on-site weeks in Tilburg.",
+     "source_url": "https://www.fontys.nl/en/Programmes/Performing-Public-Space-master-full-time.htm",
+     "city": "Tilburg"
+    }
+   ]
+  },
+  {
+   "name": "Avans University of Applied Sciences",
+   "city": "Breda",
+   "country": "Netherlands",
+   "website": "https://www.avans.nl/en/int",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 3,
+    "master": 6
+   },
+   "entity_note": "Campuses Breda, Den Bosch, Tilburg (no English degree programmes found in Tilburg). Avans English overview lists 3 full-time bachelors and 6 full-time masters (4 of which are graduation tracks of the MA Fine Art & Design, listed separately as Avans lists them). Exchange programmes excluded. Master AI-Translator is a joint Fontys-Avans degree listed under Fontys. Institutional fee EUR 10,308 (2026-27) per programme pages.",
+   "programs": [
+    {
+     "name": "BBA International Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "International business",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EEA applicants with non-Dutch diploma; September 2027 intake)",
+     "fee_non_eu": 10308,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: prior education equivalent to Dutch havo/vwo/mbo-4 with English as a subject; graduating in maths, accounting or economics expected; unrecognised foreign diplomas checked by Nuffic. English IELTS Academic 6.0 or TOEFL iBT 80 (exams before 21 Jan 2026), max 2 years old, no home editions. No numerus fixus; Turkish diplomas not specifically mentioned.",
+     "source_url": "https://www.avans.nl/en/int/studying/programmes/bachelor/international-business-fulltime",
+     "city": "Breda, Den Bosch"
+    },
+    {
+     "name": "BBA Finance & Control",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Finance and accounting",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EEA applicants with non-Dutch diploma; September 2027 intake)",
+     "fee_non_eu": 10308,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: prior education equivalent to Dutch havo/vwo/mbo-4 with English as a subject; maths and accounting or economics strongly recommended; Nuffic checks unfamiliar diplomas. English IELTS Academic 6.0 or TOEFL iBT 80. No selection mentioned; Turkish diplomas not specifically mentioned. Degree title 'BBA' assumed (page names only the programme).",
+     "source_url": "https://www.avans.nl/en/int/studying/programmes/bachelor/finance-and-control-international-fulltime",
+     "city": "Breda"
+    },
+    {
+     "name": "BSc Environmental Science for Sustainability, Ecosystems and Technology",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Environmental science",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EEA applicants with non-Dutch diploma; September 2027 intake)",
+     "fee_non_eu": 10308,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Havo/vwo-level with maths and English (3-year fast track needs vwo with maths, chemistry, English). Non-European applicants must complete a mandatory intake (questionnaire, motivation letter, CV, optional interview). IELTS 6.0 or TOEFL iBT 80. Fast track can start September or February. Turkish diplomas not specifically mentioned.",
+     "source_url": "https://www.avans.nl/en/int/studying/programmes/bachelor/environmental-science-for-sustainability-ecosystems-and-technology-fulltime",
+     "city": "Breda"
+    },
+    {
+     "name": "MA Animation",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Animation",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EEA applicants with non-Dutch diploma; September 2027 intake)",
+     "fee_non_eu": 10308,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: relevant bachelor's degree; spoken and written English proof (IELTS Academic 6.0 or TOEFL iBT 80; Cambridge accepted); admission assignments (CV, personal statement, portfolio, research proposal) then interview via Teams; apply via Studielink. Turkish degrees not specifically mentioned. Graduates of a Bachelor of Animation/Illustration or similar practising professionals with animation experience; portfolio and assessment interview.",
+     "source_url": "https://www.avans.nl/en/int/studying/programmes/master/animation-fulltime",
+     "city": "Den Bosch"
+    },
+    {
+     "name": "MA Fine Art & Design - Ecology Futures (graduation track)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Fine art and design",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EEA applicants with non-Dutch diploma; September 2027 intake)",
+     "fee_non_eu": 10308,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: relevant bachelor's degree; spoken and written English proof (IELTS Academic 6.0 or TOEFL iBT 80; Cambridge accepted); admission assignments (CV, personal statement, portfolio, research proposal) then interview via Teams; apply via Studielink. Turkish degrees not specifically mentioned. Practice related to the track's topics (artists, designers, writers, curators, social scientists, scientists).",
+     "source_url": "https://www.avans.nl/en/int/studying/programmes/master/ecology-futures-graduation-track-fulltime",
+     "city": "Den Bosch"
+    },
+    {
+     "name": "MA Fine Art & Design - Health by Design (graduation track)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Fine art and design / health",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EEA applicants with non-Dutch diploma; September 2027 intake)",
+     "fee_non_eu": 10308,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: relevant bachelor's degree; spoken and written English proof (IELTS Academic 6.0 or TOEFL iBT 80; Cambridge accepted); admission assignments (CV, personal statement, portfolio, research proposal) then interview via Teams; apply via Studielink. Turkish degrees not specifically mentioned. Bachelor in technology, healthcare and welfare, education, arts and design, or research.",
+     "source_url": "https://www.avans.nl/en/int/studying/programmes/master/health-by-design-graduation-track-fulltime",
+     "city": "Breda"
+    },
+    {
+     "name": "MA Fine Art & Design - Situated Design (graduation track)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Fine art and design",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EEA applicants with non-Dutch diploma; September 2027 intake)",
+     "fee_non_eu": 10308,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: relevant bachelor's degree; spoken and written English proof (IELTS Academic 6.0 or TOEFL iBT 80; Cambridge accepted); admission assignments (CV, personal statement, portfolio, research proposal) then interview via Teams; apply via Studielink. Turkish degrees not specifically mentioned. Bachelor from a UAS (hbo) or research university (wo).",
+     "source_url": "https://www.avans.nl/en/int/studying/programmes/master/situated-design-graduation-track-fulltime",
+     "city": "Den Bosch"
+    },
+    {
+     "name": "MA Fine Art & Design - Visual Arts and Post-Contemporary Practice (graduation track)",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Fine art and design",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EEA applicants with non-Dutch diploma; September 2027 intake)",
+     "fee_non_eu": 10308,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: relevant bachelor's degree; spoken and written English proof (IELTS Academic 6.0 or TOEFL iBT 80; Cambridge accepted); admission assignments (CV, personal statement, portfolio, research proposal) then interview via Teams; apply via Studielink. Turkish degrees not specifically mentioned. Bachelor from a UAS (hbo) or research university (wo).",
+     "source_url": "https://www.avans.nl/en/int/studying/programmes/master/visual-arts-and-post-contemporary-practice-graduation-track-fulltime",
+     "city": "Den Bosch"
+    },
+    {
+     "name": "MSc Materials & Energy Transition",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Materials / energy engineering",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EEA applicants with non-Dutch diploma; September 2027 intake)",
+     "fee_non_eu": 10308,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: relevant bachelor's degree; spoken and written English proof (IELTS Academic 6.0 or TOEFL iBT 80; Cambridge accepted); admission assignments (CV, personal statement, portfolio, research proposal) then interview via Teams; apply via Studielink. Turkish degrees not specifically mentioned. Bachelor in life sciences or engineering completed before 1 September 2026; signed work-based learning placement agreement with a company required; CV and motivation letter; assessment interview.",
+     "source_url": "https://www.avans.nl/en/int/studying/programmes/master/materials-and-energy-transition-fulltime",
+     "city": "Breda"
+    }
+   ]
+  },
+  {
+   "name": "HAN University of Applied Sciences",
+   "city": "Arnhem",
+   "country": "Netherlands",
+   "website": "https://www.hanuniversity.com/en",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 10,
+    "master": 8
+   },
+   "entity_note": "Campuses Arnhem and Nijmegen. HAN's own count (7 reasons page): 10 bachelors and 8 masters. Listed 10 bachelors and 7 masters (Engineering Systems 3 tracks and Applied Molecular Sciences 2 tracks listed separately as HAN counts them); excluded Applied Data Science (part-time only, EU/EEA/resident permit holders). Fees 2026-27 from HAN tuition page (EUR 9,320 non-technical, EUR 10,940 technical/science); financial guarantee EUR 14,474 additional for visa. Bachelor durations (4 years) not always stated on HAN pages (standard 240 ECTS). Some degree prefixes assumed.",
+   "programs": [
+    {
+     "name": "BSc Automotive Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Automotive engineering",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA, via Studielink; EU/EEA 15 August); HAN scholarship applicants must be accepted before 1 April",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: secondary school certificate (e.g. IB, Abitur, A-levels, Dutch havo/vwo; unlisted certificates judged by HAN admissions office) with good maths grades; English IELTS Academic 6.0 (no sub-score below 5.0, speaking 6.0), TOEFL iBT 80 (exams before 21 Jan 2026; new scale 4.5), test max 2 years old, no home editions; exempt with IB/English-medium education in listed countries or Nuffic-listed diploma. Admission also requires Matching (self-reflection form and activity). Financial guarantee required for visa. Turkish diplomas not specifically mentioned. Subjects: satisfactory English, physics and maths.",
+     "source_url": "https://www.hanuniversity.com/en/programs/bachelor/automotive-engineering/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "BSc Chemistry",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Chemistry",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA, via Studielink; EU/EEA 15 August); HAN scholarship applicants must be accepted before 1 April",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: secondary school certificate (e.g. IB, Abitur, A-levels, Dutch havo/vwo; unlisted certificates judged by HAN admissions office) with good maths grades; English IELTS Academic 6.0 (no sub-score below 5.0, speaking 6.0), TOEFL iBT 80 (exams before 21 Jan 2026; new scale 4.5), test max 2 years old, no home editions; exempt with IB/English-medium education in listed countries or Nuffic-listed diploma. Admission also requires Matching (self-reflection form and activity). Financial guarantee required for visa. Turkish diplomas not specifically mentioned. Chemistry and maths required on certificate (biology recommended). Language of instruction: HAN lists this among its English-taught bachelors, programme page itself does not state language.",
+     "source_url": "https://www.hanuniversity.com/en/programs/bachelor/chemistry/fulltime/",
+     "city": "Nijmegen"
+    },
+    {
+     "name": "BA Communication",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Communication",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: 1 May 2027; February intake: 1 October 2026 (non-EU/EEA, via Studielink)",
+     "fee_non_eu": 9320,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: secondary school certificate (e.g. IB, Abitur, A-levels, Dutch havo/vwo; unlisted certificates judged by HAN admissions office) with good maths grades; English IELTS Academic 6.0 (no sub-score below 5.0, speaking 6.0), TOEFL iBT 80 (exams before 21 Jan 2026; new scale 4.5), test max 2 years old, no home editions; exempt with IB/English-medium education in listed countries or Nuffic-listed diploma. Admission also requires Matching (self-reflection form and activity). Financial guarantee required for visa. Turkish diplomas not specifically mentioned.",
+     "source_url": "https://www.hanuniversity.com/en/programs/bachelor/communication/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "BEng Electrical and Electronic Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Electrical engineering",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA, via Studielink; EU/EEA 15 August); HAN scholarship applicants must be accepted before 1 April",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: secondary school certificate (e.g. IB, Abitur, A-levels, Dutch havo/vwo; unlisted certificates judged by HAN admissions office) with good maths grades; English IELTS Academic 6.0 (no sub-score below 5.0, speaking 6.0), TOEFL iBT 80 (exams before 21 Jan 2026; new scale 4.5), test max 2 years old, no home editions; exempt with IB/English-medium education in listed countries or Nuffic-listed diploma. Admission also requires Matching (self-reflection form and activity). Financial guarantee required for visa. Turkish diplomas not specifically mentioned.",
+     "source_url": "https://www.hanuniversity.com/en/programs/bachelor/electrical-and-electronic-engineering/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "BSc Embedded Systems Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Embedded systems / electronics",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA, via Studielink; EU/EEA 15 August); HAN scholarship applicants must be accepted before 1 April",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: secondary school certificate (e.g. IB, Abitur, A-levels, Dutch havo/vwo; unlisted certificates judged by HAN admissions office) with good maths grades; English IELTS Academic 6.0 (no sub-score below 5.0, speaking 6.0), TOEFL iBT 80 (exams before 21 Jan 2026; new scale 4.5), test max 2 years old, no home editions; exempt with IB/English-medium education in listed countries or Nuffic-listed diploma. Admission also requires Matching (self-reflection form and activity). Financial guarantee required for visa. Turkish diplomas not specifically mentioned.",
+     "source_url": "https://www.hanuniversity.com/en/programs/bachelor/embedded-systems-engineering/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "BBA International Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "International business",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: 1 May 2027; February intake: 1 October 2026 (non-EU/EEA, via Studielink)",
+     "fee_non_eu": 9320,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: secondary school certificate (e.g. IB, Abitur, A-levels, Dutch havo/vwo; unlisted certificates judged by HAN admissions office) with good maths grades; English IELTS Academic 6.0 (no sub-score below 5.0, speaking 6.0), TOEFL iBT 80 (exams before 21 Jan 2026; new scale 4.5), test max 2 years old, no home editions; exempt with IB/English-medium education in listed countries or Nuffic-listed diploma. Admission also requires Matching (self-reflection form and activity). Financial guarantee required for visa. Turkish diplomas not specifically mentioned.",
+     "source_url": "https://www.hanuniversity.com/en/programs/bachelor/international-business/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "BA International Social Work",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Social work",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA, via Studielink; EU/EEA 15 August); HAN scholarship applicants must be accepted before 1 April",
+     "fee_non_eu": 9320,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: secondary school certificate (e.g. IB, Abitur, A-levels, Dutch havo/vwo; unlisted certificates judged by HAN admissions office) with good maths grades; English IELTS Academic 6.0 (no sub-score below 5.0, speaking 6.0), TOEFL iBT 80 (exams before 21 Jan 2026; new scale 4.5), test max 2 years old, no home editions; exempt with IB/English-medium education in listed countries or Nuffic-listed diploma. Admission also requires Matching (self-reflection form and activity). Financial guarantee required for visa. Turkish diplomas not specifically mentioned. No specific secondary-school subjects required.",
+     "source_url": "https://www.hanuniversity.com/en/programs/bachelor/social-work/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "BSc Life Sciences",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Life sciences",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA, via Studielink; EU/EEA 15 August); HAN scholarship applicants must be accepted before 1 April",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: secondary school certificate (e.g. IB, Abitur, A-levels, Dutch havo/vwo; unlisted certificates judged by HAN admissions office) with good maths grades; English IELTS Academic 6.0 (no sub-score below 5.0, speaking 6.0), TOEFL iBT 80 (exams before 21 Jan 2026; new scale 4.5), test max 2 years old, no home editions; exempt with IB/English-medium education in listed countries or Nuffic-listed diploma. Admission also requires Matching (self-reflection form and activity). Financial guarantee required for visa. Turkish diplomas not specifically mentioned. Chemistry and maths required on certificate (biology recommended).",
+     "source_url": "https://www.hanuniversity.com/en/programs/bachelor/life-sciences/fulltime/",
+     "city": "Nijmegen"
+    },
+    {
+     "name": "BEng Mechanical Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Mechanical engineering",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA, via Studielink; EU/EEA 15 August); HAN scholarship applicants must be accepted before 1 April",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: secondary school certificate (e.g. IB, Abitur, A-levels, Dutch havo/vwo; unlisted certificates judged by HAN admissions office) with good maths grades; English IELTS Academic 6.0 (no sub-score below 5.0, speaking 6.0), TOEFL iBT 80 (exams before 21 Jan 2026; new scale 4.5), test max 2 years old, no home editions; exempt with IB/English-medium education in listed countries or Nuffic-listed diploma. Admission also requires Matching (self-reflection form and activity). Financial guarantee required for visa. Turkish diplomas not specifically mentioned.",
+     "source_url": "https://www.hanuniversity.com/en/programs/bachelor/mechanical-engineering/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "BSc Molecular Biosciences (Joint Degree with University of Dundee)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Molecular biosciences / life sciences",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA, via Studielink; EU/EEA 15 August); HAN scholarship applicants must be accepted before 1 April",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA: secondary school certificate (e.g. IB, Abitur, A-levels, Dutch havo/vwo; unlisted certificates judged by HAN admissions office) with good maths grades; English IELTS Academic 6.0 (no sub-score below 5.0, speaking 6.0), TOEFL iBT 80 (exams before 21 Jan 2026; new scale 4.5), test max 2 years old, no home editions; exempt with IB/English-medium education in listed countries or Nuffic-listed diploma. Admission also requires Matching (self-reflection form and activity). Financial guarantee required for visa. Turkish diplomas not specifically mentioned. Years 1-2 at HAN Nijmegen (fee EUR 10,940 per year for non-EU/EEA), years 3-4 at University of Dundee (non-EU/non-UK fee GBP 8,485, paid to Dundee). Apply in Studielink under Life Sciences. Chemistry and maths required.",
+     "source_url": "https://www.hanuniversity.com/en/programs/bachelor/molecular-biosciences/fulltime/",
+     "city": "Nijmegen"
+    },
+    {
+     "name": "MSc Engineering Systems - Automotive Systems",
+     "level": "master",
+     "duration": "1.5 years",
+     "field": "Automotive / systems engineering",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: 1 May 2027; February intake: 1 October 2026 (non-EU/EEA)",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree; financial guarantee for visa; places limited (CV, motivation letter, possible interview). Turkish degrees not specifically mentioned. Bachelor in engineering or related technical discipline, average grade at least 70% or GPA 2.8/4.0, good maths/physics grades. IELTS 6.0 (no sub-score below 6.0), TOEFL iBT 80. Part-time variant exists but is not open to non-EU students requiring a visa.",
+     "source_url": "https://www.hanuniversity.com/en/programs/master/engineering-systems/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "MSc Engineering Systems - Cyber-Physical Systems",
+     "level": "master",
+     "duration": "1.5 years",
+     "field": "Cyber-physical systems / engineering",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: 1 May 2027; February intake: 1 October 2026 (non-EU/EEA)",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree; financial guarantee for visa; places limited (CV, motivation letter, possible interview). Turkish degrees not specifically mentioned. Bachelor in engineering or related technical discipline, average grade at least 70% or GPA 2.8/4.0, good maths/physics grades. IELTS 6.0 (no sub-score below 6.0), TOEFL iBT 80.",
+     "source_url": "https://www.hanuniversity.com/en/programs/master/engineering-systems/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "MSc Engineering Systems - Sustainable Energy",
+     "level": "master",
+     "duration": "1.5 years",
+     "field": "Sustainable energy / engineering",
+     "intake_months": "September, February",
+     "application_deadline": "September intake: 1 May 2027; February intake: 1 October 2026 (non-EU/EEA)",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree; financial guarantee for visa; places limited (CV, motivation letter, possible interview). Turkish degrees not specifically mentioned. Bachelor in engineering or related technical discipline, average grade at least 70% or GPA 2.8/4.0, good maths/physics grades. IELTS 6.0 (no sub-score below 6.0), TOEFL iBT 80.",
+     "source_url": "https://www.hanuniversity.com/en/programs/master/engineering-systems/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "MSc Circular Economy",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Circular economy / sustainability",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA)",
+     "fee_non_eu": 9320,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree; financial guarantee for visa; places limited (CV, motivation letter, possible interview). Turkish degrees not specifically mentioned. Bachelor of Science in Engineering, Finance/Business Economics, or a BBA similar to HAN International Business. IELTS Academic 6.5 (no sub-score below 5.5, speaking 6.0); TOEFL iBT 90 (exams before 21 Jan 2026).",
+     "source_url": "https://www.hanuniversity.com/en/programs/master/circular-economy/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "MA International Social Work",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Social work",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA)",
+     "fee_non_eu": 9320,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree; financial guarantee for visa; places limited (CV, motivation letter, possible interview). Turkish degrees not specifically mentioned. Bachelor in Social Work, Pedagogy, Sociology, Arts Therapies or Education; CV, motivation letter and interview. IELTS Academic 6.5 (no sub-score below 5.5, speaking 6.0); TOEFL iBT 90 (exams before 21 Jan 2026). Degree title 'MA' assumed (HAN: 'Master in International Social Work').",
+     "source_url": "https://www.hanuniversity.com/en/programs/master/international-social-work/fulltime/",
+     "city": "Arnhem"
+    },
+    {
+     "name": "MSc Applied Molecular Sciences - Molecular Life Sciences",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Molecular life sciences",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA); HAN NL scholarship applicants accepted before 1 April",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree; financial guarantee for visa; places limited (CV, motivation letter, possible interview). Turkish degrees not specifically mentioned. Bachelor in life sciences (applied sciences or science), at least 5 months lab research experience, internship placement (2-year internship-based), CV, motivation letter, 1 recommendation letter, interview. IELTS Academic 6.5 (no sub-score below 5.5, speaking 6.0); TOEFL iBT 90 (exams before 21 Jan 2026). Part-time not open to non-EU/EEA. Campus Arnhem or Nijmegen (not explicit on page).",
+     "source_url": "https://www.hanuniversity.com/en/programs/master/applied-molecular-sciences-molecular-life-sciences/fulltime/",
+     "city": "Arnhem/Nijmegen"
+    },
+    {
+     "name": "MSc Applied Molecular Sciences - Chemistry",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Chemistry",
+     "intake_months": "September",
+     "application_deadline": "1 May 2027 (non-EU/EEA)",
+     "fee_non_eu": 10940,
+     "fee_year": 2026,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 90
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU/EEA: relevant bachelor's degree; financial guarantee for visa; places limited (CV, motivation letter, possible interview). Turkish degrees not specifically mentioned. Bachelor in life sciences or chemistry, at least 5 months lab research experience, internship placement (2-year internship), CV, motivation letter, 1 recommendation letter, interview. IELTS Academic 6.5 (no sub-score below 5.5, speaking 6.0); TOEFL iBT 90 (exams before 21 Jan 2026). New track from 1 Sept 2026. Campus Arnhem or Nijmegen (not explicit on page). Degree title 'MSc' assumed.",
+     "source_url": "https://www.hanuniversity.com/en/programs/master/applied-molecular-sciences-chemistry/fulltime/",
+     "city": "Arnhem/Nijmegen"
+    }
+   ]
+  },
+  {
+   "name": "Breda University of Applied Sciences",
+   "city": "Breda",
+   "country": "Netherlands",
+   "website": "https://www.buas.nl/en",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 12,
+    "master": 8
+   },
+   "entity_note": "BUas English filter lists 26 programmes: 12 bachelors, 8 full-time masters, plus excluded 2 pre-masters, and 4 part-time/executive masters (Executive Master Media Innovation, Executive MBA Imagineering, Master Strategic Events Management PT, Master Supply Chain Management PT). Fees: BUas pages publish 2027-28 institutional fees (EUR 13,680 standard bachelor; EUR 14,650 small-scale bachelors Creative Business, CMGT, Applied Data Science & AI; masters EUR 17,750, MSc Leisure and Tourism Studies EUR 18,050); Study in NL lists 2026-27 (13,300 / 14,250 / 17,250). Logistics Engineering and Logistics Management: BUas page text says Dutch-taught while Study in NL lists them as English-taught; kept but flagged. Degree prefixes partly assumed.",
+   "programs": [
+    {
+     "name": "BSc Applied Data Science & Artificial Intelligence",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Data science / AI",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 14650,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 14,250). Numerus fixus: max 125 places; portfolio assignment and interview; maths admission test. 3-year track for vwo.",
+     "source_url": "https://www.buas.nl/en/programmes/applied-data-science-artificial-intelligence",
+     "city": "Breda"
+    },
+    {
+     "name": "BSc Leisure Studies",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Leisure studies / social science",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 13680,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 13,300). Requires vwo-level diploma (or equivalent).",
+     "source_url": "https://www.buas.nl/en/programmes/bachelor-of-science-leisure-studies",
+     "city": "Breda"
+    },
+    {
+     "name": "BSc Tourism (joint degree with Wageningen University & Research)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Tourism",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 13680,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 13,300). Years 1-2 in Breda, year 3 in Wageningen; application and requirements via Wageningen University (WUR).",
+     "source_url": "https://www.buas.nl/en/programmes/bachelor-of-science-tourism",
+     "city": "Breda"
+    },
+    {
+     "name": "BSc Built Environment",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Built environment / construction",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 13680,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 13,300). 3-year track for vwo with extra requirements.",
+     "source_url": "https://www.buas.nl/en/programmes/built-environment",
+     "city": "Breda"
+    },
+    {
+     "name": "BA Creative Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Creative business / media",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 14650,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 14,250). Numerus fixus: max 190 places; online intake assessment and interview. 3-year fast track for vwo.",
+     "source_url": "https://www.buas.nl/en/programmes/creative-business",
+     "city": "Breda"
+    },
+    {
+     "name": "BSc Creative Media and Game Technologies",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Game and media technology",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 14650,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 14,250). Numerus fixus: max 240 places; portfolio assignment and interview; choose track (Programming, Visual Arts, Game Design, Business & Production). 3-year fast track for vwo.",
+     "source_url": "https://www.buas.nl/en/programmes/creative-media-and-game-technologies",
+     "city": "Breda"
+    },
+    {
+     "name": "BA Hotel Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Hospitality / hotel management",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 13680,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 13,300). Numerus fixus: max 220 places; online intake assessment and interview; second modern foreign language (French, German or Spanish) required; 24-week placement abroad. Degree BA per FAQ.",
+     "source_url": "https://www.buas.nl/en/programmes/hotel-management",
+     "city": "Breda"
+    },
+    {
+     "name": "BSc International Facility Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Facility management",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 13680,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 13,300). 24-week placement abroad. 3-year track available.",
+     "source_url": "https://www.buas.nl/en/programmes/international-facility-management",
+     "city": "Breda"
+    },
+    {
+     "name": "BA International Tourism Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Tourism management",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 13680,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 13,300). Compulsory placement (min 20 weeks). Degree title assumed BA (not stated on page); BUas page title 'Tourism Management'.",
+     "source_url": "https://www.buas.nl/en/programmes/tourism-management",
+     "city": "Breda"
+    },
+    {
+     "name": "BA Leisure & Events Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Leisure and events management",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 13680,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 13,300). 3-year track for vwo graduates. Also offered in Dutch.",
+     "source_url": "https://www.buas.nl/en/programmes/leisure-events-management",
+     "city": "Breda"
+    },
+    {
+     "name": "BSc Logistics Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Logistics engineering",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 13680,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 13,300). WARNING: BUas programme page says classes are taught in Dutch (assignments in English), but Study in NL and BUas's English filter list it as English-taught BSc; verify language with BUas.",
+     "source_url": "https://www.buas.nl/en/programmes/logistics-engineering",
+     "city": "Breda"
+    },
+    {
+     "name": "BSc Logistics Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Logistics management",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "1 May 2027 for 30 August/1 September 2027 start (Study in NL non-EU/EEA date; BUas: apply before 1 May to be sure of starting)",
+     "fee_non_eu": 13680,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: Dutch havo/vwo-equivalent diploma (BUas compares non-Dutch diplomas; Nuffic evaluation if in doubt; Turkish diplomas not named on BUas pages). English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80 (speaking 20; new scale 4.5), PTE 61, LanguageCert 65, Cambridge 169; exemptions for English-medium education in listed countries/IB. Binding study recommendation (45 of 60 credits in year 1) for 2027 entrants. Fee shown is the 2027-28 institutional fee on the BUas programme page (Study in NL lists 2026-27 institutional fee EUR 13,300). WARNING: BUas programme page says classes are taught in Dutch (assignments in English), but Study in NL and BUas's English filter list it as English-taught BSc; verify language with BUas.",
+     "source_url": "https://www.buas.nl/en/programmes/logistics-management",
+     "city": "Breda"
+    },
+    {
+     "name": "MSc Game Technology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Game technology",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "15 August 2027 per BUas programme page (apply before 1 July recommended); Study in NL lists 1 July 2027 for non-EU/EEA",
+     "fee_non_eu": 17750,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: bachelor's degree (or equivalent) in a relevant field; English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80, PTE 61, LanguageCert 65, Cambridge 169; interview in English; two references for research/academic writing. Turkish degrees not named on BUas pages. Fee is 2027-28 institutional fee from the BUas programme page (Study in NL lists 2026-27 EUR 17,250 where shown). Bachelor in relevant game development area (IT, programming, art, animation, design, production); literature review and portfolio/industry experience plus intake interview; max 38 students. Degree title 'MSc' assumed.",
+     "source_url": "https://www.buas.nl/en/programmes/master-game-technology",
+     "city": "Breda"
+    },
+    {
+     "name": "MA Media Innovation",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Media innovation / communication",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "15 August 2027 per BUas programme page (apply before 1 July recommended); Study in NL lists 1 July 2027 for non-EU/EEA",
+     "fee_non_eu": 17750,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: bachelor's degree (or equivalent) in a relevant field; English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80, PTE 61, LanguageCert 65, Cambridge 169; interview in English; two references for research/academic writing. Turkish degrees not named on BUas pages. Fee is 2027-28 institutional fee from the BUas programme page (Study in NL lists 2026-27 EUR 17,250 where shown). Bachelor in Business Administration, Media or Communication Studies, IT or other media-related field; intake interview; limited places. Full-time (not the part-time Executive Master).",
+     "source_url": "https://www.buas.nl/en/programmes/master-media-innovation",
+     "city": "Breda"
+    },
+    {
+     "name": "MSc Leisure and Tourism Studies",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Leisure and tourism studies",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "15 August 2027 per BUas programme page (apply before 1 July recommended); Study in NL lists 1 July 2027 for non-EU/EEA",
+     "fee_non_eu": 18050,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: bachelor's degree (or equivalent) in a relevant field; English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80, PTE 61, LanguageCert 65, Cambridge 169; interview in English; two references for research/academic writing. Turkish degrees not named on BUas pages. Fee is 2027-28 institutional fee from the BUas programme page (Study in NL lists 2026-27 EUR 17,250 where shown). Academic bachelor's degree required (professional bachelors need pre-master first); IELTS Academic 6.5 (speaking 6.0), PTE 65, LanguageCert 70, Cambridge 180.",
+     "source_url": "https://www.buas.nl/en/programmes/master-of-science-leisure-and-tourism-studies",
+     "city": "Breda"
+    },
+    {
+     "name": "MSc Supply Chain Management",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Supply chain management",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "15 August 2027 per BUas programme page (apply before 1 July recommended); Study in NL lists 1 July 2027 for non-EU/EEA",
+     "fee_non_eu": 17750,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: bachelor's degree (or equivalent) in a relevant field; English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80, PTE 61, LanguageCert 65, Cambridge 169; interview in English; two references for research/academic writing. Turkish degrees not named on BUas pages. Fee is 2027-28 institutional fee from the BUas programme page (Study in NL lists 2026-27 EUR 17,250 where shown). Selection programme (40 places/year); bachelor in Logistics Management/Engineering or with logistics major/minor/placement; interview. Part-time variant not open to non-EU students needing a visa.",
+     "source_url": "https://www.buas.nl/en/programmes/master-supply-chain-management",
+     "city": "Breda"
+    },
+    {
+     "name": "MA Tourism Destination Management",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Tourism destination management",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "15 August 2027 per BUas programme page (apply before 1 July recommended); Study in NL lists 1 July 2027 for non-EU/EEA",
+     "fee_non_eu": 17750,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: bachelor's degree (or equivalent) in a relevant field; English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80, PTE 61, LanguageCert 65, Cambridge 169; interview in English; two references for research/academic writing. Turkish degrees not named on BUas pages. Fee is 2027-28 institutional fee from the BUas programme page (Study in NL lists 2026-27 EUR 17,250 where shown). Bachelor (BA, BSc, BBA, BCom) in tourism, hotel management, business, economics, law, geography etc.; interview and two references.",
+     "source_url": "https://www.buas.nl/en/programmes/master-tourism-destination-management",
+     "city": "Breda"
+    },
+    {
+     "name": "MBA Imagineering",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business administration / imagineering",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "15 August 2027 per BUas programme page (apply before 1 July recommended); Study in NL lists 1 July 2027 for non-EU/EEA",
+     "fee_non_eu": 17750,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: bachelor's degree (or equivalent) in a relevant field; English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80, PTE 61, LanguageCert 65, Cambridge 169; interview in English; two references for research/academic writing. Turkish degrees not named on BUas pages. Fee is 2027-28 institutional fee from the BUas programme page (Study in NL lists 2026-27 EUR 17,250 where shown). Bachelor's degree (or equivalent) in a relevant field (tourism, leisure, sports, culture management, business, economics); full-time MBA (the Executive MBA Imagineering is part-time and excluded); English scores not on page (BUas general IELTS 6.0).  Fee EUR 17,750 for 2027-28 stated on the programme page.",
+     "source_url": "https://www.buas.nl/en/programmes/mba-imagineering",
+     "city": "Breda"
+    },
+    {
+     "name": "MA Tourism and Hospitality Innovations (with University of Rijeka and Universitat de Girona)",
+     "level": "master",
+     "duration": "1.5 years",
+     "field": "Tourism and hospitality",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "15 August 2027 per BUas programme page (apply before 1 July recommended); Study in NL lists 1 July 2027 for non-EU/EEA",
+     "fee_non_eu": 17750,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: bachelor's degree (or equivalent) in a relevant field; English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80, PTE 61, LanguageCert 65, Cambridge 169; interview in English; two references for research/academic writing. Turkish degrees not named on BUas pages. Fee is 2027-28 institutional fee from the BUas programme page (Study in NL lists 2026-27 EUR 17,250 where shown). Three-university programme (BUas MA, Rijeka Master of Economics, Girona MSc). BUas fee 17,750 covers the BUas part; total programme about EUR 27,500. Bachelor in tourism, hotel management, management, economics, geography; interview and two references.",
+     "source_url": "https://www.buas.nl/en/programmes/master-tourism-and-hospitality-innovations",
+     "city": "Breda"
+    },
+    {
+     "name": "MA Urban Tourism and Mobility",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Urban tourism and mobility",
+     "intake_months": "August/September (start 30 August 2027)",
+     "application_deadline": "15 August 2027 per BUas programme page (apply before 1 July recommended); Study in NL lists 1 July 2027 for non-EU/EEA",
+     "fee_non_eu": 17750,
+     "fee_year": 2027,
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-EU: bachelor's degree (or equivalent) in a relevant field; English IELTS Academic 6.0 (speaking 6.0) or TOEFL iBT 80, PTE 61, LanguageCert 65, Cambridge 169; interview in English; two references for research/academic writing. Turkish degrees not named on BUas pages. Fee is 2027-28 institutional fee from the BUas programme page (Study in NL lists 2026-27 EUR 17,250 where shown). Bachelor in tourism, hotel management, business, economics, law, urban development, geography, social sciences or finance; interview and two references.",
+     "source_url": "https://www.buas.nl/en/programmes/master-urban-tourism-and-mobility",
+     "city": "Breda"
+    }
+   ]
+  }
+ ]
+}

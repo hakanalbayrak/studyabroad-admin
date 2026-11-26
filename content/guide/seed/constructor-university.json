@@ -1,0 +1,62 @@
+{
+  "status": "published",
+  "slug": "constructor-university-bremen",
+  "data": {
+    "facts": {
+      "short_name": "Constructor University",
+      "pron": "konstraktır yunivörsiti",
+      "type_of_institution": "Özel, kâr amacı gütmeyen (gGmbH) üniversite; Bremen eyaleti tarafından resmen tanınmıştır",
+      "founded_year": 2001,
+      "accreditation": "Bremen eyaleti tarafından resmî tanıma (süresiz). Alman Bilim ve Beşerî Bilimler Konseyi (Wissenschaftsrat) kurumsal akreditasyonu. Tüm lisans ve yüksek lisans programları Alman Akreditasyon Konseyi sistemi kapsamında akredite.",
+      "students_total": 2200,
+      "students_intl_note": "120'den fazla ülkeden öğrenci",
+      "exam_required": "conditional",
+      "exam_note": "Resmî sayfaya göre SAT veya ACT kabul değerlendirmesi için zorunlu değil. Ancak lise diploman Almanya'daki üniversitelere doğrudan giriş hakkı vermiyorsa kayıt için SAT/ACT istenebiliyor; bunun için kampüste Ekim ve/veya Aralık aylarında sınav imkânı sunuluyor. Abitur sahipleri sınav sonucu vermek zorunda değil. Türk lise diploması için güncel durumu okulun kabul ofisinden (admission@constructor.university) teyit et.",
+      "gpa_note": "Okul yalnızca nota bakmaz; Kabul ve Burs Komitesi (akademisyenler ve kabul ekibi) transkripti, motivasyon yazısını ve diğer belgeleri birlikte değerlendirir. Lise not ortalaman burs tutarını belirler (aşağıda burs bölümüne bak).",
+      "english_note": "Resmî sayfada kabul edilen minimum puanlar: IELTS 6,5, TOEFL iBT 90, Duolingo 110, PTE Academic 58. Şu durumlarda belge istenmeyebilir: ana dili İngilizce olanlar, en az 6 yıl boyunca tamamen İngilizce eğitim görenler, SAT Okuma-Yazma bölümünden 600 veya ACT Writing'den 9 ve üzeri alanlar. Muafiyet için kabul ofisine yazman gerekir.",
+      "prep_note": "Lisans öncesi seçenekler: English Foundation Year, Gateway Year, International Foundation Year ve Pre-Bachelor Semester. Bu programlardan lisansa geçenler tek seferlik kayıt ücretini yeniden ödemez. 2025 güz döneminde hazırlık programlarında 256 öğrenci vardı.",
+      "tuition_note": "Resmî 2026-2027 maliyet tablosunda okul ücreti yarıyıl başına 10.000 € (yılda 20.000 €) olarak yazıyor; 2027 girişinden itibaren yarıyıl başına 11.925 € olacağı belirtiliyor. Ayrıca tek seferlik kayıt ücreti (AB öğrencileri için 640 €, AB dışı için 940 €) ve yarıyıllık yan ücretler var. Burslar ve ödemeli erteleme (Tuition Deferral) ile net ücret ciddi şekilde düşebilir.",
+      "scholarship_note": "Burs için ayrı bir başvuru yok: tüm adaylar lise not ortalamasına göre akademik başarı bursu için otomatik değerlendirilir ve tutar kabulün hemen ardından bildirilir. Resmî sayfada 'en fazla 10.000 €' yazıyor (SSS sayfasında 7.000 € geçiyor, güncel tutarı kabul ofisinden teyit et). Ayrıca gelir seviyesine bağlı geri ödemeli 'Tuition Deferral' seçeneği var: maaşın belirli bir seviyeyi aşana kadar geri ödeme başlamıyor. Yazılım, Veri ve Teknoloji (BSc) programı için JetBrains Vakfı'nın tam burs imkânı da bazı başvuru dönemlerinde açılıyor.",
+      "housing_note": "Lisans öğrencileri için kampüs yurdunda kalmak ilk yıl zorunlu. 2026-2027 resmî tablosuna göre (yarıyıl başına): ortak oda (2 kişilik, ortak banyo) 1.890 €'dan başlıyor, tek kişilik odalar 3.240 €'dan başlıyor; yemek planı 2.500 €; 1.000 € iade edilebilir depozito. Yani yalnızca oda için yılda yaklaşık 3.780 € ve yemek planı dahil yaklaşık 8.780 €. Fiyatlar yıllık güncellenir.",
+      "living_note": "Kampüste oda ve yemek planı ücrete dahil edilebildiği için ek geçim gideri düşük kalır. Yarıyıllık yan ücretler: üniversite ücreti 95 €, Almanya genelinde ulaşım sağlayan yarıyıl bileti 227 €, yayın ücreti 28 €.",
+      "work_note": "Resmî SSS: öğrenciler dönem içinde haftada 20 saate kadar, tatillerde tam zamanlı çalışabilir. AB dışı öğrenciler için yılda 120 tam gün veya 240 yarım gün çalışma izni geçerlidir.",
+      "location_note": "Kampüs, Bremen'in Grohn semtinde yaklaşık 34 hektarlık bir alanda, dört kolej (Alfried Krupp College, Mercator College, College III ve College Nordmetall) etrafında kurulmuş.",
+      "campus_note": "Kampüs yaşamı dört kolej topluluğu etrafında şekillenir; kütüphane (IRC), spor ve kongre merkezi ile yaklaşık 5.600 m² laboratuvar alanı bulunur. Öğrenciler 120'den fazla ülkeden geldiği için günlük hayat çok kültürlüdür.",
+      "recognition_note": "Okul Bremen eyaleti tarafından resmen tanınıyor ve Alman Bilim Konseyi tarafından akredite edilmiş olduğu için diploması Almanya'da ve Bologna sistemindeki ülkelerde geçerlidir. YÖK denkliği için başvurunda okulun tanınırlık belgelerini ekle.",
+      "jobs_note": "Okul, bağımsız olarak doğrulanabilir bir mezun istihdam oranı yayımlamıyor; bu yüzden kesin bir rakam veya maaş vermiyoruz. Resmî SSS'e göre zorunlu iki aylık staj, bir startup iş planı geliştirerek de tamamlanabiliyor. AB dışı mezunlar sınırsız çalışma iznine ve 18 aylık iş arama iznine sahip; okulun kariyer servisi ve 1.000'den fazla bilim ve iş ortağı staj ve iş bağlantılarında rol oynuyor.",
+      "ranking_note": "Resmî Facts & Figures (Ağustos 2026): THE Dünya Üniversite Sıralaması 2026'da 501-600 bandı; THE Konu Sıralaması'nda Mühendislik'te 301-400 bandı (Almanya'da 13., özel üniversiteler arasında en yüksek) ve Sosyal Bilimler'de 301-400; THE Genç Üniversiteler 2024'te dünya 57.si; Humboldt Sıralaması 2023'te Almanya'da 130 üniversite arasında 12.si. Okul, Almanya'daki özel üniversiteler arasında 1. ve Avrupa'nın en uluslararası ikinci üniversitesi olduğunu belirtiyor.",
+      "good_note": "Objektif veriler: Bremen eyaleti tarafından resmen tanınan ve akredite bir üniversite; 120'den fazla ülkeden 2.200+ öğrenci; THE dünya sıralamasında 501-600 bandı, Mühendislik konu sıralamasında 301-400 bandı; tüm lisans programları 3 yıl ve tamamen İngilizce. Dezavantajı: okul ücreti yılda yaklaşık 20.000 € olduğu için burs ve ödemeli erteleme planı önemli.",
+      "value_note": "Üç yıllık, tamamen İngilizce lisans; yurt ve yemek planıyla birlikte tek kampüste yaşam; yüksek uluslararasılık ve Almanya'da mezuniyet sonrası 18 aylık iş arama izni. Bu birleşim, Almanya'da devlet üniversitesi için gereken Almanca ve hazırlık yılı yükü olmadan Avrupa'da lisans yapmak isteyenler için güçlü bir seçenek.",
+      "alumni_note": "",
+      "startup_note": "",
+      "apply_steps": [
+        "Programını seç ve başvuru dönemini belirle: Early Action 1 Ekim 2026 - 1 Şubat 2027, Rolling Admissions 2 Şubat - 31 Temmuz 2027 (resmî sayfaya göre).",
+        "Gerekli belgeleri hazırla: kimlik/pasaport, 9. sınıftan 11. sınıfa (varsa 12. sınıf 1. dönem) transkriptler, CV, İngilizce yeterlilik belgesi, motivasyon yazısı.",
+        "Resmî online başvuru portalından formu doldur ve belgeleri PDF olarak yükle.",
+        "Karar genellikle başvurudan sonra 2 ila 4 hafta içinde bildirilir; burs tutarın kabulle birlikte açıklanır.",
+        "Kabulü onayla, ödeme tarihlerini planla (güz için 1 Ağustos, bahar için 2 Ocak) ve vize sürecine geç."
+      ],
+      "docs": [
+        "Pasaport veya kimlik (AB/EFTA/EEA vatandaşları için resmî kimlik kartı)",
+        "Son iki lise yılının transkripti ve lise diploması (veya mezuniyet belgesi); 9-11. sınıf notları, varsa 12. sınıf 1. dönem",
+        "Özgeçmiş (tek PDF)",
+        "İngilizce yeterlilik belgesi (veya muafiyet kanıtı)",
+        "Motivasyon yazısı",
+        "İsteğe bağlı: SAT/ACT sonucu ve tavsiye mektubu",
+        "İngilizce veya Almanca dışındaki belgeler için yeminli çeviri"
+      ],
+      "deadline_note": "Resmî sayfaya göre ilk sınıf adayları için Early Action: 1 Ekim 2026 - 1 Şubat 2027; Rolling Admissions: 2 Şubat 2027 - 31 Temmuz 2027. Sayfalar arasında 15 Temmuz ve 31 Temmuz farklılığı olabildiği için son günü kabul ofisinden teyit et.",
+      "apply_url": "https://constructor.university/admission-aid/application-information-undergraduate",
+      "sources": [
+        "https://constructor.university/admission-aid/application-information-undergraduate",
+        "https://constructor.university/programs/undergraduate-education/faq-undergraduate-study",
+        "https://constructor.university/admission-aid/financing-undergraduate",
+        "https://constructor.university/sites/default/files/2026-01/2026-2027%20CU%20Fact%20Sheet_Bachelor_Cost%20of%20Attendance.pdf",
+        "https://constructor.university/sites/default/files/2026-08/Facts-%26-Figures_Aug-2026_EN.pdf"
+      ],
+      "verified_at": "2026-10-16"
+    },
+    "answers": {},
+    "hidden": []
+  }
+}

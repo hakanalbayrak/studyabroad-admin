@@ -1,0 +1,712 @@
+{
+ "institutions": [
+  {
+   "name": "Amsterdam University of Applied Sciences (HvA / AUAS)",
+   "city": "Amsterdam",
+   "country": "Netherlands",
+   "website": "https://www.amsterdamuas.com",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 5,
+    "master": 6
+   },
+   "entity_note": "Official overview is JavaScript-rendered so count compiled from faculty pages, sitemap and programme pages. Excluded: part-time/dual IB, European MSc Occupational Therapy (2-year part-time), Dutch-taught programmes; Applied AI master and Structural Engineering master not verified as English full-time. Institutional fee 2026-27 EUR 10,648 per central page (IB page shows EUR 10,684). Master degree prefixes (MSc/MA) for some programmes inferred.",
+   "programs": [
+    {
+     "name": "BBA International Business (AMSIB)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Business / International Business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (non-EU, for 2027-2028 intake)",
+     "fee_non_eu": 10648,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU applicants need a secondary diploma comparable to Dutch HAVO/VWO/MBO-4 (credential evaluation by AUAS; Nuffic comparison). No Turkey-specific rule published (Turkish Lise Diploması is assessed individually). HAVO/VWO equivalent with Mathematics or Economics; non-EU applicants must complete a questionnaire and may be interviewed; English B2 required (IELTS 6.0 with no subscore below 5.5; TOEFL iBT 80, subscores 20).",
+     "source_url": "https://www.amsterdamuas.com/programmes/international-business"
+    },
+    {
+     "name": "BBA International Business Fast Track (AMSIB)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business / International Business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (non-EU, for 2027-2028 intake)",
+     "fee_non_eu": 10648,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Fast-track version of AMSIB International Business for strong students: VWO-equivalent level required (listed as a separate programme by AUAS); otherwise same non-EU questionnaire/interview and English rules (IELTS 6.0, no subscore below 5.5; TOEFL iBT 80). Turkey-specific rules not published; diploma evaluated individually.",
+     "source_url": "https://www.amsterdamuas.com/programmes/international-business-fast-track"
+    },
+    {
+     "name": "BA Fashion & Textile Technologies (AMFI)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Fashion / Design & Management",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "15 January 2027 (numerus fixus selection; enrolment 1 Oct 2026 - 15 Jan 2027)",
+     "fee_non_eu": 10648,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Limited places (quota 440) with selection based on portfolio, assignment and video; HAVO/VWO/MBO-4 equivalent diploma; IELTS 6.0 (no subscore below 5.5) or TOEFL iBT 80. Specialisations Fashion & Management, Branding, Design. Turkey-specific rules not published; Nuffic/AUAS credential evaluation applies. Degree prefix (BA) not stated on page - verify against CROHO.",
+     "source_url": "https://www.amsterdamuas.com/programmes/amfi-amsterdam-fashion-institute-en"
+    },
+    {
+     "name": "BSc Physiotherapy (European School of Physiotherapy)",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Health / Physiotherapy",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "15 January 2027 (selection procedure, 100 places)",
+     "fee_non_eu": 11648,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Honours-style 3-year, English-taught full-time programme with selection (100 places); proof of English IELTS 6.5 or equivalent; secondary diploma comparable to VWO/HAVO with required subjects; higher institutional fee EUR 11,648 (statutory EUR 3,694). Turkey-specific rules not published. Degree prefix (BSc) to verify against CROHO.",
+     "source_url": "https://www.amsterdamuas.com/programmes/european-school-of-physiotherapy"
+    },
+    {
+     "name": "BSc Sport Studies - International Sports Management and Business (ISMB)",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Sport management / Business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "15 January 2027 (numerus fixus selection; 96 places for ISMB track)",
+     "fee_non_eu": 10648,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "English-taught ISMB track of Sport Studies; HAVO/VWO/MBO-4 equivalent diploma plus selection procedure (quota); IELTS 6.0 (no subscore below 6.0), TOEFL iBT 80. Turkey-specific rules not published. Listed by AUAS as 'Sport Studies (English)'; degree prefix to verify.",
+     "source_url": "https://www.amsterdamuas.com/programmes/sport-studies"
+    },
+    {
+     "name": "MSc Digital Design - Interaction Design",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Design / Digital design",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 March 2027 (non-EU; EU 1 May)",
+     "fee_non_eu": 10648,
+     "fee_year": "2026-2027",
+     "english": [],
+     "education_level": "bachelor",
+     "requirements_note": "Bachelor degree plus annotated design portfolio; ideally 3 years' design work experience; selection procedure; IELTS Academic or TOEFL required (minimum score not captured). Turkish bachelor degrees assessed individually (Nuffic).",
+     "source_url": "https://www.amsterdamuas.com/programmes/master-digital-design-interaction-design"
+    },
+    {
+     "name": "MSc Digital Design - Digital Fashion Technology",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Fashion / Digital technology",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 March 2027 (non-EU; EU 1 May)",
+     "fee_non_eu": 10648,
+     "fee_year": "2026-2027",
+     "english": [],
+     "education_level": "bachelor",
+     "requirements_note": "Bachelor degree (or equivalent) plus portfolio showing IT, fashion or design experience; selection; IELTS Academic or TOEFL required (minimum score not captured). Listed by AUAS as separate programme page from Interaction Design.",
+     "source_url": "https://www.amsterdamuas.com/programmes/master-digital-design-digital-fashion-technology"
+    },
+    {
+     "name": "MSc Digital Driven Business",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business / Data & technology",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 April 2027 (non-EU; EU 1 June)",
+     "fee_non_eu": 10648,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Follow-on master: bachelor in business/economics, engineering, ICT or technology with affinity to the other domains; selection procedure; IELTS 6.5 overall with minimum 6.0 per section (TOEFL also accepted).",
+     "source_url": "https://www.amsterdamuas.com/programmes/master-digital-driven-business"
+    },
+    {
+     "name": "MSc Global Sustainable Business Management",
+     "level": "master",
+     "duration": "1.5 years",
+     "field": "Business / Sustainability",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "15 April 2027 (non-EU; EU 15 June)",
+     "fee_non_eu": 17083,
+     "fee_year": "2027-2028 (programme page; total for 18-month programme)",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Non-funded master: fee EUR 17,083 is the total for the full 18-month programme (AUAS central page lists a different older figure EUR 16,610). Bachelor degree required; IELTS Academic 7.0 overall (TOEFL also accepted).",
+     "source_url": "https://www.amsterdamuas.com/programmes/master-global-sustainable-business-management"
+    },
+    {
+     "name": "MSc Sport Business & Leadership",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Sport / Business & leadership",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (non-EU; EU 15 June)",
+     "fee_non_eu": 10648,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 7.0
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "For professionals: bachelor degree plus work experience in sport organisations; selection procedure with max 60 students; IELTS Academic 7.0 (Cambridge CAE/CPE also accepted).",
+     "source_url": "https://www.amsterdamuas.com/programmes/master-sport-business-and-leadership"
+    },
+    {
+     "name": "MSc Applied Quantum Technology",
+     "level": "master",
+     "duration": "2 years",
+     "field": "Technology / Quantum",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 April 2027 (non-EU; others 15 August)",
+     "fee_non_eu": 10648,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      },
+      {
+       "test": "TOEFL",
+       "min": 86
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Joint degree of four Dutch UAS; bachelor in a relevant technical field with aptitude in mathematics/physics/programming; selection procedure; IELTS 6.5 (subscore 6.0) or TOEFL iBT 86 (old scale, minimum 20 per section). Duration (2 years, second year internship) inferred from page text - verify.",
+     "source_url": "https://www.amsterdamuas.com/programmes/master-applied-quantum-technology"
+    }
+   ]
+  },
+  {
+   "name": "HU University of Applied Sciences Utrecht",
+   "city": "Utrecht",
+   "country": "Netherlands",
+   "website": "https://www.internationalhu.com",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 4,
+    "master": 3
+   },
+   "entity_note": "Counted from sitemap/programme pages of internationalhu.com (programme list is JS). Excluded part-time Teacher Education in English variants (bachelor and master) and Teacher Education in French/German/Spanish (taught in target languages). Institutional fee 2026-27 EUR 10,747.",
+   "programs": [
+    {
+     "name": "BBA International Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Business / International Business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "31 May (non-EU requiring HU visa services); 2027 intake",
+     "fee_non_eu": 10747,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: diploma comparable to Dutch HAVO (Nuffic list), intake procedure (digital assessment plus interview); IELTS 6.0 or TOEFL iBT 80 (C1 Advanced also accepted). Turkey-specific rules not published (assessed individually). Studielink deadline 31 May for non-EU applicants who need HU immigration services (1 Aug for others living abroad).",
+     "source_url": "https://www.internationalhu.com/bachelor-programmes/international-business"
+    },
+    {
+     "name": "BBA International Business FastTrack",
+     "level": "bachelor",
+     "duration": "3 years",
+     "field": "Business / International Business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "31 May (non-EU requiring HU visa services); 2027 intake",
+     "fee_non_eu": 10747,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Three-year accelerated programme with its own application (motivation letter, CV, two referees, diploma and grade list to the FastTrack office). Listed on a separate HU page (fasttrack). General non-EU rules as for International Business (IELTS 6.0 / TOEFL iBT 80).",
+     "source_url": "https://www.internationalhu.com/bachelor-programmes/international-business/fasttrack"
+    },
+    {
+     "name": "BA Creative Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Creative industries / Business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "31 May (non-EU requiring HU visa services); 2027 intake",
+     "fee_non_eu": 10747,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: diploma comparable to Dutch HAVO (Nuffic list), intake procedure (digital assessment plus interview); IELTS 6.0 or TOEFL iBT 80 (C1 Advanced also accepted). Turkey-specific rules not published (assessed individually). Studielink deadline 31 May for non-EU applicants who need HU immigration services (1 Aug for others living abroad).",
+     "source_url": "https://www.internationalhu.com/bachelor-programmes/creative-business"
+    },
+    {
+     "name": "BEd Teacher Education in English",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Education / English teaching",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "31 May (non-EU requiring HU visa services); 2027 intake",
+     "fee_non_eu": 10747,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Trains English teachers (Bachelor of Education); requires English CEFR B2, diploma evaluation, programme selection check and possibly an interview; IELTS 6.0 / TOEFL iBT 80 stated. Check whether Dutch-language components apply to non-EU students. Turkey-specific rules not published.",
+     "source_url": "https://www.internationalhu.com/bachelor-programmes/teacher-education-in-english"
+    },
+    {
+     "name": "MA Data-driven Design",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Design / Data & AI",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "31 May (non-EU requiring HU visa services); 2027 intake",
+     "fee_non_eu": 10747,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Bachelor in CMD, Creative Business, Journalism, Communication, International Business, ICT or similar; coding assignment, English motivation letter and matching; IELTS Academic 6.5 (no subscore below 6.0); TOEFL iBT 5.0 on new 1-6 scale (sub 4.5). Fee per general HU institutional fee (programme page directs to fee calculator).",
+     "source_url": "https://www.internationalhu.com/master-programmes/master-data-driven-design"
+    },
+    {
+     "name": "MSc Next Level Engineering",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Engineering / Technology",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "31 May (non-EU requiring HU visa services); 2027 intake",
+     "fee_non_eu": 10747,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Bachelor in a technical domain; analytical test, motivation assignment and intake interview; IELTS 6.5 (no subscore below 6.0). Fee per general HU institutional fee (programme page directs to calculator).",
+     "source_url": "https://www.internationalhu.com/master-programmes/master-next-level-engineering"
+    },
+    {
+     "name": "MSc Sustainable Business Transition",
+     "level": "master",
+     "duration": "1 year",
+     "field": "Business / Sustainability",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "31 May (non-EU requiring HU visa services); 2027 intake",
+     "fee_non_eu": 10747,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.5
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Bachelor in the economic domain (or 60 credits in business subjects); English motivation letter, self-assessment and matching interview; IELTS 6.5 (no subscore below 6.0). Fee per general HU institutional fee (calculator).",
+     "source_url": "https://www.internationalhu.com/master-programmes/sustainable-business-transition"
+    }
+   ]
+  },
+  {
+   "name": "Leiden University of Applied Sciences (Hogeschool Leiden)",
+   "city": "Leiden",
+   "country": "Netherlands",
+   "website": "https://www.hsleiden.nl/en",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 0,
+    "master": 1
+   },
+   "entity_note": "hsleiden.nl is behind a bot challenge (HTTP 403), so facts come from search snippets of official pages and could not be directly verified. All bachelor programmes are Dutch-taught; part-time Digital Forensics excluded. Fee shown is the 2026-27 institutional fee quoted by the official page.",
+   "programs": [
+    {
+     "name": "MSc Digital Forensics (full-time)",
+     "level": "master",
+     "duration": "1 year",
+     "field": "ICT / Digital forensics",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (international students; general deadline 15 August 2027)",
+     "fee_non_eu": 9556,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "bachelor",
+     "requirements_note": "Direct entry: Leiden UAS ICT bachelor (Forensic IT) or CS/ICT/informatics bachelor plus the Leiden UAS 'Digital Forensics' minor; other ICT bachelors may need a pre-master; academic English proof IELTS 6.0 / TOEFL iBT 80 / PTE 61. Classes at HSD Campus The Hague. Data from search-engine snippets of hsleiden.nl (site blocked for direct fetch).",
+     "source_url": "https://www.hsleiden.nl/en/master/digital-forensics-forensics",
+     "city": "The Hague"
+    }
+   ]
+  },
+  {
+   "name": "Inholland University of Applied Sciences",
+   "city": "Amsterdam",
+   "country": "Netherlands",
+   "website": "https://www.inholland.nl/inhollandcom/degree-programmes/",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 6,
+    "master": 0
+   },
+   "entity_note": "Official English overview lists 6 bachelors (plus Electronic Music associate degree, excluded). Inholland Academy master Medical Imaging and Radiation Oncology is part-time/modular and excluded. Fee is the published 2027-28 institutional fee.",
+   "programs": [
+    {
+     "name": "BSc Aeronautical Engineering",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Engineering / Aerospace",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (recommended, non-EU)",
+     "fee_non_eu": 10655,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: secondary diploma equivalent to Dutch HAVO/VWO/MBO-4 (formal evaluation by Inholland Admissions), intake step required; IELTS 6.0 or TOEFL iBT 80 (Cambridge also accepted). Non-EU applicants recommended to apply before 1 May 2027. Turkey-specific rules not published. Extra requirement: Mathematics & Physics.",
+     "source_url": "https://www.inholland.nl/inhollandcom/degree-programmes/aeronautical-engineering-eng-full-time/",
+     "city": "Delft"
+    },
+    {
+     "name": "BSc Applied Mathematics / Data Science",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Mathematics / Data science",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (recommended, non-EU)",
+     "fee_non_eu": 10655,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: secondary diploma equivalent to Dutch HAVO/VWO/MBO-4 (formal evaluation by Inholland Admissions), intake step required; IELTS 6.0 or TOEFL iBT 80 (Cambridge also accepted). Non-EU applicants recommended to apply before 1 May 2027. Turkey-specific rules not published. Mathematics (Wiskunde B equivalent) needed for several profiles.",
+     "source_url": "https://www.inholland.nl/inhollandcom/degree-programmes/applied-mathematics-data-science-eng-full-time/",
+     "city": "Amsterdam"
+    },
+    {
+     "name": "BA Business Innovation",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Business / Innovation",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (recommended, non-EU)",
+     "fee_non_eu": 10655,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: secondary diploma equivalent to Dutch HAVO/VWO/MBO-4 (formal evaluation by Inholland Admissions), intake step required; IELTS 6.0 or TOEFL iBT 80 (Cambridge also accepted). Non-EU applicants recommended to apply before 1 May 2027. Turkey-specific rules not published.",
+     "source_url": "https://www.inholland.nl/inhollandcom/degree-programmes/business-innovation-eng-full-time/",
+     "city": "Amsterdam"
+    },
+    {
+     "name": "BA Creative Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Creative industries / Media",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (recommended, non-EU)",
+     "fee_non_eu": 10655,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: secondary diploma equivalent to Dutch HAVO/VWO/MBO-4 (formal evaluation by Inholland Admissions), intake step required; IELTS 6.0 or TOEFL iBT 80 (Cambridge also accepted). Non-EU applicants recommended to apply before 1 May 2027. Turkey-specific rules not published.",
+     "source_url": "https://www.inholland.nl/inhollandcom/degree-programmes/creative-business-eng-full-time/",
+     "city": "Haarlem"
+    },
+    {
+     "name": "BSc Information Technology",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "ICT",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (recommended, non-EU)",
+     "fee_non_eu": 10655,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: secondary diploma equivalent to Dutch HAVO/VWO/MBO-4 (formal evaluation by Inholland Admissions), intake step required; IELTS 6.0 or TOEFL iBT 80 (Cambridge also accepted). Non-EU applicants recommended to apply before 1 May 2027. Turkey-specific rules not published.",
+     "source_url": "https://www.inholland.nl/inhollandcom/degree-programmes/information-technology-eng-full-time/",
+     "city": "Haarlem"
+    },
+    {
+     "name": "BA Tourism Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Tourism / Management",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (recommended, non-EU)",
+     "fee_non_eu": 10655,
+     "fee_year": "2027-2028",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU: secondary diploma equivalent to Dutch HAVO/VWO/MBO-4 (formal evaluation by Inholland Admissions), intake step required; IELTS 6.0 or TOEFL iBT 80 (Cambridge also accepted). Non-EU applicants recommended to apply before 1 May 2027. Turkey-specific rules not published.",
+     "source_url": "https://www.inholland.nl/inhollandcom/degree-programmes/tourism-management-eng-full-time/",
+     "city": "Amsterdam"
+    }
+   ]
+  },
+  {
+   "name": "Windesheim University of Applied Sciences",
+   "city": "Zwolle",
+   "country": "Netherlands",
+   "website": "https://www.windesheim.com",
+   "status": "NEW",
+   "official_english_programme_count": {
+    "bachelor": 2,
+    "master": 0
+   },
+   "entity_note": "Windesheim states it offers two English bachelors and no English masters. Fee: 2026-27 institutional EUR 9,314 (2027-28 approx EUR 9,580).",
+   "programs": [
+    {
+     "name": "BBA International Business",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Business / International Business",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (non-EU/EEA)",
+     "fee_non_eu": 9314,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA deadline 1 May; secondary diploma equivalent to HAVO/VWO/MBO-4 evaluated by Windesheim after Studielink application; English IELTS 6.0 (preferred 6.5 reading/writing) or TOEFL iBT 80. Windesheim's accepted-diploma list includes the Turkish Lise Diploması and Teknik Lise Diploması; no YKS or foundation-year rule published. Institutional fee 2027-2028 approx EUR 9,580.",
+     "source_url": "https://www.windesheim.com/study-programmes/bachelor-s-degrees/bachelor-degrees/international-business",
+     "city": "Zwolle"
+    },
+    {
+     "name": "BBA Global Project and Change Management",
+     "level": "bachelor",
+     "duration": "4 years",
+     "field": "Business / Sustainability & project management",
+     "intake_months": [
+      "September"
+     ],
+     "application_deadline": "1 May 2027 (non-EU/EEA; selection procedure)",
+     "fee_non_eu": 9314,
+     "fee_year": "2026-2027",
+     "english": [
+      {
+       "test": "IELTS",
+       "min": 6.0
+      },
+      {
+       "test": "TOEFL",
+       "min": 80
+      }
+     ],
+     "education_level": "highschool",
+     "requirements_note": "Non-EU/EEA deadline 1 May; secondary diploma equivalent to HAVO/VWO/MBO-4 evaluated by Windesheim after Studielink application; English IELTS 6.0 (preferred 6.5 reading/writing) or TOEFL iBT 80. Windesheim's accepted-diploma list includes the Turkish Lise Diploması and Teknik Lise Diploması; no YKS or foundation-year rule published. Institutional fee 2027-2028 approx EUR 9,580. Programme has a selection procedure.",
+     "source_url": "https://www.windesheim.com/study-programmes/bachelor-s-degrees/bachelor-degrees/global-project-and-change-management",
+     "city": "Zwolle"
+    }
+   ]
+  }
+ ]
+}

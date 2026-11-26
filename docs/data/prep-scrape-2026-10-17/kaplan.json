@@ -1,0 +1,1272 @@
+{
+ "provider": "Kaplan",
+ "scraped_at": "2026-10-17",
+ "centres": [
+  {
+   "name": "Kaplan International College London",
+   "partner_university": "ASU London; City St George's, University of London; Cranfield; Queen Mary University of London; NTU London; University of Birmingham; University of Bristol; University of Liverpool; University of Nottingham; University of Westminster; University of York (multi-university off-campus college)",
+   "city": "London",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Art and Design",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 21660,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Progression to NTU London and University of Westminster only (per courses page)",
+     "field": "Art and design",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/kaplan-international-college-london/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Business, Law and Social Sciences",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 23440,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Partner universities (see centre); specific degrees not listed",
+     "field": "Business, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/kaplan-international-college-london/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Science and Engineering",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 25000,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Partner universities (see centre); specific degrees not listed",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/kaplan-international-college-london/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Business",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 18990,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2 of partner university degree",
+     "field": "Business",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/kaplan-international-college-london/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Computer Science",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 18990,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "University of Westminster and University of York",
+     "field": "Computer science",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/kaplan-international-college-london/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Engineering",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 25390,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2 of partner university degree (incl. City St George's and Queen Mary engineering)",
+     "field": "Engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/kaplan-international-college-london/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Law",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 21660,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "University of Liverpool and University of Westminster only",
+     "field": "Law",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/kaplan-international-college-london/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Business, Economics and Finance",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 25340,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Master's at partner universities",
+     "field": "Business, economics, finance",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/kaplan-international-college-london/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Law and Social Sciences",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 24970,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Master's at partner universities",
+     "field": "Law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/kaplan-international-college-london/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Science and Engineering",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": null,
+     "tuition_currency": null,
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Master's at partner universities",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/kaplan-international-college-london/fees-and-dates/"
+    }
+   ]
+  },
+  {
+   "name": "University of Brighton International College",
+   "partner_university": "University of Brighton",
+   "city": "Brighton",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Art, Design and Media (Grand Parade Campus)",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 19110,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Brighton degree on passing at required level with good attendance. Examples: Graphic Design BA, Film BA, Architecture BA",
+     "field": "Art, design, media",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-brighton-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Business, Law and Social Sciences",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 16470,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Brighton degree on passing at required level with good attendance. Examples: Business Management BSc, Law LLB, Economics BSc",
+     "field": "Business, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-brighton-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Computing",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 17500,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Brighton degree on passing at required level with good attendance. Examples: Computer Science BSc, Software Engineering BSc",
+     "field": "Computing",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-brighton-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Science and Engineering",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 17500,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Brighton degree on passing at required level with good attendance. Examples: Civil Engineering BEng, Pharmacy MPharm, Medicine BMBS",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-brighton-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Architecture (Grand Parade Campus)",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 19170,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: Architecture BA (Hons)",
+     "field": "Architecture",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-brighton-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Business",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 16860,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: Accounting and Finance BSc, Business Management BSc, International Business Management BSc",
+     "field": "Business",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-brighton-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Art, Design and Media (Grand Parade Campus)",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 19460,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: Fine Art MA, Architecture MArch, Graphic Design MA",
+     "field": "Art, design, media",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-brighton-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Business, Law and Social Sciences",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 17160,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: Law Conversion LLM, Marketing MSc, The Brighton MBA",
+     "field": "Business, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-brighton-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Science and Engineering",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 17160,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: Civil Engineering MSc, Pharmaceutical Sciences MSc",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-brighton-international-college/fees-and-dates/"
+    }
+   ]
+  },
+  {
+   "name": "Glasgow International College",
+   "partner_university": "University of Glasgow",
+   "city": "Glasgow",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Arts and Humanities",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 23870,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Glasgow degree on passing at required level with good attendance. Examples: MA English Literature, MA History of Art",
+     "field": "Arts and humanities",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/glasgow-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Business and Social Sciences",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": null,
+     "tuition_currency": null,
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Glasgow degree on passing at required level with good attendance. Examples: MA Business & Management, MA Economics and Social History",
+     "field": "Business, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/glasgow-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Science and Engineering",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 25480,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Glasgow degree on passing at required level with good attendance. Examples: BEng Civil Engineering, BSc Physics",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/glasgow-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Arts and Humanities",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 27190,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MSc Philosophy, MLitt Art History",
+     "field": "Arts and humanities",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/glasgow-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Business, Economics and Finance",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 29980,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MSc Finance and Management, MSc International Business",
+     "field": "Business, economics, finance",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/glasgow-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Law and Social Sciences",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 28020,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: LLM Law, MSc International Relations",
+     "field": "Law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/glasgow-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Medical, Veterinary and Life Sciences",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 29980,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MSc Brain Sciences, MPH Public Health",
+     "field": "Medical, veterinary, life sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/glasgow-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Science and Engineering",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 28920,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MSc Astrophysics, MSc Data Analytics",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/glasgow-international-college/fees-and-dates/"
+    }
+   ]
+  },
+  {
+   "name": "Bournemouth University International College",
+   "partner_university": "Bournemouth University",
+   "city": "Bournemouth",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Business, Law or Finance",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 16700,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Bournemouth University degree on passing at required level with good attendance. Examples: Accounting BA, Law LLB, Economics BSc",
+     "field": "Business, law, finance",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Computing",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 17650,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Bournemouth University degree on passing at required level with good attendance. Examples: Computing BSc, Software Engineering BSc",
+     "field": "Computing",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Events, Tourism and Hospitality Management",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 16700,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Bournemouth University degree on passing at required level with good attendance. Examples: Events Management BA, Tourism Management BA",
+     "field": "Events, tourism, hospitality",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Media and Communications",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 16700,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Bournemouth University degree on passing at required level with good attendance. Examples: Film BA, Multimedia Journalism BA",
+     "field": "Media, communications",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Science",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 17650,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Bournemouth University degree on passing at required level with good attendance. Examples: Biological Sciences BSc, Medical Science BSc, Physiotherapy BSc",
+     "field": "Science",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Business",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 16880,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Bournemouth University degree on passing at required level with good attendance. Examples: Accounting and Finance BA, Economics BSc",
+     "field": "Business",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Media and Communications",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 16880,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Bournemouth University degree on passing at required level with good attendance. Examples: Communication and Media BA",
+     "field": "Media, communications",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Tourism and Hospitality",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 16880,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Bournemouth University degree on passing at required level with good attendance. Examples: International Tourism and Hospitality Management BA",
+     "field": "Tourism, hospitality",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Business, Law or Finance",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 17750,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: Finance MSc, MBA, Intellectual Property LLM",
+     "field": "Business, law, finance",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Events, Tourism and Hospitality Management",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 17750,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: International Hospitality and Tourism Management MSc",
+     "field": "Events, tourism, hospitality",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Media and Communications",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 17750,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: Media and Communication MA, Film and TV production MA",
+     "field": "Media, communications",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/bournemouth-university-international-college/fees-and-dates/"
+    }
+   ]
+  },
+  {
+   "name": "University of Bristol International Foundation Programme",
+   "partner_university": "University of Bristol",
+   "city": "Bristol",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: International Foundation Programme: Arts, Law and Social Sciences",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 26900,
+     "tuition_currency": "GBP",
+     "intakes": "September (one intake per year)",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Bristol degree on passing at required level with good attendance. Examples: BA English, BA History, LLB Law, BA Sociology",
+     "field": "Arts, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-bristol-international-foundation-programme/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: International Foundation Programme: Business and Economics",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 26900,
+     "tuition_currency": "GBP",
+     "intakes": "September (one intake per year)",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Bristol degree on passing at required level with good attendance. Examples: BSc Economics, BSc Finance, BSc Business and Management",
+     "field": "Business and economics",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-bristol-international-foundation-programme/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: International Foundation Programme: Science, Technology, Engineering and Mathematics",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 28000,
+     "tuition_currency": "GBP",
+     "intakes": "September (one intake per year)",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Bristol degree on passing at required level with good attendance. Examples: BSc Computer Science, BEng Mechanical Engineering, BVSc Veterinary Science",
+     "field": "STEM",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-bristol-international-foundation-programme/fees-and-dates/"
+    }
+   ]
+  },
+  {
+   "name": "University of Liverpool International College",
+   "partner_university": "University of Liverpool",
+   "city": "Liverpool",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Business, Law and Social Sciences",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 22640,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Liverpool degree on passing at required level with good attendance. Examples: BA Accounting and Finance, LLB Law, BA Politics",
+     "field": "Business, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-liverpool-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Science and Engineering",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 24250,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Liverpool degree on passing at required level with good attendance. Examples: BEng Aerospace Engineering, BSc Computer Science, BSc Psychology",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-liverpool-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Business, Economics and Finance",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 25210,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MSc Finance, MSc Economics, MSc Marketing",
+     "field": "Business, economics, finance",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-liverpool-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Law and Social Sciences",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 24180,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: LLM Law, MA Media and Politics",
+     "field": "Law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-liverpool-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Science and Engineering",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 25780,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MSc Computer Science, MSc Biomedical Engineering",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-liverpool-international-college/fees-and-dates/"
+    }
+   ]
+  },
+  {
+   "name": "University of York International Pathway College",
+   "partner_university": "University of York",
+   "city": "York",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Business, Law and Social Sciences",
+     "type": "Foundation",
+     "duration": "1.5-term",
+     "tuition_fee": 20580,
+     "tuition_currency": "GBP",
+     "intakes": "February (Foundation Certificate; fees page)",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of York degree on passing at required level with good attendance. Examples: LLB Law, BSc Marketing, BA Criminology",
+     "field": "Business, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-york-international-pathway-college/courses/"
+    },
+    {
+     "name": "Foundation Certificate: Science and Engineering",
+     "type": "Foundation",
+     "duration": "1.5-term",
+     "tuition_fee": 24250,
+     "tuition_currency": "GBP",
+     "intakes": "February (Foundation Certificate; fees page)",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of York degree on passing at required level with good attendance. Examples: BEng/BSc Computer Science, BEng Electronic Engineering",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-york-international-pathway-college/courses/"
+    },
+    {
+     "name": "International Year One: Business",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 22850,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Oct), Spring (Jan), Summer (Jul)",
+     "english_req": null,
+     "progression": "Entry to year 2: BA/BSc Business and Management, Business and Society",
+     "field": "Business",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-york-international-pathway-college/courses/"
+    },
+    {
+     "name": "International Year One: Computer Science",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 24800,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Oct), Spring (Jan), Summer (Jul)",
+     "english_req": null,
+     "progression": "Entry to year 2: BSc/MEng Computer Science (incl. AI, Cyber Security)",
+     "field": "Computer science",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-york-international-pathway-college/courses/"
+    },
+    {
+     "name": "Pre-Master's: Business, Law and Management",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 25210,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Oct), Spring (Jan), Summer (Jul)",
+     "english_req": null,
+     "progression": "Examples: MSc Management, LLM Law (Juris Doctor)",
+     "field": "Business, law, management",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-york-international-pathway-college/courses/"
+    },
+    {
+     "name": "Pre-Master's: Education, Media and Social Sciences",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 24180,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Oct), Spring (Jan), Summer (Jul)",
+     "english_req": null,
+     "progression": "Examples: MA Education, MA International Relations",
+     "field": "Education, media, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-york-international-pathway-college/courses/"
+    },
+    {
+     "name": "Pre-Master's: Science, Technology, Engineering and Mathematics",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 25780,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Oct), Spring (Jan), Summer (Jul)",
+     "english_req": null,
+     "progression": "Examples: MSc Intelligent Robotics, MSc Digital Systems Engineering",
+     "field": "STEM",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-york-international-pathway-college/courses/"
+    }
+   ]
+  },
+  {
+   "name": "University of Birmingham Foundation Pathways",
+   "partner_university": "University of Birmingham",
+   "city": "Birmingham",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Arts, Social Sciences, Business and Law",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 24480,
+     "tuition_currency": "GBP",
+     "intakes": "September",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Birmingham degree on passing at required level with good attendance. Examples: BSc Accounting and Finance, LLB Law, BA History",
+     "field": "Arts, social sciences, business, law",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-birmingham-foundation-pathways/courses/"
+    },
+    {
+     "name": "Foundation Certificate: Engineering and Physical Sciences",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 26400,
+     "tuition_currency": "GBP",
+     "intakes": "September or January",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Birmingham degree on passing at required level with good attendance. Examples: BEng Aerospace/Chemical/Mechanical Engineering, BSc Computer Science",
+     "field": "Engineering, physical sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-birmingham-foundation-pathways/courses/"
+    },
+    {
+     "name": "Foundation Certificate: Life and Environmental Sciences",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 26400,
+     "tuition_currency": "GBP",
+     "intakes": "September",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Birmingham degree on passing at required level with good attendance. Examples: BSc Biochemistry, BSc Environmental Science, BNurs Nursing (Adult)",
+     "field": "Life and environmental sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-birmingham-foundation-pathways/courses/"
+    },
+    {
+     "name": "Foundation Certificate: Medicine and Health",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 26400,
+     "tuition_currency": "GBP",
+     "intakes": "September, January or November",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Birmingham degree on passing at required level with good attendance. Examples: MBChB Medicine and Surgery, BDS Dental Surgery, MPharm Pharmacy",
+     "field": "Medicine, health",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-birmingham-foundation-pathways/courses/"
+    },
+    {
+     "name": "Foundation Certificate: Social Sciences, Business and Law",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 24480,
+     "tuition_currency": "GBP",
+     "intakes": "January",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Birmingham degree on passing at required level with good attendance. Examples: BA International Relations, BSc Economics and Politics, BMus Music",
+     "field": "Social sciences, business, law",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-birmingham-foundation-pathways/courses/"
+    }
+   ]
+  },
+  {
+   "name": "University of Essex International College",
+   "partner_university": "University of Essex",
+   "city": "Colchester",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Humanities",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 20580,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Essex degree on passing at required level with good attendance. Examples: LLB Law, BA Film Studies, BA Journalism and Politics",
+     "field": "Humanities",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Science and Health",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 22700,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Essex degree on passing at required level with good attendance. Examples: BSc Biological Sciences, BSc Artificial Intelligence, BA Psychology",
+     "field": "Science and health",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Social Sciences",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 20580,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Essex degree on passing at required level with good attendance. Examples: BSc Accounting, BSc Business Management, BA Criminology",
+     "field": "Social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Business",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 21160,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: BSc Business Management, BSc Finance, BSc Accounting",
+     "field": "Business",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Computer Science",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 22730,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: BSc Computer Science, BSc Artificial Intelligence",
+     "field": "Computer science",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Economics",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 21160,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: BA Economics, BA Business Economics",
+     "field": "Economics",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Law",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 21160,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: LLB Law",
+     "field": "Law",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Life Sciences",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 22730,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: BSc Biomedical Science, BSc Genetics",
+     "field": "Life sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Politics and International Relations",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 21160,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: BA Politics, BA International Relations",
+     "field": "Politics and international relations",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Psychology",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 22730,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: BA/BSc Psychology",
+     "field": "Psychology",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Humanities",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 22600,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MA Creative Writing, LLM International Law",
+     "field": "Humanities",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Science and Health",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 23020,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MSc Artificial Intelligence, MSc Actuarial Science",
+     "field": "Science and health",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Social Sciences",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 22600,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MSc Business Analytics, MSc Marketing",
+     "field": "Social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-essex-international-college/fees-and-dates/"
+    }
+   ]
+  },
+  {
+   "name": "University of Nottingham International College",
+   "partner_university": "University of Nottingham",
+   "city": "Nottingham",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Business, Law and Social Sciences (incl. Arts and Humanities)",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 23110,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Nottingham degree on passing at required level with good attendance. Examples: Law LLB, Economics BSc, Politics BA",
+     "field": "Business, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-nottingham-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Science and Engineering",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 25380,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a University of Nottingham degree on passing at required level with good attendance. Examples: Aerospace Engineering BSc, Computer Science BSc, Nursing (Adult) BSc",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-nottingham-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Business",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": null,
+     "tuition_currency": null,
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: Business and Management BSc, Industrial Economics BSc",
+     "field": "Business",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-nottingham-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Business and Management",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 27270,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: Business and Management MSc, International Business MSc",
+     "field": "Business and management",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-nottingham-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Law and Social Sciences",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 25410,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: International Law LLM, Public Policy MA",
+     "field": "Law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-nottingham-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Science and Engineering",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 27690,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: Computer Science MSc, Mechanical Engineering MSc",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/university-of-nottingham-international-college/fees-and-dates/"
+    }
+   ]
+  },
+  {
+   "name": "UWE Bristol's International College",
+   "partner_university": "UWE Bristol",
+   "city": "Bristol",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Art, Design and Media",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 18330,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a UWE Bristol degree on passing at required level with good attendance. Examples: BA Animation, Fine Art, Graphic Design",
+     "field": "Art, design, media",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/uwe-bristol-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Business, Law and Social Sciences",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 16700,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a UWE Bristol degree on passing at required level with good attendance. Examples: Accounting BSc, Law LLB, Marketing BA",
+     "field": "Business, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/uwe-bristol-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Science and Engineering",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 17650,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a UWE Bristol degree on passing at required level with good attendance. Examples: Aerospace Engineering BEng, Computer Science BSc",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/uwe-bristol-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Business",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 16880,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: Accounting BSc, Business and Management BSc, Marketing BA",
+     "field": "Business",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/uwe-bristol-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Computing",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 17840,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: Computer Science BSc, Cyber Security and Digital Forensics BSc",
+     "field": "Computing",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/uwe-bristol-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Engineering",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 17840,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: Aerospace/Civil/Mechanical Engineering BEng",
+     "field": "Engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/uwe-bristol-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Business, Law and Social Sciences",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 17960,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: Accounting and Finance MSc, International Law LLM",
+     "field": "Business, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/uwe-bristol-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Science and Engineering",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 17960,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: Data Science MSc, Cyber Security MSc",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/uwe-bristol-international-college/fees-and-dates/"
+    }
+   ]
+  },
+  {
+   "name": "Nottingham Trent International College",
+   "partner_university": "Nottingham Trent University",
+   "city": "Nottingham",
+   "country": "United Kingdom",
+   "programs": [
+    {
+     "name": "Foundation Certificate: Art, Design and Media",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 19110,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Nottingham Trent University degree on passing at required level with good attendance. Examples: BA Animation, Graphic Design, Photography",
+     "field": "Art, design, media",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/nottingham-trent-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Business, Law and Social Sciences",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 16710,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Nottingham Trent University degree on passing at required level with good attendance. Examples: BA Business, LLB Law, BSc Psychology",
+     "field": "Business, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/nottingham-trent-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Computing",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 17660,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Nottingham Trent University degree on passing at required level with good attendance. Examples: BSc Computer Science, Cyber Security, Software Engineering",
+     "field": "Computing",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/nottingham-trent-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Foundation Certificate: Science and Engineering",
+     "type": "Foundation",
+     "duration": null,
+     "tuition_fee": 17660,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Guaranteed entry to a Nottingham Trent University degree on passing at required level with good attendance. Examples: BEng Civil Engineering, BSc Biological Sciences",
+     "field": "Science and engineering",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/nottingham-trent-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Business",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 16990,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: Accounting and Finance BA, Business BA, International Business BA",
+     "field": "Business",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/nottingham-trent-international-college/fees-and-dates/"
+    },
+    {
+     "name": "International Year One: Computing",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": 17840,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Entry to year 2: Computer Science BSc, Cyber Security BSc",
+     "field": "Computing",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/nottingham-trent-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Business, Law and Social Sciences",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 18070,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MSc Finance and Accounting, LLM General Law",
+     "field": "Business, law, social sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/nottingham-trent-international-college/fees-and-dates/"
+    },
+    {
+     "name": "Pre-Master's: Computing",
+     "type": "Pre-Master",
+     "duration": null,
+     "tuition_fee": 18070,
+     "tuition_currency": "GBP",
+     "intakes": "Autumn (Sep-Nov), Spring (Jan-Apr), Summer (May-Aug) - multiple start dates; not tied to individual programmes",
+     "english_req": null,
+     "progression": "Examples: MSc Computer Science, MSc IT Security",
+     "field": "Computing",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/nottingham-trent-international-college/fees-and-dates/"
+    }
+   ]
+  },
+  {
+   "name": "Kaplan International Pathways at the University of Alberta",
+   "partner_university": "University of Alberta",
+   "city": "Edmonton",
+   "country": "Canada",
+   "programs": [
+    {
+     "name": "Year One Foundation Program",
+     "type": "Pathway",
+     "duration": null,
+     "tuition_fee": null,
+     "tuition_currency": null,
+     "intakes": "September, January, May",
+     "english_req": "IELTS 6.0 overall, minimum 5.5 in all skills (EAP available if not met)",
+     "progression": "Second year of a bachelor's degree at U of A North or Augustana campus",
+     "field": "Agriculture/Life/Environmental Sciences, Science, Arts, Business, Engineering, Social Sciences",
+     "source_url": "https://www.kaplanpathways.com/where-to-study/canadian-universities/university-of-alberta/programs/foundation/"
+    }
+   ]
+  },
+  {
+   "name": "Kaplan International Pathways at the University of Victoria",
+   "partner_university": "University of Victoria",
+   "city": "Victoria",
+   "country": "Canada",
+   "programs": [
+    {
+     "name": "UVic Pathway Program",
+     "type": "Pathway",
+     "duration": "11 months",
+     "tuition_fee": 44402,
+     "tuition_currency": "CAD",
+     "intakes": null,
+     "english_req": null,
+     "progression": "Bachelor's degree preparation; students complete first-year degree courses and start UVic studies; delivered by UVic English Language Centre",
+     "field": null,
+     "source_url": "https://www.kaplanpathways.com/where-to-study/canadian-universities/university-of-victoria/tuition-and-dates/"
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "Fees: the Kaplan pages show 'From' total-course tuition for 2025-26 and 2026-27; the 2026-27 'From' figure is used throughout. UK fees are totals in GBP, not per term.",
+  "Durations are not stated on any UK Kaplan listing page (null) except University of York Foundation Certificate ('1.5-term') and UVic Pathway Program (11 months). Course info PDFs / summary sheets (downloads.kaplanpathways.com) were not read.",
+  "Intakes: UK pages only give three bands (Autumn Sep-Nov, Spring Jan-Apr, Summer May-Aug), not tied to programmes; Bristol IFP, Birmingham and York give more specific intakes where recorded.",
+  "English requirements are not stated per programme on UK listing pages (null). Only seen: KICL/ASU London page says UKVI IELTS 4.0-5.5 for degree preparation; Autumn 2025 summary sheet snippet says IELTS 5.5 overall (4.5 each skill) for Foundation Certificates - not verified on a page. Entry-requirements page https://www.kaplanpathways.com/how-to-apply/entry-requirements/uk/ was not fetched.",
+  "Fee set to null due to conflicting figures between Kaplan courses and fees pages: KICL Pre-Master's Science and Engineering 2026-27 (25,630 vs 26,630); Glasgow Foundation Business and Social Sciences 2026-27 (23,870 vs 23,170); Nottingham IYO Business (courses 23,260 vs fees page 18,990; 2025-26 24,240 vs 21,285).",
+  "York fees page shows inconsistent 2026-27 Pre-Master's figures (all 24,980); courses-page figures used instead. Brighton Pre-Master's fees page labels both columns 2025-26; courses-page 2026-27 figures used.",
+  "Kaplan International College London serves multiple partner universities (ASU London, City St George's, Cranfield, QMUL, NTU London, Birmingham, Bristol, Liverpool, Nottingham, Westminster, York); the programme-to-university mapping is not given in text, so progression is generic. Partner pages for these universities list KICL as an off-campus option; they are not separate centres.",
+  "Glasgow Pre-Master's also has an online route (Adam Smith Business School) and Kaplan offers online degree preparation; online/digital courses were out of scope and not collected. Pre-Doctorate (KICL, Nottingham) and Pre-Sessional English excluded.",
+  "Alberta Year One Foundation: tuition is per year and varies by faculty (CAD 35,908-49,952, 2026-27; full-degree tuition, not a separate foundation fee), so tuition_fee is null. Duration not stated as a standalone length.",
+  "UVic: the Pathway program intake, English requirement not stated; transfer/degree admission and English preparation (University Admission Preparation 12 weeks CAD 4,680) excluded as English-only. Fee per program as listed; not confirmed whether total.",
+  "Emily Carr University (Vancouver): its 'Foundation Year' is the first year of every ECU bachelor's degree, not a separate Kaplan pathway; no Kaplan fee/duration given (tuition CAD 31,214/yr is degree tuition). Not included as a programme.",
+  "Kaplan listing pages (kaplaninternational.com not used). No pages were blocked (no 403/Cloudflare). Fetch summaries were produced by the WebFetch tool's model, not raw HTML, so values should be spot-checked."
+ ]
+}

@@ -1,0 +1,1039 @@
+{
+ "56823": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL + Physics HL",
+   "note": "Only Mathematics Analysis & Approaches HL accepted (AI not accepted); IB Career-related Programme (IBCP) not accepted. No minimum IB total points published on the TU Delft international-diploma pages. Subject table per programme on the 'specific diploma requirements' page. "
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 College Board AP exams, each score >=3; required APs: Calculus AB or BC (BC preferred) + Physics 1&2 or Physics C: Mechanics. Not accepted: AP Capstone/Research/Seminar, Arts, Cybersecurity, Networking, Business with Personal Finance.",
+   "note": "AP requirements are programme-specific per the TU Delft page."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX / State exam (VWO entrance exams)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Applicants lacking a required subject must pass the corresponding VWO entrance exam(s) before 1 September (providers: Boswell-Beta, CCVX, Staatsexamen). No OMPT or TU Delft maths placement test found for bachelor admission."
+  },
+  "a_level": "Six GCSEs in different subjects (A-C / 9-4) plus at least 3 (in some cases 4) A-levels grade A-C, including Mathematics + Physics A2",
+  "turkish_route": "Turkish Lise Diploması is not considered equivalent to VWO; needs at least first year (60 ECTS) of a BSc/BEng at an accredited academic university in the same or closely related field with GPA >=75% (generic Turkey entry on country-specific page); AP route (4 APs) is the US-diploma route.",
+  "prerequisite_maths": "Mathematics B + Physics (VWO level)",
+  "source_url": "https://www.tudelft.nl/en/education/admission-and-application/bsc-international-diploma/admission-requirements/specific-diploma-requirements",
+  "confidence": "medium"
+ },
+ "56824": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL",
+   "note": "Only Mathematics Analysis & Approaches HL accepted (AI not accepted); IB Career-related Programme (IBCP) not accepted. No minimum IB total points published on the TU Delft international-diploma pages. Subject table per programme on the 'specific diploma requirements' page. Programme has numerus fixus (590 places) with a matching/selection procedure (page lists numerus fixus deadline 15 Jan; selection details not retrieved)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 College Board AP exams, each score >=3; required APs: Calculus AB or BC (BC preferred). Not accepted: AP Capstone/Research/Seminar, Arts, Cybersecurity, Networking, Business with Personal Finance.",
+   "note": "AP requirements are programme-specific per the TU Delft page."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX / State exam (VWO entrance exams)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Applicants lacking a required subject must pass the corresponding VWO entrance exam(s) before 1 September (providers: Boswell-Beta, CCVX, Staatsexamen). No OMPT or TU Delft maths placement test found for bachelor admission."
+  },
+  "a_level": "Six GCSEs in different subjects (A-C / 9-4) plus at least 3 (in some cases 4) A-levels grade A-C, including Mathematics A2",
+  "turkish_route": "Turkish Lise Diploması is not considered equivalent to VWO; needs at least first year (60 ECTS) of a BSc/BEng at an accredited academic university in the same or closely related field with GPA >=75% (generic Turkey entry on country-specific page); AP route (4 APs) is the US-diploma route.",
+  "prerequisite_maths": "Mathematics B (VWO level or equivalent, e.g. IB AA HL); no Physics required",
+  "source_url": "https://www.tudelft.nl/en/education/admission-and-application/bsc-international-diploma/admission-requirements/specific-diploma-requirements",
+  "confidence": "medium"
+ },
+ "56825": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL + Physics HL + Chemistry SL",
+   "note": "Only Mathematics Analysis & Approaches HL accepted (AI not accepted); IB Career-related Programme (IBCP) not accepted. No minimum IB total points published on the TU Delft international-diploma pages. Subject table per programme on the 'specific diploma requirements' page. "
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 College Board AP exams, each score >=3; required APs: Calculus AB or BC (BC preferred) + Physics 1&2 or Physics C: Mechanics + Chemistry. Not accepted: AP Capstone/Research/Seminar, Arts, Cybersecurity, Networking, Business with Personal Finance.",
+   "note": "AP requirements are programme-specific per the TU Delft page."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX / State exam (VWO entrance exams)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Applicants lacking a required subject must pass the corresponding VWO entrance exam(s) before 1 September (providers: Boswell-Beta, CCVX, Staatsexamen). No OMPT or TU Delft maths placement test found for bachelor admission."
+  },
+  "a_level": "Six GCSEs in different subjects (A-C / 9-4) plus at least 3 (in some cases 4) A-levels grade A-C, including Mathematics + Physics + Chemistry A2",
+  "turkish_route": "Turkish Lise Diploması is not considered equivalent to VWO; needs at least first year (60 ECTS) of a BSc/BEng at an accredited academic university in the same or closely related field with GPA >=75% (generic Turkey entry on country-specific page); AP route (4 APs) is the US-diploma route.",
+  "prerequisite_maths": "Mathematics B + Physics + Chemistry (VWO level)",
+  "source_url": "https://www.tudelft.nl/en/education/admission-and-application/bsc-international-diploma/admission-requirements/specific-diploma-requirements",
+  "confidence": "medium"
+ },
+ "56826": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL + Physics HL + Biology HL + Chemistry SL",
+   "note": "Only Mathematics Analysis & Approaches HL accepted (AI not accepted); IB Career-related Programme (IBCP) not accepted. No minimum IB total points published on the TU Delft international-diploma pages. Subject table per programme on the 'specific diploma requirements' page. Page notes 2026 is a transitional year for Nanobiology with two accepted subject combinations; check current page."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 College Board AP exams, each score >=3; required APs: Calculus AB or BC (BC preferred) + Physics 1&2 or Physics C: Mechanics + Biology + Chemistry. Not accepted: AP Capstone/Research/Seminar, Arts, Cybersecurity, Networking, Business with Personal Finance.",
+   "note": "AP requirements are programme-specific per the TU Delft page."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX / State exam (VWO entrance exams)",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Applicants lacking a required subject must pass the corresponding VWO entrance exam(s) before 1 September (providers: Boswell-Beta, CCVX, Staatsexamen). No OMPT or TU Delft maths placement test found for bachelor admission."
+  },
+  "a_level": "Six GCSEs in different subjects (A-C / 9-4) plus at least 3 (in some cases 4) A-levels grade A-C, including Mathematics + Physics + Biology + Chemistry A2",
+  "turkish_route": "Turkish Lise Diploması is not considered equivalent to VWO; needs at least first year (60 ECTS) of a BSc/BEng at an accredited academic university in the same or closely related field with GPA >=75% (generic Turkey entry on country-specific page); AP route (4 APs) is the US-diploma route.",
+  "prerequisite_maths": "Mathematics B + Physics + Biology + Chemistry (VWO level)",
+  "source_url": "https://www.tudelft.nl/en/education/admission-and-application/bsc-international-diploma/admission-requirements/specific-diploma-requirements",
+  "confidence": "medium"
+ },
+ "57950": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL (former Mathematics HL)",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores). Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B (VWO level or equivalent, e.g. IB AA HL)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57940": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL + Physics HL",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores) + Physics 1&2 (counts as one exam) or Physics C: Mechanics. Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2 + Physics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B + Physics (VWO level or equivalent)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57932": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL + Physics HL",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee). Architecture has a mandatory selection procedure (numerus fixus; deadline 15 Jan, online test in March, Selection Day April) on the TU/e Turkey page."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores) + Physics 1&2 (counts as one exam) or Physics C: Mechanics. Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2 + Physics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B + Physics (VWO level or equivalent)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57939": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL + Physics HL",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores) + Physics 1&2 (counts as one exam) or Physics C: Mechanics. Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2 + Physics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B + Physics (VWO level or equivalent)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57946": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL + Physics HL + Chemistry HL (if Physics HL is taken, Chemistry SL suffices; if Chemistry HL is taken, Physics SL suffices)",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores) + Physics 1&2 (counts as one exam) or Physics C: Mechanics + Chemistry. Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2 + Physics A2 + Chemistry A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B + Physics + Chemistry (VWO level or equivalent)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57921": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL (former Mathematics HL)",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores). Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B (VWO level or equivalent, e.g. IB AA HL)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57944": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL (former Mathematics HL)",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores). Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B (VWO level or equivalent, e.g. IB AA HL)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57948": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL + Physics HL",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores) + Physics 1&2 (counts as one exam) or Physics C: Mechanics. Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2 + Physics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B + Physics (VWO level or equivalent)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57926": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL + Physics HL",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores) + Physics 1&2 (counts as one exam) or Physics C: Mechanics. Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2 + Physics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B + Physics (VWO level or equivalent)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57941": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL (former Mathematics HL)",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores). Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B (VWO level or equivalent, e.g. IB AA HL)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57922": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL + Physics HL",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores) + Physics 1&2 (counts as one exam) or Physics C: Mechanics. Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2 + Physics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B + Physics (VWO level or equivalent)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57942": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL (former Mathematics HL)",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores). Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B (VWO level or equivalent, e.g. IB AA HL)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "57936": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics AA HL (former Mathematics HL)",
+   "note": "Same TU/e-wide 'Required IB subjects' table applied per programme (English-taught list). No minimum IB total points published on the eligibility page; IB holders count as international applicants (application fee)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accredited US high school diploma with at least 4 AP subjects/exams, all score >=3; required: Calculus AB or BC (no subscores). Not accepted: AP Precalculus, Research, Capstone, Seminar, 2-D/3-D Art and Design, Drawing, Business with Personal Finance, Cybersecurity, Networking.",
+   "note": "TU/e-wide 'Required AP subjects' table."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT / maths placement test requirement found on TU/e eligibility pages for bachelor programmes (TU/e uses Study Choice Check / matching, not verified here)."
+  },
+  "a_level": "3 GCSE + 3 GCE A-levels (6 different subjects) with A*-C; A2 level required (AS insufficient): Mathematics A2",
+  "turkish_route": "Lise Diploması: eligible with at least 4 USA College Board AP exams (AP route), or Lise Diploması plus at least first year (60 ECTS, GPA >=3.0/4.0) at a YOK-accredited technical university in a relevant (maths-based) programme. Page retrieved was the Architecture roadmap for Turkey; assumed generic.",
+  "prerequisite_maths": "Mathematics B (VWO level or equivalent, e.g. IB AA HL)",
+  "source_url": "https://www.tue.nl/en/education/become-a-tue-student/admission-and-enrollment/eligibility",
+  "confidence": "medium"
+ },
+ "36966": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, Physics C: E&M, or Physics C: Mechanics). Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/advanced-technology/",
+  "confidence": "high"
+ },
+ "36967": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC. Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/applied-mathematics/",
+  "confidence": "high"
+ },
+ "56813": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, Physics C: E&M, or Physics C: Mechanics). Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/advanced-technology/",
+  "confidence": "high"
+ },
+ "56812": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC. Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/applied-mathematics/",
+  "confidence": "high"
+ },
+ "58545": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, C: E&M or C: Mechanics). Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/applied-physics/",
+  "confidence": "high"
+ },
+ "56819": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics SL or HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, C: E&M or C: Mechanics). Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/civil-engineering/",
+  "confidence": "high"
+ },
+ "56816": {
+  "stem": false
+ },
+ "56815": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AI or AA (SL or HL) (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Precalculus, Calculus AB (subscore) or Calculus BC. Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "Mathematics at IB AI/AA SL-HL level (VWO Maths A vs B level for this programme not verified)",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/creative-technology/",
+  "confidence": "medium"
+ },
+ "56817": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics SL or HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, C: E&M or C: Mechanics). Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/electrical-engineering/",
+  "confidence": "high"
+ },
+ "56820": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, C: E&M or C: Mechanics). Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/mechanical-engineering/",
+  "confidence": "high"
+ },
+ "36968": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC. Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/business-information-technology/",
+  "confidence": "high"
+ },
+ "36969": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics SL/HL + Chemistry SL/HL (at least one of Physics/Chemistry at HL); AA SL assessed individually (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, C: E&M or C: Mechanics) + Chemistry. Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics + Chemistry A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics + Chemistry",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/chemical-science-engineering/",
+  "confidence": "high"
+ },
+ "36970": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics SL or HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, C: E&M or C: Mechanics). Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/civil-engineering/",
+  "confidence": "high"
+ },
+ "36971": {
+  "stem": false
+ },
+ "36972": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AI or AA (SL or HL) (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Precalculus, Calculus AB (subscore) or Calculus BC. Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "Mathematics at IB AI/AA SL-HL level (VWO Maths A vs B level for this programme not verified)",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/creative-technology/",
+  "confidence": "medium"
+ },
+ "36973": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics SL or HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, C: E&M or C: Mechanics). Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/electrical-engineering/",
+  "confidence": "high"
+ },
+ "36974": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics SL or HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, C: E&M or C: Mechanics). Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/industrial-design-engineering/",
+  "confidence": "high"
+ },
+ "36975": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC. Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/industrial-engineering-and-management/",
+  "confidence": "high"
+ },
+ "36978": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL + Physics HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC + Physics (Physics 1&2, C: E&M or C: Mechanics). Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics + Physics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B + Physics",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/mechanical-engineering/",
+  "confidence": "high"
+ },
+ "36979": {
+  "stem": false
+ },
+ "36977": {
+  "stem": false
+ },
+ "36980": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths AA HL (plus English)",
+   "note": "UT-wide IB page, Sept 2027 intake: 'In general, there is no minimum IB grade requirement'; a high SL score cannot replace a required HL subject. Applied per programme from the IB table."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum 4 AP CollegeBoard exams, each score 3-5; required: Calculus BC. Only exam-concluded APs count.",
+   "note": "UT-wide AP page (valid for US and Turkish national diplomas), Sept 2027 intake. A missing maths/physics/chemistry AP can be covered by CCVX/Boswell-Beta/Staatsexamen certificate if >=4 APs held; test cannot replace an AP exam."
+  },
+  "math_test": {
+   "name": "Boswell-Beta (also CCVX, Staatsexamen); OMPT NOT accepted",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "UT states OMPT and Korteweg-de Vries tests are not accepted. Certificates in Mathematics/Physics/Chemistry from CCVX, James Boswell-Beta (online or physical) or Dutch Staatsexamen can cover deficiencies; apply first, then book test. Technical programmes need VWO Maths B level. Pass mark not stated on pages read."
+  },
+  "a_level": "3 (I)GCSE/O-level (A-C or 4-9) + 3 full A2-levels grade A-C (6 subjects total); required A2: Mathematics A2 (+English unless A-C in English). Test cannot replace an A-level.",
+  "turkish_route": "Turkish national diploma (Lise Diploması) is assessed on the AP route: minimum 4 AP exams (score 3-5) incl. the programme's subject APs (UT AP/Turkiye page, Sept 2027 intake). Other Turkish routes not found.",
+  "prerequisite_maths": "VWO Mathematics B",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/programmes/technical-computer-science/",
+  "confidence": "high"
+ },
+ "58655": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics A&I (HL) or A&A (SL/HL) + Chemistry + Biology (one of Chem/Bio at HL)",
+   "note": "From WUR Diploma Eligibility List (2026 intake PDF; same appendix in 2027 list, version 2027-3), Appendix 2. No minimum IB total published in the list; 'conditional admission is not guaranteed'. Maths AI HL is accepted at WUR (unlike TU Delft/Twente technical programmes)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US high school diploma (accredited) + at least 4 College Board AP exams graded 3-5; required: Calculus AB or BC + Chemistry + Biology + one additional academic AP. Not accepted: AP Art and Design, Capstone, Research, Seminar, Precalculus, Networking, Cybersecurity, Business with Personal Finance, Drawing. Overlapping exams (Calc AB+BC, Physics 1+2) count as one.",
+   "note": "WUR list Appendix 3 (2027 list)."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX / State exam / VAVO (VWO certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": "VWO certificate grade at least 5.5 out of 10",
+   "details": "Applicants lacking a required subject can obtain VWO certificates via CCVX, Boswell-Beta, Staatsexamen or VAVO; OMPT not mentioned. No WUR maths placement test found."
+  },
+  "a_level": "(I)GCSE in at least 3 academic subjects A*-C/9-4 + (I)GCE A-level in at least 3 academic subjects A*-C (6 different subjects in total); programme subject requirements (Maths + sciences) per programme page not itemised in the list.",
+  "turkish_route": "Lise Diploması + at least one year of an academic local Bachelor programme with GPA at least 80% or 3/4; Lise Diploması including AP College Board exams assessed case by case.",
+  "prerequisite_maths": "Mathematics + Chemistry + Biology (VWO level)",
+  "source_url": "https://backend.wur.nl/sites/default/files/2025-10/Diploma-Eligibility-List-2026-intake-EN.pdf",
+  "confidence": "medium"
+ },
+ "58656": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics A&I (HL) or A&A (SL/HL) + one of Chemistry/Biology/Physics (SL/HL)",
+   "note": "From WUR Diploma Eligibility List (2026 intake PDF; same appendix in 2027 list, version 2027-3), Appendix 2. No minimum IB total published in the list; 'conditional admission is not guaranteed'. Maths AI HL is accepted at WUR (unlike TU Delft/Twente technical programmes)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US high school diploma (accredited) + at least 4 College Board AP exams graded 3-5; required: Calculus AB or BC + one of Chemistry/Biology/Physics 1&2/Physics C Mechanics + two additional academic APs. Not accepted: AP Art and Design, Capstone, Research, Seminar, Precalculus, Networking, Cybersecurity, Business with Personal Finance, Drawing. Overlapping exams (Calc AB+BC, Physics 1+2) count as one.",
+   "note": "WUR list Appendix 3 (2027 list)."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX / State exam / VAVO (VWO certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": "VWO certificate grade at least 5.5 out of 10",
+   "details": "Applicants lacking a required subject can obtain VWO certificates via CCVX, Boswell-Beta, Staatsexamen or VAVO; OMPT not mentioned. No WUR maths placement test found."
+  },
+  "a_level": "(I)GCSE in at least 3 academic subjects A*-C/9-4 + (I)GCE A-level in at least 3 academic subjects A*-C (6 different subjects in total); programme subject requirements (Maths + sciences) per programme page not itemised in the list.",
+  "turkish_route": "Lise Diploması + at least one year of an academic local Bachelor programme with GPA at least 80% or 3/4; Lise Diploması including AP College Board exams assessed case by case.",
+  "prerequisite_maths": "Mathematics + one of Chemistry/Physics/Biology (VWO level, followed to last year)",
+  "source_url": "https://backend.wur.nl/sites/default/files/2025-10/Diploma-Eligibility-List-2026-intake-EN.pdf",
+  "confidence": "medium"
+ },
+ "58657": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics A&I (HL) or A&A (SL/HL) + Chemistry + Physics (one at HL)",
+   "note": "From WUR Diploma Eligibility List (2026 intake PDF; same appendix in 2027 list, version 2027-3), Appendix 2. No minimum IB total published in the list; 'conditional admission is not guaranteed'. Maths AI HL is accepted at WUR (unlike TU Delft/Twente technical programmes)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US high school diploma (accredited) + at least 4 College Board AP exams graded 3-5; required: Calculus AB or BC + Chemistry + Physics 1&2 or Physics C Mechanics + one additional academic AP. Not accepted: AP Art and Design, Capstone, Research, Seminar, Precalculus, Networking, Cybersecurity, Business with Personal Finance, Drawing. Overlapping exams (Calc AB+BC, Physics 1+2) count as one.",
+   "note": "WUR list Appendix 3 (2027 list)."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX / State exam / VAVO (VWO certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": "VWO certificate grade at least 5.5 out of 10",
+   "details": "Applicants lacking a required subject can obtain VWO certificates via CCVX, Boswell-Beta, Staatsexamen or VAVO; OMPT not mentioned. No WUR maths placement test found."
+  },
+  "a_level": "(I)GCSE in at least 3 academic subjects A*-C/9-4 + (I)GCE A-level in at least 3 academic subjects A*-C (6 different subjects in total); programme subject requirements (Maths + sciences) per programme page not itemised in the list.",
+  "turkish_route": "Lise Diploması + at least one year of an academic local Bachelor programme with GPA at least 80% or 3/4; Lise Diploması including AP College Board exams assessed case by case.",
+  "prerequisite_maths": "Mathematics + Chemistry + Physics (VWO level)",
+  "source_url": "https://backend.wur.nl/sites/default/files/2025-10/Diploma-Eligibility-List-2026-intake-EN.pdf",
+  "confidence": "medium"
+ },
+ "58658": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics A&I (HL) or A&A (SL/HL) + Chemistry + Physics (one at HL)",
+   "note": "From WUR Diploma Eligibility List (2026 intake PDF; same appendix in 2027 list, version 2027-3), Appendix 2. No minimum IB total published in the list; 'conditional admission is not guaranteed'. Maths AI HL is accepted at WUR (unlike TU Delft/Twente technical programmes)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US high school diploma (accredited) + at least 4 College Board AP exams graded 3-5; required: Calculus AB or BC + Chemistry + Physics 1&2 or Physics C Mechanics + one additional academic AP. Not accepted: AP Art and Design, Capstone, Research, Seminar, Precalculus, Networking, Cybersecurity, Business with Personal Finance, Drawing. Overlapping exams (Calc AB+BC, Physics 1+2) count as one.",
+   "note": "WUR list Appendix 3 (2027 list)."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX / State exam / VAVO (VWO certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": "VWO certificate grade at least 5.5 out of 10",
+   "details": "Applicants lacking a required subject can obtain VWO certificates via CCVX, Boswell-Beta, Staatsexamen or VAVO; OMPT not mentioned. No WUR maths placement test found."
+  },
+  "a_level": "(I)GCSE in at least 3 academic subjects A*-C/9-4 + (I)GCE A-level in at least 3 academic subjects A*-C (6 different subjects in total); programme subject requirements (Maths + sciences) per programme page not itemised in the list.",
+  "turkish_route": "Lise Diploması + at least one year of an academic local Bachelor programme with GPA at least 80% or 3/4; Lise Diploması including AP College Board exams assessed case by case.",
+  "prerequisite_maths": "Mathematics + Chemistry + Physics (VWO level)",
+  "source_url": "https://backend.wur.nl/sites/default/files/2025-10/Diploma-Eligibility-List-2026-intake-EN.pdf",
+  "confidence": "medium"
+ },
+ "58659": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics A&I (HL) or A&A (SL/HL) + Chemistry + Biology/Physics (one of the three at HL)",
+   "note": "From WUR Diploma Eligibility List (2026 intake PDF; same appendix in 2027 list, version 2027-3), Appendix 2. No minimum IB total published in the list; 'conditional admission is not guaranteed'. Maths AI HL is accepted at WUR (unlike TU Delft/Twente technical programmes)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US high school diploma (accredited) + at least 4 College Board AP exams graded 3-5; required: Calculus AB or BC + Chemistry + Biology or Physics 1&2 or Physics C Mechanics + one additional academic AP. Not accepted: AP Art and Design, Capstone, Research, Seminar, Precalculus, Networking, Cybersecurity, Business with Personal Finance, Drawing. Overlapping exams (Calc AB+BC, Physics 1+2) count as one.",
+   "note": "WUR list Appendix 3 (2027 list)."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX / State exam / VAVO (VWO certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": "VWO certificate grade at least 5.5 out of 10",
+   "details": "Applicants lacking a required subject can obtain VWO certificates via CCVX, Boswell-Beta, Staatsexamen or VAVO; OMPT not mentioned. No WUR maths placement test found."
+  },
+  "a_level": "(I)GCSE in at least 3 academic subjects A*-C/9-4 + (I)GCE A-level in at least 3 academic subjects A*-C (6 different subjects in total); programme subject requirements (Maths + sciences) per programme page not itemised in the list.",
+  "turkish_route": "Lise Diploması + at least one year of an academic local Bachelor programme with GPA at least 80% or 3/4; Lise Diploması including AP College Board exams assessed case by case.",
+  "prerequisite_maths": "Mathematics + Chemistry + Biology/Physics (VWO level, at least one at higher level)",
+  "source_url": "https://backend.wur.nl/sites/default/files/2025-10/Diploma-Eligibility-List-2026-intake-EN.pdf",
+  "confidence": "medium"
+ },
+ "58661": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics A&I (HL) or A&A (SL/HL) + Chemistry + Biology (one at HL)",
+   "note": "From WUR Diploma Eligibility List (2026 intake PDF; same appendix in 2027 list, version 2027-3), Appendix 2. No minimum IB total published in the list; 'conditional admission is not guaranteed'. Maths AI HL is accepted at WUR (unlike TU Delft/Twente technical programmes)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US high school diploma (accredited) + at least 4 College Board AP exams graded 3-5; required: Calculus AB or BC + Chemistry + Biology + one additional academic AP. Not accepted: AP Art and Design, Capstone, Research, Seminar, Precalculus, Networking, Cybersecurity, Business with Personal Finance, Drawing. Overlapping exams (Calc AB+BC, Physics 1+2) count as one.",
+   "note": "WUR list Appendix 3 (2027 list)."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX / State exam / VAVO (VWO certificates)",
+   "role": "alternative to prerequisite",
+   "min_score": "VWO certificate grade at least 5.5 out of 10",
+   "details": "Applicants lacking a required subject can obtain VWO certificates via CCVX, Boswell-Beta, Staatsexamen or VAVO; OMPT not mentioned. No WUR maths placement test found."
+  },
+  "a_level": "(I)GCSE in at least 3 academic subjects A*-C/9-4 + (I)GCE A-level in at least 3 academic subjects A*-C (6 different subjects in total); programme subject requirements (Maths + sciences) per programme page not itemised in the list.",
+  "turkish_route": "Lise Diploması + at least one year of an academic local Bachelor programme with GPA at least 80% or 3/4; Lise Diploması including AP College Board exams assessed case by case.",
+  "prerequisite_maths": "Mathematics + Biology + Chemistry (VWO level, at least one at higher level)",
+  "source_url": "https://backend.wur.nl/sites/default/files/2025-10/Diploma-Eligibility-List-2026-intake-EN.pdf",
+  "confidence": "medium"
+ }
+}

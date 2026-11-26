@@ -1,0 +1,848 @@
+{
+ "44201": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 32 with HL5 in one of those subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-computer-systems-engineering",
+  "confidence": "high"
+ },
+ "44200": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 32 with HL5 in one of those subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-computer-systems-engineering",
+  "confidence": "high"
+ },
+ "44253": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-electrical-and-electronic-engineering",
+  "confidence": "high"
+ },
+ "44251": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-electrical-and-electronic-engineering",
+  "confidence": "high"
+ },
+ "44252": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-electrical-and-electronic-engineering",
+  "confidence": "high"
+ },
+ "44255": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-energy-engineering",
+  "confidence": "high"
+ },
+ "44254": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-energy-engineering",
+  "confidence": "high"
+ },
+ "44264": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-engineering",
+  "confidence": "high"
+ },
+ "44257": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-engineering",
+  "confidence": "high"
+ },
+ "44256": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-engineering",
+  "confidence": "high"
+ },
+ "44260": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points). Entrepreneurship variant uses the same BEng Engineering requirements"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-engineering",
+  "confidence": "medium"
+ },
+ "44258": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points). Entrepreneurship variant uses the same BEng Engineering requirements"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-engineering",
+  "confidence": "medium"
+ },
+ "44259": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points). Entrepreneurship variant uses the same BEng Engineering requirements"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-engineering",
+  "confidence": "medium"
+ },
+ "44263": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points). Management variant uses the same BEng Engineering requirements"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-engineering",
+  "confidence": "medium"
+ },
+ "44261": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points). Management variant uses the same BEng Engineering requirements"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-engineering",
+  "confidence": "medium"
+ },
+ "44262": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points). Management variant uses the same BEng Engineering requirements"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-engineering",
+  "confidence": "medium"
+ },
+ "44365": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-mechanical-engineering",
+  "confidence": "high"
+ },
+ "44364": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-mechanical-engineering",
+  "confidence": "high"
+ },
+ "44366": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths; IB 32 with HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (Applications and Interpretation or Analysis and Approaches)",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Mathematics (science A-levels need practical pass)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent); A-level/HL Maths required",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/beng-mechanical-engineering",
+  "confidence": "high"
+ },
+ "44155": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 32 with HL5 in one of those subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/bsc-artificial-intelligence",
+  "confidence": "high"
+ },
+ "44157": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 32 with HL5 in one of those subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/bsc-artificial-intelligence",
+  "confidence": "high"
+ },
+ "44206": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 32 with HL5 in one of those subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/bsc-computing-science",
+  "confidence": "high"
+ },
+ "44203": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 32 with HL5 in one of those subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/bsc-computing-science",
+  "confidence": "high"
+ },
+ "44204": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 32 with HL5 in one of those subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/bsc-computing-science-with-cyber-security",
+  "confidence": "high"
+ },
+ "44202": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 32 with HL5 in one of those subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/bsc-computing-science-with-cyber-security",
+  "confidence": "high"
+ },
+ "44223": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. one of Maths, Computing, Electronics, Physics, Chemistry, Economics, Accountancy, Psychology, Statistics, Environmental Science, DT, Biology, Design & Technology or Digital Media & Design; IB 32 with HL5 in Maths, Computing Science, Chemistry, Physics or Economics",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of the specified subjects (Maths, Computing, Electronics, Physics, Chemistry, Economics, Accountancy, Psychology, Statistics, Environmental Science, Digital Technology, Biology, Design & Technology, Digital Media & Design)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/bsc-digital-media-and-creative-computing",
+  "confidence": "medium"
+ },
+ "44222": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. one of Maths, Computing, Electronics, Physics, Chemistry, Economics, Accountancy, Psychology, Statistics, Environmental Science, DT, Biology, Design & Technology or Digital Media & Design; IB 32 with HL5 in Maths, Computing Science, Chemistry, Physics or Economics",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of the specified subjects (Maths, Computing, Electronics, Physics, Chemistry, Economics, Accountancy, Psychology, Statistics, Environmental Science, Digital Technology, Biology, Design & Technology, Digital Media & Design)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/bsc-digital-media-and-creative-computing",
+  "confidence": "medium"
+ },
+ "44221": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. one of Maths, Computing, Electronics, Physics, Chemistry, Economics, Accountancy, Psychology, Statistics, Environmental Science, DT, Biology, Design & Technology or Digital Media & Design; IB 32 with HL5 in Maths, Computing Science, Chemistry, Physics or Economics",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. one of the specified subjects (Maths, Computing, Electronics, Physics, Chemistry, Economics, Accountancy, Psychology, Statistics, Environmental Science, Digital Technology, Biology, Design & Technology, Digital Media & Design)",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/bsc-digital-media-and-creative-computing",
+  "confidence": "medium"
+ },
+ "44154": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 33 with HL5 in one of Maths, Computing Science, Chemistry, Physics or Economics",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/mcomp-artificial-intelligence",
+  "confidence": "high"
+ },
+ "44207": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 33 with HL5 in one of those subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/mcomp-computing-science",
+  "confidence": "high"
+ },
+ "44205": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths, Computing, DT, Chemistry, Physics, Electronics or Economics; IB 33 with HL5 in one of those subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 33,
+   "subjects": "HL5 in Mathematics (AA or AI), Computing Science, Chemistry, Physics or Economics",
+   "note": "Institution-wide: IB Diploma considered for direct entry (32-35 points)"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT considered for Turkish Lise holders seeking direct entry; English: IELTS 6.0 overall (min 5.5 each component)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. one of Mathematics, Computing Science, Digital Technology, Chemistry, Physics, Electronics or Economics",
+  "turkish_route": "Lise Diplomas\u0131 with GPA 3.5+ considered for Foundation Year or direct entry depending on subject; strong SAT result may support direct entry; IB 32-35 or A-levels taken in Turkey accepted directly; \u00d6nlisans holders may be exempted from year 1",
+  "prerequisite_maths": "GCSE Maths grade 5 and English grade 4 (or equivalent)",
+  "source_url": "https://www.uea.ac.uk/course/undergraduate/mcomp-computing-science",
+  "confidence": "high"
+ },
+ "44243": {
+  "stem": false
+ },
+ "44241": {
+  "stem": false
+ },
+ "44242": {
+  "stem": false
+ }
+}

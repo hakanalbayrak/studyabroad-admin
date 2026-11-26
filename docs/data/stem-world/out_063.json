@@ -1,0 +1,1684 @@
+{
+ "23228": {
+  "stem": false
+ },
+ "23269": {
+  "stem": true,
+  "typical_offer": "Minimum 3.00 GPA from secondary school; SAT/ACT optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. General English minimums: IELTS 6.0, TOEFL iBT 61, PTE 53, Duolingo 95, Cambridge 170."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); not required.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://admission.asu.edu/apply/international/first-year",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52766": {
+  "stem": true,
+  "typical_offer": "Minimum 3.00 GPA from secondary school; SAT/ACT optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. General English minimums: IELTS 6.0, TOEFL iBT 61, PTE 53, Duolingo 95, Cambridge 170."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); not required.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://admission.asu.edu/apply/international/first-year",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52783": {
+  "stem": false
+ },
+ "23056": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESAMTATBS/aeronautical-management-technology-air-traffic-management",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23057": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSAMTMBS/aeronautical-management-technology-air-transportation-management",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23058": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSAMTUASBS/aeronautical-management-technology-unmanned-aerial-systems",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23078": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ASACOBS/applied-computing",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23079": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ASACOCBS/applied-computing-cybersecurity",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52819": {
+  "stem": false
+ },
+ "23133": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESBMIBS/biomedical-informatics-and-data-science",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52821": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://admission.asu.edu/apply/international/first-year",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23156": {
+  "stem": false
+ },
+ "23182": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ASCPFBS/digital-forensics",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23183": {
+  "stem": true,
+  "typical_offer": "Minimum 3.00 GPA from secondary school; SAT/ACT optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. General English minimums: IELTS 6.0, TOEFL iBT 61, PTE 53, Duolingo 95, Cambridge 170."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); not required.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/LACMSBS/computational-mathematical-sciences",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23186": {
+  "stem": true,
+  "typical_offer": "Minimum 3.00 GPA from secondary school; SAT/ACT optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. General English minimums: IELTS 6.0, TOEFL iBT 61, PTE 53, Duolingo 95, Cambridge 170."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); not required.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/BACISBS/computer-information-systems",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23187": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCSEBS/computer-science",
+  "confidence": "high",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52823": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://admission.asu.edu/apply/international/first-year",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23193": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCSEIBS/computer-science-cybersecurity",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23196": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCSESBS/computer-science-software-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23202": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCONMGTBS/construction-management-and-technology",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23204": {
+  "stem": false
+ },
+ "23205": {
+  "stem": false
+ },
+ "23216": {
+  "stem": true,
+  "typical_offer": "Minimum 3.00 GPA from secondary school; SAT/ACT optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. General English minimums: IELTS 6.0, TOEFL iBT 61, PTE 53, Duolingo 95, Cambridge 170."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); not required.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/LADATSCIBS/data-science",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52834": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://admission.asu.edu/apply/international/first-year",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52835": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://admission.asu.edu/apply/international/first-year",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23268": {
+  "stem": true,
+  "typical_offer": "Minimum 3.00 GPA from secondary school; SAT/ACT optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. General English minimums: IELTS 6.0, TOEFL iBT 61, PTE 53, Duolingo 95, Cambridge 170."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); not required.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ASENVBS/environmental-science",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52837": {
+  "stem": true,
+  "typical_offer": "Minimum 3.00 GPA from secondary school; SAT/ACT optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. General English minimums: IELTS 6.0, TOEFL iBT 61, PTE 53, Duolingo 95, Cambridge 170."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); not required.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://admission.asu.edu/apply/international/first-year",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23324": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSGITBS/graphic-information-technology",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23326": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESGITFSWBS/graphic-information-technology-full-stack-web-development",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23327": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESGITUEBS/graphic-information-technology-user-experience",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23340": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESHSEBS/human-systems-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23346": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESHSEUEBS/human-systems-engineering-user-experience",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23352": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCPIBS/informatics",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23354": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSIFTBS/information-technology",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52840": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://admission.asu.edu/apply/international/first-year",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52841": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://admission.asu.edu/apply/international/first-year",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23390": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSMEGRBS/manufacturing-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23483": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSSERBS/software-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23506": {
+  "stem": false
+ },
+ "23508": {
+  "stem": false
+ },
+ "23509": {
+  "stem": false
+ },
+ "23511": {
+  "stem": false
+ },
+ "23060": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESAEROBSE/aerospace-engineering-aeronautics",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23061": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESAEASBSE/aerospace-engineering-astronautics",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23062": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESAEAVSBSE/aerospace-engineering-autonomous-vehicle-systems",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23130": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESBMEBDBSE/biomedical-engineering-biological-devices",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23131": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESBMEMDBSE/biomedical-engineering-biomedical-devices",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23158": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCHEBSE/chemical-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23165": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCEEBSE/civil-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23166": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCEESUBSE/civil-engineering-sustainable-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23197": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCSEBSE/computer-systems-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23198": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCSEIBSE/computer-systems-engineering-cybersecurity",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23200": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESCONBSE/construction-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23244": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESEEEBSE/electrical-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23247": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESEEEPBSE/electrical-engineering-electric-power-and-energy-systems",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23252": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSEGRBSE/engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23253": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSEGRASBSE/engineering-automotive-systems",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "52872": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://admission.asu.edu/apply/international/first-year",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23254": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSEGRESBSE/engineering-electrical-systems",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23255": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSEGRMEBSE/engineering-mechanical-engineering-systems",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23256": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/TSEGRRBSE/engineering-robotics",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23257": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESEMGBSE/engineering-management",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23266": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESEVEBSE/environmental-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23350": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESIEEBSE/industrial-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23415": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESMSEBSE/materials-science-and-engineering",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23422": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESMAEMBSE/mechanical-engineering",
+  "confidence": "high",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23424": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESMAECBSE/mechanical-engineering-computational-mechanics",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ },
+ "23425": {
+  "stem": true,
+  "typical_offer": "SAT 1210 or ACT 24 or HS GPA 3.00 in ASU competency courses or top 25% of class; no math/science competency deficiencies",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma and Career-related Programme accepted as secondary credentials. Credit: Physics HL 5-7 (SL 6-7 partial), Chemistry HL 5-7, Biology HL/SL 5-7, Computer Science HL 5-7 (ACO 101/CSE 110), Economics HL 5-7. Fulton Schools English minimums: IELTS 6.5, TOEFL iBT 79 (3.5 per section on new scale), PTE 58, Duolingo 105, Cambridge 176."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 3-5: MAT 270 (4 hrs); Calculus BC 4-5: MAT 270 and 271 (8 hrs), BC 3: MAT 270 (4 hrs); BC 1-2 with AB subscore 3+: MAT 270. Computer Science A 4-5: CSE 110 (3 hrs); Physics 1 4-5: PHY 111/113; Physics 2 4-5: PHY 112/114; Physics C Mechanics 3-5: PHY 111/113; Physics C E&M 3-5: PHY 112/114; Chemistry 5: CHM 113+116, 4: CHM 113; Statistics 3-5: STP 226. No credit for scores of 1-2. Up to 60 credit hours by exam.",
+   "note": "Credit/placement only; AP is not an admission criterion. Institution-wide rules applied."
+  },
+  "tests": "SAT/ACT optional for international first-year applicants (placement or supplemental); programme offers SAT 1210 / ACT 24 as one of the qualifying options.",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 580 or ACT Math 24",
+   "details": "Either score satisfies the math competency in place of four years of high school math."
+  },
+  "a_level": "Cambridge A-levels accepted as secondary credential; credit: Mathematics A-level MAT 170/171, Further Mathematics A-level MAT 270+271 (8 hrs), Physics A-level (E+) PHY 111-114, Chemistry A-level grade A CHM 113+116.",
+  "turkish_route": "Turkish secondary diploma is assessed under ASU's country-specific comparable-degree requirements; minimum 3.00 GPA equivalent, three years of coursework (grades 10-12 for graduates).",
+  "prerequisite_maths": "Four years of math (Algebra I, Geometry, Algebra II, plus one course requiring Algebra II) and three years of lab science (biology, chemistry, earth science, physics); one deficiency allowed in non-engineering routes, none in math/science for Fulton programmes. First degree math course MAT 265 Calculus for Engineers I.",
+  "source_url": "https://degrees.asu.edu/bachelors/major/ASU00/ESMAEEBSE/mechanical-engineering-energy-and-environment",
+  "confidence": "medium",
+  "note": "Institution-wide ASU international first-year rules applied."
+ }
+}

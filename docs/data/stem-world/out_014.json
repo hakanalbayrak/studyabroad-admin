@@ -1,0 +1,686 @@
+{
+ "34480": {
+  "stem": false
+ },
+ "34515": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.acu.edu.au/course/bachelor-of-information-technology",
+  "confidence": "low"
+ },
+ "34487": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.acu.edu.au/course/bachelor-of-information-technologybachelor-of-business-administration",
+  "confidence": "low"
+ },
+ "34512": {
+  "stem": false
+ },
+ "34537": {
+  "stem": false
+ },
+ "34525": {
+  "stem": false
+ },
+ "34538": {
+  "stem": false
+ },
+ "34513": {
+  "stem": false
+ },
+ "34539": {
+  "stem": false
+ },
+ "30046": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cqu.edu.au/courses/cc31/bachelor-of-engineering-honours",
+  "confidence": "low"
+ },
+ "30042": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://cqu.edu.au/courses/bachelor-of-engineering-honours-and-diploma-of-professional-practice-co-op-engineering",
+  "confidence": "low"
+ },
+ "30045": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cqu.edu.au/courses/cg21/bachelor-of-engineering-technology",
+  "confidence": "low"
+ },
+ "30041": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cqu.edu.au/courses/cg99/bachelor-of-information-technology-coop",
+  "confidence": "low"
+ },
+ "30053": {
+  "stem": false
+ },
+ "30037": {
+  "stem": false
+ },
+ "30692": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30389": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematical Methods or Physics (SACE Stage 2/NTCET) or equivalent, or CDU unit SMA104 Concepts of Mathematics; Foundation Studies route: FSP010 Mathematics with Calculus or FSP014 Physics",
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30388": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematical Methods or Physics (SACE Stage 2/NTCET) or equivalent, or CDU unit SMA104 Concepts of Mathematics; Foundation Studies route: FSP010 Mathematics with Calculus or FSP014 Physics",
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30387": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematical Methods or Physics (SACE Stage 2/NTCET) or equivalent, or CDU unit SMA104 Concepts of Mathematics; Foundation Studies route: FSP010 Mathematics with Calculus or FSP014 Physics",
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30708": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematical Methods or Physics (SACE Stage 2/NTCET) or equivalent, or CDU unit SMA104 Concepts of Mathematics; Foundation Studies route: FSP010 Mathematics with Calculus or FSP014 Physics",
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30709": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematical Methods or Physics (SACE Stage 2/NTCET) or equivalent, or CDU unit SMA104 Concepts of Mathematics; Foundation Studies route: FSP010 Mathematics with Calculus or FSP014 Physics",
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30386": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematical Methods or Physics (SACE Stage 2/NTCET) or equivalent, or CDU unit SMA104 Concepts of Mathematics; Foundation Studies route: FSP010 Mathematics with Calculus or FSP014 Physics",
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30385": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematical Methods or Physics (SACE Stage 2/NTCET) or equivalent, or CDU unit SMA104 Concepts of Mathematics; Foundation Studies route: FSP010 Mathematics with Calculus or FSP014 Physics",
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30384": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematical Methods or Physics (SACE Stage 2/NTCET) or equivalent, or CDU unit SMA104 Concepts of Mathematics; Foundation Studies route: FSP010 Mathematics with Calculus or FSP014 Physics",
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30707": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30704": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30706": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30705": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30375": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30703": {
+  "stem": false
+ },
+ "30695": {
+  "stem": true,
+  "typical_offer": "IB Diploma 24 points; A-levels aggregate 6 across 3 subjects (A*=6 ... E=1); US diploma average C or SAT 980/ACT 20",
+  "ib": {
+   "accepted": true,
+   "min_total": 24,
+   "subjects": "Completed IB Diploma across 6 subjects",
+   "note": "Institution-wide rule applied to all programmes"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum of 2 AP scores of 2 or above (Calculus AB/BC variants not specified)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "US high school diploma: average C, or SAT 980 (post-2016) / 1320 (pre-2016), or ACT 20; English IELTS 6.0 no band below 6.0",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum aggregate score of 6 across 3 A-level subjects (A*=6, A=5, B=4, C=3, D=2, E=1; AS half points); predicted grades must be 1 point above requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Mathematical Methods or Physics (SACE Stage 2/NTCET) or equivalent, or CDU unit SMA104 Concepts of Mathematics; Foundation Studies route: FSP010 Mathematics with Calculus or FSP014 Physics",
+  "source_url": "https://www.cdu.edu.au/international/how-apply/entry-requirements",
+  "confidence": "medium"
+ },
+ "30227": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "30223": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "30236": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "30113": {
+  "stem": false
+ },
+ "30221": {
+  "stem": false
+ }
+}

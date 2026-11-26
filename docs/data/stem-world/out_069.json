@@ -1,0 +1,1115 @@
+{
+ "22081": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22082": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41787": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41754": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41755": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41775": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41776": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41777": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41782": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41785": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41786": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41809": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "41828": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22104": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22111": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22112": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22113": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22114": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22110": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22116": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22117": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22118": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22119": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22120": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22121": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22115": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22122": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22123": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22131": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22130": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22132": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22133": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22134": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22135": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22136": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22137": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22161": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22162": {
+  "stem": false
+ },
+ "22187": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22188": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22190": {
+  "stem": true,
+  "typical_offer": "No published grade cut-off; holistic review of high school transcript (grades 9-11); engineering applicants preferably 4 years maths and 4 years science",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Credit evaluated by course; full diploma credit needs total 30+ and three HL scores of 5+; Maths SL 5+ gives MATH 61 (4 cr), Maths HL 4 gives MATH 71 (4 cr), HL 5+ with differential equations or statistics gives MATH 71 + MATH 8 (8 cr); Physics SL 5+ gives PHYS 1A/1B, Physics HL 5+ gives 8 credits; up to 30 credits for full diploma",
+   "note": "30 is the minimum total for diploma credit, not an admission cut-off. Hofstra-wide rules apply to all programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB 4-5: MATH 71 (4 cr). Calculus BC 3: MATH 71 (4 cr); BC 4-5: MATH 71 and 72 (8 cr). Computer Science A 4-5: CSC 15 (4 cr). Chemistry 4-5: CHEM 3A and 4A. Physics 1 or 2 4-5: PHYS 1A/1B or 2A/2B; Physics C Mechanics 4-5: PHYS 11A/11B; Physics C E&M 4-5: PHYS 12A/12B; score 3 gives general credit only",
+   "note": "Hofstra-wide rules apply to all programmes."
+  },
+  "tests": "SAT/ACT optional (test-optional); international applicants whose first language is not English need TOEFL iBT 80, IELTS 6.5, PTE 53 or SAT/ACT (SAT EBRW 500+) unless waived; scores needed for Presidential/Trustee scholarships",
+  "math_test": {
+   "name": "SAT Math / ACT Math",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600 / ACT Math 23",
+   "details": "Engineering applicants without 4 years of high school maths can substitute this score or complete MATH 050 with C- or better"
+  },
+  "a_level": "Cambridge A-level grade C or better earns credit (max 30 credits): Maths or Pure Maths gives MATH 71 and 72 (8 cr), Physics gives PHYS 1A/1B/2A/2B (8 cr), Chemistry and Biology 8 cr each; AS and O-levels earn no credit; A-level English language C or better satisfies English requirement",
+  "turkish_route": null,
+  "prerequisite_maths": "Engineering: 4 years of high school maths (or SAT Math 600 / ACT Math 23, or MATH 050 with C- or better); 4 years of science preferred",
+  "source_url": "https://www.hofstra.edu/admission/international-how-to-apply.html",
+  "confidence": "medium"
+ },
+ "22205": {
+  "stem": false
+ },
+ "46047": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English proficiency: TOEFL iBT 71, IELTS 6.0, PTE 53 or Duolingo 95; may be exempt if last three years of schooling were mainly in English; transcripts must be officially translated",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hcc-nd.edu/international-applicants/",
+  "confidence": "low"
+ }
+}

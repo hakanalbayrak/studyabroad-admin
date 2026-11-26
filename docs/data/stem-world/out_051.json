@@ -1,0 +1,833 @@
+{
+ "39578": {
+  "stem": false
+ },
+ "39590": {
+  "stem": true,
+  "typical_offer": "HND or equivalent Level 5 engineering qualification (2-year top-up)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39617": {
+  "stem": true,
+  "typical_offer": "HND or equivalent Level 5 engineering qualification (2-year top-up)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39556": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39567": {
+  "stem": true,
+  "typical_offer": "A-level ABB (128 UCAS points) incl. Maths B; IB 32 with 6 in HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Maths 6",
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. Maths grade B",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths grade B",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39568": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39589": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39616": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50373": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50375": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50378": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39615": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39635": {
+  "stem": false
+ },
+ "39636": {
+  "stem": false
+ },
+ "39637": {
+  "stem": false
+ },
+ "39638": {
+  "stem": false
+ },
+ "39639": {
+  "stem": false
+ },
+ "39642": {
+  "stem": false
+ },
+ "50386": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50388": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50387": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50389": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50390": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50391": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50392": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50395": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50393": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50394": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39553": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39569": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39570": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39571": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39640": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39649": {
+  "stem": true,
+  "typical_offer": "A-level BBC or 112 UCAS points (min 80 from A levels/BTEC Diploma); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39582": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "39593": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ },
+ "50398": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Hull applies institution-wide entry rules; wide range of qualifications accepted (A levels, IB, BTEC), whole application assessed; foundation year may be recommended if not eligible for direct entry."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.hull.ac.uk/study/undergraduate/how-to-apply/accepted-qualifications",
+  "confidence": "low"
+ }
+}

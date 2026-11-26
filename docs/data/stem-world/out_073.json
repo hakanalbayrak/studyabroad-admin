@@ -1,0 +1,803 @@
+{
+ "51784": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51785": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years of maths incl. Algebra I, Geometry, Algebra II (Pre-Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51788": {
+  "stem": false
+ },
+ "51789": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51791": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51793": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51794": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51796": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years of maths incl. Algebra I, Geometry, Algebra II (Pre-Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51798": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51799": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51801": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years of maths incl. Algebra I, Geometry, Algebra II (Pre-Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51800": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51802": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years of maths incl. Algebra I, Geometry, Algebra II (Pre-Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51803": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51804": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51805": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51808": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51809": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51810": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years of maths incl. Algebra I, Geometry, Algebra II (Pre-Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51811": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51813": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "4 years of maths incl. Algebra I, Geometry, Algebra II and Pre-Calculus (Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51814": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years of maths incl. Algebra I, Geometry, Algebra II (Pre-Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "51816": {
+  "stem": true,
+  "typical_offer": "No minimum GPA or test score; generally top 25% of class or about 3.0 GPA; enrolled first-years average 3.65 GPA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit for Higher Level exams with 5, 6 or 7 (e.g. Math Analysis HL gives MATH 105 and MATH 111, 7 credits; Chemistry HL, Physics HL)",
+   "note": "No minimum IB diploma total published. Institution-wide rules apply to every NJIT programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB 4-5: MATH 111 (4 cr). Calculus BC 4: MATH 111; BC 5: MATH 111 and MATH 112 (8 cr). Physics 1/2, Physics C Mechanics/E&M, Chemistry (4: CHEM 125; 5: CHEM 125 and 126), Computer Science A: CS 113 (3 cr). Unlisted AP exams not accepted.",
+   "note": "Institution-wide rules apply to every NJIT programme."
+  },
+  "tests": "SAT/ACT optional but strongly encouraged for Fall 2027 (required for Albert Dorman Honors College and accelerated programmes); highest scores used; enrolled first-years average SAT 1339 / ACT 30",
+  "math_test": null,
+  "a_level": "A-level credit (Cambridge International and Pearson Edexcel) for grade C or higher in listed subjects; other subjects reviewed case by case",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years of maths incl. Algebra I, Geometry, Algebra II (Pre-Calculus strongly recommended); 3 years of lab science incl. Chemistry and Physics; 4 years English",
+  "source_url": "https://www.njit.edu/admissions/how-we-evaluate-applicants",
+  "confidence": "medium"
+ },
+ "17709": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17711": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17712": {
+  "stem": false
+ },
+ "17713": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17714": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17715": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17718": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17719": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17722": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17725": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17726": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17735": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17758": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "IB Diploma accepted; Higher Level exams scoring 5, 6 or 7 earn credit (Maths Analysis and Approaches HL or Applications and Interpretation HL give MATH1341 and MATH1342, 8 semester hours)",
+   "note": "No minimum IB total published. Up to 32 semester hours of advanced credit. Institution-wide rules apply to every Northeastern programme."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 4 or 5 earns credit. Calculus AB (or AB subscore): MATH1341 (4 sem. hrs). Calculus BC: MATH1341 and MATH1342 (8 sem. hrs). Up to 32 semester hours of advanced credit.",
+   "note": "Institution-wide rules apply to every Northeastern programme."
+  },
+  "tests": "SAT/ACT optional (test-optional, no penalty); best score across SAT and ACT is used; English test (TOEFL, IELTS, Duolingo, PTE, C1/C2) required unless waived",
+  "math_test": null,
+  "a_level": "British A-levels accepted; advanced credit for grade C or higher (AS-levels earn no credit); final or predicted grades; up to 32 semester hours of credit",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "confidence": "medium"
+ },
+ "17768": {
+  "stem": false
+ },
+ "46490": {
+  "stem": true,
+  "typical_offer": "Minimum 2.5 GPA (4.0 scale) for international applicants; no minimum test score",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB coursework weighted on a 5.0 GPA scale; IB exam credit posted after 12 credit hours at OCU"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 3 or higher: Calculus AB or BC gives MATH 2004 (4 hrs); Calculus BC 5 also gives MATH 2104 (8 hrs total); Computer Science A 3 gives CSCI 1514 (4 hrs).",
+   "note": "Combined outside credit is capped at 84 credit hours; credit posted after 12 hours at OCU."
+  },
+  "tests": "Test-optional; no minimum SAT/ACT score",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Foreign transcripts need evaluation by a NACES agency (e.g. WES, ECE) or in-house conversion to a US GPA; minimum 2.5 GPA",
+  "prerequisite_maths": null,
+  "source_url": "https://www.okcu.edu/admissions/international/apply-international/undergraduate-international-students",
+  "confidence": "medium"
+ },
+ "46522": {
+  "stem": true,
+  "typical_offer": "Minimum 2.5 GPA (4.0 scale) for international applicants; no minimum test score",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB coursework weighted on a 5.0 GPA scale; IB exam credit posted after 12 credit hours at OCU"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Score 3 or higher: Calculus AB or BC gives MATH 2004 (4 hrs); Calculus BC 5 also gives MATH 2104 (8 hrs total); Computer Science A 3 gives CSCI 1514 (4 hrs).",
+   "note": "Combined outside credit is capped at 84 credit hours; credit posted after 12 hours at OCU."
+  },
+  "tests": "Test-optional; no minimum SAT/ACT score",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Foreign transcripts need evaluation by a NACES agency (e.g. WES, ECE) or in-house conversion to a US GPA; minimum 2.5 GPA",
+  "prerequisite_maths": null,
+  "source_url": "https://www.okcu.edu/admissions/international/apply-international/undergraduate-international-students",
+  "confidence": "medium"
+ }
+}

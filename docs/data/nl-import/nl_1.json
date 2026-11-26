@@ -1,0 +1,17 @@
+{"provider":"nl-batch","universities":[
+{"name":"Saxion University of Applied Sciences","city":"Enschede","country":"Netherlands",
+"bachelor_degrees":["BSc Applied Computer Science","BSc Creative Media and Game Technologies","BSc Electrical and Electronic Engineering","BSc Fashion and Textile Technologies","BA Hotel Management","BBA International Business","BA International Finance and Accounting","BA International Human Resource Management","BSc Mechanical Engineering","BSc Mechatronics","BSc Physiotherapy","BSc Software Engineering - Information and Communication Technology","BA Tourism Management"],
+"master_degrees":["MSc Applied Nanotechnology","MSc Applied Quantum Technology","MSc Innovative Textile Development","MSc Gamified Reality Applications (GRACE)","MSc Citizen-Centered Digital Health and Social Care"],
+"bachelor_fee_non_eu":9360,"master_fee_non_eu":null,"currency":"EUR","fee_year":"2026-2027",
+"source_urls":["https://www.saxion.edu/studying-in-the-netherlands/choosing-a-study/bachelor","https://www.saxion.edu/studying-in-the-netherlands/choosing-a-study/master"]},
+{"name":"Hanze University of Applied Sciences","city":"Groningen","country":"Netherlands",
+"bachelor_degrees":["BSc Energy & Power Electronics","BSc Mechanical Engineering","BSc Mechatronics","BSc Sensors & Smart Systems","BBA International Business","BSc International Facility Management","BSc International Finance & Control","BSc Marketing Management","BSc Creative Media & Game Technologies","BA International Communication","BSc Physiotherapy","BA Sport Studies","BMus Classical Music","BMus Jazz","BA Design","BA Fine Art","BA Popular Culture"],
+"master_degrees":["MSc Data Science for Life Sciences","MSc European Master in Renewable Energy","MSc Smart Systems Engineering","MBA International Business and Management","MSc Interdisciplinary Business Professional","MSc Energy for Society","MSc European Master in Sustainable Energy System Management","MA International Communication","MA Media, Art, Design and Technology (MADtech)","MA Interrelational Art Practices (iRAP)","MA Painting","MA Materials in Artistic Practices (MAPs)","MMus Master of Music"],
+"bachelor_fee_non_eu":9302,"master_fee_non_eu":9302,"currency":"EUR","fee_year":"2025-2026",
+"source_urls":["https://www.hanze.nl/binaries/_cb_1752780603832/content/assets/hanze/en/studying/986-bama_2565_v2_hve_web.pdf","https://www.hanze.nl/tuitionfees"]},
+{"name":"Rotterdam University of Applied Sciences","city":"Rotterdam","country":"Netherlands",
+"bachelor_degrees":["BA Fine Art","BA Graphic Design","BBA International Business"],
+"master_degrees":["MSc International Supply Chain Management","MSc Shipping and Transport","MSc Consultancy and Entrepreneurship","MSc Sustainability Transitions","MSc River Delta Development","MA Fine Art and Design: Fine Art","MA Fine Art and Design: Experimental Publishing","MA Fine Art and Design: Lens-Based Media","MA Interior Architecture: Research + Design"],
+"bachelor_fee_non_eu":null,"master_fee_non_eu":null,"currency":"EUR","fee_year":"",
+"source_urls":["https://www.rotterdamuas.com/programmes/bachelor/","https://www.rotterdamuas.com/programmes/master/"]}
+]}

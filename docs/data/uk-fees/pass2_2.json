@@ -1,0 +1,430 @@
+{
+ "year": "2026/27",
+ "universities": {
+  "Anglia Ruskin University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Standard undergraduate",
+      "amount": 17500,
+      "subjects": "English, Humanities, Arts, Social Science, Business, Management, Law, Education, general undergraduate courses"
+     },
+     {
+      "name": "Computing (BSc Computer Science)",
+      "amount": 18400,
+      "subjects": "Computer Science, Computing, Software Engineering (verified for BSc Computer Science only)"
+     }
+    ],
+    "notes": "ARU states UG international fees 'from \u00a317,500' for 2026-27 and does not publish subject bands; 17,500 confirmed on English BA listing, 18,400 on BSc Computer Science course page. Other subjects not verified."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Law LLM (International Business and Commercial Law)",
+      "amount": 19500,
+      "subjects": "Law, LLM, International Business and Commercial Law"
+     }
+    ],
+    "notes": "ARU states PGT international fees range \u00a317,500-\u00a321,200 for 2026-27 with no band table. Only LLM International Business and Commercial Law (\u00a319,500, via HotCourses listing of the ARU course) found; other subjects not verified so no further bands given."
+   },
+   "source_urls": [
+    "https://www.aru.ac.uk/study/tuition-fees",
+    "https://www.aru.ac.uk/study/undergraduate/computer-science-bsc",
+    "https://www.hotcoursesabroad.com/india/course/uk/llm-international-business-and-commercial-law/54602618/program.html"
+   ]
+  },
+  "Brunel University London": {
+   "year": "2027/28",
+   "ug": {
+    "bands": [
+     {
+      "name": "Humanities, Law and Computing",
+      "amount": 17920,
+      "subjects": "English, Law, Computer Science, Humanities, Social Sciences"
+     },
+     {
+      "name": "Business, Psychology and Economics",
+      "amount": 19895,
+      "subjects": "Business, Management, Economics, Psychology, Social Science"
+     },
+     {
+      "name": "Science and Engineering",
+      "amount": 22445,
+      "subjects": "Biomedical Sciences, Engineering, Mechanical Engineering, Biological Sciences"
+     }
+    ],
+    "notes": "Per-course fees only. Course pages now show only 2027/28 entry fees (latest published): CS, English, Law 17,920; Business, Psychology, Economics 19,895; Biomedical Sciences 22,445; Mech Eng 22,445. 2026/27 figures not shown on pages. Bands inferred from 8 course pages."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Standard PGT (verified: Data Science, Management)",
+      "amount": 25535,
+      "subjects": "Data Science, Analytics, Management, Business"
+     }
+    ],
+    "notes": "Course pages show 2027/28 only: MSc Management 25,535, MSc Data Science and Analytics 25,535. Only two PGT courses verified; other subjects (engineering, law, arts, MBA) not verified. Brunel MBA home fee is 29,500 (not international)."
+   },
+   "source_urls": [
+    "https://www.brunel.ac.uk/study/undergraduate/computer-science-bsc",
+    "https://www.brunel.ac.uk/study/undergraduate/business-and-management-bsc",
+    "https://www.brunel.ac.uk/study/undergraduate/mechanical-engineering-beng",
+    "https://www.brunel.ac.uk/study/undergraduate/biomedical-sciences-bsc",
+    "https://www.brunel.ac.uk/study/postgraduate/management-msc",
+    "https://www.brunel.ac.uk/study/postgraduate/data-science-and-analytics-msc"
+   ]
+  },
+  "Durham University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [],
+    "notes": "Durham site returns 403 to automated fetches. Search snippets of official course pages show Sept 2027 fees only (International Relations 29,500; Biosciences 36,000), not 2026/27, and too few to build bands. Third-party figures conflict, so not used."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "Not verified: official pages blocked (403); only unofficial aggregator figures available, not used."
+   },
+   "source_urls": [
+    "https://www.durham.ac.uk/study/undergraduate/fees-and-funding/tuition-fees/",
+    "https://www.durham.ac.uk/study/courses/international-relations-l250/",
+    "https://www.durham.ac.uk/study/courses/biosciences-c107/"
+   ]
+  },
+  "Leeds Beckett University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Standard undergraduate",
+      "amount": 16840,
+      "subjects": "Most undergraduate courses: Business, Computing, Law, Humanities, Social Science, Science, Engineering, Health, Arts"
+     }
+    ],
+    "notes": "UG 16,840 'most courses' per official international course fees page snippet (page body not fully retrievable). Exceptions not identified."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Standard PGT (verified: Cyber Security, Information Technology)",
+      "amount": 18440,
+      "subjects": "Computer Science, Cyber Security, Information Technology, Computing, Business, Management"
+     }
+    ],
+    "notes": "18,440 verified on 2026/27 course pages for MSc Cyber Security and MSc Information and Technology. Other PGT subjects (MBA, law, arts, health) not verified; third-party sources suggest MBA 19,060 but unconfirmed so not included."
+   },
+   "source_urls": [
+    "https://www.leedsbeckett.ac.uk/international-students/course-fees-and-living-costs/",
+    "https://www.leedsbeckett.ac.uk/courses/cyber-security-msc",
+    "https://www.leedsbeckett.ac.uk/courses/information-technology-msc"
+   ]
+  },
+  "Newcastle University": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [],
+    "notes": "Per-course fees only; course pages now show 2027 entry only (latest published): Computer Science BSc 31,500; Mechanical Engineering BEng 30,700; Modern Languages and Business BA 25,350. One 2026-entry snippet: TN92 24,500. Too few verified courses for bands."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "PGT course page fee fields did not render (blank). Not verified."
+   },
+   "source_urls": [
+    "https://www.ncl.ac.uk/undergraduate/degrees/g400/",
+    "https://www.ncl.ac.uk/undergraduate/degrees/h300/",
+    "https://www.ncl.ac.uk/undergraduate/degrees/tn92/",
+    "https://www.ncl.ac.uk/postgraduate/degrees/4047f/"
+   ]
+  },
+  "Royal Holloway University of London": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Computer Science and Mathematics",
+      "amount": 29900,
+      "subjects": "Computer Science, Artificial Intelligence, Cyber Security, Mathematics (verified on 2026/27 course pages)"
+     }
+    ],
+    "notes": "Per-course fees only. 29,900 on 2026/27 pages for CS and Mathematics, CS (AI), CS (Cyber Security) (from search snippets); plain BSc Computer Science page shows 27,900 for 2027/28. Humanities/business/law/arts not verified. Aggregator range 23,800-29,900 not used."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "Fees only on course finder (not retrievable). Not verified."
+   },
+   "source_urls": [
+    "https://www.royalholloway.ac.uk/studying-here/2026/undergraduate/computer-science/computer-science-and-mathematics/",
+    "https://www.royalholloway.ac.uk/studying-here/2026/undergraduate/computer-science/computer-science-artificial-intelligence/",
+    "https://www.royalholloway.ac.uk/studying-here/undergraduate/computer-science/computer-science/"
+   ]
+  },
+  "University of Bath": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Band 1 - Humanities and Social Sciences",
+      "amount": 25400,
+      "subjects": "Library-based Humanities, Social Sciences, Politics, International Development, Sociology, Education, Languages, Social Policy, Foundation Degree"
+     },
+     {
+      "name": "Band 2 - Economics and Management",
+      "amount": 28650,
+      "subjects": "Economics, Management, Business, Accounting, Finance, International Management"
+     },
+     {
+      "name": "Band 3 - Science, Engineering, Health and Psychology",
+      "amount": 32000,
+      "subjects": "Computer Science, Engineering, Mathematics, Physics, Chemistry, Biology, Biochemistry, Natural Sciences, Architecture, Psychology, Sport and Exercise Science, Health, Pharmacy"
+     }
+    ],
+    "notes": "Official 3-band structure for 2026/27 overseas entry. MArch Year 1 20,445 and Year 2 32,000 excluded. Fees may rise up to 8% per later year."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Humanities and Social Sciences MRes",
+      "amount": 24450,
+      "subjects": "MRes, Research Masters, Politics, Sociology, Social Policy, Education research"
+     },
+     {
+      "name": "Humanities and Social Sciences MA/MSc",
+      "amount": 28900,
+      "subjects": "International Relations, Criminology, International Development, Economics, Education, TESOL, Translation, Politics, Social Policy"
+     },
+     {
+      "name": "Psychology, Interpreting and Sport Management",
+      "amount": 30900,
+      "subjects": "Psychology, Clinical Psychology, Health Psychology, Interpreting and Translating, Sport Management, Computer Science, Mathematics, Statistics, Financial Mathematics, Conservation"
+     },
+     {
+      "name": "Management - General",
+      "amount": 29500,
+      "subjects": "Management, Marketing, Management with Finance, Management with Operations"
+     },
+     {
+      "name": "Management - Specialist",
+      "amount": 31700,
+      "subjects": "Business Analytics, Human Resource Management, Entrepreneurship, International Management, Innovation and Technology Management, Supply Chain, Retailing, Sustainability and Management, Engineering Business Management"
+     },
+     {
+      "name": "Finance and Accounting",
+      "amount": 34950,
+      "subjects": "Finance, Accounting and Finance, Banking, Risk Management"
+     },
+     {
+      "name": "MBA",
+      "amount": 38950,
+      "subjects": "MBA, Business Administration"
+     },
+     {
+      "name": "Science and Engineering (specialist)",
+      "amount": 34550,
+      "subjects": "Data Science, Artificial Intelligence, Machine Learning, Biotechnology, Drug Discovery, Bioinformatics, Microbiology, Biosciences, Mechanical Engineering, Automotive Engineering, Electrical Engineering"
+     }
+    ],
+    "notes": "Official per-course tables; faculty of Science table headed '2025/26 entry onwards' (applies to 2026/27 entry) and HSS Economics/Education/Health rows likewise. Placement fees (8,585-9,600) excluded. Clinical MPharm excluded."
+   },
+   "source_urls": [
+    "https://www.bath.ac.uk/corporate-information/tuition-fees-for-undergraduate-students-starting-in-2026/",
+    "https://www.bath.ac.uk/corporate-information/faculty-of-humanities-social-sciences-taught-postgraduate-tuition-fees-2026-27/",
+    "https://www.bath.ac.uk/corporate-information/school-of-management-taught-postgraduate-tuition-fees-2026-27/",
+    "https://www.bath.ac.uk/corporate-information/faculty-of-science-taught-postgraduate-tuition-fees-2026-27/",
+    "https://www.bath.ac.uk/corporate-information/faculty-of-engineering-design-taught-postgraduate-tuition-fees-2026-27/"
+   ]
+  },
+  "University of Essex": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Band A - Humanities and Social Sciences",
+      "amount": 21500,
+      "subjects": "History, Sociology, Criminology, Linguistics, Language, Literature, Film, Theatre, Philosophy, Health and Social Care, Hotel Management, Psychosocial Studies"
+     },
+     {
+      "name": "Band B - Business, Law, Economics, Maths",
+      "amount": 22600,
+      "subjects": "Business, Management, Law, Economics, Government, Politics, Mathematics, Statistics, Sport and Exercise Sciences, Rehabilitation"
+     },
+     {
+      "name": "Band C - Life Sciences and Psychology",
+      "amount": 24360,
+      "subjects": "Biology, Biological Sciences, Biomedical Science, Psychology, Life Sciences"
+     },
+     {
+      "name": "Band D - Computing and Electronic Engineering",
+      "amount": 25050,
+      "subjects": "Computer Science, Electronic Engineering, Engineering, Artificial Intelligence, Data Science"
+     }
+    ],
+    "notes": "Official band table for 2026-27 (via search extract; page itself returned 503). Band E Oral Health Science 31,750 (clinical) excluded. Foundation-year and accelerated courses differ. Fees rise up to 5% per later year."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "2026-27 masters band table not retrievable (503; only 2025-26 current-student bands visible: most schools 22,750, CSEE 23,500, EBS MBA 26,250). Not used as wrong year."
+   },
+   "source_urls": [
+    "https://www.essex.ac.uk/undergraduate/fees-and-funding/eu-and-international-fees",
+    "https://www.essex.ac.uk/courses/UG00069/1"
+   ]
+  },
+  "University of Hull": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [],
+    "notes": "Hull states fees fall into a small number of bands by course but publishes no amounts on fee pages; course pages did not render fees. Only stale (2023 entry) or third-party figures found. Not verified."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "No amounts published on retrievable pages. Not verified."
+   },
+   "source_urls": [
+    "https://www.hull.ac.uk/study/international-students/fees-and-funding/undergraduate",
+    "https://www.hull.ac.uk/study/international-students/fees-and-funding/postgraduate-taught"
+   ]
+  },
+  "University of Nottingham": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Arts, Humanities, Social Science, Business and Maths",
+      "amount": 24700,
+      "subjects": "History, English, Philosophy, Classics, Art History, Sociology, Criminology, Politics, International Relations, Media, Film, Business and Management, Finance, Mathematics, Statistics, Social Work, Liberal Arts, Theology"
+     },
+     {
+      "name": "Law, Economics and Accountancy",
+      "amount": 26800,
+      "subjects": "Law, Economics, Accountancy, Archaeology, Philosophy Politics and Economics"
+     },
+     {
+      "name": "Geography",
+      "amount": 29000,
+      "subjects": "Geography"
+     },
+     {
+      "name": "Science, Engineering, Computing and Health",
+      "amount": 33000,
+      "subjects": "Computer Science, Engineering, Mechanical Engineering, Civil Engineering, Chemical Engineering, Electrical Engineering, Architecture, Physics, Chemistry, Biology, Biochemistry, Psychology, Pharmacy, Pharmacology, Neuroscience, Nutrition, Nursing, Sport Science, Environmental Science, Zoology, Natural Sciences"
+     },
+     {
+      "name": "Physiotherapy and Sport Rehabilitation",
+      "amount": 34000,
+      "subjects": "Physiotherapy, Sport Rehabilitation"
+     }
+    ],
+    "notes": "Official 2026/27 per-course table (all rows read); bands derived. Medicine 47,000 and Veterinary 41,800 excluded. Accountancy 85% in years 2-4."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Arts, Humanities, Law and Social Science",
+      "amount": 25750,
+      "subjects": "English, History, Classics, Creative Writing, Film, Media, Law, LLM, Human Rights, International Relations, Politics, Applied Linguistics, Sociology, Social Science Research, Global Environmental Sustainability, Physics (Quantum, Gravity), Statistical Science"
+     },
+     {
+      "name": "Education, Health and Architecture",
+      "amount": 28600,
+      "subjects": "Education, TESOL, Public Health, Health Psychology, Architecture, Medical Education, Counselling, Statistics, Data Analytics"
+     },
+     {
+      "name": "Economics, Psychology and Tourism",
+      "amount": 30800,
+      "subjects": "Economics, Behavioural Economics, Psychology, Occupational Psychology, Mental Health, Tourism, Entrepreneurship, Communication"
+     },
+     {
+      "name": "Science, Engineering and Specialist Social Science",
+      "amount": 33000,
+      "subjects": "Engineering, Mechanical Engineering, Civil Engineering, Chemical Engineering, Electrical Engineering, Biosciences, Microbiology, Neuroscience, Machine Learning, Mathematics, Criminology, Public Administration, Digital Marketing, Business Analytics, Supply Chain, Psychology Conversion"
+     },
+     {
+      "name": "Business, Computing, Management and Biotech",
+      "amount": 33800,
+      "subjects": "Computer Science, Data Science, Business, Management, Marketing, MBA, HRM, Banking and Finance, International Business, Logistics, Risk, Human Computer Interaction, FinTech, Biotechnology, Nutrition, Drug Discovery"
+     },
+     {
+      "name": "Accounting and Finance",
+      "amount": 37500,
+      "subjects": "Accounting and Finance, Finance and Investment"
+     },
+     {
+      "name": "Financial Economics",
+      "amount": 39600,
+      "subjects": "Financial Economics"
+     }
+    ],
+    "notes": "Official 2026/27 per-course table (172 rows); bands derived by amount. Part-time, 2-yr, online, PGDip/PGCert rows excluded. MBA is 33,800."
+   },
+   "source_urls": [
+    "https://www.nottingham.ac.uk/fees/tuitionfees/202627/undergraduate.aspx",
+    "https://www.nottingham.ac.uk/fees/tuitionfees/202627/postgraduate-taught.aspx"
+   ]
+  },
+  "University of Stirling": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Arts, Social Science, Business and Law",
+      "amount": 19500,
+      "subjects": "Arts, Humanities, Social Science, Business, Management, Law, Politics, Philosophy, Accountancy, Education, Media, Film, English, History"
+     },
+     {
+      "name": "Science, Health, Psychology and Computing",
+      "amount": 23700,
+      "subjects": "Biology, Animal Biology, Environmental Science, Psychology, Nursing, Business Computing, Computing, Health, Sport, Science"
+     }
+    ],
+    "notes": "Official 2026/27 fee page; the page itself does not name bands - groupings derived from listed courses."
+   },
+   "pg": {
+    "bands": [
+     {
+      "name": "Public Health and specialist MSc",
+      "amount": 12700,
+      "subjects": "MSc Big Data (part-listed UK=international), Gerontology (note: only specific programmes)"
+     },
+     {
+      "name": "Humanities, Social Science and Media MSc/MRes",
+      "amount": 21800,
+      "subjects": "Criminology, Creative Writing, Publishing, English Language Teaching, Digital Media, Communication, Public Health, MRes Humanities, Social Science"
+     },
+     {
+      "name": "Business, Finance, Computing and Sport",
+      "amount": 24300,
+      "subjects": "Business and Management, Finance, Investment, Artificial Intelligence, Big Data, Human Rights, Law LLM, Sport Management, Marketing, Environmental Management, Psychology of Sport, Human Animal Interaction"
+     }
+    ],
+    "notes": "Official 2026/27 page. Page excerpt partial (first course block cut off). 12,700-class band covers only MSc Big Data/Gerontology (same fee UK and intl); consider ignoring for matching. Aquaculture and research degrees excluded."
+   },
+   "source_urls": [
+    "https://www.stir.ac.uk/courses/fees/",
+    "https://www.stir.ac.uk/study/fees-funding/postgraduate-tuition-fees/"
+   ]
+  },
+  "University of Westminster": {
+   "year": "2026/27",
+   "ug": {
+    "bands": [
+     {
+      "name": "Standard undergraduate",
+      "amount": 17600,
+      "subjects": "Business, Management, International Business, Finance, English, Creative Writing, History, Politics, International Relations, Languages, Events, Computing, Computer Science, Artificial Intelligence, Games, Cyber Security, Creative Computing"
+     }
+    ],
+    "notes": "Per-course fees. 17,600 consistent across 2026/27 pages seen (about 12 courses in business, humanities, social science, computing, events; plus Foundation year 17,600). Law, film, architecture, science not verified; Westminster says international fees do not rise after enrolment. Third-party figure 16,900 conflicts with official pages and was not used."
+   },
+   "pg": {
+    "bands": [],
+    "notes": "Course pages mix entry years and intakes (e.g. Int. Dev. Mgmt MSc 14,000; Int. Business and Mgmt with Prof. Experience 18,000; Applied AI MSc 20,760 shown on a page with Sept 2027 intake; MBA 20,760 for 2027/28). Not reliably 2026/27, so no bands."
+   },
+   "source_urls": [
+    "https://www.westminster.ac.uk/study/fees-and-funding/fees",
+    "https://www.westminster.ac.uk/business-and-management-courses/2026-27/september/full-time/international-business-ba-honours",
+    "https://www.westminster.ac.uk/computer-science-and-engineering-courses/2026-27/september/full-time/creative-computing-bsc-honours"
+   ]
+  }
+ },
+ "gaps": "No usable bands: Durham (site blocks fetches, 403), Newcastle (course-level, pages show 2027 entry, blank PG fees), University of Hull (no amounts retrievable). UG only: Royal Holloway (computing/maths only), Essex (PG 2026-27 table not retrievable, 503), Westminster (PG unreliable). Brunel is 2027/28 latest published. Partial PG bands: ARU, Brunel, Leeds Beckett (few courses verified). Full UG+PG: Bath, Nottingham, Stirling."
+}

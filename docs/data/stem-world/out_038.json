@@ -1,0 +1,1007 @@
+{
+ "33058": {
+  "stem": true,
+  "typical_offer": "A-level ABB-BCC incl. B in Maths; IB 32 with Maths HL5/SL6; MEng AAA-AAB / IB 34; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. Grade B in A-level Maths; MEng AAA-AAB incl. Maths; Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/aerospace-civil-electrical-mechanical-engineering/aerospace-engineering/beng-aerospace-engineering/",
+  "confidence": "high"
+ },
+ "33054": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB; Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/engineering-applied-sciences/biomedical-engineering/beng-biomedical-engineering/",
+  "confidence": "high"
+ },
+ "33050": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/engineering-applied-sciences/chemical-engineering/beng-chemical-engineering/",
+  "confidence": "high"
+ },
+ "33033": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/aerospace-civil-electrical-mechanical-engineering/civil-engineering/beng-civil-engineering/",
+  "confidence": "high"
+ },
+ "33025": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/aerospace-civil-electrical-mechanical-engineering/electrical-engineering/beng-electronic-and-electrical-engineering/",
+  "confidence": "high"
+ },
+ "33022": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/engineering-applied-sciences/materials-engineering/beng-materials-science-engineering/",
+  "confidence": "high"
+ },
+ "33013": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/aerospace-civil-electrical-mechanical-engineering/mechanical-engineering/beng-mechanical-engineering/",
+  "confidence": "high"
+ },
+ "56194": {
+  "stem": true,
+  "typical_offer": "A-level ABB-BCC incl. B in Maths; IB 32 with Maths HL5/SL6; MEng AAA-AAB / IB 34; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. Grade B in A-level Maths; MEng AAA-AAB incl. Maths; Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/aerospace-civil-electrical-mechanical-engineering/aerospace-engineering/beng-aerospace-engineering/",
+  "confidence": "medium"
+ },
+ "56196": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/engineering-applied-sciences/biomedical-engineering/beng-biomedical-engineering/",
+  "confidence": "medium"
+ },
+ "56195": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/engineering-applied-sciences/chemical-engineering/beng-chemical-engineering/",
+  "confidence": "medium"
+ },
+ "56197": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/aerospace-civil-electrical-mechanical-engineering/civil-engineering/beng-civil-engineering/",
+  "confidence": "medium"
+ },
+ "56198": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/aerospace-civil-electrical-mechanical-engineering/electrical-engineering/beng-electronic-and-electrical-engineering/",
+  "confidence": "medium"
+ },
+ "56199": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/engineering-applied-sciences/materials-engineering/beng-materials-science-engineering/",
+  "confidence": "medium"
+ },
+ "56200": {
+  "stem": true,
+  "typical_offer": "BEng A-level ABB-BCC incl. Maths; IB 32 points with Maths (HL5/SL6); Foundation Year CCC-CDD or IB 26; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MEng 34 points; Foundation Year 26 points",
+   "note": "Foundation Year route needs 26 points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BEng ABB-BCC incl. A-level Maths; MEng AAB-BBB (AAA-AAB for Aerospace/Materials); Foundation Year CCC-CDD",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths (B for BEng) or equivalent; Foundation Year route has no maths prerequisite",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/aerospace-civil-electrical-mechanical-engineering/mechanical-engineering/beng-mechanical-engineering/",
+  "confidence": "medium"
+ },
+ "33043": {
+  "stem": true,
+  "typical_offer": "A-level ABB-CCC; IB 32 points incl. Maths HL5/SL6; Foundation Year CCC; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MSci 34 points; Foundation Year 26 points incl. Maths",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BSc ABB-CCC (GCSE Maths B/6 unless A-level Maths, Physics or Computer Science); Foundation Year CCC; MSci AAB-ABB",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths B/6 (waived with A-level Maths, Physics or Computer Science); Foundation Year route available",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/maths-comp-sci/computer-science/bsc-computer-science/",
+  "confidence": "high"
+ },
+ "56208": {
+  "stem": true,
+  "typical_offer": "A-level ABB-CCC; IB 32 points incl. Maths HL5/SL6; Foundation Year CCC; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MSci 34 points; Foundation Year 26 points incl. Maths",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BSc ABB-CCC (GCSE Maths B/6 unless A-level Maths, Physics or Computer Science); Foundation Year CCC; MSci AAB-ABB",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths B/6 (waived with A-level Maths, Physics or Computer Science); Foundation Year route available",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/maths-comp-sci/computer-science/bsc-computer-science/",
+  "confidence": "medium"
+ },
+ "33010": {
+  "stem": true,
+  "typical_offer": "A-level ABB-CCC; IB 32 points incl. Maths HL5/SL6; Foundation Year CCC; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MSci 34 points; Foundation Year 26 points incl. Maths",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BSc ABB-CCC (GCSE Maths B/6 unless A-level Maths, Physics or Computer Science); Foundation Year CCC; MSci AAB-ABB",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths B/6 (waived with A-level Maths, Physics or Computer Science); Foundation Year route available",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/maths-comp-sci/computer-science/bsc-software-engineering/",
+  "confidence": "medium"
+ },
+ "56224": {
+  "stem": true,
+  "typical_offer": "A-level ABB-CCC; IB 32 points incl. Maths HL5/SL6; Foundation Year CCC; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation); MSci 34 points; Foundation Year 26 points incl. Maths",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BSc ABB-CCC (GCSE Maths B/6 unless A-level Maths, Physics or Computer Science); Foundation Year CCC; MSci AAB-ABB",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths B/6 (waived with A-level Maths, Physics or Computer Science); Foundation Year route available",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/maths-comp-sci/computer-science/bsc-software-engineering/",
+  "confidence": "medium"
+ },
+ "33056": {
+  "stem": true,
+  "typical_offer": "A-level ABB-CCC incl. Maths; IB 32 points incl. Maths HL5/SL6; IELTS 6.0 (5.5 each)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Maths: Analysis and Approaches (or 5 HL / 7 SL in Applications and Interpretation)",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-CCC incl. A-level Maths",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths or equivalent required",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/maths-comp-sci/computer-science/bsc-computer-science-ai/",
+  "confidence": "high"
+ },
+ "33044": {
+  "stem": true,
+  "typical_offer": "A-level ABB-BBC incl. B in Maths; IB 32 points incl. Maths HL5; Foundation Year CDD incl. C in Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL in Maths: Analysis and Approaches (or Applications and Interpretation); Foundation Year 24 points incl. HL4 Maths",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BBC incl. B in A-level Maths; Foundation Year CDD incl. C in Maths",
+  "turkish_route": null,
+  "prerequisite_maths": "A-level Maths grade B (C for Foundation Year)",
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/maths-comp-sci/mathematics/bsc-mathematics-and-computer-science/",
+  "confidence": "high"
+ },
+ "32966": {
+  "stem": true,
+  "typical_offer": "A-level ABB-BBC incl. Geography or related subject; IB 32 points incl. Geography HL5/SL6; Foundation Year CDD-DDD",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "5 at HL or 6 at SL in Geography; Foundation Year 28 points",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB-BBC incl. Geography or related subject; Foundation Year CDD-DDD",
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/biosciences-geography-physics/geography/bsc-environmental-science-and-the-climate-emergency/",
+  "confidence": "medium"
+ },
+ "32932": {
+  "stem": false
+ },
+ "33021": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.swansea.ac.uk/undergraduate/courses/",
+  "confidence": "low"
+ },
+ "37914": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A* to AAB incl. Maths A; IB 43 (777 HL) to 34 (665 HL) with HL Maths AA 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths Analysis and Approaches 6; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 (5 for CS and Maths), three APs at 4+ in total; AP Calculus AB and BC both meet the requirement but count as one subject; BC may be preferred for Maths",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Maths A (within 2 years); GCSE English C/4",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths at A-level A / IB HL AA 6; diagnostic maths test may require Calculus and Algebra Fundamentals",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/66-artificial-intelligence-and-computer-science",
+  "confidence": "medium"
+ },
+ "37915": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A* to AAB incl. Maths A; IB 43 (777 HL) to 34 (665 HL) with HL Maths AA 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths Analysis and Approaches 6; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 (5 for CS and Maths), three APs at 4+ in total; AP Calculus AB and BC both meet the requirement but count as one subject; BC may be preferred for Maths",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Maths A (within 2 years); GCSE English C/4",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths at A-level A / IB HL AA 6",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/388-artificial-intelligence",
+  "confidence": "medium"
+ },
+ "37964": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A* to A*AB incl. Maths A*; IB 43 (777 HL) to 34 (755 HL) with HL Maths AA 7",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths Analysis and Approaches 7; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 5 plus three APs at 4+ in total; AP Calculus AB and BC both meet the requirement but count as one subject",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Maths A* (within 2 years); GCSE English C/4",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths at A* / IB HL AA 7",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/64-computer-science-and-mathematics",
+  "confidence": "medium"
+ },
+ "38045": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A* to AAB incl. Maths A; IB 43 (777 HL) to 34 (665 HL) with HL Maths AA 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths Analysis and Approaches 6; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 (5 for CS and Maths), three APs at 4+ in total; AP Calculus AB and BC both meet the requirement but count as one subject; BC may be preferred for Maths",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Maths A (within 2 years); GCSE English C/4",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths at A-level A / IB HL AA 6",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/430-informatics-5-year-undergraduate-masters-programme",
+  "confidence": "medium"
+ },
+ "38185": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A* to AAB incl. Maths A; IB 43 (777 HL) to 34 (665 HL) with HL Maths AA 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths Analysis and Approaches 6; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 (5 for CS and Maths), three APs at 4+ in total; AP Calculus AB and BC both meet the requirement but count as one subject; BC may be preferred for Maths",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Maths A (within 2 years); GCSE English C/4",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths at A-level A / IB HL AA 6",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/59-software-engineering",
+  "confidence": "medium"
+ },
+ "37948": {
+  "stem": true,
+  "typical_offer": "A-level AAA to ABB incl. Maths and Chemistry B; IB 37 (666 HL) to 32 (655 HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Maths Analysis and Approaches 5 and HL Chemistry 5; SL Physics 5; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 and AP Chemistry, plus AP Physics 3 or B+ in physics; AP Calculus AB and BC count as one subject",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Maths B and Chemistry B; GCSE English C/4, Physics/Science B/6",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths and Chemistry required; Physics at GCSE/SL",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/99-chemical-engineering",
+  "confidence": "medium"
+ },
+ "37959": {
+  "stem": true,
+  "typical_offer": "A-level ABB to BBB incl. Maths B; IB 34 (655 HL) to 32 (555 HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Maths AA 5 plus HL Physics/Biology/Chemistry/CS/Design Tech 5 (Physics preferred); SL Physics 5 if not HL; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 plus one of Physics (preferred), Biology, Chemistry, Computing Science; AP Physics 3 or B+ in physics; AP Calculus AB and BC both meet the requirement but count as one subject",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level Maths B plus B in Physics, Biology, Chemistry, Computer Science, D&T or Engineering (Physics preferred); GCSE English C/4 and Physics/Science B/6",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths plus a science/technology subject",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/76-civil-engineering",
+  "confidence": "low"
+ },
+ "37977": {
+  "stem": true,
+  "typical_offer": "A-level AAA to ABB incl. Maths B; IB 37 (666 HL) to 32 (655 HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Maths AA 5 plus HL Physics/Biology/Chemistry/CS/Design Tech 5 (Physics preferred); SL Physics 5 if not HL; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 plus one of Physics (preferred), Biology, Chemistry, Computing Science; AP Physics 3 or B+ in physics; AP Calculus AB and BC both meet the requirement but count as one subject",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level Maths B plus B in Physics, Biology, Chemistry, Computer Science, D&T or Engineering (Physics preferred); GCSE English C/4 and Physics/Science B/6",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths plus a science/technology subject",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/107-electrical-and-mechanical-engineering",
+  "confidence": "medium"
+ },
+ "37978": {
+  "stem": true,
+  "typical_offer": "A-level AAA to ABB incl. Maths; IB 37 (666 HL) to 34 (665 HL) with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths Analysis and Approaches 6 plus HL science/Design Tech 5 (Physics preferred); SL Physics 5; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 5 plus a science subject; AP Physics 3 or B+ in physics; AP Calculus AB and BC count as one subject",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Maths A plus B in Physics/Biology/Chemistry/CS/D&T/Engineering",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths plus a science/technology subject",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/654-electronics-and-computer-science",
+  "confidence": "low"
+ },
+ "37979": {
+  "stem": true,
+  "typical_offer": "A-level AAA to ABB incl. Maths B; IB 37 (666 HL) to 32 (655 HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Maths AA 5 plus HL Physics/Biology/Chemistry/CS/Design Tech 5 (Physics preferred); SL Physics 5 if not HL; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 plus one of Physics (preferred), Biology, Chemistry, Computing Science; AP Physics 3 or B+ in physics; AP Calculus AB and BC both meet the requirement but count as one subject",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level Maths B plus B in Physics, Biology, Chemistry, Computer Science, D&T or Engineering (Physics preferred); GCSE English C/4 and Physics/Science B/6",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths plus a science/technology subject",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/88-electronics-and-electrical-engineering",
+  "confidence": "medium"
+ },
+ "37980": {
+  "stem": true,
+  "typical_offer": "A-level AAA to ABB incl. Maths B; IB 37 (666 HL) to 34 (655 HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 34,
+   "subjects": "HL Maths AA 5 plus HL Physics/Biology/Chemistry/CS/Design Tech 5 (Physics preferred); SL Physics 5 if not HL; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 plus one of Physics (preferred), Biology, Chemistry, Computing Science; AP Physics 3 or B+ in physics; AP Calculus AB and BC both meet the requirement but count as one subject",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level Maths B plus B in Physics, Biology, Chemistry, Computer Science, D&T or Engineering (Physics preferred); GCSE English C/4 and Physics/Science B/6",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths plus a science/technology subject",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/75-engineering",
+  "confidence": "medium"
+ },
+ "38096": {
+  "stem": true,
+  "typical_offer": "A-level AAA to ABB incl. Maths B; IB 37 (666 HL) to 32 (655 HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Maths AA 5 plus HL Physics/Biology/Chemistry/CS/Design Tech 5 (Physics preferred); SL Physics 5 if not HL; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 plus one of Physics (preferred), Biology, Chemistry, Computing Science; AP Physics 3 or B+ in physics; AP Calculus AB and BC both meet the requirement but count as one subject",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level Maths B plus B in Physics, Biology, Chemistry, Computer Science, D&T or Engineering (Physics preferred); GCSE English C/4 and Physics/Science B/6",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths plus a science/technology subject",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/82-mechanical-engineering",
+  "confidence": "medium"
+ },
+ "38197": {
+  "stem": true,
+  "typical_offer": "A-level ABB to BBB incl. Maths B; IB 34 (655 HL) to 32 (555 HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Maths AA 5 plus HL Physics/Biology/Chemistry/CS/Design Tech 5 (Physics preferred); SL Physics 5 if not HL; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 plus one of Physics (preferred), Biology, Chemistry, Computing Science; AP Physics 3 or B+ in physics; AP Calculus AB and BC both meet the requirement but count as one subject",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level Maths B plus B in Physics, Biology, Chemistry, Computer Science, D&T or Engineering (Physics preferred); GCSE English C/4 and Physics/Science B/6",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths plus a science/technology subject",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/106-structural-and-fire-safety-engineering",
+  "confidence": "low"
+ },
+ "38198": {
+  "stem": true,
+  "typical_offer": "A-level AAA to ABB incl. Maths B; IB 37 (666 HL) to 32 (655 HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "HL Maths AA 5 plus HL Physics/Biology/Chemistry/CS/Design Tech 5 (Physics preferred); SL Physics 5 if not HL; SL English 5",
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 plus one of Physics (preferred), Biology, Chemistry, Computing Science; AP Physics 3 or B+ in physics; AP Calculus AB and BC both meet the requirement but count as one subject",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level Maths B plus B in Physics, Biology, Chemistry, Computer Science, D&T or Engineering (Physics preferred); GCSE English C/4 and Physics/Science B/6",
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": "Maths plus a science/technology subject",
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/80-structural-engineering-with-architecture",
+  "confidence": "low"
+ },
+ "37962": {
+  "stem": false
+ },
+ "37965": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Maths must be Analysis and Approaches; SL English 5 needed; Applications and Interpretation not accepted"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus at 4 (5 for CS and Maths), three APs at 4+ in total; AP Calculus AB and BC both meet the requirement but count as one subject; BC may be preferred for Maths",
+   "note": "AP used for admission only; no advanced credit"
+  },
+  "tests": "US applicants: SAT 1290+ (620+ Maths) or ACT 27+ with at least two APs at 4+, or three APs at 4+; SAT Subject Tests no longer available",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Not accepted for direct entry; one-year International Foundation Programme required (limited College of Science & Engineering admissions test route for exceptional grades)",
+  "prerequisite_maths": null,
+  "source_url": "https://study.ed.ac.uk/programmes/undergraduate/",
+  "confidence": "low"
+ }
+}

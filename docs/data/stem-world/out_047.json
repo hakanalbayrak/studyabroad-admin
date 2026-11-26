@@ -1,0 +1,794 @@
+{
+ "21021": {
+  "stem": false
+ },
+ "2965": {
+  "stem": false
+ },
+ "21144": {
+  "stem": false
+ },
+ "21141": {
+  "stem": false
+ },
+ "21143": {
+  "stem": false
+ },
+ "21152": {
+  "stem": false
+ },
+ "54118": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00409/1",
+  "confidence": "medium"
+ },
+ "21045": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00409/1",
+  "confidence": "medium"
+ },
+ "3009": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00409/1",
+  "confidence": "medium"
+ },
+ "2957": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00409/1",
+  "confidence": "medium"
+ },
+ "54119": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00076/1",
+  "confidence": "medium"
+ },
+ "21046": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00076/1",
+  "confidence": "medium"
+ },
+ "21008": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00076/1",
+  "confidence": "medium"
+ },
+ "3011": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00117/1",
+  "confidence": "medium"
+ },
+ "2959": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00117/1",
+  "confidence": "medium"
+ },
+ "54120": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00117/1",
+  "confidence": "medium"
+ },
+ "21047": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00117/1",
+  "confidence": "medium"
+ },
+ "21051": {
+  "stem": true,
+  "typical_offer": "A-level 120-112 points from 2 full A-levels; IB 30-29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points incl. at least 2 HL subjects; maths via SL/HL Maths",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120-112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/UG01361/1",
+  "confidence": "medium"
+ },
+ "54122": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG01061/1",
+  "confidence": "medium"
+ },
+ "21052": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG01061/1",
+  "confidence": "medium"
+ },
+ "21009": {
+  "stem": true,
+  "typical_offer": "A-level BBB-BBC (120-112 UCAS points) incl. B in Maths or Further Maths; IB 30-29 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or three HL at 555-554, incl. HL Maths 5 and SL Science 4",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB-BBC (120-112 points) from at least 2 full A-levels incl. B in Maths or Further Maths; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Science grade 4/C; A-level Maths (B) or IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG01061/1",
+  "confidence": "medium"
+ },
+ "54126": {
+  "stem": true,
+  "typical_offer": "A-level 112 points from 2 full A-levels (BBC-equivalent); IB 29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "29 points or 112 tariff points incl. at least 2 HL subjects; maths via SL Maths 4 or HL Maths 3",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/ug01499/1/bsc-artificial-intelligence",
+  "confidence": "medium"
+ },
+ "21053": {
+  "stem": true,
+  "typical_offer": "A-level 112 points from 2 full A-levels (BBC-equivalent); IB 29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "29 points or 112 tariff points incl. at least 2 HL subjects; maths via SL Maths 4 or HL Maths 3",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/ug01499/1/bsc-artificial-intelligence",
+  "confidence": "medium"
+ },
+ "21013": {
+  "stem": true,
+  "typical_offer": "A-level 112 points from 2 full A-levels (BBC-equivalent); IB 29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "29 points or 112 tariff points incl. at least 2 HL subjects; maths via SL Maths 4 or HL Maths 3",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/ug01499/1/bsc-artificial-intelligence",
+  "confidence": "medium"
+ },
+ "54135": {
+  "stem": true,
+  "typical_offer": "A-level 112 points from 2 full A-levels (BBC-equivalent); IB 29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "29 points or 112 tariff points incl. at least 2 HL subjects; maths via SL Maths 4 or HL Maths 3",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/UG00066/1",
+  "confidence": "medium"
+ },
+ "21007": {
+  "stem": true,
+  "typical_offer": "A-level 112 points from 2 full A-levels (BBC-equivalent); IB 29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "29 points or 112 tariff points incl. at least 2 HL subjects; maths via SL Maths 4 or HL Maths 3",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/UG00066/1",
+  "confidence": "medium"
+ },
+ "54136": {
+  "stem": true,
+  "typical_offer": "A-level 112 points from 2 full A-levels (BBC-equivalent); IB 29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "29 points or 112 tariff points incl. at least 2 HL subjects; maths via SL Maths 4 or HL Maths 3",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/ug00069/1/bsc-computer-science",
+  "confidence": "medium"
+ },
+ "21006": {
+  "stem": true,
+  "typical_offer": "A-level 112 points from 2 full A-levels (BBC-equivalent); IB 29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "29 points or 112 tariff points incl. at least 2 HL subjects; maths via SL Maths 4 or HL Maths 3",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/ug00069/1/bsc-computer-science",
+  "confidence": "medium"
+ },
+ "54137": {
+  "stem": true,
+  "typical_offer": "A-level 112 points from 2 full A-levels (BBC-equivalent); IB 29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "29 points or 112 tariff points incl. at least 2 HL subjects; maths via SL Maths 4 or HL Maths 3",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/ug00069/1/bsc-computer-science",
+  "confidence": "medium"
+ },
+ "54138": {
+  "stem": true,
+  "typical_offer": "A-level 112 points incl. B in Maths, Pure Maths, Statistics or Further Maths; IB 29 points with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "29 points or 112 tariff points incl. 2 HL subjects with HL Maths 5",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from 2 full A-levels incl. B in Maths/Further Maths/Statistics; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "A-level Maths or accepted Level 3 maths",
+  "source_url": "https://www.essex.ac.uk/courses/UG01034/1",
+  "confidence": "medium"
+ },
+ "21010": {
+  "stem": true,
+  "typical_offer": "A-level 112 points incl. B in Maths, Pure Maths, Statistics or Further Maths; IB 29 points with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "29 points or 112 tariff points incl. 2 HL subjects with HL Maths 5",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points from 2 full A-levels incl. B in Maths/Further Maths/Statistics; Use of Maths not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "A-level Maths or accepted Level 3 maths",
+  "source_url": "https://www.essex.ac.uk/courses/UG01034/1",
+  "confidence": "medium"
+ },
+ "3001": {
+  "stem": false
+ },
+ "2962": {
+  "stem": false
+ },
+ "54142": {
+  "stem": false
+ },
+ "21011": {
+  "stem": true,
+  "typical_offer": "A-level 120-112 points incl. B in Maths or Further Maths; IB 30-29 points with HL Maths 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points or 120-112 tariff points incl. 2 HL subjects incl. HL Maths 5",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120-112 UCAS points from 2 full A-levels incl. B in Maths or Further Maths; Use of Maths/Statistics not accepted",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "A-level Maths B; IB HL Maths 5",
+  "source_url": "https://www.essex.ac.uk/courses/UG00269/1/BSc-Mathematics",
+  "confidence": "medium"
+ },
+ "2967": {
+  "stem": false
+ },
+ "21140": {
+  "stem": true,
+  "typical_offer": "A-level 120-112 points from 2 full A-levels; IB 30-29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points incl. at least 2 HL subjects; maths via SL/HL Maths",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120-112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/UG00361/2",
+  "confidence": "low"
+ },
+ "21142": {
+  "stem": true,
+  "typical_offer": "A-level 120-112 points from 2 full A-levels; IB 30-29 points incl. 2 HL subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "30-29 points incl. at least 2 HL subjects; maths via SL/HL Maths",
+   "note": "Applies institution-wide; programme-level subject requirements shown. "
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "120-112 UCAS points from at least 2 full A-levels",
+  "turkish_route": "Most undergraduate degrees consider a 70-75% overall average from the Turkish Devlet Lise Diplomasi or Lise Birtime Diplomasi; other course-level requirements still apply",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.essex.ac.uk/courses/UG00362/1",
+  "confidence": "low"
+ },
+ "54159": {
+  "stem": false
+ },
+ "21012": {
+  "stem": false
+ }
+}

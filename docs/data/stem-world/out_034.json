@@ -1,0 +1,313 @@
+{
+ "20925": {
+  "stem": true,
+  "typical_offer": "112 UCAS points; A-level BBC; IB 27; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": null,
+   "note": "No specific IB subjects listed"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBC (112 UCAS Tariff points); no specific subjects required; computing A-level gives no module exemption; one-year Computing Foundation if requirements not met",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/artificial-intelligence",
+  "confidence": "high"
+ },
+ "20928": {
+  "stem": true,
+  "typical_offer": "112 UCAS points; A-level BBC; IB 27; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": null,
+   "note": "No specific IB subjects listed"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBC (112 UCAS Tariff points); no specific subjects required; computing A-level gives no module exemption; one-year Computing Foundation if requirements not met",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.brookes.ac.uk/compsci",
+  "confidence": "high"
+ },
+ "20929": {
+  "stem": true,
+  "typical_offer": "112 UCAS points; A-level BBC; IB 27; GCSE English and Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": null,
+   "note": "No specific IB subjects listed"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBC (112 UCAS Tariff points); no specific subjects required; computing A-level gives no module exemption; one-year Computing Foundation if requirements not met",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/computer-science-for-cyber-security",
+  "confidence": "high"
+ },
+ "20933": {
+  "stem": true,
+  "typical_offer": "112 UCAS points; A-level BBC; IB 27; GCSE Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": null,
+   "note": "No specific IB subjects listed"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBC (112 UCAS Tariff points); no specific subjects required",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/information-technology-for-business",
+  "confidence": "high"
+ },
+ "20926": {
+  "stem": true,
+  "typical_offer": "112 UCAS points; A-level BBC incl. B in Maths and a science; IB 27 with HL Maths 5 and HL science 5; GCSE English 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "HL Maths grade 5 plus HL grade 5 in Physics, Chemistry, Electronics, Engineering or another suitable science",
+   "note": "IB points per programme typical offer"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBC overall with B in Maths plus B in Physics, Chemistry, Electronics, Engineering, Computer Science or another suitable science",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE English 4; A-level/IB Maths and a science at B/HL5",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/automotive-engineering-with-electric-vehicles",
+  "confidence": "high"
+ },
+ "20934": {
+  "stem": true,
+  "typical_offer": "112 UCAS points; A-level BBC incl. B in Maths and a science; IB 27 with HL Maths 5 and HL science 5; GCSE English 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "HL Maths grade 5 plus HL grade 5 in Physics, Chemistry, Electronics, Engineering or another suitable science",
+   "note": "Course text also cites IB Diploma 31 (BEng) / 32 (MEng) total points"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBC overall with B in Maths plus B in Physics, Chemistry, Electronics, Engineering, Computer Science or another suitable science",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE English 4; A-level/IB Maths and a science at B/HL5",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/mechanical-engineering-beng-or-meng",
+  "confidence": "high"
+ },
+ "20937": {
+  "stem": true,
+  "typical_offer": "112 UCAS points; A-level BBC incl. B in Maths and a science; IB 27 with HL Maths 5 and HL science 5; GCSE English 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "HL Maths grade 5 plus HL grade 5 in Physics, Chemistry, Electronics, Engineering or another suitable science",
+   "note": "IB points per programme typical offer"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBC overall with B in Maths plus B in Physics, Chemistry, Electronics, Engineering, Computer Science or another suitable science",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE English 4; A-level/IB Maths and a science at B/HL5",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/motorsport-engineering-beng-or-meng",
+  "confidence": "high"
+ },
+ "20927": {
+  "stem": true,
+  "typical_offer": "120 UCAS points; A-level BBB incl. B in Maths and a science; IB 28 with HL Maths 5 and HL science 5; GCSE English 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL Maths grade 5 plus HL grade 5 in Physics, Chemistry, Electronics, Engineering or another suitable science",
+   "note": "IB points per programme typical offer"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBB overall with B in Maths plus B in Physics, Chemistry, Electronics, Engineering, Computer Science or another suitable science",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE English 4; A-level/IB Maths and a science at B/HL5",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/automotive-engineering-with-electric-vehicles",
+  "confidence": "high"
+ },
+ "20935": {
+  "stem": true,
+  "typical_offer": "120 UCAS points; A-level BBB incl. B in Maths and a science; IB 28 with HL Maths 5 and HL science 5; GCSE English 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL Maths grade 5 plus HL grade 5 in Physics, Chemistry, Electronics, Engineering or another suitable science",
+   "note": "Course text also cites IB Diploma 31 (BEng) / 32 (MEng) total points"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBB overall with B in Maths plus B in Physics, Chemistry, Electronics, Engineering, Computer Science or another suitable science",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE English 4; A-level/IB Maths and a science at B/HL5",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/mechanical-engineering-beng-or-meng",
+  "confidence": "high"
+ },
+ "20938": {
+  "stem": true,
+  "typical_offer": "120 UCAS points; A-level BBB incl. B in Maths and a science; IB 28 with HL Maths 5 and HL science 5; GCSE English 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL Maths grade 5 plus HL grade 5 in Physics, Chemistry, Electronics, Engineering or another suitable science",
+   "note": "IB points per programme typical offer"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBB overall with B in Maths plus B in Physics, Chemistry, Electronics, Engineering, Computer Science or another suitable science",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE English 4; A-level/IB Maths and a science at B/HL5",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/motorsport-engineering-beng-or-meng",
+  "confidence": "high"
+ },
+ "20931": {
+  "stem": true,
+  "typical_offer": "112 UCAS points; A-level BBC; IB 27; GCSE Maths grade 5 and English grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": null,
+   "note": "No specific IB subjects listed"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBC (112 UCAS Tariff points); no specific subjects listed",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE Maths grade 5/B",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/electro-mechanical-engineering-beng",
+  "confidence": "high"
+ },
+ "20936": {
+  "stem": true,
+  "typical_offer": "112 UCAS points; A-level BBC; IB 27; GCSE Maths grade 5 and English grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": null,
+   "note": "No specific IB subjects listed"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBC (112 UCAS Tariff points); no specific subjects listed; Foundation Degree (Engineering) holders may be admitted if modules are equivalent",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE Maths grade 5/B",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/mechanical-engineering-design-beng",
+  "confidence": "medium"
+ },
+ "20932": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Final-year entry only; no first-year entry grades apply"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "IELTS 6.0 overall, 5.5 minimum per skill",
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Final-year entry requires prior higher education study; Lise diploma alone does not qualify (International Foundation or integrated foundation routes lead to year 1 courses)",
+  "prerequisite_maths": "Relevant foundation degree or equivalent with acceptable modules",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/electronic-engineering-beng-final-year-entry",
+  "confidence": "medium"
+ },
+ "20853": {
+  "stem": true,
+  "typical_offer": "112 UCAS points; A-level BBC; IB 27; GCSE Maths grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": null,
+   "note": "No specific IB subjects listed"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "No programme-specific AP rule. US route maps GPA plus 3 AP scores to A-level grades (BBC = GPA 3.0 + APs 4,4,3; BBB = 4,4,4; AAB = 5,5,4); a subject-specific A-level requirement can be met by AP in that subject with score 4+. AP variants (Calculus AB/BC) not specified.",
+   "note": "Institution-wide US equivalency table applied to this programme."
+  },
+  "tests": "SAT 1130/1600 or ACT 27 equivalent to BBC (alternative to AP/GPA route for US applicants); IELTS 6.0 overall, 5.5 minimum per skill (programme-dependent within 6.0-7.0)",
+  "math_test": null,
+  "a_level": "BBC (112 UCAS Tariff points); no specific subjects",
+  "turkish_route": "Anadolu/Fen/Sosyal Bilimler/Teknik Lise diploma accepted for direct entry at overall average of 72% for BBC, 80% for BBB/AAB, 85% for AAA; 60% for integrated foundation (CCD) and 50% for International Foundation Diploma",
+  "prerequisite_maths": "GCSE Maths grade 4/C",
+  "source_url": "https://www.brookes.ac.uk/courses/undergraduate/construction-project-management",
+  "confidence": "high"
+ },
+ "20905": {
+  "stem": false
+ }
+}

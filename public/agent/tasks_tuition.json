@@ -1,0 +1,1552 @@
+{
+ "instructions": "# Task (tuition round): official international tuition fees for entities whose programmes have no fee yet\n\nFor every item in \"tasks\" (an institution; \"empty_programmes\" = how many of its bachelor/master programmes still lack a fee; \"sample\" = example programme names) find the OFFICIAL annual tuition fee for INTERNATIONAL (non-EU / non-home) students, from the institution's own website.\n\nWhere to look: \"Tuition and fees\", \"Fees and costs\", \"Cost of attendance\", \"International students > fees\", fee tables, and fee schedules published as PDF or spreadsheet on the school's own site. On selector pages (country / programme / level) choose Turkey or \"international / non-EU\". Expand accordions and tabs; read hidden text.\nRules: official domains only (no agents, aggregators, forums); browse at human pace; if a page asks you to solve a CAPTCHA or blocks automated access, do not try to get around it: record page_status \"blocked\" and the URL in manual_check_url and go on with other official pages. Never guess or estimate. Latest published academic year; state the year.\n\nResult per institution: one object with a \"fees\" list (one entry per fee band / programme group that the school publishes; use the school's own grouping, e.g. by faculty, subject band, level, or per programme):\n{\"entity\": \"<same name as in the task>\", \"country\": \"...\",\n \"page_status\": \"read | blocked | not_found | js_empty\", \"confidence\": \"high | medium | low\",\n \"source_urls\": [\"exact pages or PDFs read\"], \"manual_check_url\": null,\n \"fees\": [ {\"level\": \"bachelor | master\", \"applies_to\": \"who this fee covers, e.g. 'all undergraduate', 'Engineering and Computer Science', 'MBA', or an exact programme name\",\n            \"amount_per_year\": 0, \"currency\": \"GBP|USD|EUR|CAD|AUD|...\", \"academic_year\": \"2026/27\",\n            \"period_note\": \"per year / per credit / total programme / per semester (as the school states it)\" } ],\n \"note\": \"short factual remark (what is excluded, e.g. lab fees; fees only for some campuses)\"}\n\nIf the school publishes only per-credit or total-programme prices, record them with the school's unit in period_note; do not convert.\n\nSubmit: POST https://paneledu.com/api/agent/results with header X-Agent-Token: <token you were given>, Content-Type: application/json, body = JSON list of result objects (a few per request, each as soon as done). The field \"school\" is required by the server: set it to the entity name too. Expected answer: {\"ok\":true,\"saved\":N}.\n",
+ "tasks": [
+  {
+   "entity": "Ghent University (UGent)",
+   "country": "Belgium",
+   "empty_programmes": 16,
+   "sample": [
+    "MA Global Studies (Joint/Erasmus Mundus)",
+    "MSc Advanced Design of Sustainable Ships and Offshore Structures (Joint/Erasmus Mundus)",
+    "MSc Advanced Research in Criminology: Border Crossing, Security and Social Justice (Joint/Erasmus Mundus)"
+   ]
+  },
+  {
+   "entity": "KU Leuven",
+   "country": "Belgium",
+   "empty_programmes": 13,
+   "sample": [
+    "BSc Joint Bachelor in Sustainability (UNA Europa)",
+    "Erasmus Mundus Joint Master in Animation (RE:ANIMA)",
+    "Erasmus Mundus Joint Master in Documentary Film Making (DocNomadsPlus)"
+   ]
+  },
+  {
+   "entity": "University of Antwerp (UAntwerp)",
+   "country": "Belgium",
+   "empty_programmes": 4,
+   "sample": [
+    "MSc Applied Ecohydrology (Erasmus Mundus)",
+    "MSc Leading International Vaccinology Education (Erasmus Mundus)",
+    "MSc Marine and Lacustrine Science and Management (Oceans & Lakes)"
+   ]
+  },
+  {
+   "entity": "UCLouvain",
+   "country": "Belgium",
+   "empty_programmes": 1,
+   "sample": [
+    "Bachelor of Science in Business Engineering (joint KU Leuven / UCLouvain Saint-Louis Bruxelles)"
+   ]
+  },
+  {
+   "entity": "University of Alberta",
+   "country": "Canada",
+   "empty_programmes": 100,
+   "sample": [
+    "BA in Criminology, Criminology",
+    "BA in Environmental Studies, Environmental Studies",
+    "BA in Environmental Studies, Environmental Studies: Culture, Society and Peoples of Canada"
+   ]
+  },
+  {
+   "entity": "University of Manitoba",
+   "country": "Canada",
+   "empty_programmes": 79,
+   "sample": [
+    "Bachelor of Arts - Anthropology",
+    "Bachelor of Arts - Art History",
+    "Bachelor of Arts - Asian Studies"
+   ]
+  },
+  {
+   "entity": "Toronto Metropolitan University",
+   "country": "Canada",
+   "empty_programmes": 29,
+   "sample": [
+    "Bachelor of Arts - English",
+    "Bachelor of Arts - Environment and Urban Sustainability",
+    "Bachelor of Arts - History"
+   ]
+  },
+  {
+   "entity": "University of Victoria",
+   "country": "Canada",
+   "empty_programmes": 25,
+   "sample": [
+    "BA Media Studies",
+    "BA/BFA Theatre",
+    "BA/BFA Writing"
+   ]
+  },
+  {
+   "entity": "Wilfrid Laurier University",
+   "country": "Canada",
+   "empty_programmes": 22,
+   "sample": [
+    "Biology (Honours BA)",
+    "Business Administration (Honours BBA)",
+    "Business Technology Management (Honours BBTM)"
+   ]
+  },
+  {
+   "entity": "Western University",
+   "country": "Canada",
+   "empty_programmes": 19,
+   "sample": [
+    "Bachelor of Arts (BA), Specialization in Music Administrative Studies (MAS)",
+    "Bachelor of Music",
+    "Bachelor of Music Honours"
+   ]
+  },
+  {
+   "entity": "Simon Fraser University",
+   "country": "Canada",
+   "empty_programmes": 12,
+   "sample": [
+    "Arts and Social Sciences (BA)",
+    "Business Administration (BBA)",
+    "Communication and Business (BA)"
+   ]
+  },
+  {
+   "entity": "Emily Carr University of Art and Design",
+   "country": "Canada",
+   "empty_programmes": 7,
+   "sample": [
+    "BDes Communication Design",
+    "BDes Interaction Design",
+    "BFA Illustration"
+   ]
+  },
+  {
+   "entity": "University of Lethbridge",
+   "country": "Canada",
+   "empty_programmes": 7,
+   "sample": [
+    "BBA - Accounting",
+    "BBA - Computer Science",
+    "BBA - Finance"
+   ]
+  },
+  {
+   "entity": "University of Nicosia",
+   "country": "Cyprus",
+   "empty_programmes": 2,
+   "sample": [
+    "Doctor of Medicine (6 years)",
+    "Doctor of Veterinary Medicine (5 years)"
+   ]
+  },
+  {
+   "entity": "Omnes Education",
+   "country": "France",
+   "empty_programmes": 20,
+   "sample": [
+    "Bachelor (3 years)",
+    "Bachelor Artificial Intelligence",
+    "Bachelor in Business Administration"
+   ]
+  },
+  {
+   "entity": "KEDGE Business School",
+   "country": "France",
+   "empty_programmes": 6,
+   "sample": [
+    "MSc Audit and Performance Management",
+    "MSc Corporate Finance",
+    "Masters in Creativity & Design"
+   ]
+  },
+  {
+   "entity": "IESA Arts and Culture",
+   "country": "France",
+   "empty_programmes": 5,
+   "sample": [
+    "Bachelor in Arts Management",
+    "MBA Arts and Cultural Management",
+    "Managing Art and Cultural Heritage in Global Markets (MAGMa)"
+   ]
+  },
+  {
+   "entity": "Paris School of Business",
+   "country": "France",
+   "empty_programmes": 4,
+   "sample": [
+    "MSc AI, Cybersecurity and Business Analytics",
+    "MSc International Management and Business Development",
+    "Master in International Management (MIM)"
+   ]
+  },
+  {
+   "entity": "Rennes School of Business",
+   "country": "France",
+   "empty_programmes": 4,
+   "sample": [
+    "MSc in Cybersecurity and Risk Management",
+    "MSc in Immersive Design Management",
+    "MSc in International Music Business"
+   ]
+  },
+  {
+   "entity": "MJM Graphic Design Paris",
+   "country": "France",
+   "empty_programmes": 3,
+   "sample": [
+    "Bachelor Fashion Design",
+    "Bachelor Graphic Design",
+    "Bachelor Interior Architecture"
+   ]
+  },
+  {
+   "entity": "AIM Paris",
+   "country": "France",
+   "empty_programmes": 2,
+   "sample": [
+    "Bachelor of Sciences in Hospitality & Tourism",
+    "Master of Sciences Hospitality Management & Tourism"
+   ]
+  },
+  {
+   "entity": "ESGCI",
+   "country": "France",
+   "empty_programmes": 2,
+   "sample": [
+    "Bachelor in Marketing and International Relations",
+    "Master in International Business"
+   ]
+  },
+  {
+   "entity": "Excelia",
+   "country": "France",
+   "empty_programmes": 2,
+   "sample": [
+    "MSc Tourism & Event Management (Paris)",
+    "MSc Tourism products and projects (Paris)"
+   ]
+  },
+  {
+   "entity": "Aivancity School for Technology, Business & Society",
+   "country": "France",
+   "empty_programmes": 1,
+   "sample": [
+    "Bachelor of Science Grande École Programme: Artificial Intelligence & Data Science"
+   ]
+  },
+  {
+   "entity": "Atelier Chardon Savard",
+   "country": "France",
+   "empty_programmes": 1,
+   "sample": [
+    "Bachelor Fashion Designer"
+   ]
+  },
+  {
+   "entity": "Ecole de Management Applique, Paris",
+   "country": "France",
+   "empty_programmes": 1,
+   "sample": [
+    "Bachelor Applied Management and Economics"
+   ]
+  },
+  {
+   "entity": "Institut Culinaire de France",
+   "country": "France",
+   "empty_programmes": 1,
+   "sample": [
+    "Bachelor in Confectionary Arts and Entrepreneurship"
+   ]
+  },
+  {
+   "entity": "Istituto Marangoni Paris",
+   "country": "France",
+   "empty_programmes": 1,
+   "sample": [
+    "Master Luxury Accessories Design (Paris, London)"
+   ]
+  },
+  {
+   "entity": "LISAA School of Design",
+   "country": "France",
+   "empty_programmes": 1,
+   "sample": [
+    "Master Fashion Communication & Image"
+   ]
+  },
+  {
+   "entity": "Schiller International University",
+   "country": "France",
+   "empty_programmes": 1,
+   "sample": [
+    "Bachelor of Sciences in International Hospitality & Tourism Management"
+   ]
+  },
+  {
+   "entity": "Strate School of Design",
+   "country": "France",
+   "empty_programmes": 1,
+   "sample": [
+    "MSc Transition Design"
+   ]
+  },
+  {
+   "entity": "Lancaster University Leipzig",
+   "country": "Germany",
+   "empty_programmes": 1,
+   "sample": [
+    "MSc Business Analytics"
+   ]
+  },
+  {
+   "entity": "SRH University",
+   "country": "Germany",
+   "empty_programmes": 1,
+   "sample": [
+    "B.Mus. Classical Music"
+   ]
+  },
+  {
+   "entity": "Maynooth University",
+   "country": "Ireland",
+   "empty_programmes": 40,
+   "sample": [
+    "BA Accounting and Finance",
+    "BA Bachelor of Arts",
+    "BA Criminology"
+   ]
+  },
+  {
+   "entity": "University College Dublin",
+   "country": "Ireland",
+   "empty_programmes": 36,
+   "sample": [
+    "Agricultural Science BAgrSc",
+    "Agricultural Systems Technology BAgrSc",
+    "Animal & Crop Production BAgrSc"
+   ]
+  },
+  {
+   "entity": "RCSI University of Medicine and Health Sciences",
+   "country": "Ireland",
+   "empty_programmes": 4,
+   "sample": [
+    "BSc Advanced Therapeutic Technologies (4 Year)",
+    "BSc Physiotherapy (4 years)",
+    "MB, BCh, BAO (Hons) Medicine (5 years)"
+   ]
+  },
+  {
+   "entity": "Domus Academy",
+   "country": "Italy",
+   "empty_programmes": 16,
+   "sample": [
+    "MA Business Design",
+    "MA Design Innovation",
+    "MA Design Leadership & Strategy"
+   ]
+  },
+  {
+   "entity": "NABA",
+   "country": "Italy",
+   "empty_programmes": 8,
+   "sample": [
+    "BA Graphic Design and Art Direction",
+    "BA Marketing and Management for Creative Business",
+    "MA Digital and Live Performance"
+   ]
+  },
+  {
+   "entity": "Istituto Marangoni Milano",
+   "country": "Italy",
+   "empty_programmes": 3,
+   "sample": [
+    "Master Design for Gaming and Virtual Reality (Milan)",
+    "Master Fashion Design & Innovation (Milan)",
+    "Master Fragrances & Cosmetics Brand Management and Licensing (Milan)"
+   ]
+  },
+  {
+   "entity": "Vrije Universiteit Amsterdam",
+   "country": "Netherlands",
+   "empty_programmes": 57,
+   "sample": [
+    "BA Communication and Information Studies (Language and Media, English track)",
+    "BA Literature and Society (English track)",
+    "Bachelor Applied Linguistics"
+   ]
+  },
+  {
+   "entity": "University of Amsterdam",
+   "country": "Netherlands",
+   "empty_programmes": 56,
+   "sample": [
+    "BA Ancient Studies",
+    "BA/BSc Liberal Arts and Sciences (Amsterdam University College, joint degree UvA/VU)",
+    "Bachelor Global Arts, Culture and Politics (Cultural Studies)"
+   ]
+  },
+  {
+   "entity": "University of Groningen",
+   "country": "Netherlands",
+   "empty_programmes": 52,
+   "sample": [
+    "BSc Economics",
+    "BSc International Economics and Sustainable Development",
+    "MA Art History"
+   ]
+  },
+  {
+   "entity": "Eindhoven University of Technology",
+   "country": "Netherlands",
+   "empty_programmes": 36,
+   "sample": [
+    "BSc Applied Mathematics",
+    "BSc Applied Physics",
+    "BSc Architecture, Urbanism and Building Sciences"
+   ]
+  },
+  {
+   "entity": "Erasmus University Rotterdam",
+   "country": "Netherlands",
+   "empty_programmes": 26,
+   "sample": [
+    "BA Double degree with Philosophy (Wijsbegeerte van een bepaald Wetenschapsgebied)",
+    "BA International Bachelor History",
+    "BA Philosophy of a Specific Discipline"
+   ]
+  },
+  {
+   "entity": "Wittenborg University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 24,
+   "sample": [
+    "BBA (EBA) Entrepreneurship & Digital Marketing",
+    "BBA (EBA) Entrepreneurship & FinTech",
+    "BBA (EBA) Entrepreneurship & Small Business"
+   ]
+  },
+  {
+   "entity": "Radboud University",
+   "country": "Netherlands",
+   "empty_programmes": 23,
+   "sample": [
+    "BSc Natural Sciences",
+    "MA Arts and Culture",
+    "MA Communication and Information Studies"
+   ]
+  },
+  {
+   "entity": "NHL Stenden University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 20,
+   "sample": [
+    "BA European Studies",
+    "BA International Human Resource Management",
+    "Bachelor Communication and Multimedia Design"
+   ]
+  },
+  {
+   "entity": "ArtEZ University of the Arts",
+   "country": "Netherlands",
+   "empty_programmes": 19,
+   "sample": [
+    "BA BEAR Fine Art",
+    "BA Crossmedia Design",
+    "BA Dance Artist"
+   ]
+  },
+  {
+   "entity": "Delft University of Technology",
+   "country": "Netherlands",
+   "empty_programmes": 14,
+   "sample": [
+    "Master Climate and Earth Observation",
+    "Master Geotechnical Engineering",
+    "Master Hydraulic and Offshore Structures"
+   ]
+  },
+  {
+   "entity": "HAN University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 13,
+   "sample": [
+    "BA Communication",
+    "Bachelor Automotive Engineering",
+    "Bachelor Chemistry"
+   ]
+  },
+  {
+   "entity": "IHE Delft Institute for Water Education",
+   "country": "Netherlands",
+   "empty_programmes": 12,
+   "sample": [
+    "MSc Coastal Hazards, Risks, Climate Change Impacts and Adaptation",
+    "MSc Environmental Technology and Engineering",
+    "MSc Groundwater and Global Change - Impacts and Adaptation"
+   ]
+  },
+  {
+   "entity": "The Hague University of Applied sciences",
+   "country": "Netherlands",
+   "empty_programmes": 11,
+   "sample": [
+    "BA European Studies (3-year)",
+    "BBA International Business (4-year)",
+    "BSc Applied Computer Science (Information & Communication Technology)"
+   ]
+  },
+  {
+   "entity": "Zuyd University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 10,
+   "sample": [
+    "BA European Studies",
+    "BA Hotel Management",
+    "BA Interdisciplinary Arts"
+   ]
+  },
+  {
+   "entity": "Utrecht University",
+   "country": "Netherlands",
+   "empty_programmes": 7,
+   "sample": [
+    "BA/BSc University College Roosevelt",
+    "MSc Earth Sciences",
+    "Master Earth System Governance"
+   ]
+  },
+  {
+   "entity": "Inholland University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 6,
+   "sample": [
+    "BA Business Innovation",
+    "BA Creative Business",
+    "BA Tourism Management"
+   ]
+  },
+  {
+   "entity": "Fontys University of Applied Science",
+   "country": "Netherlands",
+   "empty_programmes": 5,
+   "sample": [
+    "BSc Mechatronics",
+    "Bachelor Conservatory of Music",
+    "Master Artificial Intelligence Translator (joint degree)"
+   ]
+  },
+  {
+   "entity": "University of Twente",
+   "country": "Netherlands",
+   "empty_programmes": 5,
+   "sample": [
+    "BSc Psychology (English track)",
+    "MSc Geo-information Science & Earth Observation (ITC)",
+    "MSc Geo-information Science & Earth Observation for Environmental Modelling and Management (GEM, Erasmus Mundus)"
+   ]
+  },
+  {
+   "entity": "Wageningen University & Research",
+   "country": "Netherlands",
+   "empty_programmes": 5,
+   "sample": [
+    "European Master's in Earth System Sciences (double degree)",
+    "European Master's in Food Studies (double degree)",
+    "European Master's in Resilient Farming and Food Systems (double degree, EUR-Organic)"
+   ]
+  },
+  {
+   "entity": "Maastricht University",
+   "country": "Netherlands",
+   "empty_programmes": 4,
+   "sample": [
+    "BSc Medicine",
+    "LLM Advanced Master Intellectual Property Law and Knowledge Management",
+    "MA Arts and Culture"
+   ]
+  },
+  {
+   "entity": "Amsterdam University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 3,
+   "sample": [
+    "Bachelor Amfi - Amsterdam Fashion Institute (English programme)",
+    "MSc Master Digital Design: Digital Fashion Technology",
+    "MSc Master Digital Design: Interaction Design"
+   ]
+  },
+  {
+   "entity": "Hanze University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 3,
+   "sample": [
+    "BBA International Business (4-year)",
+    "BSc Applied Computer Science",
+    "BSc Physiotherapy (International Physiotherapy Programme)"
+   ]
+  },
+  {
+   "entity": "HKU University of the Arts Utrecht",
+   "country": "Netherlands",
+   "empty_programmes": 3,
+   "sample": [
+    "Bachelor Fine Art",
+    "Bachelor Music",
+    "Master of Music"
+   ]
+  },
+  {
+   "entity": "Rotterdam University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 3,
+   "sample": [
+    "MSc Master in Consultancy and Entrepreneurship (full-time)",
+    "MSc Master in International Supply Chain Management (full-time)",
+    "MSc Shipping and Transport (full-time)"
+   ]
+  },
+  {
+   "entity": "Saxion University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 2,
+   "sample": [
+    "BSc ICT - Software Engineering",
+    "MBA Executive Master in Business Administration (full-time)"
+   ]
+  },
+  {
+   "entity": "Tilburg University",
+   "country": "Netherlands",
+   "empty_programmes": 2,
+   "sample": [
+    "Children's Literature, Media & Cultural Entrepreneurship",
+    "Economics and Management"
+   ]
+  },
+  {
+   "entity": "International Institute of Social Studies (ISS)",
+   "country": "Netherlands",
+   "empty_programmes": 1,
+   "sample": [
+    "MA Public Policy (Erasmus Mundus Mundus MAPP, joint degree)"
+   ]
+  },
+  {
+   "entity": "KIT (Royal Tropical Institute)",
+   "country": "Netherlands",
+   "empty_programmes": 1,
+   "sample": [
+    "Master of Science in Public Health and Health Equity (MPH-HE)"
+   ]
+  },
+  {
+   "entity": "Nyenrode Business University",
+   "country": "Netherlands",
+   "empty_programmes": 1,
+   "sample": [
+    "MSc Master of Science in Management"
+   ]
+  },
+  {
+   "entity": "SOMT",
+   "country": "Netherlands",
+   "empty_programmes": 1,
+   "sample": [
+    "BSc Physiotherapy and Rehabilitation sciences"
+   ]
+  },
+  {
+   "entity": "THIM University of Applied Sciences in Physiotherapy",
+   "country": "Netherlands",
+   "empty_programmes": 1,
+   "sample": [
+    "BSc Physiotherapy"
+   ]
+  },
+  {
+   "entity": "Windesheim University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 1,
+   "sample": [
+    "BBA Global Project and Change Management"
+   ]
+  },
+  {
+   "entity": "Swiss Hotel Management School",
+   "country": "Switzerland",
+   "empty_programmes": 2,
+   "sample": [
+    "Bachelor of Sciences in Hospitality Business Management",
+    "International Year One (HTM pathway) - Bachelor of Sciences in Hospitality Business Management"
+   ]
+  },
+  {
+   "entity": "University of Birmingham",
+   "country": "United Kingdom",
+   "empty_programmes": 236,
+   "sample": [
+    "BA Ancient History and Archaeology",
+    "BA Ancient and Medieval History",
+    "BA Criminology"
+   ]
+  },
+  {
+   "entity": "University of Essex (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 191,
+   "sample": [
+    "BA Childhood Studies",
+    "BA Continental Philosophy",
+    "BA Creative Writing"
+   ]
+  },
+  {
+   "entity": "University of Liverpool (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 175,
+   "sample": [
+    "BA Ancient History",
+    "BA Ancient History and Archaeology (Honours Select 50:50)",
+    "BA Archaeology"
+   ]
+  },
+  {
+   "entity": "University of Westminster",
+   "country": "United Kingdom",
+   "empty_programmes": 161,
+   "sample": [
+    "BA (Hons) Arabic and English Language",
+    "BA (Hons) Arabic and English Literature",
+    "BA (Hons) Arabic and International Relations"
+   ]
+  },
+  {
+   "entity": "Nottingham Trent University (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 152,
+   "sample": [
+    "BA Animation",
+    "BA Childhood and Psychology",
+    "BA Childhood and Society"
+   ]
+  },
+  {
+   "entity": "University of Manchester",
+   "country": "United Kingdom",
+   "empty_programmes": 148,
+   "sample": [
+    "BA American Studies",
+    "BA Arabic Studies",
+    "BA Arabic and Politics"
+   ]
+  },
+  {
+   "entity": "Newcastle University",
+   "country": "United Kingdom",
+   "empty_programmes": 145,
+   "sample": [
+    "BA Ancient History and Archaeology",
+    "BA Archaeology",
+    "BA Architecture"
+   ]
+  },
+  {
+   "entity": "Cardiff University",
+   "country": "United Kingdom",
+   "empty_programmes": 136,
+   "sample": [
+    "BA Ancient History",
+    "BA Archaeology",
+    "BA Archaeology and Ancient History"
+   ]
+  },
+  {
+   "entity": "City St George's, University of London",
+   "country": "United Kingdom",
+   "empty_programmes": 136,
+   "sample": [
+    "BA Communication, PR and Advertising",
+    "BA English",
+    "BA English with Creative Writing"
+   ]
+  },
+  {
+   "entity": "University of Portsmouth",
+   "country": "United Kingdom",
+   "empty_programmes": 123,
+   "sample": [
+    "BA / BSc Creative Computing",
+    "BA Accountancy and Financial Management (top-up)",
+    "BA Animation"
+   ]
+  },
+  {
+   "entity": "Birkbeck, University of London",
+   "country": "United Kingdom",
+   "empty_programmes": 115,
+   "sample": [
+    "BA (Hons) Ancient History and Archaeology",
+    "BA (Hons) Archaeology",
+    "BA (Hons) Art History"
+   ]
+  },
+  {
+   "entity": "University of Sheffield",
+   "country": "United Kingdom",
+   "empty_programmes": 105,
+   "sample": [
+    "BA Accounting & Financial Management with Economics",
+    "BA Architecture",
+    "BA Business Management with Economics"
+   ]
+  },
+  {
+   "entity": "University of Lancashire",
+   "country": "United Kingdom",
+   "empty_programmes": 104,
+   "sample": [
+    "BA (Hons) Accounting and Finance",
+    "BA (Hons) Accounting and Financial Studies",
+    "BA (Hons) Animation"
+   ]
+  },
+  {
+   "entity": "University of Leeds",
+   "country": "United Kingdom",
+   "empty_programmes": 95,
+   "sample": [
+    "BA Business Management",
+    "BA Business Management and the Human Resource",
+    "BA Business Management with Marketing"
+   ]
+  },
+  {
+   "entity": "University of Glasgow",
+   "country": "United Kingdom",
+   "empty_programmes": 91,
+   "sample": [
+    "BEng Aerospace Systems",
+    "BEng Mechatronics",
+    "BEng Robotics & Artificial Intelligence"
+   ]
+  },
+  {
+   "entity": "Durham University",
+   "country": "United Kingdom",
+   "empty_programmes": 88,
+   "sample": [
+    "BA Ancient History",
+    "BA Ancient History and Archaeology",
+    "BA Ancient, Medieval and Modern History"
+   ]
+  },
+  {
+   "entity": "Leeds Beckett University",
+   "country": "United Kingdom",
+   "empty_programmes": 88,
+   "sample": [
+    "BA Accounting and Finance",
+    "BA Acting",
+    "BA Architecture"
+   ]
+  },
+  {
+   "entity": "Manchester Metropolitan University",
+   "country": "United Kingdom",
+   "empty_programmes": 87,
+   "sample": [
+    "BA Animation",
+    "BA Business Administration and Management",
+    "BA Business Management"
+   ]
+  },
+  {
+   "entity": "Queen's University Belfast",
+   "country": "United Kingdom",
+   "empty_programmes": 86,
+   "sample": [
+    "BA Anthropology",
+    "BA Anthropology and International Relations",
+    "BA Anthropology and Philosophy"
+   ]
+  },
+  {
+   "entity": "University of Hertfordshire",
+   "country": "United Kingdom",
+   "empty_programmes": 86,
+   "sample": [
+    "BA (SW/YAB) International Business",
+    "BA (SW/YAB) International Business (3 or 4 year programme)",
+    "BA 2D Digital Animation"
+   ]
+  },
+  {
+   "entity": "University of Plymouth",
+   "country": "United Kingdom",
+   "empty_programmes": 82,
+   "sample": [
+    "BA Accounting and Finance",
+    "BA Architecture",
+    "BA Early Childhood Studies"
+   ]
+  },
+  {
+   "entity": "University of Southampton",
+   "country": "United Kingdom",
+   "empty_programmes": 81,
+   "sample": [
+    "BA Fashion Design",
+    "BA Film Studies",
+    "BA Film Studies with Year Abroad"
+   ]
+  },
+  {
+   "entity": "Queen Mary University of London",
+   "country": "United Kingdom",
+   "empty_programmes": 77,
+   "sample": [
+    "BA (Hons) Film Studies",
+    "BA (Hons) Geography",
+    "BA (Hons) Politics"
+   ]
+  },
+  {
+   "entity": "University of York",
+   "country": "United Kingdom",
+   "empty_programmes": 75,
+   "sample": [
+    "BA Business and Management",
+    "BA Business and Society",
+    "BA Business of the Creative Industries"
+   ]
+  },
+  {
+   "entity": "Lancaster University",
+   "country": "United Kingdom",
+   "empty_programmes": 73,
+   "sample": [
+    "BA Architecture",
+    "BA Architecture (Placement Year)",
+    "BA Architecture (Study Abroad)"
+   ]
+  },
+  {
+   "entity": "Swansea University",
+   "country": "United Kingdom",
+   "empty_programmes": 70,
+   "sample": [
+    "BA Education",
+    "BA International Relations",
+    "BA International Relations and American Studies"
+   ]
+  },
+  {
+   "entity": "University of Strathclyde",
+   "country": "United Kingdom",
+   "empty_programmes": 68,
+   "sample": [
+    "BA Journalism, Media and Communication & Law",
+    "BSc Data Analytics",
+    "BSc Immunology and Microbiology"
+   ]
+  },
+  {
+   "entity": "Birmingham City University",
+   "country": "United Kingdom",
+   "empty_programmes": 67,
+   "sample": [
+    "BA Architecture",
+    "BA Art and Design with Creative Technologies",
+    "BA Business Management"
+   ]
+  },
+  {
+   "entity": "University of Hull",
+   "country": "United Kingdom",
+   "empty_programmes": 64,
+   "sample": [
+    "BA (Hons) Business Economics (with a placement year)",
+    "BA (Hons) Business Management (with a placement year)",
+    "BA (Hons) Business Management with Accounting (with a placement year)"
+   ]
+  },
+  {
+   "entity": "University of East Anglia",
+   "country": "United Kingdom",
+   "empty_programmes": 63,
+   "sample": [
+    "BA Broadcast and Multimedia Journalism",
+    "BA Broadcast and Multimedia Journalism with a Placement Year",
+    "BA Broadcast and Multimedia Journalism with a Year Abroad"
+   ]
+  },
+  {
+   "entity": "University of Sunderland",
+   "country": "United Kingdom",
+   "empty_programmes": 60,
+   "sample": [
+    "BA (Hons) Accounting and Finance",
+    "BA (Hons) Business and Financial Management",
+    "BA (Hons) Business and Human Resource Management"
+   ]
+  },
+  {
+   "entity": "Kingston University London",
+   "country": "United Kingdom",
+   "empty_programmes": 53,
+   "sample": [
+    "BA Architecture",
+    "BA Media Content & Communications",
+    "BEng Aerospace Engineering"
+   ]
+  },
+  {
+   "entity": "University of Sussex",
+   "country": "United Kingdom",
+   "empty_programmes": 53,
+   "sample": [
+    "BA Anthropology",
+    "BA Anthropology and International Development",
+    "BA Anthropology with a Language"
+   ]
+  },
+  {
+   "entity": "Royal Holloway University of London",
+   "country": "United Kingdom",
+   "empty_programmes": 50,
+   "sample": [
+    "MA Ancient History",
+    "MA Classics",
+    "MA Consumption, Culture and Marketing"
+   ]
+  },
+  {
+   "entity": "Aston University",
+   "country": "United Kingdom",
+   "empty_programmes": 38,
+   "sample": [
+    "MA Forensic Linguistics",
+    "MA International Relations",
+    "Master in Public Health"
+   ]
+  },
+  {
+   "entity": "Liverpool John Moores University",
+   "country": "United Kingdom",
+   "empty_programmes": 38,
+   "sample": [
+    "BA Architecture",
+    "BA Criminal Justice",
+    "BA Criminology"
+   ]
+  },
+  {
+   "entity": "University of Aberdeen",
+   "country": "United Kingdom",
+   "empty_programmes": 38,
+   "sample": [
+    "BSc Archeology",
+    "BSc Biochemistry",
+    "BSc Biology"
+   ]
+  },
+  {
+   "entity": "Keele University",
+   "country": "United Kingdom",
+   "empty_programmes": 36,
+   "sample": [
+    "BA Graphic Design",
+    "BEng Civil Engineering",
+    "BEng Electrical and Electronic Engineering"
+   ]
+  },
+  {
+   "entity": "University of Huddersfield",
+   "country": "United Kingdom",
+   "empty_programmes": 36,
+   "sample": [
+    "BA Fashion Marketing",
+    "BA Film Studies and English Literature",
+    "BA Filmmaking"
+   ]
+  },
+  {
+   "entity": "Robert Gordon University",
+   "country": "United Kingdom",
+   "empty_programmes": 33,
+   "sample": [
+    "BA Accounting and Finance",
+    "BA Communication Design",
+    "BA Communication Design - Graphic Design, Illustration, Photography"
+   ]
+  },
+  {
+   "entity": "University of Bath",
+   "country": "United Kingdom",
+   "empty_programmes": 31,
+   "sample": [
+    "BA (Hons) Creative Writing",
+    "BSc (Hons) Accounting and Finance",
+    "BSc (Hons) Architecture"
+   ]
+  },
+  {
+   "entity": "University of Brighton",
+   "country": "United Kingdom",
+   "empty_programmes": 31,
+   "sample": [
+    "MA Architectural and Urban Design",
+    "MA Sustainable Fashion Business",
+    "MRes Ecology and Conservation"
+   ]
+  },
+  {
+   "entity": "London South Bank University (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 28,
+   "sample": [
+    "BA (Hons) Architecture",
+    "BA (Hons) Urban and Environmental Planning",
+    "BEng (Hons) Building Services Engineering"
+   ]
+  },
+  {
+   "entity": "Bournemouth University (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 26,
+   "sample": [
+    "BA Business and Management (2-year Accelerated Degree)",
+    "BA Business and Management (Human Resource Management)",
+    "BA Communication and Media (2 year accelerated degree)"
+   ]
+  },
+  {
+   "entity": "Brunel University London (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 24,
+   "sample": [
+    "BA Creative Writing",
+    "BA Education",
+    "BA Film & Television Studies"
+   ]
+  },
+  {
+   "entity": "University of Nottingham",
+   "country": "United Kingdom",
+   "empty_programmes": 22,
+   "sample": [
+    "BSc Biochemistry",
+    "BSc Biotechnology",
+    "BSc Neuroscience"
+   ]
+  },
+  {
+   "entity": "University of Stirling",
+   "country": "United Kingdom",
+   "empty_programmes": 18,
+   "sample": [
+    "BA Criminology and Sociology",
+    "BA Economics and Finance",
+    "BA Economics and Marketing"
+   ]
+  },
+  {
+   "entity": "University of Exeter",
+   "country": "United Kingdom",
+   "empty_programmes": 13,
+   "sample": [
+    "BA Ancient History",
+    "BA English (Exeter)",
+    "BA English and Creative Writing"
+   ]
+  },
+  {
+   "entity": "Loughborough University",
+   "country": "United Kingdom",
+   "empty_programmes": 12,
+   "sample": [
+    "BEng (Hons) Aerospace Materials",
+    "BEng (Hons) Automotive Materials",
+    "BEng (Hons) Robotics, Mechatronics, and Control Systems"
+   ]
+  },
+  {
+   "entity": "Cranfield University",
+   "country": "United Kingdom",
+   "empty_programmes": 10,
+   "sample": [
+    "MSc Airport Planning and Management",
+    "MSc Future Food Sustainability",
+    "MSc in Thermal Power and Propulsion - Power, Propulsion and the Environment"
+   ]
+  },
+  {
+   "entity": "University of Bristol",
+   "country": "United Kingdom",
+   "empty_programmes": 8,
+   "sample": [
+    "BEng Artificial Intelligence",
+    "BSc Applied Anatomy",
+    "BSc Cellular and Molecular Medicine"
+   ]
+  },
+  {
+   "entity": "University of Surrey (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 4,
+   "sample": [
+    "BSc Microbiology",
+    "BSc Veterinary Biosciences",
+    "LLB Law"
+   ]
+  },
+  {
+   "entity": "UWE Bristol",
+   "country": "United Kingdom",
+   "empty_programmes": 3,
+   "sample": [
+    "LLM International Law and Security",
+    "MSc Public Health",
+    "MSc Sustainable Food Systems"
+   ]
+  },
+  {
+   "entity": "Goldsmiths University of London (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 2,
+   "sample": [
+    "MA Counselling",
+    "MA Migration and Mobility"
+   ]
+  },
+  {
+   "entity": "Istituto Marangoni London",
+   "country": "United Kingdom",
+   "empty_programmes": 2,
+   "sample": [
+    "BA Fashion Styling & Visual Merchandising (London)",
+    "Master Responsible Fashion (London)"
+   ]
+  },
+  {
+   "entity": "Texas State University",
+   "country": "United States",
+   "empty_programmes": 247,
+   "sample": [
+    "Anthropology (B.A./B.S.)",
+    "B.A. Art",
+    "B.A. Art History"
+   ]
+  },
+  {
+   "entity": "Illinois State University",
+   "country": "United States",
+   "empty_programmes": 224,
+   "sample": [
+    "B.A. Anthropology",
+    "B.A. Art - Art History",
+    "B.A. Art - Graphic Design"
+   ]
+  },
+  {
+   "entity": "Hofstra University",
+   "country": "United States",
+   "empty_programmes": 209,
+   "sample": [
+    "B.A. Africana Studies",
+    "B.A. Anthropology",
+    "B.A. Anthropology - Archaeology"
+   ]
+  },
+  {
+   "entity": "Arizona State University",
+   "country": "United States",
+   "empty_programmes": 205,
+   "sample": [
+    "BA Applied Business and Technology Solutions",
+    "BA Applied Military and Veterans Studies",
+    "BA Art (Museum and Curational Practices)"
+   ]
+  },
+  {
+   "entity": "University of Oklahoma",
+   "country": "United States",
+   "empty_programmes": 198,
+   "sample": [
+    "Architecture: 3 1/2 Year Program (B.Arch.Study)",
+    "Arts and Sciences: Undecided",
+    "B.A. Advertising"
+   ]
+  },
+  {
+   "entity": "Southern Illinois University",
+   "country": "United States",
+   "empty_programmes": 162,
+   "sample": [
+    "Automotive Technology B.S. (Pre-Bachelors Program)",
+    "B.A Theater",
+    "B.A. Africana Studies"
+   ]
+  },
+  {
+   "entity": "Oregon State University",
+   "country": "United States",
+   "empty_programmes": 145,
+   "sample": [
+    "B.A. American Studies",
+    "B.A. Anthropology",
+    "B.A. Art"
+   ]
+  },
+  {
+   "entity": "Colorado State University",
+   "country": "United States",
+   "empty_programmes": 143,
+   "sample": [
+    "B.A. Anthropology",
+    "B.A. Anthropology / Biological Anthropology",
+    "B.A. Anthropology / Cultural Anthropology"
+   ]
+  },
+  {
+   "entity": "Montclair State University",
+   "country": "United States",
+   "empty_programmes": 143,
+   "sample": [
+    "B.A. Advertising",
+    "B.A. Anthropology",
+    "B.A. Anthropology: Community Development"
+   ]
+  },
+  {
+   "entity": "George Mason University",
+   "country": "United States",
+   "empty_programmes": 117,
+   "sample": [
+    "B.A African and African American Studies - Integrative Studies",
+    "B.A. Anthropology",
+    "B.A. Art and Visual Technology"
+   ]
+  },
+  {
+   "entity": "Suffolk University Boston",
+   "country": "United States",
+   "empty_programmes": 108,
+   "sample": [
+    "B.A. BIO - Biotechnology Concentration",
+    "B.A. Biochemistry",
+    "B.A. Biology"
+   ]
+  },
+  {
+   "entity": "Saint Louis University",
+   "country": "United States",
+   "empty_programmes": 94,
+   "sample": [
+    "B.A. African American Studies",
+    "B.A. American Studies",
+    "B.A. Anthropology"
+   ]
+  },
+  {
+   "entity": "University of Alabama at Birmingham",
+   "country": "United States",
+   "empty_programmes": 89,
+   "sample": [
+    "BA African American Studies",
+    "BA Anthropology",
+    "BA Art"
+   ]
+  },
+  {
+   "entity": "Long Island University - Post",
+   "country": "United States",
+   "empty_programmes": 88,
+   "sample": [
+    "B.A. Chemistry",
+    "B.A. Criminal Justice",
+    "B.A. Political Science"
+   ]
+  },
+  {
+   "entity": "Long Island University - Brooklyn",
+   "country": "United States",
+   "empty_programmes": 81,
+   "sample": [
+    "B.A. Communications",
+    "B.A. Global Studies",
+    "B.A. Journalism"
+   ]
+  },
+  {
+   "entity": "Rensselaer Polytechnic Institute",
+   "country": "United States",
+   "empty_programmes": 74,
+   "sample": [
+    "B.S Nuclear Engineering",
+    "B.S. Aeronautical Engineering",
+    "B.S. Aerospace Engineering"
+   ]
+  },
+  {
+   "entity": "University of Oregon",
+   "country": "United States",
+   "empty_programmes": 73,
+   "sample": [
+    "Art BA/BS/BFA",
+    "Art and Technology BA/BS/BFA",
+    "BA Art History"
+   ]
+  },
+  {
+   "entity": "New Jersey Institute of Technology",
+   "country": "United States",
+   "empty_programmes": 72,
+   "sample": [
+    "Architecture (M.Arch./M.S.)",
+    "B.A. Digital Design",
+    "B.A. History"
+   ]
+  },
+  {
+   "entity": "Thomas Jefferson University",
+   "country": "United States",
+   "empty_programmes": 63,
+   "sample": [
+    "B.Arch. Architecture -5 Years East Falls Campus",
+    "B.L.A. Landscape Architecture East Falls Campus",
+    "B.S. Accounting East Falls Campus"
+   ]
+  },
+  {
+   "entity": "James Madison University",
+   "country": "United States",
+   "empty_programmes": 60,
+   "sample": [
+    "Anthropology BA/BS",
+    "Art BA/BFA/BS",
+    "BA Art History"
+   ]
+  },
+  {
+   "entity": "Queens College at CUNY",
+   "country": "United States",
+   "empty_programmes": 58,
+   "sample": [
+    "Accounting (BBA)",
+    "Actuarial Studies (BBA)",
+    "Africana Studies (BA)"
+   ]
+  },
+  {
+   "entity": "Drew University",
+   "country": "United States",
+   "empty_programmes": 53,
+   "sample": [
+    "B.A Marketing",
+    "B.A. Accounting",
+    "B.A. Africana Studies"
+   ]
+  },
+  {
+   "entity": "Eckerd College",
+   "country": "United States",
+   "empty_programmes": 48,
+   "sample": [
+    "B.A. American Studies",
+    "B.A. Ancient Studies",
+    "B.A. Animal Studies"
+   ]
+  },
+  {
+   "entity": "New England College",
+   "country": "United States",
+   "empty_programmes": 45,
+   "sample": [
+    "B.A. Art: Fine Arts",
+    "B.A. Art: Media Arts",
+    "B.A. Business Administration"
+   ]
+  },
+  {
+   "entity": "Fisher College",
+   "country": "United States",
+   "empty_programmes": 37,
+   "sample": [
+    "B.A. Biology",
+    "B.A. Communication and Media Studies",
+    "B.A. Communication and Media Studies/Advertising"
+   ]
+  },
+  {
+   "entity": "Simmons University",
+   "country": "United States",
+   "empty_programmes": 34,
+   "sample": [
+    "BA Communications - Integrated Media",
+    "BA Political Science + International Relations",
+    "BA Women's, Gender and Sexuality Studies"
+   ]
+  },
+  {
+   "entity": "University of Connecticut",
+   "country": "United States",
+   "empty_programmes": 27,
+   "sample": [
+    "BA Applied Data Analysis",
+    "BA BA Art -",
+    "BA Environmental Studies (CAHNR)"
+   ]
+  },
+  {
+   "entity": "Pace University",
+   "country": "United States",
+   "empty_programmes": 21,
+   "sample": [
+    "BA Art",
+    "BA English, Writing and Rhetoric",
+    "BA International Relations and Global Studies"
+   ]
+  },
+  {
+   "entity": "Long Island University",
+   "country": "United States",
+   "empty_programmes": 19,
+   "sample": [
+    "BA Applied Music",
+    "BFA Music Technology, Entrepreneurship & Production",
+    "BS Accountancy"
+   ]
+  },
+  {
+   "entity": "Florida Atlantic University",
+   "country": "United States",
+   "empty_programmes": 12,
+   "sample": [
+    "BA Health Science",
+    "BS Engineering",
+    "BS Hospitality and Tourism Management BBA,"
+   ]
+  },
+  {
+   "entity": "University of Massachusetts Amherst",
+   "country": "United States",
+   "empty_programmes": 11,
+   "sample": [
+    "M.Arch Architecture",
+    "M.Design Historic Preservation",
+    "M.Fin. Finance"
+   ]
+  },
+  {
+   "entity": "DePaul University",
+   "country": "United States",
+   "empty_programmes": 10,
+   "sample": [
+    "BS Computer Science",
+    "BS Cybersecurity",
+    "BS Data Science"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1358 @@
+{
+ "38482": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A; IB 39 points, grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 39,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl. A in Mathematics or Further Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics or Further Mathematics; IB HL Mathematics: Analysis & Approaches grade 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/artificial-intelligence-bsc/entry-requirements",
+  "confidence": "high"
+ },
+ "38481": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A; IB 39 points, grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 39,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl. A in Mathematics or Further Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics or Further Mathematics; IB HL Mathematics: Analysis & Approaches grade 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/artificial-intelligence-msci/entry-requirements",
+  "confidence": "high"
+ },
+ "38484": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A; IB 39 points, grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 39,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl. A in Mathematics or Further Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics or Further Mathematics; IB HL Mathematics: Analysis & Approaches grade 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/artificial-intelligence-with-a-year-in-industry-bsc/entry-requirements",
+  "confidence": "high"
+ },
+ "38505": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A incl. A in Maths or Further Maths; IB 39 points (or 20 from three HL) with HL Maths Analysis & Approaches 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 39,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl. A in Mathematics or Further Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics or Further Mathematics; IB HL Mathematics: Analysis & Approaches grade 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/computer-science-bsc/entry-requirements",
+  "confidence": "high"
+ },
+ "38504": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A; IB 39 points, grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 39,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl. A in Mathematics or Further Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics or Further Mathematics; IB HL Mathematics: Analysis & Approaches grade 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/computer-science-msci/entry-requirements",
+  "confidence": "high"
+ },
+ "38506": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A; IB 39 points, grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 39,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl. A in Mathematics or Further Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics or Further Mathematics; IB HL Mathematics: Analysis & Approaches grade 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/computer-science-with-a-year-in-industry-bsc/entry-requirements",
+  "confidence": "high"
+ },
+ "38508": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A; IB 39 points, grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 39,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl. A in Mathematics or Further Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics or Further Mathematics; IB HL Mathematics: Analysis & Approaches grade 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/computer-science-with-management-and-a-year-in-industry-bsc/entry-requirements",
+  "confidence": "high"
+ },
+ "38483": {
+  "stem": true,
+  "typical_offer": "A-level AAA; IB 36 points, grade 6 in HL Mathematics: Analysis & Approaches (or 18 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 18 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Mathematics or Further Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics or Further Mathematics; IB HL Mathematics: Analysis & Approaches grade 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/artificial-intelligence-and-philosophy/entry-requirements",
+  "confidence": "high"
+ },
+ "38507": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A; IB 39 points, grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 39,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 20 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*A*A incl. A in Mathematics or Further Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics or Further Mathematics; IB HL Mathematics: Analysis & Approaches grade 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/computer-science-with-management-bsc/entry-requirements",
+  "confidence": "high"
+ },
+ "38510": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths; IB 38 points (or 19 from three HL) with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "grade 6 in HL Mathematics (either pathway) (or 19 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A in Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics; IB HL Mathematics grade 6 (either pathway)",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/data-analytics-for-business-and-finance-bsc/entry-requirements",
+  "confidence": "high"
+ },
+ "38511": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths; IB 38 points (or 19 from three HL) with HL Maths 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 38,
+   "subjects": "grade 6 in HL Mathematics (either pathway) (or 19 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. A in Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics; IB HL Mathematics grade 6 (either pathway)",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/data-analytics-for-business-and-finance-with-year-in-industry-bsc/entry-requirements",
+  "confidence": "high"
+ },
+ "38485": {
+  "stem": true,
+  "typical_offer": "A-level AAA; IB 36 points, grade 6 in HL Mathematics: Analysis & Approaches and grade 6 in HL Biology, Chemistry, Physics or Computer Science (or 18 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches and grade 6 in HL Biology, Chemistry, Physics or Computer Science (or 18 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Mathematics and A in one of Biology, Chemistry, Computer Science, Further Mathematics or Physics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics plus a science/computing subject; IB HL Maths Analysis & Approaches 6 plus HL science/computing 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/biomedical-engineering-beng/entry-requirements",
+  "confidence": "high"
+ },
+ "38487": {
+  "stem": true,
+  "typical_offer": "A-level AAA; IB 36 points, grade 6 in HL Mathematics: Analysis & Approaches and grade 6 in HL Biology, Chemistry, Physics or Computer Science (or 18 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches and grade 6 in HL Biology, Chemistry, Physics or Computer Science (or 18 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Mathematics and A in one of Biology, Chemistry, Computer Science, Further Mathematics or Physics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics plus a science/computing subject; IB HL Maths Analysis & Approaches 6 plus HL science/computing 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/biomedical-engineering-meng/entry-requirements",
+  "confidence": "high"
+ },
+ "38522": {
+  "stem": true,
+  "typical_offer": "A-level AAA; IB 36 points, grade 6 in HL Mathematics: Analysis & Approaches (or 18 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 18 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics; IB HL Maths Analysis & Approaches 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/electronic-engineering-beng/entry-requirements",
+  "confidence": "high"
+ },
+ "38523": {
+  "stem": true,
+  "typical_offer": "A-level AAA; IB 36 points, grade 6 in HL Mathematics: Analysis & Approaches (or 18 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 18 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics; IB HL Maths Analysis & Approaches 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/electronic-engineering-meng/entry-requirements",
+  "confidence": "high"
+ },
+ "38526": {
+  "stem": true,
+  "typical_offer": "A-level AAA; IB 36 points, grade 6 in HL Mathematics: Analysis & Approaches (or 18 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 18 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics; IB HL Maths Analysis & Approaches 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/general-engineering-beng/entry-requirements",
+  "confidence": "high"
+ },
+ "38525": {
+  "stem": true,
+  "typical_offer": "A-level AAA; IB 36 points, grade 6 in HL Mathematics: Analysis & Approaches (or 18 from three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "grade 6 in HL Mathematics: Analysis & Approaches (or 18 from three HL)",
+   "note": "IB total includes TOK/EE; or the stated HL aggregate from three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted. Route 1: APs plus SAT or ACT plus Honors/Dual Enrolment classes or A-levels. Route 2: APs only, at least five. Score 5 meets A*/A, 4 meets B. Calculus BC needed for maths requirements (not AB); Physics C for physics requirements; AP Research and AP Seminar not accepted",
+   "note": "US diploma holders without an accepted combination can take the International Foundation Programme"
+  },
+  "tests": "SAT/ACT only used within AP route 1; SAT subject tests not considered",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. A in Mathematics",
+  "turkish_route": "Not listed for direct entry; applicants without an accepted qualification can take the King's International Foundation Programme",
+  "prerequisite_maths": "A in A-level Mathematics; IB HL Maths Analysis & Approaches 6",
+  "source_url": "https://www.kcl.ac.uk/study/undergraduate/courses/general-engineering-meng/entry-requirements",
+  "confidence": "high"
+ },
+ "38579": {
+  "stem": false
+ },
+ "38578": {
+  "stem": false
+ },
+ "55799": {
+  "stem": true,
+  "typical_offer": "A-level BBB, or BBC incl. B in Maths or Computer Science; IB 30 points (555 HL), or 29 incl. HL Maths/Computer Science 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "555 in three HL (30 points), or 554 incl. 5 in Maths/Computer Science, or 29 points incl. HL Maths or Computer Science 5",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB, or BBC incl. B in Maths or Computer Science",
+  "turkish_route": "Direct entry with Lise/Meslek & Teknik Lise Diplomasi 70%, or 65% including 70% in Maths or Computer Science; otherwise International Foundation Year at Keele University International College",
+  "prerequisite_maths": "GCSE Maths 4/C (or IB SL Maths 2); Maths or Computer Science at B/5 for the lower offer",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/computerscience/",
+  "confidence": "medium"
+ },
+ "55863": {
+  "stem": true,
+  "typical_offer": "A-level BBB, or BBC incl. B in Maths or Computer Science; IB 30 points (555 HL), or 29 incl. HL Maths/Computer Science 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "555 in three HL (30 points), or 554 incl. 5 in Maths/Computer Science, or 29 points incl. HL Maths or Computer Science 5",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB, or BBC incl. B in Maths or Computer Science",
+  "turkish_route": "Direct entry with Lise/Meslek & Teknik Lise Diplomasi 70%, or 65% including 70% in Maths or Computer Science; otherwise International Foundation Year at Keele University International College",
+  "prerequisite_maths": "GCSE Maths 4/C (or IB SL Maths 2); Maths or Computer Science at B/5 for the lower offer",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/computerscience/",
+  "confidence": "high"
+ },
+ "55865": {
+  "stem": true,
+  "typical_offer": "A-level BBB, or BBC incl. B in Maths or Computer Science; IB 30 points (555 HL), or 29 incl. HL Maths/Computer Science 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "555 in three HL (30 points), or 554 incl. 5 in Maths/Computer Science, or 29 points incl. HL Maths or Computer Science 5",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB, or BBC incl. B in Maths or Computer Science",
+  "turkish_route": "Direct entry with Lise/Meslek & Teknik Lise Diplomasi 70%, or 65% including 70% in Maths or Computer Science; otherwise International Foundation Year at Keele University International College",
+  "prerequisite_maths": "GCSE Maths 4/C (or IB SL Maths 2); Maths or Computer Science at B/5 for the lower offer",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/computerscience/",
+  "confidence": "medium"
+ },
+ "55866": {
+  "stem": true,
+  "typical_offer": "A-level BBB, or BBC incl. B in Maths or Computer Science; IB 30 points (555 HL), or 29 incl. HL Maths/Computer Science 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "555 in three HL (30 points), or 554 incl. 5 in Maths/Computer Science, or 29 points incl. HL Maths or Computer Science 5",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB, or BBC incl. B in Maths or Computer Science",
+  "turkish_route": "Direct entry with Lise/Meslek & Teknik Lise Diplomasi 70%, or 65% including 70% in Maths or Computer Science; otherwise International Foundation Year at Keele University International College",
+  "prerequisite_maths": "GCSE Maths 4/C (or IB SL Maths 2); Maths or Computer Science at B/5 for the lower offer",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/computerscience/",
+  "confidence": "medium"
+ },
+ "55867": {
+  "stem": true,
+  "typical_offer": "A-level BBB, or BBC incl. B in Maths or Computer Science; IB 30 points (555 HL), or 29 incl. HL Maths/Computer Science 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "555 in three HL (30 points), or 554 incl. 5 in Maths/Computer Science, or 29 points incl. HL Maths or Computer Science 5",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB, or BBC incl. B in Maths or Computer Science",
+  "turkish_route": "Direct entry with Lise/Meslek & Teknik Lise Diplomasi 70%, or 65% including 70% in Maths or Computer Science; otherwise International Foundation Year at Keele University International College",
+  "prerequisite_maths": "GCSE Maths 4/C (or IB SL Maths 2); Maths or Computer Science at B/5 for the lower offer",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/computerscience/",
+  "confidence": "medium"
+ },
+ "55868": {
+  "stem": true,
+  "typical_offer": "A-level BBB, or BBC incl. B in Maths or Computer Science; IB 30 points (555 HL), or 29 incl. HL Maths/Computer Science 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "555 in three HL (30 points), or 554 incl. 5 in Maths/Computer Science, or 29 points incl. HL Maths or Computer Science 5",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB, or BBC incl. B in Maths or Computer Science",
+  "turkish_route": "Direct entry with Lise/Meslek & Teknik Lise Diplomasi 70%, or 65% including 70% in Maths or Computer Science; otherwise International Foundation Year at Keele University International College",
+  "prerequisite_maths": "GCSE Maths 4/C (or IB SL Maths 2); Maths or Computer Science at B/5 for the lower offer",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/computerscience/",
+  "confidence": "medium"
+ },
+ "55864": {
+  "stem": true,
+  "typical_offer": "A-level BBB incl. B in Maths; IB 30 points (555 HL) incl. 5 in Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 1,
+   "subjects": "555 in three HL incl. 5 in Maths (any level), or 30 points incl. HL Maths 5",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB incl. B in Maths",
+  "turkish_route": "Direct entry with Lise/Meslek & Teknik Lise Diplomasi 70%, or 65% including 70% in Maths or Computer Science; otherwise International Foundation Year at Keele University International College",
+  "prerequisite_maths": "B in A-level Maths or IB Maths 5",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/computerscienceandmathematics/",
+  "confidence": "high"
+ },
+ "55869": {
+  "stem": true,
+  "typical_offer": "A-level BBB; IB 30 points (555 in three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "555 in three HL; GCSE Maths 4/C or IB SL Maths 2",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB",
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/datascience/",
+  "confidence": "high"
+ },
+ "55844": {
+  "stem": true,
+  "typical_offer": "A-level BBC incl. C in Maths or Physics; IB 554 in three HL (29 points) incl. 4 in HL Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "554 in three HL incl. 4 in HL Maths or Physics (or 29 points)",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: BBC equivalent from AP tests, or alternatives such as SAT or ACT; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl. C in Maths or Physics",
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College",
+  "prerequisite_maths": "A-level/HL Maths or Physics at C/4; GCSE Maths 4/C (or IB SL Maths 2)",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/chemicalengineering/",
+  "confidence": "high"
+ },
+ "55848": {
+  "stem": true,
+  "typical_offer": "A-level BBC incl. C in Maths or Physics; IB 554 in three HL (29 points) incl. 4 in HL Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "554 in three HL incl. 4 in HL Maths or Physics (or 29 points)",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: BBC equivalent from AP tests, or alternatives such as SAT or ACT; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl. C in Maths or Physics",
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College",
+  "prerequisite_maths": "A-level/HL Maths or Physics at C/4; GCSE Maths 4/C (or IB SL Maths 2)",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/mechanicalengineering/",
+  "confidence": "high"
+ },
+ "55845": {
+  "stem": true,
+  "typical_offer": "A-level BBC incl. C in Maths or Physics; IB 554 in three HL (29 points) incl. 4 in HL Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "554 in three HL incl. 4 in HL Maths or Physics (or 29 points)",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: BBC equivalent from AP tests, or alternatives such as SAT or ACT; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl. C in Maths or Physics",
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College",
+  "prerequisite_maths": "A-level/HL Maths or Physics at C/4; GCSE Maths 4/C (or IB SL Maths 2)",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/civilengineering/",
+  "confidence": "medium"
+ },
+ "55846": {
+  "stem": true,
+  "typical_offer": "A-level BBC incl. C in Maths or Physics; IB 554 in three HL (29 points) incl. 4 in HL Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "554 in three HL incl. 4 in HL Maths or Physics (or 29 points)",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: BBC equivalent from AP tests, or alternatives such as SAT or ACT; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl. C in Maths or Physics",
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College",
+  "prerequisite_maths": "A-level/HL Maths or Physics at C/4; GCSE Maths 4/C (or IB SL Maths 2)",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/electricalandelectronicengineering/",
+  "confidence": "medium"
+ },
+ "55847": {
+  "stem": true,
+  "typical_offer": "A-level BBC incl. C in Maths or Physics; IB 554 in three HL (29 points) incl. 4 in HL Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "554 in three HL incl. 4 in HL Maths or Physics (or 29 points)",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: BBC equivalent from AP tests, or alternatives such as SAT or ACT; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl. C in Maths or Physics",
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College",
+  "prerequisite_maths": "A-level/HL Maths or Physics at C/4; GCSE Maths 4/C (or IB SL Maths 2)",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/engineering/",
+  "confidence": "medium"
+ },
+ "55849": {
+  "stem": true,
+  "typical_offer": "A-level BBC incl. C in Maths or Physics; IB 554 in three HL (29 points) incl. 4 in HL Maths or Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "554 in three HL incl. 4 in HL Maths or Physics (or 29 points)",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: BBC equivalent from AP tests, or alternatives such as SAT or ACT; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl. C in Maths or Physics",
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College",
+  "prerequisite_maths": "A-level/HL Maths or Physics at C/4; GCSE Maths 4/C (or IB SL Maths 2)",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/mechatronicengineering/",
+  "confidence": "medium"
+ },
+ "55873": {
+  "stem": true,
+  "typical_offer": "A-level BBC; IB 29 points (554 in three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "554 in three HL (29 points); GCSE Maths 4/C or IB SL Maths 2",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/environmentalscience/",
+  "confidence": "high"
+ },
+ "55874": {
+  "stem": true,
+  "typical_offer": "A-level BBC; IB 29 points (554 in three HL)",
+  "ib": {
+   "accepted": true,
+   "min_total": 29,
+   "subjects": "554 in three HL (29 points); GCSE Maths 4/C or IB SL Maths 2",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC",
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/environmentalscienceandgeography/",
+  "confidence": "medium"
+ },
+ "55903": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. B in Maths or Physics; IB 655 in three HL (32 points) incl. HL Maths or Physics 5",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "655 in three HL incl. 5 in HL Maths or Physics",
+   "note": "Typical offer also stated as three Higher Levels"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. B in Maths or Physics",
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College (ABB-level courses need 80%)",
+  "prerequisite_maths": "GCSE Maths 6/B (or IB SL Maths 4)",
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/physicswithartificialintelligence/",
+  "confidence": "high"
+ },
+ "55894": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted: three AP tests at scores 4,4,4 (BBC equivalent), or two AP scores plus SAT 1240 (min 550 EBRW)/ACT 27, an honours course at B or a one-year dual enrolment course at B. Maths/Computer Science subject requirement met by an AP score of 4; Calculus AB vs BC not specified",
+   "note": "US high school Maths at C or above or SAT Maths 560 also needed"
+  },
+  "tests": "SAT/ACT accepted as part of the US route (SAT 1240 or ACT 27 with AP; SAT 1340/ACT 28 for non-AP route with GPA 3.5); English language test needed if no GCSE English 4",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Direct entry with Lise Diplomasi/Lise Bitirme Diplomasi 70% overall (80% for courses needing ABB); applicants below this can take the International Foundation Year at Keele University International College",
+  "prerequisite_maths": null,
+  "source_url": "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/neurosciencewithartificialintelligence/",
+  "confidence": "low"
+ },
+ "51467": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (BEng); foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points, typically with Maths and science; BTEC DMM engineering accepted",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent; A-level Maths and a science preferred",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/aerospace-engineering",
+  "confidence": "low"
+ },
+ "51468": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (BEng); foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points, typically with Maths and science; BTEC DMM engineering accepted",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent; A-level Maths and a science preferred",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/aerospace-engineering-space-technology",
+  "confidence": "low"
+ },
+ "51469": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (BEng); foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points, typically with Maths and science; BTEC DMM engineering accepted",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent; A-level Maths and a science preferred",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/aircraft-engineering",
+  "confidence": "low"
+ },
+ "51470": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (BEng); foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points, typically with Maths and science; BTEC DMM engineering accepted",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent; A-level Maths and a science preferred",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/aviation-engineering",
+  "confidence": "low"
+ },
+ "51471": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (BEng); foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points, typically with Maths and science; BTEC DMM engineering accepted",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent; A-level Maths and a science preferred",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/civil-engineering-beng-hons",
+  "confidence": "low"
+ },
+ "51472": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (BEng); foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points, typically with Maths and science; BTEC DMM engineering accepted",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent; A-level Maths and a science preferred",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/electrical-and-electronic-engineering-meng/beng-hons",
+  "confidence": "low"
+ },
+ "51473": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (BEng); foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points, typically with Maths and science; BTEC DMM engineering accepted",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent; A-level Maths and a science preferred",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/electronic-products-engineering",
+  "confidence": "low"
+ },
+ "51474": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (BEng); foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points, typically with Maths and science; BTEC DMM engineering accepted",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent; A-level Maths and a science preferred",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/mechanical-engineering-meng/beng-hons",
+  "confidence": "medium"
+ },
+ "51475": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (BEng); foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points, typically with Maths and science; BTEC DMM engineering accepted",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent; A-level Maths and a science preferred",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/mechanical-engineering-automotive",
+  "confidence": "low"
+ },
+ "51476": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points (BEng); foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points, typically with Maths and science; BTEC DMM engineering accepted",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent; A-level Maths and a science preferred",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/robotic-engineering-and-artificial-intelligence",
+  "confidence": "low"
+ },
+ "51492": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points; foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points from A-levels or equivalent; BTEC DMM in computing/science/engineering/maths; Access course 112 points",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths and English 4/C; no A-level Maths required for Computer Science and AI",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/computer-science-bsc-hons",
+  "confidence": "medium"
+ },
+ "51493": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points; foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points from A-levels or equivalent; BTEC DMM in computing/science/engineering/maths; Access course 112 points",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths and English 4/C; no A-level Maths required for Computer Science and AI",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/computer-science-and-artificial-intelligence-bsc-hons",
+  "confidence": "medium"
+ },
+ "51497": {
+  "stem": true,
+  "typical_offer": "112-128 UCAS points; foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-128 UCAS points from A-levels or equivalent; BTEC DMM in computing/science/engineering/maths; Access course 112 points",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths and English 4/C; no A-level Maths required for Computer Science and AI",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/cyber-security-and-digital-forensics-bsc-hons",
+  "confidence": "medium"
+ },
+ "51500": {
+  "stem": true,
+  "typical_offer": "96-120 UCAS points; foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "96-120 UCAS points; Geography, Biology, Chemistry, Environmental Science, Geology or Physics preferred; BTEC MMM; Access 96 points",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/environmental-science-bsc-hons",
+  "confidence": "medium"
+ },
+ "51501": {
+  "stem": true,
+  "typical_offer": "96-120 UCAS points; foundation year 64 points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted for direct entry; points score not published"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP accepted for US applicants with GPA 2.8-3.1: grade 3 or above; Calculus AB vs BC not specified",
+   "note": "US diploma: GPA 3.2+ needs no extra tests; GPA 2.8-3.1 needs AP (grade 3 or above), SAT subject tests or honours/college credit; AP requirements depend on subject; otherwise foundation programme"
+  },
+  "tests": "SAT subject tests may be used as alternative to AP for US applicants with GPA 2.8-3.1",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "96-120 UCAS points; Geography, Biology, Chemistry, Environmental Science, Geology or Physics preferred; BTEC MMM; Access 96 points",
+  "turkish_route": "Devlet Lise Diplomasi with 70% overall for direct entry; 65% for International Year One; 50% for the foundation year",
+  "prerequisite_maths": "GCSE Maths 4/C or equivalent",
+  "source_url": "https://www.kingston.ac.uk/study/undergraduate/environmental-hazards-disaster",
+  "confidence": "low"
+ }
+}

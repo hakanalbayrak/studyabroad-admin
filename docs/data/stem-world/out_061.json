@@ -1,0 +1,809 @@
+{
+ "39281": {
+  "stem": true,
+  "typical_offer": "Typical offer around AAA incl. Mathematics and Physics; IB 36",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics and HL Physics (as for related Warwick engineering degrees)",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": null,
+  "confidence": "low"
+ },
+ "39253": {
+  "stem": true,
+  "typical_offer": "Typical offer around AAA incl. Mathematics and Physics; IB 36",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics and HL Physics (as for related Warwick engineering degrees)",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-automotive-engineering/",
+  "confidence": "low"
+ },
+ "39263": {
+  "stem": true,
+  "typical_offer": "Typical offer around AAA incl. Mathematics and Physics; IB 36",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics and HL Physics (as for related Warwick engineering degrees)",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-biomedical-systems-engineering/",
+  "confidence": "low"
+ },
+ "39272": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 36 with HL Maths 6 and HL Physics 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics 6 and HL Physics 6",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed. Contextual IB 34 with HL Maths 5 and Physics 5."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics (contextual AAB)",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-civil-engineering/",
+  "confidence": "high"
+ },
+ "39276": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. A* Maths; IB 39 (HL 7,6,6) with HL Maths AA 7",
+  "ib": {
+   "accepted": true,
+   "min_total": 39,
+   "subjects": "HL Mathematics (Analysis and Approaches) 7, three HL subjects 7,6,6",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed. Contextual IB 38 with HL Maths 6."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "TMUA required unless eligible for contextual offer",
+  "math_test": {
+   "name": "TMUA",
+   "role": "required",
+   "min_score": null,
+   "details": "Not required for contextual offer holders"
+  },
+  "a_level": "A*AA including A* in Mathematics (contextual offer also published); Further Maths recommended",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics; IB HL Maths Analysis and Approaches",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/bsc-computer-science/",
+  "confidence": "medium"
+ },
+ "39277": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": null,
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/bsc-computer-science-business/",
+  "confidence": "low"
+ },
+ "39278": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": null,
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": null,
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-computer-systems-engineering/",
+  "confidence": "low"
+ },
+ "39279": {
+  "stem": true,
+  "typical_offer": "A-level AAA; IB 36",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "No specific HL subjects published",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA, STEM subjects recommended",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": null,
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/bsc-cyber-security/",
+  "confidence": "medium"
+ },
+ "39280": {
+  "stem": true,
+  "typical_offer": "A-level A*A*A* incl. A* Maths (or A*AA with TMUA 5.0/STEP 2/AEA Distinction); IB 39 with HL Maths 7",
+  "ib": {
+   "accepted": true,
+   "min_total": 39,
+   "subjects": "HL Mathematics 7 (38 with HL Maths 6 plus TMUA/STEP/AEA)",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": "TMUA, STEP or AEA accepted as alternative",
+  "math_test": {
+   "name": "TMUA / STEP / AEA",
+   "role": "alternative to prerequisite",
+   "min_score": "TMUA 5.0, STEP grade 2 or AEA Distinction",
+   "details": "Used with lower grade offers"
+  },
+  "a_level": "A*A*A* incl. A* Maths, or A*AA incl. A* Maths plus TMUA 5.0 / STEP grade 2 / AEA Distinction; Further Maths knowledge assumed",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics (Further Maths advantageous); IB HL Maths",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/bsc-data-science/",
+  "confidence": "high"
+ },
+ "39292": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 36 with HL Maths 6 and HL Physics 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics 6 and HL Physics 6",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-electrical-electronic-engineering/",
+  "confidence": "high"
+ },
+ "39293": {
+  "stem": true,
+  "typical_offer": "Typical offer around AAA incl. Mathematics and Physics; IB 36",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics and HL Physics (as for related Warwick engineering degrees)",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-engineering/",
+  "confidence": "low"
+ },
+ "39294": {
+  "stem": true,
+  "typical_offer": "Typical offer around AAA incl. Mathematics and Physics; IB 36",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics and HL Physics (as for related Warwick engineering degrees)",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-engineering-business-management/",
+  "confidence": "low"
+ },
+ "39333": {
+  "stem": false
+ },
+ "39194": {
+  "stem": true,
+  "typical_offer": "Typical offer around AAA incl. Mathematics and Physics; IB 36",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics and HL Physics (as for related Warwick engineering degrees)",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-manufacturing-mechanical-engineering/",
+  "confidence": "low"
+ },
+ "39195": {
+  "stem": true,
+  "typical_offer": "Typical offer around AAA incl. Mathematics and Physics; IB 36",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics and HL Physics (as for related Warwick engineering degrees)",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/meng-manufacturing-mechanical-engineering/",
+  "confidence": "low"
+ },
+ "39202": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 36 with HL Maths 6 and HL Physics 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics 6 and HL Physics 6",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed. Contextual offer IB 34 with HL Maths 5 and Physics 5."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics (contextual AAB)",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics; IB HL Maths and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-mechanical-engineering/",
+  "confidence": "high"
+ },
+ "39203": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 36 with HL Maths 6 and HL Physics 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics 6 and HL Physics 6",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed. Contextual offer IB 34 with HL Maths 5 and Physics 5."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics (contextual AAB)",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics; IB HL Maths and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/meng-mechanical-engineering/",
+  "confidence": "high"
+ },
+ "39236": {
+  "stem": false
+ },
+ "39237": {
+  "stem": false
+ },
+ "39238": {
+  "stem": false
+ },
+ "39240": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. one of Maths, Physics or Computer Science; IB 36 with 6 in HL Maths, Physics or Computer Science",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "One HL subject from Maths, Physics or Computer Science at 6",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including one of Mathematics, Physics or Computer Science",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "Maths not specifically required",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-robotics-engineering-artificial-intelligence/",
+  "confidence": "high"
+ },
+ "39241": {
+  "stem": false
+ },
+ "39245": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 36 with HL Maths 6 and HL Physics 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics 6 and HL Physics 6",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/beng-systems-engineering/",
+  "confidence": "high"
+ },
+ "39246": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics; IB 36 with HL Maths 6 and HL Physics 6",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "HL Mathematics 6 and HL Physics 6",
+   "note": "Institution-wide Warwick rules applied; GCSE grade 4/C in English and Maths or a science also needed."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Warwick considers US High School Diploma applicants with a minimum diploma score plus 3 AP tests in separate subjects including any subject requirements; no AP variants or scores published on the entry pages.",
+   "note": "Institution-wide rule"
+  },
+  "tests": null,
+  "math_test": null,
+  "a_level": "AAA including Mathematics and Physics",
+  "turkish_route": "Direct entry for Lise Diplomas\u0131 holders from approved schools; Warwick converts the 4-year cumulative average (e.g. AAA = 85%, AAB = 80%, A*AA = 88%, A*A*A = 90%), subject grades from Year 12 scores.",
+  "prerequisite_maths": "A-level Mathematics and Physics",
+  "source_url": "https://warwick.ac.uk/study/undergraduate/courses/meng-systems-engineering/",
+  "confidence": "high"
+ },
+ "55071": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/international/your-country/turkey",
+  "confidence": "medium"
+ },
+ "55069": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/international/your-country/turkey",
+  "confidence": "medium"
+ },
+ "51063": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/international/your-country/turkey",
+  "confidence": "medium"
+ },
+ "51061": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/international/your-country/turkey",
+  "confidence": "medium"
+ },
+ "51066": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/international/your-country/turkey",
+  "confidence": "medium"
+ },
+ "51064": {
+  "stem": false
+ },
+ "51073": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/international/your-country/turkey",
+  "confidence": "medium"
+ },
+ "55076": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/international/your-country/turkey",
+  "confidence": "medium"
+ },
+ "55079": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/international/your-country/turkey",
+  "confidence": "medium"
+ },
+ "55080": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/international/your-country/turkey",
+  "confidence": "medium"
+ },
+ "55082": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/international/your-country/turkey",
+  "confidence": "medium"
+ },
+ "55088": {
+  "stem": false
+ },
+ "23762": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/computer-science-and-engineering-games-courses/2027-28/september/full-time/computer-games-development-bsc-honours",
+  "confidence": "medium"
+ },
+ "23763": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/computer-science-and-engineering-courses/2027-28/september/full-time/computer-science-bsc-honours",
+  "confidence": "medium"
+ },
+ "23770": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/computer-science-and-engineering-courses/2027-28/september/full-time/cyber-security-and-forensics-bsc-honours",
+  "confidence": "medium"
+ },
+ "23771": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/computer-science-and-engineering-data-science-and-informatics-courses/2027-28/september/full-time/data-science-and-analytics-bsc-honours",
+  "confidence": "medium"
+ },
+ "23819": {
+  "stem": false
+ },
+ "23821": {
+  "stem": false
+ },
+ "23828": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/computer-science-and-engineering-courses/2027-28/september/full-time/software-engineering-with-electronics-beng-honours",
+  "confidence": "medium"
+ },
+ "23827": {
+  "stem": true,
+  "typical_offer": "UCAS 96 points (A-level CCC or equivalent); IB Diploma 96 UCAS points; GCSE Maths and English 4/C",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "96 UCAS tariff points from the full Diploma; GCSE Maths equivalent IB grade 2 (SL/HL); no specific HL subjects",
+   "note": "Institution-wide Westminster rule applied; IELTS 6.0 overall, 5.5 each component."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP can be combined with Turkish Lise Diplomas\u0131 or SAT/ACT (no AP scores or Calculus AB/BC rules published)",
+   "note": "Institution-wide rule"
+  },
+  "tests": "SAT/ACT may be considered in combination with Lise Diplomas\u0131; no test required",
+  "math_test": null,
+  "a_level": "CCC (96 UCAS points); GCSE Maths grade 4/C",
+  "turkish_route": "Lise Diplomas\u0131 accepted with minimum overall 60-70%; subject-specific courses ask 65-70% or Lise Maths grade 3; Kaplan International Foundation Certificate/International Year One if not met",
+  "prerequisite_maths": "GCSE Maths grade 4/C or equivalent (IB grade 2; Lise Maths 55-70% for subject-specific courses)",
+  "source_url": "https://www.westminster.ac.uk/computer-science-and-engineering-courses/2027-28/september/full-time/software-engineering-beng-honours",
+  "confidence": "medium"
+ }
+}

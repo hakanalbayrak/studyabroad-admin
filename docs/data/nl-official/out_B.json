@@ -1,0 +1,570 @@
+{
+ "58098": {
+  "stem": false
+ },
+ "58070": {
+  "stem": false
+ },
+ "58106": {
+  "stem": false
+ },
+ "58081": {
+  "stem": false
+ },
+ "58119": {
+  "stem": false
+ },
+ "58093": {
+  "stem": false
+ },
+ "58158": {
+  "stem": false
+ },
+ "58162": {
+  "stem": false
+ },
+ "58163": {
+  "stem": false
+ },
+ "58139": {
+  "stem": false
+ },
+ "58078": {
+  "stem": false
+ },
+ "58147": {
+  "stem": false
+ },
+ "58116": {
+  "stem": false
+ },
+ "58129": {
+  "stem": false
+ },
+ "58151": {
+  "stem": false
+ },
+ "58111": {
+  "stem": false
+ },
+ "58161": {
+  "stem": false
+ },
+ "58080": {
+  "stem": false
+ },
+ "58152": {
+  "stem": false
+ },
+ "58072": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Full IB Diploma required (course certificates alone not sufficient). Mathematics: Analysis & Approaches HL (pre-2021 diplomas: Math HL). No minimum total published.",
+   "note": "Institution-wide rules from Leiden 'Specific diploma requirements for science and medical programmes' (2027-2028 edition; document says requirements can change yearly) and general diploma list."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma (college-prep, GPA >= 3.5/4.0) with 3 AP exams grade 4-5 or 4 AP exams grade 3-5 in general academic subjects; for DS&AI: AP Calculus AB or BC.",
+   "note": "Specific AP exams may count towards the 3-4 AP general requirement."
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-D)",
+   "role": "alternative to prerequisite",
+   "min_score": "60% on OMPT-D",
+   "details": "OMPT-D >= 60% (or Boswell-Beta vwo Math B certificate) can replace the missing VWO Mathematics B level for DS&AI, Computer Science, Biology and Bio-pharmaceutical Sciences; other accepted replacements: vwo state exam, CCVX certificates."
+  },
+  "a_level": "GCE: at least 3 A-levels (not AS) in general academic subjects with grades A-C; for DS&AI: Mathematics A-level required.",
+  "turkish_route": "Lise Diplomasi (Genel Lise) with Diploma Puani of at least 80% meets Leiden's general admission list (Imam-Hatip, Meslek and Teknik Lise only with university results; Acik Ogretim case-by-case). Turkey is NOT one of the 8 diplomas in Leiden's science-specific subject list, so VWO-level maths must be shown/assessed individually; missing VWO-level maths can be replaced via OMPT-D 60% / Boswell-Beta / state exam / CCVX certificates. If IB courses were taken, full IB diploma expected.",
+  "prerequisite_maths": "VWO-level Mathematics B equivalent (IB AA HL, AP Calculus AB/BC, A-level Maths, Abitur Mathematik Leistungskurs) or OMPT-D 60% / Boswell-Beta Math B",
+  "source_url": "https://www.universiteitleiden.nl/binaries/content/assets/studentenwerving/scm/admission-and-application/specific-diploma-requirements-science-programmes.pdf",
+  "confidence": "high"
+ },
+ "58090": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Full IB Diploma. Mathematics: Analysis & Approaches SL/HL or Applications & Interpretation HL, plus one HL and one SL from Biology, Chemistry, Physics, Economics, Geography, Environmental Systems and Societies. No minimum total published.",
+   "note": "Leiden science-diploma document 2027-2028 (applies to Faculty of Science programmes)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US diploma (GPA >= 3.5) with 3 APs (4-5) or 4 APs (3-5); specific: AP Calculus AB + 2 of AP Physics 1, Biology, Chemistry, Geography, Micro/Macro Economics.",
+   "note": ""
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-A)",
+   "role": "alternative to prerequisite",
+   "min_score": "60% on OMPT-A",
+   "details": "OMPT-A >= 60% accepted as replacement exam for missing VWO maths for Science for Sustainable Societies; Boswell-Beta, state exam and CCVX certificates also accepted."
+  },
+  "a_level": "GCE: 3 A-levels A-C; 2 of Mathematics, Physics, Biology, Chemistry, Geography, Economics; if Mathematics is not among the three A-levels, Mathematics AS or an additional mathematics exam is required.",
+  "turkish_route": "Lise Diplomasi (Genel Lise) with Diploma Puani of at least 80% meets Leiden's general admission list (Imam-Hatip, Meslek and Teknik Lise only with university results; Acik Ogretim case-by-case). Turkey is NOT one of the 8 diplomas in Leiden's science-specific subject list, so VWO-level maths must be shown/assessed individually; missing VWO-level maths can be replaced via OMPT-D 60% / Boswell-Beta / state exam / CCVX certificates. If IB courses were taken, full IB diploma expected.",
+  "prerequisite_maths": "VWO Mathematics A-level equivalent (IB AA SL/HL or AI HL; AP Calculus AB; A-level/AS Maths) or OMPT-A 60%",
+  "source_url": "https://www.universiteitleiden.nl/binaries/content/assets/studentenwerving/scm/admission-and-application/specific-diploma-requirements-science-programmes.pdf",
+  "confidence": "high"
+ },
+ "58159": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Full IB Diploma required for general admission; average of 35 points including bonus needed to enter selection for LUC The Hague. Mathematics advice: any IB maths course with grade 4.",
+   "note": "LUC The Hague is a selective programme (meeting requirements does not guarantee a place). Rules from the LUC diploma-requirements document 2026-2027 (additional selection column). Mathematics is 'advice', not a hard prerequisite. Same for all majors."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US HS diploma (GPA >= 3.5): at least four AP exams in different subjects grade 4-5 for selection. Maths advice: AP Calculus AB/BC grade 3, or maths course grade A in year 12, or ACT Math 28 / SAT Math 650. SAT >1300 / ACT >28 possible if APs unavailable.",
+   "note": ""
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published for the programme."
+  },
+  "a_level": "International A-levels in 3 general academic subjects, grades A-B for LUC selection (A-C for general Leiden admission). Maths advice: GCSE Mathematics grade A/7.",
+  "turkish_route": "Lise Diplomasi from Genel Lise with Diploma Puani >= 80% for general admission; for LUC selection Diploma Notu >= 85% (average over all 4 upper secondary years); maths advice: final-year mathematics score 85%. Imam-Hatip/Meslek/Teknik Lise only with university results.",
+  "prerequisite_maths": "No hard prerequisite; maths advice only (see IB/AP rows)",
+  "source_url": "https://www.universiteitleiden.nl/binaries/content/assets/governance-and-global-affairs/luc/admissions-office/luc-admission-requirements-2026-2027.pdf",
+  "confidence": "medium"
+ },
+ "58160": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": 35,
+   "subjects": "Full IB Diploma required for general admission; average of 35 points including bonus needed to enter selection for LUC The Hague. Mathematics advice: any IB maths course with grade 4.",
+   "note": "LUC The Hague is a selective programme (meeting requirements does not guarantee a place). Rules from the LUC diploma-requirements document 2026-2027 (additional selection column). Mathematics is 'advice', not a hard prerequisite. Same for all majors."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US HS diploma (GPA >= 3.5): at least four AP exams in different subjects grade 4-5 for selection. Maths advice: AP Calculus AB/BC grade 3, or maths course grade A in year 12, or ACT Math 28 / SAT Math 650. SAT >1300 / ACT >28 possible if APs unavailable.",
+   "note": ""
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published for the programme."
+  },
+  "a_level": "International A-levels in 3 general academic subjects, grades A-B for LUC selection (A-C for general Leiden admission). Maths advice: GCSE Mathematics grade A/7.",
+  "turkish_route": "Lise Diplomasi from Genel Lise with Diploma Puani >= 80% for general admission; for LUC selection Diploma Notu >= 85% (average over all 4 upper secondary years); maths advice: final-year mathematics score 85%. Imam-Hatip/Meslek/Teknik Lise only with university results.",
+  "prerequisite_maths": "No hard prerequisite; maths advice only (see IB/AP rows)",
+  "source_url": "https://www.universiteitleiden.nl/binaries/content/assets/governance-and-global-affairs/luc/admissions-office/luc-admission-requirements-2026-2027.pdf",
+  "confidence": "medium"
+ },
+ "58397": {
+  "stem": false
+ },
+ "58429": {
+  "stem": false
+ },
+ "58342": {
+  "stem": false
+ },
+ "58431": {
+  "stem": false
+ },
+ "58377": {
+  "stem": false
+ },
+ "58430": {
+  "stem": false
+ },
+ "50293": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics HL or Analysis & Approaches HL with at least 4 points (5 points highly recommended). No minimum total published.",
+   "note": "Same entry-requirements text on UvA Actuarial Science, Econometrics & Data Science and Business Analytics pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on programme pages; see UvA diploma finder (not retrievable)."
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-D)",
+   "role": "required",
+   "min_score": "70% (2 attempts, from EUR 250)",
+   "details": "Required only for applicants with certain diplomas (diploma finder states which; Admissions Office informs you). Cannot substitute for missing mathematics in final exams. OMPT-F is not accepted for these programmes."
+  },
+  "a_level": null,
+  "turkish_route": "UvA diploma finder (JavaScript tool, not retrievable) decides diploma equivalence and whether OMPT-D is required; Turkish Lise route not published on the programme pages.",
+  "prerequisite_maths": "Mathematics must be a subject of the final exam at Dutch vwo-B level or non-Dutch equivalent (e.g. IB Math AA HL / Math HL, Abitur Leistungsfach, European Baccalaureate 5-period). UvA accepts only CCVX or State Exam Mathematics B certificates (min 6.0, taken in NL) to fill a gap; Korteweg-de Vries and James Boswell Beta certificates are NOT accepted for these programmes.",
+  "source_url": "https://www.uva.nl/en/programmes/bachelors/actuarial-science/application-and-admission/international-prior-education/entry-requirements.html",
+  "confidence": "medium"
+ },
+ "50296": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics HL or Analysis & Approaches HL with at least 4 points (5 points highly recommended). No minimum total published.",
+   "note": "Same entry-requirements text on UvA Actuarial Science, Econometrics & Data Science and Business Analytics pages."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not mentioned on programme pages; see UvA diploma finder (not retrievable)."
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-D)",
+   "role": "required",
+   "min_score": "70% (2 attempts, from EUR 250)",
+   "details": "Required only for applicants with certain diplomas (diploma finder states which; Admissions Office informs you). Cannot substitute for missing mathematics in final exams. OMPT-F is not accepted for these programmes."
+  },
+  "a_level": null,
+  "turkish_route": "UvA diploma finder (JavaScript tool, not retrievable) decides diploma equivalence and whether OMPT-D is required; Turkish Lise route not published on the programme pages.",
+  "prerequisite_maths": "Mathematics must be a subject of the final exam at Dutch vwo-B level or non-Dutch equivalent (e.g. IB Math AA HL / Math HL, Abitur Leistungsfach, European Baccalaureate 5-period). UvA accepts only CCVX or State Exam Mathematics B certificates (min 6.0, taken in NL) to fill a gap; Korteweg-de Vries and James Boswell Beta certificates are NOT accepted for these programmes.",
+  "source_url": "https://www.uva.nl/en/programmes/bachelors/econometrics-and-data-science/application-and-admission/international-prior-education/entry-requirements.html",
+  "confidence": "medium"
+ },
+ "58411": {
+  "stem": true,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Programme page gives no IB table; international diploma must include mathematics in the final examination or attended up to last year."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Not published on programme pages."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No OMPT published for this programme. Dutch applicants: Mathematics A or B at vwo level; gap can be filled with CCVX Math A (6.0); KdV/Boswell Math B not accepted."
+  },
+  "a_level": null,
+  "turkish_route": "UvA diploma finder (JavaScript tool, not retrievable) decides diploma equivalence and whether OMPT-D is required; Turkish Lise route not published on the programme pages.",
+  "prerequisite_maths": "Mathematics A or B at vwo level (or equivalent) in final exam; Math B helps with linear algebra and calculus",
+  "source_url": "https://www.uva.nl/en/programmes/bachelors/computational-social-science/application-and-admission/application-and-admission.html",
+  "confidence": "low"
+ },
+ "58432": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Sciences major maths requirement: Analysis & Approaches HL grade >=5; Applications & Interpretation HL grade >=6; Analysis & Approaches SL grade >=6 (lower thresholds with a STEM subject in final year: AA HL 4, AA SL 5, AI HL 6). Predicted grades not accepted. No minimum total published.",
+   "note": "Joint UvA/VU programme; maths requirement depends on major (Sciences/Social Sciences/Humanities)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Sciences maths requirement: AP Calculus AB grade >= 3 (or AP Statistics >= 3 with a STEM subject in final year).",
+   "note": "AP results sent via College Board; AP score not otherwise listed as a general admission criterion."
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-B or OMPT-G)",
+   "role": "alternative to prerequisite",
+   "min_score": "70%",
+   "details": "Sciences applicants without a listed maths qualification must pass OMPT-B or OMPT-G (equally acceptable) with >=70% before 1 July; strongly recommended to complete the appropriate OMPT before applying; results valid ~2 years."
+  },
+  "a_level": "GCE A-level Maths grade B or higher, or AS-level Maths grade A (A-level Maths grade C with a STEM subject).",
+  "turkish_route": "Diploma must be equivalent to Dutch VWO (UvA diploma finder); the AUC maths page does not mention Turkish qualifications, so OMPT-B/G (>=70%) is the evident route if maths is not met. Not explicitly published.",
+  "prerequisite_maths": "Sciences major: VWO maths B (avg 7+) or equivalent per table above (IB AA HL 5, AP Calculus AB 3, A-level B) or OMPT-B/G 70%",
+  "source_url": "https://www.auc.nl/admissions-aid/admission-requirements/mathematics-requirement/mathematics-requirement.html",
+  "confidence": "high"
+ },
+ "58584": {
+  "stem": false
+ },
+ "57217": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Full IB diploma only. Mathematics Analysis & Approaches HL, Biology HL, Chemistry HL and Physics SL. No minimum total published.",
+   "note": "Utrecht MBLS 'subject requirements' diploma list; strict entry requirements, no exceptions; no selection procedure."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US High School Diploma + at least 4 APs, all score >= 3: AP Calculus BC, AP Biology, AP Chemistry and AP Physics 2 (or AP Physics C Mechanics or E&M). AP Career Kickstart, Research, Seminar, Capstone not accepted.",
+   "note": ""
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX additional exams",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "No OMPT specified. If subject requirements are not met, ISA advises on additional vwo-level exams at private institutions (Boswell-Beta, CCVX); UU offers no bridging courses. Non-EU applicants needing a visa must pass additional exams before 15 June."
+  },
+  "a_level": "Three GCE A-levels, minimum CCC: A-level Mathematics, Biology, Chemistry and at least AS Physics.",
+  "turkish_route": "Lise Diploması is NOT considered equivalent to Dutch VWO; entry exams apply (which exams depends on programme). If the school also offers US College Board APs or GCE A-levels, contact the Admissions Office (admissionsoffice@uu.nl) with the APs/A-levels you take.",
+  "prerequisite_maths": "Dutch vwo Wiskunde B (plus Biology, Chemistry, Physics) or equivalent (IB AA HL etc.)",
+  "source_url": "https://www.uu.nl/en/bachelors/molecular-and-biophysical-life-sciences/application-and-admission",
+  "confidence": "high"
+ },
+ "57218": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Chemistry HL, Physics SL, and Mathematics: Analysis & Approaches SL or Applications & Interpretation HL. No minimum total published.",
+   "note": "Programme has limited enrolment (selection procedure); meeting requirements does not guarantee admission."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US diploma + at least 4 APs score >= 3, including at least AP Calculus AB, AP Physics 1 and AP Chemistry. AP Research/Seminar/Capstone not accepted.",
+   "note": ""
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test published on the programme page."
+  },
+  "a_level": "At least 3 GCE A-levels, minimum CCC: either Chemistry (A) + Physics (at least AS) + Mathematics (at least AS), or Chemistry (A) + Biology (A) + Mathematics (at least AS) plus GCSE Physics B/6.",
+  "turkish_route": "Lise Diploması is NOT considered equivalent to Dutch VWO; entry exams apply (which exams depends on programme). If the school also offers US College Board APs or GCE A-levels, contact the Admissions Office (admissionsoffice@uu.nl) with the APs/A-levels you take.",
+  "prerequisite_maths": "Mathematics, Physics, Chemistry at vwo level (Dutch Wiskunde A or B per selection regulations); equivalents: IB AA SL / AI HL, AP Calculus AB, A-level/AS Maths, EB Maths 3 periods",
+  "source_url": "https://www.uu.nl/en/bachelors/college-pharmaceutical-sciences/application-and-admission",
+  "confidence": "high"
+ },
+ "57212": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis & Approaches at least SL or Applications & Interpretation HL, plus at least two of: Biology HL, Chemistry HL, Physics SL, and Economics SL / Geography SL / Environmental Systems and Societies SL. Full diploma. No minimum total published.",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US diploma + at least 4 APs score >= 3, including AP Calculus AB, plus at least two of AP Physics 1, Chemistry, Biology, and AP Micro/Macro Economics or Human Geography (not both).",
+   "note": "AP Career Kickstart, Research, Seminar, Capstone not accepted."
+  },
+  "math_test": {
+   "name": "Boswell-Beta / CCVX additional exams",
+   "role": "alternative to prerequisite",
+   "min_score": null,
+   "details": "Missing subjects can be completed at private institutions (Boswell-Beta, CCVX) before start; non-EU may face earlier deadline."
+  },
+  "a_level": "Three GCE A-levels including A or AS-level Mathematics plus at least two of A-level Biology, Chemistry, Physics, and Economics or Geography (not both).",
+  "turkish_route": "Lise Diploması is NOT considered equivalent to Dutch VWO; entry exams apply (which exams depends on programme). If the school also offers US College Board APs or GCE A-levels, contact the Admissions Office (admissionsoffice@uu.nl) with the APs/A-levels you take.",
+  "prerequisite_maths": "Mathematics plus two of Biology/Chemistry/Physics/Economics-or-Geography at vwo level (Wiskunde A or B)",
+  "source_url": "https://www.uu.nl/en/bachelors/global-sustainability-science/application-and-admission",
+  "confidence": "high"
+ },
+ "57344": {
+  "stem": false
+ },
+ "58639": {
+  "stem": false
+ },
+ "57347": {
+  "stem": false
+ },
+ "57337": {
+  "stem": false
+ },
+ "57339": {
+  "stem": false
+ },
+ "57328": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis & Approaches HL or Math HL (older curriculum).",
+   "note": "VU institution-wide documents 'IB Diploma / GCE A-level / AP College Board requirements 2027-2028' (per-programme tables); full IB Diploma is sufficient for general diploma requirement. No minimum IB total published for these programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus AB or BC, minimum score 3.",
+   "note": "General: recognised US high school diploma (accredited) only in combination with at least 4 College Board AP exams with score 3-5 (or 1 year of credits at a recognised university); AP Seminar/Research/Capstone not accepted."
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-D) / Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D 60%; Boswell-Beta or CCVX Math B 5.5/10",
+   "details": "Test needed only if diploma does not meet maths requirement; max 2 OMPT attempts per admission round. Pass marks as stated on each programme's admissions page (VU pages are not fully consistent on which OMPT variant: -A/-B/-D). Applicants who need a test must apply by 1 April (15 Dec for 21+ entrance exam route). Positive maths result compulsory."
+  },
+  "a_level": "A-level Mathematics (min grade C). General: 3 international GCE A-levels in general academic subjects, grades A*-C, plus 3 GCSEs (A*-C / 4-9) so six different subjects in total incl. English and maths; boards AQA, Pearson, WJEC, CCEA, Cambridge.",
+  "turkish_route": "Regular Lise Diplomasi: at least 1 year of credits at an internationally recognised university required (VU diploma list per country). Alternative: Lise Diplomasi with cumulative GPA >= 80% in final two years + at least 4 College Board AP exams scores 3-5. Lise from a Label France Education school: GPA 80% last two years. Maths not mentioned for Turkey.",
+  "prerequisite_maths": "VWO Mathematics B equivalent (IB AA HL / Math HL; AP Calculus AB/BC 3; A-level Maths C; Abitur eA/Leistungsfach; EB 5-period)",
+  "source_url": "https://vu.nl/en/education/bachelor/computer-science/admissions",
+  "confidence": "high"
+ },
+ "57326": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Applications & Interpretation HL, Analysis & Approaches SL (or Math SL older curriculum); AA HL also fine.",
+   "note": "VU institution-wide documents 'IB Diploma / GCE A-level / AP College Board requirements 2027-2028' (per-programme tables); full IB Diploma is sufficient for general diploma requirement. No minimum IB total published for these programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus AB or BC, minimum score 3.",
+   "note": "General: recognised US high school diploma (accredited) only in combination with at least 4 College Board AP exams with score 3-5 (or 1 year of credits at a recognised university); AP Seminar/Research/Capstone not accepted."
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-A on AI page) / Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT 70% (page lists OMPT-A); Boswell-Beta or CCVX Math A/B 5.5/10",
+   "details": "Max 2 attempts per year. Pass marks as stated on each programme's admissions page (VU pages are not fully consistent on which OMPT variant: -A/-B/-D). Applicants who need a test must apply by 1 April (15 Dec for 21+ entrance exam route). Positive maths result compulsory."
+  },
+  "a_level": "A-level Mathematics (min grade C). General: 3 international GCE A-levels in general academic subjects, grades A*-C, plus 3 GCSEs (A*-C / 4-9) so six different subjects in total incl. English and maths; boards AQA, Pearson, WJEC, CCEA, Cambridge.",
+  "turkish_route": "Regular Lise Diplomasi: at least 1 year of credits at an internationally recognised university required (VU diploma list per country). Alternative: Lise Diplomasi with cumulative GPA >= 80% in final two years + at least 4 College Board AP exams scores 3-5. Lise from a Label France Education school: GPA 80% last two years. Maths not mentioned for Turkey.",
+  "prerequisite_maths": "VWO Mathematics A or B equivalent (lower than CS/Mathematics: IB AI HL or AA SL accepted; EB 3-period; Abitur Grundkurs)",
+  "source_url": "https://vu.nl/en/education/bachelor/artificial-intelligence/admissions",
+  "confidence": "high"
+ },
+ "57334": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis & Approaches HL or Math HL (older curriculum).",
+   "note": "VU institution-wide documents 'IB Diploma / GCE A-level / AP College Board requirements 2027-2028' (per-programme tables); full IB Diploma is sufficient for general diploma requirement. No minimum IB total published for these programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus BC, minimum score 3.",
+   "note": "General: recognised US high school diploma (accredited) only in combination with at least 4 College Board AP exams with score 3-5 (or 1 year of credits at a recognised university); AP Seminar/Research/Capstone not accepted."
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-D) / Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-D 70%; Boswell-Beta or CCVX Math B 5.5/10",
+   "details": "Max 2 OMPT attempts per admission round. Pass marks as stated on each programme's admissions page (VU pages are not fully consistent on which OMPT variant: -A/-B/-D). Applicants who need a test must apply by 1 April (15 Dec for 21+ entrance exam route). Positive maths result compulsory."
+  },
+  "a_level": "Both A-level Mathematics and A-level Further Mathematics required, min grade C each (per VU A-level table). General: 3 international GCE A-levels in general academic subjects, grades A*-C, plus 3 GCSEs (A*-C / 4-9) so six different subjects in total incl. English and maths; boards AQA, Pearson, WJEC, CCEA, Cambridge.",
+  "turkish_route": "Regular Lise Diplomasi: at least 1 year of credits at an internationally recognised university required (VU diploma list per country). Alternative: Lise Diplomasi with cumulative GPA >= 80% in final two years + at least 4 College Board AP exams scores 3-5. Lise from a Label France Education school: GPA 80% last two years. Maths not mentioned for Turkey.",
+  "prerequisite_maths": "VWO Mathematics B equivalent",
+  "source_url": "https://vu.nl/en/education/bachelor/mathematics/admissions",
+  "confidence": "high"
+ },
+ "57330": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis & Approaches HL or Math HL (older curriculum).",
+   "note": "VU institution-wide documents 'IB Diploma / GCE A-level / AP College Board requirements 2027-2028' (per-programme tables); full IB Diploma is sufficient for general diploma requirement. No minimum IB total published for these programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus BC, minimum score 3.",
+   "note": "General: recognised US high school diploma (accredited) only in combination with at least 4 College Board AP exams with score 3-5 (or 1 year of credits at a recognised university); AP Seminar/Research/Capstone not accepted."
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-B or OMPT-D) / Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-B 60% or OMPT-D 60%; Boswell-Beta or CCVX Math B 5.5/10",
+   "details": "Max 2 OMPT attempts per year. Applicants who do not meet the diploma level must also pass a History test. Pass marks as stated on each programme's admissions page (VU pages are not fully consistent on which OMPT variant: -A/-B/-D). Applicants who need a test must apply by 1 April (15 Dec for 21+ entrance exam route). Positive maths result compulsory."
+  },
+  "a_level": "A-level Mathematics (min grade C). General: 3 international GCE A-levels in general academic subjects, grades A*-C, plus 3 GCSEs (A*-C / 4-9) so six different subjects in total incl. English and maths; boards AQA, Pearson, WJEC, CCEA, Cambridge.",
+  "turkish_route": "Regular Lise Diplomasi: at least 1 year of credits at an internationally recognised university required (VU diploma list per country). Alternative: Lise Diplomasi with cumulative GPA >= 80% in final two years + at least 4 College Board AP exams scores 3-5. Lise from a Label France Education school: GPA 80% last two years. Maths not mentioned for Turkey.",
+  "prerequisite_maths": "VWO Mathematics B equivalent",
+  "source_url": "https://vu.nl/en/education/bachelor/econometrics-and-data-science/admissions",
+  "confidence": "high"
+ },
+ "57331": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis & Approaches HL or Math HL (older curriculum).",
+   "note": "VU institution-wide documents 'IB Diploma / GCE A-level / AP College Board requirements 2027-2028' (per-programme tables); full IB Diploma is sufficient for general diploma requirement. No minimum IB total published for these programmes."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP Calculus BC, minimum score 3.",
+   "note": "General: recognised US high school diploma (accredited) only in combination with at least 4 College Board AP exams with score 3-5 (or 1 year of credits at a recognised university); AP Seminar/Research/Capstone not accepted."
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-B or OMPT-D) / Boswell-Beta / CCVX",
+   "role": "alternative to prerequisite",
+   "min_score": "OMPT-B 60% or OMPT-D 60%; Boswell-Beta or CCVX Math B 5.5/10",
+   "details": "Max 2 OMPT attempts per year. Applicants who do not meet the diploma level must also pass a History test. Pass marks as stated on each programme's admissions page (VU pages are not fully consistent on which OMPT variant: -A/-B/-D). Applicants who need a test must apply by 1 April (15 Dec for 21+ entrance exam route). Positive maths result compulsory."
+  },
+  "a_level": "A-level Mathematics (min grade C). General: 3 international GCE A-levels in general academic subjects, grades A*-C, plus 3 GCSEs (A*-C / 4-9) so six different subjects in total incl. English and maths; boards AQA, Pearson, WJEC, CCEA, Cambridge.",
+  "turkish_route": "Regular Lise Diplomasi: at least 1 year of credits at an internationally recognised university required (VU diploma list per country). Alternative: Lise Diplomasi with cumulative GPA >= 80% in final two years + at least 4 College Board AP exams scores 3-5. Lise from a Label France Education school: GPA 80% last two years. Maths not mentioned for Turkey.",
+  "prerequisite_maths": "VWO Mathematics B equivalent",
+  "source_url": "https://vu.nl/en/education/bachelor/econometrics-and-operations-research/admissions",
+  "confidence": "high"
+ },
+ "57335": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics: Analysis & Approaches HL and Physics HL (plus English). 'In general there is no minimum IB grade requirement.'",
+   "note": "Joint VU-UT programme; apply via Studielink to University of Twente; UT rules (September 2027 intake) apply."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP requirement for this programme not retrieved from UT pages; US diploma applicants with insufficient AP exams are reviewed by the national expertise centre/programme committee."
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "UT does NOT accept OMPT (or Korteweg-de Vries tests); missing maths/physics can be certified via CCVX, James Boswell-Beta or Dutch Staatsexamen certificates. Mandatory matching activities after application."
+  },
+  "a_level": "Good A-level results in advanced mathematics and physics (UT page: 'good A-level results' in Wiskunde B and Natuurkunde equivalents); detailed grade table not retrieved.",
+  "turkish_route": "University of Twente (joint VU-UT degree, applications via UT): Lise Diploması cannot be admitted directly (level not equivalent to Dutch VWO); AP CollegeBoard exams can be added to the Turkish diploma (separate AP requirements, not retrieved).",
+  "prerequisite_maths": "VWO Mathematics B and Physics (or international equivalent: IB AA HL + Physics HL)",
+  "source_url": "https://www.utwente.nl/en/education/bachelor/admission/diplomas/international-baccalaureate/",
+  "confidence": "medium"
+ },
+ "57329": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "UT (Sept 2027 intake): Mathematics Applications & Interpretation or Analysis & Approaches, SL or HL, plus English. No minimum grade generally.",
+   "note": "Joint VU-UT programme; apply via UT. VU page (validity noted as Sept 2023 intake) says Math Studies SL / AI SL + English."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US diploma only with at least 4 College Board AP exams (3-5) including AP Calculus AB or BC and English (VU page, may be outdated).",
+   "note": ""
+  },
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": "No maths test; UT does not accept OMPT; maths gaps addressed via personal follow-up; CCVX/Boswell-Beta/Staatsexamen certificates accepted for deficiencies. Compulsory matching questionnaire."
+  },
+  "a_level": "At least three full A2-levels (A-C) and six different subjects in total; must include A2-level Mathematics and English.",
+  "turkish_route": "University of Twente (joint VU-UT degree, applications via UT): Lise Diploması cannot be admitted directly (level not equivalent to Dutch VWO); AP CollegeBoard exams can be added to the Turkish diploma (separate AP requirements, not retrieved).",
+  "prerequisite_maths": "VWO Mathematics A (UT) / mathematics 'plays a big part'; AI SL/AA SL-level maths suffices",
+  "source_url": "https://vu.nl/en/education/bachelor/creative-technology/admissions",
+  "confidence": "medium"
+ },
+ "57340": {
+  "stem": true,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "AUC Sciences major maths requirement: Analysis & Approaches HL grade >=5; Applications & Interpretation HL grade >=6; Analysis & Approaches SL grade >=6 (lower with a STEM subject in final year: AA HL 4, AA SL 5, AI HL 6). Predicted grades not accepted.",
+   "note": "VU 'Liberal Arts and Sciences' is Amsterdam University College (AUC, joint UvA/VU); same rules as id 58432. No minimum total published."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Sciences maths requirement: AP Calculus AB grade >= 3 (or AP Statistics >= 3 with a STEM subject).",
+   "note": ""
+  },
+  "math_test": {
+   "name": "OMPT (OMPT-B or OMPT-G)",
+   "role": "alternative to prerequisite",
+   "min_score": "70%",
+   "details": "Sciences applicants without a listed maths qualification must pass OMPT-B or OMPT-G >=70% before 1 July; strongly recommended before applying."
+  },
+  "a_level": "GCE A-level Maths grade B or higher, or AS-level Maths grade A (A-level Maths C with a STEM subject).",
+  "turkish_route": "Not published on AUC maths page; diploma equivalence via UvA/VU diploma finder (VU: regular Lise needs 1 year of university credits).",
+  "prerequisite_maths": "Sciences major: VWO maths B (avg 7+) or equivalent; or OMPT-B/G 70%",
+  "source_url": "https://www.auc.nl/admissions-aid/admission-requirements/mathematics-requirement/mathematics-requirement.html",
+  "confidence": "medium"
+ }
+}

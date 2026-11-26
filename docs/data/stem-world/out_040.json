@@ -1,0 +1,488 @@
+{
+ "55402": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; A-level C in Maths plus one listed science/technology subject; IB HL Maths 4 plus another HL science",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Maths grade 4 plus HL pass in one of Biology, Chemistry, Computer Science, Design Technology, Physics, Environmental Systems and Societies",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level C in Maths plus a pass in one of Biology, Chemistry, Computing, Design and Technology, Electronics, Engineering, ICT, Further Maths, Music Technology, Physics, Statistics",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; Maths at A-level C / IB HL 4",
+  "source_url": "https://courses.uwe.ac.uk/H403/aerospace-engineering",
+  "confidence": "high"
+ },
+ "55403": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; A-level C in Maths plus one listed science/technology subject; IB HL Maths 4 plus another HL science",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Maths grade 4 plus HL pass in one of Biology, Chemistry, Computer Science, Design Technology, Physics, Environmental Systems and Societies",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified. Pilot Studies award needs 20 hours powered flight training at extra cost"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level C in Maths plus a pass in one of Biology, Chemistry, Computing, Design and Technology, Electronics, Engineering, ICT, Further Maths, Music Technology, Physics, Statistics",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; Maths at A-level C / IB HL 4",
+  "source_url": "https://courses.uwe.ac.uk/H405",
+  "confidence": "high"
+ },
+ "55404": {
+  "stem": true,
+  "typical_offer": "120 UCAS tariff points; A-level C in Maths or Physics (or A in Use of Maths); IB HL Maths or Physics grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Maths or HL Physics grade 4",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level grade C in Mathematics, or grade A in Use of Mathematics, or grade C in Physics",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; Maths or Physics at Level 3",
+  "source_url": "https://courses.uwe.ac.uk/KH12/architecture-and-environmental-engineering",
+  "confidence": "high"
+ },
+ "55405": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; A-level C in Maths plus one listed science/technology subject; IB HL Maths 4 plus another HL science",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Maths grade 4 plus HL pass in one of Biology, Chemistry, Computer Science, Design Technology, Physics, Environmental Systems and Societies",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level C in Maths plus a pass in one of Biology, Chemistry, Computing, Design and Technology, Electronics, Engineering, ICT, Further Maths, Music Technology, Physics, Statistics",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; Maths at A-level C / IB HL 4",
+  "source_url": "https://courses.uwe.ac.uk/H331/automotive-engineering",
+  "confidence": "high"
+ },
+ "55406": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; A-level C in Maths plus one listed science/technology subject; IB HL Maths 4 plus another HL science",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Maths grade 4 plus HL pass in one of Biology, Chemistry, Computer Science, Design Technology, Physics, Environmental Systems and Societies",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level C in Maths plus a pass in one of Biology, Chemistry, Computing, Design and Technology, Electronics, Engineering, ICT, Further Maths, Music Technology, Physics, Statistics",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; Maths at A-level C / IB HL 4",
+  "source_url": "https://courses.uwe.ac.uk/H290/civil-engineering",
+  "confidence": "high"
+ },
+ "55407": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; A-level C in Maths plus one listed science/technology subject; IB HL Maths 4 plus another HL science",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Maths grade 4 plus HL pass in one of Biology, Chemistry, Computer Science, Design Technology, Physics, Environmental Systems and Societies",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level C in Maths plus a pass in one of Biology, Chemistry, Computing, Design and Technology, Electronics, Engineering, ICT, Further Maths, Music Technology, Physics, Statistics",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; Maths at A-level C / IB HL 4",
+  "source_url": "https://courses.uwe.ac.uk/H61D/electrical-and-electronic-engineering",
+  "confidence": "high"
+ },
+ "55408": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; A-level C in Maths plus one listed science/technology subject; IB HL Maths 4 plus another HL science",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Maths grade 4 plus HL pass in one of Biology, Chemistry, Computer Science, Design Technology, Physics, Environmental Systems and Societies",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level C in Maths plus a pass in one of Biology, Chemistry, Computing, Design and Technology, Electronics, Engineering, ICT, Further Maths, Music Technology, Physics, Statistics",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; Maths at A-level C / IB HL 4",
+  "source_url": "https://courses.uwe.ac.uk/H300/mechanical-engineering",
+  "confidence": "high"
+ },
+ "55409": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; A-level C in Maths plus one listed science/technology subject; IB HL Maths 4 plus another HL science",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Maths grade 4 plus HL pass in one of Biology, Chemistry, Computer Science, Design Technology, Physics, Environmental Systems and Societies",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level C in Maths plus a pass in one of Biology, Chemistry, Computing, Design and Technology, Electronics, Engineering, ICT, Further Maths, Music Technology, Physics, Statistics",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; Maths at A-level C / IB HL 4",
+  "source_url": "https://courses.uwe.ac.uk/H730/mechatronics-engineering",
+  "confidence": "medium"
+ },
+ "55418": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; no specific A-level or IB subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "No specific IB subjects",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "No specific subjects required",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; no Level 3 maths required",
+  "source_url": "https://courses.uwe.ac.uk/N1I1/business-computing",
+  "confidence": "high"
+ },
+ "55419": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; no specific A-level or IB subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "No specific IB subjects",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "No specific subjects required",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; no Level 3 maths required",
+  "source_url": "https://courses.uwe.ac.uk/G400/computer-science",
+  "confidence": "high"
+ },
+ "55422": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; no specific A-level or IB subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "No specific IB subjects",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "No specific subjects required",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; no Level 3 maths required",
+  "source_url": "https://courses.uwe.ac.uk/G4H4/cyber-security-and-digital-forensics",
+  "confidence": "high"
+ },
+ "55445": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; no specific A-level or IB subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "No specific IB subjects",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "No specific subjects required",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; no Level 3 maths required",
+  "source_url": "https://courses.uwe.ac.uk/6F3B/software-engineering",
+  "confidence": "high"
+ },
+ "55425": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; A-level C in a science subject; IB HL science grade 4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL science subject grade 4",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level grade C in a science subject (e.g. Biology, Chemistry, Geography, Geology, Maths, Physics, Statistics)",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE English, Maths and Double Science grade C/4 or equivalent",
+  "source_url": "https://courses.uwe.ac.uk/F900/environmental-science",
+  "confidence": "medium"
+ },
+ "28652": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; A-level C in Maths plus one listed science/technology subject; IB HL Maths 4 plus another HL science",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Maths grade 4 plus HL pass in one of Biology, Chemistry, Computer Science, Design Technology, Physics, Environmental Systems and Societies",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified. Requirements taken from the BEng Electrical and Electronic Engineering course"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level C in Maths plus a pass in one of Biology, Chemistry, Computing, Design and Technology, Electronics, Engineering, ICT, Further Maths, Music Technology, Physics, Statistics",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; Maths at A-level C / IB HL 4",
+  "source_url": "https://courses.uwe.ac.uk/H61D/electrical-and-electronic-engineering",
+  "confidence": "medium"
+ },
+ "28653": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points typical for UWE BEng engineering degrees; A-level C in Maths plus a science/technology subject",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL Maths grade 4 plus HL pass in one of Biology, Chemistry, Computer Science, Design Technology, Physics, Environmental Systems and Societies",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level C in Maths plus a pass in one of Biology, Chemistry, Computing, Design and Technology, Electronics, Engineering, ICT, Further Maths, Music Technology, Physics, Statistics",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent",
+  "source_url": "https://courses.uwe.ac.uk/H300/mechanical-engineering",
+  "confidence": "low"
+ },
+ "28687": {
+  "stem": true,
+  "typical_offer": "HND/Foundation Degree (240 UK credits) in a computing subject; GCSE Maths and English C/4; IELTS 6.5 (5.5 minimum per component)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "Entry requires a prior HND or Foundation Degree; IB not the entry route"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Direct entry needs a completed HND or foundation degree in computing; Lise holders are directed to UWE International College foundation or year one routes",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; entry is to a final-year top-up",
+  "source_url": "https://courses.uwe.ac.uk/G560/information-technology",
+  "confidence": "medium"
+ },
+ "28689": {
+  "stem": true,
+  "typical_offer": "Typically HND/Foundation Degree in computing for top-up entry; confirm with UWE",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent",
+  "source_url": "https://courses.uwe.ac.uk/G560/information-technology",
+  "confidence": "low"
+ },
+ "28734": {
+  "stem": true,
+  "typical_offer": "112 UCAS tariff points; no specific A-level or IB subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "No specific IB subjects",
+   "note": "IB Diploma accepted; no total points stated, offers use UCAS tariff. IB Career-related Programme accepted with other Level 3 qualifications"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "UWE Bristol institution-wide: US High School Diploma with 3.2 GPA accepted without SAT/ACT; with 2.8 GPA plus SAT 1050, ACT 19, one AP at 3+, or two AP/Honors/college classes at B+ (AP code 7409); some degrees need particular subjects shown via AP/Honors/college courses",
+   "note": "Institution-wide US rule; applies to all programmes. Calculus AB vs BC not specified"
+  },
+  "tests": "SAT/ACT not required with 3.2 GPA; otherwise SAT 1050 / ACT 19 is one option. IELTS Academic 6.0 overall, 5.5 each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "No specific subjects required",
+  "turkish_route": "Direct entry to a bachelor's degree can be considered with a Lise GPA of 70% or above (minimum; competitive courses may need more); otherwise UWE International College foundation or international year one, with guaranteed progression; some applicants may enter first year directly depending on school, grades and subjects",
+  "prerequisite_maths": "GCSE Maths and English grade C/4 or equivalent; no Level 3 maths required",
+  "source_url": "https://courses.uwe.ac.uk/6F3B/software-engineering",
+  "confidence": "medium"
+ }
+}

@@ -1,0 +1,1322 @@
+{
+ "35932": {
+  "stem": true,
+  "typical_offer": "A-level BBC (96-112 UCAS points) incl. Maths B and one other STEM subject; contextual CCC",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths and a science at HL likely required",
+   "note": "Course-level IB total not confirmed; Kent general IB offer 34."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted under other qualifications: minimum two full AP passes plus GCSE-equivalent English; US High School Diploma accepted only with two full APs. Specific AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Kent programmes."
+  },
+  "tests": "No SAT/ACT requirement published; English B2 (e.g. IELTS 6.0, no part below 5.5).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl. Maths at B plus one other STEM subject; T Levels not accepted",
+  "turkish_route": "Turkish Lise diploma (Devlet/Lise Bitirme) with minimum 70% average accepted for Stage 1 entry; A-level grade equivalents A=70%, B=60%, C=55%; maths at GCSE C/4 equals 50%. Integrated foundation year typically needs 60% average; International Foundation Programme also available.",
+  "prerequisite_maths": "A-level Maths B plus another STEM subject",
+  "source_url": "https://www.kent.ac.uk/courses/undergraduate/2497/biomedical-engineering",
+  "confidence": "medium"
+ },
+ "35935": {
+  "stem": true,
+  "typical_offer": "A-level BBC (96-112 UCAS points); IB 28 points",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "No specific HL subjects; 112 UCAS points equivalent",
+   "note": "Kent makes IB offers on IB points, not UCAS tariff; standard IB offer generally 34 points where course page does not state otherwise."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted under other qualifications: minimum two full AP passes plus GCSE-equivalent English; US High School Diploma accepted only with two full APs. Specific AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Kent programmes."
+  },
+  "tests": "No SAT/ACT requirement published; English B2 (e.g. IELTS 6.0, no part below 5.5).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC; contextual CCC",
+  "turkish_route": "Turkish Lise diploma (Devlet/Lise Bitirme) with minimum 70% average accepted for Stage 1 entry; A-level grade equivalents A=70%, B=60%, C=55%; maths at GCSE C/4 equals 50%. Integrated foundation year typically needs 60% average; International Foundation Programme also available.",
+  "prerequisite_maths": "GCSE Maths C/4 or equivalent",
+  "source_url": "https://www.kent.ac.uk/courses/undergraduate/137/business-information-technology",
+  "confidence": "medium"
+ },
+ "35943": {
+  "stem": true,
+  "typical_offer": "A-level BBC (96-112 UCAS points); IB 28 points; GCSE Maths C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "No specific HL subjects; or 112 UCAS points",
+   "note": "Kent makes IB offers on IB points, not UCAS tariff; standard IB offer generally 34 points where course page does not state otherwise."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted under other qualifications: minimum two full AP passes plus GCSE-equivalent English; US High School Diploma accepted only with two full APs. Specific AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Kent programmes."
+  },
+  "tests": "No SAT/ACT requirement published; English B2 (e.g. IELTS 6.0, no part below 5.5).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC; contextual CCC",
+  "turkish_route": "Turkish Lise diploma (Devlet/Lise Bitirme) with minimum 70% average accepted for Stage 1 entry; A-level grade equivalents A=70%, B=60%, C=55%; maths at GCSE C/4 equals 50%. Integrated foundation year typically needs 60% average; International Foundation Programme also available.",
+  "prerequisite_maths": "GCSE Maths C/4 or equivalent",
+  "source_url": "https://www.kent.ac.uk/courses/undergraduate/124/computer-science",
+  "confidence": "high"
+ },
+ "35944": {
+  "stem": true,
+  "typical_offer": "A-level BBC (96-112 UCAS points); IB 28 points; GCSE Maths C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "No specific HL subjects; or 112 UCAS points",
+   "note": "Kent makes IB offers on IB points, not UCAS tariff; standard IB offer generally 34 points where course page does not state otherwise."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted under other qualifications: minimum two full AP passes plus GCSE-equivalent English; US High School Diploma accepted only with two full APs. Specific AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Kent programmes."
+  },
+  "tests": "No SAT/ACT requirement published; English B2 (e.g. IELTS 6.0, no part below 5.5).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC; contextual CCC",
+  "turkish_route": "Turkish Lise diploma (Devlet/Lise Bitirme) with minimum 70% average accepted for Stage 1 entry; A-level grade equivalents A=70%, B=60%, C=55%; maths at GCSE C/4 equals 50%. Integrated foundation year typically needs 60% average; International Foundation Programme also available.",
+  "prerequisite_maths": "GCSE Maths C/4 or equivalent",
+  "source_url": "https://www.kent.ac.uk/courses/undergraduate/6513/computer-science-artificial-intelligence",
+  "confidence": "high"
+ },
+ "35945": {
+  "stem": true,
+  "typical_offer": "A-level BBC (96-112 UCAS points); IB 28 points; GCSE Maths C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "No specific HL subjects; or 112 UCAS points",
+   "note": "Kent makes IB offers on IB points, not UCAS tariff; standard IB offer generally 34 points where course page does not state otherwise."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted under other qualifications: minimum two full AP passes plus GCSE-equivalent English; US High School Diploma accepted only with two full APs. Specific AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Kent programmes."
+  },
+  "tests": "No SAT/ACT requirement published; English B2 (e.g. IELTS 6.0, no part below 5.5).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC; contextual CCC",
+  "turkish_route": "Turkish Lise diploma (Devlet/Lise Bitirme) with minimum 70% average accepted for Stage 1 entry; A-level grade equivalents A=70%, B=60%, C=55%; maths at GCSE C/4 equals 50%. Integrated foundation year typically needs 60% average; International Foundation Programme also available.",
+  "prerequisite_maths": "GCSE Maths C/4 or equivalent",
+  "source_url": "https://www.kent.ac.uk/courses/undergraduate/4397/computer-science-cyber-security",
+  "confidence": "high"
+ },
+ "35946": {
+  "stem": true,
+  "typical_offer": "A-level BBC (96-112 UCAS points); Maths B/6 required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths grade 6/B or equivalent required; IB total not published for 3-year course",
+   "note": "Kent makes IB offers on IB points, not UCAS tariff; standard IB offer generally 34 points where course page does not state otherwise."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted under other qualifications: minimum two full AP passes plus GCSE-equivalent English; US High School Diploma accepted only with two full APs. Specific AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Kent programmes."
+  },
+  "tests": "No SAT/ACT requirement published; English B2 (e.g. IELTS 6.0, no part below 5.5).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC; contextual CCC",
+  "turkish_route": "Turkish Lise diploma (Devlet/Lise Bitirme) with minimum 70% average accepted for Stage 1 entry; A-level grade equivalents A=70%, B=60%, C=55%; maths at GCSE C/4 equals 50%. Integrated foundation year typically needs 60% average; International Foundation Programme also available.",
+  "prerequisite_maths": "GCSE Maths grade 6/B or equivalent",
+  "source_url": "https://www.kent.ac.uk/courses/undergraduate/4407/data-science",
+  "confidence": "medium"
+ },
+ "35956": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths and a science likely at HL5 (as year-in-industry variant: 30 points, Maths and science HL5 or SL6)",
+   "note": "Kent makes IB offers on IB points, not UCAS tariff; standard IB offer generally 34 points where course page does not state otherwise."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted under other qualifications: minimum two full AP passes plus GCSE-equivalent English; US High School Diploma accepted only with two full APs. Specific AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Kent programmes."
+  },
+  "tests": "No SAT/ACT requirement published; English B2 (e.g. IELTS 6.0, no part below 5.5).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Maths B plus one other STEM subject (year-in-industry variant BBB)",
+  "turkish_route": "Turkish Lise diploma (Devlet/Lise Bitirme) with minimum 70% average accepted for Stage 1 entry; A-level grade equivalents A=70%, B=60%, C=55%; maths at GCSE C/4 equals 50%. Integrated foundation year typically needs 60% average; International Foundation Programme also available.",
+  "prerequisite_maths": "A-level Maths B plus one other STEM subject",
+  "source_url": "https://www.kent.ac.uk/courses/undergraduate/6501/electrical-and-electronic-engineering-with-a-year-in-industry-beng",
+  "confidence": "low"
+ },
+ "35957": {
+  "stem": true,
+  "typical_offer": "A-level BBC (96-112 UCAS points) incl. Maths B and another STEM subject; IB 28 incl. HL5 Maths and HL5 science",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL5 Maths and HL5 science",
+   "note": "Kent makes IB offers on IB points, not UCAS tariff; standard IB offer generally 34 points where course page does not state otherwise."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted under other qualifications: minimum two full AP passes plus GCSE-equivalent English; US High School Diploma accepted only with two full APs. Specific AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Kent programmes."
+  },
+  "tests": "No SAT/ACT requirement published; English B2 (e.g. IELTS 6.0, no part below 5.5).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl. Maths at B plus one other STEM subject; contextual CCC incl. Maths C; T Levels not accepted",
+  "turkish_route": "Turkish Lise diploma (Devlet/Lise Bitirme) with minimum 70% average accepted for Stage 1 entry; A-level grade equivalents A=70%, B=60%, C=55%; maths at GCSE C/4 equals 50%. Integrated foundation year typically needs 60% average; International Foundation Programme also available.",
+  "prerequisite_maths": "A-level Maths B plus one other STEM subject",
+  "source_url": "https://www.kent.ac.uk/courses/undergraduate/4421/electronic-and-computer-engineering-beng",
+  "confidence": "high"
+ },
+ "35973": {
+  "stem": true,
+  "typical_offer": "A-level BBC (96-112 UCAS points) incl. Maths B and another STEM subject; IB 28 incl. HL5 Maths and science",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "HL5 Maths and HL5 science",
+   "note": "Kent makes IB offers on IB points, not UCAS tariff; standard IB offer generally 34 points where course page does not state otherwise."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted under other qualifications: minimum two full AP passes plus GCSE-equivalent English; US High School Diploma accepted only with two full APs. Specific AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Kent programmes."
+  },
+  "tests": "No SAT/ACT requirement published; English B2 (e.g. IELTS 6.0, no part below 5.5).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC incl. Maths at B plus one other STEM subject; contextual CCC",
+  "turkish_route": "Turkish Lise diploma (Devlet/Lise Bitirme) with minimum 70% average accepted for Stage 1 entry; A-level grade equivalents A=70%, B=60%, C=55%; maths at GCSE C/4 equals 50%. Integrated foundation year typically needs 60% average; International Foundation Programme also available.",
+  "prerequisite_maths": "A-level Maths B plus one other STEM subject",
+  "source_url": "https://www.kent.ac.uk/courses/undergraduate/3738/mechanical-engineering-beng",
+  "confidence": "high"
+ },
+ "35991": {
+  "stem": true,
+  "typical_offer": "A-level BBB to BBC (96-120 UCAS points); IB 28-30; GCSE Maths C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "No specific HL subjects",
+   "note": "Typical IB 30 on main course page; 28 on year-in-industry variant."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Accepted under other qualifications: minimum two full AP passes plus GCSE-equivalent English; US High School Diploma accepted only with two full APs. Specific AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Kent programmes."
+  },
+  "tests": "No SAT/ACT requirement published; English B2 (e.g. IELTS 6.0, no part below 5.5).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB (3-year course page); BBC for year-in-industry variant",
+  "turkish_route": "Turkish Lise diploma (Devlet/Lise Bitirme) with minimum 70% average accepted for Stage 1 entry; A-level grade equivalents A=70%, B=60%, C=55%; maths at GCSE C/4 equals 50%. Integrated foundation year typically needs 60% average; International Foundation Programme also available.",
+  "prerequisite_maths": "GCSE Maths C/4 or equivalent",
+  "source_url": "https://www.kent.ac.uk/courses/undergraduate/3719/software-engineering",
+  "confidence": "medium"
+ },
+ "35985": {
+  "stem": false
+ },
+ "35986": {
+  "stem": false
+ },
+ "35987": {
+  "stem": false
+ },
+ "35988": {
+  "stem": false
+ },
+ "50470": {
+  "stem": true,
+  "typical_offer": "A-level 112-120 UCAS points incl. Maths and Physics/STEM at C; IB 112-120 HL points incl. HL6 Maths and Physics/STEM",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "112-120 points from HL subjects incl. HL grade 6 in Maths and Physics or accepted STEM subject",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-120 points incl. Maths and Physics (or Applied Science, Engineering, Electronics, Biology, Chemistry, Computer Science) at grade C",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths and English C/4; A-level Maths C",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/aerospace-engineering-beng",
+  "confidence": "high"
+ },
+ "50471": {
+  "stem": true,
+  "typical_offer": "A-level 64 UCAS points; IB Diploma pass incl. 64 HL points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Pass incl. 64 points from HL subjects",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "64 points at A2; no subjects specified",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths and English C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/aerospace-engineering-beng-foundation",
+  "confidence": "high"
+ },
+ "50473": {
+  "stem": true,
+  "typical_offer": "A-level 64 UCAS points; IB Diploma pass incl. 64 HL points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Pass incl. 64 points from HL subjects",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "64 points at A2; no subjects specified",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths and English C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/aerospace-engineering-beng-foundation",
+  "confidence": "medium"
+ },
+ "50472": {
+  "stem": true,
+  "typical_offer": "A-level 112-120 UCAS points incl. Maths and Physics/STEM at C; IB 112-120 HL points incl. HL6 Maths and Physics/STEM",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "112-120 points from HL subjects incl. HL6 Maths and Physics/STEM (as Aerospace Engineering)",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112-120 points incl. Maths and Physics/STEM at C (as Aerospace Engineering)",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths and English C/4; A-level Maths C",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/aerospace-engineering-beng",
+  "confidence": "medium"
+ },
+ "50474": {
+  "stem": true,
+  "typical_offer": "A-level 112 UCAS points incl. C in Maths; IB 112 HL points incl. HL5 Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": 112,
+   "subjects": "112 points from HL subjects incl. HL grade 5 Maths",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 points incl. grade C in Maths",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "A-level Maths C; GCSE Maths and English C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/civil-engineering-beng",
+  "confidence": "high"
+ },
+ "50475": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points incl. Maths and Physics/STEM at C; IB 104-112 HL points incl. HL6 Maths and Physics/STEM",
+  "ib": {
+   "accepted": true,
+   "min_total": 104,
+   "subjects": "104-112 points from HL subjects incl. HL grade 6 in Maths and Physics or accepted STEM subject",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 points incl. Maths and Physics (or Applied Science, Engineering, Electronics, Biology, Chemistry, Computer Science) at grade C",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths and English C/4; A-level Maths C",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/electrical-electronic-engineering-beng",
+  "confidence": "high"
+ },
+ "50477": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points incl. Maths and Physics/STEM at C; IB 104-112 HL points incl. HL6 Maths and Physics/STEM",
+  "ib": {
+   "accepted": true,
+   "min_total": 104,
+   "subjects": "104-112 points from HL subjects incl. HL grade 6 in Maths and Physics or accepted STEM subject",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 points incl. Maths and Physics (or Applied Science, Engineering, Electronics, Biology, Chemistry, Computer Science) at grade C",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths and English C/4; A-level Maths C",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/mechanical-engineering-beng",
+  "confidence": "high"
+ },
+ "50479": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points incl. Maths and Physics/STEM at C; IB 104-112 HL points incl. HL6 Maths and Physics/STEM",
+  "ib": {
+   "accepted": true,
+   "min_total": 104,
+   "subjects": "104-112 points from HL subjects incl. HL grade 6 in Maths and Physics or accepted STEM subject",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 points incl. Maths and Physics (or Applied Science, Engineering, Electronics, Biology, Chemistry, Computer Science) at grade C",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths and English C/4; A-level Maths C",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/motorsports-engineering-beng",
+  "confidence": "high"
+ },
+ "50480": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points incl. Maths and Physics/STEM at C; IB 104-112 HL points incl. HL6 Maths and Physics/STEM",
+  "ib": {
+   "accepted": true,
+   "min_total": 104,
+   "subjects": "104-112 points from HL subjects incl. HL grade 6 in Maths and Physics or accepted STEM subject",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 points incl. Maths and Physics (or Applied Science, Engineering, Electronics, Biology, Chemistry, Computer Science) at grade C",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths and English C/4; A-level Maths C",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/robotics-engineering-beng",
+  "confidence": "medium"
+ },
+ "50481": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points incl. Maths and Physics/STEM at C; IB 104-112 HL points incl. HL6 Maths and Physics/STEM",
+  "ib": {
+   "accepted": true,
+   "min_total": 104,
+   "subjects": "104-112 points from HL subjects incl. HL grade 6 in Maths and Physics or accepted STEM subject",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 points incl. Maths and Physics (or Applied Science, Engineering, Electronics, Biology, Chemistry, Computer Science) at grade C",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths and English C/4; A-level Maths C",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/electronic-engineering-beng",
+  "confidence": "medium"
+ },
+ "50476": {
+  "stem": true,
+  "typical_offer": "A-level 104 UCAS points incl. C in Maths and Physics/STEM; IB 104 HL points incl. HL6 Maths and Physics/STEM",
+  "ib": {
+   "accepted": true,
+   "min_total": 104,
+   "subjects": "104 points from HL subjects incl. HL grade 6 in Maths and Physics or STEM subject",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104 points incl. C in Maths and Physics or accepted STEM subject",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths and English C/4; A-level Maths C",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/fire-engineering-beng",
+  "confidence": "high"
+ },
+ "50484": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points; IB Diploma pass incl. 104-112 HL points; GCSE Maths and English C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Pass incl. 104-112 points from HL subjects; no specific subjects",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 UCAS points at A2; no subjects specified",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/artificial-intelligence-data-science-bsc",
+  "confidence": "high"
+ },
+ "50490": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points; IB Diploma pass incl. 104-112 HL points; GCSE Maths and English C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Pass incl. 104-112 points from HL subjects; no specific subjects",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 UCAS points at A2; no subjects specified",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/computer-games-development-bsc",
+  "confidence": "high"
+ },
+ "50491": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points; IB Diploma pass incl. 104-112 HL points; GCSE Maths and English C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Pass incl. 104-112 points from HL subjects; no specific subjects",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 UCAS points at A2; no subjects specified",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/computer-networks-security-bsc",
+  "confidence": "high"
+ },
+ "50492": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points; IB Diploma pass incl. 104-112 HL points; GCSE Maths and English C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Pass incl. 104-112 points from HL subjects; no specific subjects",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 UCAS points at A2; no subjects specified",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/computer-science-bsc",
+  "confidence": "medium"
+ },
+ "50493": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points; IB Diploma pass incl. 104-112 HL points; GCSE Maths and English C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Pass incl. 104-112 points from HL subjects; no specific subjects",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 UCAS points at A2; no subjects specified",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/computer-science-bsc",
+  "confidence": "medium"
+ },
+ "50496": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points; IB Diploma pass incl. 104-112 HL points; GCSE Maths and English C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Pass incl. 104-112 points from HL subjects; no specific subjects",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 UCAS points at A2; no subjects specified",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/cyber-investigations-digital-forensics-bsc-hons",
+  "confidence": "high"
+ },
+ "50497": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points; IB Diploma pass incl. 104-112 HL points; GCSE Maths and English C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Pass incl. 104-112 points from HL subjects; no specific subjects",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 UCAS points at A2; no subjects specified",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/cyber-security-bsc-hons",
+  "confidence": "high"
+ },
+ "50517": {
+  "stem": true,
+  "typical_offer": "A-level 104-112 UCAS points; IB Diploma pass incl. 104-112 HL points; GCSE Maths and English C/4",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Pass incl. 104-112 points from HL subjects; no specific subjects",
+   "note": "IB Diploma pass including stated points from Higher Level subjects (UCAS-style points)."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: AP exams count only as additional criteria alongside GPA (e.g. one AP at grade 3); AB/BC variant not specified.",
+   "note": "Institution-wide US route applied to all Lancashire programmes."
+  },
+  "tests": "SAT/ACT optional with high school GPA 3.2/4.0 or above; otherwise weighted GPA 2.5/4.0 plus two extras (e.g. SAT 1000, ACT 19, AP grade 3) or GPA 3.0 plus SAT/ACT. English: IELTS 6.0 (no part below 5.5), or SAT Reading/Writing 500, ACT English 26, AP English 3.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104-112 UCAS points at A2; no subjects specified",
+  "turkish_route": "Lise diploma with 70% average accepted for Year 1 entry; or completion of one year of a four-year bachelor (Lisans) with GPA 2.5/5 or 60%; foundation entry with 60% Lise average. IELTS 6.0 (5.5).",
+  "prerequisite_maths": "GCSE Maths C/4",
+  "source_url": "https://www.lancashire.ac.uk/undergraduate/courses/software-engineering-bsc",
+  "confidence": "high"
+ },
+ "36386": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points); IB 27 points; C in Computing, Science, Maths or Technology",
+  "ib": {
+   "accepted": true,
+   "min_total": 27,
+   "subjects": "Level 3 grade C equivalent in Computing (IT), Science, Maths or Technology subject",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English: IELTS 6.0 (no part below 5.5) or University of Law English Test (ULET)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC from three A-levels; C in Computing, Science, Maths or Technology",
+  "turkish_route": null,
+  "prerequisite_maths": "GCSE Maths C/4; Level 3 C in Computing/Science/Maths/Technology",
+  "source_url": "https://www.law.ac.uk/study/undergraduate/bsc-hons-computer-science/",
+  "confidence": "medium"
+ },
+ "36383": {
+  "stem": false
+ },
+ "36382": {
+  "stem": false
+ },
+ "36385": {
+  "stem": false
+ },
+ "36384": {
+  "stem": false
+ },
+ "52184": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics; IB 36 with 18 HL incl. HL6 Maths and Physics",
+  "ib": {
+   "accepted": true,
+   "min_total": 36,
+   "subjects": "18 HL points incl. 6 in HL Maths and Physics",
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. Maths and Physics; practical element pass in science A-levels",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://courses.leeds.ac.uk/a225/aeronautical-and-aerospace-engineering-beng",
+  "confidence": "medium"
+ },
+ "52185": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.leeds.ac.uk/international-applying/doc/entry-requirements",
+  "confidence": "low"
+ },
+ "52186": {
+  "stem": true,
+  "typical_offer": "A-level A*AA with specific subjects",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA; practical element pass in science A-levels",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "Maths and Physics likely required",
+  "source_url": "https://courses.leeds.ac.uk/f413/automotive-engineering-meng-beng",
+  "confidence": "medium"
+ },
+ "52187": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths and Physics or Chemistry; IB 16 HL points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "16 HL points incl. 6 in Maths AI or 5 in Maths AA, and Physics or Chemistry",
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths and Physics or Chemistry; practical element pass",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "A-level Maths and Physics or Chemistry",
+  "source_url": "https://courses.leeds.ac.uk/4810/chemical-engineering-beng",
+  "confidence": "high"
+ },
+ "52188": {
+  "stem": true,
+  "typical_offer": "A-level AAB with A in Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB with A in Maths; practical element pass in science A-levels",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "A-level Maths grade A",
+  "source_url": "https://courses.leeds.ac.uk/i444/civil-engineering-beng",
+  "confidence": "medium"
+ },
+ "52189": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": null,
+  "source_url": "https://courses.leeds.ac.uk/i444/civil-engineering-beng",
+  "confidence": "low"
+ },
+ "52190": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": null,
+  "source_url": "https://courses.leeds.ac.uk/i444/civil-engineering-beng",
+  "confidence": "low"
+ },
+ "52191": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": null,
+  "source_url": "https://courses.leeds.ac.uk/i444/civil-engineering-beng",
+  "confidence": "low"
+ },
+ "52192": {
+  "stem": true,
+  "typical_offer": "A-level AAB incl. Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB incl. Maths; GCSE English 4",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "A-level Maths",
+  "source_url": "https://courses.leeds.ac.uk/5000/electronic-and-electrical-engineering-beng",
+  "confidence": "medium"
+ },
+ "52193": {
+  "stem": true,
+  "typical_offer": "A-level AAB",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB; Access to Leeds BBB",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "Maths likely required",
+  "source_url": "https://courses.leeds.ac.uk/j749/electronics-and-computer-engineering-beng",
+  "confidence": "medium"
+ },
+ "52194": {
+  "stem": true,
+  "typical_offer": "A-level AAB; IB 15 HL points",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "15 HL points incl. 6 in Maths AI or 5 in Maths AA, and Physics or Chemistry",
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAB",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "Maths and Physics or Chemistry",
+  "source_url": "https://courses.leeds.ac.uk/j955/materials-science-and-engineering-industrial-beng",
+  "confidence": "medium"
+ },
+ "52195": {
+  "stem": true,
+  "typical_offer": "A-level A*AA incl. Maths and Physics or Chemistry; IB 18 HL points incl. 6 in HL Maths and Physics/Chemistry",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "18 HL points incl. 6 in HL Maths and Physics or Chemistry",
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA incl. Maths and Physics or Chemistry; practical element pass",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "A-level Maths and Physics or Chemistry",
+  "source_url": "https://courses.leeds.ac.uk/5200/mechanical-engineering-beng",
+  "confidence": "high"
+ },
+ "52196": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": null,
+  "source_url": "https://courses.leeds.ac.uk/k002/mechatronics-and-robotics-engineering-industrial-meng-beng",
+  "confidence": "low"
+ },
+ "52197": {
+  "stem": true,
+  "typical_offer": "A-level A*AA",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A*AA with specific subjects",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "Maths and science likely required",
+  "source_url": "https://courses.leeds.ac.uk/f447/medical-engineering-meng-beng",
+  "confidence": "medium"
+ },
+ "52208": {
+  "stem": true,
+  "typical_offer": "A-level AAA incl. Maths; IB 18 HL points incl. HL5 Maths AA or HL6 Maths AI",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "18 HL points incl. 5 in HL Maths AA or 6 in HL Maths AI",
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths; GCSE Maths 6 if no Maths A-level; IELTS 6.0 (5.5)",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "A-level Maths",
+  "source_url": "https://courses.leeds.ac.uk/3260/computer-science-bsc",
+  "confidence": "high"
+ },
+ "52209": {
+  "stem": true,
+  "typical_offer": "A-level AAA with specific subjects; Access to Leeds ABB incl. A in Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA incl. Maths likely",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "A-level Maths",
+  "source_url": "https://courses.leeds.ac.uk/k108/computer-science-artificial-intelligence-bsc",
+  "confidence": "medium"
+ },
+ "52210": {
+  "stem": true,
+  "typical_offer": "A-level AAA-AAB with A in Maths; IB 17 HL points incl. 6 in HL Maths",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "17 HL points incl. 6 in HL Maths (Analysis and Approaches preferred)",
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "AAA to AAB with A in Maths",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "A-level Maths grade A",
+  "source_url": "https://courses.leeds.ac.uk/j747/data-science-bsc",
+  "confidence": "high"
+ },
+ "52216": {
+  "stem": true,
+  "typical_offer": "A-level ABB incl. two from Biology, Chemistry, Computer Science, Environmental Science, Further Maths, Geography, Geology, Marine Science, Maths, Physics, Statistics; IB HL 6,5,5",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "HL 6,5,5 incl. two relevant subjects",
+   "note": "General minimum IB Diploma 31 points; some degrees require more."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Outside the US: three AP subjects at grade 4 or 5; US applicants: High School Diploma plus one AP at 4 or 5 and two Honors classes. Course subject requirements must be met with APs; AP English 3. Calculus AB/BC rule not published.",
+   "note": "Institution-wide rule applied to all Leeds programmes."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "ABB incl. two relevant science/maths subjects",
+  "turkish_route": "Lise diploma from approved schools accepted for direct entry (typically 72-88% overall plus subject grades); other schools need a foundation year (International Foundation Year needs 60% overall and 70% in relevant subjects) or IB/A-levels. IELTS 6.0 minimum.",
+  "prerequisite_maths": "None beyond relevant subjects",
+  "source_url": "https://courses.leeds.ac.uk/3314/environmental-science-bsc",
+  "confidence": "high"
+ }
+}

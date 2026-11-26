@@ -1,0 +1,3859 @@
+{
+ "instructions": "# Task (browser-only round, Mac session): pages that automated text fetching could not read\n\nThese schools block simple page fetchers or load their fee tables with JavaScript. You have a real browser, so you are the one who can read them.\n\nPART A (\"tasks\"): official APPLICATION FEE per school and level (rules below).\nPART B (\"tasks_tuition\"): official annual INTERNATIONAL TUITION FEES per institution (see the Part B rules at the end).\n\n## Part A rules\n\nGoal: for each item in \"tasks\" (school + level bachelor/master) find the official application fee for international applicants, using the school's OFFICIAL website only.\nlast_url / last_status show what happened in the previous round (blocked, not_found, js_empty, read).\n\nMethod\n- Browse like a person: real browser, normal pace (a few seconds between page loads), one page at a time.\n- Wait for pages and automatic browser checks to finish loading; expand accordions, tabs and \"show more\" panels; read hidden text.\n- Look in: \"Tuition & fees\", \"Fees and costs\", \"Cost of attendance\", \"How to apply\", \"Apply\", \"International admissions\", \"Admissions FAQ\", fee schedules as PDF/spreadsheet on the school's own site, programme pages, and country selectors (choose Turkey or \"international / non-EU\", then the right level).\n- Search the school's own site: site:<school-domain> \"application fee\".\n- Official domains only. No agent, aggregator or forum sites.\n- If a page asks you to solve a CAPTCHA or otherwise blocks automated access, do not try to get around it. Set page_status \"blocked\", put the exact URL in manual_check_url so a person can open it, and continue with other official pages of that school.\n- Also record the admissions office contact email or contact-form URL from the official site in contact (so a person can ask about the fee).\n- An application fee is the fee paid when submitting the application. Not tuition, deposit, registration, enrolment, test or visa fees. Write \"none\" only if an official page explicitly says there is no application fee (quote it in application_fee_note). Otherwise null. Never guess or infer.\n- For UK undergraduate applications through UCAS, report any fee the university itself charges (usually none) and mention in the note that UCAS charges its own fee.\n\nOutput: JSON list, one object per item, same order, no extra text:\n{\"school\",\"level\",\n \"application_fee\": \"amount with currency e.g. 'USD 75', or 'none', or null\",\n \"application_fee_note\": \"exact short quote or paraphrase from the page, plus variations (programme, country, waiver)\",\n \"source_url\": \"exact page or PDF where you read it\",\n \"manual_check_url\": \"URL a person should open when blocked, else null\",\n \"contact\": \"admissions email or contact form URL, else null\",\n \"page_status\": \"read | blocked | not_found | js_empty\",\n \"confidence\": \"high | medium | low\",\n \"english\": {\"IELTS\":null,\"TOEFL\":null,\"PTE\":null,\"Duolingo\":null}}\n\nSubmit: POST https://paneledu.com/api/agent/results with header X-Agent-Token: <token you were given>, Content-Type: application/json, body = JSON list (1-10 objects per request; send each batch as soon as it is done). Expected answer: {\"ok\":true,\"saved\":N}.\n\n## Part B rules (tuition)\nFor every item in \"tasks_tuition\" (an institution; manual_url = page that could not be read before) find the official annual tuition fee for INTERNATIONAL (non-EU / non-home) students on the institution's own website: fee pages, fee tables, fee brochures/PDFs/spreadsheets, fee selectors (choose Turkey or \"international\"), course pages when the fee is only given per course. Latest published academic year; state it. Same rules as above (official domain only; no CAPTCHA bypass; never guess; human pace).\nResult object per institution:\n{\"school\":\"<same as entity>\",\"entity\":\"<same name>\",\"country\":\"...\",\"page_status\":\"read | blocked | not_found | js_empty\",\"confidence\":\"high | medium | low\",\"source_urls\":[\"pages or PDFs read\"],\"manual_check_url\":null,\n \"fees\":[{\"level\":\"bachelor | master\",\"applies_to\":\"who the fee covers: 'all undergraduate', a faculty/subject band, or an exact programme name\",\"amount_per_year\":0,\"currency\":\"GBP|USD|EUR|CAD|AUD|...\",\"academic_year\":\"2026/27\",\"period_note\":\"per year / per credit / total programme / per semester, as the school states it\"}],\n \"note\":\"short factual remark\"}\nSend Part A and Part B results in separate POST requests (1-10 objects each).\n\n## Part C rules (course-page fees, \"tasks_courses\")\nThese UK/US institutions publish the international fee on each course page, and a plain page fetcher was blocked. For each institution open the official course pages of the listed programmes (search the course by name on the institution's own site) and record the international/overseas annual fee for the latest published entry year. Read as many as you reasonably can (at least 15 across subject areas; more is better). Result object per institution:\n{\"school\":\"<entity>\",\"entity\":\"<entity>\",\"page_status\":\"read|blocked|not_found|js_empty\",\"confidence\":\"high|medium|low\",\"source_urls\":[...],\n \"courses\":[{\"id\":123,\"name\":\"exact programme name from the list\",\"amount_per_year\":0,\"currency\":\"GBP\",\"academic_year\":\"2026/27\",\"period_note\":\"per year\",\"source_url\":\"course page\"}],\n \"note\":\"short\"}\nUse the exact programme name and id from the list; never record a fee you did not see on that course's page; per-credit or per-semester prices go in period_note with the school's unit (no conversion).\n",
+ "tasks": [
+  {
+   "school": "Australian Catholic University",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 85,
+   "last_url": "https://www.acu.edu.au/study-at-acu/how-to-apply/international-students/international-undergraduate-students",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Australian Catholic University",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 22,
+   "last_url": "https://www.acu.edu.au/study-at-acu/how-to-apply/international-students/international-postgraduate-students",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Central Queensland University",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 28,
+   "last_url": "https://www.cqu.edu.au/study/international/fees",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Central Queensland University",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 16,
+   "last_url": "https://www.cqu.edu.au/study/international/fees",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Charles Sturt University",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 28,
+   "last_url": "https://study.csu.edu.au/international/fees-and-costs/how-to-pay-your-fees",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Charles Sturt University",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 11,
+   "last_url": "https://study.csu.edu.au/international/fees-and-costs/how-to-pay-your-fees",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Edith Cowan University",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 37,
+   "last_url": "https://www.ecu.edu.au/future-students/fees-and-scholarships",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Griffith University",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 145,
+   "last_url": "https://www.griffith.edu.au/apply/international/fees",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Griffith University",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 63,
+   "last_url": "https://www.griffith.edu.au/apply/international/fees",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Torrens University Australia",
+   "level": "bachelor",
+   "country": "Australia",
+   "programmes": 27,
+   "last_url": "https://www.torrens.edu.au/studying-with-us/faqs",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Torrens University Australia",
+   "level": "master",
+   "country": "Australia",
+   "programmes": 32,
+   "last_url": "https://www.torrens.edu.au/studying-with-us/faqs",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Brock University",
+   "level": "master",
+   "country": "Canada",
+   "programmes": 2,
+   "last_url": "https://brocku.ca/graduate-studies/future-students/faq/",
+   "last_status": "blocked"
+  },
+  {
+   "school": "University College Dublin",
+   "level": "bachelor",
+   "country": "Ireland",
+   "programmes": 44,
+   "last_url": "https://www.ucd.ie/graduateadmissions/admissions/howtoapply/",
+   "last_status": "blocked"
+  },
+  {
+   "school": "University College Dublin",
+   "level": "master",
+   "country": "Ireland",
+   "programmes": 194,
+   "last_url": "https://www.ucd.ie/graduateadmissions/admissions/howtoapply/",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Toulouse Business School (TBS) Barcelona",
+   "level": "bachelor",
+   "country": "Spain",
+   "programmes": 1,
+   "last_url": "https://barcelona.tbs-education.com/program/bachelor-management-degree/admissions",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Toulouse Business School (TBS) Barcelona",
+   "level": "master",
+   "country": "Spain",
+   "programmes": 12,
+   "last_url": "https://www.tbs-education.com/programs/master-of-science-programs/faq/",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Bournemouth University (EB UK)",
+   "level": "bachelor",
+   "country": "United Kingdom",
+   "programmes": 85,
+   "last_url": "https://www.bournemouth.ac.uk/study/undergraduate/undergraduate-fees-funding",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Bournemouth University (EB UK)",
+   "level": "master",
+   "country": "United Kingdom",
+   "programmes": 72,
+   "last_url": "https://www.bournemouth.ac.uk/study/postgraduate/fees-funding/fees",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Istituto Marangoni London",
+   "level": "bachelor",
+   "country": "United Kingdom",
+   "programmes": 14,
+   "last_url": "https://www.istitutomarangoni.com/en/fashion-courses/bachelor-degrees/fashion-design/fashion-design",
+   "last_status": "js_empty"
+  },
+  {
+   "school": "London South Bank University (EB UK)",
+   "level": "bachelor",
+   "country": "United Kingdom",
+   "programmes": 81,
+   "last_url": "https://www.lsbu.ac.uk/international/international-offer-holder-hub",
+   "last_status": "blocked"
+  },
+  {
+   "school": "London South Bank University (EB UK)",
+   "level": "master",
+   "country": "United Kingdom",
+   "programmes": 53,
+   "last_url": "https://www.lsbu.ac.uk/study/course-finder/international-business-management-msc",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Nottingham Trent University (EB UK)",
+   "level": "bachelor",
+   "country": "United Kingdom",
+   "programmes": 193,
+   "last_url": "https://www.ntu.ac.uk/international/frequently-asked-questions",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Nottingham Trent University (EB UK)",
+   "level": "master",
+   "country": "United Kingdom",
+   "programmes": 121,
+   "last_url": "https://www.ntu.ac.uk/study-and-courses/frequently-asked-questions/postgraduate-faqs",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Regent's University London (EB UK)",
+   "level": "bachelor",
+   "country": "United Kingdom",
+   "programmes": 42,
+   "last_url": "https://www.regents.ac.uk/undergraduate/business/ba-hons-international-business-new-model",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Catholic University",
+   "level": "master",
+   "country": "United States",
+   "programmes": 59,
+   "last_url": "https://www.catholic.edu/admission-aid/international-admission/graduate-international-admission",
+   "last_status": "blocked"
+  },
+  {
+   "school": "Hofstra University",
+   "level": "master",
+   "country": "United States",
+   "programmes": 16,
+   "last_url": "https://ebill.hofstra.edu/C20848_ustores/web/store_cat.jsp?STOREID=25&CATID=378",
+   "last_status": "js_empty"
+  },
+  {
+   "school": "Johns Hopkins University",
+   "level": "master",
+   "country": "United States",
+   "programmes": 29,
+   "last_url": "https://education.jhu.edu/admissions/how-to-apply/admissions-faqs/",
+   "last_status": "blocked"
+  }
+ ],
+ "tasks_tuition": [
+  {
+   "entity": "Tilburg University",
+   "country": "Netherlands",
+   "empty_programmes": 2,
+   "website": "https://www.tilburguniversity.edu/",
+   "sample": [
+    "Children's Literature, Media & Cultural Entrepreneurship",
+    "Economics and Management"
+   ],
+   "manual_url": "https://www.tilburguniversity.edu/students/administration/tuition-fees/rates"
+  },
+  {
+   "entity": "Long Island University - Brooklyn",
+   "country": "United States",
+   "empty_programmes": 81,
+   "website": "https://www.liu.edu/brooklyn",
+   "sample": [
+    "B.A. Communications",
+    "B.A. Global Studies",
+    "B.A. Journalism"
+   ],
+   "manual_url": "https://liu.edu/registration-and-financial-aid/tuition-fees"
+  },
+  {
+   "entity": "London South Bank University (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 28,
+   "website": "https://www.lsbu.ac.uk/",
+   "sample": [
+    "BA (Hons) Architecture",
+    "BA (Hons) Urban and Environmental Planning",
+    "BEng (Hons) Building Services Engineering"
+   ],
+   "manual_url": "https://www.lsbu.ac.uk/international/fees-and-funding"
+  },
+  {
+   "entity": "Fontys University of Applied Science",
+   "country": "Netherlands",
+   "empty_programmes": 5,
+   "website": "https://fontys.edu/",
+   "sample": [
+    "BSc Mechatronics",
+    "Bachelor Conservatory of Music",
+    "Master Artificial Intelligence Translator (joint degree)"
+   ],
+   "manual_url": "https://www.fontys.nl/en/Study-at-Fontys/Practical-information/Finance/Tuition-fees-indicator-2026-2027.htm"
+  },
+  {
+   "entity": "University of Hertfordshire",
+   "country": "United Kingdom",
+   "empty_programmes": 86,
+   "website": "https://www.herts.ac.uk/",
+   "sample": [
+    "BA (SW/YAB) International Business",
+    "BA (SW/YAB) International Business (3 or 4 year programme)",
+    "BA 2D Digital Animation"
+   ],
+   "manual_url": "https://www.herts.ac.uk/international/scholarships-and-fees/fees"
+  },
+  {
+   "entity": "University of Essex (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 191,
+   "website": "https://www.essex.ac.uk/",
+   "sample": [
+    "BA Childhood Studies",
+    "BA Continental Philosophy",
+    "BA Creative Writing"
+   ],
+   "manual_url": "https://www.essex.ac.uk/undergraduate/fees-and-funding/eu-and-international-fees"
+  },
+  {
+   "entity": "Queen's University Belfast",
+   "country": "United Kingdom",
+   "empty_programmes": 86,
+   "website": "https://www.qub.ac.uk",
+   "sample": [
+    "BA Anthropology",
+    "BA Anthropology and International Relations",
+    "BA Anthropology and Philosophy"
+   ],
+   "manual_url": "https://www.qub.ac.uk/Study/Feesandfinance/FileStore/Tuition%20Fee%20and%20Related%20Charges%20Schedule%202026-27.pdf"
+  },
+  {
+   "entity": "Long Island University",
+   "country": "United States",
+   "empty_programmes": 19,
+   "website": "https://www.liu.edu/",
+   "sample": [
+    "BA Applied Music",
+    "BFA Music Technology, Entrepreneurship & Production",
+    "BS Accountancy"
+   ],
+   "manual_url": "https://liu.edu/registration-and-financial-aid/tuition-fees"
+  },
+  {
+   "entity": "Long Island University - Post",
+   "country": "United States",
+   "empty_programmes": 88,
+   "website": "https://www.liu.edu/post",
+   "sample": [
+    "B.A. Chemistry",
+    "B.A. Criminal Justice",
+    "B.A. Political Science"
+   ],
+   "manual_url": "https://liu.edu/registration-and-financial-aid/tuition-fees"
+  },
+  {
+   "entity": "University College Dublin",
+   "country": "Ireland",
+   "empty_programmes": 36,
+   "website": "https://www.ucd.ie",
+   "sample": [
+    "Agricultural Science BAgrSc",
+    "Agricultural Systems Technology BAgrSc",
+    "Animal & Crop Production BAgrSc"
+   ],
+   "manual_url": "https://www.ucd.ie/students/fees/noneucoursefees/internationalnon-euundergraduatefees202627/"
+  },
+  {
+   "entity": "Nottingham Trent University (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 152,
+   "website": "https://www.ntu.ac.uk",
+   "sample": [
+    "BA Animation",
+    "BA Childhood and Psychology",
+    "BA Childhood and Society"
+   ],
+   "manual_url": "https://www.ntu.ac.uk/study-and-courses/international-students/fees-and-funding"
+  },
+  {
+   "entity": "Durham University",
+   "country": "United Kingdom",
+   "empty_programmes": 88,
+   "website": "https://www.durham.ac.uk",
+   "sample": [
+    "BA Ancient History",
+    "BA Ancient History and Archaeology",
+    "BA Ancient, Medieval and Modern History"
+   ],
+   "manual_url": "https://www.durham.ac.uk/study/international/fees-and-funding/"
+  },
+  {
+   "entity": "LISAA School of Design",
+   "country": "France",
+   "empty_programmes": 1,
+   "website": "https://www.lisaa.com/fr",
+   "sample": [
+    "Master Fashion Communication & Image"
+   ],
+   "manual_url": "https://www.lisaa.com/en/tuition-fees"
+  },
+  {
+   "entity": "Zuyd University of Applied Sciences",
+   "country": "Netherlands",
+   "empty_programmes": 10,
+   "website": "https://www.zuyd.nl/en",
+   "sample": [
+    "BA European Studies",
+    "BA Hotel Management",
+    "BA Interdisciplinary Arts"
+   ],
+   "manual_url": "https://www.zuyd.nl/sites/default/files/2026-01/Tuition%20fees%20and%20examination%20fees%202026-2027%20EN%203.0.pdf"
+  },
+  {
+   "entity": "Cardiff University",
+   "country": "United Kingdom",
+   "empty_programmes": 136,
+   "website": "https://www.cardiff.ac.uk/",
+   "sample": [
+    "BA Ancient History",
+    "BA Archaeology",
+    "BA Archaeology and Ancient History"
+   ],
+   "manual_url": "https://www.cardiff.ac.uk/study/international/tuition-fees"
+  },
+  {
+   "entity": "University of Sheffield",
+   "country": "United Kingdom",
+   "empty_programmes": 105,
+   "website": "https://sheffield.ac.uk/",
+   "sample": [
+    "BA Accounting & Financial Management with Economics",
+    "BA Architecture",
+    "BA Business Management with Economics"
+   ],
+   "manual_url": "https://tools.sheffield.ac.uk/fees/ug/"
+  },
+  {
+   "entity": "Emily Carr University of Art and Design",
+   "country": "Canada",
+   "empty_programmes": 7,
+   "website": "https://www.ecuad.ca/",
+   "sample": [
+    "BDes Communication Design",
+    "BDes Interaction Design",
+    "BFA Illustration"
+   ],
+   "manual_url": "https://www.ecuad.ca/about/administration/financial-services/tuition-fees/undergraduation-tuition-and-fees"
+  },
+  {
+   "entity": "City St George's, University of London",
+   "country": "United Kingdom",
+   "empty_programmes": 136,
+   "website": "https://www.citystgeorges.ac.uk/",
+   "sample": [
+    "BA Communication, PR and Advertising",
+    "BA English",
+    "BA English with Creative Writing"
+   ],
+   "manual_url": "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/english"
+  },
+  {
+   "entity": "Bournemouth University (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 26,
+   "website": "https://www.bournemouth.ac.uk/",
+   "sample": [
+    "BA Business and Management (2-year Accelerated Degree)",
+    "BA Business and Management (Human Resource Management)",
+    "BA Communication and Media (2 year accelerated degree)"
+   ],
+   "manual_url": "https://www.bournemouth.ac.uk/study/undergraduate/fees-funding/undergraduate-tuition-fees"
+  }
+ ],
+ "tasks_courses": [
+  {
+   "entity": "Cardiff University",
+   "country": "United Kingdom",
+   "empty_programmes": 136,
+   "blocked_urls": [
+    "https://www.cardiff.ac.uk/study/international/tuition-fees"
+   ],
+   "programmes": [
+    {
+     "id": 51080,
+     "name": "BA Ancient History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51081,
+     "name": "BA Archaeology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51082,
+     "name": "BA Archaeology and Ancient History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51083,
+     "name": "BA Archaeology and History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51086,
+     "name": "BA English Language and a Modern Language",
+     "level": "bachelor"
+    },
+    {
+     "id": 51084,
+     "name": "BA English Language and Linguistics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51085,
+     "name": "BA English Language and Literature",
+     "level": "bachelor"
+    },
+    {
+     "id": 51087,
+     "name": "BA English Literature",
+     "level": "bachelor"
+    },
+    {
+     "id": 51088,
+     "name": "BA English Literature and History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51089,
+     "name": "BA English Literature and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 51090,
+     "name": "BA English Literature with Creative Writing",
+     "level": "bachelor"
+    },
+    {
+     "id": 51091,
+     "name": "BA English Literature, Journalism and Media",
+     "level": "bachelor"
+    },
+    {
+     "id": 51092,
+     "name": "BA History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51093,
+     "name": "BA History and a Modern Language",
+     "level": "bachelor"
+    },
+    {
+     "id": 51094,
+     "name": "BA International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 51095,
+     "name": "BA International Relations and Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51096,
+     "name": "BA Journalism ,Communications and Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51097,
+     "name": "BA Journalism and Communications",
+     "level": "bachelor"
+    },
+    {
+     "id": 51098,
+     "name": "BA Linguistics and a Modern Language",
+     "level": "bachelor"
+    },
+    {
+     "id": 51099,
+     "name": "BA Media and Communications",
+     "level": "bachelor"
+    },
+    {
+     "id": 51100,
+     "name": "BA Media, Journalism and Culture",
+     "level": "bachelor"
+    },
+    {
+     "id": 51101,
+     "name": "BA Modern History, Politics and International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 51102,
+     "name": "BA Modern Languages",
+     "level": "bachelor"
+    },
+    {
+     "id": 51104,
+     "name": "BA Music and a Modern Language",
+     "level": "bachelor"
+    },
+    {
+     "id": 51103,
+     "name": "BA Music and English Literature",
+     "level": "bachelor"
+    },
+    {
+     "id": 51105,
+     "name": "BA Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 51106,
+     "name": "BA Philosophy and Linguistics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51107,
+     "name": "BA Philosophy, Politics and International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 51108,
+     "name": "BA Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51109,
+     "name": "BA Politics, International Relations and a Modern Language",
+     "level": "bachelor"
+    },
+    {
+     "id": 51110,
+     "name": "BA Religion and Theology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51111,
+     "name": "BA Religion, Philosophy and Ethics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51112,
+     "name": "BA Translation",
+     "level": "bachelor"
+    },
+    {
+     "id": 51113,
+     "name": "BEng Architectural Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 51115,
+     "name": "BEng Civil and Environmental Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 51114,
+     "name": "BEng Civil Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 51116,
+     "name": "BEng Electrical and Electronic Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 51118,
+     "name": "BEng Mechanical and Electrical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 51117,
+     "name": "BEng Mechanical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 51119,
+     "name": "BEng Medical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 51120,
+     "name": "BMus Music",
+     "level": "bachelor"
+    },
+    {
+     "id": 51121,
+     "name": "BSc Accounting",
+     "level": "bachelor"
+    },
+    {
+     "id": 51122,
+     "name": "BSc Accounting and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 51123,
+     "name": "BSc Applied Software Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 51124,
+     "name": "BSc Archaeology and Heritage Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 51125,
+     "name": "BSc Architecture",
+     "level": "bachelor"
+    },
+    {
+     "id": 51126,
+     "name": "BSc Astrophysics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51127,
+     "name": "BSc Banking and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 51128,
+     "name": "BSc Biochemistry",
+     "level": "bachelor"
+    },
+    {
+     "id": 51129,
+     "name": "BSc Biochemistry with Professional Training Year",
+     "level": "bachelor"
+    },
+    {
+     "id": 51130,
+     "name": "BSc Biological Sciences",
+     "level": "bachelor"
+    },
+    {
+     "id": 51131,
+     "name": "BSc Biological Sciences with Professional Training Year",
+     "level": "bachelor"
+    },
+    {
+     "id": 51132,
+     "name": "BSc Biomedical Sciences",
+     "level": "bachelor"
+    },
+    {
+     "id": 51133,
+     "name": "BSc Business Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51134,
+     "name": "BSc Business Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 51135,
+     "name": "BSc Business Management (Human Resource Management)",
+     "level": "bachelor"
+    },
+    {
+     "id": 51136,
+     "name": "BSc Business Management (International Management)",
+     "level": "bachelor"
+    },
+    {
+     "id": 51137,
+     "name": "BSc Business Management (Logistics and Operations)",
+     "level": "bachelor"
+    },
+    {
+     "id": 51138,
+     "name": "BSc Business Management (Marketing)",
+     "level": "bachelor"
+    },
+    {
+     "id": 51139,
+     "name": "BSc Chemistry",
+     "level": "bachelor"
+    }
+   ]
+  },
+  {
+   "entity": "University of Leeds",
+   "country": "United Kingdom",
+   "empty_programmes": 95,
+   "blocked_urls": [
+    "https://courses.leeds.ac.uk/a225/aeronautical-and-aerospace-engineering-beng"
+   ],
+   "programmes": [
+    {
+     "id": 52169,
+     "name": "BA Business Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 52170,
+     "name": "BA Business Management and the Human Resource",
+     "level": "bachelor"
+    },
+    {
+     "id": 52171,
+     "name": "BA Business Management with Marketing",
+     "level": "bachelor"
+    },
+    {
+     "id": 52172,
+     "name": "BA Childhood Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 52173,
+     "name": "BA Criminal Justice and Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 52174,
+     "name": "BA Economics and Geography",
+     "level": "bachelor"
+    },
+    {
+     "id": 52175,
+     "name": "BA Education",
+     "level": "bachelor"
+    },
+    {
+     "id": 52176,
+     "name": "BA Environment and Business",
+     "level": "bachelor"
+    },
+    {
+     "id": 52177,
+     "name": "BA Geography with Transport Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 52178,
+     "name": "BA Global Development",
+     "level": "bachelor"
+    },
+    {
+     "id": 52179,
+     "name": "BA Global Development with Quantitative Research Methods",
+     "level": "bachelor"
+    },
+    {
+     "id": 52180,
+     "name": "BA International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 52181,
+     "name": "BA International Relations with Quantitative Research Methods",
+     "level": "bachelor"
+    },
+    {
+     "id": 52182,
+     "name": "BA Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52183,
+     "name": "BA Sociology",
+     "level": "bachelor"
+    },
+    {
+     "id": 52184,
+     "name": "BEng Aeronautical and Aerospace Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52185,
+     "name": "BEng Architectural Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52186,
+     "name": "BEng Automotive Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52187,
+     "name": "BEng Chemical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52190,
+     "name": "BEng Civil and Environmental Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52191,
+     "name": "BEng Civil and Structural Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52188,
+     "name": "BEng Civil Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52189,
+     "name": "BEng Civil Engineering with Transport",
+     "level": "bachelor"
+    },
+    {
+     "id": 52192,
+     "name": "BEng Electronic and Electrical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52193,
+     "name": "BEng Electronics and Computer Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52194,
+     "name": "BEng Materials Science and Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52195,
+     "name": "BEng Mechanical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52196,
+     "name": "BEng Mechatronics and Robotics Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52197,
+     "name": "BEng Medical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52198,
+     "name": "BSc Actuarial Mathematics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52199,
+     "name": "BSc Biochemistry",
+     "level": "bachelor"
+    },
+    {
+     "id": 52200,
+     "name": "BSc Biological Sciences",
+     "level": "bachelor"
+    },
+    {
+     "id": 52201,
+     "name": "BSc Biological Sciences (Biotechnology with Enterprise)",
+     "level": "bachelor"
+    },
+    {
+     "id": 52202,
+     "name": "BSc Biology",
+     "level": "bachelor"
+    },
+    {
+     "id": 52203,
+     "name": "BSc Biomedical Sciences",
+     "level": "bachelor"
+    },
+    {
+     "id": 52204,
+     "name": "BSc Business Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52205,
+     "name": "BSc Chemistry",
+     "level": "bachelor"
+    },
+    {
+     "id": 52206,
+     "name": "BSc Chemistry & Mathematics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52207,
+     "name": "BSc Chemistry with AI",
+     "level": "bachelor"
+    },
+    {
+     "id": 52208,
+     "name": "BSc Computer Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 52209,
+     "name": "BSc Computer Science (Artificial Intelligence)",
+     "level": "bachelor"
+    },
+    {
+     "id": 52210,
+     "name": "BSc Data Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 52211,
+     "name": "BSc Ecology and Conservation Biology",
+     "level": "bachelor"
+    },
+    {
+     "id": 52212,
+     "name": "BSc Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52213,
+     "name": "BSc Economics and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 52214,
+     "name": "BSc Economics and Mathematics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52215,
+     "name": "BSc Enrviromental Geoscience",
+     "level": "bachelor"
+    },
+    {
+     "id": 52216,
+     "name": "BSc Environmental Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 52217,
+     "name": "BSc Financial Mathematics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52218,
+     "name": "BSc Food Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 52219,
+     "name": "BSc Food Science and Nutrition",
+     "level": "bachelor"
+    },
+    {
+     "id": 52220,
+     "name": "BSc Genetics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52221,
+     "name": "BSc Geography",
+     "level": "bachelor"
+    },
+    {
+     "id": 52222,
+     "name": "BSc Geography and Environmental Mathematics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52223,
+     "name": "BSc Geology",
+     "level": "bachelor"
+    },
+    {
+     "id": 52224,
+     "name": "BSc Geophysical and Atmospheric Sciences",
+     "level": "bachelor"
+    },
+    {
+     "id": 52225,
+     "name": "BSc International Business",
+     "level": "bachelor"
+    },
+    {
+     "id": 52226,
+     "name": "BSc International Business and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 52227,
+     "name": "BSc International Business and Marketing",
+     "level": "bachelor"
+    },
+    {
+     "id": 52228,
+     "name": "BSc Marketing",
+     "level": "bachelor"
+    }
+   ]
+  },
+  {
+   "entity": "University of Hertfordshire",
+   "country": "United Kingdom",
+   "empty_programmes": 86,
+   "blocked_urls": [
+    "https://www.herts.ac.uk/study/fees-and-funding/tuition-fees"
+   ],
+   "programmes": [
+    {
+     "id": 56292,
+     "name": "BA (SW/YAB) International Business",
+     "level": "bachelor"
+    },
+    {
+     "id": 56293,
+     "name": "BA (SW/YAB) International Business (3 or 4 year programme)",
+     "level": "bachelor"
+    },
+    {
+     "id": 56294,
+     "name": "BA 2D Digital Animation",
+     "level": "bachelor"
+    },
+    {
+     "id": 56295,
+     "name": "BA 3D Animation and Visual Effects",
+     "level": "bachelor"
+    },
+    {
+     "id": 56296,
+     "name": "BA 3D Games Art & Design Showreel 2022",
+     "level": "bachelor"
+    },
+    {
+     "id": 56297,
+     "name": "BA 3D Games Art and Design",
+     "level": "bachelor"
+    },
+    {
+     "id": 56298,
+     "name": "BA Accounting",
+     "level": "bachelor"
+    },
+    {
+     "id": 56299,
+     "name": "BA Accounting / BA Accounting and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 56300,
+     "name": "BA Accounting and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 56301,
+     "name": "BA Architecture",
+     "level": "bachelor"
+    },
+    {
+     "id": 56302,
+     "name": "BA Business Administration",
+     "level": "bachelor"
+    },
+    {
+     "id": 56304,
+     "name": "BA Business and Marketing",
+     "level": "bachelor"
+    },
+    {
+     "id": 56303,
+     "name": "BA Business Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 56305,
+     "name": "BA Character and Creative Effects",
+     "level": "bachelor"
+    },
+    {
+     "id": 56306,
+     "name": "BA Comics and Concept Art",
+     "level": "bachelor"
+    },
+    {
+     "id": 56307,
+     "name": "BA Criminology and Criminal Justice",
+     "level": "bachelor"
+    },
+    {
+     "id": 56308,
+     "name": "BA Digital Arts for Animation, Games and Immersion",
+     "level": "bachelor"
+    },
+    {
+     "id": 56309,
+     "name": "BA Early Childhood Education",
+     "level": "bachelor"
+    },
+    {
+     "id": 56310,
+     "name": "BA Education at the University of Hertfordshire",
+     "level": "bachelor"
+    },
+    {
+     "id": 56311,
+     "name": "BA Fashion and Fashion Business",
+     "level": "bachelor"
+    },
+    {
+     "id": 56312,
+     "name": "BA Film and Television Production",
+     "level": "bachelor"
+    },
+    {
+     "id": 56313,
+     "name": "BA Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 56314,
+     "name": "BA Graphic Design",
+     "level": "bachelor"
+    },
+    {
+     "id": 56315,
+     "name": "BA Graphic Design: Advertising and Branding",
+     "level": "bachelor"
+    },
+    {
+     "id": 56316,
+     "name": "BA Illustration",
+     "level": "bachelor"
+    },
+    {
+     "id": 56317,
+     "name": "BA Interior Architecture and Design",
+     "level": "bachelor"
+    },
+    {
+     "id": 56318,
+     "name": "BA Mass Communications",
+     "level": "bachelor"
+    },
+    {
+     "id": 56319,
+     "name": "BA Media and Communication",
+     "level": "bachelor"
+    },
+    {
+     "id": 56320,
+     "name": "BA Model Design and Special Effects",
+     "level": "bachelor"
+    },
+    {
+     "id": 56321,
+     "name": "BA Politics and International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 56322,
+     "name": "BA Studies in Early Childhood",
+     "level": "bachelor"
+    },
+    {
+     "id": 56323,
+     "name": "BEng Aerospace Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 56324,
+     "name": "BEng Aerospace Engineering with Pilot Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 56325,
+     "name": "BEng Aerospace Engineering with Space Technology",
+     "level": "bachelor"
+    },
+    {
+     "id": 56326,
+     "name": "BEng Automotive Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 56327,
+     "name": "BEng Civil Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 56328,
+     "name": "BEng Electrical and Electronic Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 56329,
+     "name": "BEng Mechanical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 56330,
+     "name": "BEng Motorsport Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 56331,
+     "name": "BEng Robotics and Artificial Intelligence",
+     "level": "bachelor"
+    },
+    {
+     "id": 56332,
+     "name": "BSc Astrophysics",
+     "level": "bachelor"
+    },
+    {
+     "id": 56333,
+     "name": "BSc Audio Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 56334,
+     "name": "BSc Biomedical Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 56335,
+     "name": "BSc Business Analytics and Artificial Intelligence",
+     "level": "bachelor"
+    },
+    {
+     "id": 56337,
+     "name": "BSc Business and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 56336,
+     "name": "BSc Business and FinTech",
+     "level": "bachelor"
+    },
+    {
+     "id": 56338,
+     "name": "BSc Computer Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 56339,
+     "name": "BSc Computer Science (Artificial Intelligence)",
+     "level": "bachelor"
+    },
+    {
+     "id": 56340,
+     "name": "BSc Computer Science (Cyber Security and Networks)",
+     "level": "bachelor"
+    },
+    {
+     "id": 56341,
+     "name": "BSc Computer Science (Software Engineering)",
+     "level": "bachelor"
+    },
+    {
+     "id": 56342,
+     "name": "BSc Data Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 56343,
+     "name": "BSc Diagnostic Radiography and Imaging: FULL",
+     "level": "bachelor"
+    },
+    {
+     "id": 56344,
+     "name": "BSc Digital Technologies for Animation, Games and Immersion",
+     "level": "bachelor"
+    },
+    {
+     "id": 56345,
+     "name": "BSc Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 56346,
+     "name": "BSc Economics / BSc Business Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 56347,
+     "name": "BSc Economics / BSc Economics and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 56348,
+     "name": "BSc Economics and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 56349,
+     "name": "BSc Information Technology",
+     "level": "bachelor"
+    },
+    {
+     "id": 56350,
+     "name": "BSc Live Sound, Lighting and Performance Technology",
+     "level": "bachelor"
+    },
+    {
+     "id": 56351,
+     "name": "BSc Mathematics",
+     "level": "bachelor"
+    }
+   ]
+  },
+  {
+   "entity": "City St George's, University of London",
+   "country": "United Kingdom",
+   "empty_programmes": 136,
+   "blocked_urls": [
+    "https://www.citystgeorges.ac.uk/prospective-students/courses/undergraduate/english",
+    "https://www.citystgeorges.ac.uk/prospective-students/courses/postgraduate/financial-economics",
+    "https://www.bayes.citystgeorges.ac.uk/study/masters/courses/finance-corporate-finance/2026"
+   ],
+   "programmes": [
+    {
+     "id": 41287,
+     "name": "BA Communication, PR and Advertising",
+     "level": "bachelor"
+    },
+    {
+     "id": 41302,
+     "name": "BA English",
+     "level": "bachelor"
+    },
+    {
+     "id": 41300,
+     "name": "BA English with Creative Writing",
+     "level": "bachelor"
+    },
+    {
+     "id": 41301,
+     "name": "BA English with Publishing",
+     "level": "bachelor"
+    },
+    {
+     "id": 41307,
+     "name": "BA History",
+     "level": "bachelor"
+    },
+    {
+     "id": 41306,
+     "name": "BA History and Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 41314,
+     "name": "BA Journalism",
+     "level": "bachelor"
+    },
+    {
+     "id": 41313,
+     "name": "BA Journalism, Politics and History",
+     "level": "bachelor"
+    },
+    {
+     "id": 41323,
+     "name": "BA Media and Communication",
+     "level": "bachelor"
+    },
+    {
+     "id": 41324,
+     "name": "BA Media Production",
+     "level": "bachelor"
+    },
+    {
+     "id": 41275,
+     "name": "BEng Aerospace Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 41278,
+     "name": "BEng Biomedical and Healthcare Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 41286,
+     "name": "BEng Civil and Infrastructure Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52999,
+     "name": "BEng Electrical and Electronic Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 41297,
+     "name": "BEng Energy and Sustainability Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 41298,
+     "name": "BEng Engineering Systems",
+     "level": "bachelor"
+    },
+    {
+     "id": 41299,
+     "name": "BEng Engineering with Business",
+     "level": "bachelor"
+    },
+    {
+     "id": 41322,
+     "name": "BEng Mechanical and Design Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 49437,
+     "name": "BSc (Hons) Biomedical Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 49436,
+     "name": "BSc (Hons) Clinical Pharmacology",
+     "level": "bachelor"
+    },
+    {
+     "id": 49439,
+     "name": "BSc (Hons) Diagnostic Radiography",
+     "level": "bachelor"
+    },
+    {
+     "id": 49440,
+     "name": "BSc (Hons) Occupational Therapy",
+     "level": "bachelor"
+    },
+    {
+     "id": 49441,
+     "name": "BSc (Hons) Physiotherapy",
+     "level": "bachelor"
+    },
+    {
+     "id": 49438,
+     "name": "BSc (Hons) Radiotherapy & Oncology",
+     "level": "bachelor"
+    },
+    {
+     "id": 41273,
+     "name": "BSc Accounting and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 52996,
+     "name": "BSc Accounting and Finance with placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 41274,
+     "name": "BSc Actuarial Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 52998,
+     "name": "BSc Actuarial Science with Professional Placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 41276,
+     "name": "BSc Artificial Intelligence",
+     "level": "bachelor"
+    },
+    {
+     "id": 41277,
+     "name": "BSc Banking and International Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 52997,
+     "name": "BSc Banking and International Finance with placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 53001,
+     "name": "BSc Biomedical Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 41280,
+     "name": "BSc Business Analytics",
+     "level": "bachelor"
+    },
+    {
+     "id": 41279,
+     "name": "BSc Business Analytics with Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 41283,
+     "name": "BSc Business Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 53002,
+     "name": "BSc Business Management with professional placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 41281,
+     "name": "BSc Business Management with Social Purpose",
+     "level": "bachelor"
+    },
+    {
+     "id": 53000,
+     "name": "BSc Business Management with Social Purpose with professional placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 41282,
+     "name": "BSc Business Management, Digital Innovation and Entrepreneurship",
+     "level": "bachelor"
+    },
+    {
+     "id": 53004,
+     "name": "BSc Business Management, Digital Innovation and Entrepreneurship with professional placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 41284,
+     "name": "BSc Business with Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 53003,
+     "name": "BSc Business with Finance with professional placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 41285,
+     "name": "BSc Business with Marketing",
+     "level": "bachelor"
+    },
+    {
+     "id": 53005,
+     "name": "BSc Business with Marketing with placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 53006,
+     "name": "BSc Clinical Pharmacology",
+     "level": "bachelor"
+    },
+    {
+     "id": 41290,
+     "name": "BSc Computer Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 41289,
+     "name": "BSc Computer Science with Games Technology",
+     "level": "bachelor"
+    },
+    {
+     "id": 41292,
+     "name": "BSc Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 53007,
+     "name": "BSc Criminology and Law",
+     "level": "bachelor"
+    },
+    {
+     "id": 41291,
+     "name": "BSc Criminology and Sociology",
+     "level": "bachelor"
+    },
+    {
+     "id": 41293,
+     "name": "BSc Data Analytics and Actuarial Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 53008,
+     "name": "BSc Data Analytics and Actuarial Science with professional placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 41296,
+     "name": "BSc Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 41295,
+     "name": "BSc Economics with Accounting",
+     "level": "bachelor"
+    },
+    {
+     "id": 41304,
+     "name": "BSc Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 41303,
+     "name": "BSc Finance and Actuarial Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 53009,
+     "name": "BSc Finance with Actuarial Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 53010,
+     "name": "BSc Finance with Actuarial Science with Professional Placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 53011,
+     "name": "BSc Finance with professional placement",
+     "level": "bachelor"
+    },
+    {
+     "id": 41305,
+     "name": "BSc Financial Economics",
+     "level": "bachelor"
+    }
+   ]
+  },
+  {
+   "entity": "Queen's University Belfast",
+   "country": "United Kingdom",
+   "empty_programmes": 86,
+   "blocked_urls": [
+    "https://www.qub.ac.uk/Study/international-students/tuition-fees/fees-26-27/",
+    "https://www.qub.ac.uk/Study/Feesandfinance/FileStore/Tuition%20Fee%20and%20Related%20Charges%20Schedule%202026-27.pdf",
+    "https://www.qub.ac.uk/courses/postgraduate-taught/2026/finance-trading-msc/"
+   ],
+   "programmes": [
+    {
+     "id": 43127,
+     "name": "BA Anthropology",
+     "level": "bachelor"
+    },
+    {
+     "id": 43124,
+     "name": "BA Anthropology and International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 43125,
+     "name": "BA Anthropology and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 43131,
+     "name": "BA Archaeology",
+     "level": "bachelor"
+    },
+    {
+     "id": 43139,
+     "name": "BA Broadcast Production",
+     "level": "bachelor"
+    },
+    {
+     "id": 43167,
+     "name": "BA Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 43166,
+     "name": "BA Drama",
+     "level": "bachelor"
+    },
+    {
+     "id": 43178,
+     "name": "BA Film and Theatre Making",
+     "level": "bachelor"
+    },
+    {
+     "id": 43179,
+     "name": "BA Film Studies and Production",
+     "level": "bachelor"
+    },
+    {
+     "id": 43185,
+     "name": "BA French and International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 43194,
+     "name": "BA International Relations and Conflict Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 43225,
+     "name": "BA Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 43199,
+     "name": "BLibArts Liberal Arts",
+     "level": "bachelor"
+    },
+    {
+     "id": 43130,
+     "name": "BSc Archaeology and Palaeoecology",
+     "level": "bachelor"
+    },
+    {
+     "id": 43135,
+     "name": "BSc Biochemistry",
+     "level": "bachelor"
+    },
+    {
+     "id": 43134,
+     "name": "BSc Biochemistry with Professional Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 43180,
+     "name": "BSc Finance with a Year in Industry",
+     "level": "bachelor"
+    },
+    {
+     "id": 43186,
+     "name": "BSc Games Technologies",
+     "level": "bachelor"
+    },
+    {
+     "id": 43213,
+     "name": "BSc Microbiology",
+     "level": "bachelor"
+    },
+    {
+     "id": 43212,
+     "name": "BSc Microbiology with Professional Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 43215,
+     "name": "BSc Midwifery",
+     "level": "bachelor"
+    },
+    {
+     "id": 43235,
+     "name": "BSc Professional Nursing (Adult)",
+     "level": "bachelor"
+    },
+    {
+     "id": 43236,
+     "name": "BSc Professional Nursing (Children and Young People)",
+     "level": "bachelor"
+    },
+    {
+     "id": 43237,
+     "name": "BSc Professional Nursing (Mental Health)",
+     "level": "bachelor"
+    },
+    {
+     "id": 43239,
+     "name": "BSc Professional Nursing Learning Disabilities",
+     "level": "bachelor"
+    },
+    {
+     "id": 43254,
+     "name": "BSc Zoology",
+     "level": "bachelor"
+    },
+    {
+     "id": 43253,
+     "name": "BSc Zoology with Professional Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 43197,
+     "name": "LLB Law",
+     "level": "bachelor"
+    },
+    {
+     "id": 43272,
+     "name": "LLM Criminology & Criminal Justice",
+     "level": "master"
+    },
+    {
+     "id": 43286,
+     "name": "LLM Intellectual Property Law",
+     "level": "master"
+    },
+    {
+     "id": 43288,
+     "name": "LLM International Commercial and Business Law",
+     "level": "master"
+    },
+    {
+     "id": 43289,
+     "name": "LLM International Human Rights Law",
+     "level": "master"
+    },
+    {
+     "id": 43293,
+     "name": "LLM Law",
+     "level": "master"
+    },
+    {
+     "id": 43292,
+     "name": "LLM Law and Technology",
+     "level": "master"
+    },
+    {
+     "id": 43260,
+     "name": "MA Arts Management",
+     "level": "master"
+    },
+    {
+     "id": 43269,
+     "name": "MA Conflict Transformation and Social Justice",
+     "level": "master"
+    },
+    {
+     "id": 43277,
+     "name": "MA Film",
+     "level": "master"
+    },
+    {
+     "id": 43282,
+     "name": "MA Geopolitics",
+     "level": "master"
+    },
+    {
+     "id": 43283,
+     "name": "MA History",
+     "level": "master"
+    },
+    {
+     "id": 43291,
+     "name": "MA International Relations",
+     "level": "master"
+    },
+    {
+     "id": 43290,
+     "name": "MA Interpreting",
+     "level": "master"
+    },
+    {
+     "id": 43295,
+     "name": "MA Linguistics",
+     "level": "master"
+    },
+    {
+     "id": 43298,
+     "name": "MA Media and Broadcast Production",
+     "level": "master"
+    },
+    {
+     "id": 43301,
+     "name": "MA Politics",
+     "level": "master"
+    },
+    {
+     "id": 43303,
+     "name": "MA Public History",
+     "level": "master"
+    },
+    {
+     "id": 43308,
+     "name": "MA Translation",
+     "level": "master"
+    },
+    {
+     "id": 43309,
+     "name": "MA Violence Terrorism and Security",
+     "level": "master"
+    },
+    {
+     "id": 43263,
+     "name": "MBA Business Administration",
+     "level": "master"
+    },
+    {
+     "id": 43262,
+     "name": "MBA Business Administration with Internship",
+     "level": "master"
+    },
+    {
+     "id": 43276,
+     "name": "MEd Educational Studies",
+     "level": "master"
+    },
+    {
+     "id": 43285,
+     "name": "MEd Inclusion and Special Educational Needs",
+     "level": "master"
+    },
+    {
+     "id": 43256,
+     "name": "MLAW (Master's in Law)",
+     "level": "master"
+    },
+    {
+     "id": 43302,
+     "name": "MPh Public Health",
+     "level": "master"
+    },
+    {
+     "id": 43181,
+     "name": "MPlan European Planning",
+     "level": "bachelor"
+    },
+    {
+     "id": 43257,
+     "name": "MSc Accounting, Finance and Analytics",
+     "level": "master"
+    },
+    {
+     "id": 43258,
+     "name": "MSc AI in Business",
+     "level": "master"
+    },
+    {
+     "id": 43259,
+     "name": "MSc Applied Development Psychology",
+     "level": "master"
+    },
+    {
+     "id": 43261,
+     "name": "MSc Autism Spectrum Disorders",
+     "level": "master"
+    },
+    {
+     "id": 43264,
+     "name": "MSc Business Analytics",
+     "level": "master"
+    },
+    {
+     "id": 43265,
+     "name": "MSc Children's Rights",
+     "level": "master"
+    }
+   ]
+  },
+  {
+   "entity": "University of Sheffield",
+   "country": "United Kingdom",
+   "empty_programmes": 105,
+   "blocked_urls": [
+    "https://tools.sheffield.ac.uk/fees/ug/"
+   ],
+   "programmes": [
+    {
+     "id": 50533,
+     "name": "BA Accounting & Financial Management with Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 50536,
+     "name": "BA Architecture",
+     "level": "bachelor"
+    },
+    {
+     "id": 50534,
+     "name": "BA Business Management with Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 50535,
+     "name": "BA Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 50537,
+     "name": "BA Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52268,
+     "name": "BA English and Music",
+     "level": "bachelor"
+    },
+    {
+     "id": 50538,
+     "name": "BA Geography",
+     "level": "bachelor"
+    },
+    {
+     "id": 50539,
+     "name": "BA History",
+     "level": "bachelor"
+    },
+    {
+     "id": 50540,
+     "name": "BA International Business Management with Study Abroad",
+     "level": "bachelor"
+    },
+    {
+     "id": 50541,
+     "name": "BA International Relations and Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 50542,
+     "name": "BA Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 50544,
+     "name": "BA Philosophy, Politics and Economics (PPE)",
+     "level": "bachelor"
+    },
+    {
+     "id": 52270,
+     "name": "BA Philosophy, Religion and Ethics",
+     "level": "bachelor"
+    },
+    {
+     "id": 50543,
+     "name": "BA Politics and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 50545,
+     "name": "BA Politics and Sociology",
+     "level": "bachelor"
+    },
+    {
+     "id": 50546,
+     "name": "BA Social Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 50547,
+     "name": "BA Sociology",
+     "level": "bachelor"
+    },
+    {
+     "id": 50548,
+     "name": "BEng Aerospace Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 50549,
+     "name": "BEng Biomedical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 50550,
+     "name": "BEng Chemical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 50551,
+     "name": "BEng Civil Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 50552,
+     "name": "BEng Computer Systems Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 50553,
+     "name": "BEng General Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 50554,
+     "name": "BEng Mechanical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 52272,
+     "name": "Biological and Bioprocess Engineering MSc (Eng)",
+     "level": "master"
+    },
+    {
+     "id": 52271,
+     "name": "BMus Music",
+     "level": "bachelor"
+    },
+    {
+     "id": 50555,
+     "name": "BSc Biochemistry",
+     "level": "bachelor"
+    },
+    {
+     "id": 50556,
+     "name": "BSc Biological Sciences",
+     "level": "bachelor"
+    },
+    {
+     "id": 50557,
+     "name": "BSc Biomedical Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 50558,
+     "name": "BSc Chemistry",
+     "level": "bachelor"
+    },
+    {
+     "id": 50559,
+     "name": "BSc Computer Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 50560,
+     "name": "BSc Data Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 50561,
+     "name": "BSc Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 50562,
+     "name": "BSc Economics with Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 50563,
+     "name": "BSc Education and Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 50564,
+     "name": "BSc Environmental Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 50565,
+     "name": "BSc Financial Mathematics",
+     "level": "bachelor"
+    },
+    {
+     "id": 50566,
+     "name": "BSc Geography",
+     "level": "bachelor"
+    },
+    {
+     "id": 50567,
+     "name": "BSc Mathematics",
+     "level": "bachelor"
+    },
+    {
+     "id": 50568,
+     "name": "BSc Mathematics & Statistics",
+     "level": "bachelor"
+    },
+    {
+     "id": 50569,
+     "name": "BSc Mathematics and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 50570,
+     "name": "BSc Physics",
+     "level": "bachelor"
+    },
+    {
+     "id": 50571,
+     "name": "BSc Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 50572,
+     "name": "BSc Theoretical Physics",
+     "level": "bachelor"
+    },
+    {
+     "id": 52269,
+     "name": "BSc Zoology",
+     "level": "bachelor"
+    },
+    {
+     "id": 52275,
+     "name": "Electronic and Electrical Engineering MSc (Eng)",
+     "level": "master"
+    },
+    {
+     "id": 50573,
+     "name": "LLB Law",
+     "level": "bachelor"
+    },
+    {
+     "id": 50574,
+     "name": "LLB Law and Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 52274,
+     "name": "LLM International Law and Global Justice",
+     "level": "master"
+    },
+    {
+     "id": 52279,
+     "name": "MA Cognitive Science and Philosophy of AI",
+     "level": "master"
+    },
+    {
+     "id": 52276,
+     "name": "MA Cultural Heritage",
+     "level": "master"
+    },
+    {
+     "id": 52277,
+     "name": "MA Education",
+     "level": "master"
+    },
+    {
+     "id": 52278,
+     "name": "MA English Literature (Creative Writing)",
+     "level": "master"
+    },
+    {
+     "id": 52280,
+     "name": "MA History",
+     "level": "master"
+    },
+    {
+     "id": 52281,
+     "name": "MA International Journalism",
+     "level": "master"
+    },
+    {
+     "id": 52282,
+     "name": "MA Journalism",
+     "level": "master"
+    },
+    {
+     "id": 52283,
+     "name": "MA Language and Linguistics",
+     "level": "master"
+    },
+    {
+     "id": 52284,
+     "name": "MA Music Performance Studies (piano)",
+     "level": "master"
+    },
+    {
+     "id": 52285,
+     "name": "MA Musicology",
+     "level": "master"
+    },
+    {
+     "id": 52286,
+     "name": "MA Politics and Media in East Asia",
+     "level": "master"
+    }
+   ]
+  },
+  {
+   "entity": "Durham University",
+   "country": "United Kingdom",
+   "empty_programmes": 88,
+   "blocked_urls": [
+    "https://www.durham.ac.uk/study/international/fees-and-funding/",
+    "https://www.durham.ac.uk/study/courses/v100/",
+    "https://www.durham.ac.uk/departments/academic/computer-science/"
+   ],
+   "programmes": [
+    {
+     "id": 51226,
+     "name": "BA Ancient History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51228,
+     "name": "BA Ancient History and Archaeology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51229,
+     "name": "BA Ancient, Medieval and Modern History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51227,
+     "name": "BA Anthropology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51231,
+     "name": "BA Anthropology and Sociology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51230,
+     "name": "BA Archaeology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51232,
+     "name": "BA Archaeology and Ancient Civilisations",
+     "level": "bachelor"
+    },
+    {
+     "id": 51235,
+     "name": "BA Business and Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 51236,
+     "name": "BA Classical Civilisation",
+     "level": "bachelor"
+    },
+    {
+     "id": 51233,
+     "name": "BA Classics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51234,
+     "name": "BA Combined Honours in Social Sciences",
+     "level": "bachelor"
+    },
+    {
+     "id": 51237,
+     "name": "BA Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51238,
+     "name": "BA Education Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 51242,
+     "name": "BA Education Studies - Geography",
+     "level": "bachelor"
+    },
+    {
+     "id": 51240,
+     "name": "BA Education Studies - Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51243,
+     "name": "BA Education Studies - Sociology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51239,
+     "name": "BA English Literature",
+     "level": "bachelor"
+    },
+    {
+     "id": 51241,
+     "name": "BA English Literature and History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51244,
+     "name": "BA English Literature and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 51245,
+     "name": "BA Geography",
+     "level": "bachelor"
+    },
+    {
+     "id": 51248,
+     "name": "BA Historical Archaeology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51249,
+     "name": "BA History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51246,
+     "name": "BA International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 51247,
+     "name": "BA Liberal Arts",
+     "level": "bachelor"
+    },
+    {
+     "id": 51250,
+     "name": "BA Music",
+     "level": "bachelor"
+    },
+    {
+     "id": 51251,
+     "name": "BA Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 51254,
+     "name": "BA Philosophy and Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51255,
+     "name": "BA Philosophy and Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51256,
+     "name": "BA Philosophy and Theology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51252,
+     "name": "BA Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51253,
+     "name": "BA Politics and International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 51258,
+     "name": "BA Religion, Society and Culture",
+     "level": "bachelor"
+    },
+    {
+     "id": 51257,
+     "name": "BA Sociology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51259,
+     "name": "BA Sport, Exercise and Physical Activity",
+     "level": "bachelor"
+    },
+    {
+     "id": 51261,
+     "name": "BA Theology and Religion",
+     "level": "bachelor"
+    },
+    {
+     "id": 51260,
+     "name": "BA Visual Arts and Film",
+     "level": "bachelor"
+    },
+    {
+     "id": 51262,
+     "name": "BEng Engineering (Civil)",
+     "level": "bachelor"
+    },
+    {
+     "id": 51263,
+     "name": "BEng Engineering (Electrical)",
+     "level": "bachelor"
+    },
+    {
+     "id": 51265,
+     "name": "BEng Engineering (Mechanical)",
+     "level": "bachelor"
+    },
+    {
+     "id": 51267,
+     "name": "BEng General Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 51266,
+     "name": "BS Anthropology and Archaeology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51264,
+     "name": "BSc Accounting",
+     "level": "bachelor"
+    },
+    {
+     "id": 51268,
+     "name": "BSc Accounting and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 51269,
+     "name": "BSc Anthropology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51270,
+     "name": "BSc Archaeology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51271,
+     "name": "BSc Biochemistry",
+     "level": "bachelor"
+    },
+    {
+     "id": 51272,
+     "name": "BSc Biological Sciences",
+     "level": "bachelor"
+    },
+    {
+     "id": 51273,
+     "name": "BSc Biology and Chemistry",
+     "level": "bachelor"
+    },
+    {
+     "id": 51274,
+     "name": "BSc Biology and Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51275,
+     "name": "BSc Chemistry",
+     "level": "bachelor"
+    },
+    {
+     "id": 51276,
+     "name": "BSc Climate Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 51277,
+     "name": "BSc Computer Science",
+     "level": "bachelor"
+    },
+    {
+     "id": 51278,
+     "name": "BSc Computer Science and Mathematics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51279,
+     "name": "BSc Economics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51280,
+     "name": "BSc Economics and Mathematics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51281,
+     "name": "BSc Economics and Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51283,
+     "name": "BSc Environmental Geoscience",
+     "level": "bachelor"
+    },
+    {
+     "id": 51282,
+     "name": "BSc Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 51284,
+     "name": "BSc Geography",
+     "level": "bachelor"
+    },
+    {
+     "id": 51285,
+     "name": "BSc Geology",
+     "level": "bachelor"
+    }
+   ]
+  },
+  {
+   "entity": "Leeds Beckett University",
+   "country": "United Kingdom",
+   "empty_programmes": 88,
+   "blocked_urls": [
+    "https://courses.leedsbeckett.ac.uk/criminology/ (500 offline)"
+   ],
+   "programmes": [
+    {
+     "id": 51536,
+     "name": "BA Accounting and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 51537,
+     "name": "BA Acting",
+     "level": "bachelor"
+    },
+    {
+     "id": 51538,
+     "name": "BA Architecture",
+     "level": "bachelor"
+    },
+    {
+     "id": 51547,
+     "name": "BA Childhood Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 51548,
+     "name": "BA Creative Writing",
+     "level": "bachelor"
+    },
+    {
+     "id": 51549,
+     "name": "BA Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51550,
+     "name": "BA Criminology with Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51551,
+     "name": "BA Digital Marketing",
+     "level": "bachelor"
+    },
+    {
+     "id": 51552,
+     "name": "BA Economics & Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 51553,
+     "name": "BA Education Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 51554,
+     "name": "BA English & History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51556,
+     "name": "BA English and Creative Writing",
+     "level": "bachelor"
+    },
+    {
+     "id": 51555,
+     "name": "BA English Literature",
+     "level": "bachelor"
+    },
+    {
+     "id": 51557,
+     "name": "BA Events Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 51558,
+     "name": "BA Fashion Communication & Content",
+     "level": "bachelor"
+    },
+    {
+     "id": 51559,
+     "name": "BA Fashion Design",
+     "level": "bachelor"
+    },
+    {
+     "id": 51560,
+     "name": "BA Fashion Marketing & Enterprise",
+     "level": "bachelor"
+    },
+    {
+     "id": 51561,
+     "name": "BA Filmmaking",
+     "level": "bachelor"
+    },
+    {
+     "id": 51562,
+     "name": "BA Fine Art",
+     "level": "bachelor"
+    },
+    {
+     "id": 51563,
+     "name": "BA Games Art",
+     "level": "bachelor"
+    },
+    {
+     "id": 51564,
+     "name": "BA Graphic Design",
+     "level": "bachelor"
+    },
+    {
+     "id": 51565,
+     "name": "BA History",
+     "level": "bachelor"
+    },
+    {
+     "id": 51566,
+     "name": "BA History and Media",
+     "level": "bachelor"
+    },
+    {
+     "id": 51567,
+     "name": "BA History and Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51568,
+     "name": "BA Housing Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 51569,
+     "name": "BA Human Geography",
+     "level": "bachelor"
+    },
+    {
+     "id": 51570,
+     "name": "BA Human Geography & Planning",
+     "level": "bachelor"
+    },
+    {
+     "id": 51572,
+     "name": "BA Illustration and Animation",
+     "level": "bachelor"
+    },
+    {
+     "id": 51573,
+     "name": "BA Interior Architecture",
+     "level": "bachelor"
+    },
+    {
+     "id": 51575,
+     "name": "BA International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 51576,
+     "name": "BA International Relations with Global Development",
+     "level": "bachelor"
+    },
+    {
+     "id": 51577,
+     "name": "BA International Relations with Human Rights",
+     "level": "bachelor"
+    },
+    {
+     "id": 51578,
+     "name": "BA International Relations with Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51579,
+     "name": "BA International Tourism Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 51580,
+     "name": "BA International Tourism Management with Marketing",
+     "level": "bachelor"
+    },
+    {
+     "id": 51581,
+     "name": "BA Journalism",
+     "level": "bachelor"
+    },
+    {
+     "id": 51582,
+     "name": "BA Landscape Architecture & Design",
+     "level": "bachelor"
+    },
+    {
+     "id": 51583,
+     "name": "BA Marketing",
+     "level": "bachelor"
+    },
+    {
+     "id": 51584,
+     "name": "BA Marketing & Advertising",
+     "level": "bachelor"
+    },
+    {
+     "id": 51585,
+     "name": "BA Marketing and Public Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 51586,
+     "name": "BA Media and English",
+     "level": "bachelor"
+    },
+    {
+     "id": 51587,
+     "name": "BA Media, Communication, Cultures",
+     "level": "bachelor"
+    },
+    {
+     "id": 51589,
+     "name": "BA Music Performance & Production",
+     "level": "bachelor"
+    },
+    {
+     "id": 51590,
+     "name": "BA Music Production",
+     "level": "bachelor"
+    },
+    {
+     "id": 51591,
+     "name": "BA Performing Arts",
+     "level": "bachelor"
+    },
+    {
+     "id": 51592,
+     "name": "BA Physical Education",
+     "level": "bachelor"
+    },
+    {
+     "id": 51593,
+     "name": "BA Physical Education with Outdoor Education",
+     "level": "bachelor"
+    },
+    {
+     "id": 51594,
+     "name": "BA Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 51595,
+     "name": "BA Politics with Global Development",
+     "level": "bachelor"
+    },
+    {
+     "id": 51596,
+     "name": "BA Politics with Human Rights",
+     "level": "bachelor"
+    },
+    {
+     "id": 51597,
+     "name": "BA Politics with International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 51598,
+     "name": "BA Product Design",
+     "level": "bachelor"
+    },
+    {
+     "id": 51599,
+     "name": "BA Psychology in Education",
+     "level": "bachelor"
+    },
+    {
+     "id": 51600,
+     "name": "BA Social Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51601,
+     "name": "BA Social Work",
+     "level": "bachelor"
+    },
+    {
+     "id": 51602,
+     "name": "BA Sociology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51603,
+     "name": "BA Sociology & Psychological Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 51604,
+     "name": "BA Sociology and Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 51606,
+     "name": "BA Sport Development",
+     "level": "bachelor"
+    },
+    {
+     "id": 51607,
+     "name": "BA Sport Marketing",
+     "level": "bachelor"
+    }
+   ]
+  },
+  {
+   "entity": "Long Island University - Post",
+   "country": "United States",
+   "empty_programmes": 88,
+   "blocked_urls": [
+    "https://liu.edu/registration-and-financial-aid/tuition-fees",
+    "https://www.liu.edu/post/~/media/1A2BACAC63D4417D9EED5FFDE46F2C1B.ashx"
+   ],
+   "programmes": [
+    {
+     "id": 42619,
+     "name": "M.A. Behavior Analysis",
+     "level": "master"
+    },
+    {
+     "id": 42625,
+     "name": "M.A. Clinical Art Therapy and Counselling",
+     "level": "master"
+    },
+    {
+     "id": 42638,
+     "name": "M.A. Speech-Language Pathology",
+     "level": "master"
+    },
+    {
+     "id": 42630,
+     "name": "M.H.A. Health Administration",
+     "level": "master"
+    },
+    {
+     "id": 42618,
+     "name": "M.S. Adolescence Education:Grades 7-12",
+     "level": "master"
+    },
+    {
+     "id": 42621,
+     "name": "M.S. Biomedical Science",
+     "level": "master"
+    },
+    {
+     "id": 42622,
+     "name": "M.S. Biomedical Science - Microbial/Infectious Diseases",
+     "level": "master"
+    },
+    {
+     "id": 42623,
+     "name": "M.S. Biomedical Science - Molecular Immunology/Cancer Biology",
+     "level": "master"
+    },
+    {
+     "id": 42620,
+     "name": "M.S. Biomedical Science – Cancer Biology",
+     "level": "master"
+    },
+    {
+     "id": 42624,
+     "name": "M.S. Childhood/Special Education",
+     "level": "master"
+    },
+    {
+     "id": 42626,
+     "name": "M.S. Clinical Laboratory Sciences",
+     "level": "master"
+    },
+    {
+     "id": 42627,
+     "name": "M.S. Criminal Justice",
+     "level": "master"
+    },
+    {
+     "id": 42628,
+     "name": "M.S. Data Analytics and Strategic Business Intelligence",
+     "level": "master"
+    },
+    {
+     "id": 42629,
+     "name": "M.S. Early Childhood/Childhood Education",
+     "level": "master"
+    },
+    {
+     "id": 42631,
+     "name": "M.S. Management Engineering",
+     "level": "master"
+    },
+    {
+     "id": 42632,
+     "name": "M.S. Mental Health Counseling",
+     "level": "master"
+    },
+    {
+     "id": 42633,
+     "name": "M.S. School Counseling",
+     "level": "master"
+    },
+    {
+     "id": 42639,
+     "name": "M.S.Ed. Students with Disabilities Generalist 7-12",
+     "level": "master"
+    },
+    {
+     "id": 42634,
+     "name": "M.S.W. Social Work/Alcohol and Substance Abuse",
+     "level": "master"
+    },
+    {
+     "id": 42635,
+     "name": "M.S.W. Social Work/Child and Family Welfare",
+     "level": "master"
+    },
+    {
+     "id": 42636,
+     "name": "M.S.W. Social Work/Forensic Social Work",
+     "level": "master"
+    },
+    {
+     "id": 42637,
+     "name": "M.S.W. Social Work/Nonprofit Management",
+     "level": "master"
+    }
+   ]
+  },
+  {
+   "entity": "University of Essex (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 191,
+   "blocked_urls": [
+    "https://www.essex.ac.uk/undergraduate/fees-and-funding/eu-and-international-fees (direct fetch HTTP 503, figures taken from search-tool extract of the official page)",
+    "https://www.essex.ac.uk/courses/ug01291/1/ba-criminology-with-criminal-law (503)"
+   ],
+   "programmes": [
+    {
+     "id": 54045,
+     "name": "BA Childhood Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 54040,
+     "name": "BA Continental Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 54047,
+     "name": "BA Creative Writing",
+     "level": "bachelor"
+    },
+    {
+     "id": 54046,
+     "name": "BA Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 54048,
+     "name": "BA Criminology with Counselling Skills",
+     "level": "bachelor"
+    },
+    {
+     "id": 54051,
+     "name": "BA Criminology with Criminal Law",
+     "level": "bachelor"
+    },
+    {
+     "id": 54049,
+     "name": "BA Criminology with Social Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 54050,
+     "name": "BA Curating",
+     "level": "bachelor"
+    },
+    {
+     "id": 54053,
+     "name": "BA Curating with Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 54054,
+     "name": "BA Curating, Heritage and Human Rights",
+     "level": "bachelor"
+    },
+    {
+     "id": 54055,
+     "name": "BA Drama",
+     "level": "bachelor"
+    },
+    {
+     "id": 54056,
+     "name": "BA Drama and Creative Writing",
+     "level": "bachelor"
+    },
+    {
+     "id": 54059,
+     "name": "BA English Language and Linguistics",
+     "level": "bachelor"
+    },
+    {
+     "id": 54063,
+     "name": "BA Events Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 54066,
+     "name": "BA Film and Creative Writing",
+     "level": "bachelor"
+    },
+    {
+     "id": 54067,
+     "name": "BA Film and Drama",
+     "level": "bachelor"
+    },
+    {
+     "id": 54068,
+     "name": "BA Film and Journalism",
+     "level": "bachelor"
+    },
+    {
+     "id": 54065,
+     "name": "BA Film Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 54071,
+     "name": "BA Global Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 54073,
+     "name": "BA Global Studies with Human Rights",
+     "level": "bachelor"
+    },
+    {
+     "id": 54074,
+     "name": "BA Global Studies with Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 54082,
+     "name": "BA Hospitality Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 54084,
+     "name": "BA International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 54083,
+     "name": "BA International Tourism Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 54085,
+     "name": "BA Journalism and Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 54086,
+     "name": "BA Journalism and Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 54087,
+     "name": "BA Journalism with Human Rights",
+     "level": "bachelor"
+    },
+    {
+     "id": 54088,
+     "name": "BA Language Studies and Linguistics",
+     "level": "bachelor"
+    },
+    {
+     "id": 54089,
+     "name": "BA Language Studies with Latin American Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 54090,
+     "name": "BA Liberal Arts",
+     "level": "bachelor"
+    },
+    {
+     "id": 54091,
+     "name": "BA Linguistics",
+     "level": "bachelor"
+    },
+    {
+     "id": 54094,
+     "name": "BA Media Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 54098,
+     "name": "BA Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 54100,
+     "name": "BA Philosophy and Law",
+     "level": "bachelor"
+    },
+    {
+     "id": 54101,
+     "name": "BA Philosophy and Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 54104,
+     "name": "BA Philosophy with Human Rights",
+     "level": "bachelor"
+    },
+    {
+     "id": 54105,
+     "name": "BA Philosophy, Ethics and Sustainability",
+     "level": "bachelor"
+    },
+    {
+     "id": 54108,
+     "name": "BA Philosophy, Religion and Ethics",
+     "level": "bachelor"
+    },
+    {
+     "id": 54107,
+     "name": "BA Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 54109,
+     "name": "BA Politics and International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 54110,
+     "name": "BA Psychodynamic Practice",
+     "level": "bachelor"
+    },
+    {
+     "id": 54111,
+     "name": "BA Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 54112,
+     "name": "BA Psychosocial and Psychoanalytic Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 54117,
+     "name": "BA Teaching English as a Foreign Language",
+     "level": "bachelor"
+    },
+    {
+     "id": 54121,
+     "name": "BEng Mechatronic Systems",
+     "level": "bachelor"
+    },
+    {
+     "id": 54123,
+     "name": "BSc Accounting",
+     "level": "bachelor"
+    },
+    {
+     "id": 54124,
+     "name": "BSc Accounting and Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 54126,
+     "name": "BSc Artificial Intelligence",
+     "level": "bachelor"
+    },
+    {
+     "id": 54127,
+     "name": "BSc Biochemistry",
+     "level": "bachelor"
+    },
+    {
+     "id": 54130,
+     "name": "BSc Biotechnology",
+     "level": "bachelor"
+    },
+    {
+     "id": 54137,
+     "name": "BSc Cyber Security",
+     "level": "bachelor"
+    },
+    {
+     "id": 54139,
+     "name": "BSc Ecology and Environmental Biology",
+     "level": "bachelor"
+    },
+    {
+     "id": 54143,
+     "name": "BSc Finance",
+     "level": "bachelor"
+    },
+    {
+     "id": 54145,
+     "name": "BSc Genetics",
+     "level": "bachelor"
+    },
+    {
+     "id": 54146,
+     "name": "BSc Global Sustainability",
+     "level": "bachelor"
+    },
+    {
+     "id": 54147,
+     "name": "BSc Human Biology",
+     "level": "bachelor"
+    },
+    {
+     "id": 54150,
+     "name": "BSc Marine Biology",
+     "level": "bachelor"
+    },
+    {
+     "id": 54151,
+     "name": "BSc Marketing Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 54153,
+     "name": "BSc Nursing (Adult)",
+     "level": "bachelor"
+    },
+    {
+     "id": 54154,
+     "name": "BSc Physiotherapy",
+     "level": "bachelor"
+    }
+   ]
+  },
+  {
+   "entity": "Long Island University - Brooklyn",
+   "country": "United States",
+   "empty_programmes": 81,
+   "blocked_urls": [
+    "https://liu.edu/registration-and-financial-aid/tuition-fees (503)"
+   ],
+   "programmes": [
+    {
+     "id": 42541,
+     "name": "M.A. Psychology - Non-Thesis",
+     "level": "master"
+    },
+    {
+     "id": 42528,
+     "name": "M.B.A MBA with General Business Core - Entrepreneurship",
+     "level": "master"
+    },
+    {
+     "id": 42529,
+     "name": "M.B.A MBA with General Business Core - Finance",
+     "level": "master"
+    },
+    {
+     "id": 42530,
+     "name": "M.B.A MBA with General Business Core - Human Resource Management",
+     "level": "master"
+    },
+    {
+     "id": 42531,
+     "name": "M.B.A MBA with General Business Core - International Business",
+     "level": "master"
+    },
+    {
+     "id": 42533,
+     "name": "M.B.A MBA with General Business Core - Management information Systems",
+     "level": "master"
+    },
+    {
+     "id": 42534,
+     "name": "M.B.A. MBA with General Business Core - Accounting",
+     "level": "master"
+    },
+    {
+     "id": 42519,
+     "name": "M.F.A. Creative Writing & Publishing",
+     "level": "master"
+    },
+    {
+     "id": 42526,
+     "name": "M.P.A. Health Administration",
+     "level": "master"
+    },
+    {
+     "id": 42542,
+     "name": "M.P.A. Public Administration",
+     "level": "master"
+    },
+    {
+     "id": 42543,
+     "name": "M.P.H. Public Health",
+     "level": "master"
+    },
+    {
+     "id": 42518,
+     "name": "M.S. Computer Science -Hybrid Degree Program",
+     "level": "master"
+    },
+    {
+     "id": 42520,
+     "name": "M.S. Data Analytics and Strategic Business Intelligence",
+     "level": "master"
+    },
+    {
+     "id": 42521,
+     "name": "M.S. Drug Regulatory Affairs",
+     "level": "master"
+    },
+    {
+     "id": 42522,
+     "name": "M.S. Exercise Science",
+     "level": "master"
+    },
+    {
+     "id": 42523,
+     "name": "M.S. Exercise Science/Exercise Phys. and Sports Nutrition",
+     "level": "master"
+    },
+    {
+     "id": 42524,
+     "name": "M.S. Exercise Science/Inclusive Fitness",
+     "level": "master"
+    },
+    {
+     "id": 42525,
+     "name": "M.S. Exercise Science/Strength and Cond. and Sports Nutrition",
+     "level": "master"
+    },
+    {
+     "id": 42527,
+     "name": "M.S. Marriage and Family Therapy",
+     "level": "master"
+    },
+    {
+     "id": 42536,
+     "name": "M.S. Mental Health Counseling",
+     "level": "master"
+    },
+    {
+     "id": 42537,
+     "name": "M.S. Pharmaceutics",
+     "level": "master"
+    },
+    {
+     "id": 42538,
+     "name": "M.S. Pharmaceutics/Cosmetic Science",
+     "level": "master"
+    },
+    {
+     "id": 42539,
+     "name": "M.S. Pharmaceutics/Industrial Pharmacy",
+     "level": "master"
+    },
+    {
+     "id": 42540,
+     "name": "M.S. Pharmacology&Toxicology",
+     "level": "master"
+    },
+    {
+     "id": 42551,
+     "name": "M.S. Speech-Language Pathology",
+     "level": "master"
+    },
+    {
+     "id": 42544,
+     "name": "M.S.Ed. School Psychologist",
+     "level": "master"
+    },
+    {
+     "id": 42545,
+     "name": "M.S.W. Social Work/Alcohol & Substance Abuse Counseling:CASAC",
+     "level": "master"
+    },
+    {
+     "id": 42546,
+     "name": "M.S.W. Social Work/Child&Family Welfare",
+     "level": "master"
+    },
+    {
+     "id": 42547,
+     "name": "M.S.W. Social Work/Forensic Social Work",
+     "level": "master"
+    },
+    {
+     "id": 42548,
+     "name": "M.S.W. Social Work/Gerontology Cmty Srvc",
+     "level": "master"
+    },
+    {
+     "id": 42549,
+     "name": "M.S.W. Social Work/Gerontology Long Term Care",
+     "level": "master"
+    },
+    {
+     "id": 42550,
+     "name": "M.S.W. Social Work/Nonprofit Management",
+     "level": "master"
+    },
+    {
+     "id": 42532,
+     "name": "Management MBA with General Business Core (M.B.A)",
+     "level": "master"
+    },
+    {
+     "id": 42535,
+     "name": "Marketing MBA with General Business Core (M.B.A.)",
+     "level": "master"
+    }
+   ]
+  },
+  {
+   "entity": "Nottingham Trent University (EB UK)",
+   "country": "United Kingdom",
+   "empty_programmes": 152,
+   "blocked_urls": [
+    "https://www.ntu.ac.uk/study-and-courses/international-students/fees-and-funding",
+    "https://www.ntu.ac.uk/study-and-courses/courses/find-your-course"
+   ],
+   "programmes": [
+    {
+     "id": 53108,
+     "name": "BA Animation",
+     "level": "bachelor"
+    },
+    {
+     "id": 53114,
+     "name": "BA Childhood and Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 53116,
+     "name": "BA Childhood and Society",
+     "level": "bachelor"
+    },
+    {
+     "id": 53117,
+     "name": "BA Childhood: Health & Wellbeing",
+     "level": "bachelor"
+    },
+    {
+     "id": 53118,
+     "name": "BA Communication and Film & TV",
+     "level": "bachelor"
+    },
+    {
+     "id": 53119,
+     "name": "BA Communication and Linguistics",
+     "level": "bachelor"
+    },
+    {
+     "id": 53120,
+     "name": "BA Communication and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 53121,
+     "name": "BA Communications and English",
+     "level": "bachelor"
+    },
+    {
+     "id": 53122,
+     "name": "BA Communications and History",
+     "level": "bachelor"
+    },
+    {
+     "id": 53123,
+     "name": "BA Content Creation",
+     "level": "bachelor"
+    },
+    {
+     "id": 53124,
+     "name": "BA Creative Direction and Curation for Fashion",
+     "level": "bachelor"
+    },
+    {
+     "id": 53130,
+     "name": "BA Criminology",
+     "level": "bachelor"
+    },
+    {
+     "id": 53126,
+     "name": "BA Criminology and Policing",
+     "level": "bachelor"
+    },
+    {
+     "id": 53129,
+     "name": "BA Early Childhood Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 53131,
+     "name": "BA Education Studies",
+     "level": "bachelor"
+    },
+    {
+     "id": 53133,
+     "name": "BA Education Studies and Psychology",
+     "level": "bachelor"
+    },
+    {
+     "id": 53132,
+     "name": "BA English",
+     "level": "bachelor"
+    },
+    {
+     "id": 53135,
+     "name": "BA English and Film & TV",
+     "level": "bachelor"
+    },
+    {
+     "id": 53136,
+     "name": "BA English and History",
+     "level": "bachelor"
+    },
+    {
+     "id": 53137,
+     "name": "BA English and Media",
+     "level": "bachelor"
+    },
+    {
+     "id": 53139,
+     "name": "BA English and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 53134,
+     "name": "BA English Language and Linguistics",
+     "level": "bachelor"
+    },
+    {
+     "id": 53140,
+     "name": "BA Event Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 53138,
+     "name": "BA Fashion Communication and Promotion",
+     "level": "bachelor"
+    },
+    {
+     "id": 53142,
+     "name": "BA Fashion Management",
+     "level": "bachelor"
+    },
+    {
+     "id": 53144,
+     "name": "BA Fashion Marketing and Branding",
+     "level": "bachelor"
+    },
+    {
+     "id": 53145,
+     "name": "BA Film & TV and History",
+     "level": "bachelor"
+    },
+    {
+     "id": 53146,
+     "name": "BA Film & TV and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 53147,
+     "name": "BA Filmmaking",
+     "level": "bachelor"
+    },
+    {
+     "id": 53148,
+     "name": "BA Fine Art",
+     "level": "bachelor"
+    },
+    {
+     "id": 53151,
+     "name": "BA Games Art",
+     "level": "bachelor"
+    },
+    {
+     "id": 53152,
+     "name": "BA Health and Social Care",
+     "level": "bachelor"
+    },
+    {
+     "id": 53153,
+     "name": "BA History",
+     "level": "bachelor"
+    },
+    {
+     "id": 53154,
+     "name": "BA History and Linguistics",
+     "level": "bachelor"
+    },
+    {
+     "id": 53155,
+     "name": "BA History and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 53156,
+     "name": "BA History with International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 53157,
+     "name": "BA History with Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 53158,
+     "name": "BA Illustration",
+     "level": "bachelor"
+    },
+    {
+     "id": 53159,
+     "name": "BA International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 53162,
+     "name": "BA Linguistics and Media",
+     "level": "bachelor"
+    },
+    {
+     "id": 53163,
+     "name": "BA Linguistics and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 53164,
+     "name": "BA Marketing",
+     "level": "bachelor"
+    },
+    {
+     "id": 53167,
+     "name": "BA Media and Film & TV",
+     "level": "bachelor"
+    },
+    {
+     "id": 53168,
+     "name": "BA Media and Philosophy",
+     "level": "bachelor"
+    },
+    {
+     "id": 53166,
+     "name": "BA Media Communications",
+     "level": "bachelor"
+    },
+    {
+     "id": 53165,
+     "name": "BA Media Production",
+     "level": "bachelor"
+    },
+    {
+     "id": 53170,
+     "name": "BA Music Production",
+     "level": "bachelor"
+    },
+    {
+     "id": 53171,
+     "name": "BA Photography",
+     "level": "bachelor"
+    },
+    {
+     "id": 53173,
+     "name": "BA Politics",
+     "level": "bachelor"
+    },
+    {
+     "id": 53172,
+     "name": "BA Politics and International Relations",
+     "level": "bachelor"
+    },
+    {
+     "id": 53174,
+     "name": "BA Popular Music",
+     "level": "bachelor"
+    },
+    {
+     "id": 53176,
+     "name": "BA Sociology",
+     "level": "bachelor"
+    },
+    {
+     "id": 53177,
+     "name": "BA Special Educational Needs, Disability and Inclusion (SENDI)",
+     "level": "bachelor"
+    },
+    {
+     "id": 53178,
+     "name": "BA Visual Effects Art",
+     "level": "bachelor"
+    },
+    {
+     "id": 53180,
+     "name": "BArch Architecture",
+     "level": "bachelor"
+    },
+    {
+     "id": 53181,
+     "name": "BEng Aerospace Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 53182,
+     "name": "BEng Biomedical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 53184,
+     "name": "BEng Civil Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 53183,
+     "name": "BEng Electronic and Electrical Engineering",
+     "level": "bachelor"
+    },
+    {
+     "id": 53185,
+     "name": "BEng Mechanical Engineering",
+     "level": "bachelor"
+    }
+   ]
+  }
+ ]
+}

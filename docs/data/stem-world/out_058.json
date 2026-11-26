@@ -1,0 +1,839 @@
+{
+ "44975": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels BBB; IB 28 points; Highers ABBB. Year 2 entry: A-levels ABB; IB 32",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "No specific subjects for Year 1; Year 2 needs Computing plus Java or other programming experience",
+   "note": "Minimum HL5 required in any essential subject; institution-wide IB rule applied."
+  },
+  "ap": {
+   "accepted": null,
+   "details": "No AP-specific rule published; American High School Diploma accepted for direct entry in listed countries, and US applicants need a cumulative unweighted 3.0 GPA for Year 1 entry (GED holders must take a foundation programme).",
+   "note": "Institution-wide rule applied; contact admissions for AP credit."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB for Year 1 (no subject requirement); ABB for Year 2 including Computing and programming experience",
+  "turkish_route": "Direct entry with Lise Diplomas\u0131: minimum 80% overall in Grade 12 and in relevant subjects (70% if from an approved school; contact international office). One year of relevant university study in Turkey also accepted. Pathway programmes via the International Study Centre if requirements not met.",
+  "prerequisite_maths": "No maths entry requirement; maths module taken in Semester 1",
+  "source_url": "https://www.stir.ac.uk/courses/ug/business-computing/",
+  "confidence": "high"
+ },
+ "44987": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels BBB; IB 28 points; Highers ABBB. Year 2 entry: A-levels ABB; IB 32",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "No specific subjects for Year 1; Year 2 needs Computing and Java or other programming experience",
+   "note": "Minimum HL5 required in any essential subject; institution-wide IB rule applied."
+  },
+  "ap": {
+   "accepted": null,
+   "details": "No AP-specific rule published; American High School Diploma accepted for direct entry in listed countries, and US applicants need a cumulative unweighted 3.0 GPA for Year 1 entry (GED holders must take a foundation programme).",
+   "note": "Institution-wide rule applied; contact admissions for AP credit."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB for Year 1 (no subject requirement); ABB for Year 2 including Computing",
+  "turkish_route": "Direct entry with Lise Diplomas\u0131: minimum 80% overall in Grade 12 and in relevant subjects (70% if from an approved school; contact international office). One year of relevant university study in Turkey also accepted. Pathway programmes via the International Study Centre if requirements not met.",
+  "prerequisite_maths": "No maths entry requirement; programming experience beneficial",
+  "source_url": "https://www.stir.ac.uk/courses/ug/computing-science/",
+  "confidence": "high"
+ },
+ "44986": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels BBB including Mathematics; IB with Mathematics HL5",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Mathematics at HL5",
+   "note": "Minimum HL5 required in any essential subject; institution-wide IB rule applied."
+  },
+  "ap": {
+   "accepted": null,
+   "details": "No AP-specific rule published; American High School Diploma accepted for direct entry in listed countries, and US applicants need a cumulative unweighted 3.0 GPA for Year 1 entry (GED holders must take a foundation programme).",
+   "note": "Institution-wide rule applied; contact admissions for AP credit."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including Mathematics",
+  "turkish_route": "Direct entry with Lise Diplomas\u0131: minimum 80% overall in Grade 12 and in relevant subjects (70% if from an approved school; contact international office). One year of relevant university study in Turkey also accepted. Pathway programmes via the International Study Centre if requirements not met.",
+  "prerequisite_maths": "Mathematics at A-level or IB HL5",
+  "source_url": "https://www.stir.ac.uk/courses/ug/computing-science/",
+  "confidence": "medium"
+ },
+ "44990": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels BBB; IB 28 points. Year 2 entry: A-levels ABB; IB 32",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "No specific subjects for Year 1; Year 2 needs Computing and programming experience",
+   "note": "Minimum HL5 required in any essential subject; institution-wide IB rule applied."
+  },
+  "ap": {
+   "accepted": null,
+   "details": "No AP-specific rule published; American High School Diploma accepted for direct entry in listed countries, and US applicants need a cumulative unweighted 3.0 GPA for Year 1 entry (GED holders must take a foundation programme).",
+   "note": "Institution-wide rule applied; contact admissions for AP credit."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB for Year 1; ABB for Year 2",
+  "turkish_route": "Direct entry with Lise Diplomas\u0131: minimum 80% overall in Grade 12 and in relevant subjects (70% if from an approved school; contact international office). One year of relevant university study in Turkey also accepted. Pathway programmes via the International Study Centre if requirements not met.",
+  "prerequisite_maths": "No maths entry requirement listed",
+  "source_url": "https://www.stir.ac.uk/courses/ug/data-science-artificial-intelligence/",
+  "confidence": "medium"
+ },
+ "44997": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels BBB; IB 28 points; Highers ABBB. Year 2 entry: A-levels ABB; IB 32",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "One of Biology, Chemistry, Environmental Science, Geography, Geology, Mathematics or Physics",
+   "note": "Minimum HL5 required in any essential subject; institution-wide IB rule applied."
+  },
+  "ap": {
+   "accepted": null,
+   "details": "No AP-specific rule published; American High School Diploma accepted for direct entry in listed countries, and US applicants need a cumulative unweighted 3.0 GPA for Year 1 entry (GED holders must take a foundation programme).",
+   "note": "Institution-wide rule applied; contact admissions for AP credit."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB including one of Biology, Chemistry, Environmental Science, Geography, Geology, Mathematics or Physics",
+  "turkish_route": "Direct entry with Lise Diplomas\u0131: minimum 80% overall in Grade 12 and in relevant subjects (70% if from an approved school; contact international office). One year of relevant university study in Turkey also accepted. Pathway programmes via the International Study Centre if requirements not met.",
+  "prerequisite_maths": "One science or Mathematics subject required",
+  "source_url": "https://www.stir.ac.uk/courses/ug/environmental-science-bsc/",
+  "confidence": "high"
+ },
+ "45030": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels BBB; IB 28 points; Highers ABBB",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "No specific subjects required",
+   "note": "Minimum HL5 required in any essential subject; institution-wide IB rule applied."
+  },
+  "ap": {
+   "accepted": null,
+   "details": "No AP-specific rule published; American High School Diploma accepted for direct entry in listed countries, and US applicants need a cumulative unweighted 3.0 GPA for Year 1 entry (GED holders must take a foundation programme).",
+   "note": "Institution-wide rule applied; contact admissions for AP credit."
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBB, no subject requirement",
+  "turkish_route": "Direct entry with Lise Diplomas\u0131: minimum 80% overall in Grade 12 and in relevant subjects (70% if from an approved school; contact international office). One year of relevant university study in Turkey also accepted. Pathway programmes via the International Study Centre if requirements not met.",
+  "prerequisite_maths": "No maths entry requirement; maths module in Semester 1",
+  "source_url": "https://www.stir.ac.uk/courses/ug/software-engineering/",
+  "confidence": "high"
+ },
+ "52402": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36 with HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB with Maths and Physics",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/aero-mechanicalengineeringbeng/",
+  "confidence": "high"
+ },
+ "52403": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36 with HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); Year 2 HL6 in Maths, Physics, Biology",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB with Maths, Physics and Biology",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/biomedicalengineeringbeng/",
+  "confidence": "high"
+ },
+ "52404": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Chemistry (or Physics); IB 32-34 with Maths HL5 and Chemistry HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Chemistry HL5 (Year 1); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Chemistry or Physics; Year 2: AAA-ABB",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths plus Chemistry or Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/chemicalengineeringbeng/",
+  "confidence": "high"
+ },
+ "52405": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths (or Maths plus a science at A/B); IB 32-34 with Maths HL5 and one science HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and one science HL5 (Biology, Chemistry, Physics, Engineering Science); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths A, or Maths B plus a science at A/B; Year 2: AAA-ABB",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths plus a science",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/civilenvironmentalengineeringbeng/",
+  "confidence": "high"
+ },
+ "52406": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths (or Maths plus a science at A/B); IB 32-34 with Maths HL5 and one science HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and one science HL5 (Biology, Chemistry, Physics, Engineering Science); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths A, or Maths B plus a science at A/B; Year 2: AAA-ABB",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths plus a science",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/civilengineeringbeng/",
+  "confidence": "high"
+ },
+ "52407": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB with Computing; IB 34-36 with Computer Science HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); Year 2 HL6 in Maths, Physics, Computer Science",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB incl. Maths A, Physics, Computing",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/computerelectronicsystemsbeng/",
+  "confidence": "high"
+ },
+ "52409": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB with Computing; IB 34-36 with Computer Science HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); Year 2 HL6 in Maths, Physics, Computer Science",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB incl. Maths A, Physics, Computing",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/electronicelectricalengineeringbeng/",
+  "confidence": "high"
+ },
+ "52408": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels AAB-BBB with Maths and Physics; IB 32-36 with Maths HL5 and Physics HL5. Year 2 entry: A-levels A*AA-AAB; IB 34-38 with Computer Science HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); Year 2 HL6 in Maths, Physics, Computer Science",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: AAB-BBB with Maths and Physics; Year 2: A*AA-AAB incl. Maths A, Physics, Computing",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/electricalmechanicalengineeringbeng/",
+  "confidence": "high"
+ },
+ "52410": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36 with HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/manufacturingengineeringwithmanagementbeng/",
+  "confidence": "high"
+ },
+ "52416": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36 with HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB. Art & Design, Design & Manufacture or Graphic Communication recommended",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/productdesignengineeringbeng/",
+  "confidence": "high"
+ },
+ "52417": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36 with HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB. Art & Design, Design & Manufacture or Graphic Communication recommended",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/sportsdesignengineeringbeng/",
+  "confidence": "high"
+ },
+ "52411": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36 with HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB with Maths and Physics",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics; deferred entry not accepted",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/mechanicalengineeringbeng/",
+  "confidence": "high"
+ },
+ "52412": {
+  "stem": "medium",
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36 with HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/mechanicalengineeringbeng/",
+  "confidence": "high"
+ },
+ "52413": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36 with HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB with Maths A and Physics B",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/navalarchitecturemarineengineeringbeng/",
+  "confidence": "high"
+ },
+ "52415": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels ABB-BBB with Maths and Physics; IB 32-34 with Maths HL5 and Physics HL5. Year 2 entry: A-levels AAA-ABB; IB 34-36 with HL6",
+  "ib": {
+   "accepted": true,
+   "min_total": 32,
+   "subjects": "Maths HL5 and Physics HL5 (Year 1); HL6 for Year 2",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: ABB-BBB with Maths and Physics; Year 2: AAA-ABB with Maths A and Physics B",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths and Physics",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/navalarchitecturemarineengineeringbeng/",
+  "confidence": "medium"
+ },
+ "52429": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels BBB; IB 30 points with Maths HL5. Year 2 entry: A-levels ABB; IB 32 with Computer Science HL5",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Maths HL5 (Computer Science recommended); Year 2 needs Maths HL5 and Computer Science HL5 incl. Option D (Java OOP)",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: BBB (Maths and Computer Science recommended); Year 2: ABB incl. Maths and Computer Science",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "Maths at A-level/IB HL5; deferred entry not accepted",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/computersciencebsc/",
+  "confidence": "high"
+ },
+ "52450": {
+  "stem": "medium",
+  "typical_offer": "Year 1 entry: A-levels BBB; IB 30 points with Maths HL5. Year 2 entry: A-levels ABB; IB 32 with Computer Science HL5",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Maths HL5 (Computer Science HL5 recommended); Year 2 needs Maths HL5 and Computer Science HL5 incl. Option D (Java OOP)",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: BBB (Maths and Computer Science recommended); Year 2: ABB incl. Maths and Computer Science",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "Maths at A-level/IB HL5",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/softwareengineering/",
+  "confidence": "high"
+ },
+ "52430": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels BBB including Maths; IB 30 points with Maths HL5. Year 2 entry: A-levels ABB (Maths A, Computer Science B); IB 32 with Maths HL6 and Computer Science HL5",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Maths HL5 (Year 1); Year 2 needs Maths HL6 and Computer Science HL5 incl. Option D (Java OOP)",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: BBB including Maths; Year 2: ABB with Maths A and Computer Science B",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths or IB Maths HL5",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/dataanalytics/",
+  "confidence": "medium"
+ },
+ "52436": {
+  "stem": true,
+  "typical_offer": "Year 1 entry: A-levels BBB including Maths; IB 30 points with Maths HL5. Year 2 entry: A-levels ABB (Maths A, Computer Science B); IB 32 with Maths HL6 and Computer Science HL5",
+  "ib": {
+   "accepted": true,
+   "min_total": 30,
+   "subjects": "Maths HL5 (Year 1); Year 2 needs Maths HL6 and Computer Science HL5 incl. Option D (Java OOP)",
+   "note": "Both IB maths HL pathways accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Year 1: BBB including Maths; Year 2: ABB with Maths A and Computer Science B",
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": "A-level Maths or IB Maths HL5",
+  "source_url": "https://www.strath.ac.uk/courses/undergraduate/mathematicscomputerscience/",
+  "confidence": "high"
+ },
+ "52426": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted for undergraduate entry; programme-specific points not published."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": null,
+  "source_url": "https://www.strath.ac.uk/studywithus/internationalstudents/entryrequirements/",
+  "confidence": "low"
+ },
+ "52431": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted for undergraduate entry; programme-specific points not published."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "US applicants: 3 AP exams at score 4+, or SAT 1200 (600 per section)/ACT 27 plus 2 AP exams at 4+; some programmes expect Calculus and Physics (AP or Honors) at A/B. AP Calculus AB vs BC not specified.",
+   "note": "Institution-wide US rule applied."
+  },
+  "tests": "Test-flexible for US applicants: SAT/ACT not required; SAT 1200/ACT 27 accepted with 2 AP exams at 4+",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Devlet Lise Diplomas\u0131 holders may be considered for Year 1 case by case with 75% overall in Grade 12 and in relevant subjects; alternatively complete the Undergraduate Foundation Programme and enter Year 2 (four years in total).",
+  "prerequisite_maths": null,
+  "source_url": "https://www.strath.ac.uk/studywithus/internationalstudents/entryrequirements/",
+  "confidence": "low"
+ },
+ "50935": {
+  "stem": true,
+  "typical_offer": "96-112 UCAS Tariff points from Level 3 qualifications (e.g. A-levels BBC); up to 16 points reduction may apply",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted within UCAS Tariff; no fixed IB points published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels must include Mathematics or Physics (BBC typical); General Studies not accepted",
+  "turkish_route": "International Foundation Programme available for applicants without direct-entry qualifications; Lise requirements not published for this programme.",
+  "prerequisite_maths": "Three GCSEs at grade C/4 or above including Maths and English language (or Level 2 Key Skills equivalents)",
+  "source_url": "https://www.sunderland.ac.uk/undergraduate/beng-hons-electronic-electrical-engineering",
+  "confidence": "medium"
+ },
+ "50936": {
+  "stem": true,
+  "typical_offer": "96-112 UCAS Tariff points from Level 3 qualifications (e.g. A-levels BBC); up to 16 points reduction may apply",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted within UCAS Tariff; no fixed IB points published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels must include Mathematics or Physics (BBC typical); General Studies not accepted",
+  "turkish_route": "International Foundation Programme available for applicants without direct-entry qualifications; Lise requirements not published for this programme.",
+  "prerequisite_maths": "Three GCSEs at grade C/4 or above including Maths and English language (or Level 2 Key Skills equivalents)",
+  "source_url": "https://www.sunderland.ac.uk/study/engineering/undergraduate-mechanical-engineering/",
+  "confidence": "medium"
+ },
+ "50937": {
+  "stem": true,
+  "typical_offer": "96-112 UCAS Tariff points from Level 3 qualifications (e.g. A-levels BBC); up to 16 points reduction may apply",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted within UCAS Tariff; no fixed IB points published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels must include Mathematics or Physics (BBC typical); General Studies not accepted",
+  "turkish_route": "International Foundation Programme available for applicants without direct-entry qualifications; Lise requirements not published for this programme.",
+  "prerequisite_maths": "Three GCSEs at grade C/4 or above including Maths and English language (or Level 2 Key Skills equivalents)",
+  "source_url": "https://www.sunderland.ac.uk/undergraduate/beng-hons-sustainable-design-engineering",
+  "confidence": "medium"
+ },
+ "50943": {
+  "stem": true,
+  "typical_offer": "96-112 UCAS Tariff points from Level 3 qualifications (e.g. A-levels BBC); up to 16 points reduction may apply",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted within UCAS Tariff; no fixed IB points published."
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-levels around BBC typical; no subject requirement published; General Studies not accepted",
+  "turkish_route": "International Foundation Programme available for applicants without direct-entry qualifications; Lise requirements not published for this programme.",
+  "prerequisite_maths": "Three GCSEs at grade C/4 or above including Maths and English language (or Level 2 Key Skills equivalents)",
+  "source_url": "https://www.sunderland.ac.uk/undergraduate/bsc-hons-computer-science",
+  "confidence": "medium"
+ }
+}

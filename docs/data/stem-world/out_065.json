@@ -1,0 +1,932 @@
+{
+ "45279": {
+  "stem": true,
+  "typical_offer": "Holistic review; no minimum GPA published; 4 yrs English, 3 yrs math (Algebra I, Geometry, Algebra II), 3 yrs lab science; test-optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma English A or B score of 5 satisfies English proficiency; IB credit possible (AP/IB/Cambridge/CLEP credit capped at 24 hours); non-U.S. schools need course-by-course NACES evaluation"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit awarded in the amount the course carries, recorded as P; accepted exams and scores per Belmont catalog; combined AP/IB/Cambridge/CLEP credit capped at 24 hours",
+   "note": "Institution-wide policy applied to all programmes"
+  },
+  "tests": "Test-optional (SAT/ACT; Writing section not considered); English proficiency required for non-U.S. citizens: TOEFL iBT 80, IELTS 6.5, Duolingo 115, SAT EBRW 550 or ACT English 23, or IB English 5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCSE English language grade C/4 accepted as English proficiency; A-levels not specified",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years high school math including Algebra I, Geometry, Algebra II (most applicants take 4); 3 years lab science",
+  "source_url": "https://www.belmont.edu/admissions/first-year/policies.html",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45282": {
+  "stem": true,
+  "typical_offer": "Holistic review; no minimum GPA published; 4 yrs English, 3 yrs math (Algebra I, Geometry, Algebra II), 3 yrs lab science; test-optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma English A or B score of 5 satisfies English proficiency; IB credit possible (AP/IB/Cambridge/CLEP credit capped at 24 hours); non-U.S. schools need course-by-course NACES evaluation"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit awarded in the amount the course carries, recorded as P; accepted exams and scores per Belmont catalog; combined AP/IB/Cambridge/CLEP credit capped at 24 hours",
+   "note": "Institution-wide policy applied to all programmes"
+  },
+  "tests": "Test-optional (SAT/ACT; Writing section not considered); English proficiency required for non-U.S. citizens: TOEFL iBT 80, IELTS 6.5, Duolingo 115, SAT EBRW 550 or ACT English 23, or IB English 5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCSE English language grade C/4 accepted as English proficiency; A-levels not specified",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years high school math including Algebra I, Geometry, Algebra II (most applicants take 4); 3 years lab science",
+  "source_url": "https://www.belmont.edu/admissions/first-year/policies.html",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45293": {
+  "stem": true,
+  "typical_offer": "Holistic review; no minimum GPA published; 4 yrs English, 3 yrs math (Algebra I, Geometry, Algebra II), 3 yrs lab science; test-optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma English A or B score of 5 satisfies English proficiency; IB credit possible (AP/IB/Cambridge/CLEP credit capped at 24 hours); non-U.S. schools need course-by-course NACES evaluation"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit awarded in the amount the course carries, recorded as P; accepted exams and scores per Belmont catalog; combined AP/IB/Cambridge/CLEP credit capped at 24 hours",
+   "note": "Institution-wide policy applied to all programmes"
+  },
+  "tests": "Test-optional (SAT/ACT; Writing section not considered); English proficiency required for non-U.S. citizens: TOEFL iBT 80, IELTS 6.5, Duolingo 115, SAT EBRW 550 or ACT English 23, or IB English 5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCSE English language grade C/4 accepted as English proficiency; A-levels not specified",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years high school math including Algebra I, Geometry, Algebra II (most applicants take 4); 3 years lab science",
+  "source_url": "https://www.belmont.edu/admissions/first-year/policies.html",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45296": {
+  "stem": true,
+  "typical_offer": "Holistic review; no minimum GPA published; 4 yrs English, 3 yrs math (Algebra I, Geometry, Algebra II), 3 yrs lab science; test-optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma English A or B score of 5 satisfies English proficiency; IB credit possible (AP/IB/Cambridge/CLEP credit capped at 24 hours); non-U.S. schools need course-by-course NACES evaluation"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit awarded in the amount the course carries, recorded as P; accepted exams and scores per Belmont catalog; combined AP/IB/Cambridge/CLEP credit capped at 24 hours",
+   "note": "Institution-wide policy applied to all programmes"
+  },
+  "tests": "Test-optional (SAT/ACT; Writing section not considered); English proficiency required for non-U.S. citizens: TOEFL iBT 80, IELTS 6.5, Duolingo 115, SAT EBRW 550 or ACT English 23, or IB English 5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCSE English language grade C/4 accepted as English proficiency; A-levels not specified",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years high school math including Algebra I, Geometry, Algebra II (most applicants take 4); 3 years lab science",
+  "source_url": "https://www.belmont.edu/admissions/first-year/policies.html",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45303": {
+  "stem": true,
+  "typical_offer": "Holistic review; no minimum GPA published; 4 yrs English, 3 yrs math (Algebra I, Geometry, Algebra II), 3 yrs lab science; test-optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma English A or B score of 5 satisfies English proficiency; IB credit possible (AP/IB/Cambridge/CLEP credit capped at 24 hours); non-U.S. schools need course-by-course NACES evaluation"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit awarded in the amount the course carries, recorded as P; accepted exams and scores per Belmont catalog; combined AP/IB/Cambridge/CLEP credit capped at 24 hours",
+   "note": "Institution-wide policy applied to all programmes"
+  },
+  "tests": "Test-optional (SAT/ACT; Writing section not considered); English proficiency required for non-U.S. citizens: TOEFL iBT 80, IELTS 6.5, Duolingo 115, SAT EBRW 550 or ACT English 23, or IB English 5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCSE English language grade C/4 accepted as English proficiency; A-levels not specified",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years high school math including Algebra I, Geometry, Algebra II (most applicants take 4); 3 years lab science",
+  "source_url": "https://www.belmont.edu/admissions/first-year/policies.html",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45306": {
+  "stem": true,
+  "typical_offer": "Holistic review; no minimum GPA published; 4 yrs English, 3 yrs math (Algebra I, Geometry, Algebra II), 3 yrs lab science; test-optional",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma English A or B score of 5 satisfies English proficiency; IB credit possible (AP/IB/Cambridge/CLEP credit capped at 24 hours); non-U.S. schools need course-by-course NACES evaluation"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit awarded in the amount the course carries, recorded as P; accepted exams and scores per Belmont catalog; combined AP/IB/Cambridge/CLEP credit capped at 24 hours",
+   "note": "Institution-wide policy applied to all programmes"
+  },
+  "tests": "Test-optional (SAT/ACT; Writing section not considered); English proficiency required for non-U.S. citizens: TOEFL iBT 80, IELTS 6.5, Duolingo 115, SAT EBRW 550 or ACT English 23, or IB English 5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCSE English language grade C/4 accepted as English proficiency; A-levels not specified",
+  "turkish_route": null,
+  "prerequisite_maths": "3 years high school math including Algebra I, Geometry, Algebra II (most applicants take 4); 3 years lab science",
+  "source_url": "https://www.belmont.edu/admissions/first-year/policies.html",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "31152": {
+  "stem": true,
+  "typical_offer": "Open admission-style review; secondary school graduation with transcripts; English TOEFL iBT 61 or IELTS 5.5",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT/ACT not required; English proficiency: TOEFL iBT 61, IELTS 5.5, Duolingo 90, iTEP 5, or conditional admission with English study at Rennert International",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Official secondary transcripts and proof of graduation with certified English translations",
+  "prerequisite_maths": null,
+  "source_url": "https://berkeleycollege.edu/admissions/international-students/index.html",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "31157": {
+  "stem": true,
+  "typical_offer": "Open admission-style review; secondary school graduation with transcripts; English TOEFL iBT 61 or IELTS 5.5",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT/ACT not required; English proficiency: TOEFL iBT 61, IELTS 5.5, Duolingo 90, iTEP 5, or conditional admission with English study at Rennert International",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Official secondary transcripts and proof of graduation with certified English translations",
+  "prerequisite_maths": null,
+  "source_url": "https://berkeleycollege.edu/admissions/international-students/index.html",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45390": {
+  "stem": true,
+  "typical_offer": "Holistic review; no minimum GPA published; recommended 3 yrs math (through Algebra II) and 3 yrs science",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit considered with minimum score of 3",
+   "note": "Specific Calculus AB/BC equivalencies not published"
+  },
+  "tests": "International applicants cannot apply test-optional; must submit English proficiency: TOEFL, IELTS 6.5, Duolingo 110, or SAT/ACT",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Official secondary transcript sent by the school plus course-by-course credential evaluation (WES/NACES) with GPA; country exam results emailed to admissions",
+  "prerequisite_maths": "3 years math through Algebra II; 3 years science (recommended)",
+  "source_url": "https://www.bridgewater.edu/admissions-aid/apply/first-year-students/",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45391": {
+  "stem": true,
+  "typical_offer": "Holistic review; no minimum GPA published; recommended 3 yrs math (through Algebra II) and 3 yrs science",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit considered with minimum score of 3",
+   "note": "Specific Calculus AB/BC equivalencies not published"
+  },
+  "tests": "International applicants cannot apply test-optional; must submit English proficiency: TOEFL, IELTS 6.5, Duolingo 110, or SAT/ACT",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Official secondary transcript sent by the school plus course-by-course credential evaluation (WES/NACES) with GPA; country exam results emailed to admissions",
+  "prerequisite_maths": "3 years math through Algebra II; 3 years science (recommended)",
+  "source_url": "https://www.bridgewater.edu/admissions-aid/apply/first-year-students/",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45394": {
+  "stem": true,
+  "typical_offer": "Holistic review; no minimum GPA published; recommended 3 yrs math (through Algebra II) and 3 yrs science",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit considered with minimum score of 3",
+   "note": "Specific Calculus AB/BC equivalencies not published"
+  },
+  "tests": "International applicants cannot apply test-optional; must submit English proficiency: TOEFL, IELTS 6.5, Duolingo 110, or SAT/ACT",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Official secondary transcript sent by the school plus course-by-course credential evaluation (WES/NACES) with GPA; country exam results emailed to admissions",
+  "prerequisite_maths": "3 years math through Algebra II; 3 years science (recommended)",
+  "source_url": "https://www.bridgewater.edu/admissions-aid/apply/first-year-students/",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45396": {
+  "stem": true,
+  "typical_offer": "Holistic review; no minimum GPA published; recommended 3 yrs math (through Algebra II) and 3 yrs science",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit considered with minimum score of 3",
+   "note": "Specific Calculus AB/BC equivalencies not published"
+  },
+  "tests": "International applicants cannot apply test-optional; must submit English proficiency: TOEFL, IELTS 6.5, Duolingo 110, or SAT/ACT",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Official secondary transcript sent by the school plus course-by-course credential evaluation (WES/NACES) with GPA; country exam results emailed to admissions",
+  "prerequisite_maths": "3 years math through Algebra II; 3 years science (recommended)",
+  "source_url": "https://www.bridgewater.edu/admissions-aid/apply/first-year-students/",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45417": {
+  "stem": true,
+  "typical_offer": "Holistic review; unofficial transcripts accepted; no minimum GPA published; no application fee",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Test-optional; English proficiency: TOEFL iBT 70, IELTS 6.0, Duolingo 105, iTEP 4.0, PTE 50, SAT EBRW 510 or ACT English 18; waived for Australia, Canada (not Quebec), Ireland, New Zealand, UK",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge International A Levels accepted for some countries; English proficiency waived with grade B or higher in A-level English (Rwanda/Singapore)",
+  "turkish_route": "Country-specific secondary school documents list published; transcripts or school-leaving exams with English translation",
+  "prerequisite_maths": null,
+  "source_url": "https://www.carrollu.edu/admission/international/undergraduate/international-how-to-apply/",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45428": {
+  "stem": true,
+  "typical_offer": "Holistic review; unofficial transcripts accepted; no minimum GPA published; no application fee",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Test-optional; English proficiency: TOEFL iBT 70, IELTS 6.0, Duolingo 105, iTEP 4.0, PTE 50, SAT EBRW 510 or ACT English 18; waived for Australia, Canada (not Quebec), Ireland, New Zealand, UK",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge International A Levels accepted for some countries; English proficiency waived with grade B or higher in A-level English (Rwanda/Singapore)",
+  "turkish_route": "Country-specific secondary school documents list published; transcripts or school-leaving exams with English translation",
+  "prerequisite_maths": null,
+  "source_url": "https://www.carrollu.edu/admission/international/undergraduate/international-how-to-apply/",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45432": {
+  "stem": true,
+  "typical_offer": "Holistic review; unofficial transcripts accepted; no minimum GPA published; no application fee",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Test-optional; English proficiency: TOEFL iBT 70, IELTS 6.0, Duolingo 105, iTEP 4.0, PTE 50, SAT EBRW 510 or ACT English 18; waived for Australia, Canada (not Quebec), Ireland, New Zealand, UK",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge International A Levels accepted for some countries; English proficiency waived with grade B or higher in A-level English (Rwanda/Singapore)",
+  "turkish_route": "Country-specific secondary school documents list published; transcripts or school-leaving exams with English translation",
+  "prerequisite_maths": null,
+  "source_url": "https://www.carrollu.edu/admission/international/undergraduate/international-how-to-apply/",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45440": {
+  "stem": true,
+  "typical_offer": "Holistic review; unofficial transcripts accepted; no minimum GPA published; no application fee",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Test-optional; English proficiency: TOEFL iBT 70, IELTS 6.0, Duolingo 105, iTEP 4.0, PTE 50, SAT EBRW 510 or ACT English 18; waived for Australia, Canada (not Quebec), Ireland, New Zealand, UK",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge International A Levels accepted for some countries; English proficiency waived with grade B or higher in A-level English (Rwanda/Singapore)",
+  "turkish_route": "Country-specific secondary school documents list published; transcripts or school-leaving exams with English translation",
+  "prerequisite_maths": null,
+  "source_url": "https://www.carrollu.edu/admission/international/undergraduate/international-how-to-apply/",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45441": {
+  "stem": true,
+  "typical_offer": "Holistic review; unofficial transcripts accepted; no minimum GPA published; no application fee",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Test-optional; English proficiency: TOEFL iBT 70, IELTS 6.0, Duolingo 105, iTEP 4.0, PTE 50, SAT EBRW 510 or ACT English 18; waived for Australia, Canada (not Quebec), Ireland, New Zealand, UK",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge International A Levels accepted for some countries; English proficiency waived with grade B or higher in A-level English (Rwanda/Singapore)",
+  "turkish_route": "Country-specific secondary school documents list published; transcripts or school-leaving exams with English translation",
+  "prerequisite_maths": null,
+  "source_url": "https://www.carrollu.edu/admission/international/undergraduate/international-how-to-apply/",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45445": {
+  "stem": true,
+  "typical_offer": "Holistic review; unofficial transcripts accepted; no minimum GPA published; no application fee",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Test-optional; English proficiency: TOEFL iBT 70, IELTS 6.0, Duolingo 105, iTEP 4.0, PTE 50, SAT EBRW 510 or ACT English 18; waived for Australia, Canada (not Quebec), Ireland, New Zealand, UK",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge International A Levels accepted for some countries; English proficiency waived with grade B or higher in A-level English (Rwanda/Singapore)",
+  "turkish_route": "Country-specific secondary school documents list published; transcripts or school-leaving exams with English translation",
+  "prerequisite_maths": null,
+  "source_url": "https://www.carrollu.edu/admission/international/undergraduate/international-how-to-apply/",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "39421": {
+  "stem": true,
+  "typical_offer": "Common Application; completed secondary education equivalent to U.S. high school (12 years); recommended 4 yrs math, 3 yrs science",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Full IB Diploma; Higher Level exams only for credit",
+   "note": "HL Mathematics: score 5 gives 3 elective MATH credits; score 6-7 gives MATH 121 (4 credits) with placement in MATH 122 or higher"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit generally for scores of 4 or 5; minimums and credit set by department; some departments award no credit for certain AP tests; scores sent via College Board code 5104",
+   "note": "Calculus AB/BC equivalencies set by department"
+  },
+  "tests": "Test-optional; English: TOEFL iBT 80, IELTS 6.5, Duolingo 120, PTE 58",
+  "math_test": {
+   "name": "Math Placement Assessment",
+   "role": "placement only",
+   "min_score": null,
+   "details": "Required for students without AP or dual-enrollment calculus credit"
+  },
+  "a_level": "A-level exams may earn credit per department; transcripts evaluated by WES or AACRAO-recognised service",
+  "turkish_route": "Transcripts translated and evaluated by recognised service (e.g. WES, AACRAO)",
+  "prerequisite_maths": "4 years math and 3 years science recommended",
+  "source_url": "https://www.catholic.edu/admission-aid/international-admission/undergraduate-international-admission",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45473": {
+  "stem": true,
+  "typical_offer": "Secondary school records and English proficiency; no minimum GPA published",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma certificate with subject grades accepted"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English proficiency accepted via ACT, SAT, TOEFL, IELTS, EIKEN or Duolingo",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level certificates accepted (original from examining board)",
+  "turkish_route": "Secondary school records sent directly from issuing authority with official English translation; credential evaluation recommended",
+  "prerequisite_maths": null,
+  "source_url": "https://www.centralmethodist.edu/international/documentation.html",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45479": {
+  "stem": true,
+  "typical_offer": "Secondary school records and English proficiency; no minimum GPA published",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma certificate with subject grades accepted"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "English proficiency accepted via ACT, SAT, TOEFL, IELTS, EIKEN or Duolingo",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "GCE A-level certificates accepted (original from examining board)",
+  "turkish_route": "Secondary school records sent directly from issuing authority with official English translation; credential evaluation recommended",
+  "prerequisite_maths": null,
+  "source_url": "https://www.centralmethodist.edu/international/documentation.html",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "45502": {
+  "stem": false
+ },
+ "24619": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "24620": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "24621": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "24622": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "31173": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "24623": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "24624": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "24667": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "24631": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "24625": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "24626": {
+  "stem": true,
+  "typical_offer": "Minimum cumulative high school GPA 2.3 (4.0 scale); test-optional; engineering majors typically need math proficiency (ACT Math 23, SAT Math 550 or MTH 168 placement) and GPA 2.8",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit considered for Higher Level exams with score 4+ and Standard Level with score 5+"
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Minimum score 3 for credit; Calculus AB score 3-5 = MTH 181 (Calculus I, 4 credits); Calculus BC score 3-5 = MTH 181 + MTH 182 (8 credits)",
+   "note": "Scores sent from College Board code 1221"
+  },
+  "tests": "Test-optional for admission; English proficiency: TOEFL iBT 4.0 (new scale) or 78, IELTS 6.0, iTEP 3.8, Duolingo 105, ACT English 20, SAT EBRW 530",
+  "math_test": {
+   "name": "CSU Math Placement Test",
+   "role": "placement only",
+   "min_score": null,
+   "details": "ACT Math 22 or SAT Math 520 places directly into college-level math; engineering applicants take placement test"
+  },
+  "a_level": "GCE A-level certificates accepted as secondary credentials",
+  "turkish_route": "Country-specific secondary credential list applies",
+  "prerequisite_maths": "Minimum math placement score required; pre-calculus level for engineering",
+  "source_url": "https://www.csuohio.edu/international-admissions/undergraduate-admission-requirements",
+  "confidence": "medium",
+  "note": "Institution-wide rules applied to this programme"
+ },
+ "24673": {
+  "stem": false
+ },
+ "45512": {
+  "stem": true,
+  "typical_offer": "Holistic review; official transcripts and writing sample; test-optional",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT/ACT optional; English proficiency test required for all international applicants (no minimum published)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Official secondary transcripts or exam results with word-for-word English translation; transcript evaluation required for I-20",
+  "prerequisite_maths": null,
+  "source_url": "https://www.colby-sawyer.edu/admissions/apply/international-applications",
+  "confidence": "low",
+  "note": "Institution-wide rules applied to this programme"
+ }
+}

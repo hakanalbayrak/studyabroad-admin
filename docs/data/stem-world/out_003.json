@@ -1,0 +1,1232 @@
+{
+ "37244": {
+  "stem": true,
+  "typical_offer": "Hungarian points-based admission; 2026 English-track thresholds 401 points (self-funded), 430 (scholarship)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT stated; admission via secondary-school leaving results (Hungarian emelt/final exam subjects)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Strong mathematics background expected",
+  "source_url": "https://www.uni-corvinus.hu/post/landing-page/bachelors/bsc-in-business-informatics/",
+  "confidence": "medium"
+ },
+ "29602": {
+  "stem": true,
+  "typical_offer": "Hungarian points-based admission; 2026 English-track thresholds 401 points (self-funded), 442 (scholarship)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT stated; admission via secondary-school leaving results (Hungarian emelt/final exam subjects)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Strong mathematics background expected",
+  "source_url": "https://www.uni-corvinus.hu/post/landing-page/bachelors/bsc-in-data-science-in-business/",
+  "confidence": "medium"
+ },
+ "33174": {
+  "stem": false
+ },
+ "36056": {
+  "stem": false
+ },
+ "22063": {
+  "stem": false
+ },
+ "40258": {
+  "stem": true,
+  "typical_offer": "Secondary school diploma plus entrance exam testing motivation, academic knowledge and practical skills; English B2 (e.g. IELTS 5.5-6.0)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Entrance exam / placement test; applicants who fail may be directed to a one-year preparatory course in mathematics, physics and English",
+  "math_test": {
+   "name": "University placement/entrance test",
+   "role": "required",
+   "min_score": null,
+   "details": "One-year preparatory course (maths, physics, English) if not passed"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://uni-obuda.hu/undergraduate-programs/",
+  "confidence": "low"
+ },
+ "40259": {
+  "stem": true,
+  "typical_offer": "Secondary school diploma plus entrance exam testing motivation, academic knowledge and practical skills; English B2 (e.g. IELTS 5.5-6.0)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Entrance exam / placement test; applicants who fail may be directed to a one-year preparatory course in mathematics, physics and English",
+  "math_test": {
+   "name": "University placement/entrance test",
+   "role": "required",
+   "min_score": null,
+   "details": "One-year preparatory course (maths, physics, English) if not passed"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://uni-obuda.hu/undergraduate-programs/",
+  "confidence": "low"
+ },
+ "40260": {
+  "stem": true,
+  "typical_offer": "Secondary school diploma plus entrance exam testing motivation, academic knowledge and practical skills; English B2 (e.g. IELTS 5.5-6.0)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Entrance exam / placement test; applicants who fail may be directed to a one-year preparatory course in mathematics, physics and English",
+  "math_test": {
+   "name": "University placement/entrance test",
+   "role": "required",
+   "min_score": null,
+   "details": "One-year preparatory course (maths, physics, English) if not passed"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://uni-obuda.hu/undergraduate-programs/",
+  "confidence": "low"
+ },
+ "40261": {
+  "stem": true,
+  "typical_offer": "Secondary school diploma plus entrance exam testing motivation, academic knowledge and practical skills; English B2 (e.g. IELTS 5.5-6.0)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Entrance exam / placement test; applicants who fail may be directed to a one-year preparatory course in mathematics, physics and English",
+  "math_test": {
+   "name": "University placement/entrance test",
+   "role": "required",
+   "min_score": null,
+   "details": "One-year preparatory course (maths, physics, English) if not passed"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://uni-obuda.hu/undergraduate-programs/",
+  "confidence": "low"
+ },
+ "40262": {
+  "stem": true,
+  "typical_offer": "Secondary school diploma plus entrance exam testing motivation, academic knowledge and practical skills; English B2 (e.g. IELTS 5.5-6.0)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Entrance exam / placement test; applicants who fail may be directed to a one-year preparatory course in mathematics, physics and English",
+  "math_test": {
+   "name": "University placement/entrance test",
+   "role": "required",
+   "min_score": null,
+   "details": "One-year preparatory course (maths, physics, English) if not passed"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://uni-obuda.hu/undergraduate-programs/",
+  "confidence": "low"
+ },
+ "40263": {
+  "stem": true,
+  "typical_offer": "Secondary school diploma plus entrance exam testing motivation, academic knowledge and practical skills; English B2 (e.g. IELTS 5.5-6.0)",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Entrance exam / placement test; applicants who fail may be directed to a one-year preparatory course in mathematics, physics and English",
+  "math_test": {
+   "name": "University placement/entrance test",
+   "role": "required",
+   "min_score": null,
+   "details": "One-year preparatory course (maths, physics, English) if not passed"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://uni-obuda.hu/undergraduate-programs/",
+  "confidence": "low"
+ },
+ "29639": {
+  "stem": false
+ },
+ "29615": {
+  "stem": true,
+  "typical_offer": "Completed senior high school; English B2 (IELTS 6.0 or TOEFL 90); entrance exam with online interview",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT stated",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://international.pte.hu/study-programs/bsc-architectural-engineering",
+  "confidence": "medium"
+ },
+ "29616": {
+  "stem": true,
+  "typical_offer": "Completed senior high school; English B2 (IELTS 6.0 or TOEFL 90); entrance exam with online interview",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT stated",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://international.pte.hu/study-programs/bsc-civil-engineering",
+  "confidence": "medium"
+ },
+ "29613": {
+  "stem": true,
+  "typical_offer": "Completed senior high school; English B2 (IELTS 6.0 or TOEFL 90); entrance exam with online interview",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT stated",
+  "math_test": {
+   "name": "Online pre-admission mathematics test",
+   "role": "required",
+   "min_score": null,
+   "details": "45 minutes, algebra, functions, combinatorics, logarithms, geometry, graphs, algorithms, basic statistics; followed by oral interview on English, maths and informatics"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Advanced maths advised but not required; programming advised but not required",
+  "source_url": "https://international.pte.hu/study-programs/bsc-computer-science",
+  "confidence": "medium"
+ },
+ "29614": {
+  "stem": true,
+  "typical_offer": "Completed senior high school; English B2 (IELTS 6.0 or TOEFL 90); entrance exam with online interview",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT stated",
+  "math_test": {
+   "name": "Online pre-admission mathematics test",
+   "role": "required",
+   "min_score": null,
+   "details": "45 minutes, algebra, functions, combinatorics, logarithms, geometry, graphs, algorithms, basic statistics; followed by oral interview on English, maths and informatics"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Advanced maths advised but not required; programming advised but not required",
+  "source_url": "https://international.pte.hu/study-programs/bsc-computer-science-engineering",
+  "confidence": "medium"
+ },
+ "29632": {
+  "stem": true,
+  "typical_offer": "Completed senior high school; English B2 (IELTS 6.0 or TOEFL 90); entrance exam with online interview",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT stated",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://international.pte.hu/study-programs",
+  "confidence": "medium"
+ },
+ "38476": {
+  "stem": true,
+  "typical_offer": "Completed senior high school; English B2 (IELTS 6.0 or TOEFL 90); entrance exam with online interview",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT stated",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://international.pte.hu/study-programs/bsc-mechanical-engineering",
+  "confidence": "medium"
+ },
+ "29538": {
+  "stem": true,
+  "typical_offer": "Completed secondary education (high school diploma or equivalent); English B2 (IELTS 5.5, TOEFL iBT 72); entrance exam by online interview; motivation letter",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Online interview as entrance exam; no SAT/ACT stated",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://u-szeged.hu/english/study-programmes/agricultural-sciences-bsc",
+  "confidence": "medium"
+ },
+ "29554": {
+  "stem": true,
+  "typical_offer": "Completed secondary education (high school diploma or equivalent); English B2 (IELTS 5.5, TOEFL iBT 72); entrance exam by online interview; motivation letter",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Online interview as entrance exam; no SAT/ACT stated",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://u-szeged.hu/english/agricultural-sciences/biochemical-engineer-bsc",
+  "confidence": "medium"
+ },
+ "31223": {
+  "stem": true,
+  "typical_offer": "Completed secondary education (high school diploma or equivalent); English B2 (IELTS 5.5, TOEFL iBT 72); entrance exam by online interview; motivation letter",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Online interview as entrance exam; no SAT/ACT stated",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://u-szeged.hu/english/bachelor-programmes-160329/computer-science",
+  "confidence": "medium"
+ },
+ "29537": {
+  "stem": true,
+  "typical_offer": "Completed secondary education (high school diploma or equivalent); English B2 (IELTS 5.5, TOEFL iBT 72); entrance exam by online interview; motivation letter",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Online interview as entrance exam; no SAT/ACT stated",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://u-szeged.hu/english/bachelor-programmes-160329/computer-science-240320",
+  "confidence": "medium"
+ },
+ "35427": {
+  "stem": false
+ },
+ "49133": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "35715": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "20241": {
+  "stem": true,
+  "typical_offer": "High school diploma (or first year of a CS bachelor); strong mathematics and science background; online maths test and interview; English TOEFL 80 / IELTS 6.0 / TOEIC 800",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Online mathematics test and interview; no SAT/ACT stated",
+  "math_test": {
+   "name": "EPITA online mathematics test",
+   "role": "required",
+   "min_score": null,
+   "details": "Plus online interview"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Strong background in mathematics and general sciences",
+  "source_url": "https://www.epita.fr/en/bsc-computer-science-program-overview/",
+  "confidence": "medium"
+ },
+ "49896": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "35694": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "35689": {
+  "stem": true,
+  "typical_offer": "High school diploma, online readiness test, virtual academic interview, English proficiency certificate",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "Online readiness test; no SAT/ACT stated",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.schiller.edu/programs/bachelor-of-science-in-computer-science/",
+  "confidence": "low"
+ },
+ "4115": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "14063": {
+  "stem": true,
+  "typical_offer": "English-taught programme; secondary diploma recognition (nostrification) and entrance examination; non-EU tuition applies",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.vut.cz/en/students/programmes/programme/9620",
+  "confidence": "low"
+ },
+ "14065": {
+  "stem": true,
+  "typical_offer": "English-taught programme; secondary diploma recognition (nostrification) and entrance examination; non-EU tuition applies",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.vut.cz/en/students/programmes/programme/9849",
+  "confidence": "low"
+ },
+ "14069": {
+  "stem": true,
+  "typical_offer": "English-taught programme; secondary diploma recognition (nostrification) and entrance examination; non-EU tuition applies",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.fme.vutbr.cz/en/studuj/studia-en/programy/17953",
+  "confidence": "low"
+ },
+ "14094": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB scores reported directly to faculty"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT, ACT, TOEFL and IB scores accepted and sent directly to the faculty (SAT code 7249, ACT 6790, IB 000147)",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.mff.cuni.cz/en/admissions",
+  "confidence": "low"
+ },
+ "14103": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.fsv.cvut.cz/prospective-students/bachelor-study/civil-engineering/?lang=en",
+  "confidence": "low"
+ },
+ "14133": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://fel.cvut.cz/en/study-programs/eecs-electrical-engineering-and-computer-science/interest-in-studying/bachelor-degree",
+  "confidence": "low"
+ },
+ "14095": {
+  "stem": true,
+  "typical_offer": "Secondary diploma recognised via nostrification or CTU verification; maths entrance test; English B2",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "No SAT/ACT; SCIO test accepted as alternative to FIT maths test",
+  "math_test": {
+   "name": "FIT CTU Mathematics test or SCIO (Mathematics in English / General Academic Prerequisites)",
+   "role": "alternative to prerequisite",
+   "min_score": "FIT test 50/100; SCIO 70th percentile",
+   "details": "FIT test 90 minutes in person; SCIO dates Jan-Apr; if both taken, FIT points count 1.2x"
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Diploma must be recognised (nostrification or CTU verification) by 13 September; English CEFR B2 (IELTS 5.5+; Duolingo not accepted)",
+  "source_url": "https://fit.cvut.cz/en/applicants/admissions-procedure/bachelor-study-program",
+  "confidence": "medium"
+ },
+ "14182": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://fs.cvut.cz/en/prospective-students/accredited-study-programmes/bachelor-study-programmes/mechanical-engineering-bachelor/",
+  "confidence": "low"
+ },
+ "14138": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "14106": {
+  "stem": true,
+  "typical_offer": "English-taught programme; secondary diploma recognition (nostrification) required; faculty entrance conditions apply",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "School leaving certificate with nostrification",
+  "source_url": "https://www.vsb.cz/en/study/degree-students/degree-studies/bachelor-degree/bachelor-degree-detail/?programmeId=898",
+  "confidence": "low"
+ },
+ "14107": {
+  "stem": true,
+  "typical_offer": "English-taught programme; secondary diploma recognition (nostrification) required; faculty entrance conditions apply",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "School leaving certificate with nostrification",
+  "source_url": "https://www.vsb.cz/en/study/degree-students/degree-studies/bachelor-degree/bachelor-degree-detail/?programmeId=1233",
+  "confidence": "low"
+ },
+ "14097": {
+  "stem": true,
+  "typical_offer": "English-taught programme; secondary diploma recognition (nostrification) required; faculty entrance conditions apply",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "School leaving certificate with nostrification",
+  "source_url": "https://www.vsb.cz/en/study/degree-students/degree-studies/bachelor-degree/bachelor-degree-detail/?programmeId=771",
+  "confidence": "low"
+ },
+ "14137": {
+  "stem": true,
+  "typical_offer": "English-taught programme; secondary diploma recognition (nostrification) required; faculty entrance conditions apply",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "School leaving certificate with nostrification",
+  "source_url": "https://www.vsb.cz/en/study/degree-students/degree-studies/bachelor-degree/bachelor-degree-detail/?programmeId=1038",
+  "confidence": "low"
+ },
+ "14083": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "14160": {
+  "stem": true,
+  "typical_offer": "English-taught programme; secondary diploma recognition (nostrification) required; faculty entrance conditions apply",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "School leaving certificate with nostrification",
+  "source_url": "https://www.vsb.cz/en/study/degree-students/degree-studies/bachelor-degree/bachelor-degree-detail/?programmeId=1164",
+  "confidence": "low"
+ },
+ "14144": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": null,
+  "confidence": "low"
+ },
+ "14108": {
+  "stem": true,
+  "typical_offer": "English-taught programme; secondary diploma recognition (nostrification) required; faculty entrance conditions apply",
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "School leaving certificate with nostrification",
+  "source_url": "https://www.vsb.cz/en/study/degree-students/degree-studies/bachelor-degree/bachelor-degree-detail/?programmeId=1124",
+  "confidence": "low"
+ },
+ "14092": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://petroleum.upol.cz/petroleum-engineering/",
+  "confidence": "low"
+ },
+ "14207": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://fis.vse.cz/english/about/bachelors-degree-programs/economic-data-science/",
+  "confidence": "low"
+ },
+ "14164": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.tul.cz/en/admissions/study-programmes/detailed-information-for-english-programmes/undergraduate-programmes/bachelor-textile-technologies-materials-and-nanomaterials/",
+  "confidence": "low"
+ }
+}

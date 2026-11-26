@@ -1,0 +1,1136 @@
+{
+ "46014": {
+  "stem": true,
+  "typical_offer": "College-preparatory secondary record; no published minimum GPA.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit awarded by minimum exam scores set by the Registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Transfer credit generally for AP scores of 4 or 5 (3 for Psychology); Calculus AB/BC course equivalents set by the Registrar score chart.",
+   "note": ""
+  },
+  "tests": "Test-free admission: SAT/ACT not required. English: TOEFL iBT 79, IELTS 6.0 or Duolingo English Test accepted.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US secondary credentials need an academic credential evaluation (exempt for Canada and regionally accredited international schools).",
+  "prerequisite_maths": "Recommended: 3 units maths (4 preferred), 3 units science (2 lab sciences preferred), 4 English, 3 social science.",
+  "source_url": "https://catalog.hiram.edu/undergraduate/admissions/international-student-admission/",
+  "confidence": "low"
+ },
+ "46021": {
+  "stem": true,
+  "typical_offer": "College-preparatory secondary record; no published minimum GPA.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit awarded by minimum exam scores set by the Registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Transfer credit generally for AP scores of 4 or 5 (3 for Psychology); Calculus AB/BC course equivalents set by the Registrar score chart.",
+   "note": ""
+  },
+  "tests": "Test-free admission: SAT/ACT not required. English: TOEFL iBT 79, IELTS 6.0 or Duolingo English Test accepted.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US secondary credentials need an academic credential evaluation (exempt for Canada and regionally accredited international schools).",
+  "prerequisite_maths": "Recommended: 3 units maths (4 preferred), 3 units science (2 lab sciences preferred), 4 English, 3 social science.",
+  "source_url": "https://catalog.hiram.edu/undergraduate/admissions/international-student-admission/",
+  "confidence": "low"
+ },
+ "46047": {
+  "stem": true,
+  "typical_offer": "Rolling admission; high school record is primary factor; no published minimum GPA.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only, score 5+; max 30 credit hours. Maths HL: 5 = elective 3 cr, 6 = 4 cr, 7 = 8 cr (maths elective, not Calculus I/II).",
+   "note": "Official IB transcript from IB office required; scores on school transcript not accepted."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 4+ = MATH 151 Calculus I (4 cr); Calculus BC score 4+ = MATH 151 and 152 (8 cr). Chemistry 3 = CHEM 121, 4 = CHEM 151, 5 = CHEM 151+152. Official College Board scores required.",
+   "note": "Most other AP exams earn credit at 3+."
+  },
+  "tests": "English: TOEFL iBT 71 (paper 530), IELTS 6.0, PTE Academic 54, Duolingo 95; exempt if last three years of schooling were mainly in English.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": "Expected: 3 years maths (incl. algebra, geometry), 3 years natural sciences (2 lab), 4 English, 3 social science. CS BS requires Calculus I-II, Physics I-II.",
+  "source_url": "https://www.hcc-nd.edu/wp-content/uploads/2026/10/Academic-Catalog-2026-2027-2-10.22.2026.pdf",
+  "confidence": "medium"
+ },
+ "46416": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit accepted per university credit-by-examination policy; IB Language & Literature 5 satisfies English proficiency."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit accepted per university credit-by-examination policy; AP English score 4 satisfies English proficiency.",
+   "note": ""
+  },
+  "tests": "SAT/ACT not stated as required; SAT 1100 or ACT 21 accepted as English proof. English minimums: IELTS 5, Duolingo 100, TOEFL iBT 80, PTE 54, iTEP 4.5, Cambridge B2, AP English 4, IB Language & Literature 5.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "O-, AS- and A-level coursework may count as secondary completion (case by case); university credit possible by final grades with WES/ECE/IEE course-by-course evaluation.",
+  "turkish_route": "Official certified transcript (original or translated) required; English test waived only for study in US/UK/Ireland/Canada/Australia/NZ.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.moravian.edu/node/11196",
+  "confidence": "low"
+ },
+ "46417": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit accepted per university credit-by-examination policy; IB Language & Literature 5 satisfies English proficiency."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit accepted per university credit-by-examination policy; AP English score 4 satisfies English proficiency.",
+   "note": ""
+  },
+  "tests": "SAT/ACT not stated as required; SAT 1100 or ACT 21 accepted as English proof. English minimums: IELTS 5, Duolingo 100, TOEFL iBT 80, PTE 54, iTEP 4.5, Cambridge B2, AP English 4, IB Language & Literature 5.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "O-, AS- and A-level coursework may count as secondary completion (case by case); university credit possible by final grades with WES/ECE/IEE course-by-course evaluation.",
+  "turkish_route": "Official certified transcript (original or translated) required; English test waived only for study in US/UK/Ireland/Canada/Australia/NZ.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.moravian.edu/node/11196",
+  "confidence": "low"
+ },
+ "46421": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit accepted per university credit-by-examination policy; IB Language & Literature 5 satisfies English proficiency."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "AP credit accepted per university credit-by-examination policy; AP English score 4 satisfies English proficiency.",
+   "note": ""
+  },
+  "tests": "SAT/ACT not stated as required; SAT 1100 or ACT 21 accepted as English proof. English minimums: IELTS 5, Duolingo 100, TOEFL iBT 80, PTE 54, iTEP 4.5, Cambridge B2, AP English 4, IB Language & Literature 5.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "O-, AS- and A-level coursework may count as secondary completion (case by case); university credit possible by final grades with WES/ECE/IEE course-by-course evaluation.",
+  "turkish_route": "Official certified transcript (original or translated) required; English test waived only for study in US/UK/Ireland/Canada/Australia/NZ.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.moravian.edu/node/11196",
+  "confidence": "low"
+ },
+ "46448": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "International applicants from non-English curricula must submit SAT, ACT, TOEFL or IELTS scores (TOEFL iBT 83, IELTS 6.5 listed); other first-year applicants test-optional.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Course-by-course WES evaluation of international transcript required.",
+  "prerequisite_maths": "Recommended: 4 English, 3 maths, 3 science, 2 foreign language, 3 social studies.",
+  "source_url": "https://catalog.msmary.edu/content.php?catoid=20&navoid=887",
+  "confidence": "low"
+ },
+ "46452": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "International applicants from non-English curricula must submit SAT, ACT, TOEFL or IELTS scores (TOEFL iBT 83, IELTS 6.5 listed); other first-year applicants test-optional.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Course-by-course WES evaluation of international transcript required.",
+  "prerequisite_maths": "Recommended: 4 English, 3 maths, 3 science, 2 foreign language, 3 social studies.",
+  "source_url": "https://catalog.msmary.edu/content.php?catoid=20&navoid=887",
+  "confidence": "low"
+ },
+ "46458": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": null,
+   "min_total": null,
+   "subjects": null,
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "International applicants from non-English curricula must submit SAT, ACT, TOEFL or IELTS scores (TOEFL iBT 83, IELTS 6.5 listed); other first-year applicants test-optional.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Course-by-course WES evaluation of international transcript required.",
+  "prerequisite_maths": "Recommended: 4 English, 3 maths, 3 science, 2 foreign language, 3 social studies.",
+  "source_url": "https://catalog.msmary.edu/content.php?catoid=20&navoid=887",
+  "confidence": "low"
+ },
+ "42792": {
+  "stem": true,
+  "typical_offer": "No minimum GPA published; academic scholarships based on high school GPA.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Credit usually for SL scores 5+ and HL scores 4+; max 30 credits; English-language IB diploma waives English test.",
+   "note": ""
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": ""
+  },
+  "tests": "SAT/ACT not required. English: IELTS 6, Duolingo 110, PTE 60, Cambridge 169 (unless exempt country or English-language IB diploma).",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Equivalent of US high school diploma and official secondary transcript with English translation required.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.nec.edu/international",
+  "confidence": "medium"
+ },
+ "31169": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit follows ACE guidelines; counts within 60-hour combined cap."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit-by-exam for AP scores of 3+; combined exam credit max 32 semester hours (excluding IB); combined AP/CLEP/IB max 60 hours.",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for first-year applicants (optional, used for scholarships). English: official TOEFL, IELTS or Duolingo score.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US secondary transcript needs official evaluation (WES, Spantran/TEC or IEE).",
+  "prerequisite_maths": null,
+  "source_url": "https://www.pba.edu/admissions/undergraduate/international/",
+  "confidence": "low"
+ },
+ "25154": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit follows ACE guidelines; counts within 60-hour combined cap."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit-by-exam for AP scores of 3+; combined exam credit max 32 semester hours (excluding IB); combined AP/CLEP/IB max 60 hours.",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for first-year applicants (optional, used for scholarships). English: official TOEFL, IELTS or Duolingo score.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US secondary transcript needs official evaluation (WES, Spantran/TEC or IEE).",
+  "prerequisite_maths": null,
+  "source_url": "https://www.pba.edu/admissions/undergraduate/international/",
+  "confidence": "low"
+ },
+ "31170": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit follows ACE guidelines; counts within 60-hour combined cap."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit-by-exam for AP scores of 3+; combined exam credit max 32 semester hours (excluding IB); combined AP/CLEP/IB max 60 hours.",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for first-year applicants (optional, used for scholarships). English: official TOEFL, IELTS or Duolingo score.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US secondary transcript needs official evaluation (WES, Spantran/TEC or IEE).",
+  "prerequisite_maths": null,
+  "source_url": "https://www.pba.edu/admissions/undergraduate/international/",
+  "confidence": "low"
+ },
+ "31171": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit follows ACE guidelines; counts within 60-hour combined cap."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit-by-exam for AP scores of 3+; combined exam credit max 32 semester hours (excluding IB); combined AP/CLEP/IB max 60 hours.",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for first-year applicants (optional, used for scholarships). English: official TOEFL, IELTS or Duolingo score.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US secondary transcript needs official evaluation (WES, Spantran/TEC or IEE).",
+  "prerequisite_maths": null,
+  "source_url": "https://www.pba.edu/admissions/undergraduate/international/",
+  "confidence": "low"
+ },
+ "31172": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB credit follows ACE guidelines; counts within 60-hour combined cap."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit-by-exam for AP scores of 3+; combined exam credit max 32 semester hours (excluding IB); combined AP/CLEP/IB max 60 hours.",
+   "note": ""
+  },
+  "tests": "SAT/ACT not required for first-year applicants (optional, used for scholarships). English: official TOEFL, IELTS or Duolingo score.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US secondary transcript needs official evaluation (WES, Spantran/TEC or IEE).",
+  "prerequisite_maths": null,
+  "source_url": "https://www.pba.edu/admissions/undergraduate/international/",
+  "confidence": "low"
+ },
+ "53395": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths including one year beyond Algebra 2; 3 years science.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "22903": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths including one year beyond Algebra 2; 3 years science.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "22905": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths including one year beyond Algebra 2; 3 years science.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "22910": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths including one year beyond Algebra 2; 3 years science.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "22919": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths including one year beyond Algebra 2; 3 years science.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "53400": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths including one year beyond Algebra 2; 3 years science.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "22949": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths including one year beyond Algebra 2; 3 years science.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "22909": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths (one beyond Algebra 2), 3 years science. 3+2 with Columbia/WashU/Wentworth: partner prerequisites include physics, maths, chemistry, computer science; curriculum must start in first semester.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "53401": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths (one beyond Algebra 2), 3 years science. 3+2 with Columbia/WashU/Wentworth: partner prerequisites include physics, maths, chemistry, computer science; curriculum must start in first semester.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "22904": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths including one year beyond Algebra 2; 3 years science.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "22920": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only; no credit for SL.",
+   "note": "Credit equivalency list published by registrar."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Up to 4 credits per AP score of 4 or 5, max 32 AP credits; course-specific equivalents (e.g. Calculus AB vs BC to MATH 120/121) per registrar list.",
+   "note": ""
+  },
+  "tests": "Test optional: SAT/ACT not required for admission or scholarships.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "A-level exams may earn credit/placement.",
+  "turkish_route": "Official transcript with at least 2-3 years secondary coursework, original ink and seal, English translation, US grading equivalents; final exam scores alone not accepted; evaluation (WES/ECE/TEC) recommended.",
+  "prerequisite_maths": "Recommended: 4 years maths including one year beyond Algebra 2; 3 years science.",
+  "source_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/how-apply/international-students",
+  "confidence": "medium"
+ },
+ "47003": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only (scores 4-7 map to courses, typically 3-6 credits); no SL credit.",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit considered for approved AP exams with score of 3 or higher; not all professional schools accept AP credit.",
+   "note": ""
+  },
+  "tests": "SAT/ACT optional. English: TOEFL 80+, IELTS 6+, Duolingo 105, or SAT Reading 480 / ACT Reading 21.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US school records must be evaluated by WES, Josef Silny or SpanTran; secondary transcript translated into English.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.sbu.edu/admissions/international-students",
+  "confidence": "low"
+ },
+ "47041": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only (scores 4-7 map to courses, typically 3-6 credits); no SL credit.",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit considered for approved AP exams with score of 3 or higher; not all professional schools accept AP credit.",
+   "note": ""
+  },
+  "tests": "SAT/ACT optional. English: TOEFL 80+, IELTS 6+, Duolingo 105, or SAT Reading 480 / ACT Reading 21.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US school records must be evaluated by WES, Josef Silny or SpanTran; secondary transcript translated into English.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.sbu.edu/admissions/international-students",
+  "confidence": "low"
+ },
+ "47046": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only (scores 4-7 map to courses, typically 3-6 credits); no SL credit.",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit considered for approved AP exams with score of 3 or higher; not all professional schools accept AP credit.",
+   "note": ""
+  },
+  "tests": "SAT/ACT optional. English: TOEFL 80+, IELTS 6+, Duolingo 105, or SAT Reading 480 / ACT Reading 21.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US school records must be evaluated by WES, Josef Silny or SpanTran; secondary transcript translated into English.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.sbu.edu/admissions/international-students",
+  "confidence": "low"
+ },
+ "47057": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams only (scores 4-7 map to courses, typically 3-6 credits); no SL credit.",
+   "note": ""
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit considered for approved AP exams with score of 3 or higher; not all professional schools accept AP credit.",
+   "note": ""
+  },
+  "tests": "SAT/ACT optional. English: TOEFL 80+, IELTS 6+, Duolingo 105, or SAT Reading 480 / ACT Reading 21.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Non-US school records must be evaluated by WES, Josef Silny or SpanTran; secondary transcript translated into English.",
+  "prerequisite_maths": null,
+  "source_url": "https://www.sbu.edu/admissions/international-students",
+  "confidence": "low"
+ },
+ "47076": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "Credit by IB exam score; credits vary by subject."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Credit for AP scores; minimum is 3 for some exams, 4 or 5 for others; official AP score report required.",
+   "note": ""
+  },
+  "tests": null,
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": "Requirements for schooling outside the US set by admissions case by case.",
+  "prerequisite_maths": null,
+  "source_url": "https://catalog.stkate.edu/policies/stu-acad/undg/credit-by-exam/",
+  "confidence": "low"
+ },
+ "48889": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams, score 5+; no credit for SL; IB Maths can earn MATH 171/172.",
+   "note": "Max 32 semester hours prior-learning credit."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 4+ = MATH 171; Calculus BC score 4+ = MATH 171 and 172. AP credit satisfies the maths graduation requirement; no credit for both AP and IB in same subject.",
+   "note": ""
+  },
+  "tests": "International non-native speakers must submit English proficiency test scores issued within 24 months.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.vwu.edu/academics/registrar/credit-for-prior-learning-experience.php",
+  "confidence": "low"
+ },
+ "48890": {
+  "stem": true,
+  "typical_offer": null,
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Higher Level exams, score 5+; no credit for SL; IB Maths can earn MATH 171/172.",
+   "note": "Max 32 semester hours prior-learning credit."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 4+ = MATH 171; Calculus BC score 4+ = MATH 171 and 172. AP credit satisfies the maths graduation requirement; no credit for both AP and IB in same subject.",
+   "note": ""
+  },
+  "tests": "International non-native speakers must submit English proficiency test scores issued within 24 months.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": null,
+  "turkish_route": null,
+  "prerequisite_maths": null,
+  "source_url": "https://www.vwu.edu/academics/registrar/credit-for-prior-learning-experience.php",
+  "confidence": "low"
+ },
+ "43769": {
+  "stem": true,
+  "typical_offer": "Recalculated secondary GPA 2.74 (about US B) or higher over last three years likely admitted; class rank can substitute.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths HL (Analysis & Approaches or Applications & Interpretations) 4-7 = MATH 2471 Calculus I (4 hrs); Analysis HL 5-7 also MATH 2417; Maths SL A&A 4 = MATH 1329; Physics HL 4-7 = 8 hrs, SL 4-7 = 6 hrs; Chemistry 4-5 = CHEM 1310, 6 = CHEM 1341/1141, 7 = 8 hrs; Computer Science 4-7 = CS 1428.",
+   "note": "Full IB diploma with all exams 4+ gives at least 24 credit hours."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 3+ = MATH 2471 Calculus I (4 hrs); Calculus BC score 3+ = MATH 2471 and 2472 (8 hrs). Physics C Mechanics 3+ = PHYS 2125/2325; Physics C E&M 3+ = PHYS 2126/2326; Chemistry 3 = CHEM 1320, 4 = CHEM 1341/1141, 5 = 8 hrs; Computer Science A 3+ = CS 1428; Statistics 3+ = MATH 2328.",
+   "note": ""
+  },
+  "tests": "No SAT/ACT minimum for international applicants. English: TOEFL iBT 78, IELTS 6.5 (no section below 6.0), Duolingo 105, PTE 52, iTEP 3.8, or SAT EBRW 520 / ACT English 21, or 3 years US high school English.",
+  "math_test": {
+   "name": "SAT Math / ACT Math / Accuplacer",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600; ACT Math 27; Accuplacer NG Advanced Algebra & Functions 276-300",
+   "details": "Must be qualified for MATH 2471 (Calculus I) to be admitted to the engineering/CS major; otherwise start in pre-engineering/pre-CS. Alternatives: MATH 2417 or 2471 with C or better, or AP credit for either."
+  },
+  "a_level": "Cambridge A-level/IGCSE evaluated in-house by Texas State admissions.",
+  "turkish_route": "Documents evaluated in-house from country-specific list: secondary transcript with marks, graduation exam results, certified English translation and rank letter; last three years of marks used for GPA.",
+  "prerequisite_maths": "Freshman college-prep expectation: 4 maths units (Algebra I-II, geometry, pre-calculus/calculus/statistics) and 4 science units.",
+  "source_url": "https://www.admissions.txst.edu/future-students/additional-program-requirements.html",
+  "confidence": "medium"
+ },
+ "43776": {
+  "stem": true,
+  "typical_offer": "Recalculated secondary GPA 2.74 (about US B) or higher over last three years likely admitted; class rank can substitute.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths HL (Analysis & Approaches or Applications & Interpretations) 4-7 = MATH 2471 Calculus I (4 hrs); Analysis HL 5-7 also MATH 2417; Maths SL A&A 4 = MATH 1329; Physics HL 4-7 = 8 hrs, SL 4-7 = 6 hrs; Chemistry 4-5 = CHEM 1310, 6 = CHEM 1341/1141, 7 = 8 hrs; Computer Science 4-7 = CS 1428.",
+   "note": "Full IB diploma with all exams 4+ gives at least 24 credit hours."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 3+ = MATH 2471 Calculus I (4 hrs); Calculus BC score 3+ = MATH 2471 and 2472 (8 hrs). Physics C Mechanics 3+ = PHYS 2125/2325; Physics C E&M 3+ = PHYS 2126/2326; Chemistry 3 = CHEM 1320, 4 = CHEM 1341/1141, 5 = 8 hrs; Computer Science A 3+ = CS 1428; Statistics 3+ = MATH 2328.",
+   "note": ""
+  },
+  "tests": "No SAT/ACT minimum for international applicants. English: TOEFL iBT 78, IELTS 6.5 (no section below 6.0), Duolingo 105, PTE 52, iTEP 3.8, or SAT EBRW 520 / ACT English 21, or 3 years US high school English.",
+  "math_test": {
+   "name": "SAT Math / ACT Math / Accuplacer",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600; ACT Math 27; Accuplacer NG Advanced Algebra & Functions 276-300",
+   "details": "Must be qualified for MATH 2471 (Calculus I) to be admitted to the engineering/CS major; otherwise start in pre-engineering/pre-CS. Alternatives: MATH 2417 or 2471 with C or better, or AP credit for either."
+  },
+  "a_level": "Cambridge A-level/IGCSE evaluated in-house by Texas State admissions.",
+  "turkish_route": "Documents evaluated in-house from country-specific list: secondary transcript with marks, graduation exam results, certified English translation and rank letter; last three years of marks used for GPA.",
+  "prerequisite_maths": "Freshman college-prep expectation: 4 maths units (Algebra I-II, geometry, pre-calculus/calculus/statistics) and 4 science units.",
+  "source_url": "https://www.admissions.txst.edu/future-students/additional-program-requirements.html",
+  "confidence": "medium"
+ },
+ "43777": {
+  "stem": true,
+  "typical_offer": "Recalculated secondary GPA 2.74 (about US B) or higher over last three years likely admitted; class rank can substitute.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths HL (Analysis & Approaches or Applications & Interpretations) 4-7 = MATH 2471 Calculus I (4 hrs); Analysis HL 5-7 also MATH 2417; Maths SL A&A 4 = MATH 1329; Physics HL 4-7 = 8 hrs, SL 4-7 = 6 hrs; Chemistry 4-5 = CHEM 1310, 6 = CHEM 1341/1141, 7 = 8 hrs; Computer Science 4-7 = CS 1428.",
+   "note": "Full IB diploma with all exams 4+ gives at least 24 credit hours."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 3+ = MATH 2471 Calculus I (4 hrs); Calculus BC score 3+ = MATH 2471 and 2472 (8 hrs). Physics C Mechanics 3+ = PHYS 2125/2325; Physics C E&M 3+ = PHYS 2126/2326; Chemistry 3 = CHEM 1320, 4 = CHEM 1341/1141, 5 = 8 hrs; Computer Science A 3+ = CS 1428; Statistics 3+ = MATH 2328.",
+   "note": ""
+  },
+  "tests": "No SAT/ACT minimum for international applicants. English: TOEFL iBT 78, IELTS 6.5 (no section below 6.0), Duolingo 105, PTE 52, iTEP 3.8, or SAT EBRW 520 / ACT English 21, or 3 years US high school English.",
+  "math_test": {
+   "name": "SAT Math / ACT Math / Accuplacer",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600; ACT Math 27; Accuplacer NG Advanced Algebra & Functions 276-300",
+   "details": "Must be qualified for MATH 2471 (Calculus I) to be admitted to the engineering/CS major; otherwise start in pre-engineering/pre-CS. Alternatives: MATH 2417 or 2471 with C or better, or AP credit for either."
+  },
+  "a_level": "Cambridge A-level/IGCSE evaluated in-house by Texas State admissions.",
+  "turkish_route": "Documents evaluated in-house from country-specific list: secondary transcript with marks, graduation exam results, certified English translation and rank letter; last three years of marks used for GPA.",
+  "prerequisite_maths": "Freshman college-prep expectation: 4 maths units (Algebra I-II, geometry, pre-calculus/calculus/statistics) and 4 science units.",
+  "source_url": "https://www.admissions.txst.edu/future-students/additional-program-requirements.html",
+  "confidence": "medium"
+ },
+ "43789": {
+  "stem": true,
+  "typical_offer": "Recalculated secondary GPA 2.74 (about US B) or higher over last three years likely admitted; class rank can substitute.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths HL (Analysis & Approaches or Applications & Interpretations) 4-7 = MATH 2471 Calculus I (4 hrs); Analysis HL 5-7 also MATH 2417; Maths SL A&A 4 = MATH 1329; Physics HL 4-7 = 8 hrs, SL 4-7 = 6 hrs; Chemistry 4-5 = CHEM 1310, 6 = CHEM 1341/1141, 7 = 8 hrs; Computer Science 4-7 = CS 1428.",
+   "note": "Full IB diploma with all exams 4+ gives at least 24 credit hours."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 3+ = MATH 2471 Calculus I (4 hrs); Calculus BC score 3+ = MATH 2471 and 2472 (8 hrs). Physics C Mechanics 3+ = PHYS 2125/2325; Physics C E&M 3+ = PHYS 2126/2326; Chemistry 3 = CHEM 1320, 4 = CHEM 1341/1141, 5 = 8 hrs; Computer Science A 3+ = CS 1428; Statistics 3+ = MATH 2328.",
+   "note": ""
+  },
+  "tests": "No SAT/ACT minimum for international applicants. English: TOEFL iBT 78, IELTS 6.5 (no section below 6.0), Duolingo 105, PTE 52, iTEP 3.8, or SAT EBRW 520 / ACT English 21, or 3 years US high school English.",
+  "math_test": {
+   "name": "SAT Math / ACT Math / Accuplacer",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600; ACT Math 27; Accuplacer NG Advanced Algebra & Functions 276-300",
+   "details": "Must be qualified for MATH 2471 (Calculus I) to be admitted to the engineering/CS major; otherwise start in pre-engineering/pre-CS. Alternatives: MATH 2417 or 2471 with C or better, or AP credit for either."
+  },
+  "a_level": "Cambridge A-level/IGCSE evaluated in-house by Texas State admissions.",
+  "turkish_route": "Documents evaluated in-house from country-specific list: secondary transcript with marks, graduation exam results, certified English translation and rank letter; last three years of marks used for GPA.",
+  "prerequisite_maths": "Freshman college-prep expectation: 4 maths units (Algebra I-II, geometry, pre-calculus/calculus/statistics) and 4 science units.",
+  "source_url": "https://www.admissions.txst.edu/future-students/additional-program-requirements.html",
+  "confidence": "medium"
+ },
+ "43812": {
+  "stem": true,
+  "typical_offer": "Recalculated secondary GPA 2.74 (about US B) or higher over last three years likely admitted; class rank can substitute.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths HL (Analysis & Approaches or Applications & Interpretations) 4-7 = MATH 2471 Calculus I (4 hrs); Analysis HL 5-7 also MATH 2417; Maths SL A&A 4 = MATH 1329; Physics HL 4-7 = 8 hrs, SL 4-7 = 6 hrs; Chemistry 4-5 = CHEM 1310, 6 = CHEM 1341/1141, 7 = 8 hrs; Computer Science 4-7 = CS 1428.",
+   "note": "Full IB diploma with all exams 4+ gives at least 24 credit hours."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 3+ = MATH 2471 Calculus I (4 hrs); Calculus BC score 3+ = MATH 2471 and 2472 (8 hrs). Physics C Mechanics 3+ = PHYS 2125/2325; Physics C E&M 3+ = PHYS 2126/2326; Chemistry 3 = CHEM 1320, 4 = CHEM 1341/1141, 5 = 8 hrs; Computer Science A 3+ = CS 1428; Statistics 3+ = MATH 2328.",
+   "note": ""
+  },
+  "tests": "No SAT/ACT minimum for international applicants. English: TOEFL iBT 78, IELTS 6.5 (no section below 6.0), Duolingo 105, PTE 52, iTEP 3.8, or SAT EBRW 520 / ACT English 21, or 3 years US high school English.",
+  "math_test": {
+   "name": "SAT Math / ACT Math / Accuplacer",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600; ACT Math 27; Accuplacer NG Advanced Algebra & Functions 276-300",
+   "details": "Must be qualified for MATH 2471 (Calculus I) to be admitted to the engineering/CS major; otherwise start in pre-engineering/pre-CS. Alternatives: MATH 2417 or 2471 with C or better, or AP credit for either."
+  },
+  "a_level": "Cambridge A-level/IGCSE evaluated in-house by Texas State admissions.",
+  "turkish_route": "Documents evaluated in-house from country-specific list: secondary transcript with marks, graduation exam results, certified English translation and rank letter; last three years of marks used for GPA.",
+  "prerequisite_maths": "Freshman college-prep expectation: 4 maths units (Algebra I-II, geometry, pre-calculus/calculus/statistics) and 4 science units.",
+  "source_url": "https://www.admissions.txst.edu/future-students/additional-program-requirements.html",
+  "confidence": "medium"
+ },
+ "43823": {
+  "stem": true,
+  "typical_offer": "Recalculated secondary GPA 2.74 (about US B) or higher over last three years likely admitted; class rank can substitute.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths HL (Analysis & Approaches or Applications & Interpretations) 4-7 = MATH 2471 Calculus I (4 hrs); Analysis HL 5-7 also MATH 2417; Maths SL A&A 4 = MATH 1329; Physics HL 4-7 = 8 hrs, SL 4-7 = 6 hrs; Chemistry 4-5 = CHEM 1310, 6 = CHEM 1341/1141, 7 = 8 hrs; Computer Science 4-7 = CS 1428.",
+   "note": "Full IB diploma with all exams 4+ gives at least 24 credit hours."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 3+ = MATH 2471 Calculus I (4 hrs); Calculus BC score 3+ = MATH 2471 and 2472 (8 hrs). Physics C Mechanics 3+ = PHYS 2125/2325; Physics C E&M 3+ = PHYS 2126/2326; Chemistry 3 = CHEM 1320, 4 = CHEM 1341/1141, 5 = 8 hrs; Computer Science A 3+ = CS 1428; Statistics 3+ = MATH 2328.",
+   "note": ""
+  },
+  "tests": "No SAT/ACT minimum for international applicants. English: TOEFL iBT 78, IELTS 6.5 (no section below 6.0), Duolingo 105, PTE 52, iTEP 3.8, or SAT EBRW 520 / ACT English 21, or 3 years US high school English.",
+  "math_test": {
+   "name": "SAT Math / ACT Math / Accuplacer",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600; ACT Math 27; Accuplacer NG Advanced Algebra & Functions 276-300",
+   "details": "Must be qualified for MATH 2471 (Calculus I) to be admitted to the engineering/CS major; otherwise start in pre-engineering/pre-CS. Alternatives: MATH 2417 or 2471 with C or better, or AP credit for either."
+  },
+  "a_level": "Cambridge A-level/IGCSE evaluated in-house by Texas State admissions.",
+  "turkish_route": "Documents evaluated in-house from country-specific list: secondary transcript with marks, graduation exam results, certified English translation and rank letter; last three years of marks used for GPA.",
+  "prerequisite_maths": "Freshman college-prep expectation: 4 maths units (Algebra I-II, geometry, pre-calculus/calculus/statistics) and 4 science units.",
+  "source_url": "https://www.admissions.txst.edu/future-students/additional-program-requirements.html",
+  "confidence": "medium"
+ },
+ "43829": {
+  "stem": true,
+  "typical_offer": "Recalculated secondary GPA 2.74 (about US B) or higher over last three years likely admitted; class rank can substitute.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths HL (Analysis & Approaches or Applications & Interpretations) 4-7 = MATH 2471 Calculus I (4 hrs); Analysis HL 5-7 also MATH 2417; Maths SL A&A 4 = MATH 1329; Physics HL 4-7 = 8 hrs, SL 4-7 = 6 hrs; Chemistry 4-5 = CHEM 1310, 6 = CHEM 1341/1141, 7 = 8 hrs; Computer Science 4-7 = CS 1428.",
+   "note": "Full IB diploma with all exams 4+ gives at least 24 credit hours."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 3+ = MATH 2471 Calculus I (4 hrs); Calculus BC score 3+ = MATH 2471 and 2472 (8 hrs). Physics C Mechanics 3+ = PHYS 2125/2325; Physics C E&M 3+ = PHYS 2126/2326; Chemistry 3 = CHEM 1320, 4 = CHEM 1341/1141, 5 = 8 hrs; Computer Science A 3+ = CS 1428; Statistics 3+ = MATH 2328.",
+   "note": ""
+  },
+  "tests": "No SAT/ACT minimum for international applicants. English: TOEFL iBT 78, IELTS 6.5 (no section below 6.0), Duolingo 105, PTE 52, iTEP 3.8, or SAT EBRW 520 / ACT English 21, or 3 years US high school English.",
+  "math_test": {
+   "name": "SAT Math / ACT Math / Accuplacer",
+   "role": "alternative to prerequisite",
+   "min_score": "SAT Math 600; ACT Math 27; Accuplacer NG Advanced Algebra & Functions 276-300",
+   "details": "Must be qualified for MATH 2471 (Calculus I) to be admitted to the engineering/CS major; otherwise start in pre-engineering/pre-CS. Alternatives: MATH 2417 or 2471 with C or better, or AP credit for either."
+  },
+  "a_level": "Cambridge A-level/IGCSE evaluated in-house by Texas State admissions.",
+  "turkish_route": "Documents evaluated in-house from country-specific list: secondary transcript with marks, graduation exam results, certified English translation and rank letter; last three years of marks used for GPA.",
+  "prerequisite_maths": "Freshman college-prep expectation: 4 maths units (Algebra I-II, geometry, pre-calculus/calculus/statistics) and 4 science units.",
+  "source_url": "https://www.admissions.txst.edu/future-students/additional-program-requirements.html",
+  "confidence": "medium"
+ },
+ "43784": {
+  "stem": true,
+  "typical_offer": "Recalculated secondary GPA 2.74 (about US B) or higher over last three years likely admitted; class rank can substitute.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths HL (Analysis & Approaches or Applications & Interpretations) 4-7 = MATH 2471 Calculus I (4 hrs); Analysis HL 5-7 also MATH 2417; Maths SL A&A 4 = MATH 1329; Physics HL 4-7 = 8 hrs, SL 4-7 = 6 hrs; Chemistry 4-5 = CHEM 1310, 6 = CHEM 1341/1141, 7 = 8 hrs; Computer Science 4-7 = CS 1428.",
+   "note": "Full IB diploma with all exams 4+ gives at least 24 credit hours."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 3+ = MATH 2471 Calculus I (4 hrs); Calculus BC score 3+ = MATH 2471 and 2472 (8 hrs). Physics C Mechanics 3+ = PHYS 2125/2325; Physics C E&M 3+ = PHYS 2126/2326; Chemistry 3 = CHEM 1320, 4 = CHEM 1341/1141, 5 = 8 hrs; Computer Science A 3+ = CS 1428; Statistics 3+ = MATH 2328.",
+   "note": ""
+  },
+  "tests": "No SAT/ACT minimum for international applicants. English: TOEFL iBT 78, IELTS 6.5 (no section below 6.0), Duolingo 105, PTE 52, iTEP 3.8, or SAT EBRW 520 / ACT English 21, or 3 years US high school English.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A-level/IGCSE evaluated in-house by Texas State admissions.",
+  "turkish_route": "Documents evaluated in-house from country-specific list: secondary transcript with marks, graduation exam results, certified English translation and rank letter; last three years of marks used for GPA.",
+  "prerequisite_maths": "Freshman college-prep expectation: 4 maths units (Algebra I-II, geometry, pre-calculus/calculus/statistics) and 4 science units.",
+  "source_url": "https://www.admissions.txst.edu/future-students/international/admissions-requirements.html",
+  "confidence": "medium"
+ },
+ "43791": {
+  "stem": true,
+  "typical_offer": "Recalculated secondary GPA 2.74 (about US B) or higher over last three years likely admitted; class rank can substitute.",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Maths HL (Analysis & Approaches or Applications & Interpretations) 4-7 = MATH 2471 Calculus I (4 hrs); Analysis HL 5-7 also MATH 2417; Maths SL A&A 4 = MATH 1329; Physics HL 4-7 = 8 hrs, SL 4-7 = 6 hrs; Chemistry 4-5 = CHEM 1310, 6 = CHEM 1341/1141, 7 = 8 hrs; Computer Science 4-7 = CS 1428.",
+   "note": "Full IB diploma with all exams 4+ gives at least 24 credit hours."
+  },
+  "ap": {
+   "accepted": true,
+   "details": "Calculus AB score 3+ = MATH 2471 Calculus I (4 hrs); Calculus BC score 3+ = MATH 2471 and 2472 (8 hrs). Physics C Mechanics 3+ = PHYS 2125/2325; Physics C E&M 3+ = PHYS 2126/2326; Chemistry 3 = CHEM 1320, 4 = CHEM 1341/1141, 5 = 8 hrs; Computer Science A 3+ = CS 1428; Statistics 3+ = MATH 2328.",
+   "note": ""
+  },
+  "tests": "No SAT/ACT minimum for international applicants. English: TOEFL iBT 78, IELTS 6.5 (no section below 6.0), Duolingo 105, PTE 52, iTEP 3.8, or SAT EBRW 520 / ACT English 21, or 3 years US high school English.",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Cambridge A-level/IGCSE evaluated in-house by Texas State admissions.",
+  "turkish_route": "Documents evaluated in-house from country-specific list: secondary transcript with marks, graduation exam results, certified English translation and rank letter; last three years of marks used for GPA.",
+  "prerequisite_maths": "Freshman college-prep expectation: 4 maths units (Algebra I-II, geometry, pre-calculus/calculus/statistics) and 4 science units.",
+  "source_url": "https://www.admissions.txst.edu/future-students/international/admissions-requirements.html",
+  "confidence": "medium"
+ }
+}

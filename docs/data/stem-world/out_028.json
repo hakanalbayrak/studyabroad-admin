@@ -1,0 +1,848 @@
+{
+ "51611": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points (minimum 72 from two A-levels incl. at least 40 points from Maths); IB 112 tariff points from 3 HL subjects, 2 at H5 or above, incl. at least 40 points from Maths (Analysis and Approaches or Computer Science accepted)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "112 tariff points from 3 HL subjects, 2 at H5 or above, incl. at least 40 points from Maths (Analysis and Approaches or Computer Science accepted)",
+   "note": "Institution-wide entry rules also apply"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; English: IELTS 6.0 with no skill below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points; minimum 72 from two A-levels incl. at least 40 points from Maths",
+  "turkish_route": "Direct entry to Year 1 with Lise Diploması (Devlet Lise, Lise Bitirme or Anadolu Lisesi) and GPA of at least 3.5/5.0 or 65%, plus IELTS 6.0 (no skill below 5.5); GPA 2.0-3.4/5.0 with IELTS 4.5 qualifies for foundation courses only. IB, A-level and course rules per course page",
+  "prerequisite_maths": "GCSE Maths grade 6 and English Language grade 4; Maths required within A-level/IB points",
+  "source_url": "https://www.leedsbeckett.ac.uk/courses/civil-engineering-beng/",
+  "confidence": "high"
+ },
+ "51612": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points (minimum 72 from two A-levels incl. 40 points from Maths or a science subject (sciences need practical pass)); IB 112 tariff points from 3 HL subjects, 2 at H4 or above, incl. at least 40 points from maths or science (Maths, Physics, Chemistry, Biology, Computer Science, Design Technology accepted)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "112 tariff points from 3 HL subjects, 2 at H4 or above, incl. at least 40 points from maths or science (Maths, Physics, Chemistry, Biology, Computer Science, Design Technology accepted)",
+   "note": "Institution-wide entry rules also apply"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; English: IELTS 6.0 with no skill below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points; minimum 72 from two A-levels incl. 40 points from Maths or a science subject (sciences need practical pass)",
+  "turkish_route": "Direct entry to Year 1 with Lise Diploması (Devlet Lise, Lise Bitirme or Anadolu Lisesi) and GPA of at least 3.5/5.0 or 65%, plus IELTS 6.0 (no skill below 5.5); GPA 2.0-3.4/5.0 with IELTS 4.5 qualifies for foundation courses only. IB, A-level and course rules per course page",
+  "prerequisite_maths": "Maths or science A-level/IB subject required; GCSE English Language and Maths grade 4 (or equivalent)",
+  "source_url": "https://www.leedsbeckett.ac.uk/courses/electronic-electrical-engineering-beng/",
+  "confidence": "high"
+ },
+ "51618": {
+  "stem": true,
+  "typical_offer": "104 UCAS Tariff points (minimum 64 from two A-levels incl. a science or numerate subject); IB 104 tariff points from 3 HL subjects, 2 at H4 or above, incl. a science or numerate subject (Physics, Chemistry, Biology, Computer Science, Economics, Maths accepted)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "104 tariff points from 3 HL subjects, 2 at H4 or above, incl. a science or numerate subject (Physics, Chemistry, Biology, Computer Science, Economics, Maths accepted)",
+   "note": "Institution-wide entry rules also apply"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; English: IELTS 6.0 with no skill below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "104 UCAS points; minimum 64 from two A-levels incl. a science or numerate subject",
+  "turkish_route": "Direct entry to Year 1 with Lise Diploması (Devlet Lise, Lise Bitirme or Anadolu Lisesi) and GPA of at least 3.5/5.0 or 65%, plus IELTS 6.0 (no skill below 5.5); GPA 2.0-3.4/5.0 with IELTS 4.5 qualifies for foundation courses only. IB, A-level and course rules per course page",
+  "prerequisite_maths": "Science or numerate subject required; GCSE English Language and Maths grade 4 (or equivalent)",
+  "source_url": "https://www.leedsbeckett.ac.uk/courses/civil-engineering-bsc/",
+  "confidence": "high"
+ },
+ "51619": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points (minimum 72 from two A-levels, excluding General Studies); IB 28 IB points or 112 tariff points; 3 HL subjects with 2 at H5 or above",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "28 IB points or 112 tariff points; 3 HL subjects with 2 at H5 or above",
+   "note": "Institution-wide entry rules also apply"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; English: IELTS 6.0 with no skill below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points; minimum 72 from two A-levels, excluding General Studies",
+  "turkish_route": "Direct entry to Year 1 with Lise Diploması (Devlet Lise, Lise Bitirme or Anadolu Lisesi) and GPA of at least 3.5/5.0 or 65%, plus IELTS 6.0 (no skill below 5.5); GPA 2.0-3.4/5.0 with IELTS 4.5 qualifies for foundation courses only. IB, A-level and course rules per course page",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 (or equivalent)",
+  "source_url": "https://www.leedsbeckett.ac.uk/courses/computer-science-bsc/",
+  "confidence": "high"
+ },
+ "51623": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points (minimum 72 from two A-levels, excluding General Studies); IB 28 IB points or 112 tariff points; 3 HL subjects with 2 at H5 or above",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "28 IB points or 112 tariff points; 3 HL subjects with 2 at H5 or above",
+   "note": "Institution-wide entry rules also apply"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; English: IELTS 6.0 with no skill below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points; minimum 72 from two A-levels, excluding General Studies",
+  "turkish_route": "Direct entry to Year 1 with Lise Diploması (Devlet Lise, Lise Bitirme or Anadolu Lisesi) and GPA of at least 3.5/5.0 or 65%, plus IELTS 6.0 (no skill below 5.5); GPA 2.0-3.4/5.0 with IELTS 4.5 qualifies for foundation courses only. IB, A-level and course rules per course page",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 (or equivalent)",
+  "source_url": "https://www.leedsbeckett.ac.uk/courses/cyber-security-bsc/",
+  "confidence": "high"
+ },
+ "51624": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points (minimum 72 from two A-levels, excluding General Studies); IB 28 IB points or 112 tariff points; 3 HL subjects with 2 at H5 or above",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "28 IB points or 112 tariff points; 3 HL subjects with 2 at H5 or above",
+   "note": "Institution-wide entry rules also apply"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; English: IELTS 6.0 with no skill below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points; minimum 72 from two A-levels, excluding General Studies",
+  "turkish_route": "Direct entry to Year 1 with Lise Diploması (Devlet Lise, Lise Bitirme or Anadolu Lisesi) and GPA of at least 3.5/5.0 or 65%, plus IELTS 6.0 (no skill below 5.5); GPA 2.0-3.4/5.0 with IELTS 4.5 qualifies for foundation courses only. IB, A-level and course rules per course page",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 (or equivalent)",
+  "source_url": "https://www.leedsbeckett.ac.uk/courses/cyber-security-digital-forensics-bsc/",
+  "confidence": "high"
+ },
+ "51625": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points (minimum 72 from two A-levels, excluding General Studies); IB 28 IB points or 112 tariff points; 3 HL subjects with 2 at H5 or above",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "28 IB points or 112 tariff points; 3 HL subjects with 2 at H5 or above",
+   "note": "Institution-wide entry rules also apply"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; English: IELTS 6.0 with no skill below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points; minimum 72 from two A-levels, excluding General Studies",
+  "turkish_route": "Direct entry to Year 1 with Lise Diploması (Devlet Lise, Lise Bitirme or Anadolu Lisesi) and GPA of at least 3.5/5.0 or 65%, plus IELTS 6.0 (no skill below 5.5); GPA 2.0-3.4/5.0 with IELTS 4.5 qualifies for foundation courses only. IB, A-level and course rules per course page",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 (or equivalent)",
+  "source_url": "https://www.leedsbeckett.ac.uk/courses/data-science-artificial-intelligence-bsc/",
+  "confidence": "high"
+ },
+ "51629": {
+  "stem": true,
+  "typical_offer": "112 UCAS Tariff points (minimum 72 from two A-levels, excluding General Studies); IB 28 IB points or 112 tariff points; 3 HL subjects with 2 at H5 or above",
+  "ib": {
+   "accepted": true,
+   "min_total": 28,
+   "subjects": "28 IB points or 112 tariff points; 3 HL subjects with 2 at H5 or above",
+   "note": "Institution-wide entry rules also apply"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; English: IELTS 6.0 with no skill below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "112 UCAS points; minimum 72 from two A-levels, excluding General Studies",
+  "turkish_route": "Direct entry to Year 1 with Lise Diploması (Devlet Lise, Lise Bitirme or Anadolu Lisesi) and GPA of at least 3.5/5.0 or 65%, plus IELTS 6.0 (no skill below 5.5); GPA 2.0-3.4/5.0 with IELTS 4.5 qualifies for foundation courses only. IB, A-level and course rules per course page",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 (or equivalent)",
+  "source_url": "https://www.leedsbeckett.ac.uk/courses/geography-environmental-science-bsc/",
+  "confidence": "high"
+ },
+ "51672": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points); A-level Maths or a science subject required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "112 UCAS points from a relevant subject",
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS; A-level Maths or a science subject required",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "A-level Maths or a science subject; GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/35424bgh-architectural-engineering-beng-hons",
+  "confidence": "high"
+ },
+ "51673": {
+  "stem": true,
+  "typical_offer": "112 UCAS points (BBC); BTEC DMM",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Minimum 112 UCAS points",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/35019bgh-civil-engineering-beng-hons",
+  "confidence": "high"
+ },
+ "51674": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points); Maths grade C plus grade C in Physics, Chemistry, Computing, Further Maths, Electronics or Engineering",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Minimum 5 in both Maths and Physics at Higher Level",
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS; Maths grade C plus grade C in Physics, Chemistry, Computing, Further Maths, Electronics or Engineering",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "Grade C in Maths and Grade C in one of Physics, Chemistry, Computing, Further Maths, Electronics or Engineering; GCSE English and Maths grade 4",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/32118bgh-electrical-and-electronic-engineering-beng-hons",
+  "confidence": "high"
+ },
+ "51675": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points); Maths grade C plus grade C in Physics, Chemistry, Computing, Further Maths, Electronics or Engineering",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Minimum 5 in both Maths and Physics at Higher Level",
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS; Maths grade C plus grade C in Physics, Chemistry, Computing, Further Maths, Electronics or Engineering",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "Grade C in Maths and Grade C in one of Physics, Chemistry, Computing, Further Maths, Electronics or Engineering; GCSE English and Maths grade 4",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/36219bgh-marine-and-mechanical-engineering-beng-hons",
+  "confidence": "high"
+ },
+ "51676": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points); Maths grade C plus grade C in Physics, Chemistry, Computing, Further Maths, Electronics or Engineering",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Minimum 5 in both Maths and Physics at Higher Level",
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS; Maths grade C plus grade C in Physics, Chemistry, Computing, Further Maths, Electronics or Engineering",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "Grade C in Maths and Grade C in one of Physics, Chemistry, Computing, Further Maths, Electronics or Engineering; GCSE English and Maths grade 4",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/32120bgh-mechanical-engineering-beng-hons",
+  "confidence": "high"
+ },
+ "51695": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/35584-computer-games-development-bsc-hons",
+  "confidence": "high"
+ },
+ "51696": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/35579-computer-science-bsc-hons",
+  "confidence": "high"
+ },
+ "51701": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/36889-cyber-security-bsc-hons",
+  "confidence": "high"
+ },
+ "51721": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/35585-software-engineering-bsc-hons",
+  "confidence": "high"
+ },
+ "51697": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/36999-computer-science-with-artificial-intelligence-bsc-hons",
+  "confidence": "high"
+ },
+ "51698": {
+  "stem": true,
+  "typical_offer": "A-level BBC-ABB (112-128 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112-128 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC-ABB (112-128 UCAS points), minimum 2 A-levels, max 20 points from AS",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/37000-computer-science-with-data-science-bsc-hons",
+  "confidence": "high"
+ },
+ "51699": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points); Maths A-level grade C or above required",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "Minimum 5 in Higher Level Maths",
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS; Maths A-level grade C or above required",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "A-level Maths grade C; GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/37001-computer-science-with-mathematics-bsc-hons",
+  "confidence": "high"
+ },
+ "51703": {
+  "stem": true,
+  "typical_offer": "A-level BCC (104 UCAS points); Geography, a science or related social science at grade C or above",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "UCAS points from a related subject",
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 104 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BCC (104 UCAS points), minimum 2 A-levels, max 20 points from AS; Geography, a science or related social science at grade C or above",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "Geography, science or related social science subject at grade C; GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/36753-environmental-science-bsc-hons",
+  "confidence": "high"
+ },
+ "51717": {
+  "stem": true,
+  "typical_offer": "A-level BBC (112 UCAS points); Grade C in one relevant subject (Design and Technology: Product Design, Maths, Engineering, Chemistry, Physics, Electronics, Design Engineering)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": "UCAS points from a relevant subject",
+   "note": "IB accepted alone or combined with other qualifications; equivalent to 112 UCAS points"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with no component below 5.5",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BBC (112 UCAS points), minimum 2 A-levels, max 20 points from AS; Grade C in one relevant subject (Design and Technology: Product Design, Maths, Engineering, Chemistry, Physics, Electronics, Design Engineering)",
+  "turkish_route": "Direct entry to Level 4 (Year 1) with Devlet Lise Diploması and GPA 3.5 (70%); alternatively successful completion of first year of a Turkish undergraduate degree gives Level 4 entry; subject to qualification equivalency check; IELTS 6.0 (no component below 5.5)",
+  "prerequisite_maths": "One relevant A-level subject at grade C (e.g. Maths, Physics, D&T); GCSE English Language and Maths grade 4 or C",
+  "source_url": "https://www.ljmu.ac.uk/study/courses/undergraduates/2027/35334-product-design-engineering-bsc-hons",
+  "confidence": "high"
+ },
+ "26068": {
+  "stem": true,
+  "typical_offer": "A-level CCD (88 UCAS points), one from a relevant subject",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma award accepted for general entry; course page gives no points or subject requirement"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with 5.5 in each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "CCD, one grade from a relevant subject; or 88 UCAS points from equivalent Level 3",
+  "turkish_route": "Direct entry with Lise Diploması or Lise Bitirme Diploması and GPA of at least 3.50 (70%); 4-year degrees including a foundation year accept a diploma score of 45+ (before 2013) or 50+ (2013 onwards); a pass in Maths is required where the course needs it; IELTS 6.0 (5.5 each component)",
+  "prerequisite_maths": "GCSE English Language and Maths grade C/4 or above; relevant A-level subject required",
+  "source_url": "https://www.londonmet.ac.uk/courses/undergraduate/computer-networking-and-cloud-security---beng-hons/",
+  "confidence": "high"
+ },
+ "26069": {
+  "stem": true,
+  "typical_offer": "A-level BB or CCE (80 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma award accepted for general entry; course page gives no points or subject requirement"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with 5.5 in each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BB or CCE; or 80 UCAS points from equivalent Level 3",
+  "turkish_route": "Direct entry with Lise Diploması or Lise Bitirme Diploması and GPA of at least 3.50 (70%); 4-year degrees including a foundation year accept a diploma score of 45+ (before 2013) or 50+ (2013 onwards); a pass in Maths is required where the course needs it; IELTS 6.0 (5.5 each component)",
+  "prerequisite_maths": "GCSE English Language and Maths grade C/4 or above",
+  "source_url": "https://www.londonmet.ac.uk/courses/undergraduate/computer-networking-and-cyber-security---bsc-hons/",
+  "confidence": "high"
+ },
+ "26070": {
+  "stem": true,
+  "typical_offer": "A-level CCC (96 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma award accepted for general entry; course page gives no points or subject requirement"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with 5.5 in each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Grade C in three A-levels; or 96 UCAS points from equivalent Level 3",
+  "turkish_route": "Direct entry with Lise Diploması or Lise Bitirme Diploması and GPA of at least 3.50 (70%); 4-year degrees including a foundation year accept a diploma score of 45+ (before 2013) or 50+ (2013 onwards); a pass in Maths is required where the course needs it; IELTS 6.0 (5.5 each component)",
+  "prerequisite_maths": "GCSE English Language and Maths grade C/4 or above",
+  "source_url": "https://www.londonmet.ac.uk/courses/undergraduate/computer-science---bsc-hons/",
+  "confidence": "high"
+ },
+ "26071": {
+  "stem": true,
+  "typical_offer": "A-level CCD (88 UCAS points), one from a relevant subject",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma award accepted for general entry; course page gives no points or subject requirement"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with 5.5 in each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "CCD, one grade from a relevant subject; or 88 UCAS points from equivalent Level 3",
+  "turkish_route": "Direct entry with Lise Diploması or Lise Bitirme Diploması and GPA of at least 3.50 (70%); 4-year degrees including a foundation year accept a diploma score of 45+ (before 2013) or 50+ (2013 onwards); a pass in Maths is required where the course needs it; IELTS 6.0 (5.5 each component)",
+  "prerequisite_maths": "GCSE English Language and Maths grade C/4 or above; relevant A-level subject required",
+  "source_url": "https://www.londonmet.ac.uk/courses/undergraduate/computer-systems-engineering-and-robotics---beng-hons/",
+  "confidence": "high"
+ },
+ "26072": {
+  "stem": true,
+  "typical_offer": "A-level BB or CCE (80 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma award accepted for general entry; course page gives no points or subject requirement"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with 5.5 in each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "BB or CCE; or 80 UCAS points from equivalent Level 3",
+  "turkish_route": "Direct entry with Lise Diploması or Lise Bitirme Diploması and GPA of at least 3.50 (70%); 4-year degrees including a foundation year accept a diploma score of 45+ (before 2013) or 50+ (2013 onwards); a pass in Maths is required where the course needs it; IELTS 6.0 (5.5 each component)",
+  "prerequisite_maths": "GCSE English Language and Maths grade C/4 or above",
+  "source_url": "https://www.londonmet.ac.uk/courses/undergraduate/computing---bsc-hons/",
+  "confidence": "high"
+ },
+ "26081": {
+  "stem": true,
+  "typical_offer": "A-level CCC (96 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma award accepted for general entry; course page gives no points or subject requirement"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with 5.5 in each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Grade C in three A-levels; or 96 UCAS points from equivalent Level 3",
+  "turkish_route": "Direct entry with Lise Diploması or Lise Bitirme Diploması and GPA of at least 3.50 (70%); 4-year degrees including a foundation year accept a diploma score of 45+ (before 2013) or 50+ (2013 onwards); a pass in Maths is required where the course needs it; IELTS 6.0 (5.5 each component)",
+  "prerequisite_maths": "GCSE English Language and Maths grade C/4 or above",
+  "source_url": "https://www.londonmet.ac.uk/courses/undergraduate/data-science---bsc-hons/",
+  "confidence": "high"
+ },
+ "26084": {
+  "stem": true,
+  "typical_offer": "A-level CCD (88 UCAS points), one from a relevant subject",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma award accepted for general entry; course page gives no points or subject requirement"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with 5.5 in each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "CCD in three A-levels, one from a relevant subject; or 88 UCAS points from equivalent Level 3",
+  "turkish_route": "Direct entry with Lise Diploması or Lise Bitirme Diploması and GPA of at least 3.50 (70%); 4-year degrees including a foundation year accept a diploma score of 45+ (before 2013) or 50+ (2013 onwards); a pass in Maths is required where the course needs it; IELTS 6.0 (5.5 each component)",
+  "prerequisite_maths": "GCSE English Language and Maths grade C/4 or above; relevant A-level subject required",
+  "source_url": "https://www.londonmet.ac.uk/courses/undergraduate/digital-forensics-and-cyber-security---bsc-hons/",
+  "confidence": "high"
+ },
+ "26091": {
+  "stem": true,
+  "typical_offer": "A-level CCD (88 UCAS points), one from a relevant subject",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma award accepted for general entry; course page gives no points or subject requirement"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with 5.5 in each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "CCD, one grade from a relevant subject; or 88 UCAS points from equivalent Level 3",
+  "turkish_route": "Direct entry with Lise Diploması or Lise Bitirme Diploması and GPA of at least 3.50 (70%); 4-year degrees including a foundation year accept a diploma score of 45+ (before 2013) or 50+ (2013 onwards); a pass in Maths is required where the course needs it; IELTS 6.0 (5.5 each component)",
+  "prerequisite_maths": "GCSE English Language and Maths grade C/4 or above; relevant A-level subject required",
+  "source_url": "https://www.londonmet.ac.uk/courses/undergraduate/electronic-engineering-and-internet-of-things---beng-hons/",
+  "confidence": "high"
+ },
+ "26103": {
+  "stem": true,
+  "typical_offer": "A-level CCC (96 UCAS points)",
+  "ib": {
+   "accepted": true,
+   "min_total": null,
+   "subjects": null,
+   "note": "IB Diploma award accepted for general entry; course page gives no points or subject requirement"
+  },
+  "ap": {
+   "accepted": null,
+   "details": null,
+   "note": "AP not listed in published requirements"
+  },
+  "tests": "No SAT/ACT requirement published; IELTS 6.0 overall with 5.5 in each component",
+  "math_test": {
+   "name": null,
+   "role": null,
+   "min_score": null,
+   "details": ""
+  },
+  "a_level": "Grade C in three A-levels; or 96 UCAS points from equivalent Level 3",
+  "turkish_route": "Direct entry with Lise Diploması or Lise Bitirme Diploması and GPA of at least 3.50 (70%); 4-year degrees including a foundation year accept a diploma score of 45+ (before 2013) or 50+ (2013 onwards); a pass in Maths is required where the course needs it; IELTS 6.0 (5.5 each component)",
+  "prerequisite_maths": "GCSE English Language and Maths grade C/4 or above",
+  "source_url": "https://www.londonmet.ac.uk/courses/undergraduate/games-programming---bsc-hons/",
+  "confidence": "medium"
+ },
+ "26135": {
+  "stem": false
+ },
+ "26136": {
+  "stem": false
+ },
+ "26140": {
+  "stem": false
+ }
+}

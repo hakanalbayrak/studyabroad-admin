@@ -1,0 +1,18 @@
+{
+  "facts": {
+    "visa": "Türk vatandaşları Almanya'da öğrenim görmek için vize almak zorundadır: öğrenci vizesi (Visum zum Studium). Başvuru Almanya'nın Türkiye'deki başkonsolosluk veya konsolosluklarından, çoğunlukla randevu sistemiyle yapılır. Okuldan kabul mektubu, mali yeterlilik kanıtı (bloke hesap), sağlık sigortası ve geçerli pasaport istenir. Almanya'ya vardıktan sonra oturma izni (Aufenthaltstitel) için yerel yabancılar dairesine başvurulur. Süre uzun olabildiği için kabulü aldıktan hemen sonra randevu al.",
+    "blocked": "Öğrenci vizesinde mali yeterlilik genellikle bloke hesap (Sperrkonto) ile gösterilir. 2026 için sık kullanılan tutar yılda 11.904 € (ayda 992 €) olarak aktarılıyor; tutar yıllık güncellenebildiği için başvurudan önce konsolosluğun güncel rakamını kontrol et. Hesaptaki para aylık eşit taksitlerle serbest kalır.",
+    "living": "Vize için resmî olarak kabul edilen aylık geçim tutarı yaklaşık 992 €'dur. Gerçek gider şehre göre değişir: büyük şehirlerde (Münih, Berlin, Köln) kira bütçenin büyük kısmını oluşturur; yurt veya kampüs konaklaması genellikle daha öngörülebilirdir.",
+    "work": "AB dışından gelen öğrenciler okurken yılda 120 tam gün veya 240 yarım gün çalışabilir. Bu hak, okulun izin verdiği ek çalışma kurallarıyla birlikte değerlendirilir; kampüs içi öğrenci asistanlığı ayrıca düzenlenebilir. Güncel kuralı yabancılar dairesinden doğrula.",
+    "stay": "AB dışından gelen mezunlar, diplomaları aldıktan sonra iş aramak için 18 aya kadar oturma izni alabilir. Bu sürede uygun bir iş bulursan oturma izni çalışma iznine dönüştürülebilir. Koşullar ve süreler değişebildiği için mezuniyet öncesinde yabancılar dairesinden güncel bilgiyi al.",
+    "denklik": "Yurt dışında alınan diplomanın Türkiye'de kullanılabilmesi için YÖK Tanıma ve Denklik Birimi'ne e-Devlet üzerinden başvuru yapılır. YÖK, diplomayı Dışişleri üzerinden teyit eder ve gerektiğinde akademik görüş alır. Sonuç doğrudan denklik, bazı alanlarda ek şartla denklik (örneğin sınav veya tamamlama) ya da ret olabilir. Tıp, diş hekimliği, hukuk, mühendislik ve öğretmenlik gibi düzenlenmiş mesleklerde ek şart sık görülür. Okula başlamadan önce okulun tanınırlığını kontrol etmeni ve yurt dışında bulunduğunu gösteren belgeleri saklamanı öneririz. Güncel kurallar için YÖK'ün resmî sayfasına bak.",
+    "recognition": "Almanya'daki devlet tarafından tanınmış ve akredite üniversiteler Bologna sistemi (ECTS) içindedir; bu nedenle diploma Avrupa'da ve birçok ülkede yaygın kabul görür. Bir okulun tanınırlığını Almanya'nın resmî veri tabanı anabin (kurumun H+ statüsü) ve Hochschulkompass'tan kontrol edebilirsin.",
+    "entry": "Almanya'nın resmî değerlendirme sisteminde (anabin) Türk lise diploması (Lise Diploması) tek başına devlet üniversitelerinde doğrudan lisans girişi sağlamayabilir; çoğu durumda Studienkolleg (hazırlık yılı) ve Feststellungsprüfung gerekir. Özel üniversitelerin kendi kabul kuralları olabilir ve ek sınav (SAT/ACT gibi) isteyebilir. Başvurmadan önce hem okulun kabul sayfasına hem anabin kaydına bak.",
+    "sources": [
+      "https://www.study.eu/article/germany-blocked-bank-accounts-for-students-guide",
+      "https://www.expatrio.com/about-germany/blocked-amount-2025",
+      "https://www.studienkolleg.org/en/blog/studienkolleg-guide-turkish-students-complete/"
+    ],
+    "verified_at": "2026-10-16"
+  }
+}
